@@ -1,0 +1,161 @@
+################################################################################
+# PkgEval set-up: 2020-12-03T09:45:36.862
+#
+
+Julia Version 1.5.3
+Commit 788b2c77c1 (2020-11-09 13:37 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_DEPOT_PATH = /home/pkgeval/.another_julia:/usr/local/share/julia
+
+
+
+################################################################################
+# Installation: 2020-12-03T09:45:39.352
+#
+
+  Resolving package versions...
+  Installed Compat ─────── v2.2.1
+  Installed URIParser ──── v0.4.1
+  Installed BinDeps ────── v0.8.10
+  Installed StaticArrays ─ v0.11.1
+  Installed SOFA ───────── v1.0.1
+Updating `~/.another_julia/environments/v1.5/Project.toml`
+  [ad3d3fd0] + SOFA v1.0.1
+Updating `~/.another_julia/environments/v1.5/Manifest.toml`
+  [9e28174c] + BinDeps v0.8.10
+  [34da2185] + Compat v2.2.1
+  [ad3d3fd0] + SOFA v1.0.1
+  [90137ffa] + StaticArrays v0.11.1
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building SOFA → `~/.another_julia/packages/SOFA/kZlWv/deps/build.log`
+
+
+################################################################################
+# Testing: 2020-12-03T09:46:01.657
+#
+
+
+    Testing SOFA
+Status `/tmp/jl_FhCTtF/Project.toml`
+  [9e28174c] BinDeps v0.8.10
+  [ad3d3fd0] SOFA v1.0.1
+  [90137ffa] StaticArrays v0.11.1
+  [8f399da3] Libdl
+  [8dfed614] Test
+Status `/tmp/jl_FhCTtF/Manifest.toml`
+  [9e28174c] BinDeps v0.8.10
+  [34da2185] Compat v2.2.1
+  [ad3d3fd0] SOFA v1.0.1
+  [90137ffa] StaticArrays v0.11.1
+  [30578b45] URIParser v0.4.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+sofa: Error During Test at /home/pkgeval/.another_julia/packages/SOFA/kZlWv/test/runtests.jl:6
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/SOFA/kZlWv/deps/usr/lib/libsofa_c.so"
+  /home/pkgeval/.julia/packages/SOFA/kZlWv/deps/usr/lib/libsofa_c.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] iauA2af(::Int64, ::Float64) at /home/pkgeval/.julia/packages/SOFA/kZlWv/src/a2af.jl:50
+   [2] top-level scope at /home/pkgeval/.another_julia/packages/SOFA/kZlWv/test/test_sofa.jl:2
+   [3] include(::String) at ./client.jl:457
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/SOFA/kZlWv/test/runtests.jl:7
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/SOFA/kZlWv/test/runtests.jl:7
+   [7] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [8] top-level scope at /home/pkgeval/.another_julia/packages/SOFA/kZlWv/test/runtests.jl:5
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.another_julia/packages/SOFA/kZlWv/test/test_sofa.jl:1
+  
+Test Summary: | Error  Total
+SOFA          |     1      1
+  sofa        |     1      1
+ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/pkgeval/.another_julia/packages/SOFA/kZlWv/test/runtests.jl:4
+
+PkgEval failed: Package SOFA errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:20
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2020-12-03T09:46:10.066
+CPU usage: 33.33s (28.62s user, 4.85s kernel)
+
+Network usage:
+- eth0: 721.496 KiB received, 27.749 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":257,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":257,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":257,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":253,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":253,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":253,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":2064384,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":2064384,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":2064384,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":2064384,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":2064384,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":2064384,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":214577152,"max_usage":614830080,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":199512064,"inactive_file":135168,"inactive_anon":3244032,"total_pgfault":1273668,"total_cache":7720960,"total_rss_huge":0,"total_active_anon":203968512,"total_pgmajfault":0,"pgpgin":938256,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":811008,"total_unevictable":0,"total_dirty":811008,"writeback":0,"pgpgout":887673,"hierarchical_memsw_limit":0,"cache":7720960,"active_file":135168,"pgfault":1273668,"total_mapped_file":0,"total_pgpgout":887673,"total_writeback":0,"rss":199512064,"unevictable":0,"total_inactive_anon":3244032,"total_pgpgin":938256,"active_anon":203968512,"total_active_file":135168},"limit":540965302272},"name":"/SOFA-itqfPP7o","networks":{"eth0":{"rx_bytes":738812,"rx_packets":256,"tx_packets":248,"tx_bytes":28415,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"4e5c5e9e4ade272dd35289fb375b467b91a8e07c7a220065c141ceff833ce169","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":42},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":122719739715808967,"online_cpus":128,"cpu_usage":{"usage_in_usermode":28620000000,"usage_in_kernelmode":4850000000,"total_usage":33330116579,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33330116579,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2020-12-03T09:46:10.068963116Z"}

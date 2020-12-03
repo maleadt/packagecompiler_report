@@ -1,0 +1,206 @@
+################################################################################
+# PkgEval set-up: 2020-12-03T14:07:58.355
+#
+
+Julia Version 1.5.3
+Commit 788b2c77c1 (2020-11-09 13:37 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_DEPOT_PATH = /home/pkgeval/.another_julia:/usr/local/share/julia
+
+
+
+################################################################################
+# Installation: 2020-12-03T14:08:00.382
+#
+
+  Resolving package versions...
+  Installed Requires ──────── v1.1.1
+  Installed ArrayInterface ── v2.14.3
+  Installed ComponentArrays ─ v0.8.10
+Updating `~/.another_julia/environments/v1.5/Project.toml`
+  [b0b7db55] + ComponentArrays v0.8.10
+Updating `~/.another_julia/environments/v1.5/Manifest.toml`
+  [4fba245c] + ArrayInterface v2.14.3
+  [b0b7db55] + ComponentArrays v0.8.10
+  [ae029012] + Requires v1.1.1
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [cf7118a7] + UUIDs
+
+
+################################################################################
+# Testing: 2020-12-03T14:08:02.256
+#
+
+
+    Testing ComponentArrays
+Status `/tmp/jl_wU6ciF/Project.toml`
+  [b0b7db55] ComponentArrays v0.8.10
+  [f6369f11] ForwardDiff v0.10.14
+  [6fe1bfb0] OffsetArrays v1.4.0
+  [90137ffa] StaticArrays v1.0.0
+  [1986cc42] Unitful v1.5.0
+  [37e2e46d] LinearAlgebra
+  [8dfed614] Test
+Status `/tmp/jl_wU6ciF/Manifest.toml`
+  [79e6a3ab] Adapt v2.3.0
+  [4fba245c] ArrayInterface v2.14.3
+  [56f22d72] Artifacts v1.3.0
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [b0b7db55] ComponentArrays v0.8.10
+  [187b0558] ConstructionBase v1.0.0
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [f6369f11] ForwardDiff v0.10.14
+  [692b3bcd] JLLWrappers v1.1.3
+  [1914dd2f] MacroTools v0.5.6
+  [77ba4419] NaNMath v0.3.5
+  [6fe1bfb0] OffsetArrays v1.4.0
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [ae029012] Requires v1.1.1
+  [276daf66] SpecialFunctions v1.1.0
+  [90137ffa] StaticArrays v1.0.0
+  [1986cc42] Unitful v1.5.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Warning: Error requiring StaticArrays from ComponentArrays:
+│ could not open file /home/pkgeval/.julia/packages/ComponentArrays/iBrm0/src/if_required/staticarrays.jl
+│ Stacktrace:
+│  [1] include(::Function, ::Module, ::String) at ./Base.jl:380
+│  [2] include at ./Base.jl:368 [inlined]
+│  [3] include at /home/pkgeval/.julia/packages/ComponentArrays/iBrm0/src/ComponentArrays.jl:1 [inlined]
+│  [4] required(::String) at /home/pkgeval/.julia/packages/ComponentArrays/iBrm0/src/ComponentArrays.jl:27
+│  [5] top-level scope at none:1
+│  [6] eval at ./boot.jl:331 [inlined]
+│  [7] eval at /home/pkgeval/.julia/packages/ComponentArrays/iBrm0/src/ComponentArrays.jl:1 [inlined]
+│  [8] (::ComponentArrays.var"#74#89")() at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:97
+│  [9] err(::Any, ::Module, ::String) at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:42
+│  [10] (::ComponentArrays.var"#73#88")() at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:96
+│  [11] withpath(::Any, ::String) at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:32
+│  [12] (::ComponentArrays.var"#72#87")() at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:95
+│  [13] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│  [14] invokelatest at ./essentials.jl:709 [inlined]
+│  [15] foreach at ./abstractarray.jl:2009 [inlined]
+│  [16] loadpkg(::Base.PkgId) at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:22
+│  [17] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│  [18] invokelatest at ./essentials.jl:709 [inlined]
+│  [19] _tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at ./loading.jl:715
+│  [20] _require_search_from_serialized(::Base.PkgId, ::String) at ./loading.jl:771
+│  [21] _tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::Nothing) at ./loading.jl:712
+│  [22] _require_from_serialized(::String) at ./loading.jl:744
+│  [23] _require(::Base.PkgId) at ./loading.jl:1040
+│  [24] require(::Base.PkgId) at ./loading.jl:928
+│  [25] require(::Module, ::Symbol) at ./loading.jl:923
+│  [26] include(::String) at ./client.jl:457
+│  [27] top-level scope at none:6
+│  [28] eval(::Module, ::Any) at ./boot.jl:331
+│  [29] exec_options(::Base.JLOptions) at ./client.jl:272
+│  [30] _start() at ./client.jl:506
+└ @ Requires ~/.julia/packages/Requires/Odp8W/src/require.jl:44
+┌ Warning: Error requiring ConstructionBase from ComponentArrays:
+│ could not open file /home/pkgeval/.julia/packages/ComponentArrays/iBrm0/src/if_required/constructionbase.jl
+│ Stacktrace:
+│  [1] include(::Function, ::Module, ::String) at ./Base.jl:380
+│  [2] include at ./Base.jl:368 [inlined]
+│  [3] include at /home/pkgeval/.julia/packages/ComponentArrays/iBrm0/src/ComponentArrays.jl:1 [inlined]
+│  [4] required(::String) at /home/pkgeval/.julia/packages/ComponentArrays/iBrm0/src/ComponentArrays.jl:27
+│  [5] top-level scope at none:1
+│  [6] eval at ./boot.jl:331 [inlined]
+│  [7] eval at /home/pkgeval/.julia/packages/ComponentArrays/iBrm0/src/ComponentArrays.jl:1 [inlined]
+│  [8] (::ComponentArrays.var"#65#80")() at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:97
+│  [9] err(::Any, ::Module, ::String) at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:42
+│  [10] (::ComponentArrays.var"#64#79")() at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:96
+│  [11] withpath(::Any, ::String) at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:32
+│  [12] (::ComponentArrays.var"#63#78")() at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:95
+│  [13] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│  [14] invokelatest at ./essentials.jl:709 [inlined]
+│  [15] foreach at ./abstractarray.jl:2009 [inlined]
+│  [16] loadpkg(::Base.PkgId) at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:22
+│  [17] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│  [18] invokelatest at ./essentials.jl:709 [inlined]
+│  [19] _tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::Nothing) at ./loading.jl:715
+│  [20] _require_from_serialized(::String) at ./loading.jl:744
+│  [21] _require(::Base.PkgId) at ./loading.jl:1040
+│  [22] require(::Base.PkgId) at ./loading.jl:928
+│  [23] require(::Module, ::Symbol) at ./loading.jl:923
+│  [24] include(::String) at ./client.jl:457
+│  [25] top-level scope at none:6
+│  [26] eval(::Module, ::Any) at ./boot.jl:331
+│  [27] exec_options(::Base.JLOptions) at ./client.jl:272
+│  [28] _start() at ./client.jl:506
+└ @ Requires ~/.julia/packages/Requires/Odp8W/src/require.jl:44
+Test Summary: | Pass  Total
+Utilities     |    5      5
+Construction: Test Failed at /home/pkgeval/.another_julia/packages/ComponentArrays/iBrm0/test/runtests.jl:57
+  Expression: typeof(ComponentArray{MVector{10, Float64}}(undef, (ax,))) == typeof(ca_MVector)
+   Evaluated: ComponentVector{Float64} == ComponentVector{Float64,MArray...}
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.another_julia/packages/ComponentArrays/iBrm0/test/runtests.jl:57
+ [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.another_julia/packages/ComponentArrays/iBrm0/test/runtests.jl:48
+Test Summary: | Pass  Fail  Total
+Construction  |   24     1     25
+ERROR: LoadError: Some tests did not pass: 24 passed, 1 failed, 0 errored, 0 broken.
+in expression starting at /home/pkgeval/.another_julia/packages/ComponentArrays/iBrm0/test/runtests.jl:47
+
+PkgEval failed: Package ComponentArrays errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:20
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2020-12-03T14:09:12.639
+CPU usage: 74.54s (71.02s user, 3.68s kernel)
+
+Network usage:
+- eth0: 2.471 MiB received, 102.201 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":5,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":5,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":5,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":5,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24576,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":24576,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24576,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24576,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":24576,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24576,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":252145664,"max_usage":1193385984,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":232669184,"inactive_file":135168,"inactive_anon":5541888,"total_pgfault":1790382,"total_cache":12279808,"total_rss_huge":0,"total_active_anon":239517696,"total_pgmajfault":0,"pgpgin":990165,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":930337,"hierarchical_memsw_limit":0,"cache":12279808,"active_file":0,"pgfault":1790382,"total_mapped_file":0,"total_pgpgout":930337,"total_writeback":0,"rss":232669184,"unevictable":0,"total_inactive_anon":5541888,"total_pgpgin":990165,"active_anon":239517696,"total_active_file":0},"limit":540965302272},"name":"/ComponentArrays-10dhAeY6","networks":{"eth0":{"rx_bytes":2591376,"rx_packets":825,"tx_packets":889,"tx_bytes":104654,"tx_dropped":0,"rx_dropped":3,"tx_errors":0,"rx_errors":0}},"id":"c056c643abb36258cf32ea4584dad68d4e5294ebf9aef2f6528c06250053d705","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":42},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":124736773235808967,"online_cpus":128,"cpu_usage":{"usage_in_usermode":71020000000,"usage_in_kernelmode":3680000000,"total_usage":74544751556,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3032790,0,0,74541718766,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2020-12-03T14:09:12.646874125Z"}

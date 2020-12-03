@@ -1,0 +1,266 @@
+################################################################################
+# PkgEval set-up: 2020-12-03T12:08:22.606
+#
+
+Julia Version 1.5.3
+Commit 788b2c77c1 (2020-11-09 13:37 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_DEPOT_PATH = /home/pkgeval/.another_julia:/usr/local/share/julia
+
+
+
+################################################################################
+# Installation: 2020-12-03T12:08:25.717
+#
+
+  Resolving package versions...
+  Installed IOLogging ─ v0.2.0
+Updating `~/.another_julia/environments/v1.5/Project.toml`
+  [9ee9e592] + IOLogging v0.2.0
+
+
+################################################################################
+# Testing: 2020-12-03T12:08:27.149
+#
+
+
+Updating `~/.another_julia/environments/v1.5/Manifest.toml`
+  [9ee9e592] + IOLogging v0.2.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [4ec0a83e] + Unicode
+    Testing IOLogging
+Status `/tmp/jl_ojeAlz/Project.toml`
+  [9ee9e592] IOLogging v0.2.0
+  [ade2ca70] Dates
+  [56ddb016] Logging
+  [8dfed614] Test
+Status `/tmp/jl_ojeAlz/Manifest.toml`
+  [9ee9e592] IOLogging v0.2.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Singleline No Debug: Test Failed at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:57
+  Expression: occursin(r"\[Info::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]* - INFO\n", res)
+   Evaluated: occursin(r"\[Info::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]* - INFO\n", "[Info::2020-12-03T12:08:33.637]  Main.IOLoggingTests@/home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:10 - INFO\n[Warn::2020-12-03T12:08:33.75]  Main.IOLoggingTests@/home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:11 - WARN\n[Error::2020-12-03T12:08:33.75]  Main.IOLoggingTests@/home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:12 - ERROR\n")
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:57
+ [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:54
+ [4] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:51
+ [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:45
+ [8] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [9] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:44
+Singleline No Debug: Test Failed at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:58
+  Expression: occursin(r"\[Warn::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]* - WARN\n", res)
+   Evaluated: occursin(r"\[Warn::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]* - WARN\n", "[Info::2020-12-03T12:08:33.637]  Main.IOLoggingTests@/home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:10 - INFO\n[Warn::2020-12-03T12:08:33.75]  Main.IOLoggingTests@/home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:11 - WARN\n[Error::2020-12-03T12:08:33.75]  Main.IOLoggingTests@/home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:12 - ERROR\n")
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:58
+ [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:54
+ [4] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:51
+ [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:45
+ [8] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [9] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:44
+Singleline No Debug: Test Failed at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:59
+  Expression: occursin(r"\[Error::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]* - ERROR\n", res)
+   Evaluated: occursin(r"\[Error::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]* - ERROR\n", "[Info::2020-12-03T12:08:33.637]  Main.IOLoggingTests@/home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:10 - INFO\n[Warn::2020-12-03T12:08:33.75]  Main.IOLoggingTests@/home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:11 - WARN\n[Error::2020-12-03T12:08:33.75]  Main.IOLoggingTests@/home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:12 - ERROR\n")
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:59
+ [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:54
+ [4] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:51
+ [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:45
+ [8] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [9] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:44
+Multiline No Debug: Test Failed at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:67
+  Expression: occursin(r"\[Info::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]*\n", res) && (occursin(r"info_line_1\n", res) && occursin(r"info_line_2\n", res))
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:67
+ [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:62
+ [4] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:51
+ [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:45
+ [8] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [9] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:44
+Multiline No Debug: Test Failed at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:70
+  Expression: occursin(r"\[Warn::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]*\n", res) && (occursin(r"warn_line_1\n", res) && occursin(r"warn_line_2\n", res))
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:70
+ [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:62
+ [4] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:51
+ [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:45
+ [8] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [9] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:44
+Multiline No Debug: Test Failed at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:73
+  Expression: occursin(r"\[Error::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]*\n", res) && (occursin(r"error_line_1\n", res) && occursin(r"error_line_2\n", res))
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:73
+ [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:62
+ [4] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:51
+ [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:45
+ [8] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [9] top-level scope at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:44
+Regular Use: Test Failed at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:147
+  Expression: occursin(r"\[Info::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]* - infolog\n", lines[2])
+   Evaluated: occursin(r"\[Info::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]* - infolog\n", "[Info::2020-12-03T12:08:41.696]  Main.IOLoggingTests@/home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:142 - infolog\n")
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:147 [inlined]
+ [2] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:139 [inlined]
+ [4] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] (::Main.IOLoggingTests.var"#10#25"{String})() at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:138
+No Append: Test Failed at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:171
+  Expression: occursin(r"\[Info::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]* - infolog\n", lines[1])
+   Evaluated: occursin(r"\[Info::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]* - infolog\n", "[Info::2020-12-03T12:08:41.99]  Main.IOLoggingTests@/home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:166 - infolog\n")
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:171 [inlined]
+ [2] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:163 [inlined]
+ [4] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] (::Main.IOLoggingTests.var"#10#25"{String})() at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:138
+Singleline No Debug: Test Failed at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:181
+  Expression: occursin(r"\[Info::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]* - INFO\n", res)
+   Evaluated: occursin(r"\[Info::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]* - INFO\n", "[Info::2020-12-03T12:08:41.993]  Main.IOLoggingTests@/home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:10 - INFO\n[Warn::2020-12-03T12:08:41.993]  Main.IOLoggingTests@/home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:11 - WARN\n[Error::2020-12-03T12:08:41.993]  Main.IOLoggingTests@/home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:12 - ERROR\n")
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:181 [inlined]
+ [2] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:177 [inlined]
+ [4] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] (::Main.IOLoggingTests.var"#10#25"{String})() at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:175
+Singleline No Debug: Test Failed at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:182
+  Expression: occursin(r"\[Warn::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]* - WARN\n", res)
+   Evaluated: occursin(r"\[Warn::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]* - WARN\n", "[Info::2020-12-03T12:08:41.993]  Main.IOLoggingTests@/home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:10 - INFO\n[Warn::2020-12-03T12:08:41.993]  Main.IOLoggingTests@/home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:11 - WARN\n[Error::2020-12-03T12:08:41.993]  Main.IOLoggingTests@/home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:12 - ERROR\n")
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:182 [inlined]
+ [2] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:177 [inlined]
+ [4] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] (::Main.IOLoggingTests.var"#10#25"{String})() at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:175
+Singleline No Debug: Test Failed at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:183
+  Expression: occursin(r"\[Error::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]* - ERROR\n", res)
+   Evaluated: occursin(r"\[Error::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]* - ERROR\n", "[Info::2020-12-03T12:08:41.993]  Main.IOLoggingTests@/home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:10 - INFO\n[Warn::2020-12-03T12:08:41.993]  Main.IOLoggingTests@/home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:11 - WARN\n[Error::2020-12-03T12:08:41.993]  Main.IOLoggingTests@/home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:12 - ERROR\n")
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:183 [inlined]
+ [2] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:177 [inlined]
+ [4] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] (::Main.IOLoggingTests.var"#10#25"{String})() at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:175
+Multiline No Debug: Test Failed at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:192
+  Expression: occursin(r"\[Info::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]*\n", res) && (occursin(r"info_line_1\n", res) && occursin(r"info_line_2\n", res))
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:192 [inlined]
+ [2] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:186 [inlined]
+ [4] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] (::Main.IOLoggingTests.var"#10#25"{String})() at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:175
+Multiline No Debug: Test Failed at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:195
+  Expression: occursin(r"\[Warn::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]*\n", res) && (occursin(r"warn_line_1\n", res) && occursin(r"warn_line_2\n", res))
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:195 [inlined]
+ [2] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:186 [inlined]
+ [4] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] (::Main.IOLoggingTests.var"#10#25"{String})() at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:175
+Multiline No Debug: Test Failed at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:198
+  Expression: occursin(r"\[Error::[\d\-:T\.]*\][ a-zA-Z@\[\]\d\.\\\/:]*\n", res) && (occursin(r"error_line_1\n", res) && occursin(r"error_line_2\n", res))
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:198 [inlined]
+ [2] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:186 [inlined]
+ [4] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] (::Main.IOLoggingTests.var"#10#25"{String})() at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:175
+Test Summary:                         | Pass  Fail  Total
+IOLogging All Tests                   |   29    14     43
+  IOLogger                            |   12     6     18
+    Assertions                        |    2            2
+    Logging                           |   10     6     16
+      Singleline No Debug             |    1     3      4
+      Multiline No Debug              |    1     3      4
+      Keyword Logging No Debug        |    4            4
+      Logging between Levels No Debug |    2            2
+      Message Limits                  |    2            2
+  FileLogger                          |   17     8     25
+    Assertions                        |    3            3
+    Appending && Flushing             |    4     2      6
+      Regular Use                     |    1     1      2
+      No Flush                        |    2            2
+      No Append                       |    1     1      2
+    Logging                           |   10     6     16
+      Singleline No Debug             |    1     3      4
+      Multiline No Debug              |    1     3      4
+      Keyword Logging No Debug        |    4            4
+      Logging between Levels No Debug |    2            2
+      Message Limits                  |    2            2
+ERROR: LoadError: Some tests did not pass: 29 passed, 14 failed, 0 errored, 0 broken.
+in expression starting at /home/pkgeval/.another_julia/packages/IOLogging/o5rE5/test/runtests.jl:43
+
+PkgEval failed: Package IOLogging errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:20
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2020-12-03T12:08:45.33
+CPU usage: 22.84s (22.02s user, 0.90s kernel)
+
+Network usage:
+- eth0: 15.535 KiB received, 4.443 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":5,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":5,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":5,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":5,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":20480,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":20480,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":20480,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":20480,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":203116544,"max_usage":404746240,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":198029312,"inactive_file":0,"inactive_anon":0,"total_pgfault":370491,"total_cache":0,"total_rss_huge":0,"total_active_anon":198156288,"total_pgmajfault":0,"pgpgin":124344,"rss_huge":0,"mapped_file":0,"total_inactive_file":0,"dirty":0,"total_unevictable":0,"total_dirty":0,"writeback":0,"pgpgout":75964,"hierarchical_memsw_limit":0,"cache":0,"active_file":0,"pgfault":370491,"total_mapped_file":0,"total_pgpgout":75964,"total_writeback":0,"rss":198029312,"unevictable":0,"total_inactive_anon":0,"total_pgpgin":124344,"active_anon":198156288,"total_active_file":0},"limit":540965302272},"name":"/IOLogging-C9GisOHR","networks":{"eth0":{"rx_bytes":15908,"rx_packets":47,"tx_packets":33,"tx_bytes":4550,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"aa9380da331b373aac0171b6ee85f0054a97b0f69d6dc17c5ab3c3a0351cbdd8","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":42},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":123813165665808967,"online_cpus":128,"cpu_usage":{"usage_in_usermode":22020000000,"usage_in_kernelmode":900000000,"total_usage":22838282774,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22838282774,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2020-12-03T12:08:46.070544775Z"}

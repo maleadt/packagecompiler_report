@@ -1,0 +1,141 @@
+################################################################################
+# PkgEval set-up: 2020-12-03T14:28:00.354
+#
+
+Julia Version 1.5.3
+Commit 788b2c77c1 (2020-11-09 13:37 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_DEPOT_PATH = /home/pkgeval/.another_julia:/usr/local/share/julia
+
+
+
+################################################################################
+# Installation: 2020-12-03T14:28:03.107
+#
+
+  Resolving package versions...
+  Installed IntelOpenMP_jll ─ v2018.0.3+0
+  Installed Reexport ──────── v0.2.0
+  Installed MKL_jll ───────── v2020.2.254+0
+  Installed FFTW_jll ──────── v3.3.9+6
+  Installed AbstractFFTs ──── v0.5.0
+  Installed Hadamard ──────── v1.2.0
+  Installed FFTW ──────────── v1.2.4
+  Installed JLLWrappers ───── v1.1.3
+  Installed Artifacts ─────── v1.3.0
+Updating `~/.another_julia/environments/v1.5/Project.toml`
+  [4a05ff16] + Hadamard v1.2.0
+Updating `~/.another_julia/environments/v1.5/Manifest.toml`
+  [621f4979] + AbstractFFTs v0.5.0
+  [56f22d72] + Artifacts v1.3.0
+  [7a1cc6ca] + FFTW v1.2.4
+  [f5851436] + FFTW_jll v3.3.9+6
+  [4a05ff16] + Hadamard v1.2.0
+  [1d5cc7b8] + IntelOpenMP_jll v2018.0.3+0
+  [692b3bcd] + JLLWrappers v1.1.3
+  [856f044c] + MKL_jll v2020.2.254+0
+  [189a3867] + Reexport v0.2.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building FFTW → `~/.another_julia/packages/FFTW/DMUbN/deps/build.log`
+
+
+################################################################################
+# Testing: 2020-12-03T14:28:07.786
+#
+
+
+    Testing Hadamard
+Status `/tmp/jl_uCIAoG/Project.toml`
+  [621f4979] AbstractFFTs v0.5.0
+  [7a1cc6ca] FFTW v1.2.4
+  [4a05ff16] Hadamard v1.2.0
+  [37e2e46d] LinearAlgebra
+  [8dfed614] Test
+Status `/tmp/jl_uCIAoG/Manifest.toml`
+  [621f4979] AbstractFFTs v0.5.0
+  [56f22d72] Artifacts v1.3.0
+  [7a1cc6ca] FFTW v1.2.4
+  [f5851436] FFTW_jll v3.3.9+6
+  [4a05ff16] Hadamard v1.2.0
+  [1d5cc7b8] IntelOpenMP_jll v2018.0.3+0
+  [692b3bcd] JLLWrappers v1.1.3
+  [856f044c] MKL_jll v2020.2.254+0
+  [189a3867] Reexport v0.2.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Checking unitarity of hadamard(n): 4, 8, 16, 32, 64, 128, 256, 512, 1024, Test Failed at /home/pkgeval/.another_julia/packages/Hadamard/kUzz6/test/runtests.jl:130
+  Expression: sizes == [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 92, 96, 100, 104, 108, 112, 116, 120, 124, 128, 132, 136, 140, 144, 148, 152, 156, 160, 164, 168, 172, 176, 180, 184, 188, 192, 196, 200, 204, 208, 212, 216, 220, 224, 228, 232, 236, 240, 244, 248, 252, 256, 264, 272, 280, 288, 296, 304, 312, 320, 328, 336, 344, 352, 360, 368, 376, 384, 392, 400, 408, 416, 424, 428, 432, 440, 448, 456, 464, 472, 480, 488, 496, 504, 512, 528, 544, 560, 576, 592, 608, 624, 640, 656, 672, 688, 704, 720, 736, 752, 768, 784, 800, 816, 832, 848, 856, 864, 880, 896, 912, 928, 944, 960, 976, 992, 1008, 1024, 1040, 1056, 1088, 1104, 1120, 1152, 1184, 1200]
+   Evaluated: [4, 8, 16, 32, 64, 128, 256, 512, 1024] == [4, 8, 12, 16, 20, 24, 28, 32, 36, 40  …  1008, 1024, 1040, 1056, 1088, 1104, 1120, 1152, 1184, 1200]
+ERROR: LoadError: There was an error during testing
+in expression starting at /home/pkgeval/.another_julia/packages/Hadamard/kUzz6/test/runtests.jl:130
+
+PkgEval failed: Package Hadamard errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:20
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2020-12-03T14:28:23.379
+CPU usage: 23.50s (22.59s user, 0.94s kernel)
+
+Network usage:
+- eth0: 230.688 KiB received, 41.326 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":9,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":9,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":9,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":9,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":36864,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":36864,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":36864,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":36864,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":217444352,"max_usage":440098816,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":210239488,"inactive_file":135168,"inactive_anon":811008,"total_pgfault":394053,"total_cache":1077248,"total_rss_huge":0,"total_active_anon":210321408,"total_pgmajfault":0,"pgpgin":175923,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":124320,"hierarchical_memsw_limit":0,"cache":1077248,"active_file":270336,"pgfault":394053,"total_mapped_file":0,"total_pgpgout":124320,"total_writeback":0,"rss":210239488,"unevictable":0,"total_inactive_anon":811008,"total_pgpgin":175923,"active_anon":210321408,"total_active_file":270336},"limit":540965302272},"name":"/Hadamard-92zCFGku","networks":{"eth0":{"rx_bytes":236225,"rx_packets":273,"tx_packets":312,"tx_bytes":42318,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"8c297ac24b666523fac0e8132e3cbfdc27942c6faa0dec9383a4b7bc8a05ffe9","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":42},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":124883901625808967,"online_cpus":128,"cpu_usage":{"usage_in_usermode":22590000000,"usage_in_kernelmode":940000000,"total_usage":23499583410,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23499583410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2020-12-03T14:28:23.910649532Z"}

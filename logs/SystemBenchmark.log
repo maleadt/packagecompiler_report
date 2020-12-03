@@ -1,0 +1,418 @@
+################################################################################
+# PkgEval set-up: 2020-12-03T10:02:39.336
+#
+
+Julia Version 1.5.3
+Commit 788b2c77c1 (2020-11-09 13:37 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_DEPOT_PATH = /home/pkgeval/.another_julia:/usr/local/share/julia
+
+
+
+################################################################################
+# Installation: 2020-12-03T10:02:41.772
+#
+
+  Resolving package versions...
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed SystemBenchmark ────────────── v0.3.4
+  Installed Graphics ───────────────────── v1.0.2
+  Installed Requires ───────────────────── v1.1.1
+  Installed DataStructures ─────────────── v0.18.8
+  Installed GPUArrays ──────────────────── v5.2.1
+  Installed DataFrames ─────────────────── v0.21.8
+  Installed OffsetArrays ───────────────── v1.4.0
+  Installed Reexport ───────────────────── v0.2.0
+  Installed Compat ─────────────────────── v3.23.0
+  Installed FFMPEG_jll ─────────────────── v4.3.1+4
+  Installed FixedPointNumbers ──────────── v0.8.4
+  Installed ColorTypes ─────────────────── v0.10.9
+  Installed Colors ─────────────────────── v0.12.4
+  Installed JSON ───────────────────────── v0.21.1
+  Installed ExprTools ──────────────────── v0.1.3
+  Installed VideoIO ────────────────────── v0.7.4
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed PooledArrays ───────────────── v0.5.3
+  Installed LibVPX_jll ─────────────────── v1.9.0+1
+  Installed TimerOutputs ───────────────── v0.5.7
+  Installed Parsers ────────────────────── v1.0.12
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed StaticArrays ───────────────── v0.12.5
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed OpenSSL_jll ────────────────── v1.1.1+6
+  Installed InvertedIndices ────────────── v1.0.0
+  Installed Ogg_jll ────────────────────── v1.3.4+2
+  Installed SentinelArrays ─────────────── v1.2.16
+  Installed Ratios ─────────────────────── v0.4.0
+  Installed Tables ─────────────────────── v1.2.1
+  Installed Glob ───────────────────────── v1.3.0
+  Installed ImageCore ──────────────────── v0.8.19
+  Installed ColorVectorSpace ───────────── v0.8.7
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed libvorbis_jll ──────────────── v1.3.6+6
+  Installed AbstractFFTs ───────────────── v0.5.0
+  Installed MbedTLS ────────────────────── v1.0.3
+  Installed StructTypes ────────────────── v1.1.0
+  Installed BenchmarkTools ─────────────── v0.5.0
+  Installed JLLWrappers ────────────────── v1.1.3
+  Installed PaddedViews ────────────────── v0.5.7
+  Installed x264_jll ───────────────────── v2020.7.14+2
+  Installed FFMPEG ─────────────────────── v0.4.0
+  Installed MosaicViews ────────────────── v0.2.4
+  Installed GPUCompiler ────────────────── v0.6.1
+  Installed CoordinateTransformations ──── v0.6.1
+  Installed Rotations ──────────────────── v1.0.2
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed FreeType2_jll ──────────────── v2.10.1+5
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed MappedArrays ───────────────── v0.3.0
+  Installed CEnum ──────────────────────── v0.4.1
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed CUDA ───────────────────────── v1.3.3
+  Installed NNlib ──────────────────────── v0.7.7
+  Installed IdentityRanges ─────────────── v0.3.1
+  Installed Opus_jll ───────────────────── v1.3.1+3
+  Installed AxisAlgorithms ─────────────── v1.0.0
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed Adapt ──────────────────────── v2.3.0
+  Installed ProgressMeter ──────────────── v1.4.0
+  Installed CategoricalArrays ──────────── v0.8.3
+  Installed FriBidi_jll ────────────────── v1.0.5+6
+  Installed BinaryProvider ─────────────── v0.5.10
+  Installed MbedTLS_jll ────────────────── v2.16.8+1
+  Installed IniFile ────────────────────── v0.5.0
+  Installed Missings ───────────────────── v0.4.4
+  Installed ImageTransformations ───────── v0.8.6
+  Installed x265_jll ───────────────────── v3.0.0+3
+  Installed SpecialFunctions ───────────── v1.1.0
+  Installed TableTraits ────────────────── v1.0.0
+  Installed GitHub ─────────────────────── v5.2.0
+  Installed LLVM ───────────────────────── v2.0.0
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed libass_jll ─────────────────── v0.14.0+4
+  Installed libfdk_aac_jll ─────────────── v0.1.6+4
+  Installed LAME_jll ───────────────────── v3.100.0+3
+  Installed Bzip2_jll ──────────────────── v1.0.6+5
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed URIs ───────────────────────── v1.1.0
+  Installed HTTP ───────────────────────── v0.9.0
+  Installed WoodburyMatrices ───────────── v0.5.3
+  Installed CSV ────────────────────────── v0.7.10
+  Installed Interpolations ─────────────── v0.12.10
+Updating `~/.another_julia/environments/v1.5/Project.toml`
+  [30cdaa97] + SystemBenchmark v0.3.4
+Updating `~/.another_julia/environments/v1.5/Manifest.toml`
+  [621f4979] + AbstractFFTs v0.5.0
+  [79e6a3ab] + Adapt v2.3.0
+  [56f22d72] + Artifacts v1.3.0
+  [13072b0f] + AxisAlgorithms v1.0.0
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [b99e7846] + BinaryProvider v0.5.10
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [fa961155] + CEnum v0.4.1
+  [336ed68f] + CSV v0.7.10
+  [052768ef] + CUDA v1.3.3
+  [324d7699] + CategoricalArrays v0.8.3
+  [3da002f7] + ColorTypes v0.10.9
+  [c3611d14] + ColorVectorSpace v0.8.7
+  [5ae59095] + Colors v0.12.4
+  [34da2185] + Compat v3.23.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [150eb455] + CoordinateTransformations v0.6.1
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.21.8
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [e2ba6199] + ExprTools v0.1.3
+  [c87230d0] + FFMPEG v0.4.0
+  [b22a6f82] + FFMPEG_jll v4.3.1+4
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [d7e528f0] + FreeType2_jll v2.10.1+5
+  [559328eb] + FriBidi_jll v1.0.5+6
+  [0c68f7d7] + GPUArrays v5.2.1
+  [61eb1bfa] + GPUCompiler v0.6.1
+  [bc5e4493] + GitHub v5.2.0
+  [c27321d9] + Glob v1.3.0
+  [a2bd30eb] + Graphics v1.0.2
+  [cd3eb016] + HTTP v0.9.0
+  [bbac6d45] + IdentityRanges v0.3.1
+  [a09fc81d] + ImageCore v0.8.19
+  [02fcd773] + ImageTransformations v0.8.6
+  [83e8ac13] + IniFile v0.5.0
+  [a98d9a8b] + Interpolations v0.12.10
+  [41ab1584] + InvertedIndices v1.0.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.1.3
+  [682c06a0] + JSON v0.21.1
+  [c1c5ebd0] + LAME_jll v3.100.0+3
+  [929cbde3] + LLVM v2.0.0
+  [dd192d2f] + LibVPX_jll v1.9.0+1
+  [1914dd2f] + MacroTools v0.5.6
+  [dbb5928d] + MappedArrays v0.3.0
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [e1d29d7a] + Missings v0.4.4
+  [e94cdb99] + MosaicViews v0.2.4
+  [872c559c] + NNlib v0.7.7
+  [77ba4419] + NaNMath v0.3.5
+  [6fe1bfb0] + OffsetArrays v1.4.0
+  [e7412a2a] + Ogg_jll v1.3.4+2
+  [458c3c95] + OpenSSL_jll v1.1.1+6
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [91d4177d] + Opus_jll v1.3.1+3
+  [bac558e1] + OrderedCollections v1.3.2
+  [5432bcbf] + PaddedViews v0.5.7
+  [69de0a69] + Parsers v1.0.12
+  [2dfb63ee] + PooledArrays v0.5.3
+  [92933f4c] + ProgressMeter v1.4.0
+  [c84ed2f1] + Ratios v0.4.0
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.1
+  [6038ab10] + Rotations v1.0.2
+  [91c51154] + SentinelArrays v1.2.16
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.1.0
+  [90137ffa] + StaticArrays v0.12.5
+  [2913bbd2] + StatsBase v0.33.2
+  [856f2bd8] + StructTypes v1.1.0
+  [30cdaa97] + SystemBenchmark v0.3.4
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.1
+  [a759f4b9] + TimerOutputs v0.5.7
+  [5c2747f8] + URIs v1.1.0
+  [d6d074c3] + VideoIO v0.7.4
+  [efce3f68] + WoodburyMatrices v0.5.3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [0ac62f75] + libass_jll v0.14.0+4
+  [f638f0a6] + libfdk_aac_jll v0.1.6+4
+  [f27f6e37] + libvorbis_jll v1.3.6+6
+  [1270edf5] + x264_jll v2020.7.14+2
+  [dfaa095f] + x265_jll v3.0.0+3
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2020-12-03T10:02:52.752
+#
+
+
+    Testing SystemBenchmark
+Status `/tmp/jl_qPR9ny/Project.toml`
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [336ed68f] CSV v0.7.10
+  [052768ef] CUDA v1.3.3
+  [a93c6f00] DataFrames v0.21.8
+  [bc5e4493] GitHub v5.2.0
+  [92933f4c] ProgressMeter v1.4.0
+  [30cdaa97] SystemBenchmark v0.3.4
+  [d6d074c3] VideoIO v0.7.4
+  [b77e0a4c] InteractiveUtils
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [44cfe95a] Pkg
+  [8dfed614] Test
+Status `/tmp/jl_qPR9ny/Manifest.toml`
+  [621f4979] AbstractFFTs v0.5.0
+  [79e6a3ab] Adapt v2.3.0
+  [56f22d72] Artifacts v1.3.0
+  [13072b0f] AxisAlgorithms v1.0.0
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [b99e7846] BinaryProvider v0.5.10
+  [6e34b625] Bzip2_jll v1.0.6+5
+  [fa961155] CEnum v0.4.1
+  [336ed68f] CSV v0.7.10
+  [052768ef] CUDA v1.3.3
+  [324d7699] CategoricalArrays v0.8.3
+  [3da002f7] ColorTypes v0.10.9
+  [c3611d14] ColorVectorSpace v0.8.7
+  [5ae59095] Colors v0.12.4
+  [34da2185] Compat v3.23.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [150eb455] CoordinateTransformations v0.6.1
+  [9a962f9c] DataAPI v1.4.0
+  [a93c6f00] DataFrames v0.21.8
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [e2ba6199] ExprTools v0.1.3
+  [c87230d0] FFMPEG v0.4.0
+  [b22a6f82] FFMPEG_jll v4.3.1+4
+  [53c48c17] FixedPointNumbers v0.8.4
+  [d7e528f0] FreeType2_jll v2.10.1+5
+  [559328eb] FriBidi_jll v1.0.5+6
+  [0c68f7d7] GPUArrays v5.2.1
+  [61eb1bfa] GPUCompiler v0.6.1
+  [bc5e4493] GitHub v5.2.0
+  [c27321d9] Glob v1.3.0
+  [a2bd30eb] Graphics v1.0.2
+  [cd3eb016] HTTP v0.9.0
+  [bbac6d45] IdentityRanges v0.3.1
+  [a09fc81d] ImageCore v0.8.19
+  [02fcd773] ImageTransformations v0.8.6
+  [83e8ac13] IniFile v0.5.0
+  [a98d9a8b] Interpolations v0.12.10
+  [41ab1584] InvertedIndices v1.0.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.1.3
+  [682c06a0] JSON v0.21.1
+  [c1c5ebd0] LAME_jll v3.100.0+3
+  [929cbde3] LLVM v2.0.0
+  [dd192d2f] LibVPX_jll v1.9.0+1
+  [1914dd2f] MacroTools v0.5.6
+  [dbb5928d] MappedArrays v0.3.0
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [e1d29d7a] Missings v0.4.4
+  [e94cdb99] MosaicViews v0.2.4
+  [872c559c] NNlib v0.7.7
+  [77ba4419] NaNMath v0.3.5
+  [6fe1bfb0] OffsetArrays v1.4.0
+  [e7412a2a] Ogg_jll v1.3.4+2
+  [458c3c95] OpenSSL_jll v1.1.1+6
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [91d4177d] Opus_jll v1.3.1+3
+  [bac558e1] OrderedCollections v1.3.2
+  [5432bcbf] PaddedViews v0.5.7
+  [69de0a69] Parsers v1.0.12
+  [2dfb63ee] PooledArrays v0.5.3
+  [92933f4c] ProgressMeter v1.4.0
+  [c84ed2f1] Ratios v0.4.0
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.1
+  [6038ab10] Rotations v1.0.2
+  [91c51154] SentinelArrays v1.2.16
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.1.0
+  [90137ffa] StaticArrays v0.12.5
+  [2913bbd2] StatsBase v0.33.2
+  [856f2bd8] StructTypes v1.1.0
+  [30cdaa97] SystemBenchmark v0.3.4
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.1
+  [a759f4b9] TimerOutputs v0.5.7
+  [5c2747f8] URIs v1.1.0
+  [d6d074c3] VideoIO v0.7.4
+  [efce3f68] WoodburyMatrices v0.5.3
+  [83775a58] Zlib_jll v1.2.11+18
+  [0ac62f75] libass_jll v0.14.0+4
+  [f638f0a6] libfdk_aac_jll v0.1.6+4
+  [f27f6e37] libvorbis_jll v1.3.6+6
+  [1270edf5] x264_jll v2020.7.14+2
+  [dfaa095f] x265_jll v3.0.0+3
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: CUDA.functional() == false. No usable GPU detected
+SystemBenchmark: Error During Test at /home/pkgeval/.another_julia/packages/SystemBenchmark/deI1I/test/runtests.jl:4
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/SystemBenchmark/deI1I/Project.toml": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::Base.var"#296#297"{String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] read at ./io.jl:410 [inlined]
+   [9] pkgversion() at /home/pkgeval/.julia/packages/SystemBenchmark/deI1I/src/utils.jl:7
+   [10] getsysteminfo() at /home/pkgeval/.julia/packages/SystemBenchmark/deI1I/src/SystemBenchmark.jl:33
+   [11] runbenchmark(; printsysinfo::Bool) at /home/pkgeval/.julia/packages/SystemBenchmark/deI1I/src/SystemBenchmark.jl:125
+   [12] runbenchmark() at /home/pkgeval/.julia/packages/SystemBenchmark/deI1I/src/SystemBenchmark.jl:114
+   [13] top-level scope at /home/pkgeval/.another_julia/packages/SystemBenchmark/deI1I/test/runtests.jl:5
+   [14] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [15] top-level scope at /home/pkgeval/.another_julia/packages/SystemBenchmark/deI1I/test/runtests.jl:5
+   [16] include(::String) at ./client.jl:457
+   [17] top-level scope at none:6
+   [18] eval(::Module, ::Any) at ./boot.jl:331
+   [19] exec_options(::Base.JLOptions) at ./client.jl:272
+   [20] _start() at ./client.jl:506
+  
+Test Summary:   | Error  Total
+SystemBenchmark |     1      1
+ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/pkgeval/.another_julia/packages/SystemBenchmark/deI1I/test/runtests.jl:4
+
+PkgEval failed: Package SystemBenchmark errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:20
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2020-12-03T10:03:13.568
+CPU usage: 35.27s (32.46s user, 2.98s kernel)
+
+Network usage:
+- eth0: 16.991 MiB received, 449.602 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":5,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":5,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":5,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":5,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":53248,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":53248,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":53248,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":53248,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":53248,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":53248,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":412688384,"max_usage":710033408,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":333422592,"inactive_file":135168,"inactive_anon":68124672,"total_pgfault":691647,"total_cache":68374528,"total_rss_huge":0,"total_active_anon":333594624,"total_pgmajfault":0,"pgpgin":292941,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":194835,"hierarchical_memsw_limit":0,"cache":68374528,"active_file":0,"pgfault":691647,"total_mapped_file":0,"total_pgpgout":194835,"total_writeback":0,"rss":333422592,"unevictable":0,"total_inactive_anon":68124672,"total_pgpgin":292941,"active_anon":333594624,"total_active_file":0},"limit":540965302272},"name":"/SystemBenchmark-HgGsrz9s","networks":{"eth0":{"rx_bytes":17815940,"rx_packets":3409,"tx_packets":3823,"tx_bytes":460392,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"e3b6d0784806098c8868a73667a2a1aaf5fcaf8a80180420e1aefca260ab11a1","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":42},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":122850563945808967,"online_cpus":128,"cpu_usage":{"usage_in_usermode":32460000000,"usage_in_kernelmode":2980000000,"total_usage":35273807823,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35273722323,85500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2020-12-03T10:03:13.576722084Z"}

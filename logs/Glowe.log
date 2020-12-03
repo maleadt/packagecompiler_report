@@ -1,0 +1,129 @@
+################################################################################
+# PkgEval set-up: 2020-12-03T09:52:36.471
+#
+
+Julia Version 1.5.3
+Commit 788b2c77c1 (2020-11-09 13:37 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_DEPOT_PATH = /home/pkgeval/.another_julia:/usr/local/share/julia
+
+
+
+################################################################################
+# Installation: 2020-12-03T09:52:39.298
+#
+
+  Resolving package versions...
+  Installed Glowe ─ v0.1.1
+Updating `~/.another_julia/environments/v1.5/Project.toml`
+  [d04f5788] + Glowe v0.1.1
+Updating `~/.another_julia/environments/v1.5/Manifest.toml`
+  [d04f5788] + Glowe v0.1.1
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+   Building Glowe → `~/.another_julia/packages/Glowe/bI6qX/deps/build.log`
+
+
+################################################################################
+# Testing: 2020-12-03T09:52:43.065
+#
+
+
+    Testing Glowe
+Status `/tmp/jl_X3RxND/Project.toml`
+  [d04f5788] Glowe v0.1.1
+  [37e2e46d] LinearAlgebra
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_X3RxND/Manifest.toml`
+  [d04f5788] Glowe v0.1.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Model training: Error During Test at /home/pkgeval/.another_julia/packages/Glowe/bI6qX/test/runtests.jl:4
+  Got exception outside of a @test
+  LoadError: IOError: could not spawn `/home/pkgeval/.julia/packages/Glowe/bI6qX/src/../deps/src/GloVe-c/build/./vocab_count -max-vocab 100000 -min-count 5 -verbose 0`: no such file or directory (ENOENT)
+  Stacktrace:
+   [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:99
+   [2] #585 at ./process.jl:112 [inlined]
+   [3] setup_stdios(::Base.var"#585#586"{Cmd}, ::Array{Any,1}) at ./process.jl:196
+   [4] _spawn at ./process.jl:111 [inlined]
+   [5] _spawn(::Base.CmdRedirect, ::Array{Any,1}) at ./process.jl:139 (repeats 2 times)
+   [6] run(::Base.CmdRedirect; wait::Bool) at ./process.jl:439
+   [7] run at ./process.jl:438 [inlined]
+   [8] vocab_count(::String, ::String; max_vocab::Int64, min_count::Int64, verbose::Int64) at /home/pkgeval/.julia/packages/Glowe/bI6qX/src/interface.jl:36
+   [9] top-level scope at /home/pkgeval/.another_julia/packages/Glowe/bI6qX/test/train.jl:24
+   [10] include(::String) at ./client.jl:457
+   [11] top-level scope at /home/pkgeval/.another_julia/packages/Glowe/bI6qX/test/runtests.jl:5
+   [12] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [13] top-level scope at /home/pkgeval/.another_julia/packages/Glowe/bI6qX/test/runtests.jl:5
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.another_julia/packages/Glowe/bI6qX/test/train.jl:24
+  
+Test Summary:  | Error  Total
+Model training |     1      1
+ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/pkgeval/.another_julia/packages/Glowe/bI6qX/test/runtests.jl:4
+
+PkgEval failed: Package Glowe errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:20
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2020-12-03T09:52:50.798
+CPU usage: 14.60s (13.76s user, 0.88s kernel)
+
+Network usage:
+- eth0: 2.318 MiB received, 15.722 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":15,"op":"Read","minor":0},{"major":259,"value":17,"op":"Write","minor":0},{"major":259,"value":15,"op":"Sync","minor":0},{"major":259,"value":17,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":32,"op":"Total","minor":0},{"major":253,"value":15,"op":"Read","minor":2},{"major":253,"value":17,"op":"Write","minor":2},{"major":253,"value":15,"op":"Sync","minor":2},{"major":253,"value":17,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":32,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":1114112,"op":"Read","minor":0},{"major":259,"value":327680,"op":"Write","minor":0},{"major":259,"value":1114112,"op":"Sync","minor":0},{"major":259,"value":327680,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1441792,"op":"Total","minor":0},{"major":253,"value":1114112,"op":"Read","minor":2},{"major":253,"value":327680,"op":"Write","minor":2},{"major":253,"value":1114112,"op":"Sync","minor":2},{"major":253,"value":327680,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1441792,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":228954112,"max_usage":411824128,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":215560192,"inactive_file":675840,"inactive_anon":6623232,"total_pgfault":276771,"total_cache":7966720,"total_rss_huge":0,"total_active_anon":215728128,"total_pgmajfault":0,"pgpgin":169026,"rss_huge":0,"mapped_file":0,"total_inactive_file":675840,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":114455,"hierarchical_memsw_limit":0,"cache":7966720,"active_file":540672,"pgfault":276771,"total_mapped_file":0,"total_pgpgout":114455,"total_writeback":0,"rss":215560192,"unevictable":0,"total_inactive_anon":6623232,"total_pgpgin":169026,"active_anon":215728128,"total_active_file":540672},"limit":540965302272},"name":"/Glowe-NvbZYeJM","networks":{"eth0":{"rx_bytes":2430952,"rx_packets":241,"tx_packets":208,"tx_bytes":16099,"tx_dropped":0,"rx_dropped":0,"tx_errors":0,"rx_errors":0}},"id":"3c116a6419d92b0a9559f786cd386b2eda48fada085c49ec5a475aee11b77684","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":42},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":122771033455808967,"online_cpus":128,"cpu_usage":{"usage_in_usermode":13760000000,"usage_in_kernelmode":880000000,"total_usage":14604027376,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14604027376,0,0,0,0,0]}},"read":"2020-12-03T09:52:51.408640557Z"}

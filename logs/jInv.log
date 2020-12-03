@@ -1,0 +1,489 @@
+################################################################################
+# PkgEval set-up: 2020-12-03T12:12:05.193
+#
+
+Julia Version 1.5.3
+Commit 788b2c77c1 (2020-11-09 13:37 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_DEPOT_PATH = /home/pkgeval/.another_julia:/usr/local/share/julia
+
+
+
+################################################################################
+# Installation: 2020-12-03T12:12:08.251
+#
+
+  Resolving package versions...
+  Installed KrylovMethods ─ v0.6.0
+  Installed ParSpMatVec ─── v0.1.1
+  Installed jInv ────────── v1.0.0
+Updating `~/.another_julia/environments/v1.5/Project.toml`
+  [3dacf901] + jInv v1.0.0
+Updating `~/.another_julia/environments/v1.5/Manifest.toml`
+  [9a2cd570] + KrylovMethods v0.6.0
+  [ccf9b6e2] + ParSpMatVec v0.1.1
+  [3dacf901] + jInv v1.0.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building ParSpMatVec → `~/.another_julia/packages/ParSpMatVec/Rtbqp/deps/build.log`
+
+
+################################################################################
+# Testing: 2020-12-03T12:12:12.427
+#
+
+
+    Testing jInv
+Status `/tmp/jl_8gjV7G/Project.toml`
+  [9a2cd570] KrylovMethods v0.6.0
+  [ccf9b6e2] ParSpMatVec v0.1.1
+  [3dacf901] jInv v1.0.0
+  [8ba89e20] Distributed
+  [37e2e46d] LinearAlgebra
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_8gjV7G/Manifest.toml`
+  [9a2cd570] KrylovMethods v0.6.0
+  [ccf9b6e2] ParSpMatVec v0.1.1
+  [3dacf901] jInv v1.0.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+3-dimensional regular mesh of size [3, 4, 5]
+Number of cells:   60
+Number of faces:   [80, 75, 72] = 227
+Number of edges:   [90, 96, 100] = 286
+Number of nodes:   120
+Coordinate origin: [1.2, 0.0, 0.0]
+Domain size:       [1.2, 2.4, 0.0, 1.1, 0.0, 2.3]
+Cell size:         [0.39999999999999997, 0.275, 0.45999999999999996]
+2-dimensional regular mesh of size [3, 4]
+Number of cells:   12
+Number of faces:   [16, 15] = 31
+Number of edges:   [15, 16] = 31
+Number of nodes:   20
+Coordinate origin: [1.2, 0.0]
+Domain size:       [1.2, 2.4, 0.0, 1.1]
+Cell size:         [0.39999999999999997, 0.275]
+3-dimensional tensor mesh of size [4, 5, 6]
+Number of cells:   120
+Number of faces:   [150, 144, 140] = 434
+Number of edges:   [168, 175, 180] = 523
+Number of nodes:   210
+Coordinate origin: [0.0, 0.0, 0.0]
+Domain size:       2.0120969592253997m x 2.189954357641404m x 2.8914796761082964m
+Minimum cell size: 0.24641171218905678m x 0.16038967633325085m x 0.04155648331235495m
+Maximum cell size: 0.8122721890654248m x 0.7300392683888666m x 0.7966498064437837m
+	test cell-centered axes...passed
+	test nodal axes...passed
+	test cell-centered grid...passed
+	test nodal grid...passed
+	test face grid...passed
+	test edge grid...passed
+	test volume...passed
+	test area...passed
+	test length...passed
+	test counting...passed
+	test nodal gradient matrix...passed
+	test divergence matrix...passed
+	test curl matrix...passed
+	test face average matrix...passed
+	test edge average matrix...passed
+	testing differential operators for TensorMesh3D...passed!
+	testing differential operators for RegularMesh...passed!
+	testing differential operators for TensorMesh3D...passed!
+   test getInterpolationMatrix (RegularMesh) ...  dim=2 dim=3 passed
+   test getInterpolationMatrix (TensorMesh) ... passed
+	testing nodal averaging for TensorMesh3D...passed!
+	testing nodal averaging for RegularMesh...passed!
+	testing nodal averaging for TensorMesh3D...passed!
+	testing nodal averaging for RegularMesh...passed!
+	testing boundary nodes for TensorMesh3D...passed!
+
+	testing boundary nodes for RegularMesh...passed!
+
+	testing boundary nodes for RegularMesh...passed!
+
+	test getEdgeMassMatrix on RegularMesh
+	test getNodalMassMatrix on RegularMesh
+	test getFaceMassMatrix on RegularMesh
+	test getEdgeMassMatrix on TensorMesh3D
+	test getNodalMassMatrix on TensorMesh3D
+	test getFaceMassMatrix on TensorMesh3D
+	testing forward operators for RegularMesh...passed!
+	testing forward operators for RegularMesh...passed!
+	testing forward operators for RegularMesh...passed!
+	testing forward operators for RegularMesh...passed!
+	testing 2D elasticity operators for RegularMesh...passed!
+	testing 3D elasticity operators for RegularMesh...passed!
+WARNING: could not import Base.Test into Main
+        h	       E0	       E1	       O1	       O2	  OK?
+1.000e-01	7.335e-02	1.598e-16	0.000e+00	0.000e+00	    1
+1.000e-02	7.335e-03	1.065e-16	1.000e+00	1.761e-01	    1
+1.000e-03	7.335e-04	1.627e-16	1.000e+00	-1.840e-01	    1
+1.000e-04	7.335e-05	1.370e-16	1.000e+00	7.488e-02	    1
+1.000e-05	7.335e-06	1.140e-16	1.000e+00	7.972e-02	    1
+1.000e-06	7.335e-07	1.049e-16	1.000e+00	3.604e-02	    1
+1.000e-07	7.335e-08	8.588e-17	1.000e+00	8.694e-02	    1
+1.000e-08	7.335e-09	1.125e-16	1.000e+00	-1.174e-01	    1
+1.000e-09	7.335e-10	1.291e-16	1.000e+00	-5.958e-02	    1
+1.000e-10	7.335e-11	1.419e-16	1.000e+00	-4.119e-02	    1
+        h	       E0	       E1	       O1	       O2	  OK?
+1.000e-01	2.716e-01	1.629e-02	0.000e+00	0.000e+00	    0
+1.000e-02	2.569e-02	1.629e-04	1.024e+00	2.000e+00	    1
+1.000e-03	2.554e-03	1.629e-06	1.002e+00	2.000e+00	    1
+1.000e-04	2.553e-04	1.629e-08	1.000e+00	2.000e+00	    1
+1.000e-05	2.553e-05	1.629e-10	1.000e+00	2.000e+00	    1
+1.000e-06	2.553e-06	1.629e-12	1.000e+00	2.000e+00	    1
+1.000e-07	2.553e-07	1.614e-14	1.000e+00	2.004e+00	    1
+1.000e-08	2.553e-08	0.000e+00	1.000e+00	Inf	    1
+1.000e-09	2.553e-09	0.000e+00	1.000e+00	NaN	    1
+1.000e-10	2.553e-10	0.000e+00	1.000e+00	NaN	    1
+        h	       E0	       E1	       O1	       O2	  OK?
+1.000e-01	3.242e-02	7.505e-04	0.000e+00	0.000e+00	    0
+1.000e-02	3.250e-03	7.505e-06	9.989e-01	2.000e+00	    1
+1.000e-03	3.251e-04	7.505e-08	9.999e-01	2.000e+00	    1
+1.000e-04	3.251e-05	7.505e-10	1.000e+00	2.000e+00	    1
+1.000e-05	3.251e-06	7.505e-12	1.000e+00	2.000e+00	    1
+1.000e-06	3.251e-07	7.502e-14	1.000e+00	2.000e+00	    1
+1.000e-07	3.251e-08	8.206e-16	1.000e+00	1.961e+00	    1
+1.000e-08	3.251e-09	1.250e-16	1.000e+00	8.173e-01	    1
+1.000e-09	3.251e-10	9.573e-17	1.000e+00	1.157e-01	    1
+1.000e-10	3.251e-11	1.297e-16	1.000e+00	-1.319e-01	    1
+
+ i.LS	       F	       R	alpha[1]	   Jc/J0	 #Active
+  1.0	1.73e+02	0.00e+00	1.00e+00	1.00e+00	  0
+   .1	5.21e+00	5.21e+00			6.04e-02
+  2.0	5.21e+00	5.21e+00	1.00e+00	6.04e-02	  1
+   .1	3.59e+00	6.02e+00			5.57e-02
+  3.0	3.59e+00	6.02e+00	1.00e+00	5.57e-02	  2
+   .1	3.60e+00	6.00e+00			5.56e-02
+  4.0	3.60e+00	6.00e+00	1.00e+00	5.56e-02	  2
+   .1	3.60e+00	6.00e+00			5.56e-02
+  5.0	3.60e+00	6.00e+00	1.00e+00	5.56e-02	  2
+   .1	3.60e+00	6.00e+00			5.56e-02
+projGN reached desired accuracy at iteration 5.
+
+ i.LS	       F	       R	alpha[1]	   Jc/J0	 #Active
+  1.0	1.73e+02	0.00e+00	1.00e+00	1.00e+00	  0
+   .1	5.21e+00	5.21e+00			6.04e-02
+  2.0	5.21e+00	5.21e+00	1.00e+00	6.04e-02	  1
+   .1	3.59e+00	6.02e+00			5.57e-02
+  3.0	3.59e+00	6.02e+00	1.00e+00	5.57e-02	  2
+   .1	3.60e+00	6.00e+00			5.56e-02
+  4.0	3.60e+00	6.00e+00	1.00e+00	5.56e-02	  2
+   .1	3.60e+00	6.00e+00			5.56e-02
+  5.0	3.60e+00	6.00e+00	1.00e+00	5.56e-02	  2
+   .1	3.60e+00	6.00e+00			5.56e-02
+projGN reached desired accuracy at iteration 5.
+
+ i.LS	       F	       R	alpha[1]	   Jc/J0	 #Active
+  1.0	2.53e+01	0.00e+00	1.00e+00	1.00e+00	  0
+   .1	1.55e+00	3.34e+00			1.93e-01
+  2.0	1.55e+00	3.34e+00	1.00e+00	1.93e-01	  0
+   .1	1.50e+00	3.37e+00			1.92e-01
+  3.0	1.50e+00	3.37e+00	1.00e+00	1.92e-01	  0
+   .1	1.49e+00	3.38e+00			1.92e-01
+  4.0	1.49e+00	3.38e+00	1.00e+00	1.92e-01	  0
+   .1	1.49e+00	3.38e+00			1.92e-01
+  5.0	1.49e+00	3.38e+00	1.00e+00	1.92e-01	  0
+   .1	1.49e+00	3.38e+00			1.92e-01
+projGN reached desired accuracy at iteration 5.
+projGN reached desired accuracy at iteration 5.
+
+ i.LS	       F	       R	alpha[1]	   Jc/J0	 #Active
+  1.0	2.53e+01	0.00e+00	1.00e+00	1.00e+00	  0
+   .1	1.55e+00	3.35e+00			1.94e-01
+  2.0	1.55e+00	3.35e+00	1.00e+00	1.94e-01	  0
+   .1	1.49e+00	3.38e+00			1.92e-01
+  3.0	1.49e+00	3.38e+00	1.00e+00	1.92e-01	  0
+   .1	1.49e+00	3.37e+00			1.92e-01
+  4.0	1.49e+00	3.37e+00	1.00e+00	1.92e-01	  0
+   .1	1.49e+00	3.37e+00			1.92e-01
+  5.0	1.49e+00	3.37e+00	1.00e+00	1.92e-01	  0
+   .1	1.49e+00	3.37e+00			1.92e-01
+projGN iterated maxIter=5 times but reached only stepNorm of 0.00010458639698351924 instead 0.0001.
+projGN iterated maxIter=5 times but reached only stepNorm of 0.00010458639698351924 instead 0.0001.
+Starting projGNCG minimization with alpha 1 of 3.0
+alpha = 100.0
+
+ i.LS	       F	       R	alpha[1]	   Jc/J0	 #Active
+  1.0	2.53e+01	0.00e+00	1.00e+02	1.00e+00	  0
+   .1	2.28e+01	1.21e+00			9.49e-01
+  2.0	2.28e+01	1.21e+00	1.00e+02	9.49e-01	  0
+   .1	2.28e+01	1.21e+00			9.49e-01
+projGN iterated maxIter=2 times but reached only stepNorm of 0.0011225216156914223 instead 0.0001.
+[25.324432953402436, 22.83732269702315, 22.83768548631178]
+Starting projGNCG minimization with alpha 2 of 3.0
+alpha = 10.0
+
+ i.LS	       F	       R	alpha[1]	   Jc/J0	 #Active
+  1.0	2.28e+01	0.00e+00	1.00e+01	1.00e+00	  0
+   .1	1.03e+01	4.88e+00			6.65e-01
+  2.0	1.03e+01	4.88e+00	1.00e+01	6.65e-01	  0
+   .1	1.03e+01	4.87e+00			6.65e-01
+projGN iterated maxIter=2 times but reached only stepNorm of 0.0017329580169321013 instead 0.0001.
+[22.83768548631178, 10.314565555465727, 10.316534245565096]
+iteratedTikhonov exiting after reaching desired misfit
+Starting projGNCG minimization with alpha 1 of 3.0
+alpha = 100.0
+
+ i.LS	       F	       R	alpha[1]	   Jc/J0	 #Active
+  1.0	2.53e+01	0.00e+00	1.00e+02	1.00e+00	  0
+   .1	2.28e+01	1.21e+00			9.49e-01
+  2.0	2.28e+01	1.21e+00	1.00e+02	9.49e-01	  0
+   .1	2.28e+01	1.21e+00			9.49e-01
+projGN iterated maxIter=2 times but reached only stepNorm of 0.0011225216156914223 instead 0.0001.
+[25.324432953402436, 22.83732269702315, 22.83768548631178]
+Starting projGNCG minimization with alpha 2 of 3.0
+alpha = 10.0
+
+ i.LS	       F	       R	alpha[1]	   Jc/J0	 #Active
+  1.0	2.28e+01	0.00e+00	1.00e+01	1.00e+00	  0
+   .1	1.03e+01	4.88e+00			6.65e-01
+  2.0	1.03e+01	4.88e+00	1.00e+01	6.65e-01	  0
+   .1	1.03e+01	4.87e+00			6.65e-01
+projGN iterated maxIter=2 times but reached only stepNorm of 0.0017329580169321013 instead 0.0001.
+[22.83768548631178, 10.314565555465727, 10.316534245565096]
+iteratedTikhonov exiting after reaching desired misfit
+i.LS	       F	       R	alpha[1]	   Jc/J0	 #Active
+  1.0	2.53e+01	6.52e-01	1.00e+00	1.00e+00	  0
+   .1	6.84e+00	1.04e+01			6.66e-01
+  2.0	6.84e+00	1.04e+01	1.00e+00	6.66e-01	  1
+   .1	1.14e+01	4.70e+00			6.20e-01
+  3.0	1.14e+01	4.70e+00	1.00e+00	6.20e-01	  0
+   .1	4.72e+00	4.61e+00			3.59e-01
+  4.0	4.72e+00	4.61e+00	1.00e+00	3.59e-01	  1
+   .1	8.00e+00	8.66e+00			6.41e-01
+   .2	5.07e+00	1.33e+00			2.47e-01
+  5.0	5.07e+00	1.33e+00	1.00e+00	2.47e-01	  0
+   .1	3.65e+00	1.12e+01			5.73e-01
+   .2	3.15e+00	3.24e+00			2.46e-01
+  6.0	3.15e+00	3.24e+00	1.00e+00	2.46e-01	  1
+   .1	7.35e+00	1.29e+01			7.79e-01
+   .2	3.68e+00	2.06e+00			2.21e-01
+  7.0	3.68e+00	2.06e+00	1.00e+00	2.21e-01	  0
+   .1	3.48e+00	1.06e+01			5.43e-01
+   .2	2.37e+00	2.43e+00			1.85e-01
+  8.0	2.37e+00	2.43e+00	1.00e+00	1.85e-01	  0
+   .1	5.44e+00	9.98e+00			5.94e-01
+   .2	2.72e+00	1.92e+00			1.79e-01
+  9.0	2.72e+00	1.92e+00	1.00e+00	1.79e-01	  0
+   .1	2.95e+00	8.08e+00			4.25e-01
+   .2	1.93e+00	2.01e+00			1.51e-01
+ 10.0	1.93e+00	2.01e+00	1.00e+00	1.51e-01	  0
+   .1	4.31e+00	8.06e+00			4.76e-01
+   .2	2.18e+00	1.85e+00			1.55e-01
+   .3	1.82e+00	1.13e+00			1.13e-01
+ 11.0	1.82e+00	1.13e+00	1.00e+00	1.13e-01	  0
+   .1	1.30e+00	1.58e+00			1.11e-01
+ 12.0	1.30e+00	1.58e+00	1.00e+00	1.11e-01	  0
+   .1	2.90e+00	5.81e+00			3.36e-01
+   .2	1.46e+00	2.01e+00			1.34e-01
+   .3	1.22e+00	1.37e+00			9.99e-02
+ 13.0	1.22e+00	1.37e+00	1.00e+00	9.99e-02	  0
+   .1	1.86e+00	3.40e+00			2.02e-01
+   .2	1.30e+00	1.77e+00			1.18e-01
+   .3	1.20e+00	1.42e+00			1.01e-01
+   .4	1.20e+00	1.35e+00			9.82e-02
+ 14.0	1.20e+00	1.35e+00	1.00e+00	9.82e-02	  0
+   .1	1.13e+00	1.46e+00			9.99e-02
+   .2	1.16e+00	1.39e+00			9.81e-02
+ 15.0	1.16e+00	1.39e+00	1.00e+00	9.81e-02	  0
+   .1	1.38e+00	2.12e+00			1.35e-01
+   .2	1.18e+00	1.54e+00			1.04e-01
+   .3	1.14e+00	1.41e+00			9.83e-02
+   .4	1.14e+00	1.39e+00			9.74e-02
+ 16.0	1.14e+00	1.39e+00	1.00e+00	9.74e-02	  0
+   .1	1.10e+00	1.45e+00			9.81e-02
+   .2	1.12e+00	1.41e+00			9.74e-02
+ 17.0	1.12e+00	1.41e+00	1.00e+00	9.74e-02	  0
+   .1	1.20e+00	1.68e+00			1.11e-01
+   .2	1.13e+00	1.47e+00			9.98e-02
+   .3	1.11e+00	1.42e+00			9.75e-02
+   .4	1.12e+00	1.41e+00			9.72e-02
+ 18.0	1.12e+00	1.41e+00	1.00e+00	9.72e-02	  0
+   .1	1.09e+00	1.44e+00			9.74e-02
+   .2	1.10e+00	1.42e+00			9.72e-02
+ 19.0	1.10e+00	1.42e+00	1.00e+00	9.72e-02	  0
+   .1	1.13e+00	1.53e+00			1.02e-01
+   .2	1.10e+00	1.45e+00			9.80e-02
+   .3	1.10e+00	1.43e+00			9.72e-02
+   .4	1.10e+00	1.42e+00			9.71e-02
+ 20.0	1.10e+00	1.42e+00	1.00e+00	9.71e-02	  0
+   .1	1.08e+00	1.44e+00			9.72e-02
+   .2	1.09e+00	1.43e+00			9.71e-02
+projSD iterated maxIter=20 times but reached only stepNorm of 0.011402582497669178 instead 0.0001.
+projSD iterated maxIter=20 times but reached only stepNorm of 0.011402582497669178 instead 0.0001.
+---jInv.InverseSolve.InverseParam---
+inverse mesh type:    RegularMesh
+number of cells:      1024
+model function:       fMod
+maxStep:              1.0
+pcgMaxIter:           10
+pcgTol:               0.1
+minUpdate:            0.0001
+maxIter:              10
+===  Example 2D DivSigGrad ====
+testIterativeWrapper.jl: Error During Test at /home/pkgeval/.another_julia/packages/jInv/Tb2Rx/test/LinearSolvers/runtests.jl:3
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/ParSpMatVec/Rtbqp/deps/builds/ParSpMatVec"
+  /home/pkgeval/.julia/packages/ParSpMatVec/Rtbqp/deps/builds/ParSpMatVec.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] Ac_mul_B!(::Float64, ::SparseMatrixCSC{Float64,Int64}, ::Array{Float64,1}, ::Float64, ::Array{Float64,1}, ::Int64) at /home/pkgeval/.julia/packages/ParSpMatVec/Rtbqp/src/Ac_mul_B.jl:29
+   [2] macro expansion at ./timing.jl:233 [inlined]
+   [3] (::jInv.LinearSolvers.var"#4#10"{SparseMatrixCSC{Float64,Int64},IterativeSolver,Array{Float64,1}})(::Array{Float64,1}) at /home/pkgeval/.julia/packages/jInv/Tb2Rx/src/LinearSolvers/iterativeWrapper.jl:110
+   [4] cg(::jInv.LinearSolvers.var"#4#10"{SparseMatrixCSC{Float64,Int64},IterativeSolver,Array{Float64,1}}, ::Array{Float64,1}; tol::Float64, maxIter::Int64, M::jInv.LinearSolvers.var"#2#8"{SparseMatrixCSC{Float64,Int64},IterativeSolver}, x::Array{Any,1}, out::Int64, storeInterm::Bool) at /home/pkgeval/.julia/packages/KrylovMethods/Vz3XT/src/cg.jl:70
+   [5] solveLinearSystem!(::SparseMatrixCSC{Float64,Int64}, ::Array{Float64,1}, ::Array{Float64,1}, ::IterativeSolver, ::Int64) at /home/pkgeval/.julia/packages/jInv/Tb2Rx/src/LinearSolvers/iterativeWrapper.jl:126
+   [6] solveLinearSystem at /home/pkgeval/.julia/packages/jInv/Tb2Rx/src/LinearSolvers/LinearSolvers.jl:24 [inlined] (repeats 2 times)
+   [7] top-level scope at /home/pkgeval/.another_julia/packages/jInv/Tb2Rx/test/LinearSolvers/testIterativeWrapper.jl:21
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at /home/pkgeval/.another_julia/packages/jInv/Tb2Rx/test/LinearSolvers/runtests.jl:4
+   [10] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [11] top-level scope at /home/pkgeval/.another_julia/packages/jInv/Tb2Rx/test/LinearSolvers/runtests.jl:4
+   [12] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [13] top-level scope at /home/pkgeval/.another_julia/packages/jInv/Tb2Rx/test/LinearSolvers/runtests.jl:3
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at /home/pkgeval/.another_julia/packages/jInv/Tb2Rx/test/runtests.jl:11
+   [16] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [17] top-level scope at /home/pkgeval/.another_julia/packages/jInv/Tb2Rx/test/runtests.jl:7
+   [18] include(::String) at ./client.jl:457
+   [19] top-level scope at none:6
+   [20] eval(::Module, ::Any) at ./boot.jl:331
+   [21] exec_options(::Base.JLOptions) at ./client.jl:272
+   [22] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.another_julia/packages/jInv/Tb2Rx/test/LinearSolvers/testIterativeWrapper.jl:21
+  
+===  Example 2D DivSigGrad ====
+testBlockIterativeWrapper.jl: Error During Test at /home/pkgeval/.another_julia/packages/jInv/Tb2Rx/test/LinearSolvers/runtests.jl:6
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/ParSpMatVec/Rtbqp/deps/builds/ParSpMatVec"
+  /home/pkgeval/.julia/packages/ParSpMatVec/Rtbqp/deps/builds/ParSpMatVec.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] Ac_mul_B!(::Float64, ::SparseMatrixCSC{Float64,Int64}, ::Array{Float64,2}, ::Float64, ::Array{Float64,2}, ::Int64) at /home/pkgeval/.julia/packages/ParSpMatVec/Rtbqp/src/Ac_mul_B.jl:29
+   [2] macro expansion at ./timing.jl:233 [inlined]
+   [3] (::jInv.LinearSolvers.var"#17#23"{SparseMatrixCSC{Float64,Int64},BlockIterativeSolver,Array{Float64,2}})(::Array{Float64,2}) at /home/pkgeval/.julia/packages/jInv/Tb2Rx/src/LinearSolvers/blockIterativeWrapper.jl:115
+   [4] blockCG(::jInv.LinearSolvers.var"#17#23"{SparseMatrixCSC{Float64,Int64},BlockIterativeSolver,Array{Float64,2}}, ::Array{Float64,2}; X::Array{Float64,2}, M::jInv.LinearSolvers.var"#15#21"{SparseMatrixCSC{Float64,Int64},BlockIterativeSolver}, maxIter::Int64, tol::Float64, ortho::Bool, pinvTol::Float64, out::Int64, storeInterm::Bool) at /home/pkgeval/.julia/packages/KrylovMethods/Vz3XT/src/blockCG.jl:80
+   [5] solveLinearSystem!(::SparseMatrixCSC{Float64,Int64}, ::Array{Float64,2}, ::Array{Float64,2}, ::BlockIterativeSolver, ::Int64) at /home/pkgeval/.julia/packages/jInv/Tb2Rx/src/LinearSolvers/blockIterativeWrapper.jl:131
+   [6] solveLinearSystem at /home/pkgeval/.julia/packages/jInv/Tb2Rx/src/LinearSolvers/LinearSolvers.jl:24 [inlined] (repeats 2 times)
+   [7] top-level scope at /home/pkgeval/.another_julia/packages/jInv/Tb2Rx/test/LinearSolvers/testBlockIterativeWrapper.jl:20
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at /home/pkgeval/.another_julia/packages/jInv/Tb2Rx/test/LinearSolvers/runtests.jl:7
+   [10] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [11] top-level scope at /home/pkgeval/.another_julia/packages/jInv/Tb2Rx/test/LinearSolvers/runtests.jl:7
+   [12] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [13] top-level scope at /home/pkgeval/.another_julia/packages/jInv/Tb2Rx/test/LinearSolvers/runtests.jl:3
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at /home/pkgeval/.another_julia/packages/jInv/Tb2Rx/test/runtests.jl:11
+   [16] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [17] top-level scope at /home/pkgeval/.another_julia/packages/jInv/Tb2Rx/test/runtests.jl:7
+   [18] include(::String) at ./client.jl:457
+   [19] top-level scope at none:6
+   [20] eval(::Module, ::Any) at ./boot.jl:331
+   [21] exec_options(::Base.JLOptions) at ./client.jl:272
+   [22] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.another_julia/packages/jInv/Tb2Rx/test/LinearSolvers/testBlockIterativeWrapper.jl:20
+  
+===  Test Julia wrapper with symmetric (real) matrix ====
+nrhs=1, issparse(rhs)=false : sym=0, sym=1, sym=2, 
+nrhs=1, issparse(rhs)=true : sym=0, sym=1, sym=2, 
+nrhs=3, issparse(rhs)=false : sym=0, sym=1, sym=2, 
+nrhs=3, issparse(rhs)=true : sym=0, sym=1, sym=2, 
+
+
+===  Test Julia wrapper with shifted (complex) Laplacian ====
+nrhs=1, issparse(rhs)=false : sym=0, sym=1, sym=2, 
+nrhs=1, issparse(rhs)=true : sym=0, sym=1, sym=2, 
+nrhs=3, issparse(rhs)=false : sym=0, sym=1, sym=2, 
+nrhs=3, issparse(rhs)=true : sym=0, sym=1, sym=2, 
+
+
+===  Test Julia Wrapper: nonsymmetric matrices ====
+===  End Test Julia Wrapper ====
+Test Summary:                    | Pass  Error  Total
+jInv                             |  263      2    265
+  Mesh                           |  144           144
+  ForwardShare                   |   29            29
+  Utils                          |   19            19
+  InverseSolve                   |   43            43
+  LinearSolvers                  |   28      2     30
+    testIterativeWrapper.jl      |           1      1
+    testBlockIterativeWrapper.jl |           1      1
+    testJuliaWrapper.jl          |   28            28
+ERROR: LoadError: Some tests did not pass: 263 passed, 0 failed, 2 errored, 0 broken.
+in expression starting at /home/pkgeval/.another_julia/packages/jInv/Tb2Rx/test/runtests.jl:6
+
+PkgEval failed: Package jInv errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:20
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2020-12-03T12:14:06.28
+CPU usage: 120.85s (119.29s user, 1.90s kernel)
+
+Network usage:
+- eth0: 12.821 MiB received, 65.323 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":8,"op":"Read","minor":0},{"major":259,"value":15,"op":"Write","minor":0},{"major":259,"value":8,"op":"Sync","minor":0},{"major":259,"value":15,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":23,"op":"Total","minor":0},{"major":253,"value":8,"op":"Read","minor":2},{"major":253,"value":15,"op":"Write","minor":2},{"major":253,"value":8,"op":"Sync","minor":2},{"major":253,"value":15,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":23,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":647168,"op":"Read","minor":0},{"major":259,"value":143360,"op":"Write","minor":0},{"major":259,"value":647168,"op":"Sync","minor":0},{"major":259,"value":143360,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":790528,"op":"Total","minor":0},{"major":253,"value":647168,"op":"Read","minor":2},{"major":253,"value":143360,"op":"Write","minor":2},{"major":253,"value":647168,"op":"Sync","minor":2},{"major":253,"value":143360,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":790528,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":228302848,"max_usage":640417792,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":198467584,"inactive_file":540672,"inactive_anon":22708224,"total_pgfault":822096,"total_cache":23678976,"total_rss_huge":0,"total_active_anon":198696960,"total_pgmajfault":0,"pgpgin":296406,"rss_huge":0,"mapped_file":0,"total_inactive_file":540672,"dirty":0,"total_unevictable":0,"total_dirty":0,"writeback":0,"pgpgout":242167,"hierarchical_memsw_limit":0,"cache":23678976,"active_file":135168,"pgfault":822096,"total_mapped_file":0,"total_pgpgout":242167,"total_writeback":0,"rss":198467584,"unevictable":0,"total_inactive_anon":22708224,"total_pgpgin":296406,"active_anon":198696960,"total_active_file":135168},"limit":540965302272},"name":"/jInv-qn5P7tOm","networks":{"eth0":{"rx_bytes":13443780,"rx_packets":1088,"tx_packets":903,"tx_bytes":66891,"tx_dropped":0,"rx_dropped":5,"tx_errors":0,"rx_errors":0}},"id":"18ab640b8c5cbe7d881073eff859984881820a983687909ba72f8d4c55a0780b","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":42},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":123854096385808967,"online_cpus":128,"cpu_usage":{"usage_in_usermode":119290000000,"usage_in_kernelmode":1900000000,"total_usage":120846278063,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,72056106,120774221957,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2020-12-03T12:14:06.286697845Z"}

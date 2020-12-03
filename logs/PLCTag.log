@@ -1,0 +1,232 @@
+################################################################################
+# PkgEval set-up: 2020-12-03T14:45:40.123
+#
+
+Julia Version 1.5.3
+Commit 788b2c77c1 (2020-11-09 13:37 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_DEPOT_PATH = /home/pkgeval/.another_julia:/usr/local/share/julia
+
+
+
+################################################################################
+# Installation: 2020-12-03T14:45:43.01
+#
+
+  Resolving package versions...
+  Installed Clang_jll ────────── v9.0.1+4
+  Installed URIParser ────────── v0.4.1
+  Installed CMakeWrapper ─────── v0.2.4
+  Installed PLCTag ───────────── v0.1.1
+  Installed CMake ────────────── v1.2.0
+  Installed CBindingGen ──────── v0.4.1
+  Installed OrderedCollections ─ v1.3.2
+  Installed libLLVM_jll ──────── v9.0.1+5
+  Installed CBinding ─────────── v0.9.3
+  Installed BinDeps ──────────── v1.0.2
+  Installed UnPack ───────────── v1.0.2
+  Installed Parameters ───────── v0.12.1
+Updating `~/.another_julia/environments/v1.5/Project.toml`
+  [c147798f] + PLCTag v0.1.1
+Updating `~/.another_julia/environments/v1.5/Manifest.toml`
+  [9e28174c] + BinDeps v1.0.2
+  [d43a6710] + CBinding v0.9.3
+  [308a6e0c] + CBindingGen v0.4.1
+  [631607c0] + CMake v1.2.0
+  [d5fb7624] + CMakeWrapper v0.2.4
+  [0ee61d77] + Clang_jll v9.0.1+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [c147798f] + PLCTag v0.1.1
+  [d96e819e] + Parameters v0.12.1
+  [30578b45] + URIParser v0.4.1
+  [3a884ed6] + UnPack v1.0.2
+  [8f36deef] + libLLVM_jll v9.0.1+5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building CMake ─→ `~/.another_julia/packages/CMake/ULbyn/deps/build.log`
+   Building PLCTag → `~/.another_julia/packages/PLCTag/9jSKn/deps/build.log`
+
+
+################################################################################
+# Testing: 2020-12-03T14:47:33.33
+#
+
+
+    Testing PLCTag
+Status `/tmp/jl_GVExqF/Project.toml`
+  [9e28174c] BinDeps v1.0.2
+  [d43a6710] CBinding v0.9.3
+  [308a6e0c] CBindingGen v0.4.1
+  [d5fb7624] CMakeWrapper v0.2.4
+  [c147798f] PLCTag v0.1.1
+  [9a3f8284] Random
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Status `/tmp/jl_GVExqF/Manifest.toml`
+  [9e28174c] BinDeps v1.0.2
+  [d43a6710] CBinding v0.9.3
+  [308a6e0c] CBindingGen v0.4.1
+  [631607c0] CMake v1.2.0
+  [d5fb7624] CMakeWrapper v0.2.4
+  [0ee61d77] Clang_jll v9.0.1+4
+  [bac558e1] OrderedCollections v1.3.2
+  [c147798f] PLCTag v0.1.1
+  [d96e819e] Parameters v0.12.1
+  [30578b45] URIParser v0.4.1
+  [3a884ed6] UnPack v1.0.2
+  [8f36deef] libLLVM_jll v9.0.1+5
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Selecting ControlLogix simulator.
+Low-level API: Error During Test at /home/pkgeval/.another_julia/packages/PLCTag/9jSKn/test/with-server.jl:49
+  Test threw exception
+  Expression: unsafe_string(LibPLCTag.plc_tag_decode_error(LibPLCTag.PLCTAG_STATUS_OK)) == "PLCTAG_STATUS_OK"
+  could not load library "/home/pkgeval/.julia/packages/PLCTag/9jSKn/deps/usr/lib/libplctag.so"
+  /home/pkgeval/.julia/packages/PLCTag/9jSKn/deps/usr/lib/libplctag.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] macro expansion at /home/pkgeval/.julia/packages/CBinding/g8bfg/src/cfunction.jl:98 [inlined]
+   [2] _ccall at /home/pkgeval/.julia/packages/CBinding/g8bfg/src/cfunction.jl:91 [inlined]
+   [3] DeferredPtr at /home/pkgeval/.julia/packages/CBinding/g8bfg/src/cfunction.jl:71 [inlined]
+   [4] DeferredPtr at /home/pkgeval/.julia/packages/CBinding/g8bfg/src/cfunction.jl:70 [inlined]
+   [5] plc_tag_decode_error(::Int64) at /home/pkgeval/.julia/packages/CBinding/g8bfg/src/cbindings.jl:79
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/PLCTag/9jSKn/test/with-server.jl:49
+   [7] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [8] top-level scope at /home/pkgeval/.another_julia/packages/PLCTag/9jSKn/test/with-server.jl:49
+   [9] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [10] top-level scope at /home/pkgeval/.another_julia/packages/PLCTag/9jSKn/test/with-server.jl:36
+  
+Low-level API: Error During Test at /home/pkgeval/.another_julia/packages/PLCTag/9jSKn/test/with-server.jl:48
+  Got exception outside of a @test
+  could not load library "/home/pkgeval/.julia/packages/PLCTag/9jSKn/deps/usr/lib/libplctag.so"
+  /home/pkgeval/.julia/packages/PLCTag/9jSKn/deps/usr/lib/libplctag.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] macro expansion at /home/pkgeval/.julia/packages/CBinding/g8bfg/src/cfunction.jl:98 [inlined]
+   [2] _ccall at /home/pkgeval/.julia/packages/CBinding/g8bfg/src/cfunction.jl:91 [inlined]
+   [3] DeferredPtr at /home/pkgeval/.julia/packages/CBinding/g8bfg/src/cfunction.jl:71 [inlined]
+   [4] DeferredPtr at /home/pkgeval/.julia/packages/CBinding/g8bfg/src/cfunction.jl:70 [inlined]
+   [5] plc_tag_create at /home/pkgeval/.julia/packages/CBinding/g8bfg/src/cbindings.jl:79 [inlined]
+   [6] (::var"#3#9"{MersenneTwister,String,Array{Any,1}})(::Tuple{Symbol,Int64}) at /home/pkgeval/.another_julia/packages/PLCTag/9jSKn/test/with-server.jl:55
+   [7] iterate at ./generator.jl:47 [inlined]
+   [8] _collect(::Array{Tuple{Symbol,Int64},1}, ::Base.Generator{Array{Tuple{Symbol,Int64},1},var"#3#9"{MersenneTwister,String,Array{Any,1}}}, ::Base.EltypeUnknown, ::Base.HasShape{1}) at ./array.jl:699
+   [9] collect_similar(::Array{Tuple{Symbol,Int64},1}, ::Base.Generator{Array{Tuple{Symbol,Int64},1},var"#3#9"{MersenneTwister,String,Array{Any,1}}}) at ./array.jl:628
+   [10] map(::Function, ::Array{Tuple{Symbol,Int64},1}) at ./abstractarray.jl:2162
+   [11] top-level scope at /home/pkgeval/.another_julia/packages/PLCTag/9jSKn/test/with-server.jl:51
+   [12] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [13] top-level scope at /home/pkgeval/.another_julia/packages/PLCTag/9jSKn/test/with-server.jl:49
+   [14] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [15] top-level scope at /home/pkgeval/.another_julia/packages/PLCTag/9jSKn/test/with-server.jl:36
+   [16] include(::String) at ./client.jl:457
+   [17] top-level scope at /home/pkgeval/.another_julia/packages/PLCTag/9jSKn/test/runtests.jl:7
+   [18] include(::String) at ./client.jl:457
+   [19] top-level scope at none:6
+   [20] eval(::Module, ::Any) at ./boot.jl:331
+   [21] exec_options(::Base.JLOptions) at ./client.jl:272
+   [22] _start() at ./client.jl:506
+  
+High-level API: Error During Test at /home/pkgeval/.another_julia/packages/PLCTag/9jSKn/test/with-server.jl:114
+  Got exception outside of a @test
+  could not load library "/home/pkgeval/.julia/packages/PLCTag/9jSKn/deps/usr/lib/libplctag.so"
+  /home/pkgeval/.julia/packages/PLCTag/9jSKn/deps/usr/lib/libplctag.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] macro expansion at /home/pkgeval/.julia/packages/CBinding/g8bfg/src/cfunction.jl:98 [inlined]
+   [2] _ccall at /home/pkgeval/.julia/packages/CBinding/g8bfg/src/cfunction.jl:91 [inlined]
+   [3] DeferredPtr at /home/pkgeval/.julia/packages/CBinding/g8bfg/src/cfunction.jl:71 [inlined]
+   [4] DeferredPtr at /home/pkgeval/.julia/packages/CBinding/g8bfg/src/cfunction.jl:70 [inlined]
+   [5] plc_tag_create at /home/pkgeval/.julia/packages/CBinding/g8bfg/src/cbindings.jl:79 [inlined]
+   [6] PLCRef{Int16}(::PLC, ::String, ::Int64; timeout::Int64) at /home/pkgeval/.julia/packages/PLCTag/9jSKn/src/PLCTag.jl:39
+   [7] PLCRef{Int16}(::PLC, ::String, ::Int64) at /home/pkgeval/.julia/packages/PLCTag/9jSKn/src/PLCTag.jl:35
+   [8] (::var"#6#12"{PLC})(::Tuple{Symbol,Int64}) at /home/pkgeval/.another_julia/packages/PLCTag/9jSKn/test/with-server.jl:125
+   [9] iterate at ./generator.jl:47 [inlined]
+   [10] _collect(::Array{Tuple{Symbol,Int64},1}, ::Base.Generator{Array{Tuple{Symbol,Int64},1},var"#6#12"{PLC}}, ::Base.EltypeUnknown, ::Base.HasShape{1}) at ./array.jl:699
+   [11] collect_similar(::Array{Tuple{Symbol,Int64},1}, ::Base.Generator{Array{Tuple{Symbol,Int64},1},var"#6#12"{PLC}}) at ./array.jl:628
+   [12] map(::Function, ::Array{Tuple{Symbol,Int64},1}) at ./abstractarray.jl:2162
+   [13] top-level scope at /home/pkgeval/.another_julia/packages/PLCTag/9jSKn/test/with-server.jl:123
+   [14] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [15] top-level scope at /home/pkgeval/.another_julia/packages/PLCTag/9jSKn/test/with-server.jl:115
+   [16] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [17] top-level scope at /home/pkgeval/.another_julia/packages/PLCTag/9jSKn/test/with-server.jl:36
+   [18] include(::String) at ./client.jl:457
+   [19] top-level scope at /home/pkgeval/.another_julia/packages/PLCTag/9jSKn/test/runtests.jl:7
+   [20] include(::String) at ./client.jl:457
+   [21] top-level scope at none:6
+   [22] eval(::Module, ::Any) at ./boot.jl:331
+   [23] exec_options(::Base.JLOptions) at ./client.jl:272
+   [24] _start() at ./client.jl:506
+  
+Test Summary:    | Error  Total
+PLCTag           |     3      3
+  Low-level API  |     2      2
+  High-level API |     1      1
+ERROR: LoadError: LoadError: Some tests did not pass: 0 passed, 0 failed, 3 errored, 0 broken.
+in expression starting at /home/pkgeval/.another_julia/packages/PLCTag/9jSKn/test/with-server.jl:35
+in expression starting at /home/pkgeval/.another_julia/packages/PLCTag/9jSKn/test/runtests.jl:7
+
+PkgEval failed: Package PLCTag errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:20
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2020-12-03T14:47:45.47
+CPU usage: 121.74s (113.62s user, 8.49s kernel)
+
+Network usage:
+- eth0: 39.407 MiB received, 779.717 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":16,"op":"Read","minor":0},{"major":259,"value":132,"op":"Write","minor":0},{"major":259,"value":16,"op":"Sync","minor":0},{"major":259,"value":132,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":148,"op":"Total","minor":0},{"major":253,"value":16,"op":"Read","minor":2},{"major":253,"value":130,"op":"Write","minor":2},{"major":253,"value":16,"op":"Sync","minor":2},{"major":253,"value":130,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":146,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":507904,"op":"Read","minor":0},{"major":259,"value":2453504,"op":"Write","minor":0},{"major":259,"value":507904,"op":"Sync","minor":0},{"major":259,"value":2453504,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":2961408,"op":"Total","minor":0},{"major":253,"value":507904,"op":"Read","minor":2},{"major":253,"value":2453504,"op":"Write","minor":2},{"major":253,"value":507904,"op":"Sync","minor":2},{"major":253,"value":2453504,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":2961408,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":374497280,"max_usage":936464384,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":213602304,"inactive_file":405504,"inactive_anon":90832896,"total_pgfault":2047584,"total_cache":144031744,"total_rss_huge":0,"total_active_anon":266280960,"total_pgmajfault":0,"pgpgin":1184403,"rss_huge":0,"mapped_file":0,"total_inactive_file":405504,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":1097064,"hierarchical_memsw_limit":0,"cache":144031744,"active_file":0,"pgfault":2047584,"total_mapped_file":0,"total_pgpgout":1097064,"total_writeback":0,"rss":213602304,"unevictable":0,"total_inactive_anon":90832896,"total_pgpgin":1184403,"active_anon":266280960,"total_active_file":0},"limit":540965302272},"name":"/PLCTag-hKIz87dz","networks":{"eth0":{"rx_bytes":41321227,"rx_packets":27796,"tx_packets":14067,"tx_bytes":798430,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"95b70c0da14357391896d422265317138e1da0d4529480d1554e5993167dee72","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":42},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":125032369315808967,"online_cpus":128,"cpu_usage":{"usage_in_usermode":113620000000,"usage_in_kernelmode":8490000000,"total_usage":121738893120,"percpu_usage":[0,121738760560,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,132560,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2020-12-03T14:47:45.476651751Z"}

@@ -1,0 +1,161 @@
+################################################################################
+# PkgEval set-up: 2020-12-03T13:19:37.206
+#
+
+Julia Version 1.5.3
+Commit 788b2c77c1 (2020-11-09 13:37 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_DEPOT_PATH = /home/pkgeval/.another_julia:/usr/local/share/julia
+
+
+
+################################################################################
+# Installation: 2020-12-03T13:19:40.848
+#
+
+  Resolving package versions...
+  Installed Mocking ────── v0.7.1
+  Installed Stardates ──── v1.0.2
+  Installed Zlib_jll ───── v1.2.11+18
+  Installed Libiconv_jll ─ v1.16.0+7
+  Installed XML2_jll ───── v2.9.10+3
+  Installed ExprTools ──── v0.1.3
+  Installed JLLWrappers ── v1.1.3
+  Installed TimeZones ──── v0.10.5
+  Installed EzXML ──────── v1.1.0
+  Installed Artifacts ──── v1.3.0
+Updating `~/.another_julia/environments/v1.5/Project.toml`
+  [509f810d] + Stardates v1.0.2
+Updating `~/.another_julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [e2ba6199] + ExprTools v0.1.3
+  [8f5d6c58] + EzXML v1.1.0
+  [692b3bcd] + JLLWrappers v1.1.3
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [78c3b35d] + Mocking v0.7.1
+  [509f810d] + Stardates v1.0.2
+  [f269a46b] + TimeZones v0.10.5
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building TimeZones → `~/.another_julia/packages/TimeZones/joMm3/deps/build.log`
+┌ Error: Error building `TimeZones`: 
+│ ERROR: LoadError: IOError: mkdir: no such file or directory (ENOENT)
+│ Stacktrace:
+│  [1] uv_error at ./libuv.jl:97 [inlined]
+│  [2] mkdir(::String; mode::UInt16) at ./file.jl:177
+│  [3] mkdir at ./file.jl:170 [inlined]
+│  [4] build(::String) at /home/pkgeval/.julia/packages/TimeZones/joMm3/src/tzdata/build.jl:72
+│  [5] build(::String; force::Bool) at /home/pkgeval/.julia/packages/TimeZones/joMm3/src/build.jl:11
+│  [6] build at /home/pkgeval/.julia/packages/TimeZones/joMm3/src/build.jl:11 [inlined] (repeats 2 times)
+│  [7] top-level scope at /home/pkgeval/.another_julia/packages/TimeZones/joMm3/deps/build.jl:3
+│  [8] include(::String) at ./client.jl:457
+│  [9] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.another_julia/packages/TimeZones/joMm3/deps/build.jl:3
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+
+
+################################################################################
+# Testing: 2020-12-03T13:19:51.382
+#
+
+
+    Testing Stardates
+Status `/tmp/jl_laziNE/Project.toml`
+  [509f810d] Stardates v1.0.2
+  [f269a46b] TimeZones v0.10.5
+  [ade2ca70] Dates
+  [de0858da] Printf
+  [8dfed614] Test
+Status `/tmp/jl_laziNE/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [e2ba6199] ExprTools v0.1.3
+  [8f5d6c58] EzXML v1.1.0
+  [692b3bcd] JLLWrappers v1.1.3
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [78c3b35d] Mocking v0.7.1
+  [509f810d] Stardates v1.0.2
+  [f269a46b] TimeZones v0.10.5
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+ERROR: LoadError: LoadError: ArgumentError: Unable to find time zone "America/Los_Angeles". Try running `TimeZones.build()`.
+Stacktrace:
+ [1] (::TimeZones.var"#3#4"{String})() at /home/pkgeval/.julia/packages/TimeZones/joMm3/src/types/timezone.jl:56
+ [2] get!(::TimeZones.var"#3#4"{String}, ::Dict{String,Tuple{TimeZone,TimeZones.Class}}, ::String) at ./dict.jl:450
+ [3] TimeZone(::String, ::TimeZones.Class) at /home/pkgeval/.julia/packages/TimeZones/joMm3/src/types/timezone.jl:46 (repeats 2 times)
+ [4] @tz_str(::LineNumberNode, ::Module, ::Any) at /home/pkgeval/.julia/packages/TimeZones/joMm3/src/types/timezone.jl:86
+ [5] include(::String) at ./client.jl:457
+ [6] top-level scope at none:6
+in expression starting at /home/pkgeval/.another_julia/packages/Stardates/PzsvW/test/runtests.jl:16
+in expression starting at /home/pkgeval/.another_julia/packages/Stardates/PzsvW/test/runtests.jl:5
+
+PkgEval failed: Package Stardates errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:20
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2020-12-03T13:19:58.876
+CPU usage: 21.62s (20.21s user, 1.46s kernel)
+
+Network usage:
+- eth0: 277.040 KiB received, 46.330 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":1896,"op":"Read","minor":0},{"major":259,"value":9,"op":"Write","minor":0},{"major":259,"value":1896,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1905,"op":"Total","minor":0},{"major":253,"value":1896,"op":"Read","minor":2},{"major":253,"value":9,"op":"Write","minor":2},{"major":253,"value":1896,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1905,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":175742976,"op":"Read","minor":0},{"major":259,"value":36864,"op":"Write","minor":0},{"major":259,"value":175742976,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":175779840,"op":"Total","minor":0},{"major":253,"value":175742976,"op":"Read","minor":2},{"major":253,"value":36864,"op":"Write","minor":2},{"major":253,"value":175742976,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":175779840,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":376115200,"max_usage":574586880,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":660,"total_rss":208211968,"inactive_file":103288832,"inactive_anon":14495744,"total_pgfault":358644,"total_cache":161341440,"total_rss_huge":0,"total_active_anon":195092480,"total_pgmajfault":660,"pgpgin":267234,"rss_huge":0,"mapped_file":75964416,"total_inactive_file":103288832,"dirty":0,"total_unevictable":0,"total_dirty":0,"writeback":0,"pgpgout":176969,"hierarchical_memsw_limit":0,"cache":161341440,"active_file":55820288,"pgfault":358644,"total_mapped_file":75964416,"total_pgpgout":176969,"total_writeback":0,"rss":208211968,"unevictable":0,"total_inactive_anon":14495744,"total_pgpgin":267234,"active_anon":195092480,"total_active_file":55820288},"limit":540965302272},"name":"/Stardates-qGPJkkFj","networks":{"eth0":{"rx_bytes":283689,"rx_packets":302,"tx_packets":353,"tx_bytes":47442,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"c7bb253a14eedb3f6c2b9d1f03a6ab568b120b5cee617bddee1f3af3f981f517","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":42},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":124359323315808967,"online_cpus":128,"cpu_usage":{"usage_in_usermode":20210000000,"usage_in_kernelmode":1460000000,"total_usage":21617883850,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21616038429,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1845421,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2020-12-03T13:19:59.029517136Z"}

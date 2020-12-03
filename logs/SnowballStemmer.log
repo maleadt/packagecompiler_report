@@ -1,0 +1,132 @@
+################################################################################
+# PkgEval set-up: 2020-12-03T10:47:06.864
+#
+
+Julia Version 1.5.3
+Commit 788b2c77c1 (2020-11-09 13:37 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_DEPOT_PATH = /home/pkgeval/.another_julia:/usr/local/share/julia
+
+
+
+################################################################################
+# Installation: 2020-12-03T10:47:09.705
+#
+
+  Resolving package versions...
+  Installed URIParser ─────── v0.4.1
+  Installed SnowballStemmer ─ v0.1.0
+  Installed BinDeps ───────── v1.0.2
+Updating `~/.another_julia/environments/v1.5/Project.toml`
+  [0089d5a0] + SnowballStemmer v0.1.0
+Updating `~/.another_julia/environments/v1.5/Manifest.toml`
+  [9e28174c] + BinDeps v1.0.2
+  [0089d5a0] + SnowballStemmer v0.1.0
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building SnowballStemmer → `~/.another_julia/packages/SnowballStemmer/4A3tU/deps/build.log`
+
+
+################################################################################
+# Testing: 2020-12-03T10:47:31.837
+#
+
+
+    Testing SnowballStemmer
+Status `/tmp/jl_1YWezy/Project.toml`
+  [9e28174c] BinDeps v1.0.2
+  [0089d5a0] SnowballStemmer v0.1.0
+  [8f399da3] Libdl
+  [8dfed614] Test
+Status `/tmp/jl_1YWezy/Manifest.toml`
+  [9e28174c] BinDeps v1.0.2
+  [0089d5a0] SnowballStemmer v0.1.0
+  [30578b45] URIParser v0.4.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Running tests:
+ * stemmer.jl
+ERROR: LoadError: LoadError: could not load library "/home/pkgeval/.julia/packages/SnowballStemmer/4A3tU/src/../deps/usr/lib/libstemmer.so"
+/home/pkgeval/.julia/packages/SnowballStemmer/4A3tU/src/../deps/usr/lib/libstemmer.so: cannot open shared object file: No such file or directory
+Stacktrace:
+ [1] stemmer_types() at /home/pkgeval/.julia/packages/SnowballStemmer/4A3tU/src/stemmer.jl:10
+ [2] top-level scope at /home/pkgeval/.another_julia/packages/SnowballStemmer/4A3tU/test/stemmer.jl:5
+ [3] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [4] include at ./Base.jl:368 [inlined]
+ [5] include(::String) at /home/pkgeval/.another_julia/packages/SnowballStemmer/4A3tU/test/runtests.jl:1
+ [6] top-level scope at /home/pkgeval/.another_julia/packages/SnowballStemmer/4A3tU/test/runtests.jl:13
+ [7] include(::String) at ./client.jl:457
+ [8] top-level scope at none:6
+in expression starting at /home/pkgeval/.another_julia/packages/SnowballStemmer/4A3tU/test/stemmer.jl:5
+in expression starting at /home/pkgeval/.another_julia/packages/SnowballStemmer/4A3tU/test/runtests.jl:11
+
+PkgEval failed: Package SnowballStemmer errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:20
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2020-12-03T10:47:38.291
+CPU usage: 31.29s (28.47s user, 2.94s kernel)
+
+Network usage:
+- eth0: 137.919 KiB received, 15.818 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":97,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":97,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":97,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":97,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":97,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":97,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":2953216,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":2953216,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":2953216,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":2953216,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":2953216,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":2953216,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":214118400,"max_usage":356892672,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":202096640,"inactive_file":135168,"inactive_anon":1486848,"total_pgfault":709302,"total_cache":5812224,"total_rss_huge":0,"total_active_anon":206401536,"total_pgmajfault":0,"pgpgin":496980,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":446182,"hierarchical_memsw_limit":0,"cache":5812224,"active_file":135168,"pgfault":709302,"total_mapped_file":0,"total_pgpgout":446182,"total_writeback":0,"rss":202096640,"unevictable":0,"total_inactive_anon":1486848,"total_pgpgin":496980,"active_anon":206401536,"total_active_file":135168},"limit":540965302272},"name":"/SnowballStemmer-IIHFo8BW","networks":{"eth0":{"rx_bytes":141229,"rx_packets":144,"tx_packets":134,"tx_bytes":16198,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"e354c79aabce67ceac2f540382b0144c6adac0da9762843213b15c834efcaf32","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":42},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":123191206715808967,"online_cpus":128,"cpu_usage":{"usage_in_usermode":28470000000,"usage_in_kernelmode":2940000000,"total_usage":31289638465,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,31289638465,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2020-12-03T10:47:38.801444085Z"}

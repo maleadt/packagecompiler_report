@@ -1,0 +1,748 @@
+################################################################################
+# PkgEval set-up: 2020-12-03T15:09:27.422
+#
+
+Julia Version 1.5.3
+Commit 788b2c77c1 (2020-11-09 13:37 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_DEPOT_PATH = /home/pkgeval/.another_julia:/usr/local/share/julia
+
+
+
+################################################################################
+# Installation: 2020-12-03T15:09:30.239
+#
+
+  Resolving package versions...
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed Libiconv_jll ───────────────── v1.16.0+7
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed POMDPSolve ─────────────────── v0.2.2
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed POMDPLinter ────────────────── v0.1.1
+  Installed DataStructures ─────────────── v0.17.20
+  Installed LightGraphs ────────────────── v1.3.0
+  Installed BeliefUpdaters ─────────────── v0.2.2
+  Installed Reexport ───────────────────── v0.2.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed PDMats ─────────────────────── v0.10.1
+  Installed Inflate ────────────────────── v0.1.2
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed NamedTupleTools ────────────── v0.13.7
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed UnicodePlots ───────────────── v1.3.0
+  Installed Distributions ──────────────── v0.23.11
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed SimpleTraits ───────────────── v0.9.3
+  Installed POMDPXFiles ────────────────── v0.2.2
+  Installed FillArrays ─────────────────── v0.9.7
+  Installed QuadGK ─────────────────────── v2.4.1
+  Installed POMDPModelTools ────────────── v0.3.3
+  Installed JLLWrappers ────────────────── v1.1.3
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed XML2_jll ───────────────────── v2.9.10+3
+  Installed Crayons ────────────────────── v4.0.4
+  Installed POMDPFiles ─────────────────── v0.2.3
+  Installed Missings ───────────────────── v0.4.4
+  Installed POMDPs ─────────────────────── v0.9.1
+  Installed SpecialFunctions ───────────── v0.10.3
+  Installed LightXML ───────────────────── v0.9.0
+  Installed ArnoldiMethod ──────────────── v0.0.2
+  Installed POMDPPolicies ──────────────── v0.3.3
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed Parameters ─────────────────── v0.12.1
+Updating `~/.another_julia/environments/v1.5/Project.toml`
+  [a575d7f4] + POMDPSolve v0.2.2
+Updating `~/.another_julia/environments/v1.5/Manifest.toml`
+  [ec485272] + ArnoldiMethod v0.0.2
+  [56f22d72] + Artifacts v1.3.0
+  [8bb6e9a1] + BeliefUpdaters v0.2.2
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [a8cc5b0e] + Crayons v4.0.4
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.17.20
+  [31c24e10] + Distributions v0.23.11
+  [1a297f60] + FillArrays v0.9.7
+  [d25df0c9] + Inflate v0.1.2
+  [692b3bcd] + JLLWrappers v1.1.3
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [093fc24a] + LightGraphs v1.3.0
+  [9c8b4983] + LightXML v0.9.0
+  [1914dd2f] + MacroTools v0.5.6
+  [e1d29d7a] + Missings v0.4.4
+  [d9ec5142] + NamedTupleTools v0.13.7
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.10.1
+  [9cf5b727] + POMDPFiles v0.2.3
+  [f3bd98c0] + POMDPLinter v0.1.1
+  [08074719] + POMDPModelTools v0.3.3
+  [182e52fb] + POMDPPolicies v0.3.3
+  [a575d7f4] + POMDPSolve v0.2.2
+  [c6f6ee83] + POMDPXFiles v0.2.2
+  [a93abf59] + POMDPs v0.9.1
+  [d96e819e] + Parameters v0.12.1
+  [1fd47b50] + QuadGK v2.4.1
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [699a6c99] + SimpleTraits v0.9.3
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.10.3
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [3a884ed6] + UnPack v1.0.2
+  [b8865327] + UnicodePlots v1.3.0
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building POMDPFiles → `~/.another_julia/packages/POMDPFiles/vOfxh/deps/build.log`
+   Building POMDPSolve → `~/.another_julia/packages/POMDPSolve/NkwLU/deps/build.log`
+┌ Error: Error building `POMDPSolve`: 
+│ pomdp-solve-5.4/
+│ pomdp-solve-5.4/NEWS
+│ pomdp-solve-5.4/THANKS
+│ pomdp-solve-5.4/README
+│ pomdp-solve-5.4/ChangeLog
+│ pomdp-solve-5.4/INSTALL
+│ pomdp-solve-5.4/aclocal.m4
+│ pomdp-solve-5.4/configure
+│ pomdp-solve-5.4/config.h.in
+│ pomdp-solve-5.4/depcomp
+│ pomdp-solve-5.4/AUTHORS
+│ pomdp-solve-5.4/install-sh
+│ pomdp-solve-5.4/COPYING
+│ pomdp-solve-5.4/missing
+│ pomdp-solve-5.4/ylwrap
+│ pomdp-solve-5.4/testing/
+│ pomdp-solve-5.4/testing/double-vector-test.c
+│ pomdp-solve-5.4/testing/main-test.c
+│ pomdp-solve-5.4/testing/global-test.h
+│ pomdp-solve-5.4/testing/Makefile.in
+│ pomdp-solve-5.4/testing/Makefile.am
+│ pomdp-solve-5.4/testing/index-list-test.c
+│ pomdp-solve-5.4/Makefile.in
+│ pomdp-solve-5.4/configure.ac
+│ pomdp-solve-5.4/Makefile.am
+│ pomdp-solve-5.4/compile
+│ pomdp-solve-5.4/src/
+│ pomdp-solve-5.4/src/pomdp-tools-options.h
+│ pomdp-solve-5.4/src/pomdp-fg.c
+│ pomdp-solve-5.4/src/command-line.h
+│ pomdp-solve-5.4/src/double-vector.c
+│ pomdp-solve-5.4/src/pomdp-solve-options.h
+│ pomdp-solve-5.4/src/params.h
+│ pomdp-solve-5.4/src/pomdp-solve.c
+│ pomdp-solve-5.4/src/finite-grid.h
+│ pomdp-solve-5.4/src/random.h
+│ pomdp-solve-5.4/src/mcgs.c
+│ pomdp-solve-5.4/src/index-list.h
+│ pomdp-solve-5.4/src/utils.h
+│ pomdp-solve-5.4/src/inc-prune.c
+│ pomdp-solve-5.4/src/belief-state.c
+│ pomdp-solve-5.4/src/cross-sum.h
+│ pomdp-solve-5.4/src/neighbor.h
+│ pomdp-solve-5.4/src/two-pass.h
+│ pomdp-solve-5.4/src/cmd-line.h
+│ pomdp-solve-5.4/src/pg.h
+│ pomdp-solve-5.4/src/double-vector.h
+│ pomdp-solve-5.4/src/value-function.h
+│ pomdp-solve-5.4/src/sim.h
+│ pomdp-solve-5.4/src/config-file.h
+│ pomdp-solve-5.4/src/projection.c
+│ pomdp-solve-5.4/src/cross-sum.c
+│ pomdp-solve-5.4/src/pomdp-fg.h
+│ pomdp-solve-5.4/src/sim.c
+│ pomdp-solve-5.4/src/lp-solve/
+│ pomdp-solve-5.4/src/lp-solve/read.c
+│ pomdp-solve-5.4/src/lp-solve/debug.h
+│ pomdp-solve-5.4/src/lp-solve/lp.y
+│ pomdp-solve-5.4/src/lp-solve/solve.c
+│ pomdp-solve-5.4/src/lp-solve/lex.l
+│ pomdp-solve-5.4/src/lp-solve/presolve.c
+│ pomdp-solve-5.4/src/lp-solve/lpglob.h
+│ pomdp-solve-5.4/src/lp-solve/read.h
+│ pomdp-solve-5.4/src/lp-solve/hash.h
+│ pomdp-solve-5.4/src/lp-solve/lpkit.h
+│ pomdp-solve-5.4/src/lp-solve/lex.c
+│ pomdp-solve-5.4/src/lp-solve/debug.c
+│ pomdp-solve-5.4/src/lp-solve/lpkit.c
+│ pomdp-solve-5.4/src/lp-solve/lp.h
+│ pomdp-solve-5.4/src/lp-solve/Makefile.in
+│ pomdp-solve-5.4/src/lp-solve/hash.c
+│ pomdp-solve-5.4/src/lp-solve/Makefile.am
+│ pomdp-solve-5.4/src/lp-solve/lp.c
+│ pomdp-solve-5.4/src/alpha.c
+│ pomdp-solve-5.4/src/cmd-line.c
+│ pomdp-solve-5.4/src/two-pass.c
+│ pomdp-solve-5.4/src/global.h
+│ pomdp-solve-5.4/src/index-list.c
+│ pomdp-solve-5.4/src/alpha.h
+│ pomdp-solve-5.4/src/pg-eval.c
+│ pomdp-solve-5.4/src/zlz_speedup.c
+│ pomdp-solve-5.4/src/vertex-enum.c
+│ pomdp-solve-5.4/src/neighbor.c
+│ pomdp-solve-5.4/src/projection.h
+│ pomdp-solve-5.4/src/signal-handler.h
+│ pomdp-solve-5.4/src/laspack/
+│ pomdp-solve-5.4/src/laspack/README
+│ pomdp-solve-5.4/src/laspack/copyrght.h
+│ pomdp-solve-5.4/src/laspack/mlsolv.h
+│ pomdp-solve-5.4/src/laspack/matrix.h
+│ pomdp-solve-5.4/src/laspack/matrix.c
+│ pomdp-solve-5.4/src/laspack/factor.c
+│ pomdp-solve-5.4/src/laspack/errhandl.h
+│ pomdp-solve-5.4/src/laspack/precond.c
+│ pomdp-solve-5.4/src/laspack/qmatrix.c
+│ pomdp-solve-5.4/src/laspack/rtc.h
+│ pomdp-solve-5.4/src/laspack/operats.c
+│ pomdp-solve-5.4/src/laspack/mlsolv.c
+│ pomdp-solve-5.4/src/laspack/vector.c
+│ pomdp-solve-5.4/src/laspack/eigenval.c
+│ pomdp-solve-5.4/src/laspack/version.h
+│ pomdp-solve-5.4/src/laspack/rtc.c
+│ pomdp-solve-5.4/src/laspack/qmatrix.h
+│ pomdp-solve-5.4/src/laspack/operats.h
+│ pomdp-solve-5.4/src/laspack/lastypes.h
+│ pomdp-solve-5.4/src/laspack/itersolv.c
+│ pomdp-solve-5.4/src/laspack/itersolv.h
+│ pomdp-solve-5.4/src/laspack/precond.h
+│ pomdp-solve-5.4/src/laspack/elcmp.h
+│ pomdp-solve-5.4/src/laspack/errhandl.c
+│ pomdp-solve-5.4/src/laspack/vector.h
+│ pomdp-solve-5.4/src/laspack/eigenval.h
+│ pomdp-solve-5.4/src/laspack/Makefile.in
+│ pomdp-solve-5.4/src/laspack/factor.h
+│ pomdp-solve-5.4/src/laspack/Makefile.am
+│ pomdp-solve-5.4/src/stats.c
+│ pomdp-solve-5.4/src/pomdp-fg-main.c
+│ pomdp-solve-5.4/src/belief.c
+│ pomdp-solve-5.4/src/global.c
+│ pomdp-solve-5.4/src/lp-interface.c
+│ pomdp-solve-5.4/src/utils.c
+│ pomdp-solve-5.4/src/pomdp-tools-options.c
+│ pomdp-solve-5.4/src/xalloc.h
+│ pomdp-solve-5.4/src/parsimonious.c
+│ pomdp-solve-5.4/src/pomdp-fg-options.h
+│ pomdp-solve-5.4/src/signal-handler.c
+│ pomdp-solve-5.4/src/timing.h
+│ pomdp-solve-5.4/src/pomdp-solve.h
+│ pomdp-solve-5.4/src/pomdp-tools-main.c
+│ pomdp-solve-5.4/src/value-function.c
+│ pomdp-solve-5.4/src/belief-state.h
+│ pomdp-solve-5.4/src/config-file.c
+│ pomdp-solve-5.4/src/pomdp.h
+│ pomdp-solve-5.4/src/pomdp.c
+│ pomdp-solve-5.4/src/xalloc.c
+│ pomdp-solve-5.4/src/linear-support.h
+│ pomdp-solve-5.4/src/timing.c
+│ pomdp-solve-5.4/src/fg-params.c
+│ pomdp-solve-5.4/src/enumeration.h
+│ pomdp-solve-5.4/src/linear-support.c
+│ pomdp-solve-5.4/src/stats.h
+│ pomdp-solve-5.4/src/laspack-util.h
+│ pomdp-solve-5.4/src/common.h
+│ pomdp-solve-5.4/src/region.h
+│ pomdp-solve-5.4/src/finite-grid.c
+│ pomdp-solve-5.4/src/region.c
+│ pomdp-solve-5.4/src/pomdp-solve-options.c
+│ pomdp-solve-5.4/src/pomdp-fg-options.c
+│ pomdp-solve-5.4/src/command-line.c
+│ pomdp-solve-5.4/src/laspack-util.c
+│ pomdp-solve-5.4/src/random.c
+│ pomdp-solve-5.4/src/Makefile.in
+│ pomdp-solve-5.4/src/mdp/
+│ pomdp-solve-5.4/src/mdp/parse_hash.c
+│ pomdp-solve-5.4/src/mdp/scanner.c
+│ pomdp-solve-5.4/src/mdp/parser.h
+│ pomdp-solve-5.4/src/mdp/decision-tree.h
+│ pomdp-solve-5.4/src/mdp/mdp-common.h
+│ pomdp-solve-5.4/src/mdp/mdp.c
+│ pomdp-solve-5.4/src/mdp/parse_hash.h
+│ pomdp-solve-5.4/src/mdp/parser.c
+│ pomdp-solve-5.4/src/mdp/parse_err.h
+│ pomdp-solve-5.4/src/mdp/sparse-matrix.h
+│ pomdp-solve-5.4/src/mdp/imm-reward.c
+│ pomdp-solve-5.4/src/mdp/parse_constant.h
+│ pomdp-solve-5.4/src/mdp/scanner.l
+│ pomdp-solve-5.4/src/mdp/decision-tree.c
+│ pomdp-solve-5.4/src/mdp/imm-reward.h
+│ pomdp-solve-5.4/src/mdp/sparse-matrix.c
+│ pomdp-solve-5.4/src/mdp/mdp.h
+│ pomdp-solve-5.4/src/mdp/parser.y
+│ pomdp-solve-5.4/src/mdp/Makefile.in
+│ pomdp-solve-5.4/src/mdp/Makefile.am
+│ pomdp-solve-5.4/src/mdp/parse_err.c
+│ pomdp-solve-5.4/src/lp-interface.h
+│ pomdp-solve-5.4/src/main.c
+│ pomdp-solve-5.4/src/fg-params.h
+│ pomdp-solve-5.4/src/vertex-enum.h
+│ pomdp-solve-5.4/src/belief.h
+│ pomdp-solve-5.4/src/Makefile.am
+│ pomdp-solve-5.4/src/witness.c
+│ pomdp-solve-5.4/src/inc-prune.h
+│ pomdp-solve-5.4/src/program-options.c
+│ pomdp-solve-5.4/src/common.c
+│ pomdp-solve-5.4/src/program-options.h
+│ pomdp-solve-5.4/src/associative-array.c
+│ pomdp-solve-5.4/src/pg.c
+│ pomdp-solve-5.4/src/pg-eval.h
+│ pomdp-solve-5.4/src/zlz_speedup.h
+│ pomdp-solve-5.4/src/witness.h
+│ pomdp-solve-5.4/src/associative-array.h
+│ pomdp-solve-5.4/src/params.c
+│ pomdp-solve-5.4/src/enumeration.c
+│ pomdp-solve-5.4/src/parsimonious.h
+│ pomdp-solve-5.4/src/mcgs.h
+│ checking for a BSD-compatible install... /usr/bin/install -c
+│ checking whether build environment is sane... yes
+│ checking for a thread-safe mkdir -p... /usr/sbin/mkdir -p
+│ checking for gawk... gawk
+│ checking whether make sets $(MAKE)... yes
+│ checking whether make supports nested variables... yes
+│ checking for bison... bison -y
+│ checking for gcc... gcc
+│ checking whether the C compiler works... yes
+│ checking for C compiler default output file name... a.out
+│ checking for suffix of executables... 
+│ checking whether we are cross compiling... no
+│ checking for suffix of object files... o
+│ checking whether we are using the GNU C compiler... yes
+│ checking whether gcc accepts -g... yes
+│ checking for gcc option to accept ISO C89... none needed
+│ checking whether gcc understands -c and -o together... yes
+│ checking for style of include used by make... GNU
+│ checking dependency style of gcc... gcc3
+│ checking for flex... flex
+│ checking lex output file root... lex.yy
+│ checking lex library... -lfl
+│ checking whether yytext is a pointer... yes
+│ checking for ranlib... ranlib
+│ checking for main in -lcplex... no
+│ checking for main in -lm... yes
+│ checking how to run the C preprocessor... gcc -E
+│ checking for grep that handles long lines and -e... /usr/sbin/grep
+│ checking for egrep... /usr/sbin/grep -E
+│ checking for ANSI C header files... yes
+│ checking for sys/types.h... yes
+│ checking for sys/stat.h... yes
+│ checking for stdlib.h... yes
+│ checking for string.h... yes
+│ checking for memory.h... yes
+│ checking for strings.h... yes
+│ checking for inttypes.h... yes
+│ checking for stdint.h... yes
+│ checking for unistd.h... yes
+│ checking float.h usability... yes
+│ checking float.h presence... yes
+│ checking for float.h... yes
+│ checking limits.h usability... yes
+│ checking limits.h presence... yes
+│ checking for limits.h... yes
+│ checking stddef.h usability... yes
+│ checking stddef.h presence... yes
+│ checking for stddef.h... yes
+│ checking for stdlib.h... (cached) yes
+│ checking for string.h... (cached) yes
+│ checking sys/time.h usability... yes
+│ checking sys/time.h presence... yes
+│ checking for sys/time.h... yes
+│ checking for unistd.h... (cached) yes
+│ checking for an ANSI C-conforming const... yes
+│ checking for size_t... yes
+│ checking whether time.h and sys/time.h may both be included... yes
+│ checking for error_at_line... yes
+│ checking for stdlib.h... (cached) yes
+│ checking for GNU libc compatible malloc... yes
+│ checking for stdlib.h... (cached) yes
+│ checking for GNU libc compatible realloc... yes
+│ checking return type of signal handlers... void
+│ checking for working strtod... yes
+│ checking for vprintf... yes
+│ checking for _doprnt... no
+│ checking for bzero... yes
+│ checking for floor... yes
+│ checking for gettimeofday... yes
+│ checking for memset... yes
+│ checking for pow... yes
+│ checking for sqrt... yes
+│ checking for strstr... yes
+│ checking that generated files are newer than configure... done
+│ configure: creating ./config.status
+│ config.status: creating Makefile
+│ config.status: creating src/Makefile
+│ config.status: creating src/mdp/Makefile
+│ config.status: creating src/lp-solve/Makefile
+│ config.status: creating src/laspack/Makefile
+│ config.status: creating testing/Makefile
+│ config.status: creating config.h
+│ config.status: executing depfiles commands
+│ make  all-recursive
+│ make[1]: Entering directory '/home/pkgeval/.another_julia/packages/POMDPSolve/NkwLU/deps/pomdp-solve-5.4'
+│ Making all in src
+│ make[2]: Entering directory '/home/pkgeval/.another_julia/packages/POMDPSolve/NkwLU/deps/pomdp-solve-5.4/src'
+│ Making all in mdp
+│ make[3]: Entering directory '/home/pkgeval/.another_julia/packages/POMDPSolve/NkwLU/deps/pomdp-solve-5.4/src/mdp'
+│ gcc -DHAVE_CONFIG_H -I. -I../..    -O3  -MT libmdp_a-imm-reward.o -MD -MP -MF .deps/libmdp_a-imm-reward.Tpo -c -o libmdp_a-imm-reward.o `test -f 'imm-reward.c' || echo './'`imm-reward.c
+│ mv -f .deps/libmdp_a-imm-reward.Tpo .deps/libmdp_a-imm-reward.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../..    -O3  -MT libmdp_a-mdp.o -MD -MP -MF .deps/libmdp_a-mdp.Tpo -c -o libmdp_a-mdp.o `test -f 'mdp.c' || echo './'`mdp.c
+│ mv -f .deps/libmdp_a-mdp.Tpo .deps/libmdp_a-mdp.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../..    -O3  -MT libmdp_a-parse_err.o -MD -MP -MF .deps/libmdp_a-parse_err.Tpo -c -o libmdp_a-parse_err.o `test -f 'parse_err.c' || echo './'`parse_err.c
+│ mv -f .deps/libmdp_a-parse_err.Tpo .deps/libmdp_a-parse_err.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../..    -O3  -MT libmdp_a-parse_hash.o -MD -MP -MF .deps/libmdp_a-parse_hash.Tpo -c -o libmdp_a-parse_hash.o `test -f 'parse_hash.c' || echo './'`parse_hash.c
+│ mv -f .deps/libmdp_a-parse_hash.Tpo .deps/libmdp_a-parse_hash.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../..    -O3  -MT libmdp_a-parser.o -MD -MP -MF .deps/libmdp_a-parser.Tpo -c -o libmdp_a-parser.o `test -f 'parser.c' || echo './'`parser.c
+│ mv -f .deps/libmdp_a-parser.Tpo .deps/libmdp_a-parser.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../..    -O3  -MT libmdp_a-scanner.o -MD -MP -MF .deps/libmdp_a-scanner.Tpo -c -o libmdp_a-scanner.o `test -f 'scanner.c' || echo './'`scanner.c
+│ mv -f .deps/libmdp_a-scanner.Tpo .deps/libmdp_a-scanner.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../..    -O3  -MT libmdp_a-sparse-matrix.o -MD -MP -MF .deps/libmdp_a-sparse-matrix.Tpo -c -o libmdp_a-sparse-matrix.o `test -f 'sparse-matrix.c' || echo './'`sparse-matrix.c
+│ mv -f .deps/libmdp_a-sparse-matrix.Tpo .deps/libmdp_a-sparse-matrix.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../..    -O3  -MT libmdp_a-decision-tree.o -MD -MP -MF .deps/libmdp_a-decision-tree.Tpo -c -o libmdp_a-decision-tree.o `test -f 'decision-tree.c' || echo './'`decision-tree.c
+│ mv -f .deps/libmdp_a-decision-tree.Tpo .deps/libmdp_a-decision-tree.Po
+│ rm -f libmdp.a
+│ ar cru libmdp.a libmdp_a-imm-reward.o libmdp_a-mdp.o libmdp_a-parse_err.o libmdp_a-parse_hash.o libmdp_a-parser.o libmdp_a-scanner.o libmdp_a-sparse-matrix.o libmdp_a-decision-tree.o 
+│ ar: `u' modifier ignored since `D' is the default (see `U')
+│ ranlib libmdp.a
+│ make[3]: Leaving directory '/home/pkgeval/.another_julia/packages/POMDPSolve/NkwLU/deps/pomdp-solve-5.4/src/mdp'
+│ Making all in lp-solve
+│ make[3]: Entering directory '/home/pkgeval/.another_julia/packages/POMDPSolve/NkwLU/deps/pomdp-solve-5.4/src/lp-solve'
+│ gcc -DHAVE_CONFIG_H -I. -I../..    -O3  -MT liblpk_a-debug.o -MD -MP -MF .deps/liblpk_a-debug.Tpo -c -o liblpk_a-debug.o `test -f 'debug.c' || echo './'`debug.c
+│ mv -f .deps/liblpk_a-debug.Tpo .deps/liblpk_a-debug.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../..    -O3  -MT liblpk_a-hash.o -MD -MP -MF .deps/liblpk_a-hash.Tpo -c -o liblpk_a-hash.o `test -f 'hash.c' || echo './'`hash.c
+│ mv -f .deps/liblpk_a-hash.Tpo .deps/liblpk_a-hash.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../..    -O3  -MT liblpk_a-lp.o -MD -MP -MF .deps/liblpk_a-lp.Tpo -c -o liblpk_a-lp.o `test -f 'lp.c' || echo './'`lp.c
+│ lp.c: In function ‘yyparse’:
+│ lp.c:377:5: warning: implicit declaration of function ‘yyerror’; did you mean ‘yyerrok’? [-Wimplicit-function-declaration]
+│   377 |     if (yyerrflag) goto yyinrecovery;
+│       |     ^~~~~~~
+│       |     yyerrok
+│ mv -f .deps/liblpk_a-lp.Tpo .deps/liblpk_a-lp.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../..    -O3  -MT liblpk_a-lex.o -MD -MP -MF .deps/liblpk_a-lex.Tpo -c -o liblpk_a-lex.o `test -f 'lex.c' || echo './'`lex.c
+│ mv -f .deps/liblpk_a-lex.Tpo .deps/liblpk_a-lex.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../..    -O3  -MT liblpk_a-lpkit.o -MD -MP -MF .deps/liblpk_a-lpkit.Tpo -c -o liblpk_a-lpkit.o `test -f 'lpkit.c' || echo './'`lpkit.c
+│ mv -f .deps/liblpk_a-lpkit.Tpo .deps/liblpk_a-lpkit.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../..    -O3  -MT liblpk_a-presolve.o -MD -MP -MF .deps/liblpk_a-presolve.Tpo -c -o liblpk_a-presolve.o `test -f 'presolve.c' || echo './'`presolve.c
+│ mv -f .deps/liblpk_a-presolve.Tpo .deps/liblpk_a-presolve.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../..    -O3  -MT liblpk_a-read.o -MD -MP -MF .deps/liblpk_a-read.Tpo -c -o liblpk_a-read.o `test -f 'read.c' || echo './'`read.c
+│ read.c: In function ‘read_lp_file’:
+│ read.c:572:3: warning: implicit declaration of function ‘yyparse’ [-Wimplicit-function-declaration]
+│   572 |   yyparse();
+│       |   ^~~~~~~
+│ mv -f .deps/liblpk_a-read.Tpo .deps/liblpk_a-read.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../..    -O3  -MT liblpk_a-solve.o -MD -MP -MF .deps/liblpk_a-solve.Tpo -c -o liblpk_a-solve.o `test -f 'solve.c' || echo './'`solve.c
+│ mv -f .deps/liblpk_a-solve.Tpo .deps/liblpk_a-solve.Po
+│ rm -f liblpk.a
+│ ar cru liblpk.a liblpk_a-debug.o liblpk_a-hash.o liblpk_a-lp.o liblpk_a-lex.o liblpk_a-lpkit.o liblpk_a-presolve.o liblpk_a-read.o liblpk_a-solve.o 
+│ ar: `u' modifier ignored since `D' is the default (see `U')
+│ ranlib liblpk.a
+│ make[3]: Leaving directory '/home/pkgeval/.another_julia/packages/POMDPSolve/NkwLU/deps/pomdp-solve-5.4/src/lp-solve'
+│ Making all in laspack
+│ make[3]: Entering directory '/home/pkgeval/.another_julia/packages/POMDPSolve/NkwLU/deps/pomdp-solve-5.4/src/laspack'
+│ gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src   -O3  -MT liblaspack_a-eigenval.o -MD -MP -MF .deps/liblaspack_a-eigenval.Tpo -c -o liblaspack_a-eigenval.o `test -f 'eigenval.c' || echo './'`eigenval.c
+│ mv -f .deps/liblaspack_a-eigenval.Tpo .deps/liblaspack_a-eigenval.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src   -O3  -MT liblaspack_a-errhandl.o -MD -MP -MF .deps/liblaspack_a-errhandl.Tpo -c -o liblaspack_a-errhandl.o `test -f 'errhandl.c' || echo './'`errhandl.c
+│ mv -f .deps/liblaspack_a-errhandl.Tpo .deps/liblaspack_a-errhandl.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src   -O3  -MT liblaspack_a-factor.o -MD -MP -MF .deps/liblaspack_a-factor.Tpo -c -o liblaspack_a-factor.o `test -f 'factor.c' || echo './'`factor.c
+│ mv -f .deps/liblaspack_a-factor.Tpo .deps/liblaspack_a-factor.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src   -O3  -MT liblaspack_a-itersolv.o -MD -MP -MF .deps/liblaspack_a-itersolv.Tpo -c -o liblaspack_a-itersolv.o `test -f 'itersolv.c' || echo './'`itersolv.c
+│ mv -f .deps/liblaspack_a-itersolv.Tpo .deps/liblaspack_a-itersolv.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src   -O3  -MT liblaspack_a-matrix.o -MD -MP -MF .deps/liblaspack_a-matrix.Tpo -c -o liblaspack_a-matrix.o `test -f 'matrix.c' || echo './'`matrix.c
+│ mv -f .deps/liblaspack_a-matrix.Tpo .deps/liblaspack_a-matrix.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src   -O3  -MT liblaspack_a-mlsolv.o -MD -MP -MF .deps/liblaspack_a-mlsolv.Tpo -c -o liblaspack_a-mlsolv.o `test -f 'mlsolv.c' || echo './'`mlsolv.c
+│ mv -f .deps/liblaspack_a-mlsolv.Tpo .deps/liblaspack_a-mlsolv.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src   -O3  -MT liblaspack_a-operats.o -MD -MP -MF .deps/liblaspack_a-operats.Tpo -c -o liblaspack_a-operats.o `test -f 'operats.c' || echo './'`operats.c
+│ mv -f .deps/liblaspack_a-operats.Tpo .deps/liblaspack_a-operats.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src   -O3  -MT liblaspack_a-precond.o -MD -MP -MF .deps/liblaspack_a-precond.Tpo -c -o liblaspack_a-precond.o `test -f 'precond.c' || echo './'`precond.c
+│ mv -f .deps/liblaspack_a-precond.Tpo .deps/liblaspack_a-precond.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src   -O3  -MT liblaspack_a-qmatrix.o -MD -MP -MF .deps/liblaspack_a-qmatrix.Tpo -c -o liblaspack_a-qmatrix.o `test -f 'qmatrix.c' || echo './'`qmatrix.c
+│ mv -f .deps/liblaspack_a-qmatrix.Tpo .deps/liblaspack_a-qmatrix.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src   -O3  -MT liblaspack_a-rtc.o -MD -MP -MF .deps/liblaspack_a-rtc.Tpo -c -o liblaspack_a-rtc.o `test -f 'rtc.c' || echo './'`rtc.c
+│ mv -f .deps/liblaspack_a-rtc.Tpo .deps/liblaspack_a-rtc.Po
+│ gcc -DHAVE_CONFIG_H -I. -I../.. -I../../src   -O3  -MT liblaspack_a-vector.o -MD -MP -MF .deps/liblaspack_a-vector.Tpo -c -o liblaspack_a-vector.o `test -f 'vector.c' || echo './'`vector.c
+│ mv -f .deps/liblaspack_a-vector.Tpo .deps/liblaspack_a-vector.Po
+│ rm -f liblaspack.a
+│ ar cru liblaspack.a  liblaspack_a-eigenval.o liblaspack_a-errhandl.o liblaspack_a-factor.o liblaspack_a-itersolv.o liblaspack_a-matrix.o liblaspack_a-mlsolv.o liblaspack_a-operats.o liblaspack_a-precond.o liblaspack_a-qmatrix.o liblaspack_a-rtc.o liblaspack_a-vector.o 
+│ ar: `u' modifier ignored since `D' is the default (see `U')
+│ ranlib liblaspack.a
+│ make[3]: Leaving directory '/home/pkgeval/.another_julia/packages/POMDPSolve/NkwLU/deps/pomdp-solve-5.4/src/laspack'
+│ make[3]: Entering directory '/home/pkgeval/.another_julia/packages/POMDPSolve/NkwLU/deps/pomdp-solve-5.4/src'
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-alpha.o -MD -MP -MF .deps/pomdp_solve-alpha.Tpo -c -o pomdp_solve-alpha.o `test -f 'alpha.c' || echo './'`alpha.c
+│ mv -f .deps/pomdp_solve-alpha.Tpo .deps/pomdp_solve-alpha.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-belief.o -MD -MP -MF .deps/pomdp_solve-belief.Tpo -c -o pomdp_solve-belief.o `test -f 'belief.c' || echo './'`belief.c
+│ mv -f .deps/pomdp_solve-belief.Tpo .deps/pomdp_solve-belief.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-cmd-line.o -MD -MP -MF .deps/pomdp_solve-cmd-line.Tpo -c -o pomdp_solve-cmd-line.o `test -f 'cmd-line.c' || echo './'`cmd-line.c
+│ mv -f .deps/pomdp_solve-cmd-line.Tpo .deps/pomdp_solve-cmd-line.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-common.o -MD -MP -MF .deps/pomdp_solve-common.Tpo -c -o pomdp_solve-common.o `test -f 'common.c' || echo './'`common.c
+│ mv -f .deps/pomdp_solve-common.Tpo .deps/pomdp_solve-common.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-cross-sum.o -MD -MP -MF .deps/pomdp_solve-cross-sum.Tpo -c -o pomdp_solve-cross-sum.o `test -f 'cross-sum.c' || echo './'`cross-sum.c
+│ mv -f .deps/pomdp_solve-cross-sum.Tpo .deps/pomdp_solve-cross-sum.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-enumeration.o -MD -MP -MF .deps/pomdp_solve-enumeration.Tpo -c -o pomdp_solve-enumeration.o `test -f 'enumeration.c' || echo './'`enumeration.c
+│ mv -f .deps/pomdp_solve-enumeration.Tpo .deps/pomdp_solve-enumeration.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-finite-grid.o -MD -MP -MF .deps/pomdp_solve-finite-grid.Tpo -c -o pomdp_solve-finite-grid.o `test -f 'finite-grid.c' || echo './'`finite-grid.c
+│ mv -f .deps/pomdp_solve-finite-grid.Tpo .deps/pomdp_solve-finite-grid.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-global.o -MD -MP -MF .deps/pomdp_solve-global.Tpo -c -o pomdp_solve-global.o `test -f 'global.c' || echo './'`global.c
+│ mv -f .deps/pomdp_solve-global.Tpo .deps/pomdp_solve-global.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-inc-prune.o -MD -MP -MF .deps/pomdp_solve-inc-prune.Tpo -c -o pomdp_solve-inc-prune.o `test -f 'inc-prune.c' || echo './'`inc-prune.c
+│ mv -f .deps/pomdp_solve-inc-prune.Tpo .deps/pomdp_solve-inc-prune.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-linear-support.o -MD -MP -MF .deps/pomdp_solve-linear-support.Tpo -c -o pomdp_solve-linear-support.o `test -f 'linear-support.c' || echo './'`linear-support.c
+│ mv -f .deps/pomdp_solve-linear-support.Tpo .deps/pomdp_solve-linear-support.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-lp-interface.o -MD -MP -MF .deps/pomdp_solve-lp-interface.Tpo -c -o pomdp_solve-lp-interface.o `test -f 'lp-interface.c' || echo './'`lp-interface.c
+│ mv -f .deps/pomdp_solve-lp-interface.Tpo .deps/pomdp_solve-lp-interface.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-neighbor.o -MD -MP -MF .deps/pomdp_solve-neighbor.Tpo -c -o pomdp_solve-neighbor.o `test -f 'neighbor.c' || echo './'`neighbor.c
+│ mv -f .deps/pomdp_solve-neighbor.Tpo .deps/pomdp_solve-neighbor.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-pomdp-solve-options.o -MD -MP -MF .deps/pomdp_solve-pomdp-solve-options.Tpo -c -o pomdp_solve-pomdp-solve-options.o `test -f 'pomdp-solve-options.c' || echo './'`pomdp-solve-options.c
+│ mv -f .deps/pomdp_solve-pomdp-solve-options.Tpo .deps/pomdp_solve-pomdp-solve-options.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-params.o -MD -MP -MF .deps/pomdp_solve-params.Tpo -c -o pomdp_solve-params.o `test -f 'params.c' || echo './'`params.c
+│ mv -f .deps/pomdp_solve-params.Tpo .deps/pomdp_solve-params.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-parsimonious.o -MD -MP -MF .deps/pomdp_solve-parsimonious.Tpo -c -o pomdp_solve-parsimonious.o `test -f 'parsimonious.c' || echo './'`parsimonious.c
+│ mv -f .deps/pomdp_solve-parsimonious.Tpo .deps/pomdp_solve-parsimonious.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-pg.o -MD -MP -MF .deps/pomdp_solve-pg.Tpo -c -o pomdp_solve-pg.o `test -f 'pg.c' || echo './'`pg.c
+│ mv -f .deps/pomdp_solve-pg.Tpo .deps/pomdp_solve-pg.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-pomdp.o -MD -MP -MF .deps/pomdp_solve-pomdp.Tpo -c -o pomdp_solve-pomdp.o `test -f 'pomdp.c' || echo './'`pomdp.c
+│ mv -f .deps/pomdp_solve-pomdp.Tpo .deps/pomdp_solve-pomdp.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-pomdp-solve.o -MD -MP -MF .deps/pomdp_solve-pomdp-solve.Tpo -c -o pomdp_solve-pomdp-solve.o `test -f 'pomdp-solve.c' || echo './'`pomdp-solve.c
+│ mv -f .deps/pomdp_solve-pomdp-solve.Tpo .deps/pomdp_solve-pomdp-solve.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-projection.o -MD -MP -MF .deps/pomdp_solve-projection.Tpo -c -o pomdp_solve-projection.o `test -f 'projection.c' || echo './'`projection.c
+│ mv -f .deps/pomdp_solve-projection.Tpo .deps/pomdp_solve-projection.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-random.o -MD -MP -MF .deps/pomdp_solve-random.Tpo -c -o pomdp_solve-random.o `test -f 'random.c' || echo './'`random.c
+│ random.c: In function ‘create’:
+│ random.c:74:1: warning: type of ‘maxnum’ defaults to ‘int’ [-Wimplicit-int]
+│    74 | create(maxnum)
+│       | ^~~~~~
+│ mv -f .deps/pomdp_solve-random.Tpo .deps/pomdp_solve-random.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-region.o -MD -MP -MF .deps/pomdp_solve-region.Tpo -c -o pomdp_solve-region.o `test -f 'region.c' || echo './'`region.c
+│ mv -f .deps/pomdp_solve-region.Tpo .deps/pomdp_solve-region.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-signal-handler.o -MD -MP -MF .deps/pomdp_solve-signal-handler.Tpo -c -o pomdp_solve-signal-handler.o `test -f 'signal-handler.c' || echo './'`signal-handler.c
+│ mv -f .deps/pomdp_solve-signal-handler.Tpo .deps/pomdp_solve-signal-handler.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-stats.o -MD -MP -MF .deps/pomdp_solve-stats.Tpo -c -o pomdp_solve-stats.o `test -f 'stats.c' || echo './'`stats.c
+│ mv -f .deps/pomdp_solve-stats.Tpo .deps/pomdp_solve-stats.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-timing.o -MD -MP -MF .deps/pomdp_solve-timing.Tpo -c -o pomdp_solve-timing.o `test -f 'timing.c' || echo './'`timing.c
+│ mv -f .deps/pomdp_solve-timing.Tpo .deps/pomdp_solve-timing.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-two-pass.o -MD -MP -MF .deps/pomdp_solve-two-pass.Tpo -c -o pomdp_solve-two-pass.o `test -f 'two-pass.c' || echo './'`two-pass.c
+│ mv -f .deps/pomdp_solve-two-pass.Tpo .deps/pomdp_solve-two-pass.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-vertex-enum.o -MD -MP -MF .deps/pomdp_solve-vertex-enum.Tpo -c -o pomdp_solve-vertex-enum.o `test -f 'vertex-enum.c' || echo './'`vertex-enum.c
+│ mv -f .deps/pomdp_solve-vertex-enum.Tpo .deps/pomdp_solve-vertex-enum.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-witness.o -MD -MP -MF .deps/pomdp_solve-witness.Tpo -c -o pomdp_solve-witness.o `test -f 'witness.c' || echo './'`witness.c
+│ mv -f .deps/pomdp_solve-witness.Tpo .deps/pomdp_solve-witness.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-xalloc.o -MD -MP -MF .deps/pomdp_solve-xalloc.Tpo -c -o pomdp_solve-xalloc.o `test -f 'xalloc.c' || echo './'`xalloc.c
+│ mv -f .deps/pomdp_solve-xalloc.Tpo .deps/pomdp_solve-xalloc.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-zlz_speedup.o -MD -MP -MF .deps/pomdp_solve-zlz_speedup.Tpo -c -o pomdp_solve-zlz_speedup.o `test -f 'zlz_speedup.c' || echo './'`zlz_speedup.c
+│ mv -f .deps/pomdp_solve-zlz_speedup.Tpo .deps/pomdp_solve-zlz_speedup.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-sim.o -MD -MP -MF .deps/pomdp_solve-sim.Tpo -c -o pomdp_solve-sim.o `test -f 'sim.c' || echo './'`sim.c
+│ mv -f .deps/pomdp_solve-sim.Tpo .deps/pomdp_solve-sim.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-mcgs.o -MD -MP -MF .deps/pomdp_solve-mcgs.Tpo -c -o pomdp_solve-mcgs.o `test -f 'mcgs.c' || echo './'`mcgs.c
+│ mv -f .deps/pomdp_solve-mcgs.Tpo .deps/pomdp_solve-mcgs.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-associative-array.o -MD -MP -MF .deps/pomdp_solve-associative-array.Tpo -c -o pomdp_solve-associative-array.o `test -f 'associative-array.c' || echo './'`associative-array.c
+│ mv -f .deps/pomdp_solve-associative-array.Tpo .deps/pomdp_solve-associative-array.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-command-line.o -MD -MP -MF .deps/pomdp_solve-command-line.Tpo -c -o pomdp_solve-command-line.o `test -f 'command-line.c' || echo './'`command-line.c
+│ mv -f .deps/pomdp_solve-command-line.Tpo .deps/pomdp_solve-command-line.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-config-file.o -MD -MP -MF .deps/pomdp_solve-config-file.Tpo -c -o pomdp_solve-config-file.o `test -f 'config-file.c' || echo './'`config-file.c
+│ mv -f .deps/pomdp_solve-config-file.Tpo .deps/pomdp_solve-config-file.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-program-options.o -MD -MP -MF .deps/pomdp_solve-program-options.Tpo -c -o pomdp_solve-program-options.o `test -f 'program-options.c' || echo './'`program-options.c
+│ mv -f .deps/pomdp_solve-program-options.Tpo .deps/pomdp_solve-program-options.Po
+│ gcc -DHAVE_CONFIG_H -I. -I.. -I../src/mdp -I../src/lp-solve  -I../src/laspack   -O3  -MT pomdp_solve-main.o -MD -MP -MF .deps/pomdp_solve-main.Tpo -c -o pomdp_solve-main.o `test -f 'main.c' || echo './'`main.c
+│ mv -f .deps/pomdp_solve-main.Tpo .deps/pomdp_solve-main.Po
+│ gcc -O3   -L../src/mdp -L../src/lp-solve -L../src/laspack -o pomdp-solve pomdp_solve-alpha.o pomdp_solve-belief.o pomdp_solve-cmd-line.o pomdp_solve-common.o pomdp_solve-cross-sum.o pomdp_solve-enumeration.o pomdp_solve-finite-grid.o pomdp_solve-global.o pomdp_solve-inc-prune.o pomdp_solve-linear-support.o pomdp_solve-lp-interface.o pomdp_solve-neighbor.o pomdp_solve-pomdp-solve-options.o pomdp_solve-params.o pomdp_solve-parsimonious.o pomdp_solve-pg.o pomdp_solve-pomdp.o pomdp_solve-pomdp-solve.o pomdp_solve-projection.o pomdp_solve-random.o pomdp_solve-region.o pomdp_solve-signal-handler.o pomdp_solve-stats.o pomdp_solve-timing.o pomdp_solve-two-pass.o pomdp_solve-vertex-enum.o pomdp_solve-witness.o pomdp_solve-xalloc.o pomdp_solve-zlz_speedup.o pomdp_solve-sim.o pomdp_solve-mcgs.o pomdp_solve-associative-array.o pomdp_solve-command-line.o pomdp_solve-config-file.o pomdp_solve-program-options.o pomdp_solve-main.o ../src/mdp/libmdp.a ../src/lp-solve/liblpk.a ../src/laspack/liblaspack.a -lfl -lm 
+│ /usr/sbin/ld: ../src/mdp/libmdp.a(libmdp_a-parser.o):(.bss+0x58): multiple definition of `IP'; ../src/mdp/libmdp.a(libmdp_a-mdp.o):(.bss+0x30): first defined here
+│ /usr/sbin/ld: ../src/mdp/libmdp.a(libmdp_a-parser.o):(.bss+0x50): multiple definition of `IR'; ../src/mdp/libmdp.a(libmdp_a-mdp.o):(.bss+0x28): first defined here
+│ collect2: error: ld returned 1 exit status
+│ make[3]: *** [Makefile:553: pomdp-solve] Error 1
+│ make[3]: Leaving directory '/home/pkgeval/.another_julia/packages/POMDPSolve/NkwLU/deps/pomdp-solve-5.4/src'
+│ make[2]: *** [Makefile:2357: all-recursive] Error 1
+│ make[2]: Leaving directory '/home/pkgeval/.another_julia/packages/POMDPSolve/NkwLU/deps/pomdp-solve-5.4/src'
+│ make[1]: *** [Makefile:349: all-recursive] Error 1
+│ make[1]: Leaving directory '/home/pkgeval/.another_julia/packages/POMDPSolve/NkwLU/deps/pomdp-solve-5.4'
+│ make: *** [Makefile:289: all] Error 2
+│ ERROR: LoadError: failed process: Process(`make`, ProcessExited(2)) [2]
+│ 
+│ Stacktrace:
+│  [1] pipeline_error at ./process.jl:525 [inlined]
+│  [2] run(::Cmd; wait::Bool) at ./process.jl:440
+│  [3] run(::Cmd) at ./process.jl:438
+│  [4] top-level scope at /home/pkgeval/.another_julia/packages/POMDPSolve/NkwLU/deps/build.jl:16
+│  [5] include(::String) at ./client.jl:457
+│  [6] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.another_julia/packages/POMDPSolve/NkwLU/deps/build.jl:8
+│ UNZIPPING
+│ CONFIGURE
+│ MAKE
+└ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+
+
+################################################################################
+# Testing: 2020-12-03T15:10:06.964
+#
+
+
+    Testing POMDPSolve
+Status `/tmp/jl_s9OwTD/Project.toml`
+  [8bb6e9a1] BeliefUpdaters v0.2.2
+  [9cf5b727] POMDPFiles v0.2.3
+  [08074719] POMDPModelTools v0.3.3
+  [355abbd5] POMDPModels v0.4.9
+  [182e52fb] POMDPPolicies v0.3.3
+  [a575d7f4] POMDPSolve v0.2.2
+  [92e6a534] POMDPTesting v0.2.5
+  [a93abf59] POMDPs v0.9.1
+  [189a3867] Reexport v0.2.0
+  [de0858da] Printf
+  [8dfed614] Test
+Status `/tmp/jl_s9OwTD/Manifest.toml`
+  [ec485272] ArnoldiMethod v0.0.2
+  [56f22d72] Artifacts v1.3.0
+  [8bb6e9a1] BeliefUpdaters v0.2.2
+  [35d6a980] ColorSchemes v3.10.1
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.4
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [a81c6b42] Compose v0.9.1
+  [a8cc5b0e] Crayons v4.0.4
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.17.20
+  [31c24e10] Distributions v0.23.11
+  [1a297f60] FillArrays v0.9.7
+  [53c48c17] FixedPointNumbers v0.8.4
+  [d25df0c9] Inflate v0.1.2
+  [c8e1da08] IterTools v1.3.0
+  [692b3bcd] JLLWrappers v1.1.3
+  [682c06a0] JSON v0.21.1
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [093fc24a] LightGraphs v1.3.0
+  [9c8b4983] LightXML v0.9.0
+  [1914dd2f] MacroTools v0.5.6
+  [442fdcdd] Measures v0.3.1
+  [e1d29d7a] Missings v0.4.4
+  [d9ec5142] NamedTupleTools v0.13.7
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [90014a1f] PDMats v0.10.1
+  [9cf5b727] POMDPFiles v0.2.3
+  [f3bd98c0] POMDPLinter v0.1.1
+  [08074719] POMDPModelTools v0.3.3
+  [355abbd5] POMDPModels v0.4.9
+  [182e52fb] POMDPPolicies v0.3.3
+  [a575d7f4] POMDPSolve v0.2.2
+  [92e6a534] POMDPTesting v0.2.5
+  [c6f6ee83] POMDPXFiles v0.2.2
+  [a93abf59] POMDPs v0.9.1
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.12
+  [1fd47b50] QuadGK v2.4.1
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.1
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [699a6c99] SimpleTraits v0.9.3
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v0.10.3
+  [90137ffa] StaticArrays v0.12.5
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [3a884ed6] UnPack v1.0.2
+  [b8865327] UnicodePlots v1.3.0
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+ERROR: LoadError: IOError: could not spawn `/home/pkgeval/.julia/packages/POMDPSolve/NkwLU/src/../deps/pomdp-solve-master/src/pomdp-solve -pomdp /tmp/jl_czunzn.pomdp -o /tmp/jl_czunzn`: no such file or directory (ENOENT)
+Stacktrace:
+ [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:99
+ [2] #585 at ./process.jl:112 [inlined]
+ [3] setup_stdios(::Base.var"#585#586"{Cmd}, ::Array{Any,1}) at ./process.jl:196
+ [4] _spawn at ./process.jl:111 [inlined]
+ [5] run(::Cmd; wait::Bool) at ./process.jl:439
+ [6] run at ./process.jl:438 [inlined]
+ [7] solve(::POMDPSolveSolver, ::TigerPOMDP) at /home/pkgeval/.julia/packages/POMDPSolve/NkwLU/src/solver.jl:179
+ [8] top-level scope at /home/pkgeval/.another_julia/packages/POMDPSolve/NkwLU/test/runtests.jl:11
+ [9] include(::String) at ./client.jl:457
+ [10] top-level scope at none:6
+in expression starting at /home/pkgeval/.another_julia/packages/POMDPSolve/NkwLU/test/runtests.jl:11
+
+PkgEval failed: Package POMDPSolve errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:20
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2020-12-03T15:11:42.179
+CPU usage: 134.44s (124.72s user, 10.04s kernel)
+
+Network usage:
+- eth0: 12.677 MiB received, 289.994 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":91,"op":"Read","minor":0},{"major":259,"value":151,"op":"Write","minor":0},{"major":259,"value":91,"op":"Sync","minor":0},{"major":259,"value":151,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":242,"op":"Total","minor":0},{"major":253,"value":91,"op":"Read","minor":2},{"major":253,"value":149,"op":"Write","minor":2},{"major":253,"value":91,"op":"Sync","minor":2},{"major":253,"value":149,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":240,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":1470464,"op":"Read","minor":0},{"major":259,"value":2953216,"op":"Write","minor":0},{"major":259,"value":1470464,"op":"Sync","minor":0},{"major":259,"value":2953216,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":4423680,"op":"Total","minor":0},{"major":253,"value":1470464,"op":"Read","minor":2},{"major":253,"value":2953216,"op":"Write","minor":2},{"major":253,"value":1470464,"op":"Sync","minor":2},{"major":253,"value":2953216,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":4423680,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":303316992,"max_usage":1320202240,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":233947136,"inactive_file":946176,"inactive_anon":34738176,"total_pgfault":2886081,"total_cache":58236928,"total_rss_huge":0,"total_active_anon":255062016,"total_pgmajfault":0,"pgpgin":1665741,"rss_huge":0,"mapped_file":0,"total_inactive_file":946176,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":1594369,"hierarchical_memsw_limit":0,"cache":58236928,"active_file":1757184,"pgfault":2886081,"total_mapped_file":0,"total_pgpgout":1594369,"total_writeback":0,"rss":233947136,"unevictable":0,"total_inactive_anon":34738176,"total_pgpgin":1665741,"active_anon":255062016,"total_active_file":1757184},"limit":540965302272},"name":"/POMDPSolve-CerZ7EWn","networks":{"eth0":{"rx_bytes":13292402,"rx_packets":2430,"tx_packets":2519,"tx_bytes":296954,"tx_dropped":0,"rx_dropped":5,"tx_errors":0,"rx_errors":0}},"id":"b3a36cc4b1346b4e5f447952e8f3532183999f12af543cd6c8addaef234969e2","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":42},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":125216102955808967,"online_cpus":128,"cpu_usage":{"usage_in_usermode":124720000000,"usage_in_kernelmode":10040000000,"total_usage":134441744029,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,247740,134440993508,502781,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2020-12-03T15:11:42.999096552Z"}

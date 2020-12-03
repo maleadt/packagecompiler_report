@@ -1,0 +1,118 @@
+################################################################################
+# PkgEval set-up: 2020-12-03T15:22:59.384
+#
+
+Julia Version 1.5.3
+Commit 788b2c77c1 (2020-11-09 13:37 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_DEPOT_PATH = /home/pkgeval/.another_julia:/usr/local/share/julia
+
+
+
+################################################################################
+# Installation: 2020-12-03T15:23:02.13
+#
+
+  Resolving package versions...
+  Installed PolygonInbounds ─ v0.2.0
+Updating `~/.another_julia/environments/v1.5/Project.toml`
+ 
+
+################################################################################
+# Testing: 2020-12-03T15:23:08.679
+#
+
+
+ [e4521ec6] + PolygonInbounds v0.2.0
+Updating `~/.another_julia/environments/v1.5/Manifest.toml`
+  [e4521ec6] + PolygonInbounds v0.2.0
+    Testing PolygonInbounds
+Status `/tmp/jl_nZYCHD/Project.toml`
+  [e4521ec6] PolygonInbounds v0.2.0
+  [8dfed614] Test
+Status `/tmp/jl_nZYCHD/Manifest.toml`
+  [e4521ec6] PolygonInbounds v0.2.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  0.044497 seconds (52 allocations: 6.893 MiB)
+Test Summary:        | Pass  Total
+PolygonInboundsTests |   18     18
+        INPOLY2 provides fast point-in-polygon queries for ob-
+ 
+        jects in R^2. Like INPOLYGON, it detects points inside
+
+        and on the boundary of polygonal geometries.
+
+
+  0.024326 seconds (54 allocations: 8.461 MiB)
+        INPOLY2 supports multiply-connected geometries, consi-
+
+        sting of arbitrarily nested sets of outer + inner bou-
+
+        ndaries.
+
+
+ERROR: LoadError: SystemError: opening file "/home/pkgeval/.julia/packages/PolygonInbounds/xx0XQ/src/../test-data/lakes.msh": No such file or directory
+Stacktrace:
+ [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+ [2] #systemerror#48 at ./error.jl:167 [inlined]
+ [3] systemerror at ./error.jl:167 [inlined]
+ [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+ [5] open at ./iostream.jl:273 [inlined]
+ [6] open(::PolygonInbounds.Demo.var"#27#28", ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+ [7] open at ./io.jl:323 [inlined]
+ [8] loadmsh(::String) at /home/pkgeval/.julia/packages/PolygonInbounds/xx0XQ/src/polydemo.jl:249
+ [9] testdata(::String, ::Int64) at /home/pkgeval/.julia/packages/PolygonInbounds/xx0XQ/src/polydemo.jl:169
+ [10] demo2(; r::Int64, tol::Float64, do_plot::Bool) at /home/pkgeval/.julia/packages/PolygonInbounds/xx0XQ/src/polydemo.jl:75
+ [11] demo2() at /home/pkgeval/.julia/packages/PolygonInbounds/xx0XQ/src/polydemo.jl:69
+ [12] polydemo(::Int64; args::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/PolygonInbounds/xx0XQ/src/polydemo.jl:35
+ [13] polydemo at /home/pkgeval/.julia/packages/PolygonInbounds/xx0XQ/src/polydemo.jl:35 [inlined]
+ [14] top-level scope at /home/pkgeval/.another_julia/packages/PolygonInbounds/xx0XQ/test/runtests.jl:49
+ [15] include(::String) at ./client.jl:457
+ [16] top-level scope at none:6
+in expression starting at /home/pkgeval/.another_julia/packages/PolygonInbounds/xx0XQ/test/runtests.jl:48
+
+PkgEval failed: Package PolygonInbounds errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:20
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2020-12-03T15:23:28.777
+CPU usage: 29.64s (28.88s user, 0.83s kernel)
+
+Network usage:
+- eth0: 878.339 KiB received, 12.112 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":5,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":5,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":5,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":5,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":20480,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":20480,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":20480,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":20480,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":206716928,"max_usage":437841920,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":200171520,"inactive_file":135168,"inactive_anon":1216512,"total_pgfault":419595,"total_cache":1318912,"total_rss_huge":0,"total_active_anon":200183808,"total_pgmajfault":0,"pgpgin":140481,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":91281,"hierarchical_memsw_limit":0,"cache":1318912,"active_file":0,"pgfault":419595,"total_mapped_file":0,"total_pgpgout":91281,"total_writeback":0,"rss":200171520,"unevictable":0,"total_inactive_anon":1216512,"total_pgpgin":140481,"active_anon":200183808,"total_active_file":0},"limit":540965302272},"name":"/PolygonInbounds-tiUrdezQ","networks":{"eth0":{"rx_bytes":899419,"rx_packets":198,"tx_packets":152,"tx_bytes":12403,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"b392e0335752862f92565d9dbcba9309434e745dceacb8b3758ce5fd14e04c2b","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":42},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":125306294245808967,"online_cpus":128,"cpu_usage":{"usage_in_usermode":28880000000,"usage_in_kernelmode":830000000,"total_usage":29641341354,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29641341354,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2020-12-03T15:23:28.78473349Z"}

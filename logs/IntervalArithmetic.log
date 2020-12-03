@@ -1,0 +1,270 @@
+################################################################################
+# PkgEval set-up: 2020-12-03T10:31:09.08
+#
+
+Julia Version 1.5.3
+Commit 788b2c77c1 (2020-11-09 13:37 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_DEPOT_PATH = /home/pkgeval/.another_julia:/usr/local/share/julia
+
+
+
+################################################################################
+# Installation: 2020-12-03T10:31:11.62
+#
+
+  Resolving package versions...
+  Installed SetRounding ───────── v0.2.0
+  Installed FastRounding ──────── v0.2.0
+  Installed CRlibm ────────────── v0.8.0
+  Installed RoundingEmulator ──── v0.2.1
+  Installed RecipesBase ───────── v1.1.1
+  Installed ErrorfreeArithmetic ─ v0.5.2
+  Installed StaticArrays ──────── v0.12.5
+  Installed IntervalArithmetic ── v0.17.5
+Updating `~/.another_julia/environments/v1.5/Project.toml`
+  [d1acc4aa] + IntervalArithmetic v0.17.5
+Updating `~/.another_julia/environments/v1.5/Manifest.toml`
+  [96374032] + CRlibm v0.8.0
+  [90fa49ef] + ErrorfreeArithmetic v0.5.2
+  [fa42c844] + FastRounding v0.2.0
+  [d1acc4aa] + IntervalArithmetic v0.17.5
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [5eaf0fd0] + RoundingEmulator v0.2.1
+  [3cc68bcd] + SetRounding v0.2.0
+  [90137ffa] + StaticArrays v0.12.5
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+   Building CRlibm → `~/.another_julia/packages/CRlibm/NFCH5/deps/build.log`
+
+
+################################################################################
+# Testing: 2020-12-03T10:31:31.006
+#
+
+
+    Testing IntervalArithmetic
+Status `/tmp/jl_TBEP8z/Project.toml`
+  [96374032] CRlibm v0.8.0
+  [fa42c844] FastRounding v0.2.0
+  [d1acc4aa] IntervalArithmetic v0.17.5
+  [f27b6e38] Polynomials v0.7.0
+  [3cdcf5f2] RecipesBase v1.1.1
+  [5eaf0fd0] RoundingEmulator v0.2.1
+  [3cc68bcd] SetRounding v0.2.0
+  [90137ffa] StaticArrays v0.12.5
+  [37e2e46d] LinearAlgebra
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_TBEP8z/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [96374032] CRlibm v0.8.0
+  [90fa49ef] ErrorfreeArithmetic v0.5.2
+  [e2ba6199] ExprTools v0.1.3
+  [8f5d6c58] EzXML v1.1.0
+  [fa42c844] FastRounding v0.2.0
+  [d1acc4aa] IntervalArithmetic v0.17.5
+  [d8418881] Intervals v1.5.0
+  [692b3bcd] JLLWrappers v1.1.3
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [78c3b35d] Mocking v0.7.1
+  [f27b6e38] Polynomials v0.7.0
+  [3cdcf5f2] RecipesBase v1.1.1
+  [5eaf0fd0] RoundingEmulator v0.2.1
+  [3cc68bcd] SetRounding v0.2.0
+  [90137ffa] StaticArrays v0.12.5
+  [f269a46b] TimeZones v1.5.2
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary:          | Pass  Broken  Total
+Constructing intervals |  107       1    108
+Test Summary: | Pass  Broken  Total
+Big intervals |    6       1      7
+Test Summary:     | Pass  Total
+Complex intervals |    2      2
+Test Summary: | Pass  Total
+.. tests      |    4      4
+Test Summary: | Pass  Total
+± tests       |    5      5
+Test Summary:                       | Pass  Total
+Conversion to interval of same type |    2      2
+Test Summary:                                   | Pass  Total
+Conversions between different types of interval |    2      2
+Test Summary:          | Pass  Total
+Conversion to Interval |    3      3
+Test Summary:           | Pass  Total
+Interval{T} constructor |    4      4
+Test Summary:                        | Pass  Total
+Disallow a single NaN in an interval |    2      2
+Test Summary:    | Pass  Total
+Interval strings |    4      4
+Test Summary: | Pass  Total
+setdiff tests |    6      6
+Test Summary:            | Pass  Total
+Interval{T}(x::Interval) |    2      2
+Test Summary:         | Pass  Total
+@interval with fields |    1      1
+Test Summary:                        | Pass  Total
+@interval with user-defined function |    1      1
+Test Summary:   | Pass  Total
+a..b with a > b |    1      1
+Test Summary:        | Pass  Total
+Hashing of Intervals |    6      6
+Test Summary:  | Pass  Total
+force_interval |    5      5
+abs, min, max, sign: Error During Test at /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/interval_tests/consistency.jl:301
+  Test threw exception
+  Expression: log(#= /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/interval_tests/consistency.jl:301 =# @interval(-2, 5)) == #= /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/interval_tests/consistency.jl:301 =# @interval(-Inf, log(5.0))
+  could not load library "/home/pkgeval/.julia/packages/CRlibm/NFCH5/src/../deps/src/crlibm-1.0beta4/libcrlibm"
+  /home/pkgeval/.julia/packages/CRlibm/NFCH5/src/../deps/src/crlibm-1.0beta4/libcrlibm.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] log at /home/pkgeval/.julia/packages/CRlibm/NFCH5/src/CRlibm.jl:94 [inlined]
+   [2] log at /home/pkgeval/.julia/packages/IntervalArithmetic/sRFlx/src/intervals/rounding.jl:243 [inlined]
+   [3] log at /home/pkgeval/.julia/packages/IntervalArithmetic/sRFlx/src/intervals/rounding.jl:298 [inlined]
+   [4] log(::IntervalArithmetic.Interval{Float64}) at /home/pkgeval/.julia/packages/IntervalArithmetic/sRFlx/src/intervals/functions.jl:313
+   [5] top-level scope at /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/interval_tests/consistency.jl:301
+   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [7] top-level scope at /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/interval_tests/consistency.jl:281
+   [8] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [9] top-level scope at /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/interval_tests/consistency.jl:11
+  
+abs, min, max, sign: Error During Test at /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/interval_tests/consistency.jl:302
+  Test threw exception
+  Expression: #= /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/interval_tests/consistency.jl:302 =# @interval(sin(0.1) + cos(0.2)) == sin(#= /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/interval_tests/consistency.jl:302 =# @interval(0.1)) + cos(#= /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/interval_tests/consistency.jl:302 =# @interval(0.2))
+  could not load library "/home/pkgeval/.julia/packages/CRlibm/NFCH5/src/../deps/src/crlibm-1.0beta4/libcrlibm"
+  /home/pkgeval/.julia/packages/CRlibm/NFCH5/src/../deps/src/crlibm-1.0beta4/libcrlibm.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] sin at /home/pkgeval/.julia/packages/CRlibm/NFCH5/src/CRlibm.jl:94 [inlined]
+   [2] sin at /home/pkgeval/.julia/packages/IntervalArithmetic/sRFlx/src/intervals/rounding.jl:243 [inlined]
+   [3] sin at /home/pkgeval/.julia/packages/IntervalArithmetic/sRFlx/src/intervals/rounding.jl:298 [inlined]
+   [4] sin(::IntervalArithmetic.Interval{Float64}) at /home/pkgeval/.julia/packages/IntervalArithmetic/sRFlx/src/intervals/trigonometric.jl:119
+   [5] top-level scope at /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/interval_tests/consistency.jl:302
+   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [7] top-level scope at /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/interval_tests/consistency.jl:281
+   [8] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [9] top-level scope at /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/interval_tests/consistency.jl:11
+  
+Type stability: Error During Test at /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/interval_tests/consistency.jl:390
+  Got exception outside of a @test
+  could not load library "/home/pkgeval/.julia/packages/CRlibm/NFCH5/src/../deps/src/crlibm-1.0beta4/libcrlibm"
+  /home/pkgeval/.julia/packages/CRlibm/NFCH5/src/../deps/src/crlibm-1.0beta4/libcrlibm.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] sin at /home/pkgeval/.julia/packages/CRlibm/NFCH5/src/CRlibm.jl:94 [inlined]
+   [2] sin at /home/pkgeval/.julia/packages/IntervalArithmetic/sRFlx/src/intervals/rounding.jl:243 [inlined]
+   [3] sin at /home/pkgeval/.julia/packages/IntervalArithmetic/sRFlx/src/intervals/rounding.jl:298 [inlined]
+   [4] sin(::IntervalArithmetic.Interval{Float64}) at /home/pkgeval/.julia/packages/IntervalArithmetic/sRFlx/src/intervals/trigonometric.jl:126
+   [5] top-level scope at /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/interval_tests/consistency.jl:406
+   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [7] top-level scope at /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/interval_tests/consistency.jl:391
+   [8] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [9] top-level scope at /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/interval_tests/consistency.jl:11
+   [10] include(::String) at ./client.jl:457
+   [11] top-level scope at /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/interval_tests/intervals.jl:4
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/runtests.jl:11
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  
+Test Summary:                              | Pass  Error  Total
+Consistency tests                          |  233      3    236
+  Interval types and constructors          |   32            32
+  inv                                      |   12            12
+  fma consistency                          |    7             7
+  ∈ tests                                  |    6             6
+  Inclusion tests                          |   23            23
+  Comparison tests                         |   20            20
+  Intersection tests                       |   11            11
+  Hull and union tests                     |    4             4
+  Special interval tests                   |   17            17
+  mid                                      |    7             7
+  mid with parameter                       |    4             4
+  mid with large floats                    |    4             4
+  diam                                     |    5             5
+  mig and mag                              |    6             6
+  cancelplus tests                         |   22            22
+  mid and radius                           |    7             7
+  abs, min, max, sign                      |   20      2     22
+  Precision tests                          |    4             4
+  Interval power of an interval            |    4             4
+  isatomic                                 |    6             6
+  iszero                                   |    7             7
+  Difference between Interval and interval |    5             5
+  Type stability                           |           1      1
+ERROR: LoadError: LoadError: LoadError: Some tests did not pass: 233 passed, 0 failed, 3 errored, 0 broken.
+in expression starting at /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/interval_tests/consistency.jl:9
+in expression starting at /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/interval_tests/intervals.jl:4
+in expression starting at /home/pkgeval/.another_julia/packages/IntervalArithmetic/sRFlx/test/runtests.jl:11
+
+PkgEval failed: Package IntervalArithmetic errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:20
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2020-12-03T10:32:08.483
+CPU usage: 58.46s (54.52s user, 4.11s kernel)
+
+Network usage:
+- eth0: 3.328 MiB received, 102.766 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":117,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":117,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":117,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":87,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":87,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":87,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":5685248,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":5685248,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":5685248,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":5685248,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":5685248,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":5685248,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":258076672,"max_usage":798756864,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":219144192,"inactive_file":135168,"inactive_anon":13381632,"total_pgfault":1132263,"total_cache":30076928,"total_rss_huge":0,"total_active_anon":235868160,"total_pgmajfault":0,"pgpgin":651156,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":0,"pgpgout":590303,"hierarchical_memsw_limit":0,"cache":30076928,"active_file":0,"pgfault":1132263,"total_mapped_file":0,"total_pgpgout":590303,"total_writeback":0,"rss":219144192,"unevictable":0,"total_inactive_anon":13381632,"total_pgpgin":651156,"active_anon":235868160,"total_active_file":0},"limit":540965302272},"name":"/IntervalArithmetic-2DtUb4zH","networks":{"eth0":{"rx_bytes":3489672,"rx_packets":868,"tx_packets":898,"tx_bytes":105232,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"627e06d2ab491cd22303f9d1a9e2b824b695615d8a47ae52b0dc6cdcbe223f88","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":42},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":123072275215808967,"online_cpus":128,"cpu_usage":{"usage_in_usermode":54520000000,"usage_in_kernelmode":4110000000,"total_usage":58457300223,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58457300223,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2020-12-03T10:32:08.658438623Z"}

@@ -1,0 +1,116 @@
+################################################################################
+# PackageCompiler set-up: 2020-12-03T14:59:25.153
+#
+
+Julia Version 1.5.3
+Commit 788b2c77c1 (2020-11-09 13:37 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_DEPOT_PATH = /home/pkgeval/.julia:/usr/local/share/julia
+
+
+
+################################################################################
+# Installation: 2020-12-03T14:59:27.93
+#
+
+  Resolving package versions...
+  Installed PackageCompiler ───── v1.2.3
+  Installed CEnum ─────────────── v0.4.1
+  Installed DocStringExtensions ─ v0.8.3
+  Installed OpenDSSDirect ─────── v0.7.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a8b11937] + OpenDSSDirect v0.7.0
+  [9b87118b] + PackageCompiler v1.2.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [fa961155] + CEnum v0.4.1
+  [ffbed154] + DocStringExtensions v0.8.3
+  [a8b11937] + OpenDSSDirect v0.7.0
+  [9b87118b] + PackageCompiler v1.2.3
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building OpenDSSDirect → `~/.julia/packages/OpenDSSDirect/dJLAh/deps/build.log`
+
+
+################################################################################
+# Compiling: 2020-12-03T14:59:34.15
+#
+
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+ERROR: LoadError: Declaring __precompile__(false) is not allowed in files that are being precompiled.
+Stacktrace:
+ [1] __precompile__(::Bool) at ./loading.jl:855
+ [2] top-level scope at /home/pkgeval/.julia/packages/OpenDSSDirect/dJLAh/src/OpenDSSDirect.jl:4
+ [3] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [4] include at ./Base.jl:368 [inlined]
+ [5] _require(::Base.PkgId) at ./loading.jl:1059
+ [6] require(::Base.PkgId) at ./loading.jl:928
+ [7] require(::Module, ::Symbol) at ./loading.jl:923
+in expression starting at /home/pkgeval/.julia/packages/OpenDSSDirect/dJLAh/src/OpenDSSDirect.jl:4
+ERROR: failed process: Process(`/opt/julia/bin/julia --color=yes --startup-file=no --cpu-target=native --sysimage=/opt/julia/lib/julia/sys.so --project=/home/pkgeval/.julia/environments/v1.5 --output-o=/tmp/jl_N7moOI.o -e 'Base.reinit_stdio()
+@eval Sys BINDIR = ccall(:jl_get_julia_bindir, Any, ())::String
+Base.init_load_path()
+Base.init_depot_path()
+import OpenDSSDirect
+# This @eval prevents symbols from being put into Main
+@eval Module() begin
+    PrecompileStagingArea = Module()
+    for (_pkgid, _mod) in Base.loaded_modules
+        if !(_pkgid.name in ("Main", "Core", "Base"))
+            eval(PrecompileStagingArea, :(const $(Symbol(_mod)) = $_mod))
+        end
+    end
+    precompile_statements = String[]
+        append!(precompile_statements, readlines("/tmp/jl_azQ9NK"))
+
+    for statement in sort(precompile_statements)
+        # println(statement)
+        # The compiler has problem caching signatures with \`Vararg{?, N}\`. Replacing
+        # N with a large number seems to work around it.
+        statement = replace(statement, r"Vararg{(.*?), N} where N" => s"Vararg{\1, 100}")
+        try
+            Base.include_string(PrecompileStagingArea, statement)
+        catch
+            # See julia issue #28808
+            @debug "failed to execute $statement"
+        end
+    end
+end # module
+empty!(LOAD_PATH)
+empty!(DEPOT_PATH)
+'`, ProcessExited(1)) [1]
+
+Stacktrace:
+ [1] pipeline_error at ./process.jl:525 [inlined]
+ [2] run(::Cmd; wait::Bool) at ./process.jl:440
+ [3] run at ./process.jl:438 [inlined]
+ [4] create_sysimg_object_file(::String, ::Array{String,1}; project::String, base_sysimage::String, precompile_execution_file::Array{String,1}, precompile_statements_file::Array{String,1}, cpu_target::String, script::Nothing, isapp::Bool) at /home/pkgeval/.julia/packages/PackageCompiler/AerNj/src/PackageCompiler.jl:295
+ [5] create_sysimage(::Symbol; sysimage_path::String, project::String, precompile_execution_file::Array{String,1}, precompile_statements_file::Array{String,1}, incremental::Bool, filter_stdlibs::Bool, replace_default::Bool, cpu_target::String, script::Nothing, base_sysimage::Nothing, isapp::Bool) at /home/pkgeval/.julia/packages/PackageCompiler/AerNj/src/PackageCompiler.jl:426
+ [6] top-level scope at none:21
+

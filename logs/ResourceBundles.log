@@ -1,0 +1,160 @@
+################################################################################
+# PkgEval set-up: 2020-12-03T11:08:36.242
+#
+
+Julia Version 1.5.3
+Commit 788b2c77c1 (2020-11-09 13:37 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_DEPOT_PATH = /home/pkgeval/.julia:/usr/local/share/julia
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+
+
+################################################################################
+# Installation: 2020-12-03T11:08:38.592
+#
+
+  Resolving package versions...
+  Installed ResourceBundles ─ v0.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a9a2f26c] + ResourceBundles v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [a9a2f26c] + ResourceBundles v0.1.0
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2020-12-03T11:08:39.622
+#
+
+
+    Testing ResourceBundles
+Status `/tmp/jl_DRIgzh/Project.toml`
+  [a9a2f26c] ResourceBundles v0.1.0
+  [56ddb016] Logging
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Status `/tmp/jl_DRIgzh/Manifest.toml`
+  [a9a2f26c] ResourceBundles v0.1.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+types         |   14     14
+Test Summary: | Pass  Total
+locale        |   92     92
+Test Summary:   | Pass  Total
+resource_bundle |  187    187
+Test Summary: | Pass  Total
+string        |   47     47
+libc: Test Failed at /home/pkgeval/.julia/packages/ResourceBundles/aeZpR/test/libc.jl:14
+  Expression: newlocale_c(LC._MASK_ALL, "en_US.utf8", P0) != P0
+   Evaluated: Ptr{Nothing} @0x0000000000000000 != Ptr{Nothing} @0x0000000000000000
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/ResourceBundles/aeZpR/test/libc.jl:14
+ [2] include(::String) at ./client.jl:457
+ [3] top-level scope at /home/pkgeval/.julia/packages/ResourceBundles/aeZpR/test/runtests.jl:32
+ [4] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.julia/packages/ResourceBundles/aeZpR/test/runtests.jl:32
+
+signal (11): Segmentation fault
+in expression starting at /home/pkgeval/.julia/packages/ResourceBundles/aeZpR/test/libc.jl:11
+duplocale at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+duplocale at /home/pkgeval/.julia/packages/ResourceBundles/aeZpR/src/libc.jl:9 [inlined]
+top-level scope at /home/pkgeval/.julia/packages/ResourceBundles/aeZpR/test/libc.jl:18
+jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:834
+jl_parse_eval_all at /buildworker/worker/package_linux64/build/src/ast.c:913
+jl_load_rewrite at /buildworker/worker/package_linux64/build/src/toplevel.c:914
+include at ./client.jl:457
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2214 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2398
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1690 [inlined]
+do_call at /buildworker/worker/package_linux64/build/src/interpreter.c:117
+eval_value at /buildworker/worker/package_linux64/build/src/interpreter.c:206
+eval_stmt_value at /buildworker/worker/package_linux64/build/src/interpreter.c:157 [inlined]
+eval_body at /buildworker/worker/package_linux64/build/src/interpreter.c:566
+eval_body at /buildworker/worker/package_linux64/build/src/interpreter.c:492
+eval_body at /buildworker/worker/package_linux64/build/src/interpreter.c:492
+jl_interpret_toplevel_thunk at /buildworker/worker/package_linux64/build/src/interpreter.c:660
+jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:840
+jl_parse_eval_all at /buildworker/worker/package_linux64/build/src/ast.c:913
+jl_load_rewrite at /buildworker/worker/package_linux64/build/src/toplevel.c:914
+include at ./client.jl:457
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2231 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2398
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1690 [inlined]
+do_call at /buildworker/worker/package_linux64/build/src/interpreter.c:117
+eval_value at /buildworker/worker/package_linux64/build/src/interpreter.c:206
+eval_stmt_value at /buildworker/worker/package_linux64/build/src/interpreter.c:157 [inlined]
+eval_body at /buildworker/worker/package_linux64/build/src/interpreter.c:566
+jl_interpret_toplevel_thunk at /buildworker/worker/package_linux64/build/src/interpreter.c:660
+jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:840
+jl_toplevel_eval_flex at /buildworker/worker/package_linux64/build/src/toplevel.c:790
+jl_toplevel_eval_in at /buildworker/worker/package_linux64/build/src/toplevel.c:883
+eval at ./boot.jl:331
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2214 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2398
+exec_options at ./client.jl:272
+_start at ./client.jl:506
+jfptr__start_53898.clone_1 at /opt/julia/lib/julia/sys.so (unknown line)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2214 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2398
+jl_apply at /buildworker/worker/package_linux64/build/ui/../src/julia.h:1690 [inlined]
+true_main at /buildworker/worker/package_linux64/build/ui/repl.c:106
+main at /buildworker/worker/package_linux64/build/ui/repl.c:227
+__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+_start at /opt/julia/bin/julia (unknown line)
+Allocations: 20733009 (Pool: 20726691; Big: 6318); GC: 24
+
+PkgEval failed: Package ResourceBundles errored during testing (received signal: 11)
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:20
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2020-12-03T11:09:01.746
+CPU usage: 25.65s (24.73s user, 0.98s kernel)
+
+Network usage:
+- eth0: 57.435 KiB received, 4.958 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":3,"op":"Read","minor":0},{"major":259,"value":5,"op":"Write","minor":0},{"major":259,"value":3,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":8,"op":"Total","minor":0},{"major":253,"value":3,"op":"Read","minor":2},{"major":253,"value":5,"op":"Write","minor":2},{"major":253,"value":3,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":8,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":65536,"op":"Read","minor":0},{"major":259,"value":20480,"op":"Write","minor":0},{"major":259,"value":65536,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":86016,"op":"Total","minor":0},{"major":253,"value":65536,"op":"Read","minor":2},{"major":253,"value":20480,"op":"Write","minor":2},{"major":253,"value":65536,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":86016,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":456937472,"max_usage":690147328,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":202330112,"inactive_file":135168,"inactive_anon":248033280,"total_pgfault":462033,"total_cache":248840192,"total_rss_huge":0,"total_active_anon":203022336,"total_pgmajfault":0,"pgpgin":231528,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":121378,"hierarchical_memsw_limit":0,"cache":248840192,"active_file":0,"pgfault":462033,"total_mapped_file":0,"total_pgpgout":121378,"total_writeback":0,"rss":202330112,"unevictable":0,"total_inactive_anon":248033280,"total_pgpgin":231528,"active_anon":203022336,"total_active_file":0},"limit":540965302272},"name":"/ResourceBundles-9X5MfNt8","networks":{"eth0":{"rx_bytes":58813,"rx_packets":58,"tx_packets":41,"tx_bytes":5077,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"2462f2623a7c0aa0bc33d0c472ac6a47aaf2285995b9467a9f2134acfbe40910","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":38},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":123355285195808967,"online_cpus":128,"cpu_usage":{"usage_in_usermode":24730000000,"usage_in_kernelmode":980000000,"total_usage":25650375076,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25650375076,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2020-12-03T11:09:02.415365753Z"}

@@ -1,0 +1,62 @@
+┌ Warning: Error requiring Tracker from Bijectors:
+│ LoadError: ArgumentError: Package Bijectors does not have Compat in its dependencies:
+│ - If you have Bijectors checked out for development and have
+│   added Compat as a dependency but haven't updated your primary
+│   environment's manifest file, try `Pkg.resolve()`.
+│ - Otherwise you may need to report an issue with Bijectors
+│ Stacktrace:
+│  [1] require(::Module, ::Symbol) at ./loading.jl:906
+│  [2] include_string(::Function, ::Module, ::String, ::String) at ./loading.jl:1088
+│  [3] include_string(::Module, ::String, ::String) at ./loading.jl:1096
+│  [4] top-level scope at /home/pkgeval/.julia/packages/Requires/Odp8W/src/Requires.jl:38
+│  [5] eval at ./boot.jl:331 [inlined]
+│  [6] eval at /home/pkgeval/.julia/packages/Bijectors/Dfi2f/src/Bijectors.jl:1 [inlined]
+│  [7] (::Bijectors.var"#124#145")() at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:97
+│  [8] err(::Any, ::Module, ::String) at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:42
+│  [9] (::Bijectors.var"#123#144")() at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:96
+│  [10] withpath(::Any, ::String) at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:32
+│  [11] (::Bijectors.var"#122#143")() at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:95
+│  [12] listenpkg(::Any, ::Base.PkgId) at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:15
+│  [13] macro expansion at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:93 [inlined]
+│  [14] __init__() at /home/pkgeval/.julia/packages/Bijectors/Dfi2f/src/Bijectors.jl:264
+│ in expression starting at compat/tracker.jl:12
+└ @ Requires ~/.julia/packages/Requires/Odp8W/src/require.jl:44
+┌ Warning: Error requiring DistributionsAD from Bijectors:
+│ LoadError: ArgumentError: Package Bijectors does not have Distributions in its dependencies:
+│ - If you have Bijectors checked out for development and have
+│   added Distributions as a dependency but haven't updated your primary
+│   environment's manifest file, try `Pkg.resolve()`.
+│ - Otherwise you may need to report an issue with Bijectors
+│ Stacktrace:
+│  [1] require(::Module, ::Symbol) at ./loading.jl:906
+│  [2] include_string(::Function, ::Module, ::String, ::String) at ./loading.jl:1088
+│  [3] include_string(::Module, ::String, ::String) at ./loading.jl:1096
+│  [4] top-level scope at /home/pkgeval/.julia/packages/Requires/Odp8W/src/Requires.jl:38
+│  [5] eval at ./boot.jl:331 [inlined]
+│  [6] eval at /home/pkgeval/.julia/packages/Bijectors/Dfi2f/src/Bijectors.jl:1 [inlined]
+│  [7] (::Bijectors.var"#133#154")() at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:97
+│  [8] err(::Any, ::Module, ::String) at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:42
+│  [9] (::Bijectors.var"#132#153")() at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:96
+│  [10] withpath(::Any, ::String) at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:32
+│  [11] (::Bijectors.var"#131#152")() at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:95
+│  [12] listenpkg(::Any, ::Base.PkgId) at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:15
+│  [13] macro expansion at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:93 [inlined]
+│  [14] __init__() at /home/pkgeval/.julia/packages/Bijectors/Dfi2f/src/Bijectors.jl:267
+│ in expression starting at compat/distributionsad.jl:5
+└ @ Requires ~/.julia/packages/Requires/Odp8W/src/require.jl:44
+fatal: error thrown and no exception handler available.
+#<null>
+error at ./error.jl:33
+check_deps at /home/pkgeval/.julia/packages/Libtask/OtgFl/deps/deps.jl:16
+__init__ at /home/pkgeval/.julia/packages/Libtask/OtgFl/src/Libtask.jl:13
+jfptr___init___74888 at /cache/TuringModels-oNmGLpXu.so (unknown line)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2214 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2398
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1690 [inlined]
+jl_module_run_initializer at /buildworker/worker/package_linux64/build/src/toplevel.c:74
+_julia_init at /buildworker/worker/package_linux64/build/src/init.c:780
+main at /buildworker/worker/package_linux64/build/ui/repl.c:221
+__libc_start_main at /usr/lib/libc.so.6 (unknown line)
+_start at /opt/julia/bin/julia (unknown line)
+
+No statistics gathered.

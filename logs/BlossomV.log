@@ -1,0 +1,137 @@
+################################################################################
+# PkgEval set-up: 2020-12-03T10:05:58.933
+#
+
+Julia Version 1.5.3
+Commit 788b2c77c1 (2020-11-09 13:37 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_DEPOT_PATH = /home/pkgeval/.another_julia:/usr/local/share/julia
+
+
+
+################################################################################
+# Installation: 2020-12-03T10:06:01.71
+#
+
+  Resolving package versions...
+  Installed BinDeps ─── v1.0.2
+  Installed BlossomV ── v0.4.3
+  Installed URIParser ─ v0.4.1
+Updating `~/.another_julia/environments/v1.5/Project.toml`
+  [6c721016] + BlossomV v0.4.3
+Updating `~/.another_julia/environments/v1.5/Manifest.toml`
+  [9e28174c] + BinDeps v1.0.2
+  [6c721016] + BlossomV v0.4.3
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building BlossomV → `~/.another_julia/packages/BlossomV/szW7L/deps/build.log`
+
+
+################################################################################
+# Testing: 2020-12-03T10:06:33.372
+#
+
+
+    Testing BlossomV
+Status `/tmp/jl_mGFBlF/Project.toml`
+  [9e28174c] BinDeps v1.0.2
+  [6c721016] BlossomV v0.4.3
+  [8f399da3] Libdl
+  [8dfed614] Test
+Status `/tmp/jl_mGFBlF/Manifest.toml`
+  [9e28174c] BinDeps v1.0.2
+  [6c721016] BlossomV v0.4.3
+  [30578b45] URIParser v0.4.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Trivial Case: Error During Test at /home/pkgeval/.another_julia/packages/BlossomV/szW7L/test/runtests.jl:6
+  Got exception outside of a @test
+  could not load library "/home/pkgeval/.julia/packages/BlossomV/szW7L/deps/usr/lib/blossom5int32.so"
+  /home/pkgeval/.julia/packages/BlossomV/szW7L/deps/usr/lib/blossom5int32.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] Matching at /home/pkgeval/.julia/packages/BlossomV/szW7L/src/BlossomV.jl:79 [inlined]
+   [2] Matching at /home/pkgeval/.julia/packages/BlossomV/szW7L/src/BlossomV.jl:34 [inlined]
+   [3] Matching at /home/pkgeval/.julia/packages/BlossomV/szW7L/src/BlossomV.jl:30 [inlined]
+   [4] Matching at /home/pkgeval/.julia/packages/BlossomV/szW7L/src/BlossomV.jl:27 [inlined]
+   [5] macro expansion at /home/pkgeval/.another_julia/packages/BlossomV/szW7L/test/runtests.jl:11 [inlined]
+   [6] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [7] top-level scope at /home/pkgeval/.another_julia/packages/BlossomV/szW7L/test/runtests.jl:7
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+Test Summary: | Error  Total
+Trivial Case  |     1      1
+ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/pkgeval/.another_julia/packages/BlossomV/szW7L/test/runtests.jl:6
+
+PkgEval failed: Package BlossomV errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:20
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2020-12-03T10:06:41.69
+CPU usage: 40.49s (38.34s user, 2.27s kernel)
+
+Network usage:
+- eth0: 122.284 KiB received, 17.278 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":109,"op":"Read","minor":0},{"major":259,"value":40,"op":"Write","minor":0},{"major":259,"value":109,"op":"Sync","minor":0},{"major":259,"value":40,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":149,"op":"Total","minor":0},{"major":253,"value":109,"op":"Read","minor":2},{"major":253,"value":40,"op":"Write","minor":2},{"major":253,"value":109,"op":"Sync","minor":2},{"major":253,"value":40,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":149,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":1544192,"op":"Read","minor":0},{"major":259,"value":831488,"op":"Write","minor":0},{"major":259,"value":1544192,"op":"Sync","minor":0},{"major":259,"value":831488,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":2375680,"op":"Total","minor":0},{"major":253,"value":1544192,"op":"Read","minor":2},{"major":253,"value":831488,"op":"Write","minor":2},{"major":253,"value":1544192,"op":"Sync","minor":2},{"major":253,"value":831488,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":2375680,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":215683072,"max_usage":606089216,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":205938688,"inactive_file":135168,"inactive_anon":270336,"total_pgfault":714021,"total_cache":3493888,"total_rss_huge":0,"total_active_anon":207618048,"total_pgmajfault":0,"pgpgin":437415,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":386247,"hierarchical_memsw_limit":0,"cache":3493888,"active_file":1486848,"pgfault":714021,"total_mapped_file":0,"total_pgpgout":386247,"total_writeback":0,"rss":205938688,"unevictable":0,"total_inactive_anon":270336,"total_pgpgin":437415,"active_anon":207618048,"total_active_file":1486848},"limit":540965302272},"name":"/BlossomV-VFcNJ7Np","networks":{"eth0":{"rx_bytes":125219,"rx_packets":170,"tx_packets":147,"tx_bytes":17693,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"68c0167cfa9725cb1436f6b6859220944ba01b127bc76b2f4b3836c0771ac203","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":42},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":122877147285808967,"online_cpus":128,"cpu_usage":{"usage_in_usermode":38340000000,"usage_in_kernelmode":2270000000,"total_usage":40491908928,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31260,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40491877668,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2020-12-03T10:06:41.694121773Z"}

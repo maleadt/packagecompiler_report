@@ -1,0 +1,362 @@
+################################################################################
+# PkgEval set-up: 2020-12-03T15:49:29.585
+#
+
+Julia Version 1.5.3
+Commit 788b2c77c1 (2020-11-09 13:37 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_DEPOT_PATH = /home/pkgeval/.another_julia:/usr/local/share/julia
+
+
+
+################################################################################
+# Installation: 2020-12-03T15:49:31.346
+#
+
+  Resolving package versions...
+  Installed Parsers ───────────── v1.0.12
+  Installed PlotlyBase ────────── v0.4.3
+  Installed Requires ──────────── v1.1.1
+  Installed JSON ──────────────── v0.21.1
+  Installed LaTeXStrings ──────── v1.2.0
+  Installed DocStringExtensions ─ v0.8.3
+Updating `~/.another_julia/environments/v1.5/Project.toml`
+  [a03496cd] + PlotlyBase v0.4.3
+Updating `~/.another_julia/environments/v1.5/Manifest.toml`
+  [ffbed154] + DocStringExtensions v0.8.3
+  [682c06a0] + JSON v0.21.1
+  [b964fa9f] + LaTeXStrings v1.2.0
+  [69de0a69] + Parsers v1.0.12
+  [a03496cd] + PlotlyBase v0.4.3
+  [ae029012] + Requires v1.1.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2020-12-03T15:49:33.663
+#
+
+
+    Testing PlotlyBase
+Status `/tmp/jl_2cdnTF/Project.toml`
+  [ffbed154] DocStringExtensions v0.8.3
+  [682c06a0] JSON v0.21.1
+  [b964fa9f] LaTeXStrings v1.2.0
+  [a03496cd] PlotlyBase v0.4.3
+  [ae029012] Requires v1.1.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [56ddb016] Logging
+  [44cfe95a] Pkg
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+Status `/tmp/jl_2cdnTF/Manifest.toml`
+  [ffbed154] DocStringExtensions v0.8.3
+  [682c06a0] JSON v0.21.1
+  [b964fa9f] LaTeXStrings v1.2.0
+  [69de0a69] Parsers v1.0.12
+  [a03496cd] PlotlyBase v0.4.3
+  [ae029012] Requires v1.1.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+
+api: 
+frames: 
+kaleido: fn = tempname() * "." * ext = "/tmp/jl_uGVNa6.png"
+fn = tempname() * "." * ext = "/tmp/jl_y6AYt6.jpeg"
+fn = tempname() * "." * ext = "/tmp/jl_mWmpw4.webp"
+fn = tempname() * "." * ext = "/tmp/jl_Y2DdO7.svg"
+fn = tempname() * "." * ext = "/tmp/jl_R3Cua7.pdf"
+fn = tempname() * "." * ext = "/tmp/jl_g856M3.json"
+
+recession_bands: recession_bands: Error During Test at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:3
+  Test threw exception
+  Expression: PlotlyBase._recession_band_shapes(p1) === nothing
+  ArgumentError: Cannot open '/home/pkgeval/.julia/packages/PlotlyBase/NxSlF/recession_dates.tsv': not a file
+  Stacktrace:
+   [1] readdlm_auto(::String, ::Char, ::Type{T} where T, ::Char, ::Bool; opts::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:233
+   [2] readdlm_auto at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:233 [inlined]
+   [3] #readdlm#5 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:170 [inlined]
+   [4] readdlm at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:170 [inlined]
+   [5] #readdlm#3 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:118 [inlined]
+   [6] readdlm at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:118 [inlined]
+   [7] _recession_band_shapes(::PlotlyBase.Plot{Array{PlotlyBase.GenericTrace{Dict{Symbol,Any}},1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:80
+   [8] _recession_band_shapes(::PlotlyBase.Plot{Array{PlotlyBase.GenericTrace{Dict{Symbol,Any}},1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:80
+   [9] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:3
+   [10] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [11] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:2
+  
+recession_bands: Error During Test at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:11
+  Test threw exception
+  Expression: PlotlyBase._recession_band_shapes(p2) !== nothing
+  ArgumentError: Cannot open '/home/pkgeval/.julia/packages/PlotlyBase/NxSlF/recession_dates.tsv': not a file
+  Stacktrace:
+   [1] readdlm_auto(::String, ::Char, ::Type{T} where T, ::Char, ::Bool; opts::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:233
+   [2] readdlm_auto at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:233 [inlined]
+   [3] #readdlm#5 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:170 [inlined]
+   [4] readdlm at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:170 [inlined]
+   [5] #readdlm#3 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:118 [inlined]
+   [6] readdlm at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:118 [inlined]
+   [7] _recession_band_shapes(::PlotlyBase.Plot{Array{PlotlyBase.GenericTrace{Dict{Symbol,Any}},1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:80
+   [8] _recession_band_shapes(::PlotlyBase.Plot{Array{PlotlyBase.GenericTrace{Dict{Symbol,Any}},1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:80
+   [9] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:11
+   [10] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [11] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:2
+  
+recession_bands: Error During Test at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:12
+  Test threw exception
+  Expression: length(PlotlyBase._recession_band_shapes(p2)) == 7
+  ArgumentError: Cannot open '/home/pkgeval/.julia/packages/PlotlyBase/NxSlF/recession_dates.tsv': not a file
+  Stacktrace:
+   [1] readdlm_auto(::String, ::Char, ::Type{T} where T, ::Char, ::Bool; opts::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:233
+   [2] readdlm_auto at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:233 [inlined]
+   [3] #readdlm#5 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:170 [inlined]
+   [4] readdlm at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:170 [inlined]
+   [5] #readdlm#3 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:118 [inlined]
+   [6] readdlm at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:118 [inlined]
+   [7] _recession_band_shapes(::PlotlyBase.Plot{Array{PlotlyBase.GenericTrace{Dict{Symbol,Any}},1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:80
+   [8] _recession_band_shapes(::PlotlyBase.Plot{Array{PlotlyBase.GenericTrace{Dict{Symbol,Any}},1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:80
+   [9] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:12
+   [10] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [11] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:2
+  
+recession_bands: Error During Test at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:15
+  Test threw exception
+  Expression: PlotlyBase._recession_band_shapes(p3) !== nothing
+  ArgumentError: Cannot open '/home/pkgeval/.julia/packages/PlotlyBase/NxSlF/recession_dates.tsv': not a file
+  Stacktrace:
+   [1] readdlm_auto(::String, ::Char, ::Type{T} where T, ::Char, ::Bool; opts::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:233
+   [2] readdlm_auto at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:233 [inlined]
+   [3] #readdlm#5 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:170 [inlined]
+   [4] readdlm at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:170 [inlined]
+   [5] #readdlm#3 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:118 [inlined]
+   [6] readdlm at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:118 [inlined]
+   [7] _recession_band_shapes(::PlotlyBase.Plot{Array{PlotlyBase.GenericTrace{Dict{Symbol,Any}},1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:80
+   [8] _recession_band_shapes(::PlotlyBase.Plot{Array{PlotlyBase.GenericTrace{Dict{Symbol,Any}},1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:80
+   [9] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:15
+   [10] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [11] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:2
+  
+recession_bands: Error During Test at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:16
+  Test threw exception
+  Expression: length(PlotlyBase._recession_band_shapes(p3)) == 7
+  ArgumentError: Cannot open '/home/pkgeval/.julia/packages/PlotlyBase/NxSlF/recession_dates.tsv': not a file
+  Stacktrace:
+   [1] readdlm_auto(::String, ::Char, ::Type{T} where T, ::Char, ::Bool; opts::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:233
+   [2] readdlm_auto at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:233 [inlined]
+   [3] #readdlm#5 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:170 [inlined]
+   [4] readdlm at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:170 [inlined]
+   [5] #readdlm#3 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:118 [inlined]
+   [6] readdlm at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:118 [inlined]
+   [7] _recession_band_shapes(::PlotlyBase.Plot{Array{PlotlyBase.GenericTrace{Dict{Symbol,Any}},1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:80
+   [8] _recession_band_shapes(::PlotlyBase.Plot{Array{PlotlyBase.GenericTrace{Dict{Symbol,Any}},1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:80
+   [9] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:16
+   [10] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [11] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:2
+  
+recession_bands: Error During Test at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:19
+  Test threw exception
+  Expression: PlotlyBase._recession_band_shapes(p12) !== nothing
+  ArgumentError: Cannot open '/home/pkgeval/.julia/packages/PlotlyBase/NxSlF/recession_dates.tsv': not a file
+  Stacktrace:
+   [1] readdlm_auto(::String, ::Char, ::Type{T} where T, ::Char, ::Bool; opts::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:233
+   [2] readdlm_auto at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:233 [inlined]
+   [3] #readdlm#5 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:170 [inlined]
+   [4] readdlm at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:170 [inlined]
+   [5] #readdlm#3 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:118 [inlined]
+   [6] readdlm at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:118 [inlined]
+   [7] _recession_band_shapes(::PlotlyBase.Plot{Array{PlotlyBase.AbstractTrace,1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:80
+   [8] _recession_band_shapes(::PlotlyBase.Plot{Array{PlotlyBase.AbstractTrace,1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:80
+   [9] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:19
+   [10] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [11] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:2
+  
+recession_bands: Error During Test at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:20
+  Test threw exception
+  Expression: length(PlotlyBase._recession_band_shapes(p12)) == 7
+  ArgumentError: Cannot open '/home/pkgeval/.julia/packages/PlotlyBase/NxSlF/recession_dates.tsv': not a file
+  Stacktrace:
+   [1] readdlm_auto(::String, ::Char, ::Type{T} where T, ::Char, ::Bool; opts::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:233
+   [2] readdlm_auto at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:233 [inlined]
+   [3] #readdlm#5 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:170 [inlined]
+   [4] readdlm at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:170 [inlined]
+   [5] #readdlm#3 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:118 [inlined]
+   [6] readdlm at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:118 [inlined]
+   [7] _recession_band_shapes(::PlotlyBase.Plot{Array{PlotlyBase.AbstractTrace,1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:80
+   [8] _recession_band_shapes(::PlotlyBase.Plot{Array{PlotlyBase.AbstractTrace,1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:80
+   [9] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:20
+   [10] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [11] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:2
+  
+recession_bands: Error During Test at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:23
+  Test threw exception
+  Expression: PlotlyBase._recession_band_shapes(p123) !== nothing
+  ArgumentError: Cannot open '/home/pkgeval/.julia/packages/PlotlyBase/NxSlF/recession_dates.tsv': not a file
+  Stacktrace:
+   [1] readdlm_auto(::String, ::Char, ::Type{T} where T, ::Char, ::Bool; opts::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:233
+   [2] readdlm_auto at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:233 [inlined]
+   [3] #readdlm#5 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:170 [inlined]
+   [4] readdlm at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:170 [inlined]
+   [5] #readdlm#3 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:118 [inlined]
+   [6] readdlm at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:118 [inlined]
+   [7] _recession_band_shapes(::PlotlyBase.Plot{Array{PlotlyBase.AbstractTrace,1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:80
+   [8] _recession_band_shapes(::PlotlyBase.Plot{Array{PlotlyBase.AbstractTrace,1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:80
+   [9] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:23
+   [10] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [11] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:2
+  
+recession_bands: Error During Test at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:24
+  Test threw exception
+  Expression: length(PlotlyBase._recession_band_shapes(p123)) == 14
+  ArgumentError: Cannot open '/home/pkgeval/.julia/packages/PlotlyBase/NxSlF/recession_dates.tsv': not a file
+  Stacktrace:
+   [1] readdlm_auto(::String, ::Char, ::Type{T} where T, ::Char, ::Bool; opts::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:233
+   [2] readdlm_auto at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:233 [inlined]
+   [3] #readdlm#5 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:170 [inlined]
+   [4] readdlm at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:170 [inlined]
+   [5] #readdlm#3 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:118 [inlined]
+   [6] readdlm at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:118 [inlined]
+   [7] _recession_band_shapes(::PlotlyBase.Plot{Array{PlotlyBase.AbstractTrace,1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:80
+   [8] _recession_band_shapes(::PlotlyBase.Plot{Array{PlotlyBase.AbstractTrace,1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:80
+   [9] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:24
+   [10] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [11] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:2
+  
+recession_bands: Error During Test at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:1
+  Got exception outside of a @test
+  ArgumentError: Cannot open '/home/pkgeval/.julia/packages/PlotlyBase/NxSlF/recession_dates.tsv': not a file
+  Stacktrace:
+   [1] readdlm_auto(::String, ::Char, ::Type{T} where T, ::Char, ::Bool; opts::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:233
+   [2] readdlm_auto at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:233 [inlined]
+   [3] #readdlm#5 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:170 [inlined]
+   [4] readdlm at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:170 [inlined]
+   [5] #readdlm#3 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:118 [inlined]
+   [6] readdlm at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/DelimitedFiles/src/DelimitedFiles.jl:118 [inlined]
+   [7] _recession_band_shapes(::PlotlyBase.Plot{Array{PlotlyBase.GenericTrace{Dict{Symbol,Any}},1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:80
+   [8] _recession_band_shapes at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:80 [inlined]
+   [9] add_recession_bands!(::PlotlyBase.Plot{Array{PlotlyBase.GenericTrace{Dict{Symbol,Any}},1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:195
+   [10] add_recession_bands!(::PlotlyBase.Plot{Array{PlotlyBase.GenericTrace{Dict{Symbol,Any}},1},PlotlyBase.Layout{Dict{Symbol,Any}},Array{PlotlyBase.PlotlyFrame,1}}) at /home/pkgeval/.julia/packages/PlotlyBase/NxSlF/src/recession_bands.jl:195
+   [11] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:26
+   [12] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [13] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/recession_bands.jl:2
+   [14] include(::Function, ::Module, ::String) at ./Base.jl:380
+   [15] include at ./Base.jl:368 [inlined]
+   [16] include(::String) at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/runtests.jl:1
+   [17] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/runtests.jl:36
+   [18] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [19] top-level scope at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/runtests.jl:44
+   [20] include(::String) at ./client.jl:457
+   [21] top-level scope at none:6
+   [22] eval(::Module, ::Any) at ./boot.jl:331
+   [23] exec_options(::Base.JLOptions) at ./client.jl:272
+   [24] _start() at ./client.jl:506
+  
+
+styles: 
+traces: 
+Test Summary:                      | Pass  Error  Total
+PlotlyJS Tests                     |  556     10    566
+  Test api methods on Plot         |   86            86
+  test frame constructors          |    4             4
+  _UNDERSCORE_ATTRS                |    8             8
+  test setting nested attr         |    3             3
+  test setindex!, getindex methods |  127           127
+  create plot with frames          |    1             1
+  kaleido                          |    6             6
+  recession_bands                  |          10     10
+  Cycler                           |    8             8
+  Style(::Style, ::Style)          |   13            13
+  setting plot attributes          |   10            10
+  test constructors                |    1             1
+  _UNDERSCORE_ATTRS                |    8             8
+  test setindex!, getindex methods |  127           127
+  testing underscore constructor   |    7             7
+  testing vline hline              |  138           138
+  test other shapes                |    4             4
+  test setting nested attr         |    3             3
+  test margin                      |    2             2
+ERROR: LoadError: Some tests did not pass: 556 passed, 0 failed, 10 errored, 0 broken.
+in expression starting at /home/pkgeval/.another_julia/packages/PlotlyBase/NxSlF/test/runtests.jl:43
+
+PkgEval failed: Package PlotlyBase errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:20
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2020-12-03T15:50:03.307
+CPU usage: 35.84s (34.68s user, 1.22s kernel)
+
+Network usage:
+- eth0: 2.235 MiB received, 45.999 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":132,"op":"Read","minor":0},{"major":259,"value":5,"op":"Write","minor":0},{"major":259,"value":132,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":137,"op":"Total","minor":0},{"major":253,"value":132,"op":"Read","minor":2},{"major":253,"value":5,"op":"Write","minor":2},{"major":253,"value":132,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":137,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":3584000,"op":"Read","minor":0},{"major":259,"value":20480,"op":"Write","minor":0},{"major":259,"value":3584000,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":3604480,"op":"Total","minor":0},{"major":253,"value":3584000,"op":"Read","minor":2},{"major":253,"value":20480,"op":"Write","minor":2},{"major":253,"value":3584000,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":3604480,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":318185472,"max_usage":633495552,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":33,"total_rss":293109760,"inactive_file":3379200,"inactive_anon":1486848,"total_pgfault":522654,"total_cache":5304320,"total_rss_huge":0,"total_active_anon":293179392,"total_pgmajfault":33,"pgpgin":225060,"rss_huge":0,"mapped_file":135168,"total_inactive_file":3379200,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":152229,"hierarchical_memsw_limit":0,"cache":5304320,"active_file":270336,"pgfault":522654,"total_mapped_file":135168,"total_pgpgout":152229,"total_writeback":0,"rss":293109760,"unevictable":0,"total_inactive_anon":1486848,"total_pgpgin":225060,"active_anon":293179392,"total_active_file":270336},"limit":540965302272},"name":"/PlotlyBase-kVMLLjxn","networks":{"eth0":{"rx_bytes":2343889,"rx_packets":431,"tx_packets":464,"tx_bytes":47103,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"4b3e3ca6c341739f0ed66686c8af58cf04b601c0fa7cdc805e954196cec3f918","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":88},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":125510005725808967,"online_cpus":128,"cpu_usage":{"usage_in_usermode":34680000000,"usage_in_kernelmode":1220000000,"total_usage":35843432316,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1251890,35842173656,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6770,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2020-12-03T15:50:03.309673945Z"}

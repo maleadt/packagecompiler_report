@@ -1,0 +1,73 @@
+┌ Warning: Error requiring Mux from WebIO:
+│ LoadError: ArgumentError: Package WebIO does not have JSON in its dependencies:
+│ - If you have WebIO checked out for development and have
+│   added JSON as a dependency but haven't updated your primary
+│   environment's manifest file, try `Pkg.resolve()`.
+│ - Otherwise you may need to report an issue with WebIO
+│ Stacktrace:
+│  [1] require(::Module, ::Symbol) at ./loading.jl:906
+│  [2] include_string(::Function, ::Module, ::String, ::String) at ./loading.jl:1088
+│  [3] include_string(::Module, ::String, ::String) at ./loading.jl:1096
+│  [4] top-level scope at /home/pkgeval/.julia/packages/WebIO/Fy9h1/src/WebIO.jl:104
+│  [5] eval at ./boot.jl:331 [inlined]
+│  [6] eval at /home/pkgeval/.julia/packages/WebIO/Fy9h1/src/WebIO.jl:1 [inlined]
+│  [7] (::WebIO.var"#71#83")() at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:97
+│  [8] err(::Any, ::Module, ::String) at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:42
+│  [9] (::WebIO.var"#70#82")() at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:96
+│  [10] withpath(::Any, ::String) at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:32
+│  [11] (::WebIO.var"#69#81")() at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:95
+│  [12] listenpkg(::Any, ::Base.PkgId) at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:15
+│  [13] macro expansion at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:93 [inlined]
+│  [14] __init__() at /home/pkgeval/.julia/packages/WebIO/Fy9h1/src/WebIO.jl:103
+│ in expression starting at /home/pkgeval/.julia/packages/WebIO/Fy9h1/src/providers/mux.jl:1
+└ @ Requires ~/.julia/packages/Requires/Odp8W/src/require.jl:44
+┌ Warning: Package WebIO does not have Sockets in its dependencies:
+│ - If you have WebIO checked out for development and have
+│   added Sockets as a dependency but haven't updated your primary
+│   environment's manifest file, try `Pkg.resolve()`.
+│ - Otherwise you may need to report an issue with WebIO
+└ Loading Sockets into WebIO from project dependency, future warnings for WebIO are suppressed.
+┌ Warning: Error requiring WebSockets from WebIO:
+│ LoadError: ArgumentError: Package WebIO does not have AssetRegistry in its dependencies:
+│ - If you have WebIO checked out for development and have
+│   added AssetRegistry as a dependency but haven't updated your primary
+│   environment's manifest file, try `Pkg.resolve()`.
+│ - Otherwise you may need to report an issue with WebIO
+│ Stacktrace:
+│  [1] require(::Module, ::Symbol) at ./loading.jl:906
+│  [2] include_string(::Function, ::Module, ::String, ::String) at ./loading.jl:1088
+│  [3] include_string(::Module, ::String, ::String) at ./loading.jl:1096
+│  [4] top-level scope at /home/pkgeval/.julia/packages/WebIO/Fy9h1/src/WebIO.jl:122
+│  [5] eval at ./boot.jl:331 [inlined]
+│  [6] eval at /home/pkgeval/.julia/packages/WebIO/Fy9h1/src/WebIO.jl:1 [inlined]
+│  [7] (::WebIO.var"#80#92")() at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:97
+│  [8] err(::Any, ::Module, ::String) at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:42
+│  [9] (::WebIO.var"#79#91")() at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:96
+│  [10] withpath(::Any, ::String) at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:32
+│  [11] (::WebIO.var"#78#90")() at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:95
+│  [12] listenpkg(::Any, ::Base.PkgId) at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:15
+│  [13] macro expansion at /home/pkgeval/.julia/packages/Requires/Odp8W/src/require.jl:93 [inlined]
+│  [14] __init__() at /home/pkgeval/.julia/packages/WebIO/Fy9h1/src/WebIO.jl:121
+│ in expression starting at /home/pkgeval/.julia/packages/WebIO/Fy9h1/src/providers/generic_http.jl:2
+└ @ Requires ~/.julia/packages/Requires/Odp8W/src/require.jl:44
+fatal: error thrown and no exception handler available.
+#<null>
+resource at /home/pkgeval/.julia/packages/Blink/u1xcH/src/content/server.jl:5 [inlined]
+resource at /home/pkgeval/.julia/packages/Blink/u1xcH/src/content/server.jl:5 [inlined]
+macro expansion at /home/pkgeval/.julia/packages/Blink/u1xcH/src/content/content.jl:57 [inlined]
+#26 at /home/pkgeval/.julia/packages/Lazy/9Xnd3/src/macros.jl:346
+unknown function (ip: 0x7f812e931c2c)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2231 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2398
+__init__ at /home/pkgeval/.julia/packages/Lazy/9Xnd3/src/macros.jl:341
+jfptr___init___53928 at /cache/PrincipalMomentAnalysisApp-kCBpS4QN.so (unknown line)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2214 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2398
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1690 [inlined]
+jl_module_run_initializer at /buildworker/worker/package_linux64/build/src/toplevel.c:74
+_julia_init at /buildworker/worker/package_linux64/build/src/init.c:780
+main at /buildworker/worker/package_linux64/build/ui/repl.c:221
+__libc_start_main at /usr/lib/libc.so.6 (unknown line)
+_start at /opt/julia/bin/julia (unknown line)
+
+No statistics gathered.

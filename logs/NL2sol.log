@@ -1,0 +1,473 @@
+################################################################################
+# PkgEval set-up: 2020-12-03T11:13:25.141
+#
+
+Julia Version 1.5.3
+Commit 788b2c77c1 (2020-11-09 13:37 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_DEPOT_PATH = /home/pkgeval/.another_julia:/usr/local/share/julia
+
+
+
+################################################################################
+# Installation: 2020-12-03T11:13:27.768
+#
+
+  Resolving package versions...
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed NL2sol_jll ─────────────────── v2.2.0+0
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed NL2sol ─────────────────────── v1.0.0
+  Installed JLLWrappers ────────────────── v1.1.3
+Updating `~/.another_julia/environments/v1.5/Project.toml`
+  [2fe4ca64] + NL2sol v1.0.0
+Updating `~/.another_julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [692b3bcd] + JLLWrappers v1.1.3
+  [2fe4ca64] + NL2sol v1.0.0
+  [49fe2e30] + NL2sol_jll v2.2.0+0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2020-12-03T11:13:29.492
+#
+
+
+    Testing NL2sol
+Status `/tmp/jl_v6J8BF/Project.toml`
+  [c27321d9] Glob v1.3.0
+  [2fe4ca64] NL2sol v1.0.0
+  [49fe2e30] NL2sol_jll v2.2.0+0
+  [37e2e46d] LinearAlgebra
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_v6J8BF/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [c27321d9] Glob v1.3.0
+  [692b3bcd] JLLWrappers v1.1.3
+  [2fe4ca64] NL2sol v1.0.0
+  [49fe2e30] NL2sol_jll v2.2.0+0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  Test threw exception
+  Expression: rosenbrock(scale = 3)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#105", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/rosenbrock.jl:17 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:16
+  Test threw exception
+  Expression: helix(scale = 3)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#70", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/helix.jl:32 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:16
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:17
+  Test threw exception
+  Expression: singular(scale = 3)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#110", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/singular.jl:24 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:17
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:18
+  Test threw exception
+  Expression: woods(scale = 3)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#135", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/woods.jl:30 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:18
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:19
+  Test threw exception
+  Expression: zangwill(scale = 3)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#140", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/zangwill.jl:21 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:19
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:21
+  Test threw exception
+  Expression: engvall(scale = 3)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#60", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/engvall.jl:32 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:21
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:22
+  Test threw exception
+  Expression: branin(scale = 3)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#19", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/branin.jl:17 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:22
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:23
+  Test threw exception
+  Expression: beale(scale = 2)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#9", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/beale.jl:20 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:23
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:24
+  Test threw exception
+  Expression: cragg_levy(scale = 2)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#50", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/cragg_levy.jl:26 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:24
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:25
+  Test threw exception
+  Expression: box(scale = 2)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#14", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/box.jl:37 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:25
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:27
+  Test threw exception
+  Expression: freudenstein_roth(scale = 3)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#65", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/freudenstein_roth.jl:17 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:27
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:28
+  Test threw exception
+  Expression: watson6(scale = 1)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#115", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/watson.jl:57 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:28
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:29
+  Test threw exception
+  Expression: watson9(scale = 1)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#120", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/watson.jl:68 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:29
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:30
+  Test threw exception
+  Expression: watson12(scale = 1)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#125", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/watson.jl:79 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:30
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:32
+  Test threw exception
+  Expression: chebyquad(scale = 2)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#45", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/chebyquad.jl:50 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:32
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:33
+  Test threw exception
+  Expression: brown_dennis(scale = 3)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#40", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/brown_dennis.jl:26 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:33
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:34
+  Test threw exception
+  Expression: bard(scale = 3)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#4", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/bard.jl:30 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:34
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:35
+  Test threw exception
+  Expression: jennrich_sampson(scale = 3)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#75", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/jennrich_sampson.jl:20 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:35
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:36
+  Test threw exception
+  Expression: kowalik_osborne(scale = 3)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#80", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/kowalik_osborne.jl:28 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:36
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:37
+  Test threw exception
+  Expression: osborne1(scale = 3)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#95", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/osborne.jl:30 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:37
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:38
+  Test threw exception
+  Expression: osborne2(scale = 2)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#100", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/osborne.jl:91 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:38
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:39
+  Test threw exception
+  Expression: madsen(scale = 3)
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#85", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/madsen.jl:20 [inlined]
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:39
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:41
+  Test threw exception
+  Expression: brown5()
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#23", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/brown.jl:43 [inlined]
+   [4] (::var"#f#24"{var"#f#22#25"{Array{Float64,1},Array{Float64,2},var"#jac#23",Array{Float64,1}}})() at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/brown.jl:43
+   [5] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:41
+   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [7] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:42
+  Test threw exception
+  Expression: brown10()
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#27", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/brown.jl:51 [inlined]
+   [4] (::var"#f#28"{var"#f#26#29"{Array{Float64,1},Array{Float64,2},var"#jac#27",Array{Float64,1}}})() at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/brown.jl:51
+   [5] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:42
+   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [7] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:43
+  Test threw exception
+  Expression: brown30()
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#31", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/brown.jl:59 [inlined]
+   [4] (::var"#f#32"{var"#f#30#33"{Array{Float64,1},Array{Float64,2},var"#jac#31",Array{Float64,1}}})() at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/brown.jl:59
+   [5] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:43
+   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [7] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+NL2sol tests: Error During Test at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:44
+  Test threw exception
+  Expression: brown40()
+  could not load library "/home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so"
+  /home/pkgeval/.julia/artifacts/82dad0952b2ac872ec4c202a364b3c48a39396ff/lib/libnl2sol.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] nl2_set_defaults at /home/pkgeval/.julia/packages/NL2sol/Rqa60/src/NL2sol.jl:129 [inlined]
+   [2] testone(::String, ::Function, ::var"#jac#35", ::Array{Float64,1}, ::Array{Float64,2}, ::Array{Float64,1}; scale::Int64, mxfc::Int64, mxiter::Int64, verbose::Bool, print_steps::Bool) at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/util.jl:7
+   [3] f at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/brown.jl:67 [inlined]
+   [4] (::var"#f#36"{var"#f#34#37"{Array{Float64,1},Array{Float64,2},var"#jac#35",Array{Float64,1}}})() at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/optests/brown.jl:67
+   [5] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:44
+   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [7] top-level scope at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:15
+  
+Test Summary: | Error  Total
+NL2sol tests  |    26     26
+ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 26 errored, 0 broken.
+in expression starting at /home/pkgeval/.another_julia/packages/NL2sol/Rqa60/test/runtests.jl:14
+
+PkgEval failed: Package NL2sol errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:20
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2020-12-03T11:13:49.328
+CPU usage: 24.67s (23.77s user, 0.97s kernel)
+
+Network usage:
+- eth0: 106.036 KiB received, 27.146 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":5,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":5,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":5,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":5,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":20480,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":20480,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":20480,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":20480,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":215904256,"max_usage":468393984,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":208711680,"inactive_file":135168,"inactive_anon":811008,"total_pgfault":394185,"total_cache":811008,"total_rss_huge":0,"total_active_anon":208834560,"total_pgmajfault":0,"pgpgin":167904,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":116745,"hierarchical_memsw_limit":0,"cache":811008,"active_file":0,"pgfault":394185,"total_mapped_file":0,"total_pgpgout":116745,"total_writeback":0,"rss":208711680,"unevictable":0,"total_inactive_anon":811008,"total_pgpgin":167904,"active_anon":208834560,"total_active_file":0},"limit":540965302272},"name":"/NL2sol-6ZELcd8E","networks":{"eth0":{"rx_bytes":108581,"rx_packets":182,"tx_packets":202,"tx_bytes":27798,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"d9506254594e7d347f628f30a30c24c11a03e9150ebd61105d24b1b5f88ff08d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":42},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":123391951465808967,"online_cpus":128,"cpu_usage":{"usage_in_usermode":23770000000,"usage_in_kernelmode":970000000,"total_usage":24672035699,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24672035699,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2020-12-03T11:13:49.333858778Z"}

@@ -1,0 +1,126 @@
+################################################################################
+# PkgEval set-up: 2020-12-03T15:38:55.795
+#
+
+Julia Version 1.5.3
+Commit 788b2c77c1 (2020-11-09 13:37 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_DEPOT_PATH = /home/pkgeval/.another_julia:/usr/local/share/julia
+
+
+
+################################################################################
+# Installation: 2020-12-03T15:38:58.613
+#
+
+  Resolving package versions...
+  Installed MINPACK ─── v1.1.1
+  Installed Distances ─ v0.9.2
+Updating `~/.another_julia/environments/v1.5/Project.toml`
+  [4854310b] + MINPACK v1.1.1
+Updating `~/.another_julia/environments/v1.5/Manifest.toml`
+  [b4f34e82] + Distances v0.9.2
+  [4854310b] + MINPACK v1.1.1
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4ec0a83e] + Unicode
+   Building MINPACK → `~/.another_julia/packages/MINPACK/8wsGn/deps/build.log`
+
+
+################################################################################
+# Testing: 2020-12-03T15:39:02.693
+#
+
+
+    Testing MINPACK
+Status `/tmp/jl_VcMFmz/Project.toml`
+  [b4f34e82] Distances v0.9.2
+  [4854310b] MINPACK v1.1.1
+  [37e2e46d] LinearAlgebra
+  [de0858da] Printf
+  [8dfed614] Test
+Status `/tmp/jl_VcMFmz/Manifest.toml`
+  [b4f34e82] Distances v0.9.2
+  [4854310b] MINPACK v1.1.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Function                                          Dim    NFEV    NJEV   Final inf-norm     total time
+--------------------------------------------------------------------------------------
+minpack: Error During Test at /home/pkgeval/.another_julia/packages/MINPACK/8wsGn/test/runtests.jl:40
+  Got exception outside of a @test
+  could not load library "/home/pkgeval/.julia/packages/MINPACK/8wsGn/deps/libcminpack.so"
+  /home/pkgeval/.julia/packages/MINPACK/8wsGn/deps/libcminpack.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] hybrj(::var"#f!#2", ::var"#g!#3", ::Array{Float64,1}, ::Float64, ::Bool, ::Bool, ::Int64; _n::Int64, ml::Int64, mu::Int64, maxfev::Int64, epsfcn::Float64, diag::Array{Float64,1}, mode::Int64, factor::Float64, nprint::Int64, lr::Int32) at /home/pkgeval/.julia/packages/MINPACK/8wsGn/src/wrappers.jl:158
+   [2] hybrj(::Function, ::Function, ::Array{Float64,1}, ::Float64, ::Bool, ::Bool, ::Int64) at /home/pkgeval/.julia/packages/MINPACK/8wsGn/src/wrappers.jl:109
+   [3] #fsolve#2 at /home/pkgeval/.julia/packages/MINPACK/8wsGn/src/MINPACK.jl:145 [inlined]
+   [4] top-level scope at timing.jl:233
+   [5] top-level scope at /home/pkgeval/.another_julia/packages/MINPACK/8wsGn/test/runtests.jl:560
+   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [7] top-level scope at /home/pkgeval/.another_julia/packages/MINPACK/8wsGn/test/runtests.jl:42
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+Test Summary: | Error  Total
+minpack       |     1      1
+ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/pkgeval/.another_julia/packages/MINPACK/8wsGn/test/runtests.jl:40
+
+PkgEval failed: Package MINPACK errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:20
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2020-12-03T15:39:13.518
+CPU usage: 17.67s (17.03s user, 0.70s kernel)
+
+Network usage:
+- eth0: 188.528 KiB received, 16.729 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":9,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":9,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":9,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":9,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":36864,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":36864,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":36864,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":36864,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":250998784,"max_usage":428507136,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":245358592,"inactive_file":135168,"inactive_anon":270336,"total_pgfault":297330,"total_cache":270336,"total_rss_huge":0,"total_active_anon":245329920,"total_pgmajfault":0,"pgpgin":172788,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":112785,"hierarchical_memsw_limit":0,"cache":270336,"active_file":0,"pgfault":297330,"total_mapped_file":0,"total_pgpgout":112785,"total_writeback":0,"rss":245358592,"unevictable":0,"total_inactive_anon":270336,"total_pgpgin":172788,"active_anon":245329920,"total_active_file":0},"limit":540965302272},"name":"/MINPACK-nWPeLOx9","networks":{"eth0":{"rx_bytes":193053,"rx_packets":179,"tx_packets":169,"tx_bytes":17131,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"629a729f83e5bafdd58ce9124686d6e2e1f104c478a787e6192c7863d2d4fca8","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":42},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":125427015935808967,"online_cpus":128,"cpu_usage":{"usage_in_usermode":17030000000,"usage_in_kernelmode":700000000,"total_usage":17671186793,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17670809443,0,0,377350,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2020-12-03T15:39:13.832390808Z"}

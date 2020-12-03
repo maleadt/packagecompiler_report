@@ -1,0 +1,423 @@
+################################################################################
+# PkgEval set-up: 2020-12-03T15:25:27.769
+#
+
+Julia Version 1.5.3
+Commit 788b2c77c1 (2020-11-09 13:37 UTC)
+Platform Info:
+  OS: Linux (x86_64-pc-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_DEPOT_PATH = /home/pkgeval/.another_julia:/usr/local/share/julia
+
+
+
+################################################################################
+# Installation: 2020-12-03T15:25:30.312
+#
+
+  Resolving package versions...
+  Installed Compat ──────────── v2.2.1
+  Installed URIParser ───────── v0.4.1
+  Installed BinDeps ─────────── v0.8.10
+  Installed StaticArrays ────── v0.11.1
+  Installed SOFA ────────────── v1.0.1
+  Installed SatelliteDynamics ─ v0.4.1
+Updating `~/.another_julia/environments/v1.5/Project.toml`
+  [0e7c1a32] + SatelliteDynamics v0.4.1
+Updating `~/.another_julia/environments/v1.5/Manifest.toml`
+  [9e28174c] + BinDeps v0.8.10
+  [34da2185] + Compat v2.2.1
+  [ad3d3fd0] + SOFA v1.0.1
+  [0e7c1a32] + SatelliteDynamics v0.4.1
+  [90137ffa] + StaticArrays v0.11.1
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building SOFA → `~/.another_julia/packages/SOFA/kZlWv/deps/build.log`
+
+
+################################################################################
+# Testing: 2020-12-03T15:25:59.568
+#
+
+
+    Testing SatelliteDynamics
+Status `/tmp/jl_SI6gaA/Project.toml`
+  [ad3d3fd0] SOFA v1.0.1
+  [0e7c1a32] SatelliteDynamics v0.4.1
+  [90137ffa] StaticArrays v0.11.1
+  [ade2ca70] Dates
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [de0858da] Printf
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_SI6gaA/Manifest.toml`
+  [9e28174c] BinDeps v0.8.10
+  [34da2185] Compat v2.2.1
+  [ad3d3fd0] SOFA v1.0.1
+  [0e7c1a32] SatelliteDynamics v0.4.1
+  [90137ffa] StaticArrays v0.11.1
+  [30578b45] URIParser v0.4.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+  0.538959 seconds (1.04 M allocations: 52.436 MiB, 4.21% gc time)
+SatelliteDynamics.Universe: Error During Test at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:49
+  Got exception outside of a @test
+  LoadError: SystemError: opening file "/home/pkgeval/.julia/packages/SatelliteDynamics/F3OmO/data/FINALS.ALL_IAU2000.txt": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::Base.var"#308#309"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #readlines#307 at ./io.jl:523 [inlined]
+   [9] readlines(::String) at ./io.jl:523
+   [10] EarthOrientationData(::String) at /home/pkgeval/.julia/packages/SatelliteDynamics/F3OmO/src/universe.jl:114
+   [11] top-level scope at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/test_universe.jl:12
+   [12] include(::String) at ./client.jl:457
+   [13] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:50 [inlined]
+   [14] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [15] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:50 [inlined]
+   [16] macro expansion at ./timing.jl:174 [inlined]
+   [17] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:49 [inlined]
+   [18] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [19] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:45 [inlined]
+   [20] top-level scope at ./timing.jl:174
+   [21] include(::String) at ./client.jl:457
+   [22] top-level scope at none:6
+   [23] eval(::Module, ::Any) at ./boot.jl:331
+   [24] exec_options(::Base.JLOptions) at ./client.jl:272
+   [25] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/test_universe.jl:11
+  
+  2.098749 seconds (2.97 M allocations: 146.800 MiB, 1.70% gc time)
+SatelliteDynamics.Time: Error During Test at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/test_time.jl:2
+  Test threw exception
+  Expression: caldate_to_mjd(2000, 1, 1, 12, 0, 0) == 51544.5
+  could not load library "/home/pkgeval/.julia/packages/SOFA/kZlWv/deps/usr/lib/libsofa_c.so"
+  /home/pkgeval/.julia/packages/SOFA/kZlWv/deps/usr/lib/libsofa_c.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] iauDtf2d(::String, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Float64) at /home/pkgeval/.julia/packages/SOFA/kZlWv/src/dtf2d.jl:87
+   [2] caldate_to_mjd at /home/pkgeval/.julia/packages/SatelliteDynamics/F3OmO/src/time.jl:67 [inlined] (repeats 2 times)
+   [3] top-level scope at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/test_time.jl:2
+   [4] include(::String) at ./client.jl:457
+   [5] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:53 [inlined]
+   [6] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [7] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:53 [inlined]
+   [8] macro expansion at ./timing.jl:174 [inlined]
+   [9] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:52 [inlined]
+   [10] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:45 [inlined]
+   [12] top-level scope at ./timing.jl:174
+  
+SatelliteDynamics.Time: Error During Test at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:52
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/SOFA/kZlWv/deps/usr/lib/libsofa_c.so"
+  /home/pkgeval/.julia/packages/SOFA/kZlWv/deps/usr/lib/libsofa_c.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] iauD2dtf(::String, ::Int64, ::Float64, ::Float64) at /home/pkgeval/.julia/packages/SOFA/kZlWv/src/d2dtf.jl:89
+   [2] mjd_to_caldate(::Float64) at /home/pkgeval/.julia/packages/SatelliteDynamics/F3OmO/src/time.jl:91
+   [3] top-level scope at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/test_time.jl:6
+   [4] include(::String) at ./client.jl:457
+   [5] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:53 [inlined]
+   [6] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [7] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:53 [inlined]
+   [8] macro expansion at ./timing.jl:174 [inlined]
+   [9] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:52 [inlined]
+   [10] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:45 [inlined]
+   [12] top-level scope at ./timing.jl:174
+   [13] include(::String) at ./client.jl:457
+   [14] top-level scope at none:6
+   [15] eval(::Module, ::Any) at ./boot.jl:331
+   [16] exec_options(::Base.JLOptions) at ./client.jl:272
+   [17] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/test_time.jl:5
+  
+  2.623517 seconds (2.20 M allocations: 111.710 MiB, 1.80% gc time)
+SatelliteDynamics.Refsys: Error During Test at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:55
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/SOFA/kZlWv/deps/usr/lib/libsofa_c.so"
+  /home/pkgeval/.julia/packages/SOFA/kZlWv/deps/usr/lib/libsofa_c.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] iauDtf2d(::String, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64) at /home/pkgeval/.julia/packages/SOFA/kZlWv/src/dtf2d.jl:87
+   [2] Epoch(::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Float64; tsys::String) at /home/pkgeval/.julia/packages/SatelliteDynamics/F3OmO/src/time.jl:251
+   [3] Epoch at /home/pkgeval/.julia/packages/SatelliteDynamics/F3OmO/src/time.jl:246 [inlined] (repeats 2 times)
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/test_reference_systems.jl:2
+   [5] include(::String) at ./client.jl:457
+   [6] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:56 [inlined]
+   [7] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [8] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:56 [inlined]
+   [9] macro expansion at ./timing.jl:174 [inlined]
+   [10] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:55 [inlined]
+   [11] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [12] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:45 [inlined]
+   [13] top-level scope at ./timing.jl:174
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/test_reference_systems.jl:1
+  
+  0.352722 seconds (377.07 k allocations: 18.618 MiB)
+  3.518830 seconds (4.19 M allocations: 214.757 MiB, 6.40% gc time)
+SatelliteDynamics.Coordinates: Error During Test at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:61
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/SOFA/kZlWv/deps/usr/lib/libsofa_c.so"
+  /home/pkgeval/.julia/packages/SOFA/kZlWv/deps/usr/lib/libsofa_c.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] iauDtf2d(::String, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64) at /home/pkgeval/.julia/packages/SOFA/kZlWv/src/dtf2d.jl:87
+   [2] Epoch(::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Float64; tsys::String) at /home/pkgeval/.julia/packages/SatelliteDynamics/F3OmO/src/time.jl:251
+   [3] Epoch at /home/pkgeval/.julia/packages/SatelliteDynamics/F3OmO/src/time.jl:246 [inlined] (repeats 2 times)
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/test_coordinates.jl:165
+   [5] include(::String) at ./client.jl:457
+   [6] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:62 [inlined]
+   [7] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [8] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:62 [inlined]
+   [9] macro expansion at ./timing.jl:174 [inlined]
+   [10] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:61 [inlined]
+   [11] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [12] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:45 [inlined]
+   [13] top-level scope at ./timing.jl:174
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/test_coordinates.jl:154
+  
+  0.764541 seconds (863.79 k allocations: 45.489 MiB, 3.57% gc time)
+  0.800615 seconds (1.12 M allocations: 60.337 MiB, 1.42% gc time)
+SatelliteDynamics.OrbitDynamics: Error During Test at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:67
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/SOFA/kZlWv/deps/usr/lib/libsofa_c.so"
+  /home/pkgeval/.julia/packages/SOFA/kZlWv/deps/usr/lib/libsofa_c.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] iauDtf2d(::String, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64) at /home/pkgeval/.julia/packages/SOFA/kZlWv/src/dtf2d.jl:87
+   [2] Epoch(::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Float64; tsys::String) at /home/pkgeval/.julia/packages/SatelliteDynamics/F3OmO/src/time.jl:251
+   [3] Epoch at /home/pkgeval/.julia/packages/SatelliteDynamics/F3OmO/src/time.jl:246 [inlined] (repeats 2 times)
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/test_orbitdynamics.jl:2
+   [5] include(::String) at ./client.jl:457
+   [6] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:68 [inlined]
+   [7] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [8] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:68 [inlined]
+   [9] macro expansion at ./timing.jl:174 [inlined]
+   [10] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:67 [inlined]
+   [11] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [12] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:45 [inlined]
+   [13] top-level scope at ./timing.jl:174
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/test_orbitdynamics.jl:1
+  
+  0.056047 seconds (3.10 k allocations: 199.734 KiB)
+SatelliteDynamics.SGPModels: Error During Test at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:70
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/SOFA/kZlWv/deps/usr/lib/libsofa_c.so"
+  /home/pkgeval/.julia/packages/SOFA/kZlWv/deps/usr/lib/libsofa_c.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] iauDtf2d(::String, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64) at /home/pkgeval/.julia/packages/SOFA/kZlWv/src/dtf2d.jl:87
+   [2] Epoch(::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Float64; tsys::String) at /home/pkgeval/.julia/packages/SatelliteDynamics/F3OmO/src/time.jl:251
+   [3] TLE(::String, ::String, ::SatelliteDynamics.gravconsttype, ::Bool) at /home/pkgeval/.julia/packages/SatelliteDynamics/F3OmO/src/sgp_models.jl:2271
+   [4] TLE(::String, ::String) at /home/pkgeval/.julia/packages/SatelliteDynamics/F3OmO/src/sgp_models.jl:2242
+   [5] top-level scope at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/test_sgp_models.jl:45
+   [6] include(::String) at ./client.jl:457
+   [7] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:71 [inlined]
+   [8] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:71 [inlined]
+   [10] macro expansion at ./timing.jl:174 [inlined]
+   [11] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:70 [inlined]
+   [12] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [13] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:45 [inlined]
+   [14] top-level scope at ./timing.jl:174
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at none:6
+   [17] eval(::Module, ::Any) at ./boot.jl:331
+   [18] exec_options(::Base.JLOptions) at ./client.jl:272
+   [19] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/test_sgp_models.jl:40
+  
+  2.122871 seconds (4.22 M allocations: 197.916 MiB, 4.30% gc time)
+  0.162489 seconds (83.89 k allocations: 4.381 MiB)
+SatelliteDynamics.NRLMSISE00: Error During Test at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:78
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/SOFA/kZlWv/deps/usr/lib/libsofa_c.so"
+  /home/pkgeval/.julia/packages/SOFA/kZlWv/deps/usr/lib/libsofa_c.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] iauDtf2d(::String, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64) at /home/pkgeval/.julia/packages/SOFA/kZlWv/src/dtf2d.jl:87
+   [2] Epoch(::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Float64; tsys::String) at /home/pkgeval/.julia/packages/SatelliteDynamics/F3OmO/src/time.jl:251
+   [3] Epoch at /home/pkgeval/.julia/packages/SatelliteDynamics/F3OmO/src/time.jl:246 [inlined] (repeats 2 times)
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/earth_environment/test_nrlmsise00.jl:258
+   [5] include(::String) at ./client.jl:457
+   [6] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:79 [inlined]
+   [7] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [8] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:79 [inlined]
+   [9] macro expansion at ./timing.jl:174 [inlined]
+   [10] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:78 [inlined]
+   [11] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [12] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:45 [inlined]
+   [13] top-level scope at ./timing.jl:174
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/earth_environment/test_nrlmsise00.jl:256
+  
+ 11.918648 seconds (5.61 M allocations: 287.594 MiB, 2.92% gc time)
+SatelliteDynamics.Integrators: Error During Test at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:83
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/SOFA/kZlWv/deps/usr/lib/libsofa_c.so"
+  /home/pkgeval/.julia/packages/SOFA/kZlWv/deps/usr/lib/libsofa_c.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] iauDtf2d(::String, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64) at /home/pkgeval/.julia/packages/SOFA/kZlWv/src/dtf2d.jl:87
+   [2] Epoch(::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Float64; tsys::String) at /home/pkgeval/.julia/packages/SatelliteDynamics/F3OmO/src/time.jl:251
+   [3] Epoch at /home/pkgeval/.julia/packages/SatelliteDynamics/F3OmO/src/time.jl:246 [inlined] (repeats 2 times)
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/simulation/test_integrators.jl:46
+   [5] include(::String) at ./client.jl:457
+   [6] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:84 [inlined]
+   [7] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [8] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:84 [inlined]
+   [9] macro expansion at ./timing.jl:174 [inlined]
+   [10] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:83 [inlined]
+   [11] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [12] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:45 [inlined]
+   [13] top-level scope at ./timing.jl:174
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/simulation/test_integrators.jl:43
+  
+  1.264121 seconds (1.82 M allocations: 91.427 MiB, 2.35% gc time)
+SatelliteDynamics.Propagators: Error During Test at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:86
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/SOFA/kZlWv/deps/usr/lib/libsofa_c.so"
+  /home/pkgeval/.julia/packages/SOFA/kZlWv/deps/usr/lib/libsofa_c.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] iauDtf2d(::String, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64) at /home/pkgeval/.julia/packages/SOFA/kZlWv/src/dtf2d.jl:87
+   [2] Epoch(::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Float64; tsys::String) at /home/pkgeval/.julia/packages/SatelliteDynamics/F3OmO/src/time.jl:251
+   [3] Epoch at /home/pkgeval/.julia/packages/SatelliteDynamics/F3OmO/src/time.jl:246 [inlined] (repeats 2 times)
+   [4] top-level scope at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/simulation/test_propagators.jl:3
+   [5] include(::String) at ./client.jl:457
+   [6] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:87 [inlined]
+   [7] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [8] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:87 [inlined]
+   [9] macro expansion at ./timing.jl:174 [inlined]
+   [10] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:86 [inlined]
+   [11] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [12] macro expansion at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:45 [inlined]
+   [13] top-level scope at ./timing.jl:174
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/simulation/test_propagators.jl:1
+  
+  1.036263 seconds (3.35 M allocations: 163.041 MiB, 6.12% gc time)
+Test Summary:                     | Pass  Error  Total
+SatelliteDynamics Package Tests   |  644     10    654
+  SatelliteDynamics.Contants      |   30            30
+  SatelliteDynamics.Universe      |    1      1      2
+  SatelliteDynamics.Time          |           2      2
+  SatelliteDynamics.Refsys        |           1      1
+  SatelliteDynamics.Attitude      |  309           309
+  SatelliteDynamics.Coordinates   |   65      1     66
+  SatelliteDynamics.Astrodynamics |   53            53
+  SatelliteDynamics.OrbitDynamics |           1      1
+  SatelliteDynamics.SGPModels     |    6      1      7
+  SatelliteDynamics.NRLMSISE00    |   12            12
+  SatelliteDynamics.NRLMSISE00    |  165      1    166
+  SatelliteDynamics.Integrators   |    3      1      4
+  SatelliteDynamics.Propagators   |           1      1
+ERROR: LoadError: Some tests did not pass: 644 passed, 0 failed, 10 errored, 0 broken.
+in expression starting at /home/pkgeval/.another_julia/packages/SatelliteDynamics/F3OmO/test/runtests.jl:44
+
+PkgEval failed: Package SatelliteDynamics errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:20
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2020-12-03T15:26:35.145
+CPU usage: 67.49s (61.67s user, 6.01s kernel)
+
+Network usage:
+- eth0: 4.103 MiB received, 41.900 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":257,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":257,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":257,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":253,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":253,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":253,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":2064384,"op":"Write","minor":0},{"major":259,"value":0,"op":"Sync","minor":0},{"major":259,"value":2064384,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":2064384,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":2064384,"op":"Write","minor":2},{"major":253,"value":0,"op":"Sync","minor":2},{"major":253,"value":2064384,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":2064384,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":243798016,"max_usage":688807936,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":213413888,"inactive_file":135168,"inactive_anon":22302720,"total_pgfault":1579116,"total_cache":22614016,"total_rss_huge":0,"total_active_anon":213557248,"total_pgmajfault":0,"pgpgin":1018380,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":960746,"hierarchical_memsw_limit":0,"cache":22614016,"active_file":135168,"pgfault":1579116,"total_mapped_file":0,"total_pgpgout":960746,"total_writeback":0,"rss":213413888,"unevictable":0,"total_inactive_anon":22302720,"total_pgpgin":1018380,"active_anon":213557248,"total_active_file":135168},"limit":540965302272},"name":"/SatelliteDynamics-675qcRdn","networks":{"eth0":{"rx_bytes":4302020,"rx_packets":518,"tx_packets":430,"tx_bytes":42906,"tx_dropped":0,"rx_dropped":3,"tx_errors":0,"rx_errors":0}},"id":"3bd6b6b00d5c9e6d610e7813411112602a90077f4e752d828c7509119235957c","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":42},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":125330100975808967,"online_cpus":128,"cpu_usage":{"usage_in_usermode":61670000000,"usage_in_kernelmode":6010000000,"total_usage":67490091155,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,67490091155,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2020-12-03T15:26:35.15265177Z"}
