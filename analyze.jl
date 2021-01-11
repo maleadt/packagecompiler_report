@@ -57,11 +57,11 @@ function main()
                     regular = regular[1, :]
                     compiled = compiled[1, :]
 
-                    print(io, "- $(package): [regular](logs/$(package)-regular.log)")
+                    print(io, "- $(package): [regular](logs/$(package).regular.log)")
                     if regular.status !== :ok
                         print(io, " ($(PkgEval.reasons[regular.reason]))")
                     end
-                    print(io, ", [compiled](logs/$(package)-compiled.log)")
+                    print(io, ", [compiled](logs/$(package).compiled.log)")
                     if compiled.status !== :ok
                         print(io, " ($(PkgEval.reasons[compiled.reason]))")
                     end
