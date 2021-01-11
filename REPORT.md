@@ -8,9 +8,9 @@ Evaluated using Julia 1.5.3-599f52c4c6.
 
 ## Issues in regular mode
 
+- DiffEqGPU: [regular](logs/DiffEqGPU.regular.log) (package could not be installed), [compiled](logs/DiffEqGPU.compiled.log) (package could not be installed)
 - ValidatedNumerics: [regular](logs/ValidatedNumerics.regular.log) (package has test failures), [compiled](logs/ValidatedNumerics.compiled.log) (package has test failures)
 - DualNumbers: [regular](logs/DualNumbers.regular.log) (package has test failures), [compiled](logs/DualNumbers.compiled.log) (package has test failures)
-- DiffEqGPU: [regular](logs/DiffEqGPU.regular.log) (package could not be installed), [compiled](logs/DiffEqGPU.compiled.log) (package could not be installed)
 - Surrogates: [regular](logs/Surrogates.regular.log) (package has test failures), [compiled](logs/Surrogates.compiled.log) (there were unidentified errors)
 - DiffEqUncertainty: [regular](logs/DiffEqUncertainty.regular.log) (package could not be installed), [compiled](logs/DiffEqUncertainty.compiled.log) (package could not be installed)
 - DiffEqFlux: [regular](logs/DiffEqFlux.regular.log) (package could not be installed), [compiled](logs/DiffEqFlux.compiled.log) (there were unidentified errors)
