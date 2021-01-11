@@ -1,0 +1,698 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T15:16:53.424
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T15:16:54.958
+#
+
+ Installing known registries into `~/.julia`
+                                                                           0.6%#######################################                                   54.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed DiffEqGPU ──────────────────── v1.9.1
+  Installed NNlib ──────────────────────── v0.7.11
+  Installed NonlinearSolve ─────────────── v0.3.4
+  Installed GPUCompiler ────────────────── v0.8.3
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed Compat ─────────────────────── v3.25.0
+  Installed DiffEqBase ─────────────────── v6.53.4
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed TreeViews ──────────────────── v0.3.0
+  Installed CpuId ──────────────────────── v0.2.2
+  Installed RecursiveArrayTools ────────── v2.10.0
+  Installed BFloat16s ──────────────────── v0.1.0
+  Installed SLEEFPirates ───────────────── v0.5.5
+  Installed Cassette ───────────────────── v0.3.4
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed LoopVectorization ──────────── v0.8.26
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed LLVM ───────────────────────── v3.5.2
+  Installed PackageCompiler ────────────── v1.2.5
+  Installed Adapt ──────────────────────── v3.0.0
+  Installed KernelAbstractions ─────────── v0.4.6
+  Installed DocStringExtensions ────────── v0.8.3
+  Installed ExprTools ──────────────────── v0.1.3
+  Installed VectorizationBase ──────────── v0.12.33
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed Requires ───────────────────── v1.1.2
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed AbstractFFTs ───────────────── v0.5.0
+  Installed TableTraits ────────────────── v1.0.0
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed FunctionWrappers ───────────── v1.1.1
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed CUDA ───────────────────────── v2.4.0
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed ConstructionBase ───────────── v1.0.0
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed ZygoteRules ────────────────── v0.2.1
+  Installed Scratch ────────────────────── v1.0.3
+  Installed OffsetArrays ───────────────── v1.3.1
+  Installed IterativeSolvers ───────────── v0.9.0
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed Tables ─────────────────────── v1.2.2
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed GPUArrays ──────────────────── v6.2.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed Setfield ───────────────────── v0.7.0
+  Installed RecursiveFactorization ─────── v0.1.6
+  Installed DataStructures ─────────────── v0.18.8
+  Installed LabelledArrays ─────────────── v1.4.0
+  Installed FiniteDiff ─────────────────── v2.7.2
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed Parameters ─────────────────── v0.12.1
+  Installed SIMDPirates ────────────────── v0.8.26
+  Installed DiffResults ────────────────── v1.0.3
+  Installed TimerOutputs ───────────────── v0.5.7
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed Reexport ───────────────────── v0.2.0
+  Installed CEnum ──────────────────────── v0.4.1
+  Installed ArrayInterface ─────────────── v2.14.13
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [071ae1c0] + DiffEqGPU v1.9.1
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [621f4979] + AbstractFFTs v0.5.0
+  [79e6a3ab] + Adapt v3.0.0
+  [4fba245c] + ArrayInterface v2.14.13
+  [56f22d72] + Artifacts v1.3.0
+  [ab4f0b2a] + BFloat16s v0.1.0
+  [fa961155] + CEnum v0.4.1
+  [052768ef] + CUDA v2.4.0
+  [7057c7e9] + Cassette v0.3.4
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [187b0558] + ConstructionBase v1.0.0
+  [adafc99b] + CpuId v0.2.2
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [2b5f629d] + DiffEqBase v6.53.4
+  [071ae1c0] + DiffEqGPU v1.9.1
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [ffbed154] + DocStringExtensions v0.8.3
+  [e2ba6199] + ExprTools v0.1.3
+  [6a86dc24] + FiniteDiff v2.7.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [069b7b12] + FunctionWrappers v1.1.1
+  [0c68f7d7] + GPUArrays v6.2.0
+  [61eb1bfa] + GPUCompiler v0.8.3
+  [42fd0dbc] + IterativeSolvers v0.9.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [63c18a36] + KernelAbstractions v0.4.6
+  [929cbde3] + LLVM v3.5.2
+  [2ee39098] + LabelledArrays v1.4.0
+  [bdcacae8] + LoopVectorization v0.8.26
+  [1914dd2f] + MacroTools v0.5.6
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [872c559c] + NNlib v0.7.11
+  [77ba4419] + NaNMath v0.3.5
+  [8913a72c] + NonlinearSolve v0.3.4
+  [6fe1bfb0] + OffsetArrays v1.3.1
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [9b87118b] + PackageCompiler v1.2.5
+  [d96e819e] + Parameters v0.12.1
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [731186ca] + RecursiveArrayTools v2.10.0
+  [f2c3362d] + RecursiveFactorization v0.1.6
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [21efa798] + SIMDPirates v0.8.26
+  [476501e8] + SLEEFPirates v0.5.5
+  [6c6a2e73] + Scratch v1.0.3
+  [efcf1570] + Setfield v0.7.0
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [a759f4b9] + TimerOutputs v0.5.7
+  [a2a6695c] + TreeViews v0.3.0
+  [3a884ed6] + UnPack v1.0.2
+  [3d5dd08c] + VectorizationBase v0.12.33
+  [700de1a5] + ZygoteRules v0.2.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building SLEEFPirates → `~/.julia/packages/SLEEFPirates/jGsib/deps/build.log`
+
+
+################################################################################
+# Compiling: 2021-01-11T15:17:10.626
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 242.018 MiB, compilation took 384 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T15:23:42.439
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver1)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/DiffEqGPU-76gmTs75.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:23:43.902
+#
+
+ Installing known registries into `~/.julia`
+                                                                           0.6%#######################################################                   76.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed NonlinearSolve ─────────────── v0.3.4
+  Installed DiffEqGPU ──────────────────── v1.9.1
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed NNlib ──────────────────────── v0.7.11
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed GPUCompiler ────────────────── v0.8.3
+  Installed Compat ─────────────────────── v3.25.0
+  Installed DiffEqBase ─────────────────── v6.53.4
+  Installed SLEEFPirates ───────────────── v0.5.5
+  Installed TreeViews ──────────────────── v0.3.0
+  Installed RecursiveArrayTools ────────── v2.10.0
+  Installed CpuId ──────────────────────── v0.2.2
+  Installed BFloat16s ──────────────────── v0.1.0
+  Installed LLVM ───────────────────────── v3.5.2
+  Installed Cassette ───────────────────── v0.3.4
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed KernelAbstractions ─────────── v0.4.6
+  Installed Adapt ──────────────────────── v3.0.0
+  Installed VectorizationBase ──────────── v0.12.33
+  Installed DocStringExtensions ────────── v0.8.3
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed ExprTools ──────────────────── v0.1.3
+  Installed Requires ───────────────────── v1.1.2
+  Installed LoopVectorization ──────────── v0.8.26
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed AbstractFFTs ───────────────── v0.5.0
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed CUDA ───────────────────────── v2.4.0
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed FunctionWrappers ───────────── v1.1.1
+  Installed TableTraits ────────────────── v1.0.0
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed ZygoteRules ────────────────── v0.2.1
+  Installed ConstructionBase ───────────── v1.0.0
+  Installed IterativeSolvers ───────────── v0.9.0
+  Installed Scratch ────────────────────── v1.0.3
+  Installed OffsetArrays ───────────────── v1.3.1
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed Tables ─────────────────────── v1.2.2
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed GPUArrays ──────────────────── v6.2.0
+  Installed RecursiveFactorization ─────── v0.1.6
+  Installed Setfield ───────────────────── v0.7.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed DataStructures ─────────────── v0.18.8
+  Installed FiniteDiff ─────────────────── v2.7.2
+  Installed LabelledArrays ─────────────── v1.4.0
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Parameters ─────────────────── v0.12.1
+  Installed TimerOutputs ───────────────── v0.5.7
+  Installed SIMDPirates ────────────────── v0.8.26
+  Installed Reexport ───────────────────── v0.2.0
+  Installed ArrayInterface ─────────────── v2.14.13
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed CEnum ──────────────────────── v0.4.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [071ae1c0] + DiffEqGPU v1.9.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [621f4979] + AbstractFFTs v0.5.0
+  [79e6a3ab] + Adapt v3.0.0
+  [4fba245c] + ArrayInterface v2.14.13
+  [56f22d72] + Artifacts v1.3.0
+  [ab4f0b2a] + BFloat16s v0.1.0
+  [fa961155] + CEnum v0.4.1
+  [052768ef] + CUDA v2.4.0
+  [7057c7e9] + Cassette v0.3.4
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [187b0558] + ConstructionBase v1.0.0
+  [adafc99b] + CpuId v0.2.2
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [2b5f629d] + DiffEqBase v6.53.4
+  [071ae1c0] + DiffEqGPU v1.9.1
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [ffbed154] + DocStringExtensions v0.8.3
+  [e2ba6199] + ExprTools v0.1.3
+  [6a86dc24] + FiniteDiff v2.7.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [069b7b12] + FunctionWrappers v1.1.1
+  [0c68f7d7] + GPUArrays v6.2.0
+  [61eb1bfa] + GPUCompiler v0.8.3
+  [42fd0dbc] + IterativeSolvers v0.9.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [63c18a36] + KernelAbstractions v0.4.6
+  [929cbde3] + LLVM v3.5.2
+  [2ee39098] + LabelledArrays v1.4.0
+  [bdcacae8] + LoopVectorization v0.8.26
+  [1914dd2f] + MacroTools v0.5.6
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [872c559c] + NNlib v0.7.11
+  [77ba4419] + NaNMath v0.3.5
+  [8913a72c] + NonlinearSolve v0.3.4
+  [6fe1bfb0] + OffsetArrays v1.3.1
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [d96e819e] + Parameters v0.12.1
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [731186ca] + RecursiveArrayTools v2.10.0
+  [f2c3362d] + RecursiveFactorization v0.1.6
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [21efa798] + SIMDPirates v0.8.26
+  [476501e8] + SLEEFPirates v0.5.5
+  [6c6a2e73] + Scratch v1.0.3
+  [efcf1570] + Setfield v0.7.0
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [a759f4b9] + TimerOutputs v0.5.7
+  [a2a6695c] + TreeViews v0.3.0
+  [3a884ed6] + UnPack v1.0.2
+  [3d5dd08c] + VectorizationBase v0.12.33
+  [700de1a5] + ZygoteRules v0.2.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building SLEEFPirates → `~/.julia/packages/SLEEFPirates/jGsib/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T15:23:53.3
+#
+
+    Testing DiffEqGPU
+┌ Error: Pkg.Resolve.ResolverError("Unsatisfiable requirements detected for package Adapt [79e6a3ab]:\n Adapt [79e6a3ab] log:\n ├─possible versions are: [0.3.0-0.3.1, 0.4.0-0.4.2, 1.0.0-1.0.1, 1.1.0, 2.0.0-2.0.2, 2.1.0, 2.2.0, 2.3.0, 2.4.0, 3.0.0] or uninstalled\n ├─restricted to versions 3.0.0 by an explicit requirement, leaving only versions 3.0.0\n └─restricted by compatibility requirements with Flux [587475ba] to versions: [0.3.0-0.3.1, 0.4.0-0.4.2, 1.0.0-1.0.1, 1.1.0, 2.0.0-2.0.2, 2.1.0, 2.2.0, 2.3.0, 2.4.0] — no versions left\n   └─Flux [587475ba] log:\n     ├─possible versions are: [0.4.1, 0.5.0-0.5.4, 0.6.0-0.6.10, 0.7.0-0.7.3, 0.8.0-0.8.3, 0.9.0, 0.10.0-0.10.4, 0.11.0-0.11.3] or uninstalled\n     ├─restricted to versions * by an explicit requirement, leaving only versions [0.4.1, 0.5.0-0.5.4, 0.6.0-0.6.10, 0.7.0-0.7.3, 0.8.0-0.8.3, 0.9.0, 0.10.0-0.10.4, 0.11.0-0.11.3]\n     └─restricted by compatibility requirements with Requires [ae029012] to versions: [0.8.3, 0.9.0, 0.10.0-0.10.4, 0.11.0-0.11.3] or uninstalled, leaving only versions: [0.8.3, 0.9.0, 0.10.0-0.10.4, 0.11.0-0.11.3]\n       └─Requires [ae029012] log:\n         ├─possible versions are: [0.5.0-0.5.2, 1.0.0-1.0.3, 1.1.0-1.1.2] or uninstalled\n         └─restricted to versions 1.1.2 by an explicit requirement, leaving only versions 1.1.2", nothing)
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1427
+Status `/tmp/jl_ObN8wi/Project.toml`
+  [052768ef] CUDA v2.4.0
+  [2b5f629d] DiffEqBase v6.53.4
+  [071ae1c0] DiffEqGPU v1.9.1
+  [41bf760c] DiffEqSensitivity v6.40.0
+  [587475ba] Flux v0.11.3
+  [f6369f11] ForwardDiff v0.10.14
+  [63c18a36] KernelAbstractions v0.4.6
+  [1dea7af3] OrdinaryDiffEq v5.49.1
+  [731186ca] RecursiveArrayTools v2.10.0
+  [1bc83da4] SafeTestsets v0.0.1
+  [789caeaf] StochasticDiffEq v6.30.1
+  [1986cc42] Unitful v1.5.0
+  [700de1a5] ZygoteRules v0.2.1
+  [8ba89e20] Distributed
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_ObN8wi/Manifest.toml`
+  [621f4979] AbstractFFTs v0.5.0
+  [1520ce14] AbstractTrees v0.3.3
+  [79e6a3ab] Adapt v2.4.0
+  [ec485272] ArnoldiMethod v0.0.4
+  [4fba245c] ArrayInterface v2.14.13
+  [4c555306] ArrayLayouts v0.4.12
+  [56f22d72] Artifacts v1.3.0
+  [ab4f0b2a] BFloat16s v0.1.0
+  [fa961155] CEnum v0.4.1
+  [052768ef] CUDA v2.4.0
+  [7057c7e9] Cassette v0.3.4
+  [082447d4] ChainRules v0.7.45
+  [d360d2e6] ChainRulesCore v0.9.24
+  [944b1d66] CodecZlib v0.7.0
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.6
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [187b0558] ConstructionBase v1.0.0
+  [adafc99b] CpuId v0.2.2
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [2b5f629d] DiffEqBase v6.53.4
+  [459566f4] DiffEqCallbacks v2.16.0
+  [071ae1c0] DiffEqGPU v1.9.1
+  [c894b116] DiffEqJump v6.12.2
+  [77a26b50] DiffEqNoiseProcess v5.5.0
+  [41bf760c] DiffEqSensitivity v6.40.0
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [b4f34e82] Distances v0.10.0
+  [31c24e10] Distributions v0.24.10
+  [ffbed154] DocStringExtensions v0.8.3
+  [d4d017d3] ExponentialUtilities v1.8.0
+  [e2ba6199] ExprTools v0.1.3
+  [7a1cc6ca] FFTW v1.3.0
+  [f5851436] FFTW_jll v3.3.9+7
+  [9aa1b823] FastClosures v0.3.2
+  [1a297f60] FillArrays v0.10.2
+  [6a86dc24] FiniteDiff v2.7.2
+  [53c48c17] FixedPointNumbers v0.8.4
+  [587475ba] Flux v0.11.3
+  [f6369f11] ForwardDiff v0.10.14
+  [069b7b12] FunctionWrappers v1.1.1
+  [d9f16b24] Functors v0.1.0
+  [0c68f7d7] GPUArrays v6.2.0
+  [61eb1bfa] GPUCompiler v0.8.3
+  [01680d73] GenericSVD v0.3.0
+  [af5da776] GlobalSensitivity v0.0.1
+  [7869d1d1] IRTools v0.4.2
+  [d25df0c9] Inflate v0.1.2
+  [1d5cc7b8] IntelOpenMP_jll v2018.0.3+0
+  [42fd0dbc] IterativeSolvers v0.9.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [e5e0dc1b] Juno v0.8.4
+  [63c18a36] KernelAbstractions v0.4.6
+  [929cbde3] LLVM v3.5.2
+  [2ee39098] LabelledArrays v1.4.0
+  [a5e1c1ea] LatinHypercubeSampling v1.7.3
+  [73f95e8e] LatticeRules v0.0.1
+  [093fc24a] LightGraphs v1.3.4
+  [d3d80556] LineSearches v7.1.1
+  [bdcacae8] LoopVectorization v0.8.26
+  [856f044c] MKL_jll v2020.2.254+0
+  [1914dd2f] MacroTools v0.5.6
+  [e89f7d12] Media v0.5.0
+  [e1d29d7a] Missings v0.4.4
+  [46d2c3a1] MuladdMacro v0.2.2
+  [d41bc354] NLSolversBase v7.7.1
+  [2774e3e8] NLsolve v4.5.1
+  [872c559c] NNlib v0.7.11
+  [77ba4419] NaNMath v0.3.5
+  [8913a72c] NonlinearSolve v0.3.4
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [1dea7af3] OrdinaryDiffEq v5.49.1
+  [90014a1f] PDMats v0.10.1
+  [d96e819e] Parameters v0.12.1
+  [e409e4f3] PoissonRandom v0.4.0
+  [1fd47b50] QuadGK v2.4.1
+  [8a4e6c94] QuasiMonteCarlo v0.2.2
+  [74087812] Random123 v1.2.0
+  [e6cf234a] RandomNumbers v1.4.0
+  [3cdcf5f2] RecipesBase v1.1.1
+  [731186ca] RecursiveArrayTools v2.10.0
+  [f2c3362d] RecursiveFactorization v0.1.6
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [ae5879a3] ResettableStacks v1.1.0
+  [37e2e3b7] ReverseDiff v1.5.0
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [21efa798] SIMDPirates v0.8.26
+  [476501e8] SLEEFPirates v0.5.5
+  [1bc83da4] SafeTestsets v0.0.1
+  [6c6a2e73] Scratch v1.0.3
+  [efcf1570] Setfield v0.7.0
+  [699a6c99] SimpleTraits v0.9.3
+  [ed01d8cd] Sobol v1.4.0
+  [a2af1166] SortingAlgorithms v0.3.1
+  [47a9eef4] SparseDiffTools v1.12.0
+  [276daf66] SpecialFunctions v1.2.1
+  [860ef19b] StableRNGs v1.0.0
+  [90137ffa] StaticArrays v0.12.5
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [789caeaf] StochasticDiffEq v6.30.1
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [a759f4b9] TimerOutputs v0.5.7
+  [9f7883ad] Tracker v0.2.14
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [a2a6695c] TreeViews v0.3.0
+  [3a884ed6] UnPack v1.0.2
+  [1986cc42] Unitful v1.5.0
+  [3d5dd08c] VectorizationBase v0.12.33
+  [19fa3120] VertexSafeGraphs v0.1.2
+  [a5390f91] ZipFile v0.9.3
+  [83775a58] Zlib_jll v1.2.11+18
+  [e88e6eb3] Zygote v0.5.17
+  [700de1a5] ZygoteRules v0.2.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [9abbd945] Profile
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: Explicit Methods
+┌ Error: Error during initialization of CUDA.jl
+│   exception =
+│    could not load library "libcuda.so.1"
+│    libcuda.so.1: cannot open shared object file: No such file or directory
+│    Stacktrace:
+│     [1] dlopen(::String, ::UInt32; throw_error::Bool) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Libdl/src/Libdl.jl:109
+│     [2] dlopen at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Libdl/src/Libdl.jl:109 [inlined] (repeats 2 times)
+│     [3] (::CUDA.var"#2967#cache_fptr!#619")() at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/utils/call.jl:31
+│     [4] macro expansion at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/utils/call.jl:39 [inlined]
+│     [5] __configure__() at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/initialization.jl:89
+│     [6] macro expansion at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/initialization.jl:30 [inlined]
+│     [7] macro expansion at ./lock.jl:183 [inlined]
+│     [8] _functional(::Bool) at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/initialization.jl:26
+│     [9] functional(::Bool) at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/initialization.jl:19
+│     [10] libcuda() at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/initialization.jl:47
+│     [11] (::CUDA.var"#690#cache_fptr!#9")() at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/utils/call.jl:31
+│     [12] macro expansion at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/utils/call.jl:39 [inlined]
+│     [13] macro expansion at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/cudadrv/libcuda.jl:29 [inlined]
+│     [14] macro expansion at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/cudadrv/error.jl:102 [inlined]
+│     [15] cuDeviceGet(::Base.RefValue{Int32}, ::Int64) at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/utils/call.jl:93
+│     [16] CUDA.CuDevice(::Int64) at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/cudadrv/devices.jl:25
+│     [17] initialize_thread(::Int64) at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/state.jl:121
+│     [18] prepare_cuda_call() at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/state.jl:80
+│     [19] device() at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/state.jl:227
+│     [20] alloc at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/pool.jl:293 [inlined]
+│     [21] CUDA.CuArray{Float32,2}(::UndefInitializer, ::Tuple{Int64,Int64}) at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/array.jl:20
+│     [22] CuArray at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/array.jl:190 [inlined]
+│     [23] CuArray at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/array.jl:198 [inlined]
+│     [24] batch_solve_up(::DiffEqBase.EnsembleProblem{DiffEqBase.ODEProblem{Array{Float32,1},Tuple{Float32,Float32},true,Tuple{Float32,Float32,Float32},DiffEqBase.ODEFunction{true,typeof(Main.##346.lorenz),LinearAlgebra.UniformScaling{Bool},Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing},Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},DiffEqBase.StandardODEProblem},Main.##346.var"#3#4",typeof(DiffEqBase.DEFAULT_OUTPUT_FUNC),typeof(DiffEqBase.DEFAULT_REDUCTION),Nothing}, ::Array{DiffEqBase.ODEProblem{Array{Float32,1},Tuple{Float32,Float32},true,Array{Float32,1},DiffEqBase.ODEFunction{true,typeof(Main.##346.lorenz),LinearAlgebra.UniformScaling{Bool},Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing},Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},DiffEqBase.StandardODEProblem},1}, ::OrdinaryDiffEq.Tsit5, ::DiffEqGPU.EnsembleGPUArray, ::UnitRange{Int64}, ::Array{Float32,2}, ::Array{Float32,2}; kwargs::Base.Iterators.Pairs{Symbol,Any,Tuple{Symbol,Symbol},NamedTuple{(:unstable_check, :saveat),Tuple{DiffEqGPU.var"#10#16",Float32}}}) at /home/pkgeval/.julia/packages/DiffEqGPU/eOLep/src/DiffEqGPU.jl:232
+│     [25] batch_solve(::DiffEqBase.EnsembleProblem{DiffEqBase.ODEProblem{Array{Float32,1},Tuple{Float32,Float32},true,Tuple{Float32,Float32,Float32},DiffEqBase.ODEFunction{true,typeof(Main.##346.lorenz),LinearAlgebra.UniformScaling{Bool},Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing},Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},DiffEqBase.StandardODEProblem},Main.##346.var"#3#4",typeof(DiffEqBase.DEFAULT_OUTPUT_FUNC),typeof(DiffEqBase.DEFAULT_REDUCTION),Nothing}, ::OrdinaryDiffEq.Tsit5, ::DiffEqGPU.EnsembleGPUArray, ::UnitRange{Int64}; kwargs::Base.Iterators.Pairs{Symbol,Any,Tuple{Symbol,Symbol},NamedTuple{(:unstable_check, :saveat),Tuple{DiffEqGPU.var"#10#16",Float32}}}) at /home/pkgeval/.julia/packages/DiffEqGPU/eOLep/src/DiffEqGPU.jl:226
+│     [26] macro expansion at ./timing.jl:233 [inlined]
+│     [27] __solve(::DiffEqBase.EnsembleProblem{DiffEqBase.ODEProblem{Array{Float32,1},Tuple{Float32,Float32},true,Tuple{Float32,Float32,Float32},DiffEqBase.ODEFunction{true,typeof(Main.##346.lorenz),LinearAlgebra.UniformScaling{Bool},Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing},Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},DiffEqBase.StandardODEProblem},Main.##346.var"#3#4",typeof(DiffEqBase.DEFAULT_OUTPUT_FUNC),typeof(DiffEqBase.DEFAULT_REDUCTION),Nothing}, ::OrdinaryDiffEq.Tsit5, ::DiffEqGPU.EnsembleGPUArray; trajectories::Int64, batch_size::Int64, unstable_check::Function, kwargs::Base.Iterators.Pairs{Symbol,Float32,Tuple{Symbol},NamedTuple{(:saveat,),Tuple{Float32}}}) at /home/pkgeval/.julia/packages/DiffEqGPU/eOLep/src/DiffEqGPU.jl:143
+│     [28] #solve#450 at /home/pkgeval/.julia/packages/DiffEqBase/znIav/src/solve.jl:100 [inlined]
+│     [29] top-level scope at ./timing.jl:174 [inlined]
+│     [30] top-level scope at /home/user/.julia/packages/DiffEqGPU/eOLep/test/ensemblegpuarray.jl:0
+│     [31] include(::Function, ::Module, ::String) at ./Base.jl:380
+│     [32] include at ./Base.jl:368 [inlined]
+│     [33] include(::String) at /home/user/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
+│     [34] top-level scope at /home/user/.julia/packages/DiffEqGPU/eOLep/test/runtests.jl:18
+│     [35] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+│     [36] top-level scope at /home/user/.julia/packages/DiffEqGPU/eOLep/test/runtests.jl:18
+│     [37] eval(::Module, ::Any) at ./boot.jl:331
+│     [38] top-level scope at /home/user/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
+│     [39] top-level scope at timing.jl:174
+│     [40] include(::String) at ./client.jl:457
+│     [41] top-level scope at none:5
+│     [42] eval(::Module, ::Any) at ./boot.jl:331
+│     [43] exec_options(::Base.JLOptions) at ./client.jl:272
+│     [44] _start() at ./client.jl:506
+└ @ CUDA /home/pkgeval/.julia/packages/CUDA/FlHUF/src/initialization.jl:34
+EnsembleGPUArray: Error During Test at /home/user/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:25
+  Got exception outside of a @test
+  LoadError: CUDA.jl did not successfully initialize, and is not usable.
+  If you did not see any other error message, try again in a new session
+  with the JULIA_DEBUG environment variable set to 'CUDA'.
+  Stacktrace:
+   [1] error(::String) at ./error.jl:33
+   [2] libcuda() at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/initialization.jl:48
+   [3] (::CUDA.var"#690#cache_fptr!#9")() at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/utils/call.jl:31
+   [4] macro expansion at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/utils/call.jl:39 [inlined]
+   [5] macro expansion at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/cudadrv/libcuda.jl:29 [inlined]
+   [6] macro expansion at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/cudadrv/error.jl:102 [inlined]
+   [7] cuDeviceGet(::Base.RefValue{Int32}, ::Int64) at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/utils/call.jl:93
+   [8] CUDA.CuDevice(::Int64) at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/cudadrv/devices.jl:25
+   [9] initialize_thread(::Int64) at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/state.jl:121
+   [10] prepare_cuda_call() at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/state.jl:80
+   [11] device() at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/state.jl:227
+   [12] alloc at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/pool.jl:293 [inlined]
+   [13] CUDA.CuArray{Float32,2}(::UndefInitializer, ::Tuple{Int64,Int64}) at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/array.jl:20
+   [14] CuArray at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/array.jl:190 [inlined]
+   [15] CuArray at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/array.jl:198 [inlined]
+   [16] batch_solve_up(::DiffEqBase.EnsembleProblem{DiffEqBase.ODEProblem{Array{Float32,1},Tuple{Float32,Float32},true,Tuple{Float32,Float32,Float32},DiffEqBase.ODEFunction{true,typeof(Main.##346.lorenz),LinearAlgebra.UniformScaling{Bool},Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing},Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},DiffEqBase.StandardODEProblem},Main.##346.var"#3#4",typeof(DiffEqBase.DEFAULT_OUTPUT_FUNC),typeof(DiffEqBase.DEFAULT_REDUCTION),Nothing}, ::Array{DiffEqBase.ODEProblem{Array{Float32,1},Tuple{Float32,Float32},true,Array{Float32,1},DiffEqBase.ODEFunction{true,typeof(Main.##346.lorenz),LinearAlgebra.UniformScaling{Bool},Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing},Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},DiffEqBase.StandardODEProblem},1}, ::OrdinaryDiffEq.Tsit5, ::DiffEqGPU.EnsembleGPUArray, ::UnitRange{Int64}, ::Array{Float32,2}, ::Array{Float32,2}; kwargs::Base.Iterators.Pairs{Symbol,Any,Tuple{Symbol,Symbol},NamedTuple{(:unstable_check, :saveat),Tuple{DiffEqGPU.var"#10#16",Float32}}}) at /home/pkgeval/.julia/packages/DiffEqGPU/eOLep/src/DiffEqGPU.jl:232
+   [17] batch_solve(::DiffEqBase.EnsembleProblem{DiffEqBase.ODEProblem{Array{Float32,1},Tuple{Float32,Float32},true,Tuple{Float32,Float32,Float32},DiffEqBase.ODEFunction{true,typeof(Main.##346.lorenz),LinearAlgebra.UniformScaling{Bool},Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing},Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},DiffEqBase.StandardODEProblem},Main.##346.var"#3#4",typeof(DiffEqBase.DEFAULT_OUTPUT_FUNC),typeof(DiffEqBase.DEFAULT_REDUCTION),Nothing}, ::OrdinaryDiffEq.Tsit5, ::DiffEqGPU.EnsembleGPUArray, ::UnitRange{Int64}; kwargs::Base.Iterators.Pairs{Symbol,Any,Tuple{Symbol,Symbol},NamedTuple{(:unstable_check, :saveat),Tuple{DiffEqGPU.var"#10#16",Float32}}}) at /home/pkgeval/.julia/packages/DiffEqGPU/eOLep/src/DiffEqGPU.jl:226
+   [18] macro expansion at ./timing.jl:233 [inlined]
+   [19] __solve(::DiffEqBase.EnsembleProblem{DiffEqBase.ODEProblem{Array{Float32,1},Tuple{Float32,Float32},true,Tuple{Float32,Float32,Float32},DiffEqBase.ODEFunction{true,typeof(Main.##346.lorenz),LinearAlgebra.UniformScaling{Bool},Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing},Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},DiffEqBase.StandardODEProblem},Main.##346.var"#3#4",typeof(DiffEqBase.DEFAULT_OUTPUT_FUNC),typeof(DiffEqBase.DEFAULT_REDUCTION),Nothing}, ::OrdinaryDiffEq.Tsit5, ::DiffEqGPU.EnsembleGPUArray; trajectories::Int64, batch_size::Int64, unstable_check::Function, kwargs::Base.Iterators.Pairs{Symbol,Float32,Tuple{Symbol},NamedTuple{(:saveat,),Tuple{Float32}}}) at /home/pkgeval/.julia/packages/DiffEqGPU/eOLep/src/DiffEqGPU.jl:143
+   [20] #solve#450 at /home/pkgeval/.julia/packages/DiffEqBase/znIav/src/solve.jl:100 [inlined]
+   [21] top-level scope at ./timing.jl:174 [inlined]
+   [22] top-level scope at /home/user/.julia/packages/DiffEqGPU/eOLep/test/ensemblegpuarray.jl:0
+   [23] include(::Function, ::Module, ::String) at ./Base.jl:380
+   [24] include at ./Base.jl:368 [inlined]
+   [25] include(::String) at /home/user/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
+   [26] top-level scope at /home/user/.julia/packages/DiffEqGPU/eOLep/test/runtests.jl:18
+   [27] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [28] top-level scope at /home/user/.julia/packages/DiffEqGPU/eOLep/test/runtests.jl:18
+   [29] eval(::Module, ::Any) at ./boot.jl:331
+   [30] top-level scope at /home/user/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
+   [31] top-level scope at timing.jl:174
+   [32] include(::String) at ./client.jl:457
+   [33] top-level scope at none:5
+   [34] eval(::Module, ::Any) at ./boot.jl:331
+   [35] exec_options(::Base.JLOptions) at ./client.jl:272
+   [36] _start() at ./client.jl:506
+  in expression starting at /home/user/.julia/packages/DiffEqGPU/eOLep/test/ensemblegpuarray.jl:25
+  
+Test Summary:    | Error  Total
+EnsembleGPUArray |     1      1
+ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/user/.julia/packages/DiffEqGPU/eOLep/test/runtests.jl:18
+ERROR: LoadError: failed process: Process(`/usr/local/julia/bin/julia -Cnative -J/cache/DiffEqGPU-76gmTs75.so --depwarn=yes -g1 --startup-file=no --eval 'append!(empty!(Base.DEPOT_PATH), ["/home/user/.julia", "/usr/local/julia/local/share/julia", "/usr/local/julia/share/julia"])
+append!(empty!(Base.DL_LOAD_PATH), String[])
+
+cd("/home/user/.julia/packages/DiffEqGPU/eOLep/test")
+include("/home/user/.julia/packages/DiffEqGPU/eOLep/test/runtests.jl")
+'`, ProcessExited(1)) [1]
+
+Stacktrace:
+ [1] pipeline_error at ./process.jl:525 [inlined]
+ [2] run(::Cmd; wait::Bool) at ./process.jl:440
+ [3] run(::Cmd) at ./process.jl:438
+ [4] top-level scope at /home/user/.julia/packages/DiffEqGPU/eOLep/test/runtests.jl:11
+ [5] include(::String) at ./client.jl:457
+ [6] top-level scope at none:6
+in expression starting at /home/user/.julia/packages/DiffEqGPU/eOLep/test/runtests.jl:4
+
+PkgEval failed: Package DiffEqGPU errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:25:20.758
+CPU usage: 98.98s (93.93s user, 5.20s kernel)
+
+Network usage:
+- eth0: 24.619 MiB received, 834.817 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":35,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":21,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":35,"op":"Total","minor":0}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":192512,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":135168,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":192512,"op":"Total","minor":0}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":569360384,"max_usage":1816862720,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":356204544,"inactive_file":135168,"inactive_anon":149495808,"total_pgfault":2237862,"total_cache":176308224,"total_rss_huge":0,"total_active_anon":382889984,"total_pgmajfault":0,"pgpgin":1584561,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":1454556,"hierarchical_memsw_limit":0,"cache":176308224,"active_file":135168,"pgfault":2237862,"total_mapped_file":0,"total_pgpgout":1454556,"total_writeback":0,"rss":356204544,"unevictable":0,"total_inactive_anon":149495808,"total_pgpgin":1584561,"active_anon":382889984,"total_active_file":135168},"limit":67467247616},"name":"/DiffEqGPU-X0zG8i0C","networks":{"eth0":{"rx_bytes":25815041,"rx_packets":8258,"tx_packets":7960,"tx_bytes":854853,"tx_dropped":0,"rx_dropped":0,"tx_errors":0,"rx_errors":0}},"id":"fda2edda8450a7edc6c793410a684db4eb4cedc1f9d2304c61ecd5acef12e0d3","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":7114158185808967,"online_cpus":64,"cpu_usage":{"usage_in_usermode":93930000000,"usage_in_kernelmode":5200000000,"total_usage":98976151434,"percpu_usage":[98976134983,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16451,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:25:20.759916465Z"}
