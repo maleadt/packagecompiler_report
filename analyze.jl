@@ -49,12 +49,13 @@ function main()
         open("REPORT.md", "w") do io
             println(io, "# Package evaluation with PackageCompiler\n")
 
-            println(io, "Evaluated using Julia $julia_version.\n")
+            println(io, "Evaluated $(length(packages)) packages using Julia $julia_version.\n")
 
             for (title, list) in (("Issues when compiled", failed_compiled),
                                   ("Issues in regular mode", failed_regular),
                                   ("No issues", ok))
                 println(io, "## $(title)\n")
+                println(io, "$(length(list)) packages fall in this category:\n")
                 for package in list
                     results = df[df.name .== package, :]
 

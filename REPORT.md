@@ -1,8 +1,10 @@
 # Package evaluation with PackageCompiler
 
-Evaluated using Julia 1.5.3-599f52c4c6.
+Evaluated 4857 packages using Julia 1.5.3-599f52c4c6.
 
 ## Issues when compiled
+
+600 packages fall in this category:
 
 - MatrixNetworks: [regular](logs/MatrixNetworks.regular.log), [compiled](logs/MatrixNetworks.compiled.log) (package has test failures)
 - KelvinletsImage: [regular](logs/KelvinletsImage.regular.log), [compiled](logs/KelvinletsImage.compiled.log) (compilation of the package failed)
@@ -606,6 +608,8 @@ Evaluated using Julia 1.5.3-599f52c4c6.
 - PandasLite: [regular](logs/PandasLite.regular.log), [compiled](logs/PandasLite.compiled.log) (package requires a missing binary dependency)
 
 ## Issues in regular mode
+
+1701 packages fall in this category:
 
 - Gnome_themes_extra_jll: [regular](logs/Gnome_themes_extra_jll.regular.log) (package is a untestable wrapper package), [compiled](logs/Gnome_themes_extra_jll.compiled.log) (package is a untestable wrapper package)
 - HarfBuzz_jll: [regular](logs/HarfBuzz_jll.regular.log) (package is a untestable wrapper package), [compiled](logs/HarfBuzz_jll.compiled.log) (package is a untestable wrapper package)
@@ -2310,6 +2314,8 @@ Evaluated using Julia 1.5.3-599f52c4c6.
 - Registrator: [regular](logs/Registrator.regular.log) (package has test failures), [compiled](logs/Registrator.compiled.log) (there were unidentified errors)
 
 ## No issues
+
+2556 packages fall in this category:
 
 - LIBLINEAR: [regular](logs/LIBLINEAR.regular.log), [compiled](logs/LIBLINEAR.compiled.log)
 - LinkedLists: [regular](logs/LinkedLists.regular.log), [compiled](logs/LinkedLists.compiled.log)
