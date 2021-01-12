@@ -1,0 +1,128 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T18:36:33.83
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T18:36:35.584
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed BitConverter ──── v0.1.1
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [3a3ce9e8] + BitConverter v0.1.1
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [3a3ce9e8] + BitConverter v0.1.1
+  [9b87118b] + PackageCompiler v1.2.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T18:36:41.288
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 147.284 MiB, compilation took 166 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T18:39:34.811
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/BitConverter-LYe5TT8L.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:39:36.783
+#
+
+ Installing known registries into `~/.julia`
+##############                                                            20.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed BitConverter ─ v0.1.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [3a3ce9e8] + BitConverter v0.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [3a3ce9e8] + BitConverter v0.1.1
+
+
+################################################################################
+# Testing: 2021-01-11T18:39:40.341
+#
+
+    Testing BitConverter
+Status `/tmp/jl_nCKnia/Project.toml`
+  [3a3ce9e8] BitConverter v0.1.1
+  [8dfed614] Test
+Status `/tmp/jl_nCKnia/Manifest.toml`
+  [3a3ce9e8] BitConverter v0.1.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary:       | Pass  Total
+Integer Convertions |    6      6
+    Testing BitConverter tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:39:44.362
+CPU usage: 9.55s (6.87s user, 2.68s kernel)
+
+Network usage:
+- eth0: 2.535 MiB received, 27.957 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":3428,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":3442,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":3447,"op":"Total","minor":0},{"major":253,"value":3428,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":3442,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":3447,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":258301952,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":258359296,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":258379776,"op":"Total","minor":0},{"major":253,"value":258301952,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":258359296,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":258379776,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":432386048,"max_usage":582057984,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":891,"total_rss":181592064,"inactive_file":110120960,"inactive_anon":118136832,"total_pgfault":223542,"total_cache":219254784,"total_rss_huge":0,"total_active_anon":142512128,"total_pgmajfault":891,"pgpgin":245850,"rss_huge":0,"mapped_file":6217728,"total_inactive_file":110120960,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":147972,"hierarchical_memsw_limit":0,"cache":219254784,"active_file":29491200,"pgfault":223542,"total_mapped_file":6217728,"total_pgpgout":147972,"total_writeback":0,"rss":181592064,"unevictable":0,"total_inactive_anon":118136832,"total_pgpgin":245850,"active_anon":142512128,"total_active_file":29491200},"limit":540965302272},"name":"/BitConverter-5xcERH0g","networks":{"eth0":{"rx_bytes":2658598,"rx_packets":290,"tx_packets":291,"tx_bytes":28628,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"db2ab30afc5cbd215e97d5627a508e0d5f6d094985375b54183f13d0f4118be1","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4663640244522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":6870000000,"usage_in_kernelmode":2680000000,"total_usage":9552492907,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,9552492907,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:39:44.365246756Z"}

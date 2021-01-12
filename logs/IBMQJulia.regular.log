@@ -1,0 +1,436 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:23:40.227
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:23:41.978
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MbedTLS_jll ────────── v2.16.8+1
+  Installed IBMQJulia ──────────── v0.5.0
+  Installed Reexport ───────────── v0.2.0
+  Installed Requires ───────────── v1.1.2
+  Installed DataStructures ─────── v0.18.8
+  Installed StatsBase ──────────── v0.33.2
+  Installed YaoSym ─────────────── v0.4.6
+  Installed Yao ────────────────── v0.6.3
+  Installed CacheServers ───────── v0.2.0
+  Installed MbedTLS ────────────── v1.0.3
+  Installed DataAPI ────────────── v1.4.0
+  Installed LuxurySparse ───────── v0.6.6
+  Installed YaoAPI ─────────────── v0.1.0
+  Installed SimpleTraits ───────── v0.9.3
+  Installed YaoArrayRegister ───── v0.7.4
+  Installed HTTP ───────────────── v0.8.19
+  Installed OrderedCollections ─── v1.3.2
+  Installed Missings ───────────── v0.4.4
+  Installed BitBasis ───────────── v0.7.0
+  Installed StaticArrays ───────── v0.12.5
+  Installed LegibleLambdas ─────── v0.2.0
+  Installed TupleTools ─────────── v1.2.0
+  Installed MacroTools ─────────── v0.5.6
+  Installed YaoBase ────────────── v0.14.1
+  Installed JSON ───────────────── v0.21.1
+  Installed JLLWrappers ────────── v1.2.0
+  Installed YaoBlocks ──────────── v0.11.1
+  Installed MLStyle ────────────── v0.4.6
+  Installed SortingAlgorithms ──── v0.3.1
+  Installed Compat ─────────────── v3.25.0
+  Installed ExponentialUtilities ─ v1.8.0
+  Installed Artifacts ──────────── v1.3.0
+  Installed Parsers ────────────── v1.0.15
+  Installed IniFile ────────────── v0.5.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [2f6fcadc] + IBMQJulia v0.5.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [50ba71b6] + BitBasis v0.7.0
+  [a921213e] + CacheServers v0.2.0
+  [34da2185] + Compat v3.25.0
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [d4d017d3] + ExponentialUtilities v1.8.0
+  [cd3eb016] + HTTP v0.8.19
+  [2f6fcadc] + IBMQJulia v0.5.0
+  [83e8ac13] + IniFile v0.5.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [f1f30506] + LegibleLambdas v0.2.0
+  [d05aeea4] + LuxurySparse v0.6.6
+  [d8e11817] + MLStyle v0.4.6
+  [1914dd2f] + MacroTools v0.5.6
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [e1d29d7a] + Missings v0.4.4
+  [bac558e1] + OrderedCollections v1.3.2
+  [69de0a69] + Parsers v1.0.15
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [699a6c99] + SimpleTraits v0.9.3
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [90137ffa] + StaticArrays v0.12.5
+  [2913bbd2] + StatsBase v0.33.2
+  [9d95972d] + TupleTools v1.2.0
+  [5872b779] + Yao v0.6.3
+  [0843a435] + YaoAPI v0.1.0
+  [e600142f] + YaoArrayRegister v0.7.4
+  [a8f54c17] + YaoBase v0.14.1
+  [418bc28f] + YaoBlocks v0.11.1
+  [3b27209a] + YaoSym v0.4.6
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T19:23:47.776
+#
+
+    Testing IBMQJulia
+Status `/tmp/jl_qc240T/Project.toml`
+  [cd3eb016] HTTP v0.8.19
+  [2f6fcadc] IBMQJulia v0.5.0
+  [682c06a0] JSON v0.21.1
+  [a896ed2c] SimpleMock v1.2.0
+  [5872b779] Yao v0.6.3
+  [418bc28f] YaoBlocks v0.11.1
+  [7a06699c] YaoExtensions v0.2.2
+  [8dfed614] Test
+Status `/tmp/jl_qc240T/Manifest.toml`
+  [621f4979] AbstractFFTs v1.0.0
+  [56f22d72] Artifacts v1.3.0
+  [50ba71b6] BitBasis v0.7.0
+  [a921213e] CacheServers v0.2.0
+  [7057c7e9] Cassette v0.3.4
+  [34da2185] Compat v3.25.0
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [d4d017d3] ExponentialUtilities v1.8.0
+  [7a1cc6ca] FFTW v1.3.1
+  [f5851436] FFTW_jll v3.3.9+7
+  [cd3eb016] HTTP v0.8.19
+  [2f6fcadc] IBMQJulia v0.5.0
+  [83e8ac13] IniFile v0.5.0
+  [1d5cc7b8] IntelOpenMP_jll v2018.0.3+0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [f1f30506] LegibleLambdas v0.2.0
+  [d05aeea4] LuxurySparse v0.6.6
+  [856f044c] MKL_jll v2020.2.254+0
+  [d8e11817] MLStyle v0.4.6
+  [1914dd2f] MacroTools v0.5.6
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [e1d29d7a] Missings v0.4.4
+  [bac558e1] OrderedCollections v1.3.2
+  [69de0a69] Parsers v1.0.15
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [a896ed2c] SimpleMock v1.2.0
+  [699a6c99] SimpleTraits v0.9.3
+  [a2af1166] SortingAlgorithms v0.3.1
+  [90137ffa] StaticArrays v0.12.5
+  [2913bbd2] StatsBase v0.33.2
+  [9d95972d] TupleTools v1.2.0
+  [5872b779] Yao v0.6.3
+  [0843a435] YaoAPI v0.1.0
+  [e600142f] YaoArrayRegister v0.7.4
+  [a8f54c17] YaoBase v0.14.1
+  [418bc28f] YaoBlocks v0.11.1
+  [7a06699c] YaoExtensions v0.2.2
+  [3b27209a] YaoSym v0.4.6
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Logging You in...✔
+Fetching Backends...Internal error: encountered unexpected error in runtime:
+AssertionError(msg="argextype only works on argument-position values")
+argextype at ./compiler/utilities.jl:166
+argextype at ./compiler/utilities.jl:158 [inlined]
+call_sig at ./compiler/ssair/inlining.jl:882
+process_simple! at ./compiler/ssair/inlining.jl:956
+assemble_inline_todo! at ./compiler/ssair/inlining.jl:999
+ssa_inlining_pass! at ./compiler/ssair/inlining.jl:74 [inlined]
+run_passes at ./compiler/ssair/driver.jl:138
+optimize at ./compiler/optimize.jl:174
+typeinf at ./compiler/typeinfer.jl:33
+typeinf_edge at ./compiler/typeinfer.jl:484
+abstract_call_method at ./compiler/abstractinterpretation.jl:419
+abstract_call_gf_by_type at ./compiler/abstractinterpretation.jl:111
+abstract_call_known at ./compiler/abstractinterpretation.jl:904
+abstract_call at ./compiler/abstractinterpretation.jl:926
+abstract_call at ./compiler/abstractinterpretation.jl:911
+abstract_eval at ./compiler/abstractinterpretation.jl:1005
+typeinf_local at ./compiler/abstractinterpretation.jl:1270
+typeinf_nocycle at ./compiler/abstractinterpretation.jl:1326
+typeinf at ./compiler/typeinfer.jl:12
+typeinf_edge at ./compiler/typeinfer.jl:484
+abstract_call_method at ./compiler/abstractinterpretation.jl:419
+abstract_call_gf_by_type at ./compiler/abstractinterpretation.jl:111
+abstract_call_known at ./compiler/abstractinterpretation.jl:904
+abstract_call at ./compiler/abstractinterpretation.jl:926
+abstract_call at ./compiler/abstractinterpretation.jl:911
+abstract_eval at ./compiler/abstractinterpretation.jl:1005
+typeinf_local at ./compiler/abstractinterpretation.jl:1270
+typeinf_nocycle at ./compiler/abstractinterpretation.jl:1326
+typeinf at ./compiler/typeinfer.jl:12
+typeinf_edge at ./compiler/typeinfer.jl:484
+abstract_call_method at ./compiler/abstractinterpretation.jl:419
+abstract_call_gf_by_type at ./compiler/abstractinterpretation.jl:111
+abstract_call_known at ./compiler/abstractinterpretation.jl:904
+abstract_call at ./compiler/abstractinterpretation.jl:926
+abstract_call at ./compiler/abstractinterpretation.jl:911
+abstract_eval at ./compiler/abstractinterpretation.jl:1005
+typeinf_local at ./compiler/abstractinterpretation.jl:1270
+typeinf_nocycle at ./compiler/abstractinterpretation.jl:1326
+typeinf at ./compiler/typeinfer.jl:12
+typeinf_edge at ./compiler/typeinfer.jl:484
+abstract_call_method at ./compiler/abstractinterpretation.jl:419
+abstract_call_gf_by_type at ./compiler/abstractinterpretation.jl:111
+abstract_call_known at ./compiler/abstractinterpretation.jl:904
+abstract_call at ./compiler/abstractinterpretation.jl:926
+abstract_call at ./compiler/abstractinterpretation.jl:911
+abstract_eval at ./compiler/abstractinterpretation.jl:1005
+typeinf_local at ./compiler/abstractinterpretation.jl:1270
+typeinf_nocycle at ./compiler/abstractinterpretation.jl:1326
+typeinf at ./compiler/typeinfer.jl:12
+typeinf_edge at ./compiler/typeinfer.jl:484
+abstract_call_method at ./compiler/abstractinterpretation.jl:419
+abstract_call_gf_by_type at ./compiler/abstractinterpretation.jl:111
+abstract_call_known at ./compiler/abstractinterpretation.jl:904
+abstract_call at ./compiler/abstractinterpretation.jl:926
+abstract_call at ./compiler/abstractinterpretation.jl:911
+abstract_eval at ./compiler/abstractinterpretation.jl:1005
+typeinf_local at ./compiler/abstractinterpretation.jl:1270
+typeinf_nocycle at ./compiler/abstractinterpretation.jl:1326
+typeinf at ./compiler/typeinfer.jl:12
+typeinf_edge at ./compiler/typeinfer.jl:484
+abstract_call_method at ./compiler/abstractinterpretation.jl:419
+abstract_call_gf_by_type at ./compiler/abstractinterpretation.jl:111
+abstract_call_known at ./compiler/abstractinterpretation.jl:904
+abstract_call at ./compiler/abstractinterpretation.jl:926
+abstract_call at ./compiler/abstractinterpretation.jl:911
+abstract_eval at ./compiler/abstractinterpretation.jl:1005
+typeinf_local at ./compiler/abstractinterpretation.jl:1270
+typeinf_nocycle at ./compiler/abstractinterpretation.jl:1326
+typeinf at ./compiler/typeinfer.jl:12
+typeinf_ext at ./compiler/typeinfer.jl:570
+typeinf_ext at ./compiler/typeinfer.jl:601
+jfptr_typeinf_ext_21845.clone_1 at /opt/julia/lib/julia/sys.so (unknown line)
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+jl_type_infer at /workspace/srcdir/src/gf.c:296
+jl_generate_fptr at /workspace/srcdir/src/jitlayers.cpp:290
+jl_compile_method_internal at /workspace/srcdir/src/gf.c:1964
+jl_compile_method_internal at /workspace/srcdir/src/gf.c:1919 [inlined]
+_jl_invoke at /workspace/srcdir/src/gf.c:2224 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+#getconnection#29 at /home/pkgeval/.julia/packages/HTTP/IAI92/src/ConnectionPool.jl:683 [inlined]
+recurse at /home/pkgeval/.julia/packages/Cassette/Wjztv/src/overdub.jl:0
+getconnection##kw at /home/pkgeval/.julia/packages/HTTP/IAI92/src/ConnectionPool.jl:680 [inlined]
+#newconnection#25 at /home/pkgeval/.julia/packages/HTTP/IAI92/src/ConnectionPool.jl:597 [inlined]
+recurse at /home/pkgeval/.julia/packages/Cassette/Wjztv/src/overdub.jl:0
+newconnection##kw at /home/pkgeval/.julia/packages/HTTP/IAI92/src/ConnectionPool.jl:597 [inlined]
+#getconnection#22 at /home/pkgeval/.julia/packages/HTTP/IAI92/src/ConnectionPool.jl:541 [inlined]
+recurse at /home/pkgeval/.julia/packages/Cassette/Wjztv/src/overdub.jl:0
+getconnection##kw at /home/pkgeval/.julia/packages/HTTP/IAI92/src/ConnectionPool.jl:527 [inlined]
+#request#1 at /home/pkgeval/.julia/packages/HTTP/IAI92/src/ConnectionRequest.jl:73 [inlined]
+recurse at /home/pkgeval/.julia/packages/Cassette/Wjztv/src/overdub.jl:0
+request##kw at /home/pkgeval/.julia/packages/HTTP/IAI92/src/ConnectionRequest.jl:62 [inlined]
+#request#1 at /home/pkgeval/.julia/packages/HTTP/IAI92/src/ExceptionRequest.jl:19 [inlined]
+recurse at /home/pkgeval/.julia/packages/Cassette/Wjztv/src/overdub.jl:0
+recurse at /home/pkgeval/.julia/packages/Cassette/Wjztv/src/overdub.jl:589 [inlined]
+request##kw at /home/pkgeval/.julia/packages/HTTP/IAI92/src/ExceptionRequest.jl:19 [inlined]
+#56#57 at ./error.jl:288 [inlined]
+recurse at /home/pkgeval/.julia/packages/Cassette/Wjztv/src/overdub.jl:0
+recurse at /home/pkgeval/.julia/packages/Cassette/Wjztv/src/overdub.jl:589 [inlined]
+56#58##kw at ./error.jl:284 [inlined]
+#request#1 at /home/pkgeval/.julia/packages/HTTP/IAI92/src/RetryRequest.jl:44 [inlined]
+request##kw at /home/pkgeval/.julia/packages/HTTP/IAI92/src/RetryRequest.jl:31 [inlined]
+#request#1 at /home/pkgeval/.julia/packages/HTTP/IAI92/src/MessageRequest.jl:51 [inlined]
+recurse at /home/pkgeval/.julia/packages/Cassette/Wjztv/src/overdub.jl:0
+request##kw at /home/pkgeval/.julia/packages/HTTP/IAI92/src/MessageRequest.jl:28 [inlined]
+#request#1 at /home/pkgeval/.julia/packages/HTTP/IAI92/src/BasicAuthRequest.jl:28 [inlined]
+recurse at /home/pkgeval/.julia/packages/Cassette/Wjztv/src/overdub.jl:0
+request##kw at /home/pkgeval/.julia/packages/HTTP/IAI92/src/BasicAuthRequest.jl:21 [inlined]
+overdub at /home/pkgeval/.julia/packages/Cassette/Wjztv/src/overdub.jl:0
+unknown function (ip: 0x7fd8e87e85ce)
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+#request#1 at /home/pkgeval/.julia/packages/HTTP/IAI92/src/RedirectRequest.jl:24 [inlined]
+overdub at /home/pkgeval/.julia/packages/Cassette/Wjztv/src/overdub.jl:0
+request at /home/pkgeval/.julia/packages/HTTP/IAI92/src/RedirectRequest.jl:21 [inlined]
+overdub at /home/pkgeval/.julia/packages/Cassette/Wjztv/src/overdub.jl:0
+unknown function (ip: 0x7fd9034d58ac)
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+#request#4 at /home/pkgeval/.julia/packages/HTTP/IAI92/src/HTTP.jl:314 [inlined]
+overdub at /home/pkgeval/.julia/packages/Cassette/Wjztv/src/overdub.jl:0
+request at /home/pkgeval/.julia/packages/HTTP/IAI92/src/HTTP.jl:314 [inlined]
+request at /home/pkgeval/.julia/packages/HTTP/IAI92/src/HTTP.jl:314 [inlined]
+#get#12 at /home/pkgeval/.julia/packages/HTTP/IAI92/src/HTTP.jl:391 [inlined]
+get at /home/pkgeval/.julia/packages/HTTP/IAI92/src/HTTP.jl:391 [inlined]
+createreg at /home/pkgeval/.julia/packages/IBMQJulia/f1Jg2/src/api.jl:67 [inlined]
+overdub at /home/pkgeval/.julia/packages/Cassette/Wjztv/src/overdub.jl:0
+unknown function (ip: 0x7fd9034c285c)
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+#1 at /home/pkgeval/.julia/packages/IBMQJulia/f1Jg2/test/runtests.jl:13 [inlined]
+overdub at /home/pkgeval/.julia/packages/Cassette/Wjztv/src/overdub.jl:0
+unknown function (ip: 0x7fd903493b7c)
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_apply at /workspace/srcdir/src/builtins.c:655
+jl_f__apply_latest at /workspace/srcdir/src/builtins.c:705
+#invokelatest#1 at ./essentials.jl:710
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_apply at /workspace/srcdir/src/builtins.c:655
+invokelatest at ./essentials.jl:709
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_apply at /workspace/srcdir/src/builtins.c:655
+#mock#36 at /home/pkgeval/.julia/packages/SimpleMock/zgRuh/src/mock_fun.jl:140
+mock##kw at /home/pkgeval/.julia/packages/SimpleMock/zgRuh/src/mock_fun.jl:117 [inlined]
+#mock#35 at /home/pkgeval/.julia/packages/SimpleMock/zgRuh/src/mock_fun.jl:113 [inlined]
+mock at /home/pkgeval/.julia/packages/SimpleMock/zgRuh/src/mock_fun.jl:113
+unknown function (ip: 0x7fd90346f945)
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_call at /workspace/srcdir/src/interpreter.c:117
+eval_value at /workspace/srcdir/src/interpreter.c:206
+eval_stmt_value at /workspace/srcdir/src/interpreter.c:157 [inlined]
+eval_body at /workspace/srcdir/src/interpreter.c:566
+jl_interpret_toplevel_thunk at /workspace/srcdir/src/interpreter.c:660
+top-level scope at /home/pkgeval/.julia/packages/IBMQJulia/f1Jg2/test/runtests.jl:12
+jl_toplevel_eval_flex at /workspace/srcdir/src/toplevel.c:840
+jl_parse_eval_all at /workspace/srcdir/src/ast.c:913
+jl_load_rewrite at /workspace/srcdir/src/toplevel.c:914
+include at ./client.jl:457
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_call at /workspace/srcdir/src/interpreter.c:117
+eval_value at /workspace/srcdir/src/interpreter.c:206
+eval_stmt_value at /workspace/srcdir/src/interpreter.c:157 [inlined]
+eval_body at /workspace/srcdir/src/interpreter.c:566
+jl_interpret_toplevel_thunk at /workspace/srcdir/src/interpreter.c:660
+top-level scope at none:6
+jl_toplevel_eval_flex at /workspace/srcdir/src/toplevel.c:840
+jl_toplevel_eval_flex at /workspace/srcdir/src/toplevel.c:790
+jl_toplevel_eval_in at /workspace/srcdir/src/toplevel.c:883
+eval at ./boot.jl:331
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+exec_options at ./client.jl:272
+_start at ./client.jl:506
+jfptr__start_43715.clone_1 at /opt/julia/lib/julia/sys.so (unknown line)
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/ui/../src/julia.h:1690 [inlined]
+true_main at /workspace/srcdir/ui/repl.c:106
+main at /workspace/srcdir/ui/repl.c:227
+__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x4015e4)
+✔
+The following backends are available > 
+(1, "ibmq_qasm_simulator")
+(2, "ibmqx2")
+(3, "ibmq_16_melbourne")
+(4, "ibmq_vigo")
+(5, "ibmq_ourense")
+(6, "ibmq_valencia")
+(7, "ibmq_armonk")
+(8, "ibmq_athens")
+(9, "ibmq_santiago")
+Enter the serial number of the backend you wish to use
+n_qubits = 32
+basis_gates=Any["u1", "u2", "u3", "u", "p", "r", "rx", "ry", "rz", "id", "x", "y", "z", "h", "s", "sdg", "sx", "t", "tdg", "swap", "cx", "cy", "cz", "csx", "cp", "cu1", "cu2", "cu3", "rxx", "ryy", "rzz", "rzx", "ccx", "cswap", "mcx", "mcy", "mcz", "mcsx", "mcp", "mcu1", "mcu2", "mcu3", "mcrx", "mcry", "mcrz", "mcr", "mcswap", "unitary", "diagonal", "multiplexer", "initialize", "kraus", "roerror", "delay"]
+Confirm? (Y/N)
+Connecting to ibmq_qasm_simulator...✔
+Preparing Data...✔
+Uploading circuit to ibmq_qasm_simulator...✔
+Notifying backend...✔
+Connecting to ibmq_qasm_simulator...✔
+Fetching result from ibmq_qasm_simulator...✔
+Test Summary: | Pass  Total
+IBMQJulia.jl  | 1324   1324
+    Testing IBMQJulia tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:27:40.98
+CPU usage: 227.92s (218.46s user, 9.74s kernel)
+
+Network usage:
+- eth0: 5.754 MiB received, 239.110 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":13,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":32,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":41,"op":"Total","minor":0},{"major":253,"value":13,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":32,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":41,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":1527808,"op":"Read","minor":0},{"major":259,"value":159744,"op":"Write","minor":0},{"major":259,"value":1634304,"op":"Sync","minor":0},{"major":259,"value":53248,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1687552,"op":"Total","minor":0},{"major":253,"value":1527808,"op":"Read","minor":2},{"major":253,"value":159744,"op":"Write","minor":2},{"major":253,"value":1634304,"op":"Sync","minor":2},{"major":253,"value":53248,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1687552,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":342233088,"max_usage":1533603840,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":190238720,"inactive_file":1486848,"inactive_anon":86102016,"total_pgfault":4260465,"total_cache":119025664,"total_rss_huge":0,"total_active_anon":211673088,"total_pgmajfault":0,"pgpgin":2587860,"rss_huge":0,"mapped_file":0,"total_inactive_file":1486848,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":270336,"pgpgout":2512348,"hierarchical_memsw_limit":0,"cache":119025664,"active_file":10137600,"pgfault":4260465,"total_mapped_file":0,"total_pgpgout":2512348,"total_writeback":270336,"rss":190238720,"unevictable":0,"total_inactive_anon":86102016,"total_pgpgin":2587860,"active_anon":211673088,"total_active_file":10137600},"limit":540965302272},"name":"/IBMQJulia-n37pHwBh","networks":{"eth0":{"rx_bytes":6033247,"rx_packets":1826,"tx_packets":1993,"tx_bytes":244849,"tx_dropped":0,"rx_dropped":8,"tx_errors":0,"rx_errors":0}},"id":"baf18ec68782d4fdde2a4f3892a9cd53d00c65488ee8e9240299a4f450cabe75","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5031342954522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":218460000000,"usage_in_kernelmode":9740000000,"total_usage":227915072060,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,227913374441,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3464991,0,1916640]}},"read":"2021-01-11T19:27:40.983200674Z"}

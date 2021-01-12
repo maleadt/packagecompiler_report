@@ -1,0 +1,164 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T19:08:57.33
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T19:08:59.064
+#
+
+ Installing known registries into `~/.julia`
+#########################################################                 79.4%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed GLNS ──────────── v1.0.0
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [516e1c79] + GLNS v1.0.0
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [516e1c79] + GLNS v1.0.0
+  [9b87118b] + PackageCompiler v1.2.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T19:09:04.388
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 147.509 MiB, compilation took 157 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T19:11:48.998
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/GLNS-S28FjB2d.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:11:50.77
+#
+
+ Installing known registries into `~/.julia`
+##                                                                         3.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed GLNS ─ v1.0.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [516e1c79] + GLNS v1.0.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [516e1c79] + GLNS v1.0.0
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T19:11:54.15
+#
+
+    Testing GLNS
+Status `/tmp/jl_BTrjj9/Project.toml`
+  [516e1c79] GLNS v1.0.0
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_BTrjj9/Manifest.toml`
+  [516e1c79] GLNS v1.0.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+
+--------- Problem Data ------------
+Instance Name      : test.gtsp
+Number of Vertices : 266
+Number of Sets     : 133
+Initial Tour       : Random
+Maximum Removals   : 40
+Trials             : 5
+Restart Attempts   : 3
+Rate of Adaptation : 0.5
+Prob of Reopt      : 1.0
+Maximum Time       : 360
+Tour Budget        : None
+-----------------------------------
+
+ |1     2     3     4     5     |  Cost = 597470  Time = 1.6 sec       |1     2     3     4     5     |  Cost = 592781  Time = 2.1 sec       |1=    2     3     4     5     |  Cost = 592781  Time = 2.6 sec       |1=    2     3     4     5     |  Cost = 592444  Time = 3.1 sec       |1===  2     3     4     5     |  Cost = 592444  Time = 3.6 sec       |1=====2     3     4     5     |  Cost = 592444  Time = 4.1 sec       |1=====2     3     4     5     |  Cost = 592370  Time = 4.6 sec       |1=====2     3     4     5     |  Cost = 592370  Time = 5.1 sec       |1=====2     3     4     5     |  Cost = 591992  Time = 5.6 sec       |1=====2     3     4     5     |  Cost = 591285  Time = 6.1 sec       |1=====2     3     4     5     |  Cost = 590576  Time = 6.6 sec       |1=====2     3     4     5     |  Cost = 590504  Time = 7.1 sec       |1=====2     3     4     5     |  Cost = 590504  Time = 7.6 sec       |1=====2=    3     4     5     |  Cost = 590504  Time = 8.1 sec       |1=====2=====3     4     5     |  Cost = 590504  Time = 8.6 sec       |1=====2=====3     4     5     |  Cost = 590504  Time = 9.1 sec       |1=====2=====3     4     5     |  Cost = 590504  Time = 9.6 sec       |1=====2=====3     4     5     |  Cost = 590504  Time = 10.1 sec       |1=====2=====3===  4     5     |  Cost = 590504  Time = 10.6 sec       |1=====2=====3=    4     5     |  Cost = 590504  Time = 11.1 sec       |1=====2=====3=    4     5     |  Cost = 590504  Time = 11.6 sec       |1=====2=====3=    4     5     |  Cost = 590504  Time = 12.1 sec       |1=====2=====3=    4     5     |  Cost = 590504  Time = 12.6 sec       |1=====2=====3=    4     5     |  Cost = 590504  Time = 13.1 sec       |1=====2=====3=    4     5     |  Cost = 590504  Time = 13.6 sec       |1=====2=====3=    4     5     |  Cost = 590504  Time = 14.1 sec       |1=====2=====3=====4     5     |  Cost = 590504  Time = 14.6 sec       |1=====2=====3=====4     5     |  Cost = 590504  Time = 15.1 sec       |1=====2=====3=====4     5     |  Cost = 590504  Time = 15.6 sec       |1=====2=====3=====4=    5     |  Cost = 590504  Time = 16.1 sec       |1=====2=====3=====4=====5     |  Cost = 590504  Time = 16.6 sec       |1=====2=====3=====4=    5     |  Cost = 590504  Time = 17.1 sec       |1=====2=====3=====4=    5     |  Cost = 590504  Time = 17.6 sec       |1=====2=====3=====4=    5     |  Cost = 590504  Time = 18.1 sec       |1=====2=====3=====4=    5     |  Cost = 590504  Time = 18.6 sec       |1=====2=====3=====4=    5     |  Cost = 590504  Time = 19.1 sec       |1=====2=====3=====4=    5     |  Cost = 590504  Time = 19.6 sec       |1=====2=====3=====4=====5     |  Cost = 590504  Time = 20.1 sec       |1=====2=====3=====4=====5     |  Cost = 590504  Time = 20.6 sec       |1=====2=====3=====4=====5     |  Cost = 590504  Time = 21.1 sec       |1=====2=====3=====4=====5     |  Cost = 590504  Time = 21.6 sec       |1=====2=====3=====4=====5     |  Cost = 590504  Time = 22.1 sec       |1=====2=====3=====4=====5     |  Cost = 590504  Time = 22.6 sec       |1=====2=====3=====4=====5     |  Cost = 590504  Time = 23.1 sec       |1=====2=====3=====4=====5     |  Cost = 590504  Time = 23.6 sec       |1=====2=====3=====4=====5==   |  Cost = 590504  Time = 24.1 sec       |1=====2=====3=====4=====5===  |  Cost = 590504  Time = 24.6 sec       |1=====2=====3=====4=====5=====|  Cost = 590504  Time = 24.8 sec      
+
+--------- Tour Summary ------------
+Cost              : 590504
+Total Time        : 24.81 sec
+Solver Timeout?   : false
+Tour is Feasible? : true
+Output File       : None
+Tour Ordering     : [4, 5, 8, 9, 61, 64, 198, 202, 199, 196, 243, 241, 248, 250, 246, 206, 204, 214, 216, 209, 207, 212, 193, 185, 181, 184, 239, 230, 232, 225, 223, 221, 236, 238, 233, 228, 220, 217, 253, 55, 59, 31, 29, 36, 48, 39, 37, 34, 45, 43, 41, 51, 264, 176, 177, 180, 262, 259, 258, 53, 170, 173, 166, 172, 168, 163, 162, 159, 12, 13, 16, 18, 19, 26, 22, 24, 27, 57, 191, 190, 145, 142, 151, 158, 155, 153, 149, 147, 136, 144, 139, 137, 134, 107, 114, 119, 126, 128, 130, 132, 123, 118, 111, 115, 122, 109, 102, 104, 95, 100, 105, 98, 93, 88, 79, 76, 83, 91, 89, 86, 81, 78, 72, 73, 70, 67, 65, 49, 256, 251, 188, 266, 1]
+-----------------------------------
+ 28.875043 seconds (31.51 M allocations: 7.327 GiB, 4.09% gc time)
+    Testing GLNS tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:12:24.806
+CPU usage: 35.82s (31.32s user, 4.57s kernel)
+
+Network usage:
+- eth0: 2.810 MiB received, 31.373 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":19,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":19,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":77824,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":77824,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":292462592,"max_usage":528666624,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":173367296,"inactive_file":135168,"inactive_anon":79478784,"total_pgfault":1512192,"total_cache":88817664,"total_rss_huge":0,"total_active_anon":174366720,"total_pgmajfault":0,"pgpgin":1380357,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":0,"pgpgout":1316351,"hierarchical_memsw_limit":0,"cache":88817664,"active_file":8515584,"pgfault":1512192,"total_mapped_file":0,"total_pgpgout":1316351,"total_writeback":0,"rss":173367296,"unevictable":0,"total_inactive_anon":79478784,"total_pgpgin":1380357,"active_anon":174366720,"total_active_file":8515584},"limit":540965302272},"name":"/GLNS-TY7Z4fSx","networks":{"eth0":{"rx_bytes":2946711,"rx_packets":372,"tx_packets":344,"tx_bytes":32126,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"c1175bb2dc05048395b3067645bc07f57226b25e9a251edd28e73f122404f076","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4914244784522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":31320000000,"usage_in_kernelmode":4570000000,"total_usage":35822068122,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35822065392,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2730,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:12:24.809175661Z"}

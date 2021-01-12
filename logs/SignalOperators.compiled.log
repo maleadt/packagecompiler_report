@@ -1,0 +1,1019 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T17:47:10.43
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T17:47:12.139
+#
+
+ Installing known registries into `~/.julia`
+#######################################################                   76.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed Reexport ───────────────────── v1.0.0
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed SignalOperators ────────────── v0.4.0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed FFTW ───────────────────────── v1.3.1
+  Installed TimeZones ──────────────────── v1.5.3
+  Installed Mocking ────────────────────── v0.7.1
+  Installed SignalBase ─────────────────── v0.1.1
+  Installed MKL_jll ────────────────────── v2020.2.254+0
+  Installed PackageCompiler ────────────── v1.2.5
+  Installed FillArrays ─────────────────── v0.8.14
+  Installed Requires ───────────────────── v0.5.2
+  Installed Polynomials ────────────────── v1.2.0
+  Installed Libiconv_jll ───────────────── v1.16.0+7
+  Installed EzXML ──────────────────────── v1.1.0
+  Installed PrettyPrinting ─────────────── v0.2.1
+  Installed FFTW_jll ───────────────────── v3.3.9+7
+  Installed ConstructionBase ───────────── v1.0.0
+  Installed IterTools ──────────────────── v1.3.0
+  Installed FileIO ─────────────────────── v1.4.5
+  Installed DSP ────────────────────────── v0.6.10
+  Installed XML2_jll ───────────────────── v2.9.10+3
+  Installed Intervals ──────────────────── v1.5.0
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed IntelOpenMP_jll ────────────── v2018.0.3+0
+  Installed AbstractFFTs ───────────────── v1.0.0
+  Installed LambdaFn ───────────────────── v0.3.0
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed Adapt ──────────────────────── v2.4.0
+  Installed OffsetArrays ───────────────── v1.5.0
+  Installed Unitful ────────────────────── v0.18.0
+  Installed ExprTools ──────────────────── v0.1.3
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed Compat ─────────────────────── v2.2.1
+  Installed MetaArrays ─────────────────── v0.2.9
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [4d633899] + SignalOperators v0.4.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [621f4979] + AbstractFFTs v1.0.0
+  [79e6a3ab] + Adapt v2.4.0
+  [56f22d72] + Artifacts v1.3.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [34da2185] + Compat v2.2.1
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [187b0558] + ConstructionBase v1.0.0
+  [717857b8] + DSP v0.6.10
+  [e2ba6199] + ExprTools v0.1.3
+  [8f5d6c58] + EzXML v1.1.0
+  [7a1cc6ca] + FFTW v1.3.1
+  [f5851436] + FFTW_jll v3.3.9+7
+  [5789e2e9] + FileIO v1.4.5
+  [1a297f60] + FillArrays v0.8.14
+  [1d5cc7b8] + IntelOpenMP_jll v2018.0.3+0
+  [d8418881] + Intervals v1.5.0
+  [c8e1da08] + IterTools v1.3.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [fcefd6c4] + LambdaFn v0.3.0
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [856f044c] + MKL_jll v2020.2.254+0
+  [1914dd2f] + MacroTools v0.5.6
+  [36b8f3f0] + MetaArrays v0.2.9
+  [78c3b35d] + Mocking v0.7.1
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [6fe1bfb0] + OffsetArrays v1.5.0
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [9b87118b] + PackageCompiler v1.2.5
+  [f27b6e38] + Polynomials v1.2.0
+  [54e16d92] + PrettyPrinting v0.2.1
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [189a3867] + Reexport v1.0.0
+  [ae029012] + Requires v0.5.2
+  [00c44e92] + SignalBase v0.1.1
+  [4d633899] + SignalOperators v0.4.0
+  [276daf66] + SpecialFunctions v1.2.1
+  [f269a46b] + TimeZones v1.5.3
+  [1986cc42] + Unitful v0.18.0
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building TimeZones → `~/.julia/packages/TimeZones/K98G0/deps/build.log`
+   Building FFTW ─────→ `~/.julia/packages/FFTW/eADNB/deps/build.log`
+
+
+################################################################################
+# Compiling: 2021-01-11T17:47:28.782
+#
+
+┌ Warning: `@get!(dict, key, default)` at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:11 is deprecated, use `get!(()->default, dict, key)` instead.
+└ @ Base deprecated.jl:204
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 178.112 MiB, compilation took 256 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T17:51:52.466
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/SignalOperators-rCMmhWc2.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:51:54.09
+#
+
+ Installing known registries into `~/.julia`
+###########                                                               16.4%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed SignalOperators ────────────── v0.4.0
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed Reexport ───────────────────── v1.0.0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed Mocking ────────────────────── v0.7.1
+  Installed SignalBase ─────────────────── v0.1.1
+  Installed FFTW ───────────────────────── v1.3.1
+  Installed TimeZones ──────────────────── v1.5.3
+  Installed MKL_jll ────────────────────── v2020.2.254+0
+  Installed Polynomials ────────────────── v1.2.0
+  Installed Requires ───────────────────── v0.5.2
+  Installed Libiconv_jll ───────────────── v1.16.0+7
+  Installed FillArrays ─────────────────── v0.8.14
+  Installed EzXML ──────────────────────── v1.1.0
+  Installed PrettyPrinting ─────────────── v0.2.1
+  Installed FileIO ─────────────────────── v1.4.5
+  Installed FFTW_jll ───────────────────── v3.3.9+7
+  Installed IterTools ──────────────────── v1.3.0
+  Installed ConstructionBase ───────────── v1.0.0
+  Installed XML2_jll ───────────────────── v2.9.10+3
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed DSP ────────────────────────── v0.6.10
+  Installed Intervals ──────────────────── v1.5.0
+  Installed IntelOpenMP_jll ────────────── v2018.0.3+0
+  Installed AbstractFFTs ───────────────── v1.0.0
+  Installed LambdaFn ───────────────────── v0.3.0
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed Adapt ──────────────────────── v2.4.0
+  Installed Unitful ────────────────────── v0.18.0
+  Installed ExprTools ──────────────────── v0.1.3
+  Installed OffsetArrays ───────────────── v1.5.0
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed Compat ─────────────────────── v2.2.1
+  Installed MetaArrays ─────────────────── v0.2.9
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [4d633899] + SignalOperators v0.4.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [621f4979] + AbstractFFTs v1.0.0
+  [79e6a3ab] + Adapt v2.4.0
+  [56f22d72] + Artifacts v1.3.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [34da2185] + Compat v2.2.1
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [187b0558] + ConstructionBase v1.0.0
+  [717857b8] + DSP v0.6.10
+  [e2ba6199] + ExprTools v0.1.3
+  [8f5d6c58] + EzXML v1.1.0
+  [7a1cc6ca] + FFTW v1.3.1
+  [f5851436] + FFTW_jll v3.3.9+7
+  [5789e2e9] + FileIO v1.4.5
+  [1a297f60] + FillArrays v0.8.14
+  [1d5cc7b8] + IntelOpenMP_jll v2018.0.3+0
+  [d8418881] + Intervals v1.5.0
+  [c8e1da08] + IterTools v1.3.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [fcefd6c4] + LambdaFn v0.3.0
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [856f044c] + MKL_jll v2020.2.254+0
+  [1914dd2f] + MacroTools v0.5.6
+  [36b8f3f0] + MetaArrays v0.2.9
+  [78c3b35d] + Mocking v0.7.1
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [6fe1bfb0] + OffsetArrays v1.5.0
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [f27b6e38] + Polynomials v1.2.0
+  [54e16d92] + PrettyPrinting v0.2.1
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [189a3867] + Reexport v1.0.0
+  [ae029012] + Requires v0.5.2
+  [00c44e92] + SignalBase v0.1.1
+  [4d633899] + SignalOperators v0.4.0
+  [276daf66] + SpecialFunctions v1.2.1
+  [f269a46b] + TimeZones v1.5.3
+  [1986cc42] + Unitful v0.18.0
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building TimeZones → `~/.julia/packages/TimeZones/K98G0/deps/build.log`
+┌ Error: Error building `TimeZones`: 
+│ ERROR: LoadError: IOError: mkdir: permission denied (EACCES)
+│ Stacktrace:
+│  [1] uv_error at ./libuv.jl:97 [inlined]
+│  [2] mkdir(::String; mode::UInt16) at ./file.jl:177
+│  [3] mkpath(::String; mode::UInt16) at ./file.jl:227
+│  [4] mkpath(::String; mode::UInt16) at ./file.jl:225 (repeats 6 times)
+│  [5] mkpath at ./file.jl:222 [inlined]
+│  [6] build(::String) at /home/pkgeval/.julia/packages/TimeZones/K98G0/src/tzdata/build.jl:105
+│  [7] build(::String; force::Bool) at /home/pkgeval/.julia/packages/TimeZones/K98G0/src/build.jl:11
+│  [8] build at /home/pkgeval/.julia/packages/TimeZones/K98G0/src/build.jl:11 [inlined] (repeats 2 times)
+│  [9] top-level scope at /home/user/.julia/packages/TimeZones/K98G0/deps/build.jl:3
+│  [10] include(::String) at ./client.jl:457
+│  [11] top-level scope at none:5
+│ in expression starting at /home/user/.julia/packages/TimeZones/K98G0/deps/build.jl:3
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+   Building FFTW ─────→ `~/.julia/packages/FFTW/eADNB/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T17:52:05.295
+#
+
+    Testing SignalOperators
+Status `/tmp/jl_36JtWb/Project.toml`
+  [39de3d68] AxisArrays v0.4.3
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [34da2185] Compat v2.2.1
+  [717857b8] DSP v0.6.10
+  [0703355e] DimensionalData v0.15.2
+  [5789e2e9] FileIO v1.4.5
+  [1a297f60] FillArrays v0.8.14
+  [53c48c17] FixedPointNumbers v0.8.4
+  [fcefd6c4] LambdaFn v0.3.0
+  [36b8f3f0] MetaArrays v0.2.9
+  [54e16d92] PrettyPrinting v0.2.1
+  [92933f4c] ProgressMeter v1.4.1
+  [ae029012] Requires v0.5.2
+  [00c44e92] SignalBase v0.1.1
+  [4d633899] SignalOperators v0.4.0
+  [1986cc42] Unitful v0.18.0
+  [8149f6b0] WAV v1.1.0
+  [44cfe95a] Pkg
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_36JtWb/Manifest.toml`
+  [621f4979] AbstractFFTs v1.0.0
+  [79e6a3ab] Adapt v2.4.0
+  [56f22d72] Artifacts v1.3.0
+  [39de3d68] AxisArrays v0.4.3
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [34da2185] Compat v2.2.1
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [187b0558] ConstructionBase v1.0.0
+  [717857b8] DSP v0.6.10
+  [9a962f9c] DataAPI v1.4.0
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [0703355e] DimensionalData v0.15.2
+  [da5c29d0] EllipsisNotation v1.0.0
+  [e2ba6199] ExprTools v0.1.3
+  [8f5d6c58] EzXML v1.1.0
+  [7a1cc6ca] FFTW v1.3.1
+  [f5851436] FFTW_jll v3.3.9+7
+  [5789e2e9] FileIO v1.4.5
+  [1a297f60] FillArrays v0.8.14
+  [53c48c17] FixedPointNumbers v0.8.4
+  [1d5cc7b8] IntelOpenMP_jll v2018.0.3+0
+  [8197267c] IntervalSets v0.5.2
+  [d8418881] Intervals v1.5.0
+  [c8e1da08] IterTools v1.3.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [fcefd6c4] LambdaFn v0.3.0
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [856f044c] MKL_jll v2020.2.254+0
+  [1914dd2f] MacroTools v0.5.6
+  [36b8f3f0] MetaArrays v0.2.9
+  [78c3b35d] Mocking v0.7.1
+  [46d2c3a1] MuladdMacro v0.2.2
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [69de0a69] Parsers v1.0.15
+  [f27b6e38] Polynomials v1.2.0
+  [54e16d92] PrettyPrinting v0.2.1
+  [92933f4c] ProgressMeter v1.4.1
+  [b3c3ace0] RangeArrays v0.3.2
+  [3cdcf5f2] RecipesBase v1.1.1
+  [189a3867] Reexport v1.0.0
+  [ae029012] Requires v0.5.2
+  [00c44e92] SignalBase v0.1.1
+  [4d633899] SignalOperators v0.4.0
+  [276daf66] SpecialFunctions v1.2.1
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [f269a46b] TimeZones v1.5.3
+  [1986cc42] Unitful v0.18.0
+  [8149f6b0] WAV v1.1.0
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Warning: Error requiring WAV from SignalOperators:
+│ could not open file /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/WAV.jl
+│ Stacktrace:
+│  [1] include(::Function, ::Module, ::String) at ./Base.jl:380
+│  [2] include at ./Base.jl:368 [inlined]
+│  [3] include(::String) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/SignalOperators.jl:1
+│  [4] top-level scope at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/SignalOperators.jl:49
+│  [5] eval at ./boot.jl:331 [inlined]
+│  [6] eval at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/SignalOperators.jl:1 [inlined]
+│  [7] (::SignalOperators.var"#131#149")() at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:67
+│  [8] err(::SignalOperators.var"#131#149", ::Module, ::String) at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:38
+│  [9] #130 at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:66 [inlined]
+│  [10] withpath(::SignalOperators.var"#130#148", ::String) at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:28
+│  [11] (::SignalOperators.var"#129#147")() at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:65
+│  [12] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│  [13] invokelatest at ./essentials.jl:709 [inlined]
+│  [14] #3 at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:19 [inlined]
+│  [15] iterate at ./generator.jl:47 [inlined]
+│  [16] _collect(::Array{Function,1}, ::Base.Generator{Array{Function,1},Requires.var"#3#4"}, ::Base.EltypeUnknown, ::Base.HasShape{1}) at ./array.jl:699
+│  [17] collect_similar at ./array.jl:628 [inlined]
+│  [18] map at ./abstractarray.jl:2162 [inlined]
+│  [19] loadpkg(::Base.PkgId) at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:19
+│  [20] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│  [21] invokelatest at ./essentials.jl:709 [inlined]
+│  [22] require(::Base.PkgId) at ./loading.jl:931
+│  [23] require(::Module, ::Symbol) at ./loading.jl:923
+│  [24] include(::String) at ./client.jl:457
+│  [25] top-level scope at none:6
+│  [26] eval(::Module, ::Any) at ./boot.jl:331
+│  [27] exec_options(::Base.JLOptions) at ./client.jl:272
+│  [28] _start() at ./client.jl:506
+└ @ Requires /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:40
+┌ Warning: Error requiring FixedPointNumbers from SignalOperators:
+│ could not open file /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/FixedPointNumbers.jl
+│ Stacktrace:
+│  [1] include(::Function, ::Module, ::String) at ./Base.jl:380
+│  [2] include at ./Base.jl:368 [inlined]
+│  [3] include(::String) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/SignalOperators.jl:1
+│  [4] top-level scope at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/SignalOperators.jl:53
+│  [5] eval at ./boot.jl:331 [inlined]
+│  [6] eval at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/SignalOperators.jl:1 [inlined]
+│  [7] (::SignalOperators.var"#134#152")() at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:67
+│  [8] err(::SignalOperators.var"#134#152", ::Module, ::String) at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:38
+│  [9] #133 at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:66 [inlined]
+│  [10] withpath(::SignalOperators.var"#133#151", ::String) at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:28
+│  [11] (::SignalOperators.var"#132#150")() at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:65
+│  [12] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│  [13] invokelatest at ./essentials.jl:709 [inlined]
+│  [14] #3 at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:19 [inlined]
+│  [15] iterate at ./generator.jl:47 [inlined]
+│  [16] _collect(::Array{Function,1}, ::Base.Generator{Array{Function,1},Requires.var"#3#4"}, ::Base.EltypeUnknown, ::Base.HasShape{1}) at ./array.jl:699
+│  [17] collect_similar at ./array.jl:628 [inlined]
+│  [18] map at ./abstractarray.jl:2162 [inlined]
+│  [19] loadpkg(::Base.PkgId) at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:19
+│  [20] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│  [21] invokelatest at ./essentials.jl:709 [inlined]
+│  [22] require(::Base.PkgId) at ./loading.jl:931
+│  [23] require(::Module, ::Symbol) at ./loading.jl:923
+│  [24] include(::String) at ./client.jl:457
+│  [25] top-level scope at none:6
+│  [26] eval(::Module, ::Any) at ./boot.jl:331
+│  [27] exec_options(::Base.JLOptions) at ./client.jl:272
+│  [28] _start() at ./client.jl:506
+└ @ Requires /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:40
+┌ Warning: Error requiring DimensionalData from SignalOperators:
+│ could not open file /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/DimensionalData.jl
+│ Stacktrace:
+│  [1] include(::Function, ::Module, ::String) at ./Base.jl:380
+│  [2] include at ./Base.jl:368 [inlined]
+│  [3] include(::String) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/SignalOperators.jl:1
+│  [4] top-level scope at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/SignalOperators.jl:70
+│  [5] eval at ./boot.jl:331 [inlined]
+│  [6] eval at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/SignalOperators.jl:1 [inlined]
+│  [7] (::SignalOperators.var"#146#164")() at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:67
+│  [8] err(::SignalOperators.var"#146#164", ::Module, ::String) at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:38
+│  [9] #145 at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:66 [inlined]
+│  [10] withpath(::SignalOperators.var"#145#163", ::String) at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:28
+│  [11] (::SignalOperators.var"#144#162")() at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:65
+│  [12] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│  [13] invokelatest at ./essentials.jl:709 [inlined]
+│  [14] #3 at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:19 [inlined]
+│  [15] iterate at ./generator.jl:47 [inlined]
+│  [16] _collect(::Array{Function,1}, ::Base.Generator{Array{Function,1},Requires.var"#3#4"}, ::Base.EltypeUnknown, ::Base.HasShape{1}) at ./array.jl:699
+│  [17] collect_similar at ./array.jl:628 [inlined]
+│  [18] map at ./abstractarray.jl:2162 [inlined]
+│  [19] loadpkg(::Base.PkgId) at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:19
+│  [20] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│  [21] invokelatest at ./essentials.jl:709 [inlined]
+│  [22] require(::Base.PkgId) at ./loading.jl:931
+│  [23] require(::Module, ::Symbol) at ./loading.jl:923
+│  [24] include(::String) at ./client.jl:457
+│  [25] top-level scope at none:6
+│  [26] eval(::Module, ::Any) at ./boot.jl:331
+│  [27] exec_options(::Base.JLOptions) at ./client.jl:272
+│  [28] _start() at ./client.jl:506
+└ @ Requires /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:40
+┌ Warning: Error requiring AxisArrays from SignalOperators:
+│ could not open file /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/AxisArrays.jl
+│ Stacktrace:
+│  [1] include(::Function, ::Module, ::String) at ./Base.jl:380
+│  [2] include at ./Base.jl:368 [inlined]
+│  [3] include(::String) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/SignalOperators.jl:1
+│  [4] top-level scope at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/SignalOperators.jl:57
+│  [5] eval at ./boot.jl:331 [inlined]
+│  [6] eval at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/SignalOperators.jl:1 [inlined]
+│  [7] (::SignalOperators.var"#137#155")() at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:67
+│  [8] err(::SignalOperators.var"#137#155", ::Module, ::String) at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:38
+│  [9] #136 at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:66 [inlined]
+│  [10] withpath(::SignalOperators.var"#136#154", ::String) at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:28
+│  [11] (::SignalOperators.var"#135#153")() at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:65
+│  [12] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│  [13] invokelatest at ./essentials.jl:709 [inlined]
+│  [14] #3 at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:19 [inlined]
+│  [15] iterate at ./generator.jl:47 [inlined]
+│  [16] _collect(::Array{Function,1}, ::Base.Generator{Array{Function,1},Requires.var"#3#4"}, ::Base.EltypeUnknown, ::Base.HasShape{1}) at ./array.jl:699
+│  [17] collect_similar at ./array.jl:628 [inlined]
+│  [18] map at ./abstractarray.jl:2162 [inlined]
+│  [19] loadpkg(::Base.PkgId) at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:19
+│  [20] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│  [21] invokelatest at ./essentials.jl:709 [inlined]
+│  [22] require(::Base.PkgId) at ./loading.jl:931
+│  [23] require(::Module, ::Symbol) at ./loading.jl:923
+│  [24] include(::String) at ./client.jl:457
+│  [25] top-level scope at none:6
+│  [26] eval(::Module, ::Any) at ./boot.jl:331
+│  [27] exec_options(::Base.JLOptions) at ./client.jl:272
+│  [28] _start() at ./client.jl:506
+└ @ Requires /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:40
+Running tests...  3%|█                                  |  ETA: 0:01:45[KRunning tests...  6%|██▏                                |  ETA: 0:01:27[KRunning tests...  9%|███▏                               |  ETA: 0:01:21[KRunning tests... 12%|████▎                              |  ETA: 0:01:15[KRunning tests... 15%|█████▎                             |  ETA: 0:00:59[KFiles as signals: Error During Test at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:96
+  Got exception outside of a @test
+  MethodError: no method matching save_signal(::FileIO.DataFormat{:WAV}, ::String, ::Tuple{StepRangeLen{Float64,Base.TwicePrecision{Float64},Base.TwicePrecision{Float64}},Float64})
+  Closest candidates are:
+    save_signal(!Matched::Val{T}, ::Any, ::Any) where T at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:143
+  Stacktrace:
+   [1] sink(::Tuple{StepRangeLen{Float64,Base.TwicePrecision{Float64},Base.TwicePrecision{Float64}},Float64}, ::String) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:141
+   [2] (::SignalOperators.var"#11#12"{String})(::Tuple{StepRangeLen{Float64,Base.TwicePrecision{Float64},Base.TwicePrecision{Float64}},Float64}) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:138
+   [3] |>(::Tuple{StepRangeLen{Float64,Base.TwicePrecision{Float64},Base.TwicePrecision{Float64}},Float64}, ::SignalOperators.var"#11#12"{String}) at ./operators.jl:834
+   [4] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:97
+   [5] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:97
+   [7] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [8] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:31
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+Running tests... 18%|██████▍                            |  ETA: 0:00:52[KRunning tests... 21%|███████▍                           |  ETA: 0:00:51[KRunning tests... 24%|████████▌                          |  ETA: 0:01:04[KRunning tests... 27%|█████████▌                         |  ETA: 0:01:29[KRunning tests... 30%|██████████▋                        |  ETA: 0:01:35[KRunning tests... 33%|███████████▋                       |  ETA: 0:01:28[KRunning tests... 36%|████████████▊                      |  ETA: 0:01:28[KFiltering: Error During Test at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:314
+  Got exception outside of a @test
+  MethodError: no method matching DimArray(::SignalOperators.FilteredSignal{Float64,SignalOperators.MapSignal{SignalOperators.FnBr{typeof(+)},2,1,Float64,Float64,Tuple{Float64},Tuple{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64}},typeof(zero),Tuple{SignalOperators.PaddedSignal{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},typeof(zero),true},SignalOperators.PaddedSignal{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},typeof(zero),true}}},SignalOperators.FilterFn{UnionAll,ZeroPoleGain{Complex{Float64},Complex{Float64},Float64},Tuple{Quantity{Int64,𝐓^-1,Unitful.FreeUnits{(Hz,),𝐓^-1,nothing}}}},Float64})
+  Closest candidates are:
+    DimArray(; data, dims, refdims, name, metadata) at /home/user/.julia/packages/DimensionalData/fTd6d/src/array.jl:163
+    DimArray(!Matched::AbstractDimArray; dims, refdims, name, metadata) at /home/user/.julia/packages/DimensionalData/fTd6d/src/array.jl:167
+    DimArray(!Matched::A, !Matched::D, !Matched::R, !Matched::Na, !Matched::Me) where {T, N, D<:Tuple, R<:Tuple, A<:AbstractArray{T,N}, Na, Me} at /home/user/.julia/packages/DimensionalData/fTd6d/src/array.jl:152
+    ...
+  Stacktrace:
+   [1] |>(::SignalOperators.FilteredSignal{Float64,SignalOperators.MapSignal{SignalOperators.FnBr{typeof(+)},2,1,Float64,Float64,Tuple{Float64},Tuple{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64}},typeof(zero),Tuple{SignalOperators.PaddedSignal{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},typeof(zero),true},SignalOperators.PaddedSignal{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},typeof(zero),true}}},SignalOperators.FilterFn{UnionAll,ZeroPoleGain{Complex{Float64},Complex{Float64},Float64},Tuple{Quantity{Int64,𝐓^-1,Unitful.FreeUnits{(Hz,),𝐓^-1,nothing}}}},Float64}, ::Type{T} where T) at ./operators.jl:834
+   [2] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:319
+   [3] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [4] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:315
+   [5] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:31
+   [7] include(::String) at ./client.jl:457
+   [8] top-level scope at none:6
+   [9] eval(::Module, ::Any) at ./boot.jl:331
+   [10] exec_options(::Base.JLOptions) at ./client.jl:272
+   [11] _start() at ./client.jl:506
+  
+Running tests... 39%|█████████████▊                     |  ETA: 0:01:20[KRamps: Error During Test at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:373
+  Got exception outside of a @test
+  MethodError: no method matching DimArray(::SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Float64,Tuple{Float64},Tuple{SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Float64,Tuple{Float64},Tuple{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},SignalOperators.RampSignal{:on,SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:on,SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}},SignalOperators.RampSignal{:off,SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Float64,Tuple{Float64},Tuple{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},SignalOperators.RampSignal{:on,SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:on,SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Float64,Tuple{Float64},Tuple{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},SignalOperators.RampSignal{:on,SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:on,SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:off,SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Float64,Tuple{Float64},Tuple{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},SignalOperators.RampSignal{:on,SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:on,SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}})
+  Closest candidates are:
+    DimArray(; data, dims, refdims, name, metadata) at /home/user/.julia/packages/DimensionalData/fTd6d/src/array.jl:163
+    DimArray(!Matched::AbstractDimArray; dims, refdims, name, metadata) at /home/user/.julia/packages/DimensionalData/fTd6d/src/array.jl:167
+    DimArray(!Matched::A, !Matched::D, !Matched::R, !Matched::Na, !Matched::Me) where {T, N, D<:Tuple, R<:Tuple, A<:AbstractArray{T,N}, Na, Me} at /home/user/.julia/packages/DimensionalData/fTd6d/src/array.jl:152
+    ...
+  Stacktrace:
+   [1] |>(::SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Float64,Tuple{Float64},Tuple{SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Float64,Tuple{Float64},Tuple{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},SignalOperators.RampSignal{:on,SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:on,SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}},SignalOperators.RampSignal{:off,SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Float64,Tuple{Float64},Tuple{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},SignalOperators.RampSignal{:on,SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:on,SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Float64,Tuple{Float64},Tuple{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},SignalOperators.RampSignal{:on,SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:on,SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:off,SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Float64,Tuple{Float64},Tuple{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},SignalOperators.RampSignal{:on,SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:on,SignalOperators.CutApply{SignalOperators.SignalFunction{typeof(sin),Int64,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}}, ::Type{T} where T) at ./operators.jl:834
+   [2] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:376
+   [3] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [4] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:374
+   [5] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:31
+   [7] include(::String) at ./client.jl:457
+   [8] top-level scope at none:6
+   [9] eval(::Module, ::Any) at ./boot.jl:331
+   [10] exec_options(::Base.JLOptions) at ./client.jl:272
+   [11] _start() at ./client.jl:506
+  
+Running tests... 42%|██████████████▉                    |  ETA: 0:01:14[KRunning tests... 45%|███████████████▉                   |  ETA: 0:01:16[KRunning tests... 48%|█████████████████                  |  ETA: 0:01:11[KAxis Arrays: Error During Test at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:473
+  Got exception outside of a @test
+  StackOverflowError:
+  Stacktrace:
+   [1] AxisArray(::SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Missing,Tuple{Float64},Tuple{SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Missing,Tuple{Float64},Tuple{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}},SignalOperators.RampSignal{:off,SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Missing,Tuple{Float64},Tuple{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Missing,Tuple{Float64},Tuple{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:off,SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Missing,Tuple{Float64},Tuple{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}}) at /home/user/.julia/packages/AxisArrays/IFpjG/src/core.jl:243
+   [2] AxisArray(::SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Missing,Tuple{Float64},Tuple{SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Missing,Tuple{Float64},Tuple{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}},SignalOperators.RampSignal{:off,SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Missing,Tuple{Float64},Tuple{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Missing,Tuple{Float64},Tuple{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:off,SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Missing,Tuple{Float64},Tuple{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}}; kw::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/user/.julia/packages/AxisArrays/IFpjG/src/core.jl:243
+   ... (the last 2 lines are repeated 39990 more times)
+   [79983] AxisArray(::SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Missing,Tuple{Float64},Tuple{SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Missing,Tuple{Float64},Tuple{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}},SignalOperators.RampSignal{:off,SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Missing,Tuple{Float64},Tuple{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Missing,Tuple{Float64},Tuple{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:off,SignalOperators.MapSignal{SignalOperators.FnBr{typeof(*)},2,1,Float64,Missing,Tuple{Float64},Tuple{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64}},typeof(one),Tuple{SignalOperators.PaddedSignal{AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},typeof(one),true},SignalOperators.PaddedSignal{SignalOperators.RampSignal{:on,AxisArray{Float64,1,Array{Float64,1},Tuple{Axis{:time,StepRangeLen{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}},Base.TwicePrecision{Quantity{Float64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}}}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},typeof(sinramp),Float64},typeof(one),true}}}) at /home/user/.julia/packages/AxisArrays/IFpjG/src/core.jl:243
+  
+Running tests... 52%|██████████████████                 |  ETA: 0:01:05[KRunning tests... 55%|███████████████████▏               |  ETA: 0:00:58[KRunning tests... 58%|████████████████████▏              |  ETA: 0:00:59[KHandling of arrays/numbers: Error During Test at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:542
+  Test threw exception
+  Expression: ((x |> Until(500ms)) |> Array) |> size == (4, 2)
+  Unknown number of frames in signal.
+  Stacktrace:
+   [1] error(::String) at ./error.jl:33
+   [2] process_sink_params(::SignalOperators.CutApply{AxisArray{Float64,2,Array{Float64,2},Tuple{Axis{:channel,UnitRange{Int64}},Axis{:time,StepRangeLen{Float64,Base.TwicePrecision{Float64},Base.TwicePrecision{Float64}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},Val{:Until},Float64}) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:96
+   [3] sink(::SignalOperators.CutApply{AxisArray{Float64,2,Array{Float64,2},Tuple{Axis{:channel,UnitRange{Int64}},Axis{:time,StepRangeLen{Float64,Base.TwicePrecision{Float64},Base.TwicePrecision{Float64}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},Val{:Until},Float64}, ::Type{Array}, ::SignalOperators.DataCut) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:66
+   [4] sink(::SignalOperators.CutApply{AxisArray{Float64,2,Array{Float64,2},Tuple{Axis{:channel,UnitRange{Int64}},Axis{:time,StepRangeLen{Float64,Base.TwicePrecision{Float64},Base.TwicePrecision{Float64}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},Val{:Until},Float64}, ::Type{Array}) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:64
+   [5] Array(::SignalOperators.CutApply{AxisArray{Float64,2,Array{Float64,2},Tuple{Axis{:channel,UnitRange{Int64}},Axis{:time,StepRangeLen{Float64,Base.TwicePrecision{Float64},Base.TwicePrecision{Float64}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},Val{:Until},Float64}) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:122
+   [6] |>(::SignalOperators.CutApply{AxisArray{Float64,2,Array{Float64,2},Tuple{Axis{:channel,UnitRange{Int64}},Axis{:time,StepRangeLen{Float64,Base.TwicePrecision{Float64},Base.TwicePrecision{Float64}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},Val{:Until},Float64}, ::Type{T} where T) at ./operators.jl:834
+   [7] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:542
+   [8] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [9] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:504
+   [10] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [11] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:31
+  
+Handling of arrays/numbers: Error During Test at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:543
+  Test threw exception
+  Expression: ((x |> Until(500ms)) |> sink) |> size == (4, 2)
+  Unknown number of frames in signal.
+  Stacktrace:
+   [1] error(::String) at ./error.jl:33
+   [2] process_sink_params(::SignalOperators.CutApply{AxisArray{Float64,2,Array{Float64,2},Tuple{Axis{:channel,UnitRange{Int64}},Axis{:time,StepRangeLen{Float64,Base.TwicePrecision{Float64},Base.TwicePrecision{Float64}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},Val{:Until},Float64}) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:96
+   [3] sink(::SignalOperators.CutApply{AxisArray{Float64,2,Array{Float64,2},Tuple{Axis{:channel,UnitRange{Int64}},Axis{:time,StepRangeLen{Float64,Base.TwicePrecision{Float64},Base.TwicePrecision{Float64}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},Val{:Until},Float64}, ::Type{Array}, ::SignalOperators.DataCut) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:66
+   [4] sink(::SignalOperators.CutApply{AxisArray{Float64,2,Array{Float64,2},Tuple{Axis{:channel,UnitRange{Int64}},Axis{:time,StepRangeLen{Float64,Base.TwicePrecision{Float64},Base.TwicePrecision{Float64}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},Val{:Until},Float64}, ::Type{Array}) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:64
+   [5] sink(::SignalOperators.CutApply{AxisArray{Float64,2,Array{Float64,2},Tuple{Axis{:channel,UnitRange{Int64}},Axis{:time,StepRangeLen{Float64,Base.TwicePrecision{Float64},Base.TwicePrecision{Float64}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},Val{:Until},Float64}) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:30
+   [6] |>(::SignalOperators.CutApply{AxisArray{Float64,2,Array{Float64,2},Tuple{Axis{:channel,UnitRange{Int64}},Axis{:time,StepRangeLen{Float64,Base.TwicePrecision{Float64},Base.TwicePrecision{Float64}}}}},Quantity{Int64,𝐓,Unitful.FreeUnits{(ms,),𝐓,nothing}},Val{:Until},Float64}, ::typeof(sink)) at ./operators.jl:834
+   [7] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:543
+   [8] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [9] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:504
+   [10] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [11] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:31
+  
+Running tests... 61%|█████████████████████▎             |  ETA: 0:01:01[KRunning tests... 64%|██████████████████████▎            |  ETA: 0:00:55[KRunning tests... 67%|███████████████████████▍           |  ETA: 0:00:48[KRunning tests... 70%|████████████████████████▍          |  ETA: 0:00:47[KRunning tests... 73%|█████████████████████████▌         |  ETA: 0:00:44[KNon-lazy operators: Error During Test at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:672
+  Got exception outside of a @test
+  MethodError: no method matching initsink(::Tuple{Array{Float64,2},Float64}, ::Type{DimArray})
+  Closest candidates are:
+    initsink(::Any, !Matched::Type{var"#s16"} where var"#s16"<:Array) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:115
+    initsink(::Any, !Matched::Type{var"#s16"} where var"#s16"<:Tuple) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:118
+    initsink(::Any, !Matched::Type{var"#s16"} where var"#s16"<:Array, !Matched::Any) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:120
+    ...
+  Stacktrace:
+   [1] sink(::Tuple{Array{Float64,2},Float64}, ::Type{DimArray}, ::SignalOperators.DataCut) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:72
+   [2] sink(::Tuple{Array{Float64,2},Float64}, ::Type{DimArray}) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:64
+   [3] (::SignalOperators.var"#9#10"{UnionAll})(::Tuple{Array{Float64,2},Float64}) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:29
+   [4] |>(::Tuple{Array{Float64,2},Float64}, ::SignalOperators.var"#9#10"{UnionAll}) at ./operators.jl:834
+   [5] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:673
+   [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [7] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:673
+   [8] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [9] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:31
+   [10] include(::String) at ./client.jl:457
+   [11] top-level scope at none:6
+   [12] eval(::Module, ::Any) at ./boot.jl:331
+   [13] exec_options(::Base.JLOptions) at ./client.jl:272
+   [14] _start() at ./client.jl:506
+  
+Running tests... 76%|██████████████████████████▌        |  ETA: 0:00:37[KRunning tests... 79%|███████████████████████████▋       |  ETA: 0:00:37[KRunning tests... 82%|████████████████████████████▋      |  ETA: 0:00:36[KRunning tests... 85%|█████████████████████████████▊     |  ETA: 0:00:31[KStress tests: Error During Test at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:821
+  Test threw exception
+  Expression: (sink(x, DimensionalArray))[Time(Between(2s, 4s))] ≈ sink(afterx, DimensionalArray)
+  MethodError: no method matching initsink(::SignalOperators.CutApply{SignalOperators.FilteredSignal{Float64,Tuple{Array{Float64,2},Float64},SignalOperators.FilterFn{UnionAll,ZeroPoleGain{Complex{Float64},Complex{Float64},Float64},Tuple{Quantity{Int64,𝐓^-1,Unitful.FreeUnits{(Hz,),𝐓^-1,nothing}}}},Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64}, ::Type{DimArray})
+  Closest candidates are:
+    initsink(::Any, !Matched::Type{var"#s16"} where var"#s16"<:Array) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:115
+    initsink(::Any, !Matched::Type{var"#s16"} where var"#s16"<:Tuple) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:118
+    initsink(::Any, !Matched::Type{var"#s16"} where var"#s16"<:Array, !Matched::Any) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:120
+    ...
+  Stacktrace:
+   [1] sink(::SignalOperators.CutApply{SignalOperators.FilteredSignal{Float64,Tuple{Array{Float64,2},Float64},SignalOperators.FilterFn{UnionAll,ZeroPoleGain{Complex{Float64},Complex{Float64},Float64},Tuple{Quantity{Int64,𝐓^-1,Unitful.FreeUnits{(Hz,),𝐓^-1,nothing}}}},Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64}, ::Type{DimArray}, ::SignalOperators.SinkCut) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:89
+   [2] sink(::SignalOperators.CutApply{SignalOperators.FilteredSignal{Float64,Tuple{Array{Float64,2},Float64},SignalOperators.FilterFn{UnionAll,ZeroPoleGain{Complex{Float64},Complex{Float64},Float64},Tuple{Quantity{Int64,𝐓^-1,Unitful.FreeUnits{(Hz,),𝐓^-1,nothing}}}},Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64}, ::Type{DimArray}) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:64
+   [3] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:821
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:810
+   [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [7] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:31
+  
+Running tests... 88%|██████████████████████████████▊    |  ETA: 0:00:31[KREADME Examples: Error During Test at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:885
+  Got exception outside of a @test
+  MethodError: no method matching save_signal(::FileIO.DataFormat{:WAV}, ::String, ::SignalOperators.NormedSignal{SignalOperators.CutApply{SignalOperators.SignalFunction{SignalOperators.RandFn{Random._GLOBAL_RNG},Missing,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Float64})
+  Closest candidates are:
+    save_signal(!Matched::Val{T}, ::Any, ::Any) where T at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:143
+  Stacktrace:
+   [1] sink(::SignalOperators.NormedSignal{SignalOperators.CutApply{SignalOperators.SignalFunction{SignalOperators.RandFn{Random._GLOBAL_RNG},Missing,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Float64}, ::String) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:141
+   [2] (::SignalOperators.var"#11#12"{String})(::SignalOperators.NormedSignal{SignalOperators.CutApply{SignalOperators.SignalFunction{SignalOperators.RandFn{Random._GLOBAL_RNG},Missing,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Float64}) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:138
+   [3] |>(::SignalOperators.NormedSignal{SignalOperators.CutApply{SignalOperators.SignalFunction{SignalOperators.RandFn{Random._GLOBAL_RNG},Missing,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Float64}, ::SignalOperators.var"#11#12"{String}) at ./operators.jl:834
+   [4] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:886
+   [5] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:886
+   [7] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [8] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:31
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+Running tests... 91%|███████████████████████████████▉   |  ETA: 0:00:22[KTesting DimensionalData: Error During Test at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:920
+  Got exception outside of a @test
+  MethodError: no method matching initsink(::Tuple{Array{Float64,2},Float64}, ::Type{DimArray})
+  Closest candidates are:
+    initsink(::Any, !Matched::Type{var"#s16"} where var"#s16"<:Array) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:115
+    initsink(::Any, !Matched::Type{var"#s16"} where var"#s16"<:Tuple) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:118
+    initsink(::Any, !Matched::Type{var"#s16"} where var"#s16"<:Array, !Matched::Any) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:120
+    ...
+  Stacktrace:
+   [1] sink(::Tuple{Array{Float64,2},Float64}, ::Type{DimArray}, ::SignalOperators.DataCut) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:72
+   [2] sink(::Tuple{Array{Float64,2},Float64}, ::Type{DimArray}) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:64
+   [3] (::SignalOperators.var"#9#10"{UnionAll})(::Tuple{Array{Float64,2},Float64}) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:29
+   [4] |>(::Tuple{Array{Float64,2},Float64}, ::SignalOperators.var"#9#10"{UnionAll}) at ./operators.jl:834
+   [5] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:924
+   [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [7] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:921
+   [8] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [9] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:31
+   [10] include(::String) at ./client.jl:457
+   [11] top-level scope at none:6
+   [12] eval(::Module, ::Any) at ./boot.jl:331
+   [13] exec_options(::Base.JLOptions) at ./client.jl:272
+   [14] _start() at ./client.jl:506
+  
+Running tests... 94%|████████████████████████████████▉  |  ETA: 0:00:15[K Activating new environment at `~/.julia/packages/SignalOperators/VmWyE/test/jl_yZGx1D/Project.toml`
+   Updating registry at `~/.julia/registries/General`
+  Resolving package versions...
+  Installed libvorbis_jll ───── v1.3.6+6
+  Installed TreeViews ───────── v0.3.0
+  Installed Ogg_jll ─────────── v1.3.4+2
+  Installed IntervalSets ────── v0.3.2
+  Installed alsa_jll ────────── v1.2.1-1+2
+  Installed FLAC_jll ────────── v1.3.3+2
+  Installed LibSndFile ──────── v2.3.0
+  Installed SampledSignals ──── v2.1.0
+  Installed FixedPointNumbers ─ v0.6.1
+  Installed Unitful ─────────── v0.17.0
+  Installed libsndfile_jll ──── v1.0.28+2
+Updating `~/.julia/packages/SignalOperators/VmWyE/test/jl_yZGx1D/Project.toml`
+  [b13ce0c6] + LibSndFile v2.3.0
+Updating `~/.julia/packages/SignalOperators/VmWyE/test/jl_yZGx1D/Manifest.toml`
+  [621f4979] + AbstractFFTs v1.0.0
+  [79e6a3ab] + Adapt v2.4.0
+  [56f22d72] + Artifacts v1.3.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [34da2185] + Compat v2.2.1
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [717857b8] + DSP v0.6.10
+  [e2ba6199] + ExprTools v0.1.3
+  [8f5d6c58] + EzXML v1.1.0
+  [7a1cc6ca] + FFTW v1.3.1
+  [f5851436] + FFTW_jll v3.3.9+7
+  [1d38b3a6] + FLAC_jll v1.3.3+2
+  [5789e2e9] + FileIO v1.4.5
+  [53c48c17] + FixedPointNumbers v0.6.1
+  [1d5cc7b8] + IntelOpenMP_jll v2018.0.3+0
+  [8197267c] + IntervalSets v0.3.2
+  [d8418881] + Intervals v1.5.0
+  [c8e1da08] + IterTools v1.3.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [b13ce0c6] + LibSndFile v2.3.0
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [856f044c] + MKL_jll v2020.2.254+0
+  [78c3b35d] + Mocking v0.7.1
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [6fe1bfb0] + OffsetArrays v1.5.0
+  [e7412a2a] + Ogg_jll v1.3.4+2
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [f27b6e38] + Polynomials v1.2.0
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [189a3867] + Reexport v1.0.0
+  [bd7594eb] + SampledSignals v2.1.0
+  [276daf66] + SpecialFunctions v1.2.1
+  [f269a46b] + TimeZones v1.5.3
+  [a2a6695c] + TreeViews v0.3.0
+  [1986cc42] + Unitful v0.17.0
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [45378030] + alsa_jll v1.2.1-1+2
+  [5bf562c0] + libsndfile_jll v1.0.28+2
+  [f27f6e37] + libvorbis_jll v1.3.6+6
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+  Resolving package versions...
+Updating `~/.julia/packages/SignalOperators/VmWyE/test/jl_yZGx1D/Project.toml`
+  [bd7594eb] + SampledSignals v2.1.0
+No Changes to `~/.julia/packages/SignalOperators/VmWyE/test/jl_yZGx1D/Manifest.toml`
+┌ Warning: Error requiring SampledSignals from SignalOperators:
+│ could not open file /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/SampledSignals.jl
+│ Stacktrace:
+│  [1] include(::Function, ::Module, ::String) at ./Base.jl:380
+│  [2] include at ./Base.jl:368 [inlined]
+│  [3] include(::String) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/SignalOperators.jl:1
+│  [4] top-level scope at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/SignalOperators.jl:62
+│  [5] eval at ./boot.jl:331 [inlined]
+│  [6] eval at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/SignalOperators.jl:1 [inlined]
+│  [7] (::SignalOperators.var"#140#158")() at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:67
+│  [8] err(::SignalOperators.var"#140#158", ::Module, ::String) at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:38
+│  [9] #139 at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:66 [inlined]
+│  [10] withpath(::SignalOperators.var"#139#157", ::String) at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:28
+│  [11] (::SignalOperators.var"#138#156")() at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:65
+│  [12] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│  [13] invokelatest at ./essentials.jl:709 [inlined]
+│  [14] #3 at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:19 [inlined]
+│  [15] iterate at ./generator.jl:47 [inlined]
+│  [16] _collect(::Array{Function,1}, ::Base.Generator{Array{Function,1},Requires.var"#3#4"}, ::Base.EltypeUnknown, ::Base.HasShape{1}) at ./array.jl:699
+│  [17] collect_similar at ./array.jl:628 [inlined]
+│  [18] map at ./abstractarray.jl:2162 [inlined]
+│  [19] loadpkg(::Base.PkgId) at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:19
+│  [20] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│  [21] invokelatest at ./essentials.jl:709 [inlined]
+│  [22] _tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::Nothing) at ./loading.jl:715
+│  [23] _require_from_serialized(::String) at ./loading.jl:744
+│  [24] _require(::Base.PkgId) at ./loading.jl:1040
+│  [25] require(::Base.PkgId) at ./loading.jl:928
+│  [26] require(::Module, ::Symbol) at ./loading.jl:923
+│  [27] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:938
+│  [28] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+│  [29] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:938
+│  [30] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+│  [31] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:31
+│  [32] include(::String) at ./client.jl:457
+│  [33] top-level scope at none:6
+│  [34] eval(::Module, ::Any) at ./boot.jl:331
+│  [35] exec_options(::Base.JLOptions) at ./client.jl:272
+│  [36] _start() at ./client.jl:506
+└ @ Requires /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:40
+┌ Warning: Error requiring LibSndFile from SignalOperators:
+│ could not open file /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/LibSndFile.jl
+│ Stacktrace:
+│  [1] include(::Function, ::Module, ::String) at ./Base.jl:380
+│  [2] include at ./Base.jl:368 [inlined]
+│  [3] include(::String) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/SignalOperators.jl:1
+│  [4] top-level scope at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/SignalOperators.jl:66
+│  [5] eval at ./boot.jl:331 [inlined]
+│  [6] eval at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/SignalOperators.jl:1 [inlined]
+│  [7] (::SignalOperators.var"#143#161")() at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:67
+│  [8] err(::SignalOperators.var"#143#161", ::Module, ::String) at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:38
+│  [9] #142 at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:66 [inlined]
+│  [10] withpath(::SignalOperators.var"#142#160", ::String) at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:28
+│  [11] (::SignalOperators.var"#141#159")() at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:65
+│  [12] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│  [13] invokelatest at ./essentials.jl:709 [inlined]
+│  [14] #3 at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:19 [inlined]
+│  [15] iterate at ./generator.jl:47 [inlined]
+│  [16] _collect(::Array{Function,1}, ::Base.Generator{Array{Function,1},Requires.var"#3#4"}, ::Base.EltypeUnknown, ::Base.HasShape{1}) at ./array.jl:699
+│  [17] collect_similar at ./array.jl:628 [inlined]
+│  [18] map at ./abstractarray.jl:2162 [inlined]
+│  [19] loadpkg(::Base.PkgId) at /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:19
+│  [20] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│  [21] invokelatest at ./essentials.jl:709 [inlined]
+│  [22] require(::Base.PkgId) at ./loading.jl:931
+│  [23] require(::Module, ::Symbol) at ./loading.jl:923
+│  [24] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:938
+│  [25] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+│  [26] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:938
+│  [27] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+│  [28] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:31
+│  [29] include(::String) at ./client.jl:457
+│  [30] top-level scope at none:6
+│  [31] eval(::Module, ::Any) at ./boot.jl:331
+│  [32] exec_options(::Base.JLOptions) at ./client.jl:272
+│  [33] _start() at ./client.jl:506
+└ @ Requires /home/pkgeval/.julia/packages/Requires/9Jse8/src/require.jl:40
+Testing LibSndFile: Error During Test at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:937
+  Got exception outside of a @test
+  MethodError: no method matching save_signal(::FileIO.DataFormat{:OGG}, ::String, ::SignalOperators.NormedSignal{SignalOperators.CutApply{SignalOperators.SignalFunction{SignalOperators.RandFn{Random._GLOBAL_RNG},Missing,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Float64})
+  Closest candidates are:
+    save_signal(!Matched::Val{T}, ::Any, ::Any) where T at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:143
+  Stacktrace:
+   [1] sink(::SignalOperators.NormedSignal{SignalOperators.CutApply{SignalOperators.SignalFunction{SignalOperators.RandFn{Random._GLOBAL_RNG},Missing,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Float64}, ::String) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:141
+   [2] (::SignalOperators.var"#11#12"{String})(::SignalOperators.NormedSignal{SignalOperators.CutApply{SignalOperators.SignalFunction{SignalOperators.RandFn{Random._GLOBAL_RNG},Missing,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Float64}) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:138
+   [3] |>(::SignalOperators.NormedSignal{SignalOperators.CutApply{SignalOperators.SignalFunction{SignalOperators.RandFn{Random._GLOBAL_RNG},Missing,Tuple{Float64},Float64,Float64},Quantity{Int64,𝐓,Unitful.FreeUnits{(s,),𝐓,nothing}},Val{:Until},Float64},Float64}, ::SignalOperators.var"#11#12"{String}) at ./operators.jl:834
+   [4] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:941
+   [5] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:938
+   [7] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [8] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:31
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+Running tests... 97%|██████████████████████████████████ |  ETA: 0:00:08[KTest adaptive return type: Test Failed at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:954
+  Expression: sink(Mix(1, data)) isa DimensionalArray
+   Evaluated: [1.1225053905505182 1.5912473279683141; 1.107208875337858 1.7804142235981435; … ; 1.178765971401545 1.4257642079190989; 1.8164154641477028 1.529276577474235] isa DimArray
+Stacktrace:
+ [1] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:954
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:951
+ [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:31
+Test adaptive return type: Test Failed at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:956
+  Expression: sink(Mix(1, data)) isa SampleBuf
+   Evaluated: [1.1225053905505182 1.5912473279683141; 1.107208875337858 1.7804142235981435; … ; 1.178765971401545 1.4257642079190989; 1.8164154641477028 1.529276577474235] isa SampleBuf
+Stacktrace:
+ [1] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:956
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:951
+ [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:31
+Test adaptive return type: Error During Test at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:950
+  Got exception outside of a @test
+  MethodError: no method matching initsink(::Tuple{Array{Float64,2},Float64}, ::Type{AxisArray})
+  Closest candidates are:
+    initsink(::Any, !Matched::Type{var"#s16"} where var"#s16"<:Array) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:115
+    initsink(::Any, !Matched::Type{var"#s16"} where var"#s16"<:Tuple) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:118
+    initsink(::Any, !Matched::Type{var"#s16"} where var"#s16"<:Array, !Matched::Any) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:120
+    ...
+  Stacktrace:
+   [1] sink(::Tuple{Array{Float64,2},Float64}, ::Type{AxisArray}, ::SignalOperators.DataCut) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:72
+   [2] sink(::Tuple{Array{Float64,2},Float64}, ::Type{AxisArray}) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:64
+   [3] (::SignalOperators.var"#9#10"{UnionAll})(::Tuple{Array{Float64,2},Float64}) at /home/pkgeval/.julia/packages/SignalOperators/VmWyE/src/sink.jl:29
+   [4] |>(::Tuple{Array{Float64,2},Float64}, ::SignalOperators.var"#9#10"{UnionAll}) at ./operators.jl:834
+   [5] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:958
+   [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [7] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:951
+   [8] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [9] top-level scope at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:31
+   [10] include(::String) at ./client.jl:457
+   [11] top-level scope at none:6
+   [12] eval(::Module, ::Any) at ./boot.jl:331
+   [13] exec_options(::Base.JLOptions) at ./client.jl:272
+   [14] _start() at ./client.jl:506
+  
+Running tests...100%|███████████████████████████████████| Time: 0:04:12[K
+Test Summary:                           | Pass  Fail  Error  Total
+SignalOperators.jl                      |  389     2     12    403
+  Function Currying                     |   11                  11
+  Basic signals                         |   12                  12
+  Array tuple output                    |    2                   2
+  Function signals                      |    6                   6
+  Sink to arrays                        |    1                   1
+  Files as signals                      |                 1      1
+  Change channel Count                  |    6                   6
+  Cutting Operators                     |   36                  36
+  Padding                               |   78                  78
+  Appending                             |   14                  14
+  Mixing                                |    6                   6
+  Handling of padded Mix and Amplify    |    7                   7
+  Filtering                             |                 1      1
+  Ramps                                 |                 1      1
+  Resampling                            |   34                  34
+  Automatic reformatting                |    4                   4
+  Axis Arrays                           |                 1      1
+  Operating over empty signals          |    4                   4
+  Normpower                             |    4                   4
+  Handling of arrays/numbers            |   21            2     23
+  Handling of infinite signals          |   20                  20
+  Test that non-signals correctly error |   16                  16
+  Handle of frame units                 |    7                   7
+  Handle printing                       |   21                  21
+  Non-lazy operators                    |                 1      1
+  Handle lower bitrate                  |   18                  18
+  Handle fixed point numbers            |   20                  20
+  Handle unknown frame rates            |   22                  22
+  Short-block Operators                 |    8                   8
+  Stress tests                          |   10            1     11
+  README Examples                       |                 1      1
+  Testing DimensionalData               |    1            1      2
+  Testing LibSndFile                    |                 1      1
+  Test adaptive return type             |          2      1      3
+ERROR: LoadError: Some tests did not pass: 389 passed, 2 failed, 12 errored, 0 broken.
+in expression starting at /home/user/.julia/packages/SignalOperators/VmWyE/test/runtests.jl:29
+
+PkgEval failed: Package SignalOperators errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:56:47.015
+CPU usage: 294.78s (287.09s user, 8.06s kernel)
+
+Network usage:
+- eth0: 5.641 MiB received, 342.003 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":27,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":13,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":27,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":27,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":13,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":27,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":69632,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":69632,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":396304384,"max_usage":1709383680,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":262795264,"inactive_file":135168,"inactive_anon":89346048,"total_pgfault":3003891,"total_cache":101466112,"total_rss_huge":0,"total_active_anon":274931712,"total_pgmajfault":0,"pgpgin":1620564,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":135168,"pgpgout":1531630,"hierarchical_memsw_limit":0,"cache":101466112,"active_file":135168,"pgfault":3003891,"total_mapped_file":0,"total_pgpgout":1531630,"total_writeback":135168,"rss":262795264,"unevictable":0,"total_inactive_anon":89346048,"total_pgpgin":1620564,"active_anon":274931712,"total_active_file":135168},"limit":540965302272},"name":"/SignalOperators-jSzKoWBm","networks":{"eth0":{"rx_bytes":5915500,"rx_packets":2406,"tx_packets":2747,"tx_bytes":350211,"tx_dropped":0,"rx_dropped":10,"tx_errors":0,"rx_errors":0}},"id":"e325376b3b47e2ec43b35c3eee1cd6463972dc9c76bea8a6cf0f9423edf9d8ba","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4334346304522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":287090000000,"usage_in_kernelmode":8060000000,"total_usage":294778524987,"percpu_usage":[0,0,0,0,0,0,0,0,294778391447,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,133540,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:56:47.018181531Z"}

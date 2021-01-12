@@ -1,0 +1,627 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:38:12.721
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:38:14.521
+#
+
+ Installing known registries into `~/.julia`
+############################################                              61.7%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MbedTLS_jll ──────── v2.16.8+1
+  Installed Zlib_jll ─────────── v1.2.11+18
+  Installed JSONSchema ───────── v0.3.3
+  Installed Bzip2_jll ────────── v1.0.6+5
+  Installed TranscodingStreams ─ v0.9.5
+  Installed MbedTLS ──────────── v1.0.3
+  Installed HTTP ─────────────── v0.9.2
+  Installed Convex ───────────── v0.13.8
+  Installed BenchmarkTools ───── v0.5.0
+  Installed OrderedCollections ─ v1.3.2
+  Installed CodecZlib ────────── v0.7.0
+  Installed ZipFile ──────────── v0.9.3
+  Installed MutableArithmetics ─ v0.2.13
+  Installed URIs ─────────────── v1.1.0
+  Installed JSON ─────────────── v0.21.1
+  Installed AbstractTrees ────── v0.3.3
+  Installed JLLWrappers ──────── v1.2.0
+  Installed MathOptInterface ─── v0.9.19
+  Installed Parsers ──────────── v1.0.15
+  Installed CodecBzip2 ───────── v0.7.2
+  Installed IniFile ──────────── v0.5.0
+  Installed Artifacts ────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [f65535da] + Convex v0.13.8
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [1520ce14] + AbstractTrees v0.3.3
+  [56f22d72] + Artifacts v1.3.0
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [523fee87] + CodecBzip2 v0.7.2
+  [944b1d66] + CodecZlib v0.7.0
+  [f65535da] + Convex v0.13.8
+  [cd3eb016] + HTTP v0.9.2
+  [83e8ac13] + IniFile v0.5.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [7d188eb4] + JSONSchema v0.3.3
+  [b8f27783] + MathOptInterface v0.9.19
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [d8a4904e] + MutableArithmetics v0.2.13
+  [bac558e1] + OrderedCollections v1.3.2
+  [69de0a69] + Parsers v1.0.15
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [5c2747f8] + URIs v1.1.0
+  [a5390f91] + ZipFile v0.9.3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T17:38:21.094
+#
+
+    Testing Convex
+Status `/tmp/jl_8K7mVQ/Project.toml`
+  [1520ce14] AbstractTrees v0.3.3
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [f65535da] Convex v0.13.8
+  [e2685f51] ECOS v0.12.2
+  [60bf3e95] GLPK v0.14.5
+  [b8f27783] MathOptInterface v0.9.19
+  [bac558e1] OrderedCollections v1.3.2
+  [c946c3f1] SCS v0.7.1
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_8K7mVQ/Manifest.toml`
+  [1520ce14] AbstractTrees v0.3.3
+  [56f22d72] Artifacts v1.3.0
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [b99e7846] BinaryProvider v0.5.10
+  [6e34b625] Bzip2_jll v1.0.6+5
+  [fa961155] CEnum v0.4.1
+  [523fee87] CodecBzip2 v0.7.2
+  [944b1d66] CodecZlib v0.7.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [f65535da] Convex v0.13.8
+  [e2685f51] ECOS v0.12.2
+  [c2c64177] ECOS_jll v2.0.5+1
+  [60bf3e95] GLPK v0.14.5
+  [e8aa6df9] GLPK_jll v4.64.0+0
+  [781609d7] GMP_jll v6.1.2+6
+  [cd3eb016] HTTP v0.9.2
+  [83e8ac13] IniFile v0.5.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [7d188eb4] JSONSchema v0.3.3
+  [b8f27783] MathOptInterface v0.9.19
+  [fdba3010] MathProgBase v0.7.8
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [d8a4904e] MutableArithmetics v0.2.13
+  [4536629a] OpenBLAS_jll v0.3.9+5
+  [bac558e1] OrderedCollections v1.3.2
+  [69de0a69] Parsers v1.0.15
+  [ae029012] Requires v1.1.2
+  [c946c3f1] SCS v0.7.1
+  [af6e375f] SCS_GPU_jll v2.1.2+0
+  [f4f2fc5b] SCS_jll v2.1.2+1
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [5c2747f8] URIs v1.1.0
+  [a5390f91] ZipFile v0.9.3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Warning: Rational norm generating 18 intermediate constraints.
+│ 	Increasing :max_iters or decreasing solver tolerance
+│ 	may give more accurate solutions
+└ @ Convex ~/.julia/packages/Convex/cKTOH/src/atoms/second_order_cone/rationalnorm.jl:86
+┌ Warning: Rational norm generating 18 intermediate constraints.
+│ 	Increasing :max_iters or decreasing solver tolerance
+│ 	may give more accurate solutions
+└ @ Convex ~/.julia/packages/Convex/cKTOH/src/atoms/second_order_cone/rationalnorm.jl:86
+Test Summary: | Pass  Total
+ProblemDepot  |  328    328
+Test Summary: | Pass  Total
+Definitions   |    1      1
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: Problem status INFEASIBLE; solution may be inaccurate.
+└ @ Convex ~/.julia/packages/Convex/cKTOH/src/solution.jl:252
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: Rational norm generating 18 intermediate constraints.
+│ 	Increasing :max_iters or decreasing solver tolerance
+│ 	may give more accurate solutions
+└ @ Convex ~/.julia/packages/Convex/cKTOH/src/atoms/second_order_cone/rationalnorm.jl:86
+┌ Warning: Problem status ALMOST_OPTIMAL; solution may be inaccurate.
+└ @ Convex ~/.julia/packages/Convex/cKTOH/src/solution.jl:252
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: Problem not DCP compliant: objective is not DCP
+└ @ Convex ~/.julia/packages/Convex/cKTOH/src/problems.jl:44
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: Problem status INFEASIBLE; solution may be inaccurate.
+└ @ Convex ~/.julia/packages/Convex/cKTOH/src/solution.jl:252
+┌ Warning: Rational norm generating 18 intermediate constraints.
+│ 	Increasing :max_iters or decreasing solver tolerance
+│ 	may give more accurate solutions
+└ @ Convex ~/.julia/packages/Convex/cKTOH/src/atoms/second_order_cone/rationalnorm.jl:86
+┌ Warning: Problem status ALMOST_OPTIMAL; solution may be inaccurate.
+└ @ Convex ~/.julia/packages/Convex/cKTOH/src/solution.jl:252
+┌ Warning: Problem not DCP compliant: objective is not DCP
+└ @ Convex ~/.julia/packages/Convex/cKTOH/src/problems.jl:44
+┌ Warning: Problem status INFEASIBLE; solution may be inaccurate.
+└ @ Convex ~/.julia/packages/Convex/cKTOH/src/solution.jl:252
+┌ Warning: Rational norm generating 18 intermediate constraints.
+│ 	Increasing :max_iters or decreasing solver tolerance
+│ 	may give more accurate solutions
+└ @ Convex ~/.julia/packages/Convex/cKTOH/src/atoms/second_order_cone/rationalnorm.jl:86
+┌ Warning: Problem not DCP compliant: objective is not DCP
+└ @ Convex ~/.julia/packages/Convex/cKTOH/src/problems.jl:44
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Problem status INFEASIBLE; solution may be inaccurate.
+└ @ Convex ~/.julia/packages/Convex/cKTOH/src/solution.jl:252
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+┌ Warning: Passing parameters as keyword arguments is deprecated. Use `JuMP.set_optimizer_attribute` or `MOI.RawParameter(key)` instead.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/MOI_wrapper.jl:167
+┌ Warning: The GLPK constants have been renamed from `GLPK.XXX` to `GLPK.GLP_XXX` in order to better match the C API. For example, `GLPK.MSG_OFF` is now `GLPK.GLP_MSG_OFF`. Support for the old constants will be removed in a future release.
+└ @ GLPK ~/.julia/packages/GLPK/hDmA0/src/MOI_wrapper/deprecated_constants.jl:17
+Test Summary: | Pass  Total
+Convex        | 1821   1821
+    Testing Convex tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:42:58.194
+CPU usage: 285.19s (277.42s user, 8.11s kernel)
+
+Network usage:
+- eth0: 4.662 MiB received, 200.785 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":36,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":17,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":36,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":36,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":17,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":36,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":212992,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":106496,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":212992,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":212992,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":106496,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":212992,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":343113728,"max_usage":1409499136,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":201703424,"inactive_file":135168,"inactive_anon":86507520,"total_pgfault":3754212,"total_cache":109907968,"total_rss_huge":0,"total_active_anon":225189888,"total_pgmajfault":0,"pgpgin":1911591,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":1835512,"hierarchical_memsw_limit":0,"cache":109907968,"active_file":135168,"pgfault":3754212,"total_mapped_file":0,"total_pgpgout":1835512,"total_writeback":0,"rss":201703424,"unevictable":0,"total_inactive_anon":86507520,"total_pgpgin":1911591,"active_anon":225189888,"total_active_file":135168},"limit":540965302272},"name":"/Convex-Zm0rQ3I4","networks":{"eth0":{"rx_bytes":4888822,"rx_packets":1527,"tx_packets":1667,"tx_bytes":205604,"tx_dropped":0,"rx_dropped":10,"tx_errors":0,"rx_errors":0}},"id":"6eb769d881f62c4a95757c1dc4381892004381acf1d6a5d8bec5209ba3e2acfe","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4228434504522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":277420000000,"usage_in_kernelmode":8110000000,"total_usage":285186449749,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,285186443219,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6530,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:42:58.197251995Z"}

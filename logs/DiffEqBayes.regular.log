@@ -1,0 +1,1370 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:08:31.956
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:08:33.767
+#
+
+ Installing known registries into `~/.julia`
+########                                                                  11.3%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed PoissonRandom ──────────────── v0.4.0
+  Installed DiffEqBayes ────────────────── v2.22.0
+  Installed ZygoteRules ────────────────── v0.2.1
+  Installed Reexport ───────────────────── v0.2.0
+  Installed CpuId ──────────────────────── v0.2.2
+  Installed SymbolicUtils ──────────────── v0.6.3
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed InitialValues ──────────────── v0.2.10
+  Installed Inflate ────────────────────── v0.1.2
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed Libtask_jll ────────────────── v0.4.2+0
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed TableTraits ────────────────── v1.0.0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed NonlinearSolve ─────────────── v0.3.4
+  Installed Bijectors ──────────────────── v0.8.12
+  Installed AdvancedMH ─────────────────── v0.5.6
+  Installed EllipticalSliceSampling ────── v0.4.0
+  Installed RuntimeGeneratedFunctions ──── v0.4.2
+  Installed DiffEqJump ─────────────────── v6.12.2
+  Installed FillArrays ─────────────────── v0.9.7
+  Installed Tables ─────────────────────── v1.2.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed RangeArrays ────────────────── v0.3.2
+  Installed Combinatorics ──────────────── v1.0.2
+  Installed Libtask ────────────────────── v0.5.1
+  Installed LoopVectorization ──────────── v0.8.26
+  Installed Requires ───────────────────── v1.1.2
+  Installed LogDensityProblems ─────────── v0.10.3
+  Installed PositiveFactorizations ─────── v0.2.4
+  Installed FunctionWrappers ───────────── v1.1.1
+  Installed QuadGK ─────────────────────── v2.4.1
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed TimerOutputs ───────────────── v0.5.7
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed Parameters ─────────────────── v0.12.1
+  Installed DiffResults ────────────────── v1.0.3
+  Installed TransformVariables ─────────── v0.3.10
+  Installed TreeViews ──────────────────── v0.3.0
+  Installed Setfield ───────────────────── v0.7.0
+  Installed IterTools ──────────────────── v1.3.0
+  Installed SIMDPirates ────────────────── v0.8.26
+  Installed ConstructionBase ───────────── v1.0.0
+  Installed Latexify ───────────────────── v0.14.7
+  Installed SimpleTraits ───────────────── v0.9.3
+  Installed BenchmarkTools ─────────────── v0.5.0
+  Installed RecursiveArrayTools ────────── v2.10.0
+  Installed IntervalSets ───────────────── v0.5.2
+  Installed StaticArrays ───────────────── v0.12.5
+  Installed InvertedIndices ────────────── v1.0.0
+  Installed Tracker ────────────────────── v0.2.14
+  Installed AdvancedVI ─────────────────── v0.1.1
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed DiffEqBase ─────────────────── v6.53.4
+  Installed Optim ──────────────────────── v1.2.2
+  Installed InplaceOps ─────────────────── v0.3.0
+  Installed MLJModelInterface ──────────── v0.3.7
+  Installed Missings ───────────────────── v0.4.4
+  Installed LoggingExtras ──────────────── v0.4.2
+  Installed ScientificTypes ────────────── v1.1.1
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed DistributionsAD ────────────── v0.6.15
+  Installed VectorizationBase ──────────── v0.12.33
+  Installed LightGraphs ────────────────── v1.3.4
+  Installed ArgCheck ───────────────────── v2.1.0
+  Installed MCMCChains ─────────────────── v4.4.0
+  Installed AxisArrays ─────────────────── v0.4.3
+  Installed MappedArrays ───────────────── v0.3.0
+  Installed AbstractFFTs ───────────────── v0.5.0
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed JSON ───────────────────────── v0.21.1
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed AdvancedPS ─────────────────── v0.1.0
+  Installed BangBang ───────────────────── v0.3.29
+  Installed FiniteDiff ─────────────────── v2.7.2
+  Installed Distances ──────────────────── v0.9.2
+  Installed Distributions ──────────────── v0.23.12
+  Installed PrettyTables ───────────────── v0.10.1
+  Installed StructArrays ───────────────── v0.4.4
+  Installed DefineSingletons ───────────── v0.1.0
+  Installed RandomExtensions ───────────── v0.4.3
+  Installed ArrayInterface ─────────────── v2.14.13
+  Installed PDMats ─────────────────────── v0.10.1
+  Installed ArnoldiMethod ──────────────── v0.0.4
+  Installed LineSearches ───────────────── v7.1.1
+  Installed AbstractAlgebra ────────────── v0.12.0
+  Installed LeftChildRightSiblingTrees ─── v0.1.2
+  Installed ApproxBayes ────────────────── v0.3.2
+  Installed IfElse ─────────────────────── v0.1.0
+  Installed AdvancedHMC ────────────────── v0.2.27
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed IterativeSolvers ───────────── v0.9.0
+  Installed ChainRules ─────────────────── v0.7.45
+  Installed Turing ─────────────────────── v0.15.8
+  Installed Crayons ────────────────────── v4.0.4
+  Installed Adapt ──────────────────────── v2.4.0
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed FixedPointNumbers ──────────── v0.8.4
+  Installed Unitful ────────────────────── v1.5.0
+  Installed ExprTools ──────────────────── v0.1.3
+  Installed OffsetArrays ───────────────── v1.5.0
+  Installed Formatting ─────────────────── v0.4.2
+  Installed AbstractMCMC ───────────────── v2.2.1
+  Installed LabelledArrays ─────────────── v1.4.0
+  Installed NamedArrays ────────────────── v0.9.4
+  Installed MicroCollections ───────────── v0.1.0
+  Installed EllipsisNotation ───────────── v1.0.0
+  Installed AbstractTrees ──────────────── v0.3.3
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed NaturalSort ────────────────── v1.0.0
+  Installed SpecialFunctions ───────────── v0.10.3
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed DynamicPPL ─────────────────── v0.10.5
+  Installed TerminalLoggers ────────────── v0.1.2
+  Installed DynamicHMC ─────────────────── v2.2.0
+  Installed ProgressMeter ──────────────── v1.4.1
+  Installed Compat ─────────────────────── v3.25.0
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed SplittablesBase ────────────── v0.1.10
+  Installed Transducers ────────────────── v0.4.54
+  Installed NLSolversBase ──────────────── v7.7.1
+  Installed ProgressLogging ────────────── v0.1.3
+  Installed SafeTestsets ───────────────── v0.0.1
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed RecursiveFactorization ─────── v0.1.6
+  Installed SLEEFPirates ───────────────── v0.5.5
+  Installed NNlib ──────────────────────── v0.7.11
+  Installed ConsoleProgressMonitor ─────── v0.1.2
+  Installed CompositionsBase ───────────── v0.1.0
+  Installed RandomNumbers ──────────────── v1.4.0
+  Installed DocStringExtensions ────────── v0.8.3
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed ModelingToolkit ────────────── v4.2.0
+  Installed Parsers ────────────────────── v1.0.15
+  Installed LaTeXStrings ───────────────── v1.2.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [ebbdde9d] + DiffEqBayes v2.22.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [c3fe647b] + AbstractAlgebra v0.12.0
+  [621f4979] + AbstractFFTs v0.5.0
+  [80f14c24] + AbstractMCMC v2.2.1
+  [1520ce14] + AbstractTrees v0.3.3
+  [79e6a3ab] + Adapt v2.4.0
+  [0bf59076] + AdvancedHMC v0.2.27
+  [5b7e9947] + AdvancedMH v0.5.6
+  [576499cb] + AdvancedPS v0.1.0
+  [b5ca4192] + AdvancedVI v0.1.1
+  [f5f396d3] + ApproxBayes v0.3.2
+  [dce04be8] + ArgCheck v2.1.0
+  [ec485272] + ArnoldiMethod v0.0.4
+  [4fba245c] + ArrayInterface v2.14.13
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.4.3
+  [198e06fe] + BangBang v0.3.29
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [76274a88] + Bijectors v0.8.12
+  [082447d4] + ChainRules v0.7.45
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [861a8166] + Combinatorics v1.0.2
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [a33af91c] + CompositionsBase v0.1.0
+  [88cd18e8] + ConsoleProgressMonitor v0.1.2
+  [187b0558] + ConstructionBase v1.0.0
+  [adafc99b] + CpuId v0.2.2
+  [a8cc5b0e] + Crayons v4.0.4
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [244e2a9f] + DefineSingletons v0.1.0
+  [2b5f629d] + DiffEqBase v6.53.4
+  [ebbdde9d] + DiffEqBayes v2.22.0
+  [c894b116] + DiffEqJump v6.12.2
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [b4f34e82] + Distances v0.9.2
+  [31c24e10] + Distributions v0.23.12
+  [ced4e74d] + DistributionsAD v0.6.15
+  [ffbed154] + DocStringExtensions v0.8.3
+  [bbc10e6e] + DynamicHMC v2.2.0
+  [366bfd00] + DynamicPPL v0.10.5
+  [da5c29d0] + EllipsisNotation v1.0.0
+  [cad2338a] + EllipticalSliceSampling v0.4.0
+  [e2ba6199] + ExprTools v0.1.3
+  [1a297f60] + FillArrays v0.9.7
+  [6a86dc24] + FiniteDiff v2.7.2
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [59287772] + Formatting v0.4.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [069b7b12] + FunctionWrappers v1.1.1
+  [615f187c] + IfElse v0.1.0
+  [d25df0c9] + Inflate v0.1.2
+  [22cec73e] + InitialValues v0.2.10
+  [505f98c9] + InplaceOps v0.3.0
+  [8197267c] + IntervalSets v0.5.2
+  [41ab1584] + InvertedIndices v1.0.0
+  [c8e1da08] + IterTools v1.3.0
+  [42fd0dbc] + IterativeSolvers v0.9.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [b964fa9f] + LaTeXStrings v1.2.0
+  [2ee39098] + LabelledArrays v1.4.0
+  [23fbe1c1] + Latexify v0.14.7
+  [1d6d02ad] + LeftChildRightSiblingTrees v0.1.2
+  [6f1fad26] + Libtask v0.5.1
+  [3ae2931a] + Libtask_jll v0.4.2+0
+  [093fc24a] + LightGraphs v1.3.4
+  [d3d80556] + LineSearches v7.1.1
+  [6fdf6af0] + LogDensityProblems v0.10.3
+  [e6f89c97] + LoggingExtras v0.4.2
+  [bdcacae8] + LoopVectorization v0.8.26
+  [c7f686f2] + MCMCChains v4.4.0
+  [e80e1ace] + MLJModelInterface v0.3.7
+  [1914dd2f] + MacroTools v0.5.6
+  [dbb5928d] + MappedArrays v0.3.0
+  [128add7d] + MicroCollections v0.1.0
+  [e1d29d7a] + Missings v0.4.4
+  [961ee093] + ModelingToolkit v4.2.0
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [d41bc354] + NLSolversBase v7.7.1
+  [872c559c] + NNlib v0.7.11
+  [77ba4419] + NaNMath v0.3.5
+  [86f7a689] + NamedArrays v0.9.4
+  [c020b1a1] + NaturalSort v1.0.0
+  [8913a72c] + NonlinearSolve v0.3.4
+  [6fe1bfb0] + OffsetArrays v1.5.0
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [429524aa] + Optim v1.2.2
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.10.1
+  [d96e819e] + Parameters v0.12.1
+  [69de0a69] + Parsers v1.0.15
+  [e409e4f3] + PoissonRandom v0.4.0
+  [85a6dd25] + PositiveFactorizations v0.2.4
+  [08abe8d2] + PrettyTables v0.10.1
+  [33c8b6b6] + ProgressLogging v0.1.3
+  [92933f4c] + ProgressMeter v1.4.1
+  [1fd47b50] + QuadGK v2.4.1
+  [fb686558] + RandomExtensions v0.4.3
+  [e6cf234a] + RandomNumbers v1.4.0
+  [b3c3ace0] + RangeArrays v0.3.2
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [731186ca] + RecursiveArrayTools v2.10.0
+  [f2c3362d] + RecursiveFactorization v0.1.6
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [7e49a35a] + RuntimeGeneratedFunctions v0.4.2
+  [21efa798] + SIMDPirates v0.8.26
+  [476501e8] + SLEEFPirates v0.5.5
+  [1bc83da4] + SafeTestsets v0.0.1
+  [321657f4] + ScientificTypes v1.1.1
+  [efcf1570] + Setfield v0.7.0
+  [699a6c99] + SimpleTraits v0.9.3
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.10.3
+  [171d559e] + SplittablesBase v0.1.10
+  [90137ffa] + StaticArrays v0.12.5
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [09ab397b] + StructArrays v0.4.4
+  [d1185830] + SymbolicUtils v0.6.3
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [5d786b92] + TerminalLoggers v0.1.2
+  [a759f4b9] + TimerOutputs v0.5.7
+  [9f7883ad] + Tracker v0.2.14
+  [28d57a85] + Transducers v0.4.54
+  [84d833dd] + TransformVariables v0.3.10
+  [a2a6695c] + TreeViews v0.3.0
+  [fce5fe82] + Turing v0.15.8
+  [3a884ed6] + UnPack v1.0.2
+  [1986cc42] + Unitful v1.5.0
+  [3d5dd08c] + VectorizationBase v0.12.33
+  [700de1a5] + ZygoteRules v0.2.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building SLEEFPirates → `~/.julia/packages/SLEEFPirates/jGsib/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T17:08:58.349
+#
+
+    Testing DiffEqBayes
+Status `/tmp/jl_q7QUZS/Project.toml`
+  [f5f396d3] ApproxBayes v0.3.2
+  [2b5f629d] DiffEqBase v6.53.4
+  [ebbdde9d] DiffEqBayes v2.22.0
+  [163ba53b] DiffResults v1.0.3
+  [b4f34e82] Distances v0.9.2
+  [31c24e10] Distributions v0.23.12
+  [ffbed154] DocStringExtensions v0.8.3
+  [bbc10e6e] DynamicHMC v2.2.0
+  [f6369f11] ForwardDiff v0.10.14
+  [2ee39098] LabelledArrays v1.4.0
+  [6fdf6af0] LogDensityProblems v0.10.3
+  [1914dd2f] MacroTools v0.5.6
+  [e1d29d7a] Missings v0.4.4
+  [961ee093] ModelingToolkit v4.2.0
+  [429524aa] Optim v1.2.2
+  [1dea7af3] OrdinaryDiffEq v5.49.1
+  [90014a1f] PDMats v0.10.1
+  [65888b18] ParameterizedFunctions v5.7.0
+  [d96e819e] Parameters v0.12.1
+  [731186ca] RecursiveArrayTools v2.10.0
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [1bc83da4] SafeTestsets v0.0.1
+  [2913bbd2] StatsBase v0.33.2
+  [9672c7b4] SteadyStateDiffEq v1.6.0
+  [09ab397b] StructArrays v0.4.4
+  [84d833dd] TransformVariables v0.3.10
+  [fce5fe82] Turing v0.15.8
+  [8ba89e20] Distributed
+  [37e2e46d] LinearAlgebra
+  [44cfe95a] Pkg
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_q7QUZS/Manifest.toml`
+  [c3fe647b] AbstractAlgebra v0.12.0
+  [621f4979] AbstractFFTs v0.5.0
+  [80f14c24] AbstractMCMC v2.2.1
+  [1520ce14] AbstractTrees v0.3.3
+  [79e6a3ab] Adapt v2.4.0
+  [0bf59076] AdvancedHMC v0.2.27
+  [5b7e9947] AdvancedMH v0.5.6
+  [576499cb] AdvancedPS v0.1.0
+  [b5ca4192] AdvancedVI v0.1.1
+  [f5f396d3] ApproxBayes v0.3.2
+  [dce04be8] ArgCheck v2.1.0
+  [ec485272] ArnoldiMethod v0.0.4
+  [4fba245c] ArrayInterface v2.14.13
+  [56f22d72] Artifacts v1.3.0
+  [39de3d68] AxisArrays v0.4.3
+  [198e06fe] BangBang v0.3.29
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [76274a88] Bijectors v0.8.12
+  [082447d4] ChainRules v0.7.45
+  [d360d2e6] ChainRulesCore v0.9.24
+  [861a8166] Combinatorics v1.0.2
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [a33af91c] CompositionsBase v0.1.0
+  [88cd18e8] ConsoleProgressMonitor v0.1.2
+  [187b0558] ConstructionBase v1.0.0
+  [adafc99b] CpuId v0.2.2
+  [a8cc5b0e] Crayons v4.0.4
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [244e2a9f] DefineSingletons v0.1.0
+  [2b5f629d] DiffEqBase v6.53.4
+  [ebbdde9d] DiffEqBayes v2.22.0
+  [459566f4] DiffEqCallbacks v2.16.0
+  [c894b116] DiffEqJump v6.12.2
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [b4f34e82] Distances v0.9.2
+  [31c24e10] Distributions v0.23.12
+  [ced4e74d] DistributionsAD v0.6.15
+  [ffbed154] DocStringExtensions v0.8.3
+  [bbc10e6e] DynamicHMC v2.2.0
+  [366bfd00] DynamicPPL v0.10.5
+  [da5c29d0] EllipsisNotation v1.0.0
+  [cad2338a] EllipticalSliceSampling v0.4.0
+  [d4d017d3] ExponentialUtilities v1.8.0
+  [e2ba6199] ExprTools v0.1.3
+  [9aa1b823] FastClosures v0.3.2
+  [1a297f60] FillArrays v0.9.7
+  [6a86dc24] FiniteDiff v2.7.2
+  [53c48c17] FixedPointNumbers v0.8.4
+  [59287772] Formatting v0.4.2
+  [f6369f11] ForwardDiff v0.10.14
+  [069b7b12] FunctionWrappers v1.1.1
+  [01680d73] GenericSVD v0.3.0
+  [615f187c] IfElse v0.1.0
+  [d25df0c9] Inflate v0.1.2
+  [22cec73e] InitialValues v0.2.10
+  [505f98c9] InplaceOps v0.3.0
+  [8197267c] IntervalSets v0.5.2
+  [41ab1584] InvertedIndices v1.0.0
+  [c8e1da08] IterTools v1.3.0
+  [42fd0dbc] IterativeSolvers v0.9.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [b964fa9f] LaTeXStrings v1.2.0
+  [2ee39098] LabelledArrays v1.4.0
+  [23fbe1c1] Latexify v0.14.7
+  [1d6d02ad] LeftChildRightSiblingTrees v0.1.2
+  [6f1fad26] Libtask v0.5.1
+  [3ae2931a] Libtask_jll v0.4.2+0
+  [093fc24a] LightGraphs v1.3.4
+  [d3d80556] LineSearches v7.1.1
+  [6fdf6af0] LogDensityProblems v0.10.3
+  [e6f89c97] LoggingExtras v0.4.2
+  [bdcacae8] LoopVectorization v0.8.26
+  [c7f686f2] MCMCChains v4.4.0
+  [e80e1ace] MLJModelInterface v0.3.7
+  [1914dd2f] MacroTools v0.5.6
+  [dbb5928d] MappedArrays v0.3.0
+  [128add7d] MicroCollections v0.1.0
+  [e1d29d7a] Missings v0.4.4
+  [961ee093] ModelingToolkit v4.2.0
+  [46d2c3a1] MuladdMacro v0.2.2
+  [d41bc354] NLSolversBase v7.7.1
+  [2774e3e8] NLsolve v4.5.1
+  [872c559c] NNlib v0.7.11
+  [77ba4419] NaNMath v0.3.5
+  [86f7a689] NamedArrays v0.9.4
+  [c020b1a1] NaturalSort v1.0.0
+  [8913a72c] NonlinearSolve v0.3.4
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [429524aa] Optim v1.2.2
+  [bac558e1] OrderedCollections v1.3.2
+  [1dea7af3] OrdinaryDiffEq v5.49.1
+  [90014a1f] PDMats v0.10.1
+  [65888b18] ParameterizedFunctions v5.7.0
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.15
+  [e409e4f3] PoissonRandom v0.4.0
+  [85a6dd25] PositiveFactorizations v0.2.4
+  [08abe8d2] PrettyTables v0.10.1
+  [33c8b6b6] ProgressLogging v0.1.3
+  [92933f4c] ProgressMeter v1.4.1
+  [1fd47b50] QuadGK v2.4.1
+  [fb686558] RandomExtensions v0.4.3
+  [e6cf234a] RandomNumbers v1.4.0
+  [b3c3ace0] RangeArrays v0.3.2
+  [3cdcf5f2] RecipesBase v1.1.1
+  [731186ca] RecursiveArrayTools v2.10.0
+  [f2c3362d] RecursiveFactorization v0.1.6
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [7e49a35a] RuntimeGeneratedFunctions v0.4.2
+  [21efa798] SIMDPirates v0.8.26
+  [476501e8] SLEEFPirates v0.5.5
+  [1bc83da4] SafeTestsets v0.0.1
+  [321657f4] ScientificTypes v1.1.1
+  [efcf1570] Setfield v0.7.0
+  [699a6c99] SimpleTraits v0.9.3
+  [a2af1166] SortingAlgorithms v0.3.1
+  [47a9eef4] SparseDiffTools v1.12.0
+  [276daf66] SpecialFunctions v0.10.3
+  [171d559e] SplittablesBase v0.1.10
+  [90137ffa] StaticArrays v0.12.5
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [9672c7b4] SteadyStateDiffEq v1.6.0
+  [09ab397b] StructArrays v0.4.4
+  [d1185830] SymbolicUtils v0.6.3
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [5d786b92] TerminalLoggers v0.1.2
+  [a759f4b9] TimerOutputs v0.5.7
+  [9f7883ad] Tracker v0.2.14
+  [28d57a85] Transducers v0.4.54
+  [84d833dd] TransformVariables v0.3.10
+  [a2a6695c] TreeViews v0.3.0
+  [fce5fe82] Turing v0.15.8
+  [3a884ed6] UnPack v1.0.2
+  [1986cc42] Unitful v1.5.0
+  [3d5dd08c] VectorizationBase v0.12.33
+  [19fa3120] VertexSafeGraphs v0.1.2
+  [700de1a5] ZygoteRules v0.2.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: finding initial optimum
+┌ Warning: Instability detected. Aborting
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:348
+┌ Warning: Interrupted. Larger maxiters is needed.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:328
+┌ Warning: Interrupted. Larger maxiters is needed.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:328
+┌ Info: found initial stepsize
+└   ϵ = 0.000244
+┌ Info: Starting MCMC
+│   total_steps = 75
+└   tuning = "stepsize"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.054
+│   estimated_seconds_left = 4.0
+└   ϵ = 0.000244
+┌ Info: Starting MCMC
+│   total_steps = 25
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.037
+│   estimated_seconds_left = 0.89
+└   ϵ = 0.000253
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.06255315115347734, 0.1413916782034086, 0.13987240919131147]
+┌ Info: Starting MCMC
+│   total_steps = 50
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.053
+│   estimated_seconds_left = 2.6
+└   ϵ = 0.000242
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.06374351145123805, 0.24362076239882516, 0.20157315532538547]
+┌ Info: Starting MCMC
+│   total_steps = 100
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.019
+│   estimated_seconds_left = 1.9
+└   ϵ = 0.00392
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.055636170219257285, 0.2488101057539704, 0.28280113256211975]
+┌ Info: Starting MCMC
+│   total_steps = 200
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.018
+│   estimated_seconds_left = 3.7
+└   ϵ = 0.00424
+┌ Info: MCMC progress
+│   step = 101
+│   seconds_per_step = 0.032
+│   estimated_seconds_left = 3.2
+└   ϵ = 0.00254
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.04084658106661393, 0.26253640330192696, 0.2583328263970811]
+┌ Info: Starting MCMC
+│   total_steps = 400
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.019
+│   estimated_seconds_left = 7.5
+└   ϵ = 0.00463
+┌ Info: MCMC progress
+│   step = 101
+│   seconds_per_step = 0.028
+│   estimated_seconds_left = 8.5
+└   ϵ = 0.011
+┌ Info: MCMC progress
+│   step = 201
+│   seconds_per_step = 0.022
+│   estimated_seconds_left = 4.3
+└   ϵ = 0.00432
+┌ Info: MCMC progress
+│   step = 301
+│   seconds_per_step = 0.021
+│   estimated_seconds_left = 2.1
+└   ϵ = 0.00552
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.024526707046567623, 0.2193650336584823, 0.2531649253964102]
+┌ Info: Starting MCMC
+│   total_steps = 50
+└   tuning = "stepsize"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.019
+│   estimated_seconds_left = 0.92
+└   ϵ = 0.00638
+┌ Info: Starting MCMC
+└   total_steps = 1000
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.0058
+└   estimated_seconds_left = 5.8
+┌ Info: MCMC progress
+│   step = 101
+│   seconds_per_step = 0.02
+└   estimated_seconds_left = 18.0
+┌ Info: MCMC progress
+│   step = 201
+│   seconds_per_step = 0.024
+└   estimated_seconds_left = 19.0
+┌ Info: MCMC progress
+│   step = 301
+│   seconds_per_step = 0.023
+└   estimated_seconds_left = 16.0
+┌ Info: MCMC progress
+│   step = 401
+│   seconds_per_step = 0.022
+└   estimated_seconds_left = 13.0
+┌ Info: MCMC progress
+│   step = 501
+│   seconds_per_step = 0.02
+└   estimated_seconds_left = 9.9
+┌ Info: MCMC progress
+│   step = 601
+│   seconds_per_step = 0.019
+└   estimated_seconds_left = 7.6
+┌ Info: MCMC progress
+│   step = 701
+│   seconds_per_step = 0.021
+└   estimated_seconds_left = 6.4
+┌ Info: MCMC progress
+│   step = 801
+│   seconds_per_step = 0.021
+└   estimated_seconds_left = 4.2
+┌ Info: MCMC progress
+│   step = 901
+│   seconds_per_step = 0.021
+└   estimated_seconds_left = 2.1
+[ Info: finding initial optimum
+┌ Warning: Automatic dt set the starting dt as NaN, causing instability.
+└ @ OrdinaryDiffEq ~/.julia/packages/OrdinaryDiffEq/5GBYL/src/solve.jl:479
+┌ Warning: NaN dt detected. Likely a NaN value in the state, parameters, or derivative value caused this outcome.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:322
+┌ Warning: Instability detected. Aborting
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:348
+┌ Warning: dt <= dtmin. Aborting. There is either an error in your model specification or the true solution is unstable.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:342
+┌ Warning: Interrupted. Larger maxiters is needed.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:328
+┌ Info: found initial stepsize
+└   ϵ = 0.000366
+┌ Info: Starting MCMC
+│   total_steps = 75
+└   tuning = "stepsize"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.0041
+│   estimated_seconds_left = 0.31
+└   ϵ = 0.000366
+┌ Info: Starting MCMC
+│   total_steps = 25
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.04
+│   estimated_seconds_left = 0.96
+└   ϵ = 0.000207
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.014229923208376837, 0.014503199224306072, 0.014157844871595071, 0.150756340806283, 0.21040901294994835]
+┌ Info: Starting MCMC
+│   total_steps = 50
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.046
+│   estimated_seconds_left = 2.2
+└   ϵ = 0.000234
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.010224623178326295, 0.011206364040406668, 0.010024688004168364, 0.2743287986984737, 0.3279241347567356]
+┌ Info: Starting MCMC
+│   total_steps = 100
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.0013
+│   estimated_seconds_left = 0.12
+└   ϵ = 0.0134
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.007382884166734307, 0.008164445250992584, 0.007118940777889445, 0.2348088597169805, 0.24903957623972214]
+┌ Info: Starting MCMC
+│   total_steps = 200
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.005
+│   estimated_seconds_left = 0.99
+└   ϵ = 0.0255
+┌ Info: MCMC progress
+│   step = 101
+│   seconds_per_step = 0.0076
+│   estimated_seconds_left = 0.75
+└   ϵ = 0.0271
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.005572858922861034, 0.006576911148572824, 0.005069108408990125, 0.28142815692874273, 0.23783232980213945]
+┌ Info: Starting MCMC
+│   total_steps = 400
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.0025
+│   estimated_seconds_left = 0.99
+└   ϵ = 0.0386
+┌ Info: MCMC progress
+│   step = 101
+│   seconds_per_step = 0.0066
+│   estimated_seconds_left = 2.0
+└   ϵ = 0.0478
+┌ Info: MCMC progress
+│   step = 201
+│   seconds_per_step = 0.0046
+│   estimated_seconds_left = 0.92
+└   ϵ = 0.0588
+┌ Info: MCMC progress
+│   step = 301
+│   seconds_per_step = 0.0043
+│   estimated_seconds_left = 0.43
+└   ϵ = 0.0598
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.004181438592614077, 0.0059827558995737325, 0.003627155394979148, 0.2896511120621244, 0.2663326675207682]
+┌ Info: Starting MCMC
+│   total_steps = 50
+└   tuning = "stepsize"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.0025
+│   estimated_seconds_left = 0.12
+└   ϵ = 0.0503
+┌ Info: Starting MCMC
+└   total_steps = 1000
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.0091
+└   estimated_seconds_left = 9.1
+┌ Info: MCMC progress
+│   step = 101
+│   seconds_per_step = 0.0041
+└   estimated_seconds_left = 3.7
+┌ Info: MCMC progress
+│   step = 201
+│   seconds_per_step = 0.0041
+└   estimated_seconds_left = 3.2
+┌ Info: MCMC progress
+│   step = 301
+│   seconds_per_step = 0.0041
+└   estimated_seconds_left = 2.9
+┌ Info: MCMC progress
+│   step = 401
+│   seconds_per_step = 0.0039
+└   estimated_seconds_left = 2.3
+┌ Info: MCMC progress
+│   step = 501
+│   seconds_per_step = 0.0042
+└   estimated_seconds_left = 2.1
+┌ Info: MCMC progress
+│   step = 601
+│   seconds_per_step = 0.0044
+└   estimated_seconds_left = 1.7
+┌ Info: MCMC progress
+│   step = 701
+│   seconds_per_step = 0.0042
+└   estimated_seconds_left = 1.3
+┌ Info: MCMC progress
+│   step = 801
+│   seconds_per_step = 0.004
+└   estimated_seconds_left = 0.8
+┌ Info: MCMC progress
+│   step = 901
+│   seconds_per_step = 0.0041
+└   estimated_seconds_left = 0.4
+[ Info: finding initial optimum
+┌ Warning: Instability detected. Aborting
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:348
+┌ Warning: Interrupted. Larger maxiters is needed.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:328
+┌ Warning: Interrupted. Larger maxiters is needed.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:328
+┌ Info: found initial stepsize
+└   ϵ = 0.000244
+┌ Info: Starting MCMC
+│   total_steps = 75
+└   tuning = "stepsize"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.0032
+│   estimated_seconds_left = 0.24
+└   ϵ = 0.000244
+┌ Info: Starting MCMC
+│   total_steps = 25
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.041
+│   estimated_seconds_left = 0.99
+└   ϵ = 0.000244
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.05632836646751148, 0.16898396964660845]
+┌ Info: Starting MCMC
+│   total_steps = 50
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.04
+│   estimated_seconds_left = 2.0
+└   ϵ = 0.000252
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.03676643320278865, 0.16025922005373697]
+┌ Info: Starting MCMC
+│   total_steps = 100
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.022
+│   estimated_seconds_left = 2.2
+└   ϵ = 0.00455
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.03773304074522996, 0.23563974116378947]
+┌ Info: Starting MCMC
+│   total_steps = 200
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.013
+│   estimated_seconds_left = 2.5
+└   ϵ = 0.00512
+┌ Info: MCMC progress
+│   step = 101
+│   seconds_per_step = 0.017
+│   estimated_seconds_left = 1.7
+└   ϵ = 0.0101
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.03211480904948077, 0.2854368556754848]
+┌ Info: Starting MCMC
+│   total_steps = 400
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.01
+│   estimated_seconds_left = 4.1
+└   ϵ = 0.00502
+┌ Info: MCMC progress
+│   step = 101
+│   seconds_per_step = 0.0083
+│   estimated_seconds_left = 2.5
+└   ϵ = 0.00323
+┌ Info: MCMC progress
+│   step = 201
+│   seconds_per_step = 0.0082
+│   estimated_seconds_left = 1.6
+└   ϵ = 0.00915
+┌ Info: MCMC progress
+│   step = 301
+│   seconds_per_step = 0.0048
+│   estimated_seconds_left = 0.48
+└   ϵ = 0.00909
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.022528194620317785, 0.28405406726334753]
+┌ Info: Starting MCMC
+│   total_steps = 50
+└   tuning = "stepsize"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.00017
+│   estimated_seconds_left = 0.0085
+└   ϵ = 0.00917
+┌ Info: Starting MCMC
+└   total_steps = 1000
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.0077
+└   estimated_seconds_left = 7.7
+┌ Info: MCMC progress
+│   step = 101
+│   seconds_per_step = 0.0081
+└   estimated_seconds_left = 7.3
+┌ Info: MCMC progress
+│   step = 201
+│   seconds_per_step = 0.0081
+└   estimated_seconds_left = 6.4
+┌ Info: MCMC progress
+│   step = 301
+│   seconds_per_step = 0.0068
+└   estimated_seconds_left = 4.8
+┌ Info: MCMC progress
+│   step = 401
+│   seconds_per_step = 0.0075
+└   estimated_seconds_left = 4.5
+┌ Info: MCMC progress
+│   step = 501
+│   seconds_per_step = 0.0066
+└   estimated_seconds_left = 3.3
+┌ Info: MCMC progress
+│   step = 601
+│   seconds_per_step = 0.0068
+└   estimated_seconds_left = 2.7
+┌ Info: MCMC progress
+│   step = 701
+│   seconds_per_step = 0.0074
+└   estimated_seconds_left = 2.2
+┌ Info: MCMC progress
+│   step = 801
+│   seconds_per_step = 0.0061
+└   estimated_seconds_left = 1.2
+┌ Info: MCMC progress
+│   step = 901
+│   seconds_per_step = 0.0058
+└   estimated_seconds_left = 0.58
+[ Info: finding initial optimum
+┌ Warning: Automatic dt set the starting dt as NaN, causing instability.
+└ @ OrdinaryDiffEq ~/.julia/packages/OrdinaryDiffEq/5GBYL/src/solve.jl:479
+┌ Warning: NaN dt detected. Likely a NaN value in the state, parameters, or derivative value caused this outcome.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:322
+┌ Warning: Automatic dt set the starting dt as NaN, causing instability.
+└ @ OrdinaryDiffEq ~/.julia/packages/OrdinaryDiffEq/5GBYL/src/solve.jl:479
+┌ Warning: NaN dt detected. Likely a NaN value in the state, parameters, or derivative value caused this outcome.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:322
+┌ Warning: Automatic dt set the starting dt as NaN, causing instability.
+└ @ OrdinaryDiffEq ~/.julia/packages/OrdinaryDiffEq/5GBYL/src/solve.jl:479
+┌ Warning: NaN dt detected. Likely a NaN value in the state, parameters, or derivative value caused this outcome.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:322
+┌ Warning: Instability detected. Aborting
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:348
+┌ Warning: dt <= dtmin. Aborting. There is either an error in your model specification or the true solution is unstable.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:342
+┌ Warning: Interrupted. Larger maxiters is needed.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:328
+┌ Info: found initial stepsize
+└   ϵ = 0.000488
+┌ Info: Starting MCMC
+│   total_steps = 75
+└   tuning = "stepsize"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.0035
+│   estimated_seconds_left = 0.26
+└   ϵ = 0.000488
+┌ Info: Starting MCMC
+│   total_steps = 25
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.00013
+│   estimated_seconds_left = 0.003
+└   ϵ = 0.000211
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.014155630483694432, 0.014144516135471557, 0.1496648592595562]
+┌ Info: Starting MCMC
+│   total_steps = 50
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.017
+│   estimated_seconds_left = 0.83
+└   ϵ = 0.000114
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.01002095525120295, 0.010002940678039023, 0.1758518368298009]
+┌ Info: Starting MCMC
+│   total_steps = 100
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.0056
+│   estimated_seconds_left = 0.56
+└   ϵ = 0.0133
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.0071320043208910324, 0.007077282451509528, 0.177521987349119]
+┌ Info: Starting MCMC
+│   total_steps = 200
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.00017
+│   estimated_seconds_left = 0.035
+└   ϵ = 0.0183
+┌ Info: MCMC progress
+│   step = 101
+│   seconds_per_step = 0.0023
+│   estimated_seconds_left = 0.23
+└   ϵ = 0.0359
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.005115147324227749, 0.005010417621405333, 0.1577780750774341]
+┌ Info: Starting MCMC
+│   total_steps = 400
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.00017
+│   estimated_seconds_left = 0.069
+└   ϵ = 0.0264
+┌ Info: MCMC progress
+│   step = 101
+│   seconds_per_step = 0.002
+│   estimated_seconds_left = 0.6
+└   ϵ = 0.0673
+┌ Info: MCMC progress
+│   step = 201
+│   seconds_per_step = 0.0014
+│   estimated_seconds_left = 0.28
+└   ϵ = 0.0316
+┌ Info: MCMC progress
+│   step = 301
+│   seconds_per_step = 0.0012
+│   estimated_seconds_left = 0.12
+└   ϵ = 0.056
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.0036454946272149323, 0.003549646232638626, 0.23254971335881033]
+┌ Info: Starting MCMC
+│   total_steps = 50
+└   tuning = "stepsize"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.00037
+│   estimated_seconds_left = 0.018
+└   ϵ = 0.0472
+┌ Info: Starting MCMC
+└   total_steps = 1000
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.00018
+└   estimated_seconds_left = 0.18
+┌ Info: MCMC progress
+│   step = 101
+│   seconds_per_step = 0.001
+└   estimated_seconds_left = 0.91
+┌ Info: MCMC progress
+│   step = 201
+│   seconds_per_step = 0.0013
+└   estimated_seconds_left = 1.1
+┌ Info: MCMC progress
+│   step = 301
+│   seconds_per_step = 0.0011
+└   estimated_seconds_left = 0.75
+┌ Info: MCMC progress
+│   step = 401
+│   seconds_per_step = 0.0011
+└   estimated_seconds_left = 0.68
+┌ Info: MCMC progress
+│   step = 501
+│   seconds_per_step = 0.0013
+└   estimated_seconds_left = 0.63
+┌ Info: MCMC progress
+│   step = 601
+│   seconds_per_step = 0.001
+└   estimated_seconds_left = 0.42
+┌ Info: MCMC progress
+│   step = 701
+│   seconds_per_step = 0.0011
+└   estimated_seconds_left = 0.32
+┌ Info: MCMC progress
+│   step = 801
+│   seconds_per_step = 0.0013
+└   estimated_seconds_left = 0.26
+┌ Info: MCMC progress
+│   step = 901
+│   seconds_per_step = 0.0012
+└   estimated_seconds_left = 0.12
+┌ Warning: Assignment to `bayesian_result` in soft scope is ambiguous because a global variable by the same name exists: `bayesian_result` will be treated as a new local. Disambiguate by using `local bayesian_result` to suppress this warning or `global bayesian_result` to assign to the existing global variable.
+└ @ ~/.julia/packages/DiffEqBayes/d58SB/test/dynamicHMC.jl:66
+[ Info: finding initial optimum
+┌ Warning: Automatic dt set the starting dt as NaN, causing instability.
+└ @ OrdinaryDiffEq ~/.julia/packages/OrdinaryDiffEq/5GBYL/src/solve.jl:479
+┌ Warning: NaN dt detected. Likely a NaN value in the state, parameters, or derivative value caused this outcome.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:322
+┌ Warning: Automatic dt set the starting dt as NaN, causing instability.
+└ @ OrdinaryDiffEq ~/.julia/packages/OrdinaryDiffEq/5GBYL/src/solve.jl:479
+┌ Warning: NaN dt detected. Likely a NaN value in the state, parameters, or derivative value caused this outcome.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:322
+┌ Warning: Instability detected. Aborting
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:348
+┌ Warning: Interrupted. Larger maxiters is needed.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:328
+┌ Warning: Interrupted. Larger maxiters is needed.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:328
+┌ Info: found initial stepsize
+└   ϵ = 0.000122
+┌ Info: Starting MCMC
+│   total_steps = 75
+└   tuning = "stepsize"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.004
+│   estimated_seconds_left = 0.3
+└   ϵ = 0.000122
+┌ Info: Starting MCMC
+│   total_steps = 25
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.025
+│   estimated_seconds_left = 0.6
+└   ϵ = 2.34e-5
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.01420275849147352, 0.01426136348233813, 0.014274445296379626, 0.014270016160841788, 0.016024299010769343, 0.017396485606621444]
+┌ Info: Starting MCMC
+│   total_steps = 50
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.051
+│   estimated_seconds_left = 2.5
+└   ϵ = 1.33e-5
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.010028032904656176, 0.010087184653372574, 0.0100566504769013, 0.010063754330984985, 0.013361436003928544, 0.01504037474059685]
+┌ Info: Starting MCMC
+│   total_steps = 100
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.019
+│   estimated_seconds_left = 1.9
+└   ϵ = 0.000419
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.0071285873405455185, 0.007263063224507493, 0.007191079037900901, 0.007195216795356464, 0.059126237094825874, 0.0431112987585381]
+┌ Info: Starting MCMC
+│   total_steps = 200
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.051
+│   estimated_seconds_left = 10.0
+└   ϵ = 0.00235
+┌ Info: MCMC progress
+│   step = 101
+│   seconds_per_step = 0.05
+│   estimated_seconds_left = 4.9
+└   ϵ = 0.00207
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.005107564158370118, 0.005255959326873835, 0.005229993899274697, 0.0052302145035377804, 0.1819425362443523, 0.1652024637371727]
+┌ Info: Starting MCMC
+│   total_steps = 400
+└   tuning = "stepsize and LinearAlgebra.Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.044
+│   estimated_seconds_left = 17.0
+└   ϵ = 0.00107
+┌ Info: MCMC progress
+│   step = 101
+│   seconds_per_step = 0.033
+│   estimated_seconds_left = 10.0
+└   ϵ = 0.0178
+┌ Info: MCMC progress
+│   step = 201
+│   seconds_per_step = 0.057
+│   estimated_seconds_left = 11.0
+└   ϵ = 0.0155
+┌ Info: MCMC progress
+│   step = 301
+│   seconds_per_step = 0.046
+│   estimated_seconds_left = 4.6
+└   ϵ = 0.00721
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.0037186876806150296, 0.004083347974278537, 0.003919909573734223, 0.003917546343464478, 0.25957884223379696, 0.24387831672438295]
+┌ Info: Starting MCMC
+│   total_steps = 50
+└   tuning = "stepsize"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.022
+│   estimated_seconds_left = 1.1
+└   ϵ = 0.00578
+┌ Info: Starting MCMC
+└   total_steps = 1000
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.0086
+└   estimated_seconds_left = 8.6
+┌ Info: MCMC progress
+│   step = 101
+│   seconds_per_step = 0.017
+└   estimated_seconds_left = 15.0
+┌ Info: MCMC progress
+│   step = 201
+│   seconds_per_step = 0.018
+└   estimated_seconds_left = 14.0
+┌ Info: MCMC progress
+│   step = 301
+│   seconds_per_step = 0.018
+└   estimated_seconds_left = 13.0
+┌ Info: MCMC progress
+│   step = 401
+│   seconds_per_step = 0.023
+└   estimated_seconds_left = 14.0
+┌ Info: MCMC progress
+│   step = 501
+│   seconds_per_step = 0.021
+└   estimated_seconds_left = 10.0
+┌ Info: MCMC progress
+│   step = 601
+│   seconds_per_step = 0.018
+└   estimated_seconds_left = 7.3
+┌ Info: MCMC progress
+│   step = 701
+│   seconds_per_step = 0.018
+└   estimated_seconds_left = 5.3
+┌ Info: MCMC progress
+│   step = 801
+│   seconds_per_step = 0.019
+└   estimated_seconds_left = 3.8
+┌ Info: MCMC progress
+│   step = 901
+│   seconds_per_step = 0.019
+└   estimated_seconds_left = 1.9
+Test Summary: | Pass  Broken  Total
+DynamicHMC    |    8       2     10
+775.074088 seconds (1.04 G allocations: 58.447 GiB, 2.05% gc time)
+One parameter case
+┌ Warning: Interrupted. Larger maxiters is needed.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:328
+┌ Warning: The current proposal will be rejected due to numerical error(s).
+│   isfinite.((θ, r, ℓπ, ℓκ)) = (true, true, false, true)
+└ @ AdvancedHMC ~/.julia/packages/AdvancedHMC/MIxdK/src/hamiltonian.jl:47
+┌ Warning: Interrupted. Larger maxiters is needed.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:328
+┌ Warning: The current proposal will be rejected due to numerical error(s).
+│   isfinite.((θ, r, ℓπ, ℓκ)) = (true, true, false, true)
+└ @ AdvancedHMC ~/.julia/packages/AdvancedHMC/MIxdK/src/hamiltonian.jl:47
+┌ Info: Found initial step size
+└   ϵ = 0.0125
+┌ Warning: Interrupted. Larger maxiters is needed.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:328
+┌ Warning: The current proposal will be rejected due to numerical error(s).
+│   isfinite.((θ, r, ℓπ, ℓκ)) = (true, true, false, true)
+└ @ AdvancedHMC ~/.julia/packages/AdvancedHMC/MIxdK/src/hamiltonian.jl:47
+bayesian_result = MCMC chain (500×14×1 Array{Float64,3})
+┌ Warning: The current proposal will be rejected due to numerical error(s).
+│   isfinite.((θ, r, ℓπ, ℓκ)) = (true, true, true, false)
+└ @ AdvancedHMC ~/.julia/packages/AdvancedHMC/MIxdK/src/hamiltonian.jl:47
+┌ Info: Found initial step size
+└   ϵ = 0.0125
+┌ Info: Found initial step size
+└   ϵ = 0.0125
+┌ Warning: Interrupted. Larger maxiters is needed.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:328
+┌ Warning: The current proposal will be rejected due to numerical error(s).
+│   isfinite.((θ, r, ℓπ, ℓκ)) = (true, true, false, true)
+└ @ AdvancedHMC ~/.julia/packages/AdvancedHMC/MIxdK/src/hamiltonian.jl:47
+┌ Warning: Interrupted. Larger maxiters is needed.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:328
+┌ Warning: The current proposal will be rejected due to numerical error(s).
+│   isfinite.((θ, r, ℓπ, ℓκ)) = (true, true, false, true)
+└ @ AdvancedHMC ~/.julia/packages/AdvancedHMC/MIxdK/src/hamiltonian.jl:47
+┌ Info: Found initial step size
+└   ϵ = 0.010884571075439456
+┌ Warning: Interrupted. Larger maxiters is needed.
+└ @ DiffEqBase ~/.julia/packages/DiffEqBase/znIav/src/integrator_interface.jl:328
+┌ Warning: The current proposal will be rejected due to numerical error(s).
+│   isfinite.((θ, r, ℓπ, ℓκ)) = (true, true, false, true)
+└ @ AdvancedHMC ~/.julia/packages/AdvancedHMC/MIxdK/src/hamiltonian.jl:47
+┌ Info: Found initial step size
+└   ϵ = 0.0125
+┌ Info: Found initial step size
+└   ϵ = 0.0125
+Four parameter case
+┌ Info: Found initial step size
+└   ϵ = 0.025
+bayesian_result = MCMC chain (500×17×1 Array{Float64,3})
+Steady state problem
+┌ Info: Found initial step size
+└   ϵ = 0.8
+┌ Warning: The current proposal will be rejected due to numerical error(s).
+│   isfinite.((θ, r, ℓπ, ℓκ)) = (true, false, false, false)
+└ @ AdvancedHMC ~/.julia/packages/AdvancedHMC/MIxdK/src/hamiltonian.jl:47
+┌ Warning: The current proposal will be rejected due to numerical error(s).
+│   isfinite.((θ, r, ℓπ, ℓκ)) = (true, false, false, false)
+└ @ AdvancedHMC ~/.julia/packages/AdvancedHMC/MIxdK/src/hamiltonian.jl:47
+Test Summary: | Pass  Total
+Turing        |   12     12
+210.500372 seconds (364.46 M allocations: 18.404 GiB, 3.99% gc time)
+Preparing to run in serial on 1 processor
+Preparing to run in serial on 1 processor
+Preparing to run in serial on 1 processor
+Preparing to run in serial on 1 processor
+┌ Warning: `mean(A::AbstractArray{T}, w::AbstractWeights{W}, dims::Int) where {T <: Number, W <: Real}` is deprecated, use `mean(A, w, dims = dims)` instead.
+│   caller = top-level scope at abc.jl:27
+└ @ Core ~/.julia/packages/DiffEqBayes/d58SB/test/abc.jl:27
+Preparing to run in serial on 1 processor
+Preparing to run in serial on 1 processor
+Preparing to run in serial on 1 processor
+Preparing to run in serial on 1 processor
+┌ Warning: `mean(A::AbstractArray{T}, w::AbstractWeights{W}, dims::Int) where {T <: Number, W <: Real}` is deprecated, use `mean(A, w, dims = dims)` instead.
+│   caller = top-level scope at abc.jl:45
+└ @ Core ~/.julia/packages/DiffEqBayes/d58SB/test/abc.jl:45
+Preparing to run in serial on 1 processor
+Preparing to run in serial on 1 processor
+Preparing to run in serial on 1 processor
+Preparing to run in serial on 1 processor
+┌ Warning: `mean(A::AbstractArray{T}, w::AbstractWeights{W}, dims::Int) where {T <: Number, W <: Real}` is deprecated, use `mean(A, w, dims = dims)` instead.
+│   caller = top-level scope at abc.jl:88
+└ @ Core ~/.julia/packages/DiffEqBayes/d58SB/test/abc.jl:88
+Test Summary: | Pass  Total
+ABC           |   12     12
+ 24.401077 seconds (77.22 M allocations: 3.079 GiB, 3.40% gc time)
+1010.107105 seconds (1.48 G allocations: 79.943 GiB, 2.49% gc time)
+    Testing DiffEqBayes tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:25:51.968
+CPU usage: 1038.66s (995.41s user, 44.71s kernel)
+
+Network usage:
+- eth0: 22.437 MiB received, 795.553 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":204800,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":98304,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":204800,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":204800,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":98304,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":204800,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":465121280,"max_usage":2111361024,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":221696000,"inactive_file":135168,"inactive_anon":113135616,"total_pgfault":22690569,"total_cache":205873152,"total_rss_huge":0,"total_active_anon":313319424,"total_pgmajfault":0,"pgpgin":16358496,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":16254088,"hierarchical_memsw_limit":0,"cache":205873152,"active_file":1216512,"pgfault":22690569,"total_mapped_file":0,"total_pgpgout":16254088,"total_writeback":0,"rss":221696000,"unevictable":0,"total_inactive_anon":113135616,"total_pgpgin":16358496,"active_anon":313319424,"total_active_file":1216512},"limit":540965302272},"name":"/DiffEqBayes-2Qhw5JI9","networks":{"eth0":{"rx_bytes":23526949,"rx_packets":6077,"tx_packets":6642,"tx_bytes":814646,"tx_dropped":0,"rx_dropped":35,"tx_errors":0,"rx_errors":0}},"id":"c21638e3cbfec617be298eaf4971ab13b9ad4aa311c5a1f36f140a3a12cc88d9","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4097407954522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":995410000000,"usage_in_kernelmode":44710000000,"total_usage":1038656520280,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1038656484480,0,0,35800,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:25:51.970848717Z"}

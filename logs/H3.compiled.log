@@ -1,0 +1,1757 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T22:07:43.941
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T22:07:45.681
+#
+
+ Installing known registries into `~/.julia`
+##########################################################                81.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed H3 ────────────── v0.1.3
+  Installed CEnum ─────────── v0.2.0
+  Installed BinaryProvider ── v0.5.10
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [f62fece2] + H3 v0.1.3
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [b99e7846] + BinaryProvider v0.5.10
+  [fa961155] + CEnum v0.2.0
+  [f62fece2] + H3 v0.1.3
+  [9b87118b] + PackageCompiler v1.2.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building H3 → `~/.julia/packages/H3/5uyBP/deps/build.log`
+
+
+################################################################################
+# Compiling: 2021-01-11T22:07:59.089
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 149.690 MiB, compilation took 169 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T22:10:56.306
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/H3-HvZCFqLd.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:10:58.066
+#
+
+ Installing known registries into `~/.julia`
+###############################################                           66.1%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed H3 ───────────── v0.1.3
+  Installed BinaryProvider ─ v0.5.10
+  Installed CEnum ────────── v0.2.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [f62fece2] + H3 v0.1.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [b99e7846] + BinaryProvider v0.5.10
+  [fa961155] + CEnum v0.2.0
+  [f62fece2] + H3 v0.1.3
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [ea8e919c] + SHA
+   Building H3 → `~/.julia/packages/H3/5uyBP/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T22:11:10.617
+#
+
+    Testing H3
+Status `/tmp/jl_S9g6X9/Project.toml`
+  [b99e7846] BinaryProvider v0.5.10
+  [fa961155] CEnum v0.2.0
+  [f62fece2] H3 v0.1.3
+  [ba5e3d4b] Jive v0.2.13
+  [8f399da3] Libdl
+  [8dfed614] Test
+Status `/tmp/jl_S9g6X9/Manifest.toml`
+  [b99e7846] BinaryProvider v0.5.10
+  [fa961155] CEnum v0.2.0
+  [f62fece2] H3 v0.1.3
+  [ba5e3d4b] Jive v0.2.13
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [7b1f6079] FileWatching
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[4m1/15[24m h3/api/coordinate-systems.jl
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:6
+  Test threw exception
+  Expression: ijkToHex2d(CoordIJK(0, 0, 0)) == Vec2d(0.0, 0.0)
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] ijkToHex2d(::H3.Lib.CoordIJK) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:525
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:6
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:7
+  Test threw exception
+  Expression: ijkToHex2d(CoordIJK(0, 0, 1)) == Vec2d(-0.5, -0.8660254037844386)
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] ijkToHex2d(::H3.Lib.CoordIJK) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:525
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:7
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:8
+  Test threw exception
+  Expression: ijkToHex2d(CoordIJK(0, 1, 0)) == Vec2d(-0.5, 0.8660254037844386)
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] ijkToHex2d(::H3.Lib.CoordIJK) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:525
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:8
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:9
+  Test threw exception
+  Expression: ijkToHex2d(CoordIJK(0, 1, 1)) == Vec2d(-1.0, 0.0)
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] ijkToHex2d(::H3.Lib.CoordIJK) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:525
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:9
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:10
+  Test threw exception
+  Expression: ijkToHex2d(CoordIJK(1, 0, 0)) == Vec2d(1.0, 0.0)
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] ijkToHex2d(::H3.Lib.CoordIJK) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:525
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:10
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:11
+  Test threw exception
+  Expression: ijkToHex2d(CoordIJK(1, 0, 1)) == Vec2d(0.5, -0.8660254037844386)
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] ijkToHex2d(::H3.Lib.CoordIJK) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:525
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:11
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:12
+  Test threw exception
+  Expression: ijkToHex2d(CoordIJK(1, 1, 0)) == Vec2d(0.5, 0.8660254037844386)
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] ijkToHex2d(::H3.Lib.CoordIJK) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:525
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:12
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:16
+  Test threw exception
+  Expression: ijkToHex2d(ijk) == Vec2d(-78.5, -71.88010851410841)
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] ijkToHex2d(::H3.Lib.CoordIJK) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:525
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:16
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:17
+  Test threw exception
+  Expression: ijkToIj(ijk) == CoordIJ(-120, -83)
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] ijkToIj(::H3.Lib.CoordIJK) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:536
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:17
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:18
+  Test threw exception
+  Expression: ijToIjk(CoordIJ(-120, -83)) == ijk
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] ijToIjk(::H3.Lib.CoordIJ) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:514
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:18
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:19
+  Test threw exception
+  Expression: hex2dToCoordIJK(Vec2d(-78.5, -71.88010851410841)) == ijk
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] hex2dToCoordIJK(::H3.Lib.Vec2d) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:614
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:19
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:20
+  Test threw exception
+  Expression: localIjkToH3(h, ijk) == 0x0851c29c7fffffff
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] localIjkToH3(::UInt64, ::H3.Lib.CoordIJK) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:594
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:20
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:21
+  Test threw exception
+  Expression: h3ToLocalIjk(h, 0x0851c29c7fffffff) == ijk
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3ToLocalIjk(::UInt64, ::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:570
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:21
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:26
+  Test threw exception
+  Expression: h3ToFaceIjk(h) == faceijk
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3ToFaceIjk(::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:581
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:26
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:27
+  Test threw exception
+  Expression: faceIjkToH3(faceijk, 5) == h
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] faceIjkToH3(::H3.Lib.FaceIJK, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:604
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:27
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:29
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3ToGeo at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:9 [inlined]
+   [2] h3ToGeo(::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:60
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:29
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  in expression starting at /home/user/.julia/packages/H3/5uyBP/test/h3/api/coordinate-systems.jl:29
+  
+    [91m[1mError [22m[39m[91m16[39m
+    [32m[1mPass [22m[39m[32m2[39m  (4.18 seconds)
+[4m2/15[24m h3/api/hierarchy.jl
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/hierarchy.jl:9
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] geoToH3 at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:5 [inlined]
+   [2] geoToH3(::H3.Lib.GeoCoord, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:50
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/hierarchy.jl:9
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  in expression starting at /home/user/.julia/packages/H3/5uyBP/test/h3/api/hierarchy.jl:9
+  
+    [91m[1mError [22m[39m[91m1[39m
+[4m3/15[24m h3/api/indexing.jl
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/indexing.jl:7
+  Test threw exception
+  Expression: h3GetResolution(h) == 5
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3GetResolution at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:105 [inlined]
+   [2] h3GetResolution(::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:86
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/indexing.jl:7
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/indexing.jl:10
+  Test threw exception
+  Expression: geoToH3(location, 1) == 0x081283ffffffffff
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] geoToH3 at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:5 [inlined]
+   [2] geoToH3(::H3.Lib.GeoCoord, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:50
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/indexing.jl:10
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/indexing.jl:11
+  Test threw exception
+  Expression: geoToH3(location, 5) == h
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] geoToH3 at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:5 [inlined]
+   [2] geoToH3(::H3.Lib.GeoCoord, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:50
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/indexing.jl:11
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/indexing.jl:12
+  Test threw exception
+  Expression: geoToH3(location, 10) == 0x08a2834700007fff
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] geoToH3 at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:5 [inlined]
+   [2] geoToH3(::H3.Lib.GeoCoord, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:50
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/indexing.jl:12
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/indexing.jl:13
+  Test threw exception
+  Expression: h3ToGeo(h) == location
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3ToGeo at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:9 [inlined]
+   [2] h3ToGeo(::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:60
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/indexing.jl:13
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/indexing.jl:15
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3ToGeoBoundary at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:13 [inlined]
+   [2] h3ToGeoBoundary(::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:71
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/indexing.jl:15
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  in expression starting at /home/user/.julia/packages/H3/5uyBP/test/h3/api/indexing.jl:15
+  
+    [91m[1mError [22m[39m[91m6[39m
+[4m4/15[24m h3/api/inspection.jl
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/inspection.jl:6
+  Test threw exception
+  Expression: h3GetResolution(0x085283473fffffff) == 5
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3GetResolution at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:105 [inlined]
+   [2] h3GetResolution(::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:86
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/inspection.jl:6
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/inspection.jl:8
+  Test threw exception
+  Expression: h3GetBaseCell(0x085283473fffffff) == 20
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3GetBaseCell at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:109 [inlined]
+   [2] h3GetBaseCell(::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:95
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/inspection.jl:8
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/inspection.jl:10
+  Test threw exception
+  Expression: stringToH3("85283473fffffff") == 0x085283473fffffff
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] stringToH3(::String) at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:113
+   [2] stringToH3(::String) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:104
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/inspection.jl:10
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/inspection.jl:12
+  Test threw exception
+  Expression: h3ToString(0x085283473fffffff) == "85283473fffffff"
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3ToString at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:117 [inlined]
+   [2] h3ToString(::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:115
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/inspection.jl:12
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/inspection.jl:14
+  Test threw exception
+  Expression: h3IsValid(0x085283473fffffff)
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3IsValid at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:121 [inlined]
+   [2] h3IsValid(::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:125
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/inspection.jl:14
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/inspection.jl:15
+  Test threw exception
+  Expression: !(h3IsValid(0x05004295803a8800))
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3IsValid at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:121 [inlined]
+   [2] h3IsValid(::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:125
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/inspection.jl:15
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/inspection.jl:17
+  Test threw exception
+  Expression: h3IsResClassIII(0x085283473fffffff)
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3IsResClassIII at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:153 [inlined]
+   [2] h3IsResClassIII(::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:134
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/inspection.jl:17
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/inspection.jl:19
+  Test threw exception
+  Expression: !(h3IsPentagon(0x085283473fffffff))
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3IsPentagon at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:157 [inlined]
+   [2] h3IsPentagon(::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:143
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/inspection.jl:19
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+    [91m[1mError [22m[39m[91m8[39m
+[4m5/15[24m h3/api/misc.jl
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:6
+  Test threw exception
+  Expression: hexAreaKm2(1) == 607220.9782
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] hexAreaKm2 at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:69 [inlined]
+   [2] hexAreaKm2(::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:445
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:6
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:8
+  Test threw exception
+  Expression: hexAreaM2(1) == 6.07221e11
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] hexAreaM2 at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:73 [inlined]
+   [2] hexAreaM2(::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:454
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:8
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:10
+  Test threw exception
+  Expression: edgeLengthKm(0) == 1107.712591
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] edgeLengthKm at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:77 [inlined]
+   [2] edgeLengthKm(::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:463
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:10
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:11
+  Test threw exception
+  Expression: edgeLengthKm(1) == 418.6760055
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] edgeLengthKm at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:77 [inlined]
+   [2] edgeLengthKm(::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:463
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:11
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:13
+  Test threw exception
+  Expression: edgeLengthM(0) == 1.107712591e6
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] edgeLengthM at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:81 [inlined]
+   [2] edgeLengthM(::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:472
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:13
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:14
+  Test threw exception
+  Expression: edgeLengthM(1) == 418676.0055
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] edgeLengthM at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:81 [inlined]
+   [2] edgeLengthM(::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:472
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:14
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:16
+  Test threw exception
+  Expression: numHexagons(0) == 122
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] numHexagons at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:85 [inlined]
+   [2] numHexagons(::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:481
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:16
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:17
+  Test threw exception
+  Expression: numHexagons(1) == 842
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] numHexagons at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:85 [inlined]
+   [2] numHexagons(::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:481
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:17
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:18
+  Test threw exception
+  Expression: numHexagons(5) == 2016842
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] numHexagons at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:85 [inlined]
+   [2] numHexagons(::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:481
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:18
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:19
+  Test threw exception
+  Expression: numHexagons(15) == 569707381193162
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] numHexagons at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:85 [inlined]
+   [2] numHexagons(::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:481
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:19
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:21
+  Test threw exception
+  Expression: res0IndexCount() == 122
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] res0IndexCount at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:89 [inlined]
+   [2] res0IndexCount() at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:501
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:21
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:23
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] res0IndexCount at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:89 [inlined]
+   [2] getRes0Indexes() at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:490
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:23
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  in expression starting at /home/user/.julia/packages/H3/5uyBP/test/h3/api/misc.jl:23
+  
+    [91m[1mError [22m[39m[91m12[39m
+[4m6/15[24m h3/api/traversal.jl
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:6
+  Test threw exception
+  Expression: kRing(0x085283473fffffff, 0) == [0x085283473fffffff]
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] maxKringSize at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:17 [inlined]
+   [2] kRing(::UInt64, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:155
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:6
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:7
+  Test threw exception
+  Expression: kRing(0x085283473fffffff, 1) == [0x085283473fffffff, 0x085283447fffffff, 0x08528347bfffffff, 0x085283463fffffff, 0x085283477fffffff, 0x08528340ffffffff, 0x08528340bfffffff]
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] maxKringSize at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:17 [inlined]
+   [2] kRing(::UInt64, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:155
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:7
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:9
+  Test threw exception
+  Expression: maxKringSize(0) == 1
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] maxKringSize at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:17 [inlined]
+   [2] maxKringSize(::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:167
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:9
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:10
+  Test threw exception
+  Expression: maxKringSize(1) == 7
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] maxKringSize at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:17 [inlined]
+   [2] maxKringSize(::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:167
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:10
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:12
+  Test threw exception
+  Expression: kRingDistances(0x08928308280fffff, 0) == (out = [0x08928308280fffff], distances = [0])
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] maxKringSize at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:17 [inlined]
+   [2] kRingDistances(::UInt64, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:176
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:12
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:13
+  Test threw exception
+  Expression: kRingDistances(0x08928308280fffff, 1) == (out = [0x08928308280fffff, 0x08928308280bffff, 0x089283082873ffff, 0x089283082877ffff, 0x08928308283bffff, 0x089283082807ffff, 0x089283082803ffff], distances = [0, 1, 1, 1, 1, 1, 1])
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] maxKringSize at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:17 [inlined]
+   [2] kRingDistances(::UInt64, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:176
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:13
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:15
+  Test threw exception
+  Expression: hexRange(0x085283473fffffff, 0) == [0x085283473fffffff]
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] maxKringSize at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:17 [inlined]
+   [2] hexRange(::UInt64, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:189
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:15
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:16
+  Test threw exception
+  Expression: hexRange(0x085283473fffffff, 1) == [0x085283473fffffff, 0x085283447fffffff, 0x08528347bfffffff, 0x085283463fffffff, 0x085283477fffffff, 0x08528340ffffffff, 0x08528340bfffffff]
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] maxKringSize at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:17 [inlined]
+   [2] hexRange(::UInt64, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:189
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:16
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:18
+  Test threw exception
+  Expression: hexRangeDistances(0x08928308280fffff, 0) == (out = [0x08928308280fffff], distances = [0])
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] maxKringSize at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:17 [inlined]
+   [2] hexRangeDistances(::UInt64, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:201
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:18
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:19
+  Test threw exception
+  Expression: hexRangeDistances(0x08928308280fffff, 1) == (out = [0x08928308280fffff, 0x08928308280bffff, 0x089283082873ffff, 0x089283082877ffff, 0x08928308283bffff, 0x089283082807ffff, 0x089283082803ffff], distances = [0, 1, 1, 1, 1, 1, 1])
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] maxKringSize at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:17 [inlined]
+   [2] hexRangeDistances(::UInt64, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:201
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:19
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:21
+  Test threw exception
+  Expression: hexRanges([0x08928308280fffff], 0) == [0x08928308280fffff]
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] maxKringSize at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:17 [inlined]
+   [2] hexRanges(::Array{UInt64,1}, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:214
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:21
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:22
+  Test threw exception
+  Expression: hexRanges([0x08928308280fffff], 1) == [0x08928308280fffff, 0x08928308280bffff, 0x089283082873ffff, 0x089283082877ffff, 0x08928308283bffff, 0x089283082807ffff, 0x089283082803ffff]
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] maxKringSize at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:17 [inlined]
+   [2] hexRanges(::Array{UInt64,1}, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:214
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:22
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:24
+  Test threw exception
+  Expression: hexRing(0x08928308280fffff, 0) == []
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] hexRing at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:41 [inlined]
+   [2] hexRing(::UInt64, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:227
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:24
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:25
+  Test threw exception
+  Expression: hexRing(0x08928308280fffff, 1) == [0x089283082803ffff, 0x08928308280bffff, 0x089283082873ffff, 0x089283082877ffff, 0x08928308283bffff, 0x089283082807ffff]
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] hexRing at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:41 [inlined]
+   [2] hexRing(::UInt64, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:227
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:25
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:27
+  Test threw exception
+  Expression: h3Line(0x08928308280fffff, 0x08928308280fffff) == [0x08928308280fffff]
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3LineSize at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:205 [inlined]
+   [2] h3Line(::UInt64, ::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:237
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:27
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:28
+  Test threw exception
+  Expression: h3Line(0x08928308280fffff, 0x08928308283bffff) == [0x08928308280fffff, 0x08928308283bffff]
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3LineSize at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:205 [inlined]
+   [2] h3Line(::UInt64, ::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:237
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:28
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:30
+  Test threw exception
+  Expression: h3LineSize(0x08928308280fffff, 0x08928308280fffff) == 1
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3LineSize at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:205 [inlined]
+   [2] h3LineSize(::UInt64, ::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:249
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:30
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:31
+  Test threw exception
+  Expression: h3LineSize(0x08928308280fffff, 0x08928308283bffff) == 2
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3LineSize at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:205 [inlined]
+   [2] h3LineSize(::UInt64, ::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:249
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:31
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:33
+  Test threw exception
+  Expression: h3Distance(0x08928308280fffff, 0x08928308280fffff) == 0
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3Distance at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:201 [inlined]
+   [2] h3Distance(::UInt64, ::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:258
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:33
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:34
+  Test threw exception
+  Expression: h3Distance(0x08928308280fffff, 0x08928308283bffff) == 1
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3Distance at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:201 [inlined]
+   [2] h3Distance(::UInt64, ::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:258
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:34
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:36
+  Test threw exception
+  Expression: experimentalH3ToLocalIj(0x08828308281fffff, 0x0882830828dfffff) == CoordIJ(393, 337)
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] experimentalH3ToLocalIj at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:213 [inlined]
+   [2] experimentalH3ToLocalIj(::UInt64, ::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:268
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:36
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:37
+  Test threw exception
+  Expression: experimentalLocalIjToH3(0x08828308281fffff, CoordIJ(393, 337)) == 0x0882830828dfffff
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] experimentalLocalIjToH3 at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:217 [inlined]
+   [2] experimentalLocalIjToH3(::UInt64, ::H3.Lib.CoordIJ) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:279
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/traversal.jl:37
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  
+    [91m[1mError [22m[39m[91m22[39m
+[4m7/15[24m h3/api/unidirectional-edges.jl
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/api/unidirectional-edges.jl:7
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] geoToH3 at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:5 [inlined]
+   [2] geoToH3(::H3.Lib.GeoCoord, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/API.jl:50
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/api/unidirectional-edges.jl:7
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  in expression starting at /home/user/.julia/packages/H3/5uyBP/test/h3/api/unidirectional-edges.jl:7
+  
+    [91m[1mError [22m[39m[91m1[39m
+[4m8/15[24m h3/lib/hierarchy.jl
+[4m9/15[24m h3/lib/indexing.jl
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/indexing.jl:14
+  Test threw exception
+  Expression: Lib.geoToH3(location, 1) == 0x081283ffffffffff
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] geoToH3(::Base.RefValue{H3.Lib.GeoCoord}, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:5
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/indexing.jl:14
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/indexing.jl:15
+  Test threw exception
+  Expression: Lib.geoToH3(location, 10) == 0x08a2834700007fff
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] geoToH3(::Base.RefValue{H3.Lib.GeoCoord}, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:5
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/indexing.jl:15
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/indexing.jl:18
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3ToGeo(::UInt64, ::Base.RefValue{H3.Lib.GeoCoord}) at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:9
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/indexing.jl:18
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  in expression starting at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/indexing.jl:18
+  
+    [91m[1mError [22m[39m[91m3[39m
+[4m10/15[24m h3/lib/inspection.jl
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/inspection.jl:15
+  Test threw exception
+  Expression: Lib.h3GetResolution(0x085283473fffffff) == 5
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3GetResolution(::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:105
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/inspection.jl:15
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/inspection.jl:17
+  Test threw exception
+  Expression: Lib.h3GetBaseCell(0x085283473fffffff) == 20
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3GetBaseCell(::UInt64) at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:109
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/inspection.jl:17
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/inspection.jl:19
+  Test threw exception
+  Expression: Lib.stringToH3("85283473fffffff") == 0x085283473fffffff
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] stringToH3(::String) at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:113
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/inspection.jl:19
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/inspection.jl:24
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] h3ToString(::UInt64, ::Cstring, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:117
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/inspection.jl:24
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  in expression starting at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/inspection.jl:24
+  
+    [91m[1mError [22m[39m[91m4[39m
+[4m11/15[24m h3/lib/misc.jl
+[4m12/15[24m h3/lib/regions.jl
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/regions.jl:24
+  Test threw exception
+  Expression: Lib.maxPolyfillSize(Ref(sfGeoPolygon), 9) == 7057
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] maxPolyfillSize(::Base.RefValue{H3.Lib.GeoPolygon}, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:45
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/regions.jl:24
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/regions.jl:31
+  Test threw exception
+  Expression: Lib.maxPolyfillSize(Ref(holeGeoPolygon), 9) == 7057
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] maxPolyfillSize(::Base.RefValue{H3.Lib.GeoPolygon}, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:45
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/regions.jl:31
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/regions.jl:38
+  Test threw exception
+  Expression: Lib.maxPolyfillSize(Ref(emptyGeoPolygon), 9) == 1
+  could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] maxPolyfillSize(::Base.RefValue{H3.Lib.GeoPolygon}, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:45
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/regions.jl:38
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/regions.jl:49
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] maxPolyfillSize at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:45 [inlined]
+   [2] polyfill(::Base.RefValue{H3.Lib.GeoPolygon}, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/Lib.jl:224
+   [3] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/regions.jl:49
+   [4] include(::String) at ./client.jl:457
+   [5] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [6] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [7] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [8] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  in expression starting at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/regions.jl:49
+  
+    [91m[1mError [22m[39m[91m4[39m
+[4m13/15[24m h3/lib/traversal.jl
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/traversal.jl:21
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] maxKringSize(::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/gen/libh3_functions.jl:17
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/traversal.jl:21
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  in expression starting at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/traversal.jl:21
+  
+    [91m[1mError [22m[39m[91m1[39m
+[4m14/15[24m h3/lib/unidirectional-edges.jl
+[4m15/15[24m h3/lib/vertexgraph.jl
+: Error During Test at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/vertexgraph.jl:8
+  Got exception outside of a @test
+  LoadError: could not load library "/home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so"
+  /home/pkgeval/.julia/packages/H3/5uyBP/deps/usr/lib/libh3.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] initVertexGraph(::Base.RefValue{H3.Lib.VertexGraph}, ::Int64, ::Int64) at /home/pkgeval/.julia/packages/H3/5uyBP/src/Lib.jl:264
+   [2] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/vertexgraph.jl:8
+   [3] include(::String) at ./client.jl:457
+   [4] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [5] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [6] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+   [7] top-level scope at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  in expression starting at /home/user/.julia/packages/H3/5uyBP/test/h3/lib/vertexgraph.jl:8
+  
+    [91m[1mError [22m[39m[91m1[39m
+[31m❗️  [39mTest run finished with 79 errors.  (9.94 seconds)
+ERROR: LoadError: Test run finished with errors.
+in expression starting at /home/user/.julia/packages/H3/5uyBP/test/runtests.jl:2
+
+PkgEval failed: Package H3 errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:11:26.188
+CPU usage: 29.68s (26.36s user, 3.39s kernel)
+
+Network usage:
+- eth0: 2.763 MiB received, 55.183 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":23,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":23,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":23,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":23,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":94208,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":94208,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":94208,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":94208,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":307093504,"max_usage":630689792,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":196083712,"inactive_file":135168,"inactive_anon":79478784,"total_pgfault":675543,"total_cache":81485824,"total_rss_huge":0,"total_active_anon":198156288,"total_pgmajfault":0,"pgpgin":369006,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":135168,"pgpgout":301231,"hierarchical_memsw_limit":0,"cache":81485824,"active_file":135168,"pgfault":675543,"total_mapped_file":0,"total_pgpgout":301231,"total_writeback":135168,"rss":196083712,"unevictable":0,"total_inactive_anon":79478784,"total_pgpgin":369006,"active_anon":198156288,"total_active_file":135168},"limit":540965302272},"name":"/H3-77ILctAX","networks":{"eth0":{"rx_bytes":2897027,"rx_packets":596,"tx_packets":576,"tx_bytes":56507,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"4a54d358e54e8773e2455f1cbe56b1e79a4ae533b1ca47054ad18bfde64428e5","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6286839704522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":26360000000,"usage_in_kernelmode":3390000000,"total_usage":29681678981,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14170044,29667508937,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:11:26.191264846Z"}

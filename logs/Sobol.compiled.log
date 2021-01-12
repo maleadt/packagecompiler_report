@@ -1,0 +1,151 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T18:44:39.946
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T18:44:41.692
+#
+
+ Installing known registries into `~/.julia`
+####################################                                      51.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Sobol ─────────── v1.4.0
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [ed01d8cd] + Sobol v1.4.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [ed01d8cd] + Sobol v1.4.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T18:44:47.404
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 148.878 MiB, compilation took 162 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T18:47:36.348
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/Sobol-vKfQzFKs.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:47:38.134
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Sobol ─ v1.4.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [ed01d8cd] + Sobol v1.4.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [ed01d8cd] + Sobol v1.4.0
+  [8bb1440f] + DelimitedFiles
+  [a63ad114] + Mmap
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+
+
+################################################################################
+# Testing: 2021-01-11T18:47:42.974
+#
+
+    Testing Sobol
+Status `/tmp/jl_phSh08/Project.toml`
+  [ed01d8cd] Sobol v1.4.0
+  [8bb1440f] DelimitedFiles
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_phSh08/Manifest.toml`
+  [ed01d8cd] Sobol v1.4.0
+  [2a0f44e3] Base64
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Testing dimension 5
+Testing dimension 10
+Testing dimension 20
+Testing dimension 50
+Testing dimension 100
+Testing dimension 500
+Testing dimension 21201
+Test Summary:     | Pass  Total
+published results | 6208   6208
+Test Summary: | Pass  Total
+iterators     |    1      1
+Test Summary: | Pass  Total
+scaled        |    7      7
+Test Summary:  | Pass  Total
+skip exactly n |    1      1
+    Testing Sobol tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:47:47.591
+CPU usage: 11.23s (8.85s user, 2.43s kernel)
+
+Network usage:
+- eth0: 5.483 MiB received, 38.609 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":19,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":19,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":77824,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":77824,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":315797504,"max_usage":527695872,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":185970688,"inactive_file":135168,"inactive_anon":80289792,"total_pgfault":244200,"total_cache":100327424,"total_rss_huge":0,"total_active_anon":205860864,"total_pgmajfault":0,"pgpgin":198297,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":128427,"hierarchical_memsw_limit":0,"cache":100327424,"active_file":135168,"pgfault":244200,"total_mapped_file":0,"total_pgpgout":128427,"total_writeback":0,"rss":185970688,"unevictable":0,"total_inactive_anon":80289792,"total_pgpgin":198297,"active_anon":205860864,"total_active_file":135168},"limit":540965302272},"name":"/Sobol-huGlXXPU","networks":{"eth0":{"rx_bytes":5749066,"rx_packets":496,"tx_packets":457,"tx_bytes":39536,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"9113d3d11f01bb4349d06024d884d245fbdbad498114c5783967621b2eb63d96","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4725365804522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":8850000000,"usage_in_kernelmode":2430000000,"total_usage":11227448565,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11227448565,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:47:47.600651637Z"}

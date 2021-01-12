@@ -1,0 +1,154 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:51:16.182
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:51:17.943
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CORBITS ─ v1.0.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [19bfd68b] + CORBITS v1.0.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [19bfd68b] + CORBITS v1.0.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building CORBITS → `~/.julia/packages/CORBITS/2Gbsd/deps/build.log`
+┌ Error: Error building `CORBITS`: 
+│ g++ -c -fPIC -Wall -O2 -I lib -I data -I stat lib/math_misc.cpp -o lib/math_misc.o
+│ g++ -c -fPIC -Wall -O2 -I lib -I data -I stat lib/point3D.cpp -o lib/point3D.o
+│ g++ -c -fPIC -Wall -O2 -I lib -I data -I stat lib/transit.cpp -o lib/transit.o
+│ g++ -c -fPIC -Wall -O2 -I lib -I data -I stat lib/occultations.cpp -o lib/occultations.o
+│ g++ -c -fPIC -Wall -O2 -I lib -I data -I stat lib/c_interface.cpp -o lib/c_interface.o
+│ g++ -c -fPIC -Wall -O2 -I lib -I data -I stat data/koi_input.cpp -o data/koi_input.o
+│ g++ -c -fPIC -Wall -O2 -I lib -I data -I stat stat/stat_dist.cpp -o stat/stat_dist.o
+│ g++ -shared -olibcorbits.so lib/math_misc.o lib/point3D.o lib/transit.o lib/occultations.o lib/c_interface.o data/koi_input.o stat/stat_dist.o
+│ g++ -c -fPIC -Wall -O2 -I lib -I data -I stat base/corbits.cpp -o base/corbits.o
+│ g++ -Wall -O2 -I lib -I data -I stat lib/math_misc.o lib/point3D.o lib/transit.o lib/occultations.o lib/c_interface.o data/koi_input.o stat/stat_dist.o base/corbits.o -o base/corbits
+│ g++ -c -fPIC -Wall -O2 -I lib -I data -I stat examples/kepler-11/Kepler-11.cpp -o examples/kepler-11/Kepler-11.o
+│ examples/kepler-11/Kepler-11.cpp: In function 'void read_input()':
+│ examples/kepler-11/Kepler-11.cpp:27:12: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+│    27 |     fscanf (fin, "%d", &n_planets);
+│       |     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+│ examples/kepler-11/Kepler-11.cpp:32:16: warning: ignoring return value of 'int fscanf(FILE*, const char*, ...)', declared with attribute warn_unused_result [-Wunused-result]
+│    32 |         fscanf (fin, "%s %d", s, &use[i]);
+│       |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+│ g++ -Wall -O2 -I lib -I data -I stat lib/math_misc.o lib/point3D.o lib/transit.o lib/occultations.o lib/c_interface.o data/koi_input.o stat/stat_dist.o examples/kepler-11/Kepler-11.o -o examples/kepler-11/kepler-11
+│ g++ -c -fPIC -Wall -O2 -I lib -I data -I stat examples/period-dist/period_dist.cpp -o examples/period-dist/period_dist.o
+│ examples/period-dist/period_dist.cpp: In function 'void print_results()':
+│ examples/period-dist/period_dist.cpp:312:49: warning: format '%d' expects argument of type 'int', but argument 3 has type 'std::vector<pdf>::size_type' {aka 'long unsigned int'} [-Wformat=]
+│   312 |     fprintf (stderr, "Number of pairs of KOIs: %d\n", PDF.size());
+│       |                                                ~^     ~~~~~~~~~~
+│       |                                                 |             |
+│       |                                                 int           std::vector<pdf>::size_type {aka long unsigned int}
+│       |                                                %ld
+│ g++ -Wall -O2 -I lib -I data -I stat lib/math_misc.o lib/point3D.o lib/transit.o lib/occultations.o lib/c_interface.o data/koi_input.o stat/stat_dist.o examples/period-dist/period_dist.o -o examples/period-dist/period-dist
+│ g++ -c -fPIC -Wall -O2 -I lib -I data -I stat examples/mhs-dist/mhs_dist.cpp -o examples/mhs-dist/mhs_dist.o
+│ examples/mhs-dist/mhs_dist.cpp: In function 'void print_results()':
+│ examples/mhs-dist/mhs_dist.cpp:256:47: warning: format '%d' expects argument of type 'int', but argument 3 has type 'std::vector<pdf>::size_type' {aka 'long unsigned int'} [-Wformat=]
+│   256 |   fprintf (stderr, "Number of pairs of KOIs: %d\n", PDF.size());
+│       |                                              ~^     ~~~~~~~~~~
+│       |                                               |             |
+│       |                                               int           std::vector<pdf>::size_type {aka long unsigned int}
+│       |                                              %ld
+│ g++ -Wall -O2 -I lib -I data -I stat lib/math_misc.o lib/point3D.o lib/transit.o lib/occultations.o lib/c_interface.o data/koi_input.o stat/stat_dist.o examples/mhs-dist/mhs_dist.o -o examples/mhs-dist/mhs-dist
+│ g++ -c -fPIC -Wall -O2 -I lib -I data -I stat examples/solar-system/solsys.cpp -o examples/solar-system/solsys.o
+│ g++ -Wall -O2 -I lib -I data -I stat lib/math_misc.o lib/point3D.o lib/transit.o lib/occultations.o lib/c_interface.o data/koi_input.o stat/stat_dist.o examples/solar-system/solsys.o -o examples/solar-system/solar-system
+│ g++ -c -fPIC -Wall -O2 -I lib -I data -I stat examples/case-trans/case_trans.cpp -o examples/case-trans/case_trans.o
+│ g++ -Wall -O2 -I lib -I data -I stat lib/math_misc.o lib/point3D.o lib/transit.o lib/occultations.o lib/c_interface.o data/koi_input.o stat/stat_dist.o examples/case-trans/case_trans.o -o examples/case-trans/case-trans
+│ g++ -c -fPIC -Wall -O2 -I lib -I data -I stat examples/koi-table/koi_table.cpp -o examples/koi-table/koi_table.o
+│ g++ -Wall -O2 -I lib -I data -I stat lib/math_misc.o lib/point3D.o lib/transit.o lib/occultations.o lib/c_interface.o data/koi_input.o stat/stat_dist.o examples/koi-table/koi_table.o -o examples/koi-table/koi-table
+│ data/grab.sh
+│ sed: can't read data/koi-data.txt: No such file or directory
+│ make: *** [Makefile:203: data/koi-data-edit.txt] Error 2
+│ ERROR: LoadError: failed process: Process(`make`, ProcessExited(2)) [2]
+│ 
+│ Stacktrace:
+│  [1] pipeline_error at ./process.jl:525 [inlined]
+│  [2] run(::Cmd; wait::Bool) at ./process.jl:440
+│  [3] run(::Cmd) at ./process.jl:438
+│  [4] top-level scope at /home/pkgeval/.julia/packages/CORBITS/2Gbsd/deps/build.jl:2
+│  [5] include(::String) at ./client.jl:457
+│  [6] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/CORBITS/2Gbsd/deps/build.jl:2
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+
+
+################################################################################
+# Testing: 2021-01-11T19:51:26.549
+#
+
+    Testing CORBITS
+Status `/tmp/jl_bKfQFT/Project.toml`
+  [19bfd68b] CORBITS v1.0.1
+  [8f399da3] Libdl
+  [44cfe95a] Pkg
+  [8dfed614] Test
+Status `/tmp/jl_bKfQFT/Manifest.toml`
+  [19bfd68b] CORBITS v1.0.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+    Testing CORBITS tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:51:29.066
+CPU usage: 12.94s (10.04s user, 2.95s kernel)
+
+Network usage:
+- eth0: 2.565 MiB received, 30.554 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":8,"op":"Read","minor":0},{"major":259,"value":42,"op":"Write","minor":0},{"major":259,"value":27,"op":"Sync","minor":0},{"major":259,"value":23,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":50,"op":"Total","minor":0},{"major":253,"value":8,"op":"Read","minor":2},{"major":253,"value":42,"op":"Write","minor":2},{"major":253,"value":27,"op":"Sync","minor":2},{"major":253,"value":23,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":50,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":294912,"op":"Read","minor":0},{"major":259,"value":507904,"op":"Write","minor":0},{"major":259,"value":401408,"op":"Sync","minor":0},{"major":259,"value":401408,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":802816,"op":"Total","minor":0},{"major":253,"value":294912,"op":"Read","minor":2},{"major":253,"value":507904,"op":"Write","minor":2},{"major":253,"value":401408,"op":"Sync","minor":2},{"major":253,"value":401408,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":802816,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":328130560,"max_usage":581844992,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":218292224,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":410487,"total_cache":80490496,"total_rss_huge":0,"total_active_anon":219648000,"total_pgmajfault":0,"pgpgin":351120,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":135168,"pgpgout":278190,"hierarchical_memsw_limit":0,"cache":80490496,"active_file":270336,"pgfault":410487,"total_mapped_file":0,"total_pgpgout":278190,"total_writeback":135168,"rss":218292224,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":351120,"active_anon":219648000,"total_active_file":270336},"limit":540965302272},"name":"/CORBITS-PJY1ku8p","networks":{"eth0":{"rx_bytes":2689756,"rx_packets":339,"tx_packets":332,"tx_bytes":31287,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"6ee22c8eb016fad184922a03edc083aaa17fda0e16104d0ef4892e0c61da4c2e","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5213936544522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":10040000000,"usage_in_kernelmode":2950000000,"total_usage":12943723425,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12943690885,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5820,0,26720,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:51:29.069170265Z"}

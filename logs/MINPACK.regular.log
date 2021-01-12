@@ -1,0 +1,172 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T16:03:04.354
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:03:06.021
+#
+
+ Installing known registries into `~/.julia`
+###########                                                               15.7%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MINPACK ─── v1.1.1
+  Installed Distances ─ v0.9.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [4854310b] + MINPACK v1.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [b4f34e82] + Distances v0.9.2
+  [4854310b] + MINPACK v1.1.1
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4ec0a83e] + Unicode
+   Building MINPACK → `~/.julia/packages/MINPACK/8wsGn/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T16:03:11.579
+#
+
+    Testing MINPACK
+Status `/tmp/jl_8LomzT/Project.toml`
+  [b4f34e82] Distances v0.9.2
+  [4854310b] MINPACK v1.1.1
+  [37e2e46d] LinearAlgebra
+  [de0858da] Printf
+  [8dfed614] Test
+Status `/tmp/jl_8LomzT/Manifest.toml`
+  [b4f34e82] Distances v0.9.2
+  [4854310b] MINPACK v1.1.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Function                                          Dim    NFEV    NJEV   Final inf-norm     total time
+--------------------------------------------------------------------------------------
+Rosenbrock-hybr                                     2      16       3     0.000000e+00   4.196108e-01
+Rosenbrock-hybr-no_g                                2      16       3     0.000000e+00   2.000105e-01
+Rosenbrock-lm                                       2      21      16     0.000000e+00   1.247242e-01
+Rosenbrock-lm-no_g                                  2      22      16     0.000000e+00   9.643596e-02
+Powell singular-hybr                                4     105       6     6.038676e-35   1.370602e-01
+Powell singular-hybr-no_g                           4      96       3     2.278953e-30   6.943811e-02
+Powell singular-lm                                  4      59      58     1.540744e-33   1.461160e-01
+Powell singular-lm-no_g                             4     235     192     1.080555e-23   9.329515e-02
+Powell badly scaled-hybr                            2     169       6     1.712673e-09   1.392283e-01
+Powell badly scaled-hybr-no_g                       2     169       6     1.712421e-09   7.132686e-02
+Powell badly scaled-lm                              2      19      17     1.110223e-16   1.293333e-01
+Powell badly scaled-lm-no_g                         2      19      17     0.000000e+00   9.350811e-02
+Wood-hybr                                           4      86       2     3.364109e-11   2.055505e-01
+Wood-hybr-no_g                                      4      86       2     3.373679e-11   7.115675e-02
+Wood-lm                                             4      32      27     1.920686e-14   1.295782e-01
+Wood-lm-no_g                                        4      32      27     1.310063e-14   9.430980e-02
+Helical Valley-hybr                                 3      18       3     2.565742e-13   1.431833e-01
+Helical Valley-hybr-no_g                            3      18       3     2.565742e-13   7.154191e-02
+Helical Valley-lm                                   3      11       8     9.936523e-17   1.302617e-01
+Helical Valley-lm-no_g                              3      11       8     8.661763e-17   1.426054e-01
+Watson6-hybr                                        6      60       6     3.118270e-13   2.262373e-01
+Watson6-hybr-no_g                                   6      60       6     2.739822e-13   7.333096e-02
+Watson6-lm                                          6      45      37     1.582588e-14   1.314864e-01
+Watson6-lm-no_g                                     6      45      37     6.992670e-15   9.567272e-02
+Watson9-hybr                                        9      92       4     3.728515e-12   7.150310e-04
+Watson9-hybr-no_g                                   9      95       8     1.715425e-15   7.784310e-04
+Watson9-lm                                          9      64      50     2.631359e-14   1.374194e-03
+Chebyquad-hybr                                      5      10       1     5.969114e-13   1.703419e-01
+Chebyquad-hybr-no_g                                 5      12       1     3.567124e-12   7.068792e-02
+Chebyquad-lm                                        5       8       6     1.665335e-16   1.292775e-01
+Chebyquad-lm-no_g                                   5       8       6     1.249001e-16   9.433606e-02
+Chebyquad-hybr                                      6      13       2     1.317492e-11   8.064900e-05
+Chebyquad-hybr-no_g                                 6      13       2     6.447310e-10   8.030900e-05
+Chebyquad-lm                                        6      11       7     2.324529e-16   6.729900e-05
+Chebyquad-lm-no_g                                   6      11       7     1.249001e-16   6.925900e-05
+Chebyquad-hybr                                      7      12       1     4.102544e-12   6.059000e-05
+Chebyquad-hybr-no_g                                 7      14       1     2.108302e-10   6.854000e-05
+Chebyquad-lm                                        7       9       7     1.665335e-16   6.773900e-05
+Chebyquad-lm-no_g                                   7       9       7     2.696256e-16   7.674900e-05
+Chebyquad-hybr                                      9      23       2     4.022407e-10   1.505990e-04
+Chebyquad-hybr-no_g                                 9      23       2     3.988115e-09   1.525890e-04
+Chebyquad-lm                                        9      12       9     2.343804e-16   1.476280e-04
+Chebyquad-lm-no_g                                   9      12       9     1.727014e-16   1.666480e-04
+Brown almost-linear10-hybr                         10      11       2     4.996004e-15   3.387157e-01
+Brown almost-linear10-hybr-no_g                    10      11       2     5.995204e-15   6.847683e-02
+Brown almost-linear10-lm                           10      15      13     5.551115e-16   1.338672e-01
+Brown almost-linear10-lm-no_g                      10       7       5     1.000000e+00   9.243056e-02
+Brown almost-linear30-hybr                         30      12       2     3.474998e-14   9.179490e-04
+Brown almost-linear30-hybr-no_g                    30      24       3     2.953193e-14   1.728820e-03
+Brown almost-linear30-lm                           30      19      14     1.654232e-14   3.166163e-03
+Brown almost-linear30-lm-no_g                      30      11      10     1.354472e-14   1.650881e-03
+Brown almost-linear40-hybr                         40      12       2     1.576517e-14   1.831009e-03
+Brown almost-linear40-hybr-no_g                    40      30       3     2.353673e-14   3.841276e-03
+Brown almost-linear40-lm                           40      19      14     2.409184e-14   6.711633e-03
+Brown almost-linear40-lm-no_g                      40      11      10     7.327472e-15   3.545339e-03
+Discrete boundary value-hybr                       10       6       1     1.582068e-15   1.548127e-01
+Discrete boundary value-hybr-no_g                  10       6       1     1.582068e-15   7.157729e-02
+Discrete boundary value-lm                         10       5       4     2.428613e-17   1.278881e-01
+Discrete boundary value-lm-no_g                    10       5       4     3.122502e-17   9.264211e-02
+Discrete integral equation-hybr                     1       6       1     2.775558e-17   1.642725e-01
+Discrete integral equation-hybr-no_g                1       6       1     2.775558e-17   7.502069e-02
+Discrete integral equation-lm                       1       5       4     0.000000e+00   1.300132e-01
+Discrete integral equation-lm-no_g                  1       5       4     2.775558e-17   9.194230e-02
+Discrete integral equation-hybr                    10       6       1     3.164136e-15   9.334900e-05
+Discrete integral equation-hybr-no_g               10       6       1     3.219647e-15   6.743000e-05
+Discrete integral equation-lm                      10       5       4     2.775558e-17   7.004000e-05
+Discrete integral equation-lm-no_g                 10       5       4     5.551115e-17   7.316900e-05
+Trigonometric-lm                                   10      28      16     4.295374e-03   3.101557e-01
+Trigonometric-lm-no_g                              10      29      16     4.295461e-03   9.591714e-02
+Variably dimensioned-hybr                          10      22       1     0.000000e+00   1.627914e-01
+Variably dimensioned-hybr-no_g                     10      22       1     2.282952e-12   7.264023e-02
+Variably dimensioned-lm                            10      16      15     0.000000e+00   1.317057e-01
+Variably dimensioned-lm-no_g                       10      16      15     0.000000e+00   9.635308e-02
+Broyden tridiagonal-hybr                           10      12       1     2.377046e-10   1.607962e-01
+Broyden tridiagonal-hybr-no_g                      10      12       1     2.377046e-10   7.113368e-02
+Broyden tridiagonal-lm                             10       6       5     4.440892e-16   1.268518e-01
+Broyden tridiagonal-lm-no_g                        10       6       5     6.661338e-16   9.391689e-02
+Broyden banded-hybr                                10      20       1     1.406736e-09   1.613210e-01
+Broyden banded-hybr-no_g                           10      20       1     1.406737e-09   7.155894e-02
+Broyden banded-lm                                  10       7       6     4.440892e-16   1.365274e-01
+Broyden banded-lm-no_g                             10       7       6     6.661338e-16   9.479108e-02
+Test Summary: | Pass  Total
+minpack       |   81     81
+    Testing MINPACK tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T16:03:24.884
+CPU usage: 20.27s (17.50s user, 2.80s kernel)
+
+Network usage:
+- eth0: 2.705 MiB received, 38.844 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":143360,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":143360,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":143360,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":143360,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":298110976,"max_usage":686292992,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":177520640,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":449724,"total_cache":89591808,"total_rss_huge":0,"total_active_anon":178692096,"total_pgmajfault":0,"pgpgin":276540,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":211289,"hierarchical_memsw_limit":0,"cache":89591808,"active_file":9732096,"pgfault":449724,"total_mapped_file":0,"total_pgpgout":211289,"total_writeback":0,"rss":177520640,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":276540,"active_anon":178692096,"total_active_file":9732096},"limit":540965302272},"name":"/MINPACK-4y9aZ8PI","networks":{"eth0":{"rx_bytes":2836060,"rx_packets":435,"tx_packets":406,"tx_bytes":39776,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"f273ff6d49f971d52d3496481424c0b6b4620eb485c2a5e09fa3c148d5415dc3","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3465072344522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":17500000000,"usage_in_kernelmode":2800000000,"total_usage":20267744412,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20267744412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T16:03:24.887108759Z"}

@@ -1,0 +1,91 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:51:56.401
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:51:58.193
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Ccluster ──────── v0.1.1
+  Installed BinaryProvider ── v0.5.10
+  Installed AbstractAlgebra ─ v0.8.1
+  Installed Nemo ──────────── v0.16.4
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [8fd415a7] + Ccluster v0.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [c3fe647b] + AbstractAlgebra v0.8.1
+  [b99e7846] + BinaryProvider v0.5.10
+  [8fd415a7] + Ccluster v0.1.1
+  [2edaba10] + Nemo v0.16.4
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [8dfed614] + Test
+  [4ec0a83e] + Unicode
+   Building Nemo ────→ `~/.julia/packages/Nemo/xJHVO/deps/build.log`
+   Building Ccluster → `~/.julia/packages/Ccluster/fpFRK/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T21:52:40.922
+#
+
+
+PkgEval failed: Package Ccluster did not provide a `test/runtests.jl` file
+Stacktrace:
+ [1] pkgerror(::String, ::Vararg{String,N} where N) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1536
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:52:43.23
+CPU usage: 38.79s (33.06s user, 5.82s kernel)
+
+Network usage:
+- eth0: 21.576 MiB received, 406.782 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":220,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":201,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":220,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":100,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":81,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":100,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":20152320,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20045824,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":20152320,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":20152320,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20045824,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":20152320,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":416673792,"max_usage":684404736,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":202203136,"inactive_file":135168,"inactive_anon":120975360,"total_pgfault":1281588,"total_cache":182788096,"total_rss_huge":0,"total_active_anon":263847936,"total_pgmajfault":0,"pgpgin":1031481,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":0,"pgpgout":937524,"hierarchical_memsw_limit":0,"cache":182788096,"active_file":135168,"pgfault":1281588,"total_mapped_file":0,"total_pgpgout":937524,"total_writeback":0,"rss":202203136,"unevictable":0,"total_inactive_anon":120975360,"total_pgpgin":1031481,"active_anon":263847936,"total_active_file":135168},"limit":540965302272},"name":"/Ccluster-bgxnLeNI","networks":{"eth0":{"rx_bytes":22624368,"rx_packets":10683,"tx_packets":6741,"tx_bytes":416545,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"476d1133464c7f5fcaf77801265cd92cc571ed5f227e4e24f82502235c1ed74b","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6143323714522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":33060000000,"usage_in_kernelmode":5820000000,"total_usage":38785049482,"percpu_usage":[38781326610,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,568391,2528461,626020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:52:43.233809593Z"}

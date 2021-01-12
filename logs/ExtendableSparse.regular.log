@@ -1,0 +1,158 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:25:50.577
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:25:52.363
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ExtendableSparse ──── v0.3.5
+  Installed DocStringExtensions ─ v0.8.3
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [95c220a8] + ExtendableSparse v0.3.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [ffbed154] + DocStringExtensions v0.8.3
+  [95c220a8] + ExtendableSparse v0.3.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T23:25:55.951
+#
+
+    Testing ExtendableSparse
+Status `/tmp/jl_9N4wwQ/Project.toml`
+  [ffbed154] DocStringExtensions v0.8.3
+  [95c220a8] ExtendableSparse v0.3.5
+  [37e2e46d] LinearAlgebra
+  [de0858da] Printf
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_9N4wwQ/Manifest.toml`
+  [ffbed154] DocStringExtensions v0.8.3
+  [95c220a8] ExtendableSparse v0.3.5
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+test_constructors()
+test_timing( m=10000, n=10000, nnz=50000)
+SparseMatrixCSC:
+  0.352183 seconds (30 allocations: 2.001 MiB)
+SparseMatrixLNK:
+  0.005144 seconds (9 allocations: 1.602 MiB)
+ExtendableSparseMatrix:
+  0.014067 seconds (23 allocations: 2.671 MiB, 43.03% gc time)
+test_assembly( m=10, n=10, xnnz=5, nsplice=1)
+test_assembly( m=100, n=100, xnnz=500, nsplice=2)
+test_assembly( m=1000, n=1000, xnnz=5000, nsplice=3)
+test_assembly( m=20, n=10, xnnz=5, nsplice=1)
+test_assembly( m=200, n=100, xnnz=500, nsplice=2)
+test_assembly( m=2000, n=1000, xnnz=5000, nsplice=3)
+test_assembly( m=10, n=20, xnnz=5, nsplice=1)
+test_assembly( m=100, n=200, xnnz=500, nsplice=2)
+test_assembly( m=1000, n=2000, xnnz=5000, nsplice=3)
+test_assembly( m=7881, n=800, xnnz=3636, nsplice=3)
+test_assembly( m=4996, n=8021, xnnz=87, nsplice=2)
+test_assembly( m=1076, n=9067, xnnz=8610, nsplice=1)
+test_assembly( m=8991, n=9648, xnnz=4563, nsplice=1)
+test_assembly( m=3801, n=5692, xnnz=1879, nsplice=5)
+test_assembly( m=7056, n=6609, xnnz=1080, nsplice=2)
+test_assembly( m=5772, n=6410, xnnz=3001, nsplice=3)
+test_assembly( m=1860, n=4608, xnnz=4059, nsplice=2)
+test_assembly( m=9140, n=3123, xnnz=7817, nsplice=4)
+test_assembly( m=9934, n=2074, xnnz=7598, nsplice=5)
+test_transient_construction( m=192, n=125, d=0.03561332705221767)
+test_transient_construction( m=859, n=712, d=0.0008928630531813697)
+test_transient_construction( m=358, n=693, d=0.20402424688341964)
+test_transient_construction( m=47, n=405, d=0.15989864588968508)
+test_transient_construction( m=832, n=905, d=0.16252196167689686)
+test_transient_construction( m=220, n=773, d=0.23776550578292968)
+test_transient_construction( m=856, n=218, d=0.060254353639164135)
+test_transient_construction( m=50, n=795, d=0.02267810961533283)
+test_transient_construction( m=890, n=417, d=0.12960860634119342)
+test_transient_construction( m=418, n=719, d=0.05673459628824968)
+test_addition( m=733, n=195, d=0.23354753219539517)
+test_addition( m=871, n=588, d=0.29834550269630405)
+test_addition( m=579, n=427, d=0.15703448908179538)
+test_addition( m=109, n=754, d=0.16138902344043066)
+test_addition( m=115, n=911, d=0.18904857399776745)
+test_addition( m=897, n=46, d=0.14513439683443055)
+test_addition( m=390, n=667, d=0.2389765736310217)
+test_addition( m=994, n=606, d=0.13405703874701894)
+test_addition( m=933, n=370, d=0.22243363036014752)
+test_addition( m=792, n=514, d=0.0039824950508702715)
+test_operations(n=10)
+  0.000261 seconds (71 allocations: 29.430 KiB)
+test_operations(n=100)
+  0.000404 seconds (69 allocations: 180.438 KiB)
+test_operations(n=1000)
+  0.004520 seconds (72 allocations: 1.349 MiB)
+  0.958574 seconds (152.21 k allocations: 156.298 MiB, 5.08% gc time)
+    Testing ExtendableSparse tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:26:05.549
+CPU usage: 15.07s (12.50s user, 2.60s kernel)
+
+Network usage:
+- eth0: 2.579 MiB received, 32.464 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":10,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":29,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":34,"op":"Total","minor":0},{"major":253,"value":10,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":29,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":34,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":172032,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":278528,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":299008,"op":"Total","minor":0},{"major":253,"value":172032,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":278528,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":299008,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":322052096,"max_usage":707555328,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":212176896,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":385737,"total_cache":80453632,"total_rss_huge":0,"total_active_anon":213295104,"total_pgmajfault":0,"pgpgin":245619,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":174169,"hierarchical_memsw_limit":0,"cache":80453632,"active_file":405504,"pgfault":385737,"total_mapped_file":0,"total_pgpgout":174169,"total_writeback":0,"rss":212176896,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":245619,"active_anon":213295104,"total_active_file":405504},"limit":540965302272},"name":"/ExtendableSparse-9ccA5uOS","networks":{"eth0":{"rx_bytes":2704466,"rx_packets":319,"tx_packets":325,"tx_bytes":33243,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"16948d12f9553c921a0f26497f8469f867ba91269fcd9fecf0b59c5f119dc250","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6859237744522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":12500000000,"usage_in_kernelmode":2600000000,"total_usage":15070958976,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15070958976,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:26:05.551786285Z"}

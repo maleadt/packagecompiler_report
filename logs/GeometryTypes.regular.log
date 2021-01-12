@@ -1,0 +1,314 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:27:00.785
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:27:02.625
+#
+
+ Installing known registries into `~/.julia`
+#######                                                                   10.1%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed GeometryTypes ───── v0.8.4
+  Installed ColorTypes ──────── v0.10.9
+  Installed FixedPointNumbers ─ v0.8.4
+  Installed StaticArrays ────── v1.0.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [4d00f742] + GeometryTypes v0.8.4
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [3da002f7] + ColorTypes v0.10.9
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [4d00f742] + GeometryTypes v0.8.4
+  [90137ffa] + StaticArrays v1.0.1
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+
+
+################################################################################
+# Testing: 2021-01-11T15:27:07.099
+#
+
+    Testing GeometryTypes
+Status `/tmp/jl_BvjI6T/Project.toml`
+  [3da002f7] ColorTypes v0.10.9
+  [53c48c17] FixedPointNumbers v0.8.4
+  [4d00f742] GeometryTypes v0.8.4
+  [90137ffa] StaticArrays v1.0.1
+  [37e2e46d] LinearAlgebra
+  [8dfed614] Test
+Status `/tmp/jl_BvjI6T/Manifest.toml`
+  [3da002f7] ColorTypes v0.10.9
+  [53c48c17] FixedPointNumbers v0.8.4
+  [4d00f742] GeometryTypes v0.8.4
+  [90137ffa] StaticArrays v1.0.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+WARNING: both GeometryTypes and Base export "contains"; uses of it in module Main must be qualified
+constructors and containment: Error During Test at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/hyperrectangles.jl:63
+  Test threw exception
+  Expression: a in b && (b in a && (contains(a, b) && contains(b, a)))
+  UndefVarError: contains not defined
+  Stacktrace:
+   [1] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/hyperrectangles.jl:63
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/hyperrectangles.jl:17
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/hyperrectangles.jl:16
+  
+constructors and containment: Error During Test at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/hyperrectangles.jl:67
+  Test threw exception
+  Expression: !(a in c) && (c in a && (contains(a, c) && !(contains(c, a))))
+  UndefVarError: contains not defined
+  Stacktrace:
+   [1] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/hyperrectangles.jl:67
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/hyperrectangles.jl:17
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/hyperrectangles.jl:16
+  
+point membership: Error During Test at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/hyperrectangles.jl:197
+  Test threw exception
+  Expression: Vec(4, 5, 6, 7) in a && contains(a, Vec(4, 5, 6, 7))
+  UndefVarError: contains not defined
+  Stacktrace:
+   [1] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/hyperrectangles.jl:197
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/hyperrectangles.jl:196
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/hyperrectangles.jl:16
+  
+point membership: Error During Test at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/hyperrectangles.jl:198
+  Test threw exception
+  Expression: Vec(5, 6, 7, 8) in a && contains(a, Vec(5, 6, 7, 8))
+  UndefVarError: contains not defined
+  Stacktrace:
+   [1] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/hyperrectangles.jl:198
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/hyperrectangles.jl:196
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/hyperrectangles.jl:16
+  
+point membership: Error During Test at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/hyperrectangles.jl:199
+  Test threw exception
+  Expression: !(Vec(6, 7, 8, 9) in a) && !(contains(a, Vec(6, 7, 8, 9)))
+  UndefVarError: contains not defined
+  Stacktrace:
+   [1] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/hyperrectangles.jl:199
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/hyperrectangles.jl:196
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/hyperrectangles.jl:16
+  
+2d simplex in 2d: Error During Test at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:11
+  Test threw exception
+  Expression: contains(s, Vec(0.1, 0.0))
+  UndefVarError: contains not defined
+  Stacktrace:
+   [1] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:11
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:3
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:2
+  
+2d simplex in 2d: Error During Test at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:13
+  Test threw exception
+  Expression: contains(s, v)
+  UndefVarError: contains not defined
+  Stacktrace:
+   [1] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:13
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:3
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:2
+  
+2d simplex in 2d: Error During Test at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:13
+  Test threw exception
+  Expression: contains(s, v)
+  UndefVarError: contains not defined
+  Stacktrace:
+   [1] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:13
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:3
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:2
+  
+2d simplex in 2d: Error During Test at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:13
+  Test threw exception
+  Expression: contains(s, v)
+  UndefVarError: contains not defined
+  Stacktrace:
+   [1] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:13
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:3
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:2
+  
+2d simplex in 2d: Error During Test at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:15
+  Test threw exception
+  Expression: !(contains(s, Vec(1.0, 0.1)))
+  UndefVarError: contains not defined
+  Stacktrace:
+   [1] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:15
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:3
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:2
+  
+2d simplex in 2d: Error During Test at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:16
+  Test threw exception
+  Expression: contains(s, Vec(1.0, 0.1), atol = 0.1)
+  UndefVarError: contains not defined
+  Stacktrace:
+   [1] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:16
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:3
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:2
+  
+3d simplex in 3d: Error During Test at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:46
+  Test threw exception
+  Expression: !(contains(s, Vec(1.0, 0.0, 0.1)))
+  UndefVarError: contains not defined
+  Stacktrace:
+   [1] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:46
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:37
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:2
+  
+3d simplex in 3d: Error During Test at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:47
+  Test threw exception
+  Expression: contains(s, Vec(0.1, 0.0, 0.1))
+  UndefVarError: contains not defined
+  Stacktrace:
+   [1] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:47
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:37
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:2
+  
+1d simplex in 3d: Error During Test at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:67
+  Test threw exception
+  Expression: contains(s, Vec(0.2, 0.2, 0.2))
+  UndefVarError: contains not defined
+  Stacktrace:
+   [1] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:67
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:60
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:2
+  
+1d simplex in 3d: Error During Test at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:68
+  Test threw exception
+  Expression: !(contains(s, Vec(0.1, 0.0999, 0.1)))
+  UndefVarError: contains not defined
+  Stacktrace:
+   [1] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:68
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:60
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/simplices.jl:2
+  
+Test Summary:                    | Pass  Error  Total
+GeometryTypes                    |  459     15    474
+  argmax                         |    6             6
+  extrema                        |    4             4
+  Convex Hulls                   |   51            51
+  Polygons                       |   12            12
+  Hyper Cubes                    |    5             5
+  Hyper Rectangles               |  100      5    105
+    constructors and containment |   29      2     31
+    Testing split function       |    6             6
+    Test distance functions      |   26            26
+    set operations               |   12            12
+    relations                    |    9             9
+    point membership             |           3      3
+    from Points                  |    2             2
+    transforms                   |    3             3
+    boundingboxes                |    1             1
+    face-orientation             |   12            12
+  faces                          |   14            14
+  Mesh Types                     |   29            29
+  Distance Fields                |    9             9
+  Primitives                     |    7             7
+  Simplex                        |    2             2
+  decompose functions            |   25            25
+  SimpleRectangle                |   18            18
+  HyperSphere                    |   16            16
+  eltype                         |   10            10
+  ndims                          |    8             8
+  example simplices              |   26     10     36
+    2d simplex in 2d             |    6      6     12
+    counterexample               |    4             4
+    3d simplex in 3d             |    7      2      9
+    1d simplex in 2d             |    4             4
+    1d simplex in 3d             |    5      2      7
+  gjk                            |   40            40
+  Lines                          |   21            21
+  Polygons                       |   12            12
+  Cylinder                       |   21            21
+  Capsule                        |   21            21
+  algorithms.jl                  |    2             2
+ERROR: LoadError: Some tests did not pass: 459 passed, 0 failed, 15 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/GeometryTypes/Xxur0/test/runtests.jl:12
+
+PkgEval failed: Package GeometryTypes errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:28:18.402
+CPU usage: 77.57s (74.14s user, 3.58s kernel)
+
+Network usage:
+- eth0: 3.174 MiB received, 50.659 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":316174336,"max_usage":1163235328,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":198340608,"inactive_file":135168,"inactive_anon":80560128,"total_pgfault":1101870,"total_cache":87801856,"total_rss_huge":0,"total_active_anon":205590528,"total_pgmajfault":0,"pgpgin":593934,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":524050,"hierarchical_memsw_limit":0,"cache":87801856,"active_file":135168,"pgfault":1101870,"total_mapped_file":0,"total_pgpgout":524050,"total_writeback":0,"rss":198340608,"unevictable":0,"total_inactive_anon":80560128,"total_pgpgin":593934,"active_anon":205590528,"total_active_file":135168},"limit":540965302272},"name":"/GeometryTypes-gUa6Ix8F","networks":{"eth0":{"rx_bytes":3328644,"rx_packets":544,"tx_packets":534,"tx_bytes":51875,"tx_dropped":0,"rx_dropped":3,"tx_errors":0,"rx_errors":0}},"id":"13fd36430fa93ed9c847dd9536f65c1c635a951a043186ead1532a8ec3361cb7","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3195915864522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":74140000000,"usage_in_kernelmode":3580000000,"total_usage":77567425263,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77550657678,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16767585,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:28:18.405049375Z"}

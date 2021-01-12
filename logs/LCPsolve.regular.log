@@ -1,0 +1,140 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:03:39.782
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:03:41.529
+#
+
+ Installing known registries into `~/.julia`
+#############################                                             41.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed LCPsolve ─ v0.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [2a7bdd54] + LCPsolve v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [2a7bdd54] + LCPsolve v0.1.0
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T17:03:44.912
+#
+
+    Testing LCPsolve
+Status `/tmp/jl_a3kBpR/Project.toml`
+  [2a7bdd54] LCPsolve v0.1.0
+  [37e2e46d] LinearAlgebra
+  [de0858da] Printf
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_a3kBpR/Manifest.toml`
+  [2a7bdd54] LCPsolve v0.1.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Running tests:
+Test case 1:
+iter =  1, ψ = 5e+02, r = -0.3, μ = 5e-03
+iter =  2, ψ = 5e+02, r = -0.3, μ = 3e-02
+iter =  3, ψ = 3e+02, r = 0.1, μ = 1e-01
+iter =  4, ψ = 3e+00, r = 1.0, μ = 3e-02
+iter =  5, ψ = 5e-02, r = 1.0, μ = 5e-03
+iter =  6, ψ = 5e-04, r = 1.0, μ = 1e-03
+iter =  7, ψ = 2e-06, r = 1.0, μ = 2e-04
+iter =  8, ψ = 3e-09, r = 1.0, μ = 4e-05
+iter =  9, ψ = 2e-12, r = 1.0, μ = 8e-06
+iter = 10, ψ = 2e-18, r = 1.0, μ = 0e+00
+Test case 2:
+iter =  1, ψ = 3e+01, r = 1.0, μ = 2e-04
+iter =  2, ψ = 9e-01, r = 1.0, μ = 4e-05
+iter =  3, ψ = 1e-02, r = 1.0, μ = 8e-06
+iter =  4, ψ = 4e-04, r = 1.0, μ = 0e+00
+iter =  5, ψ = 1e-05, r = 1.0, μ = 0e+00
+iter =  6, ψ = 8e-07, r = 0.9, μ = 0e+00
+iter =  7, ψ = 1e-09, r = 1.0, μ = 0e+00
+iter =  8, ψ = 2e-15, r = 1.0, μ = 0e+00
+Test case 3:
+iter =  1, ψ = 7e-05, r = 1.0, μ = 2e-04
+iter =  2, ψ = 9e-13, r = 1.0, μ = 4e-05
+Test case 4:
+iter =  1, ψ = 5e+02, r = -0.2, μ = 5e-03
+iter =  2, ψ = 4e+02, r = -0.1, μ = 3e-02
+iter =  3, ψ = 3e+02, r = 0.2, μ = 1e-01
+iter =  4, ψ = 4e+00, r = 1.0, μ = 3e-02
+iter =  5, ψ = 6e-02, r = 1.0, μ = 5e-03
+iter =  6, ψ = 6e-04, r = 1.0, μ = 1e-03
+iter =  7, ψ = 1e-05, r = 1.0, μ = 2e-04
+iter =  8, ψ = 2e-08, r = 1.0, μ = 4e-05
+iter =  9, ψ = 2e-10, r = 1.0, μ = 8e-06
+iter = 10, ψ = 5e-13, r = 1.0, μ = 0e+00
+Test case 5:
+iter =  1, ψ = 3e+01, r = 1.0, μ = 2e-04
+iter =  2, ψ = 7e-01, r = 1.0, μ = 4e-05
+iter =  3, ψ = 2e-02, r = 1.0, μ = 8e-06
+iter =  4, ψ = 4e-04, r = 1.0, μ = 0e+00
+iter =  5, ψ = 6e-06, r = 1.0, μ = 0e+00
+iter =  6, ψ = 1e-08, r = 1.0, μ = 0e+00
+iter =  7, ψ = 3e-12, r = 1.0, μ = 0e+00
+iter =  8, ψ = 1e-13, r = 1.0, μ = 0e+00
+Test case 6:
+iter =  1, ψ = 7e-05, r = 1.0, μ = 2e-04
+iter =  2, ψ = 1e-12, r = 1.0, μ = 4e-05
+iter =  3, ψ = 3e-21, r = 1.0, μ = 8e-06
+Test Summary:       | Pass  Total
+diagonally dominant |    6      6
+ Iteration = 8 Max Diff = 8.679830045821291e-7
+ Converge!
+  0.425130 seconds (990.97 k allocations: 71.897 MiB, 7.61% gc time)
+Test Summary: | Pass  Total
+car           |    2      2
+Equilibrium found, w = 0.8766865272635054 p = 0.7420697307602044
+  1.822849 seconds (270.82 k allocations: 1.560 GiB, 14.30% gc time)
+Test Summary: | Pass  Total
+Hopenhayn     |    2      2
+    Testing LCPsolve tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:04:06.424
+CPU usage: 26.68s (24.19s user, 2.54s kernel)
+
+Network usage:
+- eth0: 2.538 MiB received, 25.806 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":321228800,"max_usage":694796288,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":211914752,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":507969,"total_cache":79454208,"total_rss_huge":0,"total_active_anon":212619264,"total_pgmajfault":0,"pgpgin":271821,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":200710,"hierarchical_memsw_limit":0,"cache":79454208,"active_file":135168,"pgfault":507969,"total_mapped_file":0,"total_pgpgout":200710,"total_writeback":0,"rss":211914752,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":271821,"active_anon":212619264,"total_active_file":135168},"limit":540965302272},"name":"/LCPsolve-ewLb7UM3","networks":{"eth0":{"rx_bytes":2661091,"rx_packets":266,"tx_packets":258,"tx_bytes":26425,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"fb1a0a86f65d9354e045cad0079b3486c86a672fea9c80ab6b0c1679d162c0e1","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3930682904522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":24190000000,"usage_in_kernelmode":2540000000,"total_usage":26677501017,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26677496737,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4280,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:04:06.916748023Z"}

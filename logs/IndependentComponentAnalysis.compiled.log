@@ -1,0 +1,352 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T17:24:38.646
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T17:24:40.349
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed CpuId ──────────────────────── v0.2.2
+  Installed IndependentComponentAnalysis ─ v0.1.0
+  Installed MultivariateStats ──────────── v0.7.0
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed SIMDPirates ────────────────── v0.8.26
+  Installed DataStructures ─────────────── v0.18.8
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed OpenBLAS_jll ───────────────── v0.3.9+5
+  Installed PackageCompiler ────────────── v1.2.5
+  Installed LoopVectorization ──────────── v0.8.26
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed Arpack_jll ─────────────────── v3.5.0+3
+  Installed Missings ───────────────────── v0.4.4
+  Installed Adapt ──────────────────────── v2.4.0
+  Installed VectorizationBase ──────────── v0.12.33
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed OffsetArrays ───────────────── v1.5.0
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed Arpack ─────────────────────── v0.4.0
+  Installed Compat ─────────────────────── v3.25.0
+  Installed DocStringExtensions ────────── v0.8.3
+  Installed SLEEFPirates ───────────────── v0.5.5
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed UnPack ─────────────────────── v1.0.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a506da57] + IndependentComponentAnalysis v0.1.0
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [79e6a3ab] + Adapt v2.4.0
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [adafc99b] + CpuId v0.2.2
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [ffbed154] + DocStringExtensions v0.8.3
+  [a506da57] + IndependentComponentAnalysis v0.1.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [bdcacae8] + LoopVectorization v0.8.26
+  [e1d29d7a] + Missings v0.4.4
+  [6f286f6a] + MultivariateStats v0.7.0
+  [6fe1bfb0] + OffsetArrays v1.5.0
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [9b87118b] + PackageCompiler v1.2.5
+  [21efa798] + SIMDPirates v0.8.26
+  [476501e8] + SLEEFPirates v0.5.5
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [2913bbd2] + StatsBase v0.33.2
+  [3a884ed6] + UnPack v1.0.2
+  [3d5dd08c] + VectorizationBase v0.12.33
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building SLEEFPirates → `~/.julia/packages/SLEEFPirates/jGsib/deps/build.log`
+
+
+################################################################################
+# Compiling: 2021-01-11T17:24:56.828
+#
+
+WARNING: Method definition fit(Type{MultivariateStats.ICA{T} where T<:Real}, AbstractArray{T<:Real, 2}, Int64) where {T<:Real} in module MultivariateStats at /home/pkgeval/.julia/packages/MultivariateStats/BYMwD/src/ica.jl:135 overwritten in module IndependentComponentAnalysis at /home/pkgeval/.julia/packages/IndependentComponentAnalysis/3JsNl/src/IndependentComponentAnalysis.jl:145.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition fit##kw(Any, typeof(StatsBase.fit), Type{MultivariateStats.ICA{T} where T<:Real}, AbstractArray{T<:Real, 2}, Int64) where {T<:Real} in module MultivariateStats at /home/pkgeval/.julia/packages/MultivariateStats/BYMwD/src/ica.jl:135 overwritten in module IndependentComponentAnalysis at /home/pkgeval/.julia/packages/IndependentComponentAnalysis/3JsNl/src/IndependentComponentAnalysis.jl:145.
+  ** incremental compilation may be fatally broken for this module **
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 172.943 MiB, compilation took 234 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T17:28:58.861
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/IndependentComponentAnalysis-NJJWDMf3.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:29:00.457
+#
+
+ Installing known registries into `~/.julia`
+################################################                          66.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed IndependentComponentAnalysis ─ v0.1.0
+  Installed CpuId ──────────────────────── v0.2.2
+  Installed MultivariateStats ──────────── v0.7.0
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed SIMDPirates ────────────────── v0.8.26
+  Installed DataStructures ─────────────── v0.18.8
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed OpenBLAS_jll ───────────────── v0.3.9+5
+  Installed Arpack_jll ─────────────────── v3.5.0+3
+  Installed Missings ───────────────────── v0.4.4
+  Installed VectorizationBase ──────────── v0.12.33
+  Installed Adapt ──────────────────────── v2.4.0
+  Installed LoopVectorization ──────────── v0.8.26
+  Installed OffsetArrays ───────────────── v1.5.0
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed Arpack ─────────────────────── v0.4.0
+  Installed Compat ─────────────────────── v3.25.0
+  Installed DocStringExtensions ────────── v0.8.3
+  Installed SLEEFPirates ───────────────── v0.5.5
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a506da57] + IndependentComponentAnalysis v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [79e6a3ab] + Adapt v2.4.0
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [adafc99b] + CpuId v0.2.2
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [ffbed154] + DocStringExtensions v0.8.3
+  [a506da57] + IndependentComponentAnalysis v0.1.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [bdcacae8] + LoopVectorization v0.8.26
+  [e1d29d7a] + Missings v0.4.4
+  [6f286f6a] + MultivariateStats v0.7.0
+  [6fe1bfb0] + OffsetArrays v1.5.0
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [21efa798] + SIMDPirates v0.8.26
+  [476501e8] + SLEEFPirates v0.5.5
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [2913bbd2] + StatsBase v0.33.2
+  [3a884ed6] + UnPack v1.0.2
+  [3d5dd08c] + VectorizationBase v0.12.33
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building SLEEFPirates → `~/.julia/packages/SLEEFPirates/jGsib/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T17:29:07.294
+#
+
+    Testing IndependentComponentAnalysis
+Status `/tmp/jl_YQFBU9/Project.toml`
+  [a506da57] IndependentComponentAnalysis v0.1.0
+  [bdcacae8] LoopVectorization v0.8.26
+  [6f286f6a] MultivariateStats v0.7.0
+  [476501e8] SLEEFPirates v0.5.5
+  [2913bbd2] StatsBase v0.33.2
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_YQFBU9/Manifest.toml`
+  [79e6a3ab] Adapt v2.4.0
+  [7d9fca2a] Arpack v0.4.0
+  [68821587] Arpack_jll v3.5.0+3
+  [56f22d72] Artifacts v1.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [adafc99b] CpuId v0.2.2
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [ffbed154] DocStringExtensions v0.8.3
+  [a506da57] IndependentComponentAnalysis v0.1.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [bdcacae8] LoopVectorization v0.8.26
+  [e1d29d7a] Missings v0.4.4
+  [6f286f6a] MultivariateStats v0.7.0
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [4536629a] OpenBLAS_jll v0.3.9+5
+  [bac558e1] OrderedCollections v1.3.2
+  [21efa798] SIMDPirates v0.8.26
+  [476501e8] SLEEFPirates v0.5.5
+  [a2af1166] SortingAlgorithms v0.3.1
+  [2913bbd2] StatsBase v0.33.2
+  [3a884ed6] UnPack v1.0.2
+  [3d5dd08c] VectorizationBase v0.12.33
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Algorithm: Error During Test at /home/user/.julia/packages/IndependentComponentAnalysis/3JsNl/test/runtests.jl:76
+  Got exception outside of a @test
+  could not load library "/lib/x86_64-linux-gnu/libmvec.so"
+  /lib/x86_64-linux-gnu/libmvec.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] exp at /home/pkgeval/.julia/packages/SLEEFPirates/jGsib/src/svmlwrap.jl:6 [inlined]
+   [2] exp at /home/pkgeval/.julia/packages/SLEEFPirates/jGsib/src/svmlwrap.jl:7 [inlined]
+   [3] macro expansion at /home/pkgeval/.julia/packages/LoopVectorization/pHMnJ/src/reconstruct_loopset.jl:503 [inlined]
+   [4] _avx_! at /home/pkgeval/.julia/packages/LoopVectorization/pHMnJ/src/reconstruct_loopset.jl:503 [inlined]
+   [5] update_UE!(::Gaus, ::Array{Float64,2}, ::Array{Float64,1}) at /home/pkgeval/.julia/packages/IndependentComponentAnalysis/3JsNl/src/IndependentComponentAnalysis.jl:58
+   [6] ica!(::FastICA, ::Array{Float64,2}, ::Array{Float64,2}, ::Gaus, ::Int64, ::Float64) at /home/pkgeval/.julia/packages/IndependentComponentAnalysis/3JsNl/src/IndependentComponentAnalysis.jl:117
+   [7] fit(::Type{ICA}, ::Array{Float64,2}, ::Int64, ::FastICA; fun::Gaus, do_whiten::Bool, maxiter::Int64, tol::Float64, mean::Nothing, winit::Nothing) at /home/pkgeval/.julia/packages/IndependentComponentAnalysis/3JsNl/src/IndependentComponentAnalysis.jl:180
+   [8] top-level scope at /home/user/.julia/packages/IndependentComponentAnalysis/3JsNl/test/runtests.jl:104
+   [9] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [10] top-level scope at /home/user/.julia/packages/IndependentComponentAnalysis/3JsNl/test/runtests.jl:79
+   [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [12] top-level scope at /home/user/.julia/packages/IndependentComponentAnalysis/3JsNl/test/runtests.jl:17
+   [13] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/user/.julia/packages/IndependentComponentAnalysis/3JsNl/test/runtests.jl:15
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at none:6
+   [17] eval(::Module, ::Any) at ./boot.jl:331
+   [18] exec_options(::Base.JLOptions) at ./client.jl:272
+   [19] _start() at ./client.jl:506
+  
+Test Summary:                   | Pass  Error  Total
+IndependentComponentAnalysis.jl |   23      1     24
+  ICA                           |   23      1     24
+    Auxiliary                   |   12            12
+    Algorithm                   |   11      1     12
+ERROR: LoadError: Some tests did not pass: 23 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/user/.julia/packages/IndependentComponentAnalysis/3JsNl/test/runtests.jl:10
+
+PkgEval failed: Package IndependentComponentAnalysis errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:29:27.84
+CPU usage: 29.21s (25.90s user, 3.39s kernel)
+
+Network usage:
+- eth0: 10.098 MiB received, 152.245 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":23,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":23,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":23,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":23,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":102400,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":45056,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":102400,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":102400,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":45056,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":102400,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":328916992,"max_usage":651116544,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":206159872,"inactive_file":135168,"inactive_anon":90697728,"total_pgfault":467940,"total_cache":92114944,"total_rss_huge":0,"total_active_anon":207347712,"total_pgmajfault":0,"pgpgin":271062,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":135168,"pgpgout":198280,"hierarchical_memsw_limit":0,"cache":92114944,"active_file":135168,"pgfault":467940,"total_mapped_file":0,"total_pgpgout":198280,"total_writeback":135168,"rss":206159872,"unevictable":0,"total_inactive_anon":90697728,"total_pgpgin":271062,"active_anon":207347712,"total_active_file":135168},"limit":540965302272},"name":"/IndependentComponentAnalysis-IC6oyAjJ","networks":{"eth0":{"rx_bytes":10588588,"rx_packets":1418,"tx_packets":1375,"tx_bytes":155899,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"e39f9467cb5d8ef606b27203432013d2688ef6aa70e2b48c3be5a633864b896e","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4125001594522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":25900000000,"usage_in_kernelmode":3390000000,"total_usage":29207424092,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29207420342,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3750,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:29:28.184544627Z"}

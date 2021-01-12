@@ -1,0 +1,491 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T15:36:50.491
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T15:36:52.23
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed Reexport ───────────────────── v0.2.0
+  Installed CpuId ──────────────────────── v0.2.2
+  Installed RegularizedLeastSquares ────── v0.7.1
+  Installed GPUArrays ──────────────────── v6.2.0
+  Installed TimeZones ──────────────────── v1.5.3
+  Installed PackageCompiler ────────────── v1.2.5
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed CEnum ──────────────────────── v0.4.1
+  Installed Scratch ────────────────────── v1.0.3
+  Installed LinearOperators ────────────── v1.2.0
+  Installed FFTW ───────────────────────── v1.3.0
+  Installed LLVM ───────────────────────── v3.5.2
+  Installed Mocking ────────────────────── v0.7.1
+  Installed SparsityOperators ──────────── v0.2.1
+  Installed MKL_jll ────────────────────── v2020.2.254+0
+  Installed Libiconv_jll ───────────────── v1.16.0+7
+  Installed Requires ───────────────────── v1.1.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed TimerOutputs ───────────────── v0.5.7
+  Installed EzXML ──────────────────────── v1.1.0
+  Installed Polynomials ────────────────── v1.2.0
+  Installed CUDA ───────────────────────── v2.4.0
+  Installed IterTools ──────────────────── v1.3.0
+  Installed FFTW_jll ───────────────────── v3.3.9+7
+  Installed XML2_jll ───────────────────── v2.9.10+3
+  Installed SIMDPirates ────────────────── v0.8.26
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed DSP ────────────────────────── v0.6.10
+  Installed Intervals ──────────────────── v1.5.0
+  Installed Wavelets ───────────────────── v0.9.2
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed VectorizationBase ──────────── v0.12.33
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed IntelOpenMP_jll ────────────── v2018.0.3+0
+  Installed AbstractFFTs ───────────────── v0.5.0
+  Installed FastClosures ───────────────── v0.3.2
+  Installed Adapt ──────────────────────── v3.0.0
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed ExprTools ──────────────────── v0.1.3
+  Installed OffsetArrays ───────────────── v1.3.1
+  Installed IterativeSolvers ───────────── v0.8.5
+  Installed BFloat16s ──────────────────── v0.1.0
+  Installed SpecialFunctions ───────────── v0.10.3
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed ProgressMeter ──────────────── v1.4.1
+  Installed Compat ─────────────────────── v3.25.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed GPUCompiler ────────────────── v0.8.3
+  Installed NNlib ──────────────────────── v0.7.11
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [1e9c538a] + RegularizedLeastSquares v0.7.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [621f4979] + AbstractFFTs v0.5.0
+  [79e6a3ab] + Adapt v3.0.0
+  [56f22d72] + Artifacts v1.3.0
+  [ab4f0b2a] + BFloat16s v0.1.0
+  [fa961155] + CEnum v0.4.1
+  [052768ef] + CUDA v2.4.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [adafc99b] + CpuId v0.2.2
+  [717857b8] + DSP v0.6.10
+  [864edb3b] + DataStructures v0.18.8
+  [e2ba6199] + ExprTools v0.1.3
+  [8f5d6c58] + EzXML v1.1.0
+  [7a1cc6ca] + FFTW v1.3.0
+  [f5851436] + FFTW_jll v3.3.9+7
+  [9aa1b823] + FastClosures v0.3.2
+  [0c68f7d7] + GPUArrays v6.2.0
+  [61eb1bfa] + GPUCompiler v0.8.3
+  [1d5cc7b8] + IntelOpenMP_jll v2018.0.3+0
+  [d8418881] + Intervals v1.5.0
+  [c8e1da08] + IterTools v1.3.0
+  [42fd0dbc] + IterativeSolvers v0.8.5
+  [692b3bcd] + JLLWrappers v1.2.0
+  [929cbde3] + LLVM v3.5.2
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [5c8ed15e] + LinearOperators v1.2.0
+  [856f044c] + MKL_jll v2020.2.254+0
+  [1914dd2f] + MacroTools v0.5.6
+  [78c3b35d] + Mocking v0.7.1
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [872c559c] + NNlib v0.7.11
+  [6fe1bfb0] + OffsetArrays v1.3.1
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [9b87118b] + PackageCompiler v1.2.5
+  [f27b6e38] + Polynomials v1.2.0
+  [92933f4c] + ProgressMeter v1.4.1
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [189a3867] + Reexport v0.2.0
+  [1e9c538a] + RegularizedLeastSquares v0.7.1
+  [ae029012] + Requires v1.1.2
+  [21efa798] + SIMDPirates v0.8.26
+  [6c6a2e73] + Scratch v1.0.3
+  [a5ff1dd3] + SparsityOperators v0.2.1
+  [276daf66] + SpecialFunctions v0.10.3
+  [f269a46b] + TimeZones v1.5.3
+  [a759f4b9] + TimerOutputs v0.5.7
+  [3d5dd08c] + VectorizationBase v0.12.33
+  [29a6e085] + Wavelets v0.9.2
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building TimeZones → `~/.julia/packages/TimeZones/K98G0/deps/build.log`
+   Building FFTW ─────→ `~/.julia/packages/FFTW/ayqyZ/deps/build.log`
+
+
+################################################################################
+# Compiling: 2021-01-11T15:37:10.343
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 229.195 MiB, compilation took 398 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T15:43:55.904
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/RegularizedLeastSquares-UufRYbgp.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:43:57.488
+#
+
+ Installing known registries into `~/.julia`
+#####                                                                      7.6%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed Reexport ───────────────────── v0.2.0
+  Installed CpuId ──────────────────────── v0.2.2
+  Installed Scratch ────────────────────── v1.0.3
+  Installed RegularizedLeastSquares ────── v0.7.1
+  Installed GPUArrays ──────────────────── v6.2.0
+  Installed TimeZones ──────────────────── v1.5.3
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed Mocking ────────────────────── v0.7.1
+  Installed CEnum ──────────────────────── v0.4.1
+  Installed SparsityOperators ──────────── v0.2.1
+  Installed LinearOperators ────────────── v1.2.0
+  Installed FFTW ───────────────────────── v1.3.0
+  Installed DataStructures ─────────────── v0.18.8
+  Installed MKL_jll ────────────────────── v2020.2.254+0
+  Installed Libiconv_jll ───────────────── v1.16.0+7
+  Installed LLVM ───────────────────────── v3.5.2
+  Installed Requires ───────────────────── v1.1.2
+  Installed TimerOutputs ───────────────── v0.5.7
+  Installed EzXML ──────────────────────── v1.1.0
+  Installed Polynomials ────────────────── v1.2.0
+  Installed CUDA ───────────────────────── v2.4.0
+  Installed FFTW_jll ───────────────────── v3.3.9+7
+  Installed IterTools ──────────────────── v1.3.0
+  Installed XML2_jll ───────────────────── v2.9.10+3
+  Installed SIMDPirates ────────────────── v0.8.26
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed DSP ────────────────────────── v0.6.10
+  Installed Intervals ──────────────────── v1.5.0
+  Installed Wavelets ───────────────────── v0.9.2
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed VectorizationBase ──────────── v0.12.33
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed IntelOpenMP_jll ────────────── v2018.0.3+0
+  Installed FastClosures ───────────────── v0.3.2
+  Installed AbstractFFTs ───────────────── v0.5.0
+  Installed Adapt ──────────────────────── v3.0.0
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed IterativeSolvers ───────────── v0.8.5
+  Installed OffsetArrays ───────────────── v1.3.1
+  Installed ExprTools ──────────────────── v0.1.3
+  Installed BFloat16s ──────────────────── v0.1.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Compat ─────────────────────── v3.25.0
+  Installed ProgressMeter ──────────────── v1.4.1
+  Installed SpecialFunctions ───────────── v0.10.3
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed NNlib ──────────────────────── v0.7.11
+  Installed GPUCompiler ────────────────── v0.8.3
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [1e9c538a] + RegularizedLeastSquares v0.7.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [621f4979] + AbstractFFTs v0.5.0
+  [79e6a3ab] + Adapt v3.0.0
+  [56f22d72] + Artifacts v1.3.0
+  [ab4f0b2a] + BFloat16s v0.1.0
+  [fa961155] + CEnum v0.4.1
+  [052768ef] + CUDA v2.4.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [adafc99b] + CpuId v0.2.2
+  [717857b8] + DSP v0.6.10
+  [864edb3b] + DataStructures v0.18.8
+  [e2ba6199] + ExprTools v0.1.3
+  [8f5d6c58] + EzXML v1.1.0
+  [7a1cc6ca] + FFTW v1.3.0
+  [f5851436] + FFTW_jll v3.3.9+7
+  [9aa1b823] + FastClosures v0.3.2
+  [0c68f7d7] + GPUArrays v6.2.0
+  [61eb1bfa] + GPUCompiler v0.8.3
+  [1d5cc7b8] + IntelOpenMP_jll v2018.0.3+0
+  [d8418881] + Intervals v1.5.0
+  [c8e1da08] + IterTools v1.3.0
+  [42fd0dbc] + IterativeSolvers v0.8.5
+  [692b3bcd] + JLLWrappers v1.2.0
+  [929cbde3] + LLVM v3.5.2
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [5c8ed15e] + LinearOperators v1.2.0
+  [856f044c] + MKL_jll v2020.2.254+0
+  [1914dd2f] + MacroTools v0.5.6
+  [78c3b35d] + Mocking v0.7.1
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [872c559c] + NNlib v0.7.11
+  [6fe1bfb0] + OffsetArrays v1.3.1
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [f27b6e38] + Polynomials v1.2.0
+  [92933f4c] + ProgressMeter v1.4.1
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [189a3867] + Reexport v0.2.0
+  [1e9c538a] + RegularizedLeastSquares v0.7.1
+  [ae029012] + Requires v1.1.2
+  [21efa798] + SIMDPirates v0.8.26
+  [6c6a2e73] + Scratch v1.0.3
+  [a5ff1dd3] + SparsityOperators v0.2.1
+  [276daf66] + SpecialFunctions v0.10.3
+  [f269a46b] + TimeZones v1.5.3
+  [a759f4b9] + TimerOutputs v0.5.7
+  [3d5dd08c] + VectorizationBase v0.12.33
+  [29a6e085] + Wavelets v0.9.2
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building TimeZones → `~/.julia/packages/TimeZones/K98G0/deps/build.log`
+┌ Error: Error building `TimeZones`: 
+│ ERROR: LoadError: IOError: mkdir: permission denied (EACCES)
+│ Stacktrace:
+│  [1] uv_error at ./libuv.jl:97 [inlined]
+│  [2] mkdir(::String; mode::UInt16) at ./file.jl:177
+│  [3] mkpath(::String; mode::UInt16) at ./file.jl:227
+│  [4] mkpath(::String; mode::UInt16) at ./file.jl:225 (repeats 6 times)
+│  [5] mkpath at ./file.jl:222 [inlined]
+│  [6] build(::String) at /home/pkgeval/.julia/packages/TimeZones/K98G0/src/tzdata/build.jl:105
+│  [7] build(::String; force::Bool) at /home/pkgeval/.julia/packages/TimeZones/K98G0/src/build.jl:11
+│  [8] build at /home/pkgeval/.julia/packages/TimeZones/K98G0/src/build.jl:11 [inlined] (repeats 2 times)
+│  [9] top-level scope at /home/user/.julia/packages/TimeZones/K98G0/deps/build.jl:3
+│  [10] include(::String) at ./client.jl:457
+│  [11] top-level scope at none:5
+│ in expression starting at /home/user/.julia/packages/TimeZones/K98G0/deps/build.jl:3
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+   Building FFTW ─────→ `~/.julia/packages/FFTW/ayqyZ/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T15:44:10.088
+#
+
+    Testing RegularizedLeastSquares
+Status `/tmp/jl_aY1dv9/Project.toml`
+  [42fd0dbc] IterativeSolvers v0.8.5
+  [92933f4c] ProgressMeter v1.4.1
+  [1e9c538a] RegularizedLeastSquares v0.7.1
+  [21efa798] SIMDPirates v0.8.26
+  [a5ff1dd3] SparsityOperators v0.2.1
+  [3d5dd08c] VectorizationBase v0.12.33
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_aY1dv9/Manifest.toml`
+  [621f4979] AbstractFFTs v0.5.0
+  [79e6a3ab] Adapt v3.0.0
+  [56f22d72] Artifacts v1.3.0
+  [ab4f0b2a] BFloat16s v0.1.0
+  [fa961155] CEnum v0.4.1
+  [052768ef] CUDA v2.4.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [adafc99b] CpuId v0.2.2
+  [717857b8] DSP v0.6.10
+  [864edb3b] DataStructures v0.18.8
+  [e2ba6199] ExprTools v0.1.3
+  [8f5d6c58] EzXML v1.1.0
+  [7a1cc6ca] FFTW v1.3.0
+  [f5851436] FFTW_jll v3.3.9+7
+  [9aa1b823] FastClosures v0.3.2
+  [0c68f7d7] GPUArrays v6.2.0
+  [61eb1bfa] GPUCompiler v0.8.3
+  [1d5cc7b8] IntelOpenMP_jll v2018.0.3+0
+  [d8418881] Intervals v1.5.0
+  [c8e1da08] IterTools v1.3.0
+  [42fd0dbc] IterativeSolvers v0.8.5
+  [692b3bcd] JLLWrappers v1.2.0
+  [929cbde3] LLVM v3.5.2
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [5c8ed15e] LinearOperators v1.2.0
+  [856f044c] MKL_jll v2020.2.254+0
+  [1914dd2f] MacroTools v0.5.6
+  [78c3b35d] Mocking v0.7.1
+  [46d2c3a1] MuladdMacro v0.2.2
+  [872c559c] NNlib v0.7.11
+  [6fe1bfb0] OffsetArrays v1.3.1
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [f27b6e38] Polynomials v1.2.0
+  [92933f4c] ProgressMeter v1.4.1
+  [3cdcf5f2] RecipesBase v1.1.1
+  [189a3867] Reexport v0.2.0
+  [1e9c538a] RegularizedLeastSquares v0.7.1
+  [ae029012] Requires v1.1.2
+  [21efa798] SIMDPirates v0.8.26
+  [6c6a2e73] Scratch v1.0.3
+  [a5ff1dd3] SparsityOperators v0.2.1
+  [276daf66] SpecialFunctions v0.10.3
+  [f269a46b] TimeZones v1.5.3
+  [a759f4b9] TimerOutputs v0.5.7
+  [3d5dd08c] VectorizationBase v0.12.33
+  [29a6e085] Wavelets v0.9.2
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: test L2-regularization
+[ Info: test L1-regularization
+[ Info: rel. L1 error : 0.0002789089556198408 vs 0.0019980720174742365
+[ Info: test L21-regularization
+[ Info: rel. L21 error : 0.00024370954742865028 vs 0.0016151554413322154
+[ Info: test TV-regularization
+[ Info: rel. TV error : 0.003286382302095374 vs 0.03392487944404839
+[ Info: test positivity-constraint
+[ Info: test realness-constraint
+[ Info: test nuclear norm regularization
+[ Info: rel. LR error : 0.022455543795886518 vs 0.041187368777410215
+[ Info: test LLR regularization
+[ Info: rel. LLR error : 0.006620123409659406 vs 0.017049571696900995
+Test Summary: | Pass  Total
+Proximal Maps |   25     25
+[ Info: Testing solver kaczmarz ...: [0.8350140149860443, 0.26002375370524433]  == [0.83501293778654, 0.2600248479966549]
+[ Info: Testing solver cgnr ...: [0.8350140149860443, 0.26002375370524433]  == [0.8350140149860605, 0.2600237537052459]
+[ Info: Testing solver daxkaczmarz ...: [0.8350140149860443, 0.26002375370524433]  == [0.8350064271360707, 0.26003146195150495]
+[ Info: Testing solver daxconstrained ...: [0.8350140149860443, 0.26002375370524433]  == [0.8350140149750569, 0.2600237537164061]
+[ Info: Testing solver primaldualsolver ...: [0.8350140149860443, 0.26002375370524433]  == [0.8302829463684526, 0.2686271683882221]
+Test Summary:      | Pass  Total
+Real Linear Solver |    5      5
+[ Info: Testing solver kaczmarz ...: Complex{Float64}[0.5865981007905481 + 0.6117903795750386im, 0.05016684053503706 + 0.6200985639530681im]  == Complex{Float64}[0.5865981007905481 + 0.6117903795750385im, 0.05016684053503707 + 0.6200985639530682im]
+[ Info: Testing solver cgnr ...: Complex{Float64}[0.5865981007905481 + 0.6117903795750386im, 0.05016684053503706 + 0.6200985639530681im]  == Complex{Float64}[0.5865981007905485 + 0.6117903795750388im, 0.050166840535037255 + 0.6200985639530678im]
+Test Summary:         | Pass  Total
+Complex Linear Solver |    2      2
+[ Info: Testing solver fista ...: relative error = 0.004520667238015548
+[ Info: Testing solver fista ...: relative error = 0.004520667238015548
+┌ Warning: The keyword argument `tol` is deprecated, use `reltol` instead.
+│   caller = ip:0x0
+└ @ Core :-1
+[ Info: Testing solver admm ...: relative error = 0.004523375986983953
+[ Info: Testing solver admm ...: relative error = 0.004523375986983953
+[ Info: Testing solver splitBregman ...: relative error = 6.79158824091402e-6
+[ Info: Testing solver splitBregman ...: relative error = 6.79158824091402e-6
+[ Info: Testing solver primaldualsolver ...: relative error = 0.04494524420381978
+Test Summary:         | Pass  Total
+General Convex Solver |    7      7
+Test Summary:        | Pass  Total
+test Kaczmarz update |    8      8
+    Testing RegularizedLeastSquares tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:45:15.413
+CPU usage: 79.90s (74.96s user, 5.07s kernel)
+
+Network usage:
+- eth0: 7.136 MiB received, 285.875 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":27,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":13,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":27,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":27,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":13,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":27,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":69632,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":69632,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":440496128,"max_usage":1685741568,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":309645312,"inactive_file":135168,"inactive_anon":95428608,"total_pgfault":1770417,"total_cache":98238464,"total_rss_huge":0,"total_active_anon":311697408,"total_pgmajfault":0,"pgpgin":1115268,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":0,"total_unevictable":0,"total_dirty":0,"writeback":0,"pgpgout":1015677,"hierarchical_memsw_limit":0,"cache":98238464,"active_file":946176,"pgfault":1770417,"total_mapped_file":0,"total_pgpgout":1015677,"total_writeback":0,"rss":309645312,"unevictable":0,"total_inactive_anon":95428608,"total_pgpgin":1115268,"active_anon":311697408,"total_active_file":946176},"limit":540965302272},"name":"/RegularizedLeastSquares-nnBWrv8G","networks":{"eth0":{"rx_bytes":7482727,"rx_packets":2162,"tx_packets":2452,"tx_bytes":292736,"tx_dropped":0,"rx_dropped":3,"tx_errors":0,"rx_errors":0}},"id":"378ae4bda6958b24a36abc7de7835f85805702d478c78e8a0315114985de0a79","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3325883744522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":74960000000,"usage_in_kernelmode":5070000000,"total_usage":79899814462,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79899098922,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,715540,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:45:15.820662629Z"}

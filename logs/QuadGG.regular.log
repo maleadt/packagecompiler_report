@@ -1,0 +1,97 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:48:40.515
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:48:42.359
+#
+
+ Installing known registries into `~/.julia`
+##########################################                                59.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed QuadGG ─ v0.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [c505f82d] + QuadGG v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [c505f82d] + QuadGG v0.1.0
+  [de0858da] + Printf
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T17:48:46.079
+#
+
+    Testing QuadGG
+Status `/tmp/jl_UUotwQ/Project.toml`
+  [c505f82d] QuadGG v0.1.0
+  [de0858da] Printf
+  [8dfed614] Test
+Status `/tmp/jl_UUotwQ/Manifest.toml`
+  [c505f82d] QuadGG v0.1.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+   0.000000000000000       0.625000000000000       0.820312500000000
+   0.625000000000000       0.312500000000000       0.556640625000000
+   0.937500000000000       0.039062500000000       0.076446533203125
+   0.976562500000000       0.019531250000000       0.038795471191406
+   0.996093750000000       0.019531250000000       0.038936191134983
+   1.015625000000000       0.078125000000000       0.151977539062500
+   1.093750000000000       0.156250000000000       0.285644531250000
+   1.250000000000000       1.250000000000000       1.406250000000000
+   2.500000000000000       0.312500000000000       0.107421875000000
+   2.812500000000000       0.156250000000000       0.017089843750000
+   2.968750000000000       0.019531250000000       0.000419616699219
+   2.988281250000000       0.009765625000000       0.000066757202148
+   2.998046875000000       0.001220703125000       0.000001639127731
+   2.999267578125000       0.000610351562500       0.000000260770321
+   2.999877929687500       0.000076293945313       0.000000006402843
+   2.999954223632813       0.000076293945313       0.000066122492879
+   3.000030517578125       0.000152587890625       0.000305175781250
+   3.000183105468750       0.000305175781250       0.000610351562500
+   3.000488281250000       0.002441406250000       0.004882812500000
+   3.002929687500000       0.004882812500000       0.009765625000000
+   3.007812500000000       0.039062500000000       0.078125000000000
+   3.046875000000000       0.078125000000000       0.156250000000000
+   3.125000000000000       0.625000000000000       1.250000000000000
+   3.750000000000000       1.250000000000000       2.500000000000000
+Test Summary: | Pass  Total
+QuadGG        |    9      9
+    Testing QuadGG tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:48:53.714
+CPU usage: 13.14s (10.75s user, 2.40s kernel)
+
+Network usage:
+- eth0: 2.535 MiB received, 26.334 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":319463424,"max_usage":571801600,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":210534400,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":287859,"total_cache":79343616,"total_rss_huge":0,"total_active_anon":211267584,"total_pgmajfault":0,"pgpgin":206316,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":135540,"hierarchical_memsw_limit":0,"cache":79343616,"active_file":135168,"pgfault":287859,"total_mapped_file":0,"total_pgpgout":135540,"total_writeback":0,"rss":210534400,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":206316,"active_anon":211267584,"total_active_file":135168},"limit":540965302272},"name":"/QuadGG-2158AiP0","networks":{"eth0":{"rx_bytes":2658646,"rx_packets":260,"tx_packets":266,"tx_bytes":26966,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"353fc8028ffc04e44979f2b7f90ecd79dc44bad34ba14b039eeef76034ca8dff","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4273864924522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":10750000000,"usage_in_kernelmode":2400000000,"total_usage":13140751585,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,13140746975,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4610,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:48:53.717638112Z"}

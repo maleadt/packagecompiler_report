@@ -1,0 +1,126 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:10:05.88
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:10:07.716
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Multivectors ───── v0.2.1
+  Installed Combinatorics ──── v1.0.2
+  Installed FunctionWrappers ─ v1.1.1
+  Installed StaticArrays ───── v1.0.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [7984e3fa] + Multivectors v0.2.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [861a8166] + Combinatorics v1.0.2
+  [069b7b12] + FunctionWrappers v1.1.1
+  [7984e3fa] + Multivectors v0.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T22:10:12.479
+#
+
+    Testing Multivectors
+Status `/tmp/jl_YA7gnT/Project.toml`
+  [861a8166] Combinatorics v1.0.2
+  [069b7b12] FunctionWrappers v1.1.1
+  [7984e3fa] Multivectors v0.2.1
+  [90137ffa] StaticArrays v1.0.1
+  [37e2e46d] LinearAlgebra
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_YA7gnT/Manifest.toml`
+  [861a8166] Combinatorics v1.0.2
+  [069b7b12] FunctionWrappers v1.1.1
+  [7984e3fa] Multivectors v0.2.1
+  [90137ffa] StaticArrays v1.0.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Test Summary: | Pass  Total
+PGA3D         |   42     42
+Test Summary: | Pass  Total
+g2            |    9      9
+Test Summary: | Pass  Total
+hodge star    | 5100   5100
+Test Summary: | Pass  Total
+KVectors      |   25     25
+┌ Warning: resolving Blade types in top-level module via dual(1)
+└ @ Multivectors ~/.julia/packages/Multivectors/Yp50z/src/KVectors.jl:77
+Test Summary: | Pass  Total
+More KVectors |   32     32
+Test Summary: | Pass  Total
+Null KVectors |    6      6
+Test Summary: | Pass  Total
+PG2           |    1      1
+Test Summary: | Pass  Total
+HomogeneousG2 |    1      1
+Test Summary: | Pass  Total
+CGA3D         |    8      8
+Test Summary: | Pass  Total
+PGA3D         |   19     19
+Multivector{Float64,2}
+⟨1.0⟩₀ + ⟨3.0Main.G4.e₁₃⟩₂1.0Blade{Float64,2}[3.0Main.G4.e₁₃]Test Summary: | Pass  Total
+contraction   |   53     53
+Test Summary: | Pass  Total
+Quaternion    |   11     11
+Test Summary: | Pass  Total
+Barycentric   |    6      6
+    Testing Multivectors tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:14:16.144
+CPU usage: 250.06s (246.43s user, 3.92s kernel)
+
+Network usage:
+- eth0: 2.787 MiB received, 43.399 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":283299840,"max_usage":943554560,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":171028480,"inactive_file":135168,"inactive_anon":79613952,"total_pgfault":1474671,"total_cache":82657280,"total_rss_huge":0,"total_active_anon":174231552,"total_pgmajfault":0,"pgpgin":759990,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":698063,"hierarchical_memsw_limit":0,"cache":82657280,"active_file":135168,"pgfault":1474671,"total_mapped_file":0,"total_pgpgout":698063,"total_writeback":0,"rss":171028480,"unevictable":0,"total_inactive_anon":79613952,"total_pgpgin":759990,"active_anon":174231552,"total_active_file":135168},"limit":540965302272},"name":"/Multivectors-CZ6mmS3i","networks":{"eth0":{"rx_bytes":2922023,"rx_packets":512,"tx_packets":421,"tx_bytes":44441,"tx_dropped":0,"rx_dropped":9,"tx_errors":0,"rx_errors":0}},"id":"0e2fe4cbad91d53edc1ab3fd93bf52beebd072536c809ac79db34592b2eb9c2d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6308552304522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":246430000000,"usage_in_kernelmode":3920000000,"total_usage":250057838975,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11322954,0,0,250046516021,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:14:16.146851664Z"}

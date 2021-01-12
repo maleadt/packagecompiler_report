@@ -1,0 +1,240 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T15:30:42.135
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T15:30:43.881
+#
+
+ Installing known registries into `~/.julia`
+######################################                                    53.6%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed FIGlet ────────── v0.2.1
+  Installed BinaryProvider ── v0.5.10
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [3064a664] + FIGlet v0.2.1
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [b99e7846] + BinaryProvider v0.5.10
+  [3064a664] + FIGlet v0.2.1
+  [9b87118b] + PackageCompiler v1.2.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building FIGlet → `~/.julia/packages/FIGlet/My7b4/deps/build.log`
+
+
+################################################################################
+# Compiling: 2021-01-11T15:30:55.083
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 147.356 MiB, compilation took 164 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T15:33:46.242
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/FIGlet-bCrBQa5q.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:33:48.066
+#
+
+ Installing known registries into `~/.julia`
+######                                                                     8.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed FIGlet ───────── v0.2.1
+  Installed BinaryProvider ─ v0.5.10
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [3064a664] + FIGlet v0.2.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [b99e7846] + BinaryProvider v0.5.10
+  [3064a664] + FIGlet v0.2.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building FIGlet → `~/.julia/packages/FIGlet/My7b4/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T15:33:57.427
+#
+
+    Testing FIGlet
+Status `/tmp/jl_YKiFEa/Project.toml`
+  [b99e7846] BinaryProvider v0.5.10
+  [3064a664] FIGlet v0.2.1
+  [44cfe95a] Pkg
+  [8dfed614] Test
+Status `/tmp/jl_YKiFEa/Manifest.toml`
+  [b99e7846] BinaryProvider v0.5.10
+  [3064a664] FIGlet v0.2.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+FIGlet.jl: Error During Test at /home/user/.julia/packages/FIGlet/My7b4/test/runtests.jl:20
+  Test threw exception
+  Expression: FIGlet.availablefonts() |> length == 680
+  SystemError: unable to read directory /home/pkgeval/.julia/artifacts/125ac0315d68bbb612f8c2189ea83401f73238f0/FIGletFonts-0.5.0/fonts: No such file or directory
+  Stacktrace:
+   [1] walkdir(::String; topdown::Bool, follow_symlinks::Bool, onerror::typeof(throw)) at ./file.jl:0
+   [2] walkdir at ./file.jl:872 [inlined]
+   [3] availablefonts(::String) at /home/pkgeval/.julia/packages/FIGlet/My7b4/src/FIGlet.jl:249
+   [4] availablefonts at /home/pkgeval/.julia/packages/FIGlet/My7b4/src/FIGlet.jl:289 [inlined]
+   [5] macro expansion at /home/user/.julia/packages/FIGlet/My7b4/test/runtests.jl:20 [inlined]
+   [6] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [7] top-level scope at /home/user/.julia/packages/FIGlet/My7b4/test/runtests.jl:15
+  caused by [exception 1]
+  SystemError: unable to read directory /home/pkgeval/.julia/artifacts/125ac0315d68bbb612f8c2189ea83401f73238f0/FIGletFonts-0.5.0/fonts: No such file or directory
+  Stacktrace:
+   [1] readdir(::String; join::Bool, sort::Bool) at ./file.jl:810
+   [2] readdir at ./file.jl:805 [inlined]
+   [3] walkdir(::String; topdown::Bool, follow_symlinks::Bool, onerror::typeof(throw)) at ./file.jl:874
+   [4] walkdir at ./file.jl:872 [inlined]
+   [5] availablefonts(::String) at /home/pkgeval/.julia/packages/FIGlet/My7b4/src/FIGlet.jl:249
+   [6] availablefonts at /home/pkgeval/.julia/packages/FIGlet/My7b4/src/FIGlet.jl:289 [inlined]
+   [7] macro expansion at /home/user/.julia/packages/FIGlet/My7b4/test/runtests.jl:20 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] top-level scope at /home/user/.julia/packages/FIGlet/My7b4/test/runtests.jl:15
+  
+FIGlet.jl: Error During Test at /home/user/.julia/packages/FIGlet/My7b4/test/runtests.jl:14
+  Got exception outside of a @test
+  SystemError: unable to read directory /home/pkgeval/.julia/artifacts/125ac0315d68bbb612f8c2189ea83401f73238f0/FIGletFonts-0.5.0/fonts: No such file or directory
+  Stacktrace:
+   [1] walkdir(::String; topdown::Bool, follow_symlinks::Bool, onerror::typeof(throw)) at ./file.jl:0
+   [2] walkdir at ./file.jl:872 [inlined]
+   [3] availablefonts(::String) at /home/pkgeval/.julia/packages/FIGlet/My7b4/src/FIGlet.jl:249
+   [4] availablefonts at /home/pkgeval/.julia/packages/FIGlet/My7b4/src/FIGlet.jl:289 [inlined]
+   [5] macro expansion at /home/user/.julia/packages/FIGlet/My7b4/test/runtests.jl:22 [inlined]
+   [6] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [7] top-level scope at /home/user/.julia/packages/FIGlet/My7b4/test/runtests.jl:15
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  caused by [exception 1]
+  SystemError: unable to read directory /home/pkgeval/.julia/artifacts/125ac0315d68bbb612f8c2189ea83401f73238f0/FIGletFonts-0.5.0/fonts: No such file or directory
+  Stacktrace:
+   [1] readdir(::String; join::Bool, sort::Bool) at ./file.jl:810
+   [2] readdir at ./file.jl:805 [inlined]
+   [3] walkdir(::String; topdown::Bool, follow_symlinks::Bool, onerror::typeof(throw)) at ./file.jl:874
+   [4] walkdir at ./file.jl:872 [inlined]
+   [5] availablefonts(::String) at /home/pkgeval/.julia/packages/FIGlet/My7b4/src/FIGlet.jl:249
+   [6] availablefonts at /home/pkgeval/.julia/packages/FIGlet/My7b4/src/FIGlet.jl:289 [inlined]
+   [7] macro expansion at /home/user/.julia/packages/FIGlet/My7b4/test/runtests.jl:22 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] top-level scope at /home/user/.julia/packages/FIGlet/My7b4/test/runtests.jl:15
+   [10] include(::String) at ./client.jl:457
+   [11] top-level scope at none:6
+   [12] eval(::Module, ::Any) at ./boot.jl:331
+   [13] exec_options(::Base.JLOptions) at ./client.jl:272
+   [14] _start() at ./client.jl:506
+  
+Test Summary: | Pass  Error  Total
+FIGlet.jl     |    2      2      4
+ERROR: LoadError: Some tests did not pass: 2 passed, 0 failed, 2 errored, 0 broken.
+in expression starting at /home/user/.julia/packages/FIGlet/My7b4/test/runtests.jl:14
+
+PkgEval failed: Package FIGlet errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:34:04.976
+CPU usage: 18.65s (16.01s user, 2.70s kernel)
+
+Network usage:
+- eth0: 2.664 MiB received, 34.462 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":23,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":23,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":23,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":23,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":94208,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":94208,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":94208,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":94208,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":312180736,"max_usage":620277760,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":200736768,"inactive_file":135168,"inactive_anon":80154624,"total_pgfault":440022,"total_cache":81661952,"total_rss_huge":0,"total_active_anon":202346496,"total_pgmajfault":0,"pgpgin":268389,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":199415,"hierarchical_memsw_limit":0,"cache":81661952,"active_file":135168,"pgfault":440022,"total_mapped_file":0,"total_pgpgout":199415,"total_writeback":0,"rss":200736768,"unevictable":0,"total_inactive_anon":80154624,"total_pgpgin":268389,"active_anon":202346496,"total_active_file":135168},"limit":540965302272},"name":"/FIGlet-oLwPg4Mv","networks":{"eth0":{"rx_bytes":2793258,"rx_packets":353,"tx_packets":356,"tx_bytes":35289,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"0cd283d0480613d7ee4abfaee221435fc52e28ff55ca48c73e1fc6c29fa9724f","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3240219144522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":16010000000,"usage_in_kernelmode":2700000000,"total_usage":18647953790,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5189053,18642759647,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5090,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:34:05.359666123Z"}

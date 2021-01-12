@@ -1,0 +1,393 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:58:36.658
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:58:38.441
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed ZygoteRules ────────────────── v0.2.1
+  Installed Reexport ───────────────────── v1.0.0
+  Installed TableTraits ────────────────── v1.0.0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed NonlinearSolve ─────────────── v0.3.4
+  Installed RiskAdjustedLinearizations ─── v0.5.3
+  Installed FunctionWrappers ───────────── v1.1.1
+  Installed FillArrays ─────────────────── v0.10.2
+  Installed Tables ─────────────────────── v1.2.2
+  Installed Requires ───────────────────── v1.1.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed Parameters ─────────────────── v0.12.1
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Setfield ───────────────────── v0.7.0
+  Installed TreeViews ──────────────────── v0.3.0
+  Installed ConstructionBase ───────────── v1.0.0
+  Installed ArrayLayouts ───────────────── v0.4.12
+  Installed RecursiveArrayTools ────────── v2.10.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed VectorizationBase ──────────── v0.14.12
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed DiffEqBase ─────────────────── v6.53.4
+  Installed LoopVectorization ──────────── v0.9.17
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed Hwloc ──────────────────────── v1.1.0
+  Installed NLsolve ────────────────────── v4.5.1
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed Distances ──────────────────── v0.10.0
+  Installed FastGaussQuadrature ────────── v0.4.5
+  Installed ArrayInterface ─────────────── v2.14.13
+  Installed IfElse ─────────────────────── v0.1.0
+  Installed FiniteDiff ─────────────────── v2.7.2
+  Installed LineSearches ───────────────── v7.1.1
+  Installed BandedMatrices ─────────────── v0.15.25
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed Adapt ──────────────────────── v2.4.0
+  Installed IterativeSolvers ───────────── v0.9.0
+  Installed OffsetArrays ───────────────── v1.5.0
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed LabelledArrays ─────────────── v1.4.0
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed Compat ─────────────────────── v3.25.0
+  Installed NLSolversBase ──────────────── v7.7.1
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed DocStringExtensions ────────── v0.8.3
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed RecursiveFactorization ─────── v0.1.6
+  Installed Hwloc_jll ──────────────────── v2.2.0+0
+  Installed SLEEFPirates ───────────────── v0.6.3
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [7bb39b10] + RiskAdjustedLinearizations v0.5.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [79e6a3ab] + Adapt v2.4.0
+  [4fba245c] + ArrayInterface v2.14.13
+  [4c555306] + ArrayLayouts v0.4.12
+  [56f22d72] + Artifacts v1.3.0
+  [aae01518] + BandedMatrices v0.15.25
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [187b0558] + ConstructionBase v1.0.0
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [2b5f629d] + DiffEqBase v6.53.4
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [b4f34e82] + Distances v0.10.0
+  [ffbed154] + DocStringExtensions v0.8.3
+  [442a2c76] + FastGaussQuadrature v0.4.5
+  [1a297f60] + FillArrays v0.10.2
+  [6a86dc24] + FiniteDiff v2.7.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [069b7b12] + FunctionWrappers v1.1.1
+  [0e44f5e4] + Hwloc v1.1.0
+  [e33a78d0] + Hwloc_jll v2.2.0+0
+  [615f187c] + IfElse v0.1.0
+  [42fd0dbc] + IterativeSolvers v0.9.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [2ee39098] + LabelledArrays v1.4.0
+  [d3d80556] + LineSearches v7.1.1
+  [bdcacae8] + LoopVectorization v0.9.17
+  [1914dd2f] + MacroTools v0.5.6
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [d41bc354] + NLSolversBase v7.7.1
+  [2774e3e8] + NLsolve v4.5.1
+  [77ba4419] + NaNMath v0.3.5
+  [8913a72c] + NonlinearSolve v0.3.4
+  [6fe1bfb0] + OffsetArrays v1.5.0
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [d96e819e] + Parameters v0.12.1
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [731186ca] + RecursiveArrayTools v2.10.0
+  [f2c3362d] + RecursiveFactorization v0.1.6
+  [189a3867] + Reexport v1.0.0
+  [ae029012] + Requires v1.1.2
+  [7bb39b10] + RiskAdjustedLinearizations v0.5.3
+  [476501e8] + SLEEFPirates v0.6.3
+  [efcf1570] + Setfield v0.7.0
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [a2a6695c] + TreeViews v0.3.0
+  [3a884ed6] + UnPack v1.0.2
+  [3d5dd08c] + VectorizationBase v0.14.12
+  [700de1a5] + ZygoteRules v0.2.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T21:58:46.404
+#
+
+    Testing RiskAdjustedLinearizations
+Status `/tmp/jl_16DkGT/Project.toml`
+  [4fba245c] ArrayInterface v2.14.13
+  [aae01518] BandedMatrices v0.15.25
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [2b5f629d] DiffEqBase v6.53.4
+  [442a2c76] FastGaussQuadrature v0.4.5
+  [f6369f11] ForwardDiff v0.10.14
+  [033835bb] JLD2 v0.3.1
+  [2774e3e8] NLsolve v4.5.1
+  [bac558e1] OrderedCollections v1.3.2
+  [7bb39b10] RiskAdjustedLinearizations v0.5.3
+  [1bc83da4] SafeTestsets v0.0.1
+  [3a884ed6] UnPack v1.0.2
+  [37e2e46d] LinearAlgebra
+  [de0858da] Printf
+  [9a3f8284] Random
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_16DkGT/Manifest.toml`
+  [79e6a3ab] Adapt v2.4.0
+  [4fba245c] ArrayInterface v2.14.13
+  [4c555306] ArrayLayouts v0.4.12
+  [56f22d72] Artifacts v1.3.0
+  [aae01518] BandedMatrices v0.15.25
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [944b1d66] CodecZlib v0.7.0
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [187b0558] ConstructionBase v1.0.0
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [2b5f629d] DiffEqBase v6.53.4
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [b4f34e82] Distances v0.10.0
+  [ffbed154] DocStringExtensions v0.8.3
+  [442a2c76] FastGaussQuadrature v0.4.5
+  [1a297f60] FillArrays v0.10.2
+  [6a86dc24] FiniteDiff v2.7.2
+  [f6369f11] ForwardDiff v0.10.14
+  [069b7b12] FunctionWrappers v1.1.1
+  [0e44f5e4] Hwloc v1.1.0
+  [e33a78d0] Hwloc_jll v2.2.0+0
+  [615f187c] IfElse v0.1.0
+  [42fd0dbc] IterativeSolvers v0.9.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [033835bb] JLD2 v0.3.1
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [2ee39098] LabelledArrays v1.4.0
+  [d3d80556] LineSearches v7.1.1
+  [bdcacae8] LoopVectorization v0.9.17
+  [1914dd2f] MacroTools v0.5.6
+  [46d2c3a1] MuladdMacro v0.2.2
+  [d41bc354] NLSolversBase v7.7.1
+  [2774e3e8] NLsolve v4.5.1
+  [77ba4419] NaNMath v0.3.5
+  [8913a72c] NonlinearSolve v0.3.4
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.15
+  [3cdcf5f2] RecipesBase v1.1.1
+  [731186ca] RecursiveArrayTools v2.10.0
+  [f2c3362d] RecursiveFactorization v0.1.6
+  [189a3867] Reexport v1.0.0
+  [ae029012] Requires v1.1.2
+  [7bb39b10] RiskAdjustedLinearizations v0.5.3
+  [476501e8] SLEEFPirates v0.6.3
+  [1bc83da4] SafeTestsets v0.0.1
+  [efcf1570] Setfield v0.7.0
+  [276daf66] SpecialFunctions v1.2.1
+  [90137ffa] StaticArrays v1.0.1
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [a2a6695c] TreeViews v0.3.0
+  [3a884ed6] UnPack v1.0.2
+  [3d5dd08c] VectorizationBase v0.14.12
+  [83775a58] Zlib_jll v1.2.11+18
+  [700de1a5] ZygoteRules v0.2.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+Utilities     |   16     16
+179.728242 seconds (52.56 M allocations: 3.021 GiB, 0.67% gc time)
+Test Summary:               | Pass  Total
+Risk-Adjusted Linearization |   82     82
+ 31.525318 seconds (51.83 M allocations: 2.522 GiB, 3.35% gc time)
+[ Info: The following messages about Blanchard-Kahn conditions are expected.
+Blanchard-Kahn conditions for a unique locally bounded stochastic steady-state perturbation are satisfied
+Blanchard-Kahn conditions for a unique locally bounded stochastic steady-state perturbation are satisfied
+Blanchard-Kahn conditions for a unique locally bounded deterministic steady-state perturbation are satisfied
+Blanchard-Kahn conditions for a unique locally bounded deterministic steady-state perturbation are satisfied
+[ Info: The following series of print statements are expected.
+A deterministic steady state has been found
+Blanchard-Kahn conditions for a unique locally bounded deterministic steady-state perturbation are satisfied
+A deterministic steady state has been found
+Blanchard-Kahn conditions for a unique locally bounded deterministic steady-state perturbation are satisfied
+[ Info: The following series of print statements are expected.
+Convergence achieved after 21 iterations! Error under norm = Inf is 9.054434540675671e-9.
+Convergence achieved after 21 iterations! Error under norm = Inf is 9.054434429653369e-9.
+Convergence achieved after 4 iterations! Error under norm = Inf is 8.287814878826794e-14.
+[ Info: The following series of print statements are expected.
+Results of Nonlinear Solver Algorithm
+ * Algorithm: Trust-region with dogleg and autoscaling
+ * Starting Point: [0.00896375, 0.0, 0.0, 0.8002288666687198, 0.8039027416687198, 0.010377750000000017, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+ * Zero: [0.004608065482128849, 2.8354422221179104e-5, -0.000850632564722467, -65.49153849662831, -65.49737393841055, -0.029324300486862222, -0.7597202450933658, -0.7597183633835073, -0.8240480299772684, 0.0001978308201153974, 3.95661480294263e-5, -3.956614744212281e-5, 0.00028634908321466864, 5.726984428951049e-5, -5.726984555126626e-5]
+ * Inf-norm of residuals: 0.002835
+ * Iterations: 1000
+ * Convergence: false
+   * |x - x'| < 0.0e+00: false
+   * |f(x)| < 1.0e-08: false
+ * Function Calls (f): 109
+ * Jacobian Calls (df/dx): 45
+Results of Nonlinear Solver Algorithm
+ * Algorithm: Trust-region with dogleg and autoscaling
+ * Starting Point: [0.008786249999999999, 0.0, 0.0, 0.6070093172298311, 0.609529571813421, 0.005887770200285058, -0.8604732054384826, -0.8652583981475188, -1.0377160337706992, -0.0, -0.0, 0.0, -0.0, -0.0, 0.0]
+ * Zero: [0.005046044999379854, 3.7181511181165724e-5, -0.0009939921961795305, -521.9305971798551, -521.9369751094423, -0.030224605866122817, -0.7804950868066859, -0.7748102270409103, -0.8235238610060266, 0.0002509208147497243, 4.2918194962751894e-5, -4.5058372119968345e-5, -0.0044515257387032995, -0.0009476594377744469, 0.0009856963731880676]
+ * Inf-norm of residuals: 0.005685
+ * Iterations: 25
+ * Convergence: false
+   * |x - x'| < 0.0e+00: false
+   * |f(x)| < 1.0e-08: false
+ * Function Calls (f): 26
+ * Jacobian Calls (df/dx): 18
+Numerical algorithms: Error During Test at /home/pkgeval/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:25
+  Got exception outside of a @test
+  LoadError: A solution for (z, y, Ψ) to the state transition, expectational, and linearization equations could not be found when the embedding parameter q equals 0.5
+  Stacktrace:
+   [1] solve_steadystate!(::RiskAdjustedLinearizations.RiskAdjustedLinearization{Array{Float64,1},Array{Float64,2}}, ::Array{Float64,1}, ::Float64; autodiff::Symbol, verbose::Symbol, kwargs::Base.Iterators.Pairs{Symbol,Float64,Tuple{Symbol},NamedTuple{(:ftol,),Tuple{Float64}}}) at /home/pkgeval/.julia/packages/RiskAdjustedLinearizations/3e9wR/src/numerical_algorithms/homotopy.jl:132
+   [2] homotopy!(::RiskAdjustedLinearizations.RiskAdjustedLinearization{Array{Float64,1},Array{Float64,2}}, ::Array{Float64,1}; step::Float64, pnorm::Float64, verbose::Symbol, autodiff::Symbol, kwargs::Base.Iterators.Pairs{Symbol,Float64,Tuple{Symbol},NamedTuple{(:ftol,),Tuple{Float64}}}) at /home/pkgeval/.julia/packages/RiskAdjustedLinearizations/3e9wR/src/numerical_algorithms/homotopy.jl:41
+   [3] top-level scope at /home/pkgeval/.julia/packages/RiskAdjustedLinearizations/3e9wR/test/numerical_algorithms/homotopy.jl:27
+   [4] include(::Function, ::Module, ::String) at ./Base.jl:380
+   [5] include at ./Base.jl:368 [inlined]
+   [6] include(::String) at /home/pkgeval/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
+   [7] top-level scope at /home/pkgeval/.julia/packages/RiskAdjustedLinearizations/3e9wR/test/runtests.jl:19
+   [8] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [9] top-level scope at /home/pkgeval/.julia/packages/RiskAdjustedLinearizations/3e9wR/test/runtests.jl:15
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] top-level scope at /home/pkgeval/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
+   [12] top-level scope at timing.jl:174
+   [13] top-level scope at /home/pkgeval/.julia/packages/RiskAdjustedLinearizations/3e9wR/test/runtests.jl:14
+   [14] top-level scope at timing.jl:174
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at none:6
+   [17] eval(::Module, ::Any) at ./boot.jl:331
+   [18] exec_options(::Base.JLOptions) at ./client.jl:272
+   [19] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/RiskAdjustedLinearizations/3e9wR/test/numerical_algorithms/homotopy.jl:18
+  
+Test Summary:            | Pass  Error  Total
+Numerical algorithms     |   29      1     30
+  QZ decomposition for Ψ |    6             6
+ERROR: LoadError: Some tests did not pass: 29 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/RiskAdjustedLinearizations/3e9wR/test/runtests.jl:5
+
+PkgEval failed: Package RiskAdjustedLinearizations errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:03:00.703
+CPU usage: 263.80s (250.04s user, 14.10s kernel)
+
+Network usage:
+- eth0: 19.296 MiB received, 365.660 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":151552,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":45056,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":151552,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":151552,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":45056,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":151552,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":399245312,"max_usage":1910939648,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":233529344,"inactive_file":135168,"inactive_anon":101781504,"total_pgfault":6180240,"total_cache":130654208,"total_rss_huge":0,"total_active_anon":262496256,"total_pgmajfault":0,"pgpgin":4242711,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":4153783,"hierarchical_memsw_limit":0,"cache":130654208,"active_file":135168,"pgfault":6180240,"total_mapped_file":0,"total_pgpgout":4153783,"total_writeback":0,"rss":233529344,"unevictable":0,"total_inactive_anon":101781504,"total_pgpgin":4242711,"active_anon":262496256,"total_active_file":135168},"limit":540965302272},"name":"/RiskAdjustedLinearizations-YkmMvEO2","networks":{"eth0":{"rx_bytes":20233062,"rx_packets":2980,"tx_packets":3120,"tx_bytes":374436,"tx_dropped":0,"rx_dropped":9,"tx_errors":0,"rx_errors":0}},"id":"59c712d099920a0017975dca3563ae6d5dc96b3a697474003d89bef283c86350","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6222229104522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":250040000000,"usage_in_kernelmode":14100000000,"total_usage":263799723355,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,3123461,0,18790,263791225782,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2127991,0,3227331,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:03:00.705843448Z"}

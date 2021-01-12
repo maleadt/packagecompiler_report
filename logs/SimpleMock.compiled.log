@@ -1,0 +1,136 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T19:35:45.402
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T19:35:47.128
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed SimpleMock ────── v1.2.0
+  Installed Cassette ──────── v0.3.4
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [a896ed2c] + SimpleMock v1.2.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [7057c7e9] + Cassette v0.3.4
+  [9b87118b] + PackageCompiler v1.2.5
+  [a896ed2c] + SimpleMock v1.2.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T19:35:52.649
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 147.978 MiB, compilation took 163 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T19:38:42.586
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/SimpleMock-7IifNMlF.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:38:44.348
+#
+
+ Installing known registries into `~/.julia`
+#################################################################         91.3%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed SimpleMock ─ v1.2.0
+  Installed Cassette ─── v0.3.4
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a896ed2c] + SimpleMock v1.2.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [7057c7e9] + Cassette v0.3.4
+  [a896ed2c] + SimpleMock v1.2.0
+
+
+################################################################################
+# Testing: 2021-01-11T19:38:48.496
+#
+
+    Testing SimpleMock
+Status `/tmp/jl_DdvC19/Project.toml`
+  [7057c7e9] Cassette v0.3.4
+  [a896ed2c] SimpleMock v1.2.0
+  [fd094767] Suppressor v0.2.0
+  [8dfed614] Test
+Status `/tmp/jl_DdvC19/Manifest.toml`
+  [7057c7e9] Cassette v0.3.4
+  [a896ed2c] SimpleMock v1.2.0
+  [fd094767] Suppressor v0.2.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary: | Pass  Broken  Total
+SimpleMock.jl |  142       1    143
+    Testing SimpleMock tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:40:31.791
+CPU usage: 109.03s (106.28s user, 2.92s kernel)
+
+Network usage:
+- eth0: 3.076 MiB received, 40.111 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":19,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":19,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":77824,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":77824,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":314707968,"max_usage":723300352,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":185823232,"inactive_file":135168,"inactive_anon":79749120,"total_pgfault":874731,"total_cache":97554432,"total_rss_huge":0,"total_active_anon":186396672,"total_pgmajfault":0,"pgpgin":312807,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":0,"pgpgout":243647,"hierarchical_memsw_limit":0,"cache":97554432,"active_file":17301504,"pgfault":874731,"total_mapped_file":0,"total_pgpgout":243647,"total_writeback":0,"rss":185823232,"unevictable":0,"total_inactive_anon":79749120,"total_pgpgin":312807,"active_anon":186396672,"total_active_file":17301504},"limit":540965302272},"name":"/SimpleMock-uEBeB5B2","networks":{"eth0":{"rx_bytes":3225421,"rx_packets":435,"tx_packets":407,"tx_bytes":41074,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"aeece6e0e4b90dd26e4429a88e08df90d5c8bea130f478f90d23a319f30f9556","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5129915634522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":106280000000,"usage_in_kernelmode":2920000000,"total_usage":109034418088,"percpu_usage":[0,0,0,109034412458,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3020,0,2610,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:40:31.794498163Z"}

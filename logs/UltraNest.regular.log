@@ -1,0 +1,815 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:45:30.662
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:45:32.509
+#
+
+ Installing known registries into `~/.julia`
+#######                                                                   10.7%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed VersionParsing ─ v1.2.0
+  Installed Conda ────────── v1.5.0
+  Installed UltraNest ────── v0.1.0
+  Installed MacroTools ───── v0.5.6
+  Installed PyCall ───────── v1.92.2
+  Installed Parsers ──────── v1.0.15
+  Installed JSON ─────────── v0.21.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [6822f173] + UltraNest v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [8f4d0f93] + Conda v1.5.0
+  [682c06a0] + JSON v0.21.1
+  [1914dd2f] + MacroTools v0.5.6
+  [69de0a69] + Parsers v1.0.15
+  [438e738f] + PyCall v1.92.2
+  [6822f173] + UltraNest v0.1.0
+  [81def892] + VersionParsing v1.2.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4ec0a83e] + Unicode
+   Building Conda ─→ `~/.julia/packages/Conda/x5ml4/deps/build.log`
+   Building PyCall → `~/.julia/packages/PyCall/tqyST/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T23:46:09.734
+#
+
+    Testing UltraNest
+Status `/tmp/jl_utzQ6Q/Project.toml`
+  [31c24e10] Distributions v0.24.10
+  [09f84164] HypothesisTests v0.10.2
+  [438e738f] PyCall v1.92.2
+  [2913bbd2] StatsBase v0.33.2
+  [6822f173] UltraNest v0.1.0
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_utzQ6Q/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [861a8166] Combinatorics v1.0.2
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [8f4d0f93] Conda v1.5.0
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [31c24e10] Distributions v0.24.10
+  [1a297f60] FillArrays v0.10.2
+  [09f84164] HypothesisTests v0.10.2
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [1914dd2f] MacroTools v0.5.6
+  [e1d29d7a] Missings v0.4.4
+  [46d2c3a1] MuladdMacro v0.2.2
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [90014a1f] PDMats v0.10.1
+  [69de0a69] Parsers v1.0.15
+  [438e738f] PyCall v1.92.2
+  [1fd47b50] QuadGK v2.4.1
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [f2b01f46] Roots v1.0.7
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.2.1
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [6822f173] UltraNest v0.1.0
+  [81def892] VersionParsing v1.2.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: Installing ultranest via the Conda ultranest package...
+[ Info: Running `conda config --add channels conda-forge --file /home/pkgeval/.julia/conda/3/condarc-julia.yml --force` in root environment
+[ Info: Running `conda install -q -y ultranest` in root environment
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/pkgeval/.julia/conda/3
+
+  added / updated specs:
+    - ultranest
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    _libgcc_mutex-0.1          |      conda_forge           3 KB  conda-forge
+    _openmp_mutex-4.5          |            1_gnu          22 KB  conda-forge
+    ca-certificates-2020.12.5  |       ha878542_0         137 KB  conda-forge
+    certifi-2020.12.5          |   py38h578d9bd_1         143 KB  conda-forge
+    conda-4.9.2                |   py38h578d9bd_0         3.0 MB  conda-forge
+    corner-2.1.0               |     pyhd3deb0d_1          15 KB  conda-forge
+    cycler-0.10.0              |             py_2           9 KB  conda-forge
+    cython-0.29.21             |   py38h348cfbe_1         2.1 MB  conda-forge
+    freetype-2.10.4            |       h7ca028e_0         912 KB  conda-forge
+    icu-67.1                   |       he1b5a44_0        12.9 MB  conda-forge
+    kiwisolver-1.3.1           |   py38h82cb98a_0          86 KB  conda-forge
+    libgcc-ng-9.3.0            |      h5dbcf3e_17         7.8 MB  conda-forge
+    libgfortran-ng-7.5.0       |      hae1eefd_17          22 KB  conda-forge
+    libgfortran4-7.5.0         |      hae1eefd_17         1.3 MB  conda-forge
+    libgomp-9.3.0              |      h5dbcf3e_17         378 KB  conda-forge
+    libpng-1.6.37              |       h21135ba_2         306 KB  conda-forge
+    matplotlib-base-3.2.2      |   py38h5d868c9_1         7.1 MB  conda-forge
+    openssl-1.1.1i             |       h7f98852_0         2.1 MB  conda-forge
+    pyparsing-2.4.7            |     pyh9f0ad1d_0          60 KB  conda-forge
+    python-dateutil-2.8.1      |             py_0         220 KB  conda-forge
+    python_abi-3.8             |           1_cp38           4 KB  conda-forge
+    scipy-1.5.2                |   py38h0b6359f_0        14.5 MB
+    tornado-6.1                |   py38h497a2fe_1         649 KB  conda-forge
+    ultranest-3.2.0            |   py38h5c078b8_0         3.0 MB  conda-forge
+    ------------------------------------------------------------
+                                           Total:        56.6 MB
+
+The following NEW packages will be INSTALLED:
+
+  _openmp_mutex      conda-forge/linux-64::_openmp_mutex-4.5-1_gnu
+  corner             conda-forge/noarch::corner-2.1.0-pyhd3deb0d_1
+  cycler             conda-forge/noarch::cycler-0.10.0-py_2
+  cython             conda-forge/linux-64::cython-0.29.21-py38h348cfbe_1
+  freetype           conda-forge/linux-64::freetype-2.10.4-h7ca028e_0
+  icu                conda-forge/linux-64::icu-67.1-he1b5a44_0
+  kiwisolver         conda-forge/linux-64::kiwisolver-1.3.1-py38h82cb98a_0
+  libgfortran-ng     conda-forge/linux-64::libgfortran-ng-7.5.0-hae1eefd_17
+  libgfortran4       conda-forge/linux-64::libgfortran4-7.5.0-hae1eefd_17
+  libgomp            conda-forge/linux-64::libgomp-9.3.0-h5dbcf3e_17
+  libpng             conda-forge/linux-64::libpng-1.6.37-h21135ba_2
+  matplotlib-base    conda-forge/linux-64::matplotlib-base-3.2.2-py38h5d868c9_1
+  pyparsing          conda-forge/noarch::pyparsing-2.4.7-pyh9f0ad1d_0
+  python-dateutil    conda-forge/noarch::python-dateutil-2.8.1-py_0
+  python_abi         conda-forge/linux-64::python_abi-3.8-1_cp38
+  scipy              pkgs/main/linux-64::scipy-1.5.2-py38h0b6359f_0
+  tornado            conda-forge/linux-64::tornado-6.1-py38h497a2fe_1
+  ultranest          conda-forge/linux-64::ultranest-3.2.0-py38h5c078b8_0
+
+The following packages will be UPDATED:
+
+  certifi            pkgs/main::certifi-2020.12.5-py38h06a~ --> conda-forge::certifi-2020.12.5-py38h578d9bd_1
+  libgcc-ng           pkgs/main::libgcc-ng-9.1.0-hdf63c60_0 --> conda-forge::libgcc-ng-9.3.0-h5dbcf3e_17
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  _libgcc_mutex           pkgs/main::_libgcc_mutex-0.1-main --> conda-forge::_libgcc_mutex-0.1-conda_forge
+  ca-certificates    pkgs/main::ca-certificates-2020.12.8-~ --> conda-forge::ca-certificates-2020.12.5-ha878542_0
+  conda               pkgs/main::conda-4.9.2-py38h06a4308_0 --> conda-forge::conda-4.9.2-py38h578d9bd_0
+  openssl              pkgs/main::openssl-1.1.1i-h27cfd23_0 --> conda-forge::openssl-1.1.1i-h7f98852_0
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+[ultranest] Sampling 4000 live points from prior ...
+
+
+Mono-modal Volume: ~exp(-3.81) * Expected Volume: exp(-1.56) Quality: ok
+
+a:      -2.0|********************************************************|     +2.0
+b:      -3.0|*******************     *            *******************|     +3.0
+c:      -6.0|**********            *                       **********|     +6.0
+
+Z=-1e+10(0.00%) | Like=-1e+10..0.18 [-1e+10..-0.1739] | it/evals=3159/4097 eff=0.0000% N=841 Z=-56.5(0.00%) | Like=-50.30..0.18 [-1e+10..-0.1739] | it/evals=3200/4336 eff=12.2024% N=841 
+
+Have 4 modes Volume: ~exp(-6.33) * Expected Volume: exp(-1.78) Quality: correlation length: 9 (-)
+
+a:      -2.0|  322332432114143143432331    334321223143211212123123  |     +2.0
+b:      -3.0|3333333333334334343                  1221122111222112222|     +3.0
+c:      -6.0|4222242222                                    3313331131|     +6.0
+
+Z=-42.4(0.00%) | Like=-36.16..0.35 [-1e+10..-0.1739] | it/evals=3347/5059 eff=17.7526% N=841 Z=-34.5(0.00%) | Like=-28.98..0.35 [-1e+10..-0.1739] | it/evals=3481/5342 eff=23.9940% N=841 
+
+Have 4 modes Volume: ~exp(-6.33)   Expected Volume: exp(-2.01) Quality: correlation length: 9 (-)
+
+a:      -2.0|    23324321141431434111        13212231432112121231    |     +2.0
+b:      -3.0|3333343333334334344                  1211122111222112222|     +3.0
+c:      -6.0|4222222222                                    3311331131|     +6.0
+
+Z=-30.0(0.00%) | Like=-24.23..0.35 [-1e+10..-0.1739] | it/evals=3575/5573 eff=26.4463% N=841 Z=-29.0(0.00%) | Like=-23.30..0.35 [-1e+10..-0.1739] | it/evals=3600/5611 eff=27.3743% N=841 
+
+Have 4 modes Volume: ~exp(-6.33)   Expected Volume: exp(-2.23) Quality: correlation length: 9 (-)
+
+a:      -2.0|     112432114143143411          441223143211212113     |     +2.0
+b:      -3.0|3334343333334334343                  2211122121122111222|     +3.0
+c:      -6.0|4422242222                                    3311331131|     +6.0
+
+Z=-25.0(0.00%) | Like=-19.30..0.35 [-1e+10..-0.1739] | it/evals=3723/5919 eff=29.3903% N=841 Z=-21.3(0.00%) | Like=-15.80..0.35 [-1e+10..-0.1739] | it/evals=3856/6331 eff=29.9013% N=841 
+
+Have 4 modes Volume: ~exp(-6.88) * Expected Volume: exp(-2.45) Quality: correlation length: 9 (-)
+
+a:      -2.0|      1133411413114343            3322324343121413      |     +2.0
+b:      -3.0|3333443343444444333                  1221122211121121122|     +3.0
+c:      -6.0|2222244242                                    1311313131|     +6.0
+
+Z=-20.1(0.00%) | Like=-14.78..0.35 [-1e+10..-0.1739] | it/evals=3911/6499 eff=30.0920% N=841 Z=-18.6(0.00%) | Like=-13.47..0.35 [-1e+10..-0.1739] | it/evals=4000/6799 eff=30.0464% N=841 
+
+Have 8 modes Volume: ~exp(-7.36) * Expected Volume: exp(-2.68) Quality: correlation length: 9 (-)
+
+a:      -2.0|       57371175715313              62284484262646       |     +2.0
+b:      -3.0|3884443744448477877                  1252622116125552126|     +3.0
+c:      -6.0|5424244747                                    6311816136|     +6.0
+
+Z=-17.2(0.00%) | Like=-12.16..0.35 [-1e+10..-0.1739] | it/evals=4099/7079 eff=30.5294% N=841 Z=-15.6(0.01%) | Like=-10.54..0.61 [-1e+10..-0.1739] | it/evals=4226/7397 eff=31.4101% N=841 
+
+Have 8 modes Volume: ~exp(-7.65) * Expected Volume: exp(-2.90) Quality: correlation length: 9 (-)
+
+a:      -2.0|       37171775713133              22284484262648       |     +2.0
+b:      -3.0|8784348744848473877                  1515622111125552526|     +3.0
+c:      -6.0|5424242747                                    6811816336|     +6.0
+
+Z=-15.0(0.01%) | Like=-9.91..0.61 [-1e+10..-0.1739] | it/evals=4287/7580 eff=31.5084% N=841 Z=-14.0(0.03%) | Like=-8.97..0.61 [-1e+10..-0.1739] | it/evals=4400/7918 eff=31.6743% N=841 
+
+Have 8 modes Volume: ~exp(-7.65)   Expected Volume: exp(-3.12) Quality: correlation length: 9 (-)
+
+a:      -2.0|        353177571315                228448426266        |     +2.0
+b:      -3.0|8784348844348483870                  6515622111125552126|     +3.0
+c:      -6.0|5424242742                                    6811816331|     +6.0
+
+Z=-13.3(0.07%) | Like=-8.34..0.61 [-1e+10..-0.1739] | it/evals=4487/8132 eff=32.1394% N=841 Z=-12.4(0.15%) | Like=-7.52..0.76 [-1e+10..-0.1739] | it/evals=4613/8551 eff=31.9490% N=841 
+
+Have 8 modes Volume: ~exp(-7.65)   Expected Volume: exp(-3.35) Quality: correlation length: 9 (-)
+
+a:      -2.0|        053111573315                628648826260        |     +2.0
+b:      -3.0|848434884834888383                   6215622111125552166|     +3.0
+c:      -6.0|572544275                                      811816331|     +6.0
+
+Z=-12.0(0.24%) | Like=-6.98..0.76 [-1e+10..-0.1739] | it/evals=4696/8840 eff=31.7562% N=841 Z=-11.4(0.41%) | Like=-6.34..0.93 [-1e+10..-0.1739] | it/evals=4800/9209 eff=31.5032% N=841 
+
+Have 8 modes Volume: ~exp(-8.17) * Expected Volume: exp(-3.57) Quality: correlation length: 9 (-)
+
+a:      -2.0|         5511115111                 66864268426         |     +2.0
+b:      -3.0|  8484484848483383                     15166511155152116|     +3.0
+c:      -6.0| 74455472                                      666818166|     +6.0
+
+Z=-11.1(0.53%) | Like=-6.13..0.93 [-1e+10..-0.1739] | it/evals=4851/9358 eff=31.5789% N=841 Z=-10.6(0.86%) | Like=-5.62..0.99 [-1e+10..-0.1739] | it/evals=4965/9759 eff=31.3596% N=841 
+
+Have 8 modes Volume: ~exp(-8.44) * Expected Volume: exp(-3.79) Quality: correlation length: 9 (-)
+
+a:      -2.0|         5511515111                  6864268426         |     +2.0
+b:      -3.0|  888488484488333                      1516151115515611 |     +3.0
+c:      -6.0| 22555472                                      666818116|     +6.0
+
+Z=-10.3(1.17%) | Like=-5.29..0.99 [-1e+10..-0.1739] | it/evals=5039/10033 eff=31.1619% N=841 Z=-9.9(1.76%) | Like=-4.86..0.99 [-1e+10..-0.1739] | it/evals=5152/10428 eff=31.0050% N=841 Z=-9.7(2.06%) | Like=-4.67..0.99 [-1e+10..-0.1739] | it/evals=5200/10603 eff=30.9102% N=841 
+
+Have 8 modes Volume: ~exp(-8.44)   Expected Volume: exp(-4.02) Quality: correlation length: 9 (-)
+
+a:      -2.0|         1511515111                  6864268846         |     +2.0
+b:      -3.0|  888488488388373                      121115111551561  |     +3.0
+c:      -6.0| 52555750                                      666818111|     +6.0
+
+Z=-9.5(2.54%) | Like=-4.45..0.99 [-1e+10..-0.1739] | it/evals=5265/10863 eff=30.6863% N=841 Z=-9.2(3.41%) | Like=-4.11..0.99 [-1e+10..-0.1739] | it/evals=5374/11252 eff=30.5433% N=841 
+
+Have 8 modes Volume: ~exp(-8.78) * Expected Volume: exp(-4.24) Quality: correlation length: 9 (-)
+
+a:      -2.0|         151151511                   6264268686         |     +2.0
+b:      -3.0|  38848848838838                       116515121551566  |     +3.0
+c:      -6.0| 5555575                                       11681111 |     +6.0
+
+Z=-9.1(3.84%) | Like=-3.97..0.99 [-1e+10..-0.1739] | it/evals=5415/11443 eff=30.3104% N=841 Z=-8.8(5.09%) | Like=-3.63..0.99 [-1e+10..-0.1739] | it/evals=5521/11799 eff=30.2859% N=841 Z=-8.6(6.13%) | Like=-3.44..0.99 [-1e+10..-0.1739] | it/evals=5600/12102 eff=30.1284% N=841 
+
+Have 8 modes Volume: ~exp(-9.36) * Expected Volume: exp(-4.47) Quality: correlation length: 9 (-)
+
+a:      -2.0|          31151511                   6264262686         |     +2.0
+b:      -3.0|   8848848834338                        16612121562561  |     +3.0
+c:      -6.0| 2555472                                        1681111 |     +6.0
+
+Z=-8.6(6.18%) | Like=-3.44..0.99 [-1e+10..-0.1739] | it/evals=5603/12102 eff=30.1654% N=841 Z=-8.4(7.68%) | Like=-3.18..0.99 [-1e+10..-0.1739] | it/evals=5698/12419 eff=30.1580% N=841 
+
+Have 8 modes Volume: ~exp(-9.36)   Expected Volume: exp(-4.69) Quality: correlation length: 9 (-)
+
+a:      -2.0|          11151711                    26426268  +1.3    |     +2.0
+b:      -3.0|    88884883433                         6661212156216   |     +3.0
+c:      -6.0|  552472                                        1681116 |     +6.0
+
+Z=-8.2(9.29%) | Like=-2.92..0.99 [-1e+10..-0.1739] | it/evals=5791/12690 eff=30.2877% N=841 Z=-7.9(11.68%) | Like=-2.67..0.99 [-1e+10..-0.1739] | it/evals=5898/13069 eff=30.2018% N=841 
+
+Have 8 modes Volume: ~exp(-9.58) * Expected Volume: exp(-4.91) Quality: correlation length: 9 (-)
+
+a:      -2.0|          11151311                    66486426  +1.2    |     +2.0
+b:      -3.0|    38884884838                         1621612151111   |     +3.0
+c:      -6.0|  54242                                         1681116 |     +6.0
+
+Z=-7.8(13.18%) | Like=-2.52..0.99 [-1e+10..-0.1739] | it/evals=5979/13317 eff=30.2673% N=841 Z=-7.8(13.64%) | Like=-2.48..0.99 [-1e+10..-0.1739] | it/evals=6000/13372 eff=30.3137% N=841 Z=-7.6(15.83%) | Like=-2.31..1.01 [-1e+10..-0.1739] | it/evals=6086/13659 eff=30.3033% N=841 
+
+Have 8 modes Volume: ~exp(-9.96) * Expected Volume: exp(-5.14) Quality: correlation length: 9 (-)
+
+a:      -2.0|          11171111                    66486666  +1.2    |     +2.0
+b:      -3.0|    3888478388                          6626616111111   |     +3.0
+c:      -6.0|  22745                                         661111  |     +6.0
+
+Z=-7.5(17.73%) | Like=-2.14..1.01 [-1e+10..-0.1739] | it/evals=6167/13959 eff=30.2038% N=841 Z=-7.4(20.23%) | Like=-1.99..1.01 [-1e+10..-0.1739] | it/evals=6251/14229 eff=30.2278% N=841 Z=-7.2(23.38%) | Like=-1.80..1.01 [-1e+10..-0.1739] | it/evals=6354/14551 eff=30.2815% N=841 
+
+Have 8 modes Volume: ~exp(-10.05) * Expected Volume: exp(-5.36) Quality: correlation length: 9 (-)
+
+a:      -2.0|          11171111                    66486686  +1.2    |     +2.0
+b:      -3.0|    3888478388                           66661611611    |     +3.0
+c:      -6.0|  22745                                         661181  |     +6.0
+
+Z=-7.2(23.42%) | Like=-1.80..1.01 [-1e+10..-0.1739] | it/evals=6355/14556 eff=30.2766% N=841 Z=-7.2(24.75%) | Like=-1.75..1.01 [-1e+10..-0.1739] | it/evals=6400/14689 eff=30.3209% N=841 Z=-7.1(27.40%) | Like=-1.63..1.01 [-1e+10..-0.1739] | it/evals=6485/14961 eff=30.3439% N=841 
+
+Have 8 modes Volume: ~exp(-10.05)   Expected Volume: exp(-5.58) Quality: correlation length: 9 (-)
+
+a:      -2.0|          1117111                     66866686  +1.2    |     +2.0
+b:      -3.0|     388878383                           66666612611    |     +3.0
+c:      -6.0|  22745                                         661186  |     +6.0
+
+Z=-7.0(29.73%) | Like=-1.56..1.01 [-1e+10..-0.1739] | it/evals=6558/15229 eff=30.2698% N=841 Z=-6.9(32.99%) | Like=-1.41..1.01 [-1e+10..-0.1739] | it/evals=6666/15605 eff=30.2197% N=841 
+
+Have 8 modes Volume: ~exp(-10.29) * Expected Volume: exp(-5.81) Quality: correlation length: 9 (-)
+
+a:      -2.0|          1131111                     4444684  +1.2     |     +2.0
+b:      -3.0|     388388333                           44146242111    |     +3.0
+c:      -6.0|   2255                                         441144  |     +6.0
+
+Z=-6.8(34.69%) | Like=-1.33..1.01 [-1e+10..-0.1739] | it/evals=6731/15774 eff=30.3380% N=841 Z=-6.8(36.74%) | Like=-1.27..1.01 [-1e+10..-0.1739] | it/evals=6800/15997 eff=30.3493% N=841 Z=-6.7(40.23%) | Like=-1.13..1.04 [-1e+10..-0.1739] | it/evals=6908/16370 eff=30.3072% N=841 
+
+Have 7 modes Volume: ~exp(-10.35) * Expected Volume: exp(-6.03) Quality: correlation length: 9 (-)
+
+a:      -2.0|     -1.2  131111                      444644  +1.2     |     +2.0
+b:      -3.0|     37737333                            41146141411    |     +3.0
+c:      -6.0|   225                                          441144  |     +6.0
+
+Z=-6.7(40.49%) | Like=-1.12..1.04 [-1e+10..-0.1739] | it/evals=6919/16411 eff=30.2957% N=841 Z=-6.6(43.60%) | Like=-1.00..1.04 [-1e+10..-0.1739] | it/evals=7025/16852 eff=30.0809% N=841 
+
+Have 7 modes Volume: ~exp(-10.91) * Expected Volume: exp(-6.25) Quality: correlation length: 9 (-)
+
+a:      -2.0|     -1.2  131111                      444644  +1.2     |     +2.0
+b:      -3.0|     37777333                             1146241414    |     +3.0
+c:      -6.0|   222                                           41174  |     +6.0
+
+Z=-6.6(45.93%) | Like=-0.90..1.04 [-1e+10..-0.1739] | it/evals=7107/17190 eff=29.9318% N=841 Z=-6.5(48.84%) | Like=-0.81..1.04 [-1e+10..-0.1739] | it/evals=7200/17476 eff=29.9866% N=841 
+
+Have 7 modes Volume: ~exp(-10.91)   Expected Volume: exp(-6.48) Quality: correlation length: 9 (-)
+
+a:      -2.0|     -1.2  111111                      444644  +1.2     |     +2.0
+b:      -3.0|      7777373                             414644141     |     +3.0
+c:      -6.0|   255                                           41174  |     +6.0
+
+Z=-6.4(51.79%) | Like=-0.74..1.04 [-1e+10..-0.1739] | it/evals=7295/17788 eff=29.9971% N=841 Z=-6.4(54.78%) | Like=-0.63..1.04 [-1e+10..-0.1739] | it/evals=7407/18136 eff=30.0509% N=841 
+
+Have 6 modes Volume: ~exp(-11.25) * Expected Volume: exp(-6.70) Quality: correlation length: 9 (-)
+
+a:      -2.0|     -1.2  111311                      444444  +1.2     |     +2.0
+b:      -3.0|      6636636                             414144411     |     +3.0
+c:      -6.0|    22                                           41144  |     +6.0
+
+Z=-6.3(57.04%) | Like=-0.57..1.04 [-1e+10..-0.1739] | it/evals=7483/18441 eff=29.9425% N=841 Z=-6.3(59.97%) | Like=-0.48..1.04 [-1e+10..-0.1739] | it/evals=7593/18796 eff=29.9676% N=841 Z=-6.3(60.18%) | Like=-0.48..1.04 [-1e+10..-0.1739] | it/evals=7600/18824 eff=29.9582% N=841 
+
+Have 6 modes Volume: ~exp(-11.25)   Expected Volume: exp(-6.92) Quality: correlation length: 9 (-)
+
+a:      -2.0|     -1.2  111311                      444444  +1.2     |     +2.0
+b:      -3.0|       63363                              414144441     |     +3.0
+c:      -6.0|    2                                            41444  |     +6.0
+
+Z=-6.3(62.26%) | Like=-0.40..1.04 [-1e+10..-0.1739] | it/evals=7678/19055 eff=30.0166% N=841 Z=-6.2(64.87%) | Like=-0.33..1.04 [-1e+10..-0.1739] | it/evals=7784/19406 eff=30.0208% N=841 
+
+Have 5 modes Volume: ~exp(-11.99) * Expected Volume: exp(-7.15) Quality: correlation length: 9 (-)
+
+a:      -2.0|     -1.2  113311                      242222  +1.2     |     +2.0
+b:      -3.0|       53555                               14122121     |     +3.0
+c:      +0.0|                                    +4.6  243121222     |     +6.0
+
+Z=-6.2(66.74%) | Like=-0.27..1.04 [-1e+10..-0.1739] | it/evals=7859/19627 eff=30.0762% N=841 Z=-6.2(69.49%) | Like=-0.16..1.04 [-0.1643..-0.1631]*| it/evals=7981/19895 eff=30.3366% N=841 Z=-6.1(69.93%) | Like=-0.15..1.04 [-0.1507..-0.1506]*| it/evals=8000/19961 eff=30.3302% N=841 
+
+Have 4 modes Volume: ~exp(-12.05) * Expected Volume: exp(-7.37) Quality: correlation length: 9 (-)
+
+a:      -2.0|      -1.1  11311                      222422  +1.1     |     +2.0
+b:      -3.0|       4344                                11122222     |     +3.0
+c:      +0.0|                                     +4.6  12421111     |     +6.0
+
+Z=-6.1(70.98%) | Like=-0.12..1.04 [-0.1193..-0.1182]*| it/evals=8047/20078 eff=30.4018% N=841 Z=-6.1(73.23%) | Like=-0.04..1.04 [-0.0424..-0.0419]*| it/evals=8159/20359 eff=30.5642% N=841 
+
+Have 4 modes Volume: ~exp(-12.05)   Expected Volume: exp(-7.60) Quality: correlation length: 9 (-)
+
+a:      -2.0|      -1.1  1131                        2222  +1.1      |     +2.0
+b:      -3.0|       4344                                1112221      |     +3.0
+c:      +0.0|                                     +4.6  1212111      |     +6.0
+
+Z=-6.1(74.81%) | Like=0.00..1.04 [0.0030..0.0035]*| it/evals=8236/20556 eff=30.6656% N=841 Z=-6.1(76.81%) | Like=0.07..1.04 [0.0741..0.0742]*| it/evals=8347/20837 eff=30.8131% N=841 Z=-6.0(77.76%) | Like=0.11..1.04 [0.1103..0.1117]*| it/evals=8400/20948 eff=30.9240% N=841 
+
+Have 4 modes Volume: ~exp(-12.72) * Expected Volume: exp(-7.82) Quality: correlation length: 9 (-)
+
+a:      -2.0|      -1.1  1111                        2222  +1.1      |     +2.0
+b:      -3.0|        34                                 2112221      |     +3.0
+c:      +0.0|                                     +4.7  2212111      |     +6.0
+
+Z=-6.0(78.17%) | Like=0.12..1.04 [0.1230..0.1236]*| it/evals=8423/21000 eff=30.9647% N=841 Z=-6.0(80.02%) | Like=0.19..1.04 [0.1876..0.1890]*| it/evals=8533/21293 eff=31.0762% N=841 
+
+Have 2 modes Volume: ~exp(-12.75) * Expected Volume: exp(-8.04) Quality: correlation length: 9 (-)
+
+a:      -2.0|      -1.1  1111                        2222  +1.1      |     +2.0
+b:      +0.0|                         +1.7  221112212222  +2.3       |     +3.0
+c:      +0.0|                                     +4.7  2212111      |     +6.0
+
+Z=-6.0(81.29%) | Like=0.24..1.04 [0.2376..0.2384]*| it/evals=8611/21486 eff=31.1792% N=841 Z=-6.0(82.17%) | Like=0.27..1.04 [0.2696..0.2697]*| it/evals=8673/21594 eff=31.3402% N=841 Z=-6.0(83.99%) | Like=0.35..1.04 [0.3485..0.3487]*| it/evals=8798/21859 eff=31.5751% N=841 
+
+Have 2 modes Volume: ~exp(-12.96) * Expected Volume: exp(-8.27) Quality: correlation length: 9 (-)
+
+a:      -2.0|      -1.1  1111                        2222  +1.1      |     +2.0
+b:      +0.0|                          +1.7  11112222212  +2.3       |     +3.0
+c:      +0.0|                                      +4.7  112111      |     +6.0
+
+Z=-6.0(84.01%) | Like=0.35..1.04 [0.3487..0.3488]*| it/evals=8799/21859 eff=31.5807% N=841 Z=-6.0(84.02%) | Like=0.35..1.04 [0.3488..0.3495]*| it/evals=8800/21859 eff=31.5863% N=841 Z=-5.9(85.72%) | Like=0.41..1.04 [0.4144..0.4147]*| it/evals=8926/22086 eff=31.8865% N=841 
+
+Have 2 modes Volume: ~exp(-13.10) * Expected Volume: exp(-8.49) Quality: correlation length: 9 (-)
+
+a:      -2.0|      -1.1  1111                        2222  +1.1      |     +2.0
+b:      +0.0|                          +1.7  11112222212  +2.3       |     +3.0
+c:      +0.0|                                      +4.7  112111      |     +6.0
+
+Z=-5.9(86.49%) | Like=0.44..1.04 [0.4398..0.4411]*| it/evals=8987/22196 eff=32.0290% N=841 Z=-5.9(87.87%) | Like=0.49..1.04 [0.4913..0.4930]*| it/evals=9102/22399 eff=32.3007% N=841 
+
+Have 2 modes Volume: ~exp(-13.56) * Expected Volume: exp(-8.71) Quality: correlation length: 9 (-)
+
+a:      -2.0|      -1.1  1111                        2222  +1.1      |     +2.0
+b:      +0.0|                          +1.8  2221222221  +2.2        |     +3.0
+c:      +0.0|                                      +4.8  21211       |     +6.0
+
+Z=-5.9(88.65%) | Like=0.52..1.04 [0.5250..0.5251]*| it/evals=9175/22550 eff=32.4313% N=841 Z=-5.9(88.94%) | Like=0.54..1.04 [0.5404..0.5406]*| it/evals=9200/22596 eff=32.4855% N=841 Z=-5.9(90.21%) | Like=0.59..1.04 [0.5901..0.5910]*| it/evals=9325/22822 eff=32.7595% N=841 
+
+Have 2 modes Volume: ~exp(-13.92) * Expected Volume: exp(-8.94) Quality: correlation length: 9 (-)
+
+a:      -2.0|      -1.1  1111                        2222  +1.1      |     +2.0
+b:      +0.0|                           +1.8  221122121  +2.2        |     +3.0
+c:      +0.0|                                      +4.8  21211       |     +6.0
+
+Z=-5.9(90.57%) | Like=0.60..1.04 [0.6035..0.6035]*| it/evals=9363/22877 eff=32.8654% N=841 Z=-5.9(91.54%) | Like=0.64..1.04 [0.6418..0.6418]*| it/evals=9472/23082 eff=33.0835% N=841 
+
+Have 2 modes Volume: ~exp(-13.92)   Expected Volume: exp(-9.16) Quality: correlation length: 9 (-)
+
+a:      -2.0|      -1.1  1111                        2222  +1.1      |     +2.0
+b:      +0.0|                           +1.8  221122121  +2.2        |     +3.0
+c:      +0.0|                                      +4.8  21211       |     +6.0
+
+Z=-5.9(92.21%) | Like=0.67..1.04 [0.6671..0.6672]*| it/evals=9553/23214 eff=33.2778% N=841 Z=-5.9(92.58%) | Like=0.68..1.04 [0.6808..0.6813]*| it/evals=9600/23305 eff=33.3644% N=841 Z=-5.9(93.38%) | Like=0.71..1.04 [0.7096..0.7101]*| it/evals=9711/23529 eff=33.5501% N=841 
+
+Have 2 modes Volume: ~exp(-14.34) * Expected Volume: exp(-9.38) Quality: correlation length: 9 (-)
+
+a:      -2.0|      -1.1  1111                        2222  +1.1      |     +2.0
+b:      +0.0|                           +1.8  221222121  +2.2        |     +3.0
+c:      +0.0|                                      +4.8  11211       |     +6.0
+
+Z=-5.9(93.57%) | Like=0.72..1.04 [0.7152..0.7155]*| it/evals=9739/23612 eff=33.5509% N=841 Z=-5.8(94.27%) | Like=0.74..1.04 [0.7436..0.7440]*| it/evals=9851/23824 eff=33.7571% N=841 
+
+Have 2 modes Volume: ~exp(-14.34)   Expected Volume: exp(-9.61) Quality: correlation length: 9 (-)
+
+a:      -2.0|      -1.1  1111                         222  +1.1      |     +2.0
+b:      +0.0|                           +1.8  12122112  +2.2         |     +3.0
+c:      +0.0|                                      +4.8  21211       |     +6.0
+
+Z=-5.8(94.71%) | Like=0.76..1.04 [0.7619..0.7620]*| it/evals=9928/23974 eff=33.8891% N=841 Z=-5.8(95.10%) | Like=0.78..1.04 [0.7797..0.7799]*| it/evals=10000/24120 eff=34.0010% N=841 Z=-5.8(95.67%) | Like=0.80..1.04 [0.8021..0.8022]*| it/evals=10112/24374 eff=34.1268% N=841 
+
+Have 2 modes Volume: ~exp(-14.57) * Expected Volume: exp(-9.83) Quality: correlation length: 9 (-)
+
+a:      -2.0|       -1.1  11                          22  +1.1       |     +2.0
+b:      +0.0|                            +1.8  2122111  +2.2         |     +3.0
+c:      +0.0|                                       +4.8  2222       |     +6.0
+
+Z=-5.8(95.68%) | Like=0.80..1.04 [0.8022..0.8025]*| it/evals=10115/24374 eff=34.1416% N=841 Z=-5.8(96.14%) | Like=0.82..1.04 [0.8211..0.8215]*| it/evals=10221/24575 eff=34.3232% N=841 
+
+Have 2 modes Volume: ~exp(-14.59) * Expected Volume: exp(-10.05) Quality: correlation length: 9 (-)
+
+a:      -2.0|       -1.1  11                          22  +1.1       |     +2.0
+b:      +0.0|                            +1.8  2122111  +2.2         |     +3.0
+c:      +0.0|                                       +4.8  2222       |     +6.0
+
+Z=-5.8(96.47%) | Like=0.84..1.04 [0.8354..0.8356]*| it/evals=10303/24785 eff=34.3709% N=841 Z=-5.8(96.83%) | Like=0.85..1.04 [0.8488..0.8489]*| it/evals=10400/24964 eff=34.5402% N=841 
+
+Have 2 modes Volume: ~exp(-15.27) * Expected Volume: exp(-10.28) Quality: correlation length: 9 (-)
+
+a:      -2.0|       -1.1  11                          22  +1.1       |     +2.0
+b:      +0.0|                            +1.9  212211  +2.1          |     +3.0
+c:      +0.0|                                       +4.9  2222       |     +6.0
+
+Z=-5.8(97.13%) | Like=0.86..1.04 [0.8645..0.8647]*| it/evals=10491/25162 eff=34.6470% N=841 Z=-5.8(97.46%) | Like=0.88..1.04 [0.8794..0.8795]*| it/evals=10602/25365 eff=34.8374% N=841 
+
+Have 2 modes Volume: ~exp(-15.27) * Expected Volume: exp(-10.50) Quality: correlation length: 9 (-)
+
+a:      -2.0|       -1.1  11                          22  +1.1       |     +2.0
+b:      +0.0|                            +1.9  222211  +2.1          |     +3.0
+c:      +0.0|                                       +4.9  222        |     +6.0
+
+Z=-5.8(97.67%) | Like=0.89..1.04 [0.8891..0.8893]*| it/evals=10679/25493 eff=34.9881% N=841 Z=-5.8(97.93%) | Like=0.90..1.04 [0.9024..0.9027]*| it/evals=10782/25695 eff=35.1371% N=841 Z=-5.8(97.97%) | Like=0.90..1.04 [0.9042..0.9043]*| it/evals=10800/25729 eff=35.1650% N=841 
+
+Have 2 modes Volume: ~exp(-15.49) * Expected Volume: exp(-10.72) Quality: correlation length: 9 (-)
+
+a:      -2.0|       -1.0  11                          22  +1.0       |     +2.0
+b:      +0.0|                             +1.9  22221  +2.1          |     +3.0
+c:      +0.0|                                       +4.9  222        |     +6.0
+
+Z=-5.8(98.12%) | Like=0.91..1.04 [0.9121..0.9122]*| it/evals=10867/25858 eff=35.2640% N=841 Z=-5.8(98.33%) | Like=0.92..1.04 [0.9223..0.9224]*| it/evals=10976/26045 eff=35.4593% N=841 
+
+Have 2 modes Volume: ~exp(-15.71) * Expected Volume: exp(-10.95) Quality: correlation length: 9 (-)
+
+a:      -2.0|       -1.0  11                          22  +1.0       |     +2.0
+b:      +0.0|                             +1.9  22222  +2.1          |     +3.0
+c:      +0.0|                                       +4.9  122        |     +6.0
+
+Z=-5.8(98.48%) | Like=0.93..1.04 [0.9299..0.9300]*| it/evals=11055/26200 eff=35.5676% N=841 Z=-5.8(98.64%) | Like=0.94..1.04 [0.9376..0.9376]*| it/evals=11155/26400 eff=35.6964% N=841 Z=-5.8(98.71%) | Like=0.94..1.04 [0.9415..0.9415]*| it/evals=11200/26481 eff=35.7680% N=841 
+
+Have 2 modes Volume: ~exp(-15.71)   Expected Volume: exp(-11.17) Quality: correlation length: 9 (-)
+
+a:      -2.0|       -1.0  11                          22  +1.0       |     +2.0
+b:      +0.0|                             +1.9  22222  +2.1          |     +3.0
+c:      +0.0|                                       +4.9  122        |     +6.0
+
+Z=-5.8(98.81%) | Like=0.95..1.05 [0.9480..0.9480]*| it/evals=11274/26662 eff=35.8088% N=841 Z=-5.8(98.95%) | Like=0.96..1.05 [0.9573..0.9573]*| it/evals=11380/26898 eff=35.9027% N=841 [ultranest] Explored until L=1  
+[ultranest] Likelihood function evaluations: 27007
+[ultranest] Will add 359 live points (x1) at L=-6 ...
+
+
+Have 8 modes Volume: ~exp(-8.60) * Expected Volume: exp(-3.69) Quality: ok
+
+a:      -2.0|         3311113111                  2524625442         |     +2.0
+b:      -3.0|  555455454455885                      13122311133136121|     +3.0
+c:      -6.0| 74333476                                      222515122|     +6.0
+
+Z=-10.6(0.84%) | Like=-5.66..1.05 [-1e+10..-0.1739] | it/evals=4954/27018 eff=0.0000% N=841 
+
+Have 12 modes Volume: ~exp(-9.44) * Expected Volume: exp(-5.02) Quality: ok
+
+a:      -2.0|          61651111                    22A32342  +1.2    |     +2.0
+b:      -3.0|    6633A736333                         2292219141151   |     +3.0
+c:      -6.0|  9B9AB                                         2271541 |     +6.0
+
+Z=-7.7(15.44%) | Like=-2.35..1.05 [-1e+10..-0.1739] | it/evals=6067/27022 eff=6.6667% N=842 
+
+Have 15 modes Volume: ~exp(-9.69) * Expected Volume: exp(-5.28) Quality: ok
+
+a:      -2.0|          11141611                    22A32272  +1.2    |     +2.0
+b:      -3.0|    E333A43E33                           282212169151   |     +3.0
+c:      -6.0|  DD4AF                                         2211512 |     +6.0
+
+Z=-7.3(21.40%) | Like=-1.93..1.05 [-1e+10..-0.1739] | it/evals=6288/27022 eff=13.3333% N=843 
+
+Have 18 modes Volume: ~exp(-10.45) * Expected Volume: exp(-5.61) Quality: ok
+
+a:      -2.0|          36A4333                     12191171  +1.2    |     +2.0
+b:      -3.0|     A55A45EDA                           1311261G33B    |     +3.0
+c:      -6.0|   G4HH                                         116311  |     +6.0
+
+Z=-7.0(29.99%) | Like=-1.54..1.05 [-1e+10..-0.1739] | it/evals=6572/27034 eff=14.8148% N=844 
+
+Have 19 modes Volume: ~exp(-10.48) * Expected Volume: exp(-5.90) Quality: ok
+
+a:      -2.0|     -1.2  6A4223                      119111  +1.2     |     +2.0
+b:      -3.0|     A57A55EDA                           1821161G32B    |     +3.0
+c:      -6.0|   GGJJ                                         114211  |     +6.0
+
+Z=-6.8(37.14%) | Like=-1.25..1.05 [-1e+10..-0.1739] | it/evals=6816/27048 eff=19.5122% N=846 
+
+Have 19 modes Volume: ~exp(-10.92) * Expected Volume: exp(-6.15) Quality: ok
+
+a:      -2.0|     -1.2  2D4222                      119111  +1.2     |     +2.0
+b:      -3.0|     D5555DED                             2211A1792B    |     +3.0
+c:      -6.0|   AG6                                           14251  |     +6.0
+
+Z=-6.6(43.55%) | Like=-1.01..1.05 [-1e+10..-0.1739] | it/evals=7025/27055 eff=22.9167% N=847 [ultranest] Found a lot of clusters: 20 (6 with >1 members)
+
+
+Have 20 modes Volume: ~exp(-11.01) * Expected Volume: exp(-6.50) Quality: ok
+
+a:      -2.0|     -1.2  2D4225                      119111  +1.2     |     +2.0
+b:      -3.0|      6666J6J                             821115A92     |     +3.0
+c:      -6.0|   BKB                                           14261  |     +6.0
+
+Z=-6.4(52.31%) | Like=-0.71..1.05 [-1e+10..-0.1739] | it/evals=7321/27077 eff=18.5714% N=848 [ultranest] Found a lot of clusters: 21 (6 with >1 members)
+
+
+Have 21 modes Volume: ~exp(-11.09) * Expected Volume: exp(-6.77) Quality: ok
+
+a:      -2.0|     -1.2  2A4J25                      111191  +1.2     |     +2.0
+b:      -3.0|      66J66E6                             821419122     |     +3.0
+c:      -6.0|    BB                                           14211  |     +6.0
+
+Z=-6.3(58.64%) | Like=-0.52..1.05 [-1e+10..-0.1739] | it/evals=7548/27096 eff=21.3483% N=850 [ultranest] Found a lot of clusters: 23 (5 with >1 members)
+
+
+Have 21 modes Volume: ~exp(-11.09)   Expected Volume: exp(-6.99) Quality: ok
+
+a:      -2.0|     -1.2  2A2J35                      11119B  +1.2     |     +2.0
+b:      -3.0|       6266E                              121469312     |     +3.0
+c:      -6.0|    6                                            12311  |     +6.0
+
+Z=-6.2(64.83%) | Like=-0.34..1.05 [-1e+10..-0.1739] | it/evals=7793/27116 eff=22.0183% N=853 [ultranest] Found a lot of clusters: 22 (4 with >1 members)
+
+
+Have 22 modes Volume: ~exp(-11.92) * Expected Volume: exp(-7.23) Quality: ok
+
+a:      -2.0|      -1.1  12131                      556595  +1.1     |     +2.0
+b:      -3.0|       M2MMM                               11455351     |     +3.0
+c:      +0.0|                                     +4.6  62193151     |     +6.0
+
+Z=-6.2(68.42%) | Like=-0.21..1.05 [-1e+10..-0.1739] | it/evals=7947/27148 eff=21.2766% N=855 [ultranest] Found a lot of clusters: 22 (4 with >1 members)
+
+
+Have 22 modes Volume: ~exp(-12.36) * Expected Volume: exp(-7.61) Quality: ok
+
+a:      -2.0|      -1.1  D1J3                        2259  +1.1      |     +2.0
+b:      -3.0|        JMM                                1612921      |     +3.0
+c:      +0.0|                                     +4.6  1245311      |     +6.0
+
+Z=-6.1(74.94%) | Like=0.01..1.05 [0.0130..0.0145]*| it/evals=8265/27169 eff=21.6049% N=858 [ultranest] Found a lot of clusters: 23 (4 with >1 members)
+
+
+Have 22 modes Volume: ~exp(-12.36)   Expected Volume: exp(-7.84) Quality: ok
+
+a:      -2.0|      -1.1  D113                        2259  +1.1      |     +2.0
+b:      -3.0|        2M                                 C612921      |     +3.0
+c:      +0.0|                                     +4.7  J245311      |     +6.0
+
+Z=-6.0(78.44%) | Like=0.13..1.05 [0.1349..0.1353]*| it/evals=8465/27205 eff=23.7374% N=862 
+
+Have 2 modes Volume: ~exp(-13.00) * Expected Volume: exp(-8.07) Quality: ok
+
+a:      -2.0|      -1.1  1111                        2222  +1.1      |     +2.0
+b:      +0.0|                         +1.7  111112212212  +2.3       |     +3.0
+c:      +0.0|                                     +4.7  2212111      |     +6.0
+
+Z=-6.0(81.65%) | Like=0.25..1.05 [0.2527..0.2532]*| it/evals=8668/27235 eff=24.5614% N=868 
+
+Have 2 modes Volume: ~exp(-13.00)   Expected Volume: exp(-8.30) Quality: ok
+
+a:      -2.0|      -1.1  2122                        1111  +1.1      |     +2.0
+b:      +0.0|                          +1.7  11122121122  +2.3       |     +3.0
+c:      +0.0|                                      +4.7  211122      |     +6.0
+
+Z=-6.0(84.40%) | Like=0.37..1.05 [0.3671..0.3672]*| it/evals=8867/27271 eff=27.6515% N=877 
+
+Have 3 modes Volume: ~exp(-13.05) * Expected Volume: exp(-8.54) Quality: ok
+
+a:      -2.0|      -1.1  1111                        3333  +1.1      |     +2.0
+b:      +0.0|                          +1.7  11123333311  +2.3       |     +3.0
+c:      +0.0|                                      +4.7  113113      |     +6.0
+
+Z=-5.9(87.01%) | Like=0.46..1.05 [0.4604..0.4608]*| it/evals=9080/27346 eff=29.4985% N=895 
+
+Have 2 modes Volume: ~exp(-13.53) * Expected Volume: exp(-8.77) Quality: ok
+
+a:      -2.0|      -1.1  2222                        1111  +1.1      |     +2.0
+b:      +0.0|                          +1.8  1112111112  +2.2        |     +3.0
+c:      +0.0|                                      +4.8  12122       |     +6.0
+
+Z=-5.9(89.15%) | Like=0.55..1.05 [0.5486..0.5488]*| it/evals=9284/27419 eff=31.7961% N=911 
+
+Have 2 modes Volume: ~exp(-13.75) * Expected Volume: exp(-8.99) Quality: ok
+
+a:      -2.0|      -1.1  2222                        1111  +1.1      |     +2.0
+b:      +0.0|                           +1.8  112222212  +2.2        |     +3.0
+c:      +0.0|                                      +4.8  12122       |     +6.0
+
+Z=-5.9(90.97%) | Like=0.62..1.05 [0.6208..0.6213]*| it/evals=9491/27498 eff=35.6415% N=939 Z=-5.9(91.80%) | Like=0.65..1.05 [0.6541..0.6547]*| it/evals=9600/27543 eff=37.5000% N=953 
+
+Have 2 modes Volume: ~exp(-13.77) * Expected Volume: exp(-9.22) Quality: ok
+
+a:      -2.0|      -1.1  2222                        1111  +1.1      |     +2.0
+b:      +0.0|                           +1.8  112221212  +2.2        |     +3.0
+c:      +0.0|                                      +4.8  12122       |     +6.0
+
+Z=-5.9(92.56%) | Like=0.68..1.05 [0.6825..0.6831]*| it/evals=9709/27593 eff=38.7372% N=965 Z=-5.9(93.67%) | Like=0.72..1.05 [0.7242..0.7244]*| it/evals=9893/27693 eff=39.5044% N=992 
+
+Have 2 modes Volume: ~exp(-14.19) * Expected Volume: exp(-9.45) Quality: ok
+
+a:      -2.0|      -1.1  2222                        1111  +1.1      |     +2.0
+b:      +0.0|                           +1.8  11212121  +2.2         |     +3.0
+c:      +0.0|                                      +4.8  12121       |     +6.0
+
+Z=-5.8(93.89%) | Like=0.73..1.05 [0.7335..0.7335]*| it/evals=9932/27711 eff=39.6307% N=999 Z=-5.8(94.24%) | Like=0.75..1.05 [0.7481..0.7484]*| it/evals=10000/27751 eff=40.7258% N=1015 Z=-5.8(94.97%) | Like=0.78..1.05 [0.7786..0.7787]*| it/evals=10159/27895 eff=41.7793% N=1046 
+
+Have 2 modes Volume: ~exp(-14.54) * Expected Volume: exp(-9.67) Quality: ok
+
+a:      -2.0|       -1.1  222                         111  +1.1      |     +2.0
+b:      +0.0|                            +1.8  2211221  +2.2         |     +3.0
+c:      +0.0|                                       +4.8  1112       |     +6.0
+
+Z=-5.8(94.99%) | Like=0.78..1.05 [0.7791..0.7793]*| it/evals=10162/27895 eff=41.8919% N=1046 Z=-5.8(95.64%) | Like=0.80..1.05 [0.8043..0.8043]*| it/evals=10324/27995 eff=42.7126% N=1068 
+
+Have 2 modes Volume: ~exp(-14.89) * Expected Volume: exp(-9.89) Quality: ok
+
+a:      -2.0|       -1.1  22                          11  +1.1       |     +2.0
+b:      +0.0|                            +1.8  1211222  +2.2         |     +3.0
+c:      +0.0|                                       +4.8  1112       |     +6.0
+
+Z=-5.8(95.91%) | Like=0.82..1.05 [0.8158..0.8160]*| it/evals=10400/28086 eff=42.8174% N=1087 Z=-5.8(96.31%) | Like=0.83..1.05 [0.8322..0.8324]*| it/evals=10526/28212 eff=44.2324% N=1131 
+
+Have 2 modes Volume: ~exp(-15.42) * Expected Volume: exp(-10.12) Quality: ok
+
+a:      -2.0|       -1.1  22                          11  +1.1       |     +2.0
+b:      +0.0|                            +1.8  1211221  +2.2         |     +3.0
+c:      +0.0|                                       +4.9  1121       |     +6.0
+
+Z=-5.8(96.67%) | Like=0.85..1.05 [0.8469..0.8470]*| it/evals=10654/28348 eff=44.8173% N=1169 Z=-5.8(96.95%) | Like=0.86..1.05 [0.8586..0.8590]*| it/evals=10767/28463 eff=45.6044% N=1193 Z=-5.8(97.03%) | Like=0.86..1.05 [0.8622..0.8624]*| it/evals=10800/28486 eff=46.1122% N=1201 Z=-5.8(97.26%) | Like=0.87..1.05 [0.8732..0.8732]*| it/evals=10907/28617 eff=46.4596% N=1239 
+
+Have 2 modes Volume: ~exp(-15.52) * Expected Volume: exp(-10.34) Quality: ok
+
+a:      -2.0|       -1.1  22                          11  +1.1       |     +2.0
+b:      +0.0|                            +1.9  1212221  +2.1         |     +3.0
+c:      +0.0|                                       +4.9  1121       |     +6.0
+
+Z=-5.8(97.30%) | Like=0.88..1.05 [0.8751..0.8751]*| it/evals=10925/28642 eff=46.4832% N=1244 Z=-5.8(97.49%) | Like=0.88..1.05 [0.8828..0.8828]*| it/evals=11022/28756 eff=47.1126% N=1271 Z=-5.8(97.68%) | Like=0.89..1.05 [0.8923..0.8925]*| it/evals=11133/28860 eff=47.8683% N=1302 Z=-5.8(97.79%) | Like=0.90..1.05 [0.8983..0.8983]*| it/evals=11200/28922 eff=48.4595% N=1318 
+
+Have 2 modes Volume: ~exp(-15.64) * Expected Volume: exp(-10.57) Quality: ok
+
+a:      -2.0|       -1.1  22                          11  +1.1       |     +2.0
+b:      +0.0|                            +1.9  221222  +2.1          |     +3.0
+c:      +0.0|                                       +4.9  121        |     +6.0
+
+Z=-5.8(97.81%) | Like=0.90..1.05 [0.8993..0.8993]*| it/evals=11212/28943 eff=48.2955% N=1320 Z=-5.8(97.95%) | Like=0.91..1.05 [0.9060..0.9061]*| it/evals=11302/29063 eff=48.7354% N=1351 Z=-5.8(98.08%) | Like=0.91..1.05 [0.9123..0.9126]*| it/evals=11398/29187 eff=49.1284% N=1385 Z=-5.8(98.19%) | Like=0.92..1.05 [0.9182..0.9182]*| it/evals=11490/29334 eff=49.1620% N=1421 
+
+Have 3 modes Volume: ~exp(-16.11) * Expected Volume: exp(-10.79) Quality: ok
+
+a:      -2.0|       -1.0  33                          21  +1.0       |     +2.0
+b:      +0.0|                             +1.9  33211  +2.1          |     +3.0
+c:      +0.0|                                       +4.9  311        |     +6.0
+
+Z=-5.8(98.23%) | Like=0.92..1.05 [0.9195..0.9196]*| it/evals=11519/29369 eff=49.3226% N=1435 Z=-5.8(98.31%) | Like=0.92..1.05 [0.9245..0.9246]*| it/evals=11595/29492 eff=49.4970% N=1465 Z=-5.8(98.32%) | Like=0.92..1.05 [0.9250..0.9250]*| it/evals=11600/29492 eff=49.6579% N=1467 Z=-5.8(98.41%) | Like=0.93..1.05 [0.9285..0.9286]*| it/evals=11681/29609 eff=49.9231% N=1502 Z=-5.8(98.48%) | Like=0.93..1.05 [0.9318..0.9319]*| it/evals=11754/29753 eff=49.7451% N=1539 Z=-5.8(98.54%) | Like=0.94..1.05 [0.9353..0.9353]*| it/evals=11826/29880 eff=49.8782% N=1575 
+
+Have 2 modes Volume: ~exp(-16.55) * Expected Volume: exp(-11.01) Quality: ok
+
+a:      -2.0|       -1.0  22                          11  +1.0       |     +2.0
+b:      +0.0|                             +1.9  21222  +2.1          |     +3.0
+c:      +0.0|                                       +4.9  221        |     +6.0
+
+Z=-5.8(98.57%) | Like=0.94..1.05 [0.9367..0.9367]*| it/evals=11856/29939 eff=49.8295% N=1590 Z=-5.8(98.62%) | Like=0.94..1.05 [0.9393..0.9393]*| it/evals=11922/30042 eff=50.1812% N=1623 Z=-5.8(98.68%) | Like=0.94..1.05 [0.9424..0.9425]*| it/evals=11987/30160 eff=50.3013% N=1649 Z=-5.8(98.69%) | Like=0.94..1.05 [0.9434..0.9435]*| it/evals=12000/30178 eff=50.4257% N=1653 Z=-5.8(98.74%) | Like=0.95..1.05 [0.9461..0.9461]*| it/evals=12073/30272 eff=50.9342% N=1682 Z=-5.8(98.81%) | Like=0.95..1.05 [0.9507..0.9508]*| it/evals=12175/30358 eff=51.1191% N=1682 
+
+Have 3 modes Volume: ~exp(-16.92) * Expected Volume: exp(-11.24) Quality: ok
+
+a:      -2.0|       -1.0  11                          33  +1.0       |     +2.0
+b:      +0.0|                             +1.9  31111  +2.1          |     +3.0
+c:      +0.0|                                       +4.9  311        |     +6.0
+
+Z=-5.8(98.85%) | Like=0.95..1.05 [0.9531..0.9531]*| it/evals=12229/30413 eff=51.0570% N=1682 Z=-5.8(98.91%) | Like=0.96..1.05 [0.9568..0.9568]*| it/evals=12320/30496 eff=51.1895% N=1682 Z=-5.8(98.96%) | Like=0.96..1.05 [0.9602..0.9602]*| it/evals=12417/30582 eff=51.3007% N=1682 [ultranest] Explored until L=1  
+[ultranest] Likelihood function evaluations: 30689
+[ultranest]   logZ = -5.787 +- 0.05771
+[ultranest] Effective samples strategy satisfied (ESS = 4690.4, need >400)
+[ultranest] Posterior uncertainty strategy is satisfied (KL: 0.46+-0.06 nat, need <0.50 nat)
+[ultranest] Evidency uncertainty strategy is satisfied (dlogz=0.11, need <0.5)
+[ultranest]   logZ error budget: single: 0.05 bs:0.06 tail:0.01 total:0.06 required:<0.50
+[ultranest] done iterating.
+Test Summary:     | Pass  Total
+Package UltraNest |    4      4
+    Testing UltraNest tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:48:30.254
+CPU usage: 177.08s (165.59s user, 11.83s kernel)
+
+Network usage:
+- eth0: 310.935 MiB received, 962.168 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":34,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":15,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":34,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":34,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":15,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":34,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":172032,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":65536,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":172032,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":172032,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":65536,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":172032,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":2222571520,"max_usage":3220426752,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":190140416,"inactive_file":135168,"inactive_anon":1411964928,"total_pgfault":3496515,"total_cache":1969508352,"total_rss_huge":0,"total_active_anon":747749376,"total_pgmajfault":0,"pgpgin":2780811,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":675840,"total_unevictable":0,"total_dirty":675840,"writeback":135168,"pgpgout":2253561,"hierarchical_memsw_limit":0,"cache":1969508352,"active_file":135168,"pgfault":3496515,"total_mapped_file":0,"total_pgpgout":2253561,"total_writeback":135168,"rss":190140416,"unevictable":0,"total_inactive_anon":1411964928,"total_pgpgin":2780811,"active_anon":747749376,"total_active_file":135168},"limit":540965302272},"name":"/UltraNest-xJyz0BSD","networks":{"eth0":{"rx_bytes":326038858,"rx_packets":34265,"tx_packets":15847,"tx_bytes":985260,"tx_dropped":0,"rx_dropped":6,"tx_errors":0,"rx_errors":0}},"id":"1a645ce68d84058e892e4309377dc236edfd141386f5af9b3c921c2a461106f6","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":7031081804522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":165590000000,"usage_in_kernelmode":11830000000,"total_usage":177084808100,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,177084808100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:48:30.257297243Z"}

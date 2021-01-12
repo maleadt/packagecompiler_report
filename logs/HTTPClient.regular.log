@@ -1,0 +1,183 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:37:45.576
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:37:47.37
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed HTTPClient ───────── v0.2.1
+  Installed MbedTLS_jll ──────── v2.16.8+1
+  Installed Zlib_jll ─────────── v1.2.11+18
+  Installed MozillaCACerts_jll ─ v2020.10.14+0
+  Installed LibSSH2_jll ──────── v1.9.0+3
+  Installed LibCURL_jll ──────── v7.70.0+2
+  Installed Compat ───────────── v2.2.1
+  Installed JLLWrappers ──────── v1.2.0
+  Installed LibCURL ──────────── v0.6.2
+  Installed nghttp2_jll ──────── v1.40.0+2
+  Installed Artifacts ────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [0862f596] + HTTPClient v0.2.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [34da2185] + Compat v2.2.1
+  [0862f596] + HTTPClient v0.2.1
+  [692b3bcd] + JLLWrappers v1.2.0
+  [b27032c2] + LibCURL v0.6.2
+  [deac9b47] + LibCURL_jll v7.70.0+2
+  [29816b5a] + LibSSH2_jll v1.9.0+3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [14a3606d] + MozillaCACerts_jll v2020.10.14+0
+  [83775a58] + Zlib_jll v1.2.11+18
+  [8e850ede] + nghttp2_jll v1.40.0+2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T17:37:52.478
+#
+
+┌ Warning: using test/REQUIRE files is deprecated and current support is lacking in some areas
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1475
+    Testing HTTPClient
+Status `/tmp/jl_OwcvmS/Project.toml`
+  [34da2185] Compat v2.2.1
+  [0862f596] HTTPClient v0.2.1
+  [682c06a0] JSON v0.21.1
+  [b27032c2] LibCURL v0.6.2
+Status `/tmp/jl_OwcvmS/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [34da2185] Compat v2.2.1
+  [0862f596] HTTPClient v0.2.1
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [b27032c2] LibCURL v0.6.2
+  [deac9b47] LibCURL_jll v7.70.0+2
+  [29816b5a] LibSSH2_jll v1.9.0+3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [14a3606d] MozillaCACerts_jll v2020.10.14+0
+  [69de0a69] Parsers v1.0.15
+  [83775a58] Zlib_jll v1.2.11+18
+  [8e850ede] nghttp2_jll v1.40.0+2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+ERROR: LoadError: LoadError: syntax: extra token "RequestOptions" after end of expression
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/HTTPClient/ZQR55/src/HTTPC.jl:18
+ [2] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [3] include at ./Base.jl:368 [inlined]
+ [4] include(::String) at /home/pkgeval/.julia/packages/HTTPClient/ZQR55/src/HTTPClient.jl:1
+ [5] top-level scope at /home/pkgeval/.julia/packages/HTTPClient/ZQR55/src/HTTPClient.jl:3
+ [6] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [7] include(::Module, ::String) at ./Base.jl:368
+ [8] top-level scope at none:2
+ [9] eval at ./boot.jl:331 [inlined]
+ [10] eval(::Expr) at ./client.jl:467
+ [11] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/HTTPClient/ZQR55/src/HTTPC.jl:18
+in expression starting at /home/pkgeval/.julia/packages/HTTPClient/ZQR55/src/HTTPClient.jl:3
+ERROR: LoadError: Failed to precompile HTTPClient [0862f596-cf2d-50af-8ef4-f2be67dfa83f] to /home/pkgeval/.julia/compiled/v1.5/HTTPClient/MYzen_XIxrX.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1305
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ [6] include(::String) at ./client.jl:457
+ [7] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/HTTPClient/ZQR55/test/runtests.jl:1
+
+PkgEval failed: Package HTTPClient errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:37:58.849
+CPU usage: 13.26s (10.38s user, 2.92s kernel)
+
+Network usage:
+- eth0: 2.834 MiB received, 79.151 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":135168,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":28672,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":135168,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":135168,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":28672,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":135168,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":387342336,"max_usage":576434176,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":275873792,"inactive_file":135168,"inactive_anon":80289792,"total_pgfault":395340,"total_cache":81309696,"total_rss_huge":0,"total_active_anon":276553728,"total_pgmajfault":0,"pgpgin":237039,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":135168,"pgpgout":149866,"hierarchical_memsw_limit":0,"cache":81309696,"active_file":135168,"pgfault":395340,"total_mapped_file":0,"total_pgpgout":149866,"total_writeback":135168,"rss":275873792,"unevictable":0,"total_inactive_anon":80289792,"total_pgpgin":237039,"active_anon":276553728,"total_active_file":135168},"limit":540965302272},"name":"/HTTPClient-c7Cy5cJe","networks":{"eth0":{"rx_bytes":2971213,"rx_packets":563,"tx_packets":646,"tx_bytes":81051,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"cb63b97c8c31377ea8a4b57541cca2441ae4c59d629a62f8d52b719692f51c6d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4190295364522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":10380000000,"usage_in_kernelmode":2920000000,"total_usage":13263201722,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13263201722,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:37:59.50369813Z"}

@@ -1,0 +1,173 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T18:56:38.386
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T18:56:40.145
+#
+
+ Installing known registries into `~/.julia`
+#########################################################                 79.4%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Fakerjl ───────── v0.1.0
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [59bbcd92] + Fakerjl v0.1.0
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [59bbcd92] + Fakerjl v0.1.0
+  [9b87118b] + PackageCompiler v1.2.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T18:56:45.959
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 147.309 MiB, compilation took 156 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T18:59:29.069
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/Fakerjl-uKSrm4qg.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:59:30.812
+#
+
+ Installing known registries into `~/.julia`
+######################                                                    30.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Fakerjl ─ v0.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [59bbcd92] + Fakerjl v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [59bbcd92] + Fakerjl v0.1.0
+
+
+################################################################################
+# Testing: 2021-01-11T18:59:34.506
+#
+
+    Testing Fakerjl
+Status `/tmp/jl_3FS2ga/Project.toml`
+  [59bbcd92] Fakerjl v0.1.0
+  [1bc83da4] SafeTestsets v0.0.1
+  [8dfed614] Test
+Status `/tmp/jl_3FS2ga/Manifest.toml`
+  [59bbcd92] Fakerjl v0.1.0
+  [1bc83da4] SafeTestsets v0.0.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Fakerjl Test: Error During Test at /home/user/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:25
+  Got exception outside of a @test
+  LoadError: SystemError: unable to read directory /home/pkgeval/.julia/packages/Fakerjl/j530d/src/data/en_US: No such file or directory
+  Stacktrace:
+   [1] readdir(::String; join::Bool, sort::Bool) at ./file.jl:810
+   [2] readdir at ./file.jl:805 [inlined]
+   [3] init(::String, ::String) at /home/pkgeval/.julia/packages/Fakerjl/j530d/src/Fakerjl.jl:15
+   [4] init() at /home/pkgeval/.julia/packages/Fakerjl/j530d/src/Fakerjl.jl:14
+   [5] top-level scope at /home/user/.julia/packages/Fakerjl/j530d/test/persontest.jl:4
+   [6] include(::Function, ::Module, ::String) at ./Base.jl:380
+   [7] include at ./Base.jl:368 [inlined]
+   [8] include(::String) at /home/user/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
+   [9] top-level scope at /home/user/.julia/packages/Fakerjl/j530d/test/runtests.jl:5
+   [10] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [11] top-level scope at /home/user/.julia/packages/Fakerjl/j530d/test/runtests.jl:5
+   [12] eval(::Module, ::Any) at ./boot.jl:331
+   [13] top-level scope at /home/user/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/user/.julia/packages/Fakerjl/j530d/test/persontest.jl:4
+  
+Test Summary: | Error  Total
+Fakerjl Test  |     1      1
+ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/user/.julia/packages/Fakerjl/j530d/test/runtests.jl:5
+
+PkgEval failed: Package Fakerjl errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:59:40.411
+CPU usage: 11.28s (8.64s user, 2.70s kernel)
+
+Network usage:
+- eth0: 2.587 MiB received, 37.075 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":559,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":573,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":578,"op":"Total","minor":0},{"major":253,"value":559,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":573,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":578,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":2289664,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":2347008,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":2367488,"op":"Total","minor":0},{"major":253,"value":2289664,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":2347008,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":2367488,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":400924672,"max_usage":554061824,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":270987264,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":283107,"total_cache":98160640,"total_rss_huge":0,"total_active_anon":271417344,"total_pgmajfault":0,"pgpgin":212421,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":135168,"pgpgout":122267,"hierarchical_memsw_limit":0,"cache":98160640,"active_file":18653184,"pgfault":283107,"total_mapped_file":0,"total_pgpgout":122267,"total_writeback":135168,"rss":270987264,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":212421,"active_anon":271417344,"total_active_file":18653184},"limit":540965302272},"name":"/Fakerjl-FHP0Q7jr","networks":{"eth0":{"rx_bytes":2712422,"rx_packets":375,"tx_packets":396,"tx_bytes":37965,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"b18aee4feb0469f4c7f0de7dcadd52d9329dc17f9774bc3dbac0909babbd4c6c","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4816506674522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":8640000000,"usage_in_kernelmode":2700000000,"total_usage":11275178089,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11275178089,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:59:40.41381502Z"}

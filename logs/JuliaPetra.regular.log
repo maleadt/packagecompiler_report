@@ -1,0 +1,192 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:49:57.951
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:49:59.76
+#
+
+ Installing known registries into `~/.julia`
+################################                                          45.3%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed JuliaPetra ─ v0.2.0
+  Installed URIParser ── v0.4.1
+  Installed BinDeps ──── v0.8.10
+  Installed MPI ──────── v0.7.2
+  Installed Compat ───── v2.2.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [0a7d185b] + JuliaPetra v0.2.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [9e28174c] + BinDeps v0.8.10
+  [34da2185] + Compat v2.2.1
+  [0a7d185b] + JuliaPetra v0.2.0
+  [da04e1cc] + MPI v0.7.2
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building MPI → `~/.julia/packages/MPI/U5ujD/deps/build.log`
+┌ Error: Error building `MPI`: 
+│ [ Info: Attempting to create directory /home/pkgeval/.julia/packages/MPI/U5ujD/deps/build
+│ [ Info: Changing directory to /home/pkgeval/.julia/packages/MPI/U5ujD/deps/build
+│ ERROR: LoadError: IOError: could not spawn `cmake -DCMAKE_INSTALL_PREFIX=/home/pkgeval/.julia/packages/MPI/U5ujD/deps/src -DCMAKE_LIB_INSTALL_PREFIX=/home/pkgeval/.julia/packages/MPI/U5ujD/deps/usr/lib ..`: no such file or directory (ENOENT)
+│ Stacktrace:
+│  [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:99
+│  [2] #585 at ./process.jl:112 [inlined]
+│  [3] setup_stdios(::Base.var"#585#586"{Cmd}, ::Array{Any,1}) at ./process.jl:196
+│  [4] _spawn at ./process.jl:111 [inlined]
+│  [5] run(::Cmd; wait::Bool) at ./process.jl:439
+│  [6] run(::Cmd) at ./process.jl:438
+│  [7] run(::BinDeps.SynchronousStepCollection) at /home/pkgeval/.julia/packages/BinDeps/ZEval/src/BinDeps.jl:521 (repeats 3 times)
+│  [8] satisfy!(::BinDeps.LibraryDependency, ::Array{DataType,1}) at /home/pkgeval/.julia/packages/BinDeps/ZEval/src/dependencies.jl:944
+│  [9] satisfy!(::BinDeps.LibraryDependency) at /home/pkgeval/.julia/packages/BinDeps/ZEval/src/dependencies.jl:922
+│  [10] top-level scope at /home/pkgeval/.julia/packages/BinDeps/ZEval/src/dependencies.jl:977
+│  [11] include(::String) at ./client.jl:457
+│  [12] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/MPI/U5ujD/deps/build.jl:54
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+
+
+################################################################################
+# Testing: 2021-01-11T21:50:09.549
+#
+
+    Testing JuliaPetra
+Status `/tmp/jl_WmVEgU/Project.toml`
+  [0a7d185b] JuliaPetra v0.2.0
+  [da04e1cc] MPI v0.7.2
+  [73ec333a] TypeStability v1.0.0
+  [37e2e46d] LinearAlgebra
+  [9e88b42a] Serialization
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_WmVEgU/Manifest.toml`
+  [9e28174c] BinDeps v0.8.10
+  [34da2185] Compat v2.2.1
+  [0a7d185b] JuliaPetra v0.2.0
+  [da04e1cc] MPI v0.7.2
+  [73ec333a] TypeStability v1.0.0
+  [30578b45] URIParser v0.4.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+ERROR: LoadError: MPI not properly installed. Please run Pkg.build("MPI")
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] top-level scope at /home/pkgeval/.julia/packages/MPI/U5ujD/src/MPI.jl:15
+ [3] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [4] include(::Module, ::String) at ./Base.jl:368
+ [5] top-level scope at none:2
+ [6] eval at ./boot.jl:331 [inlined]
+ [7] eval(::Expr) at ./client.jl:467
+ [8] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/MPI/U5ujD/src/MPI.jl:13
+ERROR: LoadError: InitError: LoadError: Failed to precompile MPI [da04e1cc-30fd-572f-bb4f-1f8673147195] to /home/pkgeval/.julia/compiled/v1.5/MPI/nO0XF_apDe5.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1305
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ [6] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [7] include at ./Base.jl:368 [inlined]
+ [8] include at /home/pkgeval/.julia/packages/JuliaPetra/JBvpV/src/JuliaPetra.jl:3 [inlined]
+ [9] __init__() at /home/pkgeval/.julia/packages/JuliaPetra/JBvpV/src/JuliaPetra.jl:60
+ [10] _include_from_serialized(::String, ::Array{Any,1}) at ./loading.jl:697
+ [11] _require_from_serialized(::String) at ./loading.jl:749
+ [12] _require(::Base.PkgId) at ./loading.jl:1040
+ [13] require(::Base.PkgId) at ./loading.jl:928
+ [14] require(::Module, ::Symbol) at ./loading.jl:923
+ [15] include(::String) at ./client.jl:457
+ [16] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/JuliaPetra/JBvpV/src/MPIUtil.jl:2
+during initialization of module JuliaPetra
+in expression starting at /home/pkgeval/.julia/packages/JuliaPetra/JBvpV/test/runtests.jl:2
+
+PkgEval failed: Package JuliaPetra errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:50:17.678
+CPU usage: 19.76s (16.59s user, 3.23s kernel)
+
+Network usage:
+- eth0: 2.744 MiB received, 47.842 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":143360,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":143360,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":143360,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":143360,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":310382592,"max_usage":737284096,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":198250496,"inactive_file":135168,"inactive_anon":79343616,"total_pgfault":643236,"total_cache":82145280,"total_rss_huge":0,"total_active_anon":200994816,"total_pgmajfault":0,"pgpgin":409530,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":270336,"pgpgout":341043,"hierarchical_memsw_limit":0,"cache":82145280,"active_file":135168,"pgfault":643236,"total_mapped_file":0,"total_pgpgout":341043,"total_writeback":270336,"rss":198250496,"unevictable":0,"total_inactive_anon":79343616,"total_pgpgin":409530,"active_anon":200994816,"total_active_file":135168},"limit":540965302272},"name":"/JuliaPetra-V2DNAZ0S","networks":{"eth0":{"rx_bytes":2877708,"rx_packets":380,"tx_packets":417,"tx_bytes":48990,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"66fe5a653edeebb358a75f87ca4c6a1f687e3129f0be0bbb779a891b4295b13c","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6124727184522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":16590000000,"usage_in_kernelmode":3230000000,"total_usage":19762937062,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19762933382,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3680,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:50:17.681185137Z"}

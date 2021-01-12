@@ -1,0 +1,98 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:59:50.264
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:59:52.041
+#
+
+ Installing known registries into `~/.julia`
+#################                                                         24.6%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CoverageTools ─ v1.2.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [c36e975a] + CoverageTools v1.2.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [c36e975a] + CoverageTools v1.2.1
+  [76f85450] + LibGit2
+  [de0858da] + Printf
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T23:59:55.738
+#
+
+    Testing CoverageTools
+Status `/tmp/jl_dpjmtS/Project.toml`
+  [c36e975a] CoverageTools v1.2.1
+  [76f85450] LibGit2
+  [8dfed614] Test
+Status `/tmp/jl_dpjmtS/Manifest.toml`
+  [c36e975a] CoverageTools v1.2.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+[ Info: CoverageTools.process_file: Detecting coverage for test/data/CoverageTools.jl
+[ Info: CoverageTools.process_cov: processing test/data/CoverageTools.jl.cov
+[ Info: CoverageTools.LCOV.readfolder: Searching test/data for .info files...
+[ Info: CoverageTools.LCOV.readfolder: Searching test/data/tracefiles for .info files...
+[ Info: CoverageTools.process_file: Detecting coverage for test/data/testparser.jl
+[ Info: CoverageTools.process_cov: processing test/data/testparser.jl.102.cov
+[ Info: CoverageTools.process_folder: Searching test/data for .jl files...
+[ Info: CoverageTools.process_file: Detecting coverage for test/data/CoverageTools.jl
+[ Info: CoverageTools.process_cov: processing test/data/CoverageTools.jl.cov
+[ Info: CoverageTools.process_file: Detecting coverage for test/data/testparser.jl
+[ Info: CoverageTools.process_cov: processing test/data/testparser.jl.102.cov
+[ Info: CoverageTools.process_folder: Searching test/data/tracefiles for .jl files...
+[ Info: CoverageTools.process_file: Detecting coverage for test/data/testparser.jl
+[ Info: CoverageTools.process_cov: processing test/data/testparser.jl.102.cov
+┌ Info: CoverageTools.process_cov: Coverage file(s) for test/fakefile do not exist.
+└ Assuming file has no coverage.
+[ Info: Removing test/data_temp/CoverageTools.jl.cov
+[ Info: Removing test/data_temp/testparser.jl.102.cov
+[ Info: CoverageTools.process_file: Detecting coverage for test/exclusions.jl
+[ Info: CoverageTools.process_cov: processing test/exclusions.jl.104.cov
+[ Info: CoverageTools.process_file: Detecting coverage for /home/pkgeval/.julia/packages/CoverageTools/g6AOI/test/BustedPackage/src/parseerr.jl
+┌ Info: CoverageTools.process_cov: Coverage file(s) for /home/pkgeval/.julia/packages/CoverageTools/g6AOI/test/BustedPackage/src/parseerr.jl do not exist.
+└ Assuming file has no coverage.
+Test Summary: | Pass  Total
+CoverageTools |   49     49
+    Testing CoverageTools tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-12T00:00:04.853
+CPU usage: 14.66s (11.81s user, 2.88s kernel)
+
+Network usage:
+- eth0: 2.564 MiB received, 36.072 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":327073792,"max_usage":766033920,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":217550848,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":437184,"total_cache":80449536,"total_rss_huge":0,"total_active_anon":218296320,"total_pgmajfault":0,"pgpgin":322509,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":249760,"hierarchical_memsw_limit":0,"cache":80449536,"active_file":946176,"pgfault":437184,"total_mapped_file":0,"total_pgpgout":249760,"total_writeback":0,"rss":217550848,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":322509,"active_anon":218296320,"total_active_file":946176},"limit":540965302272},"name":"/CoverageTools-EXxaOU30","networks":{"eth0":{"rx_bytes":2688146,"rx_packets":425,"tx_packets":416,"tx_bytes":36938,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"b89f94411b31ee7a880923913d7e802ec7fa10705a3933aa99d20dbc50f699be","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":7119890574522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":11810000000,"usage_in_kernelmode":2880000000,"total_usage":14657746613,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14657746613,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-12T00:00:05.499901704Z"}

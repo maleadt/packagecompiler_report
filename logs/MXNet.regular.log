@@ -1,0 +1,189 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:21:27
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:21:28.866
+#
+
+ Installing known registries into `~/.julia`
+#############################                                             40.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Formatting ─ v0.4.2
+  Installed MacroTools ─ v0.5.6
+  Installed BinDeps ──── v1.0.2
+  Installed URIParser ── v0.4.1
+  Installed JSON ─────── v0.21.1
+  Installed MXNet ────── v1.5.0
+  Installed Reexport ─── v0.2.0
+  Installed Parsers ──── v1.0.15
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a7949054] + MXNet v1.5.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [9e28174c] + BinDeps v1.0.2
+  [59287772] + Formatting v0.4.2
+  [682c06a0] + JSON v0.21.1
+  [a7949054] + MXNet v1.5.0
+  [1914dd2f] + MacroTools v0.5.6
+  [69de0a69] + Parsers v1.0.15
+  [189a3867] + Reexport v0.2.0
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building MXNet → `~/.julia/packages/MXNet/XoVCW/deps/build.log`
+┌ Error: Error building `MXNet`: 
+│ [ Info: Did not find a CUDA installation, using CPU-only version of MXNet.
+│ ERROR: LoadError: LoadError: parsing command `$exe7z e mxnet.7z *\\build\\* *\\lib\\* -y -ousr\\lib`: special characters "#{}()[]<>|&*?~;" must be quoted in commands
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] shell_parse(::String, ::Bool; special::String) at ./shell.jl:100
+│  [3] @cmd(::LineNumberNode, ::Module, ::Any) at ./cmd.jl:389
+│  [4] include(::String) at ./client.jl:457
+│  [5] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/MXNet/XoVCW/deps/build.jl:140
+│ in expression starting at /home/pkgeval/.julia/packages/MXNet/XoVCW/deps/build.jl:112
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+
+
+################################################################################
+# Testing: 2021-01-11T20:21:41.564
+#
+
+    Testing MXNet
+Status `/tmp/jl_IELH6S/Project.toml`
+  [9e28174c] BinDeps v1.0.2
+  [59287772] Formatting v0.4.2
+  [682c06a0] JSON v0.21.1
+  [a7949054] MXNet v1.5.0
+  [1914dd2f] MacroTools v0.5.6
+  [189a3867] Reexport v0.2.0
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_IELH6S/Manifest.toml`
+  [9e28174c] BinDeps v1.0.2
+  [59287772] Formatting v0.4.2
+  [682c06a0] JSON v0.21.1
+  [a7949054] MXNet v1.5.0
+  [1914dd2f] MacroTools v0.5.6
+  [69de0a69] Parsers v1.0.15
+  [189a3867] Reexport v0.2.0
+  [30578b45] URIParser v0.4.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+ERROR: LoadError: LoadError: IOError: open: permission denied (EACCES)
+Stacktrace:
+ [1] uv_error at ./libuv.jl:97 [inlined]
+ [2] open(::String, ::UInt16, ::UInt16) at ./filesystem.jl:87
+ [3] touch(::String) at ./file.jl:422
+ [4] top-level scope at /home/pkgeval/.julia/packages/MXNet/XoVCW/src/base.jl:60
+ [5] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [6] include at ./Base.jl:368 [inlined]
+ [7] include(::String) at /home/pkgeval/.julia/packages/MXNet/XoVCW/src/MXNet.jl:25
+ [8] top-level scope at /home/pkgeval/.julia/packages/MXNet/XoVCW/src/MXNet.jl:138
+ [9] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [10] include(::Module, ::String) at ./Base.jl:368
+ [11] top-level scope at none:2
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/MXNet/XoVCW/src/base.jl:57
+in expression starting at /home/pkgeval/.julia/packages/MXNet/XoVCW/src/MXNet.jl:138
+ERROR: LoadError: Failed to precompile MXNet [a7949054-b901-59c6-b8e3-7238c29bf7f0] to /home/pkgeval/.julia/compiled/v1.5/MXNet/Sc0jU_VMExn.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1305
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ [6] include(::String) at ./client.jl:457
+ [7] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/MXNet/XoVCW/test/runtests.jl:19
+
+PkgEval failed: Package MXNet errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:21:50.595
+CPU usage: 23.71s (20.36s user, 3.41s kernel)
+
+Network usage:
+- eth0: 3.347 MiB received, 68.513 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":143360,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":143360,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":143360,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":143360,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":333848576,"max_usage":804839424,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":215756800,"inactive_file":135168,"inactive_anon":80830464,"total_pgfault":768603,"total_cache":88006656,"total_rss_huge":0,"total_active_anon":222486528,"total_pgmajfault":0,"pgpgin":557007,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":482817,"hierarchical_memsw_limit":0,"cache":88006656,"active_file":675840,"pgfault":768603,"total_mapped_file":0,"total_pgpgout":482817,"total_writeback":0,"rss":215756800,"unevictable":0,"total_inactive_anon":80830464,"total_pgpgin":557007,"active_anon":222486528,"total_active_file":675840},"limit":540965302272},"name":"/MXNet-KgnJjCCO","networks":{"eth0":{"rx_bytes":3509996,"rx_packets":628,"tx_packets":664,"tx_bytes":70157,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"859caa8caec770347160c80e2315df40b9b88c431387b3ccca7adb53c12b0290","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5446885404522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":20360000000,"usage_in_kernelmode":3410000000,"total_usage":23713125175,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23713125175,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:21:51.375271244Z"}

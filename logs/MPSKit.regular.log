@@ -1,0 +1,297 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:56:12.611
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:56:14.412
+#
+
+ Installing known registries into `~/.julia`
+#########################################################                 80.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed WignerSymbols ──────────────── v1.1.0
+  Installed Primes ─────────────────────── v0.4.0
+  Installed Strided ────────────────────── v1.1.1
+  Installed Reexport ───────────────────── v0.2.0
+  Installed Scratch ────────────────────── v1.0.3
+  Installed GPUArrays ──────────────────── v6.2.0
+  Installed RationalRoots ──────────────── v0.1.0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed CEnum ──────────────────────── v0.4.1
+  Installed TimerOutputs ───────────────── v0.5.7
+  Installed HalfIntegers ───────────────── v1.3.1
+  Installed Requires ───────────────────── v1.1.2
+  Installed Parameters ─────────────────── v0.12.1
+  Installed DataStructures ─────────────── v0.18.8
+  Installed LLVM ───────────────────────── v3.5.2
+  Installed MPSKit ─────────────────────── v0.4.0
+  Installed CUDA ───────────────────────── v2.4.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed LRUCache ───────────────────── v1.2.0
+  Installed OptimKit ───────────────────── v0.3.1
+  Installed TensorKitManifolds ─────────── v0.5.0
+  Installed TupleTools ─────────────────── v1.2.0
+  Installed AbstractFFTs ───────────────── v0.5.0
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed KrylovKit ──────────────────── v0.5.2
+  Installed Adapt ──────────────────────── v3.0.0
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed TensorOperations ───────────── v3.1.0
+  Installed ExprTools ──────────────────── v0.1.3
+  Installed BFloat16s ──────────────────── v0.1.0
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed TensorKit ──────────────────── v0.9.0
+  Installed Compat ─────────────────────── v3.25.0
+  Installed NNlib ──────────────────────── v0.7.11
+  Installed GPUCompiler ────────────────── v0.8.3
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [bb1c41ca] + MPSKit v0.4.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [621f4979] + AbstractFFTs v0.5.0
+  [79e6a3ab] + Adapt v3.0.0
+  [56f22d72] + Artifacts v1.3.0
+  [ab4f0b2a] + BFloat16s v0.1.0
+  [fa961155] + CEnum v0.4.1
+  [052768ef] + CUDA v2.4.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [864edb3b] + DataStructures v0.18.8
+  [e2ba6199] + ExprTools v0.1.3
+  [0c68f7d7] + GPUArrays v6.2.0
+  [61eb1bfa] + GPUCompiler v0.8.3
+  [f0d1745a] + HalfIntegers v1.3.1
+  [692b3bcd] + JLLWrappers v1.2.0
+  [0b1a1467] + KrylovKit v0.5.2
+  [929cbde3] + LLVM v3.5.2
+  [8ac3fa9e] + LRUCache v1.2.0
+  [bb1c41ca] + MPSKit v0.4.0
+  [1914dd2f] + MacroTools v0.5.6
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [872c559c] + NNlib v0.7.11
+  [77e91f04] + OptimKit v0.3.1
+  [bac558e1] + OrderedCollections v1.3.2
+  [d96e819e] + Parameters v0.12.1
+  [27ebfcd6] + Primes v0.4.0
+  [308eb6b3] + RationalRoots v0.1.0
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [6c6a2e73] + Scratch v1.0.3
+  [5e0ebb24] + Strided v1.1.1
+  [07d1fe3e] + TensorKit v0.9.0
+  [11fa318c] + TensorKitManifolds v0.5.0
+  [6aa20fa7] + TensorOperations v3.1.0
+  [a759f4b9] + TimerOutputs v0.5.7
+  [9d95972d] + TupleTools v1.2.0
+  [3a884ed6] + UnPack v1.0.2
+  [9f57e263] + WignerSymbols v1.1.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T20:56:21.568
+#
+
+    Testing MPSKit
+Status `/tmp/jl_kn1Q5R/Project.toml`
+  [bb1c41ca] MPSKit v0.4.0
+  [ca635005] MPSKitModels v0.1.4
+  [77e91f04] OptimKit v0.3.1
+  [07d1fe3e] TensorKit v0.9.0
+  [5ed8adda] TestExtras v0.1.1
+  [8dfed614] Test
+Status `/tmp/jl_kn1Q5R/Manifest.toml`
+  [621f4979] AbstractFFTs v0.5.0
+  [79e6a3ab] Adapt v3.0.0
+  [56f22d72] Artifacts v1.3.0
+  [ab4f0b2a] BFloat16s v0.1.0
+  [fa961155] CEnum v0.4.1
+  [052768ef] CUDA v2.4.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [864edb3b] DataStructures v0.18.8
+  [e2ba6199] ExprTools v0.1.3
+  [0c68f7d7] GPUArrays v6.2.0
+  [61eb1bfa] GPUCompiler v0.8.3
+  [f0d1745a] HalfIntegers v1.3.1
+  [692b3bcd] JLLWrappers v1.2.0
+  [0b1a1467] KrylovKit v0.5.2
+  [929cbde3] LLVM v3.5.2
+  [8ac3fa9e] LRUCache v1.2.0
+  [bb1c41ca] MPSKit v0.4.0
+  [ca635005] MPSKitModels v0.1.4
+  [1914dd2f] MacroTools v0.5.6
+  [46d2c3a1] MuladdMacro v0.2.2
+  [872c559c] NNlib v0.7.11
+  [77e91f04] OptimKit v0.3.1
+  [bac558e1] OrderedCollections v1.3.2
+  [d96e819e] Parameters v0.12.1
+  [27ebfcd6] Primes v0.4.0
+  [308eb6b3] RationalRoots v0.1.0
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [6c6a2e73] Scratch v1.0.3
+  [5e0ebb24] Strided v1.1.1
+  [07d1fe3e] TensorKit v0.9.0
+  [11fa318c] TensorKitManifolds v0.5.0
+  [6aa20fa7] TensorOperations v3.1.0
+  [5ed8adda] TestExtras v0.1.1
+  [a759f4b9] TimerOutputs v0.5.7
+  [9d95972d] TupleTools v1.2.0
+  [3a884ed6] UnPack v1.0.2
+  [9f57e263] WignerSymbols v1.1.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+------------------------------------
+|     States                       |
+------------------------------------
+Test Summary:                         | Pass  Total  Time: 13.6
+FiniteMPS (ℂ^10,ℂ^2,Complex{Float64}) |   70     70
+Test Summary:                                                                       | Pass  Total  Time: 18.3
+FiniteMPS (Rep[SU₂](0=>3, 1=>1),(Rep[SU₂](0=>1) ⊗ Rep[SU₂](0=>1)),Complex{Float32}) |   70     70
+Test Summary:                           | Pass  Total  Time: 11.8
+InfiniteMPS (ℂ^10,ℂ^2,Complex{Float64}) |   40     40
+Test Summary:                                              | Pass  Total  Time: 17.3
+InfiniteMPS (Rep[U₁](1=>3),Rep[U₁](0=>1),Complex{Float64}) |   40     40
+Test Summary:                            | Pass  Total  Time: 2.02
+MPSMultiline (ℂ^10,ℂ^2,Complex{Float64}) |   80     80
+Test Summary:                                               | Pass  Total  Time: 15.0
+MPSMultiline (Rep[U₁](1=>3),Rep[U₁](0=>1),Complex{Float32}) |   80     80
+Test Summary: | Pass  Total  Time: 70.7
+MPSComoving   |   68     68
+┌ Warning: `ℂ[s1=>n1, s2=>n2, ...]` is deprecated, use `ℂ[I](s1=>n1, s2=>n2, ...)`, `Vect[I](s1=>n1, s2=>n2, ...)` instead with `I = typeof(s1)`.
+└ @ TensorKit ~/.julia/packages/TensorKit/VV91p/src/auxiliary/deprecate.jl:64
+Test Summary:       | Pass  Total  Time: 166.0
+Quasiparticle state |   32     32
+------------------------------------
+|     Operators                    |
+------------------------------------
+Test Summary: | Pass  Total  Time: 24.6
+mpoham 1      |   11     11
+Test Summary: | Pass  Total  Time: 66.4
+mpoham 2      |   11     11
+Test Summary: | Pass  Total  Time: 36.4
+mpoham 3      |   11     11
+Test Summary: | Pass  Total  Time: 10.8
+PeriodicMPO   |    1      1
+Test Summary: | Pass  Total  Time: 17.4
+PeriodicMPO   |    1      1
+------------------------------------
+|     Algorithms                   |
+------------------------------------
+Test Summary:      | Pass  Total  Time: 0.424
+find_groundstate 1 |    5      5
+Test Summary:      | Pass  Total  Time: 27.1
+find_groundstate 2 |    5      5
+Test Summary:      | Pass  Total  Time: 7.57
+find_groundstate 3 |    5      5
+Test Summary:      | Pass  Total  Time: 1.38
+find_groundstate 4 |    5      5
+Test Summary:      | Pass  Total  Time: 5.79
+find_groundstate 5 |    5      5
+Test Summary:      | Pass  Total  Time: 0.988
+find_groundstate 6 |    5      5
+Test Summary:      | Pass  Total  Time: 33.5
+find_groundstate 7 |    5      5
+Test Summary: | Pass  Total  Time: 1.61
+timestep 1    |    2      2
+Test Summary: | Pass  Total  Time: 1.3
+timestep 2    |    2      2
+Test Summary: | Pass  Total  Time: 1.62
+timestep 3    |    2      2
+Test Summary:      | Pass  Total  Time: 20.1
+leading_boundary 1 |    3      3
+Test Summary:            | Pass  Total  Time: 118.0
+quasiparticle_excitation |    9      9
+Test Summary: | Pass  Total  Time: 7.63
+dynamicaldmrg |    3      3
+Test Summary:           | Pass  Total  Time: 71.5
+fidelity susceptibility |    6      6
+Test Summary:                | Pass  Total  Time: 4.48
+correlation length / entropy |    2      2
+Test Summary:     | Pass  Total  Time: 13.4
+expectation value |    3      3
+Test Summary: | Pass  Total  Time: 3.05
+approximate   |    4      4
+┌ Warning: faied to deduce all domspaces
+└ @ MPSKit ~/.julia/packages/MPSKit/ZqC1P/src/operators/mpohamiltonian/mpohamiltonian.jl:147
+Test Summary:                | Pass  Total  Time: 17.1
+periodic boundary conditions |    1      1
+    Testing MPSKit tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:11:16.662
+CPU usage: 903.05s (884.61s user, 19.54s kernel)
+
+Network usage:
+- eth0: 5.634 MiB received, 220.215 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":143360,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":143360,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":143360,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":143360,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":375816192,"max_usage":2710118400,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":245092352,"inactive_file":135168,"inactive_anon":89751552,"total_pgfault":10325139,"total_cache":99389440,"total_rss_huge":0,"total_active_anon":254791680,"total_pgmajfault":0,"pgpgin":6711111,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":6627002,"hierarchical_memsw_limit":0,"cache":99389440,"active_file":135168,"pgfault":10325139,"total_mapped_file":0,"total_pgpgout":6627002,"total_writeback":0,"rss":245092352,"unevictable":0,"total_inactive_anon":89751552,"total_pgpgin":6711111,"active_anon":254791680,"total_active_file":135168},"limit":540965302272},"name":"/MPSKit-cF80hXz9","networks":{"eth0":{"rx_bytes":5907306,"rx_packets":1941,"tx_packets":1821,"tx_bytes":225500,"tx_dropped":0,"rx_dropped":31,"tx_errors":0,"rx_errors":0}},"id":"e91a8872c724157f526484106aa4d420abe0d1d5ea110286d7d5a378793b2030","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5825742164522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":884610000000,"usage_in_kernelmode":19540000000,"total_usage":903054103643,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,903051405342,8010,322660,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2367631,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:11:16.664770105Z"}

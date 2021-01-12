@@ -1,0 +1,103 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:21:13.252
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:21:15.073
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ##O#- #                                                                       ###################################################################       93.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MappedArrays ────── v0.3.0
+  Installed FixedPointNumbers ─ v0.8.4
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [dbb5928d] + MappedArrays v0.3.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [dbb5928d] + MappedArrays v0.3.0
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+
+
+################################################################################
+# Testing: 2021-01-11T17:21:20.371
+#
+
+    Testing MappedArrays
+Status `/tmp/jl_D9BhMR/Project.toml`
+  [3da002f7] ColorTypes v0.10.9
+  [53c48c17] FixedPointNumbers v0.8.4
+  [dbb5928d] MappedArrays v0.3.0
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [8dfed614] Test
+Status `/tmp/jl_D9BhMR/Manifest.toml`
+  [79e6a3ab] Adapt v2.4.0
+  [3da002f7] ColorTypes v0.10.9
+  [53c48c17] FixedPointNumbers v0.8.4
+  [dbb5928d] MappedArrays v0.3.0
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Skipping Base.active_repl
+Skipping Base.active_repl_backend
+Test Summary:       | Pass  Total
+ReadonlyMappedArray |   10     10
+Test Summary: | Pass  Total
+MappedArray   |   17     17
+Test Summary: | Pass  Total
+of_eltype     |    6      6
+Test Summary: | Pass  Total
+OffsetArrays  |    6      6
+Test Summary: | Pass  Total
+No zero(::T)  |    5      5
+Test Summary:            | Pass  Total
+ReadOnlyMultiMappedArray |   15     15
+Test Summary:    | Pass  Total
+MultiMappedArray |   23     23
+Test Summary: | Pass  Total
+Display       |    3      3
+    Testing MappedArrays tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:21:43.29
+CPU usage: 28.83s (25.82s user, 3.09s kernel)
+
+Network usage:
+- eth0: 2.772 MiB received, 46.706 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":331964416,"max_usage":764141568,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":217944064,"inactive_file":135168,"inactive_anon":79208448,"total_pgfault":725670,"total_cache":84418560,"total_rss_huge":0,"total_active_anon":223162368,"total_pgmajfault":0,"pgpgin":394218,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":320397,"hierarchical_memsw_limit":0,"cache":84418560,"active_file":135168,"pgfault":725670,"total_mapped_file":0,"total_pgpgout":320397,"total_writeback":0,"rss":217944064,"unevictable":0,"total_inactive_anon":79208448,"total_pgpgin":394218,"active_anon":223162368,"total_active_file":135168},"limit":540965302272},"name":"/MappedArrays-qcqTcGx7","networks":{"eth0":{"rx_bytes":2906839,"rx_packets":457,"tx_packets":436,"tx_bytes":47827,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"fa0cdba9b15246fd85d1d0393edde854e82c19c419f8563922af22017d3dc36d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4065709514522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":25820000000,"usage_in_kernelmode":3090000000,"total_usage":28825391982,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28825389072,2910,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:21:43.853443478Z"}

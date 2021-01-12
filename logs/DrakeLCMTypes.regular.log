@@ -1,0 +1,182 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:23:59.375
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:24:01.197
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed DrakeLCMTypes ─ v0.2.0
+  Installed UnsafeArrays ── v1.0.1
+  Installed LCMCore ─────── v0.6.1
+  Installed FastIOBuffers ─ v0.3.1
+  Installed StaticArrays ── v0.12.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [6484683b] + DrakeLCMTypes v0.2.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [6484683b] + DrakeLCMTypes v0.2.0
+  [6ccb8d0d] + FastIOBuffers v0.3.1
+  [0ea44823] + LCMCore v0.6.1
+  [90137ffa] + StaticArrays v0.12.5
+  [c4a57d5a] + UnsafeArrays v1.0.1
+  [ade2ca70] + Dates
+  [7b1f6079] + FileWatching
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4ec0a83e] + Unicode
+   Building LCMCore → `~/.julia/packages/LCMCore/cPbOB/deps/build.log`
+┌ Error: Error building `LCMCore`: 
+│ Package glib-2.0 was not found in the pkg-config search path.
+│ Perhaps you should add the directory containing `glib-2.0.pc'
+│ to the PKG_CONFIG_PATH environment variable
+│ No package 'glib-2.0' found
+│ Package glib-2.0 was not found in the pkg-config search path.
+│ Perhaps you should add the directory containing `glib-2.0.pc'
+│ to the PKG_CONFIG_PATH environment variable
+│ No package 'glib-2.0' found
+│  Activating environment at `~/.julia/packages/LCMCore/cPbOB/deps/Project.toml`
+│   Installed URIParser ────────── v0.4.0
+│   Installed CMakeWrapper ─────── v0.2.3
+│   Installed Compat ───────────── v2.1.0
+│   Installed CMake ────────────── v1.1.1
+│   Installed Parameters ───────── v0.10.3
+│   Installed OrderedCollections ─ v1.1.0
+│   Installed JSON ─────────────── v0.20.0
+│    Building CMake → `~/.julia/packages/CMake/ZGawK/deps/build.log`
+│ ERROR: LoadError: None of the selected providers can install dependency glib.
+│ Use BinDeps.debug(package_name) to see available providers
+│ 
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] satisfy!(::BinDeps.LibraryDependency, ::Array{DataType,1}) at /home/pkgeval/.julia/packages/BinDeps/ZEval/src/dependencies.jl:949
+│  [3] satisfy!(::BinDeps.LibraryDependency) at /home/pkgeval/.julia/packages/BinDeps/ZEval/src/dependencies.jl:922
+│  [4] top-level scope at /home/pkgeval/.julia/packages/BinDeps/ZEval/src/dependencies.jl:977
+│  [5] include(::String) at ./client.jl:457
+│  [6] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/LCMCore/cPbOB/deps/build.jl:75
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+
+
+################################################################################
+# Testing: 2021-01-11T22:24:28.298
+#
+
+    Testing DrakeLCMTypes
+Status `/tmp/jl_1mfbf9/Project.toml`
+  [6484683b] DrakeLCMTypes v0.2.0
+  [0ea44823] LCMCore v0.6.1
+  [90137ffa] StaticArrays v0.12.5
+  [8dfed614] Test
+Status `/tmp/jl_1mfbf9/Manifest.toml`
+  [6484683b] DrakeLCMTypes v0.2.0
+  [6ccb8d0d] FastIOBuffers v0.3.1
+  [0ea44823] LCMCore v0.6.1
+  [90137ffa] StaticArrays v0.12.5
+  [c4a57d5a] UnsafeArrays v1.0.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [7b1f6079] FileWatching
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+ERROR: LoadError: LCMCore not properly installed. Please run
+Pkg.build("LCMCore")
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] top-level scope at /home/pkgeval/.julia/packages/LCMCore/cPbOB/src/LCMCore.jl:13
+ [3] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [4] include(::Module, ::String) at ./Base.jl:368
+ [5] top-level scope at none:2
+ [6] eval at ./boot.jl:331 [inlined]
+ [7] eval(::Expr) at ./client.jl:467
+ [8] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/LCMCore/cPbOB/src/LCMCore.jl:12
+ERROR: LoadError: Failed to precompile LCMCore [0ea44823-1ff1-5b9a-8293-5fd55a38e746] to /home/pkgeval/.julia/compiled/v1.5/LCMCore/S61eA_7qEf0.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1305
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ [6] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [7] include(::Module, ::String) at ./Base.jl:368
+ [8] top-level scope at none:2
+ [9] eval at ./boot.jl:331 [inlined]
+ [10] eval(::Expr) at ./client.jl:467
+ [11] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/DrakeLCMTypes/n68yY/src/DrakeLCMTypes.jl:5
+ERROR: LoadError: Failed to precompile DrakeLCMTypes [6484683b-de53-5689-b9d2-2f18b83297fe] to /home/pkgeval/.julia/compiled/v1.5/DrakeLCMTypes/y9x0U_7qEf0.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1305
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ [6] include(::String) at ./client.jl:457
+ [7] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/DrakeLCMTypes/n68yY/test/runtests.jl:1
+
+PkgEval failed: Package DrakeLCMTypes errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:24:43.514
+CPU usage: 42.60s (37.35s user, 5.30s kernel)
+
+Network usage:
+- eth0: 74.687 MiB received, 644.771 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":40,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":21,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":40,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":40,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":21,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":40,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":196608,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":90112,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":196608,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":196608,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":90112,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":196608,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":641847296,"max_usage":1313099776,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":242270208,"inactive_file":135168,"inactive_anon":233299968,"total_pgfault":1465794,"total_cache":356020224,"total_rss_huge":0,"total_active_anon":364953600,"total_pgmajfault":0,"pgpgin":1065702,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":919575,"hierarchical_memsw_limit":0,"cache":356020224,"active_file":135168,"pgfault":1465794,"total_mapped_file":0,"total_pgpgout":919575,"total_writeback":0,"rss":242270208,"unevictable":0,"total_inactive_anon":233299968,"total_pgpgin":1065702,"active_anon":364953600,"total_active_file":135168},"limit":540965302272},"name":"/DrakeLCMTypes-gUo6gZ2v","networks":{"eth0":{"rx_bytes":78314538,"rx_packets":14764,"tx_packets":10734,"tx_bytes":660246,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"e9f8ce81b4ab586854431c52dbfb2ac41c99ee466408a305727366c424b7f5e9","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6388740904522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":37350000000,"usage_in_kernelmode":5300000000,"total_usage":42601484883,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,42601482103,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2780,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:24:43.516829641Z"}

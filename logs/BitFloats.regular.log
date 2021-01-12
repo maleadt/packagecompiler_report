@@ -1,0 +1,117 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:41:09.209
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:41:11.004
+#
+
+ Installing known registries into `~/.julia`
+#############                                                             18.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed BitFloats ─── v0.0.3
+  Installed BitIntegers ─ v0.2.4
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [15425d4b] + BitFloats v0.0.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [15425d4b] + BitFloats v0.0.3
+  [c3b6d118] + BitIntegers v0.2.4
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+
+
+################################################################################
+# Testing: 2021-01-11T18:41:15.246
+#
+
+    Testing BitFloats
+Status `/tmp/jl_JmTTrQ/Project.toml`
+  [15425d4b] BitFloats v0.0.3
+  [c3b6d118] BitIntegers v0.2.4
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_JmTTrQ/Manifest.toml`
+  [15425d4b] BitFloats v0.0.3
+  [c3b6d118] BitIntegers v0.2.4
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary: | Pass  Total
+definitions   |   14     14
+Test Summary: | Pass  Total
+traits        |   35     35
+Test Summary:          | Pass  Total
+exponent & significand |   84     84
+Test Summary: | Pass  Total
+nextfloat     |   10     10
+Test Summary: | Pass  Total
+issubnormal   |   10     10
+Test Summary: | Pass  Total
+ldexp & eps   |   10     10
+conversions: Error During Test at /home/pkgeval/.julia/packages/BitFloats/qTO7E/test/runtests.jl:194
+  Test threw exception
+  Expression: isequal(BigFloat(x), BigFloat_mpfr(x))
+  could not load symbol "mpfr_set_float128":
+  /opt/julia/bin/../lib/julia/libmpfr.so: undefined symbol: mpfr_set_float128
+  Stacktrace:
+   [1] BigFloat_mpfr(::Float128) at /home/pkgeval/.julia/packages/BitFloats/qTO7E/src/BitFloats.jl:446
+   [2] macro expansion at /home/pkgeval/.julia/packages/BitFloats/qTO7E/test/runtests.jl:194 [inlined]
+   [3] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [4] top-level scope at /home/pkgeval/.julia/packages/BitFloats/qTO7E/test/runtests.jl:134
+  
+Test Summary: | Pass  Error  Total
+conversions   |  296      1    297
+ERROR: LoadError: Some tests did not pass: 296 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/BitFloats/qTO7E/test/runtests.jl:133
+
+PkgEval failed: Package BitFloats errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:41:28.356
+CPU usage: 19.07s (16.44s user, 2.69s kernel)
+
+Network usage:
+- eth0: 2.561 MiB received, 31.030 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":1446,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":1465,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1470,"op":"Total","minor":0},{"major":253,"value":1446,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":1465,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1470,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":10919936,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":11026432,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":11046912,"op":"Total","minor":0},{"major":253,"value":10919936,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":11026432,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":11046912,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":334123008,"max_usage":739028992,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":99,"total_rss":214228992,"inactive_file":1257472,"inactive_anon":85831680,"total_pgfault":398607,"total_cache":85237760,"total_rss_huge":0,"total_active_anon":207728640,"total_pgmajfault":99,"pgpgin":284031,"rss_huge":0,"mapped_file":946176,"total_inactive_file":1257472,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":135168,"pgpgout":210881,"hierarchical_memsw_limit":0,"cache":85237760,"active_file":4800512,"pgfault":398607,"total_mapped_file":946176,"total_pgpgout":210881,"total_writeback":135168,"rss":214228992,"unevictable":0,"total_inactive_anon":85831680,"total_pgpgin":284031,"active_anon":207728640,"total_active_file":4800512},"limit":540965302272},"name":"/BitFloats-26FcaJop","networks":{"eth0":{"rx_bytes":2685283,"rx_packets":287,"tx_packets":301,"tx_bytes":31775,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"cb236ebd5b53f081131582647ad856600da129792dfdc7d899ed7b06e98db410","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4676932454522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":16440000000,"usage_in_kernelmode":2690000000,"total_usage":19074545452,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19074540912,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4540,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:41:28.358620638Z"}

@@ -1,0 +1,168 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:52:16.179
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:52:18.009
+#
+
+ Installing known registries into `~/.julia`
+############                                                              17.6%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ValueHistories ───── v0.5.4
+  Installed RecipesBase ──────── v1.1.1
+  Installed OrderedCollections ─ v1.3.2
+  Installed Compat ───────────── v3.25.0
+  Installed DataStructures ───── v0.18.8
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [98cad3c8] + ValueHistories v0.5.4
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [34da2185] + Compat v3.25.0
+  [864edb3b] + DataStructures v0.18.8
+  [bac558e1] + OrderedCollections v1.3.2
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [98cad3c8] + ValueHistories v0.5.4
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T18:52:23.06
+#
+
+    Testing ValueHistories
+Status `/tmp/jl_j51UGR/Project.toml`
+  [864edb3b] DataStructures v0.18.8
+  [3cdcf5f2] RecipesBase v1.1.1
+  [98cad3c8] ValueHistories v0.5.4
+  [8dfed614] Test
+Status `/tmp/jl_j51UGR/Manifest.toml`
+  [34da2185] Compat v3.25.0
+  [864edb3b] DataStructures v0.18.8
+  [bac558e1] OrderedCollections v1.3.2
+  [3cdcf5f2] RecipesBase v1.1.1
+  [98cad3c8] ValueHistories v0.5.4
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+100 elements {Int64,Float64}
+History
+  * types: Int64, Float64
+  * length: 100
+History
+  * types: UInt8, String
+  * length: 100
+100 elements {Int64,Float64}
+QHistory
+    types: Int64, Float64
+    length: 100
+QHistory
+    types: UInt8, String
+    length: 100
+Test Summary:       | Pass  Total
+[->] tst_history.jl | 1033   1033
+MVHistory{History}
+  :myint2 => 5 elements {Int64,Int64}
+  :myf => 56 elements {Int64,Int64}
+  :myint => 5 elements {Int64,Int64}
+MVHistory{History}
+  :myint2 => 5 elements {Int64,Int64}
+  :myf => 56 elements {Int64,Int64}
+  :myint => 5 elements {Int64,Int64}
+Test Summary:         | Pass  Total
+[->] tst_mvhistory.jl |  548    548
+   --> Baseline: 100 loops that accumulates a Float64
+  0.009294 seconds (14.90 k allocations: 840.667 KiB)
+  0.000003 seconds (1 allocation: 16 bytes)
+   --> History: 100 loops tracking accumulator as Float64
+  0.009539 seconds (15.12 k allocations: 854.677 KiB)
+  0.000006 seconds (17 allocations: 4.422 KiB)
+   --> History: Converting result into arrays
+  0.000011 seconds (7 allocations: 256 bytes)
+  0.000002 seconds (7 allocations: 256 bytes)
+   --> QHistory: 100 loops tracking accumulator as Float64
+  0.009842 seconds (15.11 k allocations: 850.005 KiB)
+  0.000003 seconds (5 allocations: 176 bytes)
+   --> QHistory: Converting result into arrays
+  0.000013 seconds (9 allocations: 2.000 KiB)
+  0.000003 seconds (9 allocations: 2.000 KiB)
+   --> MVHistory: 100 loops tracking accumulator as Float64 and String
+  0.011811 seconds (15.81 k allocations: 918.876 KiB)
+  0.000066 seconds (330 allocations: 52.625 KiB)
+   --> MVHistory: Converting result into arrays
+  0.061019 seconds (69.61 k allocations: 3.696 MiB)
+  0.000101 seconds (723 allocations: 26.219 KiB)
+Test Summary:      |
+[->] bm_history.jl | No tests
+    Testing ValueHistories tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:52:35.769
+CPU usage: 19.55s (16.62s user, 3.00s kernel)
+
+Network usage:
+- eth0: 2.817 MiB received, 49.646 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":76,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":95,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":100,"op":"Total","minor":0},{"major":253,"value":76,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":95,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":100,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":311296,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":417792,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":438272,"op":"Total","minor":0},{"major":253,"value":311296,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":417792,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":438272,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":354091008,"max_usage":895741952,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":217329664,"inactive_file":135168,"inactive_anon":79613952,"total_pgfault":564003,"total_cache":104783872,"total_rss_huge":0,"total_active_anon":220188672,"total_pgmajfault":0,"pgpgin":376695,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":1622016,"total_unevictable":0,"total_dirty":1622016,"writeback":135168,"pgpgout":298087,"hierarchical_memsw_limit":0,"cache":104783872,"active_file":22437888,"pgfault":564003,"total_mapped_file":0,"total_pgpgout":298087,"total_writeback":135168,"rss":217329664,"unevictable":0,"total_inactive_anon":79613952,"total_pgpgin":376695,"active_anon":220188672,"total_active_file":22437888},"limit":540965302272},"name":"/ValueHistories-0aFosLJv","networks":{"eth0":{"rx_bytes":2954243,"rx_packets":461,"tx_packets":480,"tx_bytes":50837,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"2146395ca0df927c8799e6dd535947536aa66eb4f244a81f42f453585b608c1d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4762211394522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":16620000000,"usage_in_kernelmode":3000000000,"total_usage":19550397460,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19550393040,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4420,0,0,0]}},"read":"2021-01-11T18:52:35.771673773Z"}

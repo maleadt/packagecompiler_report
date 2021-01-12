@@ -1,0 +1,123 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:22:36.795
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:22:38.681
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed VPTrees ──────────── v0.2.3
+  Installed Compat ───────────── v3.25.0
+  Installed OrderedCollections ─ v1.3.2
+  Installed DataStructures ───── v0.18.6
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [6889b67b] + VPTrees v0.2.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [34da2185] + Compat v3.25.0
+  [864edb3b] + DataStructures v0.18.6
+  [bac558e1] + OrderedCollections v1.3.2
+  [6889b67b] + VPTrees v0.2.3
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T23:22:43.413
+#
+
+    Testing VPTrees
+Status `/tmp/jl_aCENgS/Project.toml`
+  [864edb3b] DataStructures v0.18.6
+  [88034a9c] StringDistances v0.10.0
+  [6889b67b] VPTrees v0.2.3
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_aCENgS/Manifest.toml`
+  [34da2185] Compat v3.25.0
+  [864edb3b] DataStructures v0.18.6
+  [b4f34e82] Distances v0.10.0
+  [bac558e1] OrderedCollections v1.3.2
+  [88034a9c] StringDistances v0.10.0
+  [6889b67b] VPTrees v0.2.3
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Warning: `threaded = true`, but `Threads.nthreads() == 1`, setting `threaded=false`
+└ @ VPTrees ~/.julia/packages/VPTrees/Mhckd/src/vantage_point_tree.jl:71
+Test Summary: | Pass  Total
+VPTree        |  350    350
+    Testing VPTrees tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:23:02.048
+CPU usage: 25.30s (21.88s user, 3.48s kernel)
+
+Network usage:
+- eth0: 2.986 MiB received, 58.027 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":330678272,"max_usage":873029632,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":217546752,"inactive_file":135168,"inactive_anon":80019456,"total_pgfault":639177,"total_cache":83316736,"total_rss_huge":0,"total_active_anon":220864512,"total_pgmajfault":0,"pgpgin":459723,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":0,"pgpgout":386281,"hierarchical_memsw_limit":0,"cache":83316736,"active_file":135168,"pgfault":639177,"total_mapped_file":0,"total_pgpgout":386281,"total_writeback":0,"rss":217546752,"unevictable":0,"total_inactive_anon":80019456,"total_pgpgin":459723,"active_anon":220864512,"total_active_file":135168},"limit":540965302272},"name":"/VPTrees-NUq42TKv","networks":{"eth0":{"rx_bytes":3130623,"rx_packets":560,"tx_packets":575,"tx_bytes":59420,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"df3293849cd8eb99c03d7005a76ea0b23b771519e038a378ab5967e5b34d758a","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6835774194522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":21880000000,"usage_in_kernelmode":3480000000,"total_usage":25304217515,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25304214155,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3360,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:23:02.051673672Z"}

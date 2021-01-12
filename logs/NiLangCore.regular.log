@@ -1,0 +1,98 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:18:27.202
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:18:28.983
+#
+
+ Installing known registries into `~/.julia`
+######################                                                    30.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed NiLangCore ─ v0.7.10
+  Installed MatchCore ── v0.1.0
+  Installed TupleTools ─ v1.2.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [575d3204] + NiLangCore v0.7.10
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [5dd3f0b1] + MatchCore v0.1.0
+  [575d3204] + NiLangCore v0.7.10
+  [9d95972d] + TupleTools v1.2.0
+
+
+################################################################################
+# Testing: 2021-01-11T15:18:34.332
+#
+
+    Testing NiLangCore
+Status `/tmp/jl_2VNZga/Project.toml`
+  [5dd3f0b1] MatchCore v0.1.0
+  [575d3204] NiLangCore v0.7.10
+  [9d95972d] TupleTools v1.2.0
+  [8dfed614] Test
+Status `/tmp/jl_2VNZga/Manifest.toml`
+  [5dd3f0b1] MatchCore v0.1.0
+  [575d3204] NiLangCore v0.7.10
+  [9d95972d] TupleTools v1.2.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+⊻=(*)
++=(+)
+-=(-)
+*=(*)
+/=(/)
+Test Summary: | Pass  Total
+Core.jl       |    3      3
+Test Summary: | Pass  Total
+utils.jl      |   29     29
+Test Summary: | Pass  Total
+instr.jl      |   54     54
+Test Summary: | Pass  Total
+invtype.jl    |   26     26
+3 + 2im.im
+A(0.5)
+Test Summary: | Pass  Total
+vars.jl       |   57     57
+a = C()
+a = ~C()
+a = C()
+a = ~C()
+NEG.(b) = [-1, -3, -5]
+Test Summary: | Pass  Total
+compiler.jl   |  122    122
+    Testing NiLangCore tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:19:04.793
+CPU usage: 37.58s (34.24s user, 3.42s kernel)
+
+Network usage:
+- eth0: 2.595 MiB received, 36.590 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":340615168,"max_usage":765775872,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":221638656,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":717288,"total_cache":88260608,"total_rss_huge":0,"total_active_anon":223838208,"total_pgmajfault":0,"pgpgin":370326,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":540672,"total_unevictable":0,"total_dirty":540672,"writeback":135168,"pgpgout":294665,"hierarchical_memsw_limit":0,"cache":88260608,"active_file":7434240,"pgfault":717288,"total_mapped_file":0,"total_pgpgout":294665,"total_writeback":135168,"rss":221638656,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":370326,"active_anon":223838208,"total_active_file":7434240},"limit":540965302272},"name":"/NiLangCore-pTjZqBFl","networks":{"eth0":{"rx_bytes":2721321,"rx_packets":350,"tx_packets":352,"tx_bytes":37468,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"ad92108487441c72b3d5c7fa361058a150376510e758a8cb2aa5ecf1065f2611","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3125210044522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":34240000000,"usage_in_kernelmode":3420000000,"total_usage":37581333764,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37581331544,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2220,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:19:04.795296349Z"}

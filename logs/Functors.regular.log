@@ -1,0 +1,76 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:39:13.632
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:39:15.428
+#
+
+ Installing known registries into `~/.julia`
+##########################                                                36.5%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Functors ─── v0.1.0
+  Installed MacroTools ─ v0.5.6
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [d9f16b24] + Functors v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [d9f16b24] + Functors v0.1.0
+  [1914dd2f] + MacroTools v0.5.6
+  [2a0f44e3] + Base64
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+
+
+################################################################################
+# Testing: 2021-01-11T20:39:20.182
+#
+
+    Testing Functors
+Status `/tmp/jl_nNVYNT/Project.toml`
+  [d9f16b24] Functors v0.1.0
+  [1914dd2f] MacroTools v0.5.6
+  [8dfed614] Test
+Status `/tmp/jl_nNVYNT/Manifest.toml`
+  [d9f16b24] Functors v0.1.0
+  [1914dd2f] MacroTools v0.5.6
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary: | Pass  Total
+Functors.jl   |    2      2
+    Testing Functors tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:39:26.54
+CPU usage: 12.90s (10.31s user, 2.62s kernel)
+
+Network usage:
+- eth0: 2.560 MiB received, 32.423 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":335429632,"max_usage":797487104,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":226275328,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":386958,"total_cache":79921152,"total_rss_huge":0,"total_active_anon":227487744,"total_pgmajfault":0,"pgpgin":247236,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":135168,"pgpgout":172497,"hierarchical_memsw_limit":0,"cache":79921152,"active_file":135168,"pgfault":386958,"total_mapped_file":0,"total_pgpgout":172497,"total_writeback":135168,"rss":226275328,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":247236,"active_anon":227487744,"total_active_file":135168},"limit":540965302272},"name":"/Functors-fynTWkAp","networks":{"eth0":{"rx_bytes":2684786,"rx_packets":336,"tx_packets":324,"tx_bytes":33201,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"229ba46f1a03aa6a6d29b0b2f010bc71cbe499d3c23273ee20f7c55c8a554cd3","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5581698864522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":10310000000,"usage_in_kernelmode":2620000000,"total_usage":12896549589,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12896543909,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5680,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:39:26.543938431Z"}

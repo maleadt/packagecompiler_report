@@ -1,0 +1,183 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:50:39.02
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:50:40.797
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MacroTools ───── v0.5.6
+  Installed PyCall ───────── v1.92.2
+  Installed Conda ────────── v1.5.0
+  Installed JSON ─────────── v0.21.1
+  Installed Parsers ──────── v1.0.15
+  Installed VersionParsing ─ v1.2.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [438e738f] + PyCall v1.92.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [8f4d0f93] + Conda v1.5.0
+  [682c06a0] + JSON v0.21.1
+  [1914dd2f] + MacroTools v0.5.6
+  [69de0a69] + Parsers v1.0.15
+  [438e738f] + PyCall v1.92.2
+  [81def892] + VersionParsing v1.2.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [4ec0a83e] + Unicode
+   Building Conda ─→ `~/.julia/packages/Conda/x5ml4/deps/build.log`
+   Building PyCall → `~/.julia/packages/PyCall/tqyST/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T18:51:17.985
+#
+
+    Testing PyCall
+Status `/tmp/jl_TBYcjU/Project.toml`
+  [8f4d0f93] Conda v1.5.0
+  [1914dd2f] MacroTools v0.5.6
+  [438e738f] PyCall v1.92.2
+  [81def892] VersionParsing v1.2.0
+  [ade2ca70] Dates
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [9e88b42a] Serialization
+  [8dfed614] Test
+Status `/tmp/jl_TBYcjU/Manifest.toml`
+  [8f4d0f93] Conda v1.5.0
+  [682c06a0] JSON v0.21.1
+  [1914dd2f] MacroTools v0.5.6
+  [69de0a69] Parsers v1.0.15
+  [438e738f] PyCall v1.92.2
+  [81def892] VersionParsing v1.2.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+┌ Info: Python version 3.8.5 from /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0, PYTHONHOME=/home/pkgeval/.julia/conda/3:/home/pkgeval/.julia/conda/3
+│ ENV[PYTHONPATH]=
+│ ENV[PYTHONHOME]=
+└ ENV[PYTHONEXECUTABLE]=
+Test Summary: | Pass  Total
+CI setup      |    1      1
+[ Info: Installing zmq via the Conda pyzmq package...
+[ Info: Running `conda install -q -y pyzmq` in root environment
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/pkgeval/.julia/conda/3
+
+  added / updated specs:
+    - pyzmq
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    libsodium-1.0.18           |       h7b6447c_0         244 KB
+    pyzmq-20.0.0               |   py38h2531618_1         447 KB
+    zeromq-4.3.3               |       he6710b0_3         500 KB
+    ------------------------------------------------------------
+                                           Total:         1.2 MB
+
+The following NEW packages will be INSTALLED:
+
+  libsodium          pkgs/main/linux-64::libsodium-1.0.18-h7b6447c_0
+  pyzmq              pkgs/main/linux-64::pyzmq-20.0.0-py38h2531618_1
+  zeromq             pkgs/main/linux-64::zeromq-4.3.3-he6710b0_3
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+[ Info: Running `conda remove -q -y pyzmq` in root environment
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/pkgeval/.julia/conda/3
+
+  removed specs:
+    - pyzmq
+
+
+The following packages will be REMOVED:
+
+  libsodium-1.0.18-h7b6447c_0
+  pyzmq-20.0.0-py38h2531618_1
+  zeromq-4.3.3-he6710b0_3
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+Test Summary: | Pass  Total
+conversions   |  465    465
+Test Summary: | Pass  Total
+pydef         |    8      8
+Test Summary: | Pass  Total
+callback      |    3      3
+Test Summary: | Pass  Total
+throwing show |    4      4
+Test Summary: | Pass  Total
+PyIterator    |   14     14
+Test Summary: | Pass  Total
+atexit        |    1      1
+Test Summary: | Pass  Total
+pycall!       |   16     16
+Test Summary: | Pass  Total
+PyBuffer      |   88     88
+    Testing PyCall tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:52:17.485
+CPU usage: 97.47s (89.37s user, 8.26s kernel)
+
+Network usage:
+- eth0: 252.632 MiB received, 651.663 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":34,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":15,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":34,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":34,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":15,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":34,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":167936,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":61440,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":167936,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":167936,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":61440,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":167936,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":1908645888,"max_usage":2447417344,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":184131584,"inactive_file":135168,"inactive_anon":1210023936,"total_pgfault":1816947,"total_cache":1669767168,"total_rss_huge":0,"total_active_anon":643399680,"total_pgmajfault":0,"pgpgin":1657359,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":540672,"total_unevictable":0,"total_dirty":540672,"writeback":0,"pgpgout":1204780,"hierarchical_memsw_limit":0,"cache":1669767168,"active_file":405504,"pgfault":1816947,"total_mapped_file":0,"total_pgpgout":1204780,"total_writeback":0,"rss":184131584,"unevictable":0,"total_inactive_anon":1210023936,"total_pgpgin":1657359,"active_anon":643399680,"total_active_file":405504},"limit":540965302272},"name":"/PyCall-1mBWyfbH","networks":{"eth0":{"rx_bytes":264904217,"rx_packets":20567,"tx_packets":11346,"tx_bytes":667303,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"d5b40c37ae8acd4409febaf48c20cdd3fdadf3e6e28d5a3932eb28732191e062","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4759882664522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":89370000000,"usage_in_kernelmode":8260000000,"total_usage":97469011758,"percpu_usage":[0,0,0,97434086322,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5320,0,34920116,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:52:17.556973676Z"}

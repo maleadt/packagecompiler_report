@@ -1,0 +1,123 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:32:28.016
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:32:29.777
+#
+
+ Installing known registries into `~/.julia`
+####                                                                       5.7%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Wikidata ──── v0.1.0
+  Installed MbedTLS_jll ─ v2.16.8+1
+  Installed IniFile ───── v0.5.0
+  Installed MbedTLS ───── v1.0.3
+  Installed Parsers ───── v1.0.15
+  Installed HTTP ──────── v0.8.19
+  Installed JSON ──────── v0.21.1
+  Installed JLLWrappers ─ v1.2.0
+  Installed Artifacts ─── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [d5e6d34e] + Wikidata v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [cd3eb016] + HTTP v0.8.19
+  [83e8ac13] + IniFile v0.5.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [69de0a69] + Parsers v1.0.15
+  [d5e6d34e] + Wikidata v0.1.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T19:32:35.177
+#
+
+    Testing Wikidata
+Status `/tmp/jl_5o48LP/Project.toml`
+  [cd3eb016] HTTP v0.8.19
+  [682c06a0] JSON v0.21.1
+  [d5e6d34e] Wikidata v0.1.0
+  [8dfed614] Test
+Status `/tmp/jl_5o48LP/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [cd3eb016] HTTP v0.8.19
+  [83e8ac13] IniFile v0.5.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [69de0a69] Parsers v1.0.15
+  [d5e6d34e] Wikidata v0.1.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+Wikidata.jl   |   10     10
+    Testing Wikidata tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:32:56.861
+CPU usage: 28.33s (24.53s user, 3.90s kernel)
+
+Network usage:
+- eth0: 3.413 MiB received, 75.186 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":566,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":585,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":590,"op":"Total","minor":0},{"major":253,"value":566,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":585,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":590,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":2318336,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":2424832,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":2445312,"op":"Total","minor":0},{"major":253,"value":2318336,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":2424832,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":2445312,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":353398784,"max_usage":1139060736,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":219865088,"inactive_file":135168,"inactive_anon":80019456,"total_pgfault":877800,"total_cache":102313984,"total_rss_huge":0,"total_active_anon":227758080,"total_pgmajfault":0,"pgpgin":547734,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":0,"pgpgout":469094,"hierarchical_memsw_limit":0,"cache":102313984,"active_file":14462976,"pgfault":877800,"total_mapped_file":0,"total_pgpgout":469094,"total_writeback":0,"rss":219865088,"unevictable":0,"total_inactive_anon":80019456,"total_pgpgin":547734,"active_anon":227758080,"total_active_file":14462976},"limit":540965302272},"name":"/Wikidata-TLDeNOuk","networks":{"eth0":{"rx_bytes":3578772,"rx_packets":686,"tx_packets":713,"tx_bytes":76990,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"c9a38d71fb78d0a1d339ea844cd04eeeac814f651aa8ce34c233619558f098a6","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5071862774522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":24530000000,"usage_in_kernelmode":3900000000,"total_usage":28332711513,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,28332711513,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:32:57.773007568Z"}

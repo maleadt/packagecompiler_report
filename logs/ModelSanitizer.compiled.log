@@ -1,0 +1,652 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T19:47:18.428
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T19:47:20.154
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ModelSanitizer ── v0.3.0
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [913cd07a] + ModelSanitizer v0.3.0
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [913cd07a] + ModelSanitizer v0.3.0
+  [9b87118b] + PackageCompiler v1.2.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T19:47:25.597
+#
+
+┌ Warning: `@get!(dict, key, default)` at /home/pkgeval/.julia/packages/ModelSanitizer/fYC4k/ext/Requires/src/require.jl:11 is deprecated, use `get!(()->default, dict, key)` instead.
+└ @ Base deprecated.jl:204
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 147.572 MiB, compilation took 163 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T19:50:16.202
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/ModelSanitizer-PjYGsKmR.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:50:18.018
+#
+
+ Installing known registries into `~/.julia`
+#######################################                                   54.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ModelSanitizer ─ v0.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [913cd07a] + ModelSanitizer v0.3.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [913cd07a] + ModelSanitizer v0.3.0
+
+
+################################################################################
+# Testing: 2021-01-11T19:50:21.519
+#
+
+    Testing ModelSanitizer
+Status `/tmp/jl_25bULs/Project.toml`
+  [6e4b80f9] BenchmarkTools v0.4.3
+  [a2441757] Coverage v0.9.3
+  [a93c6f00] DataFrames v0.18.4
+  [add582a8] MLJ v0.2.5
+  [a7f614a8] MLJBase v0.2.3
+  [d491faf4] MLJModels v0.2.5
+  [913cd07a] ModelSanitizer v0.3.0
+  [6f286f6a] MultivariateStats v0.6.0
+  [32113eaa] PkgBenchmark v0.2.10
+  [2913bbd2] StatsBase v0.31.0
+  [3eaba693] StatsModels v0.6.2
+  [a759f4b9] TimerOutputs v0.5.7
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_25bULs/Manifest.toml`
+  [1520ce14] AbstractTrees v0.3.3
+  [7d9fca2a] Arpack v0.4.0
+  [68821587] Arpack_jll v3.5.0+3
+  [56f22d72] Artifacts v1.3.0
+  [6e4b80f9] BenchmarkTools v0.4.3
+  [9e28174c] BinDeps v0.8.10
+  [b99e7846] BinaryProvider v0.5.10
+  [336ed68f] CSV v0.5.23
+  [324d7699] CategoricalArrays v0.5.2
+  [34da2185] Compat v2.2.1
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [a2441757] Coverage v0.9.3
+  [9a962f9c] DataAPI v1.4.0
+  [a93c6f00] DataFrames v0.18.4
+  [864edb3b] DataStructures v0.17.20
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [b4f34e82] Distances v0.8.2
+  [31c24e10] Distributions v0.21.0
+  [5789e2e9] FileIO v1.4.5
+  [48062228] FilePathsBase v0.7.0
+  [cd3eb016] HTTP v0.8.19
+  [83e8ac13] IniFile v0.5.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [2d691ee1] LIBLINEAR v0.5.1
+  [b1bec4e5] LIBSVM v0.4.0
+  [1d6d02ad] LeftChildRightSiblingTrees v0.1.2
+  [add582a8] MLJ v0.2.5
+  [a7f614a8] MLJBase v0.2.3
+  [d491faf4] MLJModels v0.2.5
+  [739be429] MbedTLS v0.7.0
+  [e1d29d7a] Missings v0.4.4
+  [913cd07a] ModelSanitizer v0.3.0
+  [6f286f6a] MultivariateStats v0.6.0
+  [4536629a] OpenBLAS_jll v0.3.9+5
+  [bac558e1] OrderedCollections v1.3.2
+  [90014a1f] PDMats v0.9.12
+  [69de0a69] Parsers v0.3.12
+  [32113eaa] PkgBenchmark v0.2.10
+  [2dfb63ee] PooledArrays v0.5.3
+  [33c8b6b6] ProgressLogging v0.1.3
+  [92933f4c] ProgressMeter v1.4.1
+  [1fd47b50] QuadGK v2.4.1
+  [3cdcf5f2] RecipesBase v0.7.0
+  [189a3867] Reexport v0.2.0
+  [cbe49d4c] RemoteFiles v0.3.1
+  [ae029012] Requires v0.5.2
+  [79098fc4] Rmath v0.5.1
+  [6e75b9c4] ScikitLearnBase v0.5.0
+  [1277b4bf] ShiftedArrays v1.0.0
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v0.7.2
+  [2913bbd2] StatsBase v0.31.0
+  [4c63d2b9] StatsFuns v0.8.0
+  [3eaba693] StatsModels v0.6.2
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v0.2.11
+  [5d786b92] TerminalLoggers v0.1.2
+  [a759f4b9] TimerOutputs v0.5.7
+  [30578b45] URIParser v0.4.1
+  [ea10d353] WeakRefStrings v0.6.2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Warning: `@get!(dict, key, default)` at /home/user/.julia/packages/Requires/9Jse8/src/require.jl:11 is deprecated, use `get!(()->default, dict, key)` instead.
+└ @ Base deprecated.jl:204
+┌ Warning: Error requiring DataFrames from ModelSanitizer:
+│ could not open file /home/pkgeval/.julia/packages/ModelSanitizer/fYC4k/src/dataframes.jl
+│ Stacktrace:
+│  [1] include(::Function, ::Module, ::String) at ./Base.jl:380
+│  [2] include at ./Base.jl:368 [inlined]
+│  [3] include(::String) at /home/pkgeval/.julia/packages/ModelSanitizer/fYC4k/src/ModelSanitizer.jl:1
+│  [4] top-level scope at none:1
+│  [5] eval at ./boot.jl:331 [inlined]
+│  [6] eval at /home/pkgeval/.julia/packages/ModelSanitizer/fYC4k/src/ModelSanitizer.jl:1 [inlined]
+│  [7] (::ModelSanitizer.var"#28#31")() at /home/pkgeval/.julia/packages/ModelSanitizer/fYC4k/ext/Requires/src/require.jl:69
+│  [8] err(::ModelSanitizer.var"#28#31", ::Module, ::String) at /home/pkgeval/.julia/packages/ModelSanitizer/fYC4k/ext/Requires/src/require.jl:40
+│  [9] #27 at /home/pkgeval/.julia/packages/ModelSanitizer/fYC4k/ext/Requires/src/require.jl:68 [inlined]
+│  [10] withpath(::ModelSanitizer.var"#27#30", ::String) at /home/pkgeval/.julia/packages/ModelSanitizer/fYC4k/ext/Requires/src/require.jl:30
+│  [11] (::ModelSanitizer.var"#26#29")() at /home/pkgeval/.julia/packages/ModelSanitizer/fYC4k/ext/Requires/src/require.jl:67
+│  [12] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│  [13] invokelatest at ./essentials.jl:709 [inlined]
+│  [14] foreach at ./abstractarray.jl:2009 [inlined]
+│  [15] loadpkg(::Base.PkgId) at /home/pkgeval/.julia/packages/ModelSanitizer/fYC4k/ext/Requires/src/require.jl:20
+│  [16] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│  [17] invokelatest at ./essentials.jl:709 [inlined]
+│  [18] require(::Base.PkgId) at ./loading.jl:931
+│  [19] require(::Module, ::Symbol) at ./loading.jl:923
+│  [20] include(::String) at ./client.jl:457
+│  [21] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:9 [inlined]
+│  [22] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+│  [23] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:8 [inlined]
+│  [24] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+│  [25] _inner_runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:6
+│  [26] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:51 [inlined]
+│  [27] (::var"#1#3")() at ./task.jl:356
+└ @ ModelSanitizer.Requires /home/pkgeval/.julia/packages/ModelSanitizer/fYC4k/ext/Requires/src/require.jl:42
+┌ Warning: `length(df::AbstractDataFrame)` is deprecated, use `size(df, 2)` instead.
+│   caller = _elements_indexable_without_check_assigned!(::Array{Any,1}, ::DataFrames.DataFrame; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at elements.jl:85
+└ @ ModelSanitizer /home/pkgeval/.julia/packages/ModelSanitizer/fYC4k/src/elements.jl:85
+┌ Warning: `length(df::AbstractDataFrame)` is deprecated, use `size(df, 2)` instead.
+│   caller = _sanitize_indexable_without_check_assigned!(::DataFrames.DataFrame, ::Array{Data,1}, ::ModelSanitizer._DataElements{Array{Any,1}}; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at sanitize.jl:108
+└ @ ModelSanitizer /home/pkgeval/.julia/packages/ModelSanitizer/fYC4k/src/sanitize.jl:108
+Test Summary: | Pass  Total
+Unit tests    |  118    118
+integration-tests/test-proof-of-concept-dataframes.jl: Error During Test at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:82
+  Test threw exception
+  Expression: (model.a.b2.d1[3])[1, :z] == 0
+  MethodError: no method matching getindex(::Int64, ::Int64, ::Symbol)
+  Closest candidates are:
+    getindex(::Number, ::Integer) at number.jl:76
+    getindex(::Number, !Matched::Integer...) at number.jl:81
+    getindex(::Number) at number.jl:75
+    ...
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:82
+   [2] include(::String) at ./client.jl:457
+   [3] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:32 [inlined]
+   [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [5] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:31 [inlined]
+   [6] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [7] _inner_runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:29
+  
+integration-tests/test-proof-of-concept-dataframes.jl: Error During Test at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:83
+  Test threw exception
+  Expression: (model.a.b2.d1[3])[2, :z] == 0
+  MethodError: no method matching getindex(::Int64, ::Int64, ::Symbol)
+  Closest candidates are:
+    getindex(::Number, ::Integer) at number.jl:76
+    getindex(::Number, !Matched::Integer...) at number.jl:81
+    getindex(::Number) at number.jl:75
+    ...
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:83
+   [2] include(::String) at ./client.jl:457
+   [3] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:32 [inlined]
+   [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [5] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:31 [inlined]
+   [6] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [7] _inner_runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:29
+  
+integration-tests/test-proof-of-concept-dataframes.jl: Error During Test at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:84
+  Test threw exception
+  Expression: (model.a.b2.d1[3])[3, :z] == 0
+  MethodError: no method matching getindex(::Int64, ::Int64, ::Symbol)
+  Closest candidates are:
+    getindex(::Number, ::Integer) at number.jl:76
+    getindex(::Number, !Matched::Integer...) at number.jl:81
+    getindex(::Number) at number.jl:75
+    ...
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:84
+   [2] include(::String) at ./client.jl:457
+   [3] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:32 [inlined]
+   [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [5] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:31 [inlined]
+   [6] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [7] _inner_runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:29
+  
+integration-tests/test-proof-of-concept-dataframes.jl: Error During Test at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:85
+  Test threw exception
+  Expression: (model.a.b2.d1[3])[4, :z] == 0
+  MethodError: no method matching getindex(::Int64, ::Int64, ::Symbol)
+  Closest candidates are:
+    getindex(::Number, ::Integer) at number.jl:76
+    getindex(::Number, !Matched::Integer...) at number.jl:81
+    getindex(::Number) at number.jl:75
+    ...
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:85
+   [2] include(::String) at ./client.jl:457
+   [3] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:32 [inlined]
+   [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [5] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:31 [inlined]
+   [6] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [7] _inner_runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:29
+  
+integration-tests/test-proof-of-concept-dataframes.jl: Error During Test at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:86
+  Test threw exception
+  Expression: (model.a.b2.d1[3])[5, :z] == 0
+  MethodError: no method matching getindex(::Int64, ::Int64, ::Symbol)
+  Closest candidates are:
+    getindex(::Number, ::Integer) at number.jl:76
+    getindex(::Number, !Matched::Integer...) at number.jl:81
+    getindex(::Number) at number.jl:75
+    ...
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:86
+   [2] include(::String) at ./client.jl:457
+   [3] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:32 [inlined]
+   [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [5] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:31 [inlined]
+   [6] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [7] _inner_runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:29
+  
+integration-tests/test-proof-of-concept-dataframes.jl: Error During Test at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:88
+  Test threw exception
+  Expression: (model.a.b2.d1[3])[1, :t] == 0
+  MethodError: no method matching getindex(::Int64, ::Int64, ::Symbol)
+  Closest candidates are:
+    getindex(::Number, ::Integer) at number.jl:76
+    getindex(::Number, !Matched::Integer...) at number.jl:81
+    getindex(::Number) at number.jl:75
+    ...
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:88
+   [2] include(::String) at ./client.jl:457
+   [3] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:32 [inlined]
+   [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [5] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:31 [inlined]
+   [6] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [7] _inner_runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:29
+  
+integration-tests/test-proof-of-concept-dataframes.jl: Error During Test at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:89
+  Test threw exception
+  Expression: (model.a.b2.d1[3])[2, :t] == 0
+  MethodError: no method matching getindex(::Int64, ::Int64, ::Symbol)
+  Closest candidates are:
+    getindex(::Number, ::Integer) at number.jl:76
+    getindex(::Number, !Matched::Integer...) at number.jl:81
+    getindex(::Number) at number.jl:75
+    ...
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:89
+   [2] include(::String) at ./client.jl:457
+   [3] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:32 [inlined]
+   [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [5] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:31 [inlined]
+   [6] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [7] _inner_runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:29
+  
+integration-tests/test-proof-of-concept-dataframes.jl: Error During Test at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:90
+  Test threw exception
+  Expression: (model.a.b2.d1[3])[3, :t] == 0
+  MethodError: no method matching getindex(::Int64, ::Int64, ::Symbol)
+  Closest candidates are:
+    getindex(::Number, ::Integer) at number.jl:76
+    getindex(::Number, !Matched::Integer...) at number.jl:81
+    getindex(::Number) at number.jl:75
+    ...
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:90
+   [2] include(::String) at ./client.jl:457
+   [3] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:32 [inlined]
+   [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [5] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:31 [inlined]
+   [6] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [7] _inner_runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:29
+  
+integration-tests/test-proof-of-concept-dataframes.jl: Error During Test at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:91
+  Test threw exception
+  Expression: (model.a.b2.d1[3])[4, :t] == 0
+  MethodError: no method matching getindex(::Int64, ::Int64, ::Symbol)
+  Closest candidates are:
+    getindex(::Number, ::Integer) at number.jl:76
+    getindex(::Number, !Matched::Integer...) at number.jl:81
+    getindex(::Number) at number.jl:75
+    ...
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:91
+   [2] include(::String) at ./client.jl:457
+   [3] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:32 [inlined]
+   [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [5] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:31 [inlined]
+   [6] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [7] _inner_runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:29
+  
+integration-tests/test-proof-of-concept-dataframes.jl: Error During Test at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:92
+  Test threw exception
+  Expression: (model.a.b2.d1[3])[5, :t] == 0
+  MethodError: no method matching getindex(::Int64, ::Int64, ::Symbol)
+  Closest candidates are:
+    getindex(::Number, ::Integer) at number.jl:76
+    getindex(::Number, !Matched::Integer...) at number.jl:81
+    getindex(::Number) at number.jl:75
+    ...
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:92
+   [2] include(::String) at ./client.jl:457
+   [3] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:32 [inlined]
+   [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [5] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:31 [inlined]
+   [6] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [7] _inner_runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:29
+  
+integration-tests/test-proof-of-concept-dataframes.jl: Error During Test at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:94
+  Test threw exception
+  Expression: (model.a.b2.d1[5]).e[1, :s] == 0
+  type Int64 has no field e
+  Stacktrace:
+   [1] getproperty(::Int64, ::Symbol) at ./Base.jl:33
+   [2] top-level scope at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:94
+   [3] include(::String) at ./client.jl:457
+   [4] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:32 [inlined]
+   [5] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [6] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:31 [inlined]
+   [7] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [8] _inner_runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:29
+  
+integration-tests/test-proof-of-concept-dataframes.jl: Error During Test at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:95
+  Test threw exception
+  Expression: (model.a.b2.d1[5]).e[2, :s] == 0
+  type Int64 has no field e
+  Stacktrace:
+   [1] getproperty(::Int64, ::Symbol) at ./Base.jl:33
+   [2] top-level scope at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:95
+   [3] include(::String) at ./client.jl:457
+   [4] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:32 [inlined]
+   [5] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [6] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:31 [inlined]
+   [7] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [8] _inner_runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:29
+  
+integration-tests/test-proof-of-concept-dataframes.jl: Error During Test at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:96
+  Test threw exception
+  Expression: (model.a.b2.d1[5]).e[3, :s] == 0
+  type Int64 has no field e
+  Stacktrace:
+   [1] getproperty(::Int64, ::Symbol) at ./Base.jl:33
+   [2] top-level scope at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:96
+   [3] include(::String) at ./client.jl:457
+   [4] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:32 [inlined]
+   [5] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [6] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:31 [inlined]
+   [7] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [8] _inner_runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:29
+  
+integration-tests/test-proof-of-concept-dataframes.jl: Error During Test at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:97
+  Test threw exception
+  Expression: (model.a.b2.d1[5]).e[4, :s] == 0
+  type Int64 has no field e
+  Stacktrace:
+   [1] getproperty(::Int64, ::Symbol) at ./Base.jl:33
+   [2] top-level scope at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:97
+   [3] include(::String) at ./client.jl:457
+   [4] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:32 [inlined]
+   [5] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [6] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:31 [inlined]
+   [7] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [8] _inner_runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:29
+  
+integration-tests/test-proof-of-concept-dataframes.jl: Error During Test at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:98
+  Test threw exception
+  Expression: (model.a.b2.d1[5]).e[5, :s] == 0
+  type Int64 has no field e
+  Stacktrace:
+   [1] getproperty(::Int64, ::Symbol) at ./Base.jl:33
+   [2] top-level scope at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:98
+   [3] include(::String) at ./client.jl:457
+   [4] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:32 [inlined]
+   [5] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [6] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:31 [inlined]
+   [7] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [8] _inner_runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:29
+  
+integration-tests/test-proof-of-concept-dataframes.jl: Error During Test at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:99
+  Test threw exception
+  Expression: (model.a.b2.d1[5]).e[6, :s] == 0
+  type Int64 has no field e
+  Stacktrace:
+   [1] getproperty(::Int64, ::Symbol) at ./Base.jl:33
+   [2] top-level scope at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:99
+   [3] include(::String) at ./client.jl:457
+   [4] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:32 [inlined]
+   [5] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [6] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:31 [inlined]
+   [7] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [8] _inner_runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:29
+  
+integration-tests/test-proof-of-concept-dataframes.jl: Error During Test at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:100
+  Test threw exception
+  Expression: (model.a.b2.d1[5]).e[7, :s] == 0
+  type Int64 has no field e
+  Stacktrace:
+   [1] getproperty(::Int64, ::Symbol) at ./Base.jl:33
+   [2] top-level scope at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:100
+   [3] include(::String) at ./client.jl:457
+   [4] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:32 [inlined]
+   [5] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [6] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:31 [inlined]
+   [7] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [8] _inner_runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:29
+  
+integration-tests/test-proof-of-concept-dataframes.jl: Error During Test at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:30
+  Got exception outside of a @test
+  LoadError: MethodError: no method matching names(::Int64)
+  Closest candidates are:
+    names(!Matched::DataFrames.Index) at /home/user/.julia/packages/DataFrames/0Em9Q/src/other/index.jl:20
+    names(!Matched::Module; all, imported) at reflection.jl:98
+    names(!Matched::DataFrames.SubIndex) at /home/user/.julia/packages/DataFrames/0Em9Q/src/other/index.jl:320
+    ...
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:105
+   [2] include(::String) at ./client.jl:457
+   [3] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:32 [inlined]
+   [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [5] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:31 [inlined]
+   [6] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [7] _inner_runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:29
+   [8] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:51 [inlined]
+   [9] (::var"#1#3")() at ./task.jl:356
+  in expression starting at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-dataframes.jl:105
+  
+mse(m, X[training_rows, :], y[training_rows]) = 1.0080798264557436
+rmse(m, X[training_rows, :], y[training_rows]) = 1.0040317855803886
+r2(m, X[training_rows, :], y[training_rows]) = 0.9498685570350816
+mse(m, X[testing_rows, :], y[testing_rows]) = 1.075646756606003
+rmse(m, X[testing_rows, :], y[testing_rows]) = 1.0371339144999565
+r2(m, X[testing_rows, :], y[testing_rows]) = 0.9392697738666852
+mse(m, X[training_rows, :], y[training_rows]) = 1.0080798264557436
+rmse(m, X[training_rows, :], y[training_rows]) = 1.0040317855803886
+r2(m, X[training_rows, :], y[training_rows]) = 0.9498685570350816
+mse(m, X[testing_rows, :], y[testing_rows]) = 1.075646756606003
+rmse(m, X[testing_rows, :], y[testing_rows]) = 1.0371339144999565
+r2(m, X[testing_rows, :], y[testing_rows]) = 0.9392697738666852
+mse(m, X[training_rows, :], y[training_rows]) = 1.0080798264557436
+rmse(m, X[training_rows, :], y[training_rows]) = 1.0040317855803886
+r2(m, X[training_rows, :], y[training_rows]) = 0.9498685570350816
+mse(m, X[testing_rows, :], y[testing_rows]) = 1.075646756606003
+rmse(m, X[testing_rows, :], y[testing_rows]) = 1.0371339144999565
+r2(m, X[testing_rows, :], y[testing_rows]) = 0.9392697738666852
+ERROR: LoadError: LoadError: syntax: local variable name "N" conflicts with a static parameter
+Stacktrace:
+ [1] top-level scope at /home/user/.julia/packages/MLJ/XYSFt/src/composites.jl:113
+ [2] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [3] include at ./Base.jl:368 [inlined]
+ [4] include(::String) at /home/user/.julia/packages/MLJ/XYSFt/src/MLJ.jl:1
+ [5] top-level scope at /home/user/.julia/packages/MLJ/XYSFt/src/MLJ.jl:88
+ [6] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [7] include(::Module, ::String) at ./Base.jl:368
+ [8] top-level scope at none:2
+ [9] eval at ./boot.jl:331 [inlined]
+ [10] eval(::Expr) at ./client.jl:467
+ [11] top-level scope at ./none:3
+in expression starting at /home/user/.julia/packages/MLJ/XYSFt/src/composites.jl:113
+in expression starting at /home/user/.julia/packages/MLJ/XYSFt/src/MLJ.jl:88
+integration-tests/test-proof-of-concept-mlj.jl: Error During Test at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:39
+  Got exception outside of a @test
+  LoadError: Failed to precompile MLJ [add582a8-e3ab-11e8-2d5e-e98b27df1bc7] to /home/user/.julia/compiled/v1.5/MLJ/rAU56_K70UI.ji.
+  Stacktrace:
+   [1] error(::String) at ./error.jl:33
+   [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1305
+   [3] _require(::Base.PkgId) at ./loading.jl:1030
+   [4] require(::Base.PkgId) at ./loading.jl:928
+   [5] require(::Module, ::Symbol) at ./loading.jl:923
+   [6] include(::String) at ./client.jl:457
+   [7] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:41 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:40 [inlined]
+   [10] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] _inner_runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:29
+   [12] macro expansion at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:51 [inlined]
+   [13] (::var"#1#3")() at ./task.jl:356
+  in expression starting at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/integration-tests/test-proof-of-concept-mlj.jl:1
+  
+Test Summary:                                           | Pass  Error  Total
+Integration tests                                       |  183     19    202
+  integration-tests/test-proof-of-concept-dataframes.jl |   40     18     58
+  integration-tests/test-proof-of-concept-linearmodel   |  143           143
+  integration-tests/test-proof-of-concept-mlj.jl        |           1      1
+ModelSanitizer.jl: Error During Test at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:63
+  Got exception outside of a @test
+  TaskFailedException:
+  Some tests did not pass: 183 passed, 0 failed, 19 errored, 0 broken.
+  Stacktrace:
+   [1] sync_end(::Channel{Any}) at ./task.jl:314
+   [2] macro expansion at ./task.jl:333 [inlined]
+   [3] runtests() at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:49
+   [4] top-level scope at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:64
+   [5] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:64
+   [7] include(::String) at ./client.jl:457
+   [8] top-level scope at none:6
+   [9] eval(::Module, ::Any) at ./boot.jl:331
+   [10] exec_options(::Base.JLOptions) at ./client.jl:272
+   [11] _start() at ./client.jl:506
+  
+Test Summary:     | Error  Total
+ModelSanitizer.jl |     1      1
+ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/user/.julia/packages/ModelSanitizer/fYC4k/test/runtests.jl:63
+
+PkgEval failed: Package ModelSanitizer errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:52:53.406
+CPU usage: 131.77s (122.56s user, 9.42s kernel)
+
+Network usage:
+- eth0: 16.021 MiB received, 407.850 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":73,"op":"Read","minor":0},{"major":259,"value":54,"op":"Write","minor":0},{"major":259,"value":87,"op":"Sync","minor":0},{"major":259,"value":40,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":127,"op":"Total","minor":0},{"major":253,"value":73,"op":"Read","minor":2},{"major":253,"value":51,"op":"Write","minor":2},{"major":253,"value":87,"op":"Sync","minor":2},{"major":253,"value":37,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":124,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":1212416,"op":"Read","minor":0},{"major":259,"value":790528,"op":"Write","minor":0},{"major":259,"value":1269760,"op":"Sync","minor":0},{"major":259,"value":733184,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":2002944,"op":"Total","minor":0},{"major":253,"value":1212416,"op":"Read","minor":2},{"major":253,"value":790528,"op":"Write","minor":2},{"major":253,"value":1269760,"op":"Sync","minor":2},{"major":253,"value":733184,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":2002944,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":435642368,"max_usage":1934671872,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":247590912,"inactive_file":405504,"inactive_anon":128679936,"total_pgfault":3757809,"total_cache":154791936,"total_rss_huge":0,"total_active_anon":272498688,"total_pgmajfault":0,"pgpgin":2499717,"rss_huge":0,"mapped_file":0,"total_inactive_file":405504,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":2401436,"hierarchical_memsw_limit":0,"cache":154791936,"active_file":811008,"pgfault":3757809,"total_mapped_file":0,"total_pgpgout":2401436,"total_writeback":0,"rss":247590912,"unevictable":0,"total_inactive_anon":128679936,"total_pgpgin":2499717,"active_anon":272498688,"total_active_file":811008},"limit":540965302272},"name":"/ModelSanitizer-RWKrjrZ4","networks":{"eth0":{"rx_bytes":16798899,"rx_packets":3841,"tx_packets":3984,"tx_bytes":417638,"tx_dropped":0,"rx_dropped":6,"tx_errors":0,"rx_errors":0}},"id":"3bdcea9dacfbc2b095427b346829c8cbd22dc3d0ef445547095231e97d4bc023","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5224699724522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":122560000000,"usage_in_kernelmode":9420000000,"total_usage":131773002885,"percpu_usage":[0,14810,131767627793,2730971,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1466060,0,1160391,2860,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:52:53.409166485Z"}

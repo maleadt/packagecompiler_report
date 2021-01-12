@@ -1,0 +1,132 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:31:53.009
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:31:54.782
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ##O#- #                                                                       ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Artifacts ──── v1.3.0
+  Installed UnsafeArrays ─ v1.0.1
+  Installed LibCEED ────── v0.1.0
+  Installed Requires ───── v1.1.2
+  Installed JLLWrappers ── v1.2.0
+  Installed libCEED_jll ── v0.7.0+1
+  Installed Cassette ───── v0.3.4
+  Installed CEnum ──────── v0.4.1
+  Installed StaticArrays ─ v0.12.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [2cd74e05] + LibCEED v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [fa961155] + CEnum v0.4.1
+  [7057c7e9] + Cassette v0.3.4
+  [692b3bcd] + JLLWrappers v1.2.0
+  [2cd74e05] + LibCEED v0.1.0
+  [ae029012] + Requires v1.1.2
+  [90137ffa] + StaticArrays v0.12.5
+  [c4a57d5a] + UnsafeArrays v1.0.1
+  [762fde13] + libCEED_jll v0.7.0+1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building LibCEED → `~/.julia/packages/LibCEED/5EEZG/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T19:32:00.093
+#
+
+    Testing LibCEED
+Status `/tmp/jl_jDuBDQ/Project.toml`
+  [fa961155] CEnum v0.4.1
+  [7057c7e9] Cassette v0.3.4
+  [2cd74e05] LibCEED v0.1.0
+  [ae029012] Requires v1.1.2
+  [90137ffa] StaticArrays v0.12.5
+  [c4a57d5a] UnsafeArrays v1.0.1
+  [762fde13] libCEED_jll v0.7.0+1
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [8dfed614] Test
+Status `/tmp/jl_jDuBDQ/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [fa961155] CEnum v0.4.1
+  [7057c7e9] Cassette v0.3.4
+  [692b3bcd] JLLWrappers v1.2.0
+  [2cd74e05] LibCEED v0.1.0
+  [ae029012] Requires v1.1.2
+  [90137ffa] StaticArrays v0.12.5
+  [c4a57d5a] UnsafeArrays v1.0.1
+  [762fde13] libCEED_jll v0.7.0+1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+LibCEED       |  100    100
+    Testing LibCEED tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:32:26.146
+CPU usage: 32.98s (29.34s user, 3.73s kernel)
+
+Network usage:
+- eth0: 3.350 MiB received, 71.106 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":56,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":75,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":84,"op":"Total","minor":0},{"major":253,"value":56,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":75,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":84,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":1024000,"op":"Read","minor":0},{"major":259,"value":143360,"op":"Write","minor":0},{"major":259,"value":1130496,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1167360,"op":"Total","minor":0},{"major":253,"value":1024000,"op":"Read","minor":2},{"major":253,"value":143360,"op":"Write","minor":2},{"major":253,"value":1130496,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1167360,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":333840384,"max_usage":1029640192,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":217407488,"inactive_file":811008,"inactive_anon":81100800,"total_pgfault":903672,"total_cache":86601728,"total_rss_huge":0,"total_active_anon":221134848,"total_pgmajfault":0,"pgpgin":586080,"rss_huge":0,"mapped_file":0,"total_inactive_file":811008,"dirty":675840,"total_unevictable":0,"total_dirty":675840,"writeback":0,"pgpgout":511859,"hierarchical_memsw_limit":0,"cache":86601728,"active_file":1216512,"pgfault":903672,"total_mapped_file":0,"total_pgpgout":511859,"total_writeback":0,"rss":217407488,"unevictable":0,"total_inactive_anon":81100800,"total_pgpgin":586080,"active_anon":221134848,"total_active_file":1216512},"limit":540965302272},"name":"/LibCEED-jFAaUmDj","networks":{"eth0":{"rx_bytes":3512507,"rx_packets":617,"tx_packets":668,"tx_bytes":72813,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"3dc7736e35c0e053176b237a49beee249aa35347d2d32a8a0c6b3e3282308f9d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5067860724522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":29340000000,"usage_in_kernelmode":3730000000,"total_usage":32981138475,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,32981134235,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4240,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:32:26.544382889Z"}

@@ -1,0 +1,428 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:35:57.88
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:35:59.583
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed MbedTLS_jll ────────────────── v2.16.8+1
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed JSONSchema ─────────────────── v0.3.3
+  Installed SCS ────────────────────────── v0.7.1
+  Installed GSL ────────────────────────── v1.0.0
+  Installed BellScenario ───────────────── v0.1.0
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed QBase ──────────────────────── v0.1.1
+  Installed MathProgBase ───────────────── v0.7.8
+  Installed SCS_jll ────────────────────── v2.1.2+1
+  Installed TranscodingStreams ─────────── v0.9.5
+  Installed FillArrays ─────────────────── v0.9.7
+  Installed Combinatorics ──────────────── v1.0.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed Requires ───────────────────── v1.1.2
+  Installed Convex ─────────────────────── v0.13.8
+  Installed QuadGK ─────────────────────── v2.4.1
+  Installed GSL_jll ────────────────────── v2.6.0+3
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed MbedTLS ────────────────────── v1.0.3
+  Installed Bzip2_jll ──────────────────── v1.0.6+5
+  Installed PORTA_jll ──────────────────── v1.4.1+0
+  Installed OpenBLAS_jll ───────────────── v0.3.9+5
+  Installed CodecZlib ──────────────────── v0.7.0
+  Installed BenchmarkTools ─────────────── v0.5.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed HTTP ───────────────────────── v0.9.2
+  Installed StaticArrays ───────────────── v0.12.5
+  Installed MathOptInterface ───────────── v0.9.19
+  Installed Missings ───────────────────── v0.4.4
+  Installed ZipFile ────────────────────── v0.9.3
+  Installed PDMats ─────────────────────── v0.10.1
+  Installed Suppressor ─────────────────── v0.2.0
+  Installed JSON ───────────────────────── v0.21.1
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed Distributions ──────────────── v0.23.12
+  Installed RandomMatrices ─────────────── v0.5.0
+  Installed FastGaussQuadrature ────────── v0.4.5
+  Installed SCS_GPU_jll ────────────────── v2.1.2+0
+  Installed MutableArithmetics ─────────── v0.2.13
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed AbstractTrees ──────────────── v0.3.3
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed CodecBzip2 ─────────────────── v0.7.2
+  Installed Compat ─────────────────────── v3.25.0
+  Installed SpecialFunctions ───────────── v0.10.3
+  Installed URIs ───────────────────────── v1.1.0
+  Installed XPORTA ─────────────────────── v0.1.1
+  Installed BinaryProvider ─────────────── v0.5.10
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed IniFile ────────────────────── v0.5.0
+  Installed Parsers ────────────────────── v1.0.15
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [4e58fcc1] + BellScenario v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [1520ce14] + AbstractTrees v0.3.3
+  [56f22d72] + Artifacts v1.3.0
+  [4e58fcc1] + BellScenario v0.1.0
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [b99e7846] + BinaryProvider v0.5.10
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [523fee87] + CodecBzip2 v0.7.2
+  [944b1d66] + CodecZlib v0.7.0
+  [861a8166] + Combinatorics v1.0.2
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [f65535da] + Convex v0.13.8
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [31c24e10] + Distributions v0.23.12
+  [442a2c76] + FastGaussQuadrature v0.4.5
+  [1a297f60] + FillArrays v0.9.7
+  [92c85e6c] + GSL v1.0.0
+  [1b77fbbe] + GSL_jll v2.6.0+3
+  [cd3eb016] + HTTP v0.9.2
+  [83e8ac13] + IniFile v0.5.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [7d188eb4] + JSONSchema v0.3.3
+  [b8f27783] + MathOptInterface v0.9.19
+  [fdba3010] + MathProgBase v0.7.8
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [e1d29d7a] + Missings v0.4.4
+  [d8a4904e] + MutableArithmetics v0.2.13
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.10.1
+  [c3fa2e09] + PORTA_jll v1.4.1+0
+  [69de0a69] + Parsers v1.0.15
+  [e52e8ede] + QBase v0.1.1
+  [1fd47b50] + QuadGK v2.4.1
+  [2576dda1] + RandomMatrices v0.5.0
+  [ae029012] + Requires v1.1.2
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [c946c3f1] + SCS v0.7.1
+  [af6e375f] + SCS_GPU_jll v2.1.2+0
+  [f4f2fc5b] + SCS_jll v2.1.2+1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.10.3
+  [90137ffa] + StaticArrays v0.12.5
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [fd094767] + Suppressor v0.2.0
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [5c2747f8] + URIs v1.1.0
+  [8c143463] + XPORTA v0.1.1
+  [a5390f91] + ZipFile v0.9.3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building SCS → `~/.julia/packages/SCS/xTUCf/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T19:36:07.932
+#
+
+    Testing BellScenario
+Status `/tmp/jl_KkLCGT/Project.toml`
+  [4e58fcc1] BellScenario v0.1.0
+  [682c06a0] JSON v0.21.1
+  [e52e8ede] QBase v0.1.1
+  [8c143463] XPORTA v0.1.1
+  [37e2e46d] LinearAlgebra
+  [8dfed614] Test
+Status `/tmp/jl_KkLCGT/Manifest.toml`
+  [1520ce14] AbstractTrees v0.3.3
+  [56f22d72] Artifacts v1.3.0
+  [4e58fcc1] BellScenario v0.1.0
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [b99e7846] BinaryProvider v0.5.10
+  [6e34b625] Bzip2_jll v1.0.6+5
+  [523fee87] CodecBzip2 v0.7.2
+  [944b1d66] CodecZlib v0.7.0
+  [861a8166] Combinatorics v1.0.2
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [f65535da] Convex v0.13.8
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [31c24e10] Distributions v0.23.12
+  [442a2c76] FastGaussQuadrature v0.4.5
+  [1a297f60] FillArrays v0.9.7
+  [92c85e6c] GSL v1.0.0
+  [1b77fbbe] GSL_jll v2.6.0+3
+  [cd3eb016] HTTP v0.9.2
+  [83e8ac13] IniFile v0.5.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [7d188eb4] JSONSchema v0.3.3
+  [b8f27783] MathOptInterface v0.9.19
+  [fdba3010] MathProgBase v0.7.8
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [e1d29d7a] Missings v0.4.4
+  [d8a4904e] MutableArithmetics v0.2.13
+  [4536629a] OpenBLAS_jll v0.3.9+5
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [90014a1f] PDMats v0.10.1
+  [c3fa2e09] PORTA_jll v1.4.1+0
+  [69de0a69] Parsers v1.0.15
+  [e52e8ede] QBase v0.1.1
+  [1fd47b50] QuadGK v2.4.1
+  [2576dda1] RandomMatrices v0.5.0
+  [ae029012] Requires v1.1.2
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [c946c3f1] SCS v0.7.1
+  [af6e375f] SCS_GPU_jll v2.1.2+0
+  [f4f2fc5b] SCS_jll v2.1.2+1
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v0.10.3
+  [90137ffa] StaticArrays v0.12.5
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [fd094767] Suppressor v0.2.0
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [5c2747f8] URIs v1.1.0
+  [8c143463] XPORTA v0.1.1
+  [a5390f91] ZipFile v0.9.3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+importing BellScenario.jl
+130.248870 seconds (15.33 M allocations: 845.763 MiB, 0.25% gc time)
+running unit tests.
+./unit/Legacy.jl
+running Legacy unit tests:
+./unit/Legacy/Behavior.jl
+  6.277119 seconds (13.97 M allocations: 714.411 MiB, 6.00% gc time)
+./unit/Legacy/Degeneracy.jl
+  5.272476 seconds (9.67 M allocations: 532.634 MiB, 3.44% gc time)
+./unit/Legacy/DichotomicLocalPolytope.jl
+  1.155737 seconds (1.90 M allocations: 100.487 MiB, 3.20% gc time)
+./unit/Legacy/LocalPolytope.jl
+  5.464436 seconds (20.62 M allocations: 976.860 MiB, 4.35% gc time)
+./unit/Legacy/LocalSignaling.jl
+  0.223438 seconds (186.14 k allocations: 9.697 MiB)
+./unit/Legacy/QuantumBehavior.jl
+  1.363076 seconds (3.01 M allocations: 145.910 MiB, 3.39% gc time)
+./unit/Legacy/convex_polytope.jl
+  3.031601 seconds (6.90 M allocations: 355.463 MiB, 3.15% gc time)
+ 23.674411 seconds (57.00 M allocations: 2.805 GiB, 4.38% gc time)
+./unit/LocalPolytope.jl
+running LocalPolytope.jl unit tests:
+./unit/LocalPolytope/adjacency_decomposition.jl
+  0.145249 seconds (325.71 k allocations: 15.484 MiB)
+./unit/LocalPolytope/facets.jl
+  2.819331 seconds (5.92 M allocations: 304.072 MiB, 4.59% gc time)
+./unit/LocalPolytope/generators.jl
+  0.005956 seconds (3.38 k allocations: 203.982 KiB)
+  3.915422 seconds (7.46 M allocations: 377.217 MiB, 3.22% gc time)
+./unit/LocalPolytope/utils.jl
+  0.475646 seconds (1.23 M allocations: 63.747 MiB, 3.70% gc time)
+./unit/LocalPolytope/vertices.jl
+  2.680404 seconds (5.46 M allocations: 1.015 GiB, 13.37% gc time)
+ 10.046301 seconds (20.39 M allocations: 1.758 GiB, 6.28% gc time)
+./unit/Nonlocality.jl
+running Nonlocality.jl unit tests:
+./unit/Nonlocality/optimize_measurements.jl
+ 41.598572 seconds (97.54 M allocations: 4.794 GiB, 6.23% gc time)
+ 41.605773 seconds (97.54 M allocations: 4.794 GiB, 6.23% gc time)
+./unit/deterministic_strategies.jl
+  0.572319 seconds (1.24 M allocations: 145.131 MiB, 9.73% gc time)
+./unit/game_conversions.jl
+  3.743239 seconds (6.09 M allocations: 349.111 MiB, 2.45% gc time)
+./unit/games.jl
+  0.266770 seconds (562.92 k allocations: 28.443 MiB, 9.15% gc time)
+./unit/quantum_strategies.jl
+  2.799182 seconds (6.52 M allocations: 311.265 MiB, 2.64% gc time)
+./unit/scenarios.jl
+  0.118282 seconds (46.20 k allocations: 2.735 MiB)
+./unit/strategies.jl
+  2.529866 seconds (5.39 M allocations: 260.032 MiB, 3.30% gc time)
+./unit/strategy_conversions.jl
+  1.447506 seconds (2.49 M allocations: 118.186 MiB, 1.87% gc time)
+running integration tests.
+./integration/Legacy.jl
+running Legacy integration tests:
+./integration/Legacy/ConvexPolytope.jl
+  0.999341 seconds (1.92 M allocations: 99.940 MiB, 3.70% gc time)
+./integration/Legacy/chsh_violation.jl
+  1.153012 seconds (2.51 M allocations: 119.221 MiB, 2.47% gc time)
+./integration/Legacy/facet_degeneracies.jl
+  0.114111 seconds (88.78 k allocations: 4.657 MiB)
+./integration/Legacy/local_prepare_and_measure_polytopes.jl
+ 10.907335 seconds (16.88 M allocations: 798.716 MiB, 2.23% gc time)
+ 13.221060 seconds (21.43 M allocations: 1023.744 MiB, 2.34% gc time)
+./integration/LocalPolytope.jl
+running LocalPolytope.jl integration tests:
+./integration/LocalPolytope/adjacency_decomposition.jl
+41-2-14 polytope skip positivity: Test Failed at /home/pkgeval/.julia/packages/BellScenario/hyoRK/test/integration/LocalPolytope/adjacency_decomposition.jl:43
+  Expression: collect(keys(dict)) == [[1 0 0 0; 1 0 0 0; 0 1 0 0; 0 0 1 0], [1 0 0 0; 0 1 0 0; 0 0 1 0; 0 0 0 1], [1 0 0 0; 1 0 0 0; 1 0 0 0; 0 0 0 0], [2 0 0 0; 1 1 1 0; 0 2 0 0; 0 0 1 1], [2 0 0 0; 1 1 1 0; 0 2 0 0; 0 0 2 0], [1 1 0 0; 1 0 1 0; 0 1 1 0; 0 0 0 1]]
+   Evaluated: BellGame[[2 0 0 0; 1 1 1 0; 0 2 0 0; 0 0 2 0], [2 0 0 0; 1 1 1 0; 0 2 0 0; 0 0 1 1], [1 0 0 0; 1 0 0 0; 0 1 0 0; 0 0 1 0], [1 0 0 0; 0 1 0 0; 0 0 1 0; 0 0 0 1], [1 1 0 0; 1 0 1 0; 0 1 1 0; 0 0 0 1], [1 0 0 0; 1 0 0 0; 1 0 0 0; 0 0 0 0]] == [[1 0 0 0; 1 0 0 0; 0 1 0 0; 0 0 1 0], [1 0 0 0; 0 1 0 0; 0 0 1 0; 0 0 0 1], [1 0 0 0; 1 0 0 0; 1 0 0 0; 0 0 0 0], [2 0 0 0; 1 1 1 0; 0 2 0 0; 0 0 1 1], [2 0 0 0; 1 1 1 0; 0 2 0 0; 0 0 2 0], [1 1 0 0; 1 0 1 0; 0 1 1 0; 0 0 0 1]]
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/BellScenario/hyoRK/test/integration/LocalPolytope/adjacency_decomposition.jl:43
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/BellScenario/hyoRK/test/integration/LocalPolytope/adjacency_decomposition.jl:34
+ [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.julia/packages/BellScenario/hyoRK/test/integration/LocalPolytope/adjacency_decomposition.jl:33
+ [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/pkgeval/.julia/packages/BellScenario/hyoRK/test/integration/LocalPolytope/adjacency_decomposition.jl:5
+41-2-14 polytope no skips: Test Failed at /home/pkgeval/.julia/packages/BellScenario/hyoRK/test/integration/LocalPolytope/adjacency_decomposition.jl:66
+  Expression: collect(keys(dict)) == [[1 0 0 0; 1 0 0 0; 0 1 0 0; 0 0 1 0], [1 0 0 0; 0 1 0 0; 0 0 1 0; 0 0 0 1], [1 0 0 0; 1 0 0 0; 1 0 0 0; 0 0 0 0], [2 0 0 0; 1 1 1 0; 0 2 0 0; 0 0 1 1], [2 0 0 0; 1 1 1 0; 0 2 0 0; 0 0 2 0], [1 1 0 0; 1 0 1 0; 0 1 1 0; 0 0 0 1]]
+   Evaluated: BellGame[[2 0 0 0; 1 1 1 0; 0 2 0 0; 0 0 2 0], [2 0 0 0; 1 1 1 0; 0 2 0 0; 0 0 1 1], [1 0 0 0; 1 0 0 0; 0 1 0 0; 0 0 1 0], [1 0 0 0; 0 1 0 0; 0 0 1 0; 0 0 0 1], [1 1 0 0; 1 0 1 0; 0 1 1 0; 0 0 0 1], [1 0 0 0; 1 0 0 0; 1 0 0 0; 0 0 0 0]] == [[1 0 0 0; 1 0 0 0; 0 1 0 0; 0 0 1 0], [1 0 0 0; 0 1 0 0; 0 0 1 0; 0 0 0 1], [1 0 0 0; 1 0 0 0; 1 0 0 0; 0 0 0 0], [2 0 0 0; 1 1 1 0; 0 2 0 0; 0 0 1 1], [2 0 0 0; 1 1 1 0; 0 2 0 0; 0 0 2 0], [1 1 0 0; 1 0 1 0; 0 1 1 0; 0 0 0 1]]
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/BellScenario/hyoRK/test/integration/LocalPolytope/adjacency_decomposition.jl:66
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/BellScenario/hyoRK/test/integration/LocalPolytope/adjacency_decomposition.jl:59
+ [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.julia/packages/BellScenario/hyoRK/test/integration/LocalPolytope/adjacency_decomposition.jl:33
+ [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/pkgeval/.julia/packages/BellScenario/hyoRK/test/integration/LocalPolytope/adjacency_decomposition.jl:5
+41-2-14 polytope filter out positivity vertices: Test Failed at /home/pkgeval/.julia/packages/BellScenario/hyoRK/test/integration/LocalPolytope/adjacency_decomposition.jl:86
+  Expression: collect(keys(dict)) == [[1 0 0 0; 1 0 0 0; 0 1 0 0; 0 0 1 0], [1 0 0 0; 0 1 0 0; 0 0 1 0; 0 0 0 1], [1 0 0 0; 1 0 0 0; 1 0 0 0; 0 0 0 0], [2 0 0 0; 1 1 1 0; 0 2 0 0; 0 0 1 1], [2 0 0 0; 1 1 1 0; 0 2 0 0; 0 0 2 0], [1 1 0 0; 1 0 1 0; 0 1 1 0; 0 0 0 1], [1 1 1 1; 0 0 0 0; 0 0 0 0; 0 0 0 0]]
+   Evaluated: BellGame[[2 0 0 0; 1 1 1 0; 0 2 0 0; 0 0 2 0], [2 0 0 0; 1 1 1 0; 0 2 0 0; 0 0 1 1], [1 0 0 0; 1 0 0 0; 0 1 0 0; 0 0 1 0], [1 0 0 0; 0 1 0 0; 0 0 1 0; 0 0 0 1], [1 1 0 0; 1 0 1 0; 0 1 1 0; 0 0 0 1], [1 1 1 1; 0 0 0 0; 0 0 0 0; 0 0 0 0], [1 0 0 0; 1 0 0 0; 1 0 0 0; 0 0 0 0]] == [[1 0 0 0; 1 0 0 0; 0 1 0 0; 0 0 1 0], [1 0 0 0; 0 1 0 0; 0 0 1 0; 0 0 0 1], [1 0 0 0; 1 0 0 0; 1 0 0 0; 0 0 0 0], [2 0 0 0; 1 1 1 0; 0 2 0 0; 0 0 1 1], [2 0 0 0; 1 1 1 0; 0 2 0 0; 0 0 2 0], [1 1 0 0; 1 0 1 0; 0 1 1 0; 0 0 0 1], [1 1 1 1; 0 0 0 0; 0 0 0 0; 0 0 0 0]]
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/BellScenario/hyoRK/test/integration/LocalPolytope/adjacency_decomposition.jl:86
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/BellScenario/hyoRK/test/integration/LocalPolytope/adjacency_decomposition.jl:79
+ [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.julia/packages/BellScenario/hyoRK/test/integration/LocalPolytope/adjacency_decomposition.jl:33
+ [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/pkgeval/.julia/packages/BellScenario/hyoRK/test/integration/LocalPolytope/adjacency_decomposition.jl:5
+  6.771366 seconds (11.80 M allocations: 629.967 MiB, 2.60% gc time)
+  6.818192 seconds (11.83 M allocations: 631.170 MiB, 2.59% gc time)
+./integration/file_io.jl
+  0.261393 seconds (378.38 k allocations: 19.268 MiB)
+running regression tests.
+./regression/32-1-22_fixed-direction_regression.jl
+  6.061348 seconds (2.30 M allocations: 124.932 MiB, 0.46% gc time)
+./regression/32-32_no_signaling_facets.jl
+  0.327083 seconds (404.26 k allocations: 24.336 MiB, 15.40% gc time)
+./regression/LocalPolytope_legacy.jl
+ 50.361815 seconds (140.22 M allocations: 24.138 GiB, 9.66% gc time)
+./regression/bacon_toner_facets.jl
+  0.356459 seconds (552.25 k allocations: 29.862 MiB)
+./regression/chsh_facets.jl
+  0.328378 seconds (1.85 M allocations: 96.098 MiB)
+Test Summary:                                             |  Pass  Fail  Total
+BellScenario.jl                                           | 20977     3  20980
+  unit tests:                                             | 20467        20467
+  integration tests:                                      |   342     3    345
+    ./test/integration/Legacy.jl                          |   327          327
+    ./test/integration/LocalPolytope.jl                   |     9     3     12
+      ./src/LocalPolytope/adjacency_decomposition.jl      |     9     3     12
+        adjacent_facets                                   |     2            2
+        adjacency_decomposition                           |     7     3     10
+          41-2-14 polytope skip positivity                |     3     1      4
+          41-2-14 polytope no skips                       |     1     1      2
+          41-2-14 polytope filter out positivity vertices |           1      1
+          31-2-13 polytope skip by  max_vertices          |     2            2
+          json logging                                    |     1            1
+    ./src/file_io.jl                                      |     6            6
+  regression tests:                                       |   168          168
+ERROR: LoadError: Some tests did not pass: 20977 passed, 3 failed, 0 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/BellScenario/hyoRK/test/runtests.jl:43
+
+PkgEval failed: Package BellScenario errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:41:07.502
+CPU usage: 309.36s (292.76s user, 16.92s kernel)
+
+Network usage:
+- eth0: 6.502 MiB received, 305.186 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":176128,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":69632,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":176128,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":176128,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":69632,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":176128,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":393392128,"max_usage":3310243840,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":220110848,"inactive_file":135168,"inactive_anon":91779072,"total_pgfault":8626596,"total_cache":140165120,"total_rss_huge":0,"total_active_anon":266821632,"total_pgmajfault":0,"pgpgin":6552480,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":6464536,"hierarchical_memsw_limit":0,"cache":140165120,"active_file":1622016,"pgfault":8626596,"total_mapped_file":0,"total_pgpgout":6464536,"total_writeback":0,"rss":220110848,"unevictable":0,"total_inactive_anon":91779072,"total_pgpgin":6552480,"active_anon":266821632,"total_active_file":1622016},"limit":540965302272},"name":"/BellScenario-lC1Qlj8F","networks":{"eth0":{"rx_bytes":6818233,"rx_packets":2338,"tx_packets":2549,"tx_bytes":312510,"tx_dropped":0,"rx_dropped":11,"tx_errors":0,"rx_errors":0}},"id":"0abbbac0fe71055e45b460fccaef3500092d03e118ec9fb5d1ce4ab4c0bc9a8e","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5134567304522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":292760000000,"usage_in_kernelmode":16920000000,"total_usage":309359317163,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,309358295902,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1021261,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:41:08.227705527Z"}

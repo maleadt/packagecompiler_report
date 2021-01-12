@@ -1,0 +1,591 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T18:59:48.941
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T18:59:50.604
+#
+
+ Installing known registries into `~/.julia`
+############################                                              39.7%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed MbedTLS_jll ────────────────── v2.16.8+1
+  Installed Lz4_jll ────────────────────── v1.9.2+2
+  Installed Blosc_jll ──────────────────── v1.14.3+1
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed Inflate ────────────────────── v0.1.2
+  Installed FlashWeave ─────────────────── v0.18.0
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed OpenSSL_jll ────────────────── v1.1.1+6
+  Installed TranscodingStreams ─────────── v0.9.5
+  Installed PackageCompiler ────────────── v1.2.5
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed FillArrays ─────────────────── v0.10.2
+  Installed Zstd_jll ───────────────────── v1.4.5+2
+  Installed Combinatorics ──────────────── v1.0.2
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed QuadGK ─────────────────────── v2.4.1
+  Installed Requires ───────────────────── v1.1.2
+  Installed LibSSH2_jll ────────────────── v1.9.0+3
+  Installed SimpleTraits ───────────────── v0.9.3
+  Installed nghttp2_jll ────────────────── v1.40.0+2
+  Installed FileIO ─────────────────────── v1.4.5
+  Installed JLD2 ───────────────────────── v0.3.1
+  Installed StaticArrays ───────────────── v0.12.5
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed HDF5_jll ───────────────────── v1.12.0+1
+  Installed CodecZlib ──────────────────── v0.7.0
+  Installed Blosc ──────────────────────── v0.7.0
+  Installed Missings ───────────────────── v0.4.4
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed HDF5 ───────────────────────── v0.14.3
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed LightGraphs ────────────────── v1.3.4
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed SimpleWeightedGraphs ───────── v1.1.1
+  Installed PDMats ─────────────────────── v0.10.1
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed ArnoldiMethod ──────────────── v0.0.4
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed JSON ───────────────────────── v0.21.1
+  Installed Distributions ──────────────── v0.24.10
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed LibCURL_jll ────────────────── v7.70.0+2
+  Installed Compat ─────────────────────── v3.25.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Parsers ────────────────────── v1.0.15
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [2be3f83a] + FlashWeave v0.18.0
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [ec485272] + ArnoldiMethod v0.0.4
+  [56f22d72] + Artifacts v1.3.0
+  [a74b3585] + Blosc v0.7.0
+  [0b7ba130] + Blosc_jll v1.14.3+1
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [944b1d66] + CodecZlib v0.7.0
+  [861a8166] + Combinatorics v1.0.2
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [31c24e10] + Distributions v0.24.10
+  [5789e2e9] + FileIO v1.4.5
+  [1a297f60] + FillArrays v0.10.2
+  [2be3f83a] + FlashWeave v0.18.0
+  [f67ccb44] + HDF5 v0.14.3
+  [0234f1f7] + HDF5_jll v1.12.0+1
+  [d25df0c9] + Inflate v0.1.2
+  [033835bb] + JLD2 v0.3.1
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [deac9b47] + LibCURL_jll v7.70.0+2
+  [29816b5a] + LibSSH2_jll v1.9.0+3
+  [093fc24a] + LightGraphs v1.3.4
+  [5ced341a] + Lz4_jll v1.9.2+2
+  [1914dd2f] + MacroTools v0.5.6
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [458c3c95] + OpenSSL_jll v1.1.1+6
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.10.1
+  [9b87118b] + PackageCompiler v1.2.5
+  [69de0a69] + Parsers v1.0.15
+  [1fd47b50] + QuadGK v2.4.1
+  [ae029012] + Requires v1.1.2
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [699a6c99] + SimpleTraits v0.9.3
+  [47aef6b3] + SimpleWeightedGraphs v1.1.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v0.12.5
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [83775a58] + Zlib_jll v1.2.11+18
+  [3161d3a3] + Zstd_jll v1.4.5+2
+  [8e850ede] + nghttp2_jll v1.40.0+2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building HDF5 → `~/.julia/packages/HDF5/d0V7K/deps/build.log`
+
+
+################################################################################
+# Compiling: 2021-01-11T18:59:59.197
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 185.577 MiB, compilation took 291 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T19:04:58.715
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/FlashWeave-5TiXMv73.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:05:00.287
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed MbedTLS_jll ────────────────── v2.16.8+1
+  Installed Lz4_jll ────────────────────── v1.9.2+2
+  Installed Blosc_jll ──────────────────── v1.14.3+1
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed Inflate ────────────────────── v0.1.2
+  Installed FlashWeave ─────────────────── v0.18.0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed Zstd_jll ───────────────────── v1.4.5+2
+  Installed OpenSSL_jll ────────────────── v1.1.1+6
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed FillArrays ─────────────────── v0.10.2
+  Installed TranscodingStreams ─────────── v0.9.5
+  Installed DataStructures ─────────────── v0.18.8
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed Combinatorics ──────────────── v1.0.2
+  Installed LibSSH2_jll ────────────────── v1.9.0+3
+  Installed nghttp2_jll ────────────────── v1.40.0+2
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed SimpleTraits ───────────────── v0.9.3
+  Installed QuadGK ─────────────────────── v2.4.1
+  Installed FileIO ─────────────────────── v1.4.5
+  Installed Requires ───────────────────── v1.1.2
+  Installed StaticArrays ───────────────── v0.12.5
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed JLD2 ───────────────────────── v0.3.1
+  Installed Blosc ──────────────────────── v0.7.0
+  Installed HDF5 ───────────────────────── v0.14.3
+  Installed LightGraphs ────────────────── v1.3.4
+  Installed HDF5_jll ───────────────────── v1.12.0+1
+  Installed CodecZlib ──────────────────── v0.7.0
+  Installed Missings ───────────────────── v0.4.4
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed JSON ───────────────────────── v0.21.1
+  Installed PDMats ─────────────────────── v0.10.1
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed Distributions ──────────────── v0.24.10
+  Installed SimpleWeightedGraphs ───────── v1.1.1
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed LibCURL_jll ────────────────── v7.70.0+2
+  Installed Compat ─────────────────────── v3.25.0
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Parsers ────────────────────── v1.0.15
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed ArnoldiMethod ──────────────── v0.0.4
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [2be3f83a] + FlashWeave v0.18.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [ec485272] + ArnoldiMethod v0.0.4
+  [56f22d72] + Artifacts v1.3.0
+  [a74b3585] + Blosc v0.7.0
+  [0b7ba130] + Blosc_jll v1.14.3+1
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [944b1d66] + CodecZlib v0.7.0
+  [861a8166] + Combinatorics v1.0.2
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [31c24e10] + Distributions v0.24.10
+  [5789e2e9] + FileIO v1.4.5
+  [1a297f60] + FillArrays v0.10.2
+  [2be3f83a] + FlashWeave v0.18.0
+  [f67ccb44] + HDF5 v0.14.3
+  [0234f1f7] + HDF5_jll v1.12.0+1
+  [d25df0c9] + Inflate v0.1.2
+  [033835bb] + JLD2 v0.3.1
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [deac9b47] + LibCURL_jll v7.70.0+2
+  [29816b5a] + LibSSH2_jll v1.9.0+3
+  [093fc24a] + LightGraphs v1.3.4
+  [5ced341a] + Lz4_jll v1.9.2+2
+  [1914dd2f] + MacroTools v0.5.6
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [458c3c95] + OpenSSL_jll v1.1.1+6
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.10.1
+  [69de0a69] + Parsers v1.0.15
+  [1fd47b50] + QuadGK v2.4.1
+  [ae029012] + Requires v1.1.2
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [699a6c99] + SimpleTraits v0.9.3
+  [47aef6b3] + SimpleWeightedGraphs v1.1.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v0.12.5
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [83775a58] + Zlib_jll v1.2.11+18
+  [3161d3a3] + Zstd_jll v1.4.5+2
+  [8e850ede] + nghttp2_jll v1.40.0+2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building HDF5 → `~/.julia/packages/HDF5/d0V7K/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T19:05:09.42
+#
+
+    Testing FlashWeave
+Status `/tmp/jl_HAiSrc/Project.toml`
+  [861a8166] Combinatorics v1.0.2
+  [864edb3b] DataStructures v0.18.8
+  [31c24e10] Distributions v0.24.10
+  [5789e2e9] FileIO v1.4.5
+  [2be3f83a] FlashWeave v0.18.0
+  [f67ccb44] HDF5 v0.14.3
+  [033835bb] JLD2 v0.3.1
+  [682c06a0] JSON v0.21.1
+  [093fc24a] LightGraphs v1.3.4
+  [47aef6b3] SimpleWeightedGraphs v1.1.1
+  [2913bbd2] StatsBase v0.33.2
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [9a3f8284] Random
+  [1a1011a3] SharedArrays
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_HAiSrc/Manifest.toml`
+  [ec485272] ArnoldiMethod v0.0.4
+  [56f22d72] Artifacts v1.3.0
+  [a74b3585] Blosc v0.7.0
+  [0b7ba130] Blosc_jll v1.14.3+1
+  [d360d2e6] ChainRulesCore v0.9.24
+  [944b1d66] CodecZlib v0.7.0
+  [861a8166] Combinatorics v1.0.2
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [31c24e10] Distributions v0.24.10
+  [5789e2e9] FileIO v1.4.5
+  [1a297f60] FillArrays v0.10.2
+  [2be3f83a] FlashWeave v0.18.0
+  [f67ccb44] HDF5 v0.14.3
+  [0234f1f7] HDF5_jll v1.12.0+1
+  [d25df0c9] Inflate v0.1.2
+  [033835bb] JLD2 v0.3.1
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [deac9b47] LibCURL_jll v7.70.0+2
+  [29816b5a] LibSSH2_jll v1.9.0+3
+  [093fc24a] LightGraphs v1.3.4
+  [5ced341a] Lz4_jll v1.9.2+2
+  [1914dd2f] MacroTools v0.5.6
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [e1d29d7a] Missings v0.4.4
+  [46d2c3a1] MuladdMacro v0.2.2
+  [458c3c95] OpenSSL_jll v1.1.1+6
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [90014a1f] PDMats v0.10.1
+  [69de0a69] Parsers v1.0.15
+  [1fd47b50] QuadGK v2.4.1
+  [ae029012] Requires v1.1.2
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [699a6c99] SimpleTraits v0.9.3
+  [47aef6b3] SimpleWeightedGraphs v1.1.1
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.2.1
+  [90137ffa] StaticArrays v0.12.5
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [83775a58] Zlib_jll v1.2.11+18
+  [3161d3a3] Zstd_jll v1.4.5+2
+  [8e850ede] nghttp2_jll v1.40.0+2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Preparing tests
+Test Summary:           | Pass  Total
+all modules in test set |    1      1
+
+Testing io.jl
+Test Summary: | Pass  Total
+networks      |    4      4
+┌ Warning: `attrs` is deprecated, use `attributes` instead.
+│   caller = load_biom_hdf5(::String) at io.jl:208
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/io.jl:208
+Test Summary: | Pass  Total
+table data    |   20     20
+Test Summary: | Pass  Total
+transposed    |    4      4
+Test Summary:  | Pass  Total
+string factors |    4      4
+Test Summary: | Pass  Total
+numeric IDs   |    2      2
+
+Testing preprocessing.jl
+┌ Warning: Adaptive CLR is inefficient with sparse data, using dense format
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:479
+┌ Warning: adaptive pseudo-counts for 1 samples were lower than machine precision due to insufficient counts, removing them
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:125
+Test Summary: | Pass  Total
+clr_adapt eps |    2      2
+┌ Warning: Adaptive CLR is inefficient with sparse data, using dense format
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:479
+┌ Warning: Adaptive CLR is inefficient with sparse data, using dense format
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:479
+┌ Warning: Adaptive CLR is inefficient with sparse data, using dense format
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:479
+┌ Warning: Adaptive CLR is inefficient with sparse data, using dense format
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:479
+Test Summary:      | Pass  Total
+norm per test type |   20     20
+┌ Warning: Adaptive CLR is inefficient with sparse data, using dense format
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:479
+Test Summary: | Pass  Total
+filter data   |   12     12
+Test Summary:    | Pass  Total
+mi_nz fits fz_nz |    1      1
+┌ Warning: Skipping one-hot encoding, only experts should choose this option.
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:345
+┌ Warning: Skipping one-hot encoding, only experts should choose this option.
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:345
+┌ Warning: Skipping one-hot encoding, only experts should choose this option.
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:345
+┌ Warning: Skipping one-hot encoding, only experts should choose this option.
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:345
+Test Summary: | Pass  Total
+meta data     |   18     18
+
+Testing contingency.jl
+Test Summary: | Pass  Total
+dense         |    4      4
+Test Summary: | Pass  Total
+sparse        |    4      4
+
+Testing statfuns.jl
+Test Summary: | Pass  Total
+correlation   |    6      6
+Test Summary:      | Pass  Total
+mutual information |    4      4
+Test Summary:  | Pass  Total
+FDR correction |    2      2
+
+Testing tests.jl
+Test Summary: | Pass  Total
+mi            |    3      3
+Test Summary: | Pass  Total
+mi_nz         |    3      3
+Test Summary: | Pass  Total
+fz            |    3      3
+Test Summary: | Pass  Total
+fz_nz         |    3      3
+
+Testing misc.jl
+
+Testing learning.jl
+(this can take a couple of minutes)
+Test Summary: | Pass  Total
+univar nbrs   |    5      5
+┌ Warning: 37 variables have insufficient observations (< 161 ('n_obs_min')) and will not be used for interaction prediction
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/learning.jl:71
+┌ Warning: 37 variables have insufficient observations (< 161 ('n_obs_min')) and will not be used for interaction prediction
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/learning.jl:71
+┌ Warning: 37 variables have insufficient observations (< 161 ('n_obs_min')) and will not be used for interaction prediction
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/learning.jl:71
+┌ Warning: 37 variables have insufficient observations (< 161 ('n_obs_min')) and will not be used for interaction prediction
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/learning.jl:71
+┌ Warning: 37 variables have insufficient observations (< 161 ('n_obs_min')) and will not be used for interaction prediction
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/learning.jl:71
+┌ Warning: 37 variables have insufficient observations (< 161 ('n_obs_min')) and will not be used for interaction prediction
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/learning.jl:71
+┌ Warning: Adaptive CLR is inefficient with sparse data, using dense format
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:479
+┌ Warning: Adaptive CLR is inefficient with sparse data, using dense format
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:479
+┌ Warning: Adaptive CLR is inefficient with sparse data, using dense format
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:479
+┌ Warning: Adaptive CLR is inefficient with sparse data, using dense format
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:479
+┌ Warning: Adaptive CLR is inefficient with sparse data, using dense format
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:479
+Test Summary: | Pass  Total
+LGL_backend   |   80     80
+┌ Warning: 37 variables have insufficient observations (< 161 ('n_obs_min')) and will not be used for interaction prediction
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/learning.jl:71
+┌ Warning: 37 variables have insufficient observations (< 161 ('n_obs_min')) and will not be used for interaction prediction
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/learning.jl:71
+┌ Warning: Adaptive CLR is inefficient with sparse data, using dense format
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:479
+Test Summary: | Pass  Total
+precision_32  |    4      4
+┌ Warning: 37 variables have insufficient observations (< 161 ('n_obs_min')) and will not be used for interaction prediction
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/learning.jl:71
+┌ Warning: 2 factor variables with more than two categories were detected (ENV4, ENV5), splitting them into separate dummy variables (One Hot)
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:63
+┌ Warning: 2 factor variables with more than two categories were detected (ENV4, ENV5), splitting them into separate dummy variables (One Hot)
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:63
+┌ Warning: 2 factor variables with more than two categories were detected (ENV4, ENV5), splitting them into separate dummy variables (One Hot)
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:63
+┌ Warning: 2 factor variables with more than two categories were detected (ENV4, ENV5), splitting them into separate dummy variables (One Hot)
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:63
+Test Summary: | Pass  Total
+learn_network |   12     12
+Test Summary: | Pass  Total
+fast_elim     |    1      1
+Test Summary: | Pass  Total
+duplicates    |    1      1
+┌ Warning: Adaptive CLR is inefficient with sparse data, using dense format
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:479
+Test Summary: | Pass  Total
+convergence   |    1      1
+Test Summary: | Pass  Total
+hiton msg     |    1      1
+┌ Warning: 37 variables have insufficient observations (< 161 ('n_obs_min')) and will not be used for interaction prediction
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/learning.jl:71
+┌ Warning: 37 variables have insufficient observations (< 161 ('n_obs_min')) and will not be used for interaction prediction
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/learning.jl:71
+┌ Warning: 37 variables have insufficient observations (< 161 ('n_obs_min')) and will not be used for interaction prediction
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/learning.jl:71
+┌ Warning: 37 variables have insufficient observations (< 161 ('n_obs_min')) and will not be used for interaction prediction
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/learning.jl:71
+┌ Warning: Adaptive CLR is inefficient with sparse data, using dense format
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:479
+┌ Warning: Adaptive CLR is inefficient with sparse data, using dense format
+└ @ FlashWeave /home/pkgeval/.julia/packages/FlashWeave/464SQ/src/preprocessing.jl:479
+Test Summary: | Pass  Total
+bnb heuristic |   16     16
+
+
+Finished testing (took 132s)
+    Testing FlashWeave tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:07:23.93
+CPU usage: 144.76s (140.58s user, 4.36s kernel)
+
+Network usage:
+- eth0: 5.268 MiB received, 258.417 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":10,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":10,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":122880,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":65536,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":122880,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":122880,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":65536,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":122880,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":379891712,"max_usage":1091301376,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":253321216,"inactive_file":135168,"inactive_anon":91373568,"total_pgfault":1493976,"total_cache":94187520,"total_rss_huge":0,"total_active_anon":256008192,"total_pgmajfault":0,"pgpgin":484143,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":399318,"hierarchical_memsw_limit":0,"cache":94187520,"active_file":135168,"pgfault":1493976,"total_mapped_file":0,"total_pgpgout":399318,"total_writeback":0,"rss":253321216,"unevictable":0,"total_inactive_anon":91373568,"total_pgpgin":484143,"active_anon":256008192,"total_active_file":135168},"limit":540965302272},"name":"/FlashWeave-Mj5tIBoo","networks":{"eth0":{"rx_bytes":5524336,"rx_packets":1887,"tx_packets":2106,"tx_bytes":264619,"tx_dropped":0,"rx_dropped":5,"tx_errors":0,"rx_errors":0}},"id":"c68f6150e27cd2fc8af9a6ab3f4247335810d517dc385e60268b659d66970459","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4875777484522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":140580000000,"usage_in_kernelmode":4360000000,"total_usage":144756671796,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,144756668216,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3580,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:07:23.932477103Z"}

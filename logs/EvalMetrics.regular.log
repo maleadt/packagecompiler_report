@@ -1,0 +1,382 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:08:52.5
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:08:54.305
+#
+
+ Installing known registries into `~/.julia`
+######                                                                     8.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Missings ──────────── v0.4.4
+  Installed EvalMetrics ───────── v0.2.0
+  Installed RecipesBase ───────── v1.1.1
+  Installed Reexport ──────────── v0.2.0
+  Installed SortingAlgorithms ─── v0.3.1
+  Installed DataAPI ───────────── v1.4.0
+  Installed Compat ────────────── v3.25.0
+  Installed DocStringExtensions ─ v0.8.3
+  Installed OrderedCollections ── v1.3.2
+  Installed StatsBase ─────────── v0.33.2
+  Installed DataStructures ────── v0.18.8
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [251d5f9e] + EvalMetrics v0.2.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [34da2185] + Compat v3.25.0
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [ffbed154] + DocStringExtensions v0.8.3
+  [251d5f9e] + EvalMetrics v0.2.0
+  [e1d29d7a] + Missings v0.4.4
+  [bac558e1] + OrderedCollections v1.3.2
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [189a3867] + Reexport v0.2.0
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [2913bbd2] + StatsBase v0.33.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T23:08:58.711
+#
+
+    Testing EvalMetrics
+Status `/tmp/jl_icMzpT/Project.toml`
+  [251d5f9e] EvalMetrics v0.2.0
+  [91a5bcdd] Plots v1.10.1
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_icMzpT/Manifest.toml`
+  [79e6a3ab] Adapt v2.4.0
+  [56f22d72] Artifacts v1.3.0
+  [6e34b625] Bzip2_jll v1.0.6+5
+  [83423d85] Cairo_jll v1.16.0+6
+  [35d6a980] ColorSchemes v3.10.2
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.6
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [d38c429a] Contour v0.5.7
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [ffbed154] DocStringExtensions v0.8.3
+  [5ae413db] EarCut_jll v2.1.5+1
+  [251d5f9e] EvalMetrics v0.2.0
+  [2e619515] Expat_jll v2.2.7+6
+  [c87230d0] FFMPEG v0.4.0
+  [b22a6f82] FFMPEG_jll v4.3.1+4
+  [53c48c17] FixedPointNumbers v0.8.4
+  [a3f928ae] Fontconfig_jll v2.13.1+14
+  [59287772] Formatting v0.4.2
+  [d7e528f0] FreeType2_jll v2.10.1+5
+  [559328eb] FriBidi_jll v1.0.5+6
+  [0656b61e] GLFW_jll v3.3.2+1
+  [28b8d3ca] GR v0.53.0
+  [d2c73de3] GR_jll v0.53.0+0
+  [5c1252a2] GeometryBasics v0.3.5
+  [78b55507] Gettext_jll v0.20.1+7
+  [7746bdde] Glib_jll v2.59.0+4
+  [42e2da0e] Grisu v1.0.0
+  [cd3eb016] HTTP v0.8.19
+  [83e8ac13] IniFile v0.5.0
+  [c8e1da08] IterTools v1.3.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [aacddb02] JpegTurbo_jll v2.0.1+3
+  [c1c5ebd0] LAME_jll v3.100.0+3
+  [dd4b983a] LZO_jll v2.10.0+3
+  [b964fa9f] LaTeXStrings v1.2.0
+  [23fbe1c1] Latexify v0.14.7
+  [dd192d2f] LibVPX_jll v1.9.0+1
+  [e9f186c6] Libffi_jll v3.2.1+4
+  [d4300ac3] Libgcrypt_jll v1.8.5+4
+  [7e76a0d4] Libglvnd_jll v1.3.0+3
+  [7add5ba3] Libgpg_error_jll v1.36.0+3
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [4b2f31a3] Libmount_jll v2.34.0+3
+  [89763e89] Libtiff_jll v4.1.0+2
+  [38a345b3] Libuuid_jll v2.34.0+7
+  [1914dd2f] MacroTools v0.5.6
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [442fdcdd] Measures v0.3.1
+  [e1d29d7a] Missings v0.4.4
+  [77ba4419] NaNMath v0.3.5
+  [e7412a2a] Ogg_jll v1.3.4+2
+  [458c3c95] OpenSSL_jll v1.1.1+6
+  [91d4177d] Opus_jll v1.3.1+3
+  [bac558e1] OrderedCollections v1.3.2
+  [2f80f16e] PCRE_jll v8.42.0+4
+  [69de0a69] Parsers v1.0.15
+  [30392449] Pixman_jll v0.40.0+0
+  [ccf2f8ad] PlotThemes v2.0.0
+  [995b91a9] PlotUtils v1.0.10
+  [91a5bcdd] Plots v1.10.1
+  [ede63266] Qt_jll v5.15.2+1
+  [3cdcf5f2] RecipesBase v1.1.1
+  [01d81517] RecipesPipeline v0.2.1
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [6c6a2e73] Scratch v1.0.3
+  [992d4aef] Showoff v0.3.2
+  [a2af1166] SortingAlgorithms v0.3.1
+  [90137ffa] StaticArrays v1.0.1
+  [2913bbd2] StatsBase v0.33.2
+  [09ab397b] StructArrays v0.4.4
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [a2964d1f] Wayland_jll v1.17.0+4
+  [2381bf8a] Wayland_protocols_jll v1.18.0+4
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [aed1982a] XSLT_jll v1.1.33+4
+  [4f6342f7] Xorg_libX11_jll v1.6.9+4
+  [0c0b7dd1] Xorg_libXau_jll v1.0.9+4
+  [935fb764] Xorg_libXcursor_jll v1.2.0+4
+  [a3789734] Xorg_libXdmcp_jll v1.1.3+4
+  [1082639a] Xorg_libXext_jll v1.3.4+4
+  [d091e8ba] Xorg_libXfixes_jll v5.0.3+4
+  [a51aa0fd] Xorg_libXi_jll v1.7.10+4
+  [d1454406] Xorg_libXinerama_jll v1.1.4+4
+  [ec84b674] Xorg_libXrandr_jll v1.5.2+4
+  [ea2f1a96] Xorg_libXrender_jll v0.9.10+4
+  [14d82f49] Xorg_libpthread_stubs_jll v0.1.0+3
+  [c7cfdc94] Xorg_libxcb_jll v1.13.0+3
+  [cc61e674] Xorg_libxkbfile_jll v1.1.0+4
+  [12413925] Xorg_xcb_util_image_jll v0.4.0+1
+  [2def613f] Xorg_xcb_util_jll v0.4.0+1
+  [975044d2] Xorg_xcb_util_keysyms_jll v0.4.0+1
+  [0d47668e] Xorg_xcb_util_renderutil_jll v0.3.9+1
+  [c22f9ab0] Xorg_xcb_util_wm_jll v0.4.1+1
+  [35661453] Xorg_xkbcomp_jll v1.4.2+4
+  [33bec58e] Xorg_xkeyboard_config_jll v2.27.0+4
+  [c5fb5394] Xorg_xtrans_jll v1.4.0+3
+  [83775a58] Zlib_jll v1.2.11+18
+  [3161d3a3] Zstd_jll v1.4.5+2
+  [0ac62f75] libass_jll v0.14.0+4
+  [f638f0a6] libfdk_aac_jll v0.1.6+4
+  [b53b4c65] libpng_jll v1.6.37+6
+  [f27f6e37] libvorbis_jll v1.3.6+6
+  [1270edf5] x264_jll v2020.7.14+2
+  [dfaa095f] x265_jll v3.0.0+3
+  [d8fb68d0] xkbcommon_jll v0.9.1+5
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+ispositive    |    6      6
+Test Summary:           | Pass  Total
+ispositive broadcasting |    6      6
+Test Summary: | Pass  Total
+isnegative    |    6      6
+Test Summary:           | Pass  Total
+isnegative broadcasting |    6      6
+Test Summary:  | Pass  Total
+positive_label |    6      6
+Test Summary:  | Pass  Total
+negative_label |    6      6
+Test Summary:  | Pass  Total
+check_encoding |   24     24
+Test Summary: | Pass  Total
+recode        |   69     69
+Test Summary: | Pass  Total
+mergesorted   |    3      3
+Test Summary: | Pass  Total
+mergesorted   |    3      3
+Test Summary:   | Pass  Total
+auc trapezoidal |    3      3
+Test Summary:     | Pass  Total
+ConfusionMatrix + |    1      1
+Test Summary:                                                        | Pass  Total
+ConfusionMatrix constructors for OneZero{Float64}(1.0, 0.0) encoding |    6      6
+Test Summary:                                                             | Pass  Total
+ConfusionMatrix constructors for OneMinusOne{Float64}(1.0, -1.0) encoding |    6      6
+Test Summary:                                                       | Pass  Total
+ConfusionMatrix constructors for OneTwo{Float64}(1.0, 2.0) encoding |    6      6
+Test Summary:                                                         | Pass  Total
+ConfusionMatrix constructors for OneVsOne{Float64}(3.0, 4.0) encoding |    6      6
+Test Summary:                                                             | Pass  Total
+ConfusionMatrix constructors for OneVsOne{Symbol}(:three, :four) encoding |    6      6
+Test Summary:                                                               | Pass  Total
+ConfusionMatrix constructors for OneVsOne{String}("three", "four") encoding |    6      6
+Test Summary:                                                                      | Pass  Total
+ConfusionMatrix constructors for OneVsRest{Float64}(1.0, [2.0, 3.0, 4.0]) encoding |    6      6
+Test Summary:                                                                     | Pass  Total
+ConfusionMatrix constructors for OneVsRest{Symbol}(:one, [:two, :three]) encoding |    6      6
+Test Summary:                                                                        | Pass  Total
+ConfusionMatrix constructors for OneVsRest{String}("one", ["two", "three"]) encoding |    6      6
+Test Summary:                                                                      | Pass  Total
+ConfusionMatrix constructors for RestVsOne{Float64}([1.0, 2.0, 3.0], 4.0) encoding |    6      6
+Test Summary:                                                                     | Pass  Total
+ConfusionMatrix constructors for RestVsOne{Symbol}([:one, :two], :three) encoding |    6      6
+Test Summary:                                                                        | Pass  Total
+ConfusionMatrix constructors for RestVsOne{String}(["one", "two"], "three") encoding |    6      6
+Test Summary:                                   | Pass  Total
+Metrics for OneZero{Float64}(1.0, 0.0) encoding |  312    312
+Test Summary:                                        | Pass  Total
+Metrics for OneMinusOne{Float64}(1.0, -1.0) encoding |  312    312
+Test Summary:                                  | Pass  Total
+Metrics for OneTwo{Float64}(1.0, 2.0) encoding |  312    312
+Test Summary:                                    | Pass  Total
+Metrics for OneVsOne{Float64}(3.0, 4.0) encoding |  312    312
+Test Summary:                                        | Pass  Total
+Metrics for OneVsOne{Symbol}(:three, :four) encoding |  312    312
+Test Summary:                                          | Pass  Total
+Metrics for OneVsOne{String}("three", "four") encoding |  312    312
+Test Summary:                                                 | Pass  Total
+Metrics for OneVsRest{Float64}(1.0, [2.0, 3.0, 4.0]) encoding |  312    312
+Test Summary:                                                | Pass  Total
+Metrics for OneVsRest{Symbol}(:one, [:two, :three]) encoding |  312    312
+Test Summary:                                                   | Pass  Total
+Metrics for OneVsRest{String}("one", ["two", "three"]) encoding |  312    312
+Test Summary:                                                 | Pass  Total
+Metrics for RestVsOne{Float64}([1.0, 2.0, 3.0], 4.0) encoding |  312    312
+Test Summary:                                                | Pass  Total
+Metrics for RestVsOne{Symbol}([:one, :two], :three) encoding |  312    312
+Test Summary:                                                   | Pass  Total
+Metrics for RestVsOne{String}(["one", "two"], "three") encoding |  312    312
+Test Summary:         | Pass  Total
+threshold_at_k: k = 1 |    3      3
+Test Summary:         | Pass  Total
+threshold_at_k: k = 2 |    3      3
+Test Summary:         | Pass  Total
+threshold_at_k: k = 3 |    3      3
+Test Summary:         | Pass  Total
+threshold_at_k: k = 4 |    3      3
+Test Summary:         | Pass  Total
+threshold_at_k: k = 5 |    3      3
+Test Summary:         | Pass  Total
+threshold_at_k: k = 6 |    3      3
+Test Summary:         | Pass  Total
+threshold_at_k: k = 7 |    3      3
+Test Summary:         | Pass  Total
+threshold_at_k: k = 8 |    3      3
+Test Summary:         | Pass  Total
+threshold_at_k: k = 9 |    3      3
+Test Summary:          | Pass  Total
+threshold_at_k: k = 10 |    3      3
+Test Summary:                                      | Pass  Total
+Thresholds for OneZero{Float64}(1.0, 0.0) encoding |  816    816
+Test Summary:                                           | Pass  Total
+Thresholds for OneMinusOne{Float64}(1.0, -1.0) encoding |  816    816
+Test Summary:                                     | Pass  Total
+Thresholds for OneTwo{Float64}(1.0, 2.0) encoding |  816    816
+Test Summary:                                       | Pass  Total
+Thresholds for OneVsOne{Float64}(3.0, 4.0) encoding |  816    816
+Test Summary:                                           | Pass  Total
+Thresholds for OneVsOne{Symbol}(:three, :four) encoding |  816    816
+Test Summary:                                             | Pass  Total
+Thresholds for OneVsOne{String}("three", "four") encoding |  816    816
+Test Summary:                                                    | Pass  Total
+Thresholds for OneVsRest{Float64}(1.0, [2.0, 3.0, 4.0]) encoding |  816    816
+Test Summary:                                                   | Pass  Total
+Thresholds for OneVsRest{Symbol}(:one, [:two, :three]) encoding |  816    816
+Test Summary:                                                      | Pass  Total
+Thresholds for OneVsRest{String}("one", ["two", "three"]) encoding |  816    816
+Test Summary:                                                    | Pass  Total
+Thresholds for RestVsOne{Float64}([1.0, 2.0, 3.0], 4.0) encoding |  816    816
+Test Summary:                                                   | Pass  Total
+Thresholds for RestVsOne{Symbol}([:one, :two], :three) encoding |  816    816
+Test Summary:                                                      | Pass  Total
+Thresholds for RestVsOne{String}(["one", "two"], "three") encoding |  816    816
+Test Summary:                                  | Pass  Total
+curves for OneZero{Float64}(1.0, 0.0) encoding |  404    404
+Test Summary:                                       | Pass  Total
+curves for OneMinusOne{Float64}(1.0, -1.0) encoding |  404    404
+Test Summary:                                 | Pass  Total
+curves for OneTwo{Float64}(1.0, 2.0) encoding |  404    404
+Test Summary:                                   | Pass  Total
+curves for OneVsOne{Float64}(3.0, 4.0) encoding |  404    404
+Test Summary:                                       | Pass  Total
+curves for OneVsOne{Symbol}(:three, :four) encoding |  404    404
+Test Summary:                                         | Pass  Total
+curves for OneVsOne{String}("three", "four") encoding |  404    404
+Test Summary:                                                | Pass  Total
+curves for OneVsRest{Float64}(1.0, [2.0, 3.0, 4.0]) encoding |  404    404
+Test Summary:                                               | Pass  Total
+curves for OneVsRest{Symbol}(:one, [:two, :three]) encoding |  404    404
+Test Summary:                                                  | Pass  Total
+curves for OneVsRest{String}("one", ["two", "three"]) encoding |  404    404
+Test Summary:                                                | Pass  Total
+curves for RestVsOne{Float64}([1.0, 2.0, 3.0], 4.0) encoding |  404    404
+Test Summary:                                               | Pass  Total
+curves for RestVsOne{Symbol}([:one, :two], :three) encoding |  404    404
+Test Summary:                                                  | Pass  Total
+curves for RestVsOne{String}(["one", "two"], "three") encoding |  404    404
+Test Summary:   |
+curves plotting | No tests
+    Testing EvalMetrics tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:13:38.022
+CPU usage: 283.33s (268.76s user, 14.97s kernel)
+
+Network usage:
+- eth0: 49.997 MiB received, 1.109 MiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":204800,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":98304,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":204800,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":204800,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":98304,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":204800,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":466395136,"max_usage":1670942720,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":209289216,"inactive_file":135168,"inactive_anon":165986304,"total_pgfault":6189183,"total_cache":223592448,"total_rss_huge":0,"total_active_anon":266956800,"total_pgmajfault":0,"pgpgin":4539018,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":4433326,"hierarchical_memsw_limit":0,"cache":223592448,"active_file":135168,"pgfault":6189183,"total_mapped_file":0,"total_pgpgout":4433326,"total_writeback":0,"rss":209289216,"unevictable":0,"total_inactive_anon":165986304,"total_pgpgin":4539018,"active_anon":266956800,"total_active_file":135168},"limit":540965302272},"name":"/EvalMetrics-QlUJ1m1N","networks":{"eth0":{"rx_bytes":52425753,"rx_packets":24242,"tx_packets":15060,"tx_bytes":1162833,"tx_dropped":0,"rx_dropped":10,"tx_errors":0,"rx_errors":0}},"id":"5abff487ee2a115ddb08da4af454cd4edf8833410c3c70b13dfa478d6d0fc6ba","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6763750074522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":268760000000,"usage_in_kernelmode":14970000000,"total_usage":283328661154,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,283328657744,0,0,3410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:13:38.44690576Z"}

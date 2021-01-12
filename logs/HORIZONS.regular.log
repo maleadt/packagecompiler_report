@@ -1,0 +1,178 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:22:39.469
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:22:41.689
+#
+
+ Installing known registries into `~/.julia`
+########################                                                  33.4%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MbedTLS_jll ──────── v2.16.8+1
+  Installed HORIZONS ─────────── v0.3.0
+  Installed URIParser ────────── v0.4.1
+  Installed Zlib_jll ─────────── v1.2.11+18
+  Installed Expect ───────────── v0.3.1
+  Installed MozillaCACerts_jll ─ v2020.10.14+0
+  Installed LibSSH2_jll ──────── v1.9.0+3
+  Installed JLLWrappers ──────── v1.2.0
+  Installed LibCURL_jll ──────── v7.70.0+2
+  Installed nghttp2_jll ──────── v1.40.0+2
+  Installed LibCURL ──────────── v0.6.2
+  Installed FTPClient ────────── v1.2.1
+  Installed Artifacts ────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [5a3ac768] + HORIZONS v0.3.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [6a31a4e8] + Expect v0.3.1
+  [01fcc997] + FTPClient v1.2.1
+  [5a3ac768] + HORIZONS v0.3.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [b27032c2] + LibCURL v0.6.2
+  [deac9b47] + LibCURL_jll v7.70.0+2
+  [29816b5a] + LibSSH2_jll v1.9.0+3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [14a3606d] + MozillaCACerts_jll v2020.10.14+0
+  [30578b45] + URIParser v0.4.1
+  [83775a58] + Zlib_jll v1.2.11+18
+  [8e850ede] + nghttp2_jll v1.40.0+2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building Expect → `~/.julia/packages/Expect/ary8b/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T22:22:48.979
+#
+
+    Testing HORIZONS
+Status `/tmp/jl_JmX6bT/Project.toml`
+  [6a31a4e8] Expect v0.3.1
+  [01fcc997] FTPClient v1.2.1
+  [5a3ac768] HORIZONS v0.3.0
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8dfed614] Test
+Status `/tmp/jl_JmX6bT/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [6a31a4e8] Expect v0.3.1
+  [01fcc997] FTPClient v1.2.1
+  [5a3ac768] HORIZONS v0.3.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [b27032c2] LibCURL v0.6.2
+  [deac9b47] LibCURL_jll v7.70.0+2
+  [29816b5a] LibSSH2_jll v1.9.0+3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [14a3606d] MozillaCACerts_jll v2020.10.14+0
+  [30578b45] URIParser v0.4.1
+  [83775a58] Zlib_jll v1.2.11+18
+  [8e850ede] nghttp2_jll v1.40.0+2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test connection to HORIZONS machine using Expect.jl: Error During Test at /home/pkgeval/.julia/packages/HORIZONS/FQmnH/test/runtests.jl:8
+  Got exception outside of a @test
+  IOError: could not spawn `telnet ssd.jpl.nasa.gov 6775`: no such file or directory (ENOENT)
+  Stacktrace:
+   [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:99
+   [2] #585 at ./process.jl:112 [inlined]
+   [3] setup_stdios(::Base.var"#585#586"{Cmd}, ::Array{Any,1}) at ./process.jl:196
+   [4] _spawn at ./process.jl:111 [inlined]
+   [5] run(::Cmd, ::Tuple{RawFD,RawFD,RawFD}; wait::Bool) at ./process.jl:443
+   [6] _spawn(::Cmd, ::Base.EnvDict, ::Bool) at /home/pkgeval/.julia/packages/Expect/ary8b/src/Expect.jl:124
+   [7] ExpectProc(::Cmd, ::Int64; env::Base.EnvDict, encoding::String, pty::Bool) at /home/pkgeval/.julia/packages/Expect/ary8b/src/Expect.jl:55
+   [8] ExpectProc(::Cmd, ::Int64) at /home/pkgeval/.julia/packages/Expect/ary8b/src/Expect.jl:51
+   [9] top-level scope at /home/pkgeval/.julia/packages/HORIZONS/FQmnH/test/runtests.jl:9
+   [10] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [11] top-level scope at /home/pkgeval/.julia/packages/HORIZONS/FQmnH/test/runtests.jl:9
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+Test Summary:                                       | Error  Total
+Test connection to HORIZONS machine using Expect.jl |     1      1
+ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/HORIZONS/FQmnH/test/runtests.jl:8
+
+PkgEval failed: Package HORIZONS errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:23:11.322
+CPU usage: 31.89s (27.38s user, 4.60s kernel)
+
+Network usage:
+- eth0: 2.789 MiB received, 85.945 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":30,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":11,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":30,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":30,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":11,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":30,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":151552,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":45056,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":151552,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":151552,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":45056,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":151552,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":311496704,"max_usage":1432469504,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":198402048,"inactive_file":135168,"inactive_anon":79613952,"total_pgfault":975447,"total_cache":83038208,"total_rss_huge":0,"total_active_anon":201805824,"total_pgmajfault":0,"pgpgin":691284,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":622553,"hierarchical_memsw_limit":0,"cache":83038208,"active_file":135168,"pgfault":975447,"total_mapped_file":0,"total_pgpgout":622553,"total_writeback":0,"rss":198402048,"unevictable":0,"total_inactive_anon":79613952,"total_pgpgin":691284,"active_anon":201805824,"total_active_file":135168},"limit":540965302272},"name":"/HORIZONS-PC8LHCX6","networks":{"eth0":{"rx_bytes":2924886,"rx_packets":659,"tx_packets":745,"tx_bytes":88008,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"d4ab00d338d6100472bdbe6f266a958e1ab99159316dab87f79190f2af70e718","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6376953924522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":27380000000,"usage_in_kernelmode":4600000000,"total_usage":31887986521,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31884249470,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4040,0,0,3733011,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:23:11.325216052Z"}

@@ -1,0 +1,180 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:13:32.937
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:13:34.527
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ##O#- #                                                                       ##O=#  #                                                                      #=#=-#  #                                                                     #########                                                                 13.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Signals ──────────── v1.2.0
+  Installed Compat ───────────── v3.25.0
+  Installed OrderedCollections ─ v1.3.2
+  Installed DataStructures ───── v0.18.8
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [6303bc30] + Signals v1.2.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [34da2185] + Compat v3.25.0
+  [864edb3b] + DataStructures v0.18.8
+  [bac558e1] + OrderedCollections v1.3.2
+  [6303bc30] + Signals v1.2.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T15:13:44.04
+#
+
+    Testing Signals
+Status `/tmp/jl_LkenQQ/Project.toml`
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [a223df75] Reactive v0.8.3
+  [6303bc30] Signals v1.2.0
+  [90137ffa] StaticArrays v1.0.1
+  [8ba89e20] Distributed
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_LkenQQ/Manifest.toml`
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [34da2185] Compat v3.25.0
+  [864edb3b] DataStructures v0.18.8
+  [682c06a0] JSON v0.21.1
+  [bac558e1] OrderedCollections v1.3.2
+  [69de0a69] Parsers v1.0.15
+  [a223df75] Reactive v0.8.3
+  [6303bc30] Signals v1.2.0
+  [90137ffa] StaticArrays v1.0.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+push-pull     |    5      5
+Test Summary: | Pass  Total
+strict_push   |    4      4
+
+Signals function call overhead on pull = 88.9725ns
+Signals function call overhead on push = 132.05ns
+Reactive function call overhead = 198.845ns
+
+Signals function call time on pull (4x4 SArray multiply)= 82.10336239103363ns
+Signals function call time on push (4x4 SArray multiply) = 136.6160458452722ns
+Reactive function call time on push (4x4 SArray multiply) = 774.0ns
+
+Signals function call time on pull (4x4 Matrix)= 266.9842931937173ns
+Signals function call time on push (4x4 Matrix) = 321.5130057803468ns
+Reactive function call time on push (4x4 Matrix) = 1012.725ns
+Test Summary: |
+benchmark     | No tests
+Test Summary: | Pass  Total
+drop_repeats  |    6      6
+Test Summary: | Pass  Total
+when do       |    4      4
+Test Summary: | Pass  Total
+sampleon      |    5      5
+Test Summary: | Pass  Total
+filter        |    6      6
+Test Summary: | Pass  Total
+foldp         |    2      2
+Test Summary: | Pass  Total
+merge         |    5      5
+Test Summary: | Pass  Total
+async_signal  |    2      2
+Test Summary:  | Pass  Total
+recursion_free |    4      4
+Test Summary: | Pass  Total
+bind          |    4      4
+┌ Warning: Assignment to `A` in soft scope is ambiguous because a global variable by the same name exists: `A` will be treated as a new local. Disambiguate by using `local A` to suppress this warning or `global A` to assign to the existing global variable.
+└ @ ~/.julia/packages/Signals/559HJ/test/time.jl:16
+┌ Warning: Assignment to `pA` in soft scope is ambiguous because a global variable by the same name exists: `pA` will be treated as a new local. Disambiguate by using `local pA` to suppress this warning or `global pA` to assign to the existing global variable.
+└ @ ~/.julia/packages/Signals/559HJ/test/time.jl:17
+┌ Warning: Assignment to `C` in soft scope is ambiguous because a global variable by the same name exists: `C` will be treated as a new local. Disambiguate by using `local C` to suppress this warning or `global C` to assign to the existing global variable.
+└ @ ~/.julia/packages/Signals/559HJ/test/time.jl:18
+┌ Warning: Assignment to `nupdates` in soft scope is ambiguous because a global variable by the same name exists: `nupdates` will be treated as a new local. Disambiguate by using `local nupdates` to suppress this warning or `global nupdates` to assign to the existing global variable.
+└ @ ~/.julia/packages/Signals/559HJ/test/time.jl:19
+┌ Warning: Assignment to `sum_updates` in soft scope is ambiguous because a global variable by the same name exists: `sum_updates` will be treated as a new local. Disambiguate by using `local sum_updates` to suppress this warning or `global sum_updates` to assign to the existing global variable.
+└ @ ~/.julia/packages/Signals/559HJ/test/time.jl:20
+┌ Warning: Assignment to `avg_delay` in soft scope is ambiguous because a global variable by the same name exists: `avg_delay` will be treated as a new local. Disambiguate by using `local avg_delay` to suppress this warning or `global avg_delay` to assign to the existing global variable.
+└ @ ~/.julia/packages/Signals/559HJ/test/time.jl:21
+┌ Warning: Assignment to `switch` in soft scope is ambiguous because a global variable by the same name exists: `switch` will be treated as a new local. Disambiguate by using `local switch` to suppress this warning or `global switch` to assign to the existing global variable.
+└ @ ~/.julia/packages/Signals/559HJ/test/time.jl:36
+Test Summary:         | Pass  Total
+throttle and debounce |    4      4
+Test Summary: | Pass  Total
+for_signal    |    8      8
+Test Summary: | Pass  Total
+buffer        |   12     12
+    Testing Signals tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:15:15.924
+CPU usage: 72.40s (65.97s user, 6.54s kernel)
+
+Network usage:
+- eth0: 3.129 MiB received, 65.212 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":501,"op":"Read","minor":0},{"major":259,"value":41214,"op":"Write","minor":0},{"major":259,"value":41710,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":41715,"op":"Total","minor":0},{"major":253,"value":501,"op":"Read","minor":2},{"major":253,"value":41214,"op":"Write","minor":2},{"major":253,"value":41710,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":41715,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":2052096,"op":"Read","minor":0},{"major":259,"value":168841216,"op":"Write","minor":0},{"major":259,"value":170872832,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":170893312,"op":"Total","minor":0},{"major":253,"value":2052096,"op":"Read","minor":2},{"major":253,"value":168841216,"op":"Write","minor":2},{"major":253,"value":170872832,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":170893312,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":354795520,"max_usage":1043079168,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":217006080,"inactive_file":270336,"inactive_anon":81100800,"total_pgfault":1340889,"total_cache":106717184,"total_rss_huge":0,"total_active_anon":226676736,"total_pgmajfault":0,"pgpgin":907335,"rss_huge":0,"mapped_file":0,"total_inactive_file":270336,"dirty":811008,"total_unevictable":0,"total_dirty":811008,"writeback":0,"pgpgout":828319,"hierarchical_memsw_limit":0,"cache":106717184,"active_file":16084992,"pgfault":1340889,"total_mapped_file":0,"total_pgpgout":828319,"total_writeback":0,"rss":217006080,"unevictable":0,"total_inactive_anon":81100800,"total_pgpgin":907335,"active_anon":226676736,"total_active_file":16084992},"limit":540965302272},"name":"/Signals-rmbtMO4i","networks":{"eth0":{"rx_bytes":3280719,"rx_packets":601,"tx_packets":576,"tx_bytes":66777,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"d71731c218a1a83ae3d7e8de8393cbd700832e680b4eb16510800074e5526a28","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3096053024522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":65970000000,"usage_in_kernelmode":6540000000,"total_usage":72395325707,"percpu_usage":[0,72392558487,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2767220,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:15:16.569104785Z"}

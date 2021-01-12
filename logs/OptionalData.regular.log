@@ -1,0 +1,68 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:37:03.703
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:37:05.51
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed OptionalData ─ v0.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [fbd9d27c] + OptionalData v0.3.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [fbd9d27c] + OptionalData v0.3.0
+
+
+################################################################################
+# Testing: 2021-01-11T21:37:09.706
+#
+
+    Testing OptionalData
+Status `/tmp/jl_bjxJ6P/Project.toml`
+  [fbd9d27c] OptionalData v0.3.0
+  [8dfed614] Test
+Status `/tmp/jl_bjxJ6P/Manifest.toml`
+  [fbd9d27c] OptionalData v0.3.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary: | Pass  Total
+OptionalData  |   10     10
+    Testing OptionalData tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:37:13.368
+CPU usage: 9.78s (7.47s user, 2.35s kernel)
+
+Network usage:
+- eth0: 2.538 MiB received, 28.878 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":324612096,"max_usage":568029184,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":216219648,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":267366,"total_cache":79396864,"total_rss_huge":0,"total_active_anon":216809472,"total_pgmajfault":0,"pgpgin":195195,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":0,"total_unevictable":0,"total_dirty":0,"writeback":0,"pgpgout":123036,"hierarchical_memsw_limit":0,"cache":79396864,"active_file":135168,"pgfault":267366,"total_mapped_file":0,"total_pgpgout":123036,"total_writeback":0,"rss":216219648,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":195195,"active_anon":216809472,"total_active_file":135168},"limit":540965302272},"name":"/OptionalData-e0yczw8v","networks":{"eth0":{"rx_bytes":2661058,"rx_packets":328,"tx_packets":306,"tx_bytes":29571,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"c8e4599ef5f85451d1349e3a43b2609e4906dd5c4e05f224e17cac2c6a5c00fe","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6024652154522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":7470000000,"usage_in_kernelmode":2350000000,"total_usage":9780979115,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9780979115,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:37:14.321787446Z"}

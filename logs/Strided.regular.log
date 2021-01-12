@@ -1,0 +1,355 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T16:28:38.562
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:28:40.327
+#
+
+ Installing known registries into `~/.julia`
+#########                                                                 13.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Strided ──── v1.1.1
+  Installed TupleTools ─ v1.2.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [5e0ebb24] + Strided v1.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [5e0ebb24] + Strided v1.1.1
+  [9d95972d] + TupleTools v1.2.0
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+
+
+################################################################################
+# Testing: 2021-01-11T16:28:44.912
+#
+
+    Testing Strided
+Status `/tmp/jl_WNpRfV/Project.toml`
+  [5e0ebb24] Strided v1.1.1
+  [9d95972d] TupleTools v1.2.0
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_WNpRfV/Manifest.toml`
+  [5e0ebb24] Strided v1.1.1
+  [9d95972d] TupleTools v1.2.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Base.Threads.nthreads() =  1
+Running tests single-threaded:
+Test Summary:               | Pass  Total
+construction of StridedView |  452    452
+Test Summary:                     | Pass  Total
+construction of UnsafeStridedView |  292    292
+Test Summary:                           | Pass  Total
+elementwise conj, transpose and adjoint |   16     16
+Test Summary:                            | Pass  Total
+reshape and permutedims with StridedView |  260    260
+Test Summary:                                  | Pass  Total
+reshape and permutedims with UnsafeStridedView |  260    260
+Test Summary:                                  | Pass  Total
+map, scale!, axpy! and axpby! with StridedView |  140    140
+Test Summary:                                        | Pass  Total
+map, scale!, axpy! and axpby! with UnsafeStridedView |  140    140
+Test Summary:          | Pass  Total
+views with StridedView |   36     36
+Test Summary:                | Pass  Total
+views with UnsafeStridedView |   36     36
+Test Summary:              | Pass  Total
+broadcast with StridedView |   28     28
+Test Summary:                    | Pass  Total
+broadcast with UnsafeStridedView |   28     28
+Test Summary:              | Pass  Total
+mapreduce with StridedView |   32     32
+Test Summary:                    | Pass  Total
+mapreduce with UnsafeStridedView |   32     32
+Test Summary:                        | Pass  Total
+complete reductions with StridedView |   36     36
+Test Summary:                              | Pass  Total
+complete reductions with UnsafeStridedView |   36     36
+Test Summary:  | Pass  Total
+@strided macro |   44     44
+Test Summary:         | Pass  Total
+@unsafe_strided macro |   44     44
+Test Summary:                                 | Pass  Total
+multiplication with StridedView: Complex{Int} |   84     84
+Test Summary:                                       | Pass  Total
+multiplication with UnsafeStridedView: Complex{Int} |   84     84
+Test Summary:                                  | Pass  Total
+multiplication with StridedView: Rational{Int} |   84     84
+Test Summary:                                        | Pass  Total
+multiplication with UnsafeStridedView: Rational{Int} |   84     84
+Test Summary:                                          | Pass  Total
+multiplication with StridedView: Float32 times Float32 |   84     84
+Test Summary:                                                | Pass  Total
+multiplication with UnsafeStridedView: Float32 times Float32 |   84     84
+Test Summary:                                          | Pass  Total
+multiplication with StridedView: Float32 times Float64 |   84     84
+Test Summary:                                                | Pass  Total
+multiplication with UnsafeStridedView: Float32 times Float64 |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Float32 times Complex{Float32} |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Float32 times Complex{Float32} |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Float32 times Complex{Float64} |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Float32 times Complex{Float64} |   84     84
+Test Summary:                                          | Pass  Total
+multiplication with StridedView: Float64 times Float32 |   84     84
+Test Summary:                                                | Pass  Total
+multiplication with UnsafeStridedView: Float64 times Float32 |   84     84
+Test Summary:                                          | Pass  Total
+multiplication with StridedView: Float64 times Float64 |   84     84
+Test Summary:                                                | Pass  Total
+multiplication with UnsafeStridedView: Float64 times Float64 |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Float64 times Complex{Float32} |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Float64 times Complex{Float32} |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Float64 times Complex{Float64} |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Float64 times Complex{Float64} |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Complex{Float32} times Float32 |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float32} times Float32 |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Complex{Float32} times Float64 |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float32} times Float64 |   84     84
+Test Summary:                                                            | Pass  Total
+multiplication with StridedView: Complex{Float32} times Complex{Float32} |   84     84
+Test Summary:                                                                  | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float32} times Complex{Float32} |   84     84
+Test Summary:                                                            | Pass  Total
+multiplication with StridedView: Complex{Float32} times Complex{Float64} |   84     84
+Test Summary:                                                                  | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float32} times Complex{Float64} |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Complex{Float64} times Float32 |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float64} times Float32 |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Complex{Float64} times Float64 |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float64} times Float64 |   84     84
+Test Summary:                                                            | Pass  Total
+multiplication with StridedView: Complex{Float64} times Complex{Float32} |   84     84
+Test Summary:                                                                  | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float64} times Complex{Float32} |   84     84
+Test Summary:                                                            | Pass  Total
+multiplication with StridedView: Complex{Float64} times Complex{Float64} |   84     84
+Test Summary:                                                                  | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float64} times Complex{Float64} |   84     84
+Running tests multi-threaded:
+Test Summary:               | Pass  Total
+construction of StridedView |  452    452
+Test Summary:                     | Pass  Total
+construction of UnsafeStridedView |  292    292
+Test Summary:                           | Pass  Total
+elementwise conj, transpose and adjoint |   16     16
+Test Summary:                            | Pass  Total
+reshape and permutedims with StridedView |  260    260
+Test Summary:                                  | Pass  Total
+reshape and permutedims with UnsafeStridedView |  260    260
+Test Summary:                                  | Pass  Total
+map, scale!, axpy! and axpby! with StridedView |  140    140
+Test Summary:                                        | Pass  Total
+map, scale!, axpy! and axpby! with UnsafeStridedView |  140    140
+Test Summary:          | Pass  Total
+views with StridedView |   36     36
+Test Summary:                | Pass  Total
+views with UnsafeStridedView |   36     36
+Test Summary:              | Pass  Total
+broadcast with StridedView |   28     28
+Test Summary:                    | Pass  Total
+broadcast with UnsafeStridedView |   28     28
+Test Summary:              | Pass  Total
+mapreduce with StridedView |   32     32
+Test Summary:                    | Pass  Total
+mapreduce with UnsafeStridedView |   32     32
+Test Summary:                        | Pass  Total
+complete reductions with StridedView |   36     36
+Test Summary:                              | Pass  Total
+complete reductions with UnsafeStridedView |   36     36
+Test Summary:  | Pass  Total
+@strided macro |   44     44
+Test Summary:         | Pass  Total
+@unsafe_strided macro |   44     44
+Test Summary:                                 | Pass  Total
+multiplication with StridedView: Complex{Int} |   84     84
+Test Summary:                                       | Pass  Total
+multiplication with UnsafeStridedView: Complex{Int} |   84     84
+Test Summary:                                  | Pass  Total
+multiplication with StridedView: Rational{Int} |   84     84
+Test Summary:                                        | Pass  Total
+multiplication with UnsafeStridedView: Rational{Int} |   84     84
+Test Summary:                                          | Pass  Total
+multiplication with StridedView: Float32 times Float32 |   84     84
+Test Summary:                                                | Pass  Total
+multiplication with UnsafeStridedView: Float32 times Float32 |   84     84
+Test Summary:                                          | Pass  Total
+multiplication with StridedView: Float32 times Float64 |   84     84
+Test Summary:                                                | Pass  Total
+multiplication with UnsafeStridedView: Float32 times Float64 |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Float32 times Complex{Float32} |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Float32 times Complex{Float32} |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Float32 times Complex{Float64} |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Float32 times Complex{Float64} |   84     84
+Test Summary:                                          | Pass  Total
+multiplication with StridedView: Float64 times Float32 |   84     84
+Test Summary:                                                | Pass  Total
+multiplication with UnsafeStridedView: Float64 times Float32 |   84     84
+Test Summary:                                          | Pass  Total
+multiplication with StridedView: Float64 times Float64 |   84     84
+Test Summary:                                                | Pass  Total
+multiplication with UnsafeStridedView: Float64 times Float64 |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Float64 times Complex{Float32} |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Float64 times Complex{Float32} |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Float64 times Complex{Float64} |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Float64 times Complex{Float64} |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Complex{Float32} times Float32 |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float32} times Float32 |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Complex{Float32} times Float64 |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float32} times Float64 |   84     84
+Test Summary:                                                            | Pass  Total
+multiplication with StridedView: Complex{Float32} times Complex{Float32} |   84     84
+Test Summary:                                                                  | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float32} times Complex{Float32} |   84     84
+Test Summary:                                                            | Pass  Total
+multiplication with StridedView: Complex{Float32} times Complex{Float64} |   84     84
+Test Summary:                                                                  | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float32} times Complex{Float64} |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Complex{Float64} times Float32 |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float64} times Float32 |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Complex{Float64} times Float64 |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float64} times Float64 |   84     84
+Test Summary:                                                            | Pass  Total
+multiplication with StridedView: Complex{Float64} times Complex{Float32} |   84     84
+Test Summary:                                                                  | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float64} times Complex{Float32} |   84     84
+Test Summary:                                                            | Pass  Total
+multiplication with StridedView: Complex{Float64} times Complex{Float64} |   84     84
+Test Summary:                                                                  | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float64} times Complex{Float64} |   84     84
+Test Summary:                                          | Pass  Total
+multiplication with StridedView: Float32 times Float32 |   84     84
+Test Summary:                                                | Pass  Total
+multiplication with UnsafeStridedView: Float32 times Float32 |   84     84
+Test Summary:                                          | Pass  Total
+multiplication with StridedView: Float32 times Float64 |   84     84
+Test Summary:                                                | Pass  Total
+multiplication with UnsafeStridedView: Float32 times Float64 |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Float32 times Complex{Float32} |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Float32 times Complex{Float32} |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Float32 times Complex{Float64} |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Float32 times Complex{Float64} |   84     84
+Test Summary:                                          | Pass  Total
+multiplication with StridedView: Float64 times Float32 |   84     84
+Test Summary:                                                | Pass  Total
+multiplication with UnsafeStridedView: Float64 times Float32 |   84     84
+Test Summary:                                          | Pass  Total
+multiplication with StridedView: Float64 times Float64 |   84     84
+Test Summary:                                                | Pass  Total
+multiplication with UnsafeStridedView: Float64 times Float64 |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Float64 times Complex{Float32} |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Float64 times Complex{Float32} |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Float64 times Complex{Float64} |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Float64 times Complex{Float64} |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Complex{Float32} times Float32 |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float32} times Float32 |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Complex{Float32} times Float64 |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float32} times Float64 |   84     84
+Test Summary:                                                            | Pass  Total
+multiplication with StridedView: Complex{Float32} times Complex{Float32} |   84     84
+Test Summary:                                                                  | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float32} times Complex{Float32} |   84     84
+Test Summary:                                                            | Pass  Total
+multiplication with StridedView: Complex{Float32} times Complex{Float64} |   84     84
+Test Summary:                                                                  | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float32} times Complex{Float64} |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Complex{Float64} times Float32 |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float64} times Float32 |   84     84
+Test Summary:                                                   | Pass  Total
+multiplication with StridedView: Complex{Float64} times Float64 |   84     84
+Test Summary:                                                         | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float64} times Float64 |   84     84
+Test Summary:                                                            | Pass  Total
+multiplication with StridedView: Complex{Float64} times Complex{Float32} |   84     84
+Test Summary:                                                                  | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float64} times Complex{Float32} |   84     84
+Test Summary:                                                            | Pass  Total
+multiplication with StridedView: Complex{Float64} times Complex{Float64} |   84     84
+Test Summary:                                                                  | Pass  Total
+multiplication with UnsafeStridedView: Complex{Float64} times Complex{Float64} |   84     84
+    Testing Strided tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T16:41:15.456
+CPU usage: 756.08s (749.43s user, 7.46s kernel)
+
+Network usage:
+- eth0: 2.595 MiB received, 34.456 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":332673024,"max_usage":2287824896,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":223326208,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":3675573,"total_cache":79724544,"total_rss_huge":0,"total_active_anon":224378880,"total_pgmajfault":0,"pgpgin":1684947,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":1610946,"hierarchical_memsw_limit":0,"cache":79724544,"active_file":135168,"pgfault":3675573,"total_mapped_file":0,"total_pgpgout":1610946,"total_writeback":0,"rss":223326208,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":1684947,"active_anon":224378880,"total_active_file":135168},"limit":540965302272},"name":"/Strided-xWH4prfx","networks":{"eth0":{"rx_bytes":2721072,"rx_packets":689,"tx_packets":355,"tx_bytes":35283,"tx_dropped":0,"rx_dropped":26,"tx_errors":0,"rx_errors":0}},"id":"14b23267e5615df1bfc7c3fa7885abbb859ba3424abe373ba7c03cb2deab9f2b","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3755451544522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":749430000000,"usage_in_kernelmode":7460000000,"total_usage":756084199441,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,756084196431,3010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T16:41:15.459448551Z"}

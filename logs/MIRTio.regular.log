@@ -1,0 +1,132 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:56:20.577
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:56:22.38
+#
+
+ Installing known registries into `~/.julia`
+####################################################                      72.5%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MIRTio ────── v0.2.4
+  Installed Zstd_jll ──── v1.4.5+2
+  Installed HDF5_jll ──── v1.10.5+7
+  Installed Blosc ─────── v0.7.0
+  Installed Lz4_jll ───── v1.9.2+2
+  Installed Blosc_jll ─── v1.14.3+1
+  Installed JLLWrappers ─ v1.2.0
+  Installed Zlib_jll ──── v1.2.11+18
+  Installed HDF5 ──────── v0.13.7
+  Installed Artifacts ─── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [274281c4] + MIRTio v0.2.4
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [a74b3585] + Blosc v0.7.0
+  [0b7ba130] + Blosc_jll v1.14.3+1
+  [f67ccb44] + HDF5 v0.13.7
+  [0234f1f7] + HDF5_jll v1.10.5+7
+  [692b3bcd] + JLLWrappers v1.2.0
+  [5ced341a] + Lz4_jll v1.9.2+2
+  [274281c4] + MIRTio v0.2.4
+  [83775a58] + Zlib_jll v1.2.11+18
+  [3161d3a3] + Zstd_jll v1.4.5+2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building HDF5 → `~/.julia/packages/HDF5/YX0jU/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T18:56:29.617
+#
+
+    Testing MIRTio
+Status `/tmp/jl_fUtg2P/Project.toml`
+  [f67ccb44] HDF5 v0.13.7
+  [274281c4] MIRTio v0.2.4
+  [8dfed614] Test
+Status `/tmp/jl_fUtg2P/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [a74b3585] Blosc v0.7.0
+  [0b7ba130] Blosc_jll v1.14.3+1
+  [f67ccb44] HDF5 v0.13.7
+  [0234f1f7] HDF5_jll v1.10.5+7
+  [692b3bcd] JLLWrappers v1.2.0
+  [5ced341a] Lz4_jll v1.9.2+2
+  [274281c4] MIRTio v0.2.4
+  [83775a58] Zlib_jll v1.2.11+18
+  [3161d3a3] Zstd_jll v1.4.5+2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+pfile/header  |    5      5
+Test Summary: | Pass  Total
+read_rdb_hdr  |    5      5
+Test Summary: | Pass  Total
+hdf5utils     |   11     11
+Test Summary: | Pass  Total
+pfile/pfile   |    2      2
+    Testing MIRTio tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:57:05.393
+CPU usage: 44.83s (40.42s user, 4.49s kernel)
+
+Network usage:
+- eth0: 2.723 MiB received, 68.123 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":257,"op":"Read","minor":0},{"major":259,"value":30,"op":"Write","minor":0},{"major":259,"value":276,"op":"Sync","minor":0},{"major":259,"value":11,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":287,"op":"Total","minor":0},{"major":253,"value":257,"op":"Read","minor":2},{"major":253,"value":30,"op":"Write","minor":2},{"major":253,"value":276,"op":"Sync","minor":2},{"major":253,"value":11,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":287,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":1052672,"op":"Read","minor":0},{"major":259,"value":237568,"op":"Write","minor":0},{"major":259,"value":1159168,"op":"Sync","minor":0},{"major":259,"value":131072,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1290240,"op":"Total","minor":0},{"major":253,"value":1052672,"op":"Read","minor":2},{"major":253,"value":237568,"op":"Write","minor":2},{"major":253,"value":1159168,"op":"Sync","minor":2},{"major":253,"value":131072,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1290240,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":319213568,"max_usage":1187758080,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":190894080,"inactive_file":135168,"inactive_anon":79073280,"total_pgfault":1138335,"total_cache":97017856,"total_rss_huge":0,"total_active_anon":194371584,"total_pgmajfault":0,"pgpgin":722568,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":3244032,"total_unevictable":0,"total_dirty":3244032,"writeback":0,"pgpgout":652313,"hierarchical_memsw_limit":0,"cache":97017856,"active_file":14462976,"pgfault":1138335,"total_mapped_file":0,"total_pgpgout":652313,"total_writeback":0,"rss":190894080,"unevictable":0,"total_inactive_anon":79073280,"total_pgpgin":722568,"active_anon":194371584,"total_active_file":14462976},"limit":540965302272},"name":"/MIRTio-Afe1euQl","networks":{"eth0":{"rx_bytes":2855472,"rx_packets":549,"tx_packets":585,"tx_bytes":69758,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"83768be2946daeba7db8ed7953a8cc337f3aa017a05df7fdec8d537ded923ef5","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4796681854522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":40420000000,"usage_in_kernelmode":4490000000,"total_usage":44826048611,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44826048611,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:57:05.396317693Z"}

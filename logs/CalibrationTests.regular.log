@@ -1,0 +1,738 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:43:49.119
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:43:50.9
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed Functors ───────────────────── v0.1.0
+  Installed ZygoteRules ────────────────── v0.2.1
+  Installed Reexport ───────────────────── v1.0.0
+  Installed CalibrationTests ───────────── v0.4.0
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed Combinatorics ──────────────── v1.0.2
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed FillArrays ─────────────────── v0.10.2
+  Installed QuadGK ─────────────────────── v2.4.1
+  Installed Requires ───────────────────── v1.1.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed CalibrationErrors ──────────── v0.5.9
+  Installed Parameters ─────────────────── v0.12.1
+  Installed Roots ──────────────────────── v1.0.7
+  Installed Missings ───────────────────── v0.4.4
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed Distances ──────────────────── v0.10.0
+  Installed HypothesisTests ────────────── v0.10.2
+  Installed PDMats ─────────────────────── v0.10.1
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed Distributions ──────────────── v0.24.10
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed Compat ─────────────────────── v3.25.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed KernelFunctions ────────────── v0.8.11
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [2818745e] + CalibrationTests v0.4.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [33913031] + CalibrationErrors v0.5.9
+  [2818745e] + CalibrationTests v0.4.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [861a8166] + Combinatorics v1.0.2
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [b4f34e82] + Distances v0.10.0
+  [31c24e10] + Distributions v0.24.10
+  [1a297f60] + FillArrays v0.10.2
+  [d9f16b24] + Functors v0.1.0
+  [09f84164] + HypothesisTests v0.10.2
+  [692b3bcd] + JLLWrappers v1.2.0
+  [ec8451be] + KernelFunctions v0.8.11
+  [1914dd2f] + MacroTools v0.5.6
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.10.1
+  [d96e819e] + Parameters v0.12.1
+  [1fd47b50] + QuadGK v2.4.1
+  [189a3867] + Reexport v1.0.0
+  [ae029012] + Requires v1.1.2
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [f2b01f46] + Roots v1.0.7
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [3a884ed6] + UnPack v1.0.2
+  [700de1a5] + ZygoteRules v0.2.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T21:43:58.443
+#
+
+    Testing CalibrationTests
+Status `/tmp/jl_DyLbKT/Project.toml`
+  [33913031] CalibrationErrors v0.5.9
+  [2818745e] CalibrationTests v0.4.0
+  [31c24e10] Distributions v0.24.10
+  [09f84164] HypothesisTests v0.10.2
+  [d96e819e] Parameters v0.12.1
+  [1bc83da4] SafeTestsets v0.0.1
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_DyLbKT/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [33913031] CalibrationErrors v0.5.9
+  [2818745e] CalibrationTests v0.4.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [861a8166] Combinatorics v1.0.2
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [b4f34e82] Distances v0.10.0
+  [31c24e10] Distributions v0.24.10
+  [1a297f60] FillArrays v0.10.2
+  [d9f16b24] Functors v0.1.0
+  [09f84164] HypothesisTests v0.10.2
+  [692b3bcd] JLLWrappers v1.2.0
+  [ec8451be] KernelFunctions v0.8.11
+  [1914dd2f] MacroTools v0.5.6
+  [e1d29d7a] Missings v0.4.4
+  [46d2c3a1] MuladdMacro v0.2.2
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [90014a1f] PDMats v0.10.1
+  [d96e819e] Parameters v0.12.1
+  [1fd47b50] QuadGK v2.4.1
+  [189a3867] Reexport v1.0.0
+  [ae029012] Requires v1.1.2
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [f2b01f46] Roots v1.0.7
+  [1bc83da4] SafeTestsets v0.0.1
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.2.1
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [3a884ed6] UnPack v1.0.2
+  [700de1a5] ZygoteRules v0.2.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+WARNING: SqExponentialKernel changed convention in version 0.8.0.
+This kernel now divides the squared distance by 2 to align with standard practice.
+This warning will be removed in 0.9.0.
+Consistency resampling test
+---------------------------
+Population details:
+    parameter of interest:   BiasedSKCE
+    value under h_0:         0.0
+    point estimate:          0.000261496
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           0.8810
+
+Details:
+Consistency resampling test
+---------------------------
+Population details:
+    parameter of interest:   BiasedSKCE
+    value under h_0:         0.0
+    point estimate:          0.207649
+
+Test summary:
+    outcome with 95% confidence: reject h_0
+    one-sided p-value:           <1e-99
+
+Details:
+Consistency resampling test
+---------------------------
+Population details:
+    parameter of interest:   UnbiasedSKCE
+    value under h_0:         0.0
+    point estimate:          -0.000368384
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           0.8120
+
+Details:
+Consistency resampling test
+---------------------------
+Population details:
+    parameter of interest:   UnbiasedSKCE
+    value under h_0:         0.0
+    point estimate:          0.206782
+
+Test summary:
+    outcome with 95% confidence: reject h_0
+    one-sided p-value:           <1e-99
+
+Details:
+Consistency resampling test
+---------------------------
+Population details:
+    parameter of interest:   BlockUnbiasedSKCE
+    value under h_0:         0.0
+    point estimate:          -0.00635067
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           0.7070
+
+Details:
+Consistency resampling test
+---------------------------
+Population details:
+    parameter of interest:   BlockUnbiasedSKCE
+    value under h_0:         0.0
+    point estimate:          0.183301
+
+Test summary:
+    outcome with 95% confidence: reject h_0
+    one-sided p-value:           <1e-99
+
+Details:
+Consistency resampling test
+---------------------------
+Population details:
+    parameter of interest:   BlockUnbiasedSKCE
+    value under h_0:         0.0
+    point estimate:          -0.000427887
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           0.6320
+
+Details:
+Consistency resampling test
+---------------------------
+Population details:
+    parameter of interest:   BlockUnbiasedSKCE
+    value under h_0:         0.0
+    point estimate:          0.201911
+
+Test summary:
+    outcome with 95% confidence: reject h_0
+    one-sided p-value:           <1e-99
+
+Details:
+Consistency resampling test
+---------------------------
+Population details:
+    parameter of interest:   BlockUnbiasedSKCE
+    value under h_0:         0.0
+    point estimate:          -0.000742689
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           0.9170
+
+Details:
+Consistency resampling test
+---------------------------
+Population details:
+    parameter of interest:   BlockUnbiasedSKCE
+    value under h_0:         0.0
+    point estimate:          0.200322
+
+Test summary:
+    outcome with 95% confidence: reject h_0
+    one-sided p-value:           <1e-99
+
+Details:
+Consistency resampling test
+---------------------------
+Population details:
+    parameter of interest:   BlockUnbiasedSKCE
+    value under h_0:         0.0
+    point estimate:          -0.000731768
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           0.9530
+
+Details:
+Consistency resampling test
+---------------------------
+Population details:
+    parameter of interest:   BlockUnbiasedSKCE
+    value under h_0:         0.0
+    point estimate:          0.202486
+
+Test summary:
+    outcome with 95% confidence: reject h_0
+    one-sided p-value:           <1e-99
+
+Details:
+Distribution-free SKCE test
+---------------------------
+Population details:
+    parameter of interest:   BiasedSKCE
+    value under h_0:         0.0
+    point estimate:          0.000261496
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           1.0000
+
+Details:
+    number of observations: 500
+    uniform bound of the terms of the estimator: 2
+
+Distribution-free SKCE test
+---------------------------
+Population details:
+    parameter of interest:   BiasedSKCE
+    value under h_0:         0.0
+    point estimate:          0.207649
+
+Test summary:
+    outcome with 95% confidence: reject h_0
+    one-sided p-value:           <1e-8
+
+Details:
+    number of observations: 500
+    uniform bound of the terms of the estimator: 2
+
+Distribution-free SKCE test
+---------------------------
+Population details:
+    parameter of interest:   UnbiasedSKCE
+    value under h_0:         0.0
+    point estimate:          -0.000368384
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           1.0000
+
+Details:
+    number of observations: 500
+    uniform bound of the terms of the estimator: 2
+
+Distribution-free SKCE test
+---------------------------
+Population details:
+    parameter of interest:   UnbiasedSKCE
+    value under h_0:         0.0
+    point estimate:          0.206782
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           0.2628
+
+Details:
+    number of observations: 500
+    uniform bound of the terms of the estimator: 2
+
+Distribution-free SKCE test
+---------------------------
+Population details:
+    parameter of interest:   BlockUnbiasedSKCE
+    value under h_0:         0.0
+    point estimate:          -0.00635067
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           0.9987
+
+Details:
+    number of observations: 500
+    uniform bound of the terms of the estimator: 2
+
+Distribution-free SKCE test
+---------------------------
+Population details:
+    parameter of interest:   BlockUnbiasedSKCE
+    value under h_0:         0.0
+    point estimate:          0.183301
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           0.3499
+
+Details:
+    number of observations: 500
+    uniform bound of the terms of the estimator: 2
+
+Distribution-free SKCE test
+---------------------------
+Population details:
+    parameter of interest:   BlockUnbiasedSKCE
+    value under h_0:         0.0
+    point estimate:          -0.000427887
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           1.0000
+
+Details:
+    number of observations: 500
+    uniform bound of the terms of the estimator: 2
+
+Distribution-free SKCE test
+---------------------------
+Population details:
+    parameter of interest:   BlockUnbiasedSKCE
+    value under h_0:         0.0
+    point estimate:          0.201911
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           0.2797
+
+Details:
+    number of observations: 500
+    uniform bound of the terms of the estimator: 2
+
+Distribution-free SKCE test
+---------------------------
+Population details:
+    parameter of interest:   BlockUnbiasedSKCE
+    value under h_0:         0.0
+    point estimate:          -0.000742689
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           1.0000
+
+Details:
+    number of observations: 500
+    uniform bound of the terms of the estimator: 2
+
+Distribution-free SKCE test
+---------------------------
+Population details:
+    parameter of interest:   BlockUnbiasedSKCE
+    value under h_0:         0.0
+    point estimate:          0.200322
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           0.2854
+
+Details:
+    number of observations: 500
+    uniform bound of the terms of the estimator: 2
+
+Distribution-free SKCE test
+---------------------------
+Population details:
+    parameter of interest:   BlockUnbiasedSKCE
+    value under h_0:         0.0
+    point estimate:          -0.000731768
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           1.0000
+
+Details:
+    number of observations: 500
+    uniform bound of the terms of the estimator: 2
+
+Distribution-free SKCE test
+---------------------------
+Population details:
+    parameter of interest:   BlockUnbiasedSKCE
+    value under h_0:         0.0
+    point estimate:          0.202486
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           0.2777
+
+Details:
+    number of observations: 500
+    uniform bound of the terms of the estimator: 2
+
+Asymptotic block SKCE test
+--------------------------
+Population details:
+    parameter of interest:   SKCE
+    value under h_0:         0.0
+    point estimate:          -0.00635067
+    95% confidence interval: (-0.0225, Inf)
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           0.7414
+
+Details:
+    number of observations per block: 2
+    number of blocks of observations: 250
+    z-statistic: -0.647785
+    standard error of evaluations of pairs of observations: 0.00980366
+
+Asymptotic block SKCE test
+--------------------------
+Population details:
+    parameter of interest:   SKCE
+    value under h_0:         0.0
+    point estimate:          0.183301
+    95% confidence interval: (0.1568, Inf)
+
+Test summary:
+    outcome with 95% confidence: reject h_0
+    one-sided p-value:           <1e-29
+
+Details:
+    number of observations per block: 2
+    number of blocks of observations: 250
+    z-statistic: 11.3613
+    standard error of evaluations of pairs of observations: 0.0161338
+
+Asymptotic block SKCE test
+--------------------------
+Population details:
+    parameter of interest:   SKCE
+    value under h_0:         0.0
+    point estimate:          -0.000427887
+    95% confidence interval: (-0.0017, Inf)
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           0.7108
+
+Details:
+    number of observations per block: 10
+    number of blocks of observations: 50
+    z-statistic: -0.555751
+    standard error of evaluations of pairs of observations: 0.000769924
+
+Asymptotic block SKCE test
+--------------------------
+Population details:
+    parameter of interest:   SKCE
+    value under h_0:         0.0
+    point estimate:          0.201911
+    95% confidence interval: (0.1921, Inf)
+
+Test summary:
+    outcome with 95% confidence: reject h_0
+    one-sided p-value:           <1e-99
+
+Details:
+    number of observations per block: 10
+    number of blocks of observations: 50
+    z-statistic: 33.8862
+    standard error of evaluations of pairs of observations: 0.00595851
+
+Asymptotic block SKCE test
+--------------------------
+Population details:
+    parameter of interest:   SKCE
+    value under h_0:         0.0
+    point estimate:          -0.000742689
+    95% confidence interval: (-0.0012, Inf)
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           0.9945
+
+Details:
+    number of observations per block: 50
+    number of blocks of observations: 10
+    z-statistic: -2.54133
+    standard error of evaluations of pairs of observations: 0.000292244
+
+Asymptotic block SKCE test
+--------------------------
+Population details:
+    parameter of interest:   SKCE
+    value under h_0:         0.0
+    point estimate:          0.200322
+    95% confidence interval: (0.1913, Inf)
+
+Test summary:
+    outcome with 95% confidence: reject h_0
+    one-sided p-value:           <1e-99
+
+Details:
+    number of observations per block: 50
+    number of blocks of observations: 10
+    z-statistic: 36.5551
+    standard error of evaluations of pairs of observations: 0.00548
+
+Asymptotic block SKCE test
+--------------------------
+Population details:
+    parameter of interest:   SKCE
+    value under h_0:         0.0
+    point estimate:          -0.000731768
+    95% confidence interval: (-0.0013, Inf)
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           0.9819
+
+Details:
+    number of observations per block: 100
+    number of blocks of observations: 5
+    z-statistic: -2.09397
+    standard error of evaluations of pairs of observations: 0.000349464
+
+Asymptotic block SKCE test
+--------------------------
+Population details:
+    parameter of interest:   SKCE
+    value under h_0:         0.0
+    point estimate:          0.202486
+    95% confidence interval: (0.1955, Inf)
+
+Test summary:
+    outcome with 95% confidence: reject h_0
+    one-sided p-value:           <1e-99
+
+Details:
+    number of observations per block: 100
+    number of blocks of observations: 5
+    z-statistic: 47.3733
+    standard error of evaluations of pairs of observations: 0.00427426
+
+Asymptotic SKCE test
+--------------------
+Population details:
+    parameter of interest:   SKCE
+    value under h_0:         0.0
+    point estimate:          -0.000368384
+
+Test summary:
+    outcome with 95% confidence: fail to reject h_0
+    one-sided p-value:           0.8440
+
+Details:
+    test statistic: -0.0006306185286757184
+
+Asymptotic SKCE test
+--------------------
+Population details:
+    parameter of interest:   SKCE
+    value under h_0:         0.0
+    point estimate:          0.206782
+
+Test summary:
+    outcome with 95% confidence: reject h_0
+    one-sided p-value:           <1e-99
+
+Details:
+    test statistic: -0.0004524871550187069
+
+Test Summary:      | Pass  Total
+Binary trend tests |   34     34
+Consistency test with ECE (2 classes)
+Consistency test with ECE (5 classes)
+Consistency test with ECE (10 classes)
+Consistency test with the linear SKCE estimator (2 classes)
+Consistency test with the linear SKCE estimator (5 classes)
+Consistency test with the linear SKCE estimator (10 classes)
+Consistency test with the linear SKCE estimator (2 classes)
+Consistency test with the linear SKCE estimator (5 classes)
+Consistency test with the linear SKCE estimator (10 classes)
+Test Summary:    | Pass  Total
+Consistency test |   54     54
+Test Summary:   | Pass  Total
+Asymptotic test |   40     40
+Test Summary:         | Pass  Total
+Asymptotic block test | 1848   1848
+Test Summary:           | Pass  Total
+Distribution-free tests |  222    222
+    Testing CalibrationTests tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:52:13.023
+CPU usage: 503.34s (484.99s user, 18.74s kernel)
+
+Network usage:
+- eth0: 4.331 MiB received, 198.297 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":143360,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":143360,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":143360,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":143360,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":336519168,"max_usage":1376030720,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":206561280,"inactive_file":135168,"inactive_anon":82857984,"total_pgfault":8987253,"total_cache":98885632,"total_rss_huge":0,"total_active_anon":222621696,"total_pgmajfault":0,"pgpgin":7808460,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":7733888,"hierarchical_memsw_limit":0,"cache":98885632,"active_file":135168,"pgfault":8987253,"total_mapped_file":0,"total_pgpgout":7733888,"total_writeback":0,"rss":206561280,"unevictable":0,"total_inactive_anon":82857984,"total_pgpgin":7808460,"active_anon":222621696,"total_active_file":135168},"limit":540965302272},"name":"/CalibrationTests-kAN7XZ4n","networks":{"eth0":{"rx_bytes":4541229,"rx_packets":1607,"tx_packets":1627,"tx_bytes":203056,"tx_dropped":0,"rx_dropped":17,"tx_errors":0,"rx_errors":0}},"id":"d9ebb259e4a87c4a6d667480fc51bed51b98c596835e9cf03d94b13b718e334b","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6139463634522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":484990000000,"usage_in_kernelmode":18740000000,"total_usage":503337318746,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1973011,503195504615,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,139841120,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:52:13.026446359Z"}

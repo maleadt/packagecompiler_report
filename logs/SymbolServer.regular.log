@@ -1,0 +1,109 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:40:55.247
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:40:57.048
+#
+
+ Installing known registries into `~/.julia`
+##################################                                        48.5%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed SymbolServer ─ v5.1.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [cf896787] + SymbolServer v5.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [cf896787] + SymbolServer v5.1.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T20:41:00.725
+#
+
+    Testing SymbolServer
+Status `/tmp/jl_ZWnwQT/Project.toml`
+  [cf896787] SymbolServer v5.1.1
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [3fa0cd96] REPL
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+Status `/tmp/jl_ZWnwQT/Manifest.toml`
+  [cf896787] SymbolServer v5.1.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+  Installed IteratorInterfaceExtensions ─ v1.0.0
+┌ Warning: TableTraits not stored on disc
+└ @ SymbolServer ~/.julia/packages/SymbolServer/2m6sg/src/SymbolServer.jl:190
+[ Info: [:IteratorInterfaceExtensions, :Markdown, :Base64, :TableTraits, :Main, :Base, :Core]
+[ Info: ["Julia-1.5.3-x86_64--normal-a3f24677c21f5bbe9d2a714f95dcd58337fb2856.jstore", "Julia-1.5.3-x86_64--stdlib-2a0f44e3-6c83-55bd-87e4-b1978d98bd5f.jstore", "Julia-1.5.3-x86_64--stdlib-d6f4376e-aef5-505a-96c1-9c027394607a.jstore"]
+Test Summary: | Pass  Total
+SymbolServer  | 7459   7459
+Test Summary: | Pass  Total
+TypeofVararg  |   12     12
+    Testing SymbolServer tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:41:34.69
+CPU usage: 39.48s (35.94s user, 3.60s kernel)
+
+Network usage:
+- eth0: 2.573 MiB received, 33.607 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":4,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":23,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":4,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":23,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":307200,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":413696,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":434176,"op":"Total","minor":0},{"major":253,"value":307200,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":413696,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":434176,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":334721024,"max_usage":888045568,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":218742784,"inactive_file":405504,"inactive_anon":78938112,"total_pgfault":797478,"total_cache":87093248,"total_rss_huge":0,"total_active_anon":226541568,"total_pgmajfault":0,"pgpgin":446787,"rss_huge":0,"mapped_file":0,"total_inactive_file":405504,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":372145,"hierarchical_memsw_limit":0,"cache":87093248,"active_file":135168,"pgfault":797478,"total_mapped_file":0,"total_pgpgout":372145,"total_writeback":0,"rss":218742784,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":446787,"active_anon":226541568,"total_active_file":135168},"limit":540965302272},"name":"/SymbolServer-UGbxUPYf","networks":{"eth0":{"rx_bytes":2697474,"rx_packets":359,"tx_packets":342,"tx_bytes":34414,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"c5c934b4d3f93d691c01c2cdc7235107f998f3d74ce8b71a424a9fb13e978085","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5598111014522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":35940000000,"usage_in_kernelmode":3600000000,"total_usage":39480825679,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,39480825679,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:41:34.962969348Z"}

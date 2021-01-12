@@ -1,0 +1,119 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:47:00.349
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:47:02.149
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed FileIO ── v1.4.5
+  Installed Dhall ─── v0.1.0
+  Installed JSON ──── v0.21.1
+  Installed Parsers ─ v1.0.15
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [f7fc0f56] + Dhall v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [f7fc0f56] + Dhall v0.1.0
+  [5789e2e9] + FileIO v1.4.5
+  [682c06a0] + JSON v0.21.1
+  [69de0a69] + Parsers v1.0.15
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T15:47:06.6
+#
+
+    Testing Dhall
+Status `/tmp/jl_dyL8jR/Project.toml`
+  [f7fc0f56] Dhall v0.1.0
+  [5789e2e9] FileIO v1.4.5
+  [682c06a0] JSON v0.21.1
+  [44cfe95a] Pkg
+  [8dfed614] Test
+Status `/tmp/jl_dyL8jR/Manifest.toml`
+  [f7fc0f56] Dhall v0.1.0
+  [5789e2e9] FileIO v1.4.5
+  [682c06a0] JSON v0.21.1
+  [69de0a69] Parsers v1.0.15
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+load          |    4      4
+version = "1.6.2\n"
+Test Summary:                       | Pass  Total
+smoketest executables json-to-dhall |    2      2
+version = "1.30.0\n"
+Test Summary:               | Pass  Total
+smoketest executables dhall |    2      2
+version = "1.6.2\n"
+Test Summary:                       | Pass  Total
+smoketest executables dhall-to-json |    2      2
+version = "1.6.2\n"
+Test Summary:                       | Pass  Total
+smoketest executables dhall-to-yaml |    2      2
+    Testing Dhall tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:47:23.555
+CPU usage: 23.22s (20.33s user, 2.93s kernel)
+
+Network usage:
+- eth0: 2.959 MiB received, 42.884 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":184,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":203,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":208,"op":"Total","minor":0},{"major":253,"value":184,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":203,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":208,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":17588224,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":17694720,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":17715200,"op":"Total","minor":0},{"major":253,"value":17588224,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":17694720,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":17715200,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":352649216,"max_usage":966664192,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":132,"total_rss":216227840,"inactive_file":12976128,"inactive_anon":80424960,"total_pgfault":612876,"total_cache":105926656,"total_rss_huge":0,"total_active_anon":222621696,"total_pgmajfault":132,"pgpgin":400653,"rss_huge":0,"mapped_file":0,"total_inactive_file":12976128,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":322007,"hierarchical_memsw_limit":0,"cache":105926656,"active_file":6352896,"pgfault":612843,"total_mapped_file":0,"total_pgpgout":322007,"total_writeback":0,"rss":216227840,"unevictable":0,"total_inactive_anon":80424960,"total_pgpgin":400653,"active_anon":222621696,"total_active_file":6352896},"limit":540965302272},"name":"/Dhall-uwx55rEe","networks":{"eth0":{"rx_bytes":3102231,"rx_packets":406,"tx_packets":413,"tx_bytes":43913,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"1c449294921d5c60be6d0d01dea03ef43ac6f5a3e00abfe3a6c167d7053f481d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3342192364522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":20330000000,"usage_in_kernelmode":2930000000,"total_usage":23216053112,"percpu_usage":[0,0,0,0,0,23215172532,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,880580,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:47:23.558883652Z"}

@@ -1,0 +1,182 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:33:05.849
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:33:07.665
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed PROPACK ────────────────────── v0.3.2
+  Installed FastClosures ───────────────── v0.3.2
+  Installed TimerOutputs ───────────────── v0.5.7
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed PROPACK_jll ────────────────── v0.1.0+1
+  Installed LinearOperators ────────────── v1.2.0
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed OpenBLAS_jll ───────────────── v0.3.9+5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [b169e327] + PROPACK v0.3.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9aa1b823] + FastClosures v0.3.2
+  [692b3bcd] + JLLWrappers v1.2.0
+  [5c8ed15e] + LinearOperators v1.2.0
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [b169e327] + PROPACK v0.3.2
+  [2c99449f] + PROPACK_jll v0.1.0+1
+  [a759f4b9] + TimerOutputs v0.5.7
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T19:33:13.173
+#
+
+    Testing PROPACK
+Status `/tmp/jl_g6gnQb/Project.toml`
+  [5c8ed15e] LinearOperators v1.2.0
+  [b169e327] PROPACK v0.3.2
+  [2c99449f] PROPACK_jll v0.1.0+1
+  [37e2e46d] LinearAlgebra
+  [8dfed614] Test
+Status `/tmp/jl_g6gnQb/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [9aa1b823] FastClosures v0.3.2
+  [692b3bcd] JLLWrappers v1.2.0
+  [5c8ed15e] LinearOperators v1.2.0
+  [4536629a] OpenBLAS_jll v0.3.9+5
+  [b169e327] PROPACK v0.3.2
+  [2c99449f] PROPACK_jll v0.1.0+1
+  [a759f4b9] TimerOutputs v0.5.7
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+--- Test functions with Float32 types ---
+computed singular values: Float32[5.0, 4.0, 3.0000007]
+exact singular values: [5, 4, 3]
+error bounds reported: Float32[0.0, 0.0, 0.0]
+number of matvecs and conjugate transposed matvecs: 8, 7
+computed singular values: Float32[5.0, 4.0, 3.0000007]
+number of matvecs and conjugate transposed matvecs: 8, 7
+computed smallest singular values: Float32[2.0, 0.99999994]
+exact smallest singular values: [2, 1]
+error bounds reported: Float32[0.0, 0.0]
+number of matvecs and conjugate transposed matvecs: 10, 5
+computed smallest singular values: Float32[2.0, 0.99999994]
+number of matvecs and conjugate transposed matvecs: 10, 5
+
+--- Test functions with Float64 types ---
+computed singular values: [5.000000000000004, 3.999999999999999, 2.9999999999999987]
+exact singular values: [5, 4, 3]
+error bounds reported: [0.0, 0.0, 0.0]
+number of matvecs and conjugate transposed matvecs: 7, 7
+computed singular values: [5.000000000000004, 3.999999999999999, 2.9999999999999987]
+number of matvecs and conjugate transposed matvecs: 7, 7
+computed smallest singular values: [1.9999999999999998, 1.0000000000000004]
+exact smallest singular values: [2, 1]
+error bounds reported: [0.0, 0.0]
+number of matvecs and conjugate transposed matvecs: 10, 5
+computed smallest singular values: [1.9999999999999998, 1.0000000000000004]
+number of matvecs and conjugate transposed matvecs: 10, 5
+
+--- Test functions with Complex{Float32} types ---
+ UNVARIANT SUBSPACE, beta small
+computed singular values: Float32[4.9999995, 3.9999986, 2.9999988]
+exact singular values: [5, 4, 3]
+error bounds reported: Float32[0.0, 0.0, 0.0]
+number of matvecs and conjugate transposed matvecs: 8, 7
+ UNVARIANT SUBSPACE, beta small
+computed singular values: Float32[4.9999995, 3.9999986, 2.9999988]
+number of matvecs and conjugate transposed matvecs: 8, 7
+ UNVARIANT SUBSPACE, beta small
+computed smallest singular values: Float32[1.9999992, 1.0]
+exact smallest singular values: [2, 1]
+error bounds reported: Float32[0.0, 0.0]
+number of matvecs and conjugate transposed matvecs: 10, 5
+ UNVARIANT SUBSPACE, beta small
+computed smallest singular values: Float32[1.9999992, 1.0]
+number of matvecs and conjugate transposed matvecs: 10, 5
+
+--- Test functions with Complex{Float64} types ---
+computed singular values: [5.000000000000001, 3.9999999999999982, 3.0000000000000018]
+exact singular values: [5, 4, 3]
+error bounds reported: [0.0, 0.0, 0.0]
+number of matvecs and conjugate transposed matvecs: 7, 7
+computed singular values: [5.000000000000001, 3.9999999999999982, 3.0000000000000018]
+number of matvecs and conjugate transposed matvecs: 7, 7
+computed smallest singular values: [2.0, 1.0000000000000002]
+exact smallest singular values: [2, 1]
+error bounds reported: [0.0, 0.0]
+number of matvecs and conjugate transposed matvecs: 10, 5
+computed smallest singular values: [2.0, 1.0000000000000002]
+number of matvecs and conjugate transposed matvecs: 10, 5
+
+    Testing PROPACK tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:33:40.675
+CPU usage: 34.92s (31.34s user, 3.66s kernel)
+
+Network usage:
+- eth0: 2.936 MiB received, 64.806 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":12,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":31,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":36,"op":"Total","minor":0},{"major":253,"value":12,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":31,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":36,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":499712,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":606208,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":626688,"op":"Total","minor":0},{"major":253,"value":499712,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":606208,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":626688,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":287752192,"max_usage":1104158720,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":174821376,"inactive_file":270336,"inactive_anon":80019456,"total_pgfault":799491,"total_cache":83132416,"total_rss_huge":0,"total_active_anon":177475584,"total_pgmajfault":0,"pgpgin":500940,"rss_huge":0,"mapped_file":135168,"total_inactive_file":270336,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":135168,"pgpgout":437947,"hierarchical_memsw_limit":0,"cache":83132416,"active_file":405504,"pgfault":799491,"total_mapped_file":135168,"total_pgpgout":437947,"total_writeback":135168,"rss":174821376,"unevictable":0,"total_inactive_anon":80019456,"total_pgpgin":500940,"active_anon":177475584,"total_active_file":405504},"limit":540965302272},"name":"/PROPACK-nZ3hCgzh","networks":{"eth0":{"rx_bytes":3078130,"rx_packets":542,"tx_packets":570,"tx_bytes":66361,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"31a2217adae6ec9f41c953bbf603b0a4064d1aa2a18944079cd13d7be8f2e36e","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5077338114522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":31340000000,"usage_in_kernelmode":3660000000,"total_usage":34917542953,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34916226703,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3240,0,1313010,0,0,0,0,0]}},"read":"2021-01-11T19:33:40.678097126Z"}

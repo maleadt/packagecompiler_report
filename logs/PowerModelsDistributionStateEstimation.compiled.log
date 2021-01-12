@@ -1,0 +1,1428 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T16:31:19.646
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T16:31:21.36
+#
+
+ Installing known registries into `~/.julia`
+#######################################                                   54.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─────────── v0.3.4+0
+  Installed MbedTLS_jll ──────────────────────────── v2.16.8+1
+  Installed JSONSchema ───────────────────────────── v0.3.3
+  Installed RData ────────────────────────────────── v0.7.3
+  Installed PackageCompiler ──────────────────────── v1.2.5
+  Installed JuMP ─────────────────────────────────── v0.21.4
+  Installed TimeZones ────────────────────────────── v1.5.3
+  Installed Zlib_jll ─────────────────────────────── v1.2.11+18
+  Installed Reexport ─────────────────────────────── v0.2.0
+  Installed Rmath_jll ────────────────────────────── v0.2.2+1
+  Installed Rmath ────────────────────────────────── v0.6.1
+  Installed MUMPS_seq_jll ────────────────────────── v5.3.5+0
+  Installed TableTraits ──────────────────────────── v1.0.0
+  Installed Memento ──────────────────────────────── v1.1.2
+  Installed ASL_jll ──────────────────────────────── v0.1.1+4
+  Installed CategoricalArrays ────────────────────── v0.8.3
+  Installed MathProgBase ─────────────────────────── v0.7.8
+  Installed TranscodingStreams ───────────────────── v0.9.5
+  Installed DataFrames ───────────────────────────── v0.21.8
+  Installed Mocking ──────────────────────────────── v0.7.1
+  Installed OpenBLAS32_jll ───────────────────────── v0.3.9+4
+  Installed StatsBase ────────────────────────────── v0.32.2
+  Installed Tables ───────────────────────────────── v1.2.2
+  Installed DataStructures ───────────────────────── v0.17.20
+  Installed FillArrays ───────────────────────────── v0.8.14
+  Installed Requires ─────────────────────────────── v1.1.2
+  Installed Calculus ─────────────────────────────── v0.5.1
+  Installed PowerModels ──────────────────────────── v0.17.3
+  Installed Libiconv_jll ─────────────────────────── v1.16.0+7
+  Installed QuadGK ───────────────────────────────── v2.4.1
+  Installed PositiveFactorizations ───────────────── v0.2.4
+  Installed MbedTLS ──────────────────────────────── v1.0.3
+  Installed EzXML ────────────────────────────────── v1.1.0
+  Installed DataAPI ──────────────────────────────── v1.4.0
+  Installed DiffRules ────────────────────────────── v1.0.2
+  Installed CommonSubexpressions ─────────────────── v0.3.0
+  Installed Parameters ───────────────────────────── v0.12.1
+  Installed DiffResults ──────────────────────────── v1.0.3
+  Installed Bzip2_jll ────────────────────────────── v1.0.6+5
+  Installed FileIO ───────────────────────────────── v1.4.5
+  Installed GaussianMixtures ─────────────────────── v0.3.2
+  Installed HTTP ─────────────────────────────────── v0.9.2
+  Installed Clustering ───────────────────────────── v0.13.5
+  Installed JLD2 ─────────────────────────────────── v0.1.14
+  Installed BenchmarkTools ───────────────────────── v0.5.0
+  Installed OrderedCollections ───────────────────── v1.3.2
+  Installed StaticArrays ─────────────────────────── v0.12.5
+  Installed PowerModelsDistribution ──────────────── v0.10.0
+  Installed Optim ────────────────────────────────── v1.2.2
+  Installed InvertedIndices ──────────────────────── v1.0.0
+  Installed XML2_jll ─────────────────────────────── v2.9.10+3
+  Installed Ipopt ────────────────────────────────── v0.6.3
+  Installed DataValueInterfaces ──────────────────── v1.0.0
+  Installed OpenBLAS_jll ─────────────────────────── v0.3.9+5
+  Installed CodecZlib ────────────────────────────── v0.7.0
+  Installed RecipesBase ──────────────────────────── v1.1.1
+  Installed Missings ─────────────────────────────── v0.4.4
+  Installed CSV ──────────────────────────────────── v0.6.2
+  Installed MathOptInterface ─────────────────────── v0.9.19
+  Installed MacroTools ───────────────────────────── v0.5.6
+  Installed PooledArrays ─────────────────────────── v0.5.3
+  Installed FilePathsBase ────────────────────────── v0.8.0
+  Installed NLsolve ──────────────────────────────── v4.5.1
+  Installed JSON ─────────────────────────────────── v0.21.1
+  Installed JLLWrappers ──────────────────────────── v1.2.0
+  Installed Ipopt_jll ────────────────────────────── v3.13.1+1
+  Installed ScikitLearnBase ──────────────────────── v0.5.0
+  Installed Distances ────────────────────────────── v0.8.2
+  Installed NaNMath ──────────────────────────────── v0.3.5
+  Installed Distributions ────────────────────────── v0.22.6
+  Installed FiniteDiff ───────────────────────────── v2.7.2
+  Installed Syslogs ──────────────────────────────── v0.3.0
+  Installed LineSearches ─────────────────────────── v7.1.1
+  Installed RDatasets ────────────────────────────── v0.6.10
+  Installed InfrastructureModels ─────────────────── v0.5.3
+  Installed ZipFile ──────────────────────────────── v0.9.3
+  Installed ArrayInterface ───────────────────────── v2.14.13
+  Installed StructTypes ──────────────────────────── v1.2.1
+  Installed PowerModelsDistributionStateEstimation ─ v0.2.3
+  Installed PDMats ───────────────────────────────── v0.9.12
+  Installed NearestNeighbors ─────────────────────── v0.4.4
+  Installed Arpack_jll ───────────────────────────── v3.5.0+3
+  Installed MutableArithmetics ───────────────────── v0.2.13
+  Installed StatsFuns ────────────────────────────── v0.9.6
+  Installed ForwardDiff ──────────────────────────── v0.10.14
+  Installed URIs ─────────────────────────────────── v1.1.0
+  Installed ExprTools ────────────────────────────── v0.1.3
+  Installed METIS_jll ────────────────────────────── v5.1.0+5
+  Installed IteratorInterfaceExtensions ──────────── v1.0.0
+  Installed SpecialFunctions ─────────────────────── v0.10.3
+  Installed UnPack ───────────────────────────────── v1.0.2
+  Installed SortingAlgorithms ────────────────────── v0.3.1
+  Installed CodecBzip2 ───────────────────────────── v0.7.2
+  Installed WeakRefStrings ───────────────────────── v0.6.2
+  Installed Arpack ───────────────────────────────── v0.4.0
+  Installed Compat ───────────────────────────────── v3.25.0
+  Installed NLSolversBase ────────────────────────── v7.7.1
+  Installed OpenSpecFun_jll ──────────────────────── v0.5.3+4
+  Installed BinaryProvider ───────────────────────── v0.5.10
+  Installed Parsers ──────────────────────────────── v1.0.15
+  Installed IniFile ──────────────────────────────── v0.5.0
+  Installed Artifacts ────────────────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [d0713e65] + PowerModelsDistributionStateEstimation v0.2.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [ae81ac8f] + ASL_jll v0.1.1+4
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [4fba245c] + ArrayInterface v2.14.13
+  [56f22d72] + Artifacts v1.3.0
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [b99e7846] + BinaryProvider v0.5.10
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [336ed68f] + CSV v0.6.2
+  [49dc2e85] + Calculus v0.5.1
+  [324d7699] + CategoricalArrays v0.8.3
+  [aaaa29a8] + Clustering v0.13.5
+  [523fee87] + CodecBzip2 v0.7.2
+  [944b1d66] + CodecZlib v0.7.0
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.21.8
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [b4f34e82] + Distances v0.8.2
+  [31c24e10] + Distributions v0.22.6
+  [e2ba6199] + ExprTools v0.1.3
+  [8f5d6c58] + EzXML v1.1.0
+  [5789e2e9] + FileIO v1.4.5
+  [48062228] + FilePathsBase v0.8.0
+  [1a297f60] + FillArrays v0.8.14
+  [6a86dc24] + FiniteDiff v2.7.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [cc18c42c] + GaussianMixtures v0.3.2
+  [cd3eb016] + HTTP v0.9.2
+  [2030c09a] + InfrastructureModels v0.5.3
+  [83e8ac13] + IniFile v0.5.0
+  [41ab1584] + InvertedIndices v1.0.0
+  [b6b21f68] + Ipopt v0.6.3
+  [9cc047cb] + Ipopt_jll v3.13.1+1
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [033835bb] + JLD2 v0.1.14
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [7d188eb4] + JSONSchema v0.3.3
+  [4076af6c] + JuMP v0.21.4
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [d3d80556] + LineSearches v7.1.1
+  [d00139f3] + METIS_jll v5.1.0+5
+  [d7ed1dd3] + MUMPS_seq_jll v5.3.5+0
+  [1914dd2f] + MacroTools v0.5.6
+  [b8f27783] + MathOptInterface v0.9.19
+  [fdba3010] + MathProgBase v0.7.8
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [f28f55f0] + Memento v1.1.2
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.7.1
+  [d8a4904e] + MutableArithmetics v0.2.13
+  [d41bc354] + NLSolversBase v7.7.1
+  [2774e3e8] + NLsolve v4.5.1
+  [77ba4419] + NaNMath v0.3.5
+  [b8a86587] + NearestNeighbors v0.4.4
+  [656ef2d0] + OpenBLAS32_jll v0.3.9+4
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [429524aa] + Optim v1.2.2
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [9b87118b] + PackageCompiler v1.2.5
+  [d96e819e] + Parameters v0.12.1
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [85a6dd25] + PositiveFactorizations v0.2.4
+  [c36e90e8] + PowerModels v0.17.3
+  [d7431456] + PowerModelsDistribution v0.10.0
+  [d0713e65] + PowerModelsDistributionStateEstimation v0.2.3
+  [1fd47b50] + QuadGK v2.4.1
+  [df47a6cb] + RData v0.7.3
+  [ce6b1742] + RDatasets v0.6.10
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [6e75b9c4] + ScikitLearnBase v0.5.0
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.10.3
+  [90137ffa] + StaticArrays v0.12.5
+  [2913bbd2] + StatsBase v0.32.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [856f2bd8] + StructTypes v1.2.1
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [f269a46b] + TimeZones v1.5.3
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [5c2747f8] + URIs v1.1.0
+  [3a884ed6] + UnPack v1.0.2
+  [ea10d353] + WeakRefStrings v0.6.2
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [a5390f91] + ZipFile v0.9.3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building TimeZones → `~/.julia/packages/TimeZones/K98G0/deps/build.log`
+   Building Ipopt ────→ `~/.julia/packages/Ipopt/bYzBL/deps/build.log`
+
+
+################################################################################
+# Compiling: 2021-01-11T16:31:43.314
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 241.770 MiB, compilation took 496 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T16:40:08.068
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/PowerModelsDistributionStateEstimation-kWsAISRj.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:40:09.678
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─────────── v0.3.4+0
+  Installed MbedTLS_jll ──────────────────────────── v2.16.8+1
+  Installed Zlib_jll ─────────────────────────────── v1.2.11+18
+  Installed JSONSchema ───────────────────────────── v0.3.3
+  Installed RData ────────────────────────────────── v0.7.3
+  Installed JuMP ─────────────────────────────────── v0.21.4
+  Installed TimeZones ────────────────────────────── v1.5.3
+  Installed Reexport ─────────────────────────────── v0.2.0
+  Installed Rmath_jll ────────────────────────────── v0.2.2+1
+  Installed Rmath ────────────────────────────────── v0.6.1
+  Installed MUMPS_seq_jll ────────────────────────── v5.3.5+0
+  Installed CommonSubexpressions ─────────────────── v0.3.0
+  Installed TableTraits ──────────────────────────── v1.0.0
+  Installed Memento ──────────────────────────────── v1.1.2
+  Installed ASL_jll ──────────────────────────────── v0.1.1+4
+  Installed Mocking ──────────────────────────────── v0.7.1
+  Installed OpenBLAS32_jll ───────────────────────── v0.3.9+4
+  Installed TranscodingStreams ───────────────────── v0.9.5
+  Installed MathProgBase ─────────────────────────── v0.7.8
+  Installed CategoricalArrays ────────────────────── v0.8.3
+  Installed DataFrames ───────────────────────────── v0.21.8
+  Installed StatsBase ────────────────────────────── v0.32.2
+  Installed DataStructures ───────────────────────── v0.17.20
+  Installed Tables ───────────────────────────────── v1.2.2
+  Installed Calculus ─────────────────────────────── v0.5.1
+  Installed Libiconv_jll ─────────────────────────── v1.16.0+7
+  Installed FillArrays ───────────────────────────── v0.8.14
+  Installed Requires ─────────────────────────────── v1.1.2
+  Installed PowerModels ──────────────────────────── v0.17.3
+  Installed QuadGK ───────────────────────────────── v2.4.1
+  Installed PositiveFactorizations ───────────────── v0.2.4
+  Installed DataAPI ──────────────────────────────── v1.4.0
+  Installed EzXML ────────────────────────────────── v1.1.0
+  Installed MbedTLS ──────────────────────────────── v1.0.3
+  Installed DiffRules ────────────────────────────── v1.0.2
+  Installed DiffResults ──────────────────────────── v1.0.3
+  Installed Parameters ───────────────────────────── v0.12.1
+  Installed FileIO ───────────────────────────────── v1.4.5
+  Installed Bzip2_jll ────────────────────────────── v1.0.6+5
+  Installed HTTP ─────────────────────────────────── v0.9.2
+  Installed GaussianMixtures ─────────────────────── v0.3.2
+  Installed BenchmarkTools ───────────────────────── v0.5.0
+  Installed JLD2 ─────────────────────────────────── v0.1.14
+  Installed OrderedCollections ───────────────────── v1.3.2
+  Installed Clustering ───────────────────────────── v0.13.5
+  Installed StaticArrays ─────────────────────────── v0.12.5
+  Installed PowerModelsDistribution ──────────────── v0.10.0
+  Installed InvertedIndices ──────────────────────── v1.0.0
+  Installed XML2_jll ─────────────────────────────── v2.9.10+3
+  Installed DataValueInterfaces ──────────────────── v1.0.0
+  Installed Ipopt ────────────────────────────────── v0.6.3
+  Installed OpenBLAS_jll ─────────────────────────── v0.3.9+5
+  Installed RecipesBase ──────────────────────────── v1.1.1
+  Installed CSV ──────────────────────────────────── v0.6.2
+  Installed CodecZlib ────────────────────────────── v0.7.0
+  Installed Optim ────────────────────────────────── v1.2.2
+  Installed MathOptInterface ─────────────────────── v0.9.19
+  Installed Missings ─────────────────────────────── v0.4.4
+  Installed MacroTools ───────────────────────────── v0.5.6
+  Installed FilePathsBase ────────────────────────── v0.8.0
+  Installed NLsolve ──────────────────────────────── v4.5.1
+  Installed PooledArrays ─────────────────────────── v0.5.3
+  Installed JSON ─────────────────────────────────── v0.21.1
+  Installed Ipopt_jll ────────────────────────────── v3.13.1+1
+  Installed NaNMath ──────────────────────────────── v0.3.5
+  Installed ScikitLearnBase ──────────────────────── v0.5.0
+  Installed Distances ────────────────────────────── v0.8.2
+  Installed FiniteDiff ───────────────────────────── v2.7.2
+  Installed Syslogs ──────────────────────────────── v0.3.0
+  Installed LineSearches ─────────────────────────── v7.1.1
+  Installed Distributions ────────────────────────── v0.22.6
+  Installed JLLWrappers ──────────────────────────── v1.2.0
+  Installed ZipFile ──────────────────────────────── v0.9.3
+  Installed ArrayInterface ───────────────────────── v2.14.13
+  Installed PDMats ───────────────────────────────── v0.9.12
+  Installed InfrastructureModels ─────────────────── v0.5.3
+  Installed StructTypes ──────────────────────────── v1.2.1
+  Installed RDatasets ────────────────────────────── v0.6.10
+  Installed Arpack_jll ───────────────────────────── v3.5.0+3
+  Installed NearestNeighbors ─────────────────────── v0.4.4
+  Installed MutableArithmetics ───────────────────── v0.2.13
+  Installed StatsFuns ────────────────────────────── v0.9.6
+  Installed ForwardDiff ──────────────────────────── v0.10.14
+  Installed URIs ─────────────────────────────────── v1.1.0
+  Installed ExprTools ────────────────────────────── v0.1.3
+  Installed IteratorInterfaceExtensions ──────────── v1.0.0
+  Installed METIS_jll ────────────────────────────── v5.1.0+5
+  Installed PowerModelsDistributionStateEstimation ─ v0.2.3
+  Installed SpecialFunctions ─────────────────────── v0.10.3
+  Installed UnPack ───────────────────────────────── v1.0.2
+  Installed SortingAlgorithms ────────────────────── v0.3.1
+  Installed WeakRefStrings ───────────────────────── v0.6.2
+  Installed CodecBzip2 ───────────────────────────── v0.7.2
+  Installed Arpack ───────────────────────────────── v0.4.0
+  Installed Compat ───────────────────────────────── v3.25.0
+  Installed NLSolversBase ────────────────────────── v7.7.1
+  Installed OpenSpecFun_jll ──────────────────────── v0.5.3+4
+  Installed BinaryProvider ───────────────────────── v0.5.10
+  Installed IniFile ──────────────────────────────── v0.5.0
+  Installed Artifacts ────────────────────────────── v1.3.0
+  Installed Parsers ──────────────────────────────── v1.0.15
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [d0713e65] + PowerModelsDistributionStateEstimation v0.2.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [ae81ac8f] + ASL_jll v0.1.1+4
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [4fba245c] + ArrayInterface v2.14.13
+  [56f22d72] + Artifacts v1.3.0
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [b99e7846] + BinaryProvider v0.5.10
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [336ed68f] + CSV v0.6.2
+  [49dc2e85] + Calculus v0.5.1
+  [324d7699] + CategoricalArrays v0.8.3
+  [aaaa29a8] + Clustering v0.13.5
+  [523fee87] + CodecBzip2 v0.7.2
+  [944b1d66] + CodecZlib v0.7.0
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.21.8
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [b4f34e82] + Distances v0.8.2
+  [31c24e10] + Distributions v0.22.6
+  [e2ba6199] + ExprTools v0.1.3
+  [8f5d6c58] + EzXML v1.1.0
+  [5789e2e9] + FileIO v1.4.5
+  [48062228] + FilePathsBase v0.8.0
+  [1a297f60] + FillArrays v0.8.14
+  [6a86dc24] + FiniteDiff v2.7.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [cc18c42c] + GaussianMixtures v0.3.2
+  [cd3eb016] + HTTP v0.9.2
+  [2030c09a] + InfrastructureModels v0.5.3
+  [83e8ac13] + IniFile v0.5.0
+  [41ab1584] + InvertedIndices v1.0.0
+  [b6b21f68] + Ipopt v0.6.3
+  [9cc047cb] + Ipopt_jll v3.13.1+1
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [033835bb] + JLD2 v0.1.14
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [7d188eb4] + JSONSchema v0.3.3
+  [4076af6c] + JuMP v0.21.4
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [d3d80556] + LineSearches v7.1.1
+  [d00139f3] + METIS_jll v5.1.0+5
+  [d7ed1dd3] + MUMPS_seq_jll v5.3.5+0
+  [1914dd2f] + MacroTools v0.5.6
+  [b8f27783] + MathOptInterface v0.9.19
+  [fdba3010] + MathProgBase v0.7.8
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [f28f55f0] + Memento v1.1.2
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.7.1
+  [d8a4904e] + MutableArithmetics v0.2.13
+  [d41bc354] + NLSolversBase v7.7.1
+  [2774e3e8] + NLsolve v4.5.1
+  [77ba4419] + NaNMath v0.3.5
+  [b8a86587] + NearestNeighbors v0.4.4
+  [656ef2d0] + OpenBLAS32_jll v0.3.9+4
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [429524aa] + Optim v1.2.2
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [d96e819e] + Parameters v0.12.1
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [85a6dd25] + PositiveFactorizations v0.2.4
+  [c36e90e8] + PowerModels v0.17.3
+  [d7431456] + PowerModelsDistribution v0.10.0
+  [d0713e65] + PowerModelsDistributionStateEstimation v0.2.3
+  [1fd47b50] + QuadGK v2.4.1
+  [df47a6cb] + RData v0.7.3
+  [ce6b1742] + RDatasets v0.6.10
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [6e75b9c4] + ScikitLearnBase v0.5.0
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.10.3
+  [90137ffa] + StaticArrays v0.12.5
+  [2913bbd2] + StatsBase v0.32.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [856f2bd8] + StructTypes v1.2.1
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [f269a46b] + TimeZones v1.5.3
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [5c2747f8] + URIs v1.1.0
+  [3a884ed6] + UnPack v1.0.2
+  [ea10d353] + WeakRefStrings v0.6.2
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [a5390f91] + ZipFile v0.9.3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building TimeZones → `~/.julia/packages/TimeZones/K98G0/deps/build.log`
+┌ Error: Error building `TimeZones`: 
+│ ERROR: LoadError: IOError: mkdir: permission denied (EACCES)
+│ Stacktrace:
+│  [1] uv_error at ./libuv.jl:97 [inlined]
+│  [2] mkdir(::String; mode::UInt16) at ./file.jl:177
+│  [3] mkpath(::String; mode::UInt16) at ./file.jl:227
+│  [4] mkpath(::String; mode::UInt16) at ./file.jl:225 (repeats 6 times)
+│  [5] mkpath at ./file.jl:222 [inlined]
+│  [6] build(::String) at /home/pkgeval/.julia/packages/TimeZones/K98G0/src/tzdata/build.jl:105
+│  [7] build(::String; force::Bool) at /home/pkgeval/.julia/packages/TimeZones/K98G0/src/build.jl:11
+│  [8] build at /home/pkgeval/.julia/packages/TimeZones/K98G0/src/build.jl:11 [inlined] (repeats 2 times)
+│  [9] top-level scope at /home/user/.julia/packages/TimeZones/K98G0/deps/build.jl:3
+│  [10] include(::String) at ./client.jl:457
+│  [11] top-level scope at none:5
+│ in expression starting at /home/user/.julia/packages/TimeZones/K98G0/deps/build.jl:3
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+   Building Ipopt ────→ `~/.julia/packages/Ipopt/bYzBL/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T16:40:27.485
+#
+
+    Testing PowerModelsDistributionStateEstimation
+Status `/tmp/jl_2cIRd9/Project.toml`
+  [336ed68f] CSV v0.6.2
+  [a93c6f00] DataFrames v0.21.8
+  [31c24e10] Distributions v0.22.6
+  [cc18c42c] GaussianMixtures v0.3.2
+  [2030c09a] InfrastructureModels v0.5.3
+  [b6b21f68] Ipopt v0.6.3
+  [682c06a0] JSON v0.21.1
+  [4076af6c] JuMP v0.21.4
+  [f28f55f0] Memento v1.1.2
+  [429524aa] Optim v1.2.2
+  [c36e90e8] PowerModels v0.17.3
+  [d7431456] PowerModelsDistribution v0.10.0
+  [d0713e65] PowerModelsDistributionStateEstimation v0.2.3
+  [1bc83da4] SafeTestsets v0.0.1
+  [276daf66] SpecialFunctions v0.10.3
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_2cIRd9/Manifest.toml`
+  [ae81ac8f] ASL_jll v0.1.1+4
+  [7d9fca2a] Arpack v0.4.0
+  [68821587] Arpack_jll v3.5.0+3
+  [4fba245c] ArrayInterface v2.14.13
+  [56f22d72] Artifacts v1.3.0
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [b99e7846] BinaryProvider v0.5.10
+  [6e34b625] Bzip2_jll v1.0.6+5
+  [336ed68f] CSV v0.6.2
+  [49dc2e85] Calculus v0.5.1
+  [324d7699] CategoricalArrays v0.8.3
+  [aaaa29a8] Clustering v0.13.5
+  [523fee87] CodecBzip2 v0.7.2
+  [944b1d66] CodecZlib v0.7.0
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] DataAPI v1.4.0
+  [a93c6f00] DataFrames v0.21.8
+  [864edb3b] DataStructures v0.17.20
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [b4f34e82] Distances v0.8.2
+  [31c24e10] Distributions v0.22.6
+  [e2ba6199] ExprTools v0.1.3
+  [8f5d6c58] EzXML v1.1.0
+  [5789e2e9] FileIO v1.4.5
+  [48062228] FilePathsBase v0.8.0
+  [1a297f60] FillArrays v0.8.14
+  [6a86dc24] FiniteDiff v2.7.2
+  [f6369f11] ForwardDiff v0.10.14
+  [cc18c42c] GaussianMixtures v0.3.2
+  [cd3eb016] HTTP v0.9.2
+  [2030c09a] InfrastructureModels v0.5.3
+  [83e8ac13] IniFile v0.5.0
+  [41ab1584] InvertedIndices v1.0.0
+  [b6b21f68] Ipopt v0.6.3
+  [9cc047cb] Ipopt_jll v3.13.1+1
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [033835bb] JLD2 v0.1.14
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [7d188eb4] JSONSchema v0.3.3
+  [4076af6c] JuMP v0.21.4
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [d3d80556] LineSearches v7.1.1
+  [d00139f3] METIS_jll v5.1.0+5
+  [d7ed1dd3] MUMPS_seq_jll v5.3.5+0
+  [1914dd2f] MacroTools v0.5.6
+  [b8f27783] MathOptInterface v0.9.19
+  [fdba3010] MathProgBase v0.7.8
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [f28f55f0] Memento v1.1.2
+  [e1d29d7a] Missings v0.4.4
+  [78c3b35d] Mocking v0.7.1
+  [d8a4904e] MutableArithmetics v0.2.13
+  [d41bc354] NLSolversBase v7.7.1
+  [2774e3e8] NLsolve v4.5.1
+  [77ba4419] NaNMath v0.3.5
+  [b8a86587] NearestNeighbors v0.4.4
+  [656ef2d0] OpenBLAS32_jll v0.3.9+4
+  [4536629a] OpenBLAS_jll v0.3.9+5
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [429524aa] Optim v1.2.2
+  [bac558e1] OrderedCollections v1.3.2
+  [90014a1f] PDMats v0.9.12
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.15
+  [2dfb63ee] PooledArrays v0.5.3
+  [85a6dd25] PositiveFactorizations v0.2.4
+  [c36e90e8] PowerModels v0.17.3
+  [d7431456] PowerModelsDistribution v0.10.0
+  [d0713e65] PowerModelsDistributionStateEstimation v0.2.3
+  [1fd47b50] QuadGK v2.4.1
+  [df47a6cb] RData v0.7.3
+  [ce6b1742] RDatasets v0.6.10
+  [3cdcf5f2] RecipesBase v1.1.1
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [1bc83da4] SafeTestsets v0.0.1
+  [6e75b9c4] ScikitLearnBase v0.5.0
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v0.10.3
+  [90137ffa] StaticArrays v0.12.5
+  [2913bbd2] StatsBase v0.32.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [856f2bd8] StructTypes v1.2.1
+  [cea106d9] Syslogs v0.3.0
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [f269a46b] TimeZones v1.5.3
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [5c2747f8] URIs v1.1.0
+  [3a884ed6] UnPack v1.0.2
+  [ea10d353] WeakRefStrings v0.6.2
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [a5390f91] ZipFile v0.9.3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+test different estimation criteria: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/estimation_criteria.jl:3
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/extra/networks/case3_unbalanced.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Symbol,DataModel,Tuple{Symbol},NamedTuple{(:data_model,),Tuple{DataModel}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] macro expansion at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/estimation_criteria.jl:6 [inlined]
+   [10] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/estimation_criteria.jl:5
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:47
+   [14] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [15] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [16] include(::String) at ./client.jl:457
+   [17] top-level scope at none:6
+   [18] eval(::Module, ::Any) at ./boot.jl:331
+   [19] exec_options(::Base.JLOptions) at ./client.jl:272
+   [20] _start() at ./client.jl:506
+  
+ACP-rwlav: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:6
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [10] macro expansion at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:12 [inlined]
+   [11] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [12] macro expansion at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:8 [inlined]
+   [13] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:4
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:48
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+ACP-WLS: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:47
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [10] macro expansion at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:52 [inlined]
+   [11] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [12] macro expansion at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:49 [inlined]
+   [13] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:4
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:48
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+ACR-rwlav: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:87
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [10] macro expansion at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:92 [inlined]
+   [11] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [12] macro expansion at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:89 [inlined]
+   [13] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:4
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:48
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+ACR-WLS: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:128
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [10] macro expansion at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:134 [inlined]
+   [11] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [12] macro expansion at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:130 [inlined]
+   [13] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:4
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:48
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+IVR-rwlav: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:169
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [10] macro expansion at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:175 [inlined]
+   [11] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [12] macro expansion at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:171 [inlined]
+   [13] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:4
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:48
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+IVR-WLS: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:210
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [10] macro expansion at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:216 [inlined]
+   [11] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [12] macro expansion at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:212 [inlined]
+   [13] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/mixed_measurements.jl:4
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:48
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+LinDist3Flow - rwlav: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/non_exact_forms.jl:11
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file(::String) at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64
+   [10] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/non_exact_forms.jl:15
+   [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [12] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/non_exact_forms.jl:12
+   [13] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/non_exact_forms.jl:9
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:49
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+LinDist3Flow - wls: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/non_exact_forms.jl:49
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file(::String) at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64
+   [10] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/non_exact_forms.jl:53
+   [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [12] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/non_exact_forms.jl:50
+   [13] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/non_exact_forms.jl:9
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:49
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+LinDist3Flow - rwlav: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/non_exact_forms.jl:86
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file(::String) at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64
+   [10] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/non_exact_forms.jl:90
+   [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [12] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/non_exact_forms.jl:87
+   [13] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/non_exact_forms.jl:9
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:49
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+ACP-rwlav: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:7
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file(::String) at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64
+   [10] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:13
+   [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [12] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:9
+   [13] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:5
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:50
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+ACP-WLS: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:46
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file(::String) at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64
+   [10] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:52
+   [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [12] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:48
+   [13] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:5
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:50
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+rACP-rwlav: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:85
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file(::String) at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64
+   [10] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:91
+   [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [12] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:87
+   [13] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:5
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:50
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+rACP-WLS: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:124
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file(::String) at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64
+   [10] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:130
+   [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [12] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:126
+   [13] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:5
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:50
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+ACR-rwlav: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:163
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file(::String) at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64
+   [10] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:169
+   [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [12] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:165
+   [13] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:5
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:50
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+ACR-WLS: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:202
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file(::String) at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64
+   [10] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:208
+   [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [12] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:204
+   [13] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:5
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:50
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+rACR-rwlav: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:241
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file(::String) at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64
+   [10] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:247
+   [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [12] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:243
+   [13] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:5
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:50
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+rACR-WLS: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:280
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file(::String) at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64
+   [10] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:286
+   [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [12] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:282
+   [13] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:5
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:50
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+IVR-rwlav: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:319
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file(::String) at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64
+   [10] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:325
+   [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [12] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:321
+   [13] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:5
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:50
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+IVR-WLS: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:358
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file(::String) at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64
+   [10] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:364
+   [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [12] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:360
+   [13] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:5
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:50
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+rIVR-rwlav: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:397
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file(::String) at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64
+   [10] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:403
+   [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [12] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:399
+   [13] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:5
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:50
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+rIVR-WLS: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:436
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file(::String) at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64
+   [10] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:442
+   [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [12] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:438
+   [13] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/power_flow.jl:5
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:50
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at none:6
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+Add pseudo + measurements, run mixed SE: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/pseudo_measurements.jl:1
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/enwl/networks/network_4/Feeder_2/Master.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] parse_file at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [10] macro expansion at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/pseudo_measurements.jl:8 [inlined]
+   [11] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [12] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/pseudo_measurements.jl:4
+   [13] include(::String) at ./client.jl:457
+   [14] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:51
+   [15] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [16] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [17] include(::String) at ./client.jl:457
+   [18] top-level scope at none:6
+   [19] eval(::Module, ::Any) at ./boot.jl:331
+   [20] exec_options(::Base.JLOptions) at ./client.jl:272
+   [21] _start() at ./client.jl:506
+  
+PowerModelsDistributionStateEstimation: Error During Test at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:44
+  Got exception outside of a @test
+  LoadError: SystemError: opening file "/home/pkgeval/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/data/extra/networks/case3_unbalanced.dss": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::PowerModelsDistribution.var"#1457#1458"{Base.Iterators.Pairs{Symbol,DataModel,Tuple{Symbol},NamedTuple{(:data_model,),Tuple{DataModel}}},String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] #parse_file#1456 at /home/pkgeval/.julia/packages/PowerModelsDistribution/jDAGl/src/io/common.jl:64 [inlined]
+   [9] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/utils_and_start_val.jl:4
+   [10] include(::String) at ./client.jl:457
+   [11] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:52
+   [12] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [13] top-level scope at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:46
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/utils_and_start_val.jl:4
+  
+Test Summary:                             | Pass  Error  Total
+PowerModelsDistributionStateEstimation    |   21     24     45
+  Distributions                           |   21            21
+  test different estimation criteria      |           1      1
+  Mixed measurements (vs pf)              |           6      6
+    ACP-rwlav                             |           1      1
+    ACP-WLS                               |           1      1
+    ACR-rwlav                             |           1      1
+    ACR-WLS                               |           1      1
+    IVR-rwlav                             |           1      1
+    IVR-WLS                               |           1      1
+  test SDP and LinDist3Flow               |           3      3
+    LinDist3Flow - rwlav                  |           1      1
+    LinDist3Flow - wls                    |           1      1
+    LinDist3Flow - rwlav                  |           1      1
+  Benchmark vs power flow                 |          12     12
+    ACP-rwlav                             |           1      1
+    ACP-WLS                               |           1      1
+    rACP-rwlav                            |           1      1
+    rACP-WLS                              |           1      1
+    ACR-rwlav                             |           1      1
+    ACR-WLS                               |           1      1
+    rACR-rwlav                            |           1      1
+    rACR-WLS                              |           1      1
+    IVR-rwlav                             |           1      1
+    IVR-WLS                               |           1      1
+    rIVR-rwlav                            |           1      1
+    rIVR-WLS                              |           1      1
+  Add pseudo + measurements, run mixed SE |           1      1
+ERROR: LoadError: Some tests did not pass: 21 passed, 0 failed, 24 errored, 0 broken.
+in expression starting at /home/user/.julia/packages/PowerModelsDistributionStateEstimation/6hZ1Z/test/runtests.jl:44
+
+PkgEval failed: Package PowerModelsDistributionStateEstimation errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T16:41:28.392
+CPU usage: 81.62s (74.55s user, 7.22s kernel)
+
+Network usage:
+- eth0: 45.950 MiB received, 825.109 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":27,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":13,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":27,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":27,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":13,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":27,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":159744,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":102400,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":159744,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":159744,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":102400,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":159744,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":552439808,"max_usage":1684897792,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":264339456,"inactive_file":135168,"inactive_anon":240734208,"total_pgfault":1854963,"total_cache":246980608,"total_rss_huge":0,"total_active_anon":269930496,"total_pgmajfault":0,"pgpgin":1008117,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":883285,"hierarchical_memsw_limit":0,"cache":246980608,"active_file":540672,"pgfault":1854963,"total_mapped_file":0,"total_pgpgout":883285,"total_writeback":0,"rss":264339456,"unevictable":0,"total_inactive_anon":240734208,"total_pgpgin":1008117,"active_anon":269930496,"total_active_file":540672},"limit":540965302272},"name":"/PowerModelsDistributionStateEstimation-DeM3dJdu","networks":{"eth0":{"rx_bytes":48182423,"rx_packets":16250,"tx_packets":8906,"tx_bytes":844912,"tx_dropped":0,"rx_dropped":3,"tx_errors":0,"rx_errors":0}},"id":"b329999d346fee1e4f3f9b195f19481e5e87e75d3c7b7f712ea15229632853c0","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3757105544522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":74550000000,"usage_in_kernelmode":7220000000,"total_usage":81623127783,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,81623127783,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T16:41:28.394909986Z"}

@@ -1,0 +1,162 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:55:08.2
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:55:09.961
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ResourceBundles ─ v0.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a9a2f26c] + ResourceBundles v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [a9a2f26c] + ResourceBundles v0.1.0
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T15:55:13.302
+#
+
+    Testing ResourceBundles
+Status `/tmp/jl_dhqk1P/Project.toml`
+  [a9a2f26c] ResourceBundles v0.1.0
+  [56ddb016] Logging
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Status `/tmp/jl_dhqk1P/Manifest.toml`
+  [a9a2f26c] ResourceBundles v0.1.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+types         |   14     14
+Test Summary: | Pass  Total
+locale        |   92     92
+Test Summary:   | Pass  Total
+resource_bundle |  187    187
+Test Summary: | Pass  Total
+string        |   47     47
+libc: Test Failed at /home/pkgeval/.julia/packages/ResourceBundles/aeZpR/test/libc.jl:14
+  Expression: newlocale_c(LC._MASK_ALL, "en_US.utf8", P0) != P0
+   Evaluated: Ptr{Nothing} @0x0000000000000000 != Ptr{Nothing} @0x0000000000000000
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/ResourceBundles/aeZpR/test/libc.jl:14
+ [2] include(::String) at ./client.jl:457
+ [3] top-level scope at /home/pkgeval/.julia/packages/ResourceBundles/aeZpR/test/runtests.jl:32
+ [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.julia/packages/ResourceBundles/aeZpR/test/runtests.jl:32
+
+signal (11): Segmentation fault
+in expression starting at /home/pkgeval/.julia/packages/ResourceBundles/aeZpR/test/libc.jl:11
+duplocale at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+duplocale at /home/pkgeval/.julia/packages/ResourceBundles/aeZpR/src/libc.jl:9 [inlined]
+top-level scope at /home/pkgeval/.julia/packages/ResourceBundles/aeZpR/test/libc.jl:18
+jl_toplevel_eval_flex at /workspace/srcdir/src/toplevel.c:834
+jl_parse_eval_all at /workspace/srcdir/src/ast.c:913
+jl_load_rewrite at /workspace/srcdir/src/toplevel.c:914
+include at ./client.jl:457
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_call at /workspace/srcdir/src/interpreter.c:117
+eval_value at /workspace/srcdir/src/interpreter.c:206
+eval_stmt_value at /workspace/srcdir/src/interpreter.c:157 [inlined]
+eval_body at /workspace/srcdir/src/interpreter.c:566
+eval_body at /workspace/srcdir/src/interpreter.c:492
+eval_body at /workspace/srcdir/src/interpreter.c:492
+jl_interpret_toplevel_thunk at /workspace/srcdir/src/interpreter.c:660
+jl_toplevel_eval_flex at /workspace/srcdir/src/toplevel.c:840
+jl_parse_eval_all at /workspace/srcdir/src/ast.c:913
+jl_load_rewrite at /workspace/srcdir/src/toplevel.c:914
+include at ./client.jl:457
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_call at /workspace/srcdir/src/interpreter.c:117
+eval_value at /workspace/srcdir/src/interpreter.c:206
+eval_stmt_value at /workspace/srcdir/src/interpreter.c:157 [inlined]
+eval_body at /workspace/srcdir/src/interpreter.c:566
+jl_interpret_toplevel_thunk at /workspace/srcdir/src/interpreter.c:660
+jl_toplevel_eval_flex at /workspace/srcdir/src/toplevel.c:840
+jl_toplevel_eval_flex at /workspace/srcdir/src/toplevel.c:790
+jl_toplevel_eval_in at /workspace/srcdir/src/toplevel.c:883
+eval at ./boot.jl:331
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+exec_options at ./client.jl:272
+_start at ./client.jl:506
+jfptr__start_43715.clone_1 at /opt/julia/lib/julia/sys.so (unknown line)
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/ui/../src/julia.h:1690 [inlined]
+true_main at /workspace/srcdir/ui/repl.c:106
+main at /workspace/srcdir/ui/repl.c:227
+__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x4015e4)
+Allocations: 20733499 (Pool: 20727187; Big: 6312); GC: 24
+
+PkgEval failed: Package ResourceBundles errored during testing (received signal: 11)
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:55:30.231
+CPU usage: 22.10s (19.69s user, 2.44s kernel)
+
+Network usage:
+- eth0: 2.626 MiB received, 29.357 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":3,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":22,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":27,"op":"Total","minor":0},{"major":253,"value":3,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":22,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":27,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":65536,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":172032,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":192512,"op":"Total","minor":0},{"major":253,"value":65536,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":172032,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":192512,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":296443904,"max_usage":602177536,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":186707968,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":448767,"total_cache":79974400,"total_rss_huge":0,"total_active_anon":187883520,"total_pgmajfault":0,"pgpgin":224994,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":159856,"hierarchical_memsw_limit":0,"cache":79974400,"active_file":135168,"pgfault":448767,"total_mapped_file":0,"total_pgpgout":159856,"total_writeback":0,"rss":186707968,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":224994,"active_anon":187883520,"total_active_file":135168},"limit":540965302272},"name":"/ResourceBundles-rDPgf9BK","networks":{"eth0":{"rx_bytes":2753093,"rx_packets":318,"tx_packets":312,"tx_bytes":30062,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"34e1dae37fd3b52f08c17f60143b318bac780987334f1369850955cda248cbfe","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3404376864522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":19690000000,"usage_in_kernelmode":2440000000,"total_usage":22101556463,"percpu_usage":[0,0,0,0,0,0,0,0,22101556463,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:55:30.234339054Z"}

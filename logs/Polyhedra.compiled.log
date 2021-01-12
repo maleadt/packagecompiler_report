@@ -1,0 +1,960 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T17:17:13.315
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T17:17:15.057
+#
+
+ Installing known registries into `~/.julia`
+###############################################                           65.5%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed MbedTLS_jll ────────────────── v2.16.8+1
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed JSONSchema ─────────────────── v0.3.3
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed Polyhedra ──────────────────── v0.6.12
+  Installed PackageCompiler ────────────── v1.2.5
+  Installed JuMP ───────────────────────── v0.21.5
+  Installed GeometryBasics ─────────────── v0.3.5
+  Installed TableTraits ────────────────── v1.0.0
+  Installed Calculus ───────────────────── v0.5.1
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed TranscodingStreams ─────────── v0.9.5
+  Installed MbedTLS ────────────────────── v1.0.3
+  Installed Tables ─────────────────────── v1.2.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed Bzip2_jll ──────────────────── v1.0.6+5
+  Installed DiffResults ────────────────── v1.0.3
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed IterTools ──────────────────── v1.3.0
+  Installed BenchmarkTools ─────────────── v0.5.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed HTTP ───────────────────────── v0.9.2
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed MathOptInterface ───────────── v0.9.19
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed CodecZlib ──────────────────── v0.7.0
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed StructArrays ───────────────── v0.4.4
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed ZipFile ────────────────────── v0.9.3
+  Installed JSON ───────────────────────── v0.21.1
+  Installed MutableArithmetics ─────────── v0.2.13
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed URIs ───────────────────────── v1.1.0
+  Installed Adapt ──────────────────────── v2.4.0
+  Installed EarCut_jll ─────────────────── v2.1.5+1
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed CodecBzip2 ─────────────────── v0.7.2
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed Compat ─────────────────────── v3.25.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Parsers ────────────────────── v1.0.15
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed IniFile ────────────────────── v0.5.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [67491407] + Polyhedra v0.6.12
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [79e6a3ab] + Adapt v2.4.0
+  [56f22d72] + Artifacts v1.3.0
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [49dc2e85] + Calculus v0.5.1
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [523fee87] + CodecBzip2 v0.7.2
+  [944b1d66] + CodecZlib v0.7.0
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [5ae413db] + EarCut_jll v2.1.5+1
+  [f6369f11] + ForwardDiff v0.10.14
+  [5c1252a2] + GeometryBasics v0.3.5
+  [cd3eb016] + HTTP v0.9.2
+  [83e8ac13] + IniFile v0.5.0
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [7d188eb4] + JSONSchema v0.3.3
+  [4076af6c] + JuMP v0.21.5
+  [1914dd2f] + MacroTools v0.5.6
+  [b8f27783] + MathOptInterface v0.9.19
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [d8a4904e] + MutableArithmetics v0.2.13
+  [77ba4419] + NaNMath v0.3.5
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [9b87118b] + PackageCompiler v1.2.5
+  [69de0a69] + Parsers v1.0.15
+  [67491407] + Polyhedra v0.6.12
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [09ab397b] + StructArrays v0.4.4
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [5c2747f8] + URIs v1.1.0
+  [a5390f91] + ZipFile v0.9.3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T17:17:23.203
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 202.054 MiB, compilation took 355 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T17:23:26.648
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/Polyhedra-9NTd1X1p.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:23:28.367
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed MbedTLS_jll ────────────────── v2.16.8+1
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed JSONSchema ─────────────────── v0.3.3
+  Installed Polyhedra ──────────────────── v0.6.12
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed TableTraits ────────────────── v1.0.0
+  Installed GeometryBasics ─────────────── v0.3.5
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed TranscodingStreams ─────────── v0.9.5
+  Installed JuMP ───────────────────────── v0.21.5
+  Installed Tables ─────────────────────── v1.2.2
+  Installed Calculus ───────────────────── v0.5.1
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed MbedTLS ────────────────────── v1.0.3
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Bzip2_jll ──────────────────── v1.0.6+5
+  Installed DataStructures ─────────────── v0.18.8
+  Installed HTTP ───────────────────────── v0.9.2
+  Installed IterTools ──────────────────── v1.3.0
+  Installed BenchmarkTools ─────────────── v0.5.0
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed CodecZlib ──────────────────── v0.7.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed MathOptInterface ───────────── v0.9.19
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed StructArrays ───────────────── v0.4.4
+  Installed ZipFile ────────────────────── v0.9.3
+  Installed JSON ───────────────────────── v0.21.1
+  Installed MutableArithmetics ─────────── v0.2.13
+  Installed Adapt ──────────────────────── v2.4.0
+  Installed URIs ───────────────────────── v1.1.0
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed EarCut_jll ─────────────────── v2.1.5+1
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed CodecBzip2 ─────────────────── v0.7.2
+  Installed Compat ─────────────────────── v3.25.0
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Parsers ────────────────────── v1.0.15
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed IniFile ────────────────────── v0.5.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [67491407] + Polyhedra v0.6.12
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [79e6a3ab] + Adapt v2.4.0
+  [56f22d72] + Artifacts v1.3.0
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [49dc2e85] + Calculus v0.5.1
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [523fee87] + CodecBzip2 v0.7.2
+  [944b1d66] + CodecZlib v0.7.0
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [5ae413db] + EarCut_jll v2.1.5+1
+  [f6369f11] + ForwardDiff v0.10.14
+  [5c1252a2] + GeometryBasics v0.3.5
+  [cd3eb016] + HTTP v0.9.2
+  [83e8ac13] + IniFile v0.5.0
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [7d188eb4] + JSONSchema v0.3.3
+  [4076af6c] + JuMP v0.21.5
+  [1914dd2f] + MacroTools v0.5.6
+  [b8f27783] + MathOptInterface v0.9.19
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [d8a4904e] + MutableArithmetics v0.2.13
+  [77ba4419] + NaNMath v0.3.5
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [69de0a69] + Parsers v1.0.15
+  [67491407] + Polyhedra v0.6.12
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [09ab397b] + StructArrays v0.4.4
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [5c2747f8] + URIs v1.1.0
+  [a5390f91] + ZipFile v0.9.3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T17:23:36.047
+#
+
+    Testing Polyhedra
+Status `/tmp/jl_g8sZXa/Project.toml`
+  [861a8166] Combinatorics v1.0.2
+  [60bf3e95] GLPK v0.14.5
+  [5c1252a2] GeometryBasics v0.3.5
+  [4076af6c] JuMP v0.21.5
+  [98b081ad] Literate v2.7.0
+  [d8a4904e] MutableArithmetics v0.2.13
+  [67491407] Polyhedra v0.6.12
+  [3cdcf5f2] RecipesBase v1.1.1
+  [90137ffa] StaticArrays v1.0.1
+  [37e2e46d] LinearAlgebra
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_g8sZXa/Manifest.toml`
+  [79e6a3ab] Adapt v2.4.0
+  [56f22d72] Artifacts v1.3.0
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [b99e7846] BinaryProvider v0.5.10
+  [6e34b625] Bzip2_jll v1.0.6+5
+  [fa961155] CEnum v0.4.1
+  [49dc2e85] Calculus v0.5.1
+  [d360d2e6] ChainRulesCore v0.9.24
+  [523fee87] CodecBzip2 v0.7.2
+  [944b1d66] CodecZlib v0.7.0
+  [861a8166] Combinatorics v1.0.2
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [5ae413db] EarCut_jll v2.1.5+1
+  [f6369f11] ForwardDiff v0.10.14
+  [60bf3e95] GLPK v0.14.5
+  [e8aa6df9] GLPK_jll v4.64.0+0
+  [781609d7] GMP_jll v6.1.2+6
+  [5c1252a2] GeometryBasics v0.3.5
+  [cd3eb016] HTTP v0.9.2
+  [83e8ac13] IniFile v0.5.0
+  [c8e1da08] IterTools v1.3.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [7d188eb4] JSONSchema v0.3.3
+  [4076af6c] JuMP v0.21.5
+  [98b081ad] Literate v2.7.0
+  [1914dd2f] MacroTools v0.5.6
+  [b8f27783] MathOptInterface v0.9.19
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [46d2c3a1] MuladdMacro v0.2.2
+  [d8a4904e] MutableArithmetics v0.2.13
+  [77ba4419] NaNMath v0.3.5
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [69de0a69] Parsers v1.0.15
+  [67491407] Polyhedra v0.6.12
+  [3cdcf5f2] RecipesBase v1.1.1
+  [276daf66] SpecialFunctions v1.2.1
+  [90137ffa] StaticArrays v1.0.1
+  [09ab397b] StructArrays v0.4.4
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [5c2747f8] URIs v1.1.0
+  [a5390f91] ZipFile v0.9.3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+Element       |   33     33
+Test Summary: | Pass  Total
+Comparison    |    2      2
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+The set `q` of Chebyshev centers has dimension `2` which is nonzero but lower than the previous dimension `3`: we now compute the set of Chebyshev center of `q`.
+glp_simplex: unable to recover undefined or non-optimal solution
+The set `q` of Chebyshev centers has dimension `1` which is nonzero but lower than the previous dimension `2`: we now compute the set of Chebyshev center of `q`.
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+The set `q` of Chebyshev centers has dimension `2` which is nonzero but lower than the previous dimension `3`: we now compute the set of Chebyshev center of `q`.
+glp_simplex: unable to recover undefined or non-optimal solution
+The set `q` of Chebyshev centers has dimension `1` which is nonzero but lower than the previous dimension `2`: we now compute the set of Chebyshev center of `q`.
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+The set `q` of Chebyshev centers has dimension `2` which is nonzero but lower than the previous dimension `3`: we now compute the set of Chebyshev center of `q`.
+glp_simplex: unable to recover undefined or non-optimal solution
+The set `q` of Chebyshev centers has dimension `1` which is nonzero but lower than the previous dimension `2`: we now compute the set of Chebyshev center of `q`.
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+The set `q` of Chebyshev centers has dimension `2` which is nonzero but lower than the previous dimension `3`: we now compute the set of Chebyshev center of `q`.
+glp_simplex: unable to recover undefined or non-optimal solution
+The set `q` of Chebyshev centers has dimension `1` which is nonzero but lower than the previous dimension `2`: we now compute the set of Chebyshev center of `q`.
+Test Summary:        | Pass  Total
+Representation tests |  784    784
+Test Summary:  | Pass  Total
+Hypercube name |    4      4
+Test Summary: | Pass  Total
+Dual Type     |    5      5
+Test Summary:         | Pass  Total
+Unimplemented methods |    9      9
+Test Summary:                                        | Pass  Total
+Polyhedra.DefaultPolyhedron constructor with nothing |    6      6
+Feasibility
+Subject to
+ λ[3] + λ[2] + λ[1] = 1.0
+ -λ[2] + 2 λ[1] = 0.0
+ -2 λ[3] + λ[1] = 0.0
+ λ[1] ≥ 0.0
+ λ[2] ≥ 0.0
+ λ[3] ≥ 0.0
+ -2 λ[3] - λ[2] + 3 λ[1] ≤ 0.0
+
+[ Info: 1th element is linear as 0.2857142857142857 is positive.
+[ Info: 2th element is linear as 0.5714285714285714 is positive.
+[ Info: 3th element is linear as 0.14285714285714285 is positive.
+Feasibility
+Subject to
+ λ[3] + λ[2] + λ[1] = 1.0
+ -λ[3] + λ[1] = 0.0
+ -λ[3] + λ[2] = 0.0
+ λ[1] ≥ 0.0
+ λ[2] ≥ 0.0
+ λ[3] ≥ 0.0
+ -2 λ[3] + λ[2] + λ[1] ≤ 0.0
+
+[ Info: 1th element is linear as 0.3333333333333333 is positive.
+[ Info: 2th element is linear as 0.3333333333333333 is positive.
+[ Info: 3th element is linear as 0.3333333333333333 is positive.
+Feasibility
+Subject to
+ λ[2] + λ[1] = 1.0
+ -λ[2] + λ[1] = 0.0
+ -λ[2] + λ[1] = 0.0
+ λ[1] ≥ 0.0
+ λ[2] ≥ 0.0
+ 0 ≤ 0.0
+
+[ Info: 1th element is linear as 0.5 is positive.
+[ Info: 2th element is linear as 0.5 is positive.
+Feasibility
+Subject to
+ λ[2] + λ[1] = 1.0
+ -λ[2] + λ[1] = 0.0
+ 0 = 0.0
+ λ[1] ≥ 0.0
+ λ[2] ≥ 0.0
+ -λ[2] + λ[1] ≤ 0.0
+
+[ Info: 1th element is linear as 0.5 is positive.
+[ Info: 2th element is linear as 0.5 is positive.
+Feasibility
+Subject to
+ λ[5] + λ[4] + λ[3] + λ[2] + λ[1] = 1.0
+ -λ[5] + λ[3] - λ[1] = 0.0
+ λ[4] - λ[2] = 0.0
+ λ[1] ≥ 0.0
+ λ[2] ≥ 0.0
+ λ[3] ≥ 0.0
+ λ[4] ≥ 0.0
+ λ[5] ≥ 0.0
+ -9 λ[5] + λ[4] + λ[3] + λ[2] + λ[1] ≤ 0.0
+
+[ Info: 2th element is linear as 0.4 is positive.
+[ Info: 3th element is linear as 0.1 is positive.
+[ Info: 4th element is linear as 0.4 is positive.
+[ Info: 5th element is linear as 0.1 is positive.
+Feasibility
+Subject to
+ λ[1] = 1.0
+ -λ[5] + λ[3] - λ[1] = 0.0
+ λ[4] - λ[2] = 0.0
+ λ[1] ≥ 0.0
+ -9 λ[5] + λ[4] + λ[3] + λ[2] + λ[1] ≤ 0.0
+
+[ Info: 1th element is linear as 1.0 is positive.
+Feasibility
+Subject to
+ λ[2] + λ[1] = 1.0
+ -λ[2] + λ[1] = 0.0
+ 0 = 0.0
+ λ[1] ≥ 0.0
+ λ[2] ≥ 0.0
+ -λ[2] ≤ 0.0
+
+[ Info: The polyhedron is empty as -0.5 is negative.
+Feasibility
+Subject to
+ λ[3] + λ[2] + λ[1] = 1.0
+ -λ[2] + 2 λ[1] = 0.0
+ -2 λ[3] + λ[1] = 0.0
+ λ[1] ≥ 0.0
+ λ[2] ≥ 0.0
+ λ[3] ≥ 0.0
+ -2 λ[3] - λ[2] + 3 λ[1] ≤ 0.0
+
+[ Info: 1th element is linear as 0.2857142857142857 is positive.
+[ Info: 2th element is linear as 0.5714285714285714 is positive.
+[ Info: 3th element is linear as 0.14285714285714285 is positive.
+Feasibility
+Subject to
+ λ[3] + λ[2] + λ[1] = 1.0
+ -λ[3] + λ[1] = 0.0
+ -λ[3] + λ[2] = 0.0
+ λ[1] ≥ 0.0
+ λ[2] ≥ 0.0
+ λ[3] ≥ 0.0
+ -2 λ[3] + λ[2] + λ[1] ≤ 0.0
+
+[ Info: 1th element is linear as 0.3333333333333333 is positive.
+[ Info: 2th element is linear as 0.3333333333333333 is positive.
+[ Info: 3th element is linear as 0.3333333333333333 is positive.
+Feasibility
+Subject to
+ λ[2] + λ[1] = 1.0
+ -λ[2] + λ[1] = 0.0
+ -λ[2] + λ[1] = 0.0
+ λ[1] ≥ 0.0
+ λ[2] ≥ 0.0
+ 0 ≤ 0.0
+
+[ Info: 1th element is linear as 0.5 is positive.
+[ Info: 2th element is linear as 0.5 is positive.
+Feasibility
+Subject to
+ λ[2] + λ[1] = 1.0
+ -λ[2] + λ[1] = 0.0
+ 0 = 0.0
+ λ[1] ≥ 0.0
+ λ[2] ≥ 0.0
+ -λ[2] + λ[1] ≤ 0.0
+
+[ Info: 1th element is linear as 0.5 is positive.
+[ Info: 2th element is linear as 0.5 is positive.
+Feasibility
+Subject to
+ λ[5] + λ[4] + λ[3] + λ[2] + λ[1] = 1.0
+ -λ[5] + λ[3] - λ[1] = 0.0
+ λ[4] - λ[2] = 0.0
+ λ[1] ≥ 0.0
+ λ[2] ≥ 0.0
+ λ[3] ≥ 0.0
+ λ[4] ≥ 0.0
+ λ[5] ≥ 0.0
+ -9 λ[5] + λ[4] + λ[3] + λ[2] + λ[1] ≤ 0.0
+
+[ Info: 2th element is linear as 0.4 is positive.
+[ Info: 3th element is linear as 0.1 is positive.
+[ Info: 4th element is linear as 0.4 is positive.
+[ Info: 5th element is linear as 0.1 is positive.
+[ Info: 1th element is linear as 1.0 is positive.
+Feasibility
+Subject to
+ λ[1] = 1.0
+ -λ[5] + λ[3] - λ[1] = 0.0
+ λ[4] - λ[2] = 0.0
+ λ[1] ≥ 0.0
+ -9 λ[5] + λ[4] + λ[3] + λ[2] + λ[1] ≤ 0.0
+
+Feasibility
+Subject to
+ λ[2] + λ[1] = 1.0
+ -λ[2] + λ[1] = 0.0
+ 0 = 0.0
+ λ[1] ≥ 0.0
+ λ[2] ≥ 0.0
+ -λ[2] ≤ 0.0
+
+[ Info: The polyhedron is empty as -0.5 is negative.
+Feasibility
+Subject to
+ λ[3] + λ[2] + λ[1] = 1.0
+ -λ[2] + 2 λ[1] = 0.0
+ -2 λ[3] + λ[1] = 0.0
+ λ[1] ≥ 0.0
+ λ[2] ≥ 0.0
+ λ[3] ≥ 0.0
+ -2 λ[3] - λ[2] + 3 λ[1] ≤ 0.0
+
+[ Info: 1th element is linear as 0.2857142857142857 is positive.
+[ Info: 2th element is linear as 0.5714285714285714 is positive.
+[ Info: 3th element is linear as 0.14285714285714285 is positive.
+Feasibility
+Subject to
+ λ[3] + λ[2] + λ[1] = 1.0
+ -λ[3] + λ[1] = 0.0
+ -λ[3] + λ[2] = 0.0
+ λ[1] ≥ 0.0
+ λ[2] ≥ 0.0
+ λ[3] ≥ 0.0
+ -2 λ[3] + λ[2] + λ[1] ≤ 0.0
+
+[ Info: 1th element is linear as 0.3333333333333333 is positive.
+[ Info: 2th element is linear as 0.3333333333333333 is positive.
+[ Info: 3th element is linear as 0.3333333333333333 is positive.
+Feasibility
+Subject to
+ λ[2] + λ[1] = 1.0
+ -λ[2] + λ[1] = 0.0
+ -λ[2] + λ[1] = 0.0
+ λ[1] ≥ 0.0
+ λ[2] ≥ 0.0
+ 0 ≤ 0.0
+
+[ Info: 1th element is linear as 0.5 is positive.
+[ Info: 2th element is linear as 0.5 is positive.
+Feasibility
+Subject to
+ λ[2] + λ[1] = 1.0
+ -λ[2] + λ[1] = 0.0
+ 0 = 0.0
+ λ[1] ≥ 0.0
+ λ[2] ≥ 0.0
+ -λ[2] + λ[1] ≤ 0.0
+
+[ Info: 1th element is linear as 0.5 is positive.
+[ Info: 2th element is linear as 0.5 is positive.
+Feasibility
+Subject to
+ λ[5] + λ[4] + λ[3] + λ[2] + λ[1] = 1.0
+ -λ[5] + λ[3] - λ[1] = 0.0
+ λ[4] - λ[2] = 0.0
+ λ[1] ≥ 0.0
+ λ[2] ≥ 0.0
+ λ[3] ≥ 0.0
+ λ[4] ≥ 0.0
+ λ[5] ≥ 0.0
+ -9 λ[5] + λ[4] + λ[3] + λ[2] + λ[1] ≤ 0.0
+
+[ Info: 2th element is linear as 0.4 is positive.
+[ Info: 3th element is linear as 0.1 is positive.
+[ Info: 4th element is linear as 0.4 is positive.
+[ Info: 5th element is linear as 0.1 is positive.
+[ Info: 1th element is linear as 1.0 is positive.
+Feasibility
+Subject to
+ λ[1] = 1.0
+ -λ[5] + λ[3] - λ[1] = 0.0
+ λ[4] - λ[2] = 0.0
+ λ[1] ≥ 0.0
+ -9 λ[5] + λ[4] + λ[3] + λ[2] + λ[1] ≤ 0.0
+
+Feasibility
+Subject to
+ λ[2] + λ[1] = 1.0
+ -λ[2] + λ[1] = 0.0
+ 0 = 0.0
+ λ[1] ≥ 0.0
+ λ[2] ≥ 0.0
+ -λ[2] ≤ 0.0
+
+[ Info: The polyhedron is empty as -0.5 is negative.
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+Test Summary:      | Pass  Total
+Redundancy removal |  660    660
+┌ Warning: Cannot detect exact linearity as no solver was provided and the polyhedron is not affine.
+│ As fallback, we will only detect halfspaces from opposite hyperplanes but that may not detect all halfspaces.
+│ Set a solver if you believe that the polyhedron may have more linearity.
+│ To provide a solver to a polyhedron, first select a solver from https://jump.dev/JuMP.jl/stable/installation/#Getting-Solvers-1.
+│ If you choose for instance `GLPK`, do `using GLPK; solver = GLPK.Optimizer`.
+│ Then provide the solver to the library. For instance, with the default library, do `lib = DefaultLibrary{Float64}(solver)`
+│ or if you use an external library, say `QHull`, do `lib = QHull.Library(solver)`.
+│ Then when you create the polyhedron, say from a representation `rep`, do `polyhedron(rep, lib)`.
+└ @ Polyhedra /home/pkgeval/.julia/packages/Polyhedra/w4HYV/src/linearity.jl:218
+┌ Warning: Cannot detect exact linearity as no solver was provided and the polyhedron is not affine.
+│ As fallback, we will only detect halfspaces from opposite hyperplanes but that may not detect all halfspaces.
+│ Set a solver if you believe that the polyhedron may have more linearity.
+│ To provide a solver to a polyhedron, first select a solver from https://jump.dev/JuMP.jl/stable/installation/#Getting-Solvers-1.
+│ If you choose for instance `GLPK`, do `using GLPK; solver = GLPK.Optimizer`.
+│ Then provide the solver to the library. For instance, with the default library, do `lib = DefaultLibrary{Float64}(solver)`
+│ or if you use an external library, say `QHull`, do `lib = QHull.Library(solver)`.
+│ Then when you create the polyhedron, say from a representation `rep`, do `polyhedron(rep, lib)`.
+└ @ Polyhedra /home/pkgeval/.julia/packages/Polyhedra/w4HYV/src/linearity.jl:218
+Test Summary:     | Pass  Total
+Duplicate removal |   10     10
+Test Summary: | Pass  Total
+Planar        |  512    512
+Test Summary:      | Pass  Total
+Double Description |   43     43
+┌ Warning: Cannot detect exact linearity as no solver was provided and the polyhedron is not affine.
+│ As fallback, we will only detect halfspaces from opposite hyperplanes but that may not detect all halfspaces.
+│ Set a solver if you believe that the polyhedron may have more linearity.
+│ To provide a solver to a polyhedron, first select a solver from https://jump.dev/JuMP.jl/stable/installation/#Getting-Solvers-1.
+│ If you choose for instance `GLPK`, do `using GLPK; solver = GLPK.Optimizer`.
+│ Then provide the solver to the library. For instance, with the default library, do `lib = DefaultLibrary{Float64}(solver)`
+│ or if you use an external library, say `QHull`, do `lib = QHull.Library(solver)`.
+│ Then when you create the polyhedron, say from a representation `rep`, do `polyhedron(rep, lib)`.
+└ @ Polyhedra /home/pkgeval/.julia/packages/Polyhedra/w4HYV/src/linearity.jl:218
+┌ Warning: `removehredundancy!` will trigger the computation of the V-representation, which
+│ is computationally demanding because no solver was provided to the library.
+│ If this is expected, call `computevrep!` explicitely before calling this
+│ function to remove this warning.
+│ To provide a solver to a polyhedron, first select a solver from https://jump.dev/JuMP.jl/stable/installation/#Getting-Solvers-1.
+│ If you choose for instance `GLPK`, do `using GLPK; solver = GLPK.Optimizer`.
+│ Then provide the solver to the library. For instance, with the default library, do `lib = DefaultLibrary{Float64}(solver)`
+│ or if you use an external library, say `QHull`, do `lib = QHull.Library(solver)`.
+│ Then when you create the polyhedron, say from a representation `rep`, do `polyhedron(rep, lib)`.
+└ @ Polyhedra /home/pkgeval/.julia/packages/Polyhedra/w4HYV/src/redundancy.jl:29
+┌ Warning: Cannot detect exact linearity as no solver was provided and the polyhedron is not affine.
+│ As fallback, we will only detect halfspaces from opposite hyperplanes but that may not detect all halfspaces.
+│ Set a solver if you believe that the polyhedron may have more linearity.
+│ To provide a solver to a polyhedron, first select a solver from https://jump.dev/JuMP.jl/stable/installation/#Getting-Solvers-1.
+│ If you choose for instance `GLPK`, do `using GLPK; solver = GLPK.Optimizer`.
+│ Then provide the solver to the library. For instance, with the default library, do `lib = DefaultLibrary{Float64}(solver)`
+│ or if you use an external library, say `QHull`, do `lib = QHull.Library(solver)`.
+│ Then when you create the polyhedron, say from a representation `rep`, do `polyhedron(rep, lib)`.
+└ @ Polyhedra /home/pkgeval/.julia/packages/Polyhedra/w4HYV/src/linearity.jl:218
+Test Summary:  | Pass  Total
+Interval tests |  253    253
+Test Summary:                           | Pass  Total
+Model to Polyhedra with default library |    4      4
+Test Summary:                                 | Pass  Total
+Continuous Linear problems with VRepOptimizer |  398    398
+Test Summary:                         | Pass  Total
+simplex chebyshev center with Float64 |    3      3
+Test Summary:                                  | Pass  Total
+simplex chebyshev center with Rational{BigInt} |    3      3
+Test Summary:              | Pass  Total
+AbstractPolyhedraOptimizer |    8      8
+Test Summary:                | Pass  Total
+PolyhedraToLPBridge{Float64} |   15     15
+Test Summary:              | Pass  Total
+PolyhedraToLPBridge{Int64} |   15     15
+Test Summary:               | Pass  Total
+PolyhedraToLPBridge{BigInt} |   15     15
+Test Summary:                         | Pass  Total
+PolyhedraToLPBridge{Rational{BigInt}} |   15     15
+Test Summary: | Pass  Total
+Default       |   15     15
+Test Summary: | Pass  Total
+Show          |   23     23
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+┌ Warning: `removevredundancy!` will trigger the computation of the H-representation, which
+│ is computationally demanding because no solver was provided to the library.
+│ If this is expected, call `computehrep!` explicitely before calling this
+│ function to remove this warning.
+│ To provide a solver to a polyhedron, first select a solver from https://jump.dev/JuMP.jl/stable/installation/#Getting-Solvers-1.
+│ If you choose for instance `GLPK`, do `using GLPK; solver = GLPK.Optimizer`.
+│ Then provide the solver to the library. For instance, with the default library, do `lib = DefaultLibrary{Float64}(solver)`
+│ or if you use an external library, say `QHull`, do `lib = QHull.Library(solver)`.
+│ Then when you create the polyhedron, say from a representation `rep`, do `polyhedron(rep, lib)`.
+└ @ Polyhedra /home/pkgeval/.julia/packages/Polyhedra/w4HYV/src/redundancy.jl:68
+┌ Warning: Cannot detect exact linearity as no solver was provided and the polyhedron is not affine.
+│ As fallback, we will only detect halfspaces from opposite hyperplanes but that may not detect all halfspaces.
+│ Set a solver if you believe that the polyhedron may have more linearity.
+│ To provide a solver to a polyhedron, first select a solver from https://jump.dev/JuMP.jl/stable/installation/#Getting-Solvers-1.
+│ If you choose for instance `GLPK`, do `using GLPK; solver = GLPK.Optimizer`.
+│ Then provide the solver to the library. For instance, with the default library, do `lib = DefaultLibrary{Float64}(solver)`
+│ or if you use an external library, say `QHull`, do `lib = QHull.Library(solver)`.
+│ Then when you create the polyhedron, say from a representation `rep`, do `polyhedron(rep, lib)`.
+└ @ Polyhedra /home/pkgeval/.julia/packages/Polyhedra/w4HYV/src/linearity.jl:218
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+Test Summary:                                | Pass  Total
+Polyhedra tests in floating point arithmetic |  691    691
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+┌ Warning: `removevredundancy!` will trigger the computation of the H-representation, which
+│ is computationally demanding because no solver was provided to the library.
+│ If this is expected, call `computehrep!` explicitely before calling this
+│ function to remove this warning.
+│ To provide a solver to a polyhedron, first select a solver from https://jump.dev/JuMP.jl/stable/installation/#Getting-Solvers-1.
+│ If you choose for instance `GLPK`, do `using GLPK; solver = GLPK.Optimizer`.
+│ Then provide the solver to the library. For instance, with the default library, do `lib = DefaultLibrary{Float64}(solver)`
+│ or if you use an external library, say `QHull`, do `lib = QHull.Library(solver)`.
+│ Then when you create the polyhedron, say from a representation `rep`, do `polyhedron(rep, lib)`.
+└ @ Polyhedra /home/pkgeval/.julia/packages/Polyhedra/w4HYV/src/redundancy.jl:68
+┌ Warning: Cannot detect exact linearity as no solver was provided and the polyhedron is not affine.
+│ As fallback, we will only detect halfspaces from opposite hyperplanes but that may not detect all halfspaces.
+│ Set a solver if you believe that the polyhedron may have more linearity.
+│ To provide a solver to a polyhedron, first select a solver from https://jump.dev/JuMP.jl/stable/installation/#Getting-Solvers-1.
+│ If you choose for instance `GLPK`, do `using GLPK; solver = GLPK.Optimizer`.
+│ Then provide the solver to the library. For instance, with the default library, do `lib = DefaultLibrary{Float64}(solver)`
+│ or if you use an external library, say `QHull`, do `lib = QHull.Library(solver)`.
+│ Then when you create the polyhedron, say from a representation `rep`, do `polyhedron(rep, lib)`.
+└ @ Polyhedra /home/pkgeval/.julia/packages/Polyhedra/w4HYV/src/linearity.jl:218
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+glp_simplex: unable to recover undefined or non-optimal solution
+Test Summary:                       | Pass  Total
+Polyhedra tests in exact arithmetic |  691    691
+[ Info: generating plain script file from `~/.julia/packages/Polyhedra/w4HYV/examples/Convex hull and intersection.jl`
+[ Info: writing result to `~/.julia/packages/Polyhedra/w4HYV/examples/generated/Convex hull and intersection.jl`
+[ Info: generating plain script file from `~/.julia/packages/Polyhedra/w4HYV/examples/Extended Formulation.jl`
+[ Info: writing result to `~/.julia/packages/Polyhedra/w4HYV/examples/generated/Extended Formulation.jl`
+[ Info: generating plain script file from `~/.julia/packages/Polyhedra/w4HYV/examples/Minimal Robust Positively Invariant Set.jl`
+[ Info: writing result to `~/.julia/packages/Polyhedra/w4HYV/examples/generated/Minimal Robust Positively Invariant Set.jl`
+Number of points after adding A^1 * W: 16
+Number of points after removing redundant ones: 8
+Number of points after adding A^2 * W: 32
+Number of points after removing redundant ones: 12
+Number of points after adding A^3 * W: 48
+Number of points after removing redundant ones: 16
+Test Summary:    | Pass  Total
+test_examples.jl |   21     21
+    Testing Polyhedra tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:40:59.036
+CPU usage: 1051.80s (1040.30s user, 12.75s kernel)
+
+Network usage:
+- eth0: 6.808 MiB received, 298.556 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":23,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":23,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":23,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":23,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":122880,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":65536,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":122880,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":122880,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":65536,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":122880,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":362037248,"max_usage":2078482432,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":228655104,"inactive_file":135168,"inactive_anon":96645120,"total_pgfault":6484368,"total_cache":100814848,"total_rss_huge":0,"total_active_anon":232759296,"total_pgmajfault":0,"pgpgin":3136947,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":3056487,"hierarchical_memsw_limit":0,"cache":100814848,"active_file":270336,"pgfault":6484368,"total_mapped_file":0,"total_pgpgout":3056487,"total_writeback":0,"rss":228655104,"unevictable":0,"total_inactive_anon":96645120,"total_pgpgin":3136947,"active_anon":232759296,"total_active_file":270336},"limit":540965302272},"name":"/Polyhedra-wno3kAlz","networks":{"eth0":{"rx_bytes":7138289,"rx_packets":2576,"tx_packets":2486,"tx_bytes":305721,"tx_dropped":0,"rx_dropped":36,"tx_errors":0,"rx_errors":0}},"id":"9ddbc699261a691c08e243d9a9fc6579ba31dbb761ea0bbba95f41986508901d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4213226944522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":1040300000000,"usage_in_kernelmode":12750000000,"total_usage":1051802561346,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1051789323639,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6360,0,0,13231347,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:40:59.03888342Z"}

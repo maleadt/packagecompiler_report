@@ -1,0 +1,272 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:47:33.4
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:47:35.23
+#
+
+ Installing known registries into `~/.julia`
+###########                                                               15.7%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed VertexSafeGraphs ───────────── v0.1.2
+  Installed Inflate ────────────────────── v0.1.2
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed Requires ───────────────────── v1.1.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed SparseDiffTools ────────────── v1.12.0
+  Installed DiffResults ────────────────── v1.0.3
+  Installed SimpleTraits ───────────────── v0.9.3
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed LightGraphs ────────────────── v1.3.4
+  Installed FiniteDiff ─────────────────── v2.7.2
+  Installed ArnoldiMethod ──────────────── v0.0.2
+  Installed ArrayInterface ─────────────── v2.14.13
+  Installed Adapt ──────────────────────── v3.0.0
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed Compat ─────────────────────── v3.25.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [47a9eef4] + SparseDiffTools v1.12.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [79e6a3ab] + Adapt v3.0.0
+  [ec485272] + ArnoldiMethod v0.0.2
+  [4fba245c] + ArrayInterface v2.14.13
+  [56f22d72] + Artifacts v1.3.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [864edb3b] + DataStructures v0.18.8
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [6a86dc24] + FiniteDiff v2.7.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [d25df0c9] + Inflate v0.1.2
+  [692b3bcd] + JLLWrappers v1.2.0
+  [093fc24a] + LightGraphs v1.3.4
+  [1914dd2f] + MacroTools v0.5.6
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [77ba4419] + NaNMath v0.3.5
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [ae029012] + Requires v1.1.2
+  [699a6c99] + SimpleTraits v0.9.3
+  [47a9eef4] + SparseDiffTools v1.12.0
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [19fa3120] + VertexSafeGraphs v0.1.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T18:47:42.208
+#
+
+    Testing SparseDiffTools
+┌ Error: Pkg.Resolve.ResolverError("Unsatisfiable requirements detected for package SpecialFunctions [276daf66]:\n SpecialFunctions [276daf66] log:\n ├─possible versions are: [0.7.0-0.7.2, 0.8.0, 0.9.0, 0.10.0-0.10.3, 1.0.0, 1.1.0, 1.2.0-1.2.1] or uninstalled\n ├─restricted to versions 1.2.1 by an explicit requirement, leaving only versions 1.2.1\n └─restricted by compatibility requirements with SparsityDetection [684fba80] to versions: [0.7.0-0.7.2, 0.8.0, 0.9.0, 0.10.0-0.10.3] — no versions left\n   └─SparsityDetection [684fba80] log:\n     ├─possible versions are: [0.1.0-0.1.2, 0.2.0, 0.3.0-0.3.3] or uninstalled\n     └─restricted to versions * by an explicit requirement, leaving only versions [0.1.0-0.1.2, 0.2.0, 0.3.0-0.3.3]", nothing)
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1427
+Status `/tmp/jl_bfyarQ/Project.toml`
+  [79e6a3ab] Adapt v3.0.0
+  [4fba245c] ArrayInterface v2.14.13
+  [aae01518] BandedMatrices v0.15.25
+  [ffab5731] BlockBandedMatrices v0.9.6
+  [34da2185] Compat v3.25.0
+  [864edb3b] DataStructures v0.18.8
+  [6a86dc24] FiniteDiff v2.7.2
+  [f6369f11] ForwardDiff v0.10.14
+  [42fd0dbc] IterativeSolvers v0.9.0
+  [093fc24a] LightGraphs v1.3.4
+  [ae029012] Requires v1.1.2
+  [1bc83da4] SafeTestsets v0.0.1
+  [47a9eef4] SparseDiffTools v1.12.0
+  [684fba80] SparsityDetection v0.3.3
+  [90137ffa] StaticArrays v1.0.1
+  [19fa3120] VertexSafeGraphs v0.1.2
+  [e88e6eb3] Zygote v0.6.0
+  [37e2e46d] LinearAlgebra
+  [44cfe95a] Pkg
+  [9a3f8284] Random
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_bfyarQ/Manifest.toml`
+  [621f4979] AbstractFFTs v0.5.0
+  [79e6a3ab] Adapt v3.0.0
+  [ec485272] ArnoldiMethod v0.0.2
+  [4fba245c] ArrayInterface v2.14.13
+  [4c555306] ArrayLayouts v0.4.12
+  [56f22d72] Artifacts v1.3.0
+  [aae01518] BandedMatrices v0.15.25
+  [8e7c35d0] BlockArrays v0.13.0
+  [ffab5731] BlockBandedMatrices v0.9.6
+  [7057c7e9] Cassette v0.3.4
+  [082447d4] ChainRules v0.7.45
+  [d360d2e6] ChainRulesCore v0.9.24
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [864edb3b] DataStructures v0.18.8
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [1a297f60] FillArrays v0.10.2
+  [6a86dc24] FiniteDiff v2.7.2
+  [f6369f11] ForwardDiff v0.10.14
+  [7869d1d1] IRTools v0.4.2
+  [d25df0c9] Inflate v0.1.2
+  [42fd0dbc] IterativeSolvers v0.9.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [093fc24a] LightGraphs v1.3.4
+  [1914dd2f] MacroTools v0.5.6
+  [a3b82374] MatrixFactorizations v0.7.1
+  [46d2c3a1] MuladdMacro v0.2.2
+  [77ba4419] NaNMath v0.3.5
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [3cdcf5f2] RecipesBase v1.1.1
+  [189a3867] Reexport v1.0.0
+  [ae029012] Requires v1.1.2
+  [1bc83da4] SafeTestsets v0.0.1
+  [699a6c99] SimpleTraits v0.9.3
+  [47a9eef4] SparseDiffTools v1.12.0
+  [684fba80] SparsityDetection v0.3.3
+  [276daf66] SpecialFunctions v0.10.3
+  [90137ffa] StaticArrays v1.0.1
+  [19fa3120] VertexSafeGraphs v0.1.2
+  [e88e6eb3] Zygote v0.6.0
+  [700de1a5] ZygoteRules v0.2.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary:                  | Pass  Total
+Exact coloring via contraction |   20     20
+ 57.516361 seconds (18.22 M allocations: 1005.787 MiB, 0.70% gc time)
+Test Summary:              | Pass  Total
+Greedy distance-1 coloring |   20     20
+  0.282804 seconds (928.21 k allocations: 50.023 MiB, 6.71% gc time)
+Test Summary:        | Pass  Total
+Greedy star coloring | 1101   1101
+  0.592947 seconds (719.37 k allocations: 37.131 MiB)
+┌ Warning: `find_root` is deprecated, use `find_root!` instead.
+│   caller = find at acyclic_coloring.jl:195 [inlined]
+└ @ Core ~/.julia/packages/SparseDiffTools/6W9KH/src/coloring/acyclic_coloring.jl:195
+┌ Warning: `find_root` is deprecated, use `find_root!` instead.
+│   caller = find at acyclic_coloring.jl:195 [inlined]
+└ @ Core ~/.julia/packages/SparseDiffTools/6W9KH/src/coloring/acyclic_coloring.jl:195
+┌ Warning: `find_root` is deprecated, use `find_root!` instead.
+│   caller = find at acyclic_coloring.jl:195 [inlined]
+└ @ Core ~/.julia/packages/SparseDiffTools/6W9KH/src/coloring/acyclic_coloring.jl:195
+┌ Warning: `find_root` is deprecated, use `find_root!` instead.
+│   caller = find at acyclic_coloring.jl:195 [inlined]
+└ @ Core ~/.julia/packages/SparseDiffTools/6W9KH/src/coloring/acyclic_coloring.jl:195
+┌ Warning: `find_root` is deprecated, use `find_root!` instead.
+│   caller = find at acyclic_coloring.jl:195 [inlined]
+└ @ Core ~/.julia/packages/SparseDiffTools/6W9KH/src/coloring/acyclic_coloring.jl:195
+Test Summary:    |   Pass   Total
+Acyclic coloring | 325518  325518
+  3.232246 seconds (13.98 M allocations: 826.681 MiB, 14.22% gc time)
+┌ Warning: Assignment to `n` in soft scope is ambiguous because a global variable by the same name exists: `n` will be treated as a new local. Disambiguate by using `local n` to suppress this warning or `global n` to assign to the existing global variable.
+└ @ ~/.julia/packages/SparseDiffTools/6W9KH/test/test_matrix2graph.jl:13
+Test Summary:              |   Pass   Total
+Matrix to graph conversion | 113284  113284
+  2.030194 seconds (6.20 M allocations: 720.351 MiB, 4.83% gc time)
+[ Info: ended definitions
+[ Info: second passed
+[ Info: third passed
+[ Info: 4th passed
+[ Info: 5
+Test Summary:            | Pass  Total
+AD using colorvec vector |   49     49
+368.416808 seconds (661.60 M allocations: 46.829 GiB, 2.23% gc time)
+Explored path: SparsityDetection.Path(Bool[], 1)
+Test Summary:    | Pass  Total
+Integration test |    7      7
+ 16.777588 seconds (25.42 M allocations: 1.340 GiB, 1.06% gc time)
+Test Summary:    | Pass  Total
+Special matrices |   87     87
+  4.695532 seconds (7.02 M allocations: 342.778 MiB, 1.41% gc time)
+Test Summary:         | Pass  Total
+Jac Vecs and Hes Vecs |   51     51
+ 65.435770 seconds (59.01 M allocations: 2.943 GiB, 0.86% gc time)
+    Testing SparseDiffTools tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:56:25.64
+CPU usage: 531.65s (504.87s user, 27.43s kernel)
+
+Network usage:
+- eth0: 5.083 MiB received, 248.959 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":139264,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":32768,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":139264,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":139264,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":32768,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":139264,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":406712320,"max_usage":2889461760,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":265146368,"inactive_file":135168,"inactive_anon":85291008,"total_pgfault":14388429,"total_cache":109133824,"total_rss_huge":0,"total_active_anon":288989184,"total_pgmajfault":0,"pgpgin":12534126,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":12442754,"hierarchical_memsw_limit":0,"cache":109133824,"active_file":135168,"pgfault":14388429,"total_mapped_file":0,"total_pgpgout":12442754,"total_writeback":0,"rss":265146368,"unevictable":0,"total_inactive_anon":85291008,"total_pgpgin":12534126,"active_anon":288989184,"total_active_file":135168},"limit":540965302272},"name":"/SparseDiffTools-KajGsswp","networks":{"eth0":{"rx_bytes":5329541,"rx_packets":2020,"tx_packets":2081,"tx_bytes":254934,"tx_dropped":0,"rx_dropped":18,"tx_errors":0,"rx_errors":0}},"id":"272f0c5dc074cd210c85008490489110f3cd5801a0d7c382d6bdd84b30c710f4","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4791641344522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":504870000000,"usage_in_kernelmode":27430000000,"total_usage":531653464545,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,531653461275,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3270,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:56:25.952303945Z"}

@@ -1,0 +1,121 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:29:35.279
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:29:37.057
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ##############################                                            42.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed FilePathsBase ─ v0.9.6
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [48062228] + FilePathsBase v0.9.6
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [48062228] + FilePathsBase v0.9.6
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T17:29:42.198
+#
+
+    Testing FilePathsBase
+Status `/tmp/jl_QNu6uQ/Project.toml`
+  [48062228] FilePathsBase v0.9.6
+  [9da8a3cd] JLSO v2.4.0
+  [ade2ca70] Dates
+  [a63ad114] Mmap
+  [de0858da] Printf
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+Status `/tmp/jl_QNu6uQ/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [fbb218c0] BSON v0.2.6
+  [944b1d66] CodecZlib v0.7.0
+  [e2ba6199] ExprTools v0.1.3
+  [8f5d6c58] EzXML v1.1.0
+  [48062228] FilePathsBase v0.9.6
+  [692b3bcd] JLLWrappers v1.2.0
+  [9da8a3cd] JLSO v2.4.0
+  [682c06a0] JSON v0.21.1
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [f28f55f0] Memento v1.1.2
+  [78c3b35d] Mocking v0.7.1
+  [69de0a69] Parsers v1.0.15
+  [3cdcf5f2] RecipesBase v1.1.1
+  [cea106d9] Syslogs v0.3.0
+  [f269a46b] TimeZones v1.5.3
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: Initializing PathSet{PosixPath}
+cp: cannot create directory '/tmp/pathset_root/non-existent/destination': No such file or directory
+chown: changing ownership of '/tmp/pathset_root/newfile': Operation not permitted
+[ Info: Initializing PathSet{Main.TestPkg.TestPath}
+chown: changing ownership of '/tmp/pathset_root/newfile': Operation not permitted
+Test Summary: | Pass  Broken  Total
+FilePathsBase | 4671       2   4673
+    Testing FilePathsBase tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:30:52.972
+CPU usage: 74.19s (69.23s user, 5.10s kernel)
+
+Network usage:
+- eth0: 6.529 MiB received, 138.675 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":2,"op":"Read","minor":0},{"major":259,"value":45,"op":"Write","minor":0},{"major":259,"value":21,"op":"Sync","minor":0},{"major":259,"value":26,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":47,"op":"Total","minor":0},{"major":253,"value":2,"op":"Read","minor":2},{"major":253,"value":45,"op":"Write","minor":2},{"major":253,"value":21,"op":"Sync","minor":2},{"major":253,"value":26,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":47,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":8192,"op":"Read","minor":0},{"major":259,"value":315392,"op":"Write","minor":0},{"major":259,"value":114688,"op":"Sync","minor":0},{"major":259,"value":208896,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":323584,"op":"Total","minor":0},{"major":253,"value":8192,"op":"Read","minor":2},{"major":253,"value":315392,"op":"Write","minor":2},{"major":253,"value":114688,"op":"Sync","minor":2},{"major":253,"value":208896,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":323584,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":320696320,"max_usage":1183707136,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":186249216,"inactive_file":135168,"inactive_anon":92590080,"total_pgfault":1527504,"total_cache":103366656,"total_rss_huge":0,"total_active_anon":196939776,"total_pgmajfault":0,"pgpgin":947793,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":877129,"hierarchical_memsw_limit":0,"cache":103366656,"active_file":135168,"pgfault":1527504,"total_mapped_file":0,"total_pgpgout":877129,"total_writeback":0,"rss":186249216,"unevictable":0,"total_inactive_anon":92590080,"total_pgpgin":947793,"active_anon":196939776,"total_active_file":135168},"limit":540965302272},"name":"/FilePathsBase-m2BQtu3U","networks":{"eth0":{"rx_bytes":6846267,"rx_packets":1255,"tx_packets":1306,"tx_bytes":142003,"tx_dropped":0,"rx_dropped":3,"tx_errors":0,"rx_errors":0}},"id":"150433de6efcbe38b132dddddcd3ee79ff35ab2b5b7dee3cd8ae7b05473d8880","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4135940824522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":69230000000,"usage_in_kernelmode":5100000000,"total_usage":74193459812,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,74193456422,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3390,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:30:53.87586755Z"}

@@ -1,0 +1,195 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:15:14.921
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:15:16.762
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed AMDGPUnative ─────── v0.3.2
+  Installed Adapt ────────────── v1.1.0
+  Installed TimerOutputs ─────── v0.5.7
+  Installed MacroTools ───────── v0.5.6
+  Installed Requires ─────────── v1.1.2
+  Installed ConstructionBase ─── v1.0.0
+  Installed Setfield ─────────── v0.5.4
+  Installed CEnum ────────────── v0.2.0
+  Installed OrderedCollections ─ v1.3.2
+  Installed HSARuntime ───────── v0.3.0
+  Installed LLVM ─────────────── v1.7.0
+  Installed BinaryProvider ───── v0.5.10
+  Installed GPUCompiler ──────── v0.3.0
+  Installed DataStructures ───── v0.17.20
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [12f4821f] + AMDGPUnative v0.3.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [12f4821f] + AMDGPUnative v0.3.2
+  [79e6a3ab] + Adapt v1.1.0
+  [b99e7846] + BinaryProvider v0.5.10
+  [fa961155] + CEnum v0.2.0
+  [187b0558] + ConstructionBase v1.0.0
+  [864edb3b] + DataStructures v0.17.20
+  [61eb1bfa] + GPUCompiler v0.3.0
+  [2c364e2c] + HSARuntime v0.3.0
+  [929cbde3] + LLVM v1.7.0
+  [1914dd2f] + MacroTools v0.5.6
+  [bac558e1] + OrderedCollections v1.3.2
+  [ae029012] + Requires v1.1.2
+  [efcf1570] + Setfield v0.5.4
+  [a759f4b9] + TimerOutputs v0.5.7
+  [2a0f44e3] + Base64
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building HSARuntime ──→ `~/.julia/packages/HSARuntime/BPzK5/deps/build.log`
+┌ Error: Error building `HSARuntime`: 
+│ paths = String[]
+│ Could not find HSA runtime library.
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+   Building AMDGPUnative → `~/.julia/packages/AMDGPUnative/9MFqb/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T17:15:30.615
+#
+
+    Testing AMDGPUnative
+Status `/tmp/jl_yxngDS/Project.toml`
+  [12f4821f] AMDGPUnative v0.3.2
+  [79e6a3ab] Adapt v1.1.0
+  [b99e7846] BinaryProvider v0.5.10
+  [61eb1bfa] GPUCompiler v0.3.0
+  [2c364e2c] HSARuntime v0.3.0
+  [929cbde3] LLVM v1.7.0
+  [ae029012] Requires v1.1.2
+  [276daf66] SpecialFunctions v1.2.1
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [8dfed614] Test
+Status `/tmp/jl_yxngDS/Manifest.toml`
+  [12f4821f] AMDGPUnative v0.3.2
+  [79e6a3ab] Adapt v1.1.0
+  [56f22d72] Artifacts v1.3.0
+  [b99e7846] BinaryProvider v0.5.10
+  [fa961155] CEnum v0.2.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [187b0558] ConstructionBase v1.0.0
+  [864edb3b] DataStructures v0.17.20
+  [61eb1bfa] GPUCompiler v0.3.0
+  [2c364e2c] HSARuntime v0.3.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [929cbde3] LLVM v1.7.0
+  [1914dd2f] MacroTools v0.5.6
+  [46d2c3a1] MuladdMacro v0.2.2
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [ae029012] Requires v1.1.2
+  [efcf1570] Setfield v0.5.4
+  [276daf66] SpecialFunctions v1.2.1
+  [a759f4b9] TimerOutputs v0.5.7
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+ERROR: LoadError: LoadError: UndefVarError: get_global not defined
+Stacktrace:
+ [1] getproperty(::Module, ::Symbol) at ./Base.jl:26
+ [2] top-level scope at /home/pkgeval/.julia/packages/AMDGPUnative/9MFqb/src/runtime.jl:46
+ [3] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [4] include at ./Base.jl:368 [inlined]
+ [5] include(::String) at /home/pkgeval/.julia/packages/AMDGPUnative/9MFqb/src/AMDGPUnative.jl:1
+ [6] top-level scope at /home/pkgeval/.julia/packages/AMDGPUnative/9MFqb/src/AMDGPUnative.jl:17
+ [7] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [8] include(::Module, ::String) at ./Base.jl:368
+ [9] top-level scope at none:2
+ [10] eval at ./boot.jl:331 [inlined]
+ [11] eval(::Expr) at ./client.jl:467
+ [12] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/AMDGPUnative/9MFqb/src/runtime.jl:46
+in expression starting at /home/pkgeval/.julia/packages/AMDGPUnative/9MFqb/src/AMDGPUnative.jl:17
+ERROR: LoadError: Failed to precompile AMDGPUnative [12f4821f-d7ee-5ba6-b76b-566925c5fcc5] to /home/pkgeval/.julia/compiled/v1.5/AMDGPUnative/tmaSK_3fsrM.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1305
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ [6] include(::String) at ./client.jl:457
+ [7] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/AMDGPUnative/9MFqb/test/runtests.jl:1
+
+PkgEval failed: Package AMDGPUnative errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:16:09.106
+CPU usage: 53.81s (49.06s user, 4.84s kernel)
+
+Network usage:
+- eth0: 4.294 MiB received, 153.058 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":32,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":13,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":32,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":32,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":13,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":32,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":163840,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":57344,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":163840,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":163840,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":57344,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":163840,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":362766336,"max_usage":1039040512,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":236199936,"inactive_file":135168,"inactive_anon":84209664,"total_pgfault":1481667,"total_cache":95731712,"total_rss_huge":0,"total_active_anon":247627776,"total_pgmajfault":0,"pgpgin":902220,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":821155,"hierarchical_memsw_limit":0,"cache":95731712,"active_file":135168,"pgfault":1481667,"total_mapped_file":0,"total_pgpgout":821155,"total_writeback":0,"rss":236199936,"unevictable":0,"total_inactive_anon":84209664,"total_pgpgin":902220,"active_anon":247627776,"total_active_file":135168},"limit":540965302272},"name":"/AMDGPUnative-9jLxxVCw","networks":{"eth0":{"rx_bytes":4502861,"rx_packets":1463,"tx_packets":1543,"tx_bytes":156731,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"b4b26757e75ce2e494f94dae0a01b3216ef6769ec02b7b1c72fda72e9bf8e2c9","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4022943144522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":49060000000,"usage_in_kernelmode":4840000000,"total_usage":53813013840,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,53806906758,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2940,6104142,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:16:09.10916613Z"}

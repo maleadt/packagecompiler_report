@@ -1,0 +1,130 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:37:49.287
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:37:51.134
+#
+
+ Installing known registries into `~/.julia`
+##################################################################        92.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed DateSelectors ─ v0.4.1
+  Installed Libiconv_jll ── v1.16.0+7
+  Installed Zlib_jll ────── v1.2.11+18
+  Installed RecipesBase ─── v1.1.1
+  Installed EzXML ───────── v1.1.0
+  Installed ExprTools ───── v0.1.3
+  Installed JLLWrappers ─── v1.2.0
+  Installed TimeZones ───── v1.5.3
+  Installed Intervals ───── v1.5.0
+  Installed Mocking ─────── v0.7.1
+  Installed XML2_jll ────── v2.9.10+3
+  Installed Artifacts ───── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [c900ad91] + DateSelectors v0.4.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [c900ad91] + DateSelectors v0.4.1
+  [e2ba6199] + ExprTools v0.1.3
+  [8f5d6c58] + EzXML v1.1.0
+  [d8418881] + Intervals v1.5.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [78c3b35d] + Mocking v0.7.1
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [f269a46b] + TimeZones v1.5.3
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building TimeZones → `~/.julia/packages/TimeZones/K98G0/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T15:38:05.891
+#
+
+    Testing DateSelectors
+Status `/tmp/jl_VE2McQ/Project.toml`
+  [c900ad91] DateSelectors v0.4.1
+  [d8418881] Intervals v1.5.0
+  [ade2ca70] Dates
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_VE2McQ/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [c900ad91] DateSelectors v0.4.1
+  [e2ba6199] ExprTools v0.1.3
+  [8f5d6c58] EzXML v1.1.0
+  [d8418881] Intervals v1.5.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [78c3b35d] Mocking v0.7.1
+  [3cdcf5f2] RecipesBase v1.1.1
+  [f269a46b] TimeZones v1.5.3
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary:    | Pass  Total
+DateSelectors.jl |  418    418
+    Testing DateSelectors tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:38:33.846
+CPU usage: 44.61s (41.06s user, 3.64s kernel)
+
+Network usage:
+- eth0: 2.981 MiB received, 83.763 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":143360,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":143360,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":143360,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":143360,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":303206400,"max_usage":881504256,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":183906304,"inactive_file":135168,"inactive_anon":84344832,"total_pgfault":1097646,"total_cache":88444928,"total_rss_huge":0,"total_active_anon":187748352,"total_pgmajfault":0,"pgpgin":673332,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":606813,"hierarchical_memsw_limit":0,"cache":88444928,"active_file":405504,"pgfault":1097646,"total_mapped_file":0,"total_pgpgout":606813,"total_writeback":0,"rss":183906304,"unevictable":0,"total_inactive_anon":84344832,"total_pgpgin":673332,"active_anon":187748352,"total_active_file":405504},"limit":540965302272},"name":"/DateSelectors-TgfOTUOd","networks":{"eth0":{"rx_bytes":3125549,"rx_packets":696,"tx_packets":754,"tx_bytes":85773,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"c37ac767f37669eef5bd64b6365ac87b2fa6993b2a1ea8a3115627e86eca03ff","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3274612694522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":41060000000,"usage_in_kernelmode":3640000000,"total_usage":44608370531,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44607726131,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,644400,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:38:34.570630391Z"}

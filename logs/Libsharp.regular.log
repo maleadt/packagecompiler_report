@@ -1,0 +1,113 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:51:59.743
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:52:01.522
+#
+
+ Installing known registries into `~/.julia`
+####################################################################      95.1%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Libsharp ───────────────────── v0.1.0
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed libsharp2_jll ──────────────── v1.0.0+1
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [ac8d63fe] + Libsharp v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [ac8d63fe] + Libsharp v0.1.0
+  [180207a7] + libsharp2_jll v1.0.0+1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T17:52:05.714
+#
+
+    Testing Libsharp
+Status `/tmp/jl_V6nFUR/Project.toml`
+  [ac8d63fe] Libsharp v0.1.0
+  [180207a7] libsharp2_jll v1.0.0+1
+  [8f399da3] Libdl
+  [8dfed614] Test
+Status `/tmp/jl_V6nFUR/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [692b3bcd] JLLWrappers v1.2.0
+  [ac8d63fe] Libsharp v0.1.0
+  [180207a7] libsharp2_jll v1.0.0+1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+alm           |    5      5
+Test Summary: | Pass  Total
+geom          |    4      4
+Test Summary: | Pass  Total
+map2alm       |    3      3
+Test Summary: | Pass  Total
+alm2map       |    3      3
+    Testing Libsharp tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:52:14.23
+CPU usage: 14.59s (11.94s user, 2.69s kernel)
+
+Network usage:
+- eth0: 2.611 MiB received, 49.091 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":4,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":23,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":4,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":23,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":253952,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":360448,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":380928,"op":"Total","minor":0},{"major":253,"value":253952,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":360448,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":380928,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":330838016,"max_usage":992612352,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":220205056,"inactive_file":270336,"inactive_anon":79208448,"total_pgfault":468699,"total_cache":80805888,"total_rss_huge":0,"total_active_anon":221540352,"total_pgmajfault":0,"pgpgin":323895,"rss_huge":0,"mapped_file":0,"total_inactive_file":270336,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":250399,"hierarchical_memsw_limit":0,"cache":80805888,"active_file":135168,"pgfault":468699,"total_mapped_file":0,"total_pgpgout":250399,"total_writeback":0,"rss":220205056,"unevictable":0,"total_inactive_anon":79208448,"total_pgpgin":323895,"active_anon":221540352,"total_active_file":135168},"limit":540965302272},"name":"/Libsharp-d0Zo3MRG","networks":{"eth0":{"rx_bytes":2737385,"rx_packets":427,"tx_packets":473,"tx_bytes":50269,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"8bb86ef09a478109c81216c60d193b7c63acb9bdbffda50fdcc90e1a4cf3a1ce","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4299526044522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":11940000000,"usage_in_kernelmode":2690000000,"total_usage":14587959466,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14587959466,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:52:14.702812814Z"}

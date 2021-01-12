@@ -1,0 +1,690 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:22:06.873
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:22:08.703
+#
+
+ Installing known registries into `~/.julia`
+####                                                                       5.7%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed PyDSTool ───────────────────── v0.6.1
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed ZygoteRules ────────────────── v0.2.1
+  Installed Reexport ───────────────────── v1.0.0
+  Installed TableTraits ────────────────── v1.0.0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed NonlinearSolve ─────────────── v0.3.4
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed VersionParsing ─────────────── v1.2.0
+  Installed Tables ─────────────────────── v1.2.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed FunctionWrappers ───────────── v1.1.1
+  Installed Requires ───────────────────── v1.1.2
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed TreeViews ──────────────────── v0.3.0
+  Installed Setfield ───────────────────── v0.7.0
+  Installed RecursiveArrayTools ────────── v2.10.0
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Parameters ─────────────────── v0.12.1
+  Installed ConstructionBase ───────────── v1.0.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed JSON ───────────────────────── v0.21.1
+  Installed DiffEqBase ─────────────────── v6.53.4
+  Installed FiniteDiff ─────────────────── v2.7.2
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed ArrayInterface ─────────────── v2.14.13
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed LabelledArrays ─────────────── v1.4.0
+  Installed Conda ──────────────────────── v1.5.0
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed IterativeSolvers ───────────── v0.9.0
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed DocStringExtensions ────────── v0.8.3
+  Installed Compat ─────────────────────── v3.25.0
+  Installed RecursiveFactorization ─────── v0.1.0
+  Installed PyCall ─────────────────────── v1.92.2
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Parsers ────────────────────── v1.0.15
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [7186c646] + PyDSTool v0.6.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [4fba245c] + ArrayInterface v2.14.13
+  [56f22d72] + Artifacts v1.3.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [8f4d0f93] + Conda v1.5.0
+  [187b0558] + ConstructionBase v1.0.0
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [2b5f629d] + DiffEqBase v6.53.4
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [ffbed154] + DocStringExtensions v0.8.3
+  [6a86dc24] + FiniteDiff v2.7.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [069b7b12] + FunctionWrappers v1.1.1
+  [42fd0dbc] + IterativeSolvers v0.9.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [2ee39098] + LabelledArrays v1.4.0
+  [1914dd2f] + MacroTools v0.5.6
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [77ba4419] + NaNMath v0.3.5
+  [8913a72c] + NonlinearSolve v0.3.4
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [d96e819e] + Parameters v0.12.1
+  [69de0a69] + Parsers v1.0.15
+  [438e738f] + PyCall v1.92.2
+  [7186c646] + PyDSTool v0.6.1
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [731186ca] + RecursiveArrayTools v2.10.0
+  [f2c3362d] + RecursiveFactorization v0.1.0
+  [189a3867] + Reexport v1.0.0
+  [ae029012] + Requires v1.1.2
+  [efcf1570] + Setfield v0.7.0
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [a2a6695c] + TreeViews v0.3.0
+  [3a884ed6] + UnPack v1.0.2
+  [81def892] + VersionParsing v1.2.0
+  [700de1a5] + ZygoteRules v0.2.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building Conda ─→ `~/.julia/packages/Conda/x5ml4/deps/build.log`
+   Building PyCall → `~/.julia/packages/PyCall/tqyST/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T15:22:48.669
+#
+
+    Testing PyDSTool
+┌ Error: Pkg.Resolve.ResolverError("Unsatisfiable requirements detected for package Reexport [189a3867]:\n Reexport [189a3867] log:\n ├─possible versions are: [0.2.0, 1.0.0] or uninstalled\n ├─restricted to versions 1.0.0 by an explicit requirement, leaving only versions 1.0.0\n └─restricted by compatibility requirements with ParameterizedFunctions [65888b18] to versions: 0.2.0 — no versions left\n   └─ParameterizedFunctions [65888b18] log:\n     ├─possible versions are: [3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.0, 3.7.0-3.7.2, 3.8.0, 3.9.0, 3.10.0, 3.11.0, 3.12.0-3.12.1, 4.0.0, 4.1.0-4.1.1, 4.2.0-4.2.1, 5.0.0-5.0.3, 5.1.0, 5.2.0, 5.3.0, 5.4.0, 5.5.0, 5.6.0, 5.7.0] or uninstalled\n     ├─restricted to versions * by an explicit requirement, leaving only versions [3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.0, 3.7.0-3.7.2, 3.8.0, 3.9.0, 3.10.0, 3.11.0, 3.12.0-3.12.1, 4.0.0, 4.1.0-4.1.1, 4.2.0-4.2.1, 5.0.0-5.0.3, 5.1.0, 5.2.0, 5.3.0, 5.4.0, 5.5.0, 5.6.0, 5.7.0]\n     └─restricted by compatibility requirements with DataStructures [864edb3b] to versions: [5.5.0, 5.6.0, 5.7.0] or uninstalled, leaving only versions: [5.5.0, 5.6.0, 5.7.0]\n       └─DataStructures [864edb3b] log:\n         ├─possible versions are: [0.9.0, 0.10.0, 0.11.0-0.11.1, 0.12.0, 0.13.0, 0.14.0-0.14.1, 0.15.0, 0.16.1, 0.17.0-0.17.20, 0.18.0-0.18.8] or uninstalled\n         └─restricted to versions 0.18.8 by an explicit requirement, leaving only versions 0.18.8", nothing)
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1427
+Status `/tmp/jl_YgpN0R/Project.toml`
+  [8f4d0f93] Conda v1.5.0
+  [864edb3b] DataStructures v0.18.8
+  [2b5f629d] DiffEqBase v6.53.4
+  [65888b18] ParameterizedFunctions v5.7.0
+  [438e738f] PyCall v1.92.2
+  [7186c646] PyDSTool v0.6.1
+  [3cdcf5f2] RecipesBase v1.1.1
+  [37e2e46d] LinearAlgebra
+  [8dfed614] Test
+Status `/tmp/jl_YgpN0R/Manifest.toml`
+  [c3fe647b] AbstractAlgebra v0.12.0
+  [79e6a3ab] Adapt v2.4.0
+  [ec485272] ArnoldiMethod v0.0.2
+  [4fba245c] ArrayInterface v2.14.13
+  [56f22d72] Artifacts v1.3.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [861a8166] Combinatorics v1.0.2
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [8f4d0f93] Conda v1.5.0
+  [187b0558] ConstructionBase v1.0.0
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [2b5f629d] DiffEqBase v6.53.4
+  [c894b116] DiffEqJump v6.12.2
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [31c24e10] Distributions v0.24.10
+  [ffbed154] DocStringExtensions v0.8.3
+  [e2ba6199] ExprTools v0.1.3
+  [1a297f60] FillArrays v0.10.2
+  [6a86dc24] FiniteDiff v2.7.2
+  [59287772] Formatting v0.4.2
+  [f6369f11] ForwardDiff v0.10.14
+  [069b7b12] FunctionWrappers v1.1.1
+  [0e44f5e4] Hwloc v1.1.0
+  [e33a78d0] Hwloc_jll v2.2.0+0
+  [615f187c] IfElse v0.1.0
+  [d25df0c9] Inflate v0.1.2
+  [42fd0dbc] IterativeSolvers v0.9.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [b964fa9f] LaTeXStrings v1.2.0
+  [2ee39098] LabelledArrays v1.4.0
+  [23fbe1c1] Latexify v0.14.7
+  [093fc24a] LightGraphs v1.3.4
+  [bdcacae8] LoopVectorization v0.9.17
+  [1914dd2f] MacroTools v0.5.6
+  [e1d29d7a] Missings v0.4.4
+  [961ee093] ModelingToolkit v4.5.0
+  [46d2c3a1] MuladdMacro v0.2.2
+  [77ba4419] NaNMath v0.3.5
+  [8913a72c] NonlinearSolve v0.3.4
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [90014a1f] PDMats v0.10.1
+  [65888b18] ParameterizedFunctions v5.7.0
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.15
+  [e409e4f3] PoissonRandom v0.4.0
+  [438e738f] PyCall v1.92.2
+  [7186c646] PyDSTool v0.6.1
+  [1fd47b50] QuadGK v2.4.1
+  [fb686558] RandomExtensions v0.4.3
+  [e6cf234a] RandomNumbers v1.4.0
+  [3cdcf5f2] RecipesBase v1.1.1
+  [731186ca] RecursiveArrayTools v2.10.0
+  [f2c3362d] RecursiveFactorization v0.1.6
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [7e49a35a] RuntimeGeneratedFunctions v0.5.0
+  [476501e8] SLEEFPirates v0.6.3
+  [1bc83da4] SafeTestsets v0.0.1
+  [efcf1570] Setfield v0.7.0
+  [699a6c99] SimpleTraits v0.9.3
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.2.1
+  [90137ffa] StaticArrays v1.0.1
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [d1185830] SymbolicUtils v0.6.3
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [a759f4b9] TimerOutputs v0.5.7
+  [a2a6695c] TreeViews v0.3.0
+  [3a884ed6] UnPack v1.0.2
+  [1986cc42] Unitful v1.5.0
+  [3d5dd08c] VectorizationBase v0.14.12
+  [81def892] VersionParsing v1.2.0
+  [700de1a5] ZygoteRules v0.2.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: Installing PyDSTool via the Conda pydstool package...
+[ Info: Running `conda config --add channels conda-forge --file /home/pkgeval/.julia/conda/3/condarc-julia.yml --force` in root environment
+[ Info: Running `conda install -q -y pydstool` in root environment
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/pkgeval/.julia/conda/3
+
+  added / updated specs:
+    - pydstool
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ca-certificates-2020.12.5  |       ha878542_0         137 KB  conda-forge
+    certifi-2020.12.5          |   py38h578d9bd_1         143 KB  conda-forge
+    conda-4.9.2                |   py38h578d9bd_0         3.0 MB  conda-forge
+    libgfortran-ng-7.5.0       |      hae1eefd_17          22 KB  conda-forge
+    libgfortran4-7.5.0         |      hae1eefd_17         1.3 MB  conda-forge
+    pydstool-0.91.0            |     pyh9f0ad1d_0         3.0 MB  conda-forge
+    python_abi-3.8             |           1_cp38           4 KB  conda-forge
+    scipy-1.5.2                |   py38h0b6359f_0        14.5 MB
+    ------------------------------------------------------------
+                                           Total:        22.1 MB
+
+The following NEW packages will be INSTALLED:
+
+  libgfortran-ng     conda-forge/linux-64::libgfortran-ng-7.5.0-hae1eefd_17
+  libgfortran4       conda-forge/linux-64::libgfortran4-7.5.0-hae1eefd_17
+  pydstool           conda-forge/noarch::pydstool-0.91.0-pyh9f0ad1d_0
+  python_abi         conda-forge/linux-64::python_abi-3.8-1_cp38
+  scipy              pkgs/main/linux-64::scipy-1.5.2-py38h0b6359f_0
+
+The following packages will be UPDATED:
+
+  certifi            pkgs/main::certifi-2020.12.5-py38h06a~ --> conda-forge::certifi-2020.12.5-py38h578d9bd_1
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  ca-certificates    pkgs/main::ca-certificates-2020.12.8-~ --> conda-forge::ca-certificates-2020.12.5-ha878542_0
+  conda               pkgs/main::conda-4.9.2-py38h06a4308_0 --> conda-forge::conda-4.9.2-py38h578d9bd_0
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = build_ode(::String, ::Dict{String,Real}, ::Dict{String,Float64}, ::Dict{String,String}, ::Array{Int64,1}) at ode_construct_solve.jl:2
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/ode_construct_solve.jl:2
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = set_name(::PyObject, ::String) at constants.jl:16
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/constants.jl:16
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = set_ics at constants.jl:18 [inlined]
+└ @ Core ~/.julia/packages/PyDSTool/zytsh/src/constants.jl:18
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = set_pars at constants.jl:21 [inlined]
+└ @ Core ~/.julia/packages/PyDSTool/zytsh/src/constants.jl:21
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = set_vars at constants.jl:24 [inlined]
+└ @ Core ~/.julia/packages/PyDSTool/zytsh/src/constants.jl:24
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = set_tdomain(::PyObject, ::Array{Int64,1}) at constants.jl:31
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/constants.jl:31
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = solve_ode(::PyObject, ::Symbol, ::String) at ode_construct_solve.jl:25
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/ode_construct_solve.jl:25
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = solve_ode(::PyObject, ::Symbol, ::String) at ode_construct_solve.jl:25
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/ode_construct_solve.jl:25
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = solve_ode(::PyObject, ::Symbol, ::String) at ode_construct_solve.jl:26
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/ode_construct_solve.jl:26
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = interpert_traj(::PyObject) at ode_construct_solve.jl:38
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/ode_construct_solve.jl:38
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = interpert_traj(::PyObject) at ode_construct_solve.jl:38
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/ode_construct_solve.jl:38
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = interpert_traj(::PyObject) at ode_construct_solve.jl:39
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/ode_construct_solve.jl:39
+Test Summary: |
+Linear Solve  | No tests
+  3.598651 seconds (7.62 M allocations: 392.643 MiB, 4.20% gc time)
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = build_ode(::String, ::Dict{String,Any}, ::Dict{String,Any}, ::Dict{String,Any}, ::Array{Int64,1}) at ode_construct_solve.jl:2
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/ode_construct_solve.jl:2
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = set_ics at constants.jl:18 [inlined]
+└ @ Core ~/.julia/packages/PyDSTool/zytsh/src/constants.jl:18
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = set_pars at constants.jl:21 [inlined]
+└ @ Core ~/.julia/packages/PyDSTool/zytsh/src/constants.jl:21
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = set_vars at constants.jl:24 [inlined]
+└ @ Core ~/.julia/packages/PyDSTool/zytsh/src/constants.jl:24
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at calcium.jl:30
+└ @ Core ~/.julia/packages/PyDSTool/zytsh/test/calcium.jl:30
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at calcium.jl:30
+└ @ Core ~/.julia/packages/PyDSTool/zytsh/test/calcium.jl:30
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at calcium.jl:31
+└ @ Core ~/.julia/packages/PyDSTool/zytsh/test/calcium.jl:31
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at calcium.jl:32
+└ @ Core ~/.julia/packages/PyDSTool/zytsh/test/calcium.jl:32
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at calcium.jl:33
+└ @ Core ~/.julia/packages/PyDSTool/zytsh/test/calcium.jl:33
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:88
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:88
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:89
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:89
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:90
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:90
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:91
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:91
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:92
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:92
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:93
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:93
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:94
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:94
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:95
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:95
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:96
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:96
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:97
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:97
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:98
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:98
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:99
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:99
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:105
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:105
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:107
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:107
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:107
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:107
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:112
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:112
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:112
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:112
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:117
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:117
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:117
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:117
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:131
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:131
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = (::PyDSTool.var"#6#7"{String,PyObject})(::Int64) at none:0
+└ @ PyDSTool ./none:0
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = (::PyDSTool.var"#6#7"{String,PyObject})(::Int64) at none:0
+└ @ PyDSTool ./none:0
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:140
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:140
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:141
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:141
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:141
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:141
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:142
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:142
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:142
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:142
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o."s"` instead of `o["s"]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::Nothing, solver_sequence::Array{Symbol,1}) at bifurcation.jl:142
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:142
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:88
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:88
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:89
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:89
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:90
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:90
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:91
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:91
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:92
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:92
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:93
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:93
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:94
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:94
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:95
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:95
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:96
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:96
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:97
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:97
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:98
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:98
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:99
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:99
+┌ Warning: `setindex!(o::PyObject, v, s::Union{Symbol, AbstractString})` is deprecated in favor of `setproperty!(o, s, v)`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:101
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:101
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:105
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:105
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:107
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:107
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:107
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:107
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:112
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:112
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:112
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:112
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:117
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:117
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:117
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:117
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:131
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:131
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = bifurcation_curve(::PyObject, ::String, ::Array{String,1}; max_num_points::Int64, max_stepsize::Int64, min_stepsize::Float64, stepsize::Float64, loc_bif_points::String, save_eigen::Bool, name::String, print_info::Bool, calc_stab::Bool, var_tol::Float64, func_tol::Float64, test_tol::Float64, initpoint::String, solver_sequence::Array{Symbol,1}) at bifurcation.jl:140
+└ @ PyDSTool ~/.julia/packages/PyDSTool/zytsh/src/bifurcation.jl:140
+Test Summary:  | Pass  Total
+Calcium Direct |    2      2
+ 30.770660 seconds (3.99 M allocations: 212.972 MiB, 0.20% gc time)
+Calcium Parameterized: Error During Test at /home/pkgeval/.julia/packages/PyDSTool/zytsh/test/runtests.jl:6
+  Got exception outside of a @test
+  LoadError: type Calcium has no field params
+  Stacktrace:
+   [1] getproperty(::Function, ::Symbol) at ./Base.jl:33
+   [2] build_ode(::Calcium{var"###ParameterizedDiffEqFunction#261",Nothing,Nothing,Nothing,Nothing,ODESystem}, ::Array{Int64,1}, ::Array{Int64,1}, ::Array{Float64,1}) at /home/pkgeval/.julia/packages/PyDSTool/zytsh/src/ode_construct_solve.jl:14
+   [3] top-level scope at /home/pkgeval/.julia/packages/PyDSTool/zytsh/test/pf_calcium.jl:11
+   [4] include(::String) at ./client.jl:457
+   [5] macro expansion at /home/pkgeval/.julia/packages/PyDSTool/zytsh/test/runtests.jl:6 [inlined]
+   [6] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [7] macro expansion at /home/pkgeval/.julia/packages/PyDSTool/zytsh/test/runtests.jl:6 [inlined]
+   [8] macro expansion at ./timing.jl:174 [inlined]
+   [9] macro expansion at /home/pkgeval/.julia/packages/PyDSTool/zytsh/test/runtests.jl:6 [inlined]
+   [10] top-level scope at ./timing.jl:174
+   [11] include(::String) at ./client.jl:457
+   [12] top-level scope at none:6
+   [13] eval(::Module, ::Any) at ./boot.jl:331
+   [14] exec_options(::Base.JLOptions) at ./client.jl:272
+   [15] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/PyDSTool/zytsh/test/pf_calcium.jl:11
+  
+Test Summary:         | Error  Total
+Calcium Parameterized |     1      1
+ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/PyDSTool/zytsh/test/runtests.jl:3
+Warning: matplotlib failed to import properly and so is not
+  providing a graphing interface
+LP Point found 
+LP Point found 
+PyCont curve EQ1 (type EP-C)
+Using model: Calcium channel model
+
+Model Info
+---------- 
+
+  Variables : v, w
+  Parameters: gca, c, v2, v1, vl, vca, gl, i
+
+Continuation Parameters
+----------------------- 
+
+name  =  EQ1
+auxpars  =  []
+freepars  =  ['i']
+MaxNumPoints  =  450
+MaxCorrIters  =  5
+MaxTestIters  =  10
+MaxStepSize  =  2
+MinStepSize  =  1e-05
+StepSize  =  2
+VarTol  =  1e-06
+FuncTol  =  1e-06
+TestTol  =  0.0001
+LocBifPoints  =  ['B', 'SP', 'BP', 'LP', 'H']
+verbosity  =  1
+ClosedCurve  =  50
+SaveJacobian  =  False
+SaveEigen  =  True
+Corrector  =  <bound method Continuation._MoorePenrose of PyCont curve EQ1 (type EP-C)>
+UseAuto  =  False
+StopAtPoints  =  []
+SPOut  =  None
+
+
+Special Points
+-------------- 
+
+P1, P2, LP1, LP2
+PyCont curve SN1 (type LP-C)
+Using model: Calcium channel model
+
+Model Info
+---------- 
+
+  Variables : v, w
+  Parameters: gca, c, v2, v1, vl, vca, gl, i
+
+Continuation Parameters
+----------------------- 
+
+name  =  SN1
+auxpars  =  []
+freepars  =  ['i', 'gca']
+MaxNumPoints  =  200
+MaxCorrIters  =  5
+MaxTestIters  =  10
+MaxStepSize  =  2
+MinStepSize  =  1e-05
+StepSize  =  2
+VarTol  =  1e-06
+FuncTol  =  1e-06
+TestTol  =  0.0001
+LocBifPoints  =  ['CP']
+verbosity  =  1
+ClosedCurve  =  50
+SaveJacobian  =  False
+SaveEigen  =  True
+Corrector  =  <bound method Continuation._MoorePenrose of PyCont curve SN1 (type LP-C)>
+UseAuto  =  False
+StopAtPoints  =  []
+SPOut  =  None
+
+
+Special Points
+-------------- 
+
+P1, P2
+
+PkgEval failed: Package PyDSTool errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:29:12.605
+CPU usage: 423.94s (401.72s user, 22.84s kernel)
+
+Network usage:
+- eth0: 291.379 MiB received, 1.075 MiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":34,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":15,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":34,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":34,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":15,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":34,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":192512,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":86016,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":192512,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":192512,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":86016,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":192512,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":2182111232,"max_usage":3763658752,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":227311616,"inactive_file":135168,"inactive_anon":1326133248,"total_pgfault":9479019,"total_cache":1887920128,"total_rss_huge":0,"total_active_anon":777486336,"total_pgmajfault":0,"pgpgin":6625410,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":811008,"total_unevictable":0,"total_dirty":811008,"writeback":0,"pgpgout":6108970,"hierarchical_memsw_limit":0,"cache":1887920128,"active_file":11489280,"pgfault":9479019,"total_mapped_file":0,"total_pgpgout":6108970,"total_writeback":0,"rss":227311616,"unevictable":0,"total_inactive_anon":1326133248,"total_pgpgin":6625410,"active_anon":777486336,"total_active_file":11489280},"limit":540965302272},"name":"/PyDSTool-nFopWRoj","networks":{"eth0":{"rx_bytes":305532650,"rx_packets":27129,"tx_packets":15415,"tx_bytes":1126864,"tx_dropped":0,"rx_dropped":15,"tx_errors":0,"rx_errors":0}},"id":"8dc4320698f9e7edce71715d04a569455430fd97d92b74e16346dcc22fde2a0e","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3202841234522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":401720000000,"usage_in_kernelmode":22840000000,"total_usage":423944147144,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10310,0,423909103838,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5890613,604210,28538173,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:29:12.607312102Z"}

@@ -1,0 +1,117 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:36:33.872
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:36:35.73
+#
+
+ Installing known registries into `~/.julia`
+#########################                                                 35.3%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed GeometricalPredicates ─ v0.4.0
+  Installed RootsAndPoles ───────── v1.4.0
+  Installed FixedPointNumbers ───── v0.8.4
+  Installed Reexport ────────────── v1.0.0
+  Installed ColorTypes ──────────── v0.10.9
+  Installed Colors ──────────────── v0.12.6
+  Installed VoronoiDelaunay ─────── v0.4.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a0859a10] + RootsAndPoles v1.4.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [3da002f7] + ColorTypes v0.10.9
+  [5ae59095] + Colors v0.12.6
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [fd0ad045] + GeometricalPredicates v0.4.0
+  [189a3867] + Reexport v1.0.0
+  [a0859a10] + RootsAndPoles v1.4.0
+  [72f80fcb] + VoronoiDelaunay v0.4.0
+  [2a0f44e3] + Base64
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+
+
+################################################################################
+# Testing: 2021-01-11T17:36:41.841
+#
+
+    Testing RootsAndPoles
+Status `/tmp/jl_PmItUR/Project.toml`
+  [a0859a10] RootsAndPoles v1.4.0
+  [276daf66] SpecialFunctions v1.2.1
+  [72f80fcb] VoronoiDelaunay v0.4.0
+  [37e2e46d] LinearAlgebra
+  [8dfed614] Test
+Status `/tmp/jl_PmItUR/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.6
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [53c48c17] FixedPointNumbers v0.8.4
+  [fd0ad045] GeometricalPredicates v0.4.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [46d2c3a1] MuladdMacro v0.2.2
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [189a3867] Reexport v1.0.0
+  [a0859a10] RootsAndPoles v1.4.0
+  [276daf66] SpecialFunctions v1.2.1
+  [72f80fcb] VoronoiDelaunay v0.4.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+RootsAndPoles |   74     74
+    Testing RootsAndPoles tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:37:36.242
+CPU usage: 61.42s (56.66s user, 4.86s kernel)
+
+Network usage:
+- eth0: 3.558 MiB received, 93.648 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":131072,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":24576,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":131072,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":131072,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":24576,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":131072,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":346705920,"max_usage":1011712000,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":221802496,"inactive_file":135168,"inactive_anon":85155840,"total_pgfault":1495296,"total_cache":94416896,"total_rss_huge":0,"total_active_anon":231137280,"total_pgmajfault":0,"pgpgin":877767,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":800548,"hierarchical_memsw_limit":0,"cache":94416896,"active_file":135168,"pgfault":1495296,"total_mapped_file":0,"total_pgpgout":800548,"total_writeback":0,"rss":221802496,"unevictable":0,"total_inactive_anon":85155840,"total_pgpgin":877767,"active_anon":231137280,"total_active_file":135168},"limit":540965302272},"name":"/RootsAndPoles-jQT5kvID","networks":{"eth0":{"rx_bytes":3731064,"rx_packets":783,"tx_packets":833,"tx_bytes":95896,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"4aafb791e712a57399a91220db384e65323ba5271bf7e2e09f2597a44a07bf25","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4187325004522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":56660000000,"usage_in_kernelmode":4860000000,"total_usage":61423601969,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,61423595769,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6200,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:37:36.245166139Z"}

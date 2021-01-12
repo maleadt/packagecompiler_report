@@ -1,0 +1,990 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T22:21:29.223
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T22:21:30.889
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MbedTLS_jll ──────── v2.16.8+1
+  Installed Reexport ─────────── v1.0.0
+  Installed Gumbo_jll ────────── v0.10.1+1
+  Installed TextWrap ─────────── v1.0.1
+  Installed Requires ─────────── v1.1.2
+  Installed ArgParse ─────────── v1.1.1
+  Installed GMP_jll ──────────── v6.1.2+6
+  Installed MbedTLS ──────────── v1.0.3
+  Installed Nettle ───────────── v0.5.0
+  Installed PackageCompiler ──── v1.2.5
+  Installed HTTP ─────────────── v0.9.2
+  Installed OrderedCollections ─ v1.3.2
+  Installed Gumbo ────────────── v0.8.0
+  Installed LoggingExtras ────── v0.4.2
+  Installed JuliaInterpreter ─── v0.8.8
+  Installed HttpCommon ───────── v0.5.0
+  Installed Nettle_jll ───────── v3.4.1+2
+  Installed CodeTracking ─────── v1.0.5
+  Installed URIParser ────────── v0.4.1
+  Installed FilePathsBase ────── v0.9.6
+  Installed Nullables ────────── v1.0.0
+  Installed JSON ─────────────── v0.21.1
+  Installed JLLWrappers ──────── v1.2.0
+  Installed Genie ────────────── v1.11.0
+  Installed URIs ─────────────── v1.1.0
+  Installed YAML ─────────────── v0.4.5
+  Installed LoweredCodeUtils ─── v1.2.7
+  Installed AbstractTrees ────── v0.3.3
+  Installed Millboard ────────── v0.2.5
+  Installed Revise ───────────── v3.1.11
+  Installed Parsers ──────────── v1.0.15
+  Installed IniFile ──────────── v0.5.0
+  Installed Artifacts ────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [c43c736e] + Genie v1.11.0
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [1520ce14] + AbstractTrees v0.3.3
+  [c7e460c6] + ArgParse v1.1.1
+  [56f22d72] + Artifacts v1.3.0
+  [da1fd8a2] + CodeTracking v1.0.5
+  [48062228] + FilePathsBase v0.9.6
+  [781609d7] + GMP_jll v6.1.2+6
+  [c43c736e] + Genie v1.11.0
+  [708ec375] + Gumbo v0.8.0
+  [528830af] + Gumbo_jll v0.10.1+1
+  [cd3eb016] + HTTP v0.9.2
+  [77172c1b] + HttpCommon v0.5.0
+  [83e8ac13] + IniFile v0.5.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [aa1ae85d] + JuliaInterpreter v0.8.8
+  [e6f89c97] + LoggingExtras v0.4.2
+  [6f1432cf] + LoweredCodeUtils v1.2.7
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [39ec1447] + Millboard v0.2.5
+  [49dea1ee] + Nettle v0.5.0
+  [4c82536e] + Nettle_jll v3.4.1+2
+  [4d1e1d77] + Nullables v1.0.0
+  [bac558e1] + OrderedCollections v1.3.2
+  [9b87118b] + PackageCompiler v1.2.5
+  [69de0a69] + Parsers v1.0.15
+  [189a3867] + Reexport v1.0.0
+  [ae029012] + Requires v1.1.2
+  [295af30f] + Revise v3.1.11
+  [b718987f] + TextWrap v1.0.1
+  [30578b45] + URIParser v0.4.1
+  [5c2747f8] + URIs v1.1.0
+  [ddb6d928] + YAML v0.4.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [7b1f6079] + FileWatching
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T22:21:37.645
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 183.705 MiB, compilation took 256 seconds
+
+
+┌ Warning: no Manifest.toml file found, static paths used
+└ @ Revise /home/pkgeval/.julia/packages/Revise/moD4B/src/packagedef.jl:1361
+################################################################################
+# PkgEval set-up: 2021-01-11T22:26:01.66
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/Genie-pHf4GEFH.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:26:03.372
+#
+
+ Installing known registries into `~/.julia`
+#################                                                         24.6%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MbedTLS_jll ──────── v2.16.8+1
+  Installed Reexport ─────────── v1.0.0
+  Installed Gumbo_jll ────────── v0.10.1+1
+  Installed TextWrap ─────────── v1.0.1
+  Installed Requires ─────────── v1.1.2
+  Installed MbedTLS ──────────── v1.0.3
+  Installed ArgParse ─────────── v1.1.1
+  Installed GMP_jll ──────────── v6.1.2+6
+  Installed Nettle ───────────── v0.5.0
+  Installed LoggingExtras ────── v0.4.2
+  Installed Gumbo ────────────── v0.8.0
+  Installed OrderedCollections ─ v1.3.2
+  Installed JuliaInterpreter ─── v0.8.8
+  Installed HTTP ─────────────── v0.9.2
+  Installed HttpCommon ───────── v0.5.0
+  Installed Nettle_jll ───────── v3.4.1+2
+  Installed CodeTracking ─────── v1.0.5
+  Installed URIParser ────────── v0.4.1
+  Installed JLLWrappers ──────── v1.2.0
+  Installed FilePathsBase ────── v0.9.6
+  Installed Nullables ────────── v1.0.0
+  Installed JSON ─────────────── v0.21.1
+  Installed Genie ────────────── v1.11.0
+  Installed URIs ─────────────── v1.1.0
+  Installed YAML ─────────────── v0.4.5
+  Installed LoweredCodeUtils ─── v1.2.7
+  Installed AbstractTrees ────── v0.3.3
+  Installed Millboard ────────── v0.2.5
+  Installed Revise ───────────── v3.1.11
+  Installed Parsers ──────────── v1.0.15
+  Installed IniFile ──────────── v0.5.0
+  Installed Artifacts ────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [c43c736e] + Genie v1.11.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [1520ce14] + AbstractTrees v0.3.3
+  [c7e460c6] + ArgParse v1.1.1
+  [56f22d72] + Artifacts v1.3.0
+  [da1fd8a2] + CodeTracking v1.0.5
+  [48062228] + FilePathsBase v0.9.6
+  [781609d7] + GMP_jll v6.1.2+6
+  [c43c736e] + Genie v1.11.0
+  [708ec375] + Gumbo v0.8.0
+  [528830af] + Gumbo_jll v0.10.1+1
+  [cd3eb016] + HTTP v0.9.2
+  [77172c1b] + HttpCommon v0.5.0
+  [83e8ac13] + IniFile v0.5.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [aa1ae85d] + JuliaInterpreter v0.8.8
+  [e6f89c97] + LoggingExtras v0.4.2
+  [6f1432cf] + LoweredCodeUtils v1.2.7
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [39ec1447] + Millboard v0.2.5
+  [49dea1ee] + Nettle v0.5.0
+  [4c82536e] + Nettle_jll v3.4.1+2
+  [4d1e1d77] + Nullables v1.0.0
+  [bac558e1] + OrderedCollections v1.3.2
+  [69de0a69] + Parsers v1.0.15
+  [189a3867] + Reexport v1.0.0
+  [ae029012] + Requires v1.1.2
+  [295af30f] + Revise v3.1.11
+  [b718987f] + TextWrap v1.0.1
+  [30578b45] + URIParser v0.4.1
+  [5c2747f8] + URIs v1.1.0
+  [ddb6d928] + YAML v0.4.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [7b1f6079] + FileWatching
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T22:26:09.485
+#
+
+    Testing Genie
+Status `/tmp/jl_M8bQ6b/Project.toml`
+  [c43c736e] Genie v1.11.0
+  [cd3eb016] HTTP v0.9.2
+  [e6f89c97] LoggingExtras v0.4.2
+  [1bc83da4] SafeTestsets v0.0.1
+  [98d24dd4] TestSetExtensions v2.0.0
+  [ade2ca70] Dates
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [9a3f8284] Random
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Status `/tmp/jl_M8bQ6b/Manifest.toml`
+  [1520ce14] AbstractTrees v0.3.3
+  [c7e460c6] ArgParse v1.1.1
+  [56f22d72] Artifacts v1.3.0
+  [da1fd8a2] CodeTracking v1.0.5
+  [ab62b9b5] DeepDiffs v1.2.0
+  [48062228] FilePathsBase v0.9.6
+  [781609d7] GMP_jll v6.1.2+6
+  [c43c736e] Genie v1.11.0
+  [708ec375] Gumbo v0.8.0
+  [528830af] Gumbo_jll v0.10.1+1
+  [cd3eb016] HTTP v0.9.2
+  [77172c1b] HttpCommon v0.5.0
+  [83e8ac13] IniFile v0.5.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [aa1ae85d] JuliaInterpreter v0.8.8
+  [e6f89c97] LoggingExtras v0.4.2
+  [6f1432cf] LoweredCodeUtils v1.2.7
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [39ec1447] Millboard v0.2.5
+  [49dea1ee] Nettle v0.5.0
+  [4c82536e] Nettle_jll v3.4.1+2
+  [4d1e1d77] Nullables v1.0.0
+  [bac558e1] OrderedCollections v1.3.2
+  [69de0a69] Parsers v1.0.15
+  [189a3867] Reexport v1.0.0
+  [ae029012] Requires v1.1.2
+  [295af30f] Revise v3.1.11
+  [1bc83da4] SafeTestsets v0.0.1
+  [98d24dd4] TestSetExtensions v2.0.0
+  [b718987f] TextWrap v1.0.1
+  [30578b45] URIParser v0.4.1
+  [5c2747f8] URIs v1.1.0
+  [ddb6d928] YAML v0.4.5
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [7b1f6079] FileWatching
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+
+tests_1_query_params: 
+ Web Server running at http://127.0.0.1:8771 
+[ Info: / 200
+..┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8771", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+
+ Web Server running at http://127.0.0.1:8771 
+┌ Error: KeyError(:a)
+└ @ Genie.AppServer /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:184
+┌ Error: KeyError: key :a not found
+│ getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:467
+│ (::var"#7#8")() at /home/user/.julia/packages/Genie/OBRuv/test/tests_1_query_params.jl:37
+│ #invokelatest#1 at ./essentials.jl:710 [inlined]
+│ invokelatest at ./essentials.jl:709 [inlined]
+│ match_routes(::HTTP.Messages.Request, ::HTTP.Messages.Response, ::Genie.Router.Params{Any}) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:504
+│ route_request(::HTTP.Messages.Request, ::HTTP.Messages.Response, ::Sockets.IPv4) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:154
+│ handle_request(::HTTP.Messages.Request, ::HTTP.Messages.Response, ::Sockets.IPv4) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:182
+│ handle_request at /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:175 [inlined]
+│ #22 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/macros.jl:127 [inlined]
+│ run_work_thunk(::Genie.AppServer.var"#22#23"{HTTP.Messages.Request,HTTP.Messages.Response}, ::Bool) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/process_messages.jl:79
+│ remotecall_fetch(::Function, ::Distributed.LocalProcess; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/remotecall.jl:379
+│ remotecall_fetch(::Function, ::Distributed.LocalProcess) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/remotecall.jl:379
+│ remotecall_fetch(::Function, ::Int64; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/remotecall.jl:421
+│ remotecall_fetch(::Function, ::Int64) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/remotecall.jl:421
+│ setup_http_handler(::HTTP.Messages.Request, ::HTTP.Messages.Response) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:197
+│ setup_http_handler at /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:196 [inlined]
+│ handle at /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Handlers.jl:254 [inlined]
+│ handle(::HTTP.Handlers.RequestHandlerFunction{typeof(Genie.AppServer.setup_http_handler)}, ::HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}) at /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Handlers.jl:277
+│ (::Genie.AppServer.var"#6#13"{Int64})(::HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:90
+│ macro expansion at /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:402 [inlined]
+│ (::HTTP.Servers.var"#13#14"{Genie.AppServer.var"#6#13"{Int64},HTTP.ConnectionPool.Transaction{Sockets.TCPSocket},HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}})() at ./task.jl:356
+│ 
+└ @ Genie.AppServer /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:209
+┌ Error: SystemError("opening file \"/home/pkgeval/.julia/packages/Genie/OBRuv/src/renderers/../../files/static/error-500.html\"", 2, nothing)
+└ @ Genie.Renderer.Html /home/pkgeval/.julia/packages/Genie/OBRuv/src/renderers/Html.jl:948
+┌ Error: KeyError(:a)
+└ @ Genie.AppServer /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:184
+┌ Error: KeyError: key :a not found
+│ getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:467
+│ (::var"#7#8")() at /home/user/.julia/packages/Genie/OBRuv/test/tests_1_query_params.jl:37
+│ #invokelatest#1 at ./essentials.jl:710 [inlined]
+│ invokelatest at ./essentials.jl:709 [inlined]
+│ match_routes(::HTTP.Messages.Request, ::HTTP.Messages.Response, ::Genie.Router.Params{Any}) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:504
+│ route_request(::HTTP.Messages.Request, ::HTTP.Messages.Response, ::Sockets.IPv4) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:154
+│ handle_request(::HTTP.Messages.Request, ::HTTP.Messages.Response, ::Sockets.IPv4) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:182
+│ handle_request at /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:175 [inlined]
+│ #22 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/macros.jl:127 [inlined]
+│ run_work_thunk(::Genie.AppServer.var"#22#23"{HTTP.Messages.Request,HTTP.Messages.Response}, ::Bool) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/process_messages.jl:79
+│ remotecall_fetch(::Function, ::Distributed.LocalProcess; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/remotecall.jl:379
+│ remotecall_fetch(::Function, ::Distributed.LocalProcess) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/remotecall.jl:379
+│ remotecall_fetch(::Function, ::Int64; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/remotecall.jl:421
+│ remotecall_fetch(::Function, ::Int64) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/remotecall.jl:421
+│ setup_http_handler(::HTTP.Messages.Request, ::HTTP.Messages.Response) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:197
+│ setup_http_handler at /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:196 [inlined]
+│ handle at /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Handlers.jl:254 [inlined]
+│ handle(::HTTP.Handlers.RequestHandlerFunction{typeof(Genie.AppServer.setup_http_handler)}, ::HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}) at /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Handlers.jl:277
+│ (::Genie.AppServer.var"#6#13"{Int64})(::HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:90
+│ macro expansion at /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:402 [inlined]
+│ (::HTTP.Servers.var"#13#14"{Genie.AppServer.var"#6#13"{Int64},HTTP.ConnectionPool.Transaction{Sockets.TCPSocket},HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}})() at ./task.jl:356
+│ 
+└ @ Genie.AppServer /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:209
+┌ Error: SystemError("opening file \"/home/pkgeval/.julia/packages/Genie/OBRuv/src/renderers/../../files/static/error-500.html\"", 2, nothing)
+└ @ Genie.Renderer.Html /home/pkgeval/.julia/packages/Genie/OBRuv/src/renderers/Html.jl:948
+┌ Error: KeyError(:a)
+└ @ Genie.AppServer /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:184
+┌ Error: KeyError: key :a not found
+│ getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:467
+│ (::var"#7#8")() at /home/user/.julia/packages/Genie/OBRuv/test/tests_1_query_params.jl:37
+│ #invokelatest#1 at ./essentials.jl:710 [inlined]
+│ invokelatest at ./essentials.jl:709 [inlined]
+│ match_routes(::HTTP.Messages.Request, ::HTTP.Messages.Response, ::Genie.Router.Params{Any}) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:504
+│ route_request(::HTTP.Messages.Request, ::HTTP.Messages.Response, ::Sockets.IPv4) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:154
+│ handle_request(::HTTP.Messages.Request, ::HTTP.Messages.Response, ::Sockets.IPv4) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:182
+│ handle_request at /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:175 [inlined]
+│ #22 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/macros.jl:127 [inlined]
+│ run_work_thunk(::Genie.AppServer.var"#22#23"{HTTP.Messages.Request,HTTP.Messages.Response}, ::Bool) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/process_messages.jl:79
+│ remotecall_fetch(::Function, ::Distributed.LocalProcess; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/remotecall.jl:379
+│ remotecall_fetch(::Function, ::Distributed.LocalProcess) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/remotecall.jl:379
+│ remotecall_fetch(::Function, ::Int64; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/remotecall.jl:421
+│ remotecall_fetch(::Function, ::Int64) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/remotecall.jl:421
+│ setup_http_handler(::HTTP.Messages.Request, ::HTTP.Messages.Response) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:197
+│ setup_http_handler at /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:196 [inlined]
+│ handle at /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Handlers.jl:254 [inlined]
+│ handle(::HTTP.Handlers.RequestHandlerFunction{typeof(Genie.AppServer.setup_http_handler)}, ::HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}) at /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Handlers.jl:277
+│ (::Genie.AppServer.var"#6#13"{Int64})(::HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:90
+│ macro expansion at /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:402 [inlined]
+│ (::HTTP.Servers.var"#13#14"{Genie.AppServer.var"#6#13"{Int64},HTTP.ConnectionPool.Transaction{Sockets.TCPSocket},HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}})() at ./task.jl:356
+│ 
+└ @ Genie.AppServer /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:209
+┌ Error: SystemError("opening file \"/home/pkgeval/.julia/packages/Genie/OBRuv/src/renderers/../../files/static/error-500.html\"", 2, nothing)
+└ @ Genie.Renderer.Html /home/pkgeval/.julia/packages/Genie/OBRuv/src/renderers/Html.jl:948
+┌ Error: KeyError(:a)
+└ @ Genie.AppServer /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:184
+┌ Error: KeyError: key :a not found
+│ getindex(::Dict{Symbol,Any}, ::Symbol) at ./dict.jl:467
+│ (::var"#7#8")() at /home/user/.julia/packages/Genie/OBRuv/test/tests_1_query_params.jl:37
+│ #invokelatest#1 at ./essentials.jl:710 [inlined]
+│ invokelatest at ./essentials.jl:709 [inlined]
+│ match_routes(::HTTP.Messages.Request, ::HTTP.Messages.Response, ::Genie.Router.Params{Any}) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:504
+│ route_request(::HTTP.Messages.Request, ::HTTP.Messages.Response, ::Sockets.IPv4) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:154
+│ handle_request(::HTTP.Messages.Request, ::HTTP.Messages.Response, ::Sockets.IPv4) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:182
+│ handle_request at /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:175 [inlined]
+│ #22 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/macros.jl:127 [inlined]
+│ run_work_thunk(::Genie.AppServer.var"#22#23"{HTTP.Messages.Request,HTTP.Messages.Response}, ::Bool) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/process_messages.jl:79
+│ remotecall_fetch(::Function, ::Distributed.LocalProcess; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/remotecall.jl:379
+│ remotecall_fetch(::Function, ::Distributed.LocalProcess) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/remotecall.jl:379
+│ remotecall_fetch(::Function, ::Int64; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/remotecall.jl:421
+│ remotecall_fetch(::Function, ::Int64) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/remotecall.jl:421
+│ setup_http_handler(::HTTP.Messages.Request, ::HTTP.Messages.Response) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:197
+│ setup_http_handler at /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:196 [inlined]
+│ handle at /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Handlers.jl:254 [inlined]
+│ handle(::HTTP.Handlers.RequestHandlerFunction{typeof(Genie.AppServer.setup_http_handler)}, ::HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}) at /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Handlers.jl:277
+│ (::Genie.AppServer.var"#6#13"{Int64})(::HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:90
+│ macro expansion at /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:402 [inlined]
+│ (::HTTP.Servers.var"#13#14"{Genie.AppServer.var"#6#13"{Int64},HTTP.ConnectionPool.Transaction{Sockets.TCPSocket},HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}})() at ./task.jl:356
+│ 
+└ @ Genie.AppServer /home/pkgeval/.julia/packages/Genie/OBRuv/src/AppServer.jl:209
+┌ Error: SystemError("opening file \"/home/pkgeval/.julia/packages/Genie/OBRuv/src/renderers/../../files/static/error-500.html\"", 2, nothing)
+└ @ Genie.Renderer.Html /home/pkgeval/.julia/packages/Genie/OBRuv/src/renderers/Html.jl:948
+.┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8771", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+
+ Web Server running at http://127.0.0.1:8771 
+[ Info: / 200
+..[ Info: / 200
+..[ Info: /?x 200
+..[ Info: /?x&a=3 200
+..[ Info: /?x&y 200
+..┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8771", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+
+ Web Server running at http://127.0.0.1:8771 
+[ Info: /?x=1 200
+..[ Info: /?x=1&x=2 200
+..[ Info: /?x=1&x=2&x=3 200
+..[ Info: /?x=1&x=2&x=3&y=0 200
+..[ Info: /?x=0&x[]=1&x[]=2 200
+..┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8771", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+
+ Web Server running at http://127.0.0.1:8771 
+[ Info: / 200
+..[ Info: /?x&x[]=1000 200
+..[ Info: /?x&x[]=1000&x[]=2000 200
+..[ Info: /?x=9&x[]=1000&x[]=2000 200
+..[ Info: /?x=9&x[]=1000&x[]=2000&y[]=8 200
+..┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8771", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+
+tests_AppServer: 
+ Web Server running at http://127.0.0.1:8771 
+..┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8771", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+..
+ Web Server running at http://127.0.0.1:8771 
+..┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8771", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+..
+ Web Server running at http://127.0.0.1:9771 
+..
+tests_Assets: ┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "9771", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+.....
+=====================================================
+Embedded assets: Error During Test at /home/user/.julia/packages/Genie/OBRuv/test/tests_Assets.jl:22
+  Test threw exception
+  Expression: (Assets.channels())[1:18] == "window.Genie = {};"
+  SystemError: opening file "/home/pkgeval/.julia/packages/Genie/OBRuv/files/embedded/channels.js": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::Base.var"#296#297"{String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] read at ./io.jl:410 [inlined]
+   [9] embedded at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Assets.jl:87 [inlined]
+   [10] channels(::String) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Assets.jl:107 (repeats 2 times)
+   [11] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_Assets.jl:22
+   [12] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [13] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_Assets.jl:20
+  
+=====================================================
+
+=====================================================
+Embedded assets: Error During Test at /home/user/.julia/packages/Genie/OBRuv/test/tests_Assets.jl:23
+  Test threw exception
+  Expression: (channels_script())[1:27] == "<script>\nwindow.Genie = {};"
+  SystemError: opening file "/home/pkgeval/.julia/packages/Genie/OBRuv/files/embedded/channels.js": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::Base.var"#296#297"{String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] read at ./io.jl:410 [inlined]
+   [9] embedded at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Assets.jl:87 [inlined]
+   [10] channels(::String) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Assets.jl:107
+   [11] channels_script at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Assets.jl:117 [inlined] (repeats 2 times)
+   [12] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_Assets.jl:23
+   [13] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_Assets.jl:20
+  
+=====================================================
+.....
+tests_HEAD_requests: 
+ Web Server running at http://127.0.0.1:8771 
+[ Info: / 200
+..[ Info: / 200
+..┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8771", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+
+ Web Server running at http://127.0.0.1:8771 
+[ Info: / 200
+..[ Info: / 200
+..┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8771", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+
+ Web Server running at http://127.0.0.1:8771 
+[ Info: / 200
+..[ Info: / 200
+..┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8771", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+
+tests_SVG_API: ....
+tests_Sessions: 
+=====================================================
+Simple session setting and getting: Error During Test at /home/user/.julia/packages/Genie/OBRuv/test/tests_Sessions.jl:3
+  Got exception outside of a @test
+  could not open file /home/pkgeval/.julia/packages/Genie/OBRuv/src/session_adapters/FileSession.jl
+  Stacktrace:
+   [1] include(::Function, ::Module, ::String) at ./Base.jl:380
+   [2] include at ./Base.jl:368 [inlined]
+   [3] include(::String) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Sessions.jl:1
+   [4] top-level scope at none:1
+   [5] eval at ./boot.jl:331 [inlined]
+   [6] init() at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Sessions.jl:98
+   [7] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_Sessions.jl:9
+   [8] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [9] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_Sessions.jl:4
+   [10] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [11] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_Sessions.jl:3
+   [12] include(::Function, ::Module, ::String) at ./Base.jl:380
+   [13] include(::Module, ::String) at ./Base.jl:368
+   [14] top-level scope at /home/user/.julia/packages/TestSetExtensions/lB7xG/src/TestSetExtensions.jl:40
+   [15] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/runtests.jl:9
+   [16] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [17] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/runtests.jl:9
+   [18] include(::String) at ./client.jl:457
+   [19] top-level scope at none:6
+   [20] eval(::Module, ::Any) at ./boot.jl:331
+   [21] exec_options(::Base.JLOptions) at ./client.jl:272
+   [22] _start() at ./client.jl:506
+  
+=====================================================
+
+tests_advanced_html_rendering: ...
+tests_advanced_select_rendering: .
+tests_assets_rendering: 
+=====================================================
+Embedded assets: Error During Test at /home/user/.julia/packages/Genie/OBRuv/test/tests_assets_rendering.jl:8
+  Test threw exception
+  Expression: Assets.js_settings() * Assets.embedded(joinpath("files", "embedded", "channels.js")) == Assets.channels()
+  SystemError: opening file "/home/pkgeval/.julia/packages/Genie/OBRuv/files/embedded/channels.js": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::Base.var"#296#297"{String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] read at ./io.jl:410 [inlined]
+   [9] embedded(::String) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Assets.jl:87
+   [10] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_assets_rendering.jl:8
+   [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [12] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_assets_rendering.jl:4
+  
+=====================================================
+
+=====================================================
+Embedded assets: Error During Test at /home/user/.julia/packages/Genie/OBRuv/test/tests_assets_rendering.jl:10
+  Test threw exception
+  Expression: (Assets.channels())[1:18] == "window.Genie = {};"
+  SystemError: opening file "/home/pkgeval/.julia/packages/Genie/OBRuv/files/embedded/channels.js": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::Base.var"#296#297"{String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] read at ./io.jl:410 [inlined]
+   [9] embedded at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Assets.jl:87 [inlined]
+   [10] channels(::String) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Assets.jl:107 (repeats 2 times)
+   [11] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_assets_rendering.jl:10
+   [12] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [13] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_assets_rendering.jl:4
+  
+=====================================================
+
+=====================================================
+Embedded assets: Error During Test at /home/user/.julia/packages/Genie/OBRuv/test/tests_assets_rendering.jl:12
+  Test threw exception
+  Expression: (Assets.channels_script())[1:28] == "<script>\nwindow.Genie = {};\n"
+  SystemError: opening file "/home/pkgeval/.julia/packages/Genie/OBRuv/files/embedded/channels.js": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] open(::Base.var"#296#297"{String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [7] open at ./io.jl:323 [inlined]
+   [8] read at ./io.jl:410 [inlined]
+   [9] embedded at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Assets.jl:87 [inlined]
+   [10] channels(::String) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Assets.jl:107
+   [11] channels_script at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Assets.jl:117 [inlined] (repeats 2 times)
+   [12] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_assets_rendering.jl:12
+   [13] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_assets_rendering.jl:4
+  
+=====================================================
+
+tests_basic_rendering: ......................
+tests_cache: 
+=====================================================
+No Caching: Error During Test at /home/user/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:25
+  Got exception outside of a @test
+  could not open file /home/pkgeval/.julia/packages/Genie/OBRuv/src/cache_adapters/FileCache.jl
+  Stacktrace:
+   [1] include(::Function, ::Module, ::String) at ./Base.jl:380
+   [2] include at ./Base.jl:368 [inlined]
+   [3] include(::String) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Cache.jl:4
+   [4] top-level scope at none:1
+   [5] eval at ./boot.jl:331 [inlined]
+   [6] init() at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Cache.jl:15
+   [7] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_cache.jl:4
+   [8] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [9] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_cache.jl:2
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] top-level scope at /home/user/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
+   [12] include(::Function, ::Module, ::String) at ./Base.jl:380
+   [13] include(::Module, ::String) at ./Base.jl:368
+   [14] top-level scope at /home/user/.julia/packages/TestSetExtensions/lB7xG/src/TestSetExtensions.jl:40
+   [15] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/runtests.jl:9
+   [16] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [17] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/runtests.jl:9
+   [18] include(::String) at ./client.jl:457
+   [19] top-level scope at none:6
+   [20] eval(::Module, ::Any) at ./boot.jl:331
+   [21] exec_options(::Base.JLOptions) at ./client.jl:272
+   [22] _start() at ./client.jl:506
+  
+=====================================================
+
+=====================================================
+cache: Error During Test at /home/user/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:25
+  Got exception outside of a @test
+  MethodError: no method matching withcache(::Main.##275.var"#1#8"{Main.##275.var"#f#7"}, ::Symbol)
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_cache.jl:37
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_cache.jl:29
+   [4] eval(::Module, ::Any) at ./boot.jl:331
+   [5] top-level scope at /home/user/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
+   [6] include(::Function, ::Module, ::String) at ./Base.jl:380
+   [7] include(::Module, ::String) at ./Base.jl:368
+   [8] top-level scope at /home/user/.julia/packages/TestSetExtensions/lB7xG/src/TestSetExtensions.jl:40
+   [9] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/runtests.jl:9
+   [10] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [11] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/runtests.jl:9
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+=====================================================
+
+tests_config: ....
+ Web Server running at http://0.0.0.0:9000 
+....┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "0.0.0.0", "9000", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+
+ Web Server running at http://0.0.0.0:9000 
+....┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "0.0.0.0", "9000", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+
+tests_content_negotiation: 
+ Web Server running at http://127.0.0.1:8000 
+┌ Error: SystemError("opening file \"/home/pkgeval/.julia/packages/Genie/OBRuv/src/renderers/../../files/static/error-404.html\"", 2, nothing)
+└ @ Genie.Renderer.Html /home/pkgeval/.julia/packages/Genie/OBRuv/src/renderers/Html.jl:948
+┌ Error: /notexisting 404
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+.
+=====================================================
+Not found matches request type -- Content-Type -- custom HTML Genie page: Test Failed at /home/user/.julia/packages/Genie/OBRuv/test/tests_content_negotiation.jl:17
+  Expression: occursin("Sorry, we can not find", String(response.body)) == true
+   Evaluated: false == true
+Stacktrace:
+ [1] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_content_negotiation.jl:17
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_content_negotiation.jl:5
+=====================================================
+.┌ Error: SystemError("opening file \"/home/pkgeval/.julia/packages/Genie/OBRuv/src/renderers/../../files/static/error-404.html\"", 2, nothing)
+└ @ Genie.Renderer.Html /home/pkgeval/.julia/packages/Genie/OBRuv/src/renderers/Html.jl:948
+┌ Error: /notexisting 404
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+.
+=====================================================
+Not found matches request type -- Content-Type -- custom HTML Genie page: Test Failed at /home/user/.julia/packages/Genie/OBRuv/test/tests_content_negotiation.jl:27
+  Expression: occursin("Sorry, we can not find", String(response.body)) == true
+   Evaluated: false == true
+Stacktrace:
+ [1] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_content_negotiation.jl:27
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_content_negotiation.jl:5
+=====================================================
+.┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8000", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+
+ Web Server running at http://127.0.0.1:8000 
+┌ Error: SystemError("opening file \"/home/pkgeval/.julia/packages/Genie/OBRuv/src/renderers/../../files/static/error-404.html\"", 2, nothing)
+└ @ Genie.Renderer.Html /home/pkgeval/.julia/packages/Genie/OBRuv/src/renderers/Html.jl:948
+┌ Error: /notexisting 404
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+.
+=====================================================
+Not found matches request type -- Accept -- custom HTML Genie page: Test Failed at /home/user/.julia/packages/Genie/OBRuv/test/tests_content_negotiation.jl:47
+  Expression: occursin("Sorry, we can not find", String(response.body)) == true
+   Evaluated: false == true
+Stacktrace:
+ [1] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_content_negotiation.jl:47
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_content_negotiation.jl:35
+=====================================================
+.┌ Error: SystemError("opening file \"/home/pkgeval/.julia/packages/Genie/OBRuv/src/renderers/../../files/static/error-404.html\"", 2, nothing)
+└ @ Genie.Renderer.Html /home/pkgeval/.julia/packages/Genie/OBRuv/src/renderers/Html.jl:948
+┌ Error: /notexisting 404
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+.
+=====================================================
+Not found matches request type -- Accept -- custom HTML Genie page: Test Failed at /home/user/.julia/packages/Genie/OBRuv/test/tests_content_negotiation.jl:57
+  Expression: occursin("Sorry, we can not find", String(response.body)) == true
+   Evaluated: false == true
+Stacktrace:
+ [1] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_content_negotiation.jl:57
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_content_negotiation.jl:35
+=====================================================
+.┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8000", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+
+ Web Server running at http://127.0.0.1:8000 
+┌ Error: /notexisting 404
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+...┌ Error: /notexisting 404
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+...┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8000", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+
+ Web Server running at http://127.0.0.1:8000 
+┌ Error: /notexisting 404
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+...┌ Error: /notexisting 404
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+...┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8000", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+
+ Web Server running at http://127.0.0.1:8000 
+┌ Error: /notexisting 404
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+...┌ Error: /notexisting 404
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+...┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8000", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+
+ Web Server running at http://127.0.0.1:8000 
+┌ Error: /notexisting 404
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+...┌ Error: /notexisting 404
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+...┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8000", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+
+ Web Server running at http://127.0.0.1:8000 
+┌ Error: /notexisting 404
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+...┌ Error: /notexisting 404
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+...┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8000", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+
+ Web Server running at http://127.0.0.1:8000 
+┌ Error: /notexisting 404
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+...┌ Error: /notexisting 401
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+...┌ Error: /notexisting 401
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+...┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8000", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+
+ Web Server running at http://127.0.0.1:8000 
+┌ Error: /notexisting 404
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+...┌ Error: /notexisting 401
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+...┌ Error: /notexisting 401
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+...┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8000", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+
+ Web Server running at http://127.0.0.1:8000 
+┌ Error: SystemError("opening file \"/home/pkgeval/.julia/packages/Genie/OBRuv/src/renderers/../../files/static/error-404.html\"", 2, nothing)
+└ @ Genie.Renderer.Html /home/pkgeval/.julia/packages/Genie/OBRuv/src/renderers/Html.jl:948
+┌ Error: /notexisting 404
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+.┌ Error: /notexisting 404
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+.┌ Error: /notexisting 401
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+.┌ Error: SystemError("opening file \"/home/pkgeval/.julia/packages/Genie/OBRuv/src/renderers/../../files/static/error-404.html\"", 2, nothing)
+└ @ Genie.Renderer.Html /home/pkgeval/.julia/packages/Genie/OBRuv/src/renderers/Html.jl:948
+┌ Error: /notexisting 404
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+.┌ Error: /notexisting 404
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+.┌ Error: /notexisting 401
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+.┌ Error: /notexisting 401
+└ @ Genie.Router /home/pkgeval/.julia/packages/Genie/OBRuv/src/Router.jl:167
+.┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8000", nothing))
+└ @ HTTP.Servers /home/pkgeval/.julia/packages/HTTP/hbs7O/src/Servers.jl:308
+
+tests_files_vars_rendering: ..............
+tests_flax_control_flow_rendering: ..
+tests_flax_views_rendering: ......
+tests_fullstack_app: 
+=====================================================
+Create and run a full stack app with resources: Error During Test at /home/user/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:25
+  Got exception outside of a @test
+  IOError: open: no such file or directory (ENOENT)
+  Stacktrace:
+   [1] uv_error at ./libuv.jl:97 [inlined]
+   [2] open(::String, ::UInt8, ::Int64) at ./filesystem.jl:87
+   [3] open at ./filesystem.jl:79 [inlined]
+   [4] sendfile(::String, ::String) at ./file.jl:938
+   [5] cp(::String, ::String; force::Bool, follow_symlinks::Bool) at ./file.jl:351
+   [6] cp at ./file.jl:345 [inlined]
+   [7] fullstack_app at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Generator.jl:260 [inlined]
+   [8] newapp(::String; autostart::Bool, fullstack::Bool, dbsupport::Bool, mvcsupport::Bool, testmode::Bool) at /home/pkgeval/.julia/packages/Genie/OBRuv/src/Generator.jl:565
+   [9] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_fullstack_app.jl:14
+   [10] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [11] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_fullstack_app.jl:7
+   [12] eval(::Module, ::Any) at ./boot.jl:331
+   [13] top-level scope at /home/user/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
+   [14] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_fullstack_app.jl:6
+   [15] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [16] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/tests_fullstack_app.jl:3
+   [17] eval(::Module, ::Any) at ./boot.jl:331
+   [18] top-level scope at /home/user/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
+   [19] include(::Function, ::Module, ::String) at ./Base.jl:380
+   [20] include(::Module, ::String) at ./Base.jl:368
+   [21] top-level scope at /home/user/.julia/packages/TestSetExtensions/lB7xG/src/TestSetExtensions.jl:40
+   [22] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/runtests.jl:9
+   [23] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [24] top-level scope at /home/user/.julia/packages/Genie/OBRuv/test/runtests.jl:9
+   [25] include(::String) at ./client.jl:457
+   [26] top-level scope at none:6
+   [27] eval(::Module, ::Any) at ./boot.jl:331
+   [28] exec_options(::Base.JLOptions) at ./client.jl:272
+   [29] _start() at ./client.jl:506
+  
+=====================================================
+ Activating environment at `~/.julia/packages/Genie/OBRuv/test/Project.toml`
+
+tests_genie_generators: 
+tests_html_attributes_rendering: ........................
+tests_html_rendering: ........................
+tests_js_rendering: ....
+tests_json_rendering: .
+tests_markdown_rendering: ......
+tests_router: 
+tests_vars_rendering: ....
+
+
+Test Summary:                                                                                | Pass  Fail  Error  Broken  Total
+Genie tests                                                                                  |  255     4      9       2    270
+  No query params                                                                            |    2                           2
+  No defaults errors out                                                                     |    1                           1
+  Defaults when no query params                                                              |   10                          10
+  Query params processing                                                                    |   10                          10
+  Array query params                                                                         |   10                          10
+  AppServer functionality                                                                    |   10                          10
+  Assets functionality                                                                       |   10            2             12
+    Assets paths                                                                             |    4                           4
+    Expose settings                                                                          |    1                           1
+    Embedded assets                                                                          |    5            2              7
+  HEAD requests                                                                              |   12                          12
+  SVG API support in Renderer.Html                                                           |    4                           4
+  Sessions functionality                                                                     |                 1              1
+    Simple session setting and getting                                                       |                 1              1
+  Advanced rendering                                                                         |    3                    1      4
+  Assets rendering                                                                           |                 3              3
+    Embedded assets                                                                          |                 3              3
+  Basic rendering                                                                            |   22                          22
+  No Caching                                                                                 |                 1              1
+  cache                                                                                      |                 1              1
+  App Config                                                                                 |   12                          12
+  Content negotiation                                                                        |   63     4                    67
+    Response type matches request type                                                       |   26     4                    30
+      Not found matches request type -- Content-Type -- custom HTML Genie page               |    4     2                     6
+      Not found matches request type -- Accept -- custom HTML Genie page                     |    4     2                     6
+      Not found matches request type -- Content-Type -- custom JSON Genie handler            |    6                           6
+      Not found matches request type -- Accept -- custom JSON Genie handler                  |    6                           6
+      Not found matches request type -- Content-Type -- custom text Genie handler            |    6                           6
+    Not found matches request type -- Content-Type -- unknown content type get same response |    6                           6
+    Not found matches request type -- Accept -- unknown content type get same response       |    6                           6
+    Custom error handler for unknown types                                                   |    9                           9
+    Custom error handler for known types                                                     |    9                           9
+    Order of accept preferences                                                              |    7                           7
+  Files vars rendering                                                                       |   14                          14
+  Control flow rendering                                                                     |    2                           2
+  HTML+Julia rendering                                                                       |    6                           6
+  Fullstack app                                                                              |                 1              1
+    Create and run a full stack app with resources                                           |                 1              1
+  HTML attributes rendering                                                                  |   24                    1     25
+  HTML rendering                                                                             |   24                          24
+  JS rendering                                                                               |    4                           4
+  JS rendering                                                                               |    1                           1
+  Markdown rendering                                                                         |    6                           6
+  Router tests                                                                               |                            No tests
+  Vars rendering                                                                             |    4                           4
+ERROR: LoadError: Some tests did not pass: 255 passed, 4 failed, 9 errored, 2 broken.
+in expression starting at /home/user/.julia/packages/Genie/OBRuv/test/runtests.jl:8
+
+PkgEval failed: Package Genie errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:27:36.178
+CPU usage: 57.16s (53.71s user, 3.54s kernel)
+
+Network usage:
+- eth0: 5.139 MiB received, 219.319 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":19,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":19,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":86016,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":28672,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":86016,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":86016,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":28672,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":86016,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":355778560,"max_usage":821850112,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":234143744,"inactive_file":270336,"inactive_anon":88129536,"total_pgfault":794937,"total_cache":89866240,"total_rss_huge":0,"total_active_anon":235732992,"total_pgmajfault":0,"pgpgin":391842,"rss_huge":0,"mapped_file":0,"total_inactive_file":270336,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":312722,"hierarchical_memsw_limit":0,"cache":89866240,"active_file":135168,"pgfault":794937,"total_mapped_file":0,"total_pgpgout":312722,"total_writeback":0,"rss":234143744,"unevictable":0,"total_inactive_anon":88129536,"total_pgpgin":391842,"active_anon":235732992,"total_active_file":135168},"limit":540965302272},"name":"/Genie-D77cZNeF","networks":{"eth0":{"rx_bytes":5388393,"rx_packets":1890,"tx_packets":1989,"tx_bytes":224583,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"6afa74a9ea2913a31327aa4d462d8978362724216021e1956b8d64a3cc054879","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6410795974522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":53710000000,"usage_in_kernelmode":3540000000,"total_usage":57160079405,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,57160075075,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4330,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:27:36.181219638Z"}

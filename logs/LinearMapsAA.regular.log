@@ -1,0 +1,101 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:13:38.019
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:13:39.616
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed LinearMaps ─── v2.7.0
+  Installed LinearMapsAA ─ v0.6.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [599c1a8e] + LinearMapsAA v0.6.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [7a12625a] + LinearMaps v2.7.0
+  [599c1a8e] + LinearMapsAA v0.6.5
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T15:13:58.335
+#
+
+    Testing LinearMapsAA
+Status `/tmp/jl_zMYACS/Project.toml`
+  [7a12625a] LinearMaps v2.7.0
+  [599c1a8e] LinearMapsAA v0.6.5
+  [37e2e46d] LinearAlgebra
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_zMYACS/Manifest.toml`
+  [7a12625a] LinearMaps v2.7.0
+  [599c1a8e] LinearMapsAA v0.6.5
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Test Summary: | Pass  Total
+identity      |    2      2
+Test Summary: | Pass  Total
+kron          |   21     21
+Test Summary: | Pass  Total
+cat           |  111    111
+Test Summary: | Pass  Total
+getindex      |   62     62
+Test Summary: | Pass  Total
+setindex      |   56     56
+Test Summary: | Pass  Total
+block_diag    |    8      8
+Test Summary: | Pass  Total
+tests         |  271    271
+    Testing LinearMapsAA tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:15:04.833
+CPU usage: 80.86s (68.93s user, 12.11s kernel)
+
+Network usage:
+- eth0: 2.590 MiB received, 32.656 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":510,"op":"Read","minor":0},{"major":259,"value":386,"op":"Write","minor":0},{"major":259,"value":891,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":896,"op":"Total","minor":0},{"major":253,"value":510,"op":"Read","minor":2},{"major":253,"value":386,"op":"Write","minor":2},{"major":253,"value":891,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":896,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":2088960,"op":"Read","minor":0},{"major":259,"value":1609728,"op":"Write","minor":0},{"major":259,"value":3678208,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":3698688,"op":"Total","minor":0},{"major":253,"value":2088960,"op":"Read","minor":2},{"major":253,"value":1609728,"op":"Write","minor":2},{"major":253,"value":3678208,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":3698688,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":341753856,"max_usage":762228736,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":212299776,"inactive_file":405504,"inactive_anon":78938112,"total_pgfault":763785,"total_cache":98402304,"total_rss_huge":0,"total_active_anon":213565440,"total_pgmajfault":0,"pgpgin":332046,"rss_huge":0,"mapped_file":0,"total_inactive_file":405504,"dirty":946176,"total_unevictable":0,"total_dirty":946176,"writeback":0,"pgpgout":256182,"hierarchical_memsw_limit":0,"cache":98402304,"active_file":18112512,"pgfault":763785,"total_mapped_file":0,"total_pgpgout":256182,"total_writeback":0,"rss":212299776,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":332046,"active_anon":213565440,"total_active_file":18112512},"limit":540965302272},"name":"/LinearMapsAA-cSAuc443","networks":{"eth0":{"rx_bytes":2715671,"rx_packets":388,"tx_packets":328,"tx_bytes":33440,"tx_dropped":0,"rx_dropped":3,"tx_errors":0,"rx_errors":0}},"id":"432c3ddfdbc6f946b6e0df10c1fc8174cbb3b7c4ae8b24a1e35ee1e858806d69","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3094627244522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":68930000000,"usage_in_kernelmode":12110000000,"total_usage":80861365887,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,80861365887,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:15:05.405955573Z"}

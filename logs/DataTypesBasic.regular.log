@@ -1,0 +1,127 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:37:17.656
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:37:19.458
+#
+
+ Installing known registries into `~/.julia`
+#######################                                                   32.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed DataTypesBasic ─ v1.0.0
+  Installed Compat ───────── v3.25.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [83eed652] + DataTypesBasic v1.0.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [34da2185] + Compat v3.25.0
+  [83eed652] + DataTypesBasic v1.0.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T17:37:22.895
+#
+
+    Testing DataTypesBasic
+Status `/tmp/jl_OVAr6T/Project.toml`
+  [34da2185] Compat v3.25.0
+  [83eed652] DataTypesBasic v1.0.0
+  [fd094767] Suppressor v0.2.0
+  [8dfed614] Test
+Status `/tmp/jl_OVAr6T/Manifest.toml`
+  [34da2185] Compat v3.25.0
+  [83eed652] DataTypesBasic v1.0.0
+  [fd094767] Suppressor v0.2.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+Identity      |   21     21
+Test Summary: | Pass  Total
+Const         |   16     16
+Test Summary: | Pass  Total
+Option        |   23     23
+Test Summary: | Pass  Total
+Either        |   30     30
+Test Summary: | Pass  Total
+Try           |   33     33
+Test Summary:  | Pass  Total
+ContextManager |   11     11
+Test Summary: | Pass  Total
+convert       |   28     28
+Test Summary: | Pass  Total
+promote_type  |  129    129
+    Testing DataTypesBasic tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:37:32.983
+CPU usage: 15.30s (12.93s user, 2.40s kernel)
+
+Network usage:
+- eth0: 2.595 MiB received, 37.599 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":322355200,"max_usage":712192000,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":212754432,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":381843,"total_cache":79994880,"total_rss_huge":0,"total_active_anon":213835776,"total_pgmajfault":0,"pgpgin":267894,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":196445,"hierarchical_memsw_limit":0,"cache":79994880,"active_file":135168,"pgfault":381843,"total_mapped_file":0,"total_pgpgout":196445,"total_writeback":0,"rss":212754432,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":267894,"active_anon":213835776,"total_active_file":135168},"limit":540965302272},"name":"/DataTypesBasic-EovZtbJv","networks":{"eth0":{"rx_bytes":2720997,"rx_packets":354,"tx_packets":368,"tx_bytes":38501,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"02d96601e2d28e51fdff7df7d06efd55d662859ff2835e62a6465897cb2e89b3","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4186909154522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":12930000000,"usage_in_kernelmode":2400000000,"total_usage":15303181141,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15303181141,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:37:32.985813429Z"}

@@ -1,0 +1,51 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T17:34:45.558
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T17:34:47.304
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+ERROR: Unsatisfiable requirements detected for package FHIRClient [b44d2ca2]:
+ FHIRClient [b44d2ca2] log:
+ ├─possible versions are: [0.3.0-0.3.3, 0.4.0, 0.5.0, 0.6.0-0.6.1, 0.7.0-0.7.4] or uninstalled
+ └─found to have no compatible versions left with DICOMClient [552a5c7d] 
+   └─DICOMClient [552a5c7d] log:
+     ├─possible versions are: 0.1.0 or uninstalled
+     └─restricted to versions * by an explicit requirement, leaving only versions 0.1.0
+Stacktrace:
+ [1] propagate_constraints!(::Pkg.Resolve.Graph, ::Set{Int64}; log_events::Bool) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1005
+ [2] propagate_constraints! at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:946 [inlined] (repeats 2 times)
+ [3] simplify_graph!(::Pkg.Resolve.Graph, ::Set{Int64}; clean_graph::Bool) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1460
+ [4] simplify_graph! at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1460 [inlined] (repeats 2 times)
+ [5] resolve_versions!(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:375
+ [6] targeted_resolve at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1114 [inlined]
+ [7] tiered_resolve(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1100
+ [8] _resolve at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1120 [inlined]
+ [9] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Array{Base.UUID,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1135
+ [10] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:188
+ [11] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:139
+ [12] #add#21 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [13] add at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [14] #add#20 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [15] add(::Array{String,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66
+ [16] top-level scope at none:14
+

@@ -1,0 +1,237 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:58:11.329
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:58:13.113
+#
+
+ Installing known registries into `~/.julia`
+#######                                                                   10.1%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed NamedArrays ──────── v0.9.4
+  Installed Combinatorics ────── v1.0.2
+  Installed Compat ───────────── v3.25.0
+  Installed OrderedCollections ─ v1.3.2
+  Installed Requires ─────────── v1.1.2
+  Installed InvertedIndices ──── v1.0.0
+  Installed DataStructures ───── v0.18.8
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [86f7a689] + NamedArrays v0.9.4
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [861a8166] + Combinatorics v1.0.2
+  [34da2185] + Compat v3.25.0
+  [864edb3b] + DataStructures v0.18.8
+  [41ab1584] + InvertedIndices v1.0.0
+  [86f7a689] + NamedArrays v0.9.4
+  [bac558e1] + OrderedCollections v1.3.2
+  [ae029012] + Requires v1.1.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T15:58:18.074
+#
+
+    Testing NamedArrays
+Status `/tmp/jl_g998RQ/Project.toml`
+  [861a8166] Combinatorics v1.0.2
+  [864edb3b] DataStructures v0.18.8
+  [41ab1584] InvertedIndices v1.0.0
+  [8e2b3108] KahanSummation v0.2.0
+  [86f7a689] NamedArrays v0.9.4
+  [ae029012] Requires v1.1.2
+  [8bb1440f] DelimitedFiles
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_g998RQ/Manifest.toml`
+  [861a8166] Combinatorics v1.0.2
+  [34da2185] Compat v3.25.0
+  [864edb3b] DataStructures v0.18.8
+  [41ab1584] InvertedIndices v1.0.0
+  [8e2b3108] KahanSummation v0.2.0
+  [86f7a689] NamedArrays v0.9.4
+  [bac558e1] OrderedCollections v1.3.2
+  [ae029012] Requires v1.1.2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Starting test, no assertions should fail... base, one	0.9716423562155492	0.7106090069796387	0.22164783029356383	0.06498372859236601
+two	0.4989855268423038	0.5161460327883494	0.39836868666643466	0.7540893157733577
+a	9
+b	87
+c	16
+d	42
+e	32
+f	68
+construction, 2×3 Named Array{Float64,2}
+dim1 ╲ dim2 │        :c         :d         :e
+────────────┼────────────────────────────────
+:a          │  0.186235  0.0868687  0.0682417
+:b          │  0.473345   0.921543  0.0118821 0.1862347159971225 0.1862347159971225
+2×3 Named Array{Float64,2}
+A ╲ B │        :c         :d         :e
+──────┼────────────────────────────────
+:a    │  0.186235  0.0868687  0.0682417
+:b    │  0.473345   0.921543  0.0118821
+2×3 Named Array{Float64,2}
+dim1 ╲ dim2 │        :c         :d         :e
+────────────┼────────────────────────────────
+:a          │  0.186235  0.0868687  0.0682417
+:b          │  0.473345   0.921543  0.0118821
+2×3 Named Array{Float64,2}
+A ╲ B │        :c         :d         :e
+──────┼────────────────────────────────
+:a    │  0.186235  0.0868687  0.0682417
+:b    │  0.473345   0.921543  0.0118821
+arithmetic, ┌ Warning: Dropping mismatching names
+└ @ NamedArrays ~/.julia/packages/NamedArrays/kMq4N/src/arithmetic.jl:27
+┌ Warning: Dropping mismatching names
+└ @ NamedArrays ~/.julia/packages/NamedArrays/kMq4N/src/arithmetic.jl:27
+┌ Warning: Dropping mismatching names
+└ @ NamedArrays ~/.julia/packages/NamedArrays/kMq4N/src/arithmetic.jl:27
+convert, getindex, 2×4 Named Array{Float64,2}
+A ╲ B │        a         b         c         d
+──────┼───────────────────────────────────────
+one   │ 0.857651  0.936567  0.406086  0.761724
+two   │ 0.530093  0.265847  0.431931  0.931615
+[("one", "a"), ("two", "a"), ("one", "b"), ("two", "b"), ("one", "c"), ("two", "c"), ("one", "d"), ("two", "d")]
+setindex, 2×4 Named Array{Float64,2}
+magnificent ╲ 7 │         一          二          三          四
+────────────────┼───────────────────────────────────────────
+一               │  0.431664   0.700229   0.306981   0.907659
+二               │  0.679067   0.293586    0.48829  0.0256886
+2×4 Named Array{Float64,2}
+magnificent ╲ 7 │         1          2          3          4
+────────────────┼───────────────────────────────────────────
+1               │  0.431664   0.700229   0.306981   0.907659
+2               │  0.679067   0.293586    0.48829  0.0256886
+hcat/vcat, copy, sum, conversions
+changing names: 
+    sum
+    prod
+    maximum
+    minimum
+    mean
+    std
+    var
+┌ Warning: `cumsum_kbn(A, axis)` is deprecated, use `cumsum_kbn(A, dims = axis)` instead.
+│   caller = top-level scope at test.jl:68
+└ @ Core ~/.julia/packages/NamedArrays/kMq4N/test/test.jl:68
+┌ Warning: `cumsum_kbn(A, axis)` is deprecated, use `cumsum_kbn(A, dims = axis)` instead.
+│   caller = fan(::typeof(cumsum_kbn), ::String, ::NamedArray{Float64,2,Array{Float64,2},Tuple{OrderedDict{String,Int64},OrderedDict{String,Int64}}}, ::Int64) at changingnames.jl:38
+└ @ NamedArrays ~/.julia/packages/NamedArrays/kMq4N/src/changingnames.jl:38
+┌ Warning: `cumsum_kbn(A, axis)` is deprecated, use `cumsum_kbn(A, dims = axis)` instead.
+│   caller = top-level scope at test.jl:69
+└ @ Core ~/.julia/packages/NamedArrays/kMq4N/test/test.jl:69
+multi-dimensional, dodgy indices, sort, broadcast, vectorized, re-arrange, eachindex, matrixops, show,
+1×2×2 Named Array{Float64,3}
+
+[:, :, C=1] =
+A ╲ B │        1         2
+──────┼───────────────────
+1     │ 0.438219  0.680405
+
+[:, :, C=2] =
+A ╲ B │        1         2
+──────┼───────────────────
+1     │ 0.855382  0.673987
+2×1×2 Named Array{Float64,3}
+
+[:, :, C=1] =
+A ╲ B │         1
+──────┼──────────
+1     │ 0.0856943
+2     │   0.75619
+
+[:, :, C=2] =
+A ╲ B │        1
+──────┼─────────
+1     │ 0.735852
+2     │ 0.148515
+2×2×1 Named Array{Float64,3}
+
+[:, :, C=1] =
+A ╲ B │        1         2
+──────┼───────────────────
+1     │ 0.976345   0.70053
+2     │ 0.229365  0.625379
+Timing named index: 0.000345776, array index: 0.000334817, named key: 0.04510455
+Timing sum large sparse array: 7.54e-5, named: 9.0629e-5
+done!
+    Testing NamedArrays tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:59:44.527
+CPU usage: 93.06s (89.68s user, 3.52s kernel)
+
+Network usage:
+- eth0: 2.824 MiB received, 61.896 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":337313792,"max_usage":882118656,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":220004352,"inactive_file":135168,"inactive_anon":79343616,"total_pgfault":1070388,"total_cache":86622208,"total_rss_huge":0,"total_active_anon":223703040,"total_pgmajfault":0,"pgpgin":560835,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":485972,"hierarchical_memsw_limit":0,"cache":86622208,"active_file":3649536,"pgfault":1070388,"total_mapped_file":0,"total_pgpgout":485972,"total_writeback":0,"rss":220004352,"unevictable":0,"total_inactive_anon":79343616,"total_pgpgin":560835,"active_anon":223703040,"total_active_file":3649536},"limit":540965302272},"name":"/NamedArrays-NhWy4J7O","networks":{"eth0":{"rx_bytes":2961400,"rx_packets":531,"tx_packets":561,"tx_bytes":63381,"tx_dropped":0,"rx_dropped":3,"tx_errors":0,"rx_errors":0}},"id":"1e7097072c6916d1e731fb106a2ed040fc26c95fcea76e715a567031e6436ee0","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3436891724522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":89680000000,"usage_in_kernelmode":3520000000,"total_usage":93060083347,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,93060079917,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3430,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:59:44.529797854Z"}

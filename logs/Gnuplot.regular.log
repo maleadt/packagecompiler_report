@@ -1,0 +1,188 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:41:10.607
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:41:12.394
+#
+
+ Installing known registries into `~/.julia`
+#################################################                         69.3%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ReplMaker ────────── v0.2.4
+  Installed Missings ─────────── v0.4.4
+  Installed Gnuplot ──────────── v1.3.0
+  Installed Reexport ─────────── v1.0.0
+  Installed DataAPI ──────────── v1.4.0
+  Installed FixedPointNumbers ── v0.8.4
+  Installed SortingAlgorithms ── v0.3.1
+  Installed Colors ───────────── v0.12.6
+  Installed StructC14N ───────── v0.3.0
+  Installed ColorTypes ───────── v0.10.9
+  Installed OrderedCollections ─ v1.3.2
+  Installed StaticArrays ─────── v1.0.1
+  Installed StatsBase ────────── v0.33.2
+  Installed DataStructures ───── v0.17.20
+  Installed ColorSchemes ─────── v3.10.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [dc211083] + Gnuplot v1.3.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [35d6a980] + ColorSchemes v3.10.2
+  [3da002f7] + ColorTypes v0.10.9
+  [5ae59095] + Colors v0.12.6
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.17.20
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [dc211083] + Gnuplot v1.3.0
+  [e1d29d7a] + Missings v0.4.4
+  [bac558e1] + OrderedCollections v1.3.2
+  [189a3867] + Reexport v1.0.0
+  [b873ce64] + ReplMaker v0.2.4
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [90137ffa] + StaticArrays v1.0.1
+  [2913bbd2] + StatsBase v0.33.2
+  [d2514e9c] + StructC14N v0.3.0
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T20:41:19.417
+#
+
+    Testing Gnuplot
+Status `/tmp/jl_teL7WS/Project.toml`
+  [35d6a980] ColorSchemes v3.10.2
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.6
+  [864edb3b] DataStructures v0.17.20
+  [dc211083] Gnuplot v1.3.0
+  [b873ce64] ReplMaker v0.2.4
+  [2913bbd2] StatsBase v0.33.2
+  [d2514e9c] StructC14N v0.3.0
+  [3fa0cd96] REPL
+  [8dfed614] Test
+Status `/tmp/jl_teL7WS/Manifest.toml`
+  [35d6a980] ColorSchemes v3.10.2
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.6
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.17.20
+  [53c48c17] FixedPointNumbers v0.8.4
+  [dc211083] Gnuplot v1.3.0
+  [e1d29d7a] Missings v0.4.4
+  [bac558e1] OrderedCollections v1.3.2
+  [189a3867] Reexport v1.0.0
+  [b873ce64] ReplMaker v0.2.4
+  [a2af1166] SortingAlgorithms v0.3.1
+  [90137ffa] StaticArrays v1.0.1
+  [2913bbd2] StatsBase v0.33.2
+  [d2514e9c] StructC14N v0.3.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+[ Info: Gnuplot.jl version: 1.3.0
+┌ Error: Exception while generating log record in module Main at /home/pkgeval/.julia/packages/Gnuplot/7y0ez/test/runtests.jl:4
+│   exception =
+│    IOError: could not spawn `gnuplot --version`: no such file or directory (ENOENT)
+│    Stacktrace:
+│     [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:99
+│     [2] #585 at ./process.jl:112 [inlined]
+│     [3] setup_stdios(::Base.var"#585#586"{Cmd}, ::Array{Any,1}) at ./process.jl:196
+│     [4] _spawn at ./process.jl:111 [inlined]
+│     [5] open(::Cmd, ::Base.DevNull; write::Bool, read::Bool) at ./process.jl:370
+│     [6] gpversion() at /home/pkgeval/.julia/packages/Gnuplot/7y0ez/src/Gnuplot.jl:1338
+│     [7] top-level scope at logging.jl:331
+│     [8] top-level scope at /home/pkgeval/.julia/packages/Gnuplot/7y0ez/test/runtests.jl:4
+│     [9] include(::String) at ./client.jl:457
+│     [10] top-level scope at none:6
+│     [11] eval(::Module, ::Any) at ./boot.jl:331
+│     [12] exec_options(::Base.JLOptions) at ./client.jl:272
+│     [13] _start() at ./client.jl:506
+└ @ Main ~/.julia/packages/Gnuplot/7y0ez/test/runtests.jl:4
+┌ Warning: Cound not start a gnuplot process with command "gnuplot".  Enabling dry sessions...
+└ @ Gnuplot ~/.julia/packages/Gnuplot/7y0ez/src/Gnuplot.jl:524
+┌ Info: using terminal: 
+└   terminal() = " "
+ERROR: LoadError: type NamedTuple has no field TERM_XMIN
+Stacktrace:
+ [1] getproperty at ./Base.jl:33 [inlined]
+ [2] gpmargins(::Symbol) at /home/pkgeval/.julia/packages/Gnuplot/7y0ez/src/Gnuplot.jl:2281
+ [3] gpmargins() at /home/pkgeval/.julia/packages/Gnuplot/7y0ez/src/Gnuplot.jl:2278
+ [4] top-level scope at /home/pkgeval/.julia/packages/Gnuplot/7y0ez/test/runtests.jl:142
+ [5] include(::String) at ./client.jl:457
+ [6] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/Gnuplot/7y0ez/test/runtests.jl:142
+
+PkgEval failed: Package Gnuplot errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:42:22.576
+CPU usage: 69.00s (64.27s user, 4.83s kernel)
+
+Network usage:
+- eth0: 12.610 MiB received, 128.312 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":135168,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":28672,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":135168,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":135168,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":28672,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":135168,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":398155776,"max_usage":1156370432,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":251613184,"inactive_file":135168,"inactive_anon":99348480,"total_pgfault":1713459,"total_cache":116084736,"total_rss_huge":0,"total_active_anon":268173312,"total_pgmajfault":0,"pgpgin":1059102,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":969327,"hierarchical_memsw_limit":0,"cache":116084736,"active_file":135168,"pgfault":1713459,"total_mapped_file":0,"total_pgpgout":969327,"total_writeback":0,"rss":251613184,"unevictable":0,"total_inactive_anon":99348480,"total_pgpgin":1059102,"active_anon":268173312,"total_active_file":135168},"limit":540965302272},"name":"/Gnuplot-qWT9qkSP","networks":{"eth0":{"rx_bytes":13222817,"rx_packets":1359,"tx_packets":1333,"tx_bytes":131391,"tx_dropped":0,"rx_dropped":3,"tx_errors":0,"rx_errors":0}},"id":"915b49600f3a890c57b3088d3df57ba9ae7a6cc8baadbca1b45c82c4afc51e7a","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5604189994522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":64270000000,"usage_in_kernelmode":4830000000,"total_usage":68996795014,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,68945541159,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2490,850,0,51250515,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:42:22.578582975Z"}

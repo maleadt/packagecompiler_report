@@ -1,0 +1,85 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:45:11.622
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:45:13.417
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ##O#- #                                                                       ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Runner ─ v0.2.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [847b7089] + Runner v0.2.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [847b7089] + Runner v0.2.0
+
+
+################################################################################
+# Testing: 2021-01-11T22:45:17.341
+#
+
+    Testing Runner
+Status `/tmp/jl_6VhOfT/Project.toml`
+  [c7e460c6] ArgParse v1.1.1
+  [847b7089] Runner v0.2.0
+  [8dfed614] Test
+Status `/tmp/jl_6VhOfT/Manifest.toml`
+  [c7e460c6] ArgParse v1.1.1
+  [847b7089] Runner v0.2.0
+  [b718987f] TextWrap v1.0.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+┌ Warning: Package Runner does not have Test in its dependencies:
+│ - If you have Runner checked out for development and have
+│   added Test as a dependency but haven't updated your primary
+│   environment's manifest file, try `Pkg.resolve()`.
+│ - Otherwise you may need to report an issue with Runner
+└ Loading Test into Runner from project dependency, future warnings for Runner are suppressed.
+Test Summary: | Pass  Total
+Basic         |    1      1
+Test Summary: | Pass  Total
+Basic         |    1      1
+Test Summary: | Pass  Total
+ArgParseTest  |    1      1
+Test Summary: | Pass  Total
+ArgParseTest  |    1      1
+Test Summary: | Pass  Total
+ArgParseTest  |    1      1
+    Testing Runner tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:45:27.838
+CPU usage: 15.90s (13.10s user, 2.83s kernel)
+
+Network usage:
+- eth0: 2.611 MiB received, 36.631 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":281448448,"max_usage":674893824,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":171773952,"inactive_file":135168,"inactive_anon":79073280,"total_pgfault":442629,"total_cache":80199680,"total_rss_huge":0,"total_active_anon":172879872,"total_pgmajfault":0,"pgpgin":268488,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":206993,"hierarchical_memsw_limit":0,"cache":80199680,"active_file":135168,"pgfault":442629,"total_mapped_file":0,"total_pgpgout":206993,"total_writeback":0,"rss":171773952,"unevictable":0,"total_inactive_anon":79073280,"total_pgpgin":268488,"active_anon":172879872,"total_active_file":135168},"limit":540965302272},"name":"/Runner-jjx1iY8x","networks":{"eth0":{"rx_bytes":2737449,"rx_packets":348,"tx_packets":353,"tx_bytes":37510,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"e2538cd07fa92e23b4505eb13a6623635bc68f1bc035edee2777a87597db7969","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6547750674522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":13100000000,"usage_in_kernelmode":2830000000,"total_usage":15904371360,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15904367750,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3610,0,0,0]}},"read":"2021-01-11T22:45:28.492008965Z"}

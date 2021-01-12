@@ -1,0 +1,1413 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:28:04.803
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:28:06.603
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed AbstractTrees ────────────── v0.3.3
+  Installed ProgressLogging ──────────── v0.1.3
+  Installed TerminalLoggers ──────────── v0.1.2
+  Installed JSON ─────────────────────── v0.21.1
+  Installed BenchmarkTools ───────────── v0.5.0
+  Installed Parsers ──────────────────── v1.0.15
+  Installed LeftChildRightSiblingTrees ─ v0.1.2
+  Installed PkgBenchmark ─────────────── v0.2.10
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [32113eaa] + PkgBenchmark v0.2.10
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [1520ce14] + AbstractTrees v0.3.3
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [682c06a0] + JSON v0.21.1
+  [1d6d02ad] + LeftChildRightSiblingTrees v0.1.2
+  [69de0a69] + Parsers v1.0.15
+  [32113eaa] + PkgBenchmark v0.2.10
+  [33c8b6b6] + ProgressLogging v0.1.3
+  [5d786b92] + TerminalLoggers v0.1.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building PkgBenchmark → `~/.julia/packages/PkgBenchmark/zKgzD/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T18:28:12.688
+#
+
+    Testing PkgBenchmark
+Status `/tmp/jl_OWS7tV/Project.toml`
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [e30172f5] Documenter v0.26.1
+  [682c06a0] JSON v0.21.1
+  [32113eaa] PkgBenchmark v0.2.10
+  [5d786b92] TerminalLoggers v0.1.2
+  [ade2ca70] Dates
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [56ddb016] Logging
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+Status `/tmp/jl_OWS7tV/Manifest.toml`
+  [1520ce14] AbstractTrees v0.3.3
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [ffbed154] DocStringExtensions v0.8.3
+  [e30172f5] Documenter v0.26.1
+  [b5f81e59] IOCapture v0.1.1
+  [682c06a0] JSON v0.21.1
+  [1d6d02ad] LeftChildRightSiblingTrees v0.1.2
+  [69de0a69] Parsers v1.0.15
+  [32113eaa] PkgBenchmark v0.2.10
+  [33c8b6b6] ProgressLogging v0.1.3
+  [5d786b92] TerminalLoggers v0.1.2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+PkgBenchmark: Running benchmarks...
+PkgBenchmark: creating benchmark tuning file /home/pkgeval/.julia/packages/PkgBenchmark/zKgzD/benchmark/tune.json...
+Tuning   0%|                                            |  ETA: N/A
+Tuning   0%|                                            |  ETA: N/A
+(1/2) tuning "utf8"...
+Tuning   0%|                                            |  ETA: N/A
+  (1/3) tuning "join"...
+  done (took 6.396805184 seconds)
+Tuning   7%|███▏                                        |  ETA: 0:01:41
+  (2/3) tuning "plots"...
+  done (took 0.302751417 seconds)
+Tuning   7%|███▏                                        |  ETA: 0:01:45
+  (3/3) tuning "replace"...
+  done (took 5.394360161 seconds)
+done (took 12.721057782 seconds)
+Tuning  14%|██████▎                                     |  ETA: 0:01:21
+(2/2) tuning "trigonometry"...
+Tuning  14%|██████▎                                     |  ETA: 0:01:22
+  (1/2) tuning "circular"...
+Tuning  14%|██████▎                                     |  ETA: 0:01:24
+    (1/6) tuning ("tan", π)...
+    done (took 0.479871669 seconds)
+Tuning  21%|█████████▍                                  |  ETA: 0:00:53
+    (2/6) tuning ("cos", 0.0)...
+    done (took 0.487245543 seconds)
+Tuning  29%|████████████▋                               |  ETA: 0:00:38
+    (3/6) tuning ("sin", π)...
+    done (took 0.409266708 seconds)
+Tuning  36%|███████████████▊                            |  ETA: 0:00:28
+    (4/6) tuning ("cos", π)...
+    done (took 0.394641236 seconds)
+Tuning  43%|██████████████████▉                         |  ETA: 0:00:21
+    (5/6) tuning ("sin", 0.0)...
+    done (took 0.420554933 seconds)
+Tuning  50%|██████████████████████                      |  ETA: 0:00:16
+    (6/6) tuning ("tan", 0.0)...
+    done (took 0.420552942 seconds)
+  done (took 2.97323714 seconds)
+Tuning  57%|█████████████████████████▏                  |  ETA: 0:00:13
+  (2/2) tuning "hyperbolic"...
+Tuning  57%|█████████████████████████▏                  |  ETA: 0:00:13
+    (1/6) tuning ("tan", π)...
+    done (took 0.383378119 seconds)
+Tuning  64%|████████████████████████████▎               |  ETA: 0:00:10
+    (2/6) tuning ("cos", 0.0)...
+    done (took 0.389087996 seconds)
+Tuning  71%|███████████████████████████████▍            |  ETA: 0:00:07
+    (3/6) tuning ("sin", π)...
+    done (took 0.391425649 seconds)
+Tuning  79%|██████████████████████████████████▋         |  ETA: 0:00:05
+    (4/6) tuning ("cos", π)...
+    done (took 0.391047191 seconds)
+Tuning  86%|█████████████████████████████████████▊      |  ETA: 0:00:03
+    (5/6) tuning ("sin", 0.0)...
+    done (took 0.386977592 seconds)
+Tuning  93%|████████████████████████████████████████▉   |  ETA: 0:00:01
+    (6/6) tuning ("tan", 0.0)...
+    done (took 0.386450976 seconds)
+  done (took 2.580884714 seconds)
+done (took 5.826514426 seconds)
+Tuning 100%|████████████████████████████████████████████| Time: 0:00:19
+Benchmarking   0%|                                      |  ETA: N/A
+Benchmarking   0%|                                      |  ETA: N/A
+(1/2) benchmarking "utf8"...
+Benchmarking   0%|                                      |  ETA: N/A
+  (1/3) benchmarking "join"...
+  done (took 5.36227352 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:18
+  (2/3) benchmarking "plots"...
+  done (took 0.292353716 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:22
+  (3/3) benchmarking "replace"...
+  done (took 1.980863843 seconds)
+done (took 7.989850584 seconds)
+Benchmarking  14%|█████▍                                |  ETA: 0:00:50
+(2/2) benchmarking "trigonometry"...
+Benchmarking  14%|█████▍                                |  ETA: 0:00:51
+  (1/2) benchmarking "circular"...
+Benchmarking  14%|█████▍                                |  ETA: 0:00:53
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.36629154 seconds)
+Benchmarking  21%|████████▏                             |  ETA: 0:00:34
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.386494828 seconds)
+Benchmarking  29%|██████████▉                           |  ETA: 0:00:24
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.341429236 seconds)
+Benchmarking  36%|█████████████▋                        |  ETA: 0:00:18
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.336351864 seconds)
+Benchmarking  43%|████████████████▎                     |  ETA: 0:00:14
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.36206184 seconds)
+Benchmarking  50%|███████████████████                   |  ETA: 0:00:11
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.366983254 seconds)
+  done (took 2.425663865 seconds)
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:08
+  (2/2) benchmarking "hyperbolic"...
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:08
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.33947887 seconds)
+Benchmarking  64%|████████████████████████▍             |  ETA: 0:00:06
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.360447922 seconds)
+Benchmarking  71%|███████████████████████████▏          |  ETA: 0:00:05
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.340457032 seconds)
+Benchmarking  79%|█████████████████████████████▉        |  ETA: 0:00:03
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.34329764 seconds)
+Benchmarking  86%|████████████████████████████████▋     |  ETA: 0:00:02
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.386161939 seconds)
+Benchmarking  93%|███████████████████████████████████▎  |  ETA: 0:00:01
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.360293912 seconds)
+  done (took 2.395793879 seconds)
+done (took 5.08846421 seconds)
+Benchmarking 100%|██████████████████████████████████████| Time: 0:00:13
+# Benchmark Report for *PkgBenchmark*
+
+## Job Properties
+* Time of benchmark: 11 Jan 2021 - 18:29
+* Package commit: non gi
+* Julia commit: 599f52
+* Julia command flags: None
+* Environment variables: None
+
+## Results
+Below is a table of this job's results, obtained by running the benchmarks.
+The values listed in the `ID` column have the structure `[parent_group, child_group, ..., key]`, and can be used to
+index into the BaseBenchmarks suite to retrieve the corresponding benchmarks.
+The percentages accompanying time and memory values in the below table are noise tolerances. The "true"
+time/memory value for a given benchmark is expected to fall within this percentage of the reported value.
+An empty cell means that the value was zero.
+
+| ID                                                 | time            | GC time | memory          | allocations |
+|----------------------------------------------------|----------------:|--------:|----------------:|------------:|
+| `["trigonometry", "circular", "(\"cos\", 0.0)"]`   |   4.029 ns (5%) |         |                 |             |
+| `["trigonometry", "circular", "(\"cos\", π)"]`     |   1.699 ns (5%) |         |                 |             |
+| `["trigonometry", "circular", "(\"sin\", 0.0)"]`   |   4.019 ns (5%) |         |                 |             |
+| `["trigonometry", "circular", "(\"sin\", π)"]`     |   1.679 ns (5%) |         |                 |             |
+| `["trigonometry", "circular", "(\"tan\", 0.0)"]`   |   3.989 ns (5%) |         |                 |             |
+| `["trigonometry", "circular", "(\"tan\", π)"]`     |   1.689 ns (5%) |         |                 |             |
+| `["trigonometry", "hyperbolic", "(\"cos\", 0.0)"]` |   4.059 ns (5%) |         |                 |             |
+| `["trigonometry", "hyperbolic", "(\"cos\", π)"]`   |   1.689 ns (5%) |         |                 |             |
+| `["trigonometry", "hyperbolic", "(\"sin\", 0.0)"]` |   3.929 ns (5%) |         |                 |             |
+| `["trigonometry", "hyperbolic", "(\"sin\", π)"]`   |   1.689 ns (5%) |         |                 |             |
+| `["trigonometry", "hyperbolic", "(\"tan\", 0.0)"]` |   4.020 ns (5%) |         |                 |             |
+| `["trigonometry", "hyperbolic", "(\"tan\", π)"]`   |   1.689 ns (5%) |         |                 |             |
+| `["utf8", "join"]`                                 | 145.580 ms (5%) |         | 156.27 MiB (1%) |          20 |
+| `["utf8", "replace"]`                              | 153.149 μs (5%) |         |  12.00 KiB (1%) |           4 |
+
+## Benchmark Group List
+Here's a list of all the benchmark groups executed by this job:
+
+- `["trigonometry", "circular"]`
+- `["trigonometry", "hyperbolic"]`
+- `["utf8"]`
+
+## Julia versioninfo
+```
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  uname: Linux 5.4.0-51-generic #56~18.04.1-Ubuntu SMP Tue Oct 6 09:47:18 UTC 2020 x86_64 x86_64
+  CPU: AMD EPYC 7502 32-Core Processor: 
+                  speed         user         nice          sys         idle          irq
+       #1-128  2978 MHz  592602402 s   69624123 s   39156433 s  91989163845 s          0 s
+       
+  Memory: 503.8131980895996 GB (116653.66796875 MB free)
+  Uptime: 7.242523e6 sec
+  Load Avg:  65.0009765625  67.74853515625  78.3427734375
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+```Test Summary: | Pass  Total
+structure     |    6      6
+Test Summary:         | Pass  Total
+objectpath/loadobject |    6      6
+ Activating new environment at `/tmp/Dcng4Zrb/Project.toml`
+   Updating registry at `~/.julia/registries/General`
+No Changes to `/tmp/Dcng4Zrb/Project.toml`
+No Changes to `/tmp/Dcng4Zrb/Manifest.toml`
+ Generating  project Example:
+    /tmp/Dcng4Zrb/Example/Project.toml
+    /tmp/Dcng4Zrb/Example/src/Example.jl
+Path `/tmp/Dcng4Zrb/Example` exists and looks like the correct package. Using existing path.
+  Resolving package versions...
+Updating `/tmp/Dcng4Zrb/Project.toml`
+  [5933514c] + Example v0.1.0 `/tmp/Dcng4Zrb/Example`
+Updating `/tmp/Dcng4Zrb/Manifest.toml`
+  [5933514c] + Example v0.1.0 `/tmp/Dcng4Zrb/Example`
+PkgBenchmark: Running benchmarks...
+PkgBenchmark: creating benchmark tuning file /tmp/Dcng4Zrb/Example/benchmark/tune.json...
+Tuning   0%|                                            |  ETA: N/A
+Tuning   0%|                                            |  ETA: N/A
+(1/1) tuning "foo"...
+done (took 0.798557061 seconds)
+Tuning 100%|████████████████████████████████████████████| Time: 0:00:02
+Benchmarking   0%|                                      |  ETA: N/A
+Benchmarking   0%|                                      |  ETA: N/A
+(1/1) benchmarking "foo"...
+done (took 0.338775196 seconds)
+Benchmarking 100%|██████████████████████████████████████| Time: 0:00:00
+Test Summary:   | Pass  Total
+benchmarkconfig |    1      1
+PkgBenchmark: Running benchmarks...
+PkgBenchmark: using benchmark tuning data in /tmp/Dcng4Zrb/Example/benchmark/tune.json
+Benchmarking   0%|                                      |  ETA: N/A
+Benchmarking   0%|                                      |  ETA: N/A
+(1/1) benchmarking "foo"...
+done (took 0.660955327 seconds)
+Benchmarking 100%|██████████████████████████████████████| Time: 0:00:02
+Test Summary: | Pass  Total
+postprocess   |    1      1
+PkgBenchmark: Running benchmarks...
+PkgBenchmark: using benchmark tuning data in /tmp/Dcng4Zrb/Example/benchmark/tune.json
+Benchmarking   0%|                                      |  ETA: N/A
+Benchmarking   0%|                                      |  ETA: N/A
+(1/1) benchmarking "trig"...
+Benchmarking   0%|                                      |  ETA: N/A
+  (1/1) benchmarking "sin"...
+  done (took 0.711934243 seconds)
+done (took 1.353859109 seconds)
+Benchmarking 100%|██████████████████████████████████████| Time: 0:00:02
+PkgBenchmark: Running benchmarks...
+PkgBenchmark: using benchmark tuning data in /tmp/Dcng4Zrb/Example/benchmark/tune.json
+Benchmarking   0%|                                      |  ETA: N/A
+Benchmarking   0%|                                      |  ETA: N/A
+(1/1) benchmarking "trig"...
+Benchmarking   0%|                                      |  ETA: N/A
+  (1/1) benchmarking "sin"...
+  done (took 0.714585537 seconds)
+done (took 1.377720687 seconds)
+Benchmarking 100%|██████████████████████████████████████| Time: 0:00:02
+Test Summary:                         | Pass  Total
+getting back original commit / branch |    2      2
+PkgBenchmark: Running benchmarks...
+PkgBenchmark: using benchmark tuning data in /tmp/Dcng4Zrb/Example/benchmark/tune.json
+Benchmarking   0%|                                      |  ETA: N/A
+Benchmarking   0%|                                      |  ETA: N/A
+(1/2) benchmarking "utf8"...
+Benchmarking   0%|                                      |  ETA: N/A
+  (1/3) benchmarking "join"...
+  done (took 5.710313328 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:32
+  (2/3) benchmarking "plots"...
+  done (took 0.294051097 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:36
+  (3/3) benchmarking "replace"...
+  done (took 1.995180661 seconds)
+done (took 8.623958776 seconds)
+Benchmarking  14%|█████▍                                |  ETA: 0:00:56
+(2/2) benchmarking "trigonometry"...
+Benchmarking  14%|█████▍                                |  ETA: 0:00:58
+  (1/2) benchmarking "circular"...
+Benchmarking  14%|█████▍                                |  ETA: 0:00:59
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.44494647 seconds)
+Benchmarking  21%|████████▏                             |  ETA: 0:00:38
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.456037894 seconds)
+Benchmarking  29%|██████████▉                           |  ETA: 0:00:27
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.341578981 seconds)
+Benchmarking  36%|█████████████▋                        |  ETA: 0:00:20
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.332966877 seconds)
+Benchmarking  43%|████████████████▎                     |  ETA: 0:00:15
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.361143661 seconds)
+Benchmarking  50%|███████████████████                   |  ETA: 0:00:12
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.363535772 seconds)
+  done (took 2.657939802 seconds)
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:09
+  (2/2) benchmarking "hyperbolic"...
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:09
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.300463955 seconds)
+Benchmarking  64%|████████████████████████▍             |  ETA: 0:00:07
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.287666854 seconds)
+Benchmarking  71%|███████████████████████████▏          |  ETA: 0:00:05
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.327092691 seconds)
+Benchmarking  79%|█████████████████████████████▉        |  ETA: 0:00:04
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.380294692 seconds)
+Benchmarking  86%|████████████████████████████████▋     |  ETA: 0:00:02
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.332811967 seconds)
+Benchmarking  93%|███████████████████████████████████▎  |  ETA: 0:00:01
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.339655944 seconds)
+  done (took 2.193499845 seconds)
+done (took 5.093053805 seconds)
+Benchmarking 100%|██████████████████████████████████████| Time: 0:00:14
+PkgBenchmark: benchmark results written to /tmp/jl_Tn68LD.json
+PkgBenchmark: Running benchmarks...
+PkgBenchmark: using benchmark tuning data in /tmp/Dcng4Zrb/Example/benchmark/tune.json
+Benchmarking   0%|                                      |  ETA: N/A
+Benchmarking   0%|                                      |  ETA: N/A
+(1/2) benchmarking "utf8"...
+Benchmarking   0%|                                      |  ETA: N/A
+  (1/3) benchmarking "join"...
+  done (took 5.760310436 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:33
+  (2/3) benchmarking "plots"...
+  done (took 0.304633177 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:37
+  (3/3) benchmarking "replace"...
+  done (took 1.958952574 seconds)
+done (took 8.682450621 seconds)
+Benchmarking  14%|█████▍                                |  ETA: 0:00:57
+(2/2) benchmarking "trigonometry"...
+Benchmarking  14%|█████▍                                |  ETA: 0:00:58
+  (1/2) benchmarking "circular"...
+Benchmarking  14%|█████▍                                |  ETA: 0:01:00
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.461830553 seconds)
+Benchmarking  21%|████████▏                             |  ETA: 0:00:38
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.461753643 seconds)
+Benchmarking  29%|██████████▉                           |  ETA: 0:00:27
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.356060834 seconds)
+Benchmarking  36%|█████████████▋                        |  ETA: 0:00:20
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.340464337 seconds)
+Benchmarking  43%|████████████████▎                     |  ETA: 0:00:16
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.363210932 seconds)
+Benchmarking  50%|███████████████████                   |  ETA: 0:00:12
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.365253646 seconds)
+  done (took 2.719744932 seconds)
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:09
+  (2/2) benchmarking "hyperbolic"...
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:10
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.32734098 seconds)
+Benchmarking  64%|████████████████████████▍             |  ETA: 0:00:07
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.331941997 seconds)
+Benchmarking  71%|███████████████████████████▏          |  ETA: 0:00:05
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.329338465 seconds)
+Benchmarking  79%|█████████████████████████████▉        |  ETA: 0:00:04
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.325624232 seconds)
+Benchmarking  86%|████████████████████████████████▋     |  ETA: 0:00:02
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.330570535 seconds)
+Benchmarking  93%|███████████████████████████████████▎  |  ETA: 0:00:01
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.32586191 seconds)
+  done (took 2.224333511 seconds)
+done (took 5.196007368 seconds)
+Benchmarking 100%|██████████████████████████████████████| Time: 0:00:14
+PkgBenchmark: benchmark results written to /tmp/jl_Tn68LD.json
+PkgBenchmark: Running benchmarks...
+PkgBenchmark: using benchmark tuning data in /tmp/Dcng4Zrb/Example/benchmark/tune.json
+Benchmarking   0%|                                      |  ETA: N/A
+Benchmarking   0%|                                      |  ETA: N/A
+(1/2) benchmarking "utf8"...
+Benchmarking   0%|                                      |  ETA: N/A
+  (1/3) benchmarking "join"...
+  done (took 5.882723939 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:35
+  (2/3) benchmarking "plots"...
+  done (took 0.310758807 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:39
+  (3/3) benchmarking "replace"...
+  done (took 2.020540134 seconds)
+done (took 8.870534354 seconds)
+Benchmarking  14%|█████▍                                |  ETA: 0:00:58
+(2/2) benchmarking "trigonometry"...
+Benchmarking  14%|█████▍                                |  ETA: 0:00:59
+  (1/2) benchmarking "circular"...
+Benchmarking  14%|█████▍                                |  ETA: 0:01:01
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.446084233 seconds)
+Benchmarking  21%|████████▏                             |  ETA: 0:00:39
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.464682317 seconds)
+Benchmarking  29%|██████████▉                           |  ETA: 0:00:28
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.342402755 seconds)
+Benchmarking  36%|█████████████▋                        |  ETA: 0:00:21
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.349782432 seconds)
+Benchmarking  43%|████████████████▎                     |  ETA: 0:00:16
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.372488856 seconds)
+Benchmarking  50%|███████████████████                   |  ETA: 0:00:12
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.376749365 seconds)
+  done (took 2.710858405 seconds)
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:09
+  (2/2) benchmarking "hyperbolic"...
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:10
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.337002683 seconds)
+Benchmarking  64%|████████████████████████▍             |  ETA: 0:00:07
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.345036555 seconds)
+Benchmarking  71%|███████████████████████████▏          |  ETA: 0:00:05
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.347515636 seconds)
+Benchmarking  79%|█████████████████████████████▉        |  ETA: 0:00:04
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.330317651 seconds)
+Benchmarking  86%|████████████████████████████████▋     |  ETA: 0:00:02
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.329461706 seconds)
+Benchmarking  93%|███████████████████████████████████▎  |  ETA: 0:00:01
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.338170374 seconds)
+  done (took 2.283680125 seconds)
+done (took 5.244134758 seconds)
+Benchmarking 100%|██████████████████████████████████████| Time: 0:00:15
+PkgBenchmark: Running benchmarks...
+PkgBenchmark: using benchmark tuning data in /tmp/Dcng4Zrb/Example/benchmark/tune.json
+Benchmarking   0%|                                      |  ETA: N/A
+Benchmarking   0%|                                      |  ETA: N/A
+(1/2) benchmarking "utf8"...
+Benchmarking   0%|                                      |  ETA: N/A
+  (1/3) benchmarking "join"...
+  done (took 5.758623702 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:33
+  (2/3) benchmarking "plots"...
+  done (took 0.295989519 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:37
+  (3/3) benchmarking "replace"...
+  done (took 1.976279838 seconds)
+done (took 8.673255133 seconds)
+Benchmarking  14%|█████▍                                |  ETA: 0:00:56
+(2/2) benchmarking "trigonometry"...
+Benchmarking  14%|█████▍                                |  ETA: 0:00:58
+  (1/2) benchmarking "circular"...
+Benchmarking  14%|█████▍                                |  ETA: 0:01:00
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.453638206 seconds)
+Benchmarking  21%|████████▏                             |  ETA: 0:00:38
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.459255444 seconds)
+Benchmarking  29%|██████████▉                           |  ETA: 0:00:27
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.349457166 seconds)
+Benchmarking  36%|█████████████▋                        |  ETA: 0:00:20
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.348409485 seconds)
+Benchmarking  43%|████████████████▎                     |  ETA: 0:00:16
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.365663018 seconds)
+Benchmarking  50%|███████████████████                   |  ETA: 0:00:12
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.374664941 seconds)
+  done (took 2.726152269 seconds)
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:09
+  (2/2) benchmarking "hyperbolic"...
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:09
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.330728222 seconds)
+Benchmarking  64%|████████████████████████▍             |  ETA: 0:00:07
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.337448443 seconds)
+Benchmarking  71%|███████████████████████████▏          |  ETA: 0:00:05
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.338314457 seconds)
+Benchmarking  79%|█████████████████████████████▉        |  ETA: 0:00:04
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.339046751 seconds)
+Benchmarking  86%|████████████████████████████████▋     |  ETA: 0:00:02
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.344487621 seconds)
+Benchmarking  93%|███████████████████████████████████▎  |  ETA: 0:00:01
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.336922156 seconds)
+  done (took 2.280366307 seconds)
+done (took 5.280402265 seconds)
+Benchmarking 100%|██████████████████████████████████████| Time: 0:00:15
+# Benchmark Report for *Example*
+
+## Job Properties
+* Time of benchmarks:
+    - Target: 11 Jan 2021 - 18:31
+    - Baseline: 11 Jan 2021 - 18:32
+* Package commits:
+    - Target: 0a5868
+    - Baseline: 1dd1d0
+* Julia commits:
+    - Target: 599f52
+    - Baseline: 599f52
+* Julia command flags:
+    - Target: None
+    - Baseline: None
+* Environment variables:
+    - Target: None
+    - Baseline: None
+
+## Results
+A ratio greater than `1.0` denotes a possible regression (marked with :x:), while a ratio less
+than `1.0` denotes a possible improvement (marked with :white_check_mark:). Only significant results - results
+that indicate possible regressions or improvements - are shown below (thus, an empty table means that all
+benchmark results remained invariant between builds).
+
+| ID                                                 | time ratio | memory ratio |
+|----------------------------------------------------|------------|--------------|
+
+## Benchmark Group List
+Here's a list of all the benchmark groups executed by this job:
+
+- `["trigonometry", "circular"]`
+- `["trigonometry", "hyperbolic"]`
+- `["utf8"]`
+
+## Julia versioninfo
+
+### Target
+```
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  uname: Linux 5.4.0-51-generic #56~18.04.1-Ubuntu SMP Tue Oct 6 09:47:18 UTC 2020 x86_64 x86_64
+  CPU: AMD EPYC 7502 32-Core Processor: 
+                  speed         user         nice          sys         idle          irq
+       #1-128  2982 MHz  593540821 s   69624523 s   39228491 s  91990198170 s          0 s
+       
+  Memory: 503.8131980895996 GB (5136.57421875 MB free)
+  Uptime: 7.242683e6 sec
+  Load Avg:  138.3115234375  86.90478515625  83.162109375
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+```
+
+### Baseline
+```
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  uname: Linux 5.4.0-51-generic #56~18.04.1-Ubuntu SMP Tue Oct 6 09:47:18 UTC 2020 x86_64 x86_64
+  CPU: AMD EPYC 7502 32-Core Processor: 
+                  speed         user         nice          sys         idle          irq
+       #1-128  3004 MHz  593703160 s   69624523 s   39240746 s  91990375932 s          0 s
+       
+  Memory: 503.8131980895996 GB (2514.91015625 MB free)
+  Uptime: 7.242711e6 sec
+  Load Avg:  155.89892578125  95.24609375  86.02685546875
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+```# Benchmark Report for *Example*
+
+## Job Properties
+* Time of benchmarks:
+    - Target: 11 Jan 2021 - 18:31
+    - Baseline: 11 Jan 2021 - 18:32
+* Package commits:
+    - Target: 0a5868
+    - Baseline: 1dd1d0
+* Julia commits:
+    - Target: 599f52
+    - Baseline: 599f52
+* Julia command flags:
+    - Target: None
+    - Baseline: None
+* Environment variables:
+    - Target: None
+    - Baseline: None
+
+## Results
+A ratio greater than `1.0` denotes a possible regression (marked with :x:), while a ratio less
+than `1.0` denotes a possible improvement (marked with :white_check_mark:). Only significant results - results
+that indicate possible regressions or improvements - are shown below (thus, an empty table means that all
+benchmark results remained invariant between builds).
+
+| ID                                                 | time ratio | memory ratio |
+|----------------------------------------------------|------------|--------------|
+
+## Benchmark Group List
+Here's a list of all the benchmark groups executed by this job:
+
+- `["trigonometry", "circular"]`
+- `["trigonometry", "hyperbolic"]`
+- `["utf8"]`
+
+## Julia versioninfo
+
+### Target
+```
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  uname: Linux 5.4.0-51-generic #56~18.04.1-Ubuntu SMP Tue Oct 6 09:47:18 UTC 2020 x86_64 x86_64
+  CPU: AMD EPYC 7502 32-Core Processor: 
+                  speed         user         nice          sys         idle          irq
+       #1-128  2982 MHz  593540821 s   69624523 s   39228491 s  91990198170 s          0 s
+       
+  Memory: 503.8131980895996 GB (5136.57421875 MB free)
+  Uptime: 7.242683e6 sec
+  Load Avg:  138.3115234375  86.90478515625  83.162109375
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+```
+
+### Baseline
+```
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  uname: Linux 5.4.0-51-generic #56~18.04.1-Ubuntu SMP Tue Oct 6 09:47:18 UTC 2020 x86_64 x86_64
+  CPU: AMD EPYC 7502 32-Core Processor: 
+                  speed         user         nice          sys         idle          irq
+       #1-128  3004 MHz  593703160 s   69624523 s   39240746 s  91990375932 s          0 s
+       
+  Memory: 503.8131980895996 GB (2514.91015625 MB free)
+  Uptime: 7.242711e6 sec
+  Load Avg:  155.89892578125  95.24609375  86.02685546875
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+```# Benchmark Report for *Example*
+
+## Job Properties
+* Time of benchmarks:
+    - Target: 11 Jan 2021 - 18:31
+    - Baseline: 11 Jan 2021 - 18:32
+* Package commits:
+    - Target: 0a5868
+    - Baseline: 1dd1d0
+* Julia commits:
+    - Target: 599f52
+    - Baseline: 599f52
+* Julia command flags:
+    - Target: None
+    - Baseline: None
+* Environment variables:
+    - Target: None
+    - Baseline: None
+
+## Results
+A ratio greater than `1.0` denotes a possible regression (marked with :x:), while a ratio less
+than `1.0` denotes a possible improvement (marked with :white_check_mark:). All results are shown below.
+
+| ID                                                 | time ratio | memory ratio |
+|----------------------------------------------------|------------|--------------|
+| `["trigonometry", "circular", "(\"cos\", 0.0)"]`   | 1.00 (5%)  |   1.00 (1%)  |
+| `["trigonometry", "circular", "(\"cos\", π)"]`     | 1.00 (5%)  |   1.00 (1%)  |
+| `["trigonometry", "circular", "(\"sin\", 0.0)"]`   | 1.00 (5%)  |   1.00 (1%)  |
+| `["trigonometry", "circular", "(\"sin\", π)"]`     | 1.03 (5%)  |   1.00 (1%)  |
+| `["trigonometry", "circular", "(\"tan\", 0.0)"]`   | 1.03 (5%)  |   1.00 (1%)  |
+| `["trigonometry", "circular", "(\"tan\", π)"]`     | 1.03 (5%)  |   1.00 (1%)  |
+| `["trigonometry", "hyperbolic", "(\"cos\", 0.0)"]` | 1.00 (5%)  |   1.00 (1%)  |
+| `["trigonometry", "hyperbolic", "(\"cos\", π)"]`   | 1.00 (5%)  |   1.00 (1%)  |
+| `["trigonometry", "hyperbolic", "(\"sin\", 0.0)"]` | 0.97 (5%)  |   1.00 (1%)  |
+| `["trigonometry", "hyperbolic", "(\"sin\", π)"]`   | 1.00 (5%)  |   1.00 (1%)  |
+| `["trigonometry", "hyperbolic", "(\"tan\", 0.0)"]` | 1.03 (5%)  |   1.00 (1%)  |
+| `["trigonometry", "hyperbolic", "(\"tan\", π)"]`   | 1.03 (5%)  |   1.00 (1%)  |
+| `["utf8", "join"]`                                 | 0.97 (5%)  |   1.00 (1%)  |
+| `["utf8", "replace"]`                              | 1.00 (5%)  |   1.00 (1%)  |
+
+## Benchmark Group List
+Here's a list of all the benchmark groups executed by this job:
+
+- `["trigonometry", "circular"]`
+- `["trigonometry", "hyperbolic"]`
+- `["utf8"]`
+
+## Julia versioninfo
+
+### Target
+```
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  uname: Linux 5.4.0-51-generic #56~18.04.1-Ubuntu SMP Tue Oct 6 09:47:18 UTC 2020 x86_64 x86_64
+  CPU: AMD EPYC 7502 32-Core Processor: 
+                  speed         user         nice          sys         idle          irq
+       #1-128  2982 MHz  593540821 s   69624523 s   39228491 s  91990198170 s          0 s
+       
+  Memory: 503.8131980895996 GB (5136.57421875 MB free)
+  Uptime: 7.242683e6 sec
+  Load Avg:  138.3115234375  86.90478515625  83.162109375
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+```
+
+### Baseline
+```
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  uname: Linux 5.4.0-51-generic #56~18.04.1-Ubuntu SMP Tue Oct 6 09:47:18 UTC 2020 x86_64 x86_64
+  CPU: AMD EPYC 7502 32-Core Processor: 
+                  speed         user         nice          sys         idle          irq
+       #1-128  3004 MHz  593703160 s   69624523 s   39240746 s  91990375932 s          0 s
+       
+  Memory: 503.8131980895996 GB (2514.91015625 MB free)
+  Uptime: 7.242711e6 sec
+  Load Avg:  155.89892578125  95.24609375  86.02685546875
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+```PkgBenchmark: Running benchmarks...
+PkgBenchmark: using benchmark tuning data in /tmp/Dcng4Zrb/Example/benchmark/tune.json
+Benchmarking   0%|                                      |  ETA: N/A
+Benchmarking   0%|                                      |  ETA: N/A
+(1/2) benchmarking "utf8"...
+Benchmarking   0%|                                      |  ETA: N/A
+  (1/3) benchmarking "join"...
+  done (took 5.81946276 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:34
+  (2/3) benchmarking "plots"...
+  done (took 0.306904225 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:38
+  (3/3) benchmarking "replace"...
+  done (took 1.918643394 seconds)
+done (took 8.696359086 seconds)
+Benchmarking  14%|█████▍                                |  ETA: 0:00:57
+(2/2) benchmarking "trigonometry"...
+Benchmarking  14%|█████▍                                |  ETA: 0:00:58
+  (1/2) benchmarking "circular"...
+Benchmarking  14%|█████▍                                |  ETA: 0:01:00
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.450683816 seconds)
+Benchmarking  21%|████████▏                             |  ETA: 0:00:38
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.452819049 seconds)
+Benchmarking  29%|██████████▉                           |  ETA: 0:00:27
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.346435021 seconds)
+Benchmarking  36%|█████████████▋                        |  ETA: 0:00:20
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.333978683 seconds)
+Benchmarking  43%|████████████████▎                     |  ETA: 0:00:16
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.349497588 seconds)
+Benchmarking  50%|███████████████████                   |  ETA: 0:00:12
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.36422827 seconds)
+  done (took 2.64942069 seconds)
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:09
+  (2/2) benchmarking "hyperbolic"...
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:09
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.325625543 seconds)
+Benchmarking  64%|████████████████████████▍             |  ETA: 0:00:07
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.325566474 seconds)
+Benchmarking  71%|███████████████████████████▏          |  ETA: 0:00:05
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.32885696 seconds)
+Benchmarking  79%|█████████████████████████████▉        |  ETA: 0:00:04
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.328316152 seconds)
+Benchmarking  86%|████████████████████████████████▋     |  ETA: 0:00:02
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.33556607 seconds)
+Benchmarking  93%|███████████████████████████████████▎  |  ETA: 0:00:01
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.352296327 seconds)
+  done (took 2.24286724 seconds)
+done (took 5.1399354 seconds)
+Benchmarking 100%|██████████████████████████████████████| Time: 0:00:14
+PkgBenchmark: Running benchmarks...
+PkgBenchmark: using benchmark tuning data in /tmp/Dcng4Zrb/Example/benchmark/tune.json
+Benchmarking   0%|                                      |  ETA: N/A
+Benchmarking   0%|                                      |  ETA: N/A
+(1/2) benchmarking "utf8"...
+Benchmarking   0%|                                      |  ETA: N/A
+  (1/3) benchmarking "join"...
+  done (took 5.674574197 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:32
+  (2/3) benchmarking "plots"...
+  done (took 0.308670127 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:36
+  (3/3) benchmarking "replace"...
+  done (took 1.994549913 seconds)
+done (took 8.633206485 seconds)
+Benchmarking  14%|█████▍                                |  ETA: 0:00:56
+(2/2) benchmarking "trigonometry"...
+Benchmarking  14%|█████▍                                |  ETA: 0:00:58
+  (1/2) benchmarking "circular"...
+Benchmarking  14%|█████▍                                |  ETA: 0:00:59
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.462856464 seconds)
+Benchmarking  21%|████████▏                             |  ETA: 0:00:38
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.486513508 seconds)
+Benchmarking  29%|██████████▉                           |  ETA: 0:00:27
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.358155779 seconds)
+Benchmarking  36%|█████████████▋                        |  ETA: 0:00:20
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.350522144 seconds)
+Benchmarking  43%|████████████████▎                     |  ETA: 0:00:16
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.375691938 seconds)
+Benchmarking  50%|███████████████████                   |  ETA: 0:00:12
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.377353336 seconds)
+  done (took 2.778342872 seconds)
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:09
+  (2/2) benchmarking "hyperbolic"...
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:10
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.339464736 seconds)
+Benchmarking  64%|████████████████████████▍             |  ETA: 0:00:07
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.346634012 seconds)
+Benchmarking  71%|███████████████████████████▏          |  ETA: 0:00:05
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.366839923 seconds)
+Benchmarking  79%|█████████████████████████████▉        |  ETA: 0:00:04
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.343619505 seconds)
+Benchmarking  86%|████████████████████████████████▋     |  ETA: 0:00:02
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.344948805 seconds)
+Benchmarking  93%|███████████████████████████████████▎  |  ETA: 0:00:01
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.344959284 seconds)
+  done (took 2.35035381 seconds)
+done (took 5.380631268 seconds)
+Benchmarking 100%|██████████████████████████████████████| Time: 0:00:15
+PkgBenchmark: Running benchmarks...
+PkgBenchmark: using benchmark tuning data in /tmp/Dcng4Zrb/Example/benchmark/tune.json
+Benchmarking   0%|                                      |  ETA: N/A
+Benchmarking   0%|                                      |  ETA: N/A
+(1/2) benchmarking "utf8"...
+Benchmarking   0%|                                      |  ETA: N/A
+  (1/3) benchmarking "join"...
+  done (took 5.831382981 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:34
+  (2/3) benchmarking "plots"...
+  done (took 0.305179568 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:38
+  (3/3) benchmarking "replace"...
+  done (took 1.999502852 seconds)
+done (took 8.798055859 seconds)
+Benchmarking  14%|█████▍                                |  ETA: 0:00:57
+(2/2) benchmarking "trigonometry"...
+Benchmarking  14%|█████▍                                |  ETA: 0:00:59
+  (1/2) benchmarking "circular"...
+Benchmarking  14%|█████▍                                |  ETA: 0:01:00
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.456790537 seconds)
+Benchmarking  21%|████████▏                             |  ETA: 0:00:39
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.451265168 seconds)
+Benchmarking  29%|██████████▉                           |  ETA: 0:00:28
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.362766567 seconds)
+Benchmarking  36%|█████████████▋                        |  ETA: 0:00:21
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.348765111 seconds)
+Benchmarking  43%|████████████████▎                     |  ETA: 0:00:16
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.362199771 seconds)
+Benchmarking  50%|███████████████████                   |  ETA: 0:00:12
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.36907065 seconds)
+  done (took 2.708422012 seconds)
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:09
+  (2/2) benchmarking "hyperbolic"...
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:10
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.326569466 seconds)
+Benchmarking  64%|████████████████████████▍             |  ETA: 0:00:07
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.344214724 seconds)
+Benchmarking  71%|███████████████████████████▏          |  ETA: 0:00:05
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.335024753 seconds)
+Benchmarking  79%|█████████████████████████████▉        |  ETA: 0:00:04
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.325631522 seconds)
+Benchmarking  86%|████████████████████████████████▋     |  ETA: 0:00:02
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.334598256 seconds)
+Benchmarking  93%|███████████████████████████████████▎  |  ETA: 0:00:01
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.334718305 seconds)
+  done (took 2.24297921 seconds)
+done (took 5.201587568 seconds)
+Benchmarking 100%|██████████████████████████████████████| Time: 0:00:15
+PkgBenchmark: Running benchmarks...
+PkgBenchmark: using benchmark tuning data in /tmp/Dcng4Zrb/Example/benchmark/tune.json
+Benchmarking   0%|                                      |  ETA: N/A
+Benchmarking   0%|                                      |  ETA: N/A
+(1/2) benchmarking "utf8"...
+Benchmarking   0%|                                      |  ETA: N/A
+  (1/3) benchmarking "join"...
+  done (took 5.788490552 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:33
+  (2/3) benchmarking "plots"...
+  done (took 0.298789832 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:37
+  (3/3) benchmarking "replace"...
+  done (took 1.990183133 seconds)
+done (took 8.70391369 seconds)
+Benchmarking  14%|█████▍                                |  ETA: 0:00:57
+(2/2) benchmarking "trigonometry"...
+Benchmarking  14%|█████▍                                |  ETA: 0:00:58
+  (1/2) benchmarking "circular"...
+Benchmarking  14%|█████▍                                |  ETA: 0:01:00
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.475825054 seconds)
+Benchmarking  21%|████████▏                             |  ETA: 0:00:38
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.458383005 seconds)
+Benchmarking  29%|██████████▉                           |  ETA: 0:00:28
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.339168758 seconds)
+Benchmarking  36%|█████████████▋                        |  ETA: 0:00:20
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.327716103 seconds)
+Benchmarking  43%|████████████████▎                     |  ETA: 0:00:16
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.353060354 seconds)
+Benchmarking  50%|███████████████████                   |  ETA: 0:00:12
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.362360883 seconds)
+  done (took 2.686608045 seconds)
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:09
+  (2/2) benchmarking "hyperbolic"...
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:09
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.322397723 seconds)
+Benchmarking  64%|████████████████████████▍             |  ETA: 0:00:07
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.337187042 seconds)
+Benchmarking  71%|███████████████████████████▏          |  ETA: 0:00:05
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.331996691 seconds)
+Benchmarking  79%|█████████████████████████████▉        |  ETA: 0:00:04
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.328895534 seconds)
+Benchmarking  86%|████████████████████████████████▋     |  ETA: 0:00:02
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.329511659 seconds)
+Benchmarking  93%|███████████████████████████████████▎  |  ETA: 0:00:01
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.331045367 seconds)
+  done (took 2.23263699 seconds)
+done (took 5.173775847 seconds)
+Benchmarking 100%|██████████████████████████████████████| Time: 0:00:14
+PkgBenchmark: Running benchmarks...
+PkgBenchmark: creating benchmark tuning file /tmp/Dcng4Zrb/Example/benchmark/tune.json...
+Tuning   0%|                                            |  ETA: N/A
+Tuning   0%|                                            |  ETA: N/A
+(1/2) tuning "utf8"...
+Tuning   0%|                                            |  ETA: N/A
+  (1/3) tuning "join"...
+  done (took 7.035508153 seconds)
+Tuning   7%|███▏                                        |  ETA: 0:01:49
+  (2/3) tuning "plots"...
+  done (took 0.322396953 seconds)
+Tuning   7%|███▏                                        |  ETA: 0:01:54
+  (3/3) tuning "replace"...
+  done (took 5.376383608 seconds)
+done (took 13.359461972 seconds)
+Tuning  14%|██████▎                                     |  ETA: 0:01:25
+(2/2) tuning "trigonometry"...
+Tuning  14%|██████▎                                     |  ETA: 0:01:26
+  (1/2) tuning "circular"...
+Tuning  14%|██████▎                                     |  ETA: 0:01:28
+    (1/6) tuning ("tan", π)...
+    done (took 0.474187836 seconds)
+Tuning  21%|█████████▍                                  |  ETA: 0:00:56
+    (2/6) tuning ("cos", 0.0)...
+    done (took 0.483826072 seconds)
+Tuning  29%|████████████▋                               |  ETA: 0:00:39
+    (3/6) tuning ("sin", π)...
+    done (took 0.388989157 seconds)
+Tuning  36%|███████████████▊                            |  ETA: 0:00:29
+    (4/6) tuning ("cos", π)...
+    done (took 0.384673229 seconds)
+Tuning  43%|██████████████████▉                         |  ETA: 0:00:22
+    (5/6) tuning ("sin", 0.0)...
+    done (took 0.403860345 seconds)
+Tuning  50%|██████████████████████                      |  ETA: 0:00:17
+    (6/6) tuning ("tan", 0.0)...
+    done (took 0.405060515 seconds)
+  done (took 2.90577239 seconds)
+Tuning  57%|█████████████████████████▏                  |  ETA: 0:00:13
+  (2/2) tuning "hyperbolic"...
+Tuning  57%|█████████████████████████▏                  |  ETA: 0:00:13
+    (1/6) tuning ("tan", π)...
+    done (took 0.371363989 seconds)
+Tuning  64%|████████████████████████████▎               |  ETA: 0:00:10
+    (2/6) tuning ("cos", 0.0)...
+    done (took 0.368371741 seconds)
+Tuning  71%|███████████████████████████████▍            |  ETA: 0:00:07
+    (3/6) tuning ("sin", π)...
+    done (took 0.373148204 seconds)
+Tuning  79%|██████████████████████████████████▋         |  ETA: 0:00:05
+    (4/6) tuning ("cos", π)...
+    done (took 0.381532831 seconds)
+Tuning  86%|█████████████████████████████████████▊      |  ETA: 0:00:03
+    (5/6) tuning ("sin", 0.0)...
+    done (took 0.384163981 seconds)
+Tuning  93%|████████████████████████████████████████▉   |  ETA: 0:00:01
+    (6/6) tuning ("tan", 0.0)...
+    done (took 0.384828936 seconds)
+  done (took 2.504679004 seconds)
+done (took 5.666194246 seconds)
+Tuning 100%|████████████████████████████████████████████| Time: 0:00:20
+Benchmarking   0%|                                      |  ETA: N/A
+Benchmarking   0%|                                      |  ETA: N/A
+(1/2) benchmarking "utf8"...
+Benchmarking   0%|                                      |  ETA: N/A
+  (1/3) benchmarking "join"...
+  done (took 5.548718314 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:20
+  (2/3) benchmarking "plots"...
+  done (took 0.282115629 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:24
+  (3/3) benchmarking "replace"...
+  done (took 1.955547865 seconds)
+done (took 8.149276798 seconds)
+Benchmarking  14%|█████▍                                |  ETA: 0:00:50
+(2/2) benchmarking "trigonometry"...
+Benchmarking  14%|█████▍                                |  ETA: 0:00:52
+  (1/2) benchmarking "circular"...
+Benchmarking  14%|█████▍                                |  ETA: 0:00:54
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.350475609 seconds)
+Benchmarking  21%|████████▏                             |  ETA: 0:00:34
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.373740524 seconds)
+Benchmarking  29%|██████████▉                           |  ETA: 0:00:24
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.352148336 seconds)
+Benchmarking  36%|█████████████▋                        |  ETA: 0:00:18
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.325677936 seconds)
+Benchmarking  43%|████████████████▎                     |  ETA: 0:00:14
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.344261765 seconds)
+Benchmarking  50%|███████████████████                   |  ETA: 0:00:11
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.387481458 seconds)
+  done (took 2.384319825 seconds)
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:08
+  (2/2) benchmarking "hyperbolic"...
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:08
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.322613218 seconds)
+Benchmarking  64%|████████████████████████▍             |  ETA: 0:00:06
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.349475045 seconds)
+Benchmarking  71%|███████████████████████████▏          |  ETA: 0:00:05
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.333573056 seconds)
+Benchmarking  79%|█████████████████████████████▉        |  ETA: 0:00:03
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.321394028 seconds)
+Benchmarking  86%|████████████████████████████████▋     |  ETA: 0:00:02
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.349743583 seconds)
+Benchmarking  93%|███████████████████████████████████▎  |  ETA: 0:00:01
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.346777706 seconds)
+  done (took 2.277241357 seconds)
+done (took 4.921109209 seconds)
+Benchmarking 100%|██████████████████████████████████████| Time: 0:00:13
+PkgBenchmark: Running benchmarks...
+PkgBenchmark: creating benchmark tuning file /tmp/Dcng4Zrb/Example/benchmark/tune.json...
+Tuning   0%|                                            |  ETA: N/A
+Tuning   0%|                                            |  ETA: N/A
+(1/2) tuning "utf8"...
+Tuning   0%|                                            |  ETA: N/A
+  (1/3) tuning "join"...
+  done (took 7.014088709 seconds)
+Tuning   7%|███▏                                        |  ETA: 0:01:52
+  (2/3) tuning "plots"...
+  done (took 0.415378765 seconds)
+Tuning   7%|███▏                                        |  ETA: 0:01:57
+  (3/3) tuning "replace"...
+  done (took 5.509867371 seconds)
+done (took 13.671458239 seconds)
+Tuning  14%|██████▎                                     |  ETA: 0:01:27
+(2/2) tuning "trigonometry"...
+Tuning  14%|██████▎                                     |  ETA: 0:01:29
+  (1/2) tuning "circular"...
+Tuning  14%|██████▎                                     |  ETA: 0:01:31
+    (1/6) tuning ("tan", π)...
+    done (took 0.476412817 seconds)
+Tuning  21%|█████████▍                                  |  ETA: 0:00:57
+    (2/6) tuning ("cos", 0.0)...
+    done (took 0.496030547 seconds)
+Tuning  29%|████████████▋                               |  ETA: 0:00:41
+    (3/6) tuning ("sin", π)...
+    done (took 0.416334273 seconds)
+Tuning  36%|███████████████▊                            |  ETA: 0:00:30
+    (4/6) tuning ("cos", π)...
+    done (took 0.40863384 seconds)
+Tuning  43%|██████████████████▉                         |  ETA: 0:00:23
+    (5/6) tuning ("sin", 0.0)...
+    done (took 0.433597141 seconds)
+Tuning  50%|██████████████████████                      |  ETA: 0:00:17
+    (6/6) tuning ("tan", 0.0)...
+    done (took 0.427640526 seconds)
+  done (took 3.020330223 seconds)
+Tuning  57%|█████████████████████████▏                  |  ETA: 0:00:13
+  (2/2) tuning "hyperbolic"...
+Tuning  57%|█████████████████████████▏                  |  ETA: 0:00:14
+    (1/6) tuning ("tan", π)...
+    done (took 0.385250518 seconds)
+Tuning  64%|████████████████████████████▎               |  ETA: 0:00:10
+    (2/6) tuning ("cos", 0.0)...
+    done (took 0.390896065 seconds)
+Tuning  71%|███████████████████████████████▍            |  ETA: 0:00:08
+    (3/6) tuning ("sin", π)...
+    done (took 0.384589003 seconds)
+Tuning  79%|██████████████████████████████████▋         |  ETA: 0:00:05
+    (4/6) tuning ("cos", π)...
+    done (took 0.3783049 seconds)
+Tuning  86%|█████████████████████████████████████▊      |  ETA: 0:00:03
+    (5/6) tuning ("sin", 0.0)...
+    done (took 0.384078466 seconds)
+Tuning  93%|████████████████████████████████████████▉   |  ETA: 0:00:02
+    (6/6) tuning ("tan", 0.0)...
+    done (took 0.394758554 seconds)
+  done (took 2.570769042 seconds)
+done (took 5.924402591 seconds)
+Tuning 100%|████████████████████████████████████████████| Time: 0:00:20
+Benchmarking   0%|                                      |  ETA: N/A
+Benchmarking   0%|                                      |  ETA: N/A
+(1/2) benchmarking "utf8"...
+Benchmarking   0%|                                      |  ETA: N/A
+  (1/3) benchmarking "join"...
+  done (took 5.418959771 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:19
+  (2/3) benchmarking "plots"...
+  done (took 0.342699777 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:23
+  (3/3) benchmarking "replace"...
+  done (took 1.939798285 seconds)
+done (took 8.062787669 seconds)
+Benchmarking  14%|█████▍                                |  ETA: 0:00:50
+(2/2) benchmarking "trigonometry"...
+Benchmarking  14%|█████▍                                |  ETA: 0:00:52
+  (1/2) benchmarking "circular"...
+Benchmarking  14%|█████▍                                |  ETA: 0:00:53
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.369416381 seconds)
+Benchmarking  21%|████████▏                             |  ETA: 0:00:34
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.389795146 seconds)
+Benchmarking  29%|██████████▉                           |  ETA: 0:00:24
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.332239854 seconds)
+Benchmarking  36%|█████████████▋                        |  ETA: 0:00:18
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.33405699 seconds)
+Benchmarking  43%|████████████████▎                     |  ETA: 0:00:14
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.352674888 seconds)
+Benchmarking  50%|███████████████████                   |  ETA: 0:00:11
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.360516808 seconds)
+  done (took 2.405545324 seconds)
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:08
+  (2/2) benchmarking "hyperbolic"...
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:08
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.331685808 seconds)
+Benchmarking  64%|████████████████████████▍             |  ETA: 0:00:06
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.359300067 seconds)
+Benchmarking  71%|███████████████████████████▏          |  ETA: 0:00:05
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.33543531 seconds)
+Benchmarking  79%|█████████████████████████████▉        |  ETA: 0:00:03
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.336853098 seconds)
+Benchmarking  86%|████████████████████████████████▋     |  ETA: 0:00:02
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.361252131 seconds)
+Benchmarking  93%|███████████████████████████████████▎  |  ETA: 0:00:01
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.351479877 seconds)
+  done (took 2.331692619 seconds)
+done (took 5.029136337 seconds)
+Benchmarking 100%|██████████████████████████████████████| Time: 0:00:13
+Test Summary: | Pass  Total
+judging       |   26     26
+ Activating environment at `/tmp/jl_OWS7tV/Project.toml`
+[ Info: SetupBuildDirectory: setting up build directory.
+[ Info: Doctest: running doctests.
+[ Info: Skipped ExpandTemplates step (doctest only).
+[ Info: Skipped CrossReferences step (doctest only).
+[ Info: Skipped CheckDocument step (doctest only).
+[ Info: Skipped Populate step (doctest only).
+[ Info: Skipped RenderDocument step (doctest only).
+Test Summary: | Pass  Total
+doctest       |    1      1
+PkgBenchmark: Running benchmarks...
+PkgBenchmark: using benchmark tuning data in /home/pkgeval/.julia/packages/PkgBenchmark/zKgzD/benchmark/tune.json
+Benchmarking   0%|                                      |  ETA: N/A
+Benchmarking   0%|                                      |  ETA: N/A
+(1/2) benchmarking "utf8"...
+Benchmarking   0%|                                      |  ETA: N/A
+  (1/3) benchmarking "join"...
+  done (took 5.882181228 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:34
+  (2/3) benchmarking "plots"...
+  done (took 0.329085653 seconds)
+Benchmarking   7%|██▊                                   |  ETA: 0:01:39
+  (3/3) benchmarking "replace"...
+  done (took 1.961400586 seconds)
+done (took 8.811639703 seconds)
+Benchmarking  14%|█████▍                                |  ETA: 0:00:57
+(2/2) benchmarking "trigonometry"...
+Benchmarking  14%|█████▍                                |  ETA: 0:00:59
+  (1/2) benchmarking "circular"...
+Benchmarking  14%|█████▍                                |  ETA: 0:01:01
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.431388285 seconds)
+Benchmarking  21%|████████▏                             |  ETA: 0:00:39
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.444347515 seconds)
+Benchmarking  29%|██████████▉                           |  ETA: 0:00:28
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.363737315 seconds)
+Benchmarking  36%|█████████████▋                        |  ETA: 0:00:21
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.359257029 seconds)
+Benchmarking  43%|████████████████▎                     |  ETA: 0:00:16
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.373726018 seconds)
+Benchmarking  50%|███████████████████                   |  ETA: 0:00:12
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.397449445 seconds)
+  done (took 2.77053662 seconds)
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:09
+  (2/2) benchmarking "hyperbolic"...
+Benchmarking  57%|█████████████████████▊                |  ETA: 0:00:10
+    (1/6) benchmarking ("tan", π)...
+    done (took 0.345290046 seconds)
+Benchmarking  64%|████████████████████████▍             |  ETA: 0:00:07
+    (2/6) benchmarking ("cos", 0.0)...
+    done (took 0.361198833 seconds)
+Benchmarking  71%|███████████████████████████▏          |  ETA: 0:00:05
+    (3/6) benchmarking ("sin", π)...
+    done (took 0.329821995 seconds)
+Benchmarking  79%|█████████████████████████████▉        |  ETA: 0:00:04
+    (4/6) benchmarking ("cos", π)...
+    done (took 0.331514151 seconds)
+Benchmarking  86%|████████████████████████████████▋     |  ETA: 0:00:02
+    (5/6) benchmarking ("sin", 0.0)...
+    done (took 0.34079358 seconds)
+Benchmarking  93%|███████████████████████████████████▎  |  ETA: 0:00:01
+    (6/6) benchmarking ("tan", 0.0)...
+    done (took 0.336765991 seconds)
+  done (took 2.31662872 seconds)
+done (took 5.349631184 seconds)
+Benchmarking 100%|██████████████████████████████████████| Time: 0:00:15
+Test Summary:  | Pass  Total
+package module |    2      2
+    Testing PkgBenchmark tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:36:27.543
+CPU usage: 500.71s (443.80s user, 57.96s kernel)
+
+Network usage:
+- eth0: 3.307 MiB received, 80.762 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":253,"value":467,"op":"Read","minor":0},{"major":253,"value":0,"op":"Write","minor":0},{"major":253,"value":467,"op":"Sync","minor":0},{"major":253,"value":0,"op":"Async","minor":0},{"major":253,"value":0,"op":"Discard","minor":0},{"major":253,"value":467,"op":"Total","minor":0},{"major":8,"value":325,"op":"Read","minor":0},{"major":8,"value":0,"op":"Write","minor":0},{"major":8,"value":325,"op":"Sync","minor":0},{"major":8,"value":0,"op":"Async","minor":0},{"major":8,"value":0,"op":"Discard","minor":0},{"major":8,"value":325,"op":"Total","minor":0},{"major":259,"value":1319,"op":"Read","minor":0},{"major":259,"value":97,"op":"Write","minor":0},{"major":259,"value":1338,"op":"Sync","minor":0},{"major":259,"value":78,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1416,"op":"Total","minor":0},{"major":253,"value":852,"op":"Read","minor":2},{"major":253,"value":97,"op":"Write","minor":2},{"major":253,"value":871,"op":"Sync","minor":2},{"major":253,"value":78,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":949,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":253,"value":1912832,"op":"Read","minor":0},{"major":253,"value":0,"op":"Write","minor":0},{"major":253,"value":1912832,"op":"Sync","minor":0},{"major":253,"value":0,"op":"Async","minor":0},{"major":253,"value":0,"op":"Discard","minor":0},{"major":253,"value":1912832,"op":"Total","minor":0},{"major":8,"value":1331200,"op":"Read","minor":0},{"major":8,"value":0,"op":"Write","minor":0},{"major":8,"value":1331200,"op":"Sync","minor":0},{"major":8,"value":0,"op":"Async","minor":0},{"major":8,"value":0,"op":"Discard","minor":0},{"major":8,"value":1331200,"op":"Total","minor":0},{"major":259,"value":11751424,"op":"Read","minor":0},{"major":259,"value":425984,"op":"Write","minor":0},{"major":259,"value":11857920,"op":"Sync","minor":0},{"major":259,"value":319488,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":12177408,"op":"Total","minor":0},{"major":253,"value":9838592,"op":"Read","minor":2},{"major":253,"value":425984,"op":"Write","minor":2},{"major":253,"value":9945088,"op":"Sync","minor":2},{"major":253,"value":319488,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":10264576,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":319127552,"max_usage":1853497344,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":1089,"total_rss":207335424,"inactive_file":3825664,"inactive_anon":59879424,"total_pgfault":30423459,"total_cache":84410368,"total_rss_huge":0,"total_active_anon":217206784,"total_pgmajfault":1089,"pgpgin":28089468,"rss_huge":0,"mapped_file":4460544,"total_inactive_file":3825664,"dirty":540672,"total_unevictable":0,"total_dirty":540672,"writeback":0,"pgpgout":28018536,"hierarchical_memsw_limit":0,"cache":84410368,"active_file":5603328,"pgfault":30423459,"total_mapped_file":4460544,"total_pgpgout":28018536,"total_writeback":0,"rss":207335424,"unevictable":0,"total_inactive_anon":59879424,"total_pgpgin":28089468,"active_anon":217206784,"total_active_file":5603328},"limit":540965302272},"name":"/PkgBenchmark-u3OvBvjw","networks":{"eth0":{"rx_bytes":3467420,"rx_packets":832,"tx_packets":710,"tx_bytes":82700,"tx_dropped":0,"rx_dropped":17,"tx_errors":0,"rx_errors":0}},"id":"33fcb5699660500bd9925dc433899781b7c0c8b4a676a60888894eb4f7b07e88","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4638487894522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":443800000000,"usage_in_kernelmode":57960000000,"total_usage":500712892559,"percpu_usage":[0,0,0,0,0,0,500712950499,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24950,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:36:27.547289995Z"}

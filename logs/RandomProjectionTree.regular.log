@@ -1,0 +1,116 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:55:27.126
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:55:28.929
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Distances ──────────── v0.10.0
+  Installed RandomProjectionTree ─ v0.1.1
+  Installed Match ──────────────── v1.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [8b836b70] + RandomProjectionTree v0.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [b4f34e82] + Distances v0.10.0
+  [7eb4fadd] + Match v1.1.0
+  [8b836b70] + RandomProjectionTree v0.1.1
+  [8ba89e20] + Distributed
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T17:55:32.854
+#
+
+    Testing RandomProjectionTree
+Status `/tmp/jl_aqJGY7/Project.toml`
+  [b4f34e82] Distances v0.10.0
+  [7eb4fadd] Match v1.1.0
+  [8b836b70] RandomProjectionTree v0.1.1
+  [8ba89e20] Distributed
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [de0858da] Printf
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_aqJGY7/Manifest.toml`
+  [b4f34e82] Distances v0.10.0
+  [7eb4fadd] Match v1.1.0
+  [8b836b70] RandomProjectionTree v0.1.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+┌ Debug: check_for_random_data: dispatching nbspecta : 
+│   nbspectra = 20000
+└ @ Main ~/.julia/packages/RandomProjectionTree/1mH42/test/testrandom.jl:7
+┌ Info: found nb workers 
+└   nbcpus = 1
+[ Info: going serial
+[ Info: randomProjection: collecting leaves of tree 
+
+ randomProjection, collected nb leaves = 256 
+ 15.785471 seconds (507.39 k allocations: 501.181 MiB, 1.59% gc time)
+[ Info: in analyzeSplittingInfo
+
+ nbstored = 511 
+
+ meanDiameter at max depth = 0.498827
+ nb split diam = 0
+ nb split proj = 255
+Test Summary: | Pass  Total
+random        |    1      1
+    Testing RandomProjectionTree tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:55:57.726
+CPU usage: 30.67s (27.71s user, 3.02s kernel)
+
+Network usage:
+- eth0: 2.630 MiB received, 36.919 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":321417216,"max_usage":892739584,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":211591168,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":626835,"total_cache":80130048,"total_rss_huge":0,"total_active_anon":212889600,"total_pgmajfault":0,"pgpgin":416460,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":345230,"hierarchical_memsw_limit":0,"cache":80130048,"active_file":135168,"pgfault":626835,"total_mapped_file":0,"total_pgpgout":345230,"total_writeback":0,"rss":211591168,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":416460,"active_anon":212889600,"total_active_file":135168},"limit":540965302272},"name":"/RandomProjectionTree-8ajO3jPe","networks":{"eth0":{"rx_bytes":2758005,"rx_packets":357,"tx_packets":356,"tx_bytes":37805,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"7f197d4a089bd5cc72ad3bdb1978b9199e3d6c9d449ece8bf0a4470d56d7d889","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4328197504522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":27710000000,"usage_in_kernelmode":3020000000,"total_usage":30672038184,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,30672038184,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:55:58.799507037Z"}

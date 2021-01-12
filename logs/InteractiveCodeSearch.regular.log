@@ -1,0 +1,135 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:17:33.866
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:17:35.661
+#
+
+ Installing known registries into `~/.julia`
+###########                                                               15.7%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed InteractiveCodeSearch ─ v0.3.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [54eb57ff] + InteractiveCodeSearch v0.3.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [54eb57ff] + InteractiveCodeSearch v0.3.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T22:17:39.476
+#
+
+    Testing InteractiveCodeSearch
+Status `/tmp/jl_6egjrQ/Project.toml`
+  [54eb57ff] InteractiveCodeSearch v0.3.2
+  [b77e0a4c] InteractiveUtils
+  [44cfe95a] Pkg
+  [3fa0cd96] REPL
+  [8dfed614] Test
+Status `/tmp/jl_6egjrQ/Manifest.toml`
+  [54eb57ff] InteractiveCodeSearch v0.3.2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Warning: Matcher rofi not installed.
+│ See https://github.com/DaveDavenport/rofi for how to install rofi.
+│ 
+│ For terminal usage, `peco` is recommended.
+│ See https://github.com/peco/peco for how to install peco.
+│ 
+└ @ InteractiveCodeSearch ~/.julia/packages/InteractiveCodeSearch/irjIV/src/InteractiveCodeSearch.jl:514
+Test Summary: | Pass  Total
+read_stdout   |    2      2
+Test Summary: | Pass  Total
+parse_loc     |    1      1
+Test Summary:   | Pass  Total
+list_locatables |    4      4
+Test Summary:  | Pass  Total
+module_methods |    4      4
+[ Info: No (interesting) method found
+Test Summary: | Pass  Total
+choose_method |    7      7
+Test Summary:    | Pass  Total
+find_source_file |    1      1
+Test Summary: | Pass  Total
+isliteral     |    5      5
+Test Summary:    | Pass  Total
+single_macrocall |    4      4
+[ Info: Opening test.jl:249
+[ Info: Opening test.jl:249
+[ Info: Opening test.jl:249
+[ Info: Opening test.jl:249
+[ Info: Opening test.jl:249
+[ Info: Opening test.jl:249
+┌ Warning: Cannot search for given value of type String
+│ Searching for its type instead...
+└ @ InteractiveCodeSearch ~/.julia/packages/InteractiveCodeSearch/irjIV/src/InteractiveCodeSearch.jl:240
+[ Info: Opening test.jl:249
+[ Info: Opening test.jl:249
+[ Info: Opening test.jl:249
+[ Info: Opening test.jl:249
+[ Info: Ignoring: c in c::Complex
+[ Info: Opening test.jl:249
+Test Summary: | Pass  Total
+patched       |   13     13
+    Testing InteractiveCodeSearch tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:17:49.302
+CPU usage: 15.49s (13.24s user, 2.30s kernel)
+
+Network usage:
+- eth0: 2.831 MiB received, 32.510 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":326647808,"max_usage":607358976,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":215212032,"inactive_file":135168,"inactive_anon":79208448,"total_pgfault":318186,"total_cache":81936384,"total_rss_huge":0,"total_active_anon":216133632,"total_pgmajfault":0,"pgpgin":213840,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":141300,"hierarchical_memsw_limit":0,"cache":81936384,"active_file":2027520,"pgfault":318186,"total_mapped_file":0,"total_pgpgout":141300,"total_writeback":0,"rss":215212032,"unevictable":0,"total_inactive_anon":79208448,"total_pgpgin":213840,"active_anon":216133632,"total_active_file":2027520},"limit":540965302272},"name":"/InteractiveCodeSearch-mt2ZvBcE","networks":{"eth0":{"rx_bytes":2968458,"rx_packets":390,"tx_packets":362,"tx_bytes":33290,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"be5660c2bfe5e50e58cea42eaea8fc0826b7e033109e31fa40efdc7cf17b355c","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6335795334522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":13240000000,"usage_in_kernelmode":2300000000,"total_usage":15494686196,"percpu_usage":[0,0,0,0,0,0,15494686196,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:17:49.304879737Z"}

@@ -1,0 +1,116 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:11:45.806
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:11:47.637
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Distances ─ v0.10.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [b4f34e82] + Distances v0.10.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [b4f34e82] + Distances v0.10.0
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+
+
+################################################################################
+# Testing: 2021-01-11T18:11:51.84
+#
+
+    Testing Distances
+Status `/tmp/jl_UddJkW/Project.toml`
+  [b4f34e82] Distances v0.10.0
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_UddJkW/Manifest.toml`
+  [79e6a3ab] Adapt v2.4.0
+  [b4f34e82] Distances v0.10.0
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Test Summary:                            | Pass  Total
+PreMetric, SemiMetric, Metric on Float64 |  401    401
+Test Summary:                        | Pass  Total
+PreMetric, SemiMetric, Metric on F64 |  401    401
+Test Summary:      | Pass  Total
+individual metrics |  167    167
+Test Summary: | Pass  Total
+NaN behavior  |    3      3
+Test Summary: | Pass  Total
+empty vector  |   46     46
+Test Summary:              | Pass  Total
+DimensionMismatch throwing |   15     15
+Test Summary:         | Pass  Total
+Different input types |   52     52
+Test Summary: | Pass  Total
+mahalanobis   |    8      8
+Test Summary: | Pass  Total
+haversine     |   12     12
+Test Summary:             | Pass  Total
+bhattacharyya / hellinger |   20     20
+Test Summary:                  | Pass  Total
+column-wise metrics on Float64 |   93     93
+Test Summary:              | Pass  Total
+column-wise metrics on F64 |   93     93
+Test Summary:               | Pass  Total
+pairwise metrics on Float64 |  180    180
+Test Summary:           | Pass  Total
+pairwise metrics on F64 |  180    180
+Test Summary:       | Pass  Total
+Euclidean precision |    8      8
+Test Summary:  | Pass  Total
+non-negativity |    8      8
+Test Summary:      | Pass  Total
+Bregman Divergence |    4      4
+    Testing Distances tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:13:34.517
+CPU usage: 108.59s (105.58s user, 3.16s kernel)
+
+Network usage:
+- eth0: 2.604 MiB received, 36.204 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":324763648,"max_usage":729182208,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":215105536,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":814143,"total_cache":80134144,"total_rss_huge":0,"total_active_anon":216403968,"total_pgmajfault":0,"pgpgin":358479,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":135168,"pgpgout":286378,"hierarchical_memsw_limit":0,"cache":80134144,"active_file":135168,"pgfault":814143,"total_mapped_file":0,"total_pgpgout":286378,"total_writeback":135168,"rss":215105536,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":358479,"active_anon":216403968,"total_active_file":135168},"limit":540965302272},"name":"/Distances-wibJSw9N","networks":{"eth0":{"rx_bytes":2730128,"rx_packets":384,"tx_packets":346,"tx_bytes":37073,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"2c1c1578fe433ed0da13ec3c195b9c59ead3749e8c64557f37784ccd47f93b63","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4463024544522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":105580000000,"usage_in_kernelmode":3160000000,"total_usage":108585758052,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,108586392523,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5960,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:13:34.519854667Z"}

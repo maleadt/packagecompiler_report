@@ -1,0 +1,95 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:21:43.898
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:21:45.787
+#
+
+ Installing known registries into `~/.julia`
+###################                                                       26.4%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed StructTypes ─ v1.2.1
+  Installed JSON3 ─────── v1.5.1
+  Installed Parsers ───── v1.0.15
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [0f8b85d8] + JSON3 v1.5.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [0f8b85d8] + JSON3 v1.5.1
+  [69de0a69] + Parsers v1.0.15
+  [856f2bd8] + StructTypes v1.2.1
+  [ade2ca70] + Dates
+  [a63ad114] + Mmap
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T22:21:50.153
+#
+
+    Testing JSON3
+Status `/tmp/jl_n9uYxT/Project.toml`
+  [0f8b85d8] JSON3 v1.5.1
+  [69de0a69] Parsers v1.0.15
+  [856f2bd8] StructTypes v1.2.1
+  [ade2ca70] Dates
+  [a63ad114] Mmap
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+Status `/tmp/jl_n9uYxT/Manifest.toml`
+  [0f8b85d8] JSON3 v1.5.1
+  [69de0a69] Parsers v1.0.15
+  [856f2bd8] StructTypes v1.2.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [de0858da] Printf
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[Test Summary: | Pass  Broken  Total
+JSON3         |  412       3    415
+Test Summary:               | Pass  Total
+JSON3.RawType: StringNumber |   73     73
+    Testing JSON3 tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:23:01.545
+CPU usage: 77.65s (74.38s user, 3.38s kernel)
+
+Network usage:
+- eth0: 2.660 MiB received, 39.390 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":328519680,"max_usage":823365632,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":214822912,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":922152,"total_cache":84512768,"total_rss_huge":0,"total_active_anon":220459008,"total_pgmajfault":0,"pgpgin":469755,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":135168,"pgpgout":396683,"hierarchical_memsw_limit":0,"cache":84512768,"active_file":135168,"pgfault":922152,"total_mapped_file":0,"total_pgpgout":396683,"total_writeback":135168,"rss":214822912,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":469755,"active_anon":220459008,"total_active_file":135168},"limit":540965302272},"name":"/JSON3-2SrFazIy","networks":{"eth0":{"rx_bytes":2789683,"rx_packets":410,"tx_packets":394,"tx_bytes":40335,"tx_dropped":0,"rx_dropped":3,"tx_errors":0,"rx_errors":0}},"id":"abfaf5fb23129b6209be22deb52c72b8cdff1e1b616aab611d91ecfa1ace1ec6","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6375705364522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":74380000000,"usage_in_kernelmode":3380000000,"total_usage":77646617691,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77645703211,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,914480,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:23:01.548381882Z"}

@@ -1,0 +1,137 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:27:04.334
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:27:06.157
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CodeCosts ─ v0.2.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [01031290] + CodeCosts v0.2.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [01031290] + CodeCosts v0.2.0
+  [2a0f44e3] + Base64
+  [b77e0a4c] + InteractiveUtils
+  [d6f4376e] + Markdown
+
+
+################################################################################
+# Testing: 2021-01-11T20:27:09.549
+#
+
+    Testing CodeCosts
+Status `/tmp/jl_hcGmiS/Project.toml`
+  [01031290] CodeCosts v0.2.0
+  [b77e0a4c] InteractiveUtils
+  [8dfed614] Test
+Status `/tmp/jl_hcGmiS/Manifest.toml`
+  [01031290] CodeCosts v0.2.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+CodeCostsInfo(
+     CodeInfo(
+   1 1 ─ %1 = Base.fpext(Base.Float64, x)::Float64
+   1 │   %2 = Base.add_float(%1, 0.3333333333333333)::Float64
+   1 │   %3 = Base.sub_float(x, 1.0f0)::Float32
+   1 │   %4 = Base.fpext(Base.Float64, x)::Float64
+  20 │   %5 = Base.div_float(%4, 3.0)::Float64
+   1 │   %6 = Base.fpext(Base.Float64, x)::Float64
+   4 │   %7 = Base.mul_float(%6, 5.0)::Float64
+   0 │   %8 = Core.tuple(%2, %3, %5, %7)::Tuple{Float64,Float32,Float64,Float64}
+   0 └──      return %8
+     )
+, CodeCostsSummary(
+     zero:  2|
+    cheap:  5| 11111
+   middle:  4| 4===
+expensive: 20| 20==================
+    total: 29| 100 (default threshold)
+))
+CodeCostsInfo(
+     CodeInfo(
+         @ /home/pkgeval/.julia/packages/CodeCosts/rM9np/test/runtests.jl:13 within `func_000'
+        ┌ @ float.jl:401 within `+'
+   1 1 ─│ %1 = Base.add_float(x, 0.3333333333333333)::Float64
+     │  └
+     │  ┌ @ float.jl:403 within `-'
+   1 │  │ %2 = Base.sub_float(x, 1.0)::Float64
+     │  └
+     │  ┌ @ float.jl:407 within `/'
+  20 │  │ %3 = Base.div_float(x, 3.0)::Float64
+     │  └
+     │  ┌ @ float.jl:405 within `*'
+   4 │  │ %4 = Base.mul_float(x, 5.0)::Float64
+     │  └
+   0 │   %5 = Core.tuple(%1, %2, %3, %4)::NTuple{4,Float64}
+   0 └──      return %5
+     )
+, CodeCostsSummary(
+     zero:  2|
+    cheap:  2| 11
+   middle:  4| 4===
+expensive: 20| 20==================
+    total: 26| 100 (default threshold)
+))
+CodeCostsInfo(
+     CodeInfo(
+ 100 1 ─ %1 = Core._expr(:call, :>, x, 0)::Expr
+ 100 │   %2 = $(Expr(:copyast, :($(QuoteNode(quote
+         #= /home/pkgeval/.julia/packages/CodeCosts/rM9np/test/runtests.jl:15 =#
+         true
+     end)))))::Expr
+ 100 │   %3 = $(Expr(:copyast, :($(QuoteNode(quote
+         #= /home/pkgeval/.julia/packages/CodeCosts/rM9np/test/runtests.jl:15 =#
+         false
+     end)))))::Expr
+ 100 │   %4 = Core._expr(:if, %1, %2, %3)::Expr
+   0 └──      return %4
+     )
+, CodeCostsSummary(
+     zero:   1|
+    cheap:   0| 
+   middle:   0| 
+expensive: 400| 100==================================================...
+    total: 400| 100 (default threshold)
+))
+Test Summary: | Pass  Total
+Basic v1.5    |    5      5
+    Testing CodeCosts tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:27:16.076
+CPU usage: 11.85s (9.59s user, 2.29s kernel)
+
+Network usage:
+- eth0: 2.536 MiB received, 27.289 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":326242304,"max_usage":574689280,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":217722880,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":304161,"total_cache":79380480,"total_rss_huge":0,"total_active_anon":218296320,"total_pgmajfault":0,"pgpgin":203412,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":130907,"hierarchical_memsw_limit":0,"cache":79380480,"active_file":135168,"pgfault":304161,"total_mapped_file":0,"total_pgpgout":130907,"total_writeback":0,"rss":217722880,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":203412,"active_anon":218296320,"total_active_file":135168},"limit":540965302272},"name":"/CodeCosts-u0Si4VAN","networks":{"eth0":{"rx_bytes":2658916,"rx_packets":279,"tx_packets":281,"tx_bytes":27944,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"49f84cfc03d46a2193bd81ae5667e1968a661e364d6174bca8f9c37c3de91f21","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5488367484522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":9590000000,"usage_in_kernelmode":2290000000,"total_usage":11854350427,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11854345627,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4800,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:27:16.078594877Z"}

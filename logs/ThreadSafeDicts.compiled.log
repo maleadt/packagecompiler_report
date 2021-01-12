@@ -1,0 +1,140 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T18:31:22.967
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T18:31:24.752
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ThreadSafeDicts ─ v0.0.2
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [4239201d] + ThreadSafeDicts v0.0.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [4239201d] + ThreadSafeDicts v0.0.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T18:31:30.505
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 147.282 MiB, compilation took 161 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T18:34:19.222
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/ThreadSafeDicts-AsrMnFxN.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:34:21.076
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ThreadSafeDicts ─ v0.0.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [4239201d] + ThreadSafeDicts v0.0.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [4239201d] + ThreadSafeDicts v0.0.2
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T18:34:24.519
+#
+
+    Testing ThreadSafeDicts
+Status `/tmp/jl_Q9WSVb/Project.toml`
+  [4239201d] ThreadSafeDicts v0.0.2
+  [8ba89e20] Distributed
+  [8dfed614] Test
+Status `/tmp/jl_Q9WSVb/Manifest.toml`
+  [4239201d] ThreadSafeDicts v0.0.2
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Hmm, you only have one thread allocated for Julia.
+testing printing: Dict was unlocked, contents: Dict("number" => 1000)
+    Testing ThreadSafeDicts tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:34:27.675
+CPU usage: 8.51s (6.37s user, 2.16s kernel)
+
+Network usage:
+- eth0: 2.535 MiB received, 27.985 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":615,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":629,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":634,"op":"Total","minor":0},{"major":253,"value":615,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":629,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":634,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":26652672,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":26710016,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":26730496,"op":"Total","minor":0},{"major":253,"value":26652672,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":26710016,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":26730496,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":304668672,"max_usage":494530560,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":264,"total_rss":172515328,"inactive_file":15360000,"inactive_anon":98402304,"total_pgfault":192159,"total_cache":102445056,"total_rss_huge":0,"total_active_anon":153362432,"total_pgmajfault":264,"pgpgin":165528,"rss_huge":0,"mapped_file":16896000,"total_inactive_file":15360000,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":98414,"hierarchical_memsw_limit":0,"cache":102445056,"active_file":7299072,"pgfault":192159,"total_mapped_file":16896000,"total_pgpgout":98414,"total_writeback":0,"rss":172515328,"unevictable":0,"total_inactive_anon":98402304,"total_pgpgin":165528,"active_anon":153362432,"total_active_file":7299072},"limit":540965302272},"name":"/ThreadSafeDicts-98sxf5IM","networks":{"eth0":{"rx_bytes":2658093,"rx_packets":302,"tx_packets":292,"tx_bytes":28657,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"dd6bd18714fced3346ab6e565380b07184037e21af39cb155971c553a8b0bebc","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4623170834522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":6370000000,"usage_in_kernelmode":2160000000,"total_usage":8511014830,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8511011000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3830,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:34:27.67920467Z"}

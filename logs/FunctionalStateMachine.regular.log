@@ -1,0 +1,186 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:38:18.62
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:38:20.45
+#
+
+ Installing known registries into `~/.julia`
+#########                                                                 12.6%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed FunctionalStateMachine ─ v0.2.9
+  Installed Requires ─────────────── v1.1.2
+  Installed ProgressMeter ────────── v1.4.1
+  Installed DocStringExtensions ──── v0.8.3
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [3e9e306e] + FunctionalStateMachine v0.2.9
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [ffbed154] + DocStringExtensions v0.8.3
+  [3e9e306e] + FunctionalStateMachine v0.2.9
+  [92933f4c] + ProgressMeter v1.4.1
+  [ae029012] + Requires v1.1.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T22:38:24.391
+#
+
+    Testing FunctionalStateMachine
+Status `/tmp/jl_35f5RS/Project.toml`
+  [ffbed154] DocStringExtensions v0.8.3
+  [3e9e306e] FunctionalStateMachine v0.2.9
+  [86223c79] Graphs v0.10.3
+  [92933f4c] ProgressMeter v1.4.1
+  [ae029012] Requires v1.1.2
+  [ade2ca70] Dates
+  [8dfed614] Test
+Status `/tmp/jl_35f5RS/Manifest.toml`
+  [34da2185] Compat v3.25.0
+  [864edb3b] DataStructures v0.18.8
+  [ffbed154] DocStringExtensions v0.8.3
+  [3e9e306e] FunctionalStateMachine v0.2.9
+  [86223c79] Graphs v0.10.3
+  [bac558e1] OrderedCollections v1.3.2
+  [92933f4c] ProgressMeter v1.4.1
+  [ae029012] Requires v1.1.2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: FunctionalStateMachine.jl is adding Graphs.jl related tools (Visualization).
+FSM , iter=1 -- foo!, 
+do foo!
+FSM , iter=2 -- bar!, 
+do bar!
+FSM , iter=3 -- exitStateMachine, 
+do foo!
+do bar!
+do foo!
+do foo!
+FSM , iter=1 -- bar!, 
+do bar!
+FSM , iter=2 -- exitStateMachine, 
+Test Summary:                 | Pass  Total
+Test generic state machine... |    5      5
+FSM , iter=1 -- longwait, 
+[ Info: starting stagnant function call, but should not see it's end (but watchdog timeout)
+....[ Info:  watchdog test, successfully caught exception for stagnant FSM step
+Test Summary:         | Pass  Total
+test watchdog timeout |    1      1
+do foo!
+do bar!
+test recording and rendering of an FSM run: Error During Test at /home/pkgeval/.julia/packages/FunctionalStateMachine/2JZFG/test/testStateMachine.jl:78
+  Got exception outside of a @test
+  IOError: could not spawn `dot /tmp/animatestate/csm_1.dot -Tpng -Gdpi=100 -o /tmp/animatestate/csm_1.png`: no such file or directory (ENOENT)
+  Stacktrace:
+   [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:99
+   [2] #585 at ./process.jl:112 [inlined]
+   [3] setup_stdios(::Base.var"#585#586"{Cmd}, ::Array{Any,1}) at ./process.jl:196
+   [4] _spawn at ./process.jl:111 [inlined]
+   [5] run(::Cmd; wait::Bool) at ./process.jl:439
+   [6] run at ./process.jl:438 [inlined]
+   [7] renderStateMachineFrame(::GenericIncidenceList{ExVertex,ExEdge{ExVertex},Dict{Int64,ExVertex},Dict{Int64,Array{ExEdge{ExVertex},1}}}, ::Int64; title::String, viewerapp::String, fext::String, dpi::Int64, engine::String, show::Bool, folder::String, folderpath::String, timest::String, rmfirst::Bool) at /home/pkgeval/.julia/packages/FunctionalStateMachine/2JZFG/src/StateMachineAnimation.jl:127
+   [8] macro expansion at /home/pkgeval/.julia/packages/FunctionalStateMachine/2JZFG/src/StateMachineAnimation.jl:468 [inlined]
+   [9] macro expansion at /home/pkgeval/.julia/packages/ProgressMeter/GhAId/src/ProgressMeter.jl:762 [inlined]
+   [10] animateStateMachineHistoryIntervalCompound(::Dict{Symbol,Array{Tuple{DateTime,Int64,Function,Nothing},1}}; easyNames::Dict{Symbol,Nothing}, interval::Int64, folderpath::String, dpi::Int64, title::String, show::Bool, clearstale::Bool, rmfirst::Bool, draw_more_cb::FunctionalStateMachine.var"#35#39", fsmColors::Dict{Symbol,String}, defaultColor::String, autocolor_cb::FunctionalStateMachine.var"#36#40"{Dict{Symbol,String},String}) at /home/pkgeval/.julia/packages/FunctionalStateMachine/2JZFG/src/StateMachineAnimation.jl:441
+   [11] macro expansion at /home/pkgeval/.julia/packages/FunctionalStateMachine/2JZFG/test/testStateMachine.jl:85 [inlined]
+   [12] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [13] top-level scope at /home/pkgeval/.julia/packages/FunctionalStateMachine/2JZFG/test/testStateMachine.jl:80
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at /home/pkgeval/.julia/packages/FunctionalStateMachine/2JZFG/test/runtests.jl:5
+   [16] include(::String) at ./client.jl:457
+   [17] top-level scope at none:6
+   [18] eval(::Module, ::Any) at ./boot.jl:331
+   [19] exec_options(::Base.JLOptions) at ./client.jl:272
+   [20] _start() at ./client.jl:506
+  
+Test Summary:                              | Error  Total
+test recording and rendering of an FSM run |     1      1
+ERROR: LoadError: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/FunctionalStateMachine/2JZFG/test/testStateMachine.jl:78
+in expression starting at /home/pkgeval/.julia/packages/FunctionalStateMachine/2JZFG/test/runtests.jl:5
+
+PkgEval failed: Package FunctionalStateMachine errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:38:46.023
+CPU usage: 25.55s (22.32s user, 3.28s kernel)
+
+Network usage:
+- eth0: 2.890 MiB received, 60.492 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":295419904,"max_usage":887672832,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":181968896,"inactive_file":135168,"inactive_anon":79884288,"total_pgfault":666402,"total_cache":83877888,"total_rss_huge":0,"total_active_anon":185991168,"total_pgmajfault":0,"pgpgin":488136,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":423215,"hierarchical_memsw_limit":0,"cache":83877888,"active_file":135168,"pgfault":666402,"total_mapped_file":0,"total_pgpgout":423215,"total_writeback":0,"rss":181968896,"unevictable":0,"total_inactive_anon":79884288,"total_pgpgin":488136,"active_anon":185991168,"total_active_file":135168},"limit":540965302272},"name":"/FunctionalStateMachine-F7gURG2t","networks":{"eth0":{"rx_bytes":3030103,"rx_packets":496,"tx_packets":540,"tx_bytes":61944,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"15d6152600ebbf64f37d8e19e99a50704d4a2818ed9d869809e52a067794e378","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6496388654522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":22320000000,"usage_in_kernelmode":3280000000,"total_usage":25550001144,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25548763814,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1237330,0,0]}},"read":"2021-01-11T22:38:46.200446666Z"}

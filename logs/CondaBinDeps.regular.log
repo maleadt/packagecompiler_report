@@ -1,0 +1,306 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:02:39.613
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:02:41.403
+#
+
+ Installing known registries into `~/.julia`
+###################                                                       27.1%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CondaBinDeps ─── v0.2.0
+  Installed Conda ────────── v1.5.0
+  Installed BinDeps ──────── v1.0.2
+  Installed VersionParsing ─ v1.2.0
+  Installed URIParser ────── v0.4.1
+  Installed JSON ─────────── v0.21.1
+  Installed Parsers ──────── v1.0.15
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a9693cdc] + CondaBinDeps v0.2.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [9e28174c] + BinDeps v1.0.2
+  [8f4d0f93] + Conda v1.5.0
+  [a9693cdc] + CondaBinDeps v0.2.0
+  [682c06a0] + JSON v0.21.1
+  [69de0a69] + Parsers v1.0.15
+  [30578b45] + URIParser v0.4.1
+  [81def892] + VersionParsing v1.2.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building Conda → `~/.julia/packages/Conda/x5ml4/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T18:02:47.623
+#
+
+    Testing CondaBinDeps
+Status `/tmp/jl_DJy5OQ/Project.toml`
+  [9e28174c] BinDeps v1.0.2
+  [8f4d0f93] Conda v1.5.0
+  [a9693cdc] CondaBinDeps v0.2.0
+  [8f399da3] Libdl
+  [8dfed614] Test
+Status `/tmp/jl_DJy5OQ/Manifest.toml`
+  [9e28174c] BinDeps v1.0.2
+  [8f4d0f93] Conda v1.5.0
+  [a9693cdc] CondaBinDeps v0.2.0
+  [682c06a0] JSON v0.21.1
+  [69de0a69] Parsers v1.0.15
+  [30578b45] URIParser v0.4.1
+  [81def892] VersionParsing v1.2.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: Downloading miniconda installer ...
+[ Info: Installing miniconda ...
+PREFIX=/home/pkgeval/.julia/conda/3
+Unpacking payload ...
+  0%|          | 0/36 [00:00<?, ?it/s]Extracting : conda-4.9.2-py38h06a4308_0.conda:   0%|          | 0/36 [00:01<?, ?it/s]Extracting : conda-4.9.2-py38h06a4308_0.conda:   3%|2         | 1/36 [00:01<00:42,  1.22s/it]Extracting : requests-2.24.0-py_0.conda:   3%|2         | 1/36 [00:01<00:42,  1.22s/it]      Extracting : urllib3-1.25.11-py_0.conda:   6%|5         | 2/36 [00:01<00:41,  1.22s/it]Extracting : pyopenssl-19.1.0-pyhd3eb1b0_1.conda:   8%|8         | 3/36 [00:01<00:40,  1.22s/it]Extracting : pip-20.2.4-py38h06a4308_0.conda:  11%|#1        | 4/36 [00:01<00:39,  1.22s/it]    Extracting : cryptography-3.2.1-py38h3c74f83_1.conda:  14%|#3        | 5/36 [00:01<00:37,  1.22s/it]Extracting : brotlipy-0.7.0-py38h27cfd23_1003.conda:  17%|#6        | 6/36 [00:01<00:36,  1.22s/it] Extracting : setuptools-50.3.1-py38h06a4308_1.conda:  19%|#9        | 7/36 [00:01<00:35,  1.22s/it]Extracting : conda-package-handling-1.7.2-py38h03888b9_0.conda:  22%|##2       | 8/36 [00:01<00:34,  1.22s/it]Extracting : cffi-1.14.3-py38h261ae71_2.conda:  25%|##5       | 9/36 [00:01<00:32,  1.22s/it]                 Extracting : wheel-0.35.1-pyhd3eb1b0_0.conda:  28%|##7       | 10/36 [00:01<00:31,  1.22s/it]Extracting : tqdm-4.51.0-pyhd3eb1b0_0.conda:  31%|###       | 11/36 [00:01<00:30,  1.22s/it] Extracting : six-1.15.0-py38h06a4308_0.conda:  33%|###3      | 12/36 [00:01<00:29,  1.22s/it]Extracting : ruamel_yaml-0.15.87-py38h7b6447c_1.conda:  36%|###6      | 13/36 [00:01<00:28,  1.22s/it]Extracting : pysocks-1.7.1-py38h06a4308_0.conda:  39%|###8      | 14/36 [00:01<00:26,  1.22s/it]      Extracting : pycparser-2.20-py_2.conda:  42%|####1     | 15/36 [00:01<00:25,  1.22s/it]         Extracting : pycosat-0.6.3-py38h7b6447c_1.conda:  44%|####4     | 16/36 [00:01<00:24,  1.22s/it]Extracting : idna-2.10-py_0.conda:  47%|####7     | 17/36 [00:01<00:23,  1.22s/it]              Extracting : chardet-3.0.4-py38h06a4308_1003.conda:  50%|#####     | 18/36 [00:01<00:21,  1.22s/it]Extracting : certifi-2020.6.20-pyhd3eb1b0_3.conda:  53%|#####2    | 19/36 [00:01<00:20,  1.22s/it] Extracting : sqlite-3.33.0-h62c20be_0.conda:  56%|#####5    | 20/36 [00:01<00:19,  1.22s/it]      Extracting : tk-8.6.10-hbc83047_0.conda:  58%|#####8    | 21/36 [00:01<00:18,  1.22s/it]    Extracting : readline-8.0-h7b6447c_0.conda:  61%|######1   | 22/36 [00:01<00:17,  1.22s/it]Extracting : libedit-3.1.20191231-h14c3975_1.conda:  64%|######3   | 23/36 [00:01<00:15,  1.22s/it]Extracting : zlib-1.2.11-h7b6447c_3.conda:  67%|######6   | 24/36 [00:01<00:14,  1.22s/it]         Extracting : yaml-0.2.5-h7b6447c_0.conda:  69%|######9   | 25/36 [00:01<00:13,  1.22s/it] Extracting : xz-5.2.5-h7b6447c_0.conda:  72%|#######2  | 26/36 [00:01<00:12,  1.22s/it]  Extracting : openssl-1.1.1h-h7b6447c_0.conda:  75%|#######5  | 27/36 [00:01<00:10,  1.22s/it]Extracting : ncurses-6.2-he6710b0_1.conda:  78%|#######7  | 28/36 [00:01<00:09,  1.22s/it]   Extracting : ncurses-6.2-he6710b0_1.conda:  81%|########  | 29/36 [00:01<00:05,  1.17it/s]Extracting : libffi-3.3-he6710b0_2.conda:  81%|########  | 29/36 [00:01<00:05,  1.17it/s] Extracting : libgcc-ng-9.1.0-hdf63c60_0.conda:  83%|########3 | 30/36 [00:01<00:05,  1.17it/s]Extracting : libstdcxx-ng-9.1.0-hdf63c60_0.conda:  86%|########6 | 31/36 [00:01<00:04,  1.17it/s]Extracting : ld_impl_linux-64-2.33.1-h53a641e_7.conda:  89%|########8 | 32/36 [00:01<00:03,  1.17it/s]Extracting : ca-certificates-2020.10.14-0.conda:  92%|#########1| 33/36 [00:01<00:02,  1.17it/s]      Extracting : _libgcc_mutex-0.1-main.conda:  94%|#########4| 34/36 [00:01<00:01,  1.17it/s]      Extracting : python-3.8.5-h7579374_1.conda:  97%|#########7| 35/36 [00:01<00:00,  1.17it/s]                                                                                           Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/pkgeval/.julia/conda/3
+
+  added / updated specs:
+    - _libgcc_mutex==0.1=main
+    - brotlipy==0.7.0=py38h27cfd23_1003
+    - ca-certificates==2020.10.14=0
+    - certifi==2020.6.20=pyhd3eb1b0_3
+    - cffi==1.14.3=py38h261ae71_2
+    - chardet==3.0.4=py38h06a4308_1003
+    - conda-package-handling==1.7.2=py38h03888b9_0
+    - conda==4.9.2=py38h06a4308_0
+    - cryptography==3.2.1=py38h3c74f83_1
+    - idna==2.10=py_0
+    - ld_impl_linux-64==2.33.1=h53a641e_7
+    - libedit==3.1.20191231=h14c3975_1
+    - libffi==3.3=he6710b0_2
+    - libgcc-ng==9.1.0=hdf63c60_0
+    - libstdcxx-ng==9.1.0=hdf63c60_0
+    - ncurses==6.2=he6710b0_1
+    - openssl==1.1.1h=h7b6447c_0
+    - pip==20.2.4=py38h06a4308_0
+    - pycosat==0.6.3=py38h7b6447c_1
+    - pycparser==2.20=py_2
+    - pyopenssl==19.1.0=pyhd3eb1b0_1
+    - pysocks==1.7.1=py38h06a4308_0
+    - python==3.8.5=h7579374_1
+    - readline==8.0=h7b6447c_0
+    - requests==2.24.0=py_0
+    - ruamel_yaml==0.15.87=py38h7b6447c_1
+    - setuptools==50.3.1=py38h06a4308_1
+    - six==1.15.0=py38h06a4308_0
+    - sqlite==3.33.0=h62c20be_0
+    - tk==8.6.10=hbc83047_0
+    - tqdm==4.51.0=pyhd3eb1b0_0
+    - urllib3==1.25.11=py_0
+    - wheel==0.35.1=pyhd3eb1b0_0
+    - xz==5.2.5=h7b6447c_0
+    - yaml==0.2.5=h7b6447c_0
+    - zlib==1.2.11=h7b6447c_3
+
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  brotlipy           pkgs/main/linux-64::brotlipy-0.7.0-py38h27cfd23_1003
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2020.10.14-0
+  certifi            pkgs/main/noarch::certifi-2020.6.20-pyhd3eb1b0_3
+  cffi               pkgs/main/linux-64::cffi-1.14.3-py38h261ae71_2
+  chardet            pkgs/main/linux-64::chardet-3.0.4-py38h06a4308_1003
+  conda              pkgs/main/linux-64::conda-4.9.2-py38h06a4308_0
+  conda-package-han~ pkgs/main/linux-64::conda-package-handling-1.7.2-py38h03888b9_0
+  cryptography       pkgs/main/linux-64::cryptography-3.2.1-py38h3c74f83_1
+  idna               pkgs/main/noarch::idna-2.10-py_0
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.33.1-h53a641e_7
+  libedit            pkgs/main/linux-64::libedit-3.1.20191231-h14c3975_1
+  libffi             pkgs/main/linux-64::libffi-3.3-he6710b0_2
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-9.1.0-hdf63c60_0
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-9.1.0-hdf63c60_0
+  ncurses            pkgs/main/linux-64::ncurses-6.2-he6710b0_1
+  openssl            pkgs/main/linux-64::openssl-1.1.1h-h7b6447c_0
+  pip                pkgs/main/linux-64::pip-20.2.4-py38h06a4308_0
+  pycosat            pkgs/main/linux-64::pycosat-0.6.3-py38h7b6447c_1
+  pycparser          pkgs/main/noarch::pycparser-2.20-py_2
+  pyopenssl          pkgs/main/noarch::pyopenssl-19.1.0-pyhd3eb1b0_1
+  pysocks            pkgs/main/linux-64::pysocks-1.7.1-py38h06a4308_0
+  python             pkgs/main/linux-64::python-3.8.5-h7579374_1
+  readline           pkgs/main/linux-64::readline-8.0-h7b6447c_0
+  requests           pkgs/main/noarch::requests-2.24.0-py_0
+  ruamel_yaml        pkgs/main/linux-64::ruamel_yaml-0.15.87-py38h7b6447c_1
+  setuptools         pkgs/main/linux-64::setuptools-50.3.1-py38h06a4308_1
+  six                pkgs/main/linux-64::six-1.15.0-py38h06a4308_0
+  sqlite             pkgs/main/linux-64::sqlite-3.33.0-h62c20be_0
+  tk                 pkgs/main/linux-64::tk-8.6.10-hbc83047_0
+  tqdm               pkgs/main/noarch::tqdm-4.51.0-pyhd3eb1b0_0
+  urllib3            pkgs/main/noarch::urllib3-1.25.11-py_0
+  wheel              pkgs/main/noarch::wheel-0.35.1-pyhd3eb1b0_0
+  xz                 pkgs/main/linux-64::xz-5.2.5-h7b6447c_0
+  yaml               pkgs/main/linux-64::yaml-0.2.5-h7b6447c_0
+  zlib               pkgs/main/linux-64::zlib-1.2.11-h7b6447c_3
+
+
+Preparing transaction: ...working... done
+Executing transaction: ...working... done
+installation finished.
+[ Info: Running `conda config --add channels defaults --file /home/pkgeval/.julia/conda/3/condarc-julia.yml --force` in root environment
+Warning: 'defaults' already in 'channels' list, moving to the top
+[ Info: Running `conda update -q -y conda` in root environment
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/pkgeval/.julia/conda/3
+
+  added / updated specs:
+    - conda
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ca-certificates-2020.12.8  |       h06a4308_0         121 KB
+    certifi-2020.12.5          |   py38h06a4308_0         141 KB
+    cffi-1.14.4                |   py38h261ae71_0         226 KB
+    chardet-4.0.0              |py38h06a4308_1003         194 KB
+    cryptography-3.3.1         |   py38h3c74f83_0         566 KB
+    openssl-1.1.1i             |       h27cfd23_0         2.5 MB
+    pip-20.3.3                 |   py38h06a4308_0         1.8 MB
+    pyopenssl-20.0.1           |     pyhd3eb1b0_1          49 KB
+    requests-2.25.1            |     pyhd3eb1b0_0          52 KB
+    setuptools-51.1.2          |   py38h06a4308_3         726 KB
+    tqdm-4.55.1                |     pyhd3eb1b0_0          77 KB
+    urllib3-1.26.2             |     pyhd3eb1b0_0         105 KB
+    wheel-0.36.2               |     pyhd3eb1b0_0          33 KB
+    ------------------------------------------------------------
+                                           Total:         6.5 MB
+
+The following packages will be UPDATED:
+
+  ca-certificates                              2020.10.14-0 --> 2020.12.8-h06a4308_0
+  certifi            pkgs/main/noarch::certifi-2020.6.20-p~ --> pkgs/main/linux-64::certifi-2020.12.5-py38h06a4308_0
+  cffi                                1.14.3-py38h261ae71_2 --> 1.14.4-py38h261ae71_0
+  chardet                           3.0.4-py38h06a4308_1003 --> 4.0.0-py38h06a4308_1003
+  cryptography                         3.2.1-py38h3c74f83_1 --> 3.3.1-py38h3c74f83_0
+  openssl                                 1.1.1h-h7b6447c_0 --> 1.1.1i-h27cfd23_0
+  pip                                 20.2.4-py38h06a4308_0 --> 20.3.3-py38h06a4308_0
+  pyopenssl                             19.1.0-pyhd3eb1b0_1 --> 20.0.1-pyhd3eb1b0_1
+  requests                                      2.24.0-py_0 --> 2.25.1-pyhd3eb1b0_0
+  setuptools                          50.3.1-py38h06a4308_1 --> 51.1.2-py38h06a4308_3
+  tqdm                                  4.51.0-pyhd3eb1b0_0 --> 4.55.1-pyhd3eb1b0_0
+  urllib3                                      1.25.11-py_0 --> 1.26.2-pyhd3eb1b0_0
+  wheel                                 0.35.1-pyhd3eb1b0_0 --> 0.36.2-pyhd3eb1b0_0
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+[ Info: Running `conda create -q -y -p /home/pkgeval/.julia/conda/3/envs/CondaBinDeps_test` in root environment
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/pkgeval/.julia/conda/3/envs/CondaBinDeps_test
+
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+[ Info: Running `conda install -q -y libpng` in CondaBinDeps_test environment
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/pkgeval/.julia/conda/3/envs/CondaBinDeps_test
+
+  added / updated specs:
+    - libpng
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    libpng-1.6.37              |       hbc83047_0         278 KB
+    ------------------------------------------------------------
+                                           Total:         278 KB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-9.1.0-hdf63c60_0
+  libpng             pkgs/main/linux-64::libpng-1.6.37-hbc83047_0
+  zlib               pkgs/main/linux-64::zlib-1.2.11-h7b6447c_3
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+    Testing CondaBinDeps tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:03:31.143
+CPU usage: 50.30s (43.36s user, 6.96s kernel)
+
+Network usage:
+- eth0: 107.401 MiB received, 500.907 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":143360,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":143360,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":143360,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":143360,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":879693824,"max_usage":1559502848,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":178868224,"inactive_file":135168,"inactive_anon":374415360,"total_pgfault":1428042,"total_cache":650379264,"total_rss_huge":0,"total_active_anon":454705152,"total_pgmajfault":0,"pgpgin":1277364,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":540672,"total_unevictable":0,"total_dirty":540672,"writeback":270336,"pgpgout":1074925,"hierarchical_memsw_limit":0,"cache":650379264,"active_file":135168,"pgfault":1428042,"total_mapped_file":0,"total_pgpgout":1074925,"total_writeback":270336,"rss":178868224,"unevictable":0,"total_inactive_anon":374415360,"total_pgpgin":1277364,"active_anon":454705152,"total_active_file":135168},"limit":540965302272},"name":"/CondaBinDeps-y5GONWa0","networks":{"eth0":{"rx_bytes":112618212,"rx_packets":18025,"tx_packets":8620,"tx_bytes":512929,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"8557107087eafaf1d069eb2bcc231d9c1e9c8246ef3c36a1365cb1c0edb430f1","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4385966104522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":43360000000,"usage_in_kernelmode":6960000000,"total_usage":50297286669,"percpu_usage":[0,0,0,50297286669,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:03:31.145680104Z"}

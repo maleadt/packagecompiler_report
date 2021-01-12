@@ -1,0 +1,125 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T23:17:04.179
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T23:17:05.925
+#
+
+ Installing known registries into `~/.julia`
+#                                                                          2.5%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ChebyshevApprox ─ v0.1.1
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [17a596ad] + ChebyshevApprox v0.1.1
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [17a596ad] + ChebyshevApprox v0.1.1
+  [9b87118b] + PackageCompiler v1.2.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T23:17:11.751
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 147.514 MiB, compilation took 158 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T23:19:57.6
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/ChebyshevApprox-BhnH0ZI6.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:19:59.371
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ChebyshevApprox ─ v0.1.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [17a596ad] + ChebyshevApprox v0.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [17a596ad] + ChebyshevApprox v0.1.1
+
+
+################################################################################
+# Testing: 2021-01-11T23:20:03.269
+#
+
+    Testing ChebyshevApprox
+Status `/tmp/jl_jve80b/Project.toml`
+  [17a596ad] ChebyshevApprox v0.1.1
+Status `/tmp/jl_jve80b/Manifest.toml`
+  [17a596ad] ChebyshevApprox v0.1.1
+0.0
+[2.397498696558561 2.397259709404472 2.397259709404472 2.397259709404472 2.397259709404472]
+[0.2093129213660255][0.2093129213660255][0.2093129213660255][0.2093129213660255]
+[3.9143357056007324 3.914098222614133 3.914459436329016 3.9140982226141334 3.9144594363290146]
+[1.0770695078704111 1.0071051449212618][1.0770837383211247 1.0070868173786491][1.0770695078704111][1.0770837383211247]
+[5.040705623889085 5.040678701245439 5.0408293791989545 5.040678701245438 5.040829379198956]
+[1.0762318276091805 1.0071051449212565 1.1263698817765917][1.0762676484418083 1.007086817378646 1.126369881776533][1.0762318276091805][1.0762676484418083]
+[2.847663392981662 2.8476364224773487 2.847787124866423 2.8476364224773496 2.847787124866422]
+[1.076231827609092 1.0071051449212634 -1.0666722780424576 1.1263699428699598][1.076267648441717 1.0070868173786516 -1.066674606111878 1.1263700307676519][1.076231827609092][1.076267648441717]
+    Testing ChebyshevApprox tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:20:11.578
+CPU usage: 13.98s (11.29s user, 2.72s kernel)
+
+Network usage:
+- eth0: 2.545 MiB received, 28.373 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":19,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":19,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":77824,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":77824,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":281669632,"max_usage":444153856,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":173137920,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":259347,"total_cache":79491072,"total_rss_huge":0,"total_active_anon":173690880,"total_pgmajfault":0,"pgpgin":148368,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":86705,"hierarchical_memsw_limit":0,"cache":79491072,"active_file":135168,"pgfault":259347,"total_mapped_file":0,"total_pgpgout":86705,"total_writeback":0,"rss":173137920,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":148368,"active_anon":173690880,"total_active_file":135168},"limit":540965302272},"name":"/ChebyshevApprox-TShaOsLe","networks":{"eth0":{"rx_bytes":2668977,"rx_packets":310,"tx_packets":298,"tx_bytes":29054,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"7c09d53d1c5960ba02876c3078a8c4190e402f9f631ea11b7ab625a285a2301d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6813993064522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":11290000000,"usage_in_kernelmode":2720000000,"total_usage":13979909643,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13979903383,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6260,0,0,0]}},"read":"2021-01-11T23:20:11.731353059Z"}

@@ -1,0 +1,762 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:11:01.007
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:11:02.83
+#
+
+ Installing known registries into `~/.julia`
+#############                                                             18.3%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed MbedTLS_jll ────────────────── v2.16.8+1
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed Reexport ───────────────────── v0.2.0
+  Installed JSONSchema ─────────────────── v0.3.3
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed TableTraits ────────────────── v1.0.0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed VersionParsing ─────────────── v1.2.0
+  Installed CategoricalArrays ──────────── v0.8.3
+  Installed JuMP ───────────────────────── v0.21.5
+  Installed DataFrames ─────────────────── v0.21.8
+  Installed Calculus ───────────────────── v0.5.1
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed MbedTLS ────────────────────── v1.0.3
+  Installed Tables ─────────────────────── v1.2.2
+  Installed Requires ───────────────────── v1.1.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed AnyMOD ─────────────────────── v0.1.6
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Bzip2_jll ──────────────────── v1.0.6+5
+  Installed HTTP ───────────────────────── v0.9.2
+  Installed BenchmarkTools ─────────────── v0.5.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed InvertedIndices ────────────── v1.0.0
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed CodecZlib ──────────────────── v0.7.0
+  Installed TranscodingStreams ─────────── v0.9.5
+  Installed Missings ───────────────────── v0.4.4
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed MathOptInterface ───────────── v0.9.19
+  Installed FilePathsBase ──────────────── v0.8.0
+  Installed PooledArrays ───────────────── v0.5.3
+  Installed JSON ───────────────────────── v0.21.1
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed ZipFile ────────────────────── v0.9.3
+  Installed StructTypes ────────────────── v1.2.1
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed Conda ──────────────────────── v1.5.0
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed MutableArithmetics ─────────── v0.2.13
+  Installed URIs ───────────────────────── v1.1.0
+  Installed CSV ────────────────────────── v0.6.2
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed CodecBzip2 ─────────────────── v0.7.2
+  Installed WeakRefStrings ─────────────── v0.6.2
+  Installed Compat ─────────────────────── v3.25.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed PyCall ─────────────────────── v1.92.2
+  Installed Parsers ────────────────────── v1.0.15
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed IniFile ────────────────────── v0.5.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [16ed6a40] + AnyMOD v0.1.6
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [16ed6a40] + AnyMOD v0.1.6
+  [56f22d72] + Artifacts v1.3.0
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [336ed68f] + CSV v0.6.2
+  [49dc2e85] + Calculus v0.5.1
+  [324d7699] + CategoricalArrays v0.8.3
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [523fee87] + CodecBzip2 v0.7.2
+  [944b1d66] + CodecZlib v0.7.0
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [8f4d0f93] + Conda v1.5.0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.21.8
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [48062228] + FilePathsBase v0.8.0
+  [f6369f11] + ForwardDiff v0.10.14
+  [cd3eb016] + HTTP v0.9.2
+  [83e8ac13] + IniFile v0.5.0
+  [41ab1584] + InvertedIndices v1.0.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [7d188eb4] + JSONSchema v0.3.3
+  [4076af6c] + JuMP v0.21.5
+  [1914dd2f] + MacroTools v0.5.6
+  [b8f27783] + MathOptInterface v0.9.19
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [d8a4904e] + MutableArithmetics v0.2.13
+  [77ba4419] + NaNMath v0.3.5
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [438e738f] + PyCall v1.92.2
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [856f2bd8] + StructTypes v1.2.1
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [5c2747f8] + URIs v1.1.0
+  [81def892] + VersionParsing v1.2.0
+  [ea10d353] + WeakRefStrings v0.6.2
+  [a5390f91] + ZipFile v0.9.3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building Conda ─→ `~/.julia/packages/Conda/x5ml4/deps/build.log`
+   Building PyCall → `~/.julia/packages/PyCall/tqyST/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T23:11:43.482
+#
+
+    Testing AnyMOD
+Status `/tmp/jl_dBG4ZQ/Project.toml`
+  [16ed6a40] AnyMOD v0.1.6
+  [336ed68f] CSV v0.6.2
+  [9961bab8] Cbc v0.7.1
+  [a93c6f00] DataFrames v0.21.8
+  [682c06a0] JSON v0.21.1
+  [4076af6c] JuMP v0.21.5
+  [b8f27783] MathOptInterface v0.9.19
+  [438e738f] PyCall v1.92.2
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [ade2ca70] Dates
+  [37e2e46d] LinearAlgebra
+  [44cfe95a] Pkg
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_dBG4ZQ/Manifest.toml`
+  [16ed6a40] AnyMOD v0.1.6
+  [56f22d72] Artifacts v1.3.0
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [b99e7846] BinaryProvider v0.5.10
+  [6e34b625] Bzip2_jll v1.0.6+5
+  [fa961155] CEnum v0.4.1
+  [336ed68f] CSV v0.6.2
+  [49dc2e85] Calculus v0.5.1
+  [324d7699] CategoricalArrays v0.8.3
+  [9961bab8] Cbc v0.7.1
+  [38041ee0] Cbc_jll v2.10.3+5
+  [3830e938] Cgl_jll v0.60.2+6
+  [d360d2e6] ChainRulesCore v0.9.24
+  [06985876] Clp_jll v1.17.6+7
+  [523fee87] CodecBzip2 v0.7.2
+  [944b1d66] CodecZlib v0.7.0
+  [be027038] CoinUtils_jll v2.11.3+4
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [8f4d0f93] Conda v1.5.0
+  [9a962f9c] DataAPI v1.4.0
+  [a93c6f00] DataFrames v0.21.8
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [48062228] FilePathsBase v0.8.0
+  [f6369f11] ForwardDiff v0.10.14
+  [cd3eb016] HTTP v0.9.2
+  [83e8ac13] IniFile v0.5.0
+  [41ab1584] InvertedIndices v1.0.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [7d188eb4] JSONSchema v0.3.3
+  [4076af6c] JuMP v0.21.5
+  [1914dd2f] MacroTools v0.5.6
+  [b8f27783] MathOptInterface v0.9.19
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [e1d29d7a] Missings v0.4.4
+  [46d2c3a1] MuladdMacro v0.2.2
+  [d8a4904e] MutableArithmetics v0.2.13
+  [77ba4419] NaNMath v0.3.5
+  [656ef2d0] OpenBLAS32_jll v0.3.9+4
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [7da25872] Osi_jll v0.108.5+4
+  [69de0a69] Parsers v1.0.15
+  [2dfb63ee] PooledArrays v0.5.3
+  [438e738f] PyCall v1.92.2
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.2.1
+  [90137ffa] StaticArrays v1.0.1
+  [856f2bd8] StructTypes v1.2.1
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [5c2747f8] URIs v1.1.0
+  [81def892] VersionParsing v1.2.0
+  [ea10d353] WeakRefStrings v0.6.2
+  [a5390f91] ZipFile v0.9.3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+   Building Conda ─→ `~/.julia/packages/Conda/x5ml4/deps/build.log`
+   Building PyCall → `~/.julia/packages/PyCall/tqyST/deps/build.log`
+[ Info: Installing networkx via the Conda networkx package...
+[ Info: Running `conda install -q -y networkx` in root environment
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/pkgeval/.julia/conda/3
+
+  added / updated specs:
+    - networkx
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    decorator-4.4.2            |             py_0          14 KB
+    networkx-2.5               |             py_0         1.1 MB
+    ------------------------------------------------------------
+                                           Total:         1.1 MB
+
+The following NEW packages will be INSTALLED:
+
+  decorator          pkgs/main/noarch::decorator-4.4.2-py_0
+  networkx           pkgs/main/noarch::networkx-2.5-py_0
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+[ Info: Installing matplotlib.pyplot via the Conda matplotlib package...
+[ Info: Running `conda install -q -y matplotlib` in root environment
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/pkgeval/.julia/conda/3
+
+  added / updated specs:
+    - matplotlib
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    cycler-0.10.0              |           py38_0          14 KB
+    dbus-1.13.18               |       hb2f20db_0         504 KB
+    expat-2.2.10               |       he6710b0_2         153 KB
+    fontconfig-2.13.0          |       h9420a91_0         227 KB
+    freetype-2.10.4            |       h5ab3b9f_0         596 KB
+    glib-2.66.1                |       h92f7085_0         2.9 MB
+    gst-plugins-base-1.14.0    |       h8213a91_2         4.9 MB
+    gstreamer-1.14.0           |       h28cd5cc_2         3.2 MB
+    icu-58.2                   |       he6710b0_3        10.5 MB
+    jpeg-9b                    |       h024ee3a_2         214 KB
+    kiwisolver-1.3.0           |   py38h2531618_0          80 KB
+    lcms2-2.11                 |       h396b838_0         307 KB
+    libpng-1.6.37              |       hbc83047_0         278 KB
+    libtiff-4.1.0              |       h2733197_1         449 KB
+    libuuid-1.0.3              |       h1bed415_2          15 KB
+    libxcb-1.14                |       h7b6447c_0         505 KB
+    libxml2-2.9.10             |       hb55368b_3         1.2 MB
+    lz4-c-1.9.2                |       heb0550a_3         175 KB
+    matplotlib-3.3.2           |       h06a4308_0          24 KB
+    matplotlib-base-3.3.2      |   py38h817c723_0         5.1 MB
+    olefile-0.46               |             py_0          33 KB
+    pcre-8.44                  |       he6710b0_0         212 KB
+    pillow-8.1.0               |   py38he98fc37_0         626 KB
+    pyparsing-2.4.7            |             py_0          65 KB
+    pyqt-5.9.2                 |   py38h05f1152_4         4.5 MB
+    python-dateutil-2.8.1      |             py_0         215 KB
+    qt-5.9.7                   |       h5867ecd_1        68.5 MB
+    sip-4.19.13                |   py38he6710b0_0         277 KB
+    tornado-6.1                |   py38h27cfd23_0         588 KB
+    zstd-1.4.5                 |       h9ceee32_0         619 KB
+    ------------------------------------------------------------
+                                           Total:       106.9 MB
+
+The following NEW packages will be INSTALLED:
+
+  cycler             pkgs/main/linux-64::cycler-0.10.0-py38_0
+  dbus               pkgs/main/linux-64::dbus-1.13.18-hb2f20db_0
+  expat              pkgs/main/linux-64::expat-2.2.10-he6710b0_2
+  fontconfig         pkgs/main/linux-64::fontconfig-2.13.0-h9420a91_0
+  freetype           pkgs/main/linux-64::freetype-2.10.4-h5ab3b9f_0
+  glib               pkgs/main/linux-64::glib-2.66.1-h92f7085_0
+  gst-plugins-base   pkgs/main/linux-64::gst-plugins-base-1.14.0-h8213a91_2
+  gstreamer          pkgs/main/linux-64::gstreamer-1.14.0-h28cd5cc_2
+  icu                pkgs/main/linux-64::icu-58.2-he6710b0_3
+  jpeg               pkgs/main/linux-64::jpeg-9b-h024ee3a_2
+  kiwisolver         pkgs/main/linux-64::kiwisolver-1.3.0-py38h2531618_0
+  lcms2              pkgs/main/linux-64::lcms2-2.11-h396b838_0
+  libpng             pkgs/main/linux-64::libpng-1.6.37-hbc83047_0
+  libtiff            pkgs/main/linux-64::libtiff-4.1.0-h2733197_1
+  libuuid            pkgs/main/linux-64::libuuid-1.0.3-h1bed415_2
+  libxcb             pkgs/main/linux-64::libxcb-1.14-h7b6447c_0
+  libxml2            pkgs/main/linux-64::libxml2-2.9.10-hb55368b_3
+  lz4-c              pkgs/main/linux-64::lz4-c-1.9.2-heb0550a_3
+  matplotlib         pkgs/main/linux-64::matplotlib-3.3.2-h06a4308_0
+  matplotlib-base    pkgs/main/linux-64::matplotlib-base-3.3.2-py38h817c723_0
+  olefile            pkgs/main/noarch::olefile-0.46-py_0
+  pcre               pkgs/main/linux-64::pcre-8.44-he6710b0_0
+  pillow             pkgs/main/linux-64::pillow-8.1.0-py38he98fc37_0
+  pyparsing          pkgs/main/noarch::pyparsing-2.4.7-py_0
+  pyqt               pkgs/main/linux-64::pyqt-5.9.2-py38h05f1152_4
+  python-dateutil    pkgs/main/noarch::python-dateutil-2.8.1-py_0
+  qt                 pkgs/main/linux-64::qt-5.9.7-h5867ecd_1
+  sip                pkgs/main/linux-64::sip-4.19.13-py38he6710b0_0
+  tornado            pkgs/main/linux-64::tornado-6.1-py38h27cfd23_0
+  zstd               pkgs/main/linux-64::zstd-1.4.5-h9ceee32_0
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+[ Info: Installing plotly via the Conda plotly package...
+[ Info: Running `conda install -q -y plotly` in root environment
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/pkgeval/.julia/conda/3
+
+  added / updated specs:
+    - plotly
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    plotly-4.14.2              |     pyhd3eb1b0_0         3.6 MB
+    retrying-1.3.3             |             py_2          14 KB
+    ------------------------------------------------------------
+                                           Total:         3.6 MB
+
+The following NEW packages will be INSTALLED:
+
+  plotly             pkgs/main/noarch::plotly-4.14.2-pyhd3eb1b0_0
+  retrying           pkgs/main/noarch::retrying-1.3.3-py_2
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+test 00:00:18 - Read-in all set files
+test 00:00:32 - Read-in all parameter files
+test 00:00:32 - Read-in all set and parameter files - No errors and 1 warning(s) encountered. Wrote reporting_test_202101112315.csv for details! 
+test 00:00:39 - Created all mappings among sets
+test 00:00:47 - Assigned parameter data to model parts
+test 00:00:50 - Prepared creation of optimization model - No errors and 2 warning(s) encountered. Wrote reporting_test_202101112315.csv for details! 
+test 00:01:55 - Created all variables and prepared constraints for technology wind
+test 00:01:56 - Created all variables and prepared constraints for technology heatpump
+test 00:02:00 - Created all variables and prepared constraints for technology gasStorage
+test 00:02:00 - Created all variables and prepared constraints for technology gasBoiler
+test 00:02:00 - Created all variables and prepared constraints for technology electrolysis
+test 00:02:04 - Created all variables and prepared constraints for technology gasPlant < ccgt < ccgtCHP
+test 00:02:04 - Created all variables and prepared constraints for technology methanation
+test 00:02:04 - Created all variables and prepared constraints for technology gasPlant < ocgt
+test 00:02:04 - Created all variables and prepared constraints for technology coalPlant
+test 00:02:06 - Created all variables and prepared constraints for technology solar < rooftop < solarThermal
+test 00:02:07 - Created all variables and prepared constraints for technology solar < openspace
+test 00:02:08 - Created all variables and prepared constraints for technology hydro
+test 00:02:09 - Created all variables and prepared constraints for technology solar < rooftop < photovoltaic
+test 00:02:10 - Created all variables and prepared constraints for technology fuelCell
+test 00:02:11 - Created variables and constraints for all technologies - No errors and 2 warning(s) encountered. Wrote reporting_test_202101112315.csv for details! 
+test 00:02:16 - Created all variables and constraints related to expansion and capacity for exchange
+test 00:02:17 - Created all dispatch variables for exchange
+test 00:02:18 - Created all capacity restrictions for exchange
+test 00:02:18 - Created variables and constraints for exchange - No errors and 2 warning(s) encountered. Wrote reporting_test_202101112315.csv for details! 
+test 00:02:18 - Created variables and constraints for buying carriers
+test 00:02:18 - Created variables and constraints for selling carriers
+test 00:02:18 - Created variables and constraints for trade - No errors and 2 warning(s) encountered. Wrote reporting_test_202101112315.csv for details! 
+test 00:02:26 - Prepared energy balance for electricity
+test 00:02:28 - Prepared energy balance for heat
+test 00:02:29 - Prepared energy balance for synthGas
+test 00:02:30 - Prepared energy balance for gas
+test 00:02:32 - Prepared energy balance for hydrogen
+test 00:02:33 - Prepared energy balance for districtHeat
+test 00:02:34 - Prepared energy balance for naturalGas
+test 00:02:35 - Prepared energy balance for coal
+test 00:02:35 - Created energy balances for all carriers - No errors and 2 warning(s) encountered. Wrote reporting_test_202101112315.csv for details! 
+test 00:02:43 - Prepared constraints to limit variable expExc
+test 00:02:47 - Prepared constraints to limit variable gen
+test 00:02:50 - Prepared constraints to limit term emission
+test 00:02:50 - Prepared constraints to limit variable capaConv
+test 00:02:50 - Prepared constraints to limit variable capaExc
+test 00:02:50 - Created all limiting constraints - No errors and 2 warning(s) encountered. Wrote reporting_test_202101112315.csv for details! 
+test 00:02:50 - Completed model creation - No errors and 2 warning(s) encountered. Wrote reporting_test_202101112315.csv for details! 
+test 00:02:58 - Set objective function according to inputs - No errors and 2 warning(s) encountered. Wrote reporting_test_202101112315.csv for details! 
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Jan  1 1970 
+
+command line - Cbc_C_Interface -solve -quit (default strategy 1)
+Presolve 75293 (-27572) rows, 83000 (-22060) columns and 370442 (-104118) elements
+Perturbing problem by 0.001% of 37562.686 - largest nonzero change 0.00099995762 ( 0.076027555%) - largest zero change 0.00099992379
+0  Obj -2.6444701e-05 Primal inf 10108.525 (5133) Dual inf 11269.852 (1461)
+0  Obj 0 Primal inf 10108.525 (5133) Dual inf 1.6070845e+15 (31816)
+621  Obj 24834.312 Primal inf 6379.7323 (5159) Dual inf 1.1448115e+15 (25073)
+1234  Obj 26653.781 Primal inf 6051.503 (5048) Dual inf 1.0985128e+15 (24730)
+1836  Obj 28881.115 Primal inf 5673.2189 (4895) Dual inf 1.056013e+15 (24399)
+2441  Obj 29540.273 Primal inf 5282.0843 (4716) Dual inf 1.0664442e+15 (24752)
+3047  Obj 30718.75 Primal inf 4904.4525 (4514) Dual inf 9.5553352e+14 (24160)
+3652  Obj 33183.42 Primal inf 4516.8669 (4341) Dual inf 9.1001961e+14 (24046)
+4261  Obj 36588.386 Primal inf 4137.2686 (4153) Dual inf 8.0511904e+14 (24409)
+4867  Obj 40031.529 Primal inf 3778.4911 (4087) Dual inf 7.0669945e+14 (23959)
+5470  Obj 46698.988 Primal inf 3303.0294 (4013) Dual inf 6.8945328e+14 (25857)
+6073  Obj 57742.66 Primal inf 2938.4744 (3820) Dual inf 5.2472022e+14 (23524)
+6684  Obj 80123.245 Primal inf 2427.4361 (3744) Dual inf 5.2969584e+14 (25990)
+7285  Obj 85743.307 Primal inf 1970.9381 (3531) Dual inf 5.1966923e+14 (27506)
+7890  Obj 95503.422 Primal inf 1490.9674 (3344) Dual inf 4.5463065e+14 (27142)
+8493  Obj 100745.28 Primal inf 1205.4071 (3184) Dual inf 4.5709558e+14 (26952)
+9094  Obj 110414.44 Primal inf 966.17191 (3086) Dual inf 4.046096e+14 (27164)
+9695  Obj 129790.79 Primal inf 722.0884 (2920) Dual inf 3.1106258e+14 (26590)
+10296  Obj 138521.12 Primal inf 631.70737 (2654) Dual inf 2.8506565e+14 (25823)
+10897  Obj 141778.45 Primal inf 585.41812 (2449) Dual inf 2.5093472e+14 (24858)
+11500  Obj 149955.91 Primal inf 529.86727 (2247) Dual inf 2.2666422e+14 (24054)
+12101  Obj 154582.59 Primal inf 475.15241 (2049) Dual inf 2.2314317e+14 (24062)
+12704  Obj 160154.86 Primal inf 416.84194 (2015) Dual inf 1.93765e+14 (23284)
+13313  Obj 162478.02 Primal inf 388.93331 (1790) Dual inf 1.6420625e+14 (22323)
+13921  Obj 165282.06 Primal inf 343.26498 (1555) Dual inf 1.5709142e+14 (21440)
+14524  Obj 169777.57 Primal inf 314.7102 (1358) Dual inf 1.2799717e+14 (20265)
+15142  Obj 180859.09 Primal inf 262.81757 (1158) Dual inf 1.2848734e+14 (19726)
+15767  Obj 187903 Primal inf 225.67925 (1090) Dual inf 1.0819189e+14 (19807)
+16374  Obj 189795.34 Primal inf 204.0747 (984) Dual inf 1.1140829e+14 (19122)
+16978  Obj 212171.54 Primal inf 152.9043 (781) Dual inf 1.0174889e+14 (18234)
+17587  Obj 232826.9 Primal inf 96.27346 (671) Dual inf 7.5384675e+13 (18468)
+18200  Obj 243072.91 Primal inf 62.547219 (684) Dual inf 8.0705558e+13 (18475)
+18808  Obj 247945.76 Primal inf 52.445917 (548) Dual inf 5.9035183e+13 (19417)
+19419  Obj 257592.12 Primal inf 35.523779 (433) Dual inf 7.6177506e+13 (22048)
+20026  Obj 262472.2 Primal inf 26.080112 (302) Dual inf 3.8783207e+13 (17642)
+20634  Obj 261362.95 Primal inf 20.718417 (227) Dual inf 2.3774694e+13 (17933)
+21235  Obj 261754.17 Primal inf 16.904014 (165) Dual inf 1.7956437e+13 (17794)
+21836  Obj 264338.01 Primal inf 13.344113 (148) Dual inf 2.8591666e+13 (18021)
+22439  Obj 265247.82 Primal inf 10.787428 (81) Dual inf 2.2353325e+13 (17266)
+23040  Obj 267377.88 Primal inf 6.5548553 (102) Dual inf 4.9328207e+13 (17610)
+23641  Obj 273184.52 Primal inf 2.5434296 (45) Dual inf 1.4433366e+13 (17871)
+24242  Obj 273739.09 Primal inf 0.59933154 (11) Dual inf 4.2430678e+12 (17744)
+24843  Obj 275603.96 Primal inf 0.19800085 (4) Dual inf 7.6062722e+11 (17661)
+25444  Obj 275068.38 Primal inf 0.14483491 (4) Dual inf 1.9205838e+12 (17426)
+26045  Obj 274110.53 Primal inf 0.043488541 (3) Dual inf 5.206485e+11 (17987)
+26646  Obj 271702.45 Primal inf 0.021284321 (2) Dual inf 2.7558248e+11 (17767)
+27247  Obj 267294.68 Dual inf 42381996 (17592)
+27848  Obj 260842.06 Dual inf 24887448 (17127)
+28449  Obj 254426.4 Dual inf 6546837.7 (16803)
+29050  Obj 251201.02 Dual inf 9423825.7 (16095)
+29651  Obj 247308.09 Dual inf 8016240.7 (15973)
+30252  Obj 240733.22 Dual inf 6060613.8 (16111)
+30853  Obj 237186.35 Dual inf 7877624.5 (15734)
+31454  Obj 235209.47 Dual inf 5851018.1 (15793)
+32055  Obj 231912.49 Dual inf 4378759.5 (15142)
+32656  Obj 230449.7 Dual inf 7195479.6 (14863)
+33257  Obj 227608.46 Dual inf 13880523 (14699)
+33859  Obj 225553.77 Dual inf 6002312 (14132)
+34460  Obj 223264.43 Dual inf 5971037.7 (13803)
+35061  Obj 221130.92 Dual inf 2369095 (13369)
+35662  Obj 219001.28 Dual inf 3446536 (13151)
+36263  Obj 217622.62 Dual inf 5089961.8 (13192)
+36864  Obj 215791.53 Dual inf 4293990.7 (12210)
+37465  Obj 213616.52 Dual inf 6799999.2 (12281)
+38066  Obj 211256.44 Dual inf 4500823.3 (12565)
+38667  Obj 208717.5 Dual inf 8556820.3 (13040)
+39268  Obj 205022.25 Dual inf 2172788.7 (11849)
+39869  Obj 202028.09 Primal inf 3.8497365e-06 (3) Dual inf 6.9630694e+11 (11608)
+40470  Obj 198338.22 Dual inf 9182682 (12343)
+41071  Obj 194314.88 Dual inf 11693401 (11669)
+41673  Obj 190879.63 Primal inf 1.4646748e-08 (1) Dual inf 4.7161328e+10 (11332)
+42274  Obj 186678.53 Primal inf 1.4649282e-08 (1) Dual inf 4.8026509e+10 (11384)
+42875  Obj 182960.46 Dual inf 10373639 (11814)
+43476  Obj 179675.4 Dual inf 6060749.5 (11096)
+44077  Obj 177694.5 Dual inf 3207270.7 (10969)
+44678  Obj 175292.84 Dual inf 2527021.2 (10577)
+45279  Obj 168673.63 Dual inf 3367075.8 (10723)
+45880  Obj 167136.48 Dual inf 1768998.9 (10153)
+46482  Obj 163200.9 Dual inf 1405236.9 (9895)
+47083  Obj 161247.51 Primal inf 4.2371072e-06 (6) Dual inf 1.0354907e+12 (9817)
+47684  Obj 157036.19 Dual inf 3011515.4 (9844)
+48285  Obj 155329.12 Dual inf 1012019 (9591)
+48887  Obj 151879.9 Dual inf 2895517.9 (8831)
+49488  Obj 149701.37 Dual inf 2169878.6 (8743)
+50089  Obj 148387.7 Dual inf 4182388.9 (8997)
+50690  Obj 147726.31 Dual inf 1204564.9 (8467)
+51291  Obj 147146.73 Dual inf 1527154.9 (7988)
+51892  Obj 146844.6 Dual inf 2709322.1 (7745)
+52493  Obj 146429.61 Dual inf 15997386 (7673)
+53094  Obj 146112.02 Dual inf 1685144.4 (7840)
+53695  Obj 145698.54 Dual inf 1834119.8 (7612)
+54296  Obj 145347.31 Dual inf 2046951.6 (7725)
+54899  Obj 144889.5 Dual inf 1128386.7 (7397)
+55500  Obj 144733.81 Dual inf 704679.12 (7608)
+56101  Obj 144499.34 Dual inf 35895109 (7589)
+56702  Obj 144310.67 Primal inf 5.9484222e-06 (9) Dual inf 2.3442329e+12 (6969)
+57303  Obj 144051.67 Dual inf 784824.22 (6519)
+57904  Obj 143866.91 Dual inf 1446489.1 (6748)
+58506  Obj 143533.24 Dual inf 819286.48 (7048)
+59107  Obj 143312.93 Dual inf 4460287.4 (6931)
+59708  Obj 142960.89 Primal inf 1.3277255e-06 (2) Dual inf 5.6999985e+11 (6335)
+60310  Obj 142232.96 Dual inf 284775.95 (6109)
+60911  Obj 141822.31 Dual inf 4672397.7 (5823)
+61512  Obj 141663.7 Dual inf 289675.79 (5402)
+62113  Obj 141157.37 Dual inf 195146.23 (5159)
+62714  Obj 140837.46 Dual inf 187206.69 (5328)
+63315  Obj 139899.95 Dual inf 195009.13 (5019)
+63916  Obj 139646.73 Dual inf 835536.68 (4716)
+64517  Obj 139442.6 Dual inf 140297.91 (4192)
+65118  Obj 138559.3 Dual inf 573134.67 (5406)
+65719  Obj 138000.11 Primal inf 2.6396896e-05 (25) Dual inf 3.1757532e+12 (4170)
+66320  Obj 137948.85 Dual inf 436141.38 (3847)
+66921  Obj 137922.58 Dual inf 205866.85 (4086)
+67522  Obj 137800.9 Dual inf 1226866.8 (3291)
+68123  Obj 137755.31 Dual inf 136077.45 (3078)
+68724  Obj 137679.27 Dual inf 260371.67 (3268)
+69325  Obj 137646.95 Dual inf 41845.587 (2148)
+69926  Obj 137612.25 Dual inf 41829.11 (1688)
+70527  Obj 137597.22 Dual inf 66155.24 (1415)
+71128  Obj 137572.84 Dual inf 4358.3324 (1112)
+71729  Obj 137566.76 Dual inf 483.45325 (592)
+72168  Obj 137566.59
+Optimal - objective value 137566.59
+After Postsolve, objective 137566.59, infeasibilities - dual 0.117228 (3), primal 0.20014197 (2649)
+Presolved model was optimal, full model needs cleaning up
+0  Obj 137573.17 Primal inf 27.013836 (320) Dual inf 117.06283 (3)
+0  Obj 137573.17 Primal inf 27.013836 (320) Dual inf 3.6615903e+14 (17586)
+200  Obj 137637.7 Primal inf 0.33466393 (546) Dual inf 8.7560901e+13 (13325)
+400  Obj 137672.47 Primal inf 0.025305476This application failed to start because it could not find or load the Qt platform plugin "xcb"
+in "".
+
+Available platform plugins are: eglfs, minimal, minimalegl, offscreen, vnc, xcb.
+
+Reinstalling the application may fix this problem.
+
+signal (6): Aborted
+in expression starting at /home/pkgeval/.julia/packages/AnyMOD/v1rS4/test/runtests.jl:5
+gsignal at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+abort at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+_ZNK14QMessageLogger5fatalEPKcz at /home/pkgeval/.julia/conda/3/lib/python3.8/site-packages/PyQt5/../../../libQt5Core.so.5 (unknown line)
+_ZN22QGuiApplicationPrivate25createPlatformIntegrationEv at /home/pkgeval/.julia/conda/3/lib/python3.8/site-packages/PyQt5/../../../libQt5Gui.so.5 (unknown line)
+_ZN22QGuiApplicationPrivate21createEventDispatcherEv at /home/pkgeval/.julia/conda/3/lib/python3.8/site-packages/PyQt5/../../../libQt5Gui.so.5 (unknown line)
+_ZN23QCoreApplicationPrivate4initEv at /home/pkgeval/.julia/conda/3/lib/python3.8/site-packages/PyQt5/../../../libQt5Core.so.5 (unknown line)
+_ZN22QGuiApplicationPrivate4initEv at /home/pkgeval/.julia/conda/3/lib/python3.8/site-packages/PyQt5/../../../libQt5Gui.so.5 (unknown line)
+_ZN19QApplicationPrivate4initEv at /home/pkgeval/.julia/conda/3/lib/python3.8/site-packages/PyQt5/../../../libQt5Widgets.so.5 (unknown line)
+_ZN15sipQApplicationC1ERiPPci at /home/pkgeval/.julia/conda/3/lib/python3.8/site-packages/PyQt5/QtWidgets.so (unknown line)
+init_type_QApplication at /home/pkgeval/.julia/conda/3/lib/python3.8/site-packages/PyQt5/QtWidgets.so (unknown line)
+unknown function (ip: 0x7f56df334873)
+type_call.lto_priv.242 at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyObject_MakeTpCall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+call_function at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+function_code_fastcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+call_function at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalCodeWithName at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyFunction_Vectorcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+method_vectorcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+call_function at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalCodeWithName at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyFunction_Vectorcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyObject_FastCallDict at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyObject_Call_Prepend at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+slot_tp_init at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+type_call.lto_priv.242 at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyObject_MakeTpCall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+call_function at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+function_code_fastcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+method_vectorcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+call_function at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalCodeWithName at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyFunction_Vectorcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+method_vectorcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+PyVectorcall_Call at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalCodeWithName at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyFunction_Vectorcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+PyVectorcall_Call at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalCodeWithName at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyFunction_Vectorcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+call_function at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+function_code_fastcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+call_function at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+function_code_fastcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+PyVectorcall_Call at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+macro expansion at /home/pkgeval/.julia/packages/PyCall/tqyST/src/exception.jl:95 [inlined]
+#109 at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:43 [inlined]
+disable_sigint at ./c.jl:446 [inlined]
+__pycall! at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:42 [inlined]
+_pycall! at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:29
+_pycall! at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:11 [inlined]
+#_#116 at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:86 [inlined]
+PyObject at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:86
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+#plotTree#178 at /home/pkgeval/.julia/packages/AnyMOD/v1rS4/src/tools.jl:648
+plotTree at /home/pkgeval/.julia/packages/AnyMOD/v1rS4/src/tools.jl:570
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_call at /workspace/srcdir/src/interpreter.c:117
+eval_value at /workspace/srcdir/src/interpreter.c:206
+eval_stmt_value at /workspace/srcdir/src/interpreter.c:157 [inlined]
+eval_body at /workspace/srcdir/src/interpreter.c:566
+eval_body at /workspace/srcdir/src/interpreter.c:492
+eval_body at /workspace/srcdir/src/interpreter.c:492
+jl_interpret_toplevel_thunk at /workspace/srcdir/src/interpreter.c:660
+jl_toplevel_eval_flex at /workspace/srcdir/src/toplevel.c:840
+jl_parse_eval_all at /workspace/srcdir/src/ast.c:913
+jl_load_rewrite at /workspace/srcdir/src/toplevel.c:914
+include at ./client.jl:457
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_call at /workspace/srcdir/src/interpreter.c:117
+eval_value at /workspace/srcdir/src/interpreter.c:206
+eval_stmt_value at /workspace/srcdir/src/interpreter.c:157 [inlined]
+eval_body at /workspace/srcdir/src/interpreter.c:566
+jl_interpret_toplevel_thunk at /workspace/srcdir/src/interpreter.c:660
+jl_toplevel_eval_flex at /workspace/srcdir/src/toplevel.c:840
+jl_toplevel_eval_flex at /workspace/srcdir/src/toplevel.c:790
+jl_toplevel_eval_in at /workspace/srcdir/src/toplevel.c:883
+eval at ./boot.jl:331
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+exec_options at ./client.jl:272
+_start at ./client.jl:506
+jfptr__start_43715.clone_1 at /opt/julia/lib/julia/sys.so (unknown line)
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/ui/../src/julia.h:1690 [inlined]
+true_main at /workspace/srcdir/ui/repl.c:106
+main at /workspace/srcdir/ui/repl.c:227
+__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x4015e4)
+Allocations: 747991499 (Pool: 747809416; Big: 182083); GC: 374
+
+PkgEval failed: Package AnyMOD errored during testing (received signal: 6)
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:20:24.364
+CPU usage: 560.60s (538.10s user, 23.34s kernel)
+
+Network usage:
+- eth0: 375.765 MiB received, 1.096 MiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":48,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":29,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":48,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":48,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":29,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":48,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":258048,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":151552,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":258048,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":258048,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":151552,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":258048,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":2911080448,"max_usage":4193599488,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":221409280,"inactive_file":135168,"inactive_anon":1764077568,"total_pgfault":8444304,"total_cache":2582945792,"total_rss_huge":0,"total_active_anon":1040252928,"total_pgmajfault":0,"pgpgin":6023622,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":5338969,"hierarchical_memsw_limit":0,"cache":2582945792,"active_file":135168,"pgfault":8444304,"total_mapped_file":0,"total_pgpgout":5338969,"total_writeback":0,"rss":221409280,"unevictable":0,"total_inactive_anon":1764077568,"total_pgpgin":6023622,"active_anon":1040252928,"total_active_file":135168},"limit":540965302272},"name":"/AnyMOD-c2OO66lb","networks":{"eth0":{"rx_bytes":394018222,"rx_packets":28742,"tx_packets":16765,"tx_bytes":1149138,"tx_dropped":0,"rx_dropped":19,"tx_errors":0,"rx_errors":0}},"id":"3c0e73db4c84d05e02315fc2bdcabf705520f852f2c7b24cae5e20a42afd2c67","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6815607574522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":538100000000,"usage_in_kernelmode":23340000000,"total_usage":560596560755,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1497180,0,560258813460,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2605502,0,2700,333641913,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:20:24.367028526Z"}

@@ -1,0 +1,126 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:42:27.258
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:42:29.051
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ModalIntervalArithmetic ─ v0.1.0
+  Installed FastRounding ──────────── v0.2.0
+  Installed RecipesBase ───────────── v1.1.1
+  Installed SetRounding ───────────── v0.2.0
+  Installed RoundingEmulator ──────── v0.2.1
+  Installed StaticArrays ──────────── v1.0.1
+  Installed CRlibm ────────────────── v0.8.0
+  Installed IntervalArithmetic ────── v0.17.7
+  Installed ErrorfreeArithmetic ───── v0.5.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [d9d21f8b] + ModalIntervalArithmetic v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [96374032] + CRlibm v0.8.0
+  [90fa49ef] + ErrorfreeArithmetic v0.5.2
+  [fa42c844] + FastRounding v0.2.0
+  [d1acc4aa] + IntervalArithmetic v0.17.7
+  [d9d21f8b] + ModalIntervalArithmetic v0.1.0
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [5eaf0fd0] + RoundingEmulator v0.2.1
+  [3cc68bcd] + SetRounding v0.2.0
+  [90137ffa] + StaticArrays v1.0.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [4ec0a83e] + Unicode
+   Building CRlibm → `~/.julia/packages/CRlibm/NFCH5/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T22:42:43.964
+#
+
+    Testing ModalIntervalArithmetic
+Status `/tmp/jl_AsvrRQ/Project.toml`
+  [d1acc4aa] IntervalArithmetic v0.17.7
+  [d9d21f8b] ModalIntervalArithmetic v0.1.0
+  [ade2ca70] Dates
+  [56ddb016] Logging
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_AsvrRQ/Manifest.toml`
+  [96374032] CRlibm v0.8.0
+  [90fa49ef] ErrorfreeArithmetic v0.5.2
+  [fa42c844] FastRounding v0.2.0
+  [d1acc4aa] IntervalArithmetic v0.17.7
+  [d9d21f8b] ModalIntervalArithmetic v0.1.0
+  [3cdcf5f2] RecipesBase v1.1.1
+  [5eaf0fd0] RoundingEmulator v0.2.1
+  [3cc68bcd] SetRounding v0.2.0
+  [90137ffa] StaticArrays v1.0.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Test Summary:          | Pass  Total
+modal interval general |   30     30
+Test Summary:                 | Pass  Total
+modal interval set operations |   18     18
+Test Summary:        | Pass  Total
+test the test itself |    6      6
+Test Summary:                        | Pass  Total
+modal interval arithmetic operations |   28     28
+    Testing ModalIntervalArithmetic tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:43:08.105
+CPU usage: 39.79s (34.49s user, 5.38s kernel)
+
+Network usage:
+- eth0: 5.327 MiB received, 74.008 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":133,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":114,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":133,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":103,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":84,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":103,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":5877760,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":5771264,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":5877760,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":5877760,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":5771264,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":5877760,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":358719488,"max_usage":1126359040,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":224395264,"inactive_file":135168,"inactive_anon":85426176,"total_pgfault":1410849,"total_cache":103964672,"total_rss_huge":0,"total_active_anon":243032064,"total_pgmajfault":0,"pgpgin":1035243,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":135168,"pgpgout":955092,"hierarchical_memsw_limit":0,"cache":103964672,"active_file":135168,"pgfault":1410849,"total_mapped_file":0,"total_pgpgout":955092,"total_writeback":135168,"rss":224395264,"unevictable":0,"total_inactive_anon":85426176,"total_pgpgin":1035243,"active_anon":243032064,"total_active_file":135168},"limit":540965302272},"name":"/ModalIntervalArithmetic-QwAq89Qi","networks":{"eth0":{"rx_bytes":5586257,"rx_packets":715,"tx_packets":713,"tx_bytes":75784,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"1125e8cbcdbe50abac6506f1cb90cdf0ec7c0ebd2846f0574e0dde7e768b9282","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6529832064522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":34490000000,"usage_in_kernelmode":5380000000,"total_usage":39788636705,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39788632045,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4660,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:43:08.107964037Z"}

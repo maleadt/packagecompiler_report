@@ -1,0 +1,177 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:54:33.82
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:54:35.659
+#
+
+ Installing known registries into `~/.julia`
+##############                                                            19.5%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MbedTLS_jll ─ v2.16.8+1
+  Installed URIParser ─── v0.4.1
+  Installed Elly ──────── v0.5.1
+  Installed MbedTLS ───── v1.0.3
+  Installed ProtoBuf ──── v0.10.0
+  Installed JLLWrappers ─ v1.2.0
+  Installed Compat ────── v3.25.0
+  Installed Artifacts ─── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [0bb624de] + Elly v0.5.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [34da2185] + Compat v3.25.0
+  [0bb624de] + Elly v0.5.1
+  [692b3bcd] + JLLWrappers v1.2.0
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [3349acd9] + ProtoBuf v0.10.0
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [8bf52ea8] + CRC32c
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T15:54:40.93
+#
+
+    Testing Elly
+Status `/tmp/jl_jtAT3R/Project.toml`
+  [0bb624de] Elly v0.5.1
+  [739be429] MbedTLS v1.0.3
+  [3349acd9] ProtoBuf v0.10.0
+  [30578b45] URIParser v0.4.1
+  [2a0f44e3] Base64
+  [8bf52ea8] CRC32c
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [56ddb016] Logging
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+Status `/tmp/jl_jtAT3R/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [34da2185] Compat v3.25.0
+  [0bb624de] Elly v0.5.1
+  [692b3bcd] JLLWrappers v1.2.0
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [3349acd9] ProtoBuf v0.10.0
+  [30578b45] URIParser v0.4.1
+  [2a0f44e3] Base64
+  [8bf52ea8] CRC32c
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: test UserGroupInformation...
+ERROR: LoadError: IOError: connect: connection refused (ECONNREFUSED)
+Stacktrace:
+ [1] wait_connected(::Sockets.TCPSocket) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Sockets/src/Sockets.jl:525
+ [2] connect at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Sockets/src/Sockets.jl:560 [inlined]
+ [3] connect(::String, ::Int64) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Sockets/src/Sockets.jl:545
+ [4] connect(::Elly.HadoopRpcChannel) at /home/pkgeval/.julia/packages/Elly/Ia03N/src/rpc.jl:188
+ [5] send_rpc_message(::Elly.HadoopRpcChannel, ::Elly.HadoopRpcController, ::ProtoBuf.MethodDescriptor, ::Elly.hadoop.hdfs.GetFileInfoRequestProto) at /home/pkgeval/.julia/packages/Elly/Ia03N/src/rpc.jl:227
+ [6] call_method(::Elly.HadoopRpcChannel, ::ProtoBuf.ServiceDescriptor, ::ProtoBuf.MethodDescriptor, ::Elly.HadoopRpcController, ::Elly.hadoop.hdfs.GetFileInfoRequestProto) at /home/pkgeval/.julia/packages/Elly/Ia03N/src/rpc.jl:279
+ [7] call_method(::ProtoBuf.GenericProtoServiceStub{true}, ::ProtoBuf.MethodDescriptor, ::Elly.HadoopRpcController, ::Elly.hadoop.hdfs.GetFileInfoRequestProto) at /home/pkgeval/.julia/packages/ProtoBuf/NJbMU/src/svc.jl:100
+ [8] getFileInfo at /home/pkgeval/.julia/packages/Elly/Ia03N/src/hadoop/ClientNamenodeProtocol_pb.jl:6082 [inlined]
+ [9] getFileInfo at /home/pkgeval/.julia/packages/Elly/Ia03N/src/api_hdfs_base.jl:18 [inlined]
+ [10] _get_file_info(::HDFSClient, ::String) at /home/pkgeval/.julia/packages/Elly/Ia03N/src/api_hdfs_base.jl:168
+ [11] exists at /home/pkgeval/.julia/packages/Elly/Ia03N/src/api_hdfs_base.jl:219 [inlined]
+ [12] test_hdfs(::String, ::Int64) at /home/pkgeval/.julia/packages/Elly/Ia03N/test/hdfstests.jl:43
+ [13] test_hdfs() at /home/pkgeval/.julia/packages/Elly/Ia03N/test/hdfstests.jl:38
+ [14] top-level scope at /home/pkgeval/.julia/packages/Elly/Ia03N/test/runtests.jl:6
+ [15] include(::String) at ./client.jl:457
+ [16] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/Elly/Ia03N/test/runtests.jl:6
+
+PkgEval failed: Package Elly errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:55:16.952
+CPU usage: 43.17s (39.73s user, 3.53s kernel)
+
+Network usage:
+- eth0: 2.983 MiB received, 66.290 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":324395008,"max_usage":952872960,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":205369344,"inactive_file":135168,"inactive_anon":79478784,"total_pgfault":915156,"total_cache":88469504,"total_rss_huge":0,"total_active_anon":212754432,"total_pgmajfault":0,"pgpgin":497970,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":426204,"hierarchical_memsw_limit":0,"cache":88469504,"active_file":1622016,"pgfault":915156,"total_mapped_file":0,"total_pgpgout":426204,"total_writeback":0,"rss":205369344,"unevictable":0,"total_inactive_anon":79478784,"total_pgpgin":497970,"active_anon":212754432,"total_active_file":1622016},"limit":540965302272},"name":"/Elly-hgMf0Htu","networks":{"eth0":{"rx_bytes":3128324,"rx_packets":586,"tx_packets":629,"tx_bytes":67881,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"b570e9206f61b1f962eabfc8280976aeb2f8885b11ee085235971745d92cf234","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3402712694522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":39730000000,"usage_in_kernelmode":3530000000,"total_usage":43173852325,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43173848635,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3690,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:55:17.206822871Z"}

@@ -1,0 +1,425 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:54:46.969
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:54:48.773
+#
+
+ Installing known registries into `~/.julia`
+#############                                                             18.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MbedTLS_jll ────────────────── v2.16.8+1
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed Reexport ───────────────────── v1.0.0
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed JSONSchema ─────────────────── v0.3.3
+  Installed PowerModels ────────────────── v0.17.3
+  Installed JuMP ───────────────────────── v0.21.5
+  Installed TimeZones ──────────────────── v1.5.3
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed Mocking ────────────────────── v0.7.1
+  Installed Calculus ───────────────────── v0.5.1
+  Installed Libiconv_jll ───────────────── v1.16.0+7
+  Installed TranscodingStreams ─────────── v0.9.5
+  Installed Requires ───────────────────── v1.1.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed MbedTLS ────────────────────── v1.0.3
+  Installed Memento ────────────────────── v1.1.2
+  Installed EzXML ──────────────────────── v1.1.0
+  Installed Bzip2_jll ──────────────────── v1.0.6+5
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Parameters ─────────────────── v0.12.1
+  Installed BenchmarkTools ─────────────── v0.5.0
+  Installed HTTP ───────────────────────── v0.9.2
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed XML2_jll ───────────────────── v2.9.10+3
+  Installed CodecZlib ──────────────────── v0.7.0
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed NLsolve ────────────────────── v4.5.1
+  Installed JSON ───────────────────────── v0.21.1
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed MathOptInterface ───────────── v0.9.19
+  Installed Distances ──────────────────── v0.10.0
+  Installed FiniteDiff ─────────────────── v2.7.2
+  Installed Syslogs ────────────────────── v0.3.0
+  Installed ZipFile ────────────────────── v0.9.3
+  Installed ArrayInterface ─────────────── v2.14.13
+  Installed LineSearches ───────────────── v7.1.1
+  Installed InfrastructureModels ───────── v0.5.3
+  Installed MutableArithmetics ─────────── v0.2.13
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed URIs ───────────────────────── v1.1.0
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed ExprTools ──────────────────── v0.1.3
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed CodecBzip2 ─────────────────── v0.7.2
+  Installed Compat ─────────────────────── v3.25.0
+  Installed NLSolversBase ──────────────── v7.7.1
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Parsers ────────────────────── v1.0.15
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed IniFile ────────────────────── v0.5.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [c36e90e8] + PowerModels v0.17.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [4fba245c] + ArrayInterface v2.14.13
+  [56f22d72] + Artifacts v1.3.0
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [49dc2e85] + Calculus v0.5.1
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [523fee87] + CodecBzip2 v0.7.2
+  [944b1d66] + CodecZlib v0.7.0
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [864edb3b] + DataStructures v0.18.8
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [b4f34e82] + Distances v0.10.0
+  [e2ba6199] + ExprTools v0.1.3
+  [8f5d6c58] + EzXML v1.1.0
+  [6a86dc24] + FiniteDiff v2.7.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [cd3eb016] + HTTP v0.9.2
+  [2030c09a] + InfrastructureModels v0.5.3
+  [83e8ac13] + IniFile v0.5.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [7d188eb4] + JSONSchema v0.3.3
+  [4076af6c] + JuMP v0.21.5
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [d3d80556] + LineSearches v7.1.1
+  [1914dd2f] + MacroTools v0.5.6
+  [b8f27783] + MathOptInterface v0.9.19
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [f28f55f0] + Memento v1.1.2
+  [78c3b35d] + Mocking v0.7.1
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [d8a4904e] + MutableArithmetics v0.2.13
+  [d41bc354] + NLSolversBase v7.7.1
+  [2774e3e8] + NLsolve v4.5.1
+  [77ba4419] + NaNMath v0.3.5
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [d96e819e] + Parameters v0.12.1
+  [69de0a69] + Parsers v1.0.15
+  [c36e90e8] + PowerModels v0.17.3
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [189a3867] + Reexport v1.0.0
+  [ae029012] + Requires v1.1.2
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [cea106d9] + Syslogs v0.3.0
+  [f269a46b] + TimeZones v1.5.3
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [5c2747f8] + URIs v1.1.0
+  [3a884ed6] + UnPack v1.0.2
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [a5390f91] + ZipFile v0.9.3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building TimeZones → `~/.julia/packages/TimeZones/K98G0/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T23:55:07.405
+#
+
+    Testing PowerModels
+Status `/tmp/jl_IYcKaS/Project.toml`
+  [9961bab8] Cbc v0.7.1
+  [2030c09a] InfrastructureModels v0.5.3
+  [b6b21f68] Ipopt v0.6.5
+  [682c06a0] JSON v0.21.1
+  [4076af6c] JuMP v0.21.5
+  [2ddba703] Juniper v0.6.5
+  [b8f27783] MathOptInterface v0.9.19
+  [f28f55f0] Memento v1.1.2
+  [2774e3e8] NLsolve v4.5.1
+  [c36e90e8] PowerModels v0.17.3
+  [c946c3f1] SCS v0.7.1
+  [37e2e46d] LinearAlgebra
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_IYcKaS/Manifest.toml`
+  [ae81ac8f] ASL_jll v0.1.1+4
+  [4fba245c] ArrayInterface v2.14.13
+  [56f22d72] Artifacts v1.3.0
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [b99e7846] BinaryProvider v0.5.10
+  [6e34b625] Bzip2_jll v1.0.6+5
+  [fa961155] CEnum v0.4.1
+  [49dc2e85] Calculus v0.5.1
+  [9961bab8] Cbc v0.7.1
+  [38041ee0] Cbc_jll v2.10.3+5
+  [3830e938] Cgl_jll v0.60.2+6
+  [d360d2e6] ChainRulesCore v0.9.24
+  [06985876] Clp_jll v1.17.6+7
+  [523fee87] CodecBzip2 v0.7.2
+  [944b1d66] CodecZlib v0.7.0
+  [be027038] CoinUtils_jll v2.11.3+4
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [864edb3b] DataStructures v0.18.8
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [b4f34e82] Distances v0.10.0
+  [e2ba6199] ExprTools v0.1.3
+  [8f5d6c58] EzXML v1.1.0
+  [6a86dc24] FiniteDiff v2.7.2
+  [f6369f11] ForwardDiff v0.10.14
+  [cd3eb016] HTTP v0.9.2
+  [2030c09a] InfrastructureModels v0.5.3
+  [83e8ac13] IniFile v0.5.0
+  [b6b21f68] Ipopt v0.6.5
+  [9cc047cb] Ipopt_jll v3.13.2+1
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [7d188eb4] JSONSchema v0.3.3
+  [4076af6c] JuMP v0.21.5
+  [2ddba703] Juniper v0.6.5
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [d3d80556] LineSearches v7.1.1
+  [d00139f3] METIS_jll v5.1.0+5
+  [d7ed1dd3] MUMPS_seq_jll v5.2.1+4
+  [1914dd2f] MacroTools v0.5.6
+  [b8f27783] MathOptInterface v0.9.19
+  [fdba3010] MathProgBase v0.7.8
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [f28f55f0] Memento v1.1.2
+  [78c3b35d] Mocking v0.7.1
+  [46d2c3a1] MuladdMacro v0.2.2
+  [d8a4904e] MutableArithmetics v0.2.13
+  [d41bc354] NLSolversBase v7.7.1
+  [2774e3e8] NLsolve v4.5.1
+  [77ba4419] NaNMath v0.3.5
+  [656ef2d0] OpenBLAS32_jll v0.3.9+4
+  [4536629a] OpenBLAS_jll v0.3.9+5
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [7da25872] Osi_jll v0.108.5+4
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.15
+  [c36e90e8] PowerModels v0.17.3
+  [3cdcf5f2] RecipesBase v1.1.1
+  [189a3867] Reexport v1.0.0
+  [ae029012] Requires v1.1.2
+  [c946c3f1] SCS v0.7.1
+  [af6e375f] SCS_GPU_jll v2.1.2+0
+  [f4f2fc5b] SCS_jll v2.1.2+1
+  [276daf66] SpecialFunctions v1.2.1
+  [90137ffa] StaticArrays v1.0.1
+  [cea106d9] Syslogs v0.3.0
+  [f269a46b] TimeZones v1.5.3
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [5c2747f8] URIs v1.1.0
+  [3a884ed6] UnPack v1.0.2
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [a5390f91] ZipFile v0.9.3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Warning: `with_optimizer` is deprecated. Adapt the following example to update your code:
+│ `with_optimizer(Ipopt.Optimizer, max_cpu_time=60.0)` becomes `optimizer_with_attributes(Ipopt.Optimizer, "max_cpu_time" => 60.0)`.
+│   caller = ip:0x0
+└ @ Core :-1
+
+******************************************************************************
+This program contains Ipopt, a library for large-scale nonlinear optimization.
+ Ipopt is released as open source code under the Eclipse Public License (EPL).
+         For more information visit http://projects.coin-or.org/Ipopt
+******************************************************************************
+
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+WARN: A->p (column pointers) not strictly increasing, column 80 empty
+WARN: A->p (column pointers) not strictly increasing, column 81 empty
+WARN: A->p (column pointers) not strictly increasing, column 84 empty
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+[ Info: no explicit NLP constraints or objective provided using @NLconstraint or @NLobjective macros
+Test Summary: | Pass  Total
+PowerModels   | 4078   4078
+    Testing PowerModels tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-12T00:07:04.436
+CPU usage: 735.87s (714.92s user, 21.71s kernel)
+
+Network usage:
+- eth0: 7.363 MiB received, 399.404 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":7,"op":"Read","minor":0},{"major":259,"value":40,"op":"Write","minor":0},{"major":259,"value":26,"op":"Sync","minor":0},{"major":259,"value":21,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":47,"op":"Total","minor":0},{"major":253,"value":7,"op":"Read","minor":2},{"major":253,"value":40,"op":"Write","minor":2},{"major":253,"value":26,"op":"Sync","minor":2},{"major":253,"value":21,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":47,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":540672,"op":"Read","minor":0},{"major":259,"value":245760,"op":"Write","minor":0},{"major":259,"value":647168,"op":"Sync","minor":0},{"major":259,"value":139264,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":786432,"op":"Total","minor":0},{"major":253,"value":540672,"op":"Read","minor":2},{"major":253,"value":245760,"op":"Write","minor":2},{"major":253,"value":647168,"op":"Sync","minor":2},{"major":253,"value":139264,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":786432,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":399228928,"max_usage":2023059456,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":221794304,"inactive_file":540672,"inactive_anon":98537472,"total_pgfault":8242905,"total_cache":143413248,"total_rss_huge":0,"total_active_anon":266145792,"total_pgmajfault":0,"pgpgin":4915086,"rss_huge":0,"mapped_file":0,"total_inactive_file":540672,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":4825916,"hierarchical_memsw_limit":0,"cache":143413248,"active_file":135168,"pgfault":8242905,"total_mapped_file":0,"total_pgpgout":4825916,"total_writeback":0,"rss":221794304,"unevictable":0,"total_inactive_anon":98537472,"total_pgpgin":4915086,"active_anon":266145792,"total_active_file":135168},"limit":540965302272},"name":"/PowerModels-JXkS1im1","networks":{"eth0":{"rx_bytes":7720498,"rx_packets":2956,"tx_packets":3244,"tx_bytes":408990,"tx_dropped":0,"rx_dropped":25,"tx_errors":0,"rx_errors":0}},"id":"00c6ae9902f136e66c32e643addebc9e4b89bfc0156aa5398850b4b7e7b8a181","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":7173542464522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":714920000000,"usage_in_kernelmode":21710000000,"total_usage":735866457624,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,735866043384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,98870,3000,0,312370,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-12T00:07:04.439842572Z"}

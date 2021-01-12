@@ -1,0 +1,106 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:59:25.653
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:59:27.431
+#
+
+ Installing known registries into `~/.julia`
+###########################################################               83.1%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CryptoSignatures ─ v0.2.2
+  Installed CryptoGroups ───── v0.1.2
+  Installed RecipesBase ────── v0.8.0
+  Installed Primes ─────────── v0.4.0
+  Installed BitConverter ───── v0.1.1
+  Installed Polynomials ────── v0.6.1
+  Installed Paillier ───────── v0.2.4
+  Installed Mods ───────────── v0.1.0
+  Installed ECC ────────────── v0.2.3
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [35cc5888] + CryptoSignatures v0.2.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [3a3ce9e8] + BitConverter v0.1.1
+  [bc997328] + CryptoGroups v0.1.2
+  [35cc5888] + CryptoSignatures v0.2.2
+  [a99b485a] + ECC v0.2.3
+  [7475f97c] + Mods v0.1.0
+  [84e01822] + Paillier v0.2.4
+  [f27b6e38] + Polynomials v0.6.1
+  [27ebfcd6] + Primes v0.4.0
+  [3cdcf5f2] + RecipesBase v0.8.0
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T20:59:32.976
+#
+
+    Testing CryptoSignatures
+Status `/tmp/jl_7VK9jU/Project.toml`
+  [bc997328] CryptoGroups v0.1.2
+  [35cc5888] CryptoSignatures v0.2.2
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_7VK9jU/Manifest.toml`
+  [3a3ce9e8] BitConverter v0.1.1
+  [bc997328] CryptoGroups v0.1.2
+  [35cc5888] CryptoSignatures v0.2.2
+  [a99b485a] ECC v0.2.3
+  [7475f97c] Mods v0.1.0
+  [84e01822] Paillier v0.2.4
+  [f27b6e38] Polynomials v0.6.1
+  [27ebfcd6] Primes v0.4.0
+  [3cdcf5f2] RecipesBase v0.8.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+WARNING: could not import Base.ctranspose into Mods
+    Testing CryptoSignatures tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:59:42.836
+CPU usage: 17.24s (14.09s user, 3.22s kernel)
+
+Network usage:
+- eth0: 2.807 MiB received, 63.463 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":288366592,"max_usage":945819648,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":177831936,"inactive_file":135168,"inactive_anon":79073280,"total_pgfault":579810,"total_cache":80986112,"total_rss_huge":0,"total_active_anon":179638272,"total_pgmajfault":0,"pgpgin":413490,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":135168,"pgpgout":350332,"hierarchical_memsw_limit":0,"cache":80986112,"active_file":135168,"pgfault":579810,"total_mapped_file":0,"total_pgpgout":350332,"total_writeback":135168,"rss":177831936,"unevictable":0,"total_inactive_anon":79073280,"total_pgpgin":413490,"active_anon":179638272,"total_active_file":135168},"limit":540965302272},"name":"/CryptoSignatures-kGdlJz20","networks":{"eth0":{"rx_bytes":2943507,"rx_packets":494,"tx_packets":549,"tx_bytes":64986,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"ba7896f4947d39cebc3c0606e3b563056b1a32ce4f3e316a38d3b5da6e919b04","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5737105824522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":14090000000,"usage_in_kernelmode":3220000000,"total_usage":17239484629,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17239480839,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3790,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:59:42.83864569Z"}

@@ -1,0 +1,211 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:49:05.672
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:49:07.492
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed RecipesBase ────── v0.8.0
+  Installed CryptoGroups ───── v0.1.2
+  Installed Primes ─────────── v0.4.0
+  Installed BitConverter ───── v0.1.1
+  Installed Polynomials ────── v0.6.1
+  Installed Paillier ───────── v0.2.4
+  Installed Synchronizers ──── v0.1.0
+  Installed PeaceVote ──────── v0.3.3
+  Installed Mods ───────────── v0.1.0
+  Installed DiffieHellman ──── v0.4.0
+  Installed Multiplexers ───── v0.3.1
+  Installed DemeNet ────────── v0.1.3
+  Installed SynchronicBallot ─ v0.3.2
+  Installed ECC ────────────── v0.2.3
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [129db535] + PeaceVote v0.3.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [3a3ce9e8] + BitConverter v0.1.1
+  [bc997328] + CryptoGroups v0.1.2
+  [311d44f8] + DemeNet v0.1.3
+  [0e61fee8] + DiffieHellman v0.4.0
+  [a99b485a] + ECC v0.2.3
+  [7475f97c] + Mods v0.1.0
+  [d8f48be2] + Multiplexers v0.3.1
+  [84e01822] + Paillier v0.2.4
+  [129db535] + PeaceVote v0.3.3
+  [f27b6e38] + Polynomials v0.6.1
+  [27ebfcd6] + Primes v0.4.0
+  [3cdcf5f2] + RecipesBase v0.8.0
+  [c4fd2470] + SynchronicBallot v0.3.2
+  [9279c0cf] + Synchronizers v0.1.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T22:49:12.851
+#
+
+    Testing PeaceVote
+Status `/tmp/jl_rcmuBS/Project.toml`
+  [311d44f8] DemeNet v0.1.3
+  [0e61fee8] DiffieHellman v0.4.0
+  [7743456c] PeaceCypher v0.3.5
+  [129db535] PeaceVote v0.3.3
+  [c4fd2470] SynchronicBallot v0.3.2
+  [9279c0cf] Synchronizers v0.1.0
+  [44cfe95a] Pkg
+  [6462fe0b] Sockets
+Status `/tmp/jl_rcmuBS/Manifest.toml`
+  [9e28174c] BinDeps v0.8.10
+  [b99e7846] BinaryProvider v0.5.10
+  [3a3ce9e8] BitConverter v0.1.1
+  [34da2185] Compat v2.2.1
+  [bc997328] CryptoGroups v0.1.2
+  [35cc5888] CryptoSignatures v0.2.2
+  [311d44f8] DemeNet v0.1.3
+  [0e61fee8] DiffieHellman v0.4.0
+  [a99b485a] ECC v0.2.3
+  [7475f97c] Mods v0.1.0
+  [d8f48be2] Multiplexers v0.3.1
+  [49dea1ee] Nettle v0.4.0
+  [84e01822] Paillier v0.2.4
+  [7743456c] PeaceCypher v0.3.5
+  [129db535] PeaceVote v0.3.3
+  [f27b6e38] Polynomials v0.6.1
+  [27ebfcd6] Primes v0.4.0
+  [3cdcf5f2] RecipesBase v0.8.0
+  [ee77041e] SecureIO v0.3.0
+  [c4fd2470] SynchronicBallot v0.3.2
+  [9279c0cf] Synchronizers v0.1.0
+  [30578b45] URIParser v0.4.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+WARNING: could not import Base.ctranspose into Mods
+WARNING: Method definition @async(LineNumberNode, Module, Any) in module Base at task.jl:353 overwritten in module SynchronicBallot at /home/pkgeval/.julia/packages/SynchronicBallot/mRd21/src/SynchronicBallot.jl:14.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition @async(LineNumberNode, Module, Any) in module Base at task.jl:353 overwritten in module SynchronicBallot at /home/pkgeval/.julia/packages/SynchronicBallot/mRd21/src/SynchronicBallot.jl:14.
+  ** incremental compilation may be fatally broken for this module **
+
+ERROR: LoadError: LoadError: LoadError: UndefVarError: SocketConfig not defined
+Stacktrace:
+ [1] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [2] include at ./Base.jl:368 [inlined]
+ [3] include(::String) at /home/pkgeval/.julia/packages/PeaceVote/ciqeB/src/BraidChains/BraidChains.jl:1
+ [4] top-level scope at /home/pkgeval/.julia/packages/PeaceVote/ciqeB/src/BraidChains/BraidChains.jl:10
+ [5] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [6] include at ./Base.jl:368 [inlined]
+ [7] include(::String) at /home/pkgeval/.julia/packages/PeaceVote/ciqeB/src/PeaceVote.jl:1
+ [8] top-level scope at /home/pkgeval/.julia/packages/PeaceVote/ciqeB/src/PeaceVote.jl:41
+ [9] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [10] include(::Module, ::String) at ./Base.jl:368
+ [11] top-level scope at none:2
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/PeaceVote/ciqeB/src/BraidChains/Braiders/Braiders.jl:6
+in expression starting at /home/pkgeval/.julia/packages/PeaceVote/ciqeB/src/BraidChains/BraidChains.jl:10
+in expression starting at /home/pkgeval/.julia/packages/PeaceVote/ciqeB/src/PeaceVote.jl:41
+ERROR: LoadError: LoadError: Failed to precompile PeaceVote [129db535-0459-46ad-8d3d-b1fb8f318c74] to /home/pkgeval/.julia/compiled/v1.5/PeaceVote/6sPSl_dtzlO.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1305
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ [6] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [7] include at ./Base.jl:368 [inlined]
+ [8] include(::String) at /home/pkgeval/.julia/packages/PeaceVote/ciqeB/test/runtests.jl:1
+ [9] top-level scope at /home/pkgeval/.julia/packages/PeaceVote/ciqeB/test/runtests.jl:2
+ [10] include(::String) at ./client.jl:457
+ [11] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/PeaceVote/ciqeB/test/braider.jl:2
+in expression starting at /home/pkgeval/.julia/packages/PeaceVote/ciqeB/test/runtests.jl:2
+
+PkgEval failed: Package PeaceVote errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:49:36.157
+CPU usage: 30.15s (25.80s user, 4.41s kernel)
+
+Network usage:
+- eth0: 6.644 MiB received, 200.401 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":147456,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":40960,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":147456,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":147456,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":40960,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":147456,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":326340608,"max_usage":1106497536,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":200200192,"inactive_file":135168,"inactive_anon":85966848,"total_pgfault":997293,"total_cache":96030720,"total_rss_huge":0,"total_active_anon":210186240,"total_pgmajfault":0,"pgpgin":741213,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":668841,"hierarchical_memsw_limit":0,"cache":96030720,"active_file":135168,"pgfault":997293,"total_mapped_file":0,"total_pgpgout":668841,"total_writeback":0,"rss":200200192,"unevictable":0,"total_inactive_anon":85966848,"total_pgpgin":741213,"active_anon":210186240,"total_active_file":135168},"limit":540965302272},"name":"/PeaceVote-solAh2oT","networks":{"eth0":{"rx_bytes":6966435,"rx_packets":3238,"tx_packets":2418,"tx_bytes":205211,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"3a3c1fc83dcde2774abf6a6f1ffbb728000e3ef588d5d158ba9d8bd0c4a2163f","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6579472714522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":25800000000,"usage_in_kernelmode":4410000000,"total_usage":30154082556,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30152891906,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3080,1187570,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:49:36.773780243Z"}

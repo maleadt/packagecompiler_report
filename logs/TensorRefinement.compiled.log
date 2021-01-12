@@ -1,0 +1,150 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T18:32:58.424
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T18:33:00.187
+#
+
+ Installing known registries into `~/.julia`
+###############################                                           44.1%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed TensorRefinement ─ v0.1.2
+  Installed Reexport ───────── v1.0.0
+  Installed PackageCompiler ── v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [a3b9d4e2] + TensorRefinement v0.1.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [189a3867] + Reexport v1.0.0
+  [a3b9d4e2] + TensorRefinement v0.1.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T18:33:05.783
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 148.380 MiB, compilation took 169 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T18:36:02.325
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/TensorRefinement-B99jhHIq.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:36:04.162
+#
+
+ Installing known registries into `~/.julia`
+##########################################                                59.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Reexport ───────── v1.0.0
+  Installed TensorRefinement ─ v0.1.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a3b9d4e2] + TensorRefinement v0.1.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [189a3867] + Reexport v1.0.0
+  [a3b9d4e2] + TensorRefinement v0.1.2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+
+
+################################################################################
+# Testing: 2021-01-11T18:36:08.651
+#
+
+    Testing TensorRefinement
+Status `/tmp/jl_532iC9/Project.toml`
+  [189a3867] Reexport v1.0.0
+  [1bc83da4] SafeTestsets v0.0.1
+  [a3b9d4e2] TensorRefinement v0.1.2
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_532iC9/Manifest.toml`
+  [189a3867] Reexport v1.0.0
+  [1bc83da4] SafeTestsets v0.0.1
+  [a3b9d4e2] TensorRefinement v0.1.2
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary:           | Pass  Total
+TensorTrainFactor tests |   96     96
+  2.864388 seconds (5.73 M allocations: 326.877 MiB, 2.63% gc time)
+Test Summary:                  | Pass  Total
+TensorTrainFactorization tests |   80     80
+Test Summary: | Pass  Total
+FEM tests     |  110    110
+    Testing TensorRefinement tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:37:11.96
+CPU usage: 69.38s (57.60s user, 11.90s kernel)
+
+Network usage:
+- eth0: 2.593 MiB received, 36.885 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":253,"value":0,"op":"Read","minor":0},{"major":253,"value":0,"op":"Write","minor":0},{"major":253,"value":0,"op":"Sync","minor":0},{"major":253,"value":0,"op":"Async","minor":0},{"major":253,"value":0,"op":"Discard","minor":0},{"major":253,"value":0,"op":"Total","minor":0},{"major":8,"value":0,"op":"Read","minor":0},{"major":8,"value":0,"op":"Write","minor":0},{"major":8,"value":0,"op":"Sync","minor":0},{"major":8,"value":0,"op":"Async","minor":0},{"major":8,"value":0,"op":"Discard","minor":0},{"major":8,"value":0,"op":"Total","minor":0},{"major":259,"value":5873,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":5887,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":5892,"op":"Total","minor":0},{"major":253,"value":5873,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":5887,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":5892,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":253,"value":0,"op":"Read","minor":0},{"major":253,"value":0,"op":"Write","minor":0},{"major":253,"value":0,"op":"Sync","minor":0},{"major":253,"value":0,"op":"Async","minor":0},{"major":253,"value":0,"op":"Discard","minor":0},{"major":253,"value":0,"op":"Total","minor":0},{"major":8,"value":0,"op":"Read","minor":0},{"major":8,"value":0,"op":"Write","minor":0},{"major":8,"value":0,"op":"Sync","minor":0},{"major":8,"value":0,"op":"Async","minor":0},{"major":8,"value":0,"op":"Discard","minor":0},{"major":8,"value":0,"op":"Total","minor":0},{"major":259,"value":84910080,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":84967424,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":84987904,"op":"Total","minor":0},{"major":253,"value":84910080,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":84967424,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":84987904,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":343834624,"max_usage":3171475456,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":1617,"total_rss":184643584,"inactive_file":24522752,"inactive_anon":226136064,"total_pgfault":4521165,"total_cache":128647168,"total_rss_huge":0,"total_active_anon":35037184,"total_pgmajfault":1617,"pgpgin":4379463,"rss_huge":0,"mapped_file":4460544,"total_inactive_file":24522752,"dirty":1081344,"total_unevictable":0,"total_dirty":1081344,"writeback":0,"pgpgout":4302968,"hierarchical_memsw_limit":0,"cache":128647168,"active_file":23994368,"pgfault":4521165,"total_mapped_file":4460544,"total_pgpgout":4302968,"total_writeback":0,"rss":184643584,"unevictable":0,"total_inactive_anon":226136064,"total_pgpgin":4379463,"active_anon":35037184,"total_active_file":23994368},"limit":540965302272},"name":"/TensorRefinement-uve8qELM","networks":{"eth0":{"rx_bytes":2719266,"rx_packets":366,"tx_packets":356,"tx_bytes":37770,"tx_dropped":0,"rx_dropped":3,"tx_errors":0,"rx_errors":0}},"id":"55f473f0fcf8a8b7b770a04459e43aad7e09470fcebcffd70f742dfe5beea287","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4644247224522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":57600000000,"usage_in_kernelmode":11900000000,"total_usage":69383291299,"percpu_usage":[0,0,0,0,0,0,0,69383291299,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:37:12.586626407Z"}

@@ -1,0 +1,650 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:32:02.371
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:32:04.158
+#
+
+ Installing known registries into `~/.julia`
+###################################                                       49.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed GEOS_jll ──────────────────── v3.9.0+0
+  Installed MbedTLS_jll ───────────────── v2.16.8+1
+  Installed SQLite_jll ────────────────── v3.34.0+0
+  Installed Zlib_jll ──────────────────── v1.2.11+18
+  Installed GeoFormatTypes ────────────── v0.3.0
+  Installed TableTraits ───────────────── v1.0.0
+  Installed ArchGDAL ──────────────────── v0.5.2
+  Installed GDAL ──────────────────────── v1.2.0
+  Installed Libtiff_jll ───────────────── v4.1.0+2
+  Installed CEnum ─────────────────────── v0.4.1
+  Installed Tables ────────────────────── v1.2.2
+  Installed Zstd_jll ──────────────────── v1.4.5+2
+  Installed LibSSH2_jll ───────────────── v1.9.0+3
+  Installed DataAPI ───────────────────── v1.4.0
+  Installed LittleCMS_jll ─────────────── v2.9.0+0
+  Installed nghttp2_jll ───────────────── v1.40.0+2
+  Installed DataValueInterfaces ───────── v1.0.0
+  Installed libgeotiff_jll ────────────── v1.6.0+1
+  Installed libpng_jll ────────────────── v1.6.37+6
+  Installed PROJ_jll ──────────────────── v7.2.0+0
+  Installed Expat_jll ─────────────────── v2.2.7+6
+  Installed RecipesBase ───────────────── v1.1.1
+  Installed GeoInterface ──────────────── v0.5.4
+  Installed MozillaCACerts_jll ────────── v2020.10.14+0
+  Installed IteratorInterfaceExtensions ─ v1.0.0
+  Installed JLLWrappers ───────────────── v1.2.0
+  Installed DiskArrays ────────────────── v0.2.7
+  Installed JpegTurbo_jll ─────────────── v2.0.1+3
+  Installed LibCURL_jll ───────────────── v7.70.0+2
+  Installed GDAL_jll ──────────────────── v3.2.0+2
+  Installed OpenJpeg_jll ──────────────── v2.3.1+0
+  Installed Artifacts ─────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [c9ce4bd3] + ArchGDAL v0.5.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [c9ce4bd3] + ArchGDAL v0.5.2
+  [56f22d72] + Artifacts v1.3.0
+  [fa961155] + CEnum v0.4.1
+  [9a962f9c] + DataAPI v1.4.0
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [3c3547ce] + DiskArrays v0.2.7
+  [2e619515] + Expat_jll v2.2.7+6
+  [add2ef01] + GDAL v1.2.0
+  [a7073274] + GDAL_jll v3.2.0+2
+  [d604d12d] + GEOS_jll v3.9.0+0
+  [68eda718] + GeoFormatTypes v0.3.0
+  [cf35fbd7] + GeoInterface v0.5.4
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [aacddb02] + JpegTurbo_jll v2.0.1+3
+  [deac9b47] + LibCURL_jll v7.70.0+2
+  [29816b5a] + LibSSH2_jll v1.9.0+3
+  [89763e89] + Libtiff_jll v4.1.0+2
+  [d3a379c0] + LittleCMS_jll v2.9.0+0
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [14a3606d] + MozillaCACerts_jll v2020.10.14+0
+  [643b3616] + OpenJpeg_jll v2.3.1+0
+  [58948b4f] + PROJ_jll v7.2.0+0
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [76ed43ae] + SQLite_jll v3.34.0+0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [83775a58] + Zlib_jll v1.2.11+18
+  [3161d3a3] + Zstd_jll v1.4.5+2
+  [06c338fa] + libgeotiff_jll v1.6.0+1
+  [b53b4c65] + libpng_jll v1.6.37+6
+  [8e850ede] + nghttp2_jll v1.40.0+2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T20:32:11.299
+#
+
+    Testing ArchGDAL
+Status `/tmp/jl_QsgAJR/Project.toml`
+  [c9ce4bd3] ArchGDAL v0.5.2
+  [3c3547ce] DiskArrays v0.2.7
+  [add2ef01] GDAL v1.2.0
+  [68eda718] GeoFormatTypes v0.3.0
+  [cf35fbd7] GeoInterface v0.5.4
+  [bd369af6] Tables v1.2.2
+  [ade2ca70] Dates
+  [44cfe95a] Pkg
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_QsgAJR/Manifest.toml`
+  [c9ce4bd3] ArchGDAL v0.5.2
+  [56f22d72] Artifacts v1.3.0
+  [fa961155] CEnum v0.4.1
+  [9a962f9c] DataAPI v1.4.0
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [3c3547ce] DiskArrays v0.2.7
+  [2e619515] Expat_jll v2.2.7+6
+  [add2ef01] GDAL v1.2.0
+  [a7073274] GDAL_jll v3.2.0+2
+  [d604d12d] GEOS_jll v3.9.0+0
+  [68eda718] GeoFormatTypes v0.3.0
+  [cf35fbd7] GeoInterface v0.5.4
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [aacddb02] JpegTurbo_jll v2.0.1+3
+  [deac9b47] LibCURL_jll v7.70.0+2
+  [29816b5a] LibSSH2_jll v1.9.0+3
+  [89763e89] Libtiff_jll v4.1.0+2
+  [d3a379c0] LittleCMS_jll v2.9.0+0
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [14a3606d] MozillaCACerts_jll v2020.10.14+0
+  [643b3616] OpenJpeg_jll v2.3.1+0
+  [58948b4f] PROJ_jll v7.2.0+0
+  [3cdcf5f2] RecipesBase v1.1.1
+  [76ed43ae] SQLite_jll v3.34.0+0
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [83775a58] Zlib_jll v1.2.11+18
+  [3161d3a3] Zstd_jll v1.4.5+2
+  [06c338fa] libgeotiff_jll v1.6.0+1
+  [b53b4c65] libpng_jll v1.6.37+6
+  [8e850ede] nghttp2_jll v1.40.0+2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       ######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       ######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%######################################################################## 100.0%                                                                           0.0%######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       #########                                                                 13.2%######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       ##=O#- #                                                                      #######                                                                   10.6%#############################                                             40.3%######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       ######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       ######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       ##=O#- #                                                                      ######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       ######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%######################################################################## 100.0%                                                                           0.0%######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%######################################################################## 100.0%                                                                           0.0%######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       ##                                                                         3.3%######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%######################################################################## 100.0%                                                                           0.0%######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       ######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       ######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       #                                                                          1.8%######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       ######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%######################################################################## 100.0%##O#- #                                                                       ##=O#- #                                                                                                                                                 0.3%#                                                                          2.4%####                                                                       6.6%########                                                                  11.5%############                                                              16.7%###############                                                           21.9%###################                                                       27.4%#######################                                                   32.7%###########################                                               38.4%################################                                          45.0%####################################                                      51.0%#########################################                                 57.6%##############################################                            64.2%##################################################                        70.7%########################################################                  78.4%#############################################################             85.7%###################################################################       93.5%######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       ######################################################################## 100.0%##=O#- #                                                                      #########                                                                 13.9%####################################                                      51.3%######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       ##=O#- #                                                                                                                                                 0.0%######                                                                     9.0%#####################                                                     30.0%####################################################                      72.3%######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       ##=O#- #                                                                      ################################################################          89.2%######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       ##=O#- #                                                                      #######                                                                   10.2%##################################                                        47.9%######################################################################## 100.0%
+#=#=#                                                                         ######################################################################## 100.0%##O#- #                                                                       ######################################################################## 100.0%                                                                           0.0%######################################################################## 100.0%
+Testing remaining methods for geometries: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:221
+  Expression: AG.toWKT(AG.union(geom1, geom2)) == "GEOMETRYCOLLECTION (POINT (2 5 8),POINT (3 6 9),POLYGON ((0 0 8,0 4 8,4 4 8,4 0 8,0 0 8),(1 1 8,3 1 8,3 3 8,1 3 8,1 1 8)),POLYGON ((10 0 8,10 4 8,14 4 8,14 0 8,10 0 8),(11 1 8,13 1 8,13 3 8,11 3 8,11 1 8)))"
+   Evaluated: "GEOMETRYCOLLECTION (POLYGON ((0 4 8,4 4 8,4 0 8,0 0 8,0 4 8),(3 1 8,3 3 8,1 3 8,1 1 8,3 1 8)),POLYGON ((10 4 8,14 4 8,14 0 8,10 0 8,10 4 8),(13 1 8,13 3 8,11 3 8,11 1 8,13 1 8)),POINT (2 5 8),POINT (3 6 9))" == "GEOMETRYCOLLECTION (POINT (2 5 8),POINT (3 6 9),POLYGON ((0 0 8,0 4 8,4 4 8,4 0 8,0 0 8),(1 1 8,3 1 8,3 3 8,1 3 8,1 1 8)),POLYGON ((10 0 8,10 4 8,14 4 8,14 0 8,10 0 8),(11 1 8,13 1 8,13 3 8,11 3 8,11 1 8)))"
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:221
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:201
+Testing remaining methods for geometries: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:223
+  Expression: AG.toWKT(result) == "GEOMETRYCOLLECTION (POINT (2 5 8),POINT (3 6 9),POLYGON ((0 0 8,0 4 8,4 4 8,4 0 8,0 0 8),(1 1 8,3 1 8,3 3 8,1 3 8,1 1 8)),POLYGON ((10 0 8,10 4 8,14 4 8,14 0 8,10 0 8),(11 1 8,13 1 8,13 3 8,11 3 8,11 1 8)))"
+   Evaluated: "GEOMETRYCOLLECTION (POLYGON ((0 4 8,4 4 8,4 0 8,0 0 8,0 4 8),(3 1 8,3 3 8,1 3 8,1 1 8,3 1 8)),POLYGON ((10 4 8,14 4 8,14 0 8,10 0 8,10 4 8),(13 1 8,13 3 8,11 3 8,11 1 8,13 1 8)),POINT (2 5 8),POINT (3 6 9))" == "GEOMETRYCOLLECTION (POINT (2 5 8),POINT (3 6 9),POLYGON ((0 0 8,0 4 8,4 4 8,4 0 8,0 0 8),(1 1 8,3 1 8,3 3 8,1 3 8,1 1 8)),POLYGON ((10 0 8,10 4 8,14 4 8,14 0 8,10 0 8),(11 1 8,13 1 8,13 3 8,11 3 8,11 1 8)))"
+Stacktrace:
+ [1] (::var"#86#98")(::ArchGDAL.Geometry) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:223
+ [2] union(::var"#86#98", ::ArchGDAL.IGeometry, ::Vararg{ArchGDAL.IGeometry,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [3] union(::Function, ::ArchGDAL.IGeometry, ::ArchGDAL.IGeometry) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214
+ [4] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:222
+ [5] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [6] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:201
+Testing remaining methods for geometries: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:228
+  Expression: AG.toWKT(AG.difference(geom1, geom2)) == "MULTIPOLYGON (((0 0 8,0 4 8,4 4 8,4 0 8,0 0 8),(1 1 8,3 1 8,3 3 8,1 3 8,1 1 8)),((10 0 8,10 4 8,14 4 8,14 0 8,10 0 8),(11 1 8,13 1 8,13 3 8,11 3 8,11 1 8)))"
+   Evaluated: "MULTIPOLYGON (((0 4 8,4 4 8,4 0 8,0 0 8,0 4 8),(3 1 8,3 3 8,1 3 8,1 1 8,3 1 8)),((10 4 8,14 4 8,14 0 8,10 0 8,10 4 8),(13 1 8,13 3 8,11 3 8,11 1 8,13 1 8)))" == "MULTIPOLYGON (((0 0 8,0 4 8,4 4 8,4 0 8,0 0 8),(1 1 8,3 1 8,3 3 8,1 3 8,1 1 8)),((10 0 8,10 4 8,14 4 8,14 0 8,10 0 8),(11 1 8,13 1 8,13 3 8,11 3 8,11 1 8)))"
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:228
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:201
+Testing remaining methods for geometries: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:230
+  Expression: AG.toWKT(result) == "MULTIPOLYGON (((0 0 8,0 4 8,4 4 8,4 0 8,0 0 8),(1 1 8,3 1 8,3 3 8,1 3 8,1 1 8)),((10 0 8,10 4 8,14 4 8,14 0 8,10 0 8),(11 1 8,13 1 8,13 3 8,11 3 8,11 1 8)))"
+   Evaluated: "MULTIPOLYGON (((0 4 8,4 4 8,4 0 8,0 0 8,0 4 8),(3 1 8,3 3 8,1 3 8,1 1 8,3 1 8)),((10 4 8,14 4 8,14 0 8,10 0 8,10 4 8),(13 1 8,13 3 8,11 3 8,11 1 8,13 1 8)))" == "MULTIPOLYGON (((0 0 8,0 4 8,4 4 8,4 0 8,0 0 8),(1 1 8,3 1 8,3 3 8,1 3 8,1 1 8)),((10 0 8,10 4 8,14 4 8,14 0 8,10 0 8),(11 1 8,13 1 8,13 3 8,11 3 8,11 1 8)))"
+Stacktrace:
+ [1] (::var"#87#99")(::ArchGDAL.Geometry) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:230
+ [2] difference(::var"#87#99", ::ArchGDAL.IGeometry, ::Vararg{ArchGDAL.IGeometry,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [3] difference(::Function, ::ArchGDAL.IGeometry, ::ArchGDAL.IGeometry) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214
+ [4] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:229
+ [5] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [6] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:201
+Testing remaining methods for geometries: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:232
+  Expression: AG.toWKT(result) == "MULTIPOLYGON (((0 0 8,0 4 8,4 4 8,4 0 8,0 0 8),(1 1 8,3 1 8,3 3 8,1 3 8,1 1 8)),((10 0 8,10 4 8,14 4 8,14 0 8,10 0 8),(11 1 8,13 1 8,13 3 8,11 3 8,11 1 8)))"
+   Evaluated: "MULTIPOLYGON (((0 4 8,4 4 8,4 0 8,0 0 8,0 4 8),(3 1 8,3 3 8,1 3 8,1 1 8,3 1 8)),((10 4 8,14 4 8,14 0 8,10 0 8,10 4 8),(13 1 8,13 3 8,11 3 8,11 1 8,13 1 8)))" == "MULTIPOLYGON (((0 0 8,0 4 8,4 4 8,4 0 8,0 0 8),(1 1 8,3 1 8,3 3 8,1 3 8,1 1 8)),((10 0 8,10 4 8,14 4 8,14 0 8,10 0 8),(11 1 8,13 1 8,13 3 8,11 3 8,11 1 8)))"
+Stacktrace:
+ [1] (::var"#87#99")(::ArchGDAL.Geometry) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:232
+ [2] difference(::var"#87#99", ::ArchGDAL.IGeometry, ::Vararg{ArchGDAL.IGeometry,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [3] difference(::Function, ::ArchGDAL.IGeometry, ::ArchGDAL.IGeometry) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214
+ [4] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:229
+ [5] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [6] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:201
+Testing remaining methods for geometries: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:234
+  Expression: AG.toWKT(result) == "MULTIPOLYGON (((0 0 8,0 2 8,0 4 8,2 4 8,4 4 8,4 2 8,4 0 8,2 0 8,0 0 8),(1 1 8,3 1 8,3 3 8,1 3 8,1 1 8)),((10 0 8,10 2 8,10 4 8,12 4 8,14 4 8,14 2 8,14 0 8,12 0 8,10 0 8),(11 1 8,13 1 8,13 3 8,11 3 8,11 1 8)))"
+   Evaluated: "MULTIPOLYGON (((0 4 8,2 4 8,4 4 8,4 2 8,4 0 8,2 0 8,0 0 8,0 2 8,0 4 8),(3 1 8,3 3 8,1 3 8,1 1 8,3 1 8)),((10 4 8,12 4 8,14 4 8,14 2 8,14 0 8,12 0 8,10 0 8,10 2 8,10 4 8),(13 1 8,13 3 8,11 3 8,11 1 8,13 1 8)))" == "MULTIPOLYGON (((0 0 8,0 2 8,0 4 8,2 4 8,4 4 8,4 2 8,4 0 8,2 0 8,0 0 8),(1 1 8,3 1 8,3 3 8,1 3 8,1 1 8)),((10 0 8,10 2 8,10 4 8,12 4 8,14 4 8,14 2 8,14 0 8,12 0 8,10 0 8),(11 1 8,13 1 8,13 3 8,11 3 8,11 1 8)))"
+Stacktrace:
+ [1] (::var"#87#99")(::ArchGDAL.Geometry) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:234
+ [2] difference(::var"#87#99", ::ArchGDAL.IGeometry, ::Vararg{ArchGDAL.IGeometry,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [3] difference(::Function, ::ArchGDAL.IGeometry, ::ArchGDAL.IGeometry) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214
+ [4] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:229
+ [5] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [6] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:201
+Testing remaining methods for geometries: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:237
+  Expression: AG.toWKT(AG.symdifference(geom1, geom2)) == "GEOMETRYCOLLECTION (POINT (2 5 8),POINT (3 6 9),POLYGON ((0 0 8,0 4 8,4 4 8,4 0 8,0 0 8),(1 1 8,3 1 8,3 3 8,1 3 8,1 1 8)),POLYGON ((10 0 8,10 4 8,14 4 8,14 0 8,10 0 8),(11 1 8,13 1 8,13 3 8,11 3 8,11 1 8)))"
+   Evaluated: "GEOMETRYCOLLECTION (POLYGON ((0 4 8,4 4 8,4 0 8,0 0 8,0 4 8),(3 1 8,3 3 8,1 3 8,1 1 8,3 1 8)),POLYGON ((10 4 8,14 4 8,14 0 8,10 0 8,10 4 8),(13 1 8,13 3 8,11 3 8,11 1 8,13 1 8)),POINT (2 5 8),POINT (3 6 9))" == "GEOMETRYCOLLECTION (POINT (2 5 8),POINT (3 6 9),POLYGON ((0 0 8,0 4 8,4 4 8,4 0 8,0 0 8),(1 1 8,3 1 8,3 3 8,1 3 8,1 1 8)),POLYGON ((10 0 8,10 4 8,14 4 8,14 0 8,10 0 8),(11 1 8,13 1 8,13 3 8,11 3 8,11 1 8)))"
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:237
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:201
+Testing remaining methods for geometries: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:240
+  Expression: AG.toWKT(result) == "GEOMETRYCOLLECTION (POINT (2 5 8),POINT (3 6 9),POLYGON ((0 0 8,0 4 8,4 4 8,4 0 8,0 0 8),(1 1 8,3 1 8,3 3 8,1 3 8,1 1 8)),POLYGON ((10 0 8,10 4 8,14 4 8,14 0 8,10 0 8),(11 1 8,13 1 8,13 3 8,11 3 8,11 1 8)))"
+   Evaluated: "GEOMETRYCOLLECTION (POLYGON ((0 4 8,4 4 8,4 0 8,0 0 8,0 4 8),(3 1 8,3 3 8,1 3 8,1 1 8,3 1 8)),POLYGON ((10 4 8,14 4 8,14 0 8,10 0 8,10 4 8),(13 1 8,13 3 8,11 3 8,11 1 8,13 1 8)),POINT (2 5 8),POINT (3 6 9))" == "GEOMETRYCOLLECTION (POINT (2 5 8),POINT (3 6 9),POLYGON ((0 0 8,0 4 8,4 4 8,4 0 8,0 0 8),(1 1 8,3 1 8,3 3 8,1 3 8,1 1 8)),POLYGON ((10 0 8,10 4 8,14 4 8,14 0 8,10 0 8),(11 1 8,13 1 8,13 3 8,11 3 8,11 1 8)))"
+Stacktrace:
+ [1] (::var"#88#100")(::ArchGDAL.Geometry) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:240
+ [2] symdifference(::var"#88#100", ::ArchGDAL.IGeometry, ::Vararg{ArchGDAL.IGeometry,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [3] symdifference(::Function, ::ArchGDAL.IGeometry, ::ArchGDAL.IGeometry) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214
+ [4] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:238
+ [5] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [6] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:201
+Testing remaining methods for geometries: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:242
+  Expression: AG.toWKT(result) == "GEOMETRYCOLLECTION (POINT (2 5 8),POLYGON ((0 0 8,0 4 8,4 4 8,4 0 8,0 0 8),(1 1 8,3 1 8,3 3 8,1 3 8,1 1 8)),POLYGON ((10 0 8,10 4 8,14 4 8,14 0 8,10 0 8),(11 1 8,13 1 8,13 3 8,11 3 8,11 1 8)))"
+   Evaluated: "GEOMETRYCOLLECTION (POLYGON ((0 4 8,4 4 8,4 0 8,0 0 8,0 4 8),(3 1 8,3 3 8,1 3 8,1 1 8,3 1 8)),POINT (2 5 8),POINT (3 6 9))" == "GEOMETRYCOLLECTION (POINT (2 5 8),POLYGON ((0 0 8,0 4 8,4 4 8,4 0 8,0 0 8),(1 1 8,3 1 8,3 3 8,1 3 8,1 1 8)),POLYGON ((10 0 8,10 4 8,14 4 8,14 0 8,10 0 8),(11 1 8,13 1 8,13 3 8,11 3 8,11 1 8)))"
+Stacktrace:
+ [1] (::var"#88#100")(::ArchGDAL.Geometry) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:242
+ [2] symdifference(::var"#88#100", ::ArchGDAL.IGeometry, ::Vararg{ArchGDAL.IGeometry,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [3] symdifference(::Function, ::ArchGDAL.IGeometry, ::ArchGDAL.IGeometry) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214
+ [4] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:238
+ [5] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [6] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:201
+Spatial Reference Systems: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:309
+  Expression: GeoInterface.coordinates(point) ≈ [47.348801, -122.598135]
+   Evaluated: [47.3488070138318, -122.5981499431438] ≈ [47.348801, -122.598135]
+Stacktrace:
+ [1] (::var"#117#126"{ArchGDAL.CoordTransform})(::ArchGDAL.Geometry) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:309
+ [2] fromWKT(::var"#117#126"{ArchGDAL.CoordTransform}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [3] fromWKT at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214 [inlined]
+ [4] #116 at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:306 [inlined]
+ [5] createcoordtrans(::var"#116#125", ::ArchGDAL.SpatialRef, ::Vararg{ArchGDAL.SpatialRef,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [6] createcoordtrans at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214 [inlined]
+ [7] #115 at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:305 [inlined]
+ [8] importEPSG(::var"#115#124"{ArchGDAL.SpatialRef}, ::Int64; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [9] importEPSG at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214 [inlined]
+ [10] #114 at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:304 [inlined]
+ [11] importEPSG(::var"#114#123", ::Int64; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [12] importEPSG(::Function, ::Int64) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214
+ [13] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:304
+ [14] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [15] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_geometry.jl:287
+Testing FeatureLayer Methods: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_featurelayer.jl:109
+  Expression: AG.toWKT(AG.getspatialfilter(layer)) == "POLYGON ((100 -1,100 1,100.1 1.0,100.1 -1.0,100 -1))"
+   Evaluated: "POLYGON ((100 -1,100 1,100.1 1.0,100.1 -1,100 -1))" == "POLYGON ((100 -1,100 1,100.1 1.0,100.1 -1.0,100 -1))"
+Stacktrace:
+ [1] (::var"#177#191")(::ArchGDAL.Dataset) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_featurelayer.jl:109
+ [2] read(::var"#177#191", ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [3] read(::Function, ::String) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214
+ [4] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_featurelayer.jl:6
+ [5] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [6] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_featurelayer.jl:6
+Testing FeatureLayer Methods: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_featurelayer.jl:118
+  Expression: AG.toWKT(AG.getspatialfilter(layer)) == "POLYGON ((100 -1,100 1,100.1 1.0,100.1 -1.0,100 -1))"
+   Evaluated: "POLYGON ((100 -1,100 1,100.1 1.0,100.1 -1,100 -1))" == "POLYGON ((100 -1,100 1,100.1 1.0,100.1 -1.0,100 -1))"
+Stacktrace:
+ [1] (::var"#177#191")(::ArchGDAL.Dataset) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_featurelayer.jl:118
+ [2] read(::var"#177#191", ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [3] read(::Function, ::String) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214
+ [4] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_featurelayer.jl:6
+ [5] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [6] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_featurelayer.jl:6
+┌ Warning: There is no linear binning information.
+└ @ ArchGDAL ~/.julia/packages/ArchGDAL/j9NPL/src/raster/rasterattributetable.jl:311
+┌ Warning: There is no linear binning information.
+└ @ ArchGDAL ~/.julia/packages/ArchGDAL/j9NPL/src/raster/rasterattributetable.jl:311
+  1.133782 seconds (862.60 k allocations: 258.757 MiB, 17.70% gc time)
+Calculate intersection between two Geometries: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_geometry.jl:707
+  Expression: AG.toWKT(poly3) == wkt3
+   Evaluated: "POLYGON ((1208064.27124304 624154.678377892,1219317.10674371 624154.678377892,1219317.10674371 614453.958118695,1208064.27124304 614453.958118695,1208064.27124304 624154.678377892))" == "POLYGON ((1208064.27124304 614453.958118695,1208064.27124304 624154.678377892,1219317.10674371 624154.678377892,1219317.10674371 614453.958118695,1208064.27124304 614453.958118695))"
+Stacktrace:
+ [1] (::var"#511#514"{String})(::ArchGDAL.Geometry) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_geometry.jl:707
+ [2] intersection(::var"#511#514"{String}, ::ArchGDAL.Geometry, ::Vararg{ArchGDAL.Geometry,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [3] intersection at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214 [inlined]
+ [4] #510 at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_geometry.jl:706 [inlined]
+ [5] fromWKT(::var"#510#513"{ArchGDAL.Geometry,String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [6] fromWKT at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214 [inlined]
+ [7] #509 at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_geometry.jl:705 [inlined]
+ [8] fromWKT(::var"#509#512"{String,String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [9] fromWKT(::Function, ::String) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214
+ [10] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_geometry.jl:704
+ [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [12] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_geometry.jl:698
+Calculate intersection between two Geometries: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_geometry.jl:713
+  Expression: AG.toWKT(AG.intersection(AG.fromWKT(wkt1), AG.fromWKT(wkt2))) == wkt3
+   Evaluated: "POLYGON ((1208064.27124304 624154.678377892,1219317.10674371 624154.678377892,1219317.10674371 614453.958118695,1208064.27124304 614453.958118695,1208064.27124304 624154.678377892))" == "POLYGON ((1208064.27124304 614453.958118695,1208064.27124304 624154.678377892,1219317.10674371 624154.678377892,1219317.10674371 614453.958118695,1208064.27124304 614453.958118695))"
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_geometry.jl:713
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_geometry.jl:698
+Calculate union between two Geometries: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_geometry.jl:725
+  Expression: AG.toWKT(poly3) == wkt3
+   Evaluated: "POLYGON ((1199915.66622531 614453.958118695,1199915.66622531 633079.341016353,1219317.10674371 633079.341016353,1219317.10674371 624154.678377892,1231345.99986511 624154.678377892,1231345.99986511 601260.978566187,1208064.27124304 601260.978566187,1208064.27124304 614453.958118695,1199915.66622531 614453.958118695))" == "POLYGON ((1219317.10674371 624154.678377892,1231345.99986511 624154.678377892,1231345.99986511 601260.978566187,1208064.27124304 601260.978566187,1208064.27124304 614453.958118695,1199915.66622531 614453.958118695,1199915.66622531 633079.341016353,1219317.10674371 633079.341016353,1219317.10674371 624154.678377892))"
+Stacktrace:
+ [1] (::var"#517#520"{String})(::ArchGDAL.Geometry) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_geometry.jl:725
+ [2] union(::var"#517#520"{String}, ::ArchGDAL.Geometry, ::Vararg{ArchGDAL.Geometry,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [3] union at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214 [inlined]
+ [4] #516 at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_geometry.jl:724 [inlined]
+ [5] fromWKT(::var"#516#519"{ArchGDAL.Geometry,String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [6] fromWKT at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214 [inlined]
+ [7] #515 at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_geometry.jl:723 [inlined]
+ [8] fromWKT(::var"#515#518"{String,String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [9] fromWKT(::Function, ::String) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214
+ [10] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_geometry.jl:722
+ [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [12] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_geometry.jl:717
+Calculate union between two Geometries: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_geometry.jl:731
+  Expression: AG.toWKT(AG.union(AG.fromWKT(wkt1), AG.fromWKT(wkt2))) == wkt3
+   Evaluated: "POLYGON ((1199915.66622531 614453.958118695,1199915.66622531 633079.341016353,1219317.10674371 633079.341016353,1219317.10674371 624154.678377892,1231345.99986511 624154.678377892,1231345.99986511 601260.978566187,1208064.27124304 601260.978566187,1208064.27124304 614453.958118695,1199915.66622531 614453.958118695))" == "POLYGON ((1219317.10674371 624154.678377892,1231345.99986511 624154.678377892,1231345.99986511 601260.978566187,1208064.27124304 601260.978566187,1208064.27124304 614453.958118695,1199915.66622531 614453.958118695,1199915.66622531 633079.341016353,1219317.10674371 633079.341016353,1219317.10674371 624154.678377892))"
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_geometry.jl:731
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_geometry.jl:717
+Method 1: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:13
+  Expression: GeoInterface.coordinates(point) ≈ [47.348801380288485, -122.5981351308777]
+   Evaluated: [47.3488070138318, -122.5981499431438] ≈ [47.348801380288485, -122.5981351308777]
+Stacktrace:
+ [1] (::var"#530#537"{ArchGDAL.CoordTransform})(::ArchGDAL.Geometry) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:13
+ [2] fromWKT(::var"#530#537"{ArchGDAL.CoordTransform}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [3] fromWKT at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214 [inlined]
+ [4] #529 at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:10 [inlined]
+ [5] createcoordtrans(::var"#529#536", ::ArchGDAL.SpatialRef, ::Vararg{ArchGDAL.SpatialRef,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [6] createcoordtrans at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214 [inlined]
+ [7] #528 at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:9 [inlined]
+ [8] importEPSG(::var"#528#535"{ArchGDAL.SpatialRef}, ::Int64; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [9] importEPSG at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214 [inlined]
+ [10] #527 at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:8 [inlined]
+ [11] importEPSG(::var"#527#534", ::Int64; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:216
+ [12] importEPSG(::Function, ::Int64) at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/src/context.jl:214
+ [13] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:8
+ [14] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [15] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:8
+ [16] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [17] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:7
+reciprocal reprojection of wkt: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:34
+  Expression: AG.reproject(wktpoint, GFT.EPSG(2927), GFT.EPSG(4326)) == result
+   Evaluated: GeoFormatTypes.WellKnownText{GeoFormatTypes.Geom,String}(GeoFormatTypes.Geom(), "POINT (47.3488070138318 -122.598149943144)") == GeoFormatTypes.WellKnownText{GeoFormatTypes.Geom,String}(GeoFormatTypes.Geom(), "POINT (47.3488013802885 -122.598135130878)")
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:34
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:32
+ [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:31
+ [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:7
+reciprocal reprojection of wkt: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:35
+  Expression: convert(AG.Geometry, AG.reproject(result, GFT.EPSG(4326), GFT.EPSG(2927))) |> GeoInterface.coordinates ≈ [1.12035157e6, 741921.42]
+   Evaluated: [1.12035518599845e6, 741919.268191923] ≈ [1.12035157e6, 741921.42]
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:35
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:32
+ [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:31
+ [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:7
+reproject vector, vector of vector, or tuple: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:40
+  Expression: AG.reproject(coord, GFT.EPSG(2927), GFT.EPSG(4326)) ≈ [47.348801, -122.598135]
+   Evaluated: [47.3488070138318, -122.5981499431438] ≈ [47.348801, -122.598135]
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:40
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:39
+ [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:31
+ [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:7
+reproject vector, vector of vector, or tuple: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:41
+  Expression: AG.reproject([coord], GFT.EPSG(2927), GFT.EPSG(4326)) ≈ [[47.348801, -122.598135]]
+   Evaluated: [[47.3488070138318, -122.5981499431438]] ≈ [[47.348801, -122.598135]]
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:41
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:39
+ [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:31
+ [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:7
+reproject vector, vector of vector, or tuple: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:43
+  Expression: AG.reproject(coord, GFT.EPSG(2927), GFT.EPSG(4326); order = :compliant) ≈ [47.348801, -122.598135]
+   Evaluated: [47.3488070138318, -122.5981499431438] ≈ [47.348801, -122.598135]
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:43
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:39
+ [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:31
+ [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:7
+reproject vector, vector of vector, or tuple: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:45
+  Expression: AG.reproject(coord, GFT.EPSG(2927), GFT.EPSG(4326); order = :trad) ≈ [-122.598135, 47.348801]
+   Evaluated: [-122.5981499431438, 47.3488070138318] ≈ [-122.598135, 47.348801]
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:45
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:39
+ [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:31
+ [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:7
+reproject vector, vector of vector, or tuple: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:47
+  Expression: AG.reproject([coord], GFT.EPSG(2927), convert(GFT.WellKnownText, GFT.EPSG(4326)); order = :compliant) ≈ [[47.348801, -122.598135]]
+   Evaluated: [[47.3488070138318, -122.5981499431438]] ≈ [[47.348801, -122.598135]]
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:47
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:39
+ [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:31
+ [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:7
+reproject vector, vector of vector, or tuple: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:49
+  Expression: AG.reproject([coord], GFT.EPSG(2927), convert(GFT.WellKnownText, GFT.EPSG(4326)); order = :trad) ≈ [[-122.598135, 47.348801]]
+   Evaluated: [[-122.5981499431438, 47.3488070138318]] ≈ [[-122.598135, 47.348801]]
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:49
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:39
+ [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:31
+ [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:7
+reproject vector, vector of vector, or tuple: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:52
+  Expression: AG.reproject([coord], GFT.EPSG(2927), convert(GFT.ProjString, GFT.EPSG(4326)); order = :compliant) ≈ [[-122.598135, 47.348801]]
+   Evaluated: [[-122.5981499431438, 47.3488070138318]] ≈ [[-122.598135, 47.348801]]
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:52
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:39
+ [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:31
+ [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:7
+reproject vector, vector of vector, or tuple: Test Failed at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:54
+  Expression: AG.reproject([coord], GFT.EPSG(2927), convert(GFT.ProjString, GFT.EPSG(4326)); order = :trad) ≈ [[-122.598135, 47.348801]]
+   Evaluated: [[-122.5981499431438, 47.3488070138318]] ≈ [[-122.598135, 47.348801]]
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:54
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:39
+ [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:31
+ [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/test_cookbook_projection.jl:7
+Test Summary:                                         | Pass  Fail  Total
+ArchGDAL                                              | 1210    27   1237
+  convert point format                                |    7            7
+  convert crs format                                  |    1            1
+  Tables Support                                      |   46           46
+  Raster Tutorial                                     |   21           21
+  Vector Tutorial                                     |   18           18
+  Incomplete GeoInterface geometries                  |    7            7
+  Create a Point                                      |   49           49
+  Testing construction of complex geometries          |   36           36
+  Testing remaining methods for geometries            |   26     9     35
+  Spatial Reference Systems                           |    5     1      6
+  Testing GDAL Type Methods                           |   27           27
+  Testing Displays for different objects              |    9            9
+  Testing ConfigOptions                               |   18           18
+  Test Driver Capabilities                            |    9            9
+  In-Memory Driver                                    |   25           25
+  Testing FeatureLayer Methods                        |   63     2     65
+    Test with setting to index of geomfield           |    8            8
+  Tests for field defn                                |   29           29
+  Tests for Geom Field Defn                           |   14           14
+  Tests for Feature Defn                              |   36           36
+  Iterator interface Window Iterator                  |    5            5
+  Testing StyleTable Methods                          |   34           34
+  Test methods for raster dataset                     |    8            8
+  Test methods for vector dataset                     |   25           25
+  Test methods for rasterband                         |   33           33
+  version 1                                           |    2            2
+  version 2                                           |    2            2
+  version 3                                           |    2            2
+  version 4                                           |    2            2
+  version 5                                           |    2            2
+  version 6                                           |    2            2
+  version 7                                           |    2            2
+  version 8                                           |    2            2
+  version 9                                           |    2            2
+  version 10                                          |    2            2
+  version 11                                          |    2            2
+  buffer size                                         |    5            5
+  RasterDataset Type                                  |   19           19
+  Test Array getindex                                 |   19           19
+  Test Array setindex                                 |   11           11
+  Test Array constructor                              |    2            2
+  Test Formats for Spatial Reference Systems          |   14           14
+  Cloning NULL SRS                                    |    2            2
+  Getting and Setting Attribute Values                |    6            6
+  GDAL Error                                          |    6            6
+  GDAL Info                                           |    2            2
+  GDAL Translate                                      |    1            1
+  GDAL Build VRT                                      |    1            1
+  GDAL DEM Processing                                 |    1            1
+  GDAL Near Black                                     |    1            1
+  GDAL Warp                                           |    6            6
+  GDAL Grid                                           |    1            1
+  GDAL Rasterize                                      |    1            1
+  GDAL Vector Translate                               |    1            1
+  Testing Raster Attribute Tables                     |   50           50
+  Testing Color Tables                                |   24           24
+  Homework 1                                          |  213          213
+  Homework 2                                          |    3            3
+  Homework 3                                          |    1            1
+  Homework 4a                                         |   46           46
+  Homework 4b                                         |    6            6
+  Homework 5a                                         |    2            2
+  Homework 5b                                         |    2            2
+  Interpolation along a LineString                    |    8            8
+  Contains operation                                  |    6            6
+  Convex Hull                                         |    3            3
+  Delaunay Triangulation                              |   10           10
+  Distance                                            |    1            1
+  Centroid                                            |    8            8
+  Point on Surface                                    |   10           10
+  Intersects                                          |    5            5
+  Within                                              |    5            5
+  Simplify                                            |    4            4
+  Create a Point                                      |    6            6
+  Create a LineString                                 |    5            5
+  Create a Polygon                                    |    5            5
+  Create a Polygon with holes                         |    5            5
+  Create a MultiPoint                                 |    5            5
+  Create a MultiLineString                            |    6            6
+  Create a MultiPolygon                               |    5            5
+  Create a GeometryCollection                         |    3            3
+  Create Geometry from WKT                            |    4            4
+  Create Geometry from GeoJSON                        |    4            4
+  Create Geometry from GML                            |    4            4
+  Create Geometry from WKB                            |    4            4
+  Count Points in a LineString                        |    2            2
+  Count Points in a MultiPoint                        |    2            2
+  Iterate over Geometries in a Geometry               |    1            1
+  Iterate over Points in a Geometry                   |    1            1
+  Buffer a Geometry                                   |    2            2
+  Calculate Envelope of a Geometry                    |    1            1
+  Calculate the Area of a Geometry                    |    1            1
+  Calculate the Length of a Geometry                  |    1            1
+  Get the geometry type (as a string) from a Geometry |    3            3
+  Calculate intersection between two Geometries       |          2      2
+  Calculate union between two Geometries              |          2      2
+  Write Geometry to GeoJSON|GML|WKT|WKB               |    4            4
+  Force polygon to multipolygon                       |    3            3
+  Reproject a Geometry                                |    5    11     16
+    Method 1                                          |    1     1      2
+    Method 2                                          |    4            4
+    Use reproject                                     |         10     10
+      reciprocal reprojection of wkt                  |          2      2
+      reproject vector, vector of vector, or tuple    |          8      8
+  Get Projection                                      |   14           14
+ERROR: LoadError: Some tests did not pass: 1210 passed, 27 failed, 0 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/ArchGDAL/j9NPL/test/runtests.jl:8
+CPLDestroyMutex: Error = 16 (Device or resource busy)
+
+PkgEval failed: Package ArchGDAL errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:34:05.136
+CPU usage: 108.80s (100.83s user, 8.10s kernel)
+
+Network usage:
+- eth0: 122.839 MiB received, 718.891 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":87,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":106,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":111,"op":"Total","minor":0},{"major":253,"value":87,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":106,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":111,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":1818624,"op":"Read","minor":0},{"major":259,"value":135168,"op":"Write","minor":0},{"major":259,"value":1925120,"op":"Sync","minor":0},{"major":259,"value":28672,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1953792,"op":"Total","minor":0},{"major":253,"value":1818624,"op":"Read","minor":2},{"major":253,"value":135168,"op":"Write","minor":2},{"major":253,"value":1925120,"op":"Sync","minor":2},{"major":253,"value":28672,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1953792,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":544514048,"max_usage":1502588928,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":207339520,"inactive_file":1216512,"inactive_anon":80424960,"total_pgfault":2448765,"total_cache":306135040,"total_rss_huge":0,"total_active_anon":431050752,"total_pgmajfault":0,"pgpgin":1809192,"rss_huge":0,"mapped_file":0,"total_inactive_file":1216512,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":1683860,"hierarchical_memsw_limit":0,"cache":306135040,"active_file":811008,"pgfault":2448765,"total_mapped_file":0,"total_pgpgout":1683860,"total_writeback":0,"rss":207339520,"unevictable":0,"total_inactive_anon":80424960,"total_pgpgin":1809192,"active_anon":431050752,"total_active_file":811008},"limit":540965302272},"name":"/ArchGDAL-pNRZvHKS","networks":{"eth0":{"rx_bytes":128806195,"rx_packets":10376,"tx_packets":9265,"tx_bytes":736144,"tx_dropped":0,"rx_dropped":5,"tx_errors":0,"rx_errors":0}},"id":"4d94aebad899d347e0452044562a8a0fccee6300e54f90d9532a220dbdcd9820","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5540627424522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":100830000000,"usage_in_kernelmode":8100000000,"total_usage":108799827055,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,108797439224,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4010,2383821,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:34:05.139185375Z"}

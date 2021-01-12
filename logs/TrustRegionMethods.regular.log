@@ -1,0 +1,1153 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:49:10.779
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:49:12.612
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed ArgCheck ───────────────────── v2.1.0
+  Installed TrustRegionMethods ─────────── v0.3.1
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed DiffResults ────────────────── v1.0.3
+  Installed KrylovKit ──────────────────── v0.4.2
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed UnPack ─────────────────────── v0.1.0
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed DocStringExtensions ────────── v0.8.3
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [14486370] + TrustRegionMethods v0.3.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [dce04be8] + ArgCheck v2.1.0
+  [56f22d72] + Artifacts v1.3.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [ffbed154] + DocStringExtensions v0.8.3
+  [f6369f11] + ForwardDiff v0.10.14
+  [692b3bcd] + JLLWrappers v1.2.0
+  [0b1a1467] + KrylovKit v0.4.2
+  [1914dd2f] + MacroTools v0.5.6
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [77ba4419] + NaNMath v0.3.5
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [14486370] + TrustRegionMethods v0.3.1
+  [3a884ed6] + UnPack v0.1.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T22:49:18.126
+#
+
+    Testing TrustRegionMethods
+Status `/tmp/jl_8JOQ9Q/Project.toml`
+  [dce04be8] ArgCheck v2.1.0
+  [163ba53b] DiffResults v1.0.3
+  [ffbed154] DocStringExtensions v0.8.3
+  [f6369f11] ForwardDiff v0.10.14
+  [0b1a1467] KrylovKit v0.4.2
+  [429524aa] Optim v1.2.2
+  [14486370] TrustRegionMethods v0.3.1
+  [3a884ed6] UnPack v0.1.0
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [8dfed614] Test
+Status `/tmp/jl_8JOQ9Q/Manifest.toml`
+  [dce04be8] ArgCheck v2.1.0
+  [4fba245c] ArrayInterface v2.14.13
+  [56f22d72] Artifacts v1.3.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [ffbed154] DocStringExtensions v0.8.3
+  [1a297f60] FillArrays v0.11.0
+  [6a86dc24] FiniteDiff v2.7.2
+  [f6369f11] ForwardDiff v0.10.14
+  [692b3bcd] JLLWrappers v1.2.0
+  [0b1a1467] KrylovKit v0.4.2
+  [d3d80556] LineSearches v7.1.1
+  [1914dd2f] MacroTools v0.5.6
+  [e1d29d7a] Missings v0.4.4
+  [46d2c3a1] MuladdMacro v0.2.2
+  [d41bc354] NLSolversBase v7.7.1
+  [77ba4419] NaNMath v0.3.5
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [429524aa] Optim v1.2.2
+  [bac558e1] OrderedCollections v1.3.2
+  [d96e819e] Parameters v0.12.1
+  [85a6dd25] PositiveFactorizations v0.2.4
+  [ae029012] Requires v1.1.2
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.2.1
+  [90137ffa] StaticArrays v1.0.1
+  [2913bbd2] StatsBase v0.33.2
+  [14486370] TrustRegionMethods v0.3.1
+  [3a884ed6] UnPack v0.1.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary:                             | Pass  Total
+Nonlinear model constructor sanity checks |    6      6
+Test Summary: | Pass  Total
+Cauchy point  |  300    300
+Test Summary:    | Pass  Total
+dogleg quadratic |  100    100
+Test Summary:              | Pass  Total
+eigensolver type stability |    3      3
+Test Summary:             | Pass  Total
+trust region solver tests |  600    600
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+Test Summary: | Pass  Total
+singularities |    3      3
+Test Summary:       | Pass  Total
+ForwardDiff wrapper |    5      5
+Test Summary: | Pass  Total
+printing      |    3      3
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 1.23e-14, Δ = 1020.0
+  x = [0.994, -0.101, -0.2]
+  r = [6.22e-15, 1.06e-14, 4.44e-16]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 7.07e-15, Δ = 2050.0
+  x = [-1.34, 0.931]
+  r = [4.88e-15, 5.11e-15]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 1.03e-12, Δ = 2050.0
+  x = [-0.794, 1.34, -0.768, 0.641, -0.748, 2.31]
+  r = [1.08e-13, 4.31e-14, -1.19e-13, 0.0, -9.13e-13, 4.37e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 6.96e-14, Δ = 2050.0
+  x = [0.398, -1.24, 0.69, -1.35]
+  r = [4.26e-14, 5.24e-14, 3.33e-15, 1.62e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 2.89e-14, Δ = 2050.0
+  x = [-0.443, -1.54, 0.735, -0.931]
+  r = [-9.1e-15, 2.51e-14, -9.1e-15, -6.22e-15]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 2.32e-14, Δ = 1020.0
+  x = [-0.118, 1.33]
+  r = [2.31e-14, 1.55e-15]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 2.44e-13, Δ = 2050.0
+  x = [-0.307, 1.26, 1.38, -0.706, -0.387, -0.783, -0.508]
+  r = [-9.86e-14, 7.62e-14, -6.48e-14, -4.54e-14, -1.8e-13, 4.31e-14, 5.91e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 4.18e-14, Δ = 2050.0
+  x = [2.52, -1.1, 1.26]
+  r = [3.69e-14, -1.72e-14, 9.77e-15]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 14 steps
+  with ‖x‖₂ = 3.68e-13, Δ = 4100.0
+  x = [-1.94, -0.532, 0.529, -2.11, 0.0222, -0.225, -1.05, -0.243, 0.841, -2.03]
+  r = [1.74e-13, -2.93e-13, 6.39e-14, 2.0e-14, 7.13e-14, -8.88e-16, -2.44e-14, -7.51e-14, -3.82e-14, -4.84e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 6.18e-14, Δ = 1020.0
+  x = [0.417, 0.94, 0.31, 0.733]
+  r = [-1.02e-14, 3.85e-14, -4.55e-14, -1.24e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 1.69e-13, Δ = 2050.0
+  x = [-0.522, -0.438, 0.843, -0.809, -0.178, 0.711, 0.256, -0.497, -0.418, -1.2]
+  r = [-2.02e-14, -4.35e-14, 5.73e-14, 3.02e-14, -5.22e-14, 8.22e-15, 1.01e-13, -2.53e-14, -8.45e-14, -3.69e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 8.14e-13, Δ = 2050.0
+  x = [0.554, -1.04, -1.23, 0.995, -0.00676, 1.44, 1.02, 0.03]
+  r = [1.1e-13, -2.94e-13, -4.61e-13, 9.1e-14, 2.58e-13, -4.1e-13, 1.51e-13, 2.94e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 9.75e-14, Δ = 2050.0
+  x = [2.62, 0.232]
+  r = [9.55e-14, -1.95e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 1.22e-13, Δ = 1020.0
+  x = [-0.00112, -0.863, 0.922, 0.913]
+  r = [-1.29e-14, 1.13e-13, -2.13e-14, 3.64e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 1.29e-13, Δ = 1020.0
+  x = [-1.44, 0.153]
+  r = [1.29e-13, 4.0e-15]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 3.2e-14, Δ = 2050.0
+  x = [0.924, 0.342, 0.476, -1.43]
+  r = [1.79e-14, -2.35e-14, -4.44e-16, 1.22e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 1.15e-12, Δ = 2050.0
+  x = [-1.07, -1.01, -0.0875, -0.449, -0.7, 1.51, 1.02, -1.5, -1.31, 0.0896]
+  r = [-6.8e-13, 2.28e-13, -2.75e-14, -3.38e-13, -2.42e-13, -5.76e-13, 1.39e-13, -1.17e-13, 3.03e-13, 4.18e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 1.51e-13, Δ = 2050.0
+  x = [-0.49, -1.15, 0.838, 0.26, 0.353, -0.729, -1.15]
+  r = [6.37e-14, 3.26e-14, 4.17e-14, -2.22e-15, 2.66e-15, -7.53e-14, -1.02e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 3.46e-14, Δ = 1020.0
+  x = [-0.978, 0.851]
+  r = [-2.75e-14, 2.09e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 9.36e-13, Δ = 2050.0
+  x = [1.53, -0.71, -1.78, -0.703, 0.385, 0.0616, -1.68, 1.75, 0.421]
+  r = [-5.15e-14, -8.35e-14, 4.73e-13, -9.77e-15, 6.15e-14, -5.7e-13, -4.05e-13, -3.65e-13, 1.34e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 3.56e-14, Δ = 2050.0
+  x = [0.163, 1.02, -0.46, 1.07, 0.166, 0.841, -0.141, -0.346]
+  r = [2.66e-15, -7.11e-15, -2.22e-14, 8.66e-15, -2.18e-14, 3.89e-15, -1.24e-14, -4.44e-16]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 14 steps
+  with ‖x‖₂ = 5.37e-14, Δ = 4100.0
+  x = [2.2, 0.567, -1.14, 2.41, 0.983, 1.72]
+  r = [4.24e-14, 2.44e-15, -2.84e-14, -1.2e-14, -9.33e-15, 6.44e-15]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 6.38e-14, Δ = 1020.0
+  x = [-0.534, 0.21, 0.74, -0.0663, 0.925]
+  r = [-8.55e-15, -2.24e-14, 1.11e-14, -4.15e-14, -4.06e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 9.25e-14, Δ = 2050.0
+  x = [-0.147, -0.0451, -1.88, 0.642]
+  r = [1.53e-14, 7.19e-14, 4.02e-15, 5.6e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 2.26e-14, Δ = 2050.0
+  x = [1.29, -1.47, -0.796]
+  r = [3.33e-15, 1.23e-14, -1.87e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 14 steps
+  with ‖x‖₂ = 5.03e-13, Δ = 4100.0
+  x = [-1.3, -3.2, -1.41, -0.409, -2.13, 0.611, 0.67]
+  r = [-1.45e-13, 1.89e-13, -8.62e-14, 3.16e-13, 1.51e-13, -2.52e-13, 5.86e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 10 steps
+  with ‖x‖₂ = 2.08e-14, Δ = 256.0
+  x = [-0.386, 0.028]
+  r = [-1.47e-14, -1.48e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 1.13e-13, Δ = 2050.0
+  x = [-1.05, -0.0489, 0.143, 0.714, 1.18, -1.9]
+  r = [-1.38e-14, -7.02e-14, -2.48e-14, -6.37e-14, 5.15e-14, -1.64e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 14 steps
+  with ‖x‖₂ = 1.03e-13, Δ = 4100.0
+  x = [2.99, 0.584, 1.11, 0.353, -1.16, 0.866, -0.301]
+  r = [-5.24e-14, 8.33e-15, -1.51e-14, -6.57e-14, -4.44e-15, 3.33e-14, -4.71e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 7.47e-13, Δ = 2050.0
+  x = [-0.531, 0.091, -1.35, -1.32, -0.763, 0.575, -0.129, 1.74]
+  r = [3.47e-13, -1.75e-13, 3.61e-13, -1.73e-13, 2.5e-13, 2.66e-13, 3.25e-13, -8.39e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 8.67e-13, Δ = 2050.0
+  x = [1.32, 0.141, -0.33, -0.964, 0.38, 1.05, -2.08, 0.375]
+  r = [-2.25e-13, -2.64e-13, 6.17e-14, 1.05e-13, -4.96e-13, -5.6e-14, -1.66e-13, 5.83e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 14 steps
+  with ‖x‖₂ = 1.1e-12, Δ = 4100.0
+  x = [2.4, -3.72, -0.284, -1.82, -0.54, -1.45, -0.218, 0.903, -1.59, 0.0377]
+  r = [2.42e-13, -7.38e-13, 4.09e-14, -5.15e-13, 2.3e-13, -1.49e-13, 4.1e-13, -2.84e-13, -5.0e-14, 8.81e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 1.97e-13, Δ = 2050.0
+  x = [-0.0197, -0.458, 0.509, 0.493, -0.683, -1.12, 1.04]
+  r = [-4.22e-14, -8.17e-14, -8.26e-14, -5.91e-14, -2.31e-14, 1.39e-13, -4.44e-16]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 1.5e-13, Δ = 2050.0
+  x = [0.942, 0.368, -0.817, 0.653, 0.695, 1.27, -0.175, -0.354]
+  r = [-5.0e-15, 5.88e-14, -2.66e-15, 9.79e-14, -5.82e-14, 4.62e-14, 2.22e-16, -6.24e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 11 steps
+  with ‖x‖₂ = 2.42e-14, Δ = 512.0
+  x = [0.126, 0.603, 0.339]
+  r = [2.35e-14, 1.33e-15, 5.66e-15]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 5.32e-13, Δ = 2050.0
+  x = [-2.11, -0.89, -1.97, 0.81, -1.24]
+  r = [3.37e-13, 3.44e-13, 2.03e-13, 2.04e-14, -9.95e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 2.26e-14, Δ = 2050.0
+  x = [1.16, 0.218, -1.61, 1.11]
+  r = [2.44e-15, -1.33e-15, -2.2e-14, 4.44e-15]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 8.68e-13, Δ = 2050.0
+  x = [0.38, 0.867, 0.224, -1.93, 2.17, 0.678, -0.138, -0.106, 0.888, -0.568]
+  r = [5.02e-14, 1.89e-13, -7.43e-13, 1.24e-13, 2.93e-14, 9.55e-14, 1.27e-14, -3.2e-13, 6.42e-14, -1.76e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 1.48e-13, Δ = 1020.0
+  x = [0.754, 0.294, -0.963, -0.454, -0.748, 0.165]
+  r = [1.16e-13, 0.0, -2.71e-14, -7.43e-14, -4.66e-14, 6.66e-16]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 1.35e-12, Δ = 2050.0
+  x = [-1.72, 0.452, -1.31, -1.03, -1.4, -0.0539, -0.603, 1.49, 0.474]
+  r = [3.71e-13, 8.87e-13, -3.12e-13, -5.45e-13, 1.37e-13, 4.31e-13, -9.81e-14, 4.88e-14, 5.32e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 1.11e-12, Δ = 2050.0
+  x = [-0.102, 0.925, 0.864, 0.32, -1.12, -0.578, -0.0708, -0.865, -1.86]
+  r = [9.05e-13, -6.66e-14, -2.11e-13, -2.72e-13, -7.22e-15, 4.17e-13, 3.23e-13, 7.33e-15, -1.02e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 11 steps
+  with ‖x‖₂ = 1.27e-14, Δ = 512.0
+  x = [0.511, 0.108, -0.378]
+  r = [1.24e-14, -8.88e-16, 2.5e-15]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 3.33e-13, Δ = 1020.0
+  x = [1.72, -0.31, -0.344, -0.724]
+  r = [-2.22e-13, 2.33e-13, -5.06e-14, -6.84e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 14 steps
+  with ‖x‖₂ = 9.11e-13, Δ = 4100.0
+  x = [2.58, -0.524, -2.23, -0.606, 0.166, -0.98, -0.097, 1.83, 0.21]
+  r = [-3.82e-13, 3.22e-13, 1.03e-13, -6.88e-14, -1.77e-13, 1.56e-13, -5.51e-14, 1.17e-13, -7.03e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 1.01e-13, Δ = 2050.0
+  x = [1.14, 0.87, 1.05, 0.357, 0.79, -0.0822, -0.172, 0.161]
+  r = [-4.44e-16, 2.13e-14, 5.4e-14, 1.78e-14, -4.82e-14, 2.98e-14, 1.39e-14, -5.6e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 3.36e-13, Δ = 1020.0
+  x = [-0.346, -0.372, 0.779, 0.0506, 0.0442, -0.618, 0.555, 0.211, -0.126, -0.283]
+  r = [1.56e-13, -5.55e-15, 2.0e-14, 1.02e-13, 2.47e-13, 8.75e-14, 8.88e-16, -2.4e-14, -7.95e-14, -4.9e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 5.4e-13, Δ = 2050.0
+  x = [-0.923, -1.4, -0.0404, 1.52, -0.781, 1.8, 1.02]
+  r = [-9.95e-14, 2.17e-13, 1.62e-13, 9.73e-14, 1.68e-13, -2.55e-13, 3.26e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 4.14e-14, Δ = 2050.0
+  x = [0.318, -0.691, -0.728, 0.586, 0.594, 0.361, 0.803, -0.551, 0.495]
+  r = [-4.0e-15, -7.11e-15, -1.04e-14, 1.14e-14, -2.02e-14, -7.44e-15, 2.85e-14, -4.44e-16, 1.13e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 1.4e-13, Δ = 2050.0
+  x = [1.6, 0.767, 0.777, 1.07, -0.348, -0.246]
+  r = [6.22e-14, -6.71e-14, -4.0e-14, 3.38e-14, 8.33e-15, -9.2e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 4.97e-14, Δ = 1020.0
+  x = [-1.36, -0.584]
+  r = [-4.0e-15, -4.95e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 5.86e-13, Δ = 2050.0
+  x = [-0.601, 1.32, -0.632, -0.922, 0.357, 1.87, -0.433]
+  r = [3.64e-13, -2.15e-13, -2.64e-13, -2.57e-13, -1.33e-13, 7.24e-14, 7.64e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 14 steps
+  with ‖x‖₂ = 7.58e-14, Δ = 4100.0
+  x = [-0.262, 1.22, -1.2, -1.2, 0.134, -1.09, -2.39, 0.364, 0.0904]
+  r = [6.22e-15, -1.29e-14, 1.64e-14, 8.88e-16, -5.51e-14, 3.55e-14, 7.94e-15, -3.02e-14, 0.0]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 1.41e-13, Δ = 2050.0
+  x = [0.0708, -1.47, 0.736, 0.812, 1.11]
+  r = [-2.84e-14, -6.99e-14, 6.31e-14, -6.22e-15, 1.01e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 14 steps
+  with ‖x‖₂ = 1.67e-13, Δ = 4100.0
+  x = [-0.97, 1.92, 1.67, -0.292, 0.271, 1.81, 1.24, -0.826, -0.802]
+  r = [6.26e-14, -8.88e-14, -7.68e-14, 1.78e-14, 1.77e-14, -4.91e-14, -1.5e-14, -3.2e-14, -7.59e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 9.26e-14, Δ = 2050.0
+  x = [1.9, -2.09]
+  r = [2.29e-14, 8.97e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 1.78e-13, Δ = 2050.0
+  x = [0.928, -0.487, -1.13, -1.52]
+  r = [-1.25e-13, -9.77e-14, -7.06e-14, 3.86e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 14 steps
+  with ‖x‖₂ = 3.88e-13, Δ = 4100.0
+  x = [-0.969, 0.908, 1.97, 2.28, -0.581, 0.908, 1.76, 1.89]
+  r = [8.75e-14, -9.77e-15, 1.07e-14, -6.08e-14, 7.51e-14, -7.84e-14, 2.24e-13, 2.78e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 2.47e-13, Δ = 1020.0
+  x = [-0.0131, -1.16, -0.333, -0.0275, -0.216, 0.87, -0.2, -0.079]
+  r = [8.94e-14, 9.48e-14, 1.97e-14, -6.08e-14, 1.11e-15, -3.53e-14, 1.67e-13, -1.04e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 2.71e-14, Δ = 2050.0
+  x = [1.57, -0.149, -0.0729, -0.68]
+  r = [-8.88e-15, -1.94e-15, 1.95e-14, -1.64e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 14 steps
+  with ‖x‖₂ = 4.81e-14, Δ = 4100.0
+  x = [1.75, 1.18, -0.271, 1.62, 2.21, -0.296, 0.195]
+  r = [7.11e-15, -1.24e-14, -2.66e-15, -3.64e-14, -1.1e-14, -4.0e-15, -2.53e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 5.81e-13, Δ = 2050.0
+  x = [0.473, 0.155, 0.902, -0.945, -2.02, 0.00623, 0.252, 0.596, -0.197]
+  r = [8.3e-14, -1.17e-13, 2.44e-13, 2.44e-13, -8.53e-14, -2.68e-13, 1.82e-13, -1.67e-13, 2.41e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 1.26e-12, Δ = 2050.0
+  x = [-0.591, 0.577, 0.438, 1.06, 0.641, -2.72, -0.741, -0.73]
+  r = [7.13e-13, -1.4e-13, 3.46e-14, 6.85e-13, -6.8e-13, 2.19e-13, -2.79e-13, 6.75e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 2.29e-13, Δ = 1020.0
+  x = [0.236, 1.12, 1.53]
+  r = [2.06e-13, -7.11e-14, -7.06e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 3.33e-13, Δ = 2050.0
+  x = [-0.445, 0.788, 1.17, 0.812, 0.439, -1.11, -1.03, 0.155]
+  r = [-1.32e-13, 1.02e-13, -8.11e-14, 1.83e-13, -1.33e-15, 1.61e-13, -9.43e-14, -9.08e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 3.52e-14, Δ = 2050.0
+  x = [1.74, -1.5]
+  r = [-3.52e-14, -1.78e-15]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 6.08e-13, Δ = 2050.0
+  x = [-0.241, -1.73, 1.07, -1.16, -1.43]
+  r = [-7.95e-14, -3.36e-13, 3.76e-14, -8.26e-14, 4.92e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 14 steps
+  with ‖x‖₂ = 1.08e-13, Δ = 4100.0
+  x = [-0.798, -1.72, 3.28]
+  r = [-4.82e-14, -8.7e-14, -4.17e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 5.53e-13, Δ = 2050.0
+  x = [1.57, 0.397, 2.39, -0.606, 0.541, -0.287, -1.05]
+  r = [1.11e-13, -7.59e-14, -4.57e-13, 1.67e-13, -1.56e-13, 5.77e-14, -1.51e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 1.76e-13, Δ = 2050.0
+  x = [-0.0133, 0.873, 0.239, 0.752, 0.569, -1.29, -1.55, -0.126]
+  r = [6.0e-14, -8.49e-14, 4.0e-14, 6.93e-14, -1.91e-14, 1.04e-13, 2.26e-14, -4.66e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 1.69e-14, Δ = 2050.0
+  x = [-0.72, -0.909, -0.627, -1.09]
+  r = [6.0e-15, -1.11e-14, -6.44e-15, -9.21e-15]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 6.77e-13, Δ = 2050.0
+  x = [-2.02, 0.455, -1.59, -0.696, -0.964]
+  r = [3.56e-13, 1.42e-13, 4.83e-13, 2.28e-13, 1.6e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 5.86e-14, Δ = 1020.0
+  x = [0.0749, -1.67]
+  r = [5.84e-14, -4.64e-15]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 3.07e-13, Δ = 2050.0
+  x = [-0.475, -0.423, -0.732, -0.567, 1.36, 0.184, 1.43]
+  r = [-1.74e-13, -1.73e-13, 8.17e-14, 6.57e-14, 1.04e-13, 8.79e-14, -6.66e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 9.98e-14, Δ = 1020.0
+  x = [0.12, 0.783, 1.37]
+  r = [9.37e-14, -2.09e-14, 2.73e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 5.32e-15, Δ = 2050.0
+  x = [-0.597, -1.19, -1.17]
+  r = [-4.44e-16, -1.78e-15, -5.0e-15]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 1.36e-14, Δ = 1020.0
+  x = [-1.16, -0.381]
+  r = [1.35e-14, -1.11e-15]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 4.65e-13, Δ = 2050.0
+  x = [-0.288, 1.45, 0.197, -0.762, -2.32]
+  r = [1.5e-13, 1.11e-13, 1.3e-13, -3.94e-13, -9.59e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 2.25e-13, Δ = 2050.0
+  x = [-0.884, 0.103, 2.32, 0.732]
+  r = [1.56e-13, 4.09e-14, -1.53e-13, 3.21e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 1.84e-13, Δ = 2050.0
+  x = [0.502, -0.247, -1.06, -1.29, -0.665, 0.339, 0.306, 0.197, -0.287, 0.421]
+  r = [-3.01e-14, 1.78e-15, -6.66e-15, 2.18e-14, 9.74e-14, -4.02e-14, -5.02e-14, 4.31e-14, 7.14e-14, -1.08e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 1.49e-12, Δ = 2050.0
+  x = [0.0169, -1.19, -1.19, -0.996, -0.642, 1.67, -0.267, -0.22, -0.692]
+  r = [-5.13e-14, 1.3e-12, -4.67e-13, -3.04e-13, 2.14e-13, 2.49e-14, -3.12e-13, 2.28e-13, 1.49e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 5.87e-13, Δ = 2050.0
+  x = [-1.33, -0.599, -1.0, 1.56, -2.36, -0.141]
+  r = [-1.4e-14, 1.14e-13, 7.66e-14, -1.07e-13, 5.53e-13, 9.19e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 3.22e-14, Δ = 2050.0
+  x = [-0.751, 0.4, -0.227, 1.62, -0.0635, -0.459]
+  r = [-6.66e-15, 0.0, 2.44e-15, 1.35e-14, -5.77e-15, -2.78e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 3.29e-13, Δ = 2050.0
+  x = [0.119, -0.423, -1.14, -0.454, 2.01, 0.101, -0.685, 0.443, -0.213]
+  r = [1.39e-13, 1.02e-13, 8.08e-14, -1.18e-13, -6.0e-14, 1.64e-13, 1.51e-13, -5.02e-14, -4.75e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 2.94e-13, Δ = 2050.0
+  x = [1.64, -1.51, -0.0452, 0.236, -1.57, 0.436]
+  r = [3.3e-14, -1.15e-13, -2.42e-13, 8.66e-14, 5.64e-14, 5.66e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 14 steps
+  with ‖x‖₂ = 3.33e-13, Δ = 4100.0
+  x = [-0.841, 2.12, 1.22, -0.992, -1.27, -0.243, 1.51, -0.588, 0.658, -0.848]
+  r = [-3.24e-14, -1.43e-13, -5.95e-14, 4.6e-14, 1.69e-13, 1.81e-13, -1.47e-13, -1.54e-14, -1.84e-14, -1.93e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 2.21e-13, Δ = 1020.0
+  x = [0.0843, 0.709, -1.12, -1.11]
+  r = [-3.99e-14, 1.99e-13, 8.5e-14, -1.95e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 1.82e-13, Δ = 1020.0
+  x = [0.318, 0.27, -1.67, 0.571]
+  r = [-1.6e-13, 7.99e-14, 3.2e-14, 1.03e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 3.87e-13, Δ = 2050.0
+  x = [1.56, -0.0831, 1.09, 0.198, 0.0348, -1.46, 0.768, -1.76]
+  r = [-2.33e-13, 5.6e-14, -7.73e-14, -1.35e-13, 2.66e-14, -1.13e-13, 1.53e-13, 1.77e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 3.29e-14, Δ = 1020.0
+  x = [1.57, 0.0878]
+  r = [2.16e-15, 3.29e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 14 steps
+  with ‖x‖₂ = 5.88e-13, Δ = 4100.0
+  x = [-0.857, -0.188, 1.78, 0.0358, -1.4, 0.946, -0.68, 2.05, 1.42]
+  r = [-3.53e-14, 1.69e-13, -1.42e-13, 4.93e-13, -1.09e-14, 1.04e-13, -3.6e-14, 1.09e-13, 1.68e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 8.47e-14, Δ = 2050.0
+  x = [-2.0, 0.531, -1.17, 1.35]
+  r = [-6.08e-14, -2.53e-14, 5.04e-14, 1.69e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 11 steps
+  with ‖x‖₂ = 8.01e-16, Δ = 512.0
+  x = [-0.294, 0.353]
+  r = [-6.66e-16, -4.44e-16]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 1.27e-13, Δ = 2050.0
+  x = [-0.731, -0.198, -0.395, -0.15, 1.99]
+  r = [-2.26e-14, -3.54e-14, -1.08e-13, -5.02e-14, 1.33e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 1.63e-14, Δ = 1020.0
+  x = [0.222, -0.84, -0.97]
+  r = [-2.22e-15, -1.33e-14, 9.1e-15]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 5.17e-13, Δ = 2050.0
+  x = [-1.76, -1.36, -0.32, -0.0509, 0.848, -0.906, -0.475, -1.31]
+  r = [-1.69e-13, 2.84e-14, -2.93e-13, -2.58e-14, -1.55e-13, -2.93e-13, -1.72e-13, -1.09e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 14 steps
+  with ‖x‖₂ = 8.89e-14, Δ = 4100.0
+  x = [-0.485, 0.681, 1.24, -0.145, 1.29, -1.42, 2.1, -1.06]
+  r = [4.04e-14, 2.49e-14, 3.41e-14, 2.78e-14, -7.55e-15, 2.58e-14, -4.62e-14, 2.95e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 6.78e-13, Δ = 2050.0
+  x = [-0.684, 0.721, -1.16, 0.438, -0.365, -2.29, 1.26]
+  r = [-2.48e-13, 5.77e-14, -2.84e-14, -3.37e-13, 2.15e-14, 5.12e-13, -1.34e-13]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 7.54e-13, Δ = 2050.0
+  x = [-0.602, -0.51, 0.926, -1.5, 1.69, 0.381, 2.02]
+  r = [-2.53e-13, 1.53e-13, 6.93e-14, -6.53e-13, -2.1e-13, 1.99e-14, -7.24e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 12 steps
+  with ‖x‖₂ = 2.42e-13, Δ = 1020.0
+  x = [0.201, 0.513, -0.286, -0.0661, 0.935, -0.687, -0.188, -0.112]
+  r = [-1.45e-14, 1.18e-14, -1.13e-13, -5.06e-14, 5.44e-14, -1.82e-13, -6.13e-14, -5.66e-14]
+l = Dogleg()
+Nonlinear solver using trust region method converged after 13 steps
+  with ‖x‖₂ = 3.64e-13, Δ = 2050.0
+  x = [-1.45, 0.452, -0.86, 0.558, -0.439, -1.2, 1.64]
+  r = [-3.25e-13, -1.78e-14, -8.19e-14, -7.24e-14, 4.62e-14, 1.11e-13, -5.77e-15]
+Test Summary:  | Pass  Total
+linear problem |  500    500
+Test Summary:     | Pass  Total
+infeasible region |    5      5
+Test Summary:                                | Pass  Total
+basic consistency checks for test functions. |   20     20
+┌ Info: solver test
+│   f = F_NWp281()
+│   local_method = Dogleg()
+└ @ Main /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/test/test_nonlinear_problems.jl:138
+┌ Info: solver test
+│   f = F_NWp281()
+│   local_method = GeneralizedEigenSolver()
+└ @ Main /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/test/test_nonlinear_problems.jl:138
+┌ Info: solver test
+│   f = Rosenbrock()
+│   local_method = Dogleg()
+└ @ Main /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/test/test_nonlinear_problems.jl:138
+┌ Info: solver test
+│   f = Rosenbrock()
+│   local_method = GeneralizedEigenSolver()
+└ @ Main /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/test/test_nonlinear_problems.jl:138
+┌ Info: solver test
+│   f = PowellSingular()
+│   local_method = Dogleg()
+└ @ Main /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/test/test_nonlinear_problems.jl:138
+┌ Info: solver test
+│   f = PowellSingular()
+│   local_method = GeneralizedEigenSolver()
+└ @ Main /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/test/test_nonlinear_problems.jl:138
+┌ Info: solver test
+│   f = PowellBadlyScaled()
+│   local_method = Dogleg()
+└ @ Main /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/test/test_nonlinear_problems.jl:138
+┌ Info: solver test
+│   f = PowellBadlyScaled()
+│   local_method = GeneralizedEigenSolver()
+└ @ Main /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/test/test_nonlinear_problems.jl:138
+┌ Debug: rightmost eigenvalue not real
+│   M = [-3.0164865274647646e9 -9970.43999924092 424214.9832091585 1.4451726511527798; -9970.43999924092 -0.03297238615238407 1.4451726511527798 4.92326785782154e-6; 1.0 0.0 -3.0164865274647646e9 -9970.43999924092; 0.0 1.0 -9970.43999924092 -0.03297238615238407]
+│   λs = Complex{Float64}[-1.702695316697159e-5 + 0.0003435633166535993im, -1.702695316697159e-5 - 0.0003435633166535993im, -3.0164858761797e9 + 0.0im, -3.0164871788157406e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-1.4351208327401376e-11 + 1.1355851963876923e-9im, 2.8279412755960465e-8 - 0.00034356331775702085im, 3.3053154123572975e-6 + 3.207752266169792e-17im, -0.9999999409766587 - 9.715769448736047e-12im], [-1.4351208327401376e-11 - 1.1355851963876923e-9im, 2.8279412755960465e-8 + 0.00034356331775702085im, 3.3053154123572975e-6 - 3.207752266169792e-17im, -0.9999999409766587 + 9.715769448736047e-12im], [-0.999998821348454 + 0.0im, -3.305311690081296e-6 + 0.0im, -0.0015353471195673507 + 0.0im, -5.074807088624262e-9 + 0.0im], [-0.9999988213484531 + 0.0im, -3.3053117338034764e-6 + 0.0im, 0.0015353471200949271 + 0.0im, 5.0748064776739026e-9 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-3.58904960743474e9 -9978.684632802977 262431.8662969256 0.7418875366671267; -9978.684632802977 -0.027750119488863297 0.7418875366671267 2.0972952897392293e-6; 1.0 0.0 -3.58904960743474e9 -9978.684632802977; 0.0 1.0 -9978.684632802977 -0.027750119488863297]
+│   λs = Complex{Float64}[-6.384869795129225e-6 + 0.00033193657557317713im, -6.384869795129225e-6 - 0.00033193657557317713im, -3.58904909518177e9 + 0.0im, -3.5890501197432e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[9.228880005705448e-10 + 3.3779453682524223e-12im, -0.00033193661668933666 + 1.2123189063739659e-8im, -1.115396394155798e-17 - 2.7803137806601443e-6im, 4.024130665193984e-12 + 0.9999999449051744im], [9.228880005705448e-10 - 3.3779453682524223e-12im, -0.00033193661668933666 - 1.2123189063739659e-8im, -1.115396394155798e-17 + 2.7803137806601443e-6im, 4.024130665193984e-12 - 0.9999999449051744im], [0.9999980947475859 + 0.0im, 2.780308630250954e-6 + 0.0im, 0.0019520485311186138 + 0.0im, 5.427307852475175e-9 + 0.0im], [0.9999980947475884 + 0.0im, 2.780308643558e-6 + 0.0im, -0.0019520485299003162 + 0.0im, -5.42730760890111e-9 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-3.8939772440181813e9 -9983.608722992205 168372.50773194619 0.43755876002278166; -9983.608722992205 -0.025600356008240645 0.43755876002278166 1.1371076611716223e-6; 1.0 0.0 -3.8939772440181813e9 -9983.608722992205; 0.0 1.0 -9983.608722992205 -0.025600356008240645]
+│   λs = Complex{Float64}[-3.876422735942367e-6 + 0.0002639611618205151im, -3.876422735942367e-6 - 0.0002639611618205151im, -3.893976833711651e9 + 0.0im, -3.8939776543759046e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[6.767592431013443e-10 + 1.603353388913379e-12im, -0.00026396117530496385 - 3.68388976546008e-8im, 2.494817486784615e-17 - 2.5638589415905414e-6im, -9.724039092386463e-12 + 0.999999965158961im], [6.767592431013443e-10 - 1.603353388913379e-12im, -0.00026396117530496385 + 3.68388976546008e-8im, 2.494817486784615e-17 + 2.5638589415905414e-6im, -9.724039092386463e-12 - 0.999999965158961im], [0.9999970304049373 + 0.0im, 2.5638514134063835e-6 + 0.0im, 0.0024370422101094914 + 0.0im, 6.248232622848405e-9 + 0.0im], [0.9999970304049384 + 0.0im, 2.5638514207747943e-6 + 0.0im, -0.00243704220974018 + 0.0im, -6.24823274249435e-9 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-4.2113356116672163e9 -9984.721365366526 158205.2658185713 0.37848914015997376; -9984.721365366526 -0.023675232995168567 0.37848914015997376 9.054946968915623e-7; 1.0 0.0 -4.2113356116672163e9 -9984.721365366526; 0.0 1.0 -9984.721365366526 -0.023675232995168567]
+│   λs = Complex{Float64}[-2.3700328996014757e-6 + 0.00012142520188047283im, -2.3700328996014757e-6 - 0.00012142520188047283im, -4.211335213940298e9 + 0.0im, -4.21133600944148e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[2.8788894358694854e-10 + 6.821130426206518e-13im, -0.0001214252171758744 + 5.2572543596252075e-8im, -1.512184066912188e-17 - 2.37091559844182e-6im, 6.383632581959467e-12 + 0.9999999926251465im], [2.8788894358694854e-10 - 6.821130426206518e-13im, -0.0001214252171758744 - 5.2572543596252075e-8im, -1.512184066912188e-17 + 2.37091559844182e-6im, 6.383632581959467e-12 - 0.9999999926251465im], [0.9999968395557858 + 0.0im, 2.3709081208493808e-6 + 0.0im, 0.0025141346063168118 + 0.0im, 5.960801239168675e-9 + 0.0im], [0.9999968395557772 + 0.0im, 2.370908124893501e-6 + 0.0im, -0.002514134609707404 + 0.0im, -5.960800791663805e-9 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-4.710680783888791e9 -9991.39386223589 224601.55363057842 0.48007324184883493; -9991.39386223589 -0.021192919298990167 0.48007324184883493 1.0261296674658113e-6; 1.0 0.0 -4.710680783888791e9 -9991.39386223589; 0.0 1.0 -9991.39386223589 -0.021192919298990167]
+│   λs = Complex{Float64}[-1.2519851291824107e-6 + 0.0003822953573459086im, -1.2519851291824107e-6 - 0.0003822953573459086im, -4.710680309988512e9 + 0.0im, -4.710681257831458e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-5.581228639413825e-13 + 8.108517193998583e-10im, -1.0627296026521904e-7 - 0.0003822953699787148im, 2.121008319313136e-6 - 8.608290770328145e-17im, -0.9999999269228681 + 4.0627663451357765e-11im], [-5.581228639413825e-13 - 8.108517193998583e-10im, -1.0627296026521904e-7 + 0.0003822953699787148im, 2.121008319313136e-6 + 8.608290770328145e-17im, -0.9999999269228681 - 4.0627663451357765e-11im], [-0.9999977738406051 + 0.0im, -2.1210037506699704e-6 + 0.0im, -0.0021100496050764713 + 0.0im, -4.475432553314053e-9 + 0.0im], [-0.9999977738406339 + 0.0im, -2.1210037539774015e-6 + 0.0im, 0.0021100495913772064 + 0.0im, 4.47543360490858e-9 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-4.883344540162127e9 -9996.86165405212 123896.68182434273 0.2578372916884393; -9996.86165405212 -0.02046576525160614 0.2578372916884393 5.365766702249774e-7; 1.0 0.0 -4.883344540162127e9 -9996.86165405212; 0.0 1.0 -9996.86165405212 -0.02046576525160614]
+│   λs = Complex{Float64}[-9.165211730249056e-7 + 0.00016841172051635511im, -9.165211730249056e-7 - 0.00016841172051635511im, -4.883344188192829e9 + 0.0im, -4.883344892172353e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-7.58706292914137e-13 + 3.4476141597483334e-10im, -4.998844477244191e-8 - 0.00016841173126682727im, 2.047134178051207e-6 - 1.7251020006048047e-17im, -0.9999999858166475 + 8.418640716728425e-12im], [-7.58706292914137e-13 - 3.4476141597483334e-10im, -4.998844477244191e-8 + 0.00016841173126682727im, 2.047134178051207e-6 + 1.7251020006048047e-17im, -0.9999999858166475 - 8.418640716728425e-12im], [-0.9999959643981627 + 0.0im, -2.0471259433199185e-6 + 0.0im, -0.0028409827872684324 + 0.0im, -5.815872829838168e-9 + 0.0im], [-0.9999959643981227 + 0.0im, -2.047125948178757e-6 + 0.0im, 0.0028409828013653466 + 0.0im, 5.815873330173754e-9 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-4.970841799336189e9 -9999.2337441259 30129.646718422635 0.06423557271019037; -9999.2337441259 -0.020114982351403885 0.06423557271019037 1.3694846275390286e-7; 1.0 0.0 -4.970841799336189e9 -9999.2337441259; 0.0 1.0 -9999.2337441259 -0.020114982351403885]
+│   λs = Complex{Float64}[-8.653013486337652e-7 + 0.00037623502621409355im, -8.653013486337652e-7 - 0.00037623502621409355im, -4.970841625777351e9 + 0.0im, -4.970841972935257e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-6.614976138196154e-13 + 7.568259437552807e-10im, -3.3846159541717213e-8 - 0.00037623503283347226im, 2.0115774028423263e-6 - 2.5569213282956955e-17im, -0.9999999292215735 + 1.2734111833577477e-11im], [-6.614976138196154e-13 - 7.568259437552807e-10im, -3.3846159541717213e-8 + 0.00037623503283347226im, 2.0115774028423263e-6 + 2.5569213282956955e-17im, -0.9999999292215735 - 1.2734111833577477e-11im], [-0.9999834054566124 + 0.0im, -2.0115441596633402e-6 + 0.0im, -0.005760972778093286 + 0.0im, -1.1588643287188652e-8 + 0.0im], [-0.9999834054574668 + 0.0im, -2.011544168071831e-6 + 0.0im, 0.005760972629786455 + 0.0im, 1.1588643369420305e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-5.103544414394018e9 -9999.044165484689 48100.961733204014 0.09798671404512174; -9999.044165484689 -0.019591100361733248 0.09798671404512174 1.9960923406511912e-7; 1.0 0.0 -5.103544414394018e9 -9999.044165484689; 0.0 1.0 -9999.044165484689 -0.019591100361733248]
+│   λs = Complex{Float64}[-7.397465994353016e-7 + 0.00024711299234324427im, -7.397465994353016e-7 - 0.00024711299234324427im, -5.103544195094282e9 + 0.0im, -5.103544633732934e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[4.841525049173044e-10 + 9.31643027697951e-13im, -0.00024711300110061713 - 1.0093462016191879e-7im, 4.890736473710808e-17 - 1.9592351998241886e-6im, -2.4942257704748186e-11 + 0.9999999694656574im], [4.841525049173044e-10 - 9.31643027697951e-13im, -0.00024711300110061713 + 1.0093462016191879e-7im, 4.890736473710808e-17 + 1.9592351998241886e-6im, -2.4942257704748186e-11 - 0.9999999694656574im], [0.9999896053566372 + 0.0im, 1.959214890518885e-6 + 0.0im, 0.004559514759084555 + 0.0im, 8.933162022308145e-9 + 0.0im], [0.9999896053564045 + 0.0im, 1.9592148971505567e-6 + 0.0im, -0.004559514810121122 + 0.0im, -8.933162247740881e-9 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-5.237995101007946e9 -9999.06664495522 2941.7038303342642 0.005804490538865037; -9999.06664495522 -0.019088224916451013 0.005804490538865037 1.145326394463895e-8; 1.0 0.0 -5.237995101007946e9 -9999.06664495522; 0.0 1.0 -9999.06664495522 -0.019088224916451013]
+│   λs = Complex{Float64}[-5.52490615095857e-7 + 0.00014978204469249485im, -5.52490615095857e-7 - 0.00014978204469249485im, -5.23799504678951e9 + 0.0im, -5.237995155264558e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[1.0018109388928997e-14 + 2.8592632464859065e-10im, -2.413383948240977e-8 - 0.00014978204875557138im, 1.9089491952877882e-6 - 6.874786579253756e-18im, -0.9999999887808467 + 3.614815938983787e-12im], [1.0018109388928997e-14 - 2.8592632464859065e-10im, -2.413383948240977e-8 + 0.00014978204875557138im, 1.9089491952877882e-6 + 6.874786579253756e-18im, -0.9999999887808467 - 3.614815938983787e-12im], [0.9998300734940401 + 0.0im, 1.908624834996185e-6 + 0.0im, 0.01843431944115301 + 0.0im, 3.5190179779688905e-8 + 0.0im], [-0.9998300735002392 + 0.0im, -1.908624836322747e-6 + 0.0im, 0.018434319104931773 + 0.0im, 3.519017886910816e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-5.419981905580437e9 -9997.050591328018 485723.1924321594 0.9032874205915739; -9997.050591328018 -0.01843976499057704 0.9032874205915739 1.679821299274152e-6; 1.0 0.0 -5.419981905580437e9 -9997.050591328018; 0.0 1.0 -9997.050591328018 -0.01843976499057704]
+│   λs = Complex{Float64}[-4.220339149610416e-7 + 0.00015742561008500255im, -4.220339149610416e-7 - 0.00015742561008500255im, -5.419981208659223e9 + 0.0im, -5.419982602538531e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-2.9036845937163335e-10 - 1.3713185419833834e-12im, 0.00015742561082678977 + 5.193425633986948e-9im, -1.5165612068608465e-18 + 1.8444804137366932e-6im, 8.175782235464793e-13 - 0.9999999876068872im], [-2.9036845937163335e-10 + 1.3713185419833834e-12im, 0.00015742561082678977 - 5.193425633986948e-9im, -1.5165612068608465e-18 - 1.8444804137366932e-6im, 8.175782235464793e-13 + 0.9999999876068872im], [-0.9999989706034278 + 0.0im, -1.8444785356289656e-6 + 0.0im, -0.001434847964862993 + 0.0im, -2.646548784524945e-9 + 0.0im], [0.9999989706034116 + 0.0im, 1.8444785395555698e-6 + 0.0im, -0.0014348479762673364 + 0.0im, -2.6465492210620093e-9 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-5.465964182155822e9 -9999.834044382002 390.72653632329974 0.0008124897769928531; -9999.834044382002 -0.018294803156270616 0.0008124897769928531 1.6895183110155467e-9; 1.0 0.0 -5.465964182155822e9 -9999.834044382002; 0.0 1.0 -9999.834044382002 -0.018294803156270616]
+│   λs = Complex{Float64}[-3.5856712176288033e-7 + 6.767238083160491e-5im, -3.5856712176288033e-7 - 6.767238083160491e-5im, -5.465964162407322e9 + 0.0im, -5.465964201940913e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-5.236373942958672e-14 + 1.238047942458345e-10im, 1.8890566638729567e-8 - 6.767238015185838e-5im, 1.8294730241785872e-6 + 2.345832518412102e-18im, -0.999999997708551 - 1.2783696102153285e-12im], [-5.236373942958672e-14 - 1.238047942458345e-10im, 1.8890566638729567e-8 + 6.767238015185838e-5im, 1.8294730241785872e-6 - 2.345832518412102e-18im, -0.999999997708551 + 1.2783696102153285e-12im], [0.9987227848520895 + 0.0im, 1.8271363966346362e-6 + 0.0im, 0.050525231458549584 + 0.0im, 9.24345482609426e-8 + 0.0im], [-0.9987227847118105 + 0.0im, -1.827136398188203e-6 + 0.0im, 0.05052523423141872 + 0.0im, 9.243455317838221e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-5.558511425825266e9 -9999.291368012397 28793.7419670801 0.05325642455066823; -9999.291368012397 -0.01798821071528743 0.05325642455066823 9.850219395463432e-8; 1.0 0.0 -5.558511425825266e9 -9999.291368012397; 0.0 1.0 -9999.291368012397 -0.01798821071528743]
+│   λs = Complex{Float64}[-3.778192659132377e-7 + 0.00022039653965450775im, -3.778192659132377e-7 - 0.00022039653965450775im, -5.558511256156062e9 + 0.0im, -5.55851159553045e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[3.9647471647313297e-10 + 2.946819220930874e-13im, -0.00022039654216162872 - 1.7958930009775997e-8im, 7.128417525855378e-18 - 1.7989152776682303e-6im, -3.958086286569122e-12 + 0.9999999757110638im], [3.9647471647313297e-10 - 2.946819220930874e-13im, -0.00022039654216162872 + 1.7958930009775997e-8im, 7.128417525855378e-18 + 1.7989152776682303e-6im, -3.958086286569122e-12 - 0.9999999757110638im], [-0.9999826355653778 + 0.0im, -1.7988840829055285e-6 + 0.0im, -0.0058930946441548004 + 0.0im, -1.0601178446428914e-8 + 0.0im], [0.9999826355650603 + 0.0im, 1.7988840860127164e-6 + 0.0im, -0.005893094698035516 + 0.0im, -1.0601178126020067e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-5.605076392919338e9 -9999.828883272636 425.5613972495444 0.0008419137969925063; -9999.828883272636 -0.017840671616080786 0.0008419137969925063 1.6656088784074926e-9; 1.0 0.0 -5.605076392919338e9 -9999.828883272636; 0.0 1.0 -9999.828883272636 -0.017840671616080786]
+│   λs = Complex{Float64}[-3.052329038292409e-7 + 0.00018927664597065798im, -3.052329038292409e-7 - 0.00018927664597065798im, -5.605076372308036e9 + 0.0im, -5.60507641356632e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-7.688728126398203e-14 + 3.376821017213222e-10im, 3.4911316337815634e-8 - 0.00018927663649198642im, 1.7840664430988614e-6 + 1.1806104037508048e-17im, -0.9999999820855854 - 6.6078966707043205e-12im], [-7.688728126398203e-14 - 3.376821017213222e-10im, 3.4911316337815634e-8 + 0.00018927663649198642im, 1.7840664430988614e-6 - 1.1806104037508048e-17im, -0.9999999820855854 + 6.6078966707043205e-12im], [0.9988271477404763 + 0.0im, 1.7819740279689193e-6 + 0.0im, 0.04841827065728747 + 0.0im, 8.638141331764916e-8 + 0.0im], [-0.9988271476472462 + 0.0im, -1.7819740292120655e-6 + 0.0im, 0.04841827258054656 + 0.0im, 8.638141709088956e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-5.698789017626182e9 -9999.308972308248 1754.273265955697 0.0031510148690180773; -9999.308972308248 -0.017545438080685982 0.0031510148690180773 5.6598335604025305e-9; 1.0 0.0 -5.698789017626182e9 -9999.308972308248; 0.0 1.0 -9999.308972308248 -0.017545438080685982]
+│   λs = Complex{Float64}[-3.956361715530824e-7 + 0.00035028191665415967im, -3.956361715530824e-7 - 0.00035028191665415967im, -5.69878897575967e9 + 0.0im, -5.6987890595277815e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-1.3797448426833281e-14 + 6.146178246572182e-10im, 5.447488016230295e-10 - 0.0003502819363781485im, 1.7546374022787145e-6 + 2.6393017240851965e-19im, -0.9999999386497416 - 1.908158147548994e-13im], [-1.3797448426833281e-14 - 6.146178246572182e-10im, 5.447488016230295e-10 + 0.0003502819363781485im, 1.7546374022787145e-6 - 2.6393017240851965e-19im, -0.9999999386497416 + 1.908158147548994e-13im], [-0.9997151033291395 + 0.0im, -1.7541376193736576e-6 + 0.0im, -0.02386864412841996 + 0.0im, -4.188081827128862e-8 + 0.0im], [-0.9997151033652641 + 0.0im, -1.7541376200570303e-6 + 0.0im, 0.023868642615376617 + 0.0im, 4.18808156681192e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-5.698789017626182e9 -9999.308972308248 28068.372255291153 0.050416237904289236; -9999.308972308248 -0.017545438080685982 0.050416237904289236 9.055733696644049e-8; 1.0 0.0 -5.698789017626182e9 -9999.308972308248; 0.0 1.0 -9999.308972308248 -0.017545438080685982]
+│   λs = Complex{Float64}[-3.309584277839752e-7 + 0.00012465984026297332im, -3.309584277839752e-7 - 0.00012465984026297332im, -5.698788850107568e9 + 0.0im, -5.698789185179888e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[2.187328330842467e-10 + 2.984574969165741e-13im, -0.00012465984105459682 - 5.3453992843177645e-8im, 1.1675812906369654e-17 - 1.7546374964959477e-6im, -6.6635663221288e-12 + 0.9999999922284214im], [2.187328330842467e-10 - 2.984574969165741e-13im, -0.00012465984105459682 + 5.3453992843177645e-8im, 1.1675812906369654e-17 + 1.7546374964959477e-6im, -6.6635663221288e-12 - 0.9999999922284214im], [-0.9999821868347004 + 0.0im, -1.7546062530446647e-6 + 0.0im, -0.005968752818810211 + 0.0im, -1.0472997550576001e-8 + 0.0im], [0.9999821868348585 + 0.0im, 1.7546062554703163e-6 + 0.0im, -0.005968752792317611 + 0.0im, -1.0472997574272595e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-5.745936675238954e9 -9999.833016315633 415.2265424925026 0.0007887061905347509; -9999.833016315633 -0.017403280446281408 0.0007887061905347509 1.498115826733477e-9; 1.0 0.0 -5.745936675238954e9 -9999.833016315633; 0.0 1.0 -9999.833016315633 -0.017403280446281408]
+│   λs = Complex{Float64}[-2.7633279740340296e-7 + 0.00020583207271421925im, -2.7633279740340296e-7 - 0.00020583207271421925im, -5.745936654879251e9 + 0.0im, -5.745936695633465e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-1.378121249930031e-14 + 3.582159784142372e-10im, 1.305898778003467e-9 - 0.00020583206985508903im, 1.7403311889648029e-6 + 4.691487192992505e-19im, -0.9999999788150651 - 2.687958227309481e-13im], [-1.378121249930031e-14 - 3.582159784142372e-10im, 1.305898778003467e-9 + 0.00020583206985508903im, 1.7403311889648029e-6 - 4.691487192992505e-19im, -0.9999999788150651 + 2.687958227309481e-13im], [0.9987980090550157 + 0.0im, 1.7382393626300206e-6 + 0.0im, 0.04901568223240765 + 0.0im, 8.530352234455661e-8 + 0.0im], [-0.9987980086302921 + 0.0im, -1.7382393630174602e-6 + 0.0im, 0.04901569088704479 + 0.0im, 8.530353738642519e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-5.840814680983194e9 -9999.325855783289 27376.115501558194 0.04779724194894518; -9999.325855783289 -0.01711881938307962 0.04779724194894518 8.34514428387757e-8; 1.0 0.0 -5.840814680983194e9 -9999.325855783289; 0.0 1.0 -9999.325855783289 -0.01711881938307962]
+│   λs = Complex{Float64}[-3.799296658787585e-7 + 0.0005133833929356186im, -3.799296658787585e-7 - 0.0005133833929356186im, -5.840814515542981e9 + 0.0im, -5.8408148464576435e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[8.788991492393835e-10 + 4.47426689068834e-13im, -0.0005133833148368156 - 1.6832626792417926e-7im, 1.4810821317148854e-16 - 1.7119742854353289e-6im, -8.641590871702465e-11 + 0.9999998682172979im], [8.788991492393835e-10 - 4.47426689068834e-13im, -0.0005133833148368156 + 1.6832626792417926e-7im, 1.4810821317148854e-16 + 1.7119742854353289e-6im, -8.641590871702465e-11 - 0.9999998682172979im], [-0.999981736394057 + 0.0im, -1.7119432431316365e-6 + 0.0im, -0.0060437468010886754 + 0.0im, -1.0346740530983213e-8 + 0.0im], [0.9999817363945681 + 0.0im, 1.7119432450593615e-6 + 0.0im, -0.0060437467165004605 + 0.0im, -1.0346740272096063e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-6.081408723369535e9 -9998.56102291533 518986.38113194774 0.8588997916295229; -9998.56102291533 -0.016438993537077534 0.8588997916295229 1.421441638703968e-6; 1.0 0.0 -6.081408723369535e9 -9998.56102291533; 0.0 1.0 -9998.56102291533 -0.016438993537077534]
+│   λs = Complex{Float64}[-2.0717227400895244e-7 + 0.00016616512544777597im, -2.0717227400895244e-7 - 0.00016616512544777597im, -6.081408002978755e9 + 0.0im, -6.081409443793197e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-9.024308264635877e-13 + 2.7319528828364816e-10im, -1.3508481999657818e-8 - 0.00016616513170290533im, 1.6441192066523747e-6 - 3.668671127740326e-18im, -0.9999999861932228 + 2.244638638371557e-12im], [-9.024308264635877e-13 - 2.7319528828364816e-10im, -1.3508481999657818e-8 + 0.00016616513170290533im, 1.6441192066523747e-6 + 3.668671127740326e-18im, -0.9999999861932228 - 2.244638638371557e-12im], [0.9999990365832855 + 0.0im, 1.6441176440393867e-6 + 0.0im, 0.0013881029492013109 + 0.0im, 2.282206767784809e-9 + 0.0im], [-0.9999990365832825 + 0.0im, -1.6441176466119497e-6 + 0.0im, 0.001388102951289652 + 0.0im, 2.282206723726549e-9 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-6.105735194095909e9 -9999.963400291155 86.26166712764355 0.0001762141434582665; -9999.963400291155 -0.016378086121726036 0.0001762141434582665 3.5996782103437633e-10; 1.0 0.0 -6.105735194095909e9 -9999.963400291155; 0.0 1.0 -9999.963400291155 -0.016378086121726036]
+│   λs = Complex{Float64}[1.167980995121275e-8 + 0.0001407367254821321im, 1.167980995121275e-8 - 0.0001407367254821321im, -6.105735184824581e9 + 0.0im, -6.105735203399991e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-2.9212069097223417e-13 + 2.3049837772163998e-10im, 1.7494305507015362e-7 - 0.00014073672079420015im, 1.637798395172909e-6 + 4.034018234100247e-17im, -0.9999999900952311 - 2.462091215278716e-11im], [-2.9212069097223417e-13 - 2.3049837772163998e-10im, 1.7494305507015362e-7 + 0.00014073672079420015im, 1.637798395172909e-6 - 4.034018234100247e-17im, -0.9999999900952311 + 2.462091215278716e-11im], [-0.9942536084333543 + 0.0im, -1.6283869796433357e-6 + 0.0im, -0.1070502784422903 + 0.0im, -1.753267760072637e-7 + 0.0im], [-0.9942536112373986 + 0.0im, -1.6283869854618964e-6 + 0.0im, 0.10705025239909222 + 0.0im, 1.7532673325674853e-7 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-6.2527137268618555e9 -9999.21238932969 9995.082308627168 0.01613401683895298; -9999.21238932969 -0.015990670967519074 0.01613401683895298 2.604345730449233e-8; 1.0 0.0 -6.2527137268618555e9 -9999.21238932969; 0.0 1.0 -9999.21238932969 -0.015990670967519074]
+│   λs = Complex{Float64}[-5.210473569483177e-7 + 0.000597033516010252im, -5.210473569483177e-7 - 0.000597033516010252im, -6.252713626902462e9 + 0.0im, -6.252713826853234e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[9.5476388957499e-10 + 4.325574729131809e-13im, -0.0005970335507921032 - 2.5547796594915795e-7im, 2.439810377232436e-16 - 1.5991793395925703e-6im, -1.5252894439024903e-10 + 0.9999998217741426im], [9.5476388957499e-10 - 4.325574729131809e-13im, -0.0005970335507921032 + 2.5547796594915795e-7im, 2.439810377232436e-16 + 1.5991793395925703e-6im, -1.5252894439024903e-10 - 0.9999998217741426im], [-0.9999499791734887 + 0.0im, -1.5990996319367842e-6 + 0.0im, -0.01000195722759514 + 0.0im, -1.599492622012433e-8 + 0.0im], [0.9999499791743811 + 0.0im, 1.5990996325254654e-6 + 0.0im, -0.010001957138379626 + 0.0im, -1.5994926005154144e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-6.351670566236988e9 -9999.385368441317 1546.1115217025788 0.0024593530064381916; -9999.385368441317 -0.015742072765040787 0.0024593530064381916 3.912018716228214e-9; 1.0 0.0 -6.351670566236988e9 -9999.385368441317; 0.0 1.0 -9999.385368441317 -0.015742072765040787]
+│   λs = Complex{Float64}[-1.5942856703217964e-7 + 0.0001240567915250238im, -1.5942856703217964e-7 - 0.0001240567915250238im, -6.351670526932066e9 + 0.0im, -6.351670605573394e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[1.9530165595414908e-10 - 1.6782365427903123e-14im, -0.0001240568028663792 + 1.312588931989822e-8im, -2.5355798927159472e-18 - 1.574292178415206e-6im, 1.6283558770574698e-12 + 0.9999999923037156im], [1.9530165595414908e-10 + 1.6782365427903123e-14im, -0.0001240568028663792 - 1.312588931989822e-8im, -2.5355798927159472e-18 + 1.574292178415206e-6im, 1.6283558770574698e-12 - 0.9999999923037156im], [0.9996767642255575 + 0.0im, 1.5737833227893842e-6 + 0.0im, 0.025423750019233294 + 0.0im, 4.0024411119372535e-8 + 0.0im], [0.9996767641855063 + 0.0im, 1.5737833230066041e-6 + 0.0im, -0.025423751594068525 + 0.0im, -4.0024413594822936e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-6.451404326303716e9 -9999.100966985865 53735.116821103395 0.08379553813693001; -9999.100966985865 -0.015497818695607492 0.08379553813693001 1.306723168581642e-7; 1.0 0.0 -6.451404326303716e9 -9999.100966985865; 0.0 1.0 -9999.100966985865 -0.015497818695607492]
+│   λs = Complex{Float64}[-1.59534154844086e-7 + 0.0003025438286023521im, -1.59534154844086e-7 - 0.0003025438286023521im, -6.4514040945107565e9 + 0.0im, -6.451404558127668e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-6.034737435854924e-14 + 4.689159278574688e-10im, -1.222027995462227e-8 - 0.00030254382425741857im, 1.5499106869486926e-6 - 5.672163937805453e-18im, -0.9999999542324151 + 3.6971703368075814e-12im], [-6.034737435854924e-14 - 4.689159278574688e-10im, -1.222027995462227e-8 + 0.00030254382425741857im, 1.5499106869486926e-6 + 5.672163937805453e-18im, -0.9999999542324151 - 3.6971703368075814e-12im], [-0.9999906952188294 + 0.0im, -1.5498963358741415e-6 + 0.0im, -0.004313869882225786 + 0.0im, -6.686113663354485e-9 + 0.0im], [-0.9999906952193206 + 0.0im, -1.5498963365605397e-6 + 0.0im, 0.00431386976835886 + 0.0im, 6.6861128339993275e-9 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-6.60246169270055e9 -9999.256389489768 150501.95245942762 0.22927670935909228; -9999.256389489768 -0.015143700200099544 0.22927670935909228 3.492832391573453e-7; 1.0 0.0 -6.60246169270055e9 -9999.256389489768; 0.0 1.0 -9999.256389489768 -0.015143700200099544]
+│   λs = Complex{Float64}[-1.0172695851486403e-7 + 0.00021701573093843im, -1.0172695851486403e-7 - 0.00021701573093843im, -6.60246130477001e9 + 0.0im, -6.602462080661382e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[3.286646609203845e-10 + 2.585078240810684e-13im, -0.00021701572083714066 - 3.619990890380009e-8im, 1.1913622834684069e-17 - 1.5144739371271687e-6im, -7.855949533475473e-12 + 0.9999999764509409im], [3.286646609203845e-10 - 2.585078240810684e-13im, -0.00021701572083714066 + 3.619990890380009e-8im, 1.1913622834684069e-17 + 1.5144739371271687e-6im, -7.855949533475473e-12 - 0.9999999764509409im], [-0.9999966778015352 + 0.0im, -1.5144689407515122e-6 + 0.0im, -0.002577670188213292 + 0.0im, -3.903814450225692e-9 + 0.0im], [0.9999966778015037 + 0.0im, 1.5144689418096292e-6 + 0.0im, -0.0025776702003301316 + 0.0im, -3.903814382550301e-9 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-6.627807871834644e9 -9999.964970328621 85.24897046960895 0.00014399383693571412; -9999.964970328621 -0.015087923181007058 0.00014399383693571412 2.4321965369494673e-10; 1.0 0.0 -6.627807871834644e9 -9999.964970328621; 0.0 1.0 -9999.964970328621 -0.015087923181007058]
+│   λs = Complex{Float64}[-2.8181220581269043e-7 + 0.00036531971646060565im, -2.8181220581269043e-7 - 0.00036531971646060565im, -6.627807862616694e9 + 0.0im, -6.627807881082775e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-5.511904618438845e-10 - 2.471616661336995e-13im, 0.00036531972787382877 + 1.6230257765537104e-7im, -8.944286758179147e-17 + 1.5087891043867596e-6im, 5.929233745150843e-11 - 0.9999999332695947im], [-5.511904618438845e-10 + 2.471616661336995e-13im, 0.00036531972787382877 - 1.6230257765537104e-7im, -8.944286758179147e-17 - 1.5087891043867596e-6im, 5.929233745150843e-11 + 0.9999999332695947im], [0.994185923242833 + 0.0im, 1.5000169881892664e-6 + 0.0im, 0.1076770635907192 + 0.0im, 1.6246199100247716e-7 + 0.0im], [0.9941859237285794 + 0.0im, 1.5000169893940318e-6 + 0.0im, -0.1076770591058069 + 0.0im, -1.6246198461522532e-7 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-6.678645902732508e9 -9999.853912339806 368.4423542309832 0.000566380669406969; -9999.853912339806 -0.014972736478791994 0.000566380669406969 8.706574013387698e-10; 1.0 0.0 -6.678645902732508e9 -9999.853912339806; 0.0 1.0 -9999.853912339806 -0.014972736478791994]
+│   λs = Complex{Float64}[-7.027907974130231e-9 + 0.00017851445987808725im, -7.027907974130231e-9 - 0.00017851445987808725im, -6.678645883552622e9 + 0.0im, -6.678645921942342e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-1.1710970294366834e-13 + 2.6728748274491217e-10im, 7.67186884298443e-8 - 0.0001785144530296657im, 1.497287608733278e-6 + 2.051774525578992e-17im, -0.9999999840651715 - 1.3695394939509031e-11im], [-1.1710970294366834e-13 - 2.6728748274491217e-10im, 7.67186884298443e-8 + 0.0001785144530296657im, 1.497287608733278e-6 - 2.051774525578992e-17im, -0.9999999840651715 + 1.3695394939509031e-11im], [0.9986456908679149 + 0.0im, 1.4952598421141052e-6 + 0.0im, 0.05202676338869788 + 0.0im, 7.789902936623365e-8 + 0.0im], [-0.9986456905879294 + 0.0im, -1.495259841937055e-6 + 0.0im, 0.0520267687629764 + 0.0im, 7.78990373490423e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-6.780904655046928e9 -9999.419763567274 5882.688074708314 0.008724597449098648; -9999.419763567274 -0.014745653079448619 0.008724597449098648 1.2939424916319884e-8; 1.0 0.0 -6.780904655046928e9 -9999.419763567274; 0.0 1.0 -9999.419763567274 -0.014745653079448619]
+│   λs = Complex{Float64}[-1.5931252099508732e-7 + 0.00021957082653470658im, -1.5931252099508732e-7 - 0.00021957082653470658im, -6.780904578362971e9 + 0.0im, -6.780904731760378e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[3.2378880782139036e-10 + 8.948541235266616e-14im, -0.00021957084372522002 - 5.5722736924668226e-8im, 1.8034562291795533e-17 - 1.4746438757481353e-6im, -1.2235088661075207e-11 + 0.9999999758932333im], [3.2378880782139036e-10 - 8.948541235266616e-14im, -0.00021957084372522002 + 5.5722736924668226e-8im, 1.8034562291795533e-17 + 1.4746438757481353e-6im, -1.2235088661075207e-11 - 0.9999999758932333im], [-0.9999150156331923 + 0.0im, -1.4745185897289595e-6 + 0.0im, -0.013036928668128474 + 0.0im, -1.9224827492670066e-8 + 0.0im], [0.999915015631949 + 0.0im, 1.4745185899266502e-6 + 0.0im, -0.013036928763477612 + 0.0im, -1.9224827617786997e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-6.883940328052942e9 -9999.431819059158 5726.245766919293 0.008359083578378708; -9999.431819059158 -0.014524974756451875 0.008359083578378708 1.2202458838561656e-8; 1.0 0.0 -6.883940328052942e9 -9999.431819059158; 0.0 1.0 -9999.431819059158 -0.014524974756451875]
+│   λs = Complex{Float64}[-1.8403878572390709e-7 + 0.00023765374353011332im, -1.8403878572390709e-7 - 0.00023765374353011332im, -6.883940252395496e9 + 0.0im, -6.883940403739438e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[1.5729707937631583e-13 + 3.4520962193138086e-10im, -1.124934735086125e-7 - 0.00023765374683932806im, 1.4525738253696616e-6 - 3.8871350812579125e-17im, -0.9999999717592867 + 2.6734496222174074e-11im], [1.5729707937631583e-13 - 3.4520962193138086e-10im, -1.124934735086125e-7 + 0.00023765374683932806im, 1.4525738253696616e-6 + 3.8871350812579125e-17im, -0.9999999717592867 - 2.6734496222174074e-11im], [0.9999126941645342 + 0.0im, 1.4524470482692238e-6 + 0.0im, 0.013213782445347402 + 0.0im, 1.919399512247063e-8 + 0.0im], [-0.9999126941717108 + 0.0im, -1.4524470484377388e-6 + 0.0im, 0.01321378190228436 + 0.0im, 1.9193994210487143e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-6.987752921750558e9 -9999.440251705559 90257.31965997376 0.12970647577788044; -9999.440251705559 -0.014309204277392486 0.12970647577788044 1.8639784476315105e-7; 1.0 0.0 -6.987752921750558e9 -9999.440251705559; 0.0 1.0 -9999.440251705559 -0.014309204277392486]
+│   λs = Complex{Float64}[-2.1759367812659805e-7 + 0.00035824176319953875im, -2.1759367812659805e-7 - 0.00035824176319953875im, -6.987752621336318e9 + 0.0im, -6.987753222193418e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[1.2176316129547466e-13 + 5.12642206342302e-10im, -1.399952039848884e-7 - 0.0003582417600380013im, 1.4309950169471157e-6 - 7.173192285085233e-17im, -0.999999935830385 + 5.015213151184344e-11im], [1.2176316129547466e-13 - 5.12642206342302e-10im, -1.399952039848884e-7 + 0.0003582417600380013im, 1.4309950169471157e-6 + 7.173192285085233e-17im, -0.999999935830385 - 5.015213151184344e-11im], [-0.9999944603284657 + 0.0im, -1.43098718117827e-6 + 0.0im, -0.0033285597986519645 + 0.0im, -4.763152891359422e-9 + 0.0im], [-0.9999944603284854 + 0.0im, -1.4309871816934247e-6 + 0.0im, 0.003328559792782508 + 0.0im, 4.763152709464708e-9 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-7.013827464033026e9 -9999.966545807993 82.01647277529783 0.0001248369297123952; -9999.966545807993 -0.014257507727017464 0.0001248369297123952 1.9001376787702156e-10; 1.0 0.0 -7.013827464033026e9 -9999.966545807993; 0.0 1.0 -9999.966545807993 -0.014257507727017464]
+│   λs = Complex{Float64}[-7.057294991470312e-8 + 0.0003127451820611108im, -7.057294991470312e-8 - 0.0003127451820611108im, -7.013827454990995e9 + 0.0im, -7.013827473103577e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-4.4589652628409203e-10 + 7.723682804439136e-14im, 0.0003127451764858232 - 5.500618271980784e-8im, 2.4470781846176737e-17 + 1.4257502211900697e-6im, -1.7202919183568685e-11 - 0.9999999510942085im], [-4.4589652628409203e-10 - 7.723682804439136e-14im, 0.0003127451764858232 + 5.500618271980784e-8im, 2.4470781846176737e-17 - 1.4257502211900697e-6im, -1.7202919183568685e-11 + 0.9999999510942085im], [0.9939588545631279 + 0.0im, 1.4171371257830356e-6 + 0.0im, 0.109753339054092 + 0.0im, 1.5648085503056075e-7 + 0.0im], [0.9939588582518514 + 0.0im, 1.4171371312474146e-6 + 0.0im, -0.10975330564790947 + 0.0im, -1.5648080747832083e-7 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-7.066122221227632e9 -9999.861900361908 5569.6456956855245 0.008000812782523941; -9999.861900361908 -0.014151692181647963 0.008000812782523941 1.1493191610120837e-8; 1.0 0.0 -7.066122221227632e9 -9999.861900361908; 0.0 1.0 -9999.861900361908 -0.014151692181647963]
+│   λs = Complex{Float64}[-7.452024237576797e-8 + 0.0002714509757793475im, -7.452024237576797e-8 - 0.0002714509757793475im, -7.066122146611751e9 + 0.0im, -7.066122295871814e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[3.841529924108142e-10 + 1.2051662022938975e-13im, -0.0002714509482934752 - 7.336592761086891e-8im, 2.826348270970995e-17 - 1.415183776855278e-6im, -1.9915251305707704e-11 + 0.9999999631561867im], [3.841529924108142e-10 - 1.2051662022938975e-13im, -0.0002714509482934752 + 7.336592761086891e-8im, 2.826348270970995e-17 + 1.415183776855278e-6im, -1.9915251305707704e-11 - 0.9999999631561867im], [-0.9999102398347952 + 0.0im, -1.4150568012449404e-6 + 0.0im, -0.013398218968182227 + 0.0im, -1.8960942752737145e-8 + 0.0im], [0.9999102398338825 + 0.0im, 1.4150568016701239e-6 + 0.0im, -0.013398219036286367 + 0.0im, -1.8960943009828585e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-7.144928538593728e9 -9999.829263860333 537.5855545983056 0.0007603884880392948; -9999.829263860333 -0.013995508228550082 0.0007603884880392948 1.0755323460555409e-9; 1.0 0.0 -7.144928538593728e9 -9999.829263860333; 0.0 1.0 -9999.829263860333 -0.013995508228550082]
+│   λs = Complex{Float64}[-4.062118915390264e-7 + 0.0004567252122759238im, -4.062118915390264e-7 - 0.0004567252122759238im, -7.14492851542184e9 + 0.0im, -7.144928561793611e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[3.6991243401729434e-13 + 6.392191269971952e-10im, -2.6508958472781785e-7 - 0.0004567252962674518im, 1.3995700820618705e-6 - 1.6944576472467058e-16im, -0.9999998956999818 + 1.2107313185328282e-10im], [3.6991243401729434e-13 - 6.392191269971952e-10im, -2.6508958472781785e-7 + 0.0004567252962674518im, 1.3995700820618705e-6 + 1.6944576472467058e-16im, -0.9999998956999818 - 1.2107313185328282e-10im], [-0.9990712114289061 + 0.0im, -1.398270323124673e-6 + 0.0im, -0.04308961002398658 + 0.0im, -6.030693531811375e-8 + 0.0im], [-0.9990712116256117 + 0.0im, -1.3982703235126005e-6 + 0.0im, 0.04308960546318633 + 0.0im, 6.030692886087666e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-7.144928538593728e9 -9999.829263860333 8601.36887357289 0.012166215808628717; -9999.829263860333 -0.013995508228550082 0.012166215808628717 1.7208517536888654e-8; 1.0 0.0 -7.144928538593728e9 -9999.829263860333; 0.0 1.0 -9999.829263860333 -0.013995508228550082]
+│   λs = Complex{Float64}[-1.696413001376538e-7 + 0.0003767015499293063im, -1.696413001376538e-7 - 0.0003767015499293063im, -7.144928445864197e9 + 0.0im, -7.144928631351248e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[5.272202703775218e-10 + 1.2986356781596875e-13im, -0.0003767015471137983 - 8.014034852399377e-8im, 4.229820487769919e-17 - 1.3995701288634088e-6im, -3.01889955633787e-11 + 0.999999929046987im], [5.272202703775218e-10 - 1.2986356781596875e-13im, -0.0003767015471137983 + 8.014034852399377e-8im, 4.229820487769919e-17 + 1.3995701288634088e-6im, -3.01889955633787e-11 - 0.999999929046987im], [0.9999418748325615 + 0.0im, 1.3994888775461839e-6 + 0.0im, 0.010781788088402097 + 0.0im, 1.5089869673679673e-8 + 0.0im], [0.9999418748367844 + 0.0im, 1.3994888778624186e-6 + 0.0im, -0.010781787696733278 + 0.0im, -1.5089869029772003e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-7.224171873848847e9 -9999.831192095064 8500.593027535833 0.011876503896549841; -9999.831192095064 -0.013841990601405292 0.011876503896549841 1.6593118191620074e-8; 1.0 0.0 -7.224171873848847e9 -9999.831192095064; 0.0 1.0 -9999.831192095064 -0.013841990601405292]
+│   λs = Complex{Float64}[2.2829411347179494e-9 + 5.0327209779281634e-5im, 2.2829411347179494e-9 - 5.0327209779281634e-5im, -7.224171781664061e9 + 0.0im, -7.22417196606132e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-7.523474984180028e-14 + 6.966384624983997e-11im, 4.3324357920648815e-8 - 5.032720943423346e-5im, 1.3842183372767523e-6 + 3.010689456455014e-18im, -0.9999999987326269 - 2.180394034929505e-12im], [-7.523474984180028e-14 - 6.966384624983997e-11im, 4.3324357920648815e-8 + 5.032720943423346e-5im, 1.3842183372767523e-6 - 3.010689456455014e-18im, -0.9999999987326269 + 2.180394034929505e-12im], [-0.9999411858023539 + 0.0im, -1.384136927153563e-6 + 0.0im, -0.010845502951298885 + 0.0im, -1.501254373057252e-8 + 0.0im], [-0.9999411858010644 + 0.0im, -1.3841369274838767e-6 + 0.0im, 0.010845503070177944 + 0.0im, 1.501254462017205e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-7.250683434020337e9 -9999.9669135854 82.77684721902465 0.00011931684076028944; -9999.9669135854 -0.013791751692854615 0.00011931684076028944 1.7198659972331348e-10; 1.0 0.0 -7.250683434020337e9 -9999.9669135854; 0.0 1.0 -9999.9669135854 -0.013791751692854615]
+│   λs = Complex{Float64}[-2.590516430648619e-7 + 0.0004525151440618195im, -2.590516430648619e-7 - 0.0004525151440618195im, -7.250683424935954e9 + 0.0im, -7.250683443132302e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-6.240980013768563e-10 - 9.72485980632598e-15im, 0.000452515201197746 + 6.565103904954128e-9im, -4.1216623213394254e-18 + 1.3791756295067348e-6im, 2.970809470821678e-12 - 0.9999998976140396im], [-6.240980013768563e-10 + 9.72485980632598e-15im, 0.000452515201197746 - 6.565103904954128e-9im, -4.1216623213394254e-18 - 1.3791756295067348e-6im, 2.970809470821678e-12 + 0.9999998976140396im], [0.9940138520693977 + 0.0im, 1.3709198206438011e-6 + 0.0im, 0.10925411613415564 + 0.0im, 1.5068063000112097e-7 + 0.0im], [0.9940138520366055 + 0.0im, 1.3709198207548234e-6 + 0.0im, -0.10925411643250517 + 0.0im, -1.506806300184682e-7 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-7.3038522269929905e9 -9999.866387040018 336.68762120972 0.0004656556880166314; -9999.866387040018 -0.013691076494269155 0.0004656556880166314 6.440249243591211e-10; 1.0 0.0 -7.3038522269929905e9 -9999.866387040018; 0.0 1.0 -9999.866387040018 -0.013691076494269155]
+│   λs = Complex{Float64}[-4.775649724505317e-8 + 8.806064923713436e-5im, -4.775649724505317e-8 - 8.806064923713436e-5im, -7.303852208657632e9 + 0.0im, -7.303852245355728e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[8.761071837622147e-15 + 1.2056579222647303e-10im, -6.954963938099468e-9 - 8.806064961097117e-5im, 1.3691222161524831e-6 - 8.320328540262637e-19im, -0.9999999961217235 + 6.124586447264595e-13im], [8.761071837622147e-15 - 1.2056579222647303e-10im, -6.954963938099468e-9 + 8.806064961097117e-5im, 1.3691222161524831e-6 + 8.320328540262637e-19im, -0.9999999961217235 - 6.124586447264595e-13im], [0.9985182442153037 + 0.0im, 1.3670935166721916e-6 + 0.0im, 0.05441797467117506 + 0.0im, 7.450485819481369e-8 + 0.0im], [-0.9985182439200783 + 0.0im, -1.367093516335574e-6 + 0.0im, 0.05441798008828306 + 0.0im, 7.450486597228377e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-7.330509459794155e9 -9999.833511891144 2097.295458532706 0.0028832131777312042; -9999.833511891144 -0.013641198497228283 0.0028832131777312042 3.9636371663431195e-9; 1.0 0.0 -7.330509459794155e9 -9999.833511891144; 0.0 1.0 -9999.833511891144 -0.013641198497228283]
+│   λs = Complex{Float64}[-3.3139823998736114e-7 + 0.0003662036533539661im, -3.3139823998736114e-7 - 0.0003662036533539661im, -7.330509414011548e9 + 0.0im, -7.330509505604043e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[3.365953891477924e-13 + 4.995527292738615e-10im, -2.489931477112073e-7 - 0.00036620369762400165im, 1.3641388632144089e-6 - 1.2438609843566314e-16im, -0.9999999329464621 + 9.118221753817365e-11im], [3.365953891477924e-13 - 4.995527292738615e-10im, -2.489931477112073e-7 + 0.00036620369762400165im, 1.3641388632144089e-6 + 1.2438609843566314e-16im, -0.9999999329464621 - 9.118221753817365e-11im], [-0.9997616828413602 + 0.0im, -1.3638138568736516e-6 + 0.0im, -0.02183065551810828 + 0.0im, -2.9780047589634303e-8 + 0.0im], [-0.9997616828668993 + 0.0im, -1.3638138570436816e-6 + 0.0im, 0.02183065434852433 + 0.0im, 2.9780046013509276e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-7.383969598026156e9 -9999.868322239847 330.5572469201413 0.00045162290828260526; -9999.868322239847 -0.013542528208800416 0.00045162290828260526 6.170285273912436e-10; 1.0 0.0 -7.383969598026156e9 -9999.868322239847; 0.0 1.0 -9999.868322239847 -0.013542528208800416]
+│   λs = Complex{Float64}[-2.247629120162349e-8 + 0.0001785496428779743im, -2.247629120162349e-8 - 0.0001785496428779743im, -7.3839695798584795e9 + 0.0im, -7.383969616220917e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-3.656097776957856e-14 + 2.418039287472578e-10im, 2.6666390484653135e-8 - 0.0001785496369607913im, 1.354267244805564e-6 + 6.4727346153417445e-18im, -0.9999999840590963 - 4.761274396123706e-12im], [-3.656097776957856e-14 - 2.418039287472578e-10im, 2.6666390484653135e-8 + 0.0001785496369607913im, 1.354267244805564e-6 - 6.4727346153417445e-18im, -0.9999999840590963 + 4.761274396123706e-12im], [0.9984908283944277 + 0.0im, 1.3522234444550332e-6 + 0.0im, 0.05491871821496757 + 0.0im, 7.437462208164649e-8 + 0.0im], [-0.9984908284708657 + 0.0im, -1.352223444613435e-6 + 0.0im, 0.05491871682523084 + 0.0im, 7.437462086425008e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-7.4779922062857e9 -9999.707904379304 105247.61408436557 0.14120329979578575; -9999.707904379304 -0.013371822595466872 0.14120329979578575 1.8944250705043176e-7; 1.0 0.0 -7.4779922062857e9 -9999.707904379304; 0.0 1.0 -9999.707904379304 -0.013371822595466872]
+│   λs = Complex{Float64}[-2.2730352885425196e-7 + 0.00040157320147188113im, -2.2730352885425196e-7 - 0.00040157320147188113im, -7.477991881880167e9 + 0.0im, -7.477992530717981e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[5.369910431385785e-10 + 2.560171855330723e-13im, -0.00040157321331501405 - 1.4501897077634496e-7im, 7.785722206677983e-17 - 1.3372181760364376e-6im, -5.823573879528386e-11 + 0.9999999193685694im], [5.369910431385785e-10 - 2.560171855330723e-13im, -0.00040157321331501405 + 1.4501897077634496e-7im, 7.785722206677983e-17 + 1.3372181760364376e-6im, -5.823573879528386e-11 - 0.9999999193685694im], [0.9999952493308618 + 0.0im, 1.3372119311855983e-6 + 0.0im, 0.003082420139970681 + 0.0im, 4.121868679371047e-9 + 0.0im], [0.9999952493308255 + 0.0im, 1.3372119315730494e-6 + 0.0im, -0.0030824201517519216 + 0.0im, -4.121868468247238e-9 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-7.572609644449742e9 -9999.83080555384 2236.744291196267 0.0029673828560649895; -9999.83080555384 -0.013205067579009947 0.0029673828560649895 3.936686481832524e-9; 1.0 0.0 -7.572609644449742e9 -9999.83080555384; 0.0 1.0 -9999.83080555384 -0.013205067579009947]
+│   λs = Complex{Float64}[-5.927896437714592e-8 + 0.00016674427878816156im, -5.927896437714592e-8 - 0.00016674427878816156im, -7.572609597168747e9 + 0.0im, -7.572609691757151e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-2.2019021953083514e-10 - 3.5277770288333343e-14im, 0.000166744279227327 + 2.5269312309283976e-8im, -5.5677857903189314e-18 + 1.3205263621837325e-6im, 4.213513300202129e-12 - 0.9999999860973006im], [-2.2019021953083514e-10 + 3.5277770288333343e-14im, 0.000166744279227327 - 2.5269312309283976e-8im, -5.5677857903189314e-18 - 1.3205263621837325e-6im, 4.213513300202129e-12 + 0.9999999860973006im], [0.9997765360282348 + 0.0im, 1.3202312905738998e-6 + 0.0im, 0.021139489247375076 + 0.0im, 2.791525325436181e-8 + 0.0im], [0.9997765360011138 + 0.0im, 1.3202312905905966e-6 + 0.0im, -0.02113949053003315 + 0.0im, -2.791525489671126e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-7.6541837417796545e9 -9999.841323677496 7954.152873164813 0.010434261937169974; -9999.841323677496 -0.013064360533181324 0.010434261937169974 1.3687670316318069e-8; 1.0 0.0 -7.6541837417796545e9 -9999.841323677496; 0.0 1.0 -9999.841323677496 -0.013064360533181324]
+│   λs = Complex{Float64}[-8.98081217863096e-8 + 0.00023477262476469016im, -8.98081217863096e-8 - 0.00023477262476469016im, -7.654183652606694e9 + 0.0im, -7.654183830978743e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-3.0671972211147317e-10 - 2.8492833092919057e-15im, 0.00023477263626878306 - 1.9608470958054625e-9im, 6.192869635613003e-19 + 1.3064542720678696e-6im, -4.603531911142461e-13 - 0.9999999724400506im], [-3.0671972211147317e-10 + 2.8492833092919057e-15im, 0.00023477263626878306 + 1.9608470958054625e-9im, 6.192869635613003e-19 - 1.3064542720678696e-6im, -4.603531911142461e-13 + 0.9999999724400506im], [-0.9999371457258245 + 0.0im, -1.3063721916782112e-6 + 0.0im, -0.01121180609824343 + 0.0im, -1.4647712398097121e-8 + 0.0im], [0.9999371457292789 + 0.0im, 1.3063721918070144e-6 + 0.0im, -0.011211805790156092 + 0.0im, -1.4647711950538465e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-7.736194856998591e9 -9999.842333858633 31746.531762388182 0.04117315530295847; -9999.842333858633 -0.012925866381550135 0.04117315530295847 5.339886354483502e-8; 1.0 0.0 -7.736194856998591e9 -9999.842333858633; 0.0 1.0 -9999.842333858633 -0.012925866381550135]
+│   λs = Complex{Float64}[-2.4550648090719402e-8 + 0.00020382031512671762im, -2.4550648090719402e-8 - 0.00020382031512671762im, -7.736194678835854e9 + 0.0im, -7.736195035187179e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[2.6345908230060753e-10 + 9.550976817155471e-14im, -0.0002038202933378029 - 6.007793723616928e-8im, 1.5818869685566093e-17 - 1.2926047380628898e-6im, -1.2245103057071695e-11 + 0.9999999792278066im], [2.6345908230060753e-10 - 9.550976817155471e-14im, -0.0002038202933378029 + 6.007793723616928e-8im, 1.5818869685566093e-17 + 1.2926047380628898e-6im, -1.2245103057071695e-11 - 0.9999999792278066im], [-0.9999842506023745 + 0.0im, -1.292584407068901e-6 + 0.0im, -0.005612356504708431 + 0.0im, -7.254558821885842e-9 + 0.0im], [0.9999842506015587 + 0.0im, 1.2925844072257173e-6 + 0.0im, -0.005612356650077829 + 0.0im, -7.2545588983356476e-9 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-7.749905864052069e9 -9999.992448724786 18.954763166101245 2.607557427180021e-5; -9999.992448724786 -0.012903385233447116 2.607557427180021e-5 3.5871488746436444e-11; 1.0 0.0 -7.749905864052069e9 -9999.992448724786; 0.0 1.0 -9999.992448724786 -0.012903385233447116]
+│   λs = Complex{Float64}[-5.038338516760255e-7 + 0.0005240517276968132im, -5.038338516760255e-7 - 0.0005240517276968132im, -7.7499058597112665e9 + 0.0im, -7.74990586841868e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[2.590015875381102e-13 + 6.762036789723138e-10im, -2.0088707580745435e-7 - 0.0005240518814235802im, 1.290337102277661e-6 - 1.3579632210380943e-16im, -0.9999998626839508 + 1.0527526430898632e-10im], [2.590015875381102e-13 - 6.762036789723138e-10im, -2.0088707580745435e-7 + 0.0005240518814235802im, 1.290337102277661e-6 + 1.3579632210380943e-16im, -0.9999998626839508 - 1.0527526430898632e-10im], [-0.9746213103575906 + 0.0im, -1.2575902099895564e-6 + 0.0im, -0.22386000400962175 + 0.0im, -2.888549084818781e-7 + 0.0im], [-0.974621261913546 + 0.0im, -1.2575901477338003e-6 + 0.0im, 0.22386021492078875 + 0.0im, 2.8885518056631643e-7 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-7.832426833474864e9 -9999.843971804867 31474.126271755154 0.04028751974861292; -9999.843971804867 -0.01276705671452264 0.04028751974861292 5.156884208574299e-8; 1.0 0.0 -7.832426833474864e9 -9999.843971804867; 0.0 1.0 -9999.843971804867 -0.01276705671452264]
+│   λs = Complex{Float64}[-2.1939332318637985e-7 + 0.000372111159309503im, -2.1939332318637985e-7 - 0.000372111159309503im, -7.83242665607808e9 + 0.0im, -7.832427010897182e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[4.750831010083652e-10 + 2.213221129260777e-13im, -0.00037211116877980367 - 1.6301035415944298e-7im, 7.741039895221339e-17 - 1.2767234846024455e-6im, -6.065797758286924e-11 + 0.9999999307658083im], [4.750831010083652e-10 - 2.213221129260777e-13im, -0.00037211116877980367 + 1.6301035415944298e-7im, 7.741039895221339e-17 + 1.2767234846024455e-6im, -6.065797758286924e-11 - 0.9999999307658083im], [-0.9999841143017574 + 0.0im, -1.276703291211517e-6 + 0.0im, -0.005636589616047091 + 0.0im, -7.196366812352306e-9 + 0.0im], [0.9999841143019189 + 0.0im, 1.276703291354298e-6 + 0.0im, -0.0056365895873908955 + 0.0im, -7.1963668171194076e-9 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-7.846222816228987e9 -9999.99253391398 18.72460465115454 2.507681877067352e-5; -9999.99253391398 -0.01274498685134311 2.507681877067352e-5 3.3583984889017644e-11; 1.0 0.0 -7.846222816228987e9 -9999.99253391398; 0.0 1.0 -9999.99253391398 -0.01274498685134311]
+│   λs = Complex{Float64}[-3.0448979573642065e-7 + 0.00040085533354722433im, -3.0448979573642065e-7 - 0.00040085533354722433im, -7.846222811914536e9 + 0.0im, -7.846222820568929e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[3.1299854201527477e-13 + 5.108892038374644e-10im, -2.457477972783728e-7 - 0.00040085535206568675im, 1.2744975466917282e-6 - 1.2556204651860935e-16im, -0.9999999196566481 + 9.850932766177715e-11im], [3.1299854201527477e-13 - 5.108892038374644e-10im, -2.457477972783728e-7 + 0.00040085535206568675im, 1.2744975466917282e-6 + 1.2556204651860935e-16im, -0.9999999196566481 - 9.850932766177715e-11im], [-0.9743212042578822 + 0.0im, -1.2417700842029186e-6 + 0.0im, -0.22516258777124945 + 0.0im, -2.869691884709643e-7 + 0.0im], [-0.9743212458099557 + 0.0im, -1.2417701372793855e-6 + 0.0im, 0.22516240796747458 + 0.0im, 2.869689598968602e-7 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-7.887683600806188e9 -9999.961545005472 483.98477788294554 0.0006189803582084242; -9999.961545005472 -0.012677914775081584 0.0006189803582084242 7.916296159638578e-10; 1.0 0.0 -7.887683600806188e9 -9999.961545005472; 0.0 1.0 -9999.961545005472 -0.012677914775081584]
+│   λs = Complex{Float64}[-1.510052059748528e-7 + 0.0003177465911843968im, -1.510052059748528e-7 - 0.0003177465911843968im, -7.887683578819214e9 + 0.0im, -7.887683622818518e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[4.0283741450573517e-10 + 2.6276723852358685e-14im, -0.00031774662872241846 - 2.0158376912160492e-8im, 8.107700109444656e-18 - 1.2677943925817854e-6im, -6.4052566690290386e-12 + 0.9999999495177351im], [4.0283741450573517e-10 - 2.6276723852358685e-14im, -0.00031774662872241846 + 2.0158376912160492e-8im, 8.107700109444656e-18 + 1.2677943925817854e-6im, -6.4052566690290386e-12 - 0.9999999495177351im], [0.9989685079977567 + 0.0im, 1.2664867367240436e-6 + 0.0im, 0.04540836957135347 + 0.0im, 5.756847918085995e-8 + 0.0im], [0.9989685080390769 + 0.0im, 1.2664867368461247e-6 + 0.0im, -0.04540836866232304 + 0.0im, -5.756847812105233e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-7.915384820786684e9 -9999.96942692092 76.88177152778766 9.810488868820805e-5; -9999.96942692092 -0.012633565676630385 9.810488868820805e-5 1.2518662087601673e-10; 1.0 0.0 -7.915384820786684e9 -9999.96942692092; 0.0 1.0 -9999.96942692092 -0.012633565676630385]
+│   λs = Complex{Float64}[-4.4198997609765956e-8 + 0.00015158661237385737im, -4.4198997609765956e-8 - 0.00015158661237385737im, -7.915384812031091e9 + 0.0im, -7.915384829567547e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-2.6727535115678158e-14 - 1.9150824893737954e-10im, 2.1207829825620195e-8 + 0.00015158661212469877im, -1.2633585781448358e-6 + 4.066439743645385e-18im, 0.9999999885099511 - 3.2148231119018527e-12im], [-2.6727535115678158e-14 + 1.9150824893737954e-10im, 2.1207829825620195e-8 - 0.00015158661212469877im, -1.2633585781448358e-6 - 4.066439743645385e-18im, 0.9999999885099511 + 3.2148231119018527e-12im], [0.9935592656966006 + 0.0im, 1.2552216355600845e-6 + 0.0im, 0.11331366001871016 + 0.0im, 1.431557860858291e-7 + 0.0im], [-0.9935592679529042 + 0.0im, -1.2552216384363645e-6 + 0.0im, 0.11331364023493926 + 0.0im, 1.4315576096600316e-7 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-7.970932933377352e9 -9999.877551420557 1233.3524223822815 0.001550464831434537; -9999.877551420557 -0.012545292933302551 0.001550464831434537 1.949111340675843e-9; 1.0 0.0 -7.970932933377352e9 -9999.877551420557; 0.0 1.0 -9999.877551420557 -0.012545292933302551]
+│   λs = Complex{Float64}[-4.360639495331615e-8 + 0.00046080981517278286im, -4.360639495331615e-8 - 0.00046080981517278286im, -7.970932898270795e9 + 0.0im, -7.970932968509005e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-2.059219494140313e-13 + 5.78105563034186e-10im, 1.6382826989458366e-7 - 0.0004608097096593355im, 1.2545427964487168e-6 + 9.48443867602648e-17im, -0.9999998938264 - 7.54936656265949e-11im], [-2.059219494140313e-13 - 5.78105563034186e-10im, 1.6382826989458366e-7 + 0.0004608097096593355im, 1.2545427964487168e-6 - 9.48443867602648e-17im, -0.9999998938264 + 7.54936656265949e-11im], [-0.999594847514649 + 0.0im, -1.2540346483489806e-6 + 0.0im, -0.028462972799626226 + 0.0im, -3.5708021549845205e-8 + 0.0im], [-0.9995948475230335 + 0.0im, -1.254034648377956e-6 + 0.0im, 0.028462972505166727 + 0.0im, 3.5708020621280255e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-8.026675276140922e9 -9999.8787233262 19492.054628555346 0.024323476210014048; -9999.8787233262 -0.012458172422545795 0.024323476210014048 3.035244391693807e-8; 1.0 0.0 -8.026675276140922e9 -9999.8787233262; 0.0 1.0 -9999.8787233262 -0.012458172422545795]
+│   λs = Complex{Float64}[-2.1024515497283938e-7 + 0.00034772601305832056im, -2.1024515497283938e-7 - 0.00034772601305832056im, -8.026675136539467e9 + 0.0im, -8.0266754157673e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[4.3320777320664525e-10 + 2.0071352349257388e-13im, -0.00034772602936468665 - 1.571289132140663e-7im, 6.81007739798659e-17 - 1.2458306552129948e-6im, -5.463781637955571e-11 + 0.9999999395425139im], [4.3320777320664525e-10 - 2.0071352349257388e-13im, -0.00034772602936468665 + 1.571289132140663e-7im, 6.81007739798659e-17 + 1.2458306552129948e-6im, -5.463781637955571e-11 - 0.9999999395425139im], [-0.999974349520468 + 0.0im, -1.2457987747095968e-6 + 0.0im, -0.00716242274411709 + 0.0im, -8.923166418733702e-9 + 0.0im], [0.9999743495205897 + 0.0im, 1.2457987747022852e-6 + 0.0im, -0.007162422727144111 + 0.0im, -8.923166284888944e-9 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-8.040641210296331e9 -9999.992673148832 18.412088024675956 2.3469330966425034e-5; -9999.992673148832 -0.012436816807592673 2.3469330966425034e-5 2.991564537783003e-11; 1.0 0.0 -8.040641210296331e9 -9999.992673148832; 0.0 1.0 -9999.992673148832 -0.012436816807592673]
+│   λs = Complex{Float64}[-1.9483091660047825e-7 + 0.0005118116929768622im, -1.9483091660047825e-7 - 0.0005118116929768622im, -8.040641206017831e9 + 0.0im, -8.040641214599705e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-6.365304198646996e-10 - 1.46674339340791e-13im, 0.0005118116476117005 + 1.1781495995455415e-7im, -7.499290901810673e-17 + 1.2436808335680727e-6im, 6.029907665848142e-11 - 0.9999998690236298im], [-6.365304198646996e-10 + 1.46674339340791e-13im, 0.0005118116476117005 - 1.1781495995455415e-7im, -7.499290901810673e-17 - 1.2436808335680727e-6im, 6.029907665848142e-11 + 0.9999998690236298im], [0.9739022678865624 + 0.0im, 1.2112237428377193e-6 + 0.0im, 0.2269677787789786 + 0.0im, 2.822755131443033e-7 + 0.0im], [0.9739022221621499 + 0.0im, 1.2112236860428727e-6 + 0.0im, -0.2269679749790251 + 0.0im, -2.8227575740724653e-7 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-8.068609496764564e9 -9999.96994510097 75.68513594965725 9.430328138288973e-5; -9999.96994510097 -0.01239365019393935 9.430328138288973e-5 1.1750139268423624e-10; 1.0 0.0 -8.068609496764564e9 -9999.96994510097; 0.0 1.0 -9999.96994510097 -0.01239365019393935]
+│   λs = Complex{Float64}[1.031110105857674e-7 + 0.0002209568682418217im, 1.031110105857674e-7 - 0.0002209568682418217im, -8.068609488077234e9 + 0.0im, -8.068609505476681e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-1.5821447884450945e-13 + 2.7384667559810123e-10im, 1.2755722875179565e-7 - 0.00022095685282304438im, 1.2393671680972426e-6 + 3.4962674561350336e-17im, -0.9999999755882579 - 2.8184644518974324e-11im], [-1.5821447884450945e-13 - 2.7384667559810123e-10im, 1.2755722875179565e-7 + 0.00022095685282304438im, 1.2393671680972426e-6 - 3.4962674561350336e-17im, -0.9999999755882579 + 2.8184644518974324e-11im], [0.9934584306398505 + 0.0im, 1.2312597917057012e-6 + 0.0im, 0.11419433693957495 + 0.0im, 1.4152871564046651e-7 + 0.0im], [-0.9934584323278381 + 0.0im, -1.2312597938232564e-6 + 0.0im, 0.11419432225455967 + 0.0im, 1.4152869691958826e-7 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-8.082611849077391e9 -9999.962463599104 472.2190292249457 0.0005865586965293698; -9999.962463599104 -0.012372160653212859 0.0005865586965293698 7.2858373589672e-10; 1.0 0.0 -8.082611849077391e9 -9999.962463599104; 0.0 1.0 -9999.962463599104 -0.012372160653212859]
+│   λs = Complex{Float64}[-4.2419631499186046e-7 + 0.00032306207559783083im, -4.2419631499186046e-7 - 0.00032306207559783083im, -8.082611827359163e9 + 0.0im, -8.082611870820364e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[4.740349551692752e-13 + 3.9969865386061835e-10im, -3.83327834696523e-7 - 0.00032306212023300047im, 1.2372191227857411e-6 - 1.5323927158661724e-16im, -0.9999999478145934 + 1.2383870941516315e-10im], [4.740349551692752e-13 - 3.9969865386061835e-10im, -3.83327834696523e-7 + 0.00032306212023300047im, 1.2372191227857411e-6 + 1.5323927158661724e-16im, -0.9999999478145934 - 1.2383870941516315e-10im], [0.9989428480897254 + 0.0im, 1.2359112587730678e-6 + 0.0im, 0.045969405574323365 + 0.0im, 5.6874230855785495e-8 + 0.0im], [-0.9989428481412649 + 0.0im, -1.235911258852052e-6 + 0.0im, 0.04596940445434178 + 0.0im, 5.687422906670283e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-8.110652971860462e9 -9999.970151079506 75.02849903260369 9.289667860812277e-5; -9999.970151079506 -0.012329404673113914 9.289667860812277e-5 1.1502019909355741e-10; 1.0 0.0 -8.110652971860462e9 -9999.970151079506; 0.0 1.0 -9999.970151079506 -0.012329404673113914]
+│   λs = Complex{Float64}[-9.90256332416774e-8 + 2.4814246074018773e-5im, -9.90256332416774e-8 - 2.4814246074018773e-5im, -8.110652963210891e9 + 0.0im, -8.110652980534696e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[1.0389584220232671e-13 + 3.0594542872614955e-11im, -8.427458876841126e-8 - 2.481424607458631e-5im, 1.2329426721804037e-6 - 2.5789038896517844e-18im, -0.9999999996913631 + 2.0912103841589648e-12im], [1.0389584220232671e-13 - 3.0594542872614955e-11im, -8.427458876841126e-8 + 2.481424607458631e-5im, 1.2329426721804037e-6 + 2.5789038896517844e-18im, -0.9999999996913631 - 2.0912103841589648e-12im], [0.993401740785059 + 0.0im, 1.2248073971732995e-6 + 0.0im, 0.11468644821292114 + 0.0im, 1.4140181626022547e-7 + 0.0im], [-0.9934017506188804 + 0.0im, -1.22480740931653e-6 + 0.0im, 0.11468636303338199 + 0.0im, 1.4140171061580557e-7 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-8.110652971860462e9 -9999.970151079506 1200.455984521659 0.0014863468577299642; -9999.970151079506 -0.012329404673113914 0.0014863468577299642 1.8403231854969185e-9; 1.0 0.0 -8.110652971860462e9 -9999.970151079506; 0.0 1.0 -9999.970151079506 -0.012329404673113914]
+│   λs = Complex{Float64}[1.0207653207875394e-7 + 0.00022811080554029512im, 1.0207653207875394e-7 - 0.00022811080554029512im, -8.110652937225208e9 + 0.0im, -8.110653006520384e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-1.7921252047463365e-13 + 2.812474987088956e-10im, 1.4482684651540012e-7 - 0.00022811076699319im, 1.2329426403868537e-6 + 4.0708747552176496e-17im, -0.9999999739819685 - 3.3036563990094386e-11im], [-1.7921252047463365e-13 - 2.812474987088956e-10im, 1.4482684651540012e-7 + 0.00022811076699319im, 1.2329426403868537e-6 - 4.0708747552176496e-17im, -0.9999999739819685 + 3.3036563990094386e-11im], [0.9995837518358415 + 0.0im, 1.2324294625632132e-6 + 0.0im, 0.02885000977926243 + 0.0im, 3.5570408456615495e-8 + 0.0im], [-0.9995837518894289 + 0.0im, -1.2324294626668087e-6 + 0.0im, 0.02885000792257433 + 0.0im, 3.557040558358816e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-8.1528057014286175e9 -9999.962779680094 468.2259478228249 0.0005757556532258181; -9999.962779680094 -0.012265638845702934 0.0005757556532258181 7.079799267060804e-10; 1.0 0.0 -8.1528057014286175e9 -9999.962779680094; 0.0 1.0 -9999.962779680094 -0.012265638845702934]
+│   λs = Complex{Float64}[-4.323498546804355e-8 + 0.0001577273371093174im, -4.323498546804355e-8 - 0.0001577273371093174im, -8.152805679802322e9 + 0.0im, -8.152805723079442e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-1.9346315411929167e-10 - 2.5819624216438797e-14im, 0.00015772733767965497 + 2.087929357186269e-8im, -4.041458889146284e-18 + 1.2265670275759394e-6im, 3.2932354353297846e-12 - 0.9999999875602907im], [-1.9346315411929167e-10 + 2.5819624216438797e-14im, 0.00015772733767965497 - 2.087929357186269e-8im, -4.041458889146284e-18 - 1.2265670275759394e-6im, 3.2932354353297846e-12 + 0.9999999875602907im], [-0.9989338440489589 + 0.0im, -1.2252593311078467e-6 + 0.0im, -0.04616465327570155 + 0.0im, -5.6624042345590486e-8 + 0.0im], [-0.9989338438410129 + 0.0im, -1.2252593309089498e-6 + 0.0im, 0.046164657775345994 + 0.0im, 5.6624047685719867e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-8.180968218069754e9 -9999.970403657997 74.3827914058056 9.114571958064379e-5; -9999.970403657997 -0.012223433334843407 9.114571958064379e-5 1.1168634627531532e-10; 1.0 0.0 -8.180968218069754e9 -9999.970403657997; 0.0 1.0 -9999.970403657997 -0.012223433334843407]
+│   λs = Complex{Float64}[-3.966096131086581e-8 + 0.0001033728362079265im, -3.966096131086581e-8 - 0.0001033728362079265im, -8.180968209457442e9 + 0.0im, -8.180968226706511e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-1.2635732964007538e-10 - 3.146961857769526e-14im, 0.00010337283573131323 + 2.5711498936875632e-8im, -3.2412708343420866e-18 + 1.2223455810780187e-6im, 2.6578705726313843e-12 - 0.9999999946562809im], [-1.2635732964007538e-10 + 3.146961857769526e-14im, 0.00010337283573131323 - 2.5711498936875632e-8im, -3.2412708343420866e-18 - 1.2223455810780187e-6im, 2.6578705726313843e-12 + 0.9999999946562809im], [0.9933450569709409 + 0.0im, 1.2142109473836985e-6 + 0.0im, 0.11517637687435882 + 0.0im, 1.40785336067914e-7 + 0.0im], [0.9933450622759241 + 0.0im, 1.2142109538702903e-6 + 0.0im, -0.11517633112122701 + 0.0im, -1.4078528013782704e-7 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-8.180968218069754e9 -9999.970403657997 1190.1246624928897 0.0014583315132903007; -9999.970403657997 -0.012223433334843407 0.0014583315132903007 1.7869815404050451e-9; 1.0 0.0 -8.180968218069754e9 -9999.970403657997; 0.0 1.0 -9999.970403657997 -0.012223433334843407]
+│   λs = Complex{Float64}[-5.3611346167160894e-8 + 0.00012962211310633344im, -5.3611346167160894e-8 - 0.00012962211310633344im, -8.180968183583775e9 + 0.0im, -8.180968252580182e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[1.584430175433885e-10 + 4.7898534097368106e-14im, -0.00012962211272854945 - 3.8846333316744364e-8im, 6.147301910028682e-18 - 1.2223455773104162e-6im, -5.035343832431732e-12 + 0.9999999915983061im], [1.584430175433885e-10 - 4.7898534097368106e-14im, -0.00012962211272854945 + 3.8846333316744364e-8im, 6.147301910028682e-18 + 1.2223455773104162e-6im, -5.035343832431732e-12 - 0.9999999915983061im], [0.9995801399981491 + 0.0im, 1.2218323738139524e-6 + 0.0im, 0.028974880841637705 + 0.0im, 3.541731782353598e-8 + 0.0im], [0.9995801400461288 + 0.0im, 1.2218323739275226e-6 + 0.0im, -0.02897487918641919 + 0.0im, -3.5417315645590655e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-8.223303038425e9 -9999.963108984783 463.8541972631492 0.0005647394180084703; -9999.963108984783 -0.012160486933651436 0.0005647394180084703 6.875665071790071e-10; 1.0 0.0 -8.223303038425e9 -9999.963108984783; 0.0 1.0 -9999.963108984783 -0.012160486933651436]
+│   λs = Complex{Float64}[-8.95408527301621e-9 + 0.0005248434324099207im, -8.95408527301621e-9 - 0.0005248434324099207im, -8.22330301689989e9 + 0.0im, -8.223303059974439e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[1.908846344877979e-14 + 6.382368714187525e-10im, -1.5708899403499288e-8 - 0.0005248434565838643im, 1.2160517111337033e-6 - 1.0110185258427329e-17im, -0.9999998622689245 + 8.244714074867945e-12im], [1.908846344877979e-14 - 6.382368714187525e-10im, -1.5708899403499288e-8 + 0.0005248434565838643im, 1.2160517111337033e-6 + 1.0110185258427329e-17im, -0.9999998622689245 - 8.244714074867945e-12im], [-0.9989238148978667 + 0.0im, -1.2147431818435722e-6 + 0.0im, -0.04638116027455422 + 0.0im, -5.640189699313014e-8 + 0.0im], [-0.9989238148178856 + 0.0im, -1.2147431818348986e-6 + 0.0im, 0.046381161997132304 + 0.0im, 5.6401899171942826e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Debug: rightmost eigenvalue not real
+│   M = [-8.251586948924195e9 -9999.970653098819 294.9821245834587 0.0003577909709678968; -9999.970653098819 -0.012118822439658094 0.0003577909709678968 4.3397334359469486e-10; 1.0 0.0 -8.251586948924195e9 -9999.970653098819; 0.0 1.0 -9999.970653098819 -0.012118822439658094]
+│   λs = Complex{Float64}[-1.1249905240288663e-7 + 0.00031969482653732776im, -1.1249905240288663e-7 - 0.00031969482653732776im, -8.251586931761261e9 + 0.0im, -8.25158696611137e9 + 0.0im]
+│   vs = Array{Complex{Float64},1}[[-5.180534820570237e-15 - 3.874332358087558e-10im, 4.214869397944909e-9 + 0.0003196948414060787im, -1.211884478176774e-6 + 1.6461555934295293e-18im, 0.9999999488968683 - 1.3474722097665814e-12im], [-5.180534820570237e-15 + 3.874332358087558e-10im, 4.214869397944909e-9 - 0.0003196948414060787im, -1.211884478176774e-6 - 1.6461555934295293e-18im, 0.9999999488968683 + 1.3474722097665814e-12im], [0.9983092774832854 + 0.0im, 1.2098355794375182e-6 + 0.0im, 0.05812560958245605 + 0.0im, 7.04415277794166e-8 + 0.0im], [-0.9983092773101033 + 0.0im, -1.2098355792384587e-6 + 0.0im, 0.05812561255686285 + 0.0im, 7.044153108167958e-8 + 0.0im]]
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:276
+┌ Debug: hard case not implemented, falling back to dogleg
+└ @ TrustRegionMethods /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/src/TrustRegionMethods.jl:308
+┌ Info: solver test
+│   f = HelicalValley()
+│   local_method = Dogleg()
+└ @ Main /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/test/test_nonlinear_problems.jl:138
+┌ Info: solver test
+│   f = HelicalValley()
+│   local_method = GeneralizedEigenSolver()
+└ @ Main /home/pkgeval/.julia/packages/TrustRegionMethods/wneoP/test/test_nonlinear_problems.jl:138
+Test Summary: | Pass  Total
+solver tests  |   20     20
+    Testing TrustRegionMethods tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:51:27.446
+CPU usage: 136.59s (128.12s user, 8.71s kernel)
+
+Network usage:
+- eth0: 4.261 MiB received, 193.712 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":139264,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":32768,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":139264,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":139264,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":32768,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":139264,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":308703232,"max_usage":1665314816,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":178798592,"inactive_file":135168,"inactive_anon":83668992,"total_pgfault":3287394,"total_cache":99020800,"total_rss_huge":0,"total_active_anon":194101248,"total_pgmajfault":0,"pgpgin":2202717,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":2134870,"hierarchical_memsw_limit":0,"cache":99020800,"active_file":270336,"pgfault":3287394,"total_mapped_file":0,"total_pgpgout":2134870,"total_writeback":0,"rss":178798592,"unevictable":0,"total_inactive_anon":83668992,"total_pgpgin":2202717,"active_anon":194101248,"total_active_file":270336},"limit":540965302272},"name":"/TrustRegionMethods-61S9n1VZ","networks":{"eth0":{"rx_bytes":4468079,"rx_packets":1554,"tx_packets":1593,"tx_bytes":198361,"tx_dropped":0,"rx_dropped":5,"tx_errors":0,"rx_errors":0}},"id":"d34981221bb2c84d1c4075f33fca52450748a82a443eefbddbe12ebfcedd929d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6593602894522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":128120000000,"usage_in_kernelmode":8710000000,"total_usage":136586496107,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,136581486115,0,2145201,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7600,2857191,0,0,0,0,0]}},"read":"2021-01-11T22:51:27.449315898Z"}

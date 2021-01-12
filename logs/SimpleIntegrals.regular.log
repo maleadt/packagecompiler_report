@@ -1,0 +1,167 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:32:57.744
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:32:59.52
+#
+
+ Installing known registries into `~/.julia`
+########################                                                  34.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed SimpleIntegrals ─ v0.2.2
+  Installed ArgCheck ──────── v2.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [c106d4f1] + SimpleIntegrals v0.2.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [dce04be8] + ArgCheck v2.1.0
+  [c106d4f1] + SimpleIntegrals v0.2.2
+
+
+################################################################################
+# Testing: 2021-01-11T22:33:03.592
+#
+
+    Testing SimpleIntegrals
+Status `/tmp/jl_FI81VT/Project.toml`
+  [dce04be8] ArgCheck v2.1.0
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [c106d4f1] SimpleIntegrals v0.2.2
+  [1986cc42] Unitful v1.5.0
+  [b77e0a4c] InteractiveUtils
+  [8dfed614] Test
+Status `/tmp/jl_FI81VT/Manifest.toml`
+  [dce04be8] ArgCheck v2.1.0
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [187b0558] ConstructionBase v1.0.0
+  [682c06a0] JSON v0.21.1
+  [69de0a69] Parsers v1.0.15
+  [c106d4f1] SimpleIntegrals v0.2.2
+  [1986cc42] Unitful v1.5.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [de0858da] Printf
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: Benchmarking on array of 10000 elements
+BenchmarkTools.Trial: 
+  memory estimate:  0 bytes
+  allocs estimate:  0
+  --------------
+  minimum time:     42.440 μs (0.00% GC)
+  median time:      43.567 μs (0.00% GC)
+  mean time:        43.567 μs (0.00% GC)
+  maximum time:     44.694 μs (0.00% GC)
+  --------------
+  samples:          2
+  evals/sample:     2BenchmarkTools.Trial: 
+  memory estimate:  0 bytes
+  allocs estimate:  0
+  --------------
+  minimum time:     42.770 μs (0.00% GC)
+  median time:      43.347 μs (0.00% GC)
+  mean time:        43.347 μs (0.00% GC)
+  maximum time:     43.925 μs (0.00% GC)
+  --------------
+  samples:          2
+  evals/sample:     2BenchmarkTools.Trial: 
+  memory estimate:  0 bytes
+  allocs estimate:  0
+  --------------
+  minimum time:     10.645 μs (0.00% GC)
+  median time:      11.303 μs (0.00% GC)
+  mean time:        11.303 μs (0.00% GC)
+  maximum time:     11.960 μs (0.00% GC)
+  --------------
+  samples:          2
+  evals/sample:     2BenchmarkTools.Trial: 
+  memory estimate:  0 bytes
+  allocs estimate:  0
+  --------------
+  minimum time:     10.585 μs (0.00% GC)
+  median time:      11.460 μs (0.00% GC)
+  mean time:        11.460 μs (0.00% GC)
+  maximum time:     12.335 μs (0.00% GC)
+  --------------
+  samples:          2
+  evals/sample:     2BenchmarkTools.Trial: 
+  memory estimate:  0 bytes
+  allocs estimate:  0
+  --------------
+  minimum time:     42.739 μs (0.00% GC)
+  median time:      43.267 μs (0.00% GC)
+  mean time:        43.267 μs (0.00% GC)
+  maximum time:     43.795 μs (0.00% GC)
+  --------------
+  samples:          2
+  evals/sample:     2BenchmarkTools.Trial: 
+  memory estimate:  0 bytes
+  allocs estimate:  0
+  --------------
+  minimum time:     43.099 μs (0.00% GC)
+  median time:      43.647 μs (0.00% GC)
+  mean time:        43.647 μs (0.00% GC)
+  maximum time:     44.194 μs (0.00% GC)
+  --------------
+  samples:          2
+  evals/sample:     2Test Summary: | Pass  Total
+perf          |    6      6
+Test Summary: | Pass  Total
+Unitful       |    1      1
+Test Summary: | Pass  Total
+spike         |    6      6
+Test Summary:     | Pass  Total
+constant function |  300    300
+Test Summary: | Pass  Total
+edgecases     |    2      2
+Test Summary: | Pass  Total
+pasting       |  200    200
+Test Summary: | Pass  Total
+typestability |    8      8
+Test Summary: | Pass  Total
+api           |    2      2
+Test Summary:               | Pass  Total
+Range and Vector consistent |  200    200
+    Testing SimpleIntegrals tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:33:39.76
+CPU usage: 42.04s (38.57s user, 3.55s kernel)
+
+Network usage:
+- eth0: 2.803 MiB received, 56.802 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":333291520,"max_usage":988622848,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":216670208,"inactive_file":135168,"inactive_anon":79749120,"total_pgfault":935517,"total_cache":87072768,"total_rss_huge":0,"total_active_anon":223973376,"total_pgmajfault":0,"pgpgin":541002,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":466872,"hierarchical_memsw_limit":0,"cache":87072768,"active_file":135168,"pgfault":935517,"total_mapped_file":0,"total_pgpgout":466872,"total_writeback":0,"rss":216670208,"unevictable":0,"total_inactive_anon":79749120,"total_pgpgin":541002,"active_anon":223973376,"total_active_file":135168},"limit":540965302272},"name":"/SimpleIntegrals-Jls9h2TY","networks":{"eth0":{"rx_bytes":2939167,"rx_packets":486,"tx_packets":519,"tx_bytes":58165,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"c4f788f4adf524f165641771daf7cf479125335a1915127795c96b39b23b7901","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6457286754522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":38570000000,"usage_in_kernelmode":3550000000,"total_usage":42039353710,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,42039345980,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2510,0,5220,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:33:40.132947787Z"}

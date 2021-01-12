@@ -1,0 +1,155 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:14:09.287
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:14:11.064
+#
+
+ Installing known registries into `~/.julia`
+####################################################                      73.1%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed FastJet ─────────────────── v0.6.3
+  Installed CxxWrap ─────────────────── v0.11.1
+  Installed FastJet_jll ─────────────── v3.3.4+2
+  Installed MacroTools ──────────────── v0.5.6
+  Installed JLLWrappers ─────────────── v1.2.0
+  Installed FastJet_Julia_Wrapper_jll ─ v0.8.5+2
+  Installed libcxxwrap_julia_jll ────── v0.8.5+1
+  Installed Artifacts ───────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [8509a5d2] + FastJet v0.6.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [1f15a43c] + CxxWrap v0.11.1
+  [8509a5d2] + FastJet v0.6.3
+  [33ff6b16] + FastJet_Julia_Wrapper_jll v0.8.5+2
+  [7111ce8a] + FastJet_jll v3.3.4+2
+  [692b3bcd] + JLLWrappers v1.2.0
+  [1914dd2f] + MacroTools v0.5.6
+  [3eaa8342] + libcxxwrap_julia_jll v0.8.5+1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T15:14:17.299
+#
+
+    Testing FastJet
+Status `/tmp/jl_OJdVzR/Project.toml`
+  [1f15a43c] CxxWrap v0.11.1
+  [8509a5d2] FastJet v0.6.3
+  [33ff6b16] FastJet_Julia_Wrapper_jll v0.8.5+2
+  [7111ce8a] FastJet_jll v3.3.4+2
+  [8f399da3] Libdl
+  [8dfed614] Test
+Status `/tmp/jl_OJdVzR/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [1f15a43c] CxxWrap v0.11.1
+  [8509a5d2] FastJet v0.6.3
+  [33ff6b16] FastJet_Julia_Wrapper_jll v0.8.5+2
+  [7111ce8a] FastJet_jll v3.3.4+2
+  [692b3bcd] JLLWrappers v1.2.0
+  [1914dd2f] MacroTools v0.5.6
+  [3eaa8342] libcxxwrap_julia_jll v0.8.5+1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+#--------------------------------------------------------------------------
+#                         FastJet release 3.3.4
+#                 M. Cacciari, G.P. Salam and G. Soyez                  
+#     A software package for jet finding and analysis at colliders      
+#                           http://fastjet.fr                           
+#	                                                                      
+# Please cite EPJC72(2012)1896 [arXiv:1111.6097] if you use this package
+# for scientific work and optionally PLB641(2006)57 [hep-ph/0512210].   
+#                                                                       
+# FastJet is provided without warranty under the GNU GPL v2 or higher.  
+# It uses T. Chan's closest pair algorithm, S. Fortune's Voronoi code
+# and 3rd party plugin jet algorithms. See COPYING file for details.
+#--------------------------------------------------------------------------
+        pt y phi
+jet 1: 99.0 0.0 3.141592653589793
+    constituent 1's pt: 99.0 index 26
+jet 2: 103.0 0.0 0.0
+    constituent 1's pt: 99.00005050503762 index 22
+    constituent 2's pt: 4.001249804748512 index 24
+[-99.0, 0.0, 0.0, 99.0]
+[103.0, 0.0, 0.0, 105.0]
+Test Summary:      | Pass  Total
+Core functionality |    1      1
+        pt y phi
+jet 1: 103.0 0.0 0.0
+    constituent 1's pt: 99.00005050503762 index 22
+    constituent 2's pt: 4.001249804748512 index 24
+jet 2: 99.0 0.0 3.141592653589793
+    constituent 1's pt: 99.0 index 26
+        pt y phi
+jet 1: 99.00005050503762 0.0 0.0010101006665645031
+    constituent 1's pt: 99.00005050503762 index 22
+jet 2: 4.001249804748512 0.0 6.258190513560666
+    constituent 1's pt: 4.001249804748512 index 24
+jet 3: 99.0 0.0 3.141592653589793
+    constituent 1's pt: 99.0 index 26
+false
+Test Summary: | Pass  Total
+Plugins       |    2      2
+    Testing FastJet tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:14:55.187
+CPU usage: 45.54s (42.08s user, 3.56s kernel)
+
+Network usage:
+- eth0: 5.497 MiB received, 87.032 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":1,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":20,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":25,"op":"Total","minor":0},{"major":253,"value":1,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":20,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":25,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":131072,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":237568,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":258048,"op":"Total","minor":0},{"major":253,"value":131072,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":237568,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":258048,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":312967168,"max_usage":889016320,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":175689728,"inactive_file":17707008,"inactive_anon":79749120,"total_pgfault":987063,"total_cache":106504192,"total_rss_huge":0,"total_active_anon":179638272,"total_pgmajfault":0,"pgpgin":588489,"rss_huge":0,"mapped_file":0,"total_inactive_file":17707008,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":519576,"hierarchical_memsw_limit":0,"cache":106504192,"active_file":5271552,"pgfault":987063,"total_mapped_file":0,"total_pgpgout":519576,"total_writeback":0,"rss":175689728,"unevictable":0,"total_inactive_anon":79749120,"total_pgpgin":588489,"active_anon":179638272,"total_active_file":5271552},"limit":540965302272},"name":"/FastJet-dQDZwmLZ","networks":{"eth0":{"rx_bytes":5764402,"rx_packets":874,"tx_packets":879,"tx_bytes":89121,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"b2fa34b2212af7104d95801b4d5f921cb342e412b54997007fb0a2d29db80225","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3093322404522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":42080000000,"usage_in_kernelmode":3560000000,"total_usage":45540963642,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,41470643,0,0,45499450159,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,42840,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:14:55.190579988Z"}

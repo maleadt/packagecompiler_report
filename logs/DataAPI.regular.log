@@ -1,0 +1,77 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:59:45.387
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:59:47.156
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed DataAPI ─ v1.4.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9a962f9c] + DataAPI v1.4.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [9a962f9c] + DataAPI v1.4.0
+
+
+################################################################################
+# Testing: 2021-01-11T18:59:50.573
+#
+
+    Testing DataAPI
+Status `/tmp/jl_YzvBpS/Project.toml`
+  [9a962f9c] DataAPI v1.4.0
+  [8dfed614] Test
+Status `/tmp/jl_YzvBpS/Manifest.toml`
+  [9a962f9c] DataAPI v1.4.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+┌ Warning: All(args...) is deprecated, use Cols(args...) instead
+│   caller = macro expansion at runtests.jl:77 [inlined]
+└ @ Core ~/.julia/packages/DataAPI/GOXrJ/test/runtests.jl:77
+┌ Warning: All(args...) is deprecated, use Cols(args...) instead
+│   caller = macro expansion at runtests.jl:78 [inlined]
+└ @ Core ~/.julia/packages/DataAPI/GOXrJ/test/runtests.jl:78
+┌ Warning: All(args...) is deprecated, use Cols(args...) instead
+│   caller = macro expansion at runtests.jl:80 [inlined]
+└ @ Core ~/.julia/packages/DataAPI/GOXrJ/test/runtests.jl:80
+Test Summary: | Pass  Total
+DataAPI       |   48     48
+    Testing DataAPI tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:59:58.592
+CPU usage: 13.27s (10.96s user, 2.35s kernel)
+
+Network usage:
+- eth0: 2.533 MiB received, 25.842 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":319512576,"max_usage":585822208,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":210735104,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":327591,"total_cache":79319040,"total_rss_huge":0,"total_active_anon":211267584,"total_pgmajfault":0,"pgpgin":212586,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":141801,"hierarchical_memsw_limit":0,"cache":79319040,"active_file":135168,"pgfault":327591,"total_mapped_file":0,"total_pgpgout":141801,"total_writeback":0,"rss":210735104,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":212586,"active_anon":211267584,"total_active_file":135168},"limit":540965302272},"name":"/DataAPI-XSxJoXpt","networks":{"eth0":{"rx_bytes":2656052,"rx_packets":256,"tx_packets":258,"tx_bytes":26462,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"f5325ec6dd8350388e961884aab5e57aa050004c9298a41ec8ccc30505b31c34","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4818832394522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":10960000000,"usage_in_kernelmode":2350000000,"total_usage":13271088087,"percpu_usage":[13271082937,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5150,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:59:58.597756365Z"}

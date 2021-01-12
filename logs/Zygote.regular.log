@@ -1,15 +1,15 @@
 ################################################################################
-# PkgEval set-up: 2021-01-11T15:01:00.424
+# PkgEval set-up: 2021-01-11T17:49:23.577
 #
 
 Julia Version 1.5.3
 Commit 599f52c4c6 (2020-12-18 13:33 UTC)
 Platform Info:
   OS: Linux (x86_64-linux-gnu)
-  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  CPU: AMD EPYC 7502 32-Core Processor
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-9.0.1 (ORCJIT, znver1)
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
 Environment:
   JULIA_PKG_PRECOMPILE_AUTO = 0
   JULIA_PKGEVAL = true
@@ -18,36 +18,36 @@ Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so 
 
 
 ################################################################################
-# Installation: 2021-01-11T15:01:01.995
+# Installation: 2021-01-11T17:49:25.392
 #
 
  Installing known registries into `~/.julia`
-#=#=#                                                                         ########################                                                  33.4%######################################################################## 100.0%
+######################################################################## 100.0%
       Added registry `General` to `~/.julia/registries/General`
   Resolving package versions...
-  Installed Compat ─────────────────────── v3.25.0
-  Installed MacroTools ─────────────────── v0.5.6
-  Installed DiffRules ──────────────────── v1.0.2
-  Installed MuladdMacro ────────────────── v0.2.2
   Installed Zygote ─────────────────────── v0.6.0
-  Installed ChainRules ─────────────────── v0.7.45
-  Installed Artifacts ──────────────────── v1.3.0
-  Installed ForwardDiff ────────────────── v0.10.14
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed ZygoteRules ────────────────── v0.2.1
+  Installed Reexport ───────────────────── v1.0.0
+  Installed FillArrays ─────────────────── v0.10.2
+  Installed MuladdMacro ────────────────── v0.2.2
   Installed Requires ───────────────────── v1.1.2
-  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed DiffResults ────────────────── v1.0.3
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed StaticArrays ───────────────── v1.0.1
   Installed AbstractFFTs ───────────────── v0.5.0
   Installed NaNMath ────────────────────── v0.3.5
-  Installed StaticArrays ───────────────── v1.0.1
-  Installed FillArrays ─────────────────── v0.10.2
-  Installed JLLWrappers ────────────────── v1.2.0
-  Installed ChainRulesCore ─────────────── v0.9.24
-  Installed ZygoteRules ────────────────── v0.2.1
-  Installed DiffResults ────────────────── v1.0.3
-  Installed SpecialFunctions ───────────── v1.2.1
-  Installed CommonSubexpressions ───────── v0.3.0
-  Installed Reexport ───────────────────── v1.0.0
-  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed MacroTools ─────────────────── v0.5.6
   Installed IRTools ────────────────────── v0.4.2
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed ChainRules ─────────────────── v0.7.45
+  Installed Compat ─────────────────────── v3.25.0
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Artifacts ──────────────────── v1.3.0
 Updating `~/.julia/environments/v1.5/Project.toml`
   [e88e6eb3] + Zygote v0.6.0
 Updating `~/.julia/environments/v1.5/Manifest.toml`
@@ -101,13 +101,13 @@ Updating `~/.julia/environments/v1.5/Manifest.toml`
 
 
 ################################################################################
-# Testing: 2021-01-11T15:01:07.492
+# Testing: 2021-01-11T17:49:32.056
 #
 
     Testing Zygote
 ┌ Error: Pkg.Resolve.ResolverError("Unsatisfiable requirements detected for package Reexport [189a3867]:\n Reexport [189a3867] log:\n ├─possible versions are: [0.2.0, 1.0.0] or uninstalled\n ├─restricted to versions 1.0.0 by an explicit requirement, leaving only versions 1.0.0\n └─restricted by compatibility requirements with CUDA [052768ef] to versions: 0.2.0 — no versions left\n   └─CUDA [052768ef] log:\n     ├─possible versions are: [0.1.0, 1.0.0-1.0.2, 1.1.0, 1.2.0-1.2.1, 1.3.0-1.3.3, 2.0.0-2.0.2, 2.1.0, 2.2.0-2.2.1, 2.3.0, 2.4.0] or uninstalled\n     └─restricted to versions * by an explicit requirement, leaving only versions [0.1.0, 1.0.0-1.0.2, 1.1.0, 1.2.0-1.2.1, 1.3.0-1.3.3, 2.0.0-2.0.2, 2.1.0, 2.2.0-2.2.1, 2.3.0, 2.4.0]", nothing)
 └ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1427
-Status `/tmp/jl_rMAQid/Project.toml`
+Status `/tmp/jl_u1uGqS/Project.toml`
   [621f4979] AbstractFFTs v0.5.0
   [052768ef] CUDA v2.4.0
   [082447d4] ChainRules v0.7.45
@@ -131,7 +131,7 @@ Status `/tmp/jl_rMAQid/Project.toml`
   [9a3f8284] Random
   [10745b16] Statistics
   [8dfed614] Test
-Status `/tmp/jl_rMAQid/Manifest.toml`
+Status `/tmp/jl_u1uGqS/Manifest.toml`
   [621f4979] AbstractFFTs v0.5.0
   [79e6a3ab] Adapt v3.0.0
   [56f22d72] Artifacts v1.3.0
@@ -236,10 +236,10 @@ PkgEval succeeded
 
 
 ################################################################################
-# PkgEval teardown: 2021-01-11T15:12:06.499
-CPU usage: 664.74s (657.17s user, 8.34s kernel)
+# PkgEval teardown: 2021-01-11T18:03:08.375
+CPU usage: 823.60s (811.36s user, 13.47s kernel)
 
 Network usage:
-- eth0: 5.805 MiB received, 312.862 KiB sent
+- eth0: 5.562 MiB received, 253.307 KiB sent
 
-Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":17,"op":"Read","minor":0},{"major":259,"value":30,"op":"Write","minor":0},{"major":259,"value":38,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":47,"op":"Total","minor":0}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":69632,"op":"Read","minor":0},{"major":259,"value":163840,"op":"Write","minor":0},{"major":259,"value":184320,"op":"Sync","minor":0},{"major":259,"value":49152,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":233472,"op":"Total","minor":0}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":402087936,"max_usage":1925222400,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":245719040,"inactive_file":135168,"inactive_anon":85155840,"total_pgfault":5315607,"total_cache":124944384,"total_rss_huge":0,"total_active_anon":284942336,"total_pgmajfault":0,"pgpgin":3256407,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":135168,"pgpgout":3165894,"hierarchical_memsw_limit":0,"cache":124944384,"active_file":675840,"pgfault":5315607,"total_mapped_file":0,"total_pgpgout":3165894,"total_writeback":135168,"rss":245719040,"unevictable":0,"total_inactive_anon":85155840,"total_pgpgin":3256407,"active_anon":284942336,"total_active_file":675840},"limit":67467247616},"name":"/Zygote-0XVIbKWY","networks":{"eth0":{"rx_bytes":6086596,"rx_packets":5256,"tx_packets":2942,"tx_bytes":320371,"tx_dropped":0,"rx_dropped":0,"tx_errors":0,"rx_errors":0}},"id":"7e15b1e07be9db95a193d4ac32d77fa6f0fec66c4c544f737a2b603b3cb87c78","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":7063012825808967,"online_cpus":64,"cpu_usage":{"usage_in_usermode":657170000000,"usage_in_kernelmode":8340000000,"total_usage":664740193826,"percpu_usage":[0,0,0,0,0,664445232271,294961555,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:12:06.500690435Z"}
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":155648,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":49152,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":155648,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":155648,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":49152,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":155648,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":372842496,"max_usage":1972916224,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":216473600,"inactive_file":135168,"inactive_anon":85155840,"total_pgfault":6376293,"total_cache":124510208,"total_rss_huge":0,"total_active_anon":255873024,"total_pgmajfault":0,"pgpgin":3274029,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":3190781,"hierarchical_memsw_limit":0,"cache":124510208,"active_file":135168,"pgfault":6376293,"total_mapped_file":0,"total_pgpgout":3190781,"total_writeback":0,"rss":216473600,"unevictable":0,"total_inactive_anon":85155840,"total_pgpgin":3274029,"active_anon":255873024,"total_active_file":135168},"limit":540965302272},"name":"/Zygote-cicLBXKa","networks":{"eth0":{"rx_bytes":5832379,"rx_packets":2125,"tx_packets":2077,"tx_bytes":259386,"tx_dropped":0,"rx_dropped":28,"tx_errors":0,"rx_errors":0}},"id":"3803eb9566a29801a5572d1ac8696bead7ad87a4a40115b278bdd67a1ea7f03f","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4383057854522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":811360000000,"usage_in_kernelmode":13470000000,"total_usage":823602763557,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,823602763557,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:03:08.378464477Z"}

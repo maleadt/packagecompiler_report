@@ -1,0 +1,145 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:27:21.867
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:27:23.681
+#
+
+ Installing known registries into `~/.julia`
+######################################################################    98.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed SymmetricTensors ─── v1.0.2
+  Installed Combinatorics ────── v1.0.2
+  Installed Missings ─────────── v0.4.4
+  Installed DataAPI ──────────── v1.4.0
+  Installed SortingAlgorithms ── v0.3.1
+  Installed Compat ───────────── v3.25.0
+  Installed OrderedCollections ─ v1.3.2
+  Installed StatsBase ────────── v0.33.2
+  Installed DataStructures ───── v0.18.8
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [1ab33d94] + SymmetricTensors v1.0.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [861a8166] + Combinatorics v1.0.2
+  [34da2185] + Compat v3.25.0
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [e1d29d7a] + Missings v0.4.4
+  [bac558e1] + OrderedCollections v1.3.2
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [2913bbd2] + StatsBase v0.33.2
+  [1ab33d94] + SymmetricTensors v1.0.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T22:27:28.527
+#
+
+    Testing SymmetricTensors
+Status `/tmp/jl_PeBhuS/Project.toml`
+  [861a8166] Combinatorics v1.0.2
+  [2913bbd2] StatsBase v0.33.2
+  [1ab33d94] SymmetricTensors v1.0.2
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_PeBhuS/Manifest.toml`
+  [861a8166] Combinatorics v1.0.2
+  [34da2185] Compat v3.25.0
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [e1d29d7a] Missings v0.4.4
+  [bac558e1] OrderedCollections v1.3.2
+  [a2af1166] SortingAlgorithms v0.3.1
+  [2913bbd2] StatsBase v0.33.2
+  [1ab33d94] SymmetricTensors v1.0.2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+Helpers       |    9      9
+Test Summary: | Pass  Total
+Converting    |   19     19
+Test Summary:                      | Pass  Total
+Random symmetric tensor generation |    6      6
+Test Summary: | Pass  Total
+Seting value  |    6      6
+Test Summary:    | Pass  Total
+Basic operations |   11     11
+Test Summary: | Pass  Total
+Exceptions    |   11     11
+    Testing SymmetricTensors tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:27:53.04
+CPU usage: 31.28s (28.04s user, 3.30s kernel)
+
+Network usage:
+- eth0: 2.955 MiB received, 67.521 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":293642240,"max_usage":974782464,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":179634176,"inactive_file":135168,"inactive_anon":79749120,"total_pgfault":759924,"total_cache":84164608,"total_rss_huge":0,"total_active_anon":184233984,"total_pgmajfault":0,"pgpgin":513447,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":449025,"hierarchical_memsw_limit":0,"cache":84164608,"active_file":135168,"pgfault":759924,"total_mapped_file":0,"total_pgpgout":449025,"total_writeback":0,"rss":179634176,"unevictable":0,"total_inactive_anon":79749120,"total_pgpgin":513447,"active_anon":184233984,"total_active_file":135168},"limit":540965302272},"name":"/SymmetricTensors-ZMgbWlZx","networks":{"eth0":{"rx_bytes":3098618,"rx_packets":557,"tx_packets":612,"tx_bytes":69141,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"ae7ca9bfcf1afda479d0455c08308041a2236cefc983b9c50fe1c2e03fe696d9","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6413029294522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":28040000000,"usage_in_kernelmode":3300000000,"total_usage":31279717216,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31279696606,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20610,0,0,0]}},"read":"2021-01-11T22:27:53.664732561Z"}

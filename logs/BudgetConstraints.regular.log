@@ -1,0 +1,107 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:01:45.405
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:01:47.255
+#
+
+ Installing known registries into `~/.julia`
+###############################################################           88.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed BudgetConstraints ── v1.0.1
+  Installed Parameters ───────── v0.12.1
+  Installed UnPack ───────────── v1.0.2
+  Installed OrderedCollections ─ v1.3.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [51aacf4b] + BudgetConstraints v1.0.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [51aacf4b] + BudgetConstraints v1.0.1
+  [bac558e1] + OrderedCollections v1.3.2
+  [d96e819e] + Parameters v0.12.1
+  [3a884ed6] + UnPack v1.0.2
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T20:01:50.805
+#
+
+    Testing BudgetConstraints
+Status `/tmp/jl_sbP5cR/Project.toml`
+  [51aacf4b] BudgetConstraints v1.0.1
+  [d96e819e] Parameters v0.12.1
+  [8dfed614] Test
+Status `/tmp/jl_sbP5cR/Manifest.toml`
+  [51aacf4b] BudgetConstraints v1.0.1
+  [bac558e1] OrderedCollections v1.3.2
+  [d96e819e] Parameters v0.12.1
+  [3a884ed6] UnPack v1.0.2
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary:        | Pass  Total
+reverse lookup thing |    4      4
+ps = Set(BudgetConstraints.Point2DG{Float64}[BudgetConstraints.Point2DG{Float64}(1.011, 3.011), BudgetConstraints.Point2DG{Float64}(1.011, 2.011), BudgetConstraints.Point2DG{Float64}(10.011, 13.011), BudgetConstraints.Point2DG{Float64}(-1.011, -3.011)]) 
+bc2 = BudgetConstraints.Point2DG{Float64}[BudgetConstraints.Point2DG{Float64}(-1.01, -3.01), BudgetConstraints.Point2DG{Float64}(1.0, 2.0), BudgetConstraints.Point2DG{Float64}(1.01, 2.01), BudgetConstraints.Point2DG{Float64}(1.01, 3.01), BudgetConstraints.Point2DG{Float64}(10.01, 13.01)] 
+res=Dict{Symbol,Any}(:benefit1 => 0.0,:basic_income => 0.0,:benefit2 => 89.93,:tax => 0.0,:netincome => 239.93)
+
+Default Case
+
+[0.0 73.0; 73.0 73.0; 150.0 150.0; 150.0 239.93; 239.56 292.77; 369.34 343.39; 1197.81 1006.16; 2000.0 1487.47]
+NamedTuple[(taxcredit = 73.0, marginalrate = 1.0), (taxcredit = 0.0, marginalrate = 0.0), (taxcredit = 9.9999999999999e9, marginalrate = -149.0), (taxcredit = 151.43066994193842, marginalrate = 0.4100044662795894), (taxcredit = 199.33089382031125, marginalrate = 0.6099553089844351), (taxcredit = 47.92067485847406, marginalrate = 0.20000724226586364), (taxcredit = 287.4799726997345, marginalrate = 0.40000498634986725)]
+
+Zero Params
+
+[0.0 0.0; 2000.0 2000.0]
+NamedTuple[(taxcredit = 0.0, marginalrate = 0.0)]
+
+999 allowance case
+
+[0.0 73.0; 73.0 73.0; 999.0 999.0; 1957.25 1765.6; 2000.0 1791.25]
+NamedTuple[(taxcredit = 73.0, marginalrate = 1.0), (taxcredit = 0.0, marginalrate = 0.0), (taxcredit = 199.80000000000007, marginalrate = 0.20000000000000007), (taxcredit = 591.2499999999959, marginalrate = 0.3999999999999979)]
+Test Summary:        | Pass  Total
+BudgetConstraints.jl |    2      2
+    Testing BudgetConstraints tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:02:00.829
+CPU usage: 15.59s (12.93s user, 2.69s kernel)
+
+Network usage:
+- eth0: 2.606 MiB received, 41.184 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":321880064,"max_usage":867885056,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":212422656,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":417879,"total_cache":79949824,"total_rss_huge":0,"total_active_anon":213430272,"total_pgmajfault":0,"pgpgin":315414,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":244032,"hierarchical_memsw_limit":0,"cache":79949824,"active_file":135168,"pgfault":417879,"total_mapped_file":0,"total_pgpgout":244032,"total_writeback":0,"rss":212422656,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":315414,"active_anon":213430272,"total_active_file":135168},"limit":540965302272},"name":"/BudgetConstraints-6Nq96eLN","networks":{"eth0":{"rx_bytes":2732871,"rx_packets":376,"tx_packets":387,"tx_bytes":42172,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"a8e0190ef7b9950775f1e35ed3da946d9eda6e2ab4d2d767e688c60bdad2fec6","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5294674344522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":12930000000,"usage_in_kernelmode":2690000000,"total_usage":15588445484,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15588445484,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:02:00.832312841Z"}

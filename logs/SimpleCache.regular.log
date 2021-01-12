@@ -1,0 +1,98 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:10:49.977
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:10:51.772
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed SimpleCache ─ v0.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [535d1a1e] + SimpleCache v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [535d1a1e] + SimpleCache v0.1.0
+  [2a0f44e3] + Base64
+  [b77e0a4c] + InteractiveUtils
+  [d6f4376e] + Markdown
+  [9e88b42a] + Serialization
+
+
+################################################################################
+# Testing: 2021-01-11T18:10:55.24
+#
+
+    Testing SimpleCache
+Status `/tmp/jl_IaajTT/Project.toml`
+  [535d1a1e] SimpleCache v0.1.0
+  [b77e0a4c] InteractiveUtils
+  [9e88b42a] Serialization
+Status `/tmp/jl_IaajTT/Manifest.toml`
+  [535d1a1e] SimpleCache v0.1.0
+  [2a0f44e3] Base64
+  [b77e0a4c] InteractiveUtils
+  [d6f4376e] Markdown
+  [9e88b42a] Serialization
+ERROR: LoadError: IOError: could not spawn `julia generated.jl`: no such file or directory (ENOENT)
+Stacktrace:
+ [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:99
+ [2] #585 at ./process.jl:112 [inlined]
+ [3] setup_stdios(::Base.var"#585#586"{Cmd}, ::Array{Any,1}) at ./process.jl:196
+ [4] _spawn at ./process.jl:111 [inlined]
+ [5] _spawn(::Base.CmdRedirect, ::Array{Any,1}) at ./process.jl:139 (repeats 2 times)
+ [6] run(::Base.CmdRedirect; wait::Bool) at ./process.jl:439
+ [7] run at ./process.jl:438 [inlined]
+ [8] execute(::Cmd) at /home/pkgeval/.julia/packages/SimpleCache/n3Bvg/test/runtests.jl:10
+ [9] calc_hashes(::Bool, ::Dict{Any,Any}) at /home/pkgeval/.julia/packages/SimpleCache/n3Bvg/test/runtests.jl:41
+ [10] top-level scope at /home/pkgeval/.julia/packages/SimpleCache/n3Bvg/test/runtests.jl:60
+ [11] include(::String) at ./client.jl:457
+ [12] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/SimpleCache/n3Bvg/test/runtests.jl:60
+
+PkgEval failed: Package SimpleCache errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:11:01.283
+CPU usage: 11.32s (9.00s user, 2.36s kernel)
+
+Network usage:
+- eth0: 2.534 MiB received, 26.375 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":336412672,"max_usage":593952768,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":227368960,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":307923,"total_cache":79319040,"total_rss_huge":0,"total_active_anon":227893248,"total_pgmajfault":0,"pgpgin":215193,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":140293,"hierarchical_memsw_limit":0,"cache":79319040,"active_file":135168,"pgfault":307923,"total_mapped_file":0,"total_pgpgout":140293,"total_writeback":0,"rss":227368960,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":215193,"active_anon":227893248,"total_active_file":135168},"limit":540965302272},"name":"/SimpleCache-4eagbIpF","networks":{"eth0":{"rx_bytes":2656974,"rx_packets":268,"tx_packets":267,"tx_bytes":27008,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"8cee73ce773534f461d819be1d87cbf8067d115385fef0f23d9cd09c8af021db","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4443428704522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":9000000000,"usage_in_kernelmode":2360000000,"total_usage":11321871669,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11321866919,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4750,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:11:01.285657548Z"}

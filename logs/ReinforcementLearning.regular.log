@@ -1,0 +1,569 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:41:54.787
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:41:56.699
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ────── v0.3.4+0
+  Installed IdentityRanges ──────────────────── v0.3.1
+  Installed ZygoteRules ─────────────────────── v0.2.1
+  Installed ReinforcementLearning ───────────── v0.7.0
+  Installed Inflate ─────────────────────────── v0.1.2
+  Installed CEnum ───────────────────────────── v0.4.1
+  Installed VertexSafeGraphs ────────────────── v0.1.2
+  Installed FunctionWrappers ────────────────── v1.1.1
+  Installed Ratios ──────────────────────────── v0.4.0
+  Installed MosaicViews ─────────────────────── v0.2.4
+  Installed DiffResults ─────────────────────── v1.0.3
+  Installed DiffRules ───────────────────────── v1.0.2
+  Installed DataStructures ──────────────────── v0.18.8
+  Installed Setfield ────────────────────────── v0.7.0
+  Installed LLVM ────────────────────────────── v3.5.2
+  Installed ConstructionBase ────────────────── v1.0.0
+  Installed nghttp2_jll ─────────────────────── v1.40.0+2
+  Installed RecursiveArrayTools ─────────────── v2.10.0
+  Installed DataValueInterfaces ─────────────── v1.0.0
+  Installed Colors ──────────────────────────── v0.12.6
+  Installed OrderedCollections ──────────────── v1.3.2
+  Installed StaticArrays ────────────────────── v0.12.5
+  Installed VectorizationBase ───────────────── v0.12.33
+  Installed AxisAlgorithms ──────────────────── v1.0.0
+  Installed FastClosures ────────────────────── v0.3.2
+  Installed StructArrays ────────────────────── v0.4.4
+  Installed FiniteDiff ──────────────────────── v2.7.2
+  Installed NLsolve ─────────────────────────── v4.5.1
+  Installed ChainRules ──────────────────────── v0.7.45
+  Installed Distributions ───────────────────── v0.24.10
+  Installed ForwardDiff ─────────────────────── v0.10.14
+  Installed FixedPointNumbers ───────────────── v0.8.4
+  Installed Graphics ────────────────────────── v1.0.2
+  Installed Compat ──────────────────────────── v3.25.0
+  Installed NLSolversBase ───────────────────── v7.7.1
+  Installed SpecialFunctions ────────────────── v1.2.1
+  Installed GR ──────────────────────────────── v0.52.0
+  Installed NNlib ───────────────────────────── v0.7.11
+  Installed Juno ────────────────────────────── v0.8.4
+  Installed ReinforcementLearningZoo ────────── v0.2.2
+  Installed GPUArrays ───────────────────────── v6.2.0
+  Installed Functors ────────────────────────── v0.1.0
+  Installed Media ───────────────────────────── v0.5.0
+  Installed Zlib_jll ────────────────────────── v1.2.11+18
+  Installed CpuId ───────────────────────────── v0.2.2
+  Installed Rmath_jll ───────────────────────── v0.2.2+1
+  Installed WoodburyMatrices ────────────────── v0.5.3
+  Installed Zygote ──────────────────────────── v0.5.17
+  Installed MuladdMacro ─────────────────────── v0.2.2
+  Installed JLD ─────────────────────────────── v0.10.0
+  Installed FillArrays ──────────────────────── v0.10.2
+  Installed Tables ──────────────────────────── v1.2.2
+  Installed QuadGK ──────────────────────────── v2.4.1
+  Installed Requires ────────────────────────── v1.1.2
+  Installed Parameters ──────────────────────── v0.12.1
+  Installed SparseDiffTools ─────────────────── v1.12.0
+  Installed Flux ────────────────────────────── v0.11.3
+  Installed LibSSH2_jll ─────────────────────── v1.9.0+3
+  Installed LoopVectorization ───────────────── v0.8.26
+  Installed SIMDPirates ─────────────────────── v0.8.26
+  Installed FileIO ──────────────────────────── v1.4.5
+  Installed CommonRLInterface ───────────────── v0.2.2
+  Installed IRTools ─────────────────────────── v0.4.2
+  Installed HDF5 ────────────────────────────── v0.13.6
+  Installed ProtoBuf ────────────────────────── v0.10.0
+  Installed StableRNGs ──────────────────────── v1.0.0
+  Installed RecipesBase ─────────────────────── v1.1.1
+  Installed Missings ────────────────────────── v0.4.4
+  Installed JLLWrappers ─────────────────────── v1.2.0
+  Installed LightGraphs ─────────────────────── v1.3.4
+  Installed ArnoldiMethod ───────────────────── v0.0.4
+  Installed PDMats ──────────────────────────── v0.10.1
+  Installed Adapt ───────────────────────────── v2.4.0
+  Installed LabelledArrays ──────────────────── v1.4.0
+  Installed UnPack ──────────────────────────── v1.0.2
+  Installed AbstractTrees ───────────────────── v0.3.3
+  Installed IterativeSolvers ────────────────── v0.9.0
+  Installed LibCURL_jll ─────────────────────── v7.70.0+2
+  Installed ReinforcementLearningCore ───────── v0.5.1
+  Installed GenericSVD ──────────────────────── v0.3.0
+  Installed MbedTLS_jll ─────────────────────── v2.16.8+1
+  Installed GPUCompiler ─────────────────────── v0.8.3
+  Installed PaddedViews ─────────────────────── v0.5.7
+  Installed Reexport ────────────────────────── v0.2.0
+  Installed Scratch ─────────────────────────── v1.0.3
+  Installed TranscodingStreams ──────────────── v0.9.5
+  Installed Zstd_jll ────────────────────────── v1.4.5+2
+  Installed TreeViews ───────────────────────── v0.3.0
+  Installed DataAPI ─────────────────────────── v1.4.0
+  Installed TimerOutputs ────────────────────── v0.5.7
+  Installed ReinforcementLearningBase ───────── v0.8.5
+  Installed Blosc ───────────────────────────── v0.7.0
+  Installed HTTP ────────────────────────────── v0.8.19
+  Installed DiffEqBase ──────────────────────── v6.53.4
+  Installed MacroTools ──────────────────────── v0.5.6
+  Installed MappedArrays ────────────────────── v0.3.0
+  Installed AbstractFFTs ────────────────────── v0.5.0
+  Installed NaNMath ─────────────────────────── v0.3.5
+  Installed ZipFile ─────────────────────────── v0.9.3
+  Installed Distances ───────────────────────── v0.10.0
+  Installed JSON ────────────────────────────── v0.21.1
+  Installed ArrayInterface ──────────────────── v2.14.13
+  Installed LineSearches ────────────────────── v7.1.1
+  Installed ReinforcementLearningEnvironments ─ v0.3.3
+  Installed CoordinateTransformations ───────── v0.6.1
+  Installed OffsetArrays ────────────────────── v1.5.0
+  Installed ExprTools ───────────────────────── v0.1.3
+  Installed IteratorInterfaceExtensions ─────── v1.0.0
+  Installed RecursiveFactorization ──────────── v0.1.6
+  Installed DocStringExtensions ─────────────── v0.8.3
+  Installed ExponentialUtilities ────────────── v1.8.0
+  Installed SLEEFPirates ────────────────────── v0.5.5
+  Installed Lz4_jll ─────────────────────────── v1.9.2+2
+  Installed Blosc_jll ───────────────────────── v1.14.3+1
+  Installed ElasticArrays ───────────────────── v1.2.4
+  Installed CommonSubexpressions ────────────── v0.3.0
+  Installed Rmath ───────────────────────────── v0.6.1
+  Installed TableTraits ─────────────────────── v1.0.0
+  Installed NonlinearSolve ──────────────────── v0.3.4
+  Installed OpenSSL_jll ─────────────────────── v1.1.1+6
+  Installed ColorVectorSpace ────────────────── v0.8.7
+  Installed MbedTLS ─────────────────────────── v1.0.3
+  Installed BSON ────────────────────────────── v0.2.6
+  Installed StatsBase ───────────────────────── v0.33.2
+  Installed ArrayLayouts ────────────────────── v0.4.12
+  Installed TensorBoardLogger ───────────────── v0.1.13
+  Installed OrdinaryDiffEq ──────────────────── v5.49.1
+  Installed CUDA ────────────────────────────── v2.4.0
+  Installed SimpleTraits ────────────────────── v0.9.3
+  Installed ColorTypes ──────────────────────── v0.10.9
+  Installed HDF5_jll ────────────────────────── v1.12.0+1
+  Installed CodecZlib ───────────────────────── v0.7.0
+  Installed Rotations ───────────────────────── v1.0.2
+  Installed StatsFuns ───────────────────────── v0.9.6
+  Installed ImageTransformations ────────────── v0.8.8
+  Installed BFloat16s ───────────────────────── v0.1.0
+  Installed ImageCore ───────────────────────── v0.8.20
+  Installed SortingAlgorithms ───────────────── v0.3.1
+  Installed OpenSpecFun_jll ─────────────────── v0.5.3+4
+  Installed IniFile ─────────────────────────── v0.5.0
+  Installed ProgressMeter ───────────────────── v1.4.1
+  Installed Parsers ─────────────────────────── v1.0.15
+  Installed ChainRulesCore ──────────────────── v0.9.24
+  Installed Artifacts ───────────────────────── v1.3.0
+  Installed Interpolations ──────────────────── v0.13.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [158674fc] + ReinforcementLearning v0.7.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [621f4979] + AbstractFFTs v0.5.0
+  [1520ce14] + AbstractTrees v0.3.3
+  [79e6a3ab] + Adapt v2.4.0
+  [ec485272] + ArnoldiMethod v0.0.4
+  [4fba245c] + ArrayInterface v2.14.13
+  [4c555306] + ArrayLayouts v0.4.12
+  [56f22d72] + Artifacts v1.3.0
+  [13072b0f] + AxisAlgorithms v1.0.0
+  [ab4f0b2a] + BFloat16s v0.1.0
+  [fbb218c0] + BSON v0.2.6
+  [a74b3585] + Blosc v0.7.0
+  [0b7ba130] + Blosc_jll v1.14.3+1
+  [fa961155] + CEnum v0.4.1
+  [052768ef] + CUDA v2.4.0
+  [082447d4] + ChainRules v0.7.45
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [944b1d66] + CodecZlib v0.7.0
+  [3da002f7] + ColorTypes v0.10.9
+  [c3611d14] + ColorVectorSpace v0.8.7
+  [5ae59095] + Colors v0.12.6
+  [d842c3ba] + CommonRLInterface v0.2.2
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [187b0558] + ConstructionBase v1.0.0
+  [150eb455] + CoordinateTransformations v0.6.1
+  [adafc99b] + CpuId v0.2.2
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [2b5f629d] + DiffEqBase v6.53.4
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [b4f34e82] + Distances v0.10.0
+  [31c24e10] + Distributions v0.24.10
+  [ffbed154] + DocStringExtensions v0.8.3
+  [fdbdab4c] + ElasticArrays v1.2.4
+  [d4d017d3] + ExponentialUtilities v1.8.0
+  [e2ba6199] + ExprTools v0.1.3
+  [9aa1b823] + FastClosures v0.3.2
+  [5789e2e9] + FileIO v1.4.5
+  [1a297f60] + FillArrays v0.10.2
+  [6a86dc24] + FiniteDiff v2.7.2
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [587475ba] + Flux v0.11.3
+  [f6369f11] + ForwardDiff v0.10.14
+  [069b7b12] + FunctionWrappers v1.1.1
+  [d9f16b24] + Functors v0.1.0
+  [0c68f7d7] + GPUArrays v6.2.0
+  [61eb1bfa] + GPUCompiler v0.8.3
+  [28b8d3ca] + GR v0.52.0
+  [01680d73] + GenericSVD v0.3.0
+  [a2bd30eb] + Graphics v1.0.2
+  [f67ccb44] + HDF5 v0.13.6
+  [0234f1f7] + HDF5_jll v1.12.0+1
+  [cd3eb016] + HTTP v0.8.19
+  [7869d1d1] + IRTools v0.4.2
+  [bbac6d45] + IdentityRanges v0.3.1
+  [a09fc81d] + ImageCore v0.8.20
+  [02fcd773] + ImageTransformations v0.8.8
+  [d25df0c9] + Inflate v0.1.2
+  [83e8ac13] + IniFile v0.5.0
+  [a98d9a8b] + Interpolations v0.13.1
+  [42fd0dbc] + IterativeSolvers v0.9.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [4138dd39] + JLD v0.10.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [e5e0dc1b] + Juno v0.8.4
+  [929cbde3] + LLVM v3.5.2
+  [2ee39098] + LabelledArrays v1.4.0
+  [deac9b47] + LibCURL_jll v7.70.0+2
+  [29816b5a] + LibSSH2_jll v1.9.0+3
+  [093fc24a] + LightGraphs v1.3.4
+  [d3d80556] + LineSearches v7.1.1
+  [bdcacae8] + LoopVectorization v0.8.26
+  [5ced341a] + Lz4_jll v1.9.2+2
+  [1914dd2f] + MacroTools v0.5.6
+  [dbb5928d] + MappedArrays v0.3.0
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [e89f7d12] + Media v0.5.0
+  [e1d29d7a] + Missings v0.4.4
+  [e94cdb99] + MosaicViews v0.2.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [d41bc354] + NLSolversBase v7.7.1
+  [2774e3e8] + NLsolve v4.5.1
+  [872c559c] + NNlib v0.7.11
+  [77ba4419] + NaNMath v0.3.5
+  [8913a72c] + NonlinearSolve v0.3.4
+  [6fe1bfb0] + OffsetArrays v1.5.0
+  [458c3c95] + OpenSSL_jll v1.1.1+6
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [1dea7af3] + OrdinaryDiffEq v5.49.1
+  [90014a1f] + PDMats v0.10.1
+  [5432bcbf] + PaddedViews v0.5.7
+  [d96e819e] + Parameters v0.12.1
+  [69de0a69] + Parsers v1.0.15
+  [92933f4c] + ProgressMeter v1.4.1
+  [3349acd9] + ProtoBuf v0.10.0
+  [1fd47b50] + QuadGK v2.4.1
+  [c84ed2f1] + Ratios v0.4.0
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [731186ca] + RecursiveArrayTools v2.10.0
+  [f2c3362d] + RecursiveFactorization v0.1.6
+  [189a3867] + Reexport v0.2.0
+  [158674fc] + ReinforcementLearning v0.7.0
+  [e575027e] + ReinforcementLearningBase v0.8.5
+  [de1b191a] + ReinforcementLearningCore v0.5.1
+  [25e41dd2] + ReinforcementLearningEnvironments v0.3.3
+  [d607f57d] + ReinforcementLearningZoo v0.2.2
+  [ae029012] + Requires v1.1.2
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [6038ab10] + Rotations v1.0.2
+  [21efa798] + SIMDPirates v0.8.26
+  [476501e8] + SLEEFPirates v0.5.5
+  [6c6a2e73] + Scratch v1.0.3
+  [efcf1570] + Setfield v0.7.0
+  [699a6c99] + SimpleTraits v0.9.3
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [47a9eef4] + SparseDiffTools v1.12.0
+  [276daf66] + SpecialFunctions v1.2.1
+  [860ef19b] + StableRNGs v1.0.0
+  [90137ffa] + StaticArrays v0.12.5
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [09ab397b] + StructArrays v0.4.4
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [899adc3e] + TensorBoardLogger v0.1.13
+  [a759f4b9] + TimerOutputs v0.5.7
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [a2a6695c] + TreeViews v0.3.0
+  [3a884ed6] + UnPack v1.0.2
+  [3d5dd08c] + VectorizationBase v0.12.33
+  [19fa3120] + VertexSafeGraphs v0.1.2
+  [efce3f68] + WoodburyMatrices v0.5.3
+  [a5390f91] + ZipFile v0.9.3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [3161d3a3] + Zstd_jll v1.4.5+2
+  [e88e6eb3] + Zygote v0.5.17
+  [700de1a5] + ZygoteRules v0.2.1
+  [8e850ede] + nghttp2_jll v1.40.0+2
+  [2a0f44e3] + Base64
+  [8bf52ea8] + CRC32c
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building GR ──────────→ `~/.julia/packages/GR/BwGt2/deps/build.log`
+   Building HDF5 ────────→ `~/.julia/packages/HDF5/T1b9x/deps/build.log`
+   Building SLEEFPirates → `~/.julia/packages/SLEEFPirates/jGsib/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T20:42:26.568
+#
+
+    Testing ReinforcementLearning
+Status `/tmp/jl_b0JucV/Project.toml`
+  [189a3867] Reexport v0.2.0
+  [158674fc] ReinforcementLearning v0.7.0
+  [e575027e] ReinforcementLearningBase v0.8.5
+  [de1b191a] ReinforcementLearningCore v0.5.1
+  [25e41dd2] ReinforcementLearningEnvironments v0.3.3
+  [d607f57d] ReinforcementLearningZoo v0.2.2
+  [8dfed614] Test
+Status `/tmp/jl_b0JucV/Manifest.toml`
+  [621f4979] AbstractFFTs v0.5.0
+  [1520ce14] AbstractTrees v0.3.3
+  [79e6a3ab] Adapt v2.4.0
+  [ec485272] ArnoldiMethod v0.0.4
+  [4fba245c] ArrayInterface v2.14.13
+  [4c555306] ArrayLayouts v0.4.12
+  [56f22d72] Artifacts v1.3.0
+  [13072b0f] AxisAlgorithms v1.0.0
+  [ab4f0b2a] BFloat16s v0.1.0
+  [fbb218c0] BSON v0.2.6
+  [a74b3585] Blosc v0.7.0
+  [0b7ba130] Blosc_jll v1.14.3+1
+  [fa961155] CEnum v0.4.1
+  [052768ef] CUDA v2.4.0
+  [082447d4] ChainRules v0.7.45
+  [d360d2e6] ChainRulesCore v0.9.24
+  [944b1d66] CodecZlib v0.7.0
+  [3da002f7] ColorTypes v0.10.9
+  [c3611d14] ColorVectorSpace v0.8.7
+  [5ae59095] Colors v0.12.6
+  [d842c3ba] CommonRLInterface v0.2.2
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [187b0558] ConstructionBase v1.0.0
+  [150eb455] CoordinateTransformations v0.6.1
+  [adafc99b] CpuId v0.2.2
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [2b5f629d] DiffEqBase v6.53.4
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [b4f34e82] Distances v0.10.0
+  [31c24e10] Distributions v0.24.10
+  [ffbed154] DocStringExtensions v0.8.3
+  [fdbdab4c] ElasticArrays v1.2.4
+  [d4d017d3] ExponentialUtilities v1.8.0
+  [e2ba6199] ExprTools v0.1.3
+  [9aa1b823] FastClosures v0.3.2
+  [5789e2e9] FileIO v1.4.5
+  [1a297f60] FillArrays v0.10.2
+  [6a86dc24] FiniteDiff v2.7.2
+  [53c48c17] FixedPointNumbers v0.8.4
+  [587475ba] Flux v0.11.3
+  [f6369f11] ForwardDiff v0.10.14
+  [069b7b12] FunctionWrappers v1.1.1
+  [d9f16b24] Functors v0.1.0
+  [0c68f7d7] GPUArrays v6.2.0
+  [61eb1bfa] GPUCompiler v0.8.3
+  [28b8d3ca] GR v0.52.0
+  [01680d73] GenericSVD v0.3.0
+  [a2bd30eb] Graphics v1.0.2
+  [f67ccb44] HDF5 v0.13.6
+  [0234f1f7] HDF5_jll v1.12.0+1
+  [cd3eb016] HTTP v0.8.19
+  [7869d1d1] IRTools v0.4.2
+  [bbac6d45] IdentityRanges v0.3.1
+  [a09fc81d] ImageCore v0.8.20
+  [02fcd773] ImageTransformations v0.8.8
+  [d25df0c9] Inflate v0.1.2
+  [83e8ac13] IniFile v0.5.0
+  [a98d9a8b] Interpolations v0.13.1
+  [42fd0dbc] IterativeSolvers v0.9.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [4138dd39] JLD v0.10.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [e5e0dc1b] Juno v0.8.4
+  [929cbde3] LLVM v3.5.2
+  [2ee39098] LabelledArrays v1.4.0
+  [deac9b47] LibCURL_jll v7.70.0+2
+  [29816b5a] LibSSH2_jll v1.9.0+3
+  [093fc24a] LightGraphs v1.3.4
+  [d3d80556] LineSearches v7.1.1
+  [bdcacae8] LoopVectorization v0.8.26
+  [5ced341a] Lz4_jll v1.9.2+2
+  [1914dd2f] MacroTools v0.5.6
+  [dbb5928d] MappedArrays v0.3.0
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [e89f7d12] Media v0.5.0
+  [e1d29d7a] Missings v0.4.4
+  [e94cdb99] MosaicViews v0.2.4
+  [46d2c3a1] MuladdMacro v0.2.2
+  [d41bc354] NLSolversBase v7.7.1
+  [2774e3e8] NLsolve v4.5.1
+  [872c559c] NNlib v0.7.11
+  [77ba4419] NaNMath v0.3.5
+  [8913a72c] NonlinearSolve v0.3.4
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [458c3c95] OpenSSL_jll v1.1.1+6
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [1dea7af3] OrdinaryDiffEq v5.49.1
+  [90014a1f] PDMats v0.10.1
+  [5432bcbf] PaddedViews v0.5.7
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.15
+  [92933f4c] ProgressMeter v1.4.1
+  [3349acd9] ProtoBuf v0.10.0
+  [1fd47b50] QuadGK v2.4.1
+  [c84ed2f1] Ratios v0.4.0
+  [3cdcf5f2] RecipesBase v1.1.1
+  [731186ca] RecursiveArrayTools v2.10.0
+  [f2c3362d] RecursiveFactorization v0.1.6
+  [189a3867] Reexport v0.2.0
+  [158674fc] ReinforcementLearning v0.7.0
+  [e575027e] ReinforcementLearningBase v0.8.5
+  [de1b191a] ReinforcementLearningCore v0.5.1
+  [25e41dd2] ReinforcementLearningEnvironments v0.3.3
+  [d607f57d] ReinforcementLearningZoo v0.2.2
+  [ae029012] Requires v1.1.2
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [6038ab10] Rotations v1.0.2
+  [21efa798] SIMDPirates v0.8.26
+  [476501e8] SLEEFPirates v0.5.5
+  [6c6a2e73] Scratch v1.0.3
+  [efcf1570] Setfield v0.7.0
+  [699a6c99] SimpleTraits v0.9.3
+  [a2af1166] SortingAlgorithms v0.3.1
+  [47a9eef4] SparseDiffTools v1.12.0
+  [276daf66] SpecialFunctions v1.2.1
+  [860ef19b] StableRNGs v1.0.0
+  [90137ffa] StaticArrays v0.12.5
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [09ab397b] StructArrays v0.4.4
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [899adc3e] TensorBoardLogger v0.1.13
+  [a759f4b9] TimerOutputs v0.5.7
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [a2a6695c] TreeViews v0.3.0
+  [3a884ed6] UnPack v1.0.2
+  [3d5dd08c] VectorizationBase v0.12.33
+  [19fa3120] VertexSafeGraphs v0.1.2
+  [efce3f68] WoodburyMatrices v0.5.3
+  [a5390f91] ZipFile v0.9.3
+  [83775a58] Zlib_jll v1.2.11+18
+  [3161d3a3] Zstd_jll v1.4.5+2
+  [e88e6eb3] Zygote v0.5.17
+  [700de1a5] ZygoteRules v0.2.1
+  [8e850ede] nghttp2_jll v1.40.0+2
+  [2a0f44e3] Base64
+  [8bf52ea8] CRC32c
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [9abbd945] Profile
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+  This experiment uses three dense layers to approximate the Q value.
+
+  The testing environment is CartPoleEnv.
+
+  Agent and statistic info will be saved to: `/home/pkgeval/.julia/packages/ReinforcementLearning/bJpom/test/checkpoints/JuliaRL_BasicDQN_CartPole_2021_01_11_20_52_51`
+  You can also view the tensorboard logs with
+  `tensorboard --logdir /home/pkgeval/.julia/packages/ReinforcementLearning/bJpom/test/checkpoints/JuliaRL_BasicDQN_CartPole_2021_01_11_20_52_51/tb_log`
+  To load the agent and statistic info:
+  ```
+  agent = RLCore.load("/home/pkgeval/.julia/packages/ReinforcementLearning/bJpom/test/checkpoints/JuliaRL_BasicDQN_CartPole_2021_01_11_20_52_51", Agent)
+  BSON.@load joinpath("/home/pkgeval/.julia/packages/ReinforcementLearning/bJpom/test/checkpoints/JuliaRL_BasicDQN_CartPole_2021_01_11_20_52_51", "stats.bson") total_reward_per_episode time_per_step
+  ```Progress:   0%|                                         |  ETA: 9:39:18[KProgress:   1%|▍                                        |  ETA: 1:14:03[KProgress:   9%|███▋                                     |  ETA: 0:08:03[KProgress:  17%|███████▏                                 |  ETA: 0:03:46[KProgress:  26%|██████████▊                              |  ETA: 0:02:17[KProgress:  35%|██████████████▍                          |  ETA: 0:01:33[KProgress:  44%|█████████████████▉                       |  ETA: 0:01:06[KProgress:  52%|█████████████████████▌                   |  ETA: 0:00:47[KProgress:  61%|█████████████████████████▏               |  ETA: 0:00:33[KProgress:  70%|████████████████████████████▊            |  ETA: 0:00:23[KProgress:  79%|████████████████████████████████▎        |  ETA: 0:00:15[KProgress:  87%|███████████████████████████████████▊     |  ETA: 0:00:08[KProgress:  96%|███████████████████████████████████████▍ |  ETA: 0:00:02[KProgress: 100%|█████████████████████████████████████████| Time: 0:00:57[K
+[ Info: saving agent to /home/pkgeval/.julia/packages/ReinforcementLearning/bJpom/test/checkpoints/JuliaRL_BasicDQN_CartPole_2021_01_11_20_52_51 ...
+[ Info: finished saving agent in 8.204202177 seconds
+Test Summary:         |
+ReinforcementLearning | No tests
+    Testing ReinforcementLearning tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:54:01.843
+CPU usage: 724.80s (692.57s user, 33.09s kernel)
+
+Network usage:
+- eth0: 50.806 MiB received, 1.093 MiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":36,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":17,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":36,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":36,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":17,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":36,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":233472,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":126976,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":233472,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":233472,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":126976,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":233472,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":591040512,"max_usage":2248351744,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":251596800,"inactive_file":135168,"inactive_anon":175853568,"total_pgfault":15444231,"total_cache":301891584,"total_rss_huge":0,"total_active_anon":377659392,"total_pgmajfault":0,"pgpgin":10227657,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":10092521,"hierarchical_memsw_limit":0,"cache":301891584,"active_file":135168,"pgfault":15444231,"total_mapped_file":0,"total_pgpgout":10092521,"total_writeback":0,"rss":251596800,"unevictable":0,"total_inactive_anon":175853568,"total_pgpgin":10227657,"active_anon":377659392,"total_active_file":135168},"limit":540965302272},"name":"/ReinforcementLearning-5gzoLtwh","networks":{"eth0":{"rx_bytes":53273962,"rx_packets":18275,"tx_packets":13003,"tx_bytes":1146583,"tx_dropped":0,"rx_dropped":25,"tx_errors":0,"rx_errors":0}},"id":"304ad27092092713901a0e8fd46ad0ca843fb1bd3300255e6b12418344dc8e0f","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5693512914522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":692570000000,"usage_in_kernelmode":33090000000,"total_usage":724798389695,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,243510,0,724795751935,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,275840,42430,1831590,244390,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:54:01.845985585Z"}

@@ -1,0 +1,129 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:50:17.695
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:50:19.543
+#
+
+ Installing known registries into `~/.julia`
+######################################                                    53.5%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed EncodedArrays ─────────────── v0.2.3
+  Installed UnsafeArrays ──────────────── v1.0.1
+  Installed Adapt ─────────────────────── v2.4.0
+  Installed FillArrays ────────────────── v0.10.2
+  Installed ArraysOfArrays ────────────── v0.5.0
+  Installed Requires ──────────────────── v1.1.2
+  Installed DataAPI ───────────────────── v1.4.0
+  Installed IteratorInterfaceExtensions ─ v1.0.0
+  Installed BitOperations ─────────────── v0.2.0
+  Installed StructArrays ──────────────── v0.4.4
+  Installed TableTraits ───────────────── v1.0.0
+  Installed DataValueInterfaces ───────── v1.0.0
+  Installed Tables ────────────────────── v1.2.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [97725368] + EncodedArrays v0.2.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [79e6a3ab] + Adapt v2.4.0
+  [65a8f2f4] + ArraysOfArrays v0.5.0
+  [e1e0eea2] + BitOperations v0.2.0
+  [9a962f9c] + DataAPI v1.4.0
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [97725368] + EncodedArrays v0.2.3
+  [1a297f60] + FillArrays v0.10.2
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [ae029012] + Requires v1.1.2
+  [09ab397b] + StructArrays v0.4.4
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [c4a57d5a] + UnsafeArrays v1.0.1
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+
+
+################################################################################
+# Testing: 2021-01-11T21:50:24.841
+#
+
+    Testing EncodedArrays
+Status `/tmp/jl_5eYylQ/Project.toml`
+  [65a8f2f4] ArraysOfArrays v0.5.0
+  [e1e0eea2] BitOperations v0.2.0
+  [97725368] EncodedArrays v0.2.3
+  [1a297f60] FillArrays v0.10.2
+  [09ab397b] StructArrays v0.4.4
+  [8dfed614] Test
+Status `/tmp/jl_5eYylQ/Manifest.toml`
+  [79e6a3ab] Adapt v2.4.0
+  [65a8f2f4] ArraysOfArrays v0.5.0
+  [e1e0eea2] BitOperations v0.2.0
+  [9a962f9c] DataAPI v1.4.0
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [97725368] EncodedArrays v0.2.3
+  [1a297f60] FillArrays v0.10.2
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [ae029012] Requires v1.1.2
+  [09ab397b] StructArrays v0.4.4
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [c4a57d5a] UnsafeArrays v1.0.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+Test Summary:         | Pass  Total
+Package EncodedArrays |   78     78
+    Testing EncodedArrays tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:50:40.355
+CPU usage: 22.64s (19.02s user, 3.69s kernel)
+
+Network usage:
+- eth0: 2.772 MiB received, 82.838 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":335089664,"max_usage":1180971008,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":223264768,"inactive_file":135168,"inactive_anon":79208448,"total_pgfault":826518,"total_cache":82358272,"total_rss_huge":0,"total_active_anon":226406400,"total_pgmajfault":0,"pgpgin":636372,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":135168,"pgpgout":561756,"hierarchical_memsw_limit":0,"cache":82358272,"active_file":135168,"pgfault":826518,"total_mapped_file":0,"total_pgpgout":561756,"total_writeback":135168,"rss":223264768,"unevictable":0,"total_inactive_anon":79208448,"total_pgpgin":636372,"active_anon":226406400,"total_active_file":135168},"limit":540965302272},"name":"/EncodedArrays-ZJnYMHa3","networks":{"eth0":{"rx_bytes":2906674,"rx_packets":614,"tx_packets":703,"tx_bytes":84826,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"7c9210bf1eb72af3314101b2aa94871b4e2769f158ba983205a9c9e3e899c5e3","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6127732594522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":19020000000,"usage_in_kernelmode":3690000000,"total_usage":22641197232,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22638261100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6510,0,0,2929622,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:50:41.209798764Z"}

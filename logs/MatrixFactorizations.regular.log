@@ -1,0 +1,162 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:44:00.921
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:44:02.689
+#
+
+ Installing known registries into `~/.julia`
+######################################################                    76.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed FillArrays ─────────── v0.11.0
+  Installed Compat ─────────────── v3.25.0
+  Installed ArrayLayouts ───────── v0.5.0
+  Installed MatrixFactorizations ─ v0.8.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a3b82374] + MatrixFactorizations v0.8.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [4c555306] + ArrayLayouts v0.5.0
+  [34da2185] + Compat v3.25.0
+  [1a297f60] + FillArrays v0.11.0
+  [a3b82374] + MatrixFactorizations v0.8.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T19:44:07.52
+#
+
+    Testing MatrixFactorizations
+Status `/tmp/jl_kSWmMQ/Project.toml`
+  [4c555306] ArrayLayouts v0.5.0
+  [a3b82374] MatrixFactorizations v0.8.0
+  [37e2e46d] LinearAlgebra
+  [de0858da] Printf
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_kSWmMQ/Manifest.toml`
+  [4c555306] ArrayLayouts v0.5.0
+  [34da2185] Compat v3.25.0
+  [1a297f60] FillArrays v0.11.0
+  [a3b82374] MatrixFactorizations v0.8.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+UL            |  813    813
+Test Summary: | Pass  Total
+QR            | 1590   1590
+Test Summary: | Pass  Broken  Total
+QL            | 1597       1   1598
+Test Summary: | Pass  Total
+RQ            | 1323   1323
+Test Summary: | Pass  Total
+choleskyinv   |    8      8
+Iter.    Rel. err.        Obj.         
+    1     3.648609e+01     0.000000e+00
+    2     0.000000e+00     0.000000e+00
+Iter.    Rel. err.        Obj.         
+    1     1.809632e+00     6.497519e+00
+    2     6.331732e-01     1.422443e-01
+    3     5.053928e-02     1.161358e-03
+    4     4.494340e-04     1.634739e-07
+    5     6.318874e-08     3.165220e-15
+Iter.    Rel. err.        Obj.         
+    1     1.212763e+00     3.214526e+01
+    2     6.372759e-01     1.486710e+00
+    3     2.196204e-01     9.050857e-02
+    4     1.696012e-02     1.005260e-03
+    5     1.890348e-04     1.549558e-07
+    6     2.895659e-08     4.111175e-15
+Iter.    Rel. err.        Obj.         
+    1     3.064062e+00     0.000000e+00
+    2     0.000000e+00     0.000000e+00
+Iter.    Rel. err.        Obj.         
+    1     5.757630e-01     1.588515e+00
+    2     2.807206e-01     5.849113e-02
+    3     1.849633e-02     1.345671e-04
+    4     4.309112e-05     7.326818e-10
+    5     2.263320e-10     4.585442e-16
+Iter.    Rel. err.        Obj.         
+    1     7.357857e-01     2.667746e+01
+    2     6.257190e-01     1.552305e+00
+    3     1.992625e-01     9.442454e-02
+    4     1.496559e-02     1.115515e-03
+    5     1.825695e-04     1.962164e-07
+    6     3.197481e-08     6.209896e-15
+Test Summary:       | Pass  Total
+Polar Decomposition |  360    360
+    Testing MatrixFactorizations tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:48:10.788
+CPU usage: 249.42s (245.18s user, 4.50s kernel)
+
+Network usage:
+- eth0: 2.697 MiB received, 49.507 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":3,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":22,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":27,"op":"Total","minor":0},{"major":253,"value":3,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":22,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":27,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":237568,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":344064,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":364544,"op":"Total","minor":0},{"major":253,"value":237568,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":344064,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":364544,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":329261056,"max_usage":1271312384,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":218243072,"inactive_file":270336,"inactive_anon":79073280,"total_pgfault":1747383,"total_cache":81674240,"total_rss_huge":0,"total_active_anon":220594176,"total_pgmajfault":0,"pgpgin":1010196,"rss_huge":0,"mapped_file":0,"total_inactive_file":270336,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":135168,"pgpgout":936965,"hierarchical_memsw_limit":0,"cache":81674240,"active_file":135168,"pgfault":1747383,"total_mapped_file":0,"total_pgpgout":936965,"total_writeback":135168,"rss":218243072,"unevictable":0,"total_inactive_anon":79073280,"total_pgpgin":1010196,"active_anon":220594176,"total_active_file":135168},"limit":540965302272},"name":"/MatrixFactorizations-uodXNL1I","networks":{"eth0":{"rx_bytes":2827922,"rx_packets":674,"tx_packets":489,"tx_bytes":50695,"tx_dropped":0,"rx_dropped":9,"tx_errors":0,"rx_errors":0}},"id":"6650656631a657db858971e56e3ef33d42acf35f4676cf4c0fe16d594b9dd60d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5188582364522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":245180000000,"usage_in_kernelmode":4500000000,"total_usage":249423727404,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,249427489696,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4220,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:48:10.791014007Z"}

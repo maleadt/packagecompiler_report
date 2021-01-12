@@ -1,0 +1,124 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:30:39.298
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:30:41.114
+#
+
+ Installing known registries into `~/.julia`
+############################################################              84.4%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed OrderedCollections ─ v1.3.2
+  Installed Configurations ───── v0.8.1
+  Installed MatchCore ────────── v0.1.0
+  Installed ExprTools ────────── v0.1.3
+  Installed Crayons ──────────── v4.0.4
+  Installed TOML ─────────────── v1.0.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [5218b696] + Configurations v0.8.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [5218b696] + Configurations v0.8.1
+  [a8cc5b0e] + Crayons v4.0.4
+  [e2ba6199] + ExprTools v0.1.3
+  [5dd3f0b1] + MatchCore v0.1.0
+  [bac558e1] + OrderedCollections v1.3.2
+  [fa267f1f] + TOML v1.0.1
+  [ade2ca70] + Dates
+  [de0858da] + Printf
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T21:30:45.46
+#
+
+    Testing Configurations
+Status `/tmp/jl_rynPAR/Project.toml`
+  [5218b696] Configurations v0.8.1
+  [a8cc5b0e] Crayons v4.0.4
+  [e2ba6199] ExprTools v0.1.3
+  [5dd3f0b1] MatchCore v0.1.0
+  [bac558e1] OrderedCollections v1.3.2
+  [fa267f1f] TOML v1.0.1
+  [8dfed614] Test
+Status `/tmp/jl_rynPAR/Manifest.toml`
+  [5218b696] Configurations v0.8.1
+  [a8cc5b0e] Crayons v4.0.4
+  [e2ba6199] ExprTools v0.1.3
+  [5dd3f0b1] MatchCore v0.1.0
+  [bac558e1] OrderedCollections v1.3.2
+  [fa267f1f] TOML v1.0.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+options       |    2      2
+Test Summary: | Pass  Total
+to_dict       |    4      4
+Test Summary:      | Pass  Total
+default reflection |    4      4
+Test Summary: | Pass  Total
+from_kwargs   |    1      1
+Test Summary:      | Pass  Total
+inside constructor |    1      1
+Test Summary:          | Pass  Total
+test multi option type |    3      3
+Test Summary:  | Pass  Total
+optional field |    2      2
+Test Summary: | Pass  Total
+validate keys |    3      3
+Test Summary: | Pass  Total
+dict override |    1      1
+Test Summary:             | Pass  Total
+non-dict value conversion |    2      2
+Test Summary:              | Pass  Total
+to_dict nothing conversion |    2      2
+Test Summary:    | Pass  Total
+parametric types |   14     14
+Test Summary: | Pass  Total
+emptry struct |    1      1
+Test Summary: | Pass  Total
+custom kwfn   |    2      2
+Test Summary:  | Pass  Total
+kwargs forward |    2      2
+Test Summary:   | Pass  Total
+default resolve |    1      1
+    Testing Configurations tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:31:08.663
+CPU usage: 29.48s (26.43s user, 3.10s kernel)
+
+Network usage:
+- eth0: 2.828 MiB received, 52.078 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":331202560,"max_usage":764628992,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":218857472,"inactive_file":135168,"inactive_anon":80560128,"total_pgfault":636141,"total_cache":82788352,"total_rss_huge":0,"total_active_anon":221270016,"total_pgmajfault":0,"pgpgin":404349,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":330672,"hierarchical_memsw_limit":0,"cache":82788352,"active_file":135168,"pgfault":636141,"total_mapped_file":0,"total_pgpgout":330672,"total_writeback":0,"rss":218857472,"unevictable":0,"total_inactive_anon":80560128,"total_pgpgin":404349,"active_anon":221270016,"total_active_file":135168},"limit":540965302272},"name":"/Configurations-TBTaqlVl","networks":{"eth0":{"rx_bytes":2965097,"rx_packets":465,"tx_packets":482,"tx_bytes":53328,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"28611c4e5e3712b70c2282ed0503a747ca4d66220943fe556374ccd88d15d1f5","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5977993054522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":26430000000,"usage_in_kernelmode":3100000000,"total_usage":29478686191,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,29478657391,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28800,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:31:08.982716147Z"}

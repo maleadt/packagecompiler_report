@@ -1,0 +1,146 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T22:06:30.926
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T22:06:32.69
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MacroTools ───────── v0.5.6
+  Installed BinaryRecordReader ─ v0.2.0
+  Installed PackageCompiler ──── v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [27e49e6c] + BinaryRecordReader v0.2.0
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [27e49e6c] + BinaryRecordReader v0.2.0
+  [1914dd2f] + MacroTools v0.5.6
+  [9b87118b] + PackageCompiler v1.2.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T22:06:38.245
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 148.095 MiB, compilation took 162 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T22:09:28.085
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/BinaryRecordReader-dlsza5PJ.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:09:29.84
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MacroTools ───────── v0.5.6
+  Installed BinaryRecordReader ─ v0.2.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [27e49e6c] + BinaryRecordReader v0.2.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [27e49e6c] + BinaryRecordReader v0.2.0
+  [1914dd2f] + MacroTools v0.5.6
+  [2a0f44e3] + Base64
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+
+
+################################################################################
+# Testing: 2021-01-11T22:09:33.473
+#
+
+    Testing BinaryRecordReader
+Status `/tmp/jl_2enkD8/Project.toml`
+  [27e49e6c] BinaryRecordReader v0.2.0
+  [1914dd2f] MacroTools v0.5.6
+  [8dfed614] Test
+Status `/tmp/jl_2enkD8/Manifest.toml`
+  [27e49e6c] BinaryRecordReader v0.2.0
+  [1914dd2f] MacroTools v0.5.6
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary: | Pass  Total
+Isbits reader |    8      8
+Test Summary:        | Pass  Total
+Single Level Reader  |    7      7
+Test Summary:            | Pass  Total
+Nested Structure Reader  |    3      3
+Test Summary:                                   | Pass  Total
+Nested Structure Reader with none isbits matrix |   12     12
+Test Summary:                               | Pass  Total
+Nested Structure Reader we internal methods |   16     16
+    Testing BinaryRecordReader tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:09:47.368
+CPU usage: 19.36s (15.08s user, 4.32s kernel)
+
+Network usage:
+- eth0: 2.562 MiB received, 31.767 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":19,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":19,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":77824,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":77824,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":319926272,"max_usage":2312527872,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":210661376,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":884697,"total_cache":79429632,"total_rss_huge":0,"total_active_anon":211267584,"total_pgmajfault":0,"pgpgin":909216,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":540672,"total_unevictable":0,"total_dirty":540672,"writeback":135168,"pgpgout":838410,"hierarchical_memsw_limit":0,"cache":79429632,"active_file":135168,"pgfault":884697,"total_mapped_file":0,"total_pgpgout":838410,"total_writeback":135168,"rss":210661376,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":909216,"active_anon":211267584,"total_active_file":135168},"limit":540965302272},"name":"/BinaryRecordReader-fosgs5kQ","networks":{"eth0":{"rx_bytes":2686555,"rx_packets":311,"tx_packets":314,"tx_bytes":32529,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"3f9077fe6565791718e60d13f2b17e0fa5aa53edf93e4233ac306374b2149c1e","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6274212834522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":15080000000,"usage_in_kernelmode":4320000000,"total_usage":19361449058,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19361449058,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:09:47.428963188Z"}

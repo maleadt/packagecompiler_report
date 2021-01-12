@@ -1,0 +1,630 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T20:00:45.308
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T20:00:46.976
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed KrylovKit ─────── v0.5.2
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [0b1a1467] + KrylovKit v0.5.2
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [0b1a1467] + KrylovKit v0.5.2
+  [9b87118b] + PackageCompiler v1.2.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T20:00:52.393
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 149.044 MiB, compilation took 164 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T20:03:43.096
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/KrylovKit-Glec9vvH.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:03:44.827
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed KrylovKit ─ v0.5.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [0b1a1467] + KrylovKit v0.5.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [0b1a1467] + KrylovKit v0.5.2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [de0858da] + Printf
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T20:03:48.913
+#
+
+    Testing KrylovKit
+Status `/tmp/jl_pNoSXb/Project.toml`
+  [0b1a1467] KrylovKit v0.5.2
+  [37e2e46d] LinearAlgebra
+  [de0858da] Printf
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_pNoSXb/Manifest.toml`
+  [0b1a1467] KrylovKit v0.5.2
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Test Summary:                                        | Pass  Total
+Orthonormalize with algorithm ClassicalGramSchmidt() |  128    128
+Test Summary:                                       | Pass  Total
+Orthonormalize with algorithm ModifiedGramSchmidt() |  128    128
+Test Summary:                                         | Pass  Total
+Orthonormalize with algorithm ClassicalGramSchmidt2() |  128    128
+Test Summary:                                        | Pass  Total
+Orthonormalize with algorithm ModifiedGramSchmidt2() |  128    128
+Test Summary:                                                       | Pass  Total
+Orthonormalize with algorithm ClassicalGramSchmidtIR{Float64}(0.75) |  128    128
+Test Summary:                                                      | Pass  Total
+Orthonormalize with algorithm ModifiedGramSchmidtIR{Float64}(0.75) |  128    128
+Test Summary:          | Pass  Total
+Givens and Householder |   24     24
+Test Summary:          | Pass  Total
+Rows and cols iterator |   16     16
+Test Summary:                                    | Pass  Total
+Dense Schur factorisation and associated methods |   32     32
+[ Info: Lanczos iteration step 2: normres = 1.7844025
+[ Info: Lanczos iteration step 3: normres = 0.770265
+[ Info: Lanczos iteration step 4: normres = 1.1924608
+[ Info: Lanczos iteration step 5: normres = 0.64572185
+[ Info: Lanczos iteration step 6: normres = 0.9071239
+[ Info: Lanczos iteration step 7: normres = 0.8220099
+[ Info: Lanczos iteration step 8: normres = 0.5010283
+[ Info: Lanczos iteration step 9: normres = 0.03735699
+[ Info: Lanczos iteration step 10: normres = 2.7530145e-14
+[ Info: Lanczos iteration step 1: normres = 4.8187466
+[ Info: Lanczos iteration step 2: normres = 1.7844026
+[ Info: Lanczos iteration step 3: normres = 0.770265
+[ Info: Lanczos iteration step 4: normres = 1.1924607
+[ Info: Lanczos iteration step 5: normres = 0.64572185
+[ Info: Lanczos iteration step 6: normres = 0.90712374
+[ Info: Lanczos iteration step 7: normres = 0.8220101
+[ Info: Lanczos iteration step 8: normres = 0.5010278
+[ Info: Lanczos iteration step 9: normres = 0.037356813
+[ Info: Lanczos iteration step 10: normres = 2.184181e-14
+[ Info: Lanczos iteration step 1: normres = 4.8187466
+[ Info: Lanczos iteration step 2: normres = 1.7844025
+[ Info: Lanczos iteration step 3: normres = 0.770265
+[ Info: Lanczos iteration step 4: normres = 1.1924608
+[ Info: Lanczos iteration step 5: normres = 0.64572185
+[ Info: Lanczos iteration step 6: normres = 0.90712386
+[ Info: Lanczos iteration step 7: normres = 0.82200986
+[ Info: Lanczos iteration step 8: normres = 0.5010283
+[ Info: Lanczos iteration step 9: normres = 0.03735695
+[ Info: Lanczos iteration step 10: normres = 2.4151057e-14
+[ Info: Lanczos iteration step 1: normres = 4.8187466
+[ Info: Lanczos iteration step 2: normres = 1.7844026
+[ Info: Lanczos iteration step 3: normres = 0.770265
+[ Info: Lanczos iteration step 4: normres = 1.1924607
+[ Info: Lanczos iteration step 5: normres = 0.64572185
+[ Info: Lanczos iteration step 6: normres = 0.90712374
+[ Info: Lanczos iteration step 7: normres = 0.82201
+[ Info: Lanczos iteration step 8: normres = 0.5010278
+[ Info: Lanczos iteration step 9: normres = 0.03735697
+[ Info: Lanczos iteration step 10: normres = 3.1158276e-14
+[ Info: Lanczos iteration step 1: normres = 4.8187466
+[ Info: Lanczos iteration step 2: normres = 1.3679702205607251
+[ Info: Lanczos iteration step 3: normres = 1.0744847815064587
+[ Info: Lanczos iteration step 4: normres = 0.843325486171926
+[ Info: Lanczos iteration step 5: normres = 0.5365477919068247
+[ Info: Lanczos iteration step 6: normres = 1.2700503837541648
+[ Info: Lanczos iteration step 7: normres = 0.7233117707755792
+[ Info: Lanczos iteration step 8: normres = 0.4615348576757282
+[ Info: Lanczos iteration step 9: normres = 0.5683245637856561
+[ Info: Lanczos iteration step 10: normres = 1.7005688766614417e-31
+[ Info: Lanczos iteration step 1: normres = 4.4524155810395944
+[ Info: Lanczos iteration step 2: normres = 1.3679702205607251
+[ Info: Lanczos iteration step 3: normres = 1.0744847815064584
+[ Info: Lanczos iteration step 4: normres = 0.843325486171926
+[ Info: Lanczos iteration step 5: normres = 0.536547791906825
+[ Info: Lanczos iteration step 6: normres = 1.2700503837541646
+[ Info: Lanczos iteration step 7: normres = 0.7233117707755783
+[ Info: Lanczos iteration step 8: normres = 0.4615348576757277
+[ Info: Lanczos iteration step 9: normres = 0.5683245637856565
+[ Info: Lanczos iteration step 10: normres = 1.9984917626270056e-31
+[ Info: Lanczos iteration step 1: normres = 4.4524155810395944
+[ Info: Lanczos iteration step 2: normres = 1.3679702205607251
+[ Info: Lanczos iteration step 3: normres = 1.0744847815064587
+[ Info: Lanczos iteration step 4: normres = 0.843325486171926
+[ Info: Lanczos iteration step 5: normres = 0.5365477919068247
+[ Info: Lanczos iteration step 6: normres = 1.2700503837541646
+[ Info: Lanczos iteration step 7: normres = 0.7233117707755787
+[ Info: Lanczos iteration step 8: normres = 0.4615348576757285
+[ Info: Lanczos iteration step 9: normres = 0.5683245637856557
+[ Info: Lanczos iteration step 10: normres = 6.517702756703205e-30
+[ Info: Lanczos iteration step 1: normres = 4.4524155810395944
+[ Info: Lanczos iteration step 2: normres = 1.3679702205607251
+[ Info: Lanczos iteration step 3: normres = 1.0744847815064584
+[ Info: Lanczos iteration step 4: normres = 0.843325486171926
+[ Info: Lanczos iteration step 5: normres = 0.536547791906825
+[ Info: Lanczos iteration step 6: normres = 1.2700503837541646
+[ Info: Lanczos iteration step 7: normres = 0.7233117707755783
+[ Info: Lanczos iteration step 8: normres = 0.461534857675728
+[ Info: Lanczos iteration step 9: normres = 0.5683245637856563
+[ Info: Lanczos iteration step 10: normres = 1.9289239116412732e-30
+[ Info: Lanczos iteration step 1: normres = 4.4524155810395944
+[ Info: Lanczos iteration step 2: normres = 1.8819181
+[ Info: Lanczos iteration step 3: normres = 1.7691375
+[ Info: Lanczos iteration step 4: normres = 1.0436251
+[ Info: Lanczos iteration step 5: normres = 1.195164
+[ Info: Lanczos iteration step 6: normres = 1.0851377
+[ Info: Lanczos iteration step 7: normres = 0.46203616
+[ Info: Lanczos iteration step 8: normres = 0.40399873
+[ Info: Lanczos iteration step 9: normres = 0.27880797
+[ Info: Lanczos iteration step 10: normres = 9.570187e-14
+[ Info: Lanczos iteration step 1: normres = 4.2273626
+[ Info: Lanczos iteration step 2: normres = 1.8819181
+[ Info: Lanczos iteration step 3: normres = 1.7691374
+[ Info: Lanczos iteration step 4: normres = 1.043625
+[ Info: Lanczos iteration step 5: normres = 1.195164
+[ Info: Lanczos iteration step 6: normres = 1.0851376
+[ Info: Lanczos iteration step 7: normres = 0.462036
+[ Info: Lanczos iteration step 8: normres = 0.40399852
+[ Info: Lanczos iteration step 9: normres = 0.27880806
+[ Info: Lanczos iteration step 10: normres = 2.3279831e-14
+[ Info: Lanczos iteration step 1: normres = 4.2273626
+[ Info: Lanczos iteration step 2: normres = 1.8819181
+[ Info: Lanczos iteration step 3: normres = 1.7691375
+[ Info: Lanczos iteration step 4: normres = 1.0436251
+[ Info: Lanczos iteration step 5: normres = 1.195164
+[ Info: Lanczos iteration step 6: normres = 1.0851377
+[ Info: Lanczos iteration step 7: normres = 0.46203616
+[ Info: Lanczos iteration step 8: normres = 0.40399873
+[ Info: Lanczos iteration step 9: normres = 0.27880797
+[ Info: Lanczos iteration step 10: normres = 9.570187e-14
+[ Info: Lanczos iteration step 1: normres = 4.2273626
+[ Info: Lanczos iteration step 2: normres = 1.8819181
+[ Info: Lanczos iteration step 3: normres = 1.7691374
+[ Info: Lanczos iteration step 4: normres = 1.043625
+[ Info: Lanczos iteration step 5: normres = 1.195164
+[ Info: Lanczos iteration step 6: normres = 1.0851376
+[ Info: Lanczos iteration step 7: normres = 0.462036
+[ Info: Lanczos iteration step 8: normres = 0.40399852
+[ Info: Lanczos iteration step 9: normres = 0.27880806
+[ Info: Lanczos iteration step 10: normres = 2.3279831e-14
+[ Info: Lanczos iteration step 1: normres = 4.2273626
+[ Info: Lanczos iteration step 2: normres = 1.7360307525044911
+[ Info: Lanczos iteration step 3: normres = 1.4419858024139593
+[ Info: Lanczos iteration step 4: normres = 1.6888504274899123
+[ Info: Lanczos iteration step 5: normres = 1.7770083631957991
+[ Info: Lanczos iteration step 6: normres = 1.0280778984616241
+[ Info: Lanczos iteration step 7: normres = 1.273351718935638
+[ Info: Lanczos iteration step 8: normres = 0.743259023937646
+[ Info: Lanczos iteration step 9: normres = 0.19886317112392476
+[ Info: Lanczos iteration step 10: normres = 1.3450438820948875e-31
+[ Info: Lanczos iteration step 1: normres = 3.5883528781801686
+[ Info: Lanczos iteration step 2: normres = 1.7360307525044913
+[ Info: Lanczos iteration step 3: normres = 1.441985802413959
+[ Info: Lanczos iteration step 4: normres = 1.6888504274899128
+[ Info: Lanczos iteration step 5: normres = 1.777008363195799
+[ Info: Lanczos iteration step 6: normres = 1.0280778984616241
+[ Info: Lanczos iteration step 7: normres = 1.2733517189356376
+[ Info: Lanczos iteration step 8: normres = 0.7432590239376465
+[ Info: Lanczos iteration step 9: normres = 0.19886317112392454
+[ Info: Lanczos iteration step 10: normres = 2.0351822156014493e-31
+[ Info: Lanczos iteration step 1: normres = 3.5883528781801686
+[ Info: Lanczos iteration step 2: normres = 1.7360307525044911
+[ Info: Lanczos iteration step 3: normres = 1.4419858024139593
+[ Info: Lanczos iteration step 4: normres = 1.6888504274899123
+[ Info: Lanczos iteration step 5: normres = 1.7770083631957991
+[ Info: Lanczos iteration step 6: normres = 1.0280778984616241
+[ Info: Lanczos iteration step 7: normres = 1.273351718935638
+[ Info: Lanczos iteration step 8: normres = 0.7432590239376462
+[ Info: Lanczos iteration step 9: normres = 0.19886317112392468
+[ Info: Lanczos iteration step 10: normres = 3.2367359938519526e-31
+[ Info: Lanczos iteration step 1: normres = 3.5883528781801686
+[ Info: Lanczos iteration step 2: normres = 1.7360307525044913
+[ Info: Lanczos iteration step 3: normres = 1.441985802413959
+[ Info: Lanczos iteration step 4: normres = 1.6888504274899128
+[ Info: Lanczos iteration step 5: normres = 1.777008363195799
+[ Info: Lanczos iteration step 6: normres = 1.0280778984616241
+[ Info: Lanczos iteration step 7: normres = 1.2733517189356378
+[ Info: Lanczos iteration step 8: normres = 0.7432590239376465
+[ Info: Lanczos iteration step 9: normres = 0.1988631711239245
+[ Info: Lanczos iteration step 10: normres = 1.4482007933950737e-31
+[ Info: Lanczos iteration step 1: normres = 3.5883528781801686
+Test Summary:                  | Pass  Total
+Complete Lanczos factorization |   64     64
+[ Info: Arnoldi iteration step 1: normres = 2.2318554
+[ Info: Arnoldi iteration step 1: normres = 2.2318554
+[ Info: Arnoldi iteration step 1: normres = 2.2318554
+[ Info: Arnoldi iteration step 1: normres = 2.2318554
+[ Info: Arnoldi iteration step 1: normres = 2.2318554
+[ Info: Arnoldi iteration step 1: normres = 2.2318554
+[ Info: Arnoldi iteration step 1: normres = 2.4883321967915406
+[ Info: Arnoldi iteration step 1: normres = 2.4883321967915406
+[ Info: Arnoldi iteration step 1: normres = 2.4883321967915406
+[ Info: Arnoldi iteration step 1: normres = 2.4883321967915406
+[ Info: Arnoldi iteration step 1: normres = 2.4883321967915406
+[ Info: Arnoldi iteration step 1: normres = 2.4883321967915406
+[ Info: Arnoldi iteration step 1: normres = 2.8131669
+[ Info: Arnoldi iteration step 1: normres = 2.8131669
+[ Info: Arnoldi iteration step 1: normres = 2.8131669
+[ Info: Arnoldi iteration step 1: normres = 2.8131669
+[ Info: Arnoldi iteration step 1: normres = 2.8131669
+[ Info: Arnoldi iteration step 1: normres = 2.8131669
+[ Info: Arnoldi iteration step 1: normres = 2.9069267582362674
+[ Info: Arnoldi iteration step 1: normres = 2.9069267582362674
+[ Info: Arnoldi iteration step 1: normres = 2.906926758236267
+[ Info: Arnoldi iteration step 1: normres = 2.906926758236267
+[ Info: Arnoldi iteration step 1: normres = 2.906926758236267
+[ Info: Arnoldi iteration step 1: normres = 2.906926758236267
+Test Summary:                  | Pass  Total
+Complete Arnoldi factorization |   96     96
+Test Summary:                              | Pass  Total
+Complete Golub-Kahan-Lanczos factorization |   80     80
+Test Summary:                    | Pass  Total
+Incomplete Lanczos factorization |  600    600
+Test Summary:                    | Pass  Total
+Incomplete Arnoldi factorization | 2700   2700
+Test Summary:                | Pass  Total
+Incomplete GKL factorization | 3000   3000
+Test Summary:    | Pass  Total
+CG small problem |   16     16
+Test Summary:    | Pass  Total
+CG large problem |    8      8
+Test Summary:            | Pass  Total
+GMRES full factorization |   16     16
+Test Summary:       | Pass  Total
+GMRES with restarts |    8      8
+Test Summary:           | Pass  Total
+Lanczos - eigsolve full |   96     96
+Test Summary:                  | Pass  Total
+Lanczos - eigsolve iteratively |   96     96
+Test Summary:           | Pass  Total
+Arnoldi - eigsolve full |   88     88
+Test Summary:                  | Pass  Total
+Arnoldi - eigsolve iteratively |  128    128
+Test Summary:              | Pass  Total
+GolubYe - geneigsolve full |   96     96
+Test Summary:                     | Pass  Total
+GolubYe - geneigsolve iteratively |   96     96
+Test Summary:             | Pass  Total
+Arnoldi - schursolve full |  120    120
+Test Summary:                    | Pass  Total
+Arnoldi - schursolve iteratively |  192    192
+Test Summary:       | Pass  Total
+GKL - svdsolve full |   64     64
+Test Summary:              | Pass  Total
+GKL - svdsolve iteratively |   80     80
+Test Summary:                | Pass  Total
+Lanczos - expintegrator full |  656    656
+Test Summary:                | Pass  Total
+Arnoldi - expintegrator full |  656    656
+Test Summary:                       | Pass  Total
+Lanczos - expintegrator iteratively |  640    640
+Test Summary:                       | Pass  Total
+Arnoldi - expintegrator iteratively |  960    960
+Test Summary:                              | Pass  Total
+Arnoldi - expintegrator fixed point branch |   12     12
+Julia Vector type: tests finisthed in 513.8674290180206 seconds
+[ Info: Lanczos iteration step 2: normres = 1.7844025
+[ Info: Lanczos iteration step 3: normres = 0.770265
+[ Info: Lanczos iteration step 4: normres = 1.1924608
+[ Info: Lanczos iteration step 5: normres = 0.64572185
+[ Info: Lanczos iteration step 6: normres = 0.9071239
+[ Info: Lanczos iteration step 7: normres = 0.8220099
+[ Info: Lanczos iteration step 8: normres = 0.5010283
+[ Info: Lanczos iteration step 9: normres = 0.03735699
+[ Info: Lanczos iteration step 10: normres = 2.7530145e-14
+[ Info: Lanczos iteration step 1: normres = 4.8187466
+[ Info: Lanczos iteration step 2: normres = 1.7844026
+[ Info: Lanczos iteration step 3: normres = 0.770265
+[ Info: Lanczos iteration step 4: normres = 1.1924607
+[ Info: Lanczos iteration step 5: normres = 0.64572185
+[ Info: Lanczos iteration step 6: normres = 0.90712374
+[ Info: Lanczos iteration step 7: normres = 0.8220101
+[ Info: Lanczos iteration step 8: normres = 0.5010278
+[ Info: Lanczos iteration step 9: normres = 0.037356813
+[ Info: Lanczos iteration step 10: normres = 2.184181e-14
+[ Info: Lanczos iteration step 1: normres = 4.8187466
+[ Info: Lanczos iteration step 2: normres = 1.7844025
+[ Info: Lanczos iteration step 3: normres = 0.770265
+[ Info: Lanczos iteration step 4: normres = 1.1924608
+[ Info: Lanczos iteration step 5: normres = 0.64572185
+[ Info: Lanczos iteration step 6: normres = 0.90712386
+[ Info: Lanczos iteration step 7: normres = 0.82200986
+[ Info: Lanczos iteration step 8: normres = 0.5010283
+[ Info: Lanczos iteration step 9: normres = 0.03735695
+[ Info: Lanczos iteration step 10: normres = 2.4151057e-14
+[ Info: Lanczos iteration step 1: normres = 4.8187466
+[ Info: Lanczos iteration step 2: normres = 1.7844026
+[ Info: Lanczos iteration step 3: normres = 0.770265
+[ Info: Lanczos iteration step 4: normres = 1.1924607
+[ Info: Lanczos iteration step 5: normres = 0.64572185
+[ Info: Lanczos iteration step 6: normres = 0.90712374
+[ Info: Lanczos iteration step 7: normres = 0.82201
+[ Info: Lanczos iteration step 8: normres = 0.5010278
+[ Info: Lanczos iteration step 9: normres = 0.03735697
+[ Info: Lanczos iteration step 10: normres = 3.1158276e-14
+[ Info: Lanczos iteration step 1: normres = 4.8187466
+[ Info: Lanczos iteration step 2: normres = 1.3679702205607251
+[ Info: Lanczos iteration step 3: normres = 1.0744847815064587
+[ Info: Lanczos iteration step 4: normres = 0.843325486171926
+[ Info: Lanczos iteration step 5: normres = 0.5365477919068247
+[ Info: Lanczos iteration step 6: normres = 1.2700503837541648
+[ Info: Lanczos iteration step 7: normres = 0.7233117707755792
+[ Info: Lanczos iteration step 8: normres = 0.4615348576757282
+[ Info: Lanczos iteration step 9: normres = 0.5683245637856561
+[ Info: Lanczos iteration step 10: normres = 1.7005688766614417e-31
+[ Info: Lanczos iteration step 1: normres = 4.4524155810395944
+[ Info: Lanczos iteration step 2: normres = 1.3679702205607251
+[ Info: Lanczos iteration step 3: normres = 1.0744847815064584
+[ Info: Lanczos iteration step 4: normres = 0.843325486171926
+[ Info: Lanczos iteration step 5: normres = 0.536547791906825
+[ Info: Lanczos iteration step 6: normres = 1.2700503837541646
+[ Info: Lanczos iteration step 7: normres = 0.7233117707755783
+[ Info: Lanczos iteration step 8: normres = 0.4615348576757277
+[ Info: Lanczos iteration step 9: normres = 0.5683245637856565
+[ Info: Lanczos iteration step 10: normres = 1.9984917626270056e-31
+[ Info: Lanczos iteration step 1: normres = 4.4524155810395944
+[ Info: Lanczos iteration step 2: normres = 1.3679702205607251
+[ Info: Lanczos iteration step 3: normres = 1.0744847815064587
+[ Info: Lanczos iteration step 4: normres = 0.843325486171926
+[ Info: Lanczos iteration step 5: normres = 0.5365477919068247
+[ Info: Lanczos iteration step 6: normres = 1.2700503837541646
+[ Info: Lanczos iteration step 7: normres = 0.7233117707755787
+[ Info: Lanczos iteration step 8: normres = 0.4615348576757285
+[ Info: Lanczos iteration step 9: normres = 0.5683245637856557
+[ Info: Lanczos iteration step 10: normres = 6.517702756703205e-30
+[ Info: Lanczos iteration step 1: normres = 4.4524155810395944
+[ Info: Lanczos iteration step 2: normres = 1.3679702205607251
+[ Info: Lanczos iteration step 3: normres = 1.0744847815064584
+[ Info: Lanczos iteration step 4: normres = 0.843325486171926
+[ Info: Lanczos iteration step 5: normres = 0.536547791906825
+[ Info: Lanczos iteration step 6: normres = 1.2700503837541646
+[ Info: Lanczos iteration step 7: normres = 0.7233117707755783
+[ Info: Lanczos iteration step 8: normres = 0.461534857675728
+[ Info: Lanczos iteration step 9: normres = 0.5683245637856563
+[ Info: Lanczos iteration step 10: normres = 1.9289239116412732e-30
+[ Info: Lanczos iteration step 1: normres = 4.4524155810395944
+[ Info: Lanczos iteration step 2: normres = 1.8819181
+[ Info: Lanczos iteration step 3: normres = 1.7691375
+[ Info: Lanczos iteration step 4: normres = 1.0436251
+[ Info: Lanczos iteration step 5: normres = 1.195164
+[ Info: Lanczos iteration step 6: normres = 1.0851377
+[ Info: Lanczos iteration step 7: normres = 0.46203616
+[ Info: Lanczos iteration step 8: normres = 0.40399873
+[ Info: Lanczos iteration step 9: normres = 0.27880797
+[ Info: Lanczos iteration step 10: normres = 9.570187e-14
+[ Info: Lanczos iteration step 1: normres = 4.2273626
+[ Info: Lanczos iteration step 2: normres = 1.8819181
+[ Info: Lanczos iteration step 3: normres = 1.7691374
+[ Info: Lanczos iteration step 4: normres = 1.043625
+[ Info: Lanczos iteration step 5: normres = 1.195164
+[ Info: Lanczos iteration step 6: normres = 1.0851376
+[ Info: Lanczos iteration step 7: normres = 0.462036
+[ Info: Lanczos iteration step 8: normres = 0.40399852
+[ Info: Lanczos iteration step 9: normres = 0.27880806
+[ Info: Lanczos iteration step 10: normres = 2.3279831e-14
+[ Info: Lanczos iteration step 1: normres = 4.2273626
+[ Info: Lanczos iteration step 2: normres = 1.8819181
+[ Info: Lanczos iteration step 3: normres = 1.7691375
+[ Info: Lanczos iteration step 4: normres = 1.0436251
+[ Info: Lanczos iteration step 5: normres = 1.195164
+[ Info: Lanczos iteration step 6: normres = 1.0851377
+[ Info: Lanczos iteration step 7: normres = 0.46203616
+[ Info: Lanczos iteration step 8: normres = 0.40399873
+[ Info: Lanczos iteration step 9: normres = 0.27880797
+[ Info: Lanczos iteration step 10: normres = 9.570187e-14
+[ Info: Lanczos iteration step 1: normres = 4.2273626
+[ Info: Lanczos iteration step 2: normres = 1.8819181
+[ Info: Lanczos iteration step 3: normres = 1.7691374
+[ Info: Lanczos iteration step 4: normres = 1.043625
+[ Info: Lanczos iteration step 5: normres = 1.195164
+[ Info: Lanczos iteration step 6: normres = 1.0851376
+[ Info: Lanczos iteration step 7: normres = 0.462036
+[ Info: Lanczos iteration step 8: normres = 0.40399852
+[ Info: Lanczos iteration step 9: normres = 0.27880806
+[ Info: Lanczos iteration step 10: normres = 2.3279831e-14
+[ Info: Lanczos iteration step 1: normres = 4.2273626
+[ Info: Lanczos iteration step 2: normres = 1.7360307525044911
+[ Info: Lanczos iteration step 3: normres = 1.4419858024139593
+[ Info: Lanczos iteration step 4: normres = 1.6888504274899123
+[ Info: Lanczos iteration step 5: normres = 1.7770083631957991
+[ Info: Lanczos iteration step 6: normres = 1.0280778984616241
+[ Info: Lanczos iteration step 7: normres = 1.273351718935638
+[ Info: Lanczos iteration step 8: normres = 0.743259023937646
+[ Info: Lanczos iteration step 9: normres = 0.19886317112392476
+[ Info: Lanczos iteration step 10: normres = 1.3450438820948875e-31
+[ Info: Lanczos iteration step 1: normres = 3.5883528781801686
+[ Info: Lanczos iteration step 2: normres = 1.7360307525044913
+[ Info: Lanczos iteration step 3: normres = 1.441985802413959
+[ Info: Lanczos iteration step 4: normres = 1.6888504274899128
+[ Info: Lanczos iteration step 5: normres = 1.777008363195799
+[ Info: Lanczos iteration step 6: normres = 1.0280778984616241
+[ Info: Lanczos iteration step 7: normres = 1.2733517189356376
+[ Info: Lanczos iteration step 8: normres = 0.7432590239376465
+[ Info: Lanczos iteration step 9: normres = 0.19886317112392454
+[ Info: Lanczos iteration step 10: normres = 2.0351822156014493e-31
+[ Info: Lanczos iteration step 1: normres = 3.5883528781801686
+[ Info: Lanczos iteration step 2: normres = 1.7360307525044911
+[ Info: Lanczos iteration step 3: normres = 1.4419858024139593
+[ Info: Lanczos iteration step 4: normres = 1.6888504274899123
+[ Info: Lanczos iteration step 5: normres = 1.7770083631957991
+[ Info: Lanczos iteration step 6: normres = 1.0280778984616241
+[ Info: Lanczos iteration step 7: normres = 1.273351718935638
+[ Info: Lanczos iteration step 8: normres = 0.7432590239376462
+[ Info: Lanczos iteration step 9: normres = 0.19886317112392468
+[ Info: Lanczos iteration step 10: normres = 3.2367359938519526e-31
+[ Info: Lanczos iteration step 1: normres = 3.5883528781801686
+[ Info: Lanczos iteration step 2: normres = 1.7360307525044913
+[ Info: Lanczos iteration step 3: normres = 1.441985802413959
+[ Info: Lanczos iteration step 4: normres = 1.6888504274899128
+[ Info: Lanczos iteration step 5: normres = 1.777008363195799
+[ Info: Lanczos iteration step 6: normres = 1.0280778984616241
+[ Info: Lanczos iteration step 7: normres = 1.2733517189356378
+[ Info: Lanczos iteration step 8: normres = 0.7432590239376465
+[ Info: Lanczos iteration step 9: normres = 0.1988631711239245
+[ Info: Lanczos iteration step 10: normres = 1.4482007933950737e-31
+[ Info: Lanczos iteration step 1: normres = 3.5883528781801686
+Test Summary:                  | Pass  Total
+Complete Lanczos factorization |   64     64
+[ Info: Arnoldi iteration step 1: normres = 2.2318554
+[ Info: Arnoldi iteration step 1: normres = 2.2318554
+[ Info: Arnoldi iteration step 1: normres = 2.2318554
+[ Info: Arnoldi iteration step 1: normres = 2.2318554
+[ Info: Arnoldi iteration step 1: normres = 2.2318554
+[ Info: Arnoldi iteration step 1: normres = 2.2318554
+[ Info: Arnoldi iteration step 1: normres = 2.4883321967915406
+[ Info: Arnoldi iteration step 1: normres = 2.4883321967915406
+[ Info: Arnoldi iteration step 1: normres = 2.4883321967915406
+[ Info: Arnoldi iteration step 1: normres = 2.4883321967915406
+[ Info: Arnoldi iteration step 1: normres = 2.4883321967915406
+[ Info: Arnoldi iteration step 1: normres = 2.4883321967915406
+[ Info: Arnoldi iteration step 1: normres = 2.8131669
+[ Info: Arnoldi iteration step 1: normres = 2.8131669
+[ Info: Arnoldi iteration step 1: normres = 2.8131669
+[ Info: Arnoldi iteration step 1: normres = 2.8131669
+[ Info: Arnoldi iteration step 1: normres = 2.8131669
+[ Info: Arnoldi iteration step 1: normres = 2.8131669
+[ Info: Arnoldi iteration step 1: normres = 2.9069267582362674
+[ Info: Arnoldi iteration step 1: normres = 2.9069267582362674
+[ Info: Arnoldi iteration step 1: normres = 2.906926758236267
+[ Info: Arnoldi iteration step 1: normres = 2.906926758236267
+[ Info: Arnoldi iteration step 1: normres = 2.906926758236267
+[ Info: Arnoldi iteration step 1: normres = 2.906926758236267
+Test Summary:                  | Pass  Total
+Complete Arnoldi factorization |   96     96
+Test Summary:                              | Pass  Total
+Complete Golub-Kahan-Lanczos factorization |   80     80
+Test Summary:                    | Pass  Total
+Incomplete Lanczos factorization |  600    600
+Test Summary:                    | Pass  Total
+Incomplete Arnoldi factorization | 2700   2700
+Test Summary:                | Pass  Total
+Incomplete GKL factorization | 3000   3000
+Test Summary:    | Pass  Total
+CG small problem |   16     16
+Test Summary:    | Pass  Total
+CG large problem |    8      8
+Test Summary:            | Pass  Total
+GMRES full factorization |   16     16
+Test Summary:       | Pass  Total
+GMRES with restarts |    8      8
+Test Summary:           | Pass  Total
+Lanczos - eigsolve full |   96     96
+Test Summary:                  | Pass  Total
+Lanczos - eigsolve iteratively |   96     96
+Test Summary:           | Pass  Total
+Arnoldi - eigsolve full |   88     88
+Test Summary:                  | Pass  Total
+Arnoldi - eigsolve iteratively |  128    128
+Test Summary:              | Pass  Total
+GolubYe - geneigsolve full |   96     96
+Test Summary:                     | Pass  Total
+GolubYe - geneigsolve iteratively |   96     96
+Test Summary:             | Pass  Total
+Arnoldi - schursolve full |  120    120
+Test Summary:                    | Pass  Total
+Arnoldi - schursolve iteratively |  192    192
+Test Summary:       | Pass  Total
+GKL - svdsolve full |   64     64
+Test Summary:              | Pass  Total
+GKL - svdsolve iteratively |   80     80
+Test Summary:                | Pass  Total
+Lanczos - expintegrator full |  656    656
+Test Summary:                | Pass  Total
+Arnoldi - expintegrator full |  656    656
+Test Summary:                       | Pass  Total
+Lanczos - expintegrator iteratively |  640    640
+Test Summary:                       | Pass  Total
+Arnoldi - expintegrator iteratively |  960    960
+Test Summary:                              | Pass  Total
+Arnoldi - expintegrator fixed point branch |   12     12
+Minimal vector type: tests finisthed in 353.14067816734314 seconds
+Test Summary:                       | Pass  Total
+RecursiveVec - singular values full |   48     48
+Test Summary:                              | Pass  Total
+RecursiveVec - singular values iteratively |   48     48
+    Testing KrylovKit tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:18:55.658
+CPU usage: 911.67s (907.34s user, 5.37s kernel)
+
+Network usage:
+- eth0: 2.605 MiB received, 26.363 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":2,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":16,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":21,"op":"Total","minor":0},{"major":253,"value":2,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":16,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":21,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":143360,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":200704,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":221184,"op":"Total","minor":0},{"major":253,"value":143360,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":200704,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":221184,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":322703360,"max_usage":1414393856,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":213684224,"inactive_file":135168,"inactive_anon":79073280,"total_pgfault":2932479,"total_cache":79683584,"total_rss_huge":0,"total_active_anon":214241280,"total_pgmajfault":0,"pgpgin":712767,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":641144,"hierarchical_memsw_limit":0,"cache":79683584,"active_file":135168,"pgfault":2932479,"total_mapped_file":0,"total_pgpgout":641144,"total_writeback":0,"rss":213684224,"unevictable":0,"total_inactive_anon":79073280,"total_pgpgin":712767,"active_anon":214241280,"total_active_file":135168},"limit":540965302272},"name":"/KrylovKit-5YysbmkM","networks":{"eth0":{"rx_bytes":2731651,"rx_packets":637,"tx_packets":267,"tx_bytes":26996,"tx_dropped":0,"rx_dropped":31,"tx_errors":0,"rx_errors":0}},"id":"7997426d8618d73d039e4c925b5db2ab99abd85b002e6576c8491adadafaee21","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5424507944522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":907340000000,"usage_in_kernelmode":5370000000,"total_usage":911668878995,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,911668874775,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4220,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:18:56.251226723Z"}

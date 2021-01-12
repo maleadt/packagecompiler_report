@@ -1,0 +1,178 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T23:06:24.334
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T23:06:26.072
+#
+
+ Installing known registries into `~/.julia`
+#######                                                                   10.1%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed EmojiSymbols ──── v0.1.5
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [c599478c] + EmojiSymbols v0.1.5
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [c599478c] + EmojiSymbols v0.1.5
+  [9b87118b] + PackageCompiler v1.2.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T23:06:31.951
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 148.141 MiB, compilation took 162 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T23:09:21.698
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/EmojiSymbols-xwfY8V8J.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:09:23.443
+#
+
+ Installing known registries into `~/.julia`
+#################                                                         23.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed EmojiSymbols ─ v0.1.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [c599478c] + EmojiSymbols v0.1.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [c599478c] + EmojiSymbols v0.1.5
+
+
+################################################################################
+# Testing: 2021-01-11T23:09:26.972
+#
+
+    Testing EmojiSymbols
+Status `/tmp/jl_wXh1u9/Project.toml`
+  [c599478c] EmojiSymbols v0.1.5
+  [ba5e3d4b] Jive v0.2.13
+  [3fa0cd96] REPL
+  [8dfed614] Test
+Status `/tmp/jl_wXh1u9/Manifest.toml`
+  [c599478c] EmojiSymbols v0.1.5
+  [ba5e3d4b] Jive v0.2.13
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [7b1f6079] FileWatching
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[4m1/2[24m emojisymbols/emoji.jl
+: Test Failed at /home/user/.julia/packages/EmojiSymbols/k6CR6/test/emojisymbols/emoji.jl:8
+  Expression: !(haskey(REPL.REPLCompletions.emoji_symbols, "\\:thinking_face:"))
+Stacktrace:
+ [1] top-level scope at /home/user/.julia/packages/EmojiSymbols/k6CR6/test/emojisymbols/emoji.jl:8
+ [2] include(::String) at ./client.jl:457
+ [3] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+ [4] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+ [5] runtests(::String) at /home/user/.julia/packages/Jive/S1UMt/src/runtests.jl:71
+ [6] top-level scope at /home/user/.julia/packages/EmojiSymbols/k6CR6/test/runtests.jl:2
+ [7] include(::String) at ./client.jl:457
+ [8] top-level scope at none:6
+ [9] eval(::Module, ::Any) at ./boot.jl:331
+ [10] exec_options(::Base.JLOptions) at ./client.jl:272
+ [11] _start() at ./client.jl:506
+    [91m[1mFail [22m[39m[91m1[39m
+    [32m[1mPass [22m[39m[32m7[39m  (3.41 seconds)
+[4m2/2[24m emojisymbols/latex.jl
+    [32m[1mPass [22m[39m[32m6[39m  (0.02 seconds)
+[31m❗️  [39mTest run finished with 1 test failure.  (3.43 seconds)
+ERROR: LoadError: Test run finished with errors.
+in expression starting at /home/user/.julia/packages/EmojiSymbols/k6CR6/test/runtests.jl:2
+
+PkgEval failed: Package EmojiSymbols errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:09:36.807
+CPU usage: 15.16s (12.75s user, 2.46s kernel)
+
+Network usage:
+- eth0: 2.632 MiB received, 32.853 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":19,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":19,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":77824,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":77824,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":307200000,"max_usage":559923200,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":195452928,"inactive_file":135168,"inactive_anon":79343616,"total_pgfault":352077,"total_cache":81788928,"total_rss_huge":0,"total_active_anon":196128768,"total_pgmajfault":0,"pgpgin":210243,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":0,"total_unevictable":0,"total_dirty":0,"writeback":0,"pgpgout":142549,"hierarchical_memsw_limit":0,"cache":81788928,"active_file":1757184,"pgfault":352077,"total_mapped_file":0,"total_pgpgout":142549,"total_writeback":0,"rss":195452928,"unevictable":0,"total_inactive_anon":79343616,"total_pgpgin":210243,"active_anon":196128768,"total_active_file":1757184},"limit":540965302272},"name":"/EmojiSymbols-hIYuGjER","networks":{"eth0":{"rx_bytes":2759429,"rx_packets":322,"tx_packets":331,"tx_bytes":33641,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"aaf815bb8613f294e712e812ca50a905975d6d2b623f7dd4ad8878f60a756655","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6732867894522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":12750000000,"usage_in_kernelmode":2460000000,"total_usage":15158060830,"percpu_usage":[15158055930,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4900,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:09:36.809813065Z"}

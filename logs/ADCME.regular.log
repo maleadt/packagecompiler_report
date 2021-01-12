@@ -1,0 +1,1201 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:32:46.548
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:32:48.386
+#
+
+ Installing known registries into `~/.julia`
+############################                                              39.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed Lz4_jll ────────────────────── v1.9.2+2
+  Installed Blosc_jll ──────────────────── v1.14.3+1
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed Reexport ───────────────────── v1.0.0
+  Installed VersionParsing ─────────────── v1.2.0
+  Installed FFTW ───────────────────────── v1.3.1
+  Installed ADCME ──────────────────────── v0.6.7
+  Installed TranscodingStreams ─────────── v0.9.5
+  Installed BufferedStreams ────────────── v1.0.0
+  Installed MKL_jll ────────────────────── v2020.2.254+0
+  Installed Zstd_jll ───────────────────── v1.4.5+2
+  Installed FFTW_jll ───────────────────── v3.3.9+7
+  Installed HDF5_jll ───────────────────── v1.10.5+7
+  Installed Blosc ──────────────────────── v0.7.0
+  Installed HDF5 ───────────────────────── v0.13.7
+  Installed CodecZlib ──────────────────── v0.7.0
+  Installed IntelOpenMP_jll ────────────── v2018.0.3+0
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed URIParser ──────────────────── v0.4.1
+  Installed AbstractFFTs ───────────────── v1.0.0
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed JSON ───────────────────────── v0.21.1
+  Installed Conda ──────────────────────── v1.5.0
+  Installed CMake ──────────────────────── v1.2.0
+  Installed SpecialFunctions ───────────── v0.10.3
+  Installed BinDeps ────────────────────── v1.0.2
+  Installed MAT ────────────────────────── v0.8.1
+  Installed Compat ─────────────────────── v3.25.0
+  Installed PyCall ─────────────────────── v1.92.2
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Parsers ────────────────────── v1.0.15
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [07b341a0] + ADCME v0.6.7
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [07b341a0] + ADCME v0.6.7
+  [621f4979] + AbstractFFTs v1.0.0
+  [56f22d72] + Artifacts v1.3.0
+  [9e28174c] + BinDeps v1.0.2
+  [a74b3585] + Blosc v0.7.0
+  [0b7ba130] + Blosc_jll v1.14.3+1
+  [e1450e63] + BufferedStreams v1.0.0
+  [631607c0] + CMake v1.2.0
+  [944b1d66] + CodecZlib v0.7.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [8f4d0f93] + Conda v1.5.0
+  [7a1cc6ca] + FFTW v1.3.1
+  [f5851436] + FFTW_jll v3.3.9+7
+  [f67ccb44] + HDF5 v0.13.7
+  [0234f1f7] + HDF5_jll v1.10.5+7
+  [1d5cc7b8] + IntelOpenMP_jll v2018.0.3+0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [5ced341a] + Lz4_jll v1.9.2+2
+  [23992714] + MAT v0.8.1
+  [856f044c] + MKL_jll v2020.2.254+0
+  [1914dd2f] + MacroTools v0.5.6
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [69de0a69] + Parsers v1.0.15
+  [438e738f] + PyCall v1.92.2
+  [189a3867] + Reexport v1.0.0
+  [276daf66] + SpecialFunctions v0.10.3
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [30578b45] + URIParser v0.4.1
+  [81def892] + VersionParsing v1.2.0
+  [83775a58] + Zlib_jll v1.2.11+18
+  [3161d3a3] + Zstd_jll v1.4.5+2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building Conda ─→ `~/.julia/packages/Conda/x5ml4/deps/build.log`
+   Building PyCall → `~/.julia/packages/PyCall/tqyST/deps/build.log`
+   Building CMake ─→ `~/.julia/packages/CMake/ULbyn/deps/build.log`
+   Building HDF5 ──→ `~/.julia/packages/HDF5/YX0jU/deps/build.log`
+   Building FFTW ──→ `~/.julia/packages/FFTW/eADNB/deps/build.log`
+   Building ADCME ─→ `~/.julia/packages/ADCME/hCmEo/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T22:35:48.842
+#
+
+    Testing ADCME
+Status `/tmp/jl_qynvsU/Project.toml`
+  [07b341a0] ADCME v0.6.7
+  [631607c0] CMake v1.2.0
+  [7a1cc6ca] FFTW v1.3.1
+  [23992714] MAT v0.8.1
+  [76087f3c] NLopt v0.6.2
+  [429524aa] Optim v1.2.2
+  [438e738f] PyCall v1.92.2
+  [d330b81b] PyPlot v2.9.0
+  [276daf66] SpecialFunctions v0.10.3
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [44cfe95a] Pkg
+  [9a3f8284] Random
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_qynvsU/Manifest.toml`
+  [07b341a0] ADCME v0.6.7
+  [621f4979] AbstractFFTs v1.0.0
+  [4fba245c] ArrayInterface v2.14.13
+  [56f22d72] Artifacts v1.3.0
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [9e28174c] BinDeps v1.0.2
+  [a74b3585] Blosc v0.7.0
+  [0b7ba130] Blosc_jll v1.14.3+1
+  [e1450e63] BufferedStreams v1.0.0
+  [6e34b625] Bzip2_jll v1.0.6+5
+  [631607c0] CMake v1.2.0
+  [523fee87] CodecBzip2 v0.7.2
+  [944b1d66] CodecZlib v0.7.0
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.6
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [8f4d0f93] Conda v1.5.0
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [7a1cc6ca] FFTW v1.3.1
+  [f5851436] FFTW_jll v3.3.9+7
+  [1a297f60] FillArrays v0.11.0
+  [6a86dc24] FiniteDiff v2.7.2
+  [53c48c17] FixedPointNumbers v0.8.4
+  [f6369f11] ForwardDiff v0.10.14
+  [f67ccb44] HDF5 v0.13.7
+  [0234f1f7] HDF5_jll v1.10.5+7
+  [cd3eb016] HTTP v0.9.2
+  [83e8ac13] IniFile v0.5.0
+  [1d5cc7b8] IntelOpenMP_jll v2018.0.3+0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [7d188eb4] JSONSchema v0.3.3
+  [b964fa9f] LaTeXStrings v1.2.0
+  [d3d80556] LineSearches v7.1.1
+  [5ced341a] Lz4_jll v1.9.2+2
+  [23992714] MAT v0.8.1
+  [856f044c] MKL_jll v2020.2.254+0
+  [1914dd2f] MacroTools v0.5.6
+  [b8f27783] MathOptInterface v0.9.19
+  [fdba3010] MathProgBase v0.7.8
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [e1d29d7a] Missings v0.4.4
+  [d8a4904e] MutableArithmetics v0.2.13
+  [d41bc354] NLSolversBase v7.7.1
+  [76087f3c] NLopt v0.6.2
+  [079eb43e] NLopt_jll v2.7.0+0
+  [77ba4419] NaNMath v0.3.5
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [429524aa] Optim v1.2.2
+  [bac558e1] OrderedCollections v1.3.2
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.15
+  [85a6dd25] PositiveFactorizations v0.2.4
+  [438e738f] PyCall v1.92.2
+  [d330b81b] PyPlot v2.9.0
+  [189a3867] Reexport v1.0.0
+  [ae029012] Requires v1.1.2
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v0.10.3
+  [90137ffa] StaticArrays v1.0.1
+  [2913bbd2] StatsBase v0.33.2
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [30578b45] URIParser v0.4.1
+  [5c2747f8] URIs v1.1.0
+  [3a884ed6] UnPack v1.0.2
+  [81def892] VersionParsing v1.2.0
+  [a5390f91] ZipFile v0.9.3
+  [83775a58] Zlib_jll v1.2.11+18
+  [3161d3a3] Zstd_jll v1.4.5+2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+WARNING: Method definition size(PyCall.PyObject) in module PyCall at /home/pkgeval/.julia/packages/PyCall/tqyST/src/PyCall.jl:809 overwritten in module ADCME at /home/pkgeval/.julia/packages/ADCME/hCmEo/src/variable.jl:214.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition length(PyCall.PyObject) in module PyCall at /home/pkgeval/.julia/packages/PyCall/tqyST/src/PyCall.jl:808 overwritten in module ADCME at /home/pkgeval/.julia/packages/ADCME/hCmEo/src/variable.jl:238.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition lastindex(PyCall.PyObject) in module PyCall at deprecated.jl:70 overwritten in module ADCME at /home/pkgeval/.julia/packages/ADCME/hCmEo/src/variable.jl:454.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition *(PyCall.PyObject, PyCall.PyObject) in module PyCall at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyoperators.jl:11 overwritten in module ADCME at /home/pkgeval/.julia/packages/ADCME/hCmEo/src/ops.jl:102.
+  ** incremental compilation may be fatally broken for this module **
+
+OMP: Info #212: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #210: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 41
+OMP: Info #156: KMP_AFFINITY: 1 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #159: KMP_AFFINITY: 1 packages x 1 cores/pkg x 1 threads/core (1 total cores)
+OMP: Info #214: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 41 maps to package 1 
+OMP: Info #250: KMP_AFFINITY: pid 4440 tid 4440 thread 0 bound to OS proc set 41
+┌ Warning: Cannot load /home/pkgeval/.julia/packages/ADCME/hCmEo/deps/CustomOps/build/libadcme.so. Please recompile the shared library by `ADCME.precompile()` for using custom operators.
+└ @ ADCME ~/.julia/packages/ADCME/hCmEo/src/ADCME.jl:76
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/pkgeval/.julia/adcme
+
+  added / updated specs:
+    - matplotlib
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ca-certificates-2020.10.14 |                0         128 KB  anaconda
+    certifi-2020.6.20          |           py37_0         159 KB  anaconda
+    conda-4.9.0                |           py37_0         3.1 MB  anaconda
+    matplotlib-3.3.1           |                0          24 KB  anaconda
+    openssl-1.1.1h             |       h7b6447c_0         3.8 MB  anaconda
+    ------------------------------------------------------------
+                                           Total:         7.2 MB
+
+The following packages will be UPDATED:
+
+  ca-certificates    conda-forge::ca-certificates-2020.6.2~ --> anaconda::ca-certificates-2020.10.14-0
+  conda              conda-forge::conda-4.8.4-py37hc8dfbb8~ --> anaconda::conda-4.9.0-py37_0
+  openssl            conda-forge::openssl-1.1.1g-h516909a_1 --> anaconda::openssl-1.1.1h-h7b6447c_0
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  certifi            conda-forge::certifi-2020.6.20-py37hc~ --> anaconda::certifi-2020.6.20-py37_0
+  matplotlib                                      pkgs/main --> anaconda
+
+
+
+Downloading and Extracting Packages
+ca-certificates-2020 | 128 KB    |            |   0% ca-certificates-2020 | 128 KB    | ########## | 100% ca-certificates-2020 | 128 KB    | ########## | 100% 
+matplotlib-3.3.1     | 24 KB     |            |   0% matplotlib-3.3.1     | 24 KB     | ########## | 100% 
+conda-4.9.0          | 3.1 MB    |            |   0% conda-4.9.0          | 3.1 MB    | ########## | 100% conda-4.9.0          | 3.1 MB    | ########## | 100% 
+certifi-2020.6.20    | 159 KB    |            |   0% certifi-2020.6.20    | 159 KB    | ########## | 100% 
+openssl-1.1.1h       | 3.8 MB    |            |   0% openssl-1.1.1h       | 3.8 MB    | ########## | 100% openssl-1.1.1h       | 3.8 MB    | ########## | 100% 
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+2021-01-11 22:39:11.120565: I tensorflow/core/platform/cpu_feature_guard.cc:145] This TensorFlow binary is optimized with Intel(R) MKL-DNN to use the following CPU instructions in performance critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in non-MKL-DNN operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-01-11 22:39:11.129208: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2499770000 Hz
+2021-01-11 22:39:11.129352: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x74419e0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-01-11 22:39:11.129422: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+[✔️] Julia version
+[✔️] TensorFlow version
+[✔️] TensorFlow-Probability version
+[✔️] Python executable file
+[✘] Julia path (Optional)
+
+[Reason]
+`julia` outputs nothing. This will break custom operator compilation.
+
+
+[Instruction]
+Add your julia binary path to your environment path, e.g. (Unix systems) 
+
+export PATH=/opt/julia/bin:$PATH
+
+For convenience, you can add the above line to your `~/.bashrc` (Linux) or `~/.bash_profile` (Apple).
+For Windows, you need to add it to system environment.
+
+[✘] Dynamic library path (Optional)
+
+[Reason]
+/home/pkgeval/.julia/adcme/lib is not in LD_LIBRARY_PATH. This MAY break custom operator compilation. However, in most cases, ADCME automatic fixes this problem for you.
+
+
+[Instruction]
+Add your dynamic library path path to your environment path, e.g. (Unix systems) 
+
+export LD_LIBRARY_PATH=/home/pkgeval/.julia/adcme/lib:$LD_LIBRARY_PATH
+
+For convenience, you can add the above line to your `~/.bashrc` (Linux or Apple).
+For Windows, you need to add it to PATH instead of LD_LIBRARY_PATH.
+
+[✔️] Memory Address Length =  64
+[✘] Binaries path
+
+[Reason]
+/home/pkgeval/.julia/adcme/bin is not in PATH. This path contains compatible tools such as a GCC compiler, `cmake`, `make`, or any other tools you want to use directly from terminal.
+However, setting the path is NOT a requirement, and ADCME works totally fine without any action.
+
+
+[Instruction]
+(Optional) Add your binary path to your environment path, e.g. (Unix systems) 
+
+export PATH=/home/pkgeval/.julia/adcme/bin:$PATH
+
+For convenience, you can add the above line to your `~/.bashrc` (Linux) or `~/.bash_profile` (Apple).
+For Windows, you need to add it to system environment.
+
+[✘] GPU Support (Optional)
+
+[Reason]
+ADCME is not compiled against GPU.
+
+
+[Instruction]
+If you intend to use GPU, set ENV["GPU"] = 1 and then rebuild ADCME.
+
+Dependency file is located at: /home/pkgeval/.julia/packages/ADCME/hCmEo/src/../deps/deps.jl
+2021-01-11 22:39:11.653674: I tensorflow/core/common_runtime/process_util.cc:115] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Test Summary:               | Pass  Total
+indexing for rank 3 tensors |    3      3
+[ Info: Changed to directory /home/pkgeval/.julia/adcme/lib/Libraries
+[ Info: Cloning from https://github.com/ADCMEMarket/Adept-2 to Adept-2...
+[ Info: Cloned https://github.com/ADCMEMarket/Adept-2 to Adept-2
+[ Info: Made directory directory
+[ Info: Changed to directory build
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/pkgeval/.julia/adcme/bin/x86_64-conda_cos6-linux-gnu-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/pkgeval/.julia/adcme/bin/x86_64-conda_cos6-linux-gnu-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+JULIA=/opt/julia/bin/julia
+OMP: Info #212: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #210: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 41
+OMP: Info #156: KMP_AFFINITY: 1 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #159: KMP_AFFINITY: 1 packages x 1 cores/pkg x 1 threads/core (1 total cores)
+OMP: Info #214: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 41 maps to package 1 
+OMP: Info #250: KMP_AFFINITY: pid 5885 tid 5885 thread 0 bound to OS proc set 41
+┌ Warning: Cannot load /home/pkgeval/.julia/packages/ADCME/hCmEo/deps/CustomOps/build/libadcme.so. Please recompile the shared library by `ADCME.precompile()` for using custom operators.
+└ @ ADCME ~/.julia/packages/ADCME/hCmEo/src/ADCME.jl:76
+Python path=/home/pkgeval/.julia/adcme/bin/python
+PREFIXDIR=/home/pkgeval/.julia/adcme/lib/Libraries
+TF_INC=/home/pkgeval/.julia/adcme/lib/python3.7/site-packages/tensorflow_core/include
+TF_ABI=1
+TF_LIB_FILE=/home/pkgeval/.julia/adcme/lib/python3.7/site-packages/tensorflow_core/libtensorflow_framework.so.1
+Use openblas library /home/pkgeval/.julia/adcme/lib/libopenblas.so
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pkgeval/.julia/adcme/lib/Libraries/Adept-2/adept/build
+[1/12] Building CXX object CMakeFiles/adept.dir/StackStorageOrig.cpp.o
+[2/12] Building CXX object CMakeFiles/adept.dir/cppblas.cpp.o
+[3/12] Building CXX object CMakeFiles/adept.dir/settings.cpp.o
+[4/12] Building CXX object CMakeFiles/adept.dir/Storage.cpp.o
+[5/12] Building CXX object CMakeFiles/adept.dir/index.cpp.o
+[6/12] Building CXX object CMakeFiles/adept.dir/Array.cpp.o
+[7/12] Building CXX object CMakeFiles/adept.dir/Stack.cpp.o
+[8/12] Building CXX object CMakeFiles/adept.dir/inv.cpp.o
+[9/12] Building CXX object CMakeFiles/adept.dir/vector_utilities.cpp.o
+[10/12] Building CXX object CMakeFiles/adept.dir/jacobian.cpp.o
+[11/12] Building CXX object CMakeFiles/adept.dir/solve.cpp.o
+[12/12] Linking CXX shared library /home/pkgeval/.julia/adcme/lib/libadept.so
+[ Info: Made directory directory
+[ Info: Changed to directory /home/pkgeval/.julia/packages/ADCME/hCmEo/deps/Plugin/ExtendedNN/build
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/pkgeval/.julia/adcme/bin/x86_64-conda_cos6-linux-gnu-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/pkgeval/.julia/adcme/bin/x86_64-conda_cos6-linux-gnu-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+JULIA=/opt/julia/bin/julia
+OMP: Info #212: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #210: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 41
+OMP: Info #156: KMP_AFFINITY: 1 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #159: KMP_AFFINITY: 1 packages x 1 cores/pkg x 1 threads/core (1 total cores)
+OMP: Info #214: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 41 maps to package 1 
+OMP: Info #250: KMP_AFFINITY: pid 5986 tid 5986 thread 0 bound to OS proc set 41
+┌ Warning: Cannot load /home/pkgeval/.julia/packages/ADCME/hCmEo/deps/CustomOps/build/libadcme.so. Please recompile the shared library by `ADCME.precompile()` for using custom operators.
+└ @ ADCME ~/.julia/packages/ADCME/hCmEo/src/ADCME.jl:76
+Python path=/home/pkgeval/.julia/adcme/bin/python
+PREFIXDIR=/home/pkgeval/.julia/adcme/lib/Libraries
+TF_INC=/home/pkgeval/.julia/adcme/lib/python3.7/site-packages/tensorflow_core/include
+TF_ABI=1
+TF_LIB_FILE=/home/pkgeval/.julia/adcme/lib/python3.7/site-packages/tensorflow_core/libtensorflow_framework.so.1
+ADEPT_LIB_FILE=/home/pkgeval/.julia/adcme/lib/libadept.so
+BLAS Library = /home/pkgeval/.julia/adcme/lib/libopenblas.so
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pkgeval/.julia/packages/ADCME/hCmEo/deps/Plugin/ExtendedNN/build
+[1/2] Building CXX object CMakeFiles/ExtendedNn.dir/ExtendedNn.cpp.o
+[2/2] Linking CXX shared library libExtendedNn.so
+Load library operator (with gradient, multiple outputs = true): /home/pkgeval/.julia/packages/ADCME/hCmEo/deps/Plugin/ExtendedNN/build/libExtendedNn.so ==> extended_nn
+Test Summary: | Pass  Total
+fcx           |    4      4
+Test Summary: | Pass  Total
+dropout       |    2      2
+[ Info: /home/pkgeval/.julia/packages/ADCME/hCmEo/deps/CustomOps/build/libadcme.so does not exist. Precompiling...
+[ Info: Made directory directory
+[ Info: Changed to directory build
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/pkgeval/.julia/adcme/bin/x86_64-conda_cos6-linux-gnu-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/pkgeval/.julia/adcme/bin/x86_64-conda_cos6-linux-gnu-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+JULIA=/opt/julia/bin/julia
+OMP: Info #212: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #210: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 41
+OMP: Info #156: KMP_AFFINITY: 1 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #159: KMP_AFFINITY: 1 packages x 1 cores/pkg x 1 threads/core (1 total cores)
+OMP: Info #214: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 41 maps to package 1 
+OMP: Info #250: KMP_AFFINITY: pid 6047 tid 6047 thread 0 bound to OS proc set 41
+┌ Warning: Cannot load /home/pkgeval/.julia/packages/ADCME/hCmEo/deps/CustomOps/build/libadcme.so. Please recompile the shared library by `ADCME.precompile()` for using custom operators.
+└ @ ADCME ~/.julia/packages/ADCME/hCmEo/src/ADCME.jl:76
+Python path=/home/pkgeval/.julia/adcme/bin/python
+PREFIXDIR=/home/pkgeval/.julia/adcme/lib/Libraries
+TF_INC=/home/pkgeval/.julia/adcme/lib/python3.7/site-packages/tensorflow_core/include
+TF_ABI=1
+TF_LIB_FILE=/home/pkgeval/.julia/adcme/lib/python3.7/site-packages/tensorflow_core/libtensorflow_framework.so.1
+MPI_INCLUDE_PATH and/or MPI_C_LIBRARIES is not set. MPI operators are not compiled.
+-- Found OpenMP_C: -fopenmp (found version "4.0") 
+-- Found OpenMP_CXX: -fopenmp (found version "4.0") 
+-- Found OpenMP: TRUE (found version "4.0")  
+OPENMP Found
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pkgeval/.julia/packages/ADCME/hCmEo/deps/CustomOps/build
+[1/25] Building CXX object CMakeFiles/adcme.dir/RadialBasisFunction/Functions.cpp.o
+[2/25] Building CXX object CMakeFiles/adcme.dir/OT/src/sinkhorn.cpp.o
+[3/25] Building CXX object CMakeFiles/adcme.dir/RadialBasisFunction/Impl.cpp.o
+[4/25] Building CXX object CMakeFiles/adcme.dir/SleepFor/SleepFor.cpp.o
+[5/25] Building CXX object CMakeFiles/adcme.dir/PrintTensor/PrintTensor.cpp.o
+[6/25] Building CXX object CMakeFiles/adcme.dir/SparseAccumulate/Impl.cpp.o
+[7/25] Building CXX object CMakeFiles/adcme.dir/TriSolve/TriSolve.cpp.o
+[8/25] Building CXX object CMakeFiles/adcme.dir/SparseToDense/SparseToDense.cpp.o
+[9/25] Building CXX object CMakeFiles/adcme.dir/TriLu/TriLu.cpp.o
+[10/25] Building CXX object CMakeFiles/adcme.dir/SparseAccumulate/SparseAccumulator.cpp.o
+[11/25] Building CXX object CMakeFiles/adcme.dir/SparseFactorizationSolve/lru_cache.cpp.o
+[12/25] Building CXX object CMakeFiles/adcme.dir/RadialBasisFunction/RadialBasisFunction.cpp.o
+[13/25] Building CXX object CMakeFiles/adcme.dir/SparseConcate/SparseConcate.cpp.o
+[14/25] Building CXX object CMakeFiles/adcme.dir/SparseScatterUpdate/SparseScatterUpdate.cpp.o
+[15/25] Building CXX object CMakeFiles/adcme.dir/OT/SinkhornKnopp/SinkhornKnopp.cpp.o
+[16/25] Building CXX object CMakeFiles/adcme.dir/SparseIndexing/SparseIndexing.cpp.o
+[17/25] Building CXX object CMakeFiles/adcme.dir/SparseMatMul/SparseMatMul.cpp.o
+[18/25] Building CXX object CMakeFiles/adcme.dir/SparseFactorizationSolve/Solve/Solve.cpp.o
+[19/25] Building CXX object CMakeFiles/adcme.dir/InterpDimOne/InterpDimOne.cpp.o
+[20/25] Building CXX object CMakeFiles/adcme.dir/SparseCompress/SparseCompress.cpp.o
+[21/25] Building CXX object CMakeFiles/adcme.dir/SolveBatchedRhs/SolveBatchedRhs.cpp.o
+[22/25] Building CXX object CMakeFiles/adcme.dir/SparseFactorizationSolve/Factorization/SparseFactorization.cpp.o
+[23/25] Building CXX object CMakeFiles/adcme.dir/SparseLeastSquare/SparseLeastSquare.cpp.o
+[24/25] Building CXX object CMakeFiles/adcme.dir/SparseSolver/SparseSolver.cpp.o
+[25/25] Linking CXX shared library libadcme.so
+Test Summary:      | Pass  Total
+sparse_constructor |    7      7
+Test Summary:     | Pass  Total
+sparse_arithmetic |    4      4
+Test Summary:  | Pass  Total
+sparse_adjoint |    1      1
+Test Summary: | Pass  Total
+sparse_mul    |    6      6
+Test Summary:    | Pass  Total
+sparse_vcat_hcat |    2      2
+Test Summary:   | Pass  Total
+sparse_indexing |    3      3
+Test Summary: | Pass  Total
+sparse_solve  |    1      1
+k = 1
+k = 2
+k = 3
+k = 4
+k = 5
+k = 6
+k = 7
+k = 8
+k = 9
+k = 10
+v = [0.6051916031620423, 0.0902302241717503, 0.005268230896721349, 0.034826423515498695, 0.8741217166916369, 0.9480311232903933, 0.34520153839359136, 0.432006093417437, 0.7407951181129169, 0.045620707437929786]
+2021-01-11 22:42:02.411895: I ../SparseAccumulate/Impl.cpp:68] Create a new sparse assembler [Handle ID = 100] with 20 rows and tolerance 0.
+
+2021-01-11 22:42:02.411962: I ../SparseAccumulate/Impl.cpp:69] Current sparse assembler:
+2021-01-11 22:42:02.411968: I ../SparseAccumulate/Impl.cpp:74]  100 |
+2021-01-11 22:42:02.411984: I ../SparseAccumulate/Impl.cpp:82] destroy_sparse_assembler
+2021-01-11 22:42:02.456958: I ../SparseAccumulate/Impl.cpp:68] Create a new sparse assembler [Handle ID = 100] with 5 rows and tolerance 1.
+
+2021-01-11 22:42:02.457031: I ../SparseAccumulate/Impl.cpp:69] Current sparse assembler:
+2021-01-11 22:42:02.457036: I ../SparseAccumulate/Impl.cpp:74]  100 |
+2021-01-11 22:42:02.457050: I ../SparseAccumulate/Impl.cpp:82] destroy_sparse_assembler
+2021-01-11 22:42:02.542749: I ../SparseAccumulate/Impl.cpp:68] Create a new sparse assembler [Handle ID = 100] with 5 rows and tolerance 0.
+
+2021-01-11 22:42:02.542821: I ../SparseAccumulate/Impl.cpp:69] Current sparse assembler:
+2021-01-11 22:42:02.542826: I ../SparseAccumulate/Impl.cpp:74]  100 |
+2021-01-11 22:42:02.542847: I ../SparseAccumulate/Impl.cpp:82] destroy_sparse_assembler
+Test Summary:    | Pass  Total
+sparse_assembler |    3      3
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = \(::SparseTensor, ::PyObject, ::String) at sparse.jl:426
+└ @ ADCME ~/.julia/packages/ADCME/hCmEo/src/sparse.jl:426
+Test Summary:       | Pass  Total
+sparse_least_square |    1      1
+Test Summary:  | Pass  Total
+sparse mat mul |    3      3
+Test Summary: | Pass  Total
+spdiag        |    3      3
+Test Summary: | Pass  Total
+spzero        |    2      2
+Test Summary:   | Pass  Total
+sparse indexing |    1      1
+Test Summary: | Pass  Total
+sum           |    3      3
+Test Summary:   | Pass  Total
+dense_to_sparse |    2      2
+Test Summary: | Pass  Total
+spdiagm       |    4      4
+Test Summary: | Pass  Total
+hvcat         |    1      1
+Test Summary: | Pass  Total
+find          |    6      6
+Test Summary:             | Pass  Total
+sparse scatter update add |    2      2
+Test Summary:   | Pass  Total
+constant sparse |    1      1
+Test Summary: | Pass  Total
+get index     |    1      1
+2021-01-11 22:42:09.134870: I ../SparseFactorizationSolve/Factorization/SparseFactorization.h:32] Factorization: current matrix id= 1, maximum cache size = 999999
+
+2021-01-11 22:42:09.163925: I ../SparseFactorizationSolve/Factorization/SparseFactorization.h:32] Factorization: current matrix id= 2, maximum cache size = 999999
+
+Test Summary:                  | Pass  Total
+sparse_factorization_and_solve |    2      2
+2021-01-11 22:42:09.332648: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at SparseSolver.cpp:137 : Internal: Sparse solver factorization failed.
+2021-01-11 22:42:09.333078: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at SparseSolver.cpp:137 : Internal: Sparse solver factorization failed.
+Test Summary:         | Pass  Total
+sparse solver warning |    1      1
+Test Summary:  | Pass  Total
+sparse promote |    6      6
+Test Summary: | Pass  Total
+trisolve      |    1      1
+Test Summary: | Pass  Total
+compress      |    2      2
+Test Summary: | Broken  Total
+random        |     47     47
+Test Summary: | Pass  Total
+save and load |    1      1
+Test Summary:   | Pass  Total
+psave and pload |    1      1
+tensorboard --logdir="/tmp/jl_rGv0cX" --port 0
+tensorboard --logdir="/tmp/jl_UlZlrV" --port 0
+Test Summary: |
+diary         | No tests
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = macro expansion at variable.jl:17 [inlined]
+└ @ Core ~/.julia/packages/ADCME/hCmEo/test/variable.jl:17
+Test Summary: | Pass  Total
+indexing      |   28     28
+Test Summary: | Pass  Total
+Variables     |    4      4
+Test Summary: | Pass  Total
+tensor        |    2      2
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at variable.jl:64
+└ @ Core ~/.julia/packages/ADCME/hCmEo/test/variable.jl:64
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at variable.jl:64
+└ @ Core ~/.julia/packages/ADCME/hCmEo/test/variable.jl:64
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at variable.jl:64
+└ @ Core ~/.julia/packages/ADCME/hCmEo/test/variable.jl:64
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at variable.jl:64
+└ @ Core ~/.julia/packages/ADCME/hCmEo/test/variable.jl:64
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at variable.jl:64
+└ @ Core ~/.julia/packages/ADCME/hCmEo/test/variable.jl:64
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at variable.jl:64
+└ @ Core ~/.julia/packages/ADCME/hCmEo/test/variable.jl:64
+OMP: Info #250: KMP_AFFINITY: pid 4440 tid 5836 thread 1 bound to OS proc set 41
+Test Summary: | Pass  Total
+Hessian       |    2      2
+Test Summary: | Pass  Total
+Jacobian      |    1      1
+Test Summary: | Pass  Total
+gradients_v   |    1      1
+Test Summary:   | Pass  Total
+size and length |    9      9
+Test Summary: | Pass  Total
+copy          |    1      1
+Test Summary: | Pass  Total
+getindex      |    1      1
+Test Summary:     | Pass  Total
+convert_to_tensor |    5      5
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at variable.jl:131
+└ @ Core ~/.julia/packages/ADCME/hCmEo/test/variable.jl:131
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at variable.jl:132
+└ @ Core ~/.julia/packages/ADCME/hCmEo/test/variable.jl:132
+Test Summary: | Pass  Total
+cell          |    2      2
+Test Summary:    | Pass  Total
+special matrices |    2      2
+Test Summary:   | Pass  Total
+ones/zeros like |    2      2
+Test Summary:      | Pass  Total
+gradient_magnitude |    1      1
+Test Summary:        | Pass  Total
+indexing with tensor |    6      6
+Test Summary: | Pass  Total
+ndims         |    4      4
+Test Summary:      | Pass  Total
+gradients_colocate |    1      1
+Test Summary: | Pass  Total
+is_variable   |    2      2
+Test Summary: | Pass  Total
+*             |   27     27
+Test Summary: | Pass  Total
+reshape       |    6      6
+Test Summary:  | Pass  Total
+scatter_update |    9      9
+Test Summary: | Pass  Total
+adjoint       |    4      4
+Test Summary:           | Pass  Total
+scatter_update_pyobject |    9      9
+Test Summary: | Pass  Total
+Operators     |   14     14
+Test Summary:   | Pass  Total
+Other Operators |    1      1
+Test Summary:    | Pass  Total
+Concat and stack |    6      6
+Test Summary: | Pass  Total
+Vectorize     |    5      5
+Test Summary: | Pass  Total
+Solve         |    3      3
+Test Summary: | Pass  Total
+diff          |    3      3
+Test Summary: | Pass  Total
+clip          |    1      1
+Test Summary: | Pass  Total
+map           |    1      1
+Test Summary: | Pass  Total
+diag          |    2      2
+Test Summary: | Pass  Total
+dot           |    3      3
+Test Summary: | Pass  Total
+prod          |    1      1
+Test Summary: | Pass  Total
+findall       |    2      2
+Test Summary: | Pass  Total
+svd           |    1      1
+Test Summary: | Pass  Total
+vector        |    1      1
+Test Summary: | Pass  Total
+repeat        |    6      6
+Test Summary: | Pass  Total
+pmap          |    3      3
+Test Summary: | Pass  Total
+reshape       |    1      1
+Test Summary: | Pass  Total
+batch mul     |    1      1
+Test Summary: | Pass  Total
+sort          |    2      2
+Test Summary: | Pass  Total
+set_shape     |    3      3
+Test Summary: | Pass  Total
+activation    |    8      8
+Test Summary: | Pass  Total
+trace         |    1      1
+Test Summary: | Pass  Total
+trilu         |   22     22
+Test Summary: | Pass  Total
+reverse       |    3      3
+Test Summary: | Pass  Total
+solve batch   |    2      2
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = (::var"#45#47"{Int64})() at core.jl:18
+└ @ Main ~/.julia/packages/ADCME/hCmEo/test/core.jl:18
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = (::var"#46#48"{Int64})() at core.jl:39
+└ @ Main ~/.julia/packages/ADCME/hCmEo/test/core.jl:39
+Test Summary:      | Pass  Total
+control_dependency |    4      4
+Test Summary: | Pass  Total
+while loop    |    3      3
+Test Summary: | Pass  Total
+if_clause     |    1      1
+Test Summary:     | Pass  Total
+if_else: tf.where |    2      2
+Test Summary:          | Pass  Total
+get and add collection |    1      1
+Test Summary: | Pass  Total
+has_gpu       |    1      1
+2021-01-11 22:42:51.640295: I tensorflow/core/profiler/lib/profiler_session.cc:205] Profiler session started.
+OMP: Info #250: KMP_AFFINITY: pid 4440 tid 5837 thread 2 bound to OS proc set 41
+┌ Info: Timeline information saved in test.json
+│ - Open Chrome and navigate to chrome://tracing
+└ - Load the timeline file
+Test Summary: |
+timeline      | No tests
+Test Summary: | Pass  Total
+independent   |    1      1
+Test Summary:    | Pass  Total
+run corner cases |    1      1
+Test Summary: | Pass  Total
+@cpu @gpu     |    4      4
+Test Summary: | Pass  Total
+mpi utils     |    3      3
+Test Summary: | Pass  Total
+xavier_init   |    1      1
+Load library operator: /home/pkgeval/.julia/packages/ADCME/hCmEo/deps/CustomOps/build/libadcme.so ==> sparse_solver
+Test Summary: | Pass  Total
+load_op       |    2      2
+Test Summary: | Pass  Total
+ae            |    1      1
+[ Info: (1/4)Intializing TensorArray...
+[ Info: (2/4)Parsing Condition...
+[ Info: (3/4)Parsing Main Loop...
+[ Info: (4/4)Postprocessing Results...
+Newton-Raphson with absolute tolerance = 1.0e-12 and relative tolerance = 1.0e-12
+Newton iteration  1 : r (abs) = 15.652475842498529  r (rel) = 15.652475842498529
+Newton iteration  2 : r (abs) = 64.928788679993914  r (rel) = 15.652475842498529
+Newton iteration  3 : r (abs) = 15.489950495968388  r (rel) = 64.928788679993914
+Newton iteration  4 : r (abs) = 2.2725864326069174  r (rel) = 15.489950495968388
+Newton iteration  5 : r (abs) = 0.084320075161598992  r (rel) = 2.2725864326069174
+Newton iteration  6 : r (abs) = 0.00013179440739372649  r (rel) = 0.084320075161598992
+Newton iteration  7 : r (abs) = 3.2366684481841166e-10  r (rel) = 0.00013179440739372649
+Newton iteration  8 : r (abs) = 0  r (rel) = 3.2366684481841166e-10
+Test Summary: | Pass  Total
+register      |    4      4
+Test Summary:         | Pass  Total
+list_physical_devices |    1      1
+Test Summary: | Pass  Total
+timestamp     |    1      1
+Test Summary:       | Pass  Total
+get_library_symbols |    1      1
+((nrr[i]).x, (nrr[i]).iter, (nrr[i]).converged) = ([1.0], 5, true)
+((nrr[i]).x, (nrr[i]).iter, (nrr[i]).converged) = ([2.0945514815423265], 13, true)
+((nrr[i]).x, (nrr[i]).iter, (nrr[i]).converged) = ([0.9708700202758002], 6, true)
+((nrr[i]).x, (nrr[i]).iter, (nrr[i]).converged) = ([0.7390852827993509], 19, true)
+((nrr[i]).x, (nrr[i]).iter, (nrr[i]).converged) = ([0.9999997091525047], 16, true)
+((nrr[i]).x, (nrr[i]).iter, (nrr[i]).converged) = ([1.2999999999998608], 43, true)
+((nrr[i]).x, (nrr[i]).iter, (nrr[i]).converged) = ([0.45840750163141], 25, true)
+Test Summary:                  | Pass  Total
+newton raphson with linesearch |    7      7
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at optim.jl:50
+└ @ Core ~/.julia/packages/ADCME/hCmEo/test/optim.jl:50
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at optim.jl:51
+└ @ Core ~/.julia/packages/ADCME/hCmEo/test/optim.jl:51
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at optim.jl:51
+└ @ Core ~/.julia/packages/ADCME/hCmEo/test/optim.jl:51
+[CustomOptimizer] Number of inequalities constraints = 1, Number of equality constraints = 0
+[CustomOptimizer] Total number of variables = 4
+Test Summary: | Pass  Total
+NLopt         |    1      1
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at optim.jl:71
+└ @ Core ~/.julia/packages/ADCME/hCmEo/test/optim.jl:71
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at optim.jl:71
+└ @ Core ~/.julia/packages/ADCME/hCmEo/test/optim.jl:71
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at optim.jl:71
+└ @ Core ~/.julia/packages/ADCME/hCmEo/test/optim.jl:71
+[CustomOptimizer] Number of inequalities constraints = 0, Number of equality constraints = 0
+[CustomOptimizer] Total number of variables = 2
+[CustomOptimizer] No bounds provided, use (-∞, +∞) as default; or you need to provide bounds in the function CustomOptimizer
+(f, df, c, dc, x0) = (ADCME.var"#f#520"{PyObject}(PyObject <function ExternalOptimizerInterface._make_eval_func.<locals>.eval_func at 0x7f0b2a0f39e0>), ADCME.var"#df#521"{PyObject}(PyObject <function ExternalOptimizerInterface._make_eval_func.<locals>.eval_func at 0x7f0b2a0f39e0>), ADCME.var"#c#522"{Array{Float64,1},Array{Any,1},Array{Any,1},Int64,Int64}([0.6051916031620423, 0.0902302241717503], Any[], Any[], 0, 0), ADCME.var"#dc#525"{Array{Float64,1},Array{Any,1},Array{Any,1},Int64,Int64,Int64,Int64}([0.6051916031620423, 0.0902302241717503], Any[], Any[], 0, 0, 2, 0), [0.6051916031620423, 0.0902302241717503])
+Test Summary: | Pass  Total
+Optim         |    1      1
+Test Summary:  | Broken  Total
+newton raphson |      1      1
+Test Summary:               | Broken  Total
+NonlinearConstrainedProblem |      1      1
+[ Info: Optimization starts...
+iter 1, current loss = 18000.0
+[ Info: (0, 18000.0)
+================== STEP 0 ==================
+iter 2, current loss = 8.72481618e11
+iter 3, current loss = 10809.703003033512
+[ Info: (1, 10809.703003033512)
+================== STEP 1 ==================
+iter 4, current loss = 9807.933972734083
+iter 5, current loss = 6963.363784338763
+iter 6, current loss = 20640.655229624845
+iter 7, current loss = 5978.002997982916
+[ Info: (2, 5978.002997982916)
+================== STEP 2 ==================
+iter 8, current loss = 5959.683080990268
+iter 9, current loss = 5886.684555909367
+iter 10, current loss = 5528.439359861261
+iter 11, current loss = 3905.899113523064
+iter 12, current loss = 10.341229396824037
+iter 13, current loss = 85961.1354978804
+iter 14, current loss = 1.1515231593760328e-18
+[ Info: (3, 1.1515231593760328e-18)
+================== STEP 3 ==================
+iter 15, current loss = 5.637878905143305e-47
+iter 16, current loss = 6.285799030078872e-50
+[ Info: (4, 6.285799030078872e-50)
+================== STEP 4 ==================
+Test Summary: | Pass  Total
+Custom BFGS!  |    1      1
+[ Info: Optimization starts...
+iter 0, current loss=4.0
+iter 1, current loss=1.0
+================ STEP 0 ===============
+Test Summary: | Pass  Total
+var_to_bounds |    1      1
+┌ Warning: θ is not a PyObject, no gradients is available
+└ @ ADCME ~/.julia/packages/ADCME/hCmEo/src/optim.jl:633
+Test Summary:            | Pass  Total
+newton_raphson_with_grad |    3      3
+Test Summary: | Pass  Total
+sinkhorn      |    1      1
+Test Summary: | Pass  Total
+dist          |   10     10
+Test Summary: | Pass  Total
+runge_kutta   |    6      6
+Test Summary: | Pass  Total
+alpha scheme  |    2      2
+Test Summary: | Pass  Total
+tr_bdf2       |    4      4
+Test Summary: | Pass  Total
+LinearFlow    |    2      2
+Test Summary:      | Pass  Total
+AffineConstantFlow |    2      2
+ActNorm: initializing s and t...
+Test Summary: | Pass  Total
+ActNorm       |    2      2
+Test Summary: | Pass  Total
+SlowMAF       |    2      2
+Test Summary: | Pass  Total
+MAF           |    2      2
+Test Summary: | Pass  Total
+IAF           |    2      2
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = tril(::PyObject, ::Int64) at ops.jl:1136
+└ @ ADCME ~/.julia/packages/ADCME/hCmEo/src/ops.jl:1136
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = triu(::PyObject, ::Int64) at ops.jl:1152
+└ @ ADCME ~/.julia/packages/ADCME/hCmEo/src/ops.jl:1152
+Test Summary:     | Pass  Total
+Invertible1x1Conv |    2      2
+Test Summary:  | Pass  Total
+AffineHalfFlow |    2      2
+Test Summary:      | Broken  Total
+NeuralCouplingFlow |      1      1
+Test Summary: | Pass  Total
+Permute       |    2      2
+Test Summary: | Pass  Total
+composite     |    2      2
+Test Summary:         | Pass  Total
+radial basis function |    1      1
+Test Summary: | Pass  Total
+interp1       |    1      1
+Test Summary:  | Pass  Total
+pcl_square_sum |    1      1
+Test Summary: | Pass  Total
+pl_hessian    |    1      1
+Test Summary: | Pass  Total
+pcl_linear_op |    1      1
+Test Summary:    | Pass  Total
+pcl_sparse_solve |    1      1
+Test Summary: | Pass  Total
+pcl_compress  |    1      1
+This application failed to start because it could not find or load the Qt platform plugin "xcb"
+in "".
+
+Available platform plugins are: eglfs, minimal, minimalegl, offscreen, vnc, xcb.
+
+Reinstalling the application may fix this problem.
+
+signal (6): Aborted
+in expression starting at /home/pkgeval/.julia/packages/ADCME/hCmEo/test/kit.jl:3
+gsignal at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+abort at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+_ZNK14QMessageLogger5fatalEPKcz at /home/pkgeval/.julia/adcme/lib/python3.7/site-packages/PyQt5/../../../libQt5Core.so.5 (unknown line)
+_ZN22QGuiApplicationPrivate25createPlatformIntegrationEv at /home/pkgeval/.julia/adcme/lib/python3.7/site-packages/PyQt5/../../../libQt5Gui.so.5 (unknown line)
+_ZN22QGuiApplicationPrivate21createEventDispatcherEv at /home/pkgeval/.julia/adcme/lib/python3.7/site-packages/PyQt5/../../../libQt5Gui.so.5 (unknown line)
+_ZN23QCoreApplicationPrivate4initEv at /home/pkgeval/.julia/adcme/lib/python3.7/site-packages/PyQt5/../../../libQt5Core.so.5 (unknown line)
+_ZN22QGuiApplicationPrivate4initEv at /home/pkgeval/.julia/adcme/lib/python3.7/site-packages/PyQt5/../../../libQt5Gui.so.5 (unknown line)
+_ZN19QApplicationPrivate4initEv at /home/pkgeval/.julia/adcme/lib/python3.7/site-packages/PyQt5/../../../libQt5Widgets.so.5 (unknown line)
+_ZN15sipQApplicationC1ERiPPci at /home/pkgeval/.julia/adcme/lib/python3.7/site-packages/PyQt5/QtWidgets.so (unknown line)
+init_type_QApplication at /home/pkgeval/.julia/adcme/lib/python3.7/site-packages/PyQt5/QtWidgets.so (unknown line)
+unknown function (ip: 0x7f0b7cf28f63)
+type_call.lto_priv.153 at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyObject_FastCallKeywords at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+call_function.lto_priv.1542 at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+function_code_fastcall at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+call_function.lto_priv.1542 at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyEval_EvalCodeWithName at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyFunction_FastCallKeywords at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+call_function.lto_priv.1542 at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyEval_EvalCodeWithName at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyFunction_FastCallDict at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyObject_Call_Prepend at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+slot_tp_init at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+type_call.lto_priv.153 at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyObject_FastCallKeywords at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+call_function.lto_priv.1542 at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+function_code_fastcall at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+call_function.lto_priv.1542 at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyEval_EvalCodeWithName at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyFunction_FastCallDict at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyObject_Call_Prepend at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+PyObject_Call at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyEval_EvalCodeWithName at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyFunction_FastCallDict at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyEval_EvalCodeWithName at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyFunction_FastCallDict at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+macro expansion at /home/pkgeval/.julia/packages/PyCall/tqyST/src/exception.jl:95 [inlined]
+#109 at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:43 [inlined]
+disable_sigint at ./c.jl:446 [inlined]
+__pycall! at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:42 [inlined]
+_pycall! at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:29
+_pycall! at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:11 [inlined]
+#pycall#115 at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:83 [inlined]
+pycall at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:83 [inlined]
+#figure#7 at /home/pkgeval/.julia/packages/PyPlot/XHEG0/src/PyPlot.jl:147
+figure at /home/pkgeval/.julia/packages/PyPlot/XHEG0/src/PyPlot.jl:146
+unknown function (ip: 0x7f0b384b772c)
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_apply at /workspace/srcdir/src/builtins.c:655
+jl_f__apply_latest at /workspace/srcdir/src/builtins.c:705
+#invokelatest#1 at ./essentials.jl:710 [inlined]
+invokelatest at ./essentials.jl:709
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_apply at /workspace/srcdir/src/builtins.c:655
+_pyjlwrap_call at /home/pkgeval/.julia/packages/PyCall/tqyST/src/callback.jl:28
+unknown function (ip: 0x7f0b74148601)
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+pyjlwrap_call at /home/pkgeval/.julia/packages/PyCall/tqyST/src/callback.jl:44
+unknown function (ip: 0x7f0b741478a4)
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+unknown function (ip: 0x7f0bc6a32467)
+unknown function (ip: 0x7f0bc6a322e9)
+_PyObject_FastCallKeywords at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+call_function.lto_priv.1542 at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+function_code_fastcall at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyFunction_FastCallDict at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+macro expansion at /home/pkgeval/.julia/packages/PyCall/tqyST/src/exception.jl:95 [inlined]
+#109 at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:43 [inlined]
+disable_sigint at ./c.jl:446 [inlined]
+__pycall! at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:42 [inlined]
+_pycall! at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:29
+_pycall! at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:11 [inlined]
+#pycall#115 at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:83 [inlined]
+pycall at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:83 [inlined]
+gcf at /home/pkgeval/.julia/packages/PyPlot/XHEG0/src/PyPlot.jl:154
+unknown function (ip: 0x7f0b384b770c)
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_apply at /workspace/srcdir/src/builtins.c:655
+jl_f__apply_latest at /workspace/srcdir/src/builtins.c:705
+#invokelatest#1 at ./essentials.jl:710 [inlined]
+invokelatest at ./essentials.jl:709
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_apply at /workspace/srcdir/src/builtins.c:655
+_pyjlwrap_call at /home/pkgeval/.julia/packages/PyCall/tqyST/src/callback.jl:28
+unknown function (ip: 0x7f0b74148601)
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+pyjlwrap_call at /home/pkgeval/.julia/packages/PyCall/tqyST/src/callback.jl:44
+unknown function (ip: 0x7f0b741478a4)
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+unknown function (ip: 0x7f0bc6a32467)
+unknown function (ip: 0x7f0bc6a322e9)
+_PyObject_FastCallKeywords at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+call_function.lto_priv.1542 at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyEval_EvalCodeWithName at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyFunction_FastCallKeywords at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+call_function.lto_priv.1542 at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyEval_EvalCodeWithName at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+_PyFunction_FastCallDict at /home/pkgeval/.julia/adcme/lib/libpython3.7m.so.1.0 (unknown line)
+macro expansion at /home/pkgeval/.julia/packages/PyCall/tqyST/src/exception.jl:95 [inlined]
+#109 at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:43 [inlined]
+disable_sigint at ./c.jl:446 [inlined]
+__pycall! at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:42 [inlined]
+_pycall! at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:29
+_pycall! at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:11
+unknown function (ip: 0x7f0b384b7374)
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+#pycall#115 at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:83
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_apply at /workspace/srcdir/src/builtins.c:655
+pycall##kw at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:83
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_apply at /workspace/srcdir/src/builtins.c:655
+#loglog#74 at /home/pkgeval/.julia/packages/PyPlot/XHEG0/src/PyPlot.jl:177
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_apply at /workspace/srcdir/src/builtins.c:655
+loglog##kw at /home/pkgeval/.julia/packages/PyPlot/XHEG0/src/PyPlot.jl:174
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+#test_jacobian#475 at /home/pkgeval/.julia/packages/ADCME/hCmEo/src/kit.jl:33
+unknown function (ip: 0x7f0b384b536b)
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+test_jacobian at /home/pkgeval/.julia/packages/ADCME/hCmEo/src/kit.jl:20
+unknown function (ip: 0x7f0b384b3303)
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_call at /workspace/srcdir/src/interpreter.c:117
+eval_value at /workspace/srcdir/src/interpreter.c:206
+eval_stmt_value at /workspace/srcdir/src/interpreter.c:157 [inlined]
+eval_body at /workspace/srcdir/src/interpreter.c:566
+eval_body at /workspace/srcdir/src/interpreter.c:492
+eval_body at /workspace/srcdir/src/interpreter.c:492
+jl_interpret_toplevel_thunk at /workspace/srcdir/src/interpreter.c:660
+jl_toplevel_eval_flex at /workspace/srcdir/src/toplevel.c:840
+jl_parse_eval_all at /workspace/srcdir/src/ast.c:913
+jl_load_rewrite at /workspace/srcdir/src/toplevel.c:914
+include at ./client.jl:457
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_call at /workspace/srcdir/src/interpreter.c:117
+eval_value at /workspace/srcdir/src/interpreter.c:206
+eval_stmt_value at /workspace/srcdir/src/interpreter.c:157 [inlined]
+eval_body at /workspace/srcdir/src/interpreter.c:566
+jl_interpret_toplevel_thunk at /workspace/srcdir/src/interpreter.c:660
+jl_toplevel_eval_flex at /workspace/srcdir/src/toplevel.c:840
+jl_parse_eval_all at /workspace/srcdir/src/ast.c:913
+jl_load_rewrite at /workspace/srcdir/src/toplevel.c:914
+include at ./client.jl:457
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_call at /workspace/srcdir/src/interpreter.c:117
+eval_value at /workspace/srcdir/src/interpreter.c:206
+eval_stmt_value at /workspace/srcdir/src/interpreter.c:157 [inlined]
+eval_body at /workspace/srcdir/src/interpreter.c:566
+jl_interpret_toplevel_thunk at /workspace/srcdir/src/interpreter.c:660
+jl_toplevel_eval_flex at /workspace/srcdir/src/toplevel.c:840
+jl_toplevel_eval_flex at /workspace/srcdir/src/toplevel.c:790
+jl_toplevel_eval_in at /workspace/srcdir/src/toplevel.c:883
+eval at ./boot.jl:331
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+exec_options at ./client.jl:272
+_start at ./client.jl:506
+jfptr__start_43715.clone_1 at /opt/julia/lib/julia/sys.so (unknown line)
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/ui/../src/julia.h:1690 [inlined]
+true_main at /workspace/srcdir/ui/repl.c:106
+main at /workspace/srcdir/ui/repl.c:227
+__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x4015e4)
+Allocations: 211068635 (Pool: 211004008; Big: 64627); GC: 207
+
+PkgEval failed: Package ADCME errored during testing (received signal: 6)
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:43:38.375
+CPU usage: 641.47s (603.08s user, 39.32s kernel)
+
+Network usage:
+- eth0: 764.336 MiB received, 2.856 MiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":2,"op":"Read","minor":0},{"major":259,"value":146,"op":"Write","minor":0},{"major":259,"value":21,"op":"Sync","minor":0},{"major":259,"value":127,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":148,"op":"Total","minor":0},{"major":253,"value":2,"op":"Read","minor":2},{"major":253,"value":122,"op":"Write","minor":2},{"major":253,"value":21,"op":"Sync","minor":2},{"major":253,"value":103,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":124,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":61440,"op":"Read","minor":0},{"major":259,"value":5533696,"op":"Write","minor":0},{"major":259,"value":167936,"op":"Sync","minor":0},{"major":259,"value":5427200,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":5595136,"op":"Total","minor":0},{"major":253,"value":61440,"op":"Read","minor":2},{"major":253,"value":5533696,"op":"Write","minor":2},{"major":253,"value":167936,"op":"Sync","minor":2},{"major":253,"value":5427200,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":5595136,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":5337522176,"max_usage":15756333056,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":243105792,"inactive_file":3108864,"inactive_anon":3313913856,"total_pgfault":13957317,"total_cache":4943605760,"total_rss_huge":0,"total_active_anon":1869238272,"total_pgmajfault":0,"pgpgin":11131494,"rss_huge":0,"mapped_file":135168,"total_inactive_file":3108864,"dirty":811008,"total_unevictable":0,"total_dirty":811008,"writeback":0,"pgpgout":9865265,"hierarchical_memsw_limit":0,"cache":4943605760,"active_file":405504,"pgfault":13957317,"total_mapped_file":135168,"total_pgpgout":9865265,"total_writeback":0,"rss":243105792,"unevictable":0,"total_inactive_anon":3313913856,"total_pgpgin":11131494,"active_anon":1869238272,"total_active_file":405504},"limit":540965302272},"name":"/ADCME-dAlFpg1x","networks":{"eth0":{"rx_bytes":801464794,"rx_packets":96451,"tx_packets":49832,"tx_bytes":2995073,"tx_dropped":0,"rx_dropped":22,"tx_errors":0,"rx_errors":0}},"id":"f693662b75a0fe7425befe6029475bd7a012db7c9d63d5813e50665b931b9585","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6533695384522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":603080000000,"usage_in_kernelmode":39320000000,"total_usage":641466658363,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,641445414143,711361,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3520,0,447930,20081409,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:43:38.378295003Z"}

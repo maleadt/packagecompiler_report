@@ -1,0 +1,805 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:09:08.483
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:09:10.295
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed Reexport ───────────────────── v0.2.0
+  Installed TableTraits ────────────────── v1.0.0
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed LocalSearchSolvers ─────────── v0.1.5
+  Installed CategoricalArrays ──────────── v0.9.0
+  Installed DataFrames ─────────────────── v0.22.2
+  Installed Indexing ───────────────────── v1.1.0
+  Installed Requires ───────────────────── v1.1.2
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed Tables ─────────────────────── v1.2.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Lazy ───────────────────────── v0.15.1
+  Installed InvertedIndices ────────────── v1.0.0
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed Missings ───────────────────── v0.4.4
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed Constraints ────────────────── v0.1.4
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed PooledArrays ───────────────── v0.5.3
+  Installed JSON ───────────────────────── v0.21.1
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed FiniteDiff ─────────────────── v2.7.2
+  Installed ArrayInterface ─────────────── v2.14.13
+  Installed StructTypes ────────────────── v1.2.1
+  Installed PrettyTables ───────────────── v0.10.1
+  Installed Crayons ────────────────────── v4.0.4
+  Installed Formatting ─────────────────── v0.4.2
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed CSV ────────────────────────── v0.8.2
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Compat ─────────────────────── v3.25.0
+  Installed SentinelArrays ─────────────── v1.2.16
+  Installed NLSolversBase ──────────────── v7.7.1
+  Installed Dictionaries ───────────────── v0.3.6
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed Evolutionary ───────────────── v0.7.0
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed Parsers ────────────────────── v1.0.15
+  Installed CompositionalNetworks ──────── v0.0.3
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [2b10edaa] + LocalSearchSolvers v0.1.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [4fba245c] + ArrayInterface v2.14.13
+  [56f22d72] + Artifacts v1.3.0
+  [336ed68f] + CSV v0.8.2
+  [324d7699] + CategoricalArrays v0.9.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [4b67e4b5] + CompositionalNetworks v0.0.3
+  [30f324ab] + Constraints v0.1.4
+  [a8cc5b0e] + Crayons v4.0.4
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.22.2
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [85a47980] + Dictionaries v0.3.6
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [86b6b26d] + Evolutionary v0.7.0
+  [6a86dc24] + FiniteDiff v2.7.2
+  [59287772] + Formatting v0.4.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [313cdc1a] + Indexing v1.1.0
+  [41ab1584] + InvertedIndices v1.0.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [50d2b5c4] + Lazy v0.15.1
+  [2b10edaa] + LocalSearchSolvers v0.1.5
+  [1914dd2f] + MacroTools v0.5.6
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [d41bc354] + NLSolversBase v7.7.1
+  [77ba4419] + NaNMath v0.3.5
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [08abe8d2] + PrettyTables v0.10.1
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [91c51154] + SentinelArrays v1.2.16
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [856f2bd8] + StructTypes v1.2.1
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [3a884ed6] + UnPack v1.0.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T17:09:23.077
+#
+
+    Testing LocalSearchSolvers
+Status `/tmp/jl_ix2nbQ/Project.toml`
+  [30f324ab] Constraints v0.1.4
+  [85a47980] Dictionaries v0.3.6
+  [2b10edaa] LocalSearchSolvers v0.1.5
+  [8dfed614] Test
+Status `/tmp/jl_ix2nbQ/Manifest.toml`
+  [4fba245c] ArrayInterface v2.14.13
+  [56f22d72] Artifacts v1.3.0
+  [336ed68f] CSV v0.8.2
+  [324d7699] CategoricalArrays v0.9.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [4b67e4b5] CompositionalNetworks v0.0.3
+  [30f324ab] Constraints v0.1.4
+  [a8cc5b0e] Crayons v4.0.4
+  [9a962f9c] DataAPI v1.4.0
+  [a93c6f00] DataFrames v0.22.2
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [85a47980] Dictionaries v0.3.6
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [86b6b26d] Evolutionary v0.7.0
+  [6a86dc24] FiniteDiff v2.7.2
+  [59287772] Formatting v0.4.2
+  [f6369f11] ForwardDiff v0.10.14
+  [313cdc1a] Indexing v1.1.0
+  [41ab1584] InvertedIndices v1.0.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [50d2b5c4] Lazy v0.15.1
+  [2b10edaa] LocalSearchSolvers v0.1.5
+  [1914dd2f] MacroTools v0.5.6
+  [e1d29d7a] Missings v0.4.4
+  [46d2c3a1] MuladdMacro v0.2.2
+  [d41bc354] NLSolversBase v7.7.1
+  [77ba4419] NaNMath v0.3.5
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [69de0a69] Parsers v1.0.15
+  [2dfb63ee] PooledArrays v0.5.3
+  [08abe8d2] PrettyTables v0.10.1
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [91c51154] SentinelArrays v1.2.16
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.2.1
+  [90137ffa] StaticArrays v1.0.1
+  [856f2bd8] StructTypes v1.2.1
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [3a884ed6] UnPack v1.0.2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Info: Model description
+│     Constraint Satisfaction Program (CSP)
+│     Variables: 16
+│ 		x1(1): Set([4, 2, 3, 1])
+│ 		x2(2): Set([4, 2, 3, 1])
+│ 		x3(3): Set([4, 2, 3, 1])
+│ 		x4(4): Set([4, 2, 3, 1])
+│ 		x5(5): Set([4, 2, 3, 1])
+│ 		x6(6): Set([4, 2, 3, 1])
+│ 		x7(7): Set([4, 2, 3, 1])
+│ 		x8(8): Set([4, 2, 3, 1])
+│ 		x9(9): Set([4, 2, 3, 1])
+│ 		x10(10): Set([4, 2, 3, 1])
+│ 		x11(11): Set([4, 2, 3, 1])
+│ 		x12(12): Set([4, 2, 3, 1])
+│ 		x13(13): Set([4, 2, 3, 1])
+│ 		x14(14): Set([4, 2, 3, 1])
+│ 		x15(15): Set([4, 2, 3, 1])
+│ 		x16(16): Set([4, 2, 3, 1])
+│     Constraints: 12
+│ 		c1: [1, 2, 3, 4]
+│ 		c2: [5, 6, 7, 8]
+│ 		c3: [9, 10, 11, 12]
+│ 		c4: [13, 14, 15, 16]
+│ 		c5: [1, 5, 9, 13]
+│ 		c6: [2, 6, 10, 14]
+│ 		c7: [3, 7, 11, 15]
+│ 		c8: [4, 8, 12, 16]
+│ 		c9: [1, 5, 2, 6]
+│ 		c10: [9, 13, 10, 14]
+│ 		c11: [3, 7, 4, 8]
+└ 		c12: [11, 15, 12, 16]
+┌ Info: Model description
+│     Constraint Satisfaction Program (CSP)
+│     Variables: 16
+│ 		x1(1): Set([4, 2, 3, 1])
+│ 		x2(2): Set([4, 2, 3, 1])
+│ 		x3(3): Set([4, 2, 3, 1])
+│ 		x4(4): Set([4, 2, 3, 1])
+│ 		x5(5): Set([4, 2, 3, 1])
+│ 		x6(6): Set([4, 2, 3, 1])
+│ 		x7(7): Set([4, 2, 3, 1])
+│ 		x8(8): Set([4, 2, 3, 1])
+│ 		x9(9): Set([4, 2, 3, 1])
+│ 		x10(10): Set([4, 2, 3, 1])
+│ 		x11(11): Set([4, 2, 3, 1])
+│ 		x12(12): Set([4, 2, 3, 1])
+│ 		x13(13): Set([4, 2, 3, 1])
+│ 		x14(14): Set([4, 2, 3, 1])
+│ 		x15(15): Set([4, 2, 3, 1])
+│ 		x16(16): Set([4, 2, 3, 1])
+│     Constraints: 12
+│ 		c1: [1, 2, 3, 4]
+│ 		c2: [5, 6, 7, 8]
+│ 		c3: [9, 10, 11, 12]
+│ 		c4: [13, 14, 15, 16]
+│ 		c5: [1, 5, 9, 13]
+│ 		c6: [2, 6, 10, 14]
+│ 		c7: [3, 7, 11, 15]
+│ 		c8: [4, 8, 12, 16]
+│ 		c9: [1, 5, 2, 6]
+│ 		c10: [9, 13, 10, 14]
+│ 		c11: [3, 7, 4, 8]
+└ 		c12: [11, 15, 12, 16]
+[ Info: Starting solver
+[ Info: Initial values = {1 │ 1, 2 │ 3, 3 │ 3, 4 │ 1, 5 │ 2, 6 │ 1, 7 │ 4, 8 │ 1, 9 │ 4, 10 │ 1, 11 │ 3, 12 │ 4, 13 │ 4, 14 │ 4, 15 │ 4, 16 │ 2}
+[ Info: Initial constraints costs = {1 │ 2.0, 2 │ 1.0, 3 │ 1.0, 4 │ 2.0, 5 │ 1.0, 6 │ 1.0, 7 │ 2.0, 8 │ 1.0, 9 │ 1.0, 10 │ 2.0, 11 │ 1.0, 12 │ 1.0}
+[ Info: Initial variables costs = {1 │ 4.0, 2 │ 4.0, 3 │ 5.0, 4 │ 4.0, 5 │ 3.0, 6 │ 3.0, 7 │ 4.0, 8 │ 3.0, 9 │ 4.0, 10 │ 4.0, 11 │ 4.0, 12 │ 3.0, 13 │ 5.0, 14 │ 5.0, 15 │ 5.0, 16 │ 4.0}
+┌ Info: 
+└ 	Loop 1 (satisfaction)
+[ Info: Selected x = 14
+[ Info: Compute costs: selected var(s) x_14 = 2
+[ Info: cost = 15.0 < 16.0
+[ Info: Compute costs: selected var(s) x_14 = 3
+[ Info: cost = best_cost = 15.0
+[ Info: Compute costs: selected var(s) x_14 = 1
+[ Info: Tabu list: {14 │ 4}
+[ Info: best_values: [2, 3]
+[ Info: vals: {1 │ 1, 2 │ 3, 3 │ 3, 4 │ 1, 5 │ 2, 6 │ 1, 7 │ 4, 8 │ 1, 9 │ 4, 10 │ 1, 11 │ 3, 12 │ 4, 13 │ 4, 14 │ 2, 15 │ 4, 16 │ 2}
+┌ Info: 
+└ 	Loop 2 (satisfaction)
+[ Info: Selected x = 3
+[ Info: Compute costs: selected var(s) x_3 = 4
+[ Info: cost = best_cost = 15.0
+[ Info: Compute costs: selected var(s) x_3 = 2
+[ Info: cost = 13.0 < 15.0
+[ Info: Compute costs: selected var(s) x_3 = 1
+[ Info: Tabu list: {14 │ 3, 3 │ 4}
+[ Info: best_values: [2]
+[ Info: vals: {1 │ 1, 2 │ 3, 3 │ 2, 4 │ 1, 5 │ 2, 6 │ 1, 7 │ 4, 8 │ 1, 9 │ 4, 10 │ 1, 11 │ 3, 12 │ 4, 13 │ 4, 14 │ 2, 15 │ 4, 16 │ 2}
+┌ Info: 
+└ 	Loop 3 (satisfaction)
+[ Info: Selected x = 15
+[ Info: Compute costs: selected var(s) x_15 = 2
+[ Info: cost = best_cost = 13.0
+[ Info: Compute costs: selected var(s) x_15 = 3
+[ Info: cost = 12.0 < 13.0
+[ Info: Compute costs: selected var(s) x_15 = 1
+[ Info: cost = 10.0 < 12.0
+[ Info: Tabu list: {14 │ 2, 3 │ 3, 15 │ 4}
+[ Info: best_values: [1]
+[ Info: vals: {1 │ 1, 2 │ 3, 3 │ 2, 4 │ 1, 5 │ 2, 6 │ 1, 7 │ 4, 8 │ 1, 9 │ 4, 10 │ 1, 11 │ 3, 12 │ 4, 13 │ 4, 14 │ 2, 15 │ 1, 16 │ 2}
+┌ Info: 
+└ 	Loop 4 (satisfaction)
+[ Info: Selected x = 4
+[ Info: Compute costs: selected var(s) x_4 = 4
+[ Info: cost = 9.0 < 10.0
+[ Info: Compute costs: selected var(s) x_4 = 2
+[ Info: Compute costs: selected var(s) x_4 = 3
+[ Info: cost = 8.0 < 9.0
+[ Info: Tabu list: {14 │ 1, 3 │ 2, 15 │ 3, 4 │ 4}
+[ Info: best_values: [3]
+[ Info: vals: {1 │ 1, 2 │ 3, 3 │ 2, 4 │ 3, 5 │ 2, 6 │ 1, 7 │ 4, 8 │ 1, 9 │ 4, 10 │ 1, 11 │ 3, 12 │ 4, 13 │ 4, 14 │ 2, 15 │ 1, 16 │ 2}
+┌ Info: 
+└ 	Loop 5 (satisfaction)
+[ Info: Selected x = 6
+[ Info: Compute costs: selected var(s) x_6 = 4
+[ Info: cost = 6.0 < 8.0
+[ Info: Compute costs: selected var(s) x_6 = 2
+[ Info: Compute costs: selected var(s) x_6 = 3
+[ Info: Tabu list: {3 │ 1, 15 │ 2, 4 │ 3, 6 │ 4}
+[ Info: best_values: [4]
+[ Info: vals: {1 │ 1, 2 │ 3, 3 │ 2, 4 │ 3, 5 │ 2, 6 │ 4, 7 │ 4, 8 │ 1, 9 │ 4, 10 │ 1, 11 │ 3, 12 │ 4, 13 │ 4, 14 │ 2, 15 │ 1, 16 │ 2}
+┌ Info: 
+└ 	Loop 6 (satisfaction)
+[ Info: Selected x = 13
+[ Info: Compute costs: selected var(s) x_13 = 2
+[ Info: Compute costs: selected var(s) x_13 = 3
+[ Info: cost = 4.0 < 6.0
+[ Info: Compute costs: selected var(s) x_13 = 1
+[ Info: Tabu list: {15 │ 2, 4 │ 3, 6 │ 3, 13 │ 4}
+[ Info: best_values: [3]
+[ Info: vals: {1 │ 1, 2 │ 3, 3 │ 2, 4 │ 3, 5 │ 2, 6 │ 4, 7 │ 4, 8 │ 1, 9 │ 4, 10 │ 1, 11 │ 3, 12 │ 4, 13 │ 3, 14 │ 2, 15 │ 1, 16 │ 2}
+┌ Info: 
+└ 	Loop 7 (satisfaction)
+[ Info: Selected x = 2
+[ Info: Compute costs: selected var(s) x_2 = 4
+[ Info: Compute costs: selected var(s) x_2 = 2
+[ Info: Compute costs: selected var(s) x_2 = 1
+[ Info: Compute costs: selected var(s) x_2 ⇆ x_4
+[ Info: cost = best_cost = 4.0
+[ Info: Compute costs: selected var(s) x_2 ⇆ x_14
+[ Info: Compute costs: selected var(s) x_2 ⇆ x_10
+[ Info: Compute costs: selected var(s) x_2 ⇆ x_3
+[ Info: Compute costs: selected var(s) x_2 ⇆ x_5
+[ Info: Compute costs: selected var(s) x_2 ⇆ x_6
+[ Info: cost = 2.0 < 4.0
+[ Info: Compute costs: selected var(s) x_2 ⇆ x_1
+[ Info: Tabu list: {15 │ 1, 4 │ 2, 6 │ 2, 13 │ 3, 2 │ 4}
+[ Info: best_swap : [6]
+┌ Info: 
+└ ============== RESTART!!!!================
+[ Info: vals: {1 │ 3, 2 │ 2, 3 │ 3, 4 │ 1, 5 │ 2, 6 │ 4, 7 │ 3, 8 │ 1, 9 │ 4, 10 │ 2, 11 │ 3, 12 │ 1, 13 │ 3, 14 │ 4, 15 │ 1, 16 │ 3}
+┌ Info: 
+└ 	Loop 8 (satisfaction)
+[ Info: Selected x = 13
+[ Info: Compute costs: selected var(s) x_13 = 4
+[ Info: Compute costs: selected var(s) x_13 = 2
+[ Info: Compute costs: selected var(s) x_13 = 1
+[ Info: Compute costs: selected var(s) x_13 ⇆ x_9
+[ Info: Compute costs: selected var(s) x_13 ⇆ x_14
+[ Info: Compute costs: selected var(s) x_13 ⇆ x_10
+[ Info: Compute costs: selected var(s) x_13 ⇆ x_16
+[ Info: Compute costs: selected var(s) x_13 ⇆ x_5
+[ Info: Compute costs: selected var(s) x_13 ⇆ x_15
+[ Info: Compute costs: selected var(s) x_13 ⇆ x_1
+[ Info: Tabu list: {13 │ 8}
+[ Info: best_values: [3]
+[ Info: vals: {1 │ 3, 2 │ 2, 3 │ 3, 4 │ 1, 5 │ 2, 6 │ 4, 7 │ 3, 8 │ 1, 9 │ 4, 10 │ 2, 11 │ 3, 12 │ 1, 13 │ 3, 14 │ 4, 15 │ 1, 16 │ 3}
+┌ Info: 
+└ 	Loop 9 (satisfaction)
+[ Info: Selected x = 3
+[ Info: Compute costs: selected var(s) x_3 = 4
+[ Info: cost = 12.0 < 15.0
+[ Info: Compute costs: selected var(s) x_3 = 2
+[ Info: Compute costs: selected var(s) x_3 = 1
+[ Info: Tabu list: {13 │ 7, 3 │ 4}
+[ Info: best_values: [4]
+[ Info: vals: {1 │ 3, 2 │ 2, 3 │ 4, 4 │ 1, 5 │ 2, 6 │ 4, 7 │ 3, 8 │ 1, 9 │ 4, 10 │ 2, 11 │ 3, 12 │ 1, 13 │ 3, 14 │ 4, 15 │ 1, 16 │ 3}
+┌ Info: 
+└ 	Loop 10 (satisfaction)
+[ Info: Selected x = 16
+[ Info: Compute costs: selected var(s) x_16 = 4
+[ Info: cost = 11.0 < 12.0
+[ Info: Compute costs: selected var(s) x_16 = 2
+[ Info: cost = 10.0 < 11.0
+[ Info: Compute costs: selected var(s) x_16 = 1
+[ Info: Tabu list: {13 │ 6, 3 │ 3, 16 │ 4}
+[ Info: best_values: [2]
+[ Info: vals: {1 │ 3, 2 │ 2, 3 │ 4, 4 │ 1, 5 │ 2, 6 │ 4, 7 │ 3, 8 │ 1, 9 │ 4, 10 │ 2, 11 │ 3, 12 │ 1, 13 │ 3, 14 │ 4, 15 │ 1, 16 │ 2}
+┌ Info: 
+└ 	Loop 11 (satisfaction)
+[ Info: Selected x = 6
+[ Info: Compute costs: selected var(s) x_6 = 2
+[ Info: Compute costs: selected var(s) x_6 = 3
+[ Info: Compute costs: selected var(s) x_6 = 1
+[ Info: cost = best_cost = 10.0
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_7
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_14
+[ Info: cost = best_cost = 10.0
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_10
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_2
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_5
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_8
+[ Info: cost = 8.0 < 10.0
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_1
+[ Info: Tabu list: {13 │ 5, 3 │ 2, 16 │ 3, 6 │ 4}
+[ Info: best_swap : [8]
+[ Info: vals: {1 │ 3, 2 │ 2, 3 │ 4, 4 │ 1, 5 │ 2, 6 │ 1, 7 │ 3, 8 │ 4, 9 │ 4, 10 │ 2, 11 │ 3, 12 │ 1, 13 │ 3, 14 │ 4, 15 │ 1, 16 │ 2}
+┌ Info: 
+└ 	Loop 12 (satisfaction)
+[ Info: Selected x = 10
+[ Info: Compute costs: selected var(s) x_10 = 4
+[ Info: Compute costs: selected var(s) x_10 = 3
+[ Info: Compute costs: selected var(s) x_10 = 1
+[ Info: Compute costs: selected var(s) x_10 ⇆ x_9
+[ Info: Compute costs: selected var(s) x_10 ⇆ x_14
+[ Info: Compute costs: selected var(s) x_10 ⇆ x_13
+[ Info: Compute costs: selected var(s) x_10 ⇆ x_2
+[ Info: cost = best_cost = 8.0
+[ Info: Compute costs: selected var(s) x_10 ⇆ x_11
+[ Info: cost = best_cost = 8.0
+[ Info: Compute costs: selected var(s) x_10 ⇆ x_12
+[ Info: cost = best_cost = 8.0
+[ Info: Compute costs: selected var(s) x_10 ⇆ x_6
+[ Info: Tabu list: {13 │ 4, 3 │ 1, 16 │ 2, 6 │ 3, 10 │ 8}
+[ Info: best_values: [2]
+[ Info: vals: {1 │ 3, 2 │ 2, 3 │ 4, 4 │ 1, 5 │ 2, 6 │ 1, 7 │ 3, 8 │ 4, 9 │ 4, 10 │ 2, 11 │ 3, 12 │ 1, 13 │ 3, 14 │ 4, 15 │ 1, 16 │ 2}
+┌ Info: 
+└ 	Loop 13 (satisfaction)
+[ Info: Selected x = 7
+[ Info: Compute costs: selected var(s) x_7 = 4
+[ Info: Compute costs: selected var(s) x_7 = 2
+[ Info: cost = best_cost = 8.0
+[ Info: Compute costs: selected var(s) x_7 = 1
+[ Info: Compute costs: selected var(s) x_7 ⇆ x_4
+[ Info: Compute costs: selected var(s) x_7 ⇆ x_3
+[ Info: Compute costs: selected var(s) x_7 ⇆ x_11
+[ Info: cost = best_cost = 8.0
+[ Info: Compute costs: selected var(s) x_7 ⇆ x_5
+[ Info: cost = best_cost = 8.0
+[ Info: Compute costs: selected var(s) x_7 ⇆ x_8
+[ Info: cost = best_cost = 8.0
+[ Info: Compute costs: selected var(s) x_7 ⇆ x_6
+[ Info: Compute costs: selected var(s) x_7 ⇆ x_15
+[ Info: Tabu list: {13 │ 3, 16 │ 1, 6 │ 2, 10 │ 7, 7 │ 8}
+[ Info: best_values: [3, 2]
+[ Info: vals: {1 │ 3, 2 │ 2, 3 │ 4, 4 │ 1, 5 │ 2, 6 │ 1, 7 │ 2, 8 │ 4, 9 │ 4, 10 │ 2, 11 │ 3, 12 │ 1, 13 │ 3, 14 │ 4, 15 │ 1, 16 │ 2}
+┌ Info: 
+└ 	Loop 14 (satisfaction)
+[ Info: Selected x = 5
+[ Info: Compute costs: selected var(s) x_5 = 4
+[ Info: cost = best_cost = 8.0
+[ Info: Compute costs: selected var(s) x_5 = 3
+[ Info: cost = best_cost = 8.0
+[ Info: Compute costs: selected var(s) x_5 = 1
+[ Info: cost = best_cost = 8.0
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_7
+[ Info: cost = best_cost = 8.0
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_9
+[ Info: cost = best_cost = 8.0
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_13
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_2
+[ Info: cost = best_cost = 8.0
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_8
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_6
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_1
+[ Info: cost = best_cost = 8.0
+[ Info: Tabu list: {13 │ 2, 6 │ 1, 10 │ 6, 7 │ 7, 5 │ 8}
+[ Info: best_values: [2, 4, 3, 1]
+[ Info: vals: {1 │ 3, 2 │ 2, 3 │ 4, 4 │ 1, 5 │ 2, 6 │ 1, 7 │ 2, 8 │ 4, 9 │ 4, 10 │ 2, 11 │ 3, 12 │ 1, 13 │ 3, 14 │ 4, 15 │ 1, 16 │ 2}
+┌ Info: 
+└ 	Loop 15 (satisfaction)
+[ Info: Selected x = 8
+[ Info: Compute costs: selected var(s) x_8 = 2
+[ Info: Compute costs: selected var(s) x_8 = 3
+[ Info: cost = 7.0 < 8.0
+[ Info: Compute costs: selected var(s) x_8 = 1
+[ Info: Tabu list: {13 │ 1, 10 │ 6, 7 │ 7, 5 │ 7, 8 │ 4}
+[ Info: best_values: [3]
+[ Info: vals: {1 │ 3, 2 │ 2, 3 │ 4, 4 │ 1, 5 │ 2, 6 │ 1, 7 │ 2, 8 │ 3, 9 │ 4, 10 │ 2, 11 │ 3, 12 │ 1, 13 │ 3, 14 │ 4, 15 │ 1, 16 │ 2}
+┌ Info: 
+└ 	Loop 16 (satisfaction)
+[ Info: Selected x = 6
+[ Info: Compute costs: selected var(s) x_6 = 4
+[ Info: Compute costs: selected var(s) x_6 = 2
+[ Info: Compute costs: selected var(s) x_6 = 3
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_7
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_14
+[ Info: cost = best_cost = 7.0
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_10
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_2
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_5
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_8
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_1
+[ Info: Tabu list: {10 │ 5, 7 │ 6, 5 │ 6, 8 │ 3, 6 │ 8}
+[ Info: best_values: [1]
+┌ Info: 
+└ ============== RESTART!!!!================
+[ Info: vals: {1 │ 1, 2 │ 2, 3 │ 4, 4 │ 4, 5 │ 4, 6 │ 3, 7 │ 4, 8 │ 3, 9 │ 1, 10 │ 3, 11 │ 3, 12 │ 3, 13 │ 4, 14 │ 4, 15 │ 2, 16 │ 4}
+┌ Info: 
+└ 	Loop 17 (satisfaction)
+[ Info: Selected x = 5
+[ Info: Compute costs: selected var(s) x_5 = 2
+[ Info: cost = best_cost = 7.0
+[ Info: Compute costs: selected var(s) x_5 = 3
+[ Info: Compute costs: selected var(s) x_5 = 1
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_7
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_9
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_13
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_2
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_8
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_6
+[ Info: cost = best_cost = 7.0
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_1
+[ Info: Tabu list: {5 │ 8}
+[ Info: best_values: [4, 2]
+[ Info: vals: {1 │ 1, 2 │ 2, 3 │ 4, 4 │ 4, 5 │ 4, 6 │ 3, 7 │ 4, 8 │ 3, 9 │ 1, 10 │ 3, 11 │ 3, 12 │ 3, 13 │ 4, 14 │ 4, 15 │ 2, 16 │ 4}
+┌ Info: 
+└ 	Loop 18 (satisfaction)
+[ Info: Selected x = 8
+[ Info: Compute costs: selected var(s) x_8 = 4
+[ Info: Compute costs: selected var(s) x_8 = 2
+[ Info: cost = 15.0 < 17.0
+[ Info: Compute costs: selected var(s) x_8 = 1
+[ Info: cost = best_cost = 15.0
+[ Info: Tabu list: {5 │ 7, 8 │ 4}
+[ Info: best_values: [2, 1]
+[ Info: vals: {1 │ 1, 2 │ 2, 3 │ 4, 4 │ 4, 5 │ 4, 6 │ 3, 7 │ 4, 8 │ 1, 9 │ 1, 10 │ 3, 11 │ 3, 12 │ 3, 13 │ 4, 14 │ 4, 15 │ 2, 16 │ 4}
+┌ Info: 
+└ 	Loop 19 (satisfaction)
+[ Info: Selected x = 9
+[ Info: Compute costs: selected var(s) x_9 = 4
+[ Info: Compute costs: selected var(s) x_9 = 2
+[ Info: cost = 14.0 < 15.0
+[ Info: Compute costs: selected var(s) x_9 = 3
+[ Info: Tabu list: {5 │ 6, 8 │ 3, 9 │ 4}
+[ Info: best_values: [2]
+[ Info: vals: {1 │ 1, 2 │ 2, 3 │ 4, 4 │ 4, 5 │ 4, 6 │ 3, 7 │ 4, 8 │ 1, 9 │ 2, 10 │ 3, 11 │ 3, 12 │ 3, 13 │ 4, 14 │ 4, 15 │ 2, 16 │ 4}
+┌ Info: 
+└ 	Loop 20 (satisfaction)
+[ Info: Selected x = 12
+[ Info: Compute costs: selected var(s) x_12 = 4
+[ Info: cost = best_cost = 14.0
+[ Info: Compute costs: selected var(s) x_12 = 2
+[ Info: cost = best_cost = 14.0
+[ Info: Compute costs: selected var(s) x_12 = 1
+[ Info: cost = 13.0 < 14.0
+[ Info: Tabu list: {5 │ 5, 8 │ 2, 9 │ 3, 12 │ 4}
+[ Info: best_values: [1]
+[ Info: vals: {1 │ 1, 2 │ 2, 3 │ 4, 4 │ 4, 5 │ 4, 6 │ 3, 7 │ 4, 8 │ 1, 9 │ 2, 10 │ 3, 11 │ 3, 12 │ 1, 13 │ 4, 14 │ 4, 15 │ 2, 16 │ 4}
+┌ Info: 
+└ 	Loop 21 (satisfaction)
+[ Info: Selected x = 4
+[ Info: Compute costs: selected var(s) x_4 = 2
+[ Info: cost = 11.0 < 13.0
+[ Info: Compute costs: selected var(s) x_4 = 3
+[ Info: cost = 10.0 < 11.0
+[ Info: Compute costs: selected var(s) x_4 = 1
+[ Info: Tabu list: {5 │ 4, 8 │ 1, 9 │ 2, 12 │ 3, 4 │ 4}
+[ Info: best_values: [3]
+[ Info: vals: {1 │ 1, 2 │ 2, 3 │ 4, 4 │ 3, 5 │ 4, 6 │ 3, 7 │ 4, 8 │ 1, 9 │ 2, 10 │ 3, 11 │ 3, 12 │ 1, 13 │ 4, 14 │ 4, 15 │ 2, 16 │ 4}
+┌ Info: 
+└ 	Loop 22 (satisfaction)
+[ Info: Selected x = 13
+[ Info: Compute costs: selected var(s) x_13 = 2
+[ Info: cost = best_cost = 10.0
+[ Info: Compute costs: selected var(s) x_13 = 3
+[ Info: cost = 8.0 < 10.0
+[ Info: Compute costs: selected var(s) x_13 = 1
+[ Info: cost = best_cost = 8.0
+[ Info: Tabu list: {5 │ 3, 9 │ 1, 12 │ 2, 4 │ 3, 13 │ 4}
+[ Info: best_values: [3, 1]
+[ Info: vals: {1 │ 1, 2 │ 2, 3 │ 4, 4 │ 3, 5 │ 4, 6 │ 3, 7 │ 4, 8 │ 1, 9 │ 2, 10 │ 3, 11 │ 3, 12 │ 1, 13 │ 1, 14 │ 4, 15 │ 2, 16 │ 4}
+┌ Info: 
+└ 	Loop 23 (satisfaction)
+[ Info: Selected x = 8
+[ Info: Compute costs: selected var(s) x_8 = 4
+[ Info: Compute costs: selected var(s) x_8 = 2
+[ Info: cost = 7.0 < 8.0
+[ Info: Compute costs: selected var(s) x_8 = 3
+[ Info: Tabu list: {5 │ 2, 12 │ 1, 4 │ 2, 13 │ 3, 8 │ 4}
+[ Info: best_values: [2]
+[ Info: vals: {1 │ 1, 2 │ 2, 3 │ 4, 4 │ 3, 5 │ 4, 6 │ 3, 7 │ 4, 8 │ 2, 9 │ 2, 10 │ 3, 11 │ 3, 12 │ 1, 13 │ 1, 14 │ 4, 15 │ 2, 16 │ 4}
+┌ Info: 
+└ 	Loop 24 (satisfaction)
+[ Info: Selected x = 7
+[ Info: Compute costs: selected var(s) x_7 = 2
+[ Info: cost = best_cost = 7.0
+[ Info: Compute costs: selected var(s) x_7 = 3
+[ Info: cost = best_cost = 7.0
+[ Info: Compute costs: selected var(s) x_7 = 1
+[ Info: cost = 4.0 < 7.0
+[ Info: Tabu list: {5 │ 1, 4 │ 2, 13 │ 3, 8 │ 3, 7 │ 4}
+[ Info: best_values: [1]
+[ Info: vals: {1 │ 1, 2 │ 2, 3 │ 4, 4 │ 3, 5 │ 4, 6 │ 3, 7 │ 1, 8 │ 2, 9 │ 2, 10 │ 3, 11 │ 3, 12 │ 1, 13 │ 1, 14 │ 4, 15 │ 2, 16 │ 4}
+┌ Info: 
+└ 	Loop 25 (satisfaction)
+[ Info: Selected x = 14
+[ Info: Compute costs: selected var(s) x_14 = 2
+[ Info: Compute costs: selected var(s) x_14 = 3
+[ Info: Compute costs: selected var(s) x_14 = 1
+[ Info: Compute costs: selected var(s) x_14 ⇆ x_9
+[ Info: Compute costs: selected var(s) x_14 ⇆ x_13
+[ Info: cost = best_cost = 4.0
+[ Info: Compute costs: selected var(s) x_14 ⇆ x_10
+[ Info: cost = 2.0 < 4.0
+[ Info: Compute costs: selected var(s) x_14 ⇆ x_2
+[ Info: Compute costs: selected var(s) x_14 ⇆ x_16
+[ Info: Compute costs: selected var(s) x_14 ⇆ x_15
+[ Info: Compute costs: selected var(s) x_14 ⇆ x_6
+[ Info: Tabu list: {4 │ 1, 13 │ 2, 8 │ 2, 7 │ 3, 14 │ 4}
+[ Info: best_swap : [10]
+[ Info: vals: {1 │ 1, 2 │ 2, 3 │ 4, 4 │ 3, 5 │ 4, 6 │ 3, 7 │ 1, 8 │ 2, 9 │ 2, 10 │ 4, 11 │ 3, 12 │ 1, 13 │ 1, 14 │ 3, 15 │ 2, 16 │ 4}
+┌ Info: 
+└ 	Loop 26 (satisfaction)
+[ Info: Selected x = 2
+[ Info: Compute costs: selected var(s) x_2 = 4
+[ Info: Compute costs: selected var(s) x_2 = 3
+[ Info: Compute costs: selected var(s) x_2 = 1
+[ Info: Compute costs: selected var(s) x_2 ⇆ x_4
+[ Info: Compute costs: selected var(s) x_2 ⇆ x_14
+[ Info: Compute costs: selected var(s) x_2 ⇆ x_10
+[ Info: Compute costs: selected var(s) x_2 ⇆ x_3
+[ Info: Compute costs: selected var(s) x_2 ⇆ x_5
+[ Info: Compute costs: selected var(s) x_2 ⇆ x_6
+[ Info: Compute costs: selected var(s) x_2 ⇆ x_1
+[ Info: cost = best_cost = 2.0
+[ Info: Tabu list: {13 │ 2, 8 │ 2, 7 │ 2, 14 │ 3, 2 │ 8}
+[ Info: best_values: [2]
+[ Info: vals: {1 │ 1, 2 │ 2, 3 │ 4, 4 │ 3, 5 │ 4, 6 │ 3, 7 │ 1, 8 │ 2, 9 │ 2, 10 │ 4, 11 │ 3, 12 │ 1, 13 │ 1, 14 │ 3, 15 │ 2, 16 │ 4}
+┌ Info: 
+└ 	Loop 27 (satisfaction)
+[ Info: Selected x = 6
+[ Info: Compute costs: selected var(s) x_6 = 4
+[ Info: Compute costs: selected var(s) x_6 = 2
+[ Info: Compute costs: selected var(s) x_6 = 1
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_7
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_14
+[ Info: cost = best_cost = 2.0
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_10
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_2
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_5
+[ Info: cost = best_cost = 2.0
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_8
+[ Info: Compute costs: selected var(s) x_6 ⇆ x_1
+[ Info: cost = best_cost = 2.0
+[ Info: Tabu list: {13 │ 1, 8 │ 1, 7 │ 1, 14 │ 2, 2 │ 7, 6 │ 8}
+[ Info: best_values: [3]
+[ Info: vals: {1 │ 1, 2 │ 2, 3 │ 4, 4 │ 3, 5 │ 4, 6 │ 3, 7 │ 1, 8 │ 2, 9 │ 2, 10 │ 4, 11 │ 3, 12 │ 1, 13 │ 1, 14 │ 3, 15 │ 2, 16 │ 4}
+┌ Info: 
+└ 	Loop 28 (satisfaction)
+[ Info: Selected x = 5
+[ Info: Compute costs: selected var(s) x_5 = 2
+[ Info: Compute costs: selected var(s) x_5 = 3
+[ Info: Compute costs: selected var(s) x_5 = 1
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_7
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_9
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_13
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_2
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_8
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_6
+[ Info: cost = best_cost = 2.0
+[ Info: Compute costs: selected var(s) x_5 ⇆ x_1
+[ Info: Tabu list: {7 │ 1, 14 │ 2, 2 │ 6, 6 │ 7, 5 │ 8}
+[ Info: best_values: [4]
+[ Info: vals: {1 │ 1, 2 │ 2, 3 │ 4, 4 │ 3, 5 │ 4, 6 │ 3, 7 │ 1, 8 │ 2, 9 │ 2, 10 │ 4, 11 │ 3, 12 │ 1, 13 │ 1, 14 │ 3, 15 │ 2, 16 │ 4}
+┌ Info: 
+└ 	Loop 29 (satisfaction)
+[ Info: Selected x = 9
+[ Info: Compute costs: selected var(s) x_9 = 4
+[ Info: Compute costs: selected var(s) x_9 = 3
+[ Info: Compute costs: selected var(s) x_9 = 1
+[ Info: Compute costs: selected var(s) x_9 ⇆ x_13
+[ Info: Compute costs: selected var(s) x_9 ⇆ x_10
+[ Info: Compute costs: selected var(s) x_9 ⇆ x_14
+[ Info: Compute costs: selected var(s) x_9 ⇆ x_11
+[ Info: Compute costs: selected var(s) x_9 ⇆ x_5
+[ Info: Compute costs: selected var(s) x_9 ⇆ x_12
+[ Info: Compute costs: selected var(s) x_9 ⇆ x_1
+[ Info: Tabu list: {14 │ 1, 2 │ 5, 6 │ 6, 5 │ 7, 9 │ 8}
+[ Info: best_values: [2]
+[ Info: vals: {1 │ 1, 2 │ 2, 3 │ 4, 4 │ 3, 5 │ 4, 6 │ 3, 7 │ 1, 8 │ 2, 9 │ 2, 10 │ 4, 11 │ 3, 12 │ 1, 13 │ 1, 14 │ 3, 15 │ 2, 16 │ 4}
+┌ Info: 
+└ 	Loop 30 (satisfaction)
+[ Info: Selected x = 10
+[ Info: Compute costs: selected var(s) x_10 = 2
+[ Info: Compute costs: selected var(s) x_10 = 3
+[ Info: Compute costs: selected var(s) x_10 = 1
+[ Info: Compute costs: selected var(s) x_10 ⇆ x_9
+[ Info: Compute costs: selected var(s) x_10 ⇆ x_14
+[ Info: Compute costs: selected var(s) x_10 ⇆ x_13
+[ Info: Compute costs: selected var(s) x_10 ⇆ x_2
+[ Info: Compute costs: selected var(s) x_10 ⇆ x_11
+[ Info: Compute costs: selected var(s) x_10 ⇆ x_12
+[ Info: Compute costs: selected var(s) x_10 ⇆ x_6
+[ Info: Tabu list: {2 │ 5, 6 │ 6, 5 │ 6, 9 │ 7, 10 │ 8}
+[ Info: best_values: [4]
+[ Info: vals: {1 │ 1, 2 │ 2, 3 │ 4, 4 │ 3, 5 │ 4, 6 │ 3, 7 │ 1, 8 │ 2, 9 │ 2, 10 │ 4, 11 │ 3, 12 │ 1, 13 │ 1, 14 │ 3, 15 │ 2, 16 │ 4}
+┌ Info: 
+└ 	Loop 31 (satisfaction)
+[ Info: Selected x = 1
+[ Info: Compute costs: selected var(s) x_1 = 4
+[ Info: Compute costs: selected var(s) x_1 = 2
+[ Info: Compute costs: selected var(s) x_1 = 3
+[ Info: Compute costs: selected var(s) x_1 ⇆ x_4
+[ Info: Compute costs: selected var(s) x_1 ⇆ x_9
+[ Info: Compute costs: selected var(s) x_1 ⇆ x_13
+[ Info: cost = best_cost = 2.0
+[ Info: Compute costs: selected var(s) x_1 ⇆ x_2
+[ Info: cost = best_cost = 2.0
+[ Info: Compute costs: selected var(s) x_1 ⇆ x_3
+[ Info: Compute costs: selected var(s) x_1 ⇆ x_5
+[ Info: Compute costs: selected var(s) x_1 ⇆ x_6
+[ Info: cost = best_cost = 2.0
+[ Info: Tabu list: {2 │ 4, 6 │ 5, 5 │ 5, 9 │ 6, 10 │ 7, 1 │ 8}
+[ Info: best_values: [1]
+[ Info: vals: {1 │ 1, 2 │ 2, 3 │ 4, 4 │ 3, 5 │ 4, 6 │ 3, 7 │ 1, 8 │ 2, 9 │ 2, 10 │ 4, 11 │ 3, 12 │ 1, 13 │ 1, 14 │ 3, 15 │ 2, 16 │ 4}
+┌ Info: 
+└ 	Loop 32 (satisfaction)
+[ Info: Selected x = 13
+[ Info: Compute costs: selected var(s) x_13 = 4
+[ Info: Compute costs: selected var(s) x_13 = 2
+[ Info: Compute costs: selected var(s) x_13 = 3
+[ Info: Compute costs: selected var(s) x_13 ⇆ x_9
+[ Info: Compute costs: selected var(s) x_13 ⇆ x_14
+[ Info: cost = 0.0 < 2.0
+[ Info: Compute costs: selected var(s) x_13 ⇆ x_10
+[ Info: Compute costs: selected var(s) x_13 ⇆ x_16
+[ Info: Compute costs: selected var(s) x_13 ⇆ x_5
+[ Info: Compute costs: selected var(s) x_13 ⇆ x_15
+[ Info: Compute costs: selected var(s) x_13 ⇆ x_1
+[ Info: Tabu list: {2 │ 3, 6 │ 4, 5 │ 4, 9 │ 5, 10 │ 6, 1 │ 7, 13 │ 4}
+[ Info: best_swap : [14]
+[ Info: Results golomb!
+[ Info: Values: {1 │ 0, 2 │ 23, 3 │ 18, 4 │ 1, 5 │ 21}
+[ Info: Sol (val): 11.0
+[ Info: Sol (vals): {1 │ 0, 2 │ 7, 3 │ 11, 4 │ 2, 5 │ 8}
+[ Info: Results mincut!
+[ Info: Values: {1 │ 0, 2 │ 2, 3 │ 5, 4 │ 3, 5 │ 4, 6 │ 1}
+[ Info: Sol (val): 6.0
+[ Info: Sol (vals): {1 │ 0, 2 │ 2, 3 │ 3, 4 │ 5, 5 │ 4, 6 │ 1}
+[ Info: Results 1-mincut!
+[ Info: Values: {1 │ 1, 2 │ 2, 3 │ 2, 4 │ 0, 5 │ 4, 6 │ 2}
+[ Info: Sol (val): 3.0
+[ Info: Sol (vals): {1 │ 3, 2 │ 1, 3 │ 0, 4 │ 2, 5 │ 5, 6 │ 4}
+[ Info: Results 2-mincut!
+[ Info: Values: {1 │ 0, 2 │ 4, 3 │ 3, 4 │ 5, 5 │ 5, 6 │ 1}
+[ Info: Sol (val): 1.0
+[ Info: Sol (vals): {1 │ 0, 2 │ 3, 3 │ 4, 4 │ 5, 5 │ 2, 6 │ 1}
+Test Summary:         | Pass  Total
+LocalSearchSolvers.jl |  227    227
+    Testing LocalSearchSolvers tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:12:08.55
+CPU usage: 179.90s (168.06s user, 12.09s kernel)
+
+Network usage:
+- eth0: 75.749 MiB received, 459.071 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":143360,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":143360,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":143360,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":143360,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":803287040,"max_usage":2540883968,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":230752256,"inactive_file":135168,"inactive_anon":509042688,"total_pgfault":4859811,"total_cache":538812416,"total_rss_huge":0,"total_active_anon":260603904,"total_pgmajfault":0,"pgpgin":3468102,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":135168,"pgpgout":3280208,"hierarchical_memsw_limit":0,"cache":538812416,"active_file":135168,"pgfault":4859811,"total_mapped_file":0,"total_pgpgout":3280208,"total_writeback":135168,"rss":230752256,"unevictable":0,"total_inactive_anon":509042688,"total_pgpgin":3468102,"active_anon":260603904,"total_active_file":135168},"limit":540965302272},"name":"/LocalSearchSolvers-KOEEaNww","networks":{"eth0":{"rx_bytes":79428260,"rx_packets":6010,"tx_packets":5214,"tx_bytes":470089,"tx_dropped":0,"rx_dropped":6,"tx_errors":0,"rx_errors":0}},"id":"7d02ac881fbbc32cf5c5e75d4f905dd7dbfb41eb85fce6c859b97b2e13476cb4","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3992217064522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":168060000000,"usage_in_kernelmode":12090000000,"total_usage":179895297005,"percpu_usage":[179836906038,0,0,1529000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,56856757,5210,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:12:08.553966571Z"}

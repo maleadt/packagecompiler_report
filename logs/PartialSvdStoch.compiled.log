@@ -1,0 +1,684 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T18:36:27.361
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T18:36:29.061
+#
+
+ Installing known registries into `~/.julia`
+##############                                                            20.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Reexport ───────────────────── v1.0.0
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed PartialSvdStoch ────────────── v0.1.1
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed FFTW ───────────────────────── v1.3.1
+  Installed MKL_jll ────────────────────── v2020.2.254+0
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed FillArrays ─────────────────── v0.10.2
+  Installed QuadGK ─────────────────────── v2.4.1
+  Installed FFTW_jll ───────────────────── v3.3.9+7
+  Installed DataStructures ─────────────── v0.18.8
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed PackageCompiler ────────────── v1.2.5
+  Installed Match ──────────────────────── v1.1.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed IntelOpenMP_jll ────────────── v2018.0.3+0
+  Installed Missings ───────────────────── v0.4.4
+  Installed LowRankApprox ──────────────── v0.4.2
+  Installed AbstractFFTs ───────────────── v1.0.0
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed Nullables ──────────────────── v1.0.0
+  Installed PDMats ─────────────────────── v0.10.1
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed Distributions ──────────────── v0.24.10
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed Compat ─────────────────────── v3.25.0
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [1149b383] + PartialSvdStoch v0.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [621f4979] + AbstractFFTs v1.0.0
+  [56f22d72] + Artifacts v1.3.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [31c24e10] + Distributions v0.24.10
+  [7a1cc6ca] + FFTW v1.3.1
+  [f5851436] + FFTW_jll v3.3.9+7
+  [1a297f60] + FillArrays v0.10.2
+  [1d5cc7b8] + IntelOpenMP_jll v2018.0.3+0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [898213cb] + LowRankApprox v0.4.2
+  [856f044c] + MKL_jll v2020.2.254+0
+  [7eb4fadd] + Match v1.1.0
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [4d1e1d77] + Nullables v1.0.0
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.10.1
+  [9b87118b] + PackageCompiler v1.2.5
+  [1149b383] + PartialSvdStoch v0.1.1
+  [1fd47b50] + QuadGK v2.4.1
+  [189a3867] + Reexport v1.0.0
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building FFTW → `~/.julia/packages/FFTW/eADNB/deps/build.log`
+
+
+################################################################################
+# Compiling: 2021-01-11T18:36:36.688
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 152.361 MiB, compilation took 190 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T18:39:54.983
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/PartialSvdStoch-z4K8gOn0.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:39:57.206
+#
+
+ Installing known registries into `~/.julia`
+#########################################################                 80.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed Reexport ───────────────────── v1.0.0
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed PartialSvdStoch ────────────── v0.1.1
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed FFTW ───────────────────────── v1.3.1
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed MKL_jll ────────────────────── v2020.2.254+0
+  Installed DataStructures ─────────────── v0.18.8
+  Installed FillArrays ─────────────────── v0.10.2
+  Installed FFTW_jll ───────────────────── v3.3.9+7
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed QuadGK ─────────────────────── v2.4.1
+  Installed Match ──────────────────────── v1.1.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed LowRankApprox ──────────────── v0.4.2
+  Installed IntelOpenMP_jll ────────────── v2018.0.3+0
+  Installed Nullables ──────────────────── v1.0.0
+  Installed Missings ───────────────────── v0.4.4
+  Installed PDMats ─────────────────────── v0.10.1
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed AbstractFFTs ───────────────── v1.0.0
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed Distributions ──────────────── v0.24.10
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Compat ─────────────────────── v3.25.0
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed ChainRulesCore ─────────────── v0.9.24
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [1149b383] + PartialSvdStoch v0.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [621f4979] + AbstractFFTs v1.0.0
+  [56f22d72] + Artifacts v1.3.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [31c24e10] + Distributions v0.24.10
+  [7a1cc6ca] + FFTW v1.3.1
+  [f5851436] + FFTW_jll v3.3.9+7
+  [1a297f60] + FillArrays v0.10.2
+  [1d5cc7b8] + IntelOpenMP_jll v2018.0.3+0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [898213cb] + LowRankApprox v0.4.2
+  [856f044c] + MKL_jll v2020.2.254+0
+  [7eb4fadd] + Match v1.1.0
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [4d1e1d77] + Nullables v1.0.0
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.10.1
+  [1149b383] + PartialSvdStoch v0.1.1
+  [1fd47b50] + QuadGK v2.4.1
+  [189a3867] + Reexport v1.0.0
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building FFTW → `~/.julia/packages/FFTW/eADNB/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T18:40:04.573
+#
+
+    Testing PartialSvdStoch
+Status `/tmp/jl_cV4KJ8/Project.toml`
+  [31c24e10] Distributions v0.24.10
+  [898213cb] LowRankApprox v0.4.2
+  [7eb4fadd] Match v1.1.0
+  [1149b383] PartialSvdStoch v0.1.1
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_cV4KJ8/Manifest.toml`
+  [621f4979] AbstractFFTs v1.0.0
+  [56f22d72] Artifacts v1.3.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [31c24e10] Distributions v0.24.10
+  [7a1cc6ca] FFTW v1.3.1
+  [f5851436] FFTW_jll v3.3.9+7
+  [1a297f60] FillArrays v0.10.2
+  [1d5cc7b8] IntelOpenMP_jll v2018.0.3+0
+  [692b3bcd] JLLWrappers v1.2.0
+  [898213cb] LowRankApprox v0.4.2
+  [856f044c] MKL_jll v2020.2.254+0
+  [7eb4fadd] Match v1.1.0
+  [e1d29d7a] Missings v0.4.4
+  [46d2c3a1] MuladdMacro v0.2.2
+  [4d1e1d77] Nullables v1.0.0
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [90014a1f] PDMats v0.10.1
+  [1149b383] PartialSvdStoch v0.1.1
+  [1fd47b50] QuadGK v2.4.1
+  [189a3867] Reexport v1.0.0
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.2.1
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: =========================================================
+┌ Info: 
+│ 
+└  in test ifsvd_versus_svd
+[ Info: doing exact svd ...
+  0.575454 seconds (11 allocations: 47.745 MiB, 3.04% gc time)
+[ Info: LowRankApproxMc in left singular vector mode
+┌ Debug: LowRankApproxMc.reduceToRank setting samplingSize: 
+│   datapb.samplingSize = 105
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:331
+┌ Warning: LowRankApproxMc.reduceToRank using maxiter 
+│   maxiter = 2
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:333
+┌ Debug: in LowRankApproxMc reduceIfast v2
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:98
+┌ Debug: meanL2NormC
+│   meanL2NormC = 50.112753308807044
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:108
+┌ Debug: 
+│ 
+│  iteration 
+│   datapb.currentIter = 1
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:116
+┌ Debug: 
+│  c meanL2Norm at Iter  :  
+│   meanL2NormIter = 16.64139252388748
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:136
+┌ Debug: acceptanceRatio
+│   acceptanceRatio = 0.29523809523809524
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:150
+┌ Debug: QR orthogonalizing new block size At
+│   size(At) = (500, 31)
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:162
+┌ Info: A size
+└   size(A) = (500, 31)
+┌ Debug: updating E
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:189
+┌ Info:  iteration  , ||E|| set size 
+│   datapb.currentIter = 1
+│   datapb.residualErr = 0.22860471251656334
+└   datapb.currentRank = 31
+┌ Debug: 
+│ 
+│  iteration 
+│   datapb.currentIter = 2
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:116
+┌ Debug: 
+│  c meanL2Norm at Iter  :  
+│   meanL2NormIter = 6.993903174864
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:136
+┌ Debug: acceptanceRatio
+│   acceptanceRatio = 0.49523809523809526
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:150
+┌ Debug: QR orthogonalizing new block size At
+│   size(At) = (500, 52)
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:162
+┌ Info: A size
+└   size(A) = (500, 83)
+┌ Debug: computing right vectors
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:213
+┌ Debug: exiting LowRankApproxMc reduceIfast
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:221
+┌ Warning: reduceToRank  got only up to rank
+│   (size(datapb.U.value))[2] = 83
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:349
+  2.796215 seconds (5.31 M allocations: 450.750 MiB, 8.22% gc time)
+┌ Info: relative residual error LowRankApproxMc 
+└   norm(matApprox - mat) / norm(mat) = 0.13105848482190907
+  0.554925 seconds (195 allocations: 47.757 MiB, 0.79% gc time)
+┌ Info: relative error on eigen values after reconstruction : 
+└   relerr = 0.029171022848004994
+Test Summary:    | Pass  Total
+ifsvd_versus_svd |    1      1
+[ Info: =========================================================
+┌ Info: 
+│ 
+└  in test ifsvd_lowRankApproxEpsil
+┌ Debug: doing LowRankApproxMc reduceToRank
+└ @ Main ~/.julia/packages/PartialSvdStoch/BasnF/test/testifsvd.jl:53
+[ Info: LowRankApproxMc in left singular vector mode
+┌ Debug: in LowRankApproxMc reduceIfast v2
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:98
+┌ Debug: meanL2NormC
+│   meanL2NormC = 9573.076279028222
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:108
+┌ Debug: 
+│ 
+│  iteration 
+│   datapb.currentIter = 1
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:116
+┌ Debug: 
+│  c meanL2Norm at Iter  :  
+│   meanL2NormIter = 7540.33892057035
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:136
+┌ Debug: acceptanceRatio
+│   acceptanceRatio = 1.0
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:150
+┌ Debug: QR orthogonalizing new block size At
+│   size(At) = (10000, 100)
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:162
+┌ Info: A size
+└   size(A) = (10000, 100)
+┌ Debug: updating E
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:189
+┌ Info:  iteration  , ||E|| set size 
+│   datapb.currentIter = 1
+│   datapb.residualErr = 0.5983925800129124
+└   datapb.currentRank = 100
+┌ Debug: 
+│ 
+│  iteration 
+│   datapb.currentIter = 2
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:116
+┌ Debug: 
+│  c meanL2Norm at Iter  :  
+│   meanL2NormIter = 4065.516711283587
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:136
+┌ Debug: acceptanceRatio
+│   acceptanceRatio = 0.99
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:150
+┌ Debug: QR orthogonalizing new block size At
+│   size(At) = (10000, 99)
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:162
+┌ Info: A size
+└   size(A) = (10000, 199)
+┌ Debug: updating E
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:189
+┌ Info:  iteration  , ||E|| set size 
+│   datapb.currentIter = 2
+│   datapb.residualErr = 0.3481297215812391
+└   datapb.currentRank = 199
+┌ Debug: 
+│ 
+│  iteration 
+│   datapb.currentIter = 3
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:116
+┌ Debug: 
+│  c meanL2Norm at Iter  :  
+│   meanL2NormIter = 1993.8732602205525
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:136
+┌ Debug: acceptanceRatio
+│   acceptanceRatio = 0.99
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:150
+┌ Debug: QR orthogonalizing new block size At
+│   size(At) = (10000, 99)
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:162
+┌ Info: A size
+└   size(A) = (10000, 298)
+┌ Debug: updating E
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:189
+┌ Info:  iteration  , ||E|| set size 
+│   datapb.currentIter = 3
+│   datapb.residualErr = 0.1416868010301015
+└   datapb.currentRank = 298
+┌ Debug: 
+│ 
+│  iteration 
+│   datapb.currentIter = 4
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:116
+┌ Debug: 
+│  c meanL2Norm at Iter  :  
+│   meanL2NormIter = 825.0407880000857
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:136
+┌ Debug: acceptanceRatio
+│   acceptanceRatio = 0.98
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:150
+┌ Debug: QR orthogonalizing new block size At
+│   size(At) = (10000, 98)
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:162
+┌ Info: A size
+└   size(A) = (10000, 396)
+┌ Debug: updating E
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:189
+┌ Info:  iteration  , ||E|| set size 
+│   datapb.currentIter = 4
+│   datapb.residualErr = 0.04976421312427501
+└   datapb.currentRank = 396
+┌ Debug: computing right vectors
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:213
+┌ Debug: exiting LowRankApproxMc reduceIfast
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:221
+ 45.558822 seconds (1.83 M allocations: 49.144 GiB, 6.73% gc time)
+┌ Info: delta mat after LowRankApproxMc reduce
+│   norm(matApprox - mat) = 67372.65443913484
+└   norm(mat) = 1.3538374307433874e6
+┌ Info: relative residual error
+└   norm(matApprox - mat) / norm(mat) = 0.04976421312427501
+Test Summary:            | Pass  Total
+ifsvd_lowRankApproxEpsil |    1      1
+[ Info: =========================================================
+┌ Info: 
+│ 
+└  in test vrpca_epsil
+┌ Info: testvrpca_withepsil : doing vrpca initialization with epsil
+└   epsil = 0.01
+┌ Debug: VrPCA initialized by Vempala's LowRankApproxMc and epsil target
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/vrpca.jl:104
+[ Info: LowRankApproxMc in left singular vector mode
+┌ Debug: in LowRankApproxMc reduceIfast v2
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:98
+┌ Debug: meanL2NormC
+│   meanL2NormC = 4082.717548197686
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:108
+┌ Debug: 
+│ 
+│  iteration 
+│   datapb.currentIter = 1
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:116
+┌ Debug: 
+│  c meanL2Norm at Iter  :  
+│   meanL2NormIter = 448.66444537429203
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:136
+┌ Debug: acceptanceRatio
+│   acceptanceRatio = 0.68
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:150
+┌ Debug: QR orthogonalizing new block size At
+│   size(At) = (5000, 68)
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:162
+┌ Info: A size
+└   size(A) = (5000, 68)
+┌ Debug: updating E
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:189
+┌ Info:  iteration  , ||E|| set size 
+│   datapb.currentIter = 1
+│   datapb.residualErr = 0.28294969564034506
+└   datapb.currentRank = 68
+┌ Debug: 
+│ 
+│  iteration 
+│   datapb.currentIter = 2
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:116
+┌ Debug: 
+│  c meanL2Norm at Iter  :  
+│   meanL2NormIter = 85.55173387400372
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:136
+┌ Debug: acceptanceRatio
+│   acceptanceRatio = 0.31
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:150
+┌ Debug: QR orthogonalizing new block size At
+│   size(At) = (5000, 31)
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:162
+┌ Info: A size
+└   size(A) = (5000, 99)
+┌ Debug: updating E
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:189
+┌ Info:  iteration  , ||E|| set size 
+│   datapb.currentIter = 2
+│   datapb.residualErr = 0.049547490941571425
+└   datapb.currentRank = 99
+┌ Debug: 
+│ 
+│  iteration 
+│   datapb.currentIter = 3
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:116
+┌ Debug: 
+│  c meanL2Norm at Iter  :  
+│   meanL2NormIter = 22.12015214748355
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:136
+┌ Debug: acceptanceRatio
+│   acceptanceRatio = 0.01
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:150
+┌ Debug: QR orthogonalizing new block size At
+│   size(At) = (5000, 1)
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:162
+┌ Info: A size
+└   size(A) = (5000, 100)
+┌ Debug: updating E
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:189
+┌ Info:  iteration  , ||E|| set size 
+│   datapb.currentIter = 3
+│   datapb.residualErr = 0.004949041658052723
+└   datapb.currentRank = 100
+┌ Debug: computing right vectors
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:213
+┌ Debug: exiting LowRankApproxMc reduceIfast
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/lowRankApproxMc.jl:221
+┌ Debug: initialization got rank 
+│   (size(W))[2] = 100
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/vrpca.jl:113
+┌ Info: doing vrpca svd iteration
+│   eta = 0.01
+└   batchSize = 20
+┌ Debug: entering VrPCA reduce eta m block version
+│   eta = 0.01
+│   m = 20
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/vrpca.jl:137
+┌ Debug:  W_s dim
+│   size(W_s) = (5000, 100)
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/vrpca.jl:167
+┌ Debug:  iter ,  ||W_t - W_s||_2 , ||W_t||_2
+│   s = 1
+│   deltaW = 4.4154511702029817e-10
+│   normWt = 99.99999999999983
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/vrpca.jl:246
+  3.930608 seconds (402.88 k allocations: 2.031 GiB, 3.38% gc time)
+┌ Info: residual error after vr
+│   norm(matVrpca - mat) = 2020.5528944875903
+│   normMat = 408271.7548197686
+└   relErr = 0.004949039140313693
+Test Summary: | Pass  Total
+vrpca_epsil   |    1      1
+[ Info: =========================================================
+┌ Info: 
+│ 
+└  in test vrpca_withLowRankApprox
+[ Info: testvrpca_withLowRankApprox : initialization
+  2.842423 seconds (2.74 M allocations: 221.364 MiB, 3.71% gc time)
+┌ Info: rank obtained : 
+└   (size(Uguess))[2] = 100
+┌ Info:  residual Error , initial L2 norm 
+│   deltaMatGuess = 9501.038451130538
+└   normMat = 408271.7548197686
+┌ Info:  relative error at initialization 
+└   deltaMatGuess / normMat = 0.023271358694222595
+┌ Info: doing vrpca svd  with rank initialization...
+│   eta = 0.01
+└   batchSize = 20
+┌ Debug: VrPCA initialized by LowRankApprox and rank target
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/vrpca.jl:78
+┌ Debug: got rank 
+│   (size(W))[2] = 100
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/vrpca.jl:86
+┌ Debug: entering VrPCA reduce eta m block version
+│   eta = 0.01
+│   m = 20
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/vrpca.jl:137
+┌ Debug:  W_s dim
+│   size(W_s) = (5000, 100)
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/vrpca.jl:167
+┌ Debug:  iter ,  ||W_t - W_s||_2 , ||W_t||_2
+│   s = 1
+│   deltaW = 0.16301453201280322
+│   normWt = 100.00000000000135
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/vrpca.jl:246
+┌ Debug:  iter ,  ||W_t - W_s||_2 , ||W_t||_2
+│   s = 2
+│   deltaW = 5.292991520753609e-11
+│   normWt = 99.99999999999986
+└ @ PartialSvdStoch /home/pkgeval/.julia/packages/PartialSvdStoch/BasnF/src/vrpca.jl:246
+  5.853298 seconds (104.29 k allocations: 3.244 GiB, 8.26% gc time)
+┌ Info: deltaS after vr
+│   norm(matVrpca - mat) = 2020.55289448759
+└   normMat = 408271.7548197686
+┌ Info:  relative error after vrpca iterations : 
+└   deltaMatIter / normMat = 0.004949039140313692
+Test Summary:           | Pass  Total
+vrpca_withLowRankApprox |    1      1
+    Testing PartialSvdStoch tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:42:37.844
+CPU usage: 162.74s (134.22s user, 28.85s kernel)
+
+Network usage:
+- eth0: 3.857 MiB received, 168.711 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":253,"value":9,"op":"Read","minor":0},{"major":253,"value":0,"op":"Write","minor":0},{"major":253,"value":9,"op":"Sync","minor":0},{"major":253,"value":0,"op":"Async","minor":0},{"major":253,"value":0,"op":"Discard","minor":0},{"major":253,"value":9,"op":"Total","minor":0},{"major":259,"value":4574,"op":"Read","minor":0},{"major":259,"value":23,"op":"Write","minor":0},{"major":259,"value":4588,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":4597,"op":"Total","minor":0},{"major":253,"value":4565,"op":"Read","minor":2},{"major":253,"value":23,"op":"Write","minor":2},{"major":253,"value":4579,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":4588,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":253,"value":36864,"op":"Read","minor":0},{"major":253,"value":0,"op":"Write","minor":0},{"major":253,"value":36864,"op":"Sync","minor":0},{"major":253,"value":0,"op":"Async","minor":0},{"major":253,"value":0,"op":"Discard","minor":0},{"major":253,"value":36864,"op":"Total","minor":0},{"major":259,"value":178864128,"op":"Read","minor":0},{"major":259,"value":110592,"op":"Write","minor":0},{"major":259,"value":178921472,"op":"Sync","minor":0},{"major":259,"value":53248,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":178974720,"op":"Total","minor":0},{"major":253,"value":178827264,"op":"Read","minor":2},{"major":253,"value":110592,"op":"Write","minor":2},{"major":253,"value":178884608,"op":"Sync","minor":2},{"major":253,"value":53248,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":178937856,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":399568896,"max_usage":8929857536,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":1848,"total_rss":189034496,"inactive_file":36794368,"inactive_anon":268685312,"total_pgfault":11113344,"total_cache":179273728,"total_rss_huge":0,"total_active_anon":11485184,"total_pgmajfault":1848,"pgpgin":10624449,"rss_huge":0,"mapped_file":53661696,"total_inactive_file":36794368,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":10534544,"hierarchical_memsw_limit":0,"cache":179273728,"active_file":49737728,"pgfault":11113344,"total_mapped_file":53661696,"total_pgpgout":10534544,"total_writeback":0,"rss":189034496,"unevictable":0,"total_inactive_anon":268685312,"total_pgpgin":10624449,"active_anon":11485184,"total_active_file":49737728},"limit":540965302272},"name":"/PartialSvdStoch-hNcoXVgp","networks":{"eth0":{"rx_bytes":4044271,"rx_packets":1226,"tx_packets":1372,"tx_bytes":172760,"tx_dropped":0,"rx_dropped":6,"tx_errors":0,"rx_errors":0}},"id":"26fa03e1b643b5542c2601b7bacde847236f1f7c71b7d0c3019aa7ecffb44d36","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4685809934522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":134220000000,"usage_in_kernelmode":28850000000,"total_usage":162735859528,"percpu_usage":[0,0,0,162733440498,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,713530,0,1705500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:42:37.847036287Z"}

@@ -1,0 +1,871 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T22:43:09.495
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T22:43:11.209
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed MbedTLS_jll ────────────────── v2.16.8+1
+  Installed ZygoteRules ────────────────── v0.2.1
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed Reexport ───────────────────── v0.2.0
+  Installed AIBECS ─────────────────────── v0.8.3
+  Installed PackageCompiler ────────────── v1.2.5
+  Installed WoodburyMatrices ───────────── v0.5.3
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed TableTraits ────────────────── v1.0.0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed NonlinearSolve ─────────────── v0.3.4
+  Installed Bijectors ──────────────────── v0.8.13
+  Installed CategoricalArrays ──────────── v0.9.0
+  Installed OpenSSL_jll ────────────────── v1.1.1+6
+  Installed Tables ─────────────────────── v1.2.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed FillArrays ─────────────────── v0.10.2
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed DataFrames ─────────────────── v0.22.2
+  Installed UnitfulRecipes ─────────────── v1.0.1
+  Installed Requires ───────────────────── v1.1.2
+  Installed FunctionWrappers ───────────── v1.1.1
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed MbedTLS ────────────────────── v1.0.3
+  Installed QuadGK ─────────────────────── v2.4.1
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed Parameters ─────────────────── v0.12.1
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Setfield ───────────────────── v0.7.0
+  Installed LibSSH2_jll ────────────────── v1.9.0+3
+  Installed HTTP ───────────────────────── v0.8.19
+  Installed TreeViews ──────────────────── v0.3.0
+  Installed FieldMetadata ──────────────── v0.3.1
+  Installed Ratios ─────────────────────── v0.4.0
+  Installed p7zip_jll ──────────────────── v16.2.0+3
+  Installed ConstructionBase ───────────── v1.0.0
+  Installed RecursiveArrayTools ────────── v2.10.0
+  Installed nghttp2_jll ────────────────── v1.40.0+2
+  Installed InvertedIndices ────────────── v1.0.0
+  Installed MetadataArrays ─────────────── v0.1.0
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed BSON ───────────────────────── v0.2.6
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed DiffEqBase ─────────────────── v6.53.4
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed HDF5_jll ───────────────────── v1.12.0+1
+  Installed Missings ───────────────────── v0.4.4
+  Installed ArgCheck ───────────────────── v2.1.0
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed MappedArrays ───────────────── v0.3.0
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed PooledArrays ───────────────── v0.5.3
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed Distances ──────────────────── v0.10.0
+  Installed FiniteDiff ─────────────────── v2.7.2
+  Installed JSON ───────────────────────── v0.21.1
+  Installed PrettyTables ───────────────── v0.10.1
+  Installed Distributions ──────────────── v0.24.10
+  Installed Interpolations ─────────────── v0.13.1
+  Installed AxisAlgorithms ─────────────── v1.0.0
+  Installed CFTime ─────────────────────── v0.1.1
+  Installed ArrayInterface ─────────────── v2.14.13
+  Installed Shapefile ──────────────────── v0.6.2
+  Installed StructTypes ────────────────── v1.2.1
+  Installed Crayons ────────────────────── v4.0.4
+  Installed PDMats ─────────────────────── v0.10.1
+  Installed NearestNeighbors ───────────── v0.4.8
+  Installed Flatten ────────────────────── v0.4.0
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed GeoInterface ───────────────── v0.5.4
+  Installed IterativeSolvers ───────────── v0.9.0
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed Adapt ──────────────────────── v2.4.0
+  Installed OffsetArrays ───────────────── v1.5.0
+  Installed Formatting ─────────────────── v0.4.2
+  Installed FixedPointNumbers ──────────── v0.8.4
+  Installed Unitful ────────────────────── v1.5.0
+  Installed LabelledArrays ─────────────── v1.4.0
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed NCDatasets ─────────────────── v0.11.1
+  Installed OceanGrids ─────────────────── v0.3.3
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed LibCURL_jll ────────────────── v7.70.0+2
+  Installed WeakRefStrings ─────────────── v0.6.2
+  Installed DocStringExtensions ────────── v0.8.3
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed Compat ─────────────────────── v3.25.0
+  Installed RecursiveFactorization ─────── v0.1.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed DBFTables ──────────────────── v0.2.2
+  Installed NNlib ──────────────────────── v0.7.11
+  Installed BinaryProvider ─────────────── v0.5.10
+  Installed DataDeps ───────────────────── v0.7.6
+  Installed NetCDF_jll ─────────────────── v4.7.4+1
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed Parsers ────────────────────── v1.0.15
+  Installed IniFile ────────────────────── v0.5.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [ace601d6] + AIBECS v0.8.3
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [ace601d6] + AIBECS v0.8.3
+  [79e6a3ab] + Adapt v2.4.0
+  [dce04be8] + ArgCheck v2.1.0
+  [4fba245c] + ArrayInterface v2.14.13
+  [56f22d72] + Artifacts v1.3.0
+  [13072b0f] + AxisAlgorithms v1.0.0
+  [fbb218c0] + BSON v0.2.6
+  [76274a88] + Bijectors v0.8.13
+  [b99e7846] + BinaryProvider v0.5.10
+  [179af706] + CFTime v0.1.1
+  [324d7699] + CategoricalArrays v0.9.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [187b0558] + ConstructionBase v1.0.0
+  [a8cc5b0e] + Crayons v4.0.4
+  [75c7ada1] + DBFTables v0.2.2
+  [9a962f9c] + DataAPI v1.4.0
+  [124859b0] + DataDeps v0.7.6
+  [a93c6f00] + DataFrames v0.22.2
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [2b5f629d] + DiffEqBase v6.53.4
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [b4f34e82] + Distances v0.10.0
+  [31c24e10] + Distributions v0.24.10
+  [ffbed154] + DocStringExtensions v0.8.3
+  [bf96fef3] + FieldMetadata v0.3.1
+  [1a297f60] + FillArrays v0.10.2
+  [6a86dc24] + FiniteDiff v2.7.2
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [4c728ea3] + Flatten v0.4.0
+  [59287772] + Formatting v0.4.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [069b7b12] + FunctionWrappers v1.1.1
+  [cf35fbd7] + GeoInterface v0.5.4
+  [0234f1f7] + HDF5_jll v1.12.0+1
+  [cd3eb016] + HTTP v0.8.19
+  [83e8ac13] + IniFile v0.5.0
+  [a98d9a8b] + Interpolations v0.13.1
+  [41ab1584] + InvertedIndices v1.0.0
+  [42fd0dbc] + IterativeSolvers v0.9.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [2ee39098] + LabelledArrays v1.4.0
+  [deac9b47] + LibCURL_jll v7.70.0+2
+  [29816b5a] + LibSSH2_jll v1.9.0+3
+  [1914dd2f] + MacroTools v0.5.6
+  [dbb5928d] + MappedArrays v0.3.0
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [49441bc9] + MetadataArrays v0.1.0
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [85f8d34a] + NCDatasets v0.11.1
+  [872c559c] + NNlib v0.7.11
+  [77ba4419] + NaNMath v0.3.5
+  [b8a86587] + NearestNeighbors v0.4.8
+  [7243133f] + NetCDF_jll v4.7.4+1
+  [8913a72c] + NonlinearSolve v0.3.4
+  [cfe838f4] + OceanGrids v0.3.3
+  [6fe1bfb0] + OffsetArrays v1.5.0
+  [458c3c95] + OpenSSL_jll v1.1.1+6
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.10.1
+  [9b87118b] + PackageCompiler v1.2.5
+  [d96e819e] + Parameters v0.12.1
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [08abe8d2] + PrettyTables v0.10.1
+  [1fd47b50] + QuadGK v2.4.1
+  [c84ed2f1] + Ratios v0.4.0
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [731186ca] + RecursiveArrayTools v2.10.0
+  [f2c3362d] + RecursiveFactorization v0.1.0
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [efcf1570] + Setfield v0.7.0
+  [8e980c4a] + Shapefile v0.6.2
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [856f2bd8] + StructTypes v1.2.1
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [a2a6695c] + TreeViews v0.3.0
+  [3a884ed6] + UnPack v1.0.2
+  [1986cc42] + Unitful v1.5.0
+  [42071c24] + UnitfulRecipes v1.0.1
+  [ea10d353] + WeakRefStrings v0.6.2
+  [efce3f68] + WoodburyMatrices v0.5.3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [700de1a5] + ZygoteRules v0.2.1
+  [8e850ede] + nghttp2_jll v1.40.0+2
+  [3f19e933] + p7zip_jll v16.2.0+3
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building DataDeps → `~/.julia/packages/DataDeps/jrlAW/deps/build.log`
+
+
+################################################################################
+# Compiling: 2021-01-11T22:43:23.101
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 235.833 MiB, compilation took 473 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T22:51:24.596
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/AIBECS-GdHPH30T.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:51:26.19
+#
+
+ Installing known registries into `~/.julia`
+#######################################################                   77.5%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed MbedTLS_jll ────────────────── v2.16.8+1
+  Installed ZygoteRules ────────────────── v0.2.1
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed Reexport ───────────────────── v0.2.0
+  Installed WoodburyMatrices ───────────── v0.5.3
+  Installed AIBECS ─────────────────────── v0.8.3
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed TableTraits ────────────────── v1.0.0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed NonlinearSolve ─────────────── v0.3.4
+  Installed OpenSSL_jll ────────────────── v1.1.1+6
+  Installed Bijectors ──────────────────── v0.8.13
+  Installed CategoricalArrays ──────────── v0.9.0
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed DataFrames ─────────────────── v0.22.2
+  Installed Tables ─────────────────────── v1.2.2
+  Installed FillArrays ─────────────────── v0.10.2
+  Installed UnitfulRecipes ─────────────── v1.0.1
+  Installed FunctionWrappers ───────────── v1.1.1
+  Installed MbedTLS ────────────────────── v1.0.3
+  Installed QuadGK ─────────────────────── v2.4.1
+  Installed Requires ───────────────────── v1.1.2
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed Parameters ─────────────────── v0.12.1
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Setfield ───────────────────── v0.7.0
+  Installed LibSSH2_jll ────────────────── v1.9.0+3
+  Installed FieldMetadata ──────────────── v0.3.1
+  Installed Ratios ─────────────────────── v0.4.0
+  Installed TreeViews ──────────────────── v0.3.0
+  Installed p7zip_jll ──────────────────── v16.2.0+3
+  Installed HTTP ───────────────────────── v0.9.2
+  Installed ConstructionBase ───────────── v1.0.0
+  Installed RecursiveArrayTools ────────── v2.10.0
+  Installed nghttp2_jll ────────────────── v1.40.0+2
+  Installed InvertedIndices ────────────── v1.0.0
+  Installed MetadataArrays ─────────────── v0.1.0
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed BSON ───────────────────────── v0.2.6
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed DiffEqBase ─────────────────── v6.53.4
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed HDF5_jll ───────────────────── v1.12.0+1
+  Installed Missings ───────────────────── v0.4.4
+  Installed ArgCheck ───────────────────── v2.1.0
+  Installed MappedArrays ───────────────── v0.3.0
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed PooledArrays ───────────────── v0.5.3
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed Interpolations ─────────────── v0.13.1
+  Installed JSON ───────────────────────── v0.21.1
+  Installed AxisAlgorithms ─────────────── v1.0.0
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed ArrayInterface ─────────────── v2.14.13
+  Installed Distances ──────────────────── v0.10.0
+  Installed FiniteDiff ─────────────────── v2.7.2
+  Installed CFTime ─────────────────────── v0.1.1
+  Installed PrettyTables ───────────────── v0.10.1
+  Installed Distributions ──────────────── v0.24.10
+  Installed Crayons ────────────────────── v4.0.4
+  Installed PDMats ─────────────────────── v0.10.1
+  Installed Shapefile ──────────────────── v0.6.2
+  Installed StructTypes ────────────────── v1.2.1
+  Installed NearestNeighbors ───────────── v0.4.8
+  Installed Flatten ────────────────────── v0.4.0
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed IterativeSolvers ───────────── v0.9.0
+  Installed GeoInterface ───────────────── v0.5.4
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed Adapt ──────────────────────── v2.4.0
+  Installed URIs ───────────────────────── v1.1.0
+  Installed Unitful ────────────────────── v1.5.0
+  Installed OffsetArrays ───────────────── v1.5.0
+  Installed FixedPointNumbers ──────────── v0.8.4
+  Installed LabelledArrays ─────────────── v1.4.0
+  Installed Formatting ─────────────────── v0.4.2
+  Installed NCDatasets ─────────────────── v0.11.1
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed OceanGrids ─────────────────── v0.3.3
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed LibCURL_jll ────────────────── v7.70.0+2
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed WeakRefStrings ─────────────── v0.6.2
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed DocStringExtensions ────────── v0.8.3
+  Installed Compat ─────────────────────── v3.25.0
+  Installed RecursiveFactorization ─────── v0.1.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed DBFTables ──────────────────── v0.2.2
+  Installed NetCDF_jll ─────────────────── v4.7.4+1
+  Installed BinaryProvider ─────────────── v0.5.10
+  Installed NNlib ──────────────────────── v0.7.11
+  Installed DataDeps ───────────────────── v0.7.6
+  Installed Parsers ────────────────────── v1.0.15
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed IniFile ────────────────────── v0.5.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [ace601d6] + AIBECS v0.8.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [ace601d6] + AIBECS v0.8.3
+  [79e6a3ab] + Adapt v2.4.0
+  [dce04be8] + ArgCheck v2.1.0
+  [4fba245c] + ArrayInterface v2.14.13
+  [56f22d72] + Artifacts v1.3.0
+  [13072b0f] + AxisAlgorithms v1.0.0
+  [fbb218c0] + BSON v0.2.6
+  [76274a88] + Bijectors v0.8.13
+  [b99e7846] + BinaryProvider v0.5.10
+  [179af706] + CFTime v0.1.1
+  [324d7699] + CategoricalArrays v0.9.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [187b0558] + ConstructionBase v1.0.0
+  [a8cc5b0e] + Crayons v4.0.4
+  [75c7ada1] + DBFTables v0.2.2
+  [9a962f9c] + DataAPI v1.4.0
+  [124859b0] + DataDeps v0.7.6
+  [a93c6f00] + DataFrames v0.22.2
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [2b5f629d] + DiffEqBase v6.53.4
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [b4f34e82] + Distances v0.10.0
+  [31c24e10] + Distributions v0.24.10
+  [ffbed154] + DocStringExtensions v0.8.3
+  [bf96fef3] + FieldMetadata v0.3.1
+  [1a297f60] + FillArrays v0.10.2
+  [6a86dc24] + FiniteDiff v2.7.2
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [4c728ea3] + Flatten v0.4.0
+  [59287772] + Formatting v0.4.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [069b7b12] + FunctionWrappers v1.1.1
+  [cf35fbd7] + GeoInterface v0.5.4
+  [0234f1f7] + HDF5_jll v1.12.0+1
+  [cd3eb016] + HTTP v0.9.2
+  [83e8ac13] + IniFile v0.5.0
+  [a98d9a8b] + Interpolations v0.13.1
+  [41ab1584] + InvertedIndices v1.0.0
+  [42fd0dbc] + IterativeSolvers v0.9.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [2ee39098] + LabelledArrays v1.4.0
+  [deac9b47] + LibCURL_jll v7.70.0+2
+  [29816b5a] + LibSSH2_jll v1.9.0+3
+  [1914dd2f] + MacroTools v0.5.6
+  [dbb5928d] + MappedArrays v0.3.0
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [49441bc9] + MetadataArrays v0.1.0
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [85f8d34a] + NCDatasets v0.11.1
+  [872c559c] + NNlib v0.7.11
+  [77ba4419] + NaNMath v0.3.5
+  [b8a86587] + NearestNeighbors v0.4.8
+  [7243133f] + NetCDF_jll v4.7.4+1
+  [8913a72c] + NonlinearSolve v0.3.4
+  [cfe838f4] + OceanGrids v0.3.3
+  [6fe1bfb0] + OffsetArrays v1.5.0
+  [458c3c95] + OpenSSL_jll v1.1.1+6
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.10.1
+  [d96e819e] + Parameters v0.12.1
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [08abe8d2] + PrettyTables v0.10.1
+  [1fd47b50] + QuadGK v2.4.1
+  [c84ed2f1] + Ratios v0.4.0
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [731186ca] + RecursiveArrayTools v2.10.0
+  [f2c3362d] + RecursiveFactorization v0.1.0
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [efcf1570] + Setfield v0.7.0
+  [8e980c4a] + Shapefile v0.6.2
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [856f2bd8] + StructTypes v1.2.1
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [a2a6695c] + TreeViews v0.3.0
+  [5c2747f8] + URIs v1.1.0
+  [3a884ed6] + UnPack v1.0.2
+  [1986cc42] + Unitful v1.5.0
+  [42071c24] + UnitfulRecipes v1.0.1
+  [ea10d353] + WeakRefStrings v0.6.2
+  [efce3f68] + WoodburyMatrices v0.5.3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [700de1a5] + ZygoteRules v0.2.1
+  [8e850ede] + nghttp2_jll v1.40.0+2
+  [3f19e933] + p7zip_jll v16.2.0+3
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building DataDeps → `~/.julia/packages/DataDeps/jrlAW/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T22:51:39.095
+#
+
+    Testing AIBECS
+┌ Error: Pkg.Resolve.ResolverError("Unsatisfiable requirements detected for package WorldOceanAtlasTools [04f20302]:\n WorldOceanAtlasTools [04f20302] log:\n ├─possible versions are: [0.2.0-0.2.4, 0.3.0-0.3.5, 0.4.0-0.4.3] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.2.0-0.2.4, 0.3.0-0.3.5, 0.4.0-0.4.3]\n └─restricted by compatibility requirements with NCDatasets [85f8d34a] to versions: uninstalled — no versions left\n   └─NCDatasets [85f8d34a] log:\n     ├─possible versions are: [0.3.0-0.3.2, 0.4.0, 0.5.0-0.5.1, 0.6.0, 0.7.0, 0.8.0, 0.9.0-0.9.5, 0.10.0-0.10.4, 0.11.0-0.11.1] or uninstalled\n     └─restricted to versions 0.11.1 by an explicit requirement, leaving only versions 0.11.1", nothing)
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1427
+Status `/tmp/jl_PfbHM9/Project.toml`
+  [ace601d6] AIBECS v0.8.3
+  [fbb218c0] BSON v0.2.6
+  [76274a88] Bijectors v0.8.13
+  [124859b0] DataDeps v0.7.6
+  [a93c6f00] DataFrames v0.22.2
+  [2b5f629d] DiffEqBase v6.53.4
+  [b4f34e82] Distances v0.10.0
+  [31c24e10] Distributions v0.24.10
+  [fa6b7ba4] DualNumbers v0.6.3
+  [bf96fef3] FieldMetadata v0.3.1
+  [4c728ea3] Flatten v0.4.0
+  [f6369f11] ForwardDiff v0.10.14
+  [a98d9a8b] Interpolations v0.13.1
+  [49441bc9] MetadataArrays v0.1.0
+  [85f8d34a] NCDatasets v0.10.4
+  [b8a86587] NearestNeighbors v0.4.8
+  [cfe838f4] OceanGrids v0.3.3
+  [91a5bcdd] Plots v1.10.1
+  [3cdcf5f2] RecipesBase v1.1.1
+  [189a3867] Reexport v0.2.0
+  [8e980c4a] Shapefile v0.6.2
+  [3a884ed6] UnPack v1.0.2
+  [1986cc42] Unitful v1.5.0
+  [42071c24] UnitfulRecipes v1.0.1
+  [04f20302] WorldOceanAtlasTools v0.4.3
+  [ade2ca70] Dates
+  [37e2e46d] LinearAlgebra
+  [de0858da] Printf
+  [2f01184e] SparseArrays
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+Status `/tmp/jl_PfbHM9/Manifest.toml`
+  [ace601d6] AIBECS v0.8.3
+  [79e6a3ab] Adapt v2.4.0
+  [dce04be8] ArgCheck v2.1.0
+  [4fba245c] ArrayInterface v2.14.13
+  [56f22d72] Artifacts v1.3.0
+  [13072b0f] AxisAlgorithms v1.0.0
+  [fbb218c0] BSON v0.2.6
+  [76274a88] Bijectors v0.8.13
+  [9e28174c] BinDeps v1.0.2
+  [b99e7846] BinaryProvider v0.5.10
+  [6e34b625] Bzip2_jll v1.0.6+5
+  [179af706] CFTime v0.1.1
+  [83423d85] Cairo_jll v1.16.0+6
+  [49dc2e85] Calculus v0.5.1
+  [324d7699] CategoricalArrays v0.9.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [35d6a980] ColorSchemes v3.10.2
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.6
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [8f4d0f93] Conda v1.5.0
+  [a9693cdc] CondaBinDeps v0.2.0
+  [187b0558] ConstructionBase v1.0.0
+  [d38c429a] Contour v0.5.7
+  [a8cc5b0e] Crayons v4.0.4
+  [75c7ada1] DBFTables v0.2.2
+  [9a962f9c] DataAPI v1.4.0
+  [124859b0] DataDeps v0.7.6
+  [a93c6f00] DataFrames v0.22.2
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [2b5f629d] DiffEqBase v6.53.4
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [b4f34e82] Distances v0.10.0
+  [31c24e10] Distributions v0.24.10
+  [ffbed154] DocStringExtensions v0.8.3
+  [fa6b7ba4] DualNumbers v0.6.3
+  [5ae413db] EarCut_jll v2.1.5+1
+  [2e619515] Expat_jll v2.2.7+6
+  [c87230d0] FFMPEG v0.4.0
+  [b22a6f82] FFMPEG_jll v4.3.1+4
+  [bf96fef3] FieldMetadata v0.3.1
+  [1a297f60] FillArrays v0.10.2
+  [6a86dc24] FiniteDiff v2.7.2
+  [53c48c17] FixedPointNumbers v0.8.4
+  [4c728ea3] Flatten v0.4.0
+  [a3f928ae] Fontconfig_jll v2.13.1+14
+  [59287772] Formatting v0.4.2
+  [f6369f11] ForwardDiff v0.10.14
+  [d7e528f0] FreeType2_jll v2.10.1+5
+  [559328eb] FriBidi_jll v1.0.5+6
+  [069b7b12] FunctionWrappers v1.1.1
+  [0656b61e] GLFW_jll v3.3.2+1
+  [28b8d3ca] GR v0.53.0
+  [d2c73de3] GR_jll v0.53.0+0
+  [cf35fbd7] GeoInterface v0.5.4
+  [5c1252a2] GeometryBasics v0.3.5
+  [78b55507] Gettext_jll v0.20.1+7
+  [7746bdde] Glib_jll v2.59.0+4
+  [42e2da0e] Grisu v1.0.0
+  [cd3eb016] HTTP v0.8.19
+  [83e8ac13] IniFile v0.5.0
+  [a98d9a8b] Interpolations v0.13.1
+  [41ab1584] InvertedIndices v1.0.0
+  [c8e1da08] IterTools v1.3.0
+  [42fd0dbc] IterativeSolvers v0.9.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [aacddb02] JpegTurbo_jll v2.0.1+3
+  [c1c5ebd0] LAME_jll v3.100.0+3
+  [dd4b983a] LZO_jll v2.10.0+3
+  [b964fa9f] LaTeXStrings v1.2.0
+  [2ee39098] LabelledArrays v1.4.0
+  [23fbe1c1] Latexify v0.14.7
+  [dd192d2f] LibVPX_jll v1.9.0+1
+  [e9f186c6] Libffi_jll v3.2.1+4
+  [d4300ac3] Libgcrypt_jll v1.8.5+4
+  [7e76a0d4] Libglvnd_jll v1.3.0+3
+  [7add5ba3] Libgpg_error_jll v1.36.0+3
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [4b2f31a3] Libmount_jll v2.34.0+3
+  [89763e89] Libtiff_jll v4.1.0+2
+  [38a345b3] Libuuid_jll v2.34.0+7
+  [1914dd2f] MacroTools v0.5.6
+  [dbb5928d] MappedArrays v0.3.0
+  [7eb4fadd] Match v1.1.0
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [442fdcdd] Measures v0.3.1
+  [49441bc9] MetadataArrays v0.1.0
+  [e1d29d7a] Missings v0.4.4
+  [46d2c3a1] MuladdMacro v0.2.2
+  [85f8d34a] NCDatasets v0.10.4
+  [872c559c] NNlib v0.7.11
+  [77ba4419] NaNMath v0.3.5
+  [b8a86587] NearestNeighbors v0.4.8
+  [8913a72c] NonlinearSolve v0.3.4
+  [cfe838f4] OceanGrids v0.3.3
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [e7412a2a] Ogg_jll v1.3.4+2
+  [458c3c95] OpenSSL_jll v1.1.1+6
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [91d4177d] Opus_jll v1.3.1+3
+  [bac558e1] OrderedCollections v1.3.2
+  [2f80f16e] PCRE_jll v8.42.0+4
+  [90014a1f] PDMats v0.10.1
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.15
+  [30392449] Pixman_jll v0.40.0+0
+  [ccf2f8ad] PlotThemes v2.0.0
+  [995b91a9] PlotUtils v1.0.10
+  [91a5bcdd] Plots v1.10.1
+  [2dfb63ee] PooledArrays v0.5.3
+  [08abe8d2] PrettyTables v0.10.1
+  [ede63266] Qt_jll v5.15.2+1
+  [1fd47b50] QuadGK v2.4.1
+  [c84ed2f1] Ratios v0.4.0
+  [3cdcf5f2] RecipesBase v1.1.1
+  [01d81517] RecipesPipeline v0.2.1
+  [731186ca] RecursiveArrayTools v2.10.0
+  [f2c3362d] RecursiveFactorization v0.1.0
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [6c6a2e73] Scratch v1.0.3
+  [efcf1570] Setfield v0.7.0
+  [8e980c4a] Shapefile v0.6.2
+  [992d4aef] Showoff v0.3.2
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.2.1
+  [90137ffa] StaticArrays v1.0.1
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [09ab397b] StructArrays v0.4.4
+  [856f2bd8] StructTypes v1.2.1
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [a2a6695c] TreeViews v0.3.0
+  [30578b45] URIParser v0.4.1
+  [3a884ed6] UnPack v1.0.2
+  [1986cc42] Unitful v1.5.0
+  [42071c24] UnitfulRecipes v1.0.1
+  [81def892] VersionParsing v1.2.0
+  [a2964d1f] Wayland_jll v1.17.0+4
+  [2381bf8a] Wayland_protocols_jll v1.18.0+4
+  [ea10d353] WeakRefStrings v0.6.2
+  [efce3f68] WoodburyMatrices v0.5.3
+  [04f20302] WorldOceanAtlasTools v0.4.3
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [aed1982a] XSLT_jll v1.1.33+4
+  [4f6342f7] Xorg_libX11_jll v1.6.9+4
+  [0c0b7dd1] Xorg_libXau_jll v1.0.9+4
+  [935fb764] Xorg_libXcursor_jll v1.2.0+4
+  [a3789734] Xorg_libXdmcp_jll v1.1.3+4
+  [1082639a] Xorg_libXext_jll v1.3.4+4
+  [d091e8ba] Xorg_libXfixes_jll v5.0.3+4
+  [a51aa0fd] Xorg_libXi_jll v1.7.10+4
+  [d1454406] Xorg_libXinerama_jll v1.1.4+4
+  [ec84b674] Xorg_libXrandr_jll v1.5.2+4
+  [ea2f1a96] Xorg_libXrender_jll v0.9.10+4
+  [14d82f49] Xorg_libpthread_stubs_jll v0.1.0+3
+  [c7cfdc94] Xorg_libxcb_jll v1.13.0+3
+  [cc61e674] Xorg_libxkbfile_jll v1.1.0+4
+  [12413925] Xorg_xcb_util_image_jll v0.4.0+1
+  [2def613f] Xorg_xcb_util_jll v0.4.0+1
+  [975044d2] Xorg_xcb_util_keysyms_jll v0.4.0+1
+  [0d47668e] Xorg_xcb_util_renderutil_jll v0.3.9+1
+  [c22f9ab0] Xorg_xcb_util_wm_jll v0.4.1+1
+  [35661453] Xorg_xkbcomp_jll v1.4.2+4
+  [33bec58e] Xorg_xkeyboard_config_jll v2.27.0+4
+  [c5fb5394] Xorg_xtrans_jll v1.4.0+3
+  [83775a58] Zlib_jll v1.2.11+18
+  [3161d3a3] Zstd_jll v1.4.5+2
+  [700de1a5] ZygoteRules v0.2.1
+  [0ac62f75] libass_jll v0.14.0+4
+  [f638f0a6] libfdk_aac_jll v0.1.6+4
+  [b53b4c65] libpng_jll v1.6.37+6
+  [f27f6e37] libvorbis_jll v1.3.6+6
+  [3f19e933] p7zip_jll v16.2.0+3
+  [1270edf5] x264_jll v2020.7.14+2
+  [dfaa095f] x265_jll v3.0.0+3
+  [d8fb68d0] xkbcommon_jll v0.9.1+5
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Error: No writable path exists to save the data. Make sure there exists as writable path in your DataDeps Load Path.
+│ See https://www.oxinabox.net/DataDeps.jl/stable/z10-for-end-users/#The-Load-Path-1
+│ The current load path contains:
+│   cands =
+│    8-element Array{String,1}:
+│     "/home/pkgeval/.julia/datadeps"
+│     "/opt/julia/local/share/julia/datadeps"
+│     "/opt/julia/share/julia/datadeps"
+│     "/home/pkgeval/datadeps"
+│     "/scratch/datadeps"
+│     "/staging/datadeps"
+│     "/usr/share/datadeps"
+│     "/usr/local/share/datadeps"
+└ @ DataDeps /home/pkgeval/.julia/packages/DataDeps/jrlAW/src/locations.jl:116
+OCIM1: Error During Test at /home/user/.julia/packages/AIBECS/Urx6G/test/runtests.jl:22
+  Got exception outside of a @test
+  LoadError: DataDeps.NoValidPathError("No writable path exists to save the data.")
+  Stacktrace:
+   [1] determine_save_path(::String, ::String) at /home/pkgeval/.julia/packages/DataDeps/jrlAW/src/locations.jl:121
+   [2] handle_missing at /home/pkgeval/.julia/packages/DataDeps/jrlAW/src/resolution_automatic.jl:9 [inlined]
+   [3] _resolve(::DataDeps.DataDep{String,String,typeof(AIBECS.OCIM1.fallback_download),typeof(identity)}, ::String) at /home/pkgeval/.julia/packages/DataDeps/jrlAW/src/resolution.jl:83
+   [4] resolve(::DataDeps.DataDep{String,String,typeof(AIBECS.OCIM1.fallback_download),typeof(identity)}, ::String, ::String) at /home/pkgeval/.julia/packages/DataDeps/jrlAW/src/resolution.jl:29
+   [5] resolve(::String, ::String, ::String) at /home/pkgeval/.julia/packages/DataDeps/jrlAW/src/resolution.jl:54
+   [6] resolve at /home/pkgeval/.julia/packages/DataDeps/jrlAW/src/resolution.jl:73 [inlined]
+   [7] load(; version::String) at /home/pkgeval/.julia/packages/AIBECS/Urx6G/src/OCIM1.jl:75
+   [8] load() at /home/pkgeval/.julia/packages/AIBECS/Urx6G/src/OCIM1.jl:74
+   [9] top-level scope at /home/user/.julia/packages/AIBECS/Urx6G/test/setup.jl:3
+   [10] include(::String) at ./client.jl:457
+   [11] macro expansion at /home/user/.julia/packages/AIBECS/Urx6G/test/runtests.jl:24 [inlined]
+   [12] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [13] macro expansion at /home/user/.julia/packages/AIBECS/Urx6G/test/runtests.jl:23 [inlined]
+   [14] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1190 [inlined]
+   [15] top-level scope at /home/user/.julia/packages/AIBECS/Urx6G/test/runtests.jl:0
+   [16] include(::String) at ./client.jl:457
+   [17] top-level scope at none:6
+   [18] eval(::Module, ::Any) at ./boot.jl:331
+   [19] exec_options(::Base.JLOptions) at ./client.jl:272
+   [20] _start() at ./client.jl:506
+  in expression starting at /home/user/.julia/packages/AIBECS/Urx6G/test/setup.jl:3
+  
+Test Summary:      | Error  Total
+test setup.jl only |     1      1
+  OCIM1            |     1      1
+Test Summary:      | Error  Total
+test setup.jl only |     1      1
+  OCIM1            |     1      1
+ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/user/.julia/packages/AIBECS/Urx6G/test/runtests.jl:21
+caused by [exception 1]
+Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+
+PkgEval failed: Package AIBECS errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:54:47.183
+CPU usage: 200.73s (183.18s user, 17.85s kernel)
+
+Network usage:
+- eth0: 176.803 MiB received, 1.529 MiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":35,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":21,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":35,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":35,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":21,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":35,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":245760,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":188416,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":245760,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":245760,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":188416,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":245760,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":1285197824,"max_usage":2881507328,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":330596352,"inactive_file":135168,"inactive_anon":533237760,"total_pgfault":6128793,"total_cache":895410176,"total_rss_huge":0,"total_active_anon":692871168,"total_pgmajfault":0,"pgpgin":3942477,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":811008,"total_unevictable":0,"total_dirty":811008,"writeback":0,"pgpgout":3643132,"hierarchical_memsw_limit":0,"cache":895410176,"active_file":135168,"pgfault":6128793,"total_mapped_file":0,"total_pgpgout":3643132,"total_writeback":0,"rss":330596352,"unevictable":0,"total_inactive_anon":533237760,"total_pgpgin":3942477,"active_anon":692871168,"total_active_file":135168},"limit":540965302272},"name":"/AIBECS-zg1TAcaq","networks":{"eth0":{"rx_bytes":185390908,"rx_packets":25365,"tx_packets":18405,"tx_bytes":1602857,"tx_dropped":0,"rx_dropped":7,"tx_errors":0,"rx_errors":0}},"id":"260c16c2ff4e12764c2aaa2b8bc74685b2fe60e8d318efdabd2d36948b9eb3ca","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6619200774522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":183180000000,"usage_in_kernelmode":17850000000,"total_usage":200730482970,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3692692,1895331,0,200721209506,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5340,0,3680101,0,0,0,0,0]}},"read":"2021-01-11T22:54:47.725394054Z"}

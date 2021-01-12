@@ -1,0 +1,81 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:13:38.171
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:13:39.748
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed WoodburyMatrices ─ v0.5.3
+  Installed AxisAlgorithms ─── v1.0.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [13072b0f] + AxisAlgorithms v1.0.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [13072b0f] + AxisAlgorithms v1.0.0
+  [efce3f68] + WoodburyMatrices v0.5.3
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+
+
+################################################################################
+# Testing: 2021-01-11T15:13:59.079
+#
+
+    Testing AxisAlgorithms
+Status `/tmp/jl_XSuWwQ/Project.toml`
+  [13072b0f] AxisAlgorithms v1.0.0
+  [efce3f68] WoodburyMatrices v0.5.3
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_XSuWwQ/Manifest.toml`
+  [13072b0f] AxisAlgorithms v1.0.0
+  [efce3f68] WoodburyMatrices v0.5.3
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+    Testing AxisAlgorithms tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:14:12.973
+CPU usage: 28.93s (17.38s user, 11.74s kernel)
+
+Network usage:
+- eth0: 2.556 MiB received, 34.141 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":611,"op":"Read","minor":0},{"major":259,"value":1592,"op":"Write","minor":0},{"major":259,"value":2198,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":2203,"op":"Total","minor":0},{"major":253,"value":611,"op":"Read","minor":2},{"major":253,"value":1592,"op":"Write","minor":2},{"major":253,"value":2198,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":2203,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":2502656,"op":"Read","minor":0},{"major":259,"value":6549504,"op":"Write","minor":0},{"major":259,"value":9031680,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":9052160,"op":"Total","minor":0},{"major":253,"value":2502656,"op":"Read","minor":2},{"major":253,"value":6549504,"op":"Write","minor":2},{"major":253,"value":9031680,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":9052160,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":349102080,"max_usage":731824128,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":218333184,"inactive_file":405504,"inactive_anon":78802944,"total_pgfault":432696,"total_cache":99741696,"total_rss_huge":0,"total_active_anon":219242496,"total_pgmajfault":0,"pgpgin":249216,"rss_huge":0,"mapped_file":0,"total_inactive_file":405504,"dirty":1081344,"total_unevictable":0,"total_dirty":1081344,"writeback":0,"pgpgout":171548,"hierarchical_memsw_limit":0,"cache":99741696,"active_file":19869696,"pgfault":432696,"total_mapped_file":0,"total_pgpgout":171548,"total_writeback":0,"rss":218333184,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":249216,"active_anon":219242496,"total_active_file":19869696},"limit":540965302272},"name":"/AxisAlgorithms-BtCF1AsH","networks":{"eth0":{"rx_bytes":2680462,"rx_packets":380,"tx_packets":351,"tx_bytes":34960,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"0e3c0b4fa702df2795d2fc6d50bdf6150a7da9d810ae3ca5a1e5ee67ba864cd8","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3088027674522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":17380000000,"usage_in_kernelmode":11740000000,"total_usage":28929210971,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28928938431,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,272540,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:14:13.715529121Z"}

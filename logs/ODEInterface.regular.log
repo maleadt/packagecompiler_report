@@ -1,0 +1,106 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:21:39.697
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:21:41.551
+#
+
+ Installing known registries into `~/.julia`
+###############################################################           87.5%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ODEInterface ─ v0.4.8
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [54ca160b] + ODEInterface v0.4.8
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [54ca160b] + ODEInterface v0.4.8
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [d6f4376e] + Markdown
+  [de0858da] + Printf
+  [4ec0a83e] + Unicode
+   Building ODEInterface → `~/.julia/packages/ODEInterface/lvq2F/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T20:21:55.464
+#
+
+    Testing ODEInterface
+Status `/tmp/jl_aW9h1R/Project.toml`
+  [54ca160b] ODEInterface v0.4.8
+  [ade2ca70] Dates
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [d6f4376e] Markdown
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Status `/tmp/jl_aW9h1R/Manifest.toml`
+  [54ca160b] ODEInterface v0.4.8
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+Banded        |   27     27
+Test Summary: | Pass  Total
+Options       |    9      9
+Test Summary: | Pass  Total
+DLSolvers     |  250    250
+Test Summary: | Pass  Total
+solvers       |   72     72
+Test Summary: | Pass  Total
+mas-solvers   |   32     32
+Test Summary: | Pass  Total
+jac-solvers   |   40     40
+Test Summary: | Pass  Total
+rhs_dt-sol.   |    2      2
+Test Summary: | Pass  Total
+odecall       |   36     36
+Test Summary: | Pass  Total
+bvpsol        |    6      6
+Test Summary: | Pass  Total
+colnew        |    2      2
+Test Summary: | Pass  Total
+bvpm2         |    4      4
+    Testing ODEInterface tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:23:22.101
+CPU usage: 102.29s (98.25s user, 4.20s kernel)
+
+Network usage:
+- eth0: 9.671 MiB received, 57.527 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":3,"op":"Read","minor":0},{"major":259,"value":100,"op":"Write","minor":0},{"major":259,"value":22,"op":"Sync","minor":0},{"major":259,"value":81,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":103,"op":"Total","minor":0},{"major":253,"value":3,"op":"Read","minor":2},{"major":253,"value":68,"op":"Write","minor":2},{"major":253,"value":22,"op":"Sync","minor":2},{"major":253,"value":49,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":71,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":393216,"op":"Read","minor":0},{"major":259,"value":6672384,"op":"Write","minor":0},{"major":259,"value":499712,"op":"Sync","minor":0},{"major":259,"value":6565888,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":7065600,"op":"Total","minor":0},{"major":253,"value":393216,"op":"Read","minor":2},{"major":253,"value":6672384,"op":"Write","minor":2},{"major":253,"value":499712,"op":"Sync","minor":2},{"major":253,"value":6565888,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":7065600,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":346923008,"max_usage":694837248,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":216883200,"inactive_file":405504,"inactive_anon":92725248,"total_pgfault":1071477,"total_cache":100651008,"total_rss_huge":0,"total_active_anon":224514048,"total_pgmajfault":0,"pgpgin":600468,"rss_huge":0,"mapped_file":0,"total_inactive_file":405504,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":135168,"pgpgout":522936,"hierarchical_memsw_limit":0,"cache":100651008,"active_file":135168,"pgfault":1071477,"total_mapped_file":0,"total_pgpgout":522936,"total_writeback":135168,"rss":216883200,"unevictable":0,"total_inactive_anon":92725248,"total_pgpgin":600468,"active_anon":224514048,"total_active_file":135168},"limit":540965302272},"name":"/ODEInterface-XXBmjIvg","networks":{"eth0":{"rx_bytes":10141032,"rx_packets":836,"tx_packets":747,"tx_bytes":58908,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"261ae2e59d1e658fc6218a568aefab4c4b255fb666797e4c72f4a3ace9f9263d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5458497534522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":98250000000,"usage_in_kernelmode":4200000000,"total_usage":102286227076,"percpu_usage":[0,0,0,0,0,0,0,0,0,102286222536,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4540,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:23:22.28184632Z"}

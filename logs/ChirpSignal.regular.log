@@ -1,0 +1,81 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:50:15.811
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:50:17.609
+#
+
+ Installing known registries into `~/.julia`
+#############################                                             41.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ChirpSignal ─ v0.1.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [f60141a0] + ChirpSignal v0.1.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [f60141a0] + ChirpSignal v0.1.2
+
+
+################################################################################
+# Testing: 2021-01-11T15:50:21.52
+#
+
+    Testing ChirpSignal
+Status `/tmp/jl_Ros3LQ/Project.toml`
+  [f60141a0] ChirpSignal v0.1.2
+Status `/tmp/jl_Ros3LQ/Manifest.toml`
+  [f60141a0] ChirpSignal v0.1.2
+ERROR: LoadError: ArgumentError: Package Test not found in current path:
+- Run `import Pkg; Pkg.add("Test")` to install the Test package.
+
+Stacktrace:
+ [1] require(::Module, ::Symbol) at ./loading.jl:893
+ [2] include(::String) at ./client.jl:457
+ [3] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/ChirpSignal/k6NTI/test/runtests.jl:1
+
+PkgEval failed: Package ChirpSignal errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:50:25.951
+CPU usage: 10.16s (7.56s user, 2.63s kernel)
+
+Network usage:
+- eth0: 3.299 MiB received, 33.195 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":350,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":369,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":374,"op":"Total","minor":0},{"major":253,"value":350,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":369,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":374,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":1433600,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":1540096,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1560576,"op":"Total","minor":0},{"major":253,"value":1433600,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":1540096,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1560576,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":321040384,"max_usage":501780480,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":188923904,"inactive_file":270336,"inactive_anon":79478784,"total_pgfault":243045,"total_cache":100397056,"total_rss_huge":0,"total_active_anon":189370368,"total_pgmajfault":0,"pgpgin":165594,"rss_huge":0,"mapped_file":0,"total_inactive_file":270336,"dirty":20275200,"total_unevictable":0,"total_dirty":20275200,"writeback":0,"pgpgout":94960,"hierarchical_memsw_limit":0,"cache":100397056,"active_file":20140032,"pgfault":243045,"total_mapped_file":0,"total_pgpgout":94960,"total_writeback":0,"rss":188923904,"unevictable":0,"total_inactive_anon":79478784,"total_pgpgin":165594,"active_anon":189370368,"total_active_file":20140032},"limit":540965302272},"name":"/ChirpSignal-bh0hlNer","networks":{"eth0":{"rx_bytes":3459165,"rx_packets":394,"tx_packets":373,"tx_bytes":33992,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"f155525bed1a4887b6f7c1b0c3acac2e428b3ec57ab69d7ad4debdc962e56e05","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3365479764522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":7560000000,"usage_in_kernelmode":2630000000,"total_usage":10155472363,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10155469883,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2480,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:50:25.953407299Z"}

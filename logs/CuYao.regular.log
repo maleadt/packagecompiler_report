@@ -1,0 +1,336 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:56:58.098
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:56:59.86
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed CuYao ──────────────────────── v0.2.7
+  Installed Reexport ───────────────────── v0.2.0
+  Installed Scratch ────────────────────── v1.0.3
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed CEnum ──────────────────────── v0.4.1
+  Installed GPUArrays ──────────────────── v6.2.0
+  Installed Yao ────────────────────────── v0.6.3
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed LLVM ───────────────────────── v3.5.2
+  Installed CacheServers ───────────────── v0.2.0
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed TimerOutputs ───────────────── v0.5.7
+  Installed Requires ───────────────────── v1.1.2
+  Installed LuxurySparse ───────────────── v0.6.6
+  Installed DataStructures ─────────────── v0.18.8
+  Installed YaoSym ─────────────────────── v0.4.6
+  Installed CUDA ───────────────────────── v2.4.0
+  Installed YaoAPI ─────────────────────── v0.1.0
+  Installed SimpleTraits ───────────────── v0.9.3
+  Installed YaoArrayRegister ───────────── v0.7.4
+  Installed Missings ───────────────────── v0.4.4
+  Installed TupleTools ─────────────────── v1.2.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed BitBasis ───────────────────── v0.7.0
+  Installed StaticArrays ───────────────── v0.12.5
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed MLStyle ────────────────────── v0.4.6
+  Installed LegibleLambdas ─────────────── v0.2.0
+  Installed BFloat16s ──────────────────── v0.1.0
+  Installed AbstractFFTs ───────────────── v0.5.0
+  Installed Adapt ──────────────────────── v3.0.0
+  Installed YaoBase ────────────────────── v0.14.1
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed ExprTools ──────────────────── v0.1.3
+  Installed YaoBlocks ──────────────────── v0.11.1
+  Installed Compat ─────────────────────── v3.25.0
+  Installed ExponentialUtilities ───────── v1.8.0
+  Installed NNlib ──────────────────────── v0.7.11
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed GPUCompiler ────────────────── v0.8.3
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [b48ca7a8] + CuYao v0.2.7
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [621f4979] + AbstractFFTs v0.5.0
+  [79e6a3ab] + Adapt v3.0.0
+  [56f22d72] + Artifacts v1.3.0
+  [ab4f0b2a] + BFloat16s v0.1.0
+  [50ba71b6] + BitBasis v0.7.0
+  [fa961155] + CEnum v0.4.1
+  [052768ef] + CUDA v2.4.0
+  [a921213e] + CacheServers v0.2.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [b48ca7a8] + CuYao v0.2.7
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [d4d017d3] + ExponentialUtilities v1.8.0
+  [e2ba6199] + ExprTools v0.1.3
+  [0c68f7d7] + GPUArrays v6.2.0
+  [61eb1bfa] + GPUCompiler v0.8.3
+  [692b3bcd] + JLLWrappers v1.2.0
+  [929cbde3] + LLVM v3.5.2
+  [f1f30506] + LegibleLambdas v0.2.0
+  [d05aeea4] + LuxurySparse v0.6.6
+  [d8e11817] + MLStyle v0.4.6
+  [1914dd2f] + MacroTools v0.5.6
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [872c559c] + NNlib v0.7.11
+  [bac558e1] + OrderedCollections v1.3.2
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [6c6a2e73] + Scratch v1.0.3
+  [699a6c99] + SimpleTraits v0.9.3
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [90137ffa] + StaticArrays v0.12.5
+  [2913bbd2] + StatsBase v0.33.2
+  [a759f4b9] + TimerOutputs v0.5.7
+  [9d95972d] + TupleTools v1.2.0
+  [5872b779] + Yao v0.6.3
+  [0843a435] + YaoAPI v0.1.0
+  [e600142f] + YaoArrayRegister v0.7.4
+  [a8f54c17] + YaoBase v0.14.1
+  [418bc28f] + YaoBlocks v0.11.1
+  [3b27209a] + YaoSym v0.4.6
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T18:57:07.588
+#
+
+    Testing CuYao
+Status `/tmp/jl_pTUc5Q/Project.toml`
+  [50ba71b6] BitBasis v0.7.0
+  [052768ef] CUDA v2.4.0
+  [b48ca7a8] CuYao v0.2.7
+  [d05aeea4] LuxurySparse v0.6.6
+  [189a3867] Reexport v0.2.0
+  [90137ffa] StaticArrays v0.12.5
+  [2913bbd2] StatsBase v0.33.2
+  [9d95972d] TupleTools v1.2.0
+  [5872b779] Yao v0.6.3
+  [418bc28f] YaoBlocks v0.11.1
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_pTUc5Q/Manifest.toml`
+  [621f4979] AbstractFFTs v0.5.0
+  [79e6a3ab] Adapt v3.0.0
+  [56f22d72] Artifacts v1.3.0
+  [ab4f0b2a] BFloat16s v0.1.0
+  [50ba71b6] BitBasis v0.7.0
+  [fa961155] CEnum v0.4.1
+  [052768ef] CUDA v2.4.0
+  [a921213e] CacheServers v0.2.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [b48ca7a8] CuYao v0.2.7
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [d4d017d3] ExponentialUtilities v1.8.0
+  [e2ba6199] ExprTools v0.1.3
+  [0c68f7d7] GPUArrays v6.2.0
+  [61eb1bfa] GPUCompiler v0.8.3
+  [692b3bcd] JLLWrappers v1.2.0
+  [929cbde3] LLVM v3.5.2
+  [f1f30506] LegibleLambdas v0.2.0
+  [d05aeea4] LuxurySparse v0.6.6
+  [d8e11817] MLStyle v0.4.6
+  [1914dd2f] MacroTools v0.5.6
+  [e1d29d7a] Missings v0.4.4
+  [46d2c3a1] MuladdMacro v0.2.2
+  [872c559c] NNlib v0.7.11
+  [bac558e1] OrderedCollections v1.3.2
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [6c6a2e73] Scratch v1.0.3
+  [699a6c99] SimpleTraits v0.9.3
+  [a2af1166] SortingAlgorithms v0.3.1
+  [90137ffa] StaticArrays v0.12.5
+  [2913bbd2] StatsBase v0.33.2
+  [a759f4b9] TimerOutputs v0.5.7
+  [9d95972d] TupleTools v1.2.0
+  [5872b779] Yao v0.6.3
+  [0843a435] YaoAPI v0.1.0
+  [e600142f] YaoArrayRegister v0.7.4
+  [a8f54c17] YaoBase v0.14.1
+  [418bc28f] YaoBlocks v0.11.1
+  [3b27209a] YaoSym v0.4.6
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Error: Error during initialization of CUDA.jl
+│   exception =
+│    could not load library "libcuda.so.1"
+│    libcuda.so.1: cannot open shared object file: No such file or directory
+│    Stacktrace:
+│     [1] dlopen(::String, ::UInt32; throw_error::Bool) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Libdl/src/Libdl.jl:109
+│     [2] dlopen at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Libdl/src/Libdl.jl:109 [inlined] (repeats 2 times)
+│     [3] (::CUDA.var"#2967#cache_fptr!#619")() at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/utils/call.jl:31
+│     [4] macro expansion at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/utils/call.jl:39 [inlined]
+│     [5] __configure__() at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/initialization.jl:89
+│     [6] macro expansion at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/initialization.jl:30 [inlined]
+│     [7] macro expansion at ./lock.jl:183 [inlined]
+│     [8] _functional(::Bool) at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/initialization.jl:26
+│     [9] functional(::Bool) at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/initialization.jl:19
+│     [10] libcuda() at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/initialization.jl:47
+│     [11] (::CUDA.var"#690#cache_fptr!#9")() at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/utils/call.jl:31
+│     [12] macro expansion at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/utils/call.jl:39 [inlined]
+│     [13] macro expansion at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/cudadrv/libcuda.jl:29 [inlined]
+│     [14] macro expansion at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/cudadrv/error.jl:102 [inlined]
+│     [15] cuDeviceGet(::Base.RefValue{Int32}, ::Int64) at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/utils/call.jl:93
+│     [16] CuDevice(::Int64) at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/cudadrv/devices.jl:25
+│     [17] initialize_thread(::Int64) at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/state.jl:121
+│     [18] prepare_cuda_call() at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/state.jl:80
+│     [19] device() at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/state.jl:227
+│     [20] alloc at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/pool.jl:293 [inlined]
+│     [21] CuArray{Complex{Float64},2}(::UndefInitializer, ::Tuple{Int64,Int64}) at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/array.jl:20
+│     [22] CuArray at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/array.jl:190 [inlined]
+│     [23] CuArray(::Array{Complex{Float64},2}) at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/array.jl:198
+│     [24] top-level scope at /home/pkgeval/.julia/packages/CuYao/XroFh/test/CUDApatch.jl:7
+│     [25] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+│     [26] top-level scope at /home/pkgeval/.julia/packages/CuYao/XroFh/test/CUDApatch.jl:7
+│     [27] include(::String) at ./client.jl:457
+│     [28] top-level scope at /home/pkgeval/.julia/packages/CuYao/XroFh/test/runtests.jl:3
+│     [29] include(::String) at ./client.jl:457
+│     [30] top-level scope at none:6
+│     [31] eval(::Module, ::Any) at ./boot.jl:331
+│     [32] exec_options(::Base.JLOptions) at ./client.jl:272
+│     [33] _start() at ./client.jl:506
+└ @ CUDA ~/.julia/packages/CUDA/FlHUF/src/initialization.jl:34
+isapprox-complex: Error During Test at /home/pkgeval/.julia/packages/CuYao/XroFh/test/CUDApatch.jl:6
+  Got exception outside of a @test
+  CUDA.jl did not successfully initialize, and is not usable.
+  If you did not see any other error message, try again in a new session
+  with the JULIA_DEBUG environment variable set to 'CUDA'.
+  Stacktrace:
+   [1] error(::String) at ./error.jl:33
+   [2] libcuda() at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/initialization.jl:48
+   [3] (::CUDA.var"#690#cache_fptr!#9")() at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/utils/call.jl:31
+   [4] macro expansion at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/utils/call.jl:39 [inlined]
+   [5] macro expansion at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/cudadrv/libcuda.jl:29 [inlined]
+   [6] macro expansion at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/cudadrv/error.jl:102 [inlined]
+   [7] cuDeviceGet(::Base.RefValue{Int32}, ::Int64) at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/utils/call.jl:93
+   [8] CuDevice(::Int64) at /home/pkgeval/.julia/packages/CUDA/FlHUF/lib/cudadrv/devices.jl:25
+   [9] initialize_thread(::Int64) at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/state.jl:121
+   [10] prepare_cuda_call() at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/state.jl:80
+   [11] device() at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/state.jl:227
+   [12] alloc at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/pool.jl:293 [inlined]
+   [13] CuArray{Complex{Float64},2}(::UndefInitializer, ::Tuple{Int64,Int64}) at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/array.jl:20
+   [14] CuArray at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/array.jl:190 [inlined]
+   [15] CuArray(::Array{Complex{Float64},2}) at /home/pkgeval/.julia/packages/CUDA/FlHUF/src/array.jl:198
+   [16] top-level scope at /home/pkgeval/.julia/packages/CuYao/XroFh/test/CUDApatch.jl:7
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/pkgeval/.julia/packages/CuYao/XroFh/test/CUDApatch.jl:7
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at /home/pkgeval/.julia/packages/CuYao/XroFh/test/runtests.jl:3
+   [21] include(::String) at ./client.jl:457
+   [22] top-level scope at none:6
+   [23] eval(::Module, ::Any) at ./boot.jl:331
+   [24] exec_options(::Base.JLOptions) at ./client.jl:272
+   [25] _start() at ./client.jl:506
+  
+Test Summary:    | Error  Total
+isapprox-complex |     1      1
+ERROR: LoadError: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/CuYao/XroFh/test/CUDApatch.jl:6
+in expression starting at /home/pkgeval/.julia/packages/CuYao/XroFh/test/runtests.jl:3
+
+PkgEval failed: Package CuYao errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:00:09.772
+CPU usage: 191.50s (181.09s user, 10.62s kernel)
+
+Network usage:
+- eth0: 6.401 MiB received, 234.844 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":3,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":22,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":27,"op":"Total","minor":0},{"major":253,"value":3,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":22,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":27,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":233472,"op":"Read","minor":0},{"major":259,"value":143360,"op":"Write","minor":0},{"major":259,"value":339968,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":376832,"op":"Total","minor":0},{"major":253,"value":233472,"op":"Read","minor":2},{"major":253,"value":143360,"op":"Write","minor":2},{"major":253,"value":339968,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":376832,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":388071424,"max_usage":1670455296,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":232001536,"inactive_file":270336,"inactive_anon":86642688,"total_pgfault":4409196,"total_cache":123756544,"total_rss_huge":0,"total_active_anon":268984320,"total_pgmajfault":0,"pgpgin":2865984,"rss_huge":0,"mapped_file":0,"total_inactive_file":270336,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":2779113,"hierarchical_memsw_limit":0,"cache":123756544,"active_file":135168,"pgfault":4409196,"total_mapped_file":0,"total_pgpgout":2779113,"total_writeback":0,"rss":232001536,"unevictable":0,"total_inactive_anon":86642688,"total_pgpgin":2865984,"active_anon":268984320,"total_active_file":135168},"limit":540965302272},"name":"/CuYao-lQi1viT0","networks":{"eth0":{"rx_bytes":6711571,"rx_packets":1759,"tx_packets":1962,"tx_bytes":240480,"tx_dropped":0,"rx_dropped":7,"tx_errors":0,"rx_errors":0}},"id":"5f772ef5b116e08bffa8b509c834e34911a81a857563837c1e554ba92093f6f4","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4820260534522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":181090000000,"usage_in_kernelmode":10620000000,"total_usage":191501449865,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,191499316964,2132901,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:00:09.775713669Z"}

@@ -1,0 +1,180 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:53:32.612
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:53:34.444
+#
+
+ Installing known registries into `~/.julia`
+########                                                                  12.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed SGP4 ─────────── v1.0.0
+  Installed MacroTools ───── v0.5.6
+  Installed Conda ────────── v1.5.0
+  Installed PyCall ───────── v1.92.2
+  Installed JSON ─────────── v0.21.1
+  Installed VersionParsing ─ v1.2.0
+  Installed Parsers ──────── v1.0.15
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [60da9cfa] + SGP4 v1.0.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [8f4d0f93] + Conda v1.5.0
+  [682c06a0] + JSON v0.21.1
+  [1914dd2f] + MacroTools v0.5.6
+  [69de0a69] + Parsers v1.0.15
+  [438e738f] + PyCall v1.92.2
+  [60da9cfa] + SGP4 v1.0.0
+  [81def892] + VersionParsing v1.2.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [4ec0a83e] + Unicode
+   Building Conda ─→ `~/.julia/packages/Conda/x5ml4/deps/build.log`
+   Building PyCall → `~/.julia/packages/PyCall/tqyST/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T20:54:12.221
+#
+
+    Testing SGP4
+Status `/tmp/jl_h64CTQ/Project.toml`
+  [438e738f] PyCall v1.92.2
+  [60da9cfa] SGP4 v1.0.0
+  [ade2ca70] Dates
+  [8dfed614] Test
+Status `/tmp/jl_h64CTQ/Manifest.toml`
+  [8f4d0f93] Conda v1.5.0
+  [682c06a0] JSON v0.21.1
+  [1914dd2f] MacroTools v0.5.6
+  [69de0a69] Parsers v1.0.15
+  [438e738f] PyCall v1.92.2
+  [60da9cfa] SGP4 v1.0.0
+  [81def892] VersionParsing v1.2.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+[ Info: Installing sgp4.io via the Conda sgp4 package...
+[ Info: Running `conda config --add channels conda-forge --file /home/pkgeval/.julia/conda/3/condarc-julia.yml --force` in root environment
+[ Info: Running `conda install -q -y sgp4` in root environment
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/pkgeval/.julia/conda/3
+
+  added / updated specs:
+    - sgp4
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ca-certificates-2020.12.5  |       ha878542_0         137 KB  conda-forge
+    certifi-2020.12.5          |   py38h578d9bd_1         143 KB  conda-forge
+    conda-4.9.2                |   py38h578d9bd_0         3.0 MB  conda-forge
+    python_abi-3.8             |           1_cp38           4 KB  conda-forge
+    sgp4-2.10                  |     pyh6957fcd_0         128 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:         3.5 MB
+
+The following NEW packages will be INSTALLED:
+
+  python_abi         conda-forge/linux-64::python_abi-3.8-1_cp38
+  sgp4               conda-forge/noarch::sgp4-2.10-pyh6957fcd_0
+
+The following packages will be UPDATED:
+
+  certifi            pkgs/main::certifi-2020.12.5-py38h06a~ --> conda-forge::certifi-2020.12.5-py38h578d9bd_1
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  ca-certificates    pkgs/main::ca-certificates-2020.12.8-~ --> conda-forge::ca-certificates-2020.12.5-ha878542_0
+  conda               pkgs/main::conda-4.9.2-py38h06a4308_0 --> conda-forge::conda-4.9.2-py38h578d9bd_0
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o."s"` instead of `o["s"]`.
+│   caller = GravityModel at SGP4.jl:35 [inlined]
+└ @ Core ~/.julia/packages/SGP4/un9JP/src/SGP4.jl:35
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o."s"` instead of `o["s"]`.
+│   caller = twoline2rv(::String, ::String, ::SGP4.GravityModel) at SGP4.jl:39
+└ @ SGP4 ~/.julia/packages/SGP4/un9JP/src/SGP4.jl:39
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = getindex at SGP4.jl:33 [inlined]
+└ @ Core ~/.julia/packages/SGP4/un9JP/src/SGP4.jl:33
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = propagate(::SGP4.SGP4Sat, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Float64) at SGP4.jl:76
+└ @ SGP4 ~/.julia/packages/SGP4/un9JP/src/SGP4.jl:76
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = propagate(::SGP4.SGP4Sat, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Float64) at SGP4.jl:79
+└ @ SGP4 ~/.julia/packages/SGP4/un9JP/src/SGP4.jl:79
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o."s"` instead of `o["s"]`.
+│   caller = sgp4(::SGP4.SGP4Sat, ::Float64) at SGP4.jl:44
+└ @ SGP4 ~/.julia/packages/SGP4/un9JP/src/SGP4.jl:44
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = propagate(::SGP4.SGP4Sat, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64) at SGP4.jl:76
+└ @ SGP4 ~/.julia/packages/SGP4/un9JP/src/SGP4.jl:76
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = propagate(::SGP4.SGP4Sat, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64, ::Int64) at SGP4.jl:79
+└ @ SGP4 ~/.julia/packages/SGP4/un9JP/src/SGP4.jl:79
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = getindex at SGP4.jl:33 [inlined]
+└ @ Core ~/.julia/packages/SGP4/un9JP/src/SGP4.jl:33
+    Testing SGP4 tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:54:44.026
+CPU usage: 69.85s (61.98s user, 7.97s kernel)
+
+Network usage:
+- eth0: 255.626 MiB received, 783.076 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":34,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":15,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":34,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":34,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":15,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":34,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":167936,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":61440,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":167936,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":167936,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":61440,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":167936,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":1934667776,"max_usage":2466856960,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":184463360,"inactive_file":135168,"inactive_anon":1250439168,"total_pgfault":1749528,"total_cache":1695309824,"total_rss_huge":0,"total_active_anon":629342208,"total_pgmajfault":0,"pgpgin":1637790,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":1178871,"hierarchical_memsw_limit":0,"cache":1695309824,"active_file":135168,"pgfault":1749528,"total_mapped_file":0,"total_pgpgout":1178871,"total_writeback":0,"rss":184463360,"unevictable":0,"total_inactive_anon":1250439168,"total_pgpgin":1637790,"active_anon":629342208,"total_active_file":135168},"limit":540965302272},"name":"/SGP4-n3fap3Fi","networks":{"eth0":{"rx_bytes":268043298,"rx_packets":24477,"tx_packets":13905,"tx_bytes":801870,"tx_dropped":0,"rx_dropped":3,"tx_errors":0,"rx_errors":0}},"id":"5930f538594cd709751ecbb1621351f5a700d095be843f98ffe8a3ce0b262fa6","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5698946364522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":61980000000,"usage_in_kernelmode":7970000000,"total_usage":69846592326,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1194891,69845397435,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:54:44.360271843Z"}

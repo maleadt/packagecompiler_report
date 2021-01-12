@@ -1,0 +1,109 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:53:28.92
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:53:30.7
+#
+
+ Installing known registries into `~/.julia`
+##################################################################        92.6%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Adapt ────────── v2.4.0
+  Installed Requires ─────── v1.1.2
+  Installed PaddedViews ──── v0.5.7
+  Installed OffsetArrays ─── v1.5.0
+  Installed NumNN ────────── v0.5.3
+  Installed ProgressMeter ── v1.4.1
+  Installed NNlib ────────── v0.6.6
+  Installed BinaryProvider ─ v0.5.10
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [10f4d809] + NumNN v0.5.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [79e6a3ab] + Adapt v2.4.0
+  [b99e7846] + BinaryProvider v0.5.10
+  [872c559c] + NNlib v0.6.6
+  [10f4d809] + NumNN v0.5.3
+  [6fe1bfb0] + OffsetArrays v1.5.0
+  [5432bcbf] + PaddedViews v0.5.7
+  [92933f4c] + ProgressMeter v1.4.1
+  [ae029012] + Requires v1.1.2
+  [8ba89e20] + Distributed
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building NNlib → `~/.julia/packages/NNlib/FAI3o/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T19:53:42.176
+#
+
+    Testing NumNN
+Status `/tmp/jl_HgMomU/Project.toml`
+  [10f4d809] NumNN v0.5.3
+  [8dfed614] Test
+Status `/tmp/jl_HgMomU/Manifest.toml`
+  [79e6a3ab] Adapt v2.4.0
+  [b99e7846] BinaryProvider v0.5.10
+  [872c559c] NNlib v0.6.6
+  [10f4d809] NumNN v0.5.3
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [5432bcbf] PaddedViews v0.5.7
+  [92933f4c] ProgressMeter v1.4.1
+  [ae029012] Requires v1.1.2
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+    Testing NumNN tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:53:44.206
+CPU usage: 15.42s (12.77s user, 2.69s kernel)
+
+Network usage:
+- eth0: 2.840 MiB received, 61.677 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":143360,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":143360,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":143360,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":143360,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":298668032,"max_usage":666513408,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":187211776,"inactive_file":135168,"inactive_anon":79749120,"total_pgfault":391050,"total_cache":81772544,"total_rss_huge":0,"total_active_anon":189370368,"total_pgmajfault":0,"pgpgin":270204,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":204523,"hierarchical_memsw_limit":0,"cache":81772544,"active_file":135168,"pgfault":391050,"total_mapped_file":0,"total_pgpgout":204523,"total_writeback":0,"rss":187211776,"unevictable":0,"total_inactive_anon":79749120,"total_pgpgin":270204,"active_anon":189370368,"total_active_file":135168},"limit":540965302272},"name":"/NumNN-yCO8AcdA","networks":{"eth0":{"rx_bytes":2978366,"rx_packets":507,"tx_packets":558,"tx_bytes":63157,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"46edcf9506d3bdb8ed91e8226121d277022000b37d0fa1d82518736c0e6162ea","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5231253844522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":12770000000,"usage_in_kernelmode":2690000000,"total_usage":15415130837,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15415130837,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:53:44.711296366Z"}

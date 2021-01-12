@@ -1,0 +1,165 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:47:56.887
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:47:58.704
+#
+
+ Installing known registries into `~/.julia`
+###########################                                               37.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Requires ─────── v1.1.2
+  Installed Reexport ─────── v1.0.0
+  Installed ChainRulesCore ─ v0.9.24
+  Installed ChainRules ───── v0.7.45
+  Installed Compat ───────── v3.25.0
+  Installed MuladdMacro ──── v0.2.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [082447d4] + ChainRules v0.7.45
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [082447d4] + ChainRules v0.7.45
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [34da2185] + Compat v3.25.0
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [189a3867] + Reexport v1.0.0
+  [ae029012] + Requires v1.1.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T21:48:04.037
+#
+
+    Testing ChainRules
+Status `/tmp/jl_VKIahQ/Project.toml`
+  [082447d4] ChainRules v0.7.45
+  [d360d2e6] ChainRulesCore v0.9.24
+  [cdddcdb0] ChainRulesTestUtils v0.5.10
+  [34da2185] Compat v3.25.0
+  [26cc04aa] FiniteDifferences v0.11.7
+  [77ba4419] NaNMath v0.3.5
+  [189a3867] Reexport v1.0.0
+  [ae029012] Requires v1.1.2
+  [276daf66] SpecialFunctions v1.2.1
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_VKIahQ/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [082447d4] ChainRules v0.7.45
+  [d360d2e6] ChainRulesCore v0.9.24
+  [cdddcdb0] ChainRulesTestUtils v0.5.10
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [26cc04aa] FiniteDifferences v0.11.7
+  [692b3bcd] JLLWrappers v1.2.0
+  [46d2c3a1] MuladdMacro v0.2.2
+  [77ba4419] NaNMath v0.3.5
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [189a3867] Reexport v1.0.0
+  [ae029012] Requires v1.1.2
+  [708f8203] Richardson v1.4.0
+  [276daf66] SpecialFunctions v1.2.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+WARNING: ignoring conflicting import of FiniteDifferences.rand_tangent into Main
+Testing ChainRules.jl
+Testing rulesets/Base/base.jl:	 92.571675 seconds (146.70 M allocations: 7.122 GiB, 3.64% gc time)
+Testing rulesets/Base/fastmath_able.jl:	116.439086 seconds (174.01 M allocations: 8.510 GiB, 3.54% gc time)
+Testing rulesets/Base/evalpoly.jl:	 31.681861 seconds (49.32 M allocations: 2.496 GiB, 3.15% gc time)
+Testing rulesets/Base/array.jl:	  6.258442 seconds (10.26 M allocations: 519.813 MiB, 3.61% gc time)
+Testing rulesets/Base/arraymath.jl:	140.931946 seconds (251.34 M allocations: 12.517 GiB, 4.85% gc time)
+Testing rulesets/Base/indexing.jl:	 15.960981 seconds (20.71 M allocations: 1.037 GiB, 3.63% gc time)
+Testing rulesets/Base/mapreduce.jl:	 35.103686 seconds (52.23 M allocations: 2.628 GiB, 4.07% gc time)
+
+Testing rulesets/Statistics/statistics.jl:	  1.297902 seconds (1.88 M allocations: 96.435 MiB, 6.19% gc time)
+
+Testing rulesets/LinearAlgebra/dense.jl:	 61.937670 seconds (87.91 M allocations: 4.368 GiB, 3.84% gc time)
+Testing rulesets/LinearAlgebra/norm.jl:	 80.333099 seconds (103.29 M allocations: 5.177 GiB, 3.77% gc time)
+Testing rulesets/LinearAlgebra/structured.jl:	 49.593710 seconds (70.09 M allocations: 3.506 GiB, 3.47% gc time)
+Testing rulesets/LinearAlgebra/symmetric.jl:	 48.806595 seconds (80.57 M allocations: 6.181 GiB, 6.46% gc time)
+Testing rulesets/LinearAlgebra/factorization.jl:	 28.454075 seconds (40.98 M allocations: 2.942 GiB, 6.40% gc time)
+Testing rulesets/LinearAlgebra/blas.jl:	 38.618348 seconds (84.00 M allocations: 6.678 GiB, 8.44% gc time)
+
+Testing rulesets/Random/random.jl:	  0.999211 seconds (804.54 k allocations: 43.883 MiB, 6.66% gc time)
+
+Testing rulesets/packages/NaNMath.jl:	  0.000126 seconds (89 allocations: 5.594 KiB)
+
+Test Summary: |  Pass  Total
+ChainRules    | 19351  19351
+    Testing ChainRules tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:01:03.929
+CPU usage: 786.05s (776.54s user, 10.63s kernel)
+
+Network usage:
+- eth0: 3.051 MiB received, 94.448 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":131072,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":24576,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":131072,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":131072,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":24576,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":131072,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":302018560,"max_usage":1884037120,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":186126336,"inactive_file":135168,"inactive_anon":80154624,"total_pgfault":5183937,"total_cache":85868544,"total_rss_huge":0,"total_active_anon":191938560,"total_pgmajfault":0,"pgpgin":2405469,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":2339059,"hierarchical_memsw_limit":0,"cache":85868544,"active_file":135168,"pgfault":5183937,"total_mapped_file":0,"total_pgpgout":2339059,"total_writeback":0,"rss":186126336,"unevictable":0,"total_inactive_anon":80154624,"total_pgpgin":2405469,"active_anon":191938560,"total_active_file":135168},"limit":540965302272},"name":"/ChainRules-Gws6wJXU","networks":{"eth0":{"rx_bytes":3199542,"rx_packets":1043,"tx_packets":810,"tx_bytes":96715,"tx_dropped":0,"rx_dropped":27,"tx_errors":0,"rx_errors":0}},"id":"2b080e251b7c28aa4cc361fc393ab4edd9a13a4d162790e08b1370591bb9a8cd","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6207304714522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":776540000000,"usage_in_kernelmode":10630000000,"total_usage":786048853109,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,786045721797,2262781,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2780,865751,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:01:03.931658899Z"}

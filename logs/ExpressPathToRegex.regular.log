@@ -1,0 +1,94 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:37:14.201
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:37:16.259
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ExpressPathToRegex ─ v0.1.0
+  Installed Parsers ──────────── v1.0.15
+  Installed URIParser ────────── v0.4.1
+  Installed JSON ─────────────── v0.21.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [22609570] + ExpressPathToRegex v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [22609570] + ExpressPathToRegex v0.1.0
+  [682c06a0] + JSON v0.21.1
+  [69de0a69] + Parsers v1.0.15
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T18:37:21.891
+#
+
+    Testing ExpressPathToRegex
+Status `/tmp/jl_g5NRi0/Project.toml`
+  [22609570] ExpressPathToRegex v0.1.0
+  [682c06a0] JSON v0.21.1
+  [30578b45] URIParser v0.4.1
+  [8dfed614] Test
+Status `/tmp/jl_g5NRi0/Manifest.toml`
+  [22609570] ExpressPathToRegex v0.1.0
+  [682c06a0] JSON v0.21.1
+  [69de0a69] Parsers v1.0.15
+  [30578b45] URIParser v0.4.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+    Testing ExpressPathToRegex tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:37:34.529
+CPU usage: 19.61s (15.50s user, 4.05s kernel)
+
+Network usage:
+- eth0: 2.658 MiB received, 40.927 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":7122,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":7141,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":7146,"op":"Total","minor":0},{"major":253,"value":7122,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":7141,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":7146,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":29863936,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":29970432,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":29990912,"op":"Total","minor":0},{"major":253,"value":29863936,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":29970432,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":29990912,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":344154112,"max_usage":846921728,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":33,"total_rss":225288192,"inactive_file":81920,"inactive_anon":173305856,"total_pgfault":507507,"total_cache":85520384,"total_rss_huge":0,"total_active_anon":136736768,"total_pgmajfault":33,"pgpgin":494637,"rss_huge":0,"mapped_file":270336,"total_inactive_file":81920,"dirty":540672,"total_unevictable":0,"total_dirty":540672,"writeback":0,"pgpgout":418782,"hierarchical_memsw_limit":0,"cache":85520384,"active_file":483328,"pgfault":507507,"total_mapped_file":270336,"total_pgpgout":418782,"total_writeback":0,"rss":225288192,"unevictable":0,"total_inactive_anon":173305856,"total_pgpgin":494637,"active_anon":136736768,"total_active_file":483328},"limit":540965302272},"name":"/ExpressPathToRegex-OTedbroT","networks":{"eth0":{"rx_bytes":2786682,"rx_packets":374,"tx_packets":383,"tx_bytes":41909,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"dfb3eb9a28726c6e5875ef99ee7e0a929e8b370b5dbbd5c5032c96369f64aed6","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4647049904522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":15500000000,"usage_in_kernelmode":4050000000,"total_usage":19606423861,"percpu_usage":[0,0,0,0,0,0,0,19606420221,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3640,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:37:34.532712935Z"}

@@ -1,0 +1,94 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:15:10.644
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:15:12.442
+#
+
+ Installing known registries into `~/.julia`
+#######                                                                   10.7%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CoordinateTransformations ─ v0.6.1
+  Installed Geodesy ─────────────────── v1.0.1
+  Installed StaticArrays ────────────── v1.0.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [0ef565a4] + Geodesy v1.0.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [150eb455] + CoordinateTransformations v0.6.1
+  [0ef565a4] + Geodesy v1.0.1
+  [90137ffa] + StaticArrays v1.0.1
+  [ade2ca70] + Dates
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T23:15:16.94
+#
+
+    Testing Geodesy
+Status `/tmp/jl_My7eaS/Project.toml`
+  [150eb455] CoordinateTransformations v0.6.1
+  [0ef565a4] Geodesy v1.0.1
+  [90137ffa] StaticArrays v1.0.1
+  [ade2ca70] Dates
+  [37e2e46d] LinearAlgebra
+  [8dfed614] Test
+Status `/tmp/jl_My7eaS/Manifest.toml`
+  [150eb455] CoordinateTransformations v0.6.1
+  [0ef565a4] Geodesy v1.0.1
+  [90137ffa] StaticArrays v1.0.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Test Summary: |  Pass  Total
+Geodesy       | 30299  30299
+    Testing Geodesy tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:15:40.646
+CPU usage: 29.98s (26.81s user, 3.21s kernel)
+
+Network usage:
+- eth0: 2.992 MiB received, 40.457 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":329641984,"max_usage":1005371392,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":217235456,"inactive_file":135168,"inactive_anon":79749120,"total_pgfault":781077,"total_cache":82718720,"total_rss_huge":0,"total_active_anon":220323840,"total_pgmajfault":0,"pgpgin":526251,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":135168,"pgpgout":453020,"hierarchical_memsw_limit":0,"cache":82718720,"active_file":135168,"pgfault":781077,"total_mapped_file":0,"total_pgpgout":453020,"total_writeback":135168,"rss":217235456,"unevictable":0,"total_inactive_anon":79749120,"total_pgpgin":526251,"active_anon":220323840,"total_active_file":135168},"limit":540965302272},"name":"/Geodesy-Nl9bEaAN","networks":{"eth0":{"rx_bytes":3137158,"rx_packets":432,"tx_packets":412,"tx_bytes":41428,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"2bbb8497c8a31ddb5e7a325ea3e9ccbc3b8edd7cce573614c6b385a282e8234a","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6779473464522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":26810000000,"usage_in_kernelmode":3210000000,"total_usage":29982967342,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29982967342,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:15:41.547173552Z"}

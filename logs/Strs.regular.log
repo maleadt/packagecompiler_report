@@ -1,0 +1,715 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:30:45.711
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:30:47.537
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed StrAPI ─────────────── v1.0.0
+  Installed MurmurHash3 ────────── v1.1.1
+  Installed Zlib_jll ───────────── v1.2.11+18
+  Installed CharSetEncodings ───── v1.0.0
+  Installed Strs ───────────────── v1.0.3
+  Installed StrBase ────────────── v1.0.4
+  Installed StrTables ──────────── v1.0.1
+  Installed Format ─────────────── v1.3.0
+  Installed PCRE2 ──────────────── v1.0.2
+  Installed Libiconv_jll ───────── v1.16.0+7
+  Installed StrEntities ────────── v1.0.0
+  Installed XML2_jll ───────────── v2.9.10+3
+  Installed Unicode_Entities ───── v1.1.0
+  Installed HTML_Entities ──────── v1.0.0
+  Installed StrLiterals ────────── v1.0.0
+  Installed LaTeX_Entities ─────── v1.0.1
+  Installed InternedStrings ────── v0.7.0
+  Installed JLLWrappers ────────── v1.2.0
+  Installed LightXML ───────────── v0.9.0
+  Installed Artifacts ──────────── v1.3.0
+  Installed StrFormat ──────────── v1.0.0
+  Installed StrRegex ───────────── v1.0.2
+  Installed ChrBase ────────────── v1.0.2
+  Installed Emoji_Entities ─────── v1.0.1
+  Installed BinaryProvider ─────── v0.5.10
+  Installed ModuleInterfaceTools ─ v1.0.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [7bddbee9] + Strs v1.0.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [b99e7846] + BinaryProvider v0.5.10
+  [cb9422de] + CharSetEncodings v1.0.0
+  [c13fa7b1] + ChrBase v1.0.2
+  [fd8f23de] + Emoji_Entities v1.0.1
+  [1fa38f19] + Format v1.3.0
+  [7693890a] + HTML_Entities v1.0.0
+  [7d512f48] + InternedStrings v0.7.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9927f19a] + LaTeX_Entities v1.0.1
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [9c8b4983] + LightXML v0.9.0
+  [5cb8414e] + ModuleInterfaceTools v1.0.1
+  [b10b62ed] + MurmurHash3 v1.1.1
+  [c9310f65] + PCRE2 v1.0.2
+  [69e7dfc3] + StrAPI v1.0.0
+  [e79e7a6a] + StrBase v1.0.4
+  [42b7a45b] + StrEntities v1.0.0
+  [b5087856] + StrFormat v1.0.0
+  [68059f60] + StrLiterals v1.0.0
+  [2267b70d] + StrRegex v1.0.2
+  [9700d1a9] + StrTables v1.0.1
+  [7bddbee9] + Strs v1.0.3
+  [a8aa15d3] + Unicode_Entities v1.1.0
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building PCRE2 ───────────→ `~/.julia/packages/PCRE2/fIxtF/deps/build.log`
+   Building Unicode_Entities → `~/.julia/packages/Unicode_Entities/w1kAW/deps/build.log`
+   Building LaTeX_Entities ──→ `~/.julia/packages/LaTeX_Entities/vkcFh/deps/build.log`
+   Building HTML_Entities ───→ `~/.julia/packages/HTML_Entities/g4t7p/deps/build.log`
+   Building Emoji_Entities ──→ `~/.julia/packages/Emoji_Entities/qRCWW/deps/build.log`
+┌ Error: Error building `Emoji_Entities`: 
+│ ERROR: LoadError: ArgumentError: Package JSON not found in current path:
+│ - Run `import Pkg; Pkg.add("JSON")` to install the JSON package.
+│ 
+│ Stacktrace:
+│  [1] require(::Module, ::Symbol) at ./loading.jl:893
+│  [2] include(::String) at ./client.jl:457
+│  [3] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/Emoji_Entities/qRCWW/deps/build.jl:1
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+
+
+################################################################################
+# Testing: 2021-01-11T20:31:11.967
+#
+
+    Testing Strs
+Status `/tmp/jl_wX83dS/Project.toml`
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [c13fa7b1] ChrBase v1.0.2
+  [fd8f23de] Emoji_Entities v1.0.1
+  [1fa38f19] Format v1.3.0
+  [7693890a] HTML_Entities v1.0.0
+  [7d512f48] InternedStrings v0.7.0
+  [9927f19a] LaTeX_Entities v1.0.1
+  [5cb8414e] ModuleInterfaceTools v1.0.1
+  [b10b62ed] MurmurHash3 v1.1.1
+  [c9310f65] PCRE2 v1.0.2
+  [69e7dfc3] StrAPI v1.0.0
+  [e79e7a6a] StrBase v1.0.4
+  [42b7a45b] StrEntities v1.0.0
+  [b5087856] StrFormat v1.0.0
+  [68059f60] StrLiterals v1.0.0
+  [2267b70d] StrRegex v1.0.2
+  [9700d1a9] StrTables v1.0.1
+  [7bddbee9] Strs v1.0.3
+  [a8aa15d3] Unicode_Entities v1.1.0
+  [3fa0cd96] REPL
+  [9e88b42a] Serialization
+  [8dfed614] Test
+Status `/tmp/jl_wX83dS/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [b99e7846] BinaryProvider v0.5.10
+  [cb9422de] CharSetEncodings v1.0.0
+  [c13fa7b1] ChrBase v1.0.2
+  [fd8f23de] Emoji_Entities v1.0.1
+  [1fa38f19] Format v1.3.0
+  [7693890a] HTML_Entities v1.0.0
+  [7d512f48] InternedStrings v0.7.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [9927f19a] LaTeX_Entities v1.0.1
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [9c8b4983] LightXML v0.9.0
+  [5cb8414e] ModuleInterfaceTools v1.0.1
+  [b10b62ed] MurmurHash3 v1.1.1
+  [c9310f65] PCRE2 v1.0.2
+  [69de0a69] Parsers v1.0.15
+  [69e7dfc3] StrAPI v1.0.0
+  [e79e7a6a] StrBase v1.0.4
+  [42b7a45b] StrEntities v1.0.0
+  [b5087856] StrFormat v1.0.0
+  [68059f60] StrLiterals v1.0.0
+  [2267b70d] StrRegex v1.0.2
+  [9700d1a9] StrTables v1.0.1
+  [7bddbee9] Strs v1.0.3
+  [a8aa15d3] Unicode_Entities v1.1.0
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Saved to: /home/pkgeval/gutenberg/English.txt
+Saved to: /home/pkgeval/gutenberg/English-1.txt
+Saved to: /home/pkgeval/gutenberg/Hungarian.txt
+Saved to: /home/pkgeval/gutenberg/Polish.txt
+Saved to: /home/pkgeval/gutenberg/Japanese.txt
+Saved to: /home/pkgeval/gutenberg/Chinese.txt
+Saved to: /home/pkgeval/gutenberg/Telugu.txt
+Saved to: /home/pkgeval/gutenberg/French.txt
+Saved to: /home/pkgeval/gutenberg/Portuguese.txt
+Saved to: /home/pkgeval/gutenberg/Spanish.txt
+Saved to: /home/pkgeval/gutenberg/Swedish.txt
+Saved to: /home/pkgeval/gutenberg/German.txt
+  4.335084 seconds (561.70 k allocations: 36.244 MiB, 0.20% gc time)
+Saved English.txt
+Saved English-1.txt
+Saved Hungarian.txt
+Saved Polish.txt
+Saved Japanese.txt
+Saved Chinese.txt
+Saved Telugu.txt
+Saved French.txt
+Saved Portuguese.txt
+Saved Spanish.txt
+Saved Swedish.txt
+Saved German.txt
+  0.078439 seconds (221.95 k allocations: 7.460 MiB)
+Checking Chinese.txt:
+UTF8Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+Test Summary:        | Pass  Total
+   CodeUnits: UInt32 |    1      1
+Test Summary:        | Pass  Total
+       Lines: sizeof |    1      1
+UTF16Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UTF32Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UniStr
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UCS2Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+Checking English-1.txt:
+UTF8Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+Test Summary:        | Pass  Total
+   CodeUnits: UInt32 |    1      1
+Test Summary:        | Pass  Total
+       Lines: sizeof |    1      1
+UTF16Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UTF32Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UniStr
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UCS2Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+Checking English.txt:
+UTF8Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+Test Summary:        | Pass  Total
+   CodeUnits: UInt32 |    1      1
+Test Summary:        | Pass  Total
+       Lines: sizeof |    1      1
+UTF16Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UTF32Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UniStr
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UCS2Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+Checking French.txt:
+UTF8Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+Test Summary:        | Pass  Total
+   CodeUnits: UInt32 |    1      1
+Test Summary:        | Pass  Total
+       Lines: sizeof |    1      1
+UTF16Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UTF32Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UniStr
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UCS2Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+Checking German.txt:
+UTF8Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+Test Summary:        | Pass  Total
+   CodeUnits: UInt32 |    1      1
+Test Summary:        | Pass  Total
+       Lines: sizeof |    1      1
+UTF16Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UTF32Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UniStr
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UCS2Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+Checking Hungarian.txt:
+UTF8Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+Test Summary:        | Pass  Total
+   CodeUnits: UInt32 |    1      1
+Test Summary:        | Pass  Total
+       Lines: sizeof |    1      1
+UTF16Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UTF32Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UniStr
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UCS2Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+Checking Japanese.txt:
+UTF8Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+Test Summary:        | Pass  Total
+   CodeUnits: UInt32 |    1      1
+Test Summary:        | Pass  Total
+       Lines: sizeof |    1      1
+UTF16Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UTF32Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UniStr
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UCS2Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+Checking Polish.txt:
+UTF8Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+Test Summary:        | Pass  Total
+   CodeUnits: UInt32 |    1      1
+Test Summary:        | Pass  Total
+       Lines: sizeof |    1      1
+UTF16Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UTF32Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UniStr
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UCS2Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+Checking Portuguese.txt:
+UTF8Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+Test Summary:        | Pass  Total
+   CodeUnits: UInt32 |    1      1
+Test Summary:        | Pass  Total
+       Lines: sizeof |    1      1
+UTF16Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UTF32Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UniStr
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+UCS2Str
+Test Summary:                          | Pass  Total
+       Lines: length, text_width, hash |    3      3
+Test Summary:                    | Pass  Total
+       Lines: is_ascii, is_valid |    2      2
+Test Summary:                               | Pass  Total
+       Lines: lowercase, uppercase, reverse |    3      3
+Test Summary:                                                                                                                      | Pass  Total
+       Chars: is_(ascii|valid|control|lowercase|uppercase|letter|alphanumeric|space|printable|punctuation|graphic|digit|hex_digit) |   13     13
+ERROR: LoadError: Base.InvalidCharError{Char}('\x8b')
+Stacktrace:
+ [1] invalid_char(::Char) at ./char.jl:85
+ [2] UInt32(::Char) at ./char.jl:130
+ [3] codepoint at ./char.jl:77 [inlined]
+ [4] rem at ./char.jl:184 [inlined]
+ [5] calcstats(::Array{String,1}) at /home/pkgeval/.julia/packages/StrBase/3wQxZ/src/stats.jl:57
+ [6] checktests(::Base.PipeEndpoint; dir::Nothing, test::Bool) at /home/pkgeval/.julia/packages/Strs/GI7ee/test/bench.jl:1012
+ [7] top-level scope at ./timing.jl:174
+ [8] include(::String) at ./client.jl:457
+ [9] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/Strs/GI7ee/test/runtests.jl:9
+
+PkgEval failed: Package Strs errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:33:04.815
+CPU usage: 134.75s (120.22s user, 14.73s kernel)
+
+Network usage:
+- eth0: 19.426 MiB received, 364.698 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":4,"op":"Read","minor":0},{"major":259,"value":44,"op":"Write","minor":0},{"major":259,"value":23,"op":"Sync","minor":0},{"major":259,"value":25,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":48,"op":"Total","minor":0},{"major":253,"value":4,"op":"Read","minor":2},{"major":253,"value":44,"op":"Write","minor":2},{"major":253,"value":23,"op":"Sync","minor":2},{"major":253,"value":25,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":48,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":331776,"op":"Read","minor":0},{"major":259,"value":217088,"op":"Write","minor":0},{"major":259,"value":438272,"op":"Sync","minor":0},{"major":259,"value":110592,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":548864,"op":"Total","minor":0},{"major":253,"value":331776,"op":"Read","minor":2},{"major":253,"value":217088,"op":"Write","minor":2},{"major":253,"value":438272,"op":"Sync","minor":2},{"major":253,"value":110592,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":548864,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":376877056,"max_usage":1514434560,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":215973888,"inactive_file":405504,"inactive_anon":88264704,"total_pgfault":6691146,"total_cache":130019328,"total_rss_huge":0,"total_active_anon":257359872,"total_pgmajfault":0,"pgpgin":5645970,"rss_huge":0,"mapped_file":0,"total_inactive_file":405504,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":5561476,"hierarchical_memsw_limit":0,"cache":130019328,"active_file":135168,"pgfault":6691146,"total_mapped_file":0,"total_pgpgout":5561476,"total_writeback":0,"rss":215973888,"unevictable":0,"total_inactive_anon":88264704,"total_pgpgin":5645970,"active_anon":257359872,"total_active_file":135168},"limit":540965302272},"name":"/Strs-tZYfmGrh","networks":{"eth0":{"rx_bytes":20369508,"rx_packets":5745,"tx_packets":4579,"tx_bytes":373451,"tx_dropped":0,"rx_dropped":5,"tx_errors":0,"rx_errors":0}},"id":"59b40acd73a077f63fb982a723212fcec1db990134f18ce1c59141a2d76d0a57","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5532912534522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":120220000000,"usage_in_kernelmode":14730000000,"total_usage":134751251209,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2690602,0,134748560607,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:33:04.817787888Z"}

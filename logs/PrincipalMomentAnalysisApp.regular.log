@@ -1,0 +1,514 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:11:35.795
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:11:37.595
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed IniFile ───────────────────── v0.5.0
+  Installed MbedTLS_jll ───────────────── v2.16.8+1
+  Installed Reexport ──────────────────── v0.2.0
+  Installed TableTraits ───────────────── v1.0.0
+  Installed PrincipalMomentAnalysisApp ── v0.2.5
+  Installed Widgets ───────────────────── v0.6.2
+  Installed Tables ────────────────────── v1.2.2
+  Installed CategoricalArrays ─────────── v0.9.0
+  Installed DataStructures ────────────── v0.18.8
+  Installed Requires ──────────────────── v1.1.2
+  Installed DataFrames ────────────────── v0.22.2
+  Installed FunctionalCollections ─────── v0.5.0
+  Installed MbedTLS ───────────────────── v1.0.3
+  Installed Mustache ──────────────────── v1.0.10
+  Installed Hiccup ────────────────────── v0.2.2
+  Installed DataAPI ───────────────────── v1.4.0
+  Installed IterTools ─────────────────── v1.3.0
+  Installed HTTP ──────────────────────── v0.9.2
+  Installed Observables ───────────────── v0.3.3
+  Installed Blink ─────────────────────── v0.12.3
+  Installed Colors ────────────────────── v0.12.6
+  Installed Lazy ──────────────────────── v0.15.1
+  Installed InvertedIndices ───────────── v1.0.0
+  Installed DataValueInterfaces ───────── v1.0.0
+  Installed Missings ──────────────────── v0.4.4
+  Installed ColorTypes ────────────────── v0.10.9
+  Installed OrderedCollections ────────── v1.3.2
+  Installed StaticArrays ──────────────── v1.0.1
+  Installed WebIO ─────────────────────── v0.8.15
+  Installed PrincipalMomentAnalysis ───── v0.2.2
+  Installed AssetRegistry ─────────────── v0.1.0
+  Installed URIParser ─────────────────── v0.4.1
+  Installed MacroTools ────────────────── v0.5.6
+  Installed PooledArrays ──────────────── v0.5.3
+  Installed JLLWrappers ───────────────── v1.2.0
+  Installed JSON ──────────────────────── v0.21.1
+  Installed Distances ─────────────────── v0.10.0
+  Installed JSExpr ────────────────────── v0.5.2
+  Installed WebSockets ────────────────── v1.5.7
+  Installed Mux ───────────────────────── v0.7.5
+  Installed StructTypes ───────────────── v1.2.1
+  Installed Crayons ───────────────────── v4.0.4
+  Installed FixedPointNumbers ─────────── v0.8.4
+  Installed NearestNeighbors ──────────── v0.4.8
+  Installed CSV ───────────────────────── v0.8.2
+  Installed Formatting ────────────────── v0.4.2
+  Installed URIs ──────────────────────── v1.1.0
+  Installed Pidfile ───────────────────── v1.2.0
+  Installed PrettyTables ──────────────── v0.10.1
+  Installed BinDeps ───────────────────── v1.0.2
+  Installed IteratorInterfaceExtensions ─ v1.0.0
+  Installed SortingAlgorithms ─────────── v0.3.1
+  Installed Compat ────────────────────── v3.25.0
+  Installed SentinelArrays ────────────── v1.2.16
+  Installed LaTeXStrings ──────────────── v1.2.0
+  Installed Parsers ───────────────────── v1.0.15
+  Installed PlotlyBase ────────────────── v0.4.3
+  Installed DocStringExtensions ───────── v0.8.3
+  Installed PlotlyJS ──────────────────── v0.14.0
+  Installed Artifacts ─────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [e56c3062] + PrincipalMomentAnalysisApp v0.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [bf4720bc] + AssetRegistry v0.1.0
+  [9e28174c] + BinDeps v1.0.2
+  [ad839575] + Blink v0.12.3
+  [336ed68f] + CSV v0.8.2
+  [324d7699] + CategoricalArrays v0.9.0
+  [3da002f7] + ColorTypes v0.10.9
+  [5ae59095] + Colors v0.12.6
+  [34da2185] + Compat v3.25.0
+  [a8cc5b0e] + Crayons v4.0.4
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.22.2
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [b4f34e82] + Distances v0.10.0
+  [ffbed154] + DocStringExtensions v0.8.3
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [59287772] + Formatting v0.4.2
+  [de31a74c] + FunctionalCollections v0.5.0
+  [cd3eb016] + HTTP v0.9.2
+  [9fb69e20] + Hiccup v0.2.2
+  [83e8ac13] + IniFile v0.5.0
+  [41ab1584] + InvertedIndices v1.0.0
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [97c1335a] + JSExpr v0.5.2
+  [682c06a0] + JSON v0.21.1
+  [b964fa9f] + LaTeXStrings v1.2.0
+  [50d2b5c4] + Lazy v0.15.1
+  [1914dd2f] + MacroTools v0.5.6
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [e1d29d7a] + Missings v0.4.4
+  [ffc61752] + Mustache v1.0.10
+  [a975b10e] + Mux v0.7.5
+  [b8a86587] + NearestNeighbors v0.4.8
+  [510215fc] + Observables v0.3.3
+  [bac558e1] + OrderedCollections v1.3.2
+  [69de0a69] + Parsers v1.0.15
+  [fa939f87] + Pidfile v1.2.0
+  [a03496cd] + PlotlyBase v0.4.3
+  [f0f68f2c] + PlotlyJS v0.14.0
+  [2dfb63ee] + PooledArrays v0.5.3
+  [08abe8d2] + PrettyTables v0.10.1
+  [6a3ba550] + PrincipalMomentAnalysis v0.2.2
+  [e56c3062] + PrincipalMomentAnalysisApp v0.2.5
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [91c51154] + SentinelArrays v1.2.16
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [90137ffa] + StaticArrays v1.0.1
+  [856f2bd8] + StructTypes v1.2.1
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [30578b45] + URIParser v0.4.1
+  [5c2747f8] + URIs v1.1.0
+  [0f1e0344] + WebIO v0.8.15
+  [104b5d7c] + WebSockets v1.5.7
+  [cc8bc4a8] + Widgets v0.6.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [7b1f6079] + FileWatching
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building WebIO ───→ `~/.julia/packages/WebIO/Fy9h1/deps/build.log`
+   Building Blink ───→ `~/.julia/packages/Blink/u1xcH/deps/build.log`
+   Building PlotlyJS → `~/.julia/packages/PlotlyJS/m2Lzd/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T22:12:07.27
+#
+
+    Testing PrincipalMomentAnalysisApp
+Status `/tmp/jl_ZZHbLT/Project.toml`
+  [ad839575] Blink v0.12.3
+  [336ed68f] CSV v0.8.2
+  [5ae59095] Colors v0.12.6
+  [a93c6f00] DataFrames v0.22.2
+  [864edb3b] DataStructures v0.18.8
+  [c8e1da08] IterTools v1.3.0
+  [97c1335a] JSExpr v0.5.2
+  [f0f68f2c] PlotlyJS v0.14.0
+  [6a3ba550] PrincipalMomentAnalysis v0.2.2
+  [e56c3062] PrincipalMomentAnalysisApp v0.2.5
+  [37e2e46d] LinearAlgebra
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_ZZHbLT/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [bf4720bc] AssetRegistry v0.1.0
+  [9e28174c] BinDeps v1.0.2
+  [ad839575] Blink v0.12.3
+  [336ed68f] CSV v0.8.2
+  [324d7699] CategoricalArrays v0.9.0
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.6
+  [34da2185] Compat v3.25.0
+  [a8cc5b0e] Crayons v4.0.4
+  [9a962f9c] DataAPI v1.4.0
+  [a93c6f00] DataFrames v0.22.2
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [b4f34e82] Distances v0.10.0
+  [ffbed154] DocStringExtensions v0.8.3
+  [53c48c17] FixedPointNumbers v0.8.4
+  [59287772] Formatting v0.4.2
+  [de31a74c] FunctionalCollections v0.5.0
+  [cd3eb016] HTTP v0.9.2
+  [9fb69e20] Hiccup v0.2.2
+  [83e8ac13] IniFile v0.5.0
+  [41ab1584] InvertedIndices v1.0.0
+  [c8e1da08] IterTools v1.3.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [97c1335a] JSExpr v0.5.2
+  [682c06a0] JSON v0.21.1
+  [b964fa9f] LaTeXStrings v1.2.0
+  [50d2b5c4] Lazy v0.15.1
+  [1914dd2f] MacroTools v0.5.6
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [e1d29d7a] Missings v0.4.4
+  [ffc61752] Mustache v1.0.10
+  [a975b10e] Mux v0.7.5
+  [b8a86587] NearestNeighbors v0.4.8
+  [510215fc] Observables v0.3.3
+  [bac558e1] OrderedCollections v1.3.2
+  [69de0a69] Parsers v1.0.15
+  [fa939f87] Pidfile v1.2.0
+  [a03496cd] PlotlyBase v0.4.3
+  [f0f68f2c] PlotlyJS v0.14.0
+  [2dfb63ee] PooledArrays v0.5.3
+  [08abe8d2] PrettyTables v0.10.1
+  [6a3ba550] PrincipalMomentAnalysis v0.2.2
+  [e56c3062] PrincipalMomentAnalysisApp v0.2.5
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [91c51154] SentinelArrays v1.2.16
+  [a2af1166] SortingAlgorithms v0.3.1
+  [90137ffa] StaticArrays v1.0.1
+  [856f2bd8] StructTypes v1.2.1
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [30578b45] URIParser v0.4.1
+  [5c2747f8] URIs v1.1.0
+  [0f1e0344] WebIO v0.8.15
+  [104b5d7c] WebSockets v1.5.7
+  [cc8bc4a8] Widgets v0.6.2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [7b1f6079] FileWatching
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: [Processing] Got message: exit Any[]
+[ Info: [Processing] Exiting thread.
+[ Info: [Processing] Got message: setvalue Any["samplesimplexmethod", "SA"]
+[ Info: [Processing] Got message: setvalue Any["loadrowsassamples", "true"]
+[ Info: [Processing] Got message: setvalue Any["logtransform", "false"]
+[ Info: [Processing] Got message: setvalue Any["logtransformoffset", "1"]
+[ Info: [Processing] Got message: setvalue Any["normalizemethod", "Mean=0"]
+[ Info: [Processing] Got message: setvalue Any["dimreductionmethod", "PMA"]
+[ Info: [Processing] Got message: setvalue Any["knearestneighbors", "0"]
+[ Info: [Processing] Got message: setvalue Any["distnearestneighbors", "0"]
+[ Info: [Processing] Got message: setvalue Any["xaxis", "1"]
+[ Info: [Processing] Got message: setvalue Any["yaxis", "2"]
+[ Info: [Processing] Got message: setvalue Any["zaxis", "3"]
+[ Info: [Processing] Got message: setvalue Any["plotwidth", "1024"]
+[ Info: [Processing] Got message: setvalue Any["plotheight", "768"]
+[ Info: [Processing] Got message: setvalue Any["showpoints", "true"]
+[ Info: [Processing] Got message: setvalue Any["showlines", "true"]
+[ Info: [Processing] Got message: setvalue Any["showtriangles", "false"]
+[ Info: [Processing] Got message: setvalue Any["markersize", "4"]
+[ Info: [Processing] Got message: setvalue Any["linewidth", "1"]
+[ Info: [Processing] Got message: setvalue Any["triangleopacity", "0.05"]
+[ Info: [Processing] Got message: setvalue Any["colorby", "Auto"]
+[ Info: [Processing] Got message: setvalue Any["exportmode", "Variables"]
+[ Info: [Processing] Got message: setvalue Any["exportsingledim", "1"]
+[ Info: [Processing] Got message: setvalue Any["exportsinglesort", "Abs"]
+[ Info: [Processing] Got message: setvalue Any["exportmultipledim", "3"]
+[ Info: [Processing] Got message: exit Any[]
+[ Info: [Processing] Got message: setvalue Any["samplesimplexmethod", "SA"]
+[ Info: [Processing] Got message: setvalue Any["loadrowsassamples", "true"]
+[ Info: [Processing] Got message: setvalue Any["logtransform", "false"]
+[ Info: [Processing] Got message: setvalue Any["logtransformoffset", "1"]
+[ Info: [Processing] Got message: setvalue Any["normalizemethod", "Mean=0"]
+[ Info: [Processing] Got message: setvalue Any["dimreductionmethod", "PMA"]
+[ Info: [Processing] Got message: setvalue Any["knearestneighbors", "0"]
+[ Info: [Processing] Got message: setvalue Any["distnearestneighbors", "0"]
+[ Info: [Processing] Got message: setvalue Any["xaxis", "1"]
+[ Info: [Processing] Got message: setvalue Any["yaxis", "2"]
+[ Info: [Processing] Got message: setvalue Any["zaxis", "3"]
+[ Info: [Processing] Got message: setvalue Any["plotwidth", "1024"]
+[ Info: [Processing] Got message: setvalue Any["plotheight", "768"]
+[ Info: [Processing] Got message: setvalue Any["showpoints", "true"]
+[ Info: [Processing] Got message: setvalue Any["showlines", "true"]
+[ Info: [Processing] Got message: setvalue Any["showtriangles", "false"]
+[ Info: [Processing] Got message: setvalue Any["markersize", "4"]
+[ Info: [Processing] Got message: setvalue Any["linewidth", "1"]
+[ Info: [Processing] Got message: setvalue Any["triangleopacity", "0.05"]
+[ Info: [Processing] Got message: setvalue Any["colorby", "Auto"]
+[ Info: [Processing] Got message: setvalue Any["exportmode", "Variables"]
+[ Info: [Processing] Got message: setvalue Any["exportsingledim", "1"]
+[ Info: [Processing] Got message: setvalue Any["exportsinglesort", "Abs"]
+[ Info: [Processing] Got message: setvalue Any["exportmultipledim", "3"]
+[ Info: [Processing] Got message: setvalue Any["samplefilepath", "/home/pkgeval/.julia/packages/PrincipalMomentAnalysisApp/YliWq/test/data/data.tsv"]
+[ Info: [Processing] Got message: setvalue Any["lastsampleannot", "Time"]
+[ Info: [Processing] Got message: loadsample Any[]
+[ Info: loadsample waiting for 0 jobs to finish.
+[ Info: Spawning loadsample (3@133)
+[ Info: Running loadsample (3@133) with 2 parameter(s) in thread 1.
+┌ Warning: `use_mmap` keyword argument is deprecated and will be removed in the next release
+│   caller = CSV.File(::String; header::Int64, normalizenames::Bool, datarow::Int64, skipto::Nothing, footerskip::Int64, transpose::Bool, comment::Nothing, use_mmap::Bool, ignoreemptylines::Bool, select::Nothing, drop::Nothing, missingstrings::Array{String,1}, missingstring::String, delim::Char, ignorerepeated::Bool, quotechar::Char, openquotechar::Nothing, closequotechar::Nothing, escapechar::Char, dateformat::Nothing, dateformats::Nothing, decimal::UInt8, truestrings::Array{String,1}, falsestrings::Array{String,1}, type::Nothing, types::Nothing, typemap::Dict{Type,Type}, pool::Float64, lazystrings::Bool, strict::Bool, silencewarnings::Bool, debug::Bool, parsingdebug::Bool, kw::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:threaded,),Tuple{Bool}}}) at file.jl:217
+└ @ CSV ~/.julia/packages/CSV/la2cd/src/file.jl:217
+[ Info: Finished running loadsample[14.2s] (3@133) in thread 1.
+[ Info: [Processing] Got message: setvalue Any["samplesimplexmethod", "SA"]
+[ Info: [Processing] Got message: setvalue Any["sampleannot", "Group"]
+[ Info: [Processing] Got message: dimreduction Any[]
+[ Info: normalizesample waiting for 0 jobs to finish.
+[ Info: setupsimplices waiting for 1 jobs to finish.
+[ Info: dimreduction waiting for 2 jobs to finish.
+[ Info: Spawning normalizesample (8@135)
+[ Info: Running normalizesample (8@135) with 5 parameter(s) in thread 1.
+[ Info: Finished running normalizesample[0.5s] (8@135) in thread 1.
+[ Info: Spawning setupsimplices (14@138)
+[ Info: Running setupsimplices (14@138) with 6 parameter(s) in thread 1.
+[ Info: Finished running setupsimplices[0.3s] (14@138) in thread 1.
+[ Info: Spawning dimreduction (16@138)
+[ Info: Running dimreduction (16@138) with 3 parameter(s) in thread 1.
+[ Info: Finished running dimreduction[2.7s] (16@138) in thread 1.
+[ Info: [Processing] Got message: setvalue Any["samplesimplexmethod", "Time"]
+[ Info: [Processing] Got message: setvalue Any["sampleannot", "Group"]
+[ Info: [Processing] Got message: setvalue Any["timeannot", "Time"]
+[ Info: [Processing] Got message: dimreduction Any[]
+[ Info: setupsimplices waiting for 0 jobs to finish.
+[ Info: dimreduction waiting for 1 jobs to finish.
+[ Info: Spawning setupsimplices (14@143)
+[ Info: Running setupsimplices (14@143) with 6 parameter(s) in thread 1.
+[ Info: Finished running setupsimplices[1.0s] (14@143) in thread 1.
+[ Info: Spawning dimreduction (16@143)
+[ Info: Running dimreduction (16@143) with 3 parameter(s) in thread 1.
+[ Info: Finished running dimreduction[0.0s] (16@143) in thread 1.
+[ Info: [Processing] Got message: setvalue Any["samplesimplexmethod", "NN"]
+[ Info: [Processing] Got message: setvalue Any["knearestneighbors", "2"]
+[ Info: [Processing] Got message: setvalue Any["distnearestneighbors", "0.5"]
+[ Info: [Processing] Got message: dimreduction Any[]
+[ Info: setupsimplices waiting for 0 jobs to finish.
+[ Info: dimreduction waiting for 1 jobs to finish.
+[ Info: Spawning setupsimplices (14@149)
+[ Info: Running setupsimplices (14@149) with 6 parameter(s) in thread 1.
+[ Info: Finished running setupsimplices[2.8s] (14@149) in thread 1.
+[ Info: Spawning dimreduction (16@149)
+[ Info: Running dimreduction (16@149) with 3 parameter(s) in thread 1.
+[ Info: Finished running dimreduction[0.2s] (16@149) in thread 1.
+[ Info: [Processing] Got message: setvalue Any["samplesimplexmethod", "NNSA"]
+[ Info: [Processing] Got message: setvalue Any["sampleannot", "Group"]
+[ Info: [Processing] Got message: setvalue Any["knearestneighbors", "2"]
+[ Info: [Processing] Got message: setvalue Any["distnearestneighbors", "0.5"]
+[ Info: [Processing] Got message: dimreduction Any[]
+[ Info: setupsimplices waiting for 0 jobs to finish.
+[ Info: dimreduction waiting for 1 jobs to finish.
+[ Info: Spawning setupsimplices (14@151)
+[ Info: Running setupsimplices (14@151) with 6 parameter(s) in thread 1.
+[ Info: Finished running setupsimplices[0.4s] (14@151) in thread 1.
+[ Info: Spawning dimreduction (16@151)
+[ Info: Running dimreduction (16@151) with 3 parameter(s) in thread 1.
+[ Info: Finished running dimreduction[0.0s] (16@151) in thread 1.
+[ Info: [Processing] Got message: setvalue Any["exportsingledim", "1"]
+[ Info: [Processing] Got message: setvalue Any["exportsinglesort", "Abs"]
+[ Info: [Processing] Got message: setvalue Any["exportmode", "Samples"]
+[ Info: [Processing] Got message: setvalue Any["exportsinglepath", "/tmp/jl_Osu4Z7/PMA1_Samples_Abs.tsv"]
+[ Info: [Processing] Got message: exportsingle Any[]
+[ Info: exportsingle waiting for 0 jobs to finish.
+[ Info: Spawning exportsingle (37@160)
+[ Info: Running exportsingle (37@160) with 5 parameter(s) in thread 1.
+[ Info: Finished running exportsingle[1.0s] (37@160) in thread 1.
+[ Info: [Processing] Got message: setvalue Any["exportsingledim", "3"]
+[ Info: [Processing] Got message: setvalue Any["exportsinglesort", "Descending"]
+[ Info: [Processing] Got message: setvalue Any["exportmode", "Variables"]
+[ Info: [Processing] Got message: setvalue Any["exportsinglepath", "/tmp/jl_Osu4Z7/PMA3_Variables_Descending.tsv"]
+[ Info: [Processing] Got message: exportsingle Any[]
+[ Info: exportsingle waiting for 0 jobs to finish.
+[ Info: Spawning exportsingle (37@168)
+[ Info: Running exportsingle (37@168) with 5 parameter(s) in thread 1.
+[ Info: Finished running exportsingle[0.4s] (37@168) in thread 1.
+[ Info: [Processing] Got message: setvalue Any["exportsingledim", "7"]
+[ Info: [Processing] Got message: setvalue Any["exportsinglesort", "Ascending"]
+[ Info: [Processing] Got message: setvalue Any["exportmode", "Samples"]
+[ Info: [Processing] Got message: setvalue Any["exportsinglepath", "/tmp/jl_Osu4Z7/PMA7_Samples_Ascending.tsv"]
+[ Info: [Processing] Got message: exportsingle Any[]
+[ Info: exportsingle waiting for 0 jobs to finish.
+[ Info: Spawning exportsingle (37@176)
+[ Info: Running exportsingle (37@176) with 5 parameter(s) in thread 1.
+[ Info: Finished running exportsingle[0.2s] (37@176) in thread 1.
+[ Info: [Processing] Got message: setvalue Any["exportsingledim", "10"]
+[ Info: [Processing] Got message: setvalue Any["exportsinglesort", "Original"]
+[ Info: [Processing] Got message: setvalue Any["exportmode", "Variables"]
+[ Info: [Processing] Got message: setvalue Any["exportsinglepath", "/tmp/jl_Osu4Z7/PMA10_Variables_Original.tsv"]
+[ Info: [Processing] Got message: exportsingle Any[]
+[ Info: exportsingle waiting for 0 jobs to finish.
+[ Info: Spawning exportsingle (37@184)
+[ Info: Running exportsingle (37@184) with 5 parameter(s) in thread 1.
+[ Info: Finished running exportsingle[0.1s] (37@184) in thread 1.
+[ Info: [Processing] Got message: setvalue Any["exportmultipledim", "4"]
+[ Info: [Processing] Got message: setvalue Any["exportmode", "Samples"]
+[ Info: [Processing] Got message: setvalue Any["exportmultiplepath", "/tmp/jl_Osu4Z7/PMA4_Samples.csv"]
+[ Info: [Processing] Got message: exportmultiple Any[]
+[ Info: exportmultiple waiting for 0 jobs to finish.
+[ Info: Spawning exportmultiple (41@190)
+[ Info: Running exportmultiple (41@190) with 4 parameter(s) in thread 1.
+[ Info: Finished running exportmultiple[0.1s] (41@190) in thread 1.
+[ Info: [Processing] Got message: setvalue Any["exportmultipledim", "5"]
+[ Info: [Processing] Got message: setvalue Any["exportmode", "Variables"]
+[ Info: [Processing] Got message: setvalue Any["exportmultiplepath", "/tmp/jl_Osu4Z7/PMA5_Variables.csv"]
+[ Info: [Processing] Got message: exportmultiple Any[]
+[ Info: exportmultiple waiting for 0 jobs to finish.
+[ Info: Spawning exportmultiple (41@196)
+[ Info: Running exportmultiple (41@196) with 4 parameter(s) in thread 1.
+[ Info: Finished running exportmultiple[0.1s] (41@196) in thread 1.
+[ Info: [Processing] Got message: exit Any[]
+[ Info: [Processing] Got message: setvalue Any["samplesimplexmethod", "SA"]
+[ Info: [Processing] Got message: setvalue Any["loadrowsassamples", "true"]
+[ Info: [Processing] Got message: setvalue Any["logtransform", "false"]
+[ Info: [Processing] Got message: setvalue Any["logtransformoffset", "1"]
+[ Info: [Processing] Got message: setvalue Any["normalizemethod", "Mean=0"]
+[ Info: [Processing] Got message: setvalue Any["dimreductionmethod", "PMA"]
+[ Info: [Processing] Got message: setvalue Any["knearestneighbors", "0"]
+[ Info: [Processing] Got message: setvalue Any["distnearestneighbors", "0"]
+[ Info: [Processing] Got message: setvalue Any["xaxis", "1"]
+[ Info: [Processing] Got message: setvalue Any["yaxis", "2"]
+[ Info: [Processing] Got message: setvalue Any["zaxis", "3"]
+[ Info: [Processing] Got message: setvalue Any["plotwidth", "1024"]
+[ Info: [Processing] Got message: setvalue Any["plotheight", "768"]
+[ Info: [Processing] Got message: setvalue Any["showpoints", "true"]
+[ Info: [Processing] Got message: setvalue Any["showlines", "true"]
+[ Info: [Processing] Got message: setvalue Any["showtriangles", "false"]
+[ Info: [Processing] Got message: setvalue Any["markersize", "4"]
+[ Info: [Processing] Got message: setvalue Any["linewidth", "1"]
+[ Info: [Processing] Got message: setvalue Any["triangleopacity", "0.05"]
+[ Info: [Processing] Got message: setvalue Any["colorby", "Auto"]
+[ Info: [Processing] Got message: setvalue Any["exportmode", "Variables"]
+[ Info: [Processing] Got message: setvalue Any["exportsingledim", "1"]
+[ Info: [Processing] Got message: setvalue Any["exportsinglesort", "Abs"]
+[ Info: [Processing] Got message: setvalue Any["exportmultipledim", "3"]
+[ Info: [Processing] Got message: setvalue Any["samplefilepath", "/home/pkgeval/.julia/packages/PrincipalMomentAnalysisApp/YliWq/test/data/data_missing.tsv"]
+[ Info: [Processing] Got message: setvalue Any["lastsampleannot", "Time"]
+[ Info: [Processing] Got message: setvalue Any["normalizemethod", "None"]
+[ Info: [Processing] Got message: normalize Any[]
+[ Info: loadsample waiting for 0 jobs to finish.
+[ Info: normalizesample waiting for 1 jobs to finish.
+[ Info: Spawning loadsample (3@133)
+[ Info: Running loadsample (3@133) with 2 parameter(s) in thread 1.
+[ Info: Finished running loadsample[0.2s] (3@133) in thread 1.
+[ Info: Spawning normalizesample (8@137)
+[ Info: Running normalizesample (8@137) with 5 parameter(s) in thread 1.
+[ Info: Reconstructing missing values (taking the mean over all nonmissing samples)
+[ Info: Finished running normalizesample[1.0s] (8@137) in thread 1.
+[ Info: [Processing] Got message: setvalue Any["logtransform", "true"]
+[ Info: [Processing] Got message: setvalue Any["logtransformoffset", "0.57"]
+[ Info: [Processing] Got message: normalize Any[]
+[ Info: normalizesample waiting for 0 jobs to finish.
+[ Info: Spawning normalizesample (8@141)
+[ Info: Running normalizesample (8@141) with 5 parameter(s) in thread 1.
+[ Info: Reconstructing missing values (taking the mean over all nonmissing samples)
+[ Info: Finished running normalizesample[0.2s] (8@141) in thread 1.
+Test Summary:              | Pass  Total
+PrincipalMomentAnalysisApp |   83     83
+    Testing PrincipalMomentAnalysisApp tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:15:52.424
+CPU usage: 249.50s (235.00s user, 14.82s kernel)
+
+Network usage:
+- eth0: 100.958 MiB received, 1.852 MiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":1,"op":"Read","minor":0},{"major":259,"value":36,"op":"Write","minor":0},{"major":259,"value":20,"op":"Sync","minor":0},{"major":259,"value":17,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":37,"op":"Total","minor":0},{"major":253,"value":1,"op":"Read","minor":2},{"major":253,"value":36,"op":"Write","minor":2},{"major":253,"value":20,"op":"Sync","minor":2},{"major":253,"value":17,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":37,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":40960,"op":"Read","minor":0},{"major":259,"value":241664,"op":"Write","minor":0},{"major":259,"value":147456,"op":"Sync","minor":0},{"major":259,"value":135168,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":282624,"op":"Total","minor":0},{"major":253,"value":40960,"op":"Read","minor":2},{"major":253,"value":241664,"op":"Write","minor":2},{"major":253,"value":147456,"op":"Sync","minor":2},{"major":253,"value":135168,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":282624,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":642805760,"max_usage":2253791232,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":207450112,"inactive_file":135168,"inactive_anon":349544448,"total_pgfault":6171363,"total_cache":390279168,"total_rss_huge":0,"total_active_anon":248168448,"total_pgmajfault":0,"pgpgin":3912876,"rss_huge":0,"mapped_file":135168,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":3766968,"hierarchical_memsw_limit":0,"cache":390279168,"active_file":135168,"pgfault":6171363,"total_mapped_file":135168,"total_pgpgout":3766968,"total_writeback":0,"rss":207450112,"unevictable":0,"total_inactive_anon":349544448,"total_pgpgin":3912876,"active_anon":248168448,"total_active_file":135168},"limit":540965302272},"name":"/PrincipalMomentAnalysisApp-tSDKKOCc","networks":{"eth0":{"rx_bytes":105861733,"rx_packets":58484,"tx_packets":31827,"tx_bytes":1942203,"tx_dropped":0,"rx_dropped":9,"tx_errors":0,"rx_errors":0}},"id":"e8c88ea52a404b101c5e8d346db26ab4d41bbccbcf7f6cbe498da38ae7fc0a5f","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":41},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6320858584522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":235000000000,"usage_in_kernelmode":14820000000,"total_usage":249496005914,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,249499737446,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48290,0,80200,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:15:52.427211909Z"}

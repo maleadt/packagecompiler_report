@@ -1,0 +1,641 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:12:21.748
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:12:23.483
+#
+
+ Installing known registries into `~/.julia`
+####                                                                       5.7%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed Reexport ───────────────────── v1.0.0
+  Installed MKL_jll ────────────────────── v2020.2.254+0
+  Installed StaticPermutations ─────────── v0.2.1
+  Installed JSON3 ──────────────────────── v1.5.1
+  Installed FFTW ───────────────────────── v1.3.1
+  Installed MPI ────────────────────────── v0.16.1
+  Installed PencilFFTs ─────────────────── v0.11.1
+  Installed Requires ───────────────────── v1.1.2
+  Installed TimerOutputs ───────────────── v0.5.7
+  Installed FFTW_jll ───────────────────── v3.3.9+7
+  Installed MicrosoftMPI_jll ───────────── v10.1.2+3
+  Installed IntelOpenMP_jll ────────────── v2018.0.3+0
+  Installed AbstractFFTs ───────────────── v1.0.0
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed PencilArrays ───────────────── v0.6.1
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed ArrayInterface ─────────────── v2.14.13
+  Installed StructTypes ────────────────── v1.2.1
+  Installed MPICH_jll ──────────────────── v3.3.2+10
+  Installed Adapt ──────────────────────── v2.4.0
+  Installed DocStringExtensions ────────── v0.8.3
+  Installed OffsetArrays ───────────────── v1.5.0
+  Installed OpenMPI_jll ────────────────── v4.0.2+2
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed Parsers ────────────────────── v1.0.15
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [4a48f351] + PencilFFTs v0.11.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [621f4979] + AbstractFFTs v1.0.0
+  [79e6a3ab] + Adapt v2.4.0
+  [4fba245c] + ArrayInterface v2.14.13
+  [56f22d72] + Artifacts v1.3.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [ffbed154] + DocStringExtensions v0.8.3
+  [7a1cc6ca] + FFTW v1.3.1
+  [f5851436] + FFTW_jll v3.3.9+7
+  [1d5cc7b8] + IntelOpenMP_jll v2018.0.3+0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [0f8b85d8] + JSON3 v1.5.1
+  [856f044c] + MKL_jll v2020.2.254+0
+  [da04e1cc] + MPI v0.16.1
+  [7cb0a576] + MPICH_jll v3.3.2+10
+  [9237b28f] + MicrosoftMPI_jll v10.1.2+3
+  [6fe1bfb0] + OffsetArrays v1.5.0
+  [fe0851c0] + OpenMPI_jll v4.0.2+2
+  [69de0a69] + Parsers v1.0.15
+  [0e08944d] + PencilArrays v0.6.1
+  [4a48f351] + PencilFFTs v0.11.1
+  [189a3867] + Reexport v1.0.0
+  [ae029012] + Requires v1.1.2
+  [90137ffa] + StaticArrays v1.0.1
+  [15972242] + StaticPermutations v0.2.1
+  [856f2bd8] + StructTypes v1.2.1
+  [a759f4b9] + TimerOutputs v0.5.7
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building MPI ─→ `~/.julia/packages/MPI/b7MVG/deps/build.log`
+   Building FFTW → `~/.julia/packages/FFTW/eADNB/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T23:12:31.071
+#
+
+    Testing PencilFFTs
+Status `/tmp/jl_lTif1R/Project.toml`
+  [621f4979] AbstractFFTs v1.0.0
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [7a1cc6ca] FFTW v1.3.1
+  [da04e1cc] MPI v0.16.1
+  [4a48f351] PencilFFTs v0.11.1
+  [189a3867] Reexport v1.0.0
+  [a759f4b9] TimerOutputs v0.5.7
+  [37e2e46d] LinearAlgebra
+  [de0858da] Printf
+  [9abbd945] Profile
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_lTif1R/Manifest.toml`
+  [621f4979] AbstractFFTs v1.0.0
+  [79e6a3ab] Adapt v2.4.0
+  [4fba245c] ArrayInterface v2.14.13
+  [56f22d72] Artifacts v1.3.0
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [ffbed154] DocStringExtensions v0.8.3
+  [7a1cc6ca] FFTW v1.3.1
+  [f5851436] FFTW_jll v3.3.9+7
+  [1d5cc7b8] IntelOpenMP_jll v2018.0.3+0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [0f8b85d8] JSON3 v1.5.1
+  [856f044c] MKL_jll v2020.2.254+0
+  [da04e1cc] MPI v0.16.1
+  [7cb0a576] MPICH_jll v3.3.2+10
+  [9237b28f] MicrosoftMPI_jll v10.1.2+3
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [fe0851c0] OpenMPI_jll v4.0.2+2
+  [69de0a69] Parsers v1.0.15
+  [0e08944d] PencilArrays v0.6.1
+  [4a48f351] PencilFFTs v0.11.1
+  [189a3867] Reexport v1.0.0
+  [ae029012] Requires v1.1.2
+  [90137ffa] StaticArrays v1.0.1
+  [15972242] StaticPermutations v0.2.1
+  [856f2bd8] StructTypes v1.2.1
+  [a759f4b9] TimerOutputs v0.5.7
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [9abbd945] Profile
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: Running taylor_green.jl with 6 processes...
+divergence local...    923.179 ns (0 allocations: 0 bytes)
+divergence global...   1.449 μs (0 allocations: 0 bytes)
+curl! local...         2.297 μs (0 allocations: 0 bytes)
+curl! global...        2.531 μs (0 allocations: 0 bytes)
+Test Summary: | Pass  Total
+Taylor-Green  |    5      5
+
+[ Info: Running rfft.jl with 6 processes...
+[ Info: Input data size: (42, 24, 16)
+Test Summary:      | Pass  Total
+Fourier operations |    4      4
+Micro-benchmarks:
+ - divergence global_view...  9.250 μs (0 allocations: 0 bytes)
+ - divergence local...   6.624 μs (0 allocations: 0 bytes)
+ - curl! global_view...  18.780 μs (0 allocations: 0 bytes)
+ - curl! local...        16.500 μs (0 allocations: 0 bytes)
+ - norm2(u)...           14.140 μs (0 allocations: 0 bytes)
+ - norm2(uF)...          76.819 μs (0 allocations: 0 bytes)
+ - norm2(parent(u))...   5.176 μs (0 allocations: 0 bytes)
+ - norm2(parent(uF))...  5.133 μs (0 allocations: 0 bytes)
+ - sqnorm(u)...          12.630 μs (0 allocations: 0 bytes)
+ - sqnorm(parent(u))...  12.729 μs (0 allocations: 0 bytes)
+ - sqnorm(uF)...         4.316 μs (0 allocations: 0 bytes)
+
+[ Info: Input data size: (41, 23, 15)
+Test Summary:      | Pass  Total
+Fourier operations |    4      4
+
+[ Info: Running transforms.jl with 6 processes...
+Test Summary:  | Pass  Total
+r2c transforms |    6      6
+Test Summary: | Pass  Total
+NoTransform   |   18     18
+Test Summary:  | Pass  Total
+r2r transforms |    8      8
+Test Summary:          | Pass  Total
+In-place transforms 1D |    7      7
+Test Summary:        | Pass  Total
+Transforms internals |    2      2
+Test Summary:   | Pass  Total
+Incompatibility |    8      8
+
+------------------------------------------------------------
+
+Transforms: (RFFT, FFT)
+Input type: Float64
+Global dimensions: (11, 15)  ->  (6, 15)
+MPI topology: 1D decomposition (6 processes)
+
+
+------------------------------------------------------------
+
+Transforms: (FFT!, FFT!)
+Input type: Complex{Float64}
+Global dimensions: (11, 15)  ->  (11, 15)
+MPI topology: 1D decomposition (6 processes)
+
+Test Summary:      | Pass  Total
+Decompose 1/2 dims |   18     18
+
+------------------------------------------------------------
+
+Transforms: (RFFT, FFT, FFT)
+Input type: Float64
+Global dimensions: (11, 7, 13)  ->  (6, 7, 13)
+MPI topology: 1D decomposition (6 processes)
+
+
+------------------------------------------------------------
+
+Transforms: (FFT!, FFT!, FFT!)
+Input type: Complex{Float64}
+Global dimensions: (11, 7, 13)  ->  (11, 7, 13)
+MPI topology: 1D decomposition (6 processes)
+
+Test Summary:      | Pass  Total
+Decompose 1/3 dims |   18     18
+
+------------------------------------------------------------
+
+Transforms: (RFFT, FFT, FFT)
+Input type: Float64
+Global dimensions: (11, 7, 13)  ->  (6, 7, 13)
+MPI topology: 2D decomposition (3×2 processes)
+
+
+------------------------------------------------------------
+
+Transforms: (FFT!, FFT!, FFT!)
+Input type: Complex{Float64}
+Global dimensions: (11, 7, 13)  ->  (11, 7, 13)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:      | Pass  Total
+Decompose 2/3 dims |   18     18
+
+------------------------------------------------------------
+
+Transforms: (RFFT, FFT, FFT, FFT)
+Input type: Float64
+Global dimensions: (9, 7, 5, 12)  ->  (5, 7, 5, 12)
+MPI topology: 1D decomposition (6 processes)
+
+
+------------------------------------------------------------
+
+Transforms: (FFT!, FFT!, FFT!, FFT!)
+Input type: Complex{Float64}
+Global dimensions: (9, 7, 5, 12)  ->  (9, 7, 5, 12)
+MPI topology: 1D decomposition (6 processes)
+
+Test Summary:      | Pass  Total
+Decompose 1/4 dims |   18     18
+
+------------------------------------------------------------
+
+Transforms: (RFFT, FFT, FFT, FFT)
+Input type: Float64
+Global dimensions: (9, 7, 5, 12)  ->  (5, 7, 5, 12)
+MPI topology: 2D decomposition (3×2 processes)
+
+
+------------------------------------------------------------
+
+Transforms: (FFT!, FFT!, FFT!, FFT!)
+Input type: Complex{Float64}
+Global dimensions: (9, 7, 5, 12)  ->  (9, 7, 5, 12)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:      | Pass  Total
+Decompose 2/4 dims |   18     18
+
+------------------------------------------------------------
+
+Transforms: (RFFT, FFT, FFT, FFT)
+Input type: Float64
+Global dimensions: (9, 7, 5, 12)  ->  (5, 7, 5, 12)
+MPI topology: 3D decomposition (3×2×1 processes)
+
+
+------------------------------------------------------------
+
+Transforms: (FFT!, FFT!, FFT!, FFT!)
+Input type: Complex{Float64}
+Global dimensions: (9, 7, 5, 12)  ->  (9, 7, 5, 12)
+MPI topology: 3D decomposition (3×2×1 processes)
+
+Test Summary:      | Pass  Total
+Decompose 3/4 dims |   18     18
+
+------------------------------------------------------------
+
+Transforms: (RFFT, FFT, FFT, FFT)
+Input type: Float64
+Global dimensions: (9, 7, 5, 12)  ->  (5, 7, 5, 12)
+MPI topology: 3D decomposition (3×2×1 processes)
+
+
+------------------------------------------------------------
+
+Transforms: (FFT!, FFT!, FFT!, FFT!)
+Input type: Complex{Float64}
+Global dimensions: (9, 7, 5, 12)  ->  (9, 7, 5, 12)
+MPI topology: 3D decomposition (3×2×1 processes)
+
+Test Summary:      | Pass  Total
+Decompose 3/4 dims |   18     18
+Test Summary:   | Pass  Total
+Transform types |    2      2
+
+------------------------------------------------------------
+
+Transforms: (FFT!, FFT!, FFT!)
+Input type: Complex{Float64}
+Global dimensions: (16, 12, 6)  ->  (16, 12, 6)
+MPI topology: 1D decomposition (6 processes)
+
+Test Summary:          | Pass  Total
+In-place transforms 3D |   15     15
+
+------------------------------------------------------------
+
+Transforms: (RFFT, FFT, FFT)
+Input type: Float64
+Global dimensions: (16, 12, 6)  ->  (9, 12, 6)
+MPI topology: 1D decomposition (6 processes)
+
+Test Summary:   | Pass  Total
+RFFT -- Float64 |    3      3
+Test Summary:   | Pass  Total
+Transform types |    2      2
+
+------------------------------------------------------------
+
+Transforms: (FFT!, FFT!, FFT!)
+Input type: Complex{Float64}
+Global dimensions: (16, 12, 6)  ->  (16, 12, 6)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:          | Pass  Total
+In-place transforms 3D |   15     15
+
+------------------------------------------------------------
+
+Transforms: (FFT, FFT, FFT)
+Input type: Complex{Float64}
+Global dimensions: (16, 12, 6)  ->  (16, 12, 6)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:  | Pass  Total
+FFT -- Float64 |    3      3
+
+------------------------------------------------------------
+
+Transforms: (RFFT, FFT, FFT)
+Input type: Float64
+Global dimensions: (16, 12, 6)  ->  (9, 12, 6)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:   | Pass  Total
+RFFT -- Float64 |    3      3
+
+------------------------------------------------------------
+
+Transforms: (BFFT, BFFT, BFFT)
+Input type: Complex{Float64}
+Global dimensions: (16, 12, 6)  ->  (16, 12, 6)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:   | Pass  Total
+BFFT -- Float64 |    3      3
+
+------------------------------------------------------------
+
+Transforms: (NoTransform, NoTransform, NoTransform)
+Input type: Float64
+Global dimensions: (16, 12, 6)  ->  (16, 12, 6)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:          | Pass  Total
+NoTransform -- Float64 |    3      3
+
+------------------------------------------------------------
+
+Transforms: (R2R{DHT}, R2R{DHT}, R2R{DHT})
+Input type: Float64
+Global dimensions: (16, 12, 6)  ->  (16, 12, 6)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:       | Pass  Total
+R2R{DHT} -- Float64 |    3      3
+
+------------------------------------------------------------
+
+Transforms: (R2R{REDFT00}, R2R{REDFT00}, R2R{REDFT00})
+Input type: Float64
+Global dimensions: (16, 12, 6)  ->  (16, 12, 6)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:           | Pass  Total
+R2R{REDFT00} -- Float64 |    3      3
+
+------------------------------------------------------------
+
+Transforms: (R2R{REDFT01}, R2R{REDFT01}, R2R{REDFT01})
+Input type: Float64
+Global dimensions: (16, 12, 6)  ->  (16, 12, 6)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:           | Pass  Total
+R2R{REDFT01} -- Float64 |    3      3
+
+------------------------------------------------------------
+
+Transforms: (R2R{REDFT10}, R2R{REDFT10}, R2R{REDFT10})
+Input type: Float64
+Global dimensions: (16, 12, 6)  ->  (16, 12, 6)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:           | Pass  Total
+R2R{REDFT10} -- Float64 |    3      3
+
+------------------------------------------------------------
+
+Transforms: (R2R{REDFT11}, R2R{REDFT11}, R2R{REDFT11})
+Input type: Float64
+Global dimensions: (16, 12, 6)  ->  (16, 12, 6)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:           | Pass  Total
+R2R{REDFT11} -- Float64 |    3      3
+
+------------------------------------------------------------
+
+Transforms: (R2R{RODFT00}, R2R{RODFT00}, R2R{RODFT00})
+Input type: Float64
+Global dimensions: (16, 12, 6)  ->  (16, 12, 6)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:           | Pass  Total
+R2R{RODFT00} -- Float64 |    3      3
+
+------------------------------------------------------------
+
+Transforms: (R2R{RODFT01}, R2R{RODFT01}, R2R{RODFT01})
+Input type: Float64
+Global dimensions: (16, 12, 6)  ->  (16, 12, 6)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:           | Pass  Total
+R2R{RODFT01} -- Float64 |    3      3
+
+------------------------------------------------------------
+
+Transforms: (R2R{RODFT10}, R2R{RODFT10}, R2R{RODFT10})
+Input type: Float64
+Global dimensions: (16, 12, 6)  ->  (16, 12, 6)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:           | Pass  Total
+R2R{RODFT10} -- Float64 |    3      3
+
+------------------------------------------------------------
+
+Transforms: (R2R{RODFT11}, R2R{RODFT11}, R2R{RODFT11})
+Input type: Float64
+Global dimensions: (16, 12, 6)  ->  (16, 12, 6)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:           | Pass  Total
+R2R{RODFT11} -- Float64 |    3      3
+
+------------------------------------------------------------
+
+Transforms: (NoTransform, RFFT, FFT)
+Input type: Float64
+Global dimensions: (16, 12, 6)  ->  (16, 7, 6)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:                       | Pass  Total
+(NoTransform, RFFT, FFT) -- Float64 |    3      3
+
+------------------------------------------------------------
+
+Transforms: (FFT, NoTransform, FFT)
+Input type: Complex{Float64}
+Global dimensions: (16, 12, 6)  ->  (16, 12, 6)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:                      | Pass  Total
+(FFT, NoTransform, FFT) -- Float64 |    3      3
+
+------------------------------------------------------------
+
+Transforms: (FFT, NoTransform, NoTransform)
+Input type: Complex{Float64}
+Global dimensions: (16, 12, 6)  ->  (16, 12, 6)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:                              | Pass  Total
+(FFT, NoTransform, NoTransform) -- Float64 |    3      3
+Test Summary:    | Broken  Total
+BRFFT -- Float64 |      1      1
+
+------------------------------------------------------------
+
+Transforms: (FFT!, FFT!, FFT!)
+Input type: Complex{Float64}
+Global dimensions: (16, 12, 6)  ->  (16, 12, 6)
+Extra dimensions: (3,)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:          | Pass  Total
+In-place transforms 3D |   15     15
+
+------------------------------------------------------------
+
+Transforms: (RFFT, FFT, FFT)
+Input type: Float64
+Global dimensions: (16, 12, 6)  ->  (9, 12, 6)
+Extra dimensions: (3,)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:   | Pass  Total
+RFFT -- Float64 |    3      3
+
+------------------------------------------------------------
+
+Transforms: (FFT!, FFT!, FFT!)
+Input type: Complex{Float32}
+Global dimensions: (16, 12, 6)  ->  (16, 12, 6)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:          | Pass  Total
+In-place transforms 3D |   15     15
+
+------------------------------------------------------------
+
+Transforms: (RFFT, FFT, FFT)
+Input type: Float32
+Global dimensions: (16, 12, 6)  ->  (9, 12, 6)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:   | Pass  Total
+RFFT -- Float32 |    3      3
+
+------------------------------------------------------------
+
+Transforms: (FFT!, FFT!, FFT!)
+Input type: Complex{Float32}
+Global dimensions: (16, 12, 6)  ->  (16, 12, 6)
+Extra dimensions: (3,)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:          | Pass  Total
+In-place transforms 3D |   15     15
+
+------------------------------------------------------------
+
+Transforms: (RFFT, FFT, FFT)
+Input type: Float32
+Global dimensions: (16, 12, 6)  ->  (9, 12, 6)
+Extra dimensions: (3,)
+MPI topology: 2D decomposition (3×2 processes)
+
+Test Summary:   | Pass  Total
+RFFT -- Float32 |    3      3
+
+[ Info: Running ../examples/gradient.jl with 6 processes...
+Transforms: (RFFT, FFT, FFT)
+Input type: Float64
+Global dimensions: (64, 32, 64)  ->  (33, 32, 64)
+MPI topology: 2D decomposition (3×2 processes)
+
+gradient_global_view!...                  106.189 μs (0 allocations: 0 bytes)
+gradient_global_view! (lazy)...           103.179 μs (0 allocations: 0 bytes)
+gradient_global_view_explicit!...         224.487 μs (0 allocations: 0 bytes)
+gradient_global_view_explicit! (lazy)...  192.358 μs (0 allocations: 0 bytes)
+gradient_local!...                        157.788 μs (0 allocations: 0 bytes)
+gradient_local_parent!...                 39.920 μs (0 allocations: 0 bytes)
+gradient_local_linear!...                 96.739 μs (0 allocations: 0 bytes)
+gradient_local_linear_explicit!...        95.059 μs (0 allocations: 0 bytes)
+
+[ Info: Running ../examples/in-place.jl with 6 processes...
+Transforms: (R2R!{REDFT01}, FFT!, R2R!{DHT})
+Input type: Complex{Float64}
+Global dimensions: (64, 32, 64)  ->  (64, 32, 64)
+MPI topology: 1D decomposition (6 processes)
+
+    Testing PencilFFTs tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:59:32.433
+CPU usage: 2826.91s (2774.64s user, 55.96s kernel)
+
+Network usage:
+- eth0: 3.684 MiB received, 154.408 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":42,"op":"Read","minor":0},{"major":259,"value":32,"op":"Write","minor":0},{"major":259,"value":61,"op":"Sync","minor":0},{"major":259,"value":13,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":74,"op":"Total","minor":0},{"major":253,"value":42,"op":"Read","minor":2},{"major":253,"value":32,"op":"Write","minor":2},{"major":253,"value":61,"op":"Sync","minor":2},{"major":253,"value":13,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":74,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":1200128,"op":"Read","minor":0},{"major":259,"value":167936,"op":"Write","minor":0},{"major":259,"value":1306624,"op":"Sync","minor":0},{"major":259,"value":61440,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1368064,"op":"Total","minor":0},{"major":253,"value":1200128,"op":"Read","minor":2},{"major":253,"value":167936,"op":"Write","minor":2},{"major":253,"value":1306624,"op":"Sync","minor":2},{"major":253,"value":61440,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1368064,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":309751808,"max_usage":5299122176,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":186093568,"inactive_file":270336,"inactive_anon":162066432,"total_pgfault":17480826,"total_cache":88096768,"total_rss_huge":0,"total_active_anon":110485504,"total_pgmajfault":0,"pgpgin":5400285,"rss_huge":0,"mapped_file":135168,"total_inactive_file":270336,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":5333384,"hierarchical_memsw_limit":0,"cache":88096768,"active_file":1081344,"pgfault":17480826,"total_mapped_file":135168,"total_pgpgout":5333384,"total_writeback":0,"rss":186093568,"unevictable":0,"total_inactive_anon":162066432,"total_pgpgin":5400285,"active_anon":110485504,"total_active_file":1081344},"limit":540965302272},"name":"/PencilFFTs-rANCBR9y","networks":{"eth0":{"rx_bytes":3863160,"rx_packets":2261,"tx_packets":1264,"tx_bytes":158114,"tx_dropped":0,"rx_dropped":95,"tx_errors":0,"rx_errors":0}},"id":"4dcd1e602f13b3aab0de7944731dc09e113e3ca1768e82329da294251661eeb4","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":7115763794522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":2774640000000,"usage_in_kernelmode":55960000000,"total_usage":2826906805452,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2826906801352,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:59:33.163810301Z"}

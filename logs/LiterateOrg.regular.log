@@ -1,0 +1,91 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:34:50.887
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:34:52.663
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed LiterateOrg ─ v0.1.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a7ef59f1] + LiterateOrg v0.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [a7ef59f1] + LiterateOrg v0.1.1
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+   Building LiterateOrg → `~/.julia/packages/LiterateOrg/JnJnZ/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T22:34:58.251
+#
+
+    Testing LiterateOrg
+Status `/tmp/jl_I7O1dS/Project.toml`
+  [a7ef59f1] LiterateOrg v0.1.1
+  [ade2ca70] Dates
+  [de0858da] Printf
+  [8dfed614] Test
+Status `/tmp/jl_I7O1dS/Manifest.toml`
+  [a7ef59f1] LiterateOrg v0.1.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+┌ Warning: Package LiterateOrg does not have Printf in its dependencies:
+│ - If you have LiterateOrg checked out for development and have
+│   added Printf as a dependency but haven't updated your primary
+│   environment's manifest file, try `Pkg.resolve()`.
+│ - Otherwise you may need to report an issue with LiterateOrg
+└ Loading Printf into LiterateOrg from project dependency, future warnings for LiterateOrg are suppressed.
+Test Summary:             | Pass  Total
+This is a nested test set |    1      1
+Test Summary: | Pass  Total
+With a "name" |    5      5
+    Testing LiterateOrg tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:35:01.708
+CPU usage: 10.84s (8.27s user, 2.60s kernel)
+
+Network usage:
+- eth0: 2.539 MiB received, 27.792 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":143360,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":143360,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":143360,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":143360,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":329490432,"max_usage":602435584,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":220663808,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":320529,"total_cache":79396864,"total_rss_huge":0,"total_active_anon":221405184,"total_pgmajfault":0,"pgpgin":226941,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":135168,"pgpgout":153665,"hierarchical_memsw_limit":0,"cache":79396864,"active_file":135168,"pgfault":320529,"total_mapped_file":0,"total_pgpgout":153665,"total_writeback":135168,"rss":220663808,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":226941,"active_anon":221405184,"total_active_file":135168},"limit":540965302272},"name":"/LiterateOrg-RPrpsD1t","networks":{"eth0":{"rx_bytes":2662097,"rx_packets":286,"tx_packets":289,"tx_bytes":28459,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"b1726a1eafe4df9f9d24ab4a9aa7ddeb55b17c6acd94eee9492a8a50e48aca2f","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6467746664522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":8270000000,"usage_in_kernelmode":2600000000,"total_usage":10842514864,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10842511404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3460,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:35:02.028374681Z"}

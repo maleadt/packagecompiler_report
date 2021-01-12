@@ -1,0 +1,568 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:52:15.892
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:52:17.743
+#
+
+ Installing known registries into `~/.julia`
+##############################################################            86.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed ZygoteRules ────────────────── v0.2.1
+  Installed Reexport ───────────────────── v1.0.0
+  Installed CpuId ──────────────────────── v0.2.2
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed TableTraits ────────────────── v1.0.0
+  Installed Inflate ────────────────────── v0.1.2
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed NonlinearSolve ─────────────── v0.3.4
+  Installed VertexSafeGraphs ───────────── v0.1.2
+  Installed DelayDiffEq ────────────────── v5.28.1
+  Installed Tables ─────────────────────── v1.2.2
+  Installed Requires ───────────────────── v1.1.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed FunctionWrappers ───────────── v1.1.1
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed SparseDiffTools ────────────── v1.12.0
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed TreeViews ──────────────────── v0.3.0
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Parameters ─────────────────── v0.12.1
+  Installed SIMDPirates ────────────────── v0.8.26
+  Installed Setfield ───────────────────── v0.7.0
+  Installed LoopVectorization ──────────── v0.8.26
+  Installed ConstructionBase ───────────── v1.0.0
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed SimpleTraits ───────────────── v0.9.3
+  Installed RecursiveArrayTools ────────── v2.10.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed StaticArrays ───────────────── v0.12.5
+  Installed DiffEqBase ─────────────────── v6.53.4
+  Installed OrdinaryDiffEq ─────────────── v5.49.1
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed VectorizationBase ──────────── v0.12.33
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed NLsolve ────────────────────── v4.5.1
+  Installed Distances ──────────────────── v0.10.0
+  Installed FiniteDiff ─────────────────── v2.7.2
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed LightGraphs ────────────────── v1.3.4
+  Installed FastClosures ───────────────── v0.3.2
+  Installed ArrayInterface ─────────────── v2.14.13
+  Installed ArnoldiMethod ──────────────── v0.0.4
+  Installed LineSearches ───────────────── v7.1.1
+  Installed Adapt ──────────────────────── v3.0.0
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed OffsetArrays ───────────────── v1.3.1
+  Installed IterativeSolvers ───────────── v0.9.0
+  Installed LabelledArrays ─────────────── v1.4.0
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed Compat ─────────────────────── v3.25.0
+  Installed NLSolversBase ──────────────── v7.7.1
+  Installed DocStringExtensions ────────── v0.8.3
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed RecursiveFactorization ─────── v0.1.6
+  Installed SLEEFPirates ───────────────── v0.5.5
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed ExponentialUtilities ───────── v1.8.0
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed GenericSVD ─────────────────── v0.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [bcd4f6db] + DelayDiffEq v5.28.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [79e6a3ab] + Adapt v3.0.0
+  [ec485272] + ArnoldiMethod v0.0.4
+  [4fba245c] + ArrayInterface v2.14.13
+  [56f22d72] + Artifacts v1.3.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [187b0558] + ConstructionBase v1.0.0
+  [adafc99b] + CpuId v0.2.2
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [bcd4f6db] + DelayDiffEq v5.28.1
+  [2b5f629d] + DiffEqBase v6.53.4
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [b4f34e82] + Distances v0.10.0
+  [ffbed154] + DocStringExtensions v0.8.3
+  [d4d017d3] + ExponentialUtilities v1.8.0
+  [9aa1b823] + FastClosures v0.3.2
+  [6a86dc24] + FiniteDiff v2.7.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [069b7b12] + FunctionWrappers v1.1.1
+  [01680d73] + GenericSVD v0.3.0
+  [d25df0c9] + Inflate v0.1.2
+  [42fd0dbc] + IterativeSolvers v0.9.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [2ee39098] + LabelledArrays v1.4.0
+  [093fc24a] + LightGraphs v1.3.4
+  [d3d80556] + LineSearches v7.1.1
+  [bdcacae8] + LoopVectorization v0.8.26
+  [1914dd2f] + MacroTools v0.5.6
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [d41bc354] + NLSolversBase v7.7.1
+  [2774e3e8] + NLsolve v4.5.1
+  [77ba4419] + NaNMath v0.3.5
+  [8913a72c] + NonlinearSolve v0.3.4
+  [6fe1bfb0] + OffsetArrays v1.3.1
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [1dea7af3] + OrdinaryDiffEq v5.49.1
+  [d96e819e] + Parameters v0.12.1
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [731186ca] + RecursiveArrayTools v2.10.0
+  [f2c3362d] + RecursiveFactorization v0.1.6
+  [189a3867] + Reexport v1.0.0
+  [ae029012] + Requires v1.1.2
+  [21efa798] + SIMDPirates v0.8.26
+  [476501e8] + SLEEFPirates v0.5.5
+  [efcf1570] + Setfield v0.7.0
+  [699a6c99] + SimpleTraits v0.9.3
+  [47a9eef4] + SparseDiffTools v1.12.0
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v0.12.5
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [a2a6695c] + TreeViews v0.3.0
+  [3a884ed6] + UnPack v1.0.2
+  [3d5dd08c] + VectorizationBase v0.12.33
+  [19fa3120] + VertexSafeGraphs v0.1.2
+  [700de1a5] + ZygoteRules v0.2.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building SLEEFPirates → `~/.julia/packages/SLEEFPirates/jGsib/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T21:52:36.924
+#
+
+    Testing DelayDiffEq
+┌ Error: Pkg.Resolve.ResolverError("Unsatisfiable requirements detected for package DiffEqProblemLibrary [a077e3f3]:\n DiffEqProblemLibrary [a077e3f3] log:\n ├─possible versions are: [3.0.0, 3.1.0, 3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.0, 3.7.0, 4.0.0, 4.1.0, 4.2.0, 4.3.0, 4.4.0, 4.5.0-4.5.1, 4.6.0-4.6.4, 4.7.0, 4.8.0-4.8.1, 4.9.0-4.9.1, 4.10.0, 4.11.0] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [3.0.0, 3.1.0, 3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.0, 3.7.0, 4.0.0, 4.1.0, 4.2.0, 4.3.0, 4.4.0, 4.5.0-4.5.1, 4.6.0-4.6.4, 4.7.0, 4.8.0-4.8.1, 4.9.0-4.9.1, 4.10.0, 4.11.0]\n ├─restricted by compatibility requirements with DiffEqBase [2b5f629d] to versions: [4.2.0, 4.3.0, 4.4.0, 4.5.0-4.5.1, 4.6.0-4.6.4, 4.7.0, 4.8.0-4.8.1, 4.9.0-4.9.1, 4.10.0, 4.11.0] or uninstalled, leaving only versions: [4.2.0, 4.3.0, 4.4.0, 4.5.0-4.5.1, 4.6.0-4.6.4, 4.7.0, 4.8.0-4.8.1, 4.9.0-4.9.1, 4.10.0, 4.11.0]\n │ └─DiffEqBase [2b5f629d] log:\n │   ├─possible versions are: [3.13.2-3.13.3, 4.0.0-4.0.1, 4.1.0, 4.2.0, 4.3.0-4.3.1, 4.4.0, 4.5.0, 4.6.0, 4.7.0, 4.8.0, 4.9.0, 4.10.0-4.10.1, 4.11.0-4.11.1, 4.12.0, 4.13.0, 4.14.0-4.14.1, 4.15.0, 4.16.0, 4.17.0, 4.18.0, 4.19.0, 4.20.0-4.20.3, 4.21.0, 4.21.2-4.21.3, 4.22.0-4.22.2, 4.23.0, 4.23.2-4.23.4, 4.24.0-4.24.3, 4.25.0-4.25.1, 4.26.0-4.26.3, 4.27.0-4.27.1, 4.28.0-4.28.1, 4.29.0-4.29.2, 4.30.0-4.30.2, 4.31.0-4.31.2, 4.32.0, 5.0.0-5.0.1, 5.1.0, 5.2.0-5.2.3, 5.3.0-5.3.2, 5.4.0-5.4.1, 5.5.0-5.5.2, 5.6.0-5.6.4, 5.7.0, 5.8.0-5.8.1, 5.9.0, 5.10.0-5.10.3, 5.11.0-5.11.1, 5.12.0, 5.13.0, 5.14.0-5.14.2, 5.15.0, 5.16.0-5.16.5, 5.17.0-5.17.1, 5.18.0, 5.19.0, 5.20.0-5.20.1, 6.0.0, 6.1.0, 6.2.0-6.2.4, 6.3.0-6.3.6, 6.4.0-6.4.2, 6.5.0-6.5.1, 6.6.0, 6.7.0, 6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0, 6.20.0, 6.21.0-6.21.1, 6.22.0-6.22.2, 6.23.0, 6.24.0, 6.25.0-6.25.2, 6.26.0, 6.27.0, 6.28.0, 6.29.0-6.29.3, 6.30.0-6.30.4, 6.31.0-6.31.1, 6.32.0-6.32.2, 6.33.0-6.33.1, 6.34.0-6.34.3, 6.35.0-6.35.2, 6.36.0-6.36.4, 6.37.0, 6.38.0-6.38.4, 6.39.0-6.39.1, 6.40.0-6.40.9, 6.41.0-6.41.3, 6.42.0, 6.43.0-6.43.1, 6.44.0-6.44.3, 6.45.0-6.45.1, 6.46.0-6.46.1, 6.47.0-6.47.1, 6.48.0-6.48.2, 6.49.0-6.49.2, 6.50.0, 6.51.0, 6.52.0-6.52.2, 6.53.0-6.53.4] or uninstalled\n │   └─restricted to versions 6.53.4 by an explicit requirement, leaving only versions 6.53.4\n ├─restricted by compatibility requirements with ModelingToolkit [961ee093] to versions: [3.0.0, 3.1.0, 3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.0, 3.7.0, 4.0.0, 4.1.0, 4.2.0, 4.3.0, 4.10.0, 4.11.0] or uninstalled, leaving only versions: [4.2.0, 4.3.0, 4.10.0, 4.11.0]\n │ └─ModelingToolkit [961ee093] log:\n │   ├─possible versions are: [0.0.1-0.0.2, 0.1.0, 0.2.0, 0.4.0, 0.5.0, 0.6.0-0.6.1, 0.6.3-0.6.4, 0.7.0-0.7.2, 0.8.0, 0.9.0-0.9.1, 0.10.0, 1.0.0-1.0.3, 1.1.0-1.1.3, 1.2.0-1.2.10, 1.3.0-1.3.3, 1.4.0-1.4.3, 2.0.0, 3.0.0-3.0.2, 3.1.0-3.1.1, 3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.0-3.6.4, 3.7.0-3.7.1, 3.8.0, 3.9.0, 3.10.0-3.10.2, 3.11.0-3.11.1, 3.12.0-3.12.2, 3.13.0, 3.14.0-3.14.2, 3.15.0, 3.16.0, 3.17.0, 3.18.0, 3.19.0, 3.20.0-3.20.1, 3.21.0, 4.0.0-4.0.9, 4.1.0, 4.2.0, 4.3.0-4.3.4, 4.4.0-4.4.3, 4.5.0] or uninstalled\n │   ├─restricted by compatibility requirements with DiffEqBase [2b5f629d] to versions: [0.4.0, 0.5.0, 0.6.0-0.6.1, 0.6.3-0.6.4, 0.7.0-0.7.2, 0.8.0, 0.9.0-0.9.1, 0.10.0, 1.0.0-1.0.3, 1.1.0-1.1.3, 1.2.0-1.2.10, 1.3.0-1.3.3, 1.4.0-1.4.3, 2.0.0, 3.0.0-3.0.2, 3.1.0-3.1.1, 3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.0-3.6.4, 3.7.0-3.7.1, 3.8.0, 3.9.0, 3.10.0-3.10.2, 3.11.0-3.11.1, 3.12.0-3.12.2, 3.13.0, 3.14.0-3.14.2, 3.15.0, 3.16.0, 3.17.0, 3.18.0, 3.19.0, 3.20.0-3.20.1, 3.21.0, 4.0.0-4.0.9, 4.1.0, 4.2.0, 4.3.0-4.3.4, 4.4.0-4.4.3, 4.5.0] or uninstalled\n │   │ └─DiffEqBase [2b5f629d] log: see above\n │   ├─restricted by compatibility requirements with UnPack [3a884ed6] to versions: [0.0.1-0.0.2, 0.1.0, 0.2.0, 0.4.0, 0.5.0, 0.6.0-0.6.1, 0.6.3-0.6.4, 0.7.0-0.7.2, 0.8.0, 0.9.0-0.9.1, 0.10.0, 1.0.0-1.0.3, 1.1.0-1.1.3, 1.2.0-1.2.10, 1.3.0-1.3.3, 1.4.0-1.4.3, 2.0.0, 3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.0-3.6.4, 3.7.0-3.7.1, 3.8.0, 3.9.0, 3.10.0-3.10.2, 3.11.0-3.11.1, 3.12.0-3.12.2, 3.13.0, 3.14.0-3.14.2, 3.15.0, 3.16.0, 3.17.0, 3.18.0, 3.19.0, 3.20.0-3.20.1, 3.21.0, 4.0.0-4.0.9, 4.1.0, 4.2.0, 4.3.0-4.3.4, 4.4.0-4.4.3, 4.5.0] or uninstalled, leaving only versions: [0.4.0, 0.5.0, 0.6.0-0.6.1, 0.6.3-0.6.4, 0.7.0-0.7.2, 0.8.0, 0.9.0-0.9.1, 0.10.0, 1.0.0-1.0.3, 1.1.0-1.1.3, 1.2.0-1.2.10, 1.3.0-1.3.3, 1.4.0-1.4.3, 2.0.0, 3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.0-3.6.4, 3.7.0-3.7.1, 3.8.0, 3.9.0, 3.10.0-3.10.2, 3.11.0-3.11.1, 3.12.0-3.12.2, 3.13.0, 3.14.0-3.14.2, 3.15.0, 3.16.0, 3.17.0, 3.18.0, 3.19.0, 3.20.0-3.20.1, 3.21.0, 4.0.0-4.0.9, 4.1.0, 4.2.0, 4.3.0-4.3.4, 4.4.0-4.4.3, 4.5.0] or uninstalled\n │   │ └─UnPack [3a884ed6] log:\n │   │   ├─possible versions are: [0.1.0, 1.0.0-1.0.2] or uninstalled\n │   │   └─restricted to versions 1.0.2 by an explicit requirement, leaving only versions 1.0.2\n │   ├─restricted by compatibility requirements with DiffRules [b552c78f] to versions: [1.1.0-1.1.3, 1.2.0-1.2.10, 1.3.0-1.3.3, 1.4.0-1.4.3, 2.0.0, 3.0.0-3.0.2, 3.1.0-3.1.1, 3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.0-3.6.4, 3.7.0-3.7.1, 3.8.0, 3.9.0, 3.10.0-3.10.2, 3.11.0-3.11.1, 3.12.0-3.12.2, 3.13.0, 3.14.0-3.14.2, 3.15.0, 3.16.0, 3.17.0, 3.18.0, 3.19.0, 3.20.0-3.20.1, 3.21.0, 4.0.0-4.0.9, 4.1.0, 4.2.0, 4.3.0-4.3.4, 4.4.0-4.4.3, 4.5.0] or uninstalled, leaving only versions: [1.1.0-1.1.3, 1.2.0-1.2.10, 1.3.0-1.3.3, 1.4.0-1.4.3, 2.0.0, 3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.0-3.6.4, 3.7.0-3.7.1, 3.8.0, 3.9.0, 3.10.0-3.10.2, 3.11.0-3.11.1, 3.12.0-3.12.2, 3.13.0, 3.14.0-3.14.2, 3.15.0, 3.16.0, 3.17.0, 3.18.0, 3.19.0, 3.20.0-3.20.1, 3.21.0, 4.0.0-4.0.9, 4.1.0, 4.2.0, 4.3.0-4.3.4, 4.4.0-4.4.3, 4.5.0] or uninstalled\n │   │ └─DiffRules [b552c78f] log:\n │   │   ├─possible versions are: [0.0.8-0.0.10, 0.1.0, 1.0.0-1.0.2] or uninstalled\n │   │   └─restricted to versions 1.0.2 by an explicit requirement, leaving only versions 1.0.2\n │   ├─restricted by compatibility requirements with DataStructures [864edb3b] to versions: [0.0.1-0.0.2, 0.1.0, 0.2.0, 0.4.0, 0.5.0, 0.6.0-0.6.1, 0.6.3-0.6.4, 0.7.0-0.7.2, 0.8.0, 0.9.0-0.9.1, 0.10.0, 1.0.0-1.0.3, 1.1.0-1.1.3, 1.2.0-1.2.10, 1.3.0-1.3.3, 1.4.0-1.4.3, 2.0.0, 3.0.0-3.0.2, 3.1.0-3.1.1, 3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.0-3.6.1, 3.17.0, 3.18.0, 3.19.0, 3.20.0-3.20.1, 3.21.0, 4.0.0-4.0.9, 4.1.0, 4.2.0, 4.3.0-4.3.4, 4.4.0-4.4.3, 4.5.0] or uninstalled, leaving only versions: [1.1.0-1.1.3, 1.2.0-1.2.10, 1.3.0-1.3.3, 1.4.0-1.4.3, 2.0.0, 3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.0-3.6.1, 3.17.0, 3.18.0, 3.19.0, 3.20.0-3.20.1, 3.21.0, 4.0.0-4.0.9, 4.1.0, 4.2.0, 4.3.0-4.3.4, 4.4.0-4.4.3, 4.5.0] or uninstalled\n │   │ └─DataStructures [864edb3b] log:\n │   │   ├─possible versions are: [0.9.0, 0.10.0, 0.11.0-0.11.1, 0.12.0, 0.13.0, 0.14.0-0.14.1, 0.15.0, 0.16.1, 0.17.0-0.17.20, 0.18.0-0.18.8] or uninstalled\n │   │   └─restricted to versions 0.18.8 by an explicit requirement, leaving only versions 0.18.8\n │   └─restricted by compatibility requirements with SpecialFunctions [276daf66] to versions: [4.0.7-4.0.9, 4.1.0, 4.2.0, 4.3.0-4.3.4, 4.4.0-4.4.3, 4.5.0] or uninstalled\n │     └─SpecialFunctions [276daf66] log:\n │       ├─possible versions are: [0.7.0-0.7.2, 0.8.0, 0.9.0, 0.10.0-0.10.3, 1.0.0, 1.1.0, 1.2.0-1.2.1] or uninstalled\n │       └─restricted to versions 1.2.1 by an explicit requirement, leaving only versions 1.2.1\n ├─restricted by compatibility requirements with DiffEqBiological [eb300fae] to versions: [4.9.0-4.9.1, 4.10.0, 4.11.0] or uninstalled, leaving only versions: [4.10.0, 4.11.0]\n │ └─DiffEqBiological [eb300fae] log:\n │   ├─possible versions are: [3.0.0, 3.1.0, 3.2.0, 3.3.0-3.3.1, 3.4.0-3.4.2, 3.5.0-3.5.5, 3.6.0-3.6.1, 3.7.0-3.7.2, 3.8.0-3.8.2, 3.9.0-3.9.1, 3.10.0, 3.11.0, 4.0.0-4.0.2, 4.1.0, 4.2.0, 4.3.0] or uninstalled\n │   ├─restricted by compatibility requirements with Compat [34da2185] to versions: [3.8.0-3.8.2, 3.9.0-3.9.1, 3.10.0, 3.11.0, 4.0.0-4.0.2, 4.1.0, 4.2.0, 4.3.0] or uninstalled\n │   │ └─Compat [34da2185] log:\n │   │   ├─possible versions are: [1.0.0-1.0.1, 1.1.0, 1.2.0, 1.3.0, 1.4.0, 1.5.0-1.5.1, 2.0.0, 2.1.0, 2.2.0-2.2.1, 3.0.0, 3.1.0, 3.2.0, 3.3.0-3.3.1, 3.4.0, 3.5.0, 3.6.0, 3.7.0, 3.8.0, 3.9.0-3.9.1, 3.10.0, 3.11.0, 3.12.0, 3.13.0, 3.14.0, 3.15.0, 3.16.0, 3.17.0, 3.18.0, 3.19.0, 3.20.0, 3.21.0, 3.22.0, 3.23.0, 3.24.0, 3.25.0] or uninstalled\n │   │   └─restricted to versions 3.25.0 by an explicit requirement, leaving only versions 3.25.0\n │   └─restricted by compatibility requirements with Reexport [189a3867] to versions: uninstalled\n │     └─Reexport [189a3867] log:\n │       ├─possible versions are: [0.2.0, 1.0.0] or uninstalled\n │       └─restricted to versions 1.0.0 by an explicit requirement, leaving only versions 1.0.0\n └─restricted by compatibility requirements with Catalyst [479239e8] to versions: [3.0.0, 3.1.0, 3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.0, 3.7.0, 4.0.0, 4.1.0, 4.2.0, 4.3.0, 4.4.0, 4.5.0-4.5.1, 4.6.0-4.6.4, 4.7.0, 4.8.0-4.8.1] or uninstalled — no versions left\n   └─Catalyst [479239e8] log:\n     ├─possible versions are: [5.0.0-5.0.6, 5.1.0-5.1.1, 6.0.0, 6.1.0, 6.2.0, 6.3.0-6.3.1] or uninstalled\n     ├─restricted by compatibility requirements with Reexport [189a3867] to versions: [6.1.0, 6.2.0, 6.3.0-6.3.1] or uninstalled\n     │ └─Reexport [189a3867] log: see above\n     └─restricted by compatibility requirements with Catlab [134e5e36] to versions: 5.0.0-5.0.1 or uninstalled, leaving only versions: uninstalled\n       └─Catlab [134e5e36] log:\n         ├─possible versions are: [0.2.1, 0.2.3, 0.3.0, 0.4.0-0.4.1, 0.5.0-0.5.3, 0.6.0-0.6.2, 0.7.0-0.7.4, 0.8.0-0.8.2, 0.9.0-0.9.5, 0.10.0-0.10.1] or uninstalled\n         ├─restricted by compatibility requirements with Requires [ae029012] to versions: [0.2.1, 0.5.3, 0.6.0-0.6.2, 0.7.0-0.7.4, 0.8.0-0.8.2, 0.9.0-0.9.5, 0.10.0-0.10.1] or uninstalled\n         │ └─Requires [ae029012] log:\n         │   ├─possible versions are: [0.5.0-0.5.2, 1.0.0-1.0.3, 1.1.0-1.1.2] or uninstalled\n         │   └─restricted to versions 1.1.2 by an explicit requirement, leaving only versions 1.1.2\n         ├─restricted by compatibility requirements with IterativeSolvers [42fd0dbc] to versions: [0.2.1, 0.2.3, 0.3.0, 0.4.0-0.4.1, 0.5.0-0.5.3, 0.7.2-0.7.4, 0.8.0-0.8.2, 0.9.0-0.9.5, 0.10.0-0.10.1] or uninstalled, leaving only versions: [0.2.1, 0.5.3, 0.7.2-0.7.4, 0.8.0-0.8.2, 0.9.0-0.9.5, 0.10.0-0.10.1] or uninstalled\n         │ └─IterativeSolvers [42fd0dbc] log:\n         │   ├─possible versions are: [0.7.0-0.7.1, 0.8.0-0.8.5, 0.9.0] or uninstalled\n         │   └─restricted to versions 0.9.0 by an explicit requirement, leaving only versions 0.9.0\n         ├─restricted by compatibility requirements with Reexport [189a3867] to versions: 0.10.1 or uninstalled\n         │ └─Reexport [189a3867] log: see above\n         └─restricted by compatibility requirements with PrettyTables [08abe8d2] to versions: [0.2.1, 0.2.3, 0.3.0, 0.4.0-0.4.1, 0.5.0-0.5.3, 0.6.0-0.6.2, 0.7.0-0.7.4, 0.8.0-0.8.2] or uninstalled, leaving only versions: uninstalled\n           └─PrettyTables [08abe8d2] log:\n             ├─possible versions are: [0.1.0, 0.2.1, 0.3.0-0.3.1, 0.4.0-0.4.2, 0.5.0-0.5.1, 0.6.0, 0.7.0, 0.8.0-0.8.4, 0.9.0-0.9.1, 0.10.0-0.10.1] or uninstalled\n             ├─restricted by compatibility requirements with Reexport [189a3867] to versions: [0.1.0, 0.2.1] or uninstalled\n             │ └─Reexport [189a3867] log: see above\n             └─restricted by compatibility requirements with Tables [bd369af6] to versions: [0.1.0, 0.8.3-0.8.4, 0.9.0-0.9.1, 0.10.0-0.10.1] or uninstalled, leaving only versions: 0.1.0 or uninstalled\n               └─Tables [bd369af6] log:\n                 ├─possible versions are: [0.1.0-0.1.15, 0.1.17-0.1.19, 0.2.0-0.2.11, 1.0.0-1.0.5, 1.1.0, 1.2.0-1.2.2] or uninstalled\n                 └─restricted to versions 1.2.2 by an explicit requirement, leaving only versions 1.2.2", nothing)
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1427
+Status `/tmp/jl_qpFIaR/Project.toml`
+  [bcd4f6db] DelayDiffEq v5.28.1
+  [2b5f629d] DiffEqBase v6.53.4
+  [459566f4] DiffEqCallbacks v2.16.0
+  [f3b72e0c] DiffEqDevTools v2.27.1
+  [a077e3f3] DiffEqProblemLibrary v4.11.0
+  [6a86dc24] FiniteDiff v2.7.2
+  [f6369f11] ForwardDiff v0.10.14
+  [731186ca] RecursiveArrayTools v2.10.0
+  [1bc83da4] SafeTestsets v0.0.1
+  [1986cc42] Unitful v1.5.0
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_qpFIaR/Manifest.toml`
+  [c3fe647b] AbstractAlgebra v0.12.0
+  [79e6a3ab] Adapt v3.0.0
+  [ec485272] ArnoldiMethod v0.0.4
+  [4fba245c] ArrayInterface v2.14.13
+  [4c555306] ArrayLayouts v0.4.12
+  [56f22d72] Artifacts v1.3.0
+  [15f4f7f2] AutoHashEquals v0.2.0
+  [aae01518] BandedMatrices v0.15.25
+  [8e7c35d0] BlockArrays v0.12.14
+  [ffab5731] BlockBandedMatrices v0.9.5
+  [a603d957] CanonicalTraits v0.2.3
+  [479239e8] Catalyst v6.3.1
+  [134e5e36] Catlab v0.9.2
+  [d360d2e6] ChainRulesCore v0.9.24
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.6
+  [861a8166] Combinatorics v1.0.2
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [a81c6b42] Compose v0.9.1
+  [187b0558] ConstructionBase v1.0.0
+  [adafc99b] CpuId v0.2.2
+  [a8cc5b0e] Crayons v4.0.4
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [bcd4f6db] DelayDiffEq v5.28.1
+  [2b5f629d] DiffEqBase v6.53.4
+  [459566f4] DiffEqCallbacks v2.16.0
+  [f3b72e0c] DiffEqDevTools v2.27.1
+  [c894b116] DiffEqJump v6.12.2
+  [77a26b50] DiffEqNoiseProcess v5.5.0
+  [9fdde737] DiffEqOperators v4.19.0
+  [a077e3f3] DiffEqProblemLibrary v4.11.0
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [b4f34e82] Distances v0.10.0
+  [31c24e10] Distributions v0.24.10
+  [ffbed154] DocStringExtensions v0.8.3
+  [d4d017d3] ExponentialUtilities v1.8.0
+  [e2ba6199] ExprTools v0.1.3
+  [9aa1b823] FastClosures v0.3.2
+  [1a297f60] FillArrays v0.10.2
+  [6a86dc24] FiniteDiff v2.7.2
+  [53c48c17] FixedPointNumbers v0.8.4
+  [59287772] Formatting v0.4.2
+  [f6369f11] ForwardDiff v0.10.14
+  [069b7b12] FunctionWrappers v1.1.1
+  [6b9d7cbe] GeneralizedGenerated v0.2.8
+  [01680d73] GenericSVD v0.3.0
+  [615f187c] IfElse v0.1.0
+  [d25df0c9] Inflate v0.1.2
+  [c8e1da08] IterTools v1.3.0
+  [42fd0dbc] IterativeSolvers v0.9.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [b14d175d] JuliaVariables v0.2.3
+  [b964fa9f] LaTeXStrings v1.2.0
+  [2ee39098] LabelledArrays v1.4.0
+  [23fbe1c1] Latexify v0.14.7
+  [5078a376] LazyArrays v0.19.4
+  [d7e5e226] LazyBandedMatrices v0.3.6
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [093fc24a] LightGraphs v1.3.4
+  [9c8b4983] LightXML v0.9.0
+  [d3d80556] LineSearches v7.1.1
+  [bdcacae8] LoopVectorization v0.8.26
+  [d8e11817] MLStyle v0.4.6
+  [1914dd2f] MacroTools v0.5.6
+  [a3b82374] MatrixFactorizations v0.6.1
+  [442fdcdd] Measures v0.3.1
+  [e1d29d7a] Missings v0.4.4
+  [961ee093] ModelingToolkit v4.5.0
+  [46d2c3a1] MuladdMacro v0.2.2
+  [d41bc354] NLSolversBase v7.7.1
+  [2774e3e8] NLsolve v4.5.1
+  [872c559c] NNlib v0.7.11
+  [77ba4419] NaNMath v0.3.5
+  [71a1bf82] NameResolution v0.1.5
+  [8913a72c] NonlinearSolve v0.3.4
+  [6fe1bfb0] OffsetArrays v1.3.1
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [1dea7af3] OrdinaryDiffEq v5.49.1
+  [90014a1f] PDMats v0.10.1
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.15
+  [e409e4f3] PoissonRandom v0.4.0
+  [8162dcfd] PrettyPrint v0.2.0
+  [08abe8d2] PrettyTables v0.9.1
+  [1fd47b50] QuadGK v2.4.1
+  [74087812] Random123 v1.2.0
+  [fb686558] RandomExtensions v0.4.3
+  [e6cf234a] RandomNumbers v1.4.0
+  [3cdcf5f2] RecipesBase v1.1.1
+  [731186ca] RecursiveArrayTools v2.10.0
+  [f2c3362d] RecursiveFactorization v0.1.6
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [ae5879a3] ResettableStacks v1.1.0
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [47965b36] RootedTrees v1.0.0
+  [7e49a35a] RuntimeGeneratedFunctions v0.5.0
+  [21efa798] SIMDPirates v0.8.26
+  [476501e8] SLEEFPirates v0.5.5
+  [1bc83da4] SafeTestsets v0.0.1
+  [efcf1570] Setfield v0.7.0
+  [699a6c99] SimpleTraits v0.9.3
+  [a2af1166] SortingAlgorithms v0.3.1
+  [47a9eef4] SparseDiffTools v1.12.0
+  [276daf66] SpecialFunctions v1.2.1
+  [90137ffa] StaticArrays v0.12.5
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [09ab397b] StructArrays v0.4.2
+  [d1185830] SymbolicUtils v0.6.3
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [a759f4b9] TimerOutputs v0.5.7
+  [a2a6695c] TreeViews v0.3.0
+  [3a884ed6] UnPack v1.0.2
+  [1986cc42] Unitful v1.5.0
+  [3d5dd08c] VectorizationBase v0.12.33
+  [19fa3120] VertexSafeGraphs v0.1.2
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [83775a58] Zlib_jll v1.2.11+18
+  [700de1a5] ZygoteRules v0.2.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Broken  Total
+AD Tests      |   12      12     24
+301.499129 seconds (185.84 M allocations: 9.023 GiB, 1.43% gc time)
+Test Summary:   | Pass  Total
+Backwards Tests |   16     16
+  6.933564 seconds (11.24 M allocations: 579.562 MiB, 3.04% gc time)
+Test Summary:            | Pass  Total
+Composite Solution Tests |   12     12
+ 49.799885 seconds (86.97 M allocations: 4.174 GiB, 4.17% gc time)
+Test Summary:                | Pass  Total
+Constrained Time Steps Tests |   10     10
+ 20.139512 seconds (45.40 M allocations: 2.627 GiB, 6.39% gc time)
+Test Summary:         | Pass  Total
+Dependent Delay Tests |   17     17
+  9.208728 seconds (16.69 M allocations: 1.074 GiB, 4.17% gc time)
+Test Summary:       | Pass  Total
+Discontinuity Tests |   38     38
+  4.964706 seconds (8.04 M allocations: 392.778 MiB, 2.92% gc time)
+Test Summary: | Pass  Total
+Export Tests  |    1      1
+  0.049976 seconds (28.45 k allocations: 1.429 MiB)
+Test Summary:               | Pass  Broken  Total
+Fixed-point Iteration Tests |   24      12     36
+ 98.451892 seconds (78.37 M allocations: 3.631 GiB, 1.84% gc time)
+Test Summary:          | Pass  Total
+History Function Tests |   81     81
+  9.483048 seconds (20.05 M allocations: 949.591 MiB, 3.44% gc time)
+Test Summary:  | Pass  Broken  Total
+Jacobian Tests |   34      34     68
+ 60.551512 seconds (117.19 M allocations: 5.753 GiB, 3.26% gc time)
+Test Summary:                | Pass  Total
+Parameterized Function Tests |   12     12
+  5.602783 seconds (8.38 M allocations: 404.682 MiB, 2.88% gc time)
+Test Summary: | Pass  Total
+saveat Tests  |  101    101
+ 12.729245 seconds (21.13 M allocations: 1.179 GiB, 3.10% gc time)
+Test Summary:   | Pass  Total
+save_idxs Tests |   52     52
+ 13.569474 seconds (23.05 M allocations: 1.113 GiB, 2.70% gc time)
+Test Summary:                  | Pass  Total
+Unconstrained Time Steps Tests |   15     15
+ 34.498801 seconds (56.28 M allocations: 3.717 GiB, 3.53% gc time)
+Test Summary: | Pass  Total
+Units Tests   |   13     13
+ 41.970896 seconds (51.58 M allocations: 2.473 GiB, 2.80% gc time)
+Check for stochastic errors
+Check some other integrators
+Rosenbrock23
+Rosenbrock32
+Vern7
+Euler
+Midpoint
+RK4
+SSPRK22
+SSPRK33
+ORK256
+CarpenterKennedy2N54
+SHLDDRK64
+DGLDDRK73_C
+CFRLDDRK64
+TSLDDRK74
+CKLLSRK43_2
+ParsaniKetchesonDeconinck3S32
+BS3
+BS5
+DP5
+DP8
+Feagin10
+Feagin12
+Feagin14
+TanYam7
+Tsit5
+TsitPap8
+Vern6
+Vern7
+Vern8
+Vern9
+OwrenZen3
+OwrenZen4
+OwrenZen5
+Rodas4
+Rodas5
+Test Summary: | Pass  Total
+Cache Tests   |   45     45
+316.276970 seconds (450.46 M allocations: 21.774 GiB, 3.33% gc time)
+Test Summary: | Pass  Total
+Event Tests   |   13     13
+ 22.882475 seconds (12.58 M allocations: 627.713 MiB, 1.12% gc time)
+(tprev, t) = (0.0, 0.0625)
+(tprev, t) = (0.0625, 0.5)
+(tprev, t) = (0.5, 0.7113162729614714)
+(tprev, t) = (0.7113162729614714, 0.8430750280339182)
+(tprev, t) = (0.8430750280339182, 0.9210780782314043)
+(tprev, t) = (0.9210780782314043, 0.9642703918488206)
+(tprev, t) = (0.9642703918488206, 0.9861188456029072)
+(tprev, t) = (0.9861188456029072, 0.9958083112749617)
+(tprev, t) = (0.9958083112749617, 0.999268279782192)
+(tprev, t) = (0.999268279782192, 1.0)
+(tprev, t) = (1.0, 1.0003691106501282)
+(tprev, t) = (1.0003691106501282, 1.004060217151411)
+(tprev, t) = (1.004060217151411, 1.0409712821642392)
+(tprev, t) = (1.0409712821642392, 1.4100819322925204)
+(tprev, t) = (1.4100819322925204, 2.0)
+(tprev, t) = (2.0, 2.2643438785165344)
+(tprev, t) = (2.2643438785165344, 3.0)
+(tprev, t) = (3.0, 3.4694315774247455)
+(tprev, t) = (3.4694315774247455, 4.0)
+(tprev, t) = (4.0, 4.681725498926003)
+(tprev, t) = (4.681725498926003, 5.0)
+(tprev, t) = (5.0, 5.646091554807268)
+(tprev, t) = (5.646091554807268, 6.0)
+(tprev, t) = (6.0, 6.632103897445186)
+(tprev, t) = (6.632103897445186, 7.228995707122442)
+(tprev, t) = (7.228995707122442, 8.666015687047528)
+(tprev, t) = (8.666015687047528, 9.29844012816626)
+(tprev, t) = (9.29844012816626, 10.0)
+Test Summary:  | Pass  Total
+Iterator Tests |   12     12
+ 11.170260 seconds (15.33 M allocations: 1.067 GiB, 4.24% gc time)
+Test Summary:          | Pass  Total
+Reinitialization Tests |    8      8
+  3.999726 seconds (5.11 M allocations: 252.728 MiB, 3.05% gc time)
+Test Summary:          | Pass  Total
+Residual Control Tests |   18     18
+  9.235782 seconds (15.90 M allocations: 1.106 GiB, 5.13% gc time)
+Test Summary:     | Pass  Total
+Return Code Tests |    6      6
+  2.136433 seconds (4.04 M allocations: 219.221 MiB, 6.21% gc time)
+Rosenbrock23
+Rosenbrock32
+ROS3P
+Rodas3
+RosShamp4
+Veldd4
+Velds4
+GRK4T
+GRK4A
+Ros4LStab
+Rodas4
+Rodas42
+Rodas4P
+Rodas5
+Test Summary:    | Pass  Total
+Rosenbrock Tests |   42     42
+111.435707 seconds (179.60 M allocations: 9.033 GiB, 3.31% gc time)
+ImplicitMidpoint
+SSPSDIRK2
+KenCarp5
+ImplicitEuler
+Trapezoid
+TRBDF2
+SDIRK2
+Kvaerno3
+KenCarp3
+Cash4
+Hairer4
+Hairer42
+Kvaerno4
+KenCarp4
+Kvaerno5
+ImplicitEuler
+Trapezoid
+TRBDF2
+SDIRK2
+Kvaerno3
+KenCarp3
+Cash4
+Hairer4
+Hairer42
+Kvaerno4
+KenCarp4
+Kvaerno5
+Test Summary: | Pass  Broken  Total
+SDIRK Tests   |   45      36     81
+280.971583 seconds (457.37 M allocations: 28.899 GiB, 4.64% gc time)
+Test Summary:           | Pass  Total
+Unique Timepoints Tests |    2      2
+  2.174224 seconds (3.50 M allocations: 167.428 MiB, 2.96% gc time)
+Vern6
+Vern7
+Vern8
+Vern9
+Mackey and Glass
+Test Summary: | Pass  Total
+Verner Tests  |   16     16
+121.195152 seconds (88.75 M allocations: 3.860 GiB, 1.55% gc time)
+Test Summary:   | Broken  Total
+Inference Tests |     18     18
+  7.660078 seconds (8.49 M allocations: 432.672 MiB, 2.10% gc time)
+Test Summary:         | Pass  Total
+Waltman Problem Tests |   26     26
+ 20.647270 seconds (37.14 M allocations: 1.754 GiB, 3.46% gc time)
+    Testing DelayDiffEq tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:19:04.782
+CPU usage: 1606.81s (1578.24s user, 30.69s kernel)
+
+Network usage:
+- eth0: 20.902 MiB received, 700.751 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":36,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":17,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":36,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":36,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":17,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":36,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":225280,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":118784,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":225280,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":225280,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":118784,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":225280,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":505819136,"max_usage":2621648896,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":287649792,"inactive_file":135168,"inactive_anon":122056704,"total_pgfault":16883361,"total_cache":181547008,"total_rss_huge":0,"total_active_anon":347246592,"total_pgmajfault":0,"pgpgin":8773149,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":8658570,"hierarchical_memsw_limit":0,"cache":181547008,"active_file":135168,"pgfault":16883361,"total_mapped_file":0,"total_pgpgout":8658570,"total_writeback":0,"rss":287649792,"unevictable":0,"total_inactive_anon":122056704,"total_pgpgin":8773149,"active_anon":347246592,"total_active_file":135168},"limit":540965302272},"name":"/DelayDiffEq-AbmwI8oF","networks":{"eth0":{"rx_bytes":21917586,"rx_packets":5864,"tx_packets":5912,"tx_bytes":717569,"tx_dropped":0,"rx_dropped":54,"tx_errors":0,"rx_errors":0}},"id":"fed3d7de4a8e452fa217d8889af4f179c6ef2c779f52893d832c5d4660af66a0","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6345552564522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":1578240000000,"usage_in_kernelmode":30690000000,"total_usage":1606811132937,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21560,1606772246902,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3439252,14190,35411033,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:19:05.667641434Z"}

@@ -1,0 +1,83 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:49:00.609
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:49:02.379
+#
+
+ Installing known registries into `~/.julia`
+########                                                                  11.3%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed jlpkg ─ v1.3.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [c4c688b2] + jlpkg v1.3.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [c4c688b2] + jlpkg v1.3.2
+
+
+################################################################################
+# Testing: 2021-01-11T15:49:06.165
+#
+
+    Testing jlpkg
+Status `/tmp/jl_x570yT/Project.toml`
+  [c4c688b2] jlpkg v1.3.2
+  [44cfe95a] Pkg
+  [8dfed614] Test
+Status `/tmp/jl_x570yT/Manifest.toml`
+  [c4c688b2] jlpkg v1.3.2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  2 85.5M    2 1767k    0     0  1618k      0  0:00:54  0:00:01  0:00:53 1617k100 85.5M  100 85.5M    0     0  50.0M      0  0:00:01  0:00:01 --:--:-- 49.9M
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   832  100   832    0     0   3764      0 --:--:-- --:--:-- --:--:--  3764
+julia-1.1.1-linux-x86_64.tar.gz: OK
+    Testing jlpkg tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:49:58.687
+CPU usage: 54.23s (42.66s user, 11.74s kernel)
+
+Network usage:
+- eth0: 111.120 MiB received, 478.033 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":545,"op":"Read","minor":0},{"major":259,"value":98,"op":"Write","minor":0},{"major":259,"value":564,"op":"Sync","minor":0},{"major":259,"value":79,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":643,"op":"Total","minor":0},{"major":253,"value":545,"op":"Read","minor":2},{"major":253,"value":98,"op":"Write","minor":2},{"major":253,"value":564,"op":"Sync","minor":2},{"major":253,"value":79,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":643,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":2232320,"op":"Read","minor":0},{"major":259,"value":454656,"op":"Write","minor":0},{"major":259,"value":2338816,"op":"Sync","minor":0},{"major":259,"value":348160,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":2686976,"op":"Total","minor":0},{"major":253,"value":2232320,"op":"Read","minor":2},{"major":253,"value":454656,"op":"Write","minor":2},{"major":253,"value":2338816,"op":"Sync","minor":2},{"major":253,"value":348160,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":2686976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":361164800,"max_usage":1529466880,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":33,"total_rss":215486464,"inactive_file":270336,"inactive_anon":78802944,"total_pgfault":2329866,"total_cache":110587904,"total_rss_huge":0,"total_active_anon":216133632,"total_pgmajfault":33,"pgpgin":2056857,"rss_huge":0,"mapped_file":0,"total_inactive_file":270336,"dirty":1081344,"total_unevictable":0,"total_dirty":1081344,"writeback":135168,"pgpgout":1977262,"hierarchical_memsw_limit":0,"cache":110587904,"active_file":31223808,"pgfault":2329866,"total_mapped_file":0,"total_pgpgout":1977262,"total_writeback":135168,"rss":215486464,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":2056857,"active_anon":216133632,"total_active_file":31223808},"limit":540965302272},"name":"/jlpkg-jX3Di8Hi","networks":{"eth0":{"rx_bytes":116518159,"rx_packets":7245,"tx_packets":6365,"tx_bytes":489506,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"0775241a14e6a4c56a05b627f1eb2e2d8d1fb48d0b0f4ed5fe29c22b3d96fb3b","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3361998954522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":42660000000,"usage_in_kernelmode":11740000000,"total_usage":54226707888,"percpu_usage":[0,0,0,0,0,0,54226663908,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43980,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:49:58.689990777Z"}

@@ -1,0 +1,136 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:56:43.271
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:56:45.051
+#
+
+ Installing known registries into `~/.julia`
+#######################################################                   76.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Struve ─────────────────────── v0.1.0
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed QuadGK ─────────────────────── v2.4.1
+  Installed Compat ─────────────────────── v3.25.0
+  Installed SpecialFunctions ───────────── v0.10.3
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [bbbc800e] + Struve v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [864edb3b] + DataStructures v0.18.8
+  [692b3bcd] + JLLWrappers v1.2.0
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [1fd47b50] + QuadGK v2.4.1
+  [276daf66] + SpecialFunctions v0.10.3
+  [bbbc800e] + Struve v0.1.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T18:56:50.696
+#
+
+    Testing Struve
+Status `/tmp/jl_IRVzCQ/Project.toml`
+  [1fd47b50] QuadGK v2.4.1
+  [276daf66] SpecialFunctions v0.10.3
+  [bbbc800e] Struve v0.1.0
+  [8dfed614] Test
+Status `/tmp/jl_IRVzCQ/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [864edb3b] DataStructures v0.18.8
+  [692b3bcd] JLLWrappers v1.2.0
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [1fd47b50] QuadGK v2.4.1
+  [276daf66] SpecialFunctions v0.10.3
+  [bbbc800e] Struve v0.1.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Broken  Total
+H0 zeros      |   41      11     52
+    Testing Struve tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:57:18.444
+CPU usage: 35.27s (31.48s user, 3.86s kernel)
+
+Network usage:
+- eth0: 2.978 MiB received, 71.110 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":135168,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":28672,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":135168,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":135168,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":28672,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":135168,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":300347392,"max_usage":1003634688,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":183144448,"inactive_file":135168,"inactive_anon":80019456,"total_pgfault":980463,"total_cache":87031808,"total_rss_huge":0,"total_active_anon":187883520,"total_pgmajfault":0,"pgpgin":670890,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":604930,"hierarchical_memsw_limit":0,"cache":87031808,"active_file":2433024,"pgfault":980463,"total_mapped_file":0,"total_pgpgout":604930,"total_writeback":0,"rss":183144448,"unevictable":0,"total_inactive_anon":80019456,"total_pgpgin":670890,"active_anon":187883520,"total_active_file":2433024},"limit":540965302272},"name":"/Struve-gvILk6Bs","networks":{"eth0":{"rx_bytes":3123036,"rx_packets":593,"tx_packets":631,"tx_bytes":72817,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"9a21d8df19152b6a70a0ad1ec4a5b7b9f9bf2b804b5e43303c578ab4211819f6","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4798351534522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":31480000000,"usage_in_kernelmode":3860000000,"total_usage":35270515337,"percpu_usage":[0,35270511097,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4240,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:57:18.447558071Z"}

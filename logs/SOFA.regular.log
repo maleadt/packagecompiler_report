@@ -1,0 +1,112 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:34:09.486
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:34:11.298
+#
+
+ Installing known registries into `~/.julia`
+##########################################################                81.3%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed BinDeps ────── v1.0.2
+  Installed URIParser ──── v0.4.1
+  Installed SOFA ───────── v1.0.2
+  Installed StaticArrays ─ v1.0.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [ad3d3fd0] + SOFA v1.0.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [9e28174c] + BinDeps v1.0.2
+  [ad3d3fd0] + SOFA v1.0.2
+  [90137ffa] + StaticArrays v1.0.1
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building SOFA → `~/.julia/packages/SOFA/AEhle/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T17:34:28.318
+#
+
+    Testing SOFA
+Status `/tmp/jl_OiFUUP/Project.toml`
+  [9e28174c] BinDeps v1.0.2
+  [ad3d3fd0] SOFA v1.0.2
+  [90137ffa] StaticArrays v1.0.1
+  [8f399da3] Libdl
+  [8dfed614] Test
+Status `/tmp/jl_OiFUUP/Manifest.toml`
+  [9e28174c] BinDeps v1.0.2
+  [ad3d3fd0] SOFA v1.0.2
+  [90137ffa] StaticArrays v1.0.1
+  [30578b45] URIParser v0.4.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+SOFA          | 1475   1475
+    Testing SOFA tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:34:49.094
+CPU usage: 39.65s (33.78s user, 5.98s kernel)
+
+Network usage:
+- eth0: 3.207 MiB received, 45.656 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":276,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":257,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":276,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":272,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":253,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":272,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":2162688,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":2056192,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":2162688,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":2162688,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":2056192,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":2162688,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":339677184,"max_usage":883433472,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":219774976,"inactive_file":135168,"inactive_anon":80424960,"total_pgfault":1590468,"total_cache":88825856,"total_rss_huge":0,"total_active_anon":228298752,"total_pgmajfault":0,"pgpgin":1185492,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":1110146,"hierarchical_memsw_limit":0,"cache":88825856,"active_file":135168,"pgfault":1590468,"total_mapped_file":0,"total_pgpgout":1110146,"total_writeback":0,"rss":219774976,"unevictable":0,"total_inactive_anon":80424960,"total_pgpgin":1185492,"active_anon":228298752,"total_active_file":135168},"limit":540965302272},"name":"/SOFA-st0tc6FT","networks":{"eth0":{"rx_bytes":3362530,"rx_packets":487,"tx_packets":456,"tx_bytes":46752,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"42e1571409fa123929e2e8db9a32965479a71b0e01c01043a497ff52e3b5aa0d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4165984884522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":33780000000,"usage_in_kernelmode":5980000000,"total_usage":39652394103,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39652390463,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3640,0,0,0]}},"read":"2021-01-11T17:34:49.096953189Z"}

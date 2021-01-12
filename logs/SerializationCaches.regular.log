@@ -1,0 +1,74 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:34:32.217
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:34:34.059
+#
+
+ Installing known registries into `~/.julia`
+########                                                                  12.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed SerializationCaches ─ v0.2.0
+  Installed OrderedCollections ── v1.3.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [3f9d9eeb] + SerializationCaches v0.2.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [bac558e1] + OrderedCollections v1.3.2
+  [3f9d9eeb] + SerializationCaches v0.2.0
+  [9e88b42a] + Serialization
+
+
+################################################################################
+# Testing: 2021-01-11T18:34:37.822
+#
+
+    Testing SerializationCaches
+Status `/tmp/jl_vqvQdc/Project.toml`
+  [bac558e1] OrderedCollections v1.3.2
+  [3f9d9eeb] SerializationCaches v0.2.0
+  [9e88b42a] Serialization
+  [8dfed614] Test
+Status `/tmp/jl_vqvQdc/Manifest.toml`
+  [bac558e1] OrderedCollections v1.3.2
+  [3f9d9eeb] SerializationCaches v0.2.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary:        | Pass  Total
+`SerializationCache` |   61     61
+    Testing SerializationCaches tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:34:45.013
+CPU usage: 12.82s (10.14s user, 2.72s kernel)
+
+Network usage:
+- eth0: 2.565 MiB received, 34.202 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":42,"op":"Read","minor":0},{"major":259,"value":29,"op":"Write","minor":0},{"major":259,"value":61,"op":"Sync","minor":0},{"major":259,"value":10,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":71,"op":"Total","minor":0},{"major":253,"value":42,"op":"Read","minor":2},{"major":253,"value":29,"op":"Write","minor":2},{"major":253,"value":61,"op":"Sync","minor":2},{"major":253,"value":10,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":71,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":1466368,"op":"Read","minor":0},{"major":259,"value":147456,"op":"Write","minor":0},{"major":259,"value":1572864,"op":"Sync","minor":0},{"major":259,"value":40960,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1613824,"op":"Total","minor":0},{"major":253,"value":1466368,"op":"Read","minor":2},{"major":253,"value":147456,"op":"Write","minor":2},{"major":253,"value":1572864,"op":"Sync","minor":2},{"major":253,"value":40960,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1613824,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":330633216,"max_usage":738373632,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":219897856,"inactive_file":675840,"inactive_anon":102187008,"total_pgfault":365046,"total_cache":81104896,"total_rss_huge":0,"total_active_anon":197558272,"total_pgmajfault":0,"pgpgin":247104,"rss_huge":0,"mapped_file":135168,"total_inactive_file":675840,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":173612,"hierarchical_memsw_limit":0,"cache":81104896,"active_file":811008,"pgfault":365046,"total_mapped_file":135168,"total_pgpgout":173612,"total_writeback":0,"rss":219897856,"unevictable":0,"total_inactive_anon":102187008,"total_pgpgin":247104,"active_anon":197558272,"total_active_file":811008},"limit":540965302272},"name":"/SerializationCaches-6qA9DfIX","networks":{"eth0":{"rx_bytes":2689200,"rx_packets":345,"tx_packets":352,"tx_bytes":35023,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"f3a714166f99f07bde59e807e65521379c8b832ef37178a70c95534f2354ca21","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4625384164522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":10140000000,"usage_in_kernelmode":2720000000,"total_usage":12816305346,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12816042776,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28360,0,0,234210,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:34:45.017404702Z"}

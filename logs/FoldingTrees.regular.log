@@ -1,0 +1,79 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:55:02.424
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:55:04.233
+#
+
+ Installing known registries into `~/.julia`
+####################                                                      28.3%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed FoldingTrees ── v1.0.1
+  Installed AbstractTrees ─ v0.3.3
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [1eca21be] + FoldingTrees v1.0.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [1520ce14] + AbstractTrees v0.3.3
+  [1eca21be] + FoldingTrees v1.0.1
+  [2a0f44e3] + Base64
+  [b77e0a4c] + InteractiveUtils
+  [d6f4376e] + Markdown
+  [3fa0cd96] + REPL
+  [6462fe0b] + Sockets
+
+
+################################################################################
+# Testing: 2021-01-11T23:55:08.302
+#
+
+    Testing FoldingTrees
+Status `/tmp/jl_Pc4NDT/Project.toml`
+  [1520ce14] AbstractTrees v0.3.3
+  [1eca21be] FoldingTrees v1.0.1
+  [3fa0cd96] REPL
+  [8dfed614] Test
+Status `/tmp/jl_Pc4NDT/Manifest.toml`
+  [1520ce14] AbstractTrees v0.3.3
+  [1eca21be] FoldingTrees v1.0.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary:   | Pass  Total
+FoldingTrees.jl |  263    263
+    Testing FoldingTrees tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:55:14.061
+CPU usage: 11.72s (9.15s user, 2.60s kernel)
+
+Network usage:
+- eth0: 2.561 MiB received, 31.146 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":2,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":21,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":26,"op":"Total","minor":0},{"major":253,"value":2,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":21,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":26,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":8192,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":114688,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":135168,"op":"Total","minor":0},{"major":253,"value":8192,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":114688,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":135168,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":329408512,"max_usage":714067968,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":213405696,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":337293,"total_cache":85889024,"total_rss_huge":0,"total_active_anon":214376448,"total_pgmajfault":0,"pgpgin":235191,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":0,"pgpgout":162134,"hierarchical_memsw_limit":0,"cache":85889024,"active_file":6217728,"pgfault":337293,"total_mapped_file":0,"total_pgpgout":162134,"total_writeback":0,"rss":213405696,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":235191,"active_anon":214376448,"total_active_file":6217728},"limit":540965302272},"name":"/FoldingTrees-bWJs9JCs","networks":{"eth0":{"rx_bytes":2685372,"rx_packets":297,"tx_packets":304,"tx_bytes":31893,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"b96e03225df7708ba1c3035eaa7a555d98e545cb0e784f7ec531cd309311b31e","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":7082734754522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":9150000000,"usage_in_kernelmode":2600000000,"total_usage":11718111977,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11716525106,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1586871,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:55:14.702434938Z"}

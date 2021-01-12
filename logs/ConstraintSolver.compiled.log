@@ -1,0 +1,606 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T17:41:11.072
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T17:41:12.77
+#
+
+ Installing known registries into `~/.julia`
+##########                                                                14.5%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed MbedTLS_jll ────────────────── v2.16.8+1
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed JSONSchema ─────────────────── v0.3.3
+  Installed KahanSummation ─────────────── v0.1.0
+  Installed PackageCompiler ────────────── v1.2.5
+  Installed JuMP ───────────────────────── v0.21.4
+  Installed ConstraintSolver ───────────── v0.6.0
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed Inflate ────────────────────── v0.1.2
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed TranscodingStreams ─────────── v0.9.5
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed DataStructures ─────────────── v0.17.20
+  Installed Calculus ───────────────────── v0.5.1
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed MbedTLS ────────────────────── v1.0.3
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Bzip2_jll ──────────────────── v1.0.6+5
+  Installed IterTools ──────────────────── v1.3.0
+  Installed HTTP ───────────────────────── v0.9.2
+  Installed MatrixNetworks ─────────────── v1.0.1
+  Installed SimpleTraits ───────────────── v0.9.3
+  Installed OpenBLAS_jll ───────────────── v0.3.9+5
+  Installed CodecZlib ──────────────────── v0.7.0
+  Installed Missings ───────────────────── v0.4.4
+  Installed BenchmarkTools ─────────────── v0.5.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed MathOptInterface ───────────── v0.9.19
+  Installed LightGraphs ────────────────── v1.3.4
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed ZipFile ────────────────────── v0.9.3
+  Installed ArnoldiMethod ──────────────── v0.0.2
+  Installed Arpack_jll ─────────────────── v3.5.0+3
+  Installed JSON ───────────────────────── v0.21.1
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed MutableArithmetics ─────────── v0.2.13
+  Installed URIs ───────────────────────── v1.1.0
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed Formatting ─────────────────── v0.4.2
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed CodecBzip2 ─────────────────── v0.7.2
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed Arpack ─────────────────────── v0.4.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Parsers ────────────────────── v1.0.15
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed IniFile ────────────────────── v0.5.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [e0e52ebd] + ConstraintSolver v0.6.0
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [ec485272] + ArnoldiMethod v0.0.2
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [49dc2e85] + Calculus v0.5.1
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [523fee87] + CodecBzip2 v0.7.2
+  [944b1d66] + CodecZlib v0.7.0
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [e0e52ebd] + ConstraintSolver v0.6.0
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.17.20
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [59287772] + Formatting v0.4.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [cd3eb016] + HTTP v0.9.2
+  [d25df0c9] + Inflate v0.1.2
+  [83e8ac13] + IniFile v0.5.0
+  [c8e1da08] + IterTools v1.3.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [7d188eb4] + JSONSchema v0.3.3
+  [4076af6c] + JuMP v0.21.4
+  [8e2b3108] + KahanSummation v0.1.0
+  [093fc24a] + LightGraphs v1.3.4
+  [1914dd2f] + MacroTools v0.5.6
+  [b8f27783] + MathOptInterface v0.9.19
+  [4f449596] + MatrixNetworks v1.0.1
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [d8a4904e] + MutableArithmetics v0.2.13
+  [77ba4419] + NaNMath v0.3.5
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [9b87118b] + PackageCompiler v1.2.5
+  [69de0a69] + Parsers v1.0.15
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [699a6c99] + SimpleTraits v0.9.3
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [5c2747f8] + URIs v1.1.0
+  [a5390f91] + ZipFile v0.9.3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T17:41:21.12
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 204.060 MiB, compilation took 341 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T17:47:09.5
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/ConstraintSolver-TULlPCGM.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:47:11.062
+#
+
+ Installing known registries into `~/.julia`
+#####                                                                      8.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed MbedTLS_jll ────────────────── v2.16.8+1
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed JSONSchema ─────────────────── v0.3.3
+  Installed KahanSummation ─────────────── v0.1.0
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed JuMP ───────────────────────── v0.21.4
+  Installed ConstraintSolver ───────────── v0.6.0
+  Installed Inflate ────────────────────── v0.1.2
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed Calculus ───────────────────── v0.5.1
+  Installed TranscodingStreams ─────────── v0.9.5
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed MbedTLS ────────────────────── v1.0.3
+  Installed DataStructures ─────────────── v0.17.20
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Bzip2_jll ──────────────────── v1.0.6+5
+  Installed IterTools ──────────────────── v1.3.0
+  Installed SimpleTraits ───────────────── v0.9.3
+  Installed HTTP ───────────────────────── v0.9.2
+  Installed MatrixNetworks ─────────────── v1.0.1
+  Installed BenchmarkTools ─────────────── v0.5.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed OpenBLAS_jll ───────────────── v0.3.9+5
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed MathOptInterface ───────────── v0.9.19
+  Installed LightGraphs ────────────────── v1.3.4
+  Installed CodecZlib ──────────────────── v0.7.0
+  Installed Missings ───────────────────── v0.4.4
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed JSON ───────────────────────── v0.21.1
+  Installed ArnoldiMethod ──────────────── v0.0.2
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed Arpack_jll ─────────────────── v3.5.0+3
+  Installed ZipFile ────────────────────── v0.9.3
+  Installed MutableArithmetics ─────────── v0.2.13
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed URIs ───────────────────────── v1.1.0
+  Installed Formatting ─────────────────── v0.4.2
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed CodecBzip2 ─────────────────── v0.7.2
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed Arpack ─────────────────────── v0.4.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Parsers ────────────────────── v1.0.15
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed IniFile ────────────────────── v0.5.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [e0e52ebd] + ConstraintSolver v0.6.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [ec485272] + ArnoldiMethod v0.0.2
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [49dc2e85] + Calculus v0.5.1
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [523fee87] + CodecBzip2 v0.7.2
+  [944b1d66] + CodecZlib v0.7.0
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [e0e52ebd] + ConstraintSolver v0.6.0
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.17.20
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [59287772] + Formatting v0.4.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [cd3eb016] + HTTP v0.9.2
+  [d25df0c9] + Inflate v0.1.2
+  [83e8ac13] + IniFile v0.5.0
+  [c8e1da08] + IterTools v1.3.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [7d188eb4] + JSONSchema v0.3.3
+  [4076af6c] + JuMP v0.21.4
+  [8e2b3108] + KahanSummation v0.1.0
+  [093fc24a] + LightGraphs v1.3.4
+  [1914dd2f] + MacroTools v0.5.6
+  [b8f27783] + MathOptInterface v0.9.19
+  [4f449596] + MatrixNetworks v1.0.1
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [d8a4904e] + MutableArithmetics v0.2.13
+  [77ba4419] + NaNMath v0.3.5
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [69de0a69] + Parsers v1.0.15
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [699a6c99] + SimpleTraits v0.9.3
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [5c2747f8] + URIs v1.1.0
+  [a5390f91] + ZipFile v0.9.3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T17:47:18.358
+#
+
+    Testing ConstraintSolver
+Status `/tmp/jl_5RUi0a/Project.toml`
+  [9961bab8] Cbc v0.7.1
+  [861a8166] Combinatorics v1.0.2
+  [e0e52ebd] ConstraintSolver v0.6.0
+  [864edb3b] DataStructures v0.17.20
+  [59287772] Formatting v0.4.2
+  [f6369f11] ForwardDiff v0.10.14
+  [60bf3e95] GLPK v0.14.5
+  [682c06a0] JSON v0.21.1
+  [4076af6c] JuMP v0.21.4
+  [093fc24a] LightGraphs v1.3.4
+  [b8f27783] MathOptInterface v0.9.19
+  [4f449596] MatrixNetworks v1.0.1
+  [324d217c] ReferenceTests v0.9.2
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_5RUi0a/Manifest.toml`
+  [621f4979] AbstractFFTs v1.0.0
+  [79e6a3ab] Adapt v2.4.0
+  [ec485272] ArnoldiMethod v0.0.2
+  [7d9fca2a] Arpack v0.4.0
+  [68821587] Arpack_jll v3.5.0+3
+  [56f22d72] Artifacts v1.3.0
+  [13072b0f] AxisAlgorithms v1.0.0
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [b99e7846] BinaryProvider v0.5.10
+  [6e34b625] Bzip2_jll v1.0.6+5
+  [fa961155] CEnum v0.4.1
+  [49dc2e85] Calculus v0.5.1
+  [9961bab8] Cbc v0.7.1
+  [38041ee0] Cbc_jll v2.10.3+5
+  [3830e938] Cgl_jll v0.60.2+6
+  [d360d2e6] ChainRulesCore v0.9.24
+  [06985876] Clp_jll v1.17.6+7
+  [523fee87] CodecBzip2 v0.7.2
+  [944b1d66] CodecZlib v0.7.0
+  [be027038] CoinUtils_jll v2.11.3+4
+  [3da002f7] ColorTypes v0.10.9
+  [c3611d14] ColorVectorSpace v0.8.7
+  [5ae59095] Colors v0.12.6
+  [861a8166] Combinatorics v1.0.2
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [e0e52ebd] ConstraintSolver v0.6.0
+  [150eb455] CoordinateTransformations v0.6.1
+  [a8cc5b0e] Crayons v4.0.4
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.17.20
+  [ab62b9b5] DeepDiffs v1.2.0
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [b4f34e82] Distances v0.10.0
+  [5789e2e9] FileIO v1.4.5
+  [53c48c17] FixedPointNumbers v0.8.4
+  [59287772] Formatting v0.4.2
+  [f6369f11] ForwardDiff v0.10.14
+  [60bf3e95] GLPK v0.14.5
+  [e8aa6df9] GLPK_jll v4.64.0+0
+  [781609d7] GMP_jll v6.1.2+6
+  [a2bd30eb] Graphics v1.0.2
+  [cd3eb016] HTTP v0.9.2
+  [bbac6d45] IdentityRanges v0.3.1
+  [a09fc81d] ImageCore v0.8.20
+  [d8c32880] ImageInTerminal v0.4.5
+  [02fcd773] ImageTransformations v0.8.8
+  [d25df0c9] Inflate v0.1.2
+  [83e8ac13] IniFile v0.5.0
+  [a98d9a8b] Interpolations v0.13.1
+  [c8e1da08] IterTools v1.3.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [7d188eb4] JSONSchema v0.3.3
+  [4076af6c] JuMP v0.21.4
+  [8e2b3108] KahanSummation v0.1.0
+  [093fc24a] LightGraphs v1.3.4
+  [1914dd2f] MacroTools v0.5.6
+  [dbb5928d] MappedArrays v0.3.0
+  [b8f27783] MathOptInterface v0.9.19
+  [4f449596] MatrixNetworks v1.0.1
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [e1d29d7a] Missings v0.4.4
+  [e94cdb99] MosaicViews v0.2.4
+  [46d2c3a1] MuladdMacro v0.2.2
+  [d8a4904e] MutableArithmetics v0.2.13
+  [77ba4419] NaNMath v0.3.5
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [656ef2d0] OpenBLAS32_jll v0.3.9+4
+  [4536629a] OpenBLAS_jll v0.3.9+5
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [7da25872] Osi_jll v0.108.5+4
+  [5432bcbf] PaddedViews v0.5.7
+  [69de0a69] Parsers v1.0.15
+  [c84ed2f1] Ratios v0.4.0
+  [189a3867] Reexport v1.0.0
+  [324d217c] ReferenceTests v0.9.2
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [6038ab10] Rotations v1.0.2
+  [699a6c99] SimpleTraits v0.9.3
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.2.1
+  [90137ffa] StaticArrays v1.0.1
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [5c2747f8] URIs v1.1.0
+  [efce3f68] WoodburyMatrices v0.5.3
+  [a5390f91] ZipFile v0.9.3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+Documentation |    1      1
+Not identical at i=1
+node1: 
+id: 0 status: Open best_bound: 0 step_nr: 0
+vidx: 0 lb:0 ub: 0 var_states: Dict{Int64,Array{Int64,1}}()
+node2: 
+id: 0 status: Closed best_bound: 0 step_nr: 0
+vidx: 0 lb:0 ub: 0 var_states: Dict{Int64,Array{Int64,1}}()
+Not identical at i=2
+node1: 
+id: 0 status: Open best_bound: 0 step_nr: 1
+vidx: 0 lb:0 ub: 0 var_states: Dict{Int64,Array{Int64,1}}()
+node2: 
+id: 0 status: Open best_bound: 0 step_nr: 2
+vidx: 0 lb:0 ub: 0 var_states: Dict{Int64,Array{Int64,1}}()
+Different length
+Different number of children at: 2
+Not identical at i=4
+node1: 
+id: 0 status: Open best_bound: 0 step_nr: 3
+vidx: 0 lb:0 ub: 0 var_states: Dict{Int64,Array{Int64,1}}()
+node2: 
+id: 0 status: Open best_bound: 0 step_nr: 4
+vidx: 0 lb:0 ub: 0 var_states: Dict{Int64,Array{Int64,1}}()
+     1           1               1.00                  1.00             0.10    
+line:      1       2           100000000.0    0.000004          0.20 
+     1       1              1.00          1.00            0.10 
+     1       1              1.00          1.00            0.20 
+Test Summary:  | Pass  Total
+Function tests |   51     51
+┌ Warning: Infeasible (No maximum matching was found)
+└ @ ConstraintSolver /home/pkgeval/.julia/packages/ConstraintSolver/FrWVK/src/constraints/all_different.jl:344
+Test Summary: | Pass  Total
+Unit Tests    |  314    314
+Test Summary: | Pass  Total
+Options       |    1      1
+Test Summary: | Pass  Total
+MOI Tests     |   37     37
+Test Summary: | Pass  Total
+Table         |   67     67
+┌ Error: Not all variables are fixed
+└ @ Main ~/.julia/packages/ConstraintSolver/FrWVK/test/general.jl:126
+Test Summary:       | Pass  Total
+IndicatorConstraint |   71     71
+Test Summary:     | Pass  Total
+ReifiedConstraint |   69     69
+Test Summary:      | Pass  Total
+EqualTo Constraint |    2      2
+# Variables: 10
+# Constraints: 4
+ - # Inequality: 2
+ - # Notequal: 1
+ - # Alldifferent: 1
+
+   #Open      #Closed         Incumbent             Best Bound        Time [s]  
+================================================================================
+     2           0                -                   80.00            0.006    
+     24          24             80.00                 80.00             0.14    
+Test Summary: | Pass  Total
+LP Solver     |   21     21
+Test Summary: | Pass  Total
+StableSet     |   18     18
+[ Info: Backtracking is turned off.
+# Variables: 1
+# Constraints: 0
+
+# Variables: 1
+# Constraints: 0
+
+[ Info: Backtracking is turned off.
+Test Summary:       | Pass  Total
+Small special tests |  124    124
+Test Summary:             | Pass  Total
+Maximum weighted matching |   10     10
+Test Summary:     | Pass  Total
+Real coefficients |   20     20
+# Variables: 81
+# Constraints: 27
+ - # Alldifferent: 27
+
+# Variables: 81
+# Constraints: 27
+ - # Table: 27
+
+   #Open      #Closed         Incumbent             Best Bound        Time [s]  
+================================================================================
+     2           0                -                0.0000000000         0.17    
+     1           27          0.0000000000          0.0000000000         0.17    
+[ Info: Backtracking is turned off.
+Info: 
+com.info = pre_backtrack_calls = 65
+backtracked = false
+backtrack_fixes = 0
+in_backtrack_calls = 0
+backtrack_reverses = 0
+n_constraint_types = ConstraintSolver.NumberConstraintTypes(0, 0, 0, 27, 0, 0, 0)
+
+Test Summary: | Pass  Total
+Sudoku        |  453    453
+Test Summary:       | Pass  Total
+Str8ts no backtrack |   11     11
+Test Summary: | Pass  Total
+Eternity 6x5  |    3      3
+Test Summary:          | Pass  Total
+Eternity 5x5 Indicator |    4      4
+Test Summary:        | Pass  Total
+Eternity 5x5 Reified |    4      4
+Test Summary: | Pass  Total
+Killer Sudoku |   80     80
+Test Summary:  | Pass  Total
+Graph coloring |   52     52
+Time for all tests 209.2016990184784
+    Testing ConstraintSolver tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:52:30.319
+CPU usage: 321.11s (308.26s user, 13.29s kernel)
+
+Network usage:
+- eth0: 14.266 MiB received, 500.613 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":27,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":13,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":27,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":27,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":13,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":27,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":155648,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":98304,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":155648,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":155648,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":98304,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":155648,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":417615872,"max_usage":2762743808,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":240189440,"inactive_file":135168,"inactive_anon":120840192,"total_pgfault":6038274,"total_cache":142385152,"total_rss_huge":0,"total_active_anon":261685248,"total_pgmajfault":0,"pgpgin":3680622,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":3587246,"hierarchical_memsw_limit":0,"cache":142385152,"active_file":135168,"pgfault":6038274,"total_mapped_file":0,"total_pgpgout":3587246,"total_writeback":0,"rss":240189440,"unevictable":0,"total_inactive_anon":120840192,"total_pgpgin":3680622,"active_anon":261685248,"total_active_file":135168},"limit":540965302272},"name":"/ConstraintSolver-uJLIWAcr","networks":{"eth0":{"rx_bytes":14958835,"rx_packets":3763,"tx_packets":4191,"tx_bytes":512628,"tx_dropped":0,"rx_dropped":11,"tx_errors":0,"rx_errors":0}},"id":"5080b55951ab6176b9dc5b3dff707cddc3d5be278c07babed100b769a686e0e9","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4301519384522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":308260000000,"usage_in_kernelmode":13290000000,"total_usage":321107472887,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12271326,0,7044233,321078787677,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3650,6114781,0,3251220]}},"read":"2021-01-11T17:52:30.322246488Z"}

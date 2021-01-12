@@ -1,0 +1,70 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:57:17.175
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:57:18.998
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CustomUnitRanges ─ v1.0.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [dc8bdbbb] + CustomUnitRanges v1.0.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [dc8bdbbb] + CustomUnitRanges v1.0.0
+
+
+################################################################################
+# Testing: 2021-01-11T19:57:23.032
+#
+
+    Testing CustomUnitRanges
+Status `/tmp/jl_0KulYa/Project.toml`
+  [dc8bdbbb] CustomUnitRanges v1.0.0
+  [8dfed614] Test
+Status `/tmp/jl_0KulYa/Manifest.toml`
+  [dc8bdbbb] CustomUnitRanges v1.0.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary: | Pass  Total
+ZeroRange     |   67     67
+Test Summary: | Pass  Total
+URange        |  112    112
+    Testing CustomUnitRanges tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:57:30.282
+CPU usage: 13.21s (10.84s user, 2.41s kernel)
+
+Network usage:
+- eth0: 2.532 MiB received, 23.861 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":1,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":20,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":25,"op":"Total","minor":0},{"major":253,"value":1,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":20,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":25,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":4096,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":110592,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":131072,"op":"Total","minor":0},{"major":253,"value":4096,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":110592,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":131072,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":351158272,"max_usage":593354752,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":242507776,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":349107,"total_cache":79286272,"total_rss_huge":0,"total_active_anon":243032064,"total_pgmajfault":0,"pgpgin":241527,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":162970,"hierarchical_memsw_limit":0,"cache":79286272,"active_file":135168,"pgfault":349107,"total_mapped_file":0,"total_pgpgout":162970,"total_writeback":0,"rss":242507776,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":241527,"active_anon":243032064,"total_active_file":135168},"limit":540965302272},"name":"/CustomUnitRanges-NKvm0YRA","networks":{"eth0":{"rx_bytes":2655356,"rx_packets":224,"tx_packets":228,"tx_bytes":24434,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"914cc925191b496d1f466d3aed4d4a517a0eca6d5885478c112d14b45d7233a2","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5260082104522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":10840000000,"usage_in_kernelmode":2410000000,"total_usage":13211594874,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13211594874,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:57:30.284737414Z"}

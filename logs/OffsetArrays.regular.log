@@ -1,0 +1,184 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T16:01:15.843
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:01:17.637
+#
+
+ Installing known registries into `~/.julia`
+#############                                                             18.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed OffsetArrays ─ v1.5.0
+  Installed Adapt ──────── v2.4.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [6fe1bfb0] + OffsetArrays v1.5.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [79e6a3ab] + Adapt v2.4.0
+  [6fe1bfb0] + OffsetArrays v1.5.0
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+
+
+################################################################################
+# Testing: 2021-01-11T16:01:21.769
+#
+
+    Testing OffsetArrays
+Status `/tmp/jl_6B10TT/Project.toml`
+  [79e6a3ab] Adapt v2.4.0
+  [4c88cf16] Aqua v0.5.0
+  [aafaddc9] CatIndices v0.2.1
+  [e30172f5] Documenter v0.26.1
+  [da5c29d0] EllipsisNotation v1.0.0
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [90137ffa] StaticArrays v1.0.1
+  [8bb1440f] DelimitedFiles
+  [37e2e46d] LinearAlgebra
+  [8dfed614] Test
+Status `/tmp/jl_6B10TT/Manifest.toml`
+  [79e6a3ab] Adapt v2.4.0
+  [4c88cf16] Aqua v0.5.0
+  [aafaddc9] CatIndices v0.2.1
+  [dc8bdbbb] CustomUnitRanges v1.0.0
+  [ffbed154] DocStringExtensions v0.8.3
+  [e30172f5] Documenter v0.26.1
+  [da5c29d0] EllipsisNotation v1.0.0
+  [b5f81e59] IOCapture v0.1.1
+  [682c06a0] JSON v0.21.1
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [69de0a69] Parsers v1.0.15
+  [90137ffa] StaticArrays v1.0.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Skipping Base.Filesystem.JL_O_RANDOM
+Skipping Base.Filesystem.JL_O_SEQUENTIAL
+Skipping Base.Filesystem.JL_O_SHORT_LIVED
+Skipping Base.Filesystem.JL_O_TEMPORARY
+Skipping Base.active_repl
+Skipping Base.active_repl_backend
+[ Info: SetupBuildDirectory: setting up build directory.
+[ Info: Doctest: running doctests.
+[ Info: Skipped ExpandTemplates step (doctest only).
+[ Info: Skipped CrossReferences step (doctest only).
+[ Info: Skipped CheckDocument step (doctest only).
+[ Info: Skipped Populate step (doctest only).
+[ Info: Skipped RenderDocument step (doctest only).
+Test Summary:               | Pass  Total
+Project meta quality checks |    8      8
+Test Summary: | Pass  Broken  Total
+IdOffsetRange |   82       2     84
+Test Summary: | Pass  Total
+Constructors  |  763    763
+Test Summary:                                           | Pass  Total
+Axes supplied to constructor correspond to final result |    1      1
+Test Summary: | Pass  Total
+Traits        |   11     11
+Test Summary:   | Pass  Total
+Scalar indexing |   26     26
+Test Summary:   | Pass  Total
+Vector indexing |   13     13
+Test Summary:                      | Pass  Total
+Vector indexing with offset ranges |   11     11
+Test Summary:     | Pass  Total
+CartesianIndexing |   12     12
+Test Summary:              | Pass  Total
+IdentityUnitRange indexing |    9      9
+Test Summary: | Pass  Total
+view          |   60     60
+Test Summary: | Pass  Total
+iteration     |    4      4
+Test Summary: | Pass  Total
+show/summary  |   23     23
+Test Summary:    | Pass  Total
+readdlm/writedlm |    1      1
+Test Summary: | Pass  Total
+similar       |   26     26
+Test Summary: | Pass  Total
+reshape       |   32     32
+Test Summary:                  | Pass  Total
+Indexing with OffsetArray axes |   18     18
+Test Summary:    | Pass  Total
+logical indexing |    1      1
+Test Summary: | Pass  Total
+copyto!       |   31     31
+Test Summary: | Pass  Total
+map           |    3      3
+Test Summary: | Pass  Total
+reductions    |   20     20
+Test Summary: | Pass  Total
+Collections   |    9      9
+Test Summary: | Pass  Total
+rot/reverse   |    4      4
+Test Summary: | Pass  Total
+fill          |    6      6
+Test Summary: | Pass  Total
+broadcasting  |    4      4
+Test Summary: | Pass  Total
+@inbounds     |    8      8
+Test Summary:          | Pass  Total
+Resizing OffsetVectors |    1      1
+Test Summary:  | Pass  Total
+no offset view |    6      6
+Test Summary: | Pass  Total
+no nesting    |    3      3
+Test Summary:                       | Pass  Total
+mutating functions for OffsetVector |   13     13
+Test Summary:      | Pass  Total
+searchsorted (#85) |   15     15
+Test Summary: | Pass  Total
+Adapt         |    2      2
+Test Summary: | Pass  Total
+Pointer       |   13     13
+Test Summary: | Pass  Total
+Origin        |   15     15
+    Testing OffsetArrays tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T16:02:47.217
+CPU usage: 91.28s (86.92s user, 4.48s kernel)
+
+Network usage:
+- eth0: 3.432 MiB received, 87.647 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":364318720,"max_usage":1045143552,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":226504704,"inactive_file":135168,"inactive_anon":82722816,"total_pgfault":1486650,"total_cache":105771008,"total_rss_huge":0,"total_active_anon":236003328,"total_pgmajfault":0,"pgpgin":867801,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":675840,"total_unevictable":0,"total_dirty":675840,"writeback":0,"pgpgout":786704,"hierarchical_memsw_limit":0,"cache":105771008,"active_file":13651968,"pgfault":1486650,"total_mapped_file":0,"total_pgpgout":786704,"total_writeback":0,"rss":226504704,"unevictable":0,"total_inactive_anon":82722816,"total_pgpgin":867801,"active_anon":236003328,"total_active_file":13651968},"limit":540965302272},"name":"/OffsetArrays-NYUG1TTy","networks":{"eth0":{"rx_bytes":3598805,"rx_packets":793,"tx_packets":812,"tx_bytes":89751,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"b720d7310a34aa4b9c813d134fe455d78c12deba6d35515f6763e4cbed439d88","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3460253424522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":86920000000,"usage_in_kernelmode":4480000000,"total_usage":91278809261,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,91278809261,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T16:02:47.219558789Z"}

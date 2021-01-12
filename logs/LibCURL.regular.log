@@ -1,0 +1,123 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:31:16.909
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:31:18.702
+#
+
+ Installing known registries into `~/.julia`
+########################                                                  34.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed LibCURL ──────────── v0.6.2
+  Installed MbedTLS_jll ──────── v2.16.8+1
+  Installed Zlib_jll ─────────── v1.2.11+18
+  Installed JLLWrappers ──────── v1.2.0
+  Installed MozillaCACerts_jll ─ v2020.10.14+0
+  Installed LibSSH2_jll ──────── v1.9.0+3
+  Installed LibCURL_jll ──────── v7.70.0+2
+  Installed nghttp2_jll ──────── v1.40.0+2
+  Installed Artifacts ────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [b27032c2] + LibCURL v0.6.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [b27032c2] + LibCURL v0.6.2
+  [deac9b47] + LibCURL_jll v7.70.0+2
+  [29816b5a] + LibSSH2_jll v1.9.0+3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [14a3606d] + MozillaCACerts_jll v2020.10.14+0
+  [83775a58] + Zlib_jll v1.2.11+18
+  [8e850ede] + nghttp2_jll v1.40.0+2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T20:31:24.137
+#
+
+    Testing LibCURL
+Status `/tmp/jl_mdEQ6P/Project.toml`
+  [f43a241f] Downloads v1.3.0
+  [b27032c2] LibCURL v0.6.2
+  [deac9b47] LibCURL_jll v7.70.0+2
+  [14a3606d] MozillaCACerts_jll v2020.10.14+0
+  [8dfed614] Test
+Status `/tmp/jl_mdEQ6P/Manifest.toml`
+  [0dad84c5] ArgTools v1.1.1
+  [56f22d72] Artifacts v1.3.0
+  [f43a241f] Downloads v1.3.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [b27032c2] LibCURL v0.6.2
+  [deac9b47] LibCURL_jll v7.70.0+2
+  [29816b5a] LibSSH2_jll v1.9.0+3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [14a3606d] MozillaCACerts_jll v2020.10.14+0
+  [ca575930] NetworkOptions v1.2.0
+  [83775a58] Zlib_jll v1.2.11+18
+  [8e850ede] nghttp2_jll v1.40.0+2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+LibCURL       |    6      6
+    Testing LibCURL tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:31:42.935
+CPU usage: 25.63s (22.08s user, 3.60s kernel)
+
+Network usage:
+- eth0: 2.982 MiB received, 88.029 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":5,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":24,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":29,"op":"Total","minor":0},{"major":253,"value":5,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":24,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":29,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":233472,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":339968,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":360448,"op":"Total","minor":0},{"major":253,"value":233472,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":339968,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":360448,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":338624512,"max_usage":1146470400,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":225890304,"inactive_file":270336,"inactive_anon":79343616,"total_pgfault":939213,"total_cache":82882560,"total_rss_huge":0,"total_active_anon":229244928,"total_pgmajfault":0,"pgpgin":596574,"rss_huge":0,"mapped_file":0,"total_inactive_file":270336,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":0,"pgpgout":521190,"hierarchical_memsw_limit":0,"cache":82882560,"active_file":135168,"pgfault":939213,"total_mapped_file":0,"total_pgpgout":521190,"total_writeback":0,"rss":225890304,"unevictable":0,"total_inactive_anon":79343616,"total_pgpgin":596574,"active_anon":229244928,"total_active_file":135168},"limit":540965302272},"name":"/LibCURL-YTQ69zuN","networks":{"eth0":{"rx_bytes":3126690,"rx_packets":706,"tx_packets":786,"tx_bytes":90142,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"7bee5f80684d2696cf86e9b8950d333393de83d73699d768a963f76cb8ad5e96","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5522450904522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":22080000000,"usage_in_kernelmode":3600000000,"total_usage":25629427850,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25629424580,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3270,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:31:42.938071512Z"}

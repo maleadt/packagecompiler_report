@@ -1,0 +1,235 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:21:48.434
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:21:50.27
+#
+
+ Installing known registries into `~/.julia`
+############################################                              61.7%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Setfield ───────── v0.7.0
+  Installed Requires ───────── v1.1.2
+  Installed ConstructionBase ─ v1.0.0
+  Installed MacroTools ─────── v0.5.6
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [efcf1570] + Setfield v0.7.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [187b0558] + ConstructionBase v1.0.0
+  [1914dd2f] + MacroTools v0.5.6
+  [ae029012] + Requires v1.1.2
+  [efcf1570] + Setfield v0.7.0
+  [2a0f44e3] + Base64
+  [9fa8497b] + Future
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [cf7118a7] + UUIDs
+
+
+################################################################################
+# Testing: 2021-01-11T20:21:55.465
+#
+
+    Testing Setfield
+Status `/tmp/jl_u3qbXc/Project.toml`
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [187b0558] ConstructionBase v1.0.0
+  [e30172f5] Documenter v0.26.1
+  [1914dd2f] MacroTools v0.5.6
+  [dc46b164] PerformanceTestTools v0.1.3
+  [ae2dfa86] QuickTypes v1.6.3
+  [ae029012] Requires v1.1.2
+  [efcf1570] Setfield v0.7.0
+  [90137ffa] StaticArrays v1.0.1
+  [c5e4b96a] StaticNumbers v0.3.3
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [8dfed614] Test
+Status `/tmp/jl_u3qbXc/Manifest.toml`
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [187b0558] ConstructionBase v1.0.0
+  [ffbed154] DocStringExtensions v0.8.3
+  [e30172f5] Documenter v0.26.1
+  [b5f81e59] IOCapture v0.1.1
+  [682c06a0] JSON v0.21.1
+  [1914dd2f] MacroTools v0.5.6
+  [69de0a69] Parsers v1.0.15
+  [dc46b164] PerformanceTestTools v0.1.3
+  [ae2dfa86] QuickTypes v1.6.3
+  [ae029012] Requires v1.1.2
+  [efcf1570] Setfield v0.7.0
+  [90137ffa] StaticArrays v1.0.1
+  [c5e4b96a] StaticNumbers v0.3.3
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+==ₜ           |    2      2
+Test Summary: | Pass  Total
+setindex      |   13     13
+Test Summary:            | Pass  Total
+example custom_macros.jl |    6      6
+Test Summary:                 | Pass  Total
+setmacro, lensmacro isolation |   14     14
+Test Summary: | Pass  Total
+get_update_op |    6      6
+Test Summary: | Pass  Total
+@set!         |    6      6
+Test Summary: | Pass  Total
+@set          |   24     24
+Test Summary:              | Pass  Total
+show it like you build it  |   16     16
+Test Summary: | Pass  Total
+lens laws     |   40     40
+Test Summary:  |
+type stability | No tests
+Test Summary: | Pass  Total
+IndexLens     |   10     10
+Test Summary:    | Pass  Total
+DynamicIndexLens |    8      8
+Test Summary: | Pass  Broken  Total
+StaticNumbers |    8       1      9
+Test Summary: | Pass  Total
+IdentityLens  |    4      4
+Test Summary:                                   | Pass  Total
+type change during @set (default constructorof) |    1      1
+Test Summary:                                  | Pass  Total
+type change during @set (custom constructorof) |    1      1
+Test Summary:   | Pass  Total
+text/plain show |    8      8
+Test Summary: | Pass  Total
+Named Tuples  |    5      5
+Test Summary:             | Pass  Total
+setproperties overloading |    2      2
+Test Summary: | Pass  Total
+issue #83     |    1      1
+Test Summary: | Pass  Total
+@lens and ∘   |    8      8
+Test Summary: | Pass  Total
+@lens ∘ and $ |    3      3
+Test Summary: | Pass  Total
+first         |    4      4
+Test Summary: | Pass  Total
+last          |    4      4
+Test Summary:    | Pass  Total
+eltype on Number |    2      2
+Test Summary:           | Pass  Total
+eltype(::Type{<:Array}) |    1      1
+Test Summary:   | Pass  Total
+eltype(::Array) |    2      2
+Test Summary:                    | Pass  Total
+(key|val|el)type(::Type{<:Dict}) |    5      5
+Test Summary:            | Pass  Total
+(key|val|el)type(::Dict) |    3      3
+Test Summary: | Pass  Broken  Total
+StaticArrays  |    6       1      7
+Test Summary: | Pass  Total
+Wall          |    1      1
+Test Summary: | Pass  Total
+Car           |    4      4
+Test Summary: | Pass  Total
+Cat           |    2      2
+Test Summary: | Pass  Total
+Pack          |    1      1
+Test Summary: | Pass  Total
+Maple         |    1      1
+Test Summary: | Pass  Total
+Window        |    4      4
+Test Summary: | Pass  Total
+Human         |    2      2
+Test Summary: | Pass  Total
+Group         |    1      1
+Test Summary: | Pass  Total
+Plane1        |    2      2
+Test Summary: | Pass  Total
+Plane2        |    2      2
+┌ Info: Running IR test in a subprocess...
+│   cmd = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so --depwarn=yes --check-bounds=yes -g1 --startup-file=no --startup-file=no --check-bounds=no --code-coverage=none --inline=yes`
+└   script = "/home/pkgeval/.julia/packages/Setfield/XM37G/test/perf.jl"
+te_lens = TrialEstimate(29.000 ns)
+te_hand = TrialEstimate(29.000 ns)
+Test Summary: | Pass  Total
+lens_set_a    |    6      6
+te_lens = TrialEstimate(29.000 ns)
+te_hand = TrialEstimate(29.000 ns)
+Test Summary: | Pass  Total
+lens_set_a    |    6      6
+te_lens = TrialEstimate(29.000 ns)
+te_hand = TrialEstimate(29.000 ns)
+Test Summary: | Pass  Total
+lens_set_ab   |    6      6
+te_lens = TrialEstimate(29.000 ns)
+te_hand = TrialEstimate(29.000 ns)
+Test Summary:    | Pass  Total
+lens_set_a_and_b |    6      6
+te_lens = TrialEstimate(29.000 ns)
+te_hand = TrialEstimate(29.000 ns)
+Test Summary: | Pass  Total
+lens_set_i    |    6      6
+Default associative composition: TrialEstimate(7.319 ns)
+Left associative composition: TrialEstimate(18.094 ns)
+Right associative composition: TrialEstimate(7.499 ns)
+Test Summary:                                    | Pass  Broken  Total
+Lens composition compiler prefered associativity |    6       1      7
+[ Info: Running IR test in a subprocess...DONE
+[ Info: SetupBuildDirectory: setting up build directory.
+[ Info: Doctest: running doctests.
+[ Info: Skipped ExpandTemplates step (doctest only).
+[ Info: Skipped CrossReferences step (doctest only).
+[ Info: Skipped CheckDocument step (doctest only).
+[ Info: Skipped Populate step (doctest only).
+[ Info: Skipped RenderDocument step (doctest only).
+Test Summary:      | Pass  Total
+Doctests: Setfield |    1      1
+    Testing Setfield tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:23:21.271
+CPU usage: 92.75s (87.45s user, 5.44s kernel)
+
+Network usage:
+- eth0: 3.526 MiB received, 92.071 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":131072,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":24576,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":131072,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":131072,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":24576,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":131072,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":305504256,"max_usage":993480704,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":181309440,"inactive_file":135168,"inactive_anon":82857984,"total_pgfault":1628616,"total_cache":93650944,"total_rss_huge":0,"total_active_anon":192073728,"total_pgmajfault":0,"pgpgin":1019865,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":0,"total_unevictable":0,"total_dirty":0,"writeback":0,"pgpgout":952736,"hierarchical_memsw_limit":0,"cache":93650944,"active_file":135168,"pgfault":1628616,"total_mapped_file":0,"total_pgpgout":952736,"total_writeback":0,"rss":181309440,"unevictable":0,"total_inactive_anon":82857984,"total_pgpgin":1019865,"active_anon":192073728,"total_active_file":135168},"limit":540965302272},"name":"/Setfield-Gtwx09lH","networks":{"eth0":{"rx_bytes":3697694,"rx_packets":768,"tx_packets":810,"tx_bytes":94281,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"e45dcfc828358b7270dda0813a37b9cc0ac98576c9e376e1abb4287a2f5b1d74","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5458369164522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":87450000000,"usage_in_kernelmode":5440000000,"total_usage":92754650996,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,92754647896,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:23:21.27377607Z"}

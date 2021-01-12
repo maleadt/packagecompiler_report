@@ -1,0 +1,195 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T15:34:34.794
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T15:34:36.529
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed LowLevelFloatFunctions ─ v0.1.0
+  Installed PackageCompiler ──────── v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [15a4fa57] + LowLevelFloatFunctions v0.1.0
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [15a4fa57] + LowLevelFloatFunctions v0.1.0
+  [9b87118b] + PackageCompiler v1.2.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T15:34:41.728
+#
+
+WARNING: Method definition exponent_bias(Type{Float16}) in module Base at float.jl:895 overwritten in module LowLevelFloatFunctions at /home/pkgeval/.julia/packages/LowLevelFloatFunctions/RmGP5/src/LowLevelFloatFunctions.jl:47.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition exponent_bias(Type{Float32}) in module Base at float.jl:895 overwritten in module LowLevelFloatFunctions at /home/pkgeval/.julia/packages/LowLevelFloatFunctions/RmGP5/src/LowLevelFloatFunctions.jl:48.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition exponent_bias(Type{Float64}) in module Base at float.jl:895 overwritten in module LowLevelFloatFunctions at /home/pkgeval/.julia/packages/LowLevelFloatFunctions/RmGP5/src/LowLevelFloatFunctions.jl:49.
+  ** incremental compilation may be fatally broken for this module **
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 148.865 MiB, compilation took 164 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T15:37:32.738
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/LowLevelFloatFunctions-gh4E3kVo.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:37:34.558
+#
+
+ Installing known registries into `~/.julia`
+#########################                                                 35.3%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed LowLevelFloatFunctions ─ v0.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [15a4fa57] + LowLevelFloatFunctions v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [15a4fa57] + LowLevelFloatFunctions v0.1.0
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T15:37:38.487
+#
+
+    Testing LowLevelFloatFunctions
+Status `/tmp/jl_FFlBga/Project.toml`
+  [15a4fa57] LowLevelFloatFunctions v0.1.0
+  [8dfed614] Test
+Status `/tmp/jl_FFlBga/Manifest.toml`
+  [15a4fa57] LowLevelFloatFunctions v0.1.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary: | Pass  Total
+constants     |   24     24
+Test Summary:    | Pass  Total
+value_extraction |    9      9
+Test Summary: | Pass  Total
+field_get     |    9      9
+Test Summary: | Pass  Total
+field_set     |    3      3
+Test Summary:    | Pass  Total
+characterization |    7      7
+utilitiarian: Error During Test at /home/user/.julia/packages/LowLevelFloatFunctions/RmGP5/test/runtests.jl:89
+  Test threw exception
+  Expression: hexstring(sqrt2₆₄) == "3ff6a09e667f3bcd"
+  UndefVarError: hexstring not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/LowLevelFloatFunctions/RmGP5/test/runtests.jl:89
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/LowLevelFloatFunctions/RmGP5/test/runtests.jl:87
+  
+utilitiarian: Error During Test at /home/user/.julia/packages/LowLevelFloatFunctions/RmGP5/test/runtests.jl:90
+  Test threw exception
+  Expression: hexstring(sqrt2₃₂) == "3fb504f3"
+  UndefVarError: hexstring not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/LowLevelFloatFunctions/RmGP5/test/runtests.jl:90
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/LowLevelFloatFunctions/RmGP5/test/runtests.jl:87
+  
+Test Summary: | Pass  Error  Total
+utilitiarian  |    2      2      4
+ERROR: LoadError: Some tests did not pass: 2 passed, 0 failed, 2 errored, 0 broken.
+in expression starting at /home/user/.julia/packages/LowLevelFloatFunctions/RmGP5/test/runtests.jl:86
+
+PkgEval failed: Package LowLevelFloatFunctions errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:37:45.391
+CPU usage: 12.64s (9.90s user, 2.77s kernel)
+
+Network usage:
+- eth0: 2.540 MiB received, 30.103 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":19,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":19,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":77824,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":77824,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":299175936,"max_usage":463708160,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":190767104,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":250074,"total_cache":79269888,"total_rss_huge":0,"total_active_anon":191262720,"total_pgmajfault":0,"pgpgin":164076,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":98137,"hierarchical_memsw_limit":0,"cache":79269888,"active_file":135168,"pgfault":250074,"total_mapped_file":0,"total_pgpgout":98137,"total_writeback":0,"rss":190767104,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":164076,"active_anon":191262720,"total_active_file":135168},"limit":540965302272},"name":"/LowLevelFloatFunctions-DImIG1Nz","networks":{"eth0":{"rx_bytes":2663246,"rx_packets":362,"tx_packets":325,"tx_bytes":30825,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"791861dc4db4647a57a1675163fba544951d0d95daa644f2263cd0728c036e5f","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3268326744522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":9900000000,"usage_in_kernelmode":2770000000,"total_usage":12635853265,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12635849795,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3470,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:37:45.394156557Z"}

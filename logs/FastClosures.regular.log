@@ -1,0 +1,68 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T16:46:34.959
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:46:36.743
+#
+
+ Installing known registries into `~/.julia`
+####                                                                       6.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed FastClosures ─ v0.3.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9aa1b823] + FastClosures v0.3.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [9aa1b823] + FastClosures v0.3.2
+
+
+################################################################################
+# Testing: 2021-01-11T16:46:41.581
+#
+
+    Testing FastClosures
+Status `/tmp/jl_Z9BBrQ/Project.toml`
+  [9aa1b823] FastClosures v0.3.2
+  [8dfed614] Test
+Status `/tmp/jl_Z9BBrQ/Manifest.toml`
+  [9aa1b823] FastClosures v0.3.2
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary: | Pass  Broken  Total
+FastClosures  |   24       1     25
+    Testing FastClosures tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T16:46:45.953
+CPU usage: 10.99s (8.42s user, 2.61s kernel)
+
+Network usage:
+- eth0: 2.543 MiB received, 34.378 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":331268096,"max_usage":576507904,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":222474240,"inactive_file":135168,"inactive_anon":78667776,"total_pgfault":306570,"total_cache":79319040,"total_rss_huge":0,"total_active_anon":223027200,"total_pgmajfault":0,"pgpgin":194700,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":121019,"hierarchical_memsw_limit":0,"cache":79319040,"active_file":135168,"pgfault":306570,"total_mapped_file":0,"total_pgpgout":121019,"total_writeback":0,"rss":222474240,"unevictable":0,"total_inactive_anon":78667776,"total_pgpgin":194700,"active_anon":223027200,"total_active_file":135168},"limit":540965302272},"name":"/FastClosures-0b76Kkca","networks":{"eth0":{"rx_bytes":2666695,"rx_packets":404,"tx_packets":391,"tx_bytes":35203,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"5162766d7ab245d7e4fed309648b020c158ab615938b79b070cc56a5e957dcdb","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3797685424522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":8420000000,"usage_in_kernelmode":2610000000,"total_usage":10987032943,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10987028863,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4080,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T16:46:45.955339481Z"}

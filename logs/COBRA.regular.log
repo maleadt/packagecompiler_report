@@ -1,0 +1,350 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:34:51.898
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:34:53.678
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MbedTLS_jll ─────────── v2.16.8+1
+  Installed Zlib_jll ────────────── v1.2.11+18
+  Installed JSONSchema ──────────── v0.3.3
+  Installed CMakeWrapper ────────── v0.2.4
+  Installed COBRA ───────────────── v0.3.2
+  Installed MathProgBase ────────── v0.7.8
+  Installed CPLEX ───────────────── v0.6.6
+  Installed TranscodingStreams ──── v0.9.5
+  Installed MbedTLS ─────────────── v1.0.3
+  Installed BufferedStreams ─────── v1.0.0
+  Installed Bzip2_jll ───────────── v1.0.6+5
+  Installed Parameters ──────────── v0.12.1
+  Installed HTTP ────────────────── v0.8.19
+  Installed BenchmarkTools ──────── v0.5.0
+  Installed OrderedCollections ──── v1.3.2
+  Installed Blosc ───────────────── v0.5.1
+  Installed CodecZlib ───────────── v0.6.0
+  Installed URIParser ───────────── v0.4.1
+  Installed HDF5 ────────────────── v0.12.5
+  Installed JSON ────────────────── v0.21.1
+  Installed JLLWrappers ─────────── v1.2.0
+  Installed MathOptInterface ────── v0.9.19
+  Installed ZipFile ─────────────── v0.9.3
+  Installed GLPKMathProgInterface ─ v0.4.4
+  Installed MAT ─────────────────── v0.7.0
+  Installed GLPK ────────────────── v0.12.1
+  Installed MutableArithmetics ──── v0.2.13
+  Installed BinDeps ─────────────── v1.0.2
+  Installed UnPack ──────────────── v1.0.2
+  Installed CMake ───────────────── v1.2.0
+  Installed CodecBzip2 ──────────── v0.7.2
+  Installed Compat ──────────────── v2.2.1
+  Installed BinaryProvider ──────── v0.5.10
+  Installed Artifacts ───────────── v1.3.0
+  Installed Parsers ─────────────── v1.0.15
+  Installed IniFile ─────────────── v0.5.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [58298e0b] + COBRA v0.3.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [9e28174c] + BinDeps v1.0.2
+  [b99e7846] + BinaryProvider v0.5.10
+  [a74b3585] + Blosc v0.5.1
+  [e1450e63] + BufferedStreams v1.0.0
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [631607c0] + CMake v1.2.0
+  [d5fb7624] + CMakeWrapper v0.2.4
+  [58298e0b] + COBRA v0.3.2
+  [a076750e] + CPLEX v0.6.6
+  [523fee87] + CodecBzip2 v0.7.2
+  [944b1d66] + CodecZlib v0.6.0
+  [34da2185] + Compat v2.2.1
+  [60bf3e95] + GLPK v0.12.1
+  [3c7084bd] + GLPKMathProgInterface v0.4.4
+  [f67ccb44] + HDF5 v0.12.5
+  [cd3eb016] + HTTP v0.8.19
+  [83e8ac13] + IniFile v0.5.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [7d188eb4] + JSONSchema v0.3.3
+  [23992714] + MAT v0.7.0
+  [b8f27783] + MathOptInterface v0.9.19
+  [fdba3010] + MathProgBase v0.7.8
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [d8a4904e] + MutableArithmetics v0.2.13
+  [bac558e1] + OrderedCollections v1.3.2
+  [d96e819e] + Parameters v0.12.1
+  [69de0a69] + Parsers v1.0.15
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [30578b45] + URIParser v0.4.1
+  [3a884ed6] + UnPack v1.0.2
+  [a5390f91] + ZipFile v0.9.3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building CodecZlib → `~/.julia/packages/CodecZlib/5t9zO/deps/build.log`
+   Building CPLEX ────→ `~/.julia/packages/CPLEX/DgohF/deps/build.log`
+┌ Error: Error building `CPLEX`: 
+│ ERROR: LoadError: Unable to locate CPLEX installation. Note this must be downloaded separately. See the CPLEX.jl README for further instructions.
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] try_local_installation() at /home/pkgeval/.julia/packages/CPLEX/DgohF/deps/build.jl:64
+│  [3] top-level scope at /home/pkgeval/.julia/packages/CPLEX/DgohF/deps/build.jl:80
+│  [4] include(::String) at ./client.jl:457
+│  [5] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/CPLEX/DgohF/deps/build.jl:77
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+   Building CMake ────→ `~/.julia/packages/CMake/ULbyn/deps/build.log`
+   Building Blosc ────→ `~/.julia/packages/Blosc/lzFr0/deps/build.log`
+   Building HDF5 ─────→ `~/.julia/packages/HDF5/Zh9on/deps/build.log`
+   Building GLPK ─────→ `~/.julia/packages/GLPK/HjJiX/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T20:35:37.597
+#
+
+    Testing COBRA
+Status `/tmp/jl_29pEsQ/Project.toml`
+  [58298e0b] COBRA v0.3.2
+  [a076750e] CPLEX v0.6.6
+  [60bf3e95] GLPK v0.12.1
+  [3c7084bd] GLPKMathProgInterface v0.4.4
+  [cd3eb016] HTTP v0.8.19
+  [23992714] MAT v0.7.0
+  [fdba3010] MathProgBase v0.7.8
+  [8ba89e20] Distributed
+  [37e2e46d] LinearAlgebra
+  [44cfe95a] Pkg
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_29pEsQ/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [9e28174c] BinDeps v1.0.2
+  [b99e7846] BinaryProvider v0.5.10
+  [a74b3585] Blosc v0.5.1
+  [e1450e63] BufferedStreams v1.0.0
+  [6e34b625] Bzip2_jll v1.0.6+5
+  [631607c0] CMake v1.2.0
+  [d5fb7624] CMakeWrapper v0.2.4
+  [58298e0b] COBRA v0.3.2
+  [a076750e] CPLEX v0.6.6
+  [523fee87] CodecBzip2 v0.7.2
+  [944b1d66] CodecZlib v0.6.0
+  [34da2185] Compat v2.2.1
+  [60bf3e95] GLPK v0.12.1
+  [3c7084bd] GLPKMathProgInterface v0.4.4
+  [f67ccb44] HDF5 v0.12.5
+  [cd3eb016] HTTP v0.8.19
+  [83e8ac13] IniFile v0.5.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [7d188eb4] JSONSchema v0.3.3
+  [23992714] MAT v0.7.0
+  [b8f27783] MathOptInterface v0.9.19
+  [fdba3010] MathProgBase v0.7.8
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [d8a4904e] MutableArithmetics v0.2.13
+  [bac558e1] OrderedCollections v1.3.2
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.15
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [30578b45] URIParser v0.4.1
+  [3a884ed6] UnPack v1.0.2
+  [a5390f91] ZipFile v0.9.3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Warning: Pkg.installed() is deprecated
+└ @ Pkg /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
+ERROR: LoadError: CPLEX not properly installed. Please run Pkg.build("CPLEX")
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] top-level scope at /home/pkgeval/.julia/packages/CPLEX/DgohF/src/CPLEX.jl:13
+ [3] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [4] include(::Module, ::String) at ./Base.jl:368
+ [5] top-level scope at none:2
+ [6] eval at ./boot.jl:331 [inlined]
+ [7] eval(::Expr) at ./client.jl:467
+ [8] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/CPLEX/DgohF/src/CPLEX.jl:10
+┌ Warning: Pkg.installed() is deprecated
+└ @ Pkg /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
+
+ >> Checking the system's configuration ...
+
+GLPKMathProgInterface is installed.
+Package Gurobi is not installed. In order to use Gurobi, you must first run `Pkg.add("Gurobi")`
+ERROR: LoadError: CPLEX not properly installed. Please run Pkg.build("CPLEX")
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] top-level scope at /home/pkgeval/.julia/packages/CPLEX/DgohF/src/CPLEX.jl:13
+ [3] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [4] include(::Module, ::String) at ./Base.jl:368
+ [5] top-level scope at none:2
+ [6] eval at ./boot.jl:331 [inlined]
+ [7] eval(::Expr) at ./client.jl:467
+ [8] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/CPLEX/DgohF/src/CPLEX.jl:10
+Package CPLEX is not installed. In order to use CPLEX, you must first run `Pkg.add("CPLEX")`
+
+ >> Done. 1 solvers are installed and ready to use.
+[ Info: Parallel version - Connecting the 4 workers ...
+4 local workers are connected. (+1) on host: ee3d33922cdd
+Downloading the ecoli_core model ...ERROR: LoadError: HTTP.ExceptionRequest.StatusError(404, "GET", "/LCSB-BioCore/COBRA.models/raw/master/mat/ecoli_core_model.mat", HTTP.Messages.Response:
+"""
+HTTP/1.1 404 Not Found
+Server: GitHub.com
+Date: Mon, 11 Jan 2021 20:37:15 GMT
+Content-Type: text/html; charset=utf-8
+Status: 404 Not Found
+Vary: X-PJAX, Accept-Encoding, Accept, X-Requested-With
+Link: <https://github.githubassets.com/_error.js>; rel=preload; as=script; nopush
+Cache-Control: no-cache
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+expect-ct: max-age=2592000, report-uri="https://api.github.com/_private/browser/errors"
+Content-Security-Policy: default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-5029ae85.js gist.github.com/socket-worker-5029ae85.js
+transfer-encoding: chunked
+X-GitHub-Request-Id: 88FE:736C:E7B3B:162167:5FFCB6F9
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://github.githubassets.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-BSy+E+S5PJuDWKcXiIXBoFJ7uJ+88y6hFdIhZpf7nf9MVNVvnJDPUaotaxFUQi8UXCLJOcGv1uifxVMc9o5DYQ==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-052cbe13e4b93c9b8358a7178885c1a0.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-ymNNgKig3yIDw0kCJnZn3POoNSVZ28RAbrl+Xx3SUoaYXXmGibsr5BciiKMmj538px1YMLE6ibOBubEQ8
+⋮
+173979-byte body
+""")
+Stacktrace:
+ [1] request(::Type{ExceptionLayer{ConnectionPoolLayer{StreamLayer{Union{}}}}}, ::HTTP.URIs.URI, ::Vararg{Any,N} where N; kw::Base.Iterators.Pairs{Symbol,Union{Nothing, Bool},Tuple{Symbol,Symbol},NamedTuple{(:iofunction, :reached_redirect_limit),Tuple{Nothing,Bool}}}) at /home/pkgeval/.julia/packages/HTTP/IAI92/src/ExceptionRequest.jl:22
+ [2] (::Base.var"#56#58"{Base.var"#56#57#59"{ExponentialBackOff,HTTP.RetryRequest.var"#2#3"{Bool,HTTP.Messages.Request},typeof(HTTP.request)}})(::Type{T} where T, ::Vararg{Any,N} where N; kwargs::Base.Iterators.Pairs{Symbol,Union{Nothing, Bool},Tuple{Symbol,Symbol},NamedTuple{(:iofunction, :reached_redirect_limit),Tuple{Nothing,Bool}}}) at ./error.jl:288
+ [3] #request#1 at /home/pkgeval/.julia/packages/HTTP/IAI92/src/RetryRequest.jl:44 [inlined]
+ [4] request(::Type{MessageLayer{RetryLayer{ExceptionLayer{ConnectionPoolLayer{StreamLayer{Union{}}}}}}}, ::String, ::HTTP.URIs.URI, ::Array{Pair{SubString{String},SubString{String}},1}, ::Array{UInt8,1}; http_version::VersionNumber, target::String, parent::Nothing, iofunction::Nothing, kw::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:reached_redirect_limit,),Tuple{Bool}}}) at /home/pkgeval/.julia/packages/HTTP/IAI92/src/MessageRequest.jl:51
+ [5] request(::Type{BasicAuthLayer{MessageLayer{RetryLayer{ExceptionLayer{ConnectionPoolLayer{StreamLayer{Union{}}}}}}}}, ::String, ::HTTP.URIs.URI, ::Array{Pair{SubString{String},SubString{String}},1}, ::Array{UInt8,1}; kw::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:reached_redirect_limit,),Tuple{Bool}}}) at /home/pkgeval/.julia/packages/HTTP/IAI92/src/BasicAuthRequest.jl:28
+ [6] request(::Type{RedirectLayer{BasicAuthLayer{MessageLayer{RetryLayer{ExceptionLayer{ConnectionPoolLayer{StreamLayer{Union{}}}}}}}}}, ::String, ::HTTP.URIs.URI, ::Array{Pair{SubString{String},SubString{String}},1}, ::Array{UInt8,1}; redirect_limit::Int64, forwardheaders::Bool, kw::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/HTTP/IAI92/src/RedirectRequest.jl:24
+ [7] request(::Type{RedirectLayer{BasicAuthLayer{MessageLayer{RetryLayer{ExceptionLayer{ConnectionPoolLayer{StreamLayer{Union{}}}}}}}}}, ::String, ::HTTP.URIs.URI, ::Array{Pair{SubString{String},SubString{String}},1}, ::Array{UInt8,1}) at /home/pkgeval/.julia/packages/HTTP/IAI92/src/RedirectRequest.jl:21
+ [8] request(::String, ::String, ::Array{Pair{SubString{String},SubString{String}},1}, ::Array{UInt8,1}; headers::Array{Pair{SubString{String},SubString{String}},1}, body::Array{UInt8,1}, query::Nothing, kw::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/HTTP/IAI92/src/HTTP.jl:314
+ [9] request at /home/pkgeval/.julia/packages/HTTP/IAI92/src/HTTP.jl:314 [inlined] (repeats 2 times)
+ [10] #get#12 at /home/pkgeval/.julia/packages/HTTP/IAI92/src/HTTP.jl:391 [inlined]
+ [11] get at /home/pkgeval/.julia/packages/HTTP/IAI92/src/HTTP.jl:391 [inlined]
+ [12] getTestModel() at /home/pkgeval/.julia/packages/COBRA/o1SnO/test/getTestModel.jl:5
+ [13] top-level scope at /home/pkgeval/.julia/packages/COBRA/o1SnO/test/runtests.jl:35
+ [14] include(::String) at ./client.jl:457
+ [15] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/COBRA/o1SnO/test/runtests.jl:35
+
+PkgEval failed: Package COBRA errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:37:20.631
+CPU usage: 143.72s (132.45s user, 11.54s kernel)
+
+Network usage:
+- eth0: 50.568 MiB received, 1.017 MiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":48,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":29,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":48,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":48,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":29,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":48,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":266240,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":159744,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":266240,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":266240,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":159744,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":266240,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":544444416,"max_usage":1925505024,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":249937920,"inactive_file":135168,"inactive_anon":173961216,"total_pgfault":4221756,"total_cache":256286720,"total_rss_huge":0,"total_active_anon":331567104,"total_pgmajfault":0,"pgpgin":2736459,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":2612869,"hierarchical_memsw_limit":0,"cache":256286720,"active_file":811008,"pgfault":4221756,"total_mapped_file":0,"total_pgpgout":2612869,"total_writeback":0,"rss":249937920,"unevictable":0,"total_inactive_anon":173961216,"total_pgpgin":2736459,"active_anon":331567104,"total_active_file":811008},"limit":540965302272},"name":"/COBRA-wmJuHTTO","networks":{"eth0":{"rx_bytes":53024780,"rx_packets":30789,"tx_packets":17282,"tx_bytes":1066152,"tx_dropped":0,"rx_dropped":5,"tx_errors":0,"rx_errors":0}},"id":"ee3d33922cdd28c2abf098963adcb4c90e2b89f2f21df82a09c59729a258a0d9","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5565609674522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":132450000000,"usage_in_kernelmode":11540000000,"total_usage":143716580216,"percpu_usage":[0,143716151746,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,305900,0,122570,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:37:20.634207709Z"}

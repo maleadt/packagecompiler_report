@@ -1,0 +1,539 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:41:06.116
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:41:07.931
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed MbedTLS_jll ────────────────── v2.16.8+1
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed Reexport ───────────────────── v1.0.0
+  Installed JSONSchema ─────────────────── v0.3.3
+  Installed JuMP ───────────────────────── v0.21.5
+  Installed TimeZones ──────────────────── v1.5.3
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed Memento ────────────────────── v1.1.2
+  Installed Mocking ────────────────────── v0.7.1
+  Installed TranscodingStreams ─────────── v0.9.5
+  Installed Calculus ───────────────────── v0.5.1
+  Installed Libiconv_jll ───────────────── v1.16.0+7
+  Installed DataStructures ─────────────── v0.18.8
+  Installed Requires ───────────────────── v1.1.2
+  Installed MbedTLS ────────────────────── v1.0.3
+  Installed EzXML ──────────────────────── v1.1.0
+  Installed MaximinOPF ─────────────────── v0.1.1
+  Installed PowerModels ────────────────── v0.17.3
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed Parameters ─────────────────── v0.12.1
+  Installed Bzip2_jll ──────────────────── v1.0.6+5
+  Installed DiffResults ────────────────── v1.0.3
+  Installed BenchmarkTools ─────────────── v0.5.0
+  Installed HTTP ───────────────────────── v0.9.2
+  Installed XML2_jll ───────────────────── v2.9.10+3
+  Installed CodecZlib ──────────────────── v0.7.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed Dualization ────────────────── v0.3.3
+  Installed MathOptInterface ───────────── v0.9.19
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed Distances ──────────────────── v0.10.0
+  Installed Syslogs ────────────────────── v0.3.0
+  Installed NLsolve ────────────────────── v4.5.1
+  Installed JSON ───────────────────────── v0.21.1
+  Installed FiniteDiff ─────────────────── v2.7.2
+  Installed LineSearches ───────────────── v7.1.1
+  Installed InfrastructureModels ───────── v0.5.3
+  Installed ZipFile ────────────────────── v0.9.3
+  Installed ArrayInterface ─────────────── v2.14.13
+  Installed MutableArithmetics ─────────── v0.2.13
+  Installed URIs ───────────────────────── v1.1.0
+  Installed ExprTools ──────────────────── v0.1.3
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed CodecBzip2 ─────────────────── v0.7.2
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed IniFile ────────────────────── v0.5.0
+  Installed Compat ─────────────────────── v3.25.0
+  Installed NLSolversBase ──────────────── v7.7.1
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed Parsers ────────────────────── v1.0.15
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9a7b7887] + MaximinOPF v0.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [4fba245c] + ArrayInterface v2.14.13
+  [56f22d72] + Artifacts v1.3.0
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [49dc2e85] + Calculus v0.5.1
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [523fee87] + CodecBzip2 v0.7.2
+  [944b1d66] + CodecZlib v0.7.0
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [864edb3b] + DataStructures v0.18.8
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [b4f34e82] + Distances v0.10.0
+  [191a621a] + Dualization v0.3.3
+  [e2ba6199] + ExprTools v0.1.3
+  [8f5d6c58] + EzXML v1.1.0
+  [6a86dc24] + FiniteDiff v2.7.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [cd3eb016] + HTTP v0.9.2
+  [2030c09a] + InfrastructureModels v0.5.3
+  [83e8ac13] + IniFile v0.5.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [7d188eb4] + JSONSchema v0.3.3
+  [4076af6c] + JuMP v0.21.5
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [d3d80556] + LineSearches v7.1.1
+  [1914dd2f] + MacroTools v0.5.6
+  [b8f27783] + MathOptInterface v0.9.19
+  [9a7b7887] + MaximinOPF v0.1.1
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [f28f55f0] + Memento v1.1.2
+  [78c3b35d] + Mocking v0.7.1
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [d8a4904e] + MutableArithmetics v0.2.13
+  [d41bc354] + NLSolversBase v7.7.1
+  [2774e3e8] + NLsolve v4.5.1
+  [77ba4419] + NaNMath v0.3.5
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [d96e819e] + Parameters v0.12.1
+  [69de0a69] + Parsers v1.0.15
+  [c36e90e8] + PowerModels v0.17.3
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [189a3867] + Reexport v1.0.0
+  [ae029012] + Requires v1.1.2
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [cea106d9] + Syslogs v0.3.0
+  [f269a46b] + TimeZones v1.5.3
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [5c2747f8] + URIs v1.1.0
+  [3a884ed6] + UnPack v1.0.2
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [a5390f91] + ZipFile v0.9.3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building TimeZones → `~/.julia/packages/TimeZones/K98G0/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T18:41:26.018
+#
+
+    Testing MaximinOPF
+Status `/tmp/jl_7vTgmQ/Project.toml`
+  [b6b21f68] Ipopt v0.6.5
+  [4076af6c] JuMP v0.21.5
+  [9a7b7887] MaximinOPF v0.1.1
+  [c36e90e8] PowerModels v0.17.3
+  [c946c3f1] SCS v0.7.1
+  [8dfed614] Test
+Status `/tmp/jl_7vTgmQ/Manifest.toml`
+  [ae81ac8f] ASL_jll v0.1.1+4
+  [4fba245c] ArrayInterface v2.14.13
+  [56f22d72] Artifacts v1.3.0
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [b99e7846] BinaryProvider v0.5.10
+  [6e34b625] Bzip2_jll v1.0.6+5
+  [49dc2e85] Calculus v0.5.1
+  [d360d2e6] ChainRulesCore v0.9.24
+  [523fee87] CodecBzip2 v0.7.2
+  [944b1d66] CodecZlib v0.7.0
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [864edb3b] DataStructures v0.18.8
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [b4f34e82] Distances v0.10.0
+  [191a621a] Dualization v0.3.3
+  [e2ba6199] ExprTools v0.1.3
+  [8f5d6c58] EzXML v1.1.0
+  [6a86dc24] FiniteDiff v2.7.2
+  [f6369f11] ForwardDiff v0.10.14
+  [cd3eb016] HTTP v0.9.2
+  [2030c09a] InfrastructureModels v0.5.3
+  [83e8ac13] IniFile v0.5.0
+  [b6b21f68] Ipopt v0.6.5
+  [9cc047cb] Ipopt_jll v3.13.2+1
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [7d188eb4] JSONSchema v0.3.3
+  [4076af6c] JuMP v0.21.5
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [d3d80556] LineSearches v7.1.1
+  [d00139f3] METIS_jll v5.1.0+5
+  [d7ed1dd3] MUMPS_seq_jll v5.2.1+4
+  [1914dd2f] MacroTools v0.5.6
+  [b8f27783] MathOptInterface v0.9.19
+  [fdba3010] MathProgBase v0.7.8
+  [9a7b7887] MaximinOPF v0.1.1
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [f28f55f0] Memento v1.1.2
+  [78c3b35d] Mocking v0.7.1
+  [46d2c3a1] MuladdMacro v0.2.2
+  [d8a4904e] MutableArithmetics v0.2.13
+  [d41bc354] NLSolversBase v7.7.1
+  [2774e3e8] NLsolve v4.5.1
+  [77ba4419] NaNMath v0.3.5
+  [656ef2d0] OpenBLAS32_jll v0.3.9+4
+  [4536629a] OpenBLAS_jll v0.3.9+5
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.15
+  [c36e90e8] PowerModels v0.17.3
+  [3cdcf5f2] RecipesBase v1.1.1
+  [189a3867] Reexport v1.0.0
+  [ae029012] Requires v1.1.2
+  [c946c3f1] SCS v0.7.1
+  [af6e375f] SCS_GPU_jll v2.1.2+0
+  [f4f2fc5b] SCS_jll v2.1.2+1
+  [276daf66] SpecialFunctions v1.2.1
+  [90137ffa] StaticArrays v1.0.1
+  [cea106d9] Syslogs v0.3.0
+  [f269a46b] TimeZones v1.5.3
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [5c2747f8] URIs v1.1.0
+  [3a884ed6] UnPack v1.0.2
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [a5390f91] ZipFile v0.9.3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[info | PowerModels]: Suppressing information and warning messages for the rest of this session.  Use the Memento package for more fine-grained control of logging.
+Maximin Models:
+Type: SOCWRConicPowerModel
+ [case9-1]: 20.630980442 seconds, status ALMOST_OPTIMAL.
+ [case9-2]: 0.029208236 seconds, status OPTIMAL.
+ [case9-3]: 0.135728357 seconds, status OPTIMAL.
+ [case9-4]: 2.35332583 seconds, status ALMOST_OPTIMAL.
+ [case9-5]: 2.306429787 seconds, status ALMOST_OPTIMAL.
+ [case9-6]: 1.919792593 seconds, status ALMOST_OPTIMAL.
+ [case9-7]: 2.503574453 seconds, status ALMOST_OPTIMAL.
+Type: SDPWRMPowerModel
+ [case9-1]: 4.487224599 seconds, status ALMOST_OPTIMAL.
+ [case9-2]: 0.055040959 seconds, status OPTIMAL.
+ [case9-3]: 0.10996492 seconds, status OPTIMAL.
+ [case9-4]: 3.225116825 seconds, status ALMOST_OPTIMAL.
+ [case9-5]: 3.35255342 seconds, status ALMOST_OPTIMAL.
+ [case9-6]: 2.872546041 seconds, status ALMOST_OPTIMAL.
+ [case9-7]: 3.4379465 seconds, status ALMOST_OPTIMAL.
+Type: SparseSDPWRMPowerModel
+ [case9-1]: 2.977545994 seconds, status ALMOST_OPTIMAL.
+ [case9-2]: 0.047441162 seconds, status OPTIMAL.
+ [case9-3]: 0.125334519 seconds, status OPTIMAL.
+ [case9-4]: 3.007360477 seconds, status ALMOST_OPTIMAL.
+ [case9-5]: 3.301093786 seconds, status ALMOST_OPTIMAL.
+ [case9-6]: 2.794754348 seconds, status ALMOST_OPTIMAL.
+ [case9-7]: 3.111762931 seconds, status ALMOST_OPTIMAL.
+Test Summary:       | Pass  Total
+Maximin Model Tests |   21     21
+Minimax Models:
+Type: ACPPowerModel
+
+******************************************************************************
+This program contains Ipopt, a library for large-scale nonlinear optimization.
+ Ipopt is released as open source code under the Eclipse Public License (EPL).
+         For more information visit http://projects.coin-or.org/Ipopt
+******************************************************************************
+
+ [case9-1]: 21.584480903 seconds, status LOCALLY_SOLVED.
+ [case9-2]: 0.039080642 seconds, status LOCALLY_SOLVED.
+ [case9-3]: 0.015087823 seconds, status LOCALLY_SOLVED.
+ [case9-4]: 0.050740583 seconds, status LOCALLY_SOLVED.
+ [case9-5]: 0.033476248 seconds, status LOCALLY_SOLVED.
+ [case9-6]: 0.044137139 seconds, status LOCALLY_SOLVED.
+ [case9-7]: 0.03930017 seconds, status LOCALLY_SOLVED.
+Type: ACRPowerModel
+ [case9-1]: 1.761780549 seconds, status LOCALLY_SOLVED.
+ [case9-2]: 0.139854452 seconds, status LOCALLY_SOLVED.
+ [case9-3]: 0.014347069 seconds, status LOCALLY_SOLVED.
+ [case9-4]: 0.048308164 seconds, status LOCALLY_SOLVED.
+ [case9-5]: 0.031976641 seconds, status LOCALLY_SOLVED.
+ [case9-6]: 0.042521722 seconds, status LOCALLY_SOLVED.
+ [case9-7]: 0.038908922 seconds, status LOCALLY_SOLVED.
+Type: ACTPowerModel
+ [case9-1]: 0.813977394 seconds, status LOCALLY_SOLVED.
+ [case9-2]: 0.038615635 seconds, status LOCALLY_SOLVED.
+ [case9-3]: 0.014329639 seconds, status LOCALLY_SOLVED.
+ [case9-4]: 0.044682513 seconds, status LOCALLY_SOLVED.
+ [case9-5]: 0.032717794 seconds, status LOCALLY_SOLVED.
+ [case9-6]: 0.043123167 seconds, status LOCALLY_SOLVED.
+ [case9-7]: 0.037519454 seconds, status LOCALLY_SOLVED.
+Type: DCPPowerModel
+ [case9-1]: 0.038306817 seconds, status LOCALLY_SOLVED.
+ [case9-2]: 0.024764731 seconds, status LOCALLY_SOLVED.
+ [case9-3]: 0.009582099 seconds, status LOCALLY_SOLVED.
+ [case9-4]: 0.020383058 seconds, status LOCALLY_SOLVED.
+ [case9-5]: 0.013704314 seconds, status LOCALLY_SOLVED.
+ [case9-6]: 0.013222209 seconds, status LOCALLY_SOLVED.
+ [case9-7]: 0.020454827 seconds, status LOCALLY_SOLVED.
+Type: DCMPPowerModel
+ [case9-1]: 0.014374608 seconds, status LOCALLY_SOLVED.
+ [case9-2]: 0.024415894 seconds, status LOCALLY_SOLVED.
+ [case9-3]: 0.009781238 seconds, status LOCALLY_SOLVED.
+ [case9-4]: 0.020393968 seconds, status LOCALLY_SOLVED.
+ [case9-5]: 0.013776784 seconds, status LOCALLY_SOLVED.
+ [case9-6]: 0.013221179 seconds, status LOCALLY_SOLVED.
+ [case9-7]: 0.020004802 seconds, status LOCALLY_SOLVED.
+Type: NFAPowerModel
+ [case9-1]: 0.035896247 seconds, status LOCALLY_SOLVED.
+ [case9-2]: 0.034549939 seconds, status LOCALLY_SOLVED.
+ [case9-3]: 0.006966571 seconds, status LOCALLY_SOLVED.
+ [case9-4]: 0.019319827 seconds, status LOCALLY_SOLVED.
+ [case9-5]: 0.010635381 seconds, status LOCALLY_SOLVED.
+ [case9-6]: 0.009004474 seconds, status LOCALLY_SOLVED.
+ [case9-7]: 0.016728528 seconds, status LOCALLY_SOLVED.
+Type: DCPLLPowerModel
+ [case9-1]: 0.045885663 seconds, status LOCALLY_SOLVED.
+ [case9-2]: 0.02605725 seconds, status LOCALLY_SOLVED.
+ [case9-3]: 0.011434634 seconds, status LOCALLY_SOLVED.
+ [case9-4]: 0.029770039 seconds, status LOCALLY_SOLVED.
+ [case9-5]: 0.021355329 seconds, status LOCALLY_SOLVED.
+ [case9-6]: 0.024689962 seconds, status LOCALLY_SOLVED.
+ [case9-7]: 0.028950486 seconds, status LOCALLY_SOLVED.
+Type: LPACCPowerModel
+ [case9-1]: 0.033623947 seconds, status LOCALLY_SOLVED.
+ [case9-2]: 0.029057725 seconds, status LOCALLY_SOLVED.
+ [case9-3]: 0.016143493 seconds, status LOCALLY_SOLVED.
+ [case9-4]: 0.063230136 seconds, status LOCALLY_SOLVED.
+ [case9-5]: 0.040033112 seconds, status LOCALLY_SOLVED.
+ [case9-6]: 0.055097325 seconds, status LOCALLY_SOLVED.
+ [case9-7]: 0.064053969 seconds, status LOCALLY_SOLVED.
+Type: SOCWRPowerModel
+ [case9-1]: 0.040065502 seconds, status LOCALLY_SOLVED.
+ [case9-2]: 0.038613154 seconds, status LOCALLY_SOLVED.
+ [case9-3]: 0.015787687 seconds, status LOCALLY_SOLVED.
+ [case9-4]: 0.066474639 seconds, status LOCALLY_SOLVED.
+ [case9-5]: 0.03802819 seconds, status LOCALLY_SOLVED.
+ [case9-6]: 0.056119476 seconds, status LOCALLY_SOLVED.
+ [case9-7]: 0.066765746 seconds, status LOCALLY_SOLVED.
+Type: SOCBFPowerModel
+ [case9-1]: 0.034408969 seconds, status LOCALLY_SOLVED.
+ [case9-2]: 0.029322893 seconds, status LOCALLY_SOLVED.
+ [case9-3]: 0.015261191 seconds, status LOCALLY_SOLVED.
+ [case9-4]: 0.056260106 seconds, status LOCALLY_SOLVED.
+ [case9-5]: 0.032292888 seconds, status LOCALLY_SOLVED.
+ [case9-6]: 0.036394963 seconds, status LOCALLY_SOLVED.
+ [case9-7]: 0.045413387 seconds, status LOCALLY_SOLVED.
+Type: QCRMPowerModel
+ [case9-1]: 0.149850355 seconds, status LOCALLY_SOLVED.
+ [case9-2]: 0.072447198 seconds, status LOCALLY_SOLVED.
+ [case9-3]: 0.044009088 seconds, status LOCALLY_SOLVED.
+ [case9-4]: 0.168807134 seconds, status LOCALLY_SOLVED.
+ [case9-5]: 0.082849111 seconds, status LOCALLY_SOLVED.
+ [case9-6]: 0.134405786 seconds, status LOCALLY_SOLVED.
+ [case9-7]: 0.142859134 seconds, status LOCALLY_SOLVED.
+Type: QCLSPowerModel
+ [case9-1]: 0.080922336 seconds, status LOCALLY_SOLVED.
+ [case9-2]: 0.070331605 seconds, status LOCALLY_SOLVED.
+ [case9-3]: 0.04149299 seconds, status LOCALLY_SOLVED.
+ [case9-4]: 0.149921163 seconds, status LOCALLY_SOLVED.
+ [case9-5]: 0.082813881 seconds, status LOCALLY_SOLVED.
+ [case9-6]: 0.131193512 seconds, status LOCALLY_SOLVED.
+ [case9-7]: 0.140150446 seconds, status LOCALLY_SOLVED.
+Type: SOCWRConicPowerModel
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-1]: 3.257566677 seconds, status ALMOST_OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-2]: 0.021873565 seconds, status OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-3]: 0.117810594 seconds, status OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-4]: 0.713588687 seconds, status ALMOST_OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-5]: 0.723334825 seconds, status ALMOST_OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-6]: 0.484023688 seconds, status ALMOST_OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-7]: 0.696072065 seconds, status ALMOST_OPTIMAL.
+Type: SOCBFConicPowerModel
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-1]: 0.739559485 seconds, status ALMOST_OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-2]: 0.015938035 seconds, status OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-3]: 0.033866013 seconds, status OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-4]: 0.704449922 seconds, status ALMOST_OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-5]: 0.708027051 seconds, status ALMOST_OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-6]: 0.431332761 seconds, status ALMOST_OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-7]: 0.71958048 seconds, status ALMOST_OPTIMAL.
+Type: SDPWRMPowerModel
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-1]: 2.370405794 seconds, status ALMOST_OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-2]: 0.034969299 seconds, status OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-3]: 0.808828332 seconds, status ALMOST_OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-4]: 1.28587972 seconds, status ALMOST_OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-5]: 1.43636148 seconds, status ALMOST_OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-6]: 1.075323599 seconds, status ALMOST_OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-7]: 0.895008013 seconds, status OPTIMAL.
+Type: SparseSDPWRMPowerModel
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-1]: 0.94551785 seconds, status ALMOST_OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-2]: 0.028471082 seconds, status OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-3]: 0.666487797 seconds, status ALMOST_OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-4]: 0.963856841 seconds, status ALMOST_OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-5]: 0.994897528 seconds, status ALMOST_OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-6]: 0.800234391 seconds, status ALMOST_OPTIMAL.
+┌ Warning: MathOptInterface.VariablePrimalStart() is not supported by SCS.GeometricConicForm{Float64,SCS.SparseMatrixCSRtoCSC{Int64},NTuple{8,DataType}}. This information will be discarded.
+└ @ MathOptInterface.Utilities ~/.julia/packages/MathOptInterface/ZJFKw/src/Utilities/copy.jl:185
+ [case9-7]: 0.948614762 seconds, status ALMOST_OPTIMAL.
+Test Summary:       | Pass  Total
+Minimax Model Tests |  112    112
+WARN: A->p (column pointers) not strictly increasing, column 237 empty
+WARN: A->p (column pointers) not strictly increasing, column 238 empty
+WARN: A->p (column pointers) not strictly increasing, column 241 empty
+WARN: A->p (column pointers) not strictly increasing, column 228 empty
+WARN: A->p (column pointers) not strictly increasing, column 229 empty
+WARN: A->p (column pointers) not strictly increasing, column 232 empty
+WARN: A->p (column pointers) not strictly increasing, column 228 empty
+WARN: A->p (column pointers) not strictly increasing, column 229 empty
+WARN: A->p (column pointers) not strictly increasing, column 232 empty
+WARN: A->p (column pointers) not strictly increasing, column 235 empty
+WARN: A->p (column pointers) not strictly increasing, column 236 empty
+WARN: A->p (column pointers) not strictly increasing, column 239 empty
+WARN: A->p (column pointers) not strictly increasing, column 235 empty
+WARN: A->p (column pointers) not strictly increasing, column 236 empty
+WARN: A->p (column pointers) not strictly increasing, column 239 empty
+WARN: A->p (column pointers) not strictly increasing, column 228 empty
+WARN: A->p (column pointers) not strictly increasing, column 229 empty
+WARN: A->p (column pointers) not strictly increasing, column 232 empty
+WARN: A->p (column pointers) not strictly increasing, column 235 empty
+WARN: A->p (column pointers) not strictly increasing, column 236 empty
+WARN: A->p (column pointers) not strictly increasing, column 239 empty
+    Testing MaximinOPF tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:49:57.744
+CPU usage: 518.96s (487.20s user, 32.56s kernel)
+
+Network usage:
+- eth0: 12.129 MiB received, 379.910 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":253,"value":0,"op":"Read","minor":0},{"major":253,"value":0,"op":"Write","minor":0},{"major":253,"value":0,"op":"Sync","minor":0},{"major":253,"value":0,"op":"Async","minor":0},{"major":253,"value":0,"op":"Discard","minor":0},{"major":253,"value":0,"op":"Total","minor":0},{"major":259,"value":3408,"op":"Read","minor":0},{"major":259,"value":36,"op":"Write","minor":0},{"major":259,"value":3427,"op":"Sync","minor":0},{"major":259,"value":17,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":3444,"op":"Total","minor":0},{"major":253,"value":3408,"op":"Read","minor":2},{"major":253,"value":36,"op":"Write","minor":2},{"major":253,"value":3427,"op":"Sync","minor":2},{"major":253,"value":17,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":3444,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":253,"value":0,"op":"Read","minor":0},{"major":253,"value":0,"op":"Write","minor":0},{"major":253,"value":0,"op":"Sync","minor":0},{"major":253,"value":0,"op":"Async","minor":0},{"major":253,"value":0,"op":"Discard","minor":0},{"major":253,"value":0,"op":"Total","minor":0},{"major":259,"value":94785536,"op":"Read","minor":0},{"major":259,"value":217088,"op":"Write","minor":0},{"major":259,"value":94892032,"op":"Sync","minor":0},{"major":259,"value":110592,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":95002624,"op":"Total","minor":0},{"major":253,"value":94785536,"op":"Read","minor":2},{"major":253,"value":217088,"op":"Write","minor":2},{"major":253,"value":94892032,"op":"Sync","minor":2},{"major":253,"value":110592,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":95002624,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":445579264,"max_usage":2185654272,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":1386,"total_rss":225366016,"inactive_file":1589248,"inactive_anon":7413760,"total_pgfault":7612044,"total_cache":191545344,"total_rss_huge":0,"total_active_anon":387452928,"total_pgmajfault":1386,"pgpgin":4597032,"rss_huge":0,"mapped_file":16220160,"total_inactive_file":1589248,"dirty":675840,"total_unevictable":0,"total_dirty":675840,"writeback":0,"pgpgout":4495283,"hierarchical_memsw_limit":0,"cache":191545344,"active_file":12861440,"pgfault":7612044,"total_mapped_file":16220160,"total_pgpgout":4495283,"total_writeback":0,"rss":225366016,"unevictable":0,"total_inactive_anon":7413760,"total_pgpgin":4597032,"active_anon":387452928,"total_active_file":12861440},"limit":540965302272},"name":"/MaximinOPF-lNz3jzYo","networks":{"eth0":{"rx_bytes":12718430,"rx_packets":2990,"tx_packets":3186,"tx_bytes":389028,"tx_dropped":0,"rx_dropped":18,"tx_errors":0,"rx_errors":0}},"id":"94062ae7b0951fc348642b9c104df0b079ac6a907ee018abc1fe993357d20ede","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4742026804522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":487200000000,"usage_in_kernelmode":32560000000,"total_usage":518959051871,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4064041,518953746418,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,384970,0,856442,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:49:57.889212437Z"}

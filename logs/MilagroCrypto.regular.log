@@ -1,0 +1,133 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:07:31.777
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:07:33.645
+#
+
+ Installing known registries into `~/.julia`
+#########                                                                 12.6%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MilagroCrypto ─ v0.201.1
+  Installed AMCL_jll ────── v2.0.1+0
+  Installed CBinding ────── v0.8.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [77965072] + MilagroCrypto v0.201.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [3d240a5b] + AMCL_jll v2.0.1+0
+  [d43a6710] + CBinding v0.8.1
+  [77965072] + MilagroCrypto v0.201.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T18:07:38.102
+#
+
+    Testing MilagroCrypto
+Status `/tmp/jl_MS8GNT/Project.toml`
+  [3d240a5b] AMCL_jll v2.0.1+0
+  [d43a6710] CBinding v0.8.1
+  [77965072] MilagroCrypto v0.201.1
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_MS8GNT/Manifest.toml`
+  [3d240a5b] AMCL_jll v2.0.1+0
+  [d43a6710] CBinding v0.8.1
+  [77965072] MilagroCrypto v0.201.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+octet         |    5      5
+Test Summary: | Pass  Total
+csprng        |    1      1
+Test Summary:             | Pass  Total
+amcl_aes memory alignment |    1      1
+Test Summary:        | Pass  Total
+gcm memory alignment |    1      1
+Test Summary:         | Pass  Total
+sha3 memory alignment |    1      1
+Test Summary:            | Pass  Total
+hash512 memory alignment |    1      1
+Test Summary:            | Pass  Total
+hash512 memory alignment |    1      1
+BLS Signatures: BN254
+BLS Signatures: BN254CX
+BLS Signatures: BLS381
+BLS Signatures: BLS383
+BLS Signatures: BLS461
+BLS Signatures: FP256BN
+BLS Signatures: FP512BN
+BLS Signatures: BLS24
+BLS Signatures: BLS48
+Test Summary:  | Pass  Total
+BLS Signatures |   45     45
+Test Summary:        | Pass  Total
+BIG and DBIG numbers |   78     78
+Test Summary: | Pass  Total
+Fields (FPx)  |    9      9
+Test Summary:                | Pass  Total
+Elliptic Curve Points (ECPx) |    9      9
+    Testing MilagroCrypto tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:08:03.025
+CPU usage: 31.20s (27.91s user, 3.36s kernel)
+
+Network usage:
+- eth0: 2.737 MiB received, 38.061 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":135,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":154,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":159,"op":"Total","minor":0},{"major":253,"value":135,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":154,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":159,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":4018176,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":4124672,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":4145152,"op":"Total","minor":0},{"major":253,"value":4018176,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":4124672,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":4145152,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":349814784,"max_usage":776933376,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":66,"total_rss":221200384,"inactive_file":1081344,"inactive_anon":87859200,"total_pgfault":624063,"total_cache":97316864,"total_rss_huge":0,"total_active_anon":226406400,"total_pgmajfault":66,"pgpgin":340032,"rss_huge":0,"mapped_file":0,"total_inactive_file":1081344,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":135168,"pgpgout":262296,"hierarchical_memsw_limit":0,"cache":97316864,"active_file":3108864,"pgfault":624063,"total_mapped_file":0,"total_pgpgout":262296,"total_writeback":135168,"rss":221200384,"unevictable":0,"total_inactive_anon":87859200,"total_pgpgin":340032,"active_anon":226406400,"total_active_file":3108864},"limit":540965302272},"name":"/MilagroCrypto-LrXRxJ2t","networks":{"eth0":{"rx_bytes":2869560,"rx_packets":361,"tx_packets":375,"tx_bytes":38974,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"17f8fccd66c60642b3cfd5e64edc3503b528eb0ffa64fbdf3aab31b4fcc07731","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4420795074522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":27910000000,"usage_in_kernelmode":3360000000,"total_usage":31204096075,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3060,0,0,31204093015,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:08:03.949205467Z"}

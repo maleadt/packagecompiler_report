@@ -1,0 +1,157 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T23:45:33.271
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T23:45:34.996
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CodeTracking ──── v1.0.5
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [da1fd8a2] + CodeTracking v1.0.5
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [da1fd8a2] + CodeTracking v1.0.5
+  [9b87118b] + PackageCompiler v1.2.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T23:45:40.786
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 147.371 MiB, compilation took 159 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T23:48:28.314
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/CodeTracking-lNDC7OkO.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:48:30.077
+#
+
+ Installing known registries into `~/.julia`
+###############################                                           44.1%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CodeTracking ─ v1.0.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [da1fd8a2] + CodeTracking v1.0.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [da1fd8a2] + CodeTracking v1.0.5
+  [2a0f44e3] + Base64
+  [b77e0a4c] + InteractiveUtils
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [cf7118a7] + UUIDs
+
+
+################################################################################
+# Testing: 2021-01-11T23:48:34.679
+#
+
+    Testing CodeTracking
+Status `/tmp/jl_cmjc0a/Project.toml`
+  [da1fd8a2] CodeTracking v1.0.5
+  [3da002f7] ColorTypes v0.10.9
+  [b77e0a4c] InteractiveUtils
+  [37e2e46d] LinearAlgebra
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_cmjc0a/Manifest.toml`
+  [da1fd8a2] CodeTracking v1.0.5
+  [3da002f7] ColorTypes v0.10.9
+  [53c48c17] FixedPointNumbers v0.8.4
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+Test Summary:   | Pass  Total
+CodeTracking.jl |   33     33
+Test Summary: |
+With Revise   | No tests
+Test Summary:      | Pass  Total
+#34 last character |    2      2
+Test Summary: | Pass  Total
+inline macros |    1      1
+Test Summary:  | Pass  Total
+kwargs methods |    2      2
+Test Summary:     | Pass  Total
+method extensions |    2      2
+    Testing CodeTracking tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:48:38.796
+CPU usage: 10.50s (7.54s user, 3.02s kernel)
+
+Network usage:
+- eth0: 2.729 MiB received, 39.931 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":32,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":46,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":51,"op":"Total","minor":0},{"major":253,"value":32,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":46,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":51,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":131072,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":188416,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":208896,"op":"Total","minor":0},{"major":253,"value":131072,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":188416,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":208896,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":290910208,"max_usage":495796224,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":181448704,"inactive_file":135168,"inactive_anon":79208448,"total_pgfault":242022,"total_cache":80470016,"total_rss_huge":0,"total_active_anon":182071296,"total_pgmajfault":0,"pgpgin":168795,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":0,"pgpgout":104862,"hierarchical_memsw_limit":0,"cache":80470016,"active_file":675840,"pgfault":242022,"total_mapped_file":0,"total_pgpgout":104862,"total_writeback":0,"rss":181448704,"unevictable":0,"total_inactive_anon":79208448,"total_pgpgin":168795,"active_anon":182071296,"total_active_file":675840},"limit":540965302272},"name":"/CodeTracking-LE3tytn2","networks":{"eth0":{"rx_bytes":2861725,"rx_packets":400,"tx_packets":404,"tx_bytes":40889,"tx_dropped":0,"rx_dropped":0,"tx_errors":0,"rx_errors":0}},"id":"daf7d25c6e04aa3dac48b389bc2ff608407ded25ae7e82defcf57c02d29e0b32","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":7032172674522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":7540000000,"usage_in_kernelmode":3020000000,"total_usage":10501594415,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7220684,0,0,10494373731,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:48:38.798648318Z"}

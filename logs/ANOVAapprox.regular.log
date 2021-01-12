@@ -1,0 +1,636 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T16:21:09.855
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:21:11.647
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ANOVAapprox ────────────────── v1.0.5
+  Installed LaTeXStrings ───────────────── v1.2.0
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed MbedTLS_jll ────────────────── v2.16.8+1
+  Installed libass_jll ─────────────────── v0.14.0+4
+  Installed PlotThemes ─────────────────── v2.0.0
+  Installed Opus_jll ───────────────────── v1.3.1+3
+  Installed FriBidi_jll ────────────────── v1.0.5+6
+  Installed Libglvnd_jll ───────────────── v1.3.0+3
+  Installed Xorg_libXcursor_jll ────────── v1.2.0+4
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed Xorg_libXinerama_jll ───────── v1.1.4+4
+  Installed Reexport ───────────────────── v1.0.0
+  Installed Scratch ────────────────────── v1.0.3
+  Installed x265_jll ───────────────────── v3.0.0+3
+  Installed Cairo_jll ──────────────────── v1.16.0+6
+  Installed libfdk_aac_jll ─────────────── v0.1.6+4
+  Installed Contour ────────────────────── v0.5.7
+  Installed Xorg_libXdmcp_jll ──────────── v1.1.3+4
+  Installed GeometryBasics ─────────────── v0.3.5
+  Installed Wayland_jll ────────────────── v1.17.0+4
+  Installed Xorg_libXi_jll ─────────────── v1.7.10+4
+  Installed libvorbis_jll ──────────────── v1.3.6+6
+  Installed Pixman_jll ─────────────────── v0.40.0+0
+  Installed Xorg_libX11_jll ────────────── v1.6.9+4
+  Installed TableTraits ────────────────── v1.0.0
+  Installed LAME_jll ───────────────────── v3.100.0+3
+  Installed Libtiff_jll ────────────────── v4.1.0+2
+  Installed OpenSSL_jll ────────────────── v1.1.1+6
+  Installed Xorg_xcb_util_renderutil_jll ─ v0.3.9+1
+  Installed Zstd_jll ───────────────────── v1.4.5+2
+  Installed Tables ─────────────────────── v1.2.2
+  Installed Combinatorics ──────────────── v1.0.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed Plots ──────────────────────── v1.10.1
+  Installed Libiconv_jll ───────────────── v1.16.0+7
+  Installed Xorg_xcb_util_keysyms_jll ──── v0.4.0+1
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed FFMPEG ─────────────────────── v0.4.0
+  Installed MbedTLS ────────────────────── v1.0.3
+  Installed Requires ───────────────────── v1.1.2
+  Installed Xorg_xcb_util_image_jll ────── v0.4.0+1
+  Installed Measures ───────────────────── v0.3.1
+  Installed Bzip2_jll ──────────────────── v1.0.6+5
+  Installed Xorg_xkbcomp_jll ───────────── v1.4.2+4
+  Installed Xorg_libXrender_jll ────────── v0.9.10+4
+  Installed Xorg_libpthread_stubs_jll ──── v0.1.0+3
+  Installed FFMPEG_jll ─────────────────── v4.3.1+4
+  Installed HTTP ───────────────────────── v0.8.19
+  Installed Latexify ───────────────────── v0.14.7
+  Installed IterTools ──────────────────── v1.3.0
+  Installed Colors ─────────────────────── v0.12.6
+  Installed RecipesPipeline ────────────── v0.2.1
+  Installed Ogg_jll ────────────────────── v1.3.4+2
+  Installed Xorg_libxkbfile_jll ────────── v1.1.0+4
+  Installed LinearMaps ─────────────────── v2.7.0
+  Installed Xorg_libXrandr_jll ─────────── v1.5.2+4
+  Installed XML2_jll ───────────────────── v2.9.10+3
+  Installed GR_jll ─────────────────────── v0.53.0+0
+  Installed Qt_jll ─────────────────────── v5.15.2+1
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed ColorTypes ─────────────────── v0.10.9
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed GroupedTransforms ──────────── v1.0.0
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed Xorg_libXau_jll ────────────── v1.0.9+4
+  Installed Xorg_libXfixes_jll ─────────── v5.0.3+4
+  Installed LZO_jll ────────────────────── v2.10.0+3
+  Installed libpng_jll ─────────────────── v1.6.37+6
+  Installed Xorg_xcb_util_jll ──────────── v0.4.0+1
+  Installed GLFW_jll ───────────────────── v3.3.2+1
+  Installed Xorg_xtrans_jll ────────────── v1.4.0+3
+  Installed Xorg_libxcb_jll ────────────── v1.13.0+3
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed Missings ───────────────────── v0.4.4
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed JSON ───────────────────────── v0.21.1
+  Installed Grisu ──────────────────────── v1.0.0
+  Installed LibVPX_jll ─────────────────── v1.9.0+1
+  Installed StructArrays ───────────────── v0.4.4
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed PCRE_jll ───────────────────── v8.42.0+4
+  Installed GR ─────────────────────────── v0.53.0
+  Installed Libffi_jll ─────────────────── v3.2.1+4
+  Installed PlotUtils ──────────────────── v1.0.10
+  Installed Xorg_libXext_jll ───────────── v1.3.4+4
+  Installed Libgpg_error_jll ───────────── v1.36.0+3
+  Installed Expat_jll ──────────────────── v2.2.7+6
+  Installed Libgcrypt_jll ──────────────── v1.8.5+4
+  Installed Adapt ──────────────────────── v2.4.0
+  Installed IterativeSolvers ───────────── v0.8.5
+  Installed xkbcommon_jll ──────────────── v0.9.1+5
+  Installed Gettext_jll ────────────────── v0.20.1+7
+  Installed Formatting ─────────────────── v0.4.2
+  Installed FixedPointNumbers ──────────── v0.8.4
+  Installed Libuuid_jll ────────────────── v2.34.0+7
+  Installed FreeType2_jll ──────────────── v2.10.1+5
+  Installed EarCut_jll ─────────────────── v2.1.5+1
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed Fontconfig_jll ─────────────── v2.13.1+14
+  Installed XSLT_jll ───────────────────── v1.1.33+4
+  Installed ColorSchemes ───────────────── v3.10.2
+  Installed Wayland_protocols_jll ──────── v1.18.0+4
+  Installed Compat ─────────────────────── v3.25.0
+  Installed Libmount_jll ───────────────── v2.34.0+3
+  Installed JpegTurbo_jll ──────────────── v2.0.1+3
+  Installed Showoff ────────────────────── v0.3.2
+  Installed Xorg_xcb_util_wm_jll ───────── v0.4.1+1
+  Installed Glib_jll ───────────────────── v2.59.0+4
+  Installed x264_jll ───────────────────── v2020.7.14+2
+  Installed Parsers ────────────────────── v1.0.15
+  Installed Xorg_xkeyboard_config_jll ──── v2.27.0+4
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed IniFile ────────────────────── v0.5.0
+  Installed NFFT3 ──────────────────────── v1.0.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [5e027bd6] + ANOVAapprox v1.0.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [5e027bd6] + ANOVAapprox v1.0.5
+  [79e6a3ab] + Adapt v2.4.0
+  [56f22d72] + Artifacts v1.3.0
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [83423d85] + Cairo_jll v1.16.0+6
+  [35d6a980] + ColorSchemes v3.10.2
+  [3da002f7] + ColorTypes v0.10.9
+  [5ae59095] + Colors v0.12.6
+  [861a8166] + Combinatorics v1.0.2
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [d38c429a] + Contour v0.5.7
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [5ae413db] + EarCut_jll v2.1.5+1
+  [2e619515] + Expat_jll v2.2.7+6
+  [c87230d0] + FFMPEG v0.4.0
+  [b22a6f82] + FFMPEG_jll v4.3.1+4
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [a3f928ae] + Fontconfig_jll v2.13.1+14
+  [59287772] + Formatting v0.4.2
+  [d7e528f0] + FreeType2_jll v2.10.1+5
+  [559328eb] + FriBidi_jll v1.0.5+6
+  [0656b61e] + GLFW_jll v3.3.2+1
+  [28b8d3ca] + GR v0.53.0
+  [d2c73de3] + GR_jll v0.53.0+0
+  [5c1252a2] + GeometryBasics v0.3.5
+  [78b55507] + Gettext_jll v0.20.1+7
+  [7746bdde] + Glib_jll v2.59.0+4
+  [42e2da0e] + Grisu v1.0.0
+  [76248ec8] + GroupedTransforms v1.0.0
+  [cd3eb016] + HTTP v0.8.19
+  [83e8ac13] + IniFile v0.5.0
+  [c8e1da08] + IterTools v1.3.0
+  [42fd0dbc] + IterativeSolvers v0.8.5
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [aacddb02] + JpegTurbo_jll v2.0.1+3
+  [c1c5ebd0] + LAME_jll v3.100.0+3
+  [dd4b983a] + LZO_jll v2.10.0+3
+  [b964fa9f] + LaTeXStrings v1.2.0
+  [23fbe1c1] + Latexify v0.14.7
+  [dd192d2f] + LibVPX_jll v1.9.0+1
+  [e9f186c6] + Libffi_jll v3.2.1+4
+  [d4300ac3] + Libgcrypt_jll v1.8.5+4
+  [7e76a0d4] + Libglvnd_jll v1.3.0+3
+  [7add5ba3] + Libgpg_error_jll v1.36.0+3
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [4b2f31a3] + Libmount_jll v2.34.0+3
+  [89763e89] + Libtiff_jll v4.1.0+2
+  [38a345b3] + Libuuid_jll v2.34.0+7
+  [7a12625a] + LinearMaps v2.7.0
+  [1914dd2f] + MacroTools v0.5.6
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [442fdcdd] + Measures v0.3.1
+  [e1d29d7a] + Missings v0.4.4
+  [53104703] + NFFT3 v1.0.0
+  [77ba4419] + NaNMath v0.3.5
+  [e7412a2a] + Ogg_jll v1.3.4+2
+  [458c3c95] + OpenSSL_jll v1.1.1+6
+  [91d4177d] + Opus_jll v1.3.1+3
+  [bac558e1] + OrderedCollections v1.3.2
+  [2f80f16e] + PCRE_jll v8.42.0+4
+  [69de0a69] + Parsers v1.0.15
+  [30392449] + Pixman_jll v0.40.0+0
+  [ccf2f8ad] + PlotThemes v2.0.0
+  [995b91a9] + PlotUtils v1.0.10
+  [91a5bcdd] + Plots v1.10.1
+  [ede63266] + Qt_jll v5.15.2+1
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [01d81517] + RecipesPipeline v0.2.1
+  [189a3867] + Reexport v1.0.0
+  [ae029012] + Requires v1.1.2
+  [6c6a2e73] + Scratch v1.0.3
+  [992d4aef] + Showoff v0.3.2
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [90137ffa] + StaticArrays v1.0.1
+  [2913bbd2] + StatsBase v0.33.2
+  [09ab397b] + StructArrays v0.4.4
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [a2964d1f] + Wayland_jll v1.17.0+4
+  [2381bf8a] + Wayland_protocols_jll v1.18.0+4
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [aed1982a] + XSLT_jll v1.1.33+4
+  [4f6342f7] + Xorg_libX11_jll v1.6.9+4
+  [0c0b7dd1] + Xorg_libXau_jll v1.0.9+4
+  [935fb764] + Xorg_libXcursor_jll v1.2.0+4
+  [a3789734] + Xorg_libXdmcp_jll v1.1.3+4
+  [1082639a] + Xorg_libXext_jll v1.3.4+4
+  [d091e8ba] + Xorg_libXfixes_jll v5.0.3+4
+  [a51aa0fd] + Xorg_libXi_jll v1.7.10+4
+  [d1454406] + Xorg_libXinerama_jll v1.1.4+4
+  [ec84b674] + Xorg_libXrandr_jll v1.5.2+4
+  [ea2f1a96] + Xorg_libXrender_jll v0.9.10+4
+  [14d82f49] + Xorg_libpthread_stubs_jll v0.1.0+3
+  [c7cfdc94] + Xorg_libxcb_jll v1.13.0+3
+  [cc61e674] + Xorg_libxkbfile_jll v1.1.0+4
+  [12413925] + Xorg_xcb_util_image_jll v0.4.0+1
+  [2def613f] + Xorg_xcb_util_jll v0.4.0+1
+  [975044d2] + Xorg_xcb_util_keysyms_jll v0.4.0+1
+  [0d47668e] + Xorg_xcb_util_renderutil_jll v0.3.9+1
+  [c22f9ab0] + Xorg_xcb_util_wm_jll v0.4.1+1
+  [35661453] + Xorg_xkbcomp_jll v1.4.2+4
+  [33bec58e] + Xorg_xkeyboard_config_jll v2.27.0+4
+  [c5fb5394] + Xorg_xtrans_jll v1.4.0+3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [3161d3a3] + Zstd_jll v1.4.5+2
+  [0ac62f75] + libass_jll v0.14.0+4
+  [f638f0a6] + libfdk_aac_jll v0.1.6+4
+  [b53b4c65] + libpng_jll v1.6.37+6
+  [f27f6e37] + libvorbis_jll v1.3.6+6
+  [1270edf5] + x264_jll v2020.7.14+2
+  [dfaa095f] + x265_jll v3.0.0+3
+  [d8fb68d0] + xkbcommon_jll v0.9.1+5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building GR → `~/.julia/packages/GR/RlE5Y/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T16:21:28.064
+#
+
+    Testing ANOVAapprox
+Status `/tmp/jl_nVdwyQ/Project.toml`
+  [5e027bd6] ANOVAapprox v1.0.5
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_nVdwyQ/Manifest.toml`
+  [5e027bd6] ANOVAapprox v1.0.5
+  [79e6a3ab] Adapt v2.4.0
+  [56f22d72] Artifacts v1.3.0
+  [6e34b625] Bzip2_jll v1.0.6+5
+  [83423d85] Cairo_jll v1.16.0+6
+  [35d6a980] ColorSchemes v3.10.2
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.6
+  [861a8166] Combinatorics v1.0.2
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [d38c429a] Contour v0.5.7
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [5ae413db] EarCut_jll v2.1.5+1
+  [2e619515] Expat_jll v2.2.7+6
+  [c87230d0] FFMPEG v0.4.0
+  [b22a6f82] FFMPEG_jll v4.3.1+4
+  [53c48c17] FixedPointNumbers v0.8.4
+  [a3f928ae] Fontconfig_jll v2.13.1+14
+  [59287772] Formatting v0.4.2
+  [d7e528f0] FreeType2_jll v2.10.1+5
+  [559328eb] FriBidi_jll v1.0.5+6
+  [0656b61e] GLFW_jll v3.3.2+1
+  [28b8d3ca] GR v0.53.0
+  [d2c73de3] GR_jll v0.53.0+0
+  [5c1252a2] GeometryBasics v0.3.5
+  [78b55507] Gettext_jll v0.20.1+7
+  [7746bdde] Glib_jll v2.59.0+4
+  [42e2da0e] Grisu v1.0.0
+  [76248ec8] GroupedTransforms v1.0.0
+  [cd3eb016] HTTP v0.8.19
+  [83e8ac13] IniFile v0.5.0
+  [c8e1da08] IterTools v1.3.0
+  [42fd0dbc] IterativeSolvers v0.8.5
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [aacddb02] JpegTurbo_jll v2.0.1+3
+  [c1c5ebd0] LAME_jll v3.100.0+3
+  [dd4b983a] LZO_jll v2.10.0+3
+  [b964fa9f] LaTeXStrings v1.2.0
+  [23fbe1c1] Latexify v0.14.7
+  [dd192d2f] LibVPX_jll v1.9.0+1
+  [e9f186c6] Libffi_jll v3.2.1+4
+  [d4300ac3] Libgcrypt_jll v1.8.5+4
+  [7e76a0d4] Libglvnd_jll v1.3.0+3
+  [7add5ba3] Libgpg_error_jll v1.36.0+3
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [4b2f31a3] Libmount_jll v2.34.0+3
+  [89763e89] Libtiff_jll v4.1.0+2
+  [38a345b3] Libuuid_jll v2.34.0+7
+  [7a12625a] LinearMaps v2.7.0
+  [1914dd2f] MacroTools v0.5.6
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [442fdcdd] Measures v0.3.1
+  [e1d29d7a] Missings v0.4.4
+  [53104703] NFFT3 v1.0.0
+  [77ba4419] NaNMath v0.3.5
+  [e7412a2a] Ogg_jll v1.3.4+2
+  [458c3c95] OpenSSL_jll v1.1.1+6
+  [91d4177d] Opus_jll v1.3.1+3
+  [bac558e1] OrderedCollections v1.3.2
+  [2f80f16e] PCRE_jll v8.42.0+4
+  [69de0a69] Parsers v1.0.15
+  [30392449] Pixman_jll v0.40.0+0
+  [ccf2f8ad] PlotThemes v2.0.0
+  [995b91a9] PlotUtils v1.0.10
+  [91a5bcdd] Plots v1.10.1
+  [ede63266] Qt_jll v5.15.2+1
+  [3cdcf5f2] RecipesBase v1.1.1
+  [01d81517] RecipesPipeline v0.2.1
+  [189a3867] Reexport v1.0.0
+  [ae029012] Requires v1.1.2
+  [6c6a2e73] Scratch v1.0.3
+  [992d4aef] Showoff v0.3.2
+  [a2af1166] SortingAlgorithms v0.3.1
+  [90137ffa] StaticArrays v1.0.1
+  [2913bbd2] StatsBase v0.33.2
+  [09ab397b] StructArrays v0.4.4
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [a2964d1f] Wayland_jll v1.17.0+4
+  [2381bf8a] Wayland_protocols_jll v1.18.0+4
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [aed1982a] XSLT_jll v1.1.33+4
+  [4f6342f7] Xorg_libX11_jll v1.6.9+4
+  [0c0b7dd1] Xorg_libXau_jll v1.0.9+4
+  [935fb764] Xorg_libXcursor_jll v1.2.0+4
+  [a3789734] Xorg_libXdmcp_jll v1.1.3+4
+  [1082639a] Xorg_libXext_jll v1.3.4+4
+  [d091e8ba] Xorg_libXfixes_jll v5.0.3+4
+  [a51aa0fd] Xorg_libXi_jll v1.7.10+4
+  [d1454406] Xorg_libXinerama_jll v1.1.4+4
+  [ec84b674] Xorg_libXrandr_jll v1.5.2+4
+  [ea2f1a96] Xorg_libXrender_jll v0.9.10+4
+  [14d82f49] Xorg_libpthread_stubs_jll v0.1.0+3
+  [c7cfdc94] Xorg_libxcb_jll v1.13.0+3
+  [cc61e674] Xorg_libxkbfile_jll v1.1.0+4
+  [12413925] Xorg_xcb_util_image_jll v0.4.0+1
+  [2def613f] Xorg_xcb_util_jll v0.4.0+1
+  [975044d2] Xorg_xcb_util_keysyms_jll v0.4.0+1
+  [0d47668e] Xorg_xcb_util_renderutil_jll v0.3.9+1
+  [c22f9ab0] Xorg_xcb_util_wm_jll v0.4.1+1
+  [35661453] Xorg_xkbcomp_jll v1.4.2+4
+  [33bec58e] Xorg_xkeyboard_config_jll v2.27.0+4
+  [c5fb5394] Xorg_xtrans_jll v1.4.0+3
+  [83775a58] Zlib_jll v1.2.11+18
+  [3161d3a3] Zstd_jll v1.4.5+2
+  [0ac62f75] libass_jll v0.14.0+4
+  [f638f0a6] libfdk_aac_jll v0.1.6+4
+  [b53b4c65] libpng_jll v1.6.37+6
+  [f27f6e37] libvorbis_jll v1.3.6+6
+  [1270edf5] x264_jll v2020.7.14+2
+  [dfaa095f] x265_jll v3.0.0+3
+  [d8fb68d0] xkbcommon_jll v0.9.1+5
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+1. Lambda: 0.0
+=== lsqr ===
+iter	resnorm		  anorm		  cnorm		  rnorm
+  1	7.44e+01	8.19e-01	9.07e-02	3.32e-01
+  2	2.95e+01	5.73e-01	4.50e-02	1.32e-01
+  3	1.28e+01	4.62e-01	2.98e-02	5.71e-02
+  4	5.56e+00	3.97e-01	2.22e-02	2.48e-02
+  5	2.62e+00	3.25e-01	1.77e-02	1.17e-02
+  6	1.58e+00	2.04e-01	1.47e-02	7.07e-03
+  7	1.33e+00	9.56e-02	1.26e-02	5.92e-03
+  8	1.27e+00	4.05e-02	1.10e-02	5.68e-03
+  9	1.26e+00	1.61e-02	9.77e-03	5.63e-03
+ 10	1.26e+00	6.57e-03	8.79e-03	5.63e-03
+ 11	1.26e+00	2.72e-03	7.98e-03	5.62e-03
+ 12	1.26e+00	1.12e-03	7.31e-03	5.62e-03
+ 13	1.26e+00	4.58e-04	6.74e-03	5.62e-03
+ 14	1.26e+00	1.86e-04	6.26e-03	5.62e-03
+ 15	1.26e+00	7.68e-05	5.84e-03	5.62e-03
+ 16	1.26e+00	3.23e-05	5.48e-03	5.62e-03
+ 17	1.26e+00	1.34e-05	5.15e-03	5.62e-03
+ 18	1.26e+00	5.51e-06	4.87e-03	5.62e-03
+ 19	1.26e+00	2.31e-06	4.61e-03	5.62e-03
+ 20	1.26e+00	9.42e-07	4.38e-03	5.62e-03
+ 21	1.26e+00	3.95e-07	4.17e-03	5.62e-03
+ 22	1.26e+00	1.69e-07	3.98e-03	5.62e-03
+ 23	1.26e+00	7.06e-08	3.81e-03	5.62e-03
+ 24	1.26e+00	2.95e-08	3.65e-03	5.62e-03
+ 25	1.26e+00	1.23e-08	3.50e-03	5.62e-03
+
+2. Lambda: 1.0
+=== lsqr ===
+iter	resnorm		  anorm		  cnorm		  rnorm
+  1	7.48e+01	8.20e-01	9.06e-02	3.34e-01
+  2	2.98e+01	5.71e-01	4.50e-02	1.33e-01
+  3	1.32e+01	4.47e-01	2.97e-02	5.88e-02
+  4	6.54e+00	3.33e-01	2.22e-02	2.92e-02
+  5	4.42e+00	1.88e-01	1.77e-02	1.97e-02
+  6	3.93e+00	7.95e-02	1.47e-02	1.75e-02
+  7	3.84e+00	3.16e-02	1.26e-02	1.71e-02
+  8	3.82e+00	1.28e-02	1.10e-02	1.71e-02
+  9	3.82e+00	5.01e-03	9.77e-03	1.71e-02
+ 10	3.82e+00	2.02e-03	8.78e-03	1.71e-02
+ 11	3.82e+00	8.29e-04	7.98e-03	1.71e-02
+ 12	3.82e+00	3.37e-04	7.31e-03	1.71e-02
+ 13	3.82e+00	1.36e-04	6.74e-03	1.71e-02
+ 14	3.82e+00	5.50e-05	6.26e-03	1.71e-02
+ 15	3.82e+00	2.24e-05	5.84e-03	1.71e-02
+ 16	3.82e+00	9.34e-06	5.48e-03	1.71e-02
+ 17	3.82e+00	3.83e-06	5.15e-03	1.71e-02
+ 18	3.82e+00	1.55e-06	4.87e-03	1.71e-02
+ 19	3.82e+00	6.41e-07	4.61e-03	1.71e-02
+ 20	3.82e+00	2.58e-07	4.38e-03	1.71e-02
+ 21	3.82e+00	1.07e-07	4.17e-03	1.71e-02
+ 22	3.82e+00	4.55e-08	3.98e-03	1.71e-02
+ 23	3.82e+00	1.89e-08	3.81e-03	1.71e-02
+ 24	3.82e+00	7.82e-09	3.65e-03	1.71e-02
+
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+[ Info: You are using the guru interface. Please consult the README if you are having trouble.
+1. Lambda: 0.0
+=== lsqr ===
+iter	resnorm		  anorm		  cnorm		  rnorm
+  1	9.17e+01	7.71e-01	8.52e-02	4.09e-01
+  2	4.82e+01	4.93e-01	4.15e-02	2.15e-01
+  3	2.86e+01	3.84e-01	2.71e-02	1.28e-01
+  4	1.73e+01	3.30e-01	1.99e-02	7.73e-02
+  5	1.04e+01	2.89e-01	1.57e-02	4.66e-02
+  6	6.49e+00	2.62e-01	1.30e-02	2.90e-02
+  7	4.00e+00	2.38e-01	1.11e-02	1.79e-02
+  8	2.49e+00	2.28e-01	9.66e-03	1.11e-02
+  9	1.56e+00	2.14e-01	8.55e-03	6.97e-03
+ 10	9.87e-01	2.03e-01	7.66e-03	4.41e-03
+ 11	6.24e-01	1.90e-01	6.95e-03	2.79e-03
+ 12	4.10e-01	1.71e-01	6.36e-03	1.83e-03
+ 13	2.88e-01	1.43e-01	5.86e-03	1.29e-03
+ 14	2.26e-01	1.07e-01	5.44e-03	1.01e-03
+ 15	1.98e-01	7.24e-02	5.07e-03	8.82e-04
+ 16	1.86e-01	4.62e-02	4.75e-03	8.30e-04
+ 17	1.81e-01	2.80e-02	4.47e-03	8.09e-04
+ 18	1.80e-01	1.73e-02	4.22e-03	8.01e-04
+ 19	1.79e-01	1.05e-02	3.99e-03	7.98e-04
+ 20	1.79e-01	6.41e-03	3.79e-03	7.97e-04
+ 21	1.78e-01	3.88e-03	3.61e-03	7.97e-04
+ 22	1.78e-01	2.39e-03	3.44e-03	7.97e-04
+ 23	1.78e-01	1.43e-03	3.29e-03	7.97e-04
+ 24	1.78e-01	8.72e-04	3.15e-03	7.96e-04
+ 25	1.78e-01	5.29e-04	3.02e-03	7.96e-04
+ 26	1.78e-01	3.18e-04	2.90e-03	7.96e-04
+ 27	1.78e-01	1.90e-04	2.80e-03	7.96e-04
+ 28	1.78e-01	1.15e-04	2.70e-03	7.96e-04
+ 29	1.78e-01	6.99e-05	2.60e-03	7.96e-04
+ 30	1.78e-01	4.14e-05	2.52e-03	7.96e-04
+ 31	1.78e-01	2.53e-05	2.44e-03	7.96e-04
+ 32	1.78e-01	1.54e-05	2.36e-03	7.96e-04
+ 33	1.78e-01	9.25e-06	2.29e-03	7.96e-04
+ 34	1.78e-01	5.58e-06	2.22e-03	7.96e-04
+ 35	1.78e-01	3.36e-06	2.16e-03	7.96e-04
+ 36	1.78e-01	2.05e-06	2.10e-03	7.96e-04
+ 37	1.78e-01	1.25e-06	2.04e-03	7.96e-04
+ 38	1.78e-01	7.65e-07	1.99e-03	7.96e-04
+ 39	1.78e-01	4.58e-07	1.94e-03	7.96e-04
+ 40	1.78e-01	2.79e-07	1.89e-03	7.96e-04
+ 41	1.78e-01	1.68e-07	1.84e-03	7.96e-04
+ 42	1.78e-01	1.01e-07	1.80e-03	7.96e-04
+ 43	1.78e-01	6.20e-08	1.76e-03	7.96e-04
+ 44	1.78e-01	3.76e-08	1.72e-03	7.96e-04
+ 45	1.78e-01	2.30e-08	1.68e-03	7.96e-04
+ 46	1.78e-01	1.36e-08	1.64e-03	7.96e-04
+
+2. Lambda: 1.0
+=== lsqr ===
+iter	resnorm		  anorm		  cnorm		  rnorm
+  1	9.45e+01	7.71e-01	8.47e-02	4.22e-01
+  2	4.95e+01	5.02e-01	4.12e-02	2.21e-01
+  3	2.86e+01	3.99e-01	2.69e-02	1.27e-01
+  4	1.66e+01	3.40e-01	1.98e-02	7.40e-02
+  5	9.88e+00	2.86e-01	1.57e-02	4.41e-02
+  6	6.42e+00	2.33e-01	1.30e-02	2.87e-02
+  7	4.72e+00	1.64e-01	1.11e-02	2.11e-02
+  8	4.01e+00	1.07e-01	9.71e-03	1.79e-02
+  9	3.75e+00	6.27e-02	8.61e-03	1.67e-02
+ 10	3.66e+00	3.54e-02	7.73e-03	1.63e-02
+ 11	3.63e+00	1.95e-02	7.01e-03	1.62e-02
+ 12	3.62e+00	1.07e-02	6.42e-03	1.61e-02
+ 13	3.61e+00	5.83e-03	5.92e-03	1.61e-02
+ 14	3.61e+00	3.16e-03	5.50e-03	1.61e-02
+ 15	3.61e+00	1.75e-03	5.13e-03	1.61e-02
+ 16	3.61e+00	9.76e-04	4.81e-03	1.61e-02
+ 17	3.61e+00	5.53e-04	4.52e-03	1.61e-02
+ 18	3.61e+00	3.11e-04	4.27e-03	1.61e-02
+ 19	3.61e+00	1.76e-04	4.04e-03	1.61e-02
+ 20	3.61e+00	9.80e-05	3.84e-03	1.61e-02
+ 21	3.61e+00	5.48e-05	3.65e-03	1.61e-02
+ 22	3.61e+00	3.11e-05	3.49e-03	1.61e-02
+ 23	3.61e+00	1.74e-05	3.33e-03	1.61e-02
+ 24	3.61e+00	9.80e-06	3.19e-03	1.61e-02
+ 25	3.61e+00	5.45e-06	3.07e-03	1.61e-02
+ 26	3.61e+00	3.06e-06	2.95e-03	1.61e-02
+ 27	3.61e+00	1.71e-06	2.84e-03	1.61e-02
+ 28	3.61e+00	9.48e-07	2.74e-03	1.61e-02
+ 29	3.61e+00	5.26e-07	2.64e-03	1.61e-02
+ 30	3.61e+00	2.86e-07	2.56e-03	1.61e-02
+ 31	3.61e+00	1.61e-07	2.47e-03	1.61e-02
+ 32	3.61e+00	8.94e-08	2.40e-03	1.61e-02
+ 33	3.61e+00	4.90e-08	2.33e-03	1.61e-02
+ 34	3.61e+00	2.73e-08	2.26e-03	1.61e-02
+ 35	3.61e+00	1.52e-08	2.19e-03	1.61e-02
+ 36	3.61e+00	8.52e-09	2.13e-03	1.61e-02
+
+    Testing ANOVAapprox tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T16:24:24.079
+CPU usage: 192.07s (179.52s user, 12.83s kernel)
+
+Network usage:
+- eth0: 68.916 MiB received, 1.172 MiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":225280,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":118784,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":225280,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":225280,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":118784,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":225280,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":537427968,"max_usage":1724715008,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":225587200,"inactive_file":135168,"inactive_anon":214917120,"total_pgfault":5263698,"total_cache":277590016,"total_rss_huge":0,"total_active_anon":288178176,"total_pgmajfault":0,"pgpgin":3431835,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":3308974,"hierarchical_memsw_limit":0,"cache":277590016,"active_file":270336,"pgfault":5263698,"total_mapped_file":0,"total_pgpgout":3308974,"total_writeback":0,"rss":225587200,"unevictable":0,"total_inactive_anon":214917120,"total_pgpgin":3431835,"active_anon":288178176,"total_active_file":270336},"limit":540965302272},"name":"/ANOVAapprox-Rg8TPGZ7","networks":{"eth0":{"rx_bytes":72263848,"rx_packets":25185,"tx_packets":15875,"tx_bytes":1228777,"tx_dropped":0,"rx_dropped":7,"tx_errors":0,"rx_errors":0}},"id":"0100ea7b492b3d34bd9b8f6fb2c96d8d4c2e8d8808a111b37f950214b375fc63","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3626212434522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":179520000000,"usage_in_kernelmode":12830000000,"total_usage":192073922120,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,6700,192053677822,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4350,1271251,0,18961997,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T16:24:24.630691512Z"}

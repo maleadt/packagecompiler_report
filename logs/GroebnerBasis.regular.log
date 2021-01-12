@@ -1,0 +1,206 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T16:09:18.914
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:09:20.618
+#
+
+ Installing known registries into `~/.julia`
+#####                                                                      8.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed GroebnerBasis ──────────────── v0.2.0
+  Installed Arb_jll ────────────────────── v2.18.1+1
+  Installed CxxWrap ────────────────────── v0.11.1
+  Installed gb_jll ─────────────────────── v0.17.0+0
+  Installed FLINT_jll ──────────────────── v2.6.3+1
+  Installed Antic_jll ──────────────────── v0.2.2+1
+  Installed lib4ti2_jll ────────────────── v1.6.9+2
+  Installed Singular_jll ───────────────── v4.1.3+6
+  Installed GMP_jll ────────────────────── v6.1.2+6
+  Installed libcxxwrap_julia_jll ───────── v0.8.5+1
+  Installed MPFR_jll ───────────────────── v4.1.0+1
+  Installed cddlib_jll ─────────────────── v0.94.10+1
+  Installed Nemo ───────────────────────── v0.18.5
+  Installed Singular ───────────────────── v0.4.2
+  Installed libsingular_julia_jll ──────── v0.2.0+0
+  Installed LoadFlint ──────────────────── v0.3.4
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed RandomExtensions ───────────── v0.4.3
+  Installed GLPK_jll ───────────────────── v4.65.0+1
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed BinaryProvider ─────────────── v0.5.10
+  Installed AbstractAlgebra ────────────── v0.11.2
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [e39c9192] + GroebnerBasis v0.2.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [c3fe647b] + AbstractAlgebra v0.11.2
+  [e21ec000] + Antic_jll v0.2.2+1
+  [d9960996] + Arb_jll v2.18.1+1
+  [56f22d72] + Artifacts v1.3.0
+  [b99e7846] + BinaryProvider v0.5.10
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [1f15a43c] + CxxWrap v0.11.1
+  [e134572f] + FLINT_jll v2.6.3+1
+  [e8aa6df9] + GLPK_jll v4.65.0+1
+  [781609d7] + GMP_jll v6.1.2+6
+  [e39c9192] + GroebnerBasis v0.2.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [472f376f] + LoadFlint v0.3.4
+  [3a97d323] + MPFR_jll v4.1.0+1
+  [1914dd2f] + MacroTools v0.5.6
+  [2edaba10] + Nemo v0.18.5
+  [fb686558] + RandomExtensions v0.4.3
+  [bcd08a7b] + Singular v0.4.2
+  [43d676ae] + Singular_jll v4.1.3+6
+  [f07e07eb] + cddlib_jll v0.94.10+1
+  [006bdf2e] + gb_jll v0.17.0+0
+  [1493ae25] + lib4ti2_jll v1.6.9+2
+  [3eaa8342] + libcxxwrap_julia_jll v0.8.5+1
+  [ae4fbd8f] + libsingular_julia_jll v0.2.0+0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building LoadFlint → `~/.julia/packages/LoadFlint/o1S6V/deps/build.log`
+   Building Nemo ─────→ `~/.julia/packages/Nemo/kSPAO/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T16:09:28.083
+#
+
+    Testing GroebnerBasis
+Status `/tmp/jl_3hGSWP/Project.toml`
+  [b99e7846] BinaryProvider v0.5.10
+  [781609d7] GMP_jll v6.1.2+6
+  [e39c9192] GroebnerBasis v0.2.0
+  [2edaba10] Nemo v0.18.5
+  [bcd08a7b] Singular v0.4.2
+  [006bdf2e] gb_jll v0.17.0+0
+  [ade2ca70] Dates
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [8dfed614] Test
+Status `/tmp/jl_3hGSWP/Manifest.toml`
+  [c3fe647b] AbstractAlgebra v0.11.2
+  [e21ec000] Antic_jll v0.2.2+1
+  [d9960996] Arb_jll v2.18.1+1
+  [56f22d72] Artifacts v1.3.0
+  [b99e7846] BinaryProvider v0.5.10
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [1f15a43c] CxxWrap v0.11.1
+  [e134572f] FLINT_jll v2.6.3+1
+  [e8aa6df9] GLPK_jll v4.65.0+1
+  [781609d7] GMP_jll v6.1.2+6
+  [e39c9192] GroebnerBasis v0.2.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [472f376f] LoadFlint v0.3.4
+  [3a97d323] MPFR_jll v4.1.0+1
+  [1914dd2f] MacroTools v0.5.6
+  [2edaba10] Nemo v0.18.5
+  [fb686558] RandomExtensions v0.4.3
+  [bcd08a7b] Singular v0.4.2
+  [43d676ae] Singular_jll v4.1.3+6
+  [f07e07eb] cddlib_jll v0.94.10+1
+  [006bdf2e] gb_jll v0.17.0+0
+  [1493ae25] lib4ti2_jll v1.6.9+2
+  [3eaa8342] libcxxwrap_julia_jll v0.8.5+1
+  [ae4fbd8f] libsingular_julia_jll v0.2.0+0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: Regenerating 4ti2 wrappers in /home/pkgeval/.julia/packages/Singular/i9i1h/bin/v1.5
+[ Info: Regenerating /home/pkgeval/.julia/packages/Singular/i9i1h/src/libraryfuncdictionary.jl
+F4.convert_ff_singular_ideal_to_array...ERROR: LoadError: UndefVarError: Singular not defined
+Stacktrace:
+ [1] test_f4_convert_ff_singular_ideal_to_array() at /home/pkgeval/.julia/packages/GroebnerBasis/t2iSy/test/F4-test.jl:10
+ [2] test_f4() at /home/pkgeval/.julia/packages/GroebnerBasis/t2iSy/test/F4-test.jl:308
+ [3] test_all() at /home/pkgeval/.julia/packages/GroebnerBasis/t2iSy/test/GroebnerBasis-test.jl:5
+ [4] top-level scope at /home/pkgeval/.julia/packages/GroebnerBasis/t2iSy/test/runtests.jl:11
+ [5] include(::String) at ./client.jl:457
+ [6] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/GroebnerBasis/t2iSy/test/runtests.jl:11
+
+PkgEval failed: Package GroebnerBasis errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T16:11:09.966
+CPU usage: 110.89s (104.54s user, 6.52s kernel)
+
+Network usage:
+- eth0: 3.875 MiB received, 142.642 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":4,"op":"Read","minor":0},{"major":259,"value":32,"op":"Write","minor":0},{"major":259,"value":23,"op":"Sync","minor":0},{"major":259,"value":13,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":36,"op":"Total","minor":0},{"major":253,"value":4,"op":"Read","minor":2},{"major":253,"value":32,"op":"Write","minor":2},{"major":253,"value":23,"op":"Sync","minor":2},{"major":253,"value":13,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":36,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":356352,"op":"Read","minor":0},{"major":259,"value":176128,"op":"Write","minor":0},{"major":259,"value":462848,"op":"Sync","minor":0},{"major":259,"value":69632,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":532480,"op":"Total","minor":0},{"major":253,"value":356352,"op":"Read","minor":2},{"major":253,"value":176128,"op":"Write","minor":2},{"major":253,"value":462848,"op":"Sync","minor":2},{"major":253,"value":69632,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":532480,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":342691840,"max_usage":1290543104,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":204038144,"inactive_file":405504,"inactive_anon":82452480,"total_pgfault":2607726,"total_cache":107233280,"total_rss_huge":0,"total_active_anon":228433920,"total_pgmajfault":0,"pgpgin":1438239,"rss_huge":0,"mapped_file":0,"total_inactive_file":405504,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":1362215,"hierarchical_memsw_limit":0,"cache":107233280,"active_file":135168,"pgfault":2607726,"total_mapped_file":0,"total_pgpgout":1362215,"total_writeback":0,"rss":204038144,"unevictable":0,"total_inactive_anon":82452480,"total_pgpgin":1438239,"active_anon":228433920,"total_active_file":135168},"limit":540965302272},"name":"/GroebnerBasis-DspWJXoP","networks":{"eth0":{"rx_bytes":4063674,"rx_packets":1104,"tx_packets":1228,"tx_bytes":146065,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"6f9c652d3d047bb63331f4e75bac7b93931e3eae5d74d8ce67dc08abded0cb2b","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3524570394522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":104540000000,"usage_in_kernelmode":6520000000,"total_usage":110889283568,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,110889074178,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44230,165160,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T16:11:09.968323758Z"}

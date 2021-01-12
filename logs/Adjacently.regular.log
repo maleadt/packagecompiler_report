@@ -1,0 +1,129 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:00:52.746
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:00:54.553
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ##O#- #                                                                       ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Graphs ───────────── v0.10.3
+  Installed Blosc ────────────── v0.5.1
+  Installed Parameters ───────── v0.12.1
+  Installed URIParser ────────── v0.4.1
+  Installed CMakeWrapper ─────── v0.2.4
+  Installed BinDeps ──────────── v1.0.2
+  Installed CMake ────────────── v1.2.0
+  Installed FileIO ───────────── v1.4.5
+  Installed UnPack ───────────── v1.0.2
+  Installed OrderedCollections ─ v1.3.2
+  Installed Distances ────────── v0.8.2
+  Installed LegacyStrings ────── v0.4.1
+  Installed Compat ───────────── v2.2.1
+  Installed BinaryProvider ───── v0.5.10
+  Installed HDF5 ─────────────── v0.12.5
+  Installed JLD ──────────────── v0.9.2
+  Installed DataStructures ───── v0.17.20
+  Installed Adjacently ───────── v0.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [411c8731] + Adjacently v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [411c8731] + Adjacently v0.1.0
+  [9e28174c] + BinDeps v1.0.2
+  [b99e7846] + BinaryProvider v0.5.10
+  [a74b3585] + Blosc v0.5.1
+  [631607c0] + CMake v1.2.0
+  [d5fb7624] + CMakeWrapper v0.2.4
+  [34da2185] + Compat v2.2.1
+  [864edb3b] + DataStructures v0.17.20
+  [b4f34e82] + Distances v0.8.2
+  [5789e2e9] + FileIO v1.4.5
+  [86223c79] + Graphs v0.10.3
+  [f67ccb44] + HDF5 v0.12.5
+  [4138dd39] + JLD v0.9.2
+  [1b4a561d] + LegacyStrings v0.4.1
+  [bac558e1] + OrderedCollections v1.3.2
+  [d96e819e] + Parameters v0.12.1
+  [30578b45] + URIParser v0.4.1
+  [3a884ed6] + UnPack v1.0.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building CMake → `~/.julia/packages/CMake/ULbyn/deps/build.log`
+   Building Blosc → `~/.julia/packages/Blosc/lzFr0/deps/build.log`
+   Building HDF5 ─→ `~/.julia/packages/HDF5/Zh9on/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T21:01:30.846
+#
+
+
+PkgEval failed: Package Adjacently did not provide a `test/runtests.jl` file
+Stacktrace:
+ [1] pkgerror(::String, ::Vararg{String,N} where N) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1536
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:01:33.179
+CPU usage: 35.75s (29.70s user, 6.10s kernel)
+
+Network usage:
+- eth0: 135.087 MiB received, 1.061 MiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":32,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":13,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":32,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":32,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":13,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":32,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":167936,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":61440,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":167936,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":167936,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":61440,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":167936,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":609341440,"max_usage":1218961408,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":201166848,"inactive_file":135168,"inactive_anon":319131648,"total_pgfault":1178100,"total_cache":370368512,"total_rss_huge":0,"total_active_anon":252358656,"total_pgmajfault":0,"pgpgin":964194,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":675840,"total_unevictable":0,"total_dirty":675840,"writeback":135168,"pgpgout":824670,"hierarchical_memsw_limit":0,"cache":370368512,"active_file":135168,"pgfault":1178100,"total_mapped_file":0,"total_pgpgout":824670,"total_writeback":135168,"rss":201166848,"unevictable":0,"total_inactive_anon":319131648,"total_pgpgin":964194,"active_anon":252358656,"total_active_file":135168},"limit":540965302272},"name":"/Adjacently-PPQIh4ws","networks":{"eth0":{"rx_bytes":141648578,"rx_packets":33333,"tx_packets":18522,"tx_bytes":1112316,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"7ed7d39fbb0bd5b083780120a873b2121937ea89a4a1140750e94c052f6ec493","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5751207444522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":29700000000,"usage_in_kernelmode":6100000000,"total_usage":35752941640,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35752935820,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5820,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:01:33.182380755Z"}

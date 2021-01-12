@@ -1,0 +1,125 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:33:40.653
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:33:42.482
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Requires ──────────── v1.1.2
+  Installed AxisArrayConversion ─ v0.1.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [972ef8a8] + AxisArrayConversion v0.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [972ef8a8] + AxisArrayConversion v0.1.1
+  [ae029012] + Requires v1.1.2
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [cf7118a7] + UUIDs
+
+
+################################################################################
+# Testing: 2021-01-11T18:33:46.781
+#
+
+    Testing AxisArrayConversion
+Status `/tmp/jl_4AGSzR/Project.toml`
+  [972ef8a8] AxisArrayConversion v0.1.1
+  [39de3d68] AxisArrays v0.4.3
+  [94b1ba4f] AxisKeys v0.1.8
+  [0703355e] DimensionalData v0.15.2
+  [ae029012] Requires v1.1.2
+  [8dfed614] Test
+Status `/tmp/jl_4AGSzR/Manifest.toml`
+  [621f4979] AbstractFFTs v0.5.0
+  [79e6a3ab] Adapt v2.4.0
+  [972ef8a8] AxisArrayConversion v0.1.1
+  [39de3d68] AxisArrays v0.4.3
+  [94b1ba4f] AxisKeys v0.1.8
+  [34da2185] Compat v3.25.0
+  [187b0558] ConstructionBase v1.0.0
+  [587fd27a] CovarianceEstimation v0.2.5
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [0703355e] DimensionalData v0.15.2
+  [da5c29d0] EllipsisNotation v1.0.0
+  [8197267c] IntervalSets v0.5.2
+  [41ab1584] InvertedIndices v1.0.0
+  [c8e1da08] IterTools v1.3.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [1fad7336] LazyStack v0.0.7
+  [1914dd2f] MacroTools v0.5.6
+  [e1d29d7a] Missings v0.4.4
+  [356022a1] NamedDims v0.2.29
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [bac558e1] OrderedCollections v1.3.2
+  [b3c3ace0] RangeArrays v0.3.2
+  [3cdcf5f2] RecipesBase v1.1.1
+  [ae029012] Requires v1.1.2
+  [a2af1166] SortingAlgorithms v0.3.1
+  [2913bbd2] StatsBase v0.33.2
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [700de1a5] ZygoteRules v0.2.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+Array         |   12     12
+Test Summary: | Pass  Total
+to            |   52     52
+    Testing AxisArrayConversion tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:34:30.686
+CPU usage: 49.39s (43.06s user, 6.47s kernel)
+
+Network usage:
+- eth0: 4.914 MiB received, 177.303 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":1081,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":1100,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1105,"op":"Total","minor":0},{"major":253,"value":1081,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":1100,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1105,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":28495872,"op":"Read","minor":0},{"major":259,"value":131072,"op":"Write","minor":0},{"major":259,"value":28602368,"op":"Sync","minor":0},{"major":259,"value":24576,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28626944,"op":"Total","minor":0},{"major":253,"value":28495872,"op":"Read","minor":2},{"major":253,"value":131072,"op":"Write","minor":2},{"major":253,"value":28602368,"op":"Sync","minor":2},{"major":253,"value":24576,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28626944,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":358993920,"max_usage":1093763072,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":231,"total_rss":188682240,"inactive_file":12734464,"inactive_anon":127193088,"total_pgfault":1821567,"total_cache":137351168,"total_rss_huge":0,"total_active_anon":151998464,"total_pgmajfault":231,"pgpgin":1353891,"rss_huge":0,"mapped_file":16084992,"total_inactive_file":12734464,"dirty":540672,"total_unevictable":0,"total_dirty":540672,"writeback":135168,"pgpgout":1274278,"hierarchical_memsw_limit":0,"cache":137351168,"active_file":31756288,"pgfault":1821567,"total_mapped_file":16084992,"total_pgpgout":1274278,"total_writeback":135168,"rss":188682240,"unevictable":0,"total_inactive_anon":127193088,"total_pgpgin":1353891,"active_anon":151998464,"total_active_file":31756288},"limit":540965302272},"name":"/AxisArrayConversion-R0YPzcpz","networks":{"eth0":{"rx_bytes":5152658,"rx_packets":1309,"tx_packets":1485,"tx_bytes":181558,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"1ae1436b8ac26a47961cfbcbee6891edb0381d96b55d1dbd525ade6b154e03ff","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4623555094522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":43060000000,"usage_in_kernelmode":6470000000,"total_usage":49390458718,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,49383629287,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6829431,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:34:30.68953367Z"}

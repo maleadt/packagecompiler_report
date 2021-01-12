@@ -1,0 +1,122 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T23:35:29.278
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T23:35:31.004
+#
+
+ Installing known registries into `~/.julia`
+###################################################                       71.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ROCArrays ────────── v0.1.0
+  Installed Adapt ────────────── v1.1.0
+  Installed TimerOutputs ─────── v0.5.7
+  Installed MacroTools ───────── v0.5.6
+  Installed Requires ─────────── v1.1.2
+  Installed GPUArrays ────────── v2.0.1
+  Installed Setfield ─────────── v0.5.4
+  Installed AbstractFFTs ─────── v0.5.0
+  Installed CEnum ────────────── v0.2.0
+  Installed ConstructionBase ─── v1.0.0
+  Installed AMDGPUnative ─────── v0.1.2
+  Installed PackageCompiler ──── v1.2.5
+  Installed HSARuntime ───────── v0.2.9
+  Installed OrderedCollections ─ v1.3.2
+  Installed LLVM ─────────────── v1.7.0
+  Installed BinaryProvider ───── v0.5.10
+  Installed DataStructures ───── v0.17.20
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [ddf941ca] + ROCArrays v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [12f4821f] + AMDGPUnative v0.1.2
+  [621f4979] + AbstractFFTs v0.5.0
+  [79e6a3ab] + Adapt v1.1.0
+  [b99e7846] + BinaryProvider v0.5.10
+  [fa961155] + CEnum v0.2.0
+  [187b0558] + ConstructionBase v1.0.0
+  [864edb3b] + DataStructures v0.17.20
+  [0c68f7d7] + GPUArrays v2.0.1
+  [2c364e2c] + HSARuntime v0.2.9
+  [929cbde3] + LLVM v1.7.0
+  [1914dd2f] + MacroTools v0.5.6
+  [bac558e1] + OrderedCollections v1.3.2
+  [9b87118b] + PackageCompiler v1.2.5
+  [ddf941ca] + ROCArrays v0.1.0
+  [ae029012] + Requires v1.1.2
+  [efcf1570] + Setfield v0.5.4
+  [a759f4b9] + TimerOutputs v0.5.7
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building HSARuntime ──→ `~/.julia/packages/HSARuntime/Rn8XD/deps/build.log`
+┌ Error: Error building `HSARuntime`: 
+│ paths = String[]
+│ Could not find HSA runtime library.
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+   Building AMDGPUnative → `~/.julia/packages/AMDGPUnative/DAVKA/deps/build.log`
+   Building ROCArrays ───→ `~/.julia/packages/ROCArrays/7IdSi/deps/build.log`
+┌ Error: Error building `ROCArrays`: 
+│ Dependent package HSARuntime.jl has not been built successfully
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+
+
+################################################################################
+# Compiling: 2021-01-11T23:36:16.173
+#
+
+┌ Warning: ROCArrays.jl has not been successfully built, and will not work properly.
+└ @ ROCArrays ~/.julia/packages/ROCArrays/7IdSi/src/ROCArrays.jl:60
+┌ Warning: Please run Pkg.build("ROCArrays") and restart Julia.
+└ @ ROCArrays ~/.julia/packages/ROCArrays/7IdSi/src/ROCArrays.jl:61
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 165.553 MiB, compilation took 181 seconds
+
+
+fatal: error thrown and no exception handler available.
+InitError(mod=:AMDGPUnative, error=ErrorException("/home/pkgeval/.julia/packages/AMDGPUnative/DAVKA/deps/usr/lib/ockl.amdgcn.bc does not exist, Please re-run Pkg.build("AMDGPUnative"), and restart Julia."))
+error at ./error.jl:33
+check_deps at /home/pkgeval/.julia/packages/AMDGPUnative/DAVKA/deps/deps.jl:16 [inlined]
+__init__ at /home/pkgeval/.julia/packages/AMDGPUnative/DAVKA/src/AMDGPUnative.jl:41
+jfptr___init___52180 at /cache/ROCArrays-EUA7ZriL.so (unknown line)
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+jl_module_run_initializer at /workspace/srcdir/src/toplevel.c:74
+_julia_init at /workspace/srcdir/src/init.c:780
+main at /workspace/srcdir/ui/repl.c:221
+__libc_start_main at /usr/lib/libc.so.6 (unknown line)
+unknown function (ip: 0x4015e4)
+
+No statistics gathered.

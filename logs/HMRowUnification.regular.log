@@ -1,0 +1,84 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:38:47.818
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:38:49.631
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed HMRowUnification ─ v0.1.4
+  Installed MLStyle ────────── v0.4.6
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [1f764b34] + HMRowUnification v0.1.4
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [1f764b34] + HMRowUnification v0.1.4
+  [d8e11817] + MLStyle v0.4.6
+
+
+################################################################################
+# Testing: 2021-01-11T22:38:53.747
+#
+
+    Testing HMRowUnification
+Status `/tmp/jl_vnDRAT/Project.toml`
+  [1f764b34] HMRowUnification v0.1.4
+  [d8e11817] MLStyle v0.4.6
+  [8dfed614] Test
+Status `/tmp/jl_vnDRAT/Manifest.toml`
+  [1f764b34] HMRowUnification v0.1.4
+  [d8e11817] MLStyle v0.4.6
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+{c::int|'5}  {b::int|'5}
+forall b a.a b
+'a(0)
+c::int {a::int {|'4}}
+int->{int, int}
+'17 '17
+true
+Set{UInt64}[Set(), Set()]
+Set{UInt64}[]
+Set{UInt64}[]
+{c::int, a::int|'29}
+UInt64[0x0000000000000001, 0x0000000000000002, 0x0000000000000003, 0x0000000000000004, 0x0000000000000005, 0x0000000000000006, 0x0000000000000007, 0x0000000000000008, 0x0000000000000009, 0x000000000000000a, 0x000000000000000b, 0x000000000000000c, 0x000000000000000d, 0x000000000000000e, 0x000000000000000f, 0x0000000000000010, 0x0000000000000011, 0x0000000000000012, 0x0000000000000013, 0x0000000000000014, 0x0000000000000015, 0x0000000000000016, 0x0000000000000017, 0x0000000000000018, 0x0000000000000019, 0x000000000000001a, 0x000000000000001b, 0x000000000000001c, 0x000000000000001d]
+Test Summary:       | Pass  Total
+HMRowUnification.jl |   32     32
+    Testing HMRowUnification tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:39:27.879
+CPU usage: 40.00s (36.88s user, 3.20s kernel)
+
+Network usage:
+- eth0: 2.715 MiB received, 33.208 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":327618560,"max_usage":829591552,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":216526848,"inactive_file":135168,"inactive_anon":79613952,"total_pgfault":731115,"total_cache":81727488,"total_rss_huge":0,"total_active_anon":218701824,"total_pgmajfault":0,"pgpgin":317229,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":0,"pgpgout":244419,"hierarchical_memsw_limit":0,"cache":81727488,"active_file":135168,"pgfault":731115,"total_mapped_file":0,"total_pgpgout":244419,"total_writeback":0,"rss":216526848,"unevictable":0,"total_inactive_anon":79613952,"total_pgpgin":317229,"active_anon":218701824,"total_active_file":135168},"limit":540965302272},"name":"/HMRowUnification-0DxQPWxE","networks":{"eth0":{"rx_bytes":2846558,"rx_packets":339,"tx_packets":336,"tx_bytes":34005,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"ef6d98dd542800adb3b8da5acb119314fb5dd1c6fa2abb5fa725dfc44b6936e3","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6501812634522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":36880000000,"usage_in_kernelmode":3200000000,"total_usage":39997177454,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,39994813953,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5840,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2357661,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:39:28.645772722Z"}

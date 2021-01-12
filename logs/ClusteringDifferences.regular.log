@@ -1,0 +1,86 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:21:02.193
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:21:03.978
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ClusteringDifferences ─ v0.7.0
+  Installed Distances ───────────── v0.9.2
+  Installed DifferencesBase ─────── v0.8.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a029d29b] + ClusteringDifferences v0.7.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [a029d29b] + ClusteringDifferences v0.7.0
+  [f7c07657] + DifferencesBase v0.8.0
+  [b4f34e82] + Distances v0.9.2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+
+
+################################################################################
+# Testing: 2021-01-11T19:21:08.126
+#
+
+    Testing ClusteringDifferences
+Status `/tmp/jl_eQN5tQ/Project.toml`
+  [a029d29b] ClusteringDifferences v0.7.0
+  [f7c07657] DifferencesBase v0.8.0
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_eQN5tQ/Manifest.toml`
+  [a029d29b] ClusteringDifferences v0.7.0
+  [f7c07657] DifferencesBase v0.8.0
+  [b4f34e82] Distances v0.9.2
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Test Summary:         | Pass  Total
+ClusteringDifferences |   51     51
+    Testing ClusteringDifferences tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:21:20.174
+CPU usage: 18.08s (15.46s user, 2.66s kernel)
+
+Network usage:
+- eth0: 2.600 MiB received, 38.543 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":329842688,"max_usage":717578240,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":219123712,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":417879,"total_cache":80785408,"total_rss_huge":0,"total_active_anon":220323840,"total_pgmajfault":0,"pgpgin":301290,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":228057,"hierarchical_memsw_limit":0,"cache":80785408,"active_file":811008,"pgfault":417879,"total_mapped_file":0,"total_pgpgout":228057,"total_writeback":0,"rss":219123712,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":301290,"active_anon":220323840,"total_active_file":811008},"limit":540965302272},"name":"/ClusteringDifferences-BOT5GBPE","networks":{"eth0":{"rx_bytes":2726178,"rx_packets":362,"tx_packets":381,"tx_bytes":39468,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"fbb4e40caa509554f73c2623c3888921df42f817e2e9eac6277b276103c73e2d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4982759374522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":15460000000,"usage_in_kernelmode":2660000000,"total_usage":18084951171,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18084951171,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:21:20.802939856Z"}

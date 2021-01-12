@@ -1,0 +1,80 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:43:07.359
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:43:09.17
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ##                                                                         3.1%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Semaphores ─ v0.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [f00cc363] + Semaphores v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [f00cc363] + Semaphores v0.1.0
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T15:43:12.662
+#
+
+    Testing Semaphores
+Status `/tmp/jl_5dEG8R/Project.toml`
+  [f00cc363] Semaphores v0.1.0
+  [9e88b42a] Serialization
+  [8dfed614] Test
+Status `/tmp/jl_5dEG8R/Manifest.toml`
+  [f00cc363] Semaphores v0.1.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+[ Info: testing posix named semaphores
+[ Info: testing system v semaphores
+[ Info: testing single resource counter
+[ Info: testing multiple resource counter
+    Testing Semaphores tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:43:16.282
+CPU usage: 8.93s (6.77s user, 2.21s kernel)
+
+Network usage:
+- eth0: 2.542 MiB received, 28.449 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":322121728,"max_usage":572133376,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":213016576,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":252417,"total_cache":79343616,"total_rss_huge":0,"total_active_anon":213700608,"total_pgmajfault":0,"pgpgin":184668,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":113273,"hierarchical_memsw_limit":0,"cache":79343616,"active_file":135168,"pgfault":252417,"total_mapped_file":0,"total_pgpgout":113273,"total_writeback":0,"rss":213016576,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":184668,"active_anon":213700608,"total_active_file":135168},"limit":540965302272},"name":"/Semaphores-yL8nsjRB","networks":{"eth0":{"rx_bytes":2665396,"rx_packets":304,"tx_packets":299,"tx_bytes":29132,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"d3c9002d4be8be92078318181f6c294b0253694b5e86acee4b43f52c0d018323","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3310685954522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":6770000000,"usage_in_kernelmode":2210000000,"total_usage":8928145950,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8928140740,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5210,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:43:16.716378809Z"}

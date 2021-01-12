@@ -1,0 +1,131 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T16:05:37.275
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T16:05:39.002
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed IOCapture ─────────── v0.1.1
+  Installed Parsers ───────────── v1.0.15
+  Installed BinaryProvider ────── v0.5.10
+  Installed ROS ───────────────── v0.2.3
+  Installed JSON ──────────────── v0.21.1
+  Installed DocStringExtensions ─ v0.8.3
+  Installed Documenter ────────── v0.25.5
+  Installed PackageCompiler ───── v1.2.5
+  Installed Cxx ───────────────── v0.4.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [a492bfac] + ROS v0.2.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [b99e7846] + BinaryProvider v0.5.10
+  [a0b5b9ef] + Cxx v0.4.0
+  [ffbed154] + DocStringExtensions v0.8.3
+  [e30172f5] + Documenter v0.25.5
+  [b5f81e59] + IOCapture v0.1.1
+  [682c06a0] + JSON v0.21.1
+  [9b87118b] + PackageCompiler v1.2.5
+  [69de0a69] + Parsers v1.0.15
+  [a492bfac] + ROS v0.2.3
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building Cxx → `~/.julia/packages/Cxx/1RaOv/deps/build.log`
+┌ Error: Error building `Cxx`: 
+│ ERROR: LoadError: could not load library "libLLVM-9.0.1"
+│ libLLVM-9.0.1.so: cannot open shared object file: No such file or directory
+│ Stacktrace:
+│  [1] dlopen(::String, ::UInt32; throw_error::Bool) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Libdl/src/Libdl.jl:109
+│  [2] dlopen at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Libdl/src/Libdl.jl:109 [inlined] (repeats 2 times)
+│  [3] dlpath(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Libdl/src/Libdl.jl:232
+│  [4] top-level scope at /home/pkgeval/.julia/packages/Cxx/1RaOv/deps/build.jl:23
+│  [5] include(::String) at ./client.jl:457
+│  [6] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/Cxx/1RaOv/deps/build.jl:23
+│ writing path.jl file
+│ Tuning for julia installation at /opt/julia/bin with sources possibly at /opt/
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+
+
+################################################################################
+# Compiling: 2021-01-11T16:05:46.299
+#
+
+ERROR: LoadError: path.jl not generated. Try running Pkg.build("Cxx")
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] top-level scope at /home/pkgeval/.julia/packages/Cxx/1RaOv/src/Cxx.jl:146
+ [3] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [4] include(::Module, ::String) at ./Base.jl:368
+ [5] top-level scope at none:2
+ [6] eval at ./boot.jl:331 [inlined]
+ [7] eval(::Expr) at ./client.jl:467
+ [8] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/Cxx/1RaOv/src/Cxx.jl:146
+ERROR: LoadError: Failed to precompile Cxx [a0b5b9ef-44b7-5148-a2d1-f6db19f3c3d2] to /home/pkgeval/.julia/compiled/v1.5/Cxx/ESGkI_MqueV.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1305
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ [6] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [7] include(::Module, ::String) at ./Base.jl:368
+ [8] top-level scope at none:2
+ [9] eval at ./boot.jl:331 [inlined]
+ [10] eval(::Expr) at ./client.jl:467
+ [11] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/ROS/VTErh/src/ROS.jl:3
+ERROR: Failed to precompile ROS [a492bfac-16cc-4d50-a8b6-f03352b6b563] to /home/pkgeval/.julia/compiled/v1.5/ROS/EjtV2_MqueV.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1305
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ERROR: failed process: Process(`/opt/julia/bin/julia --color=yes --startup-file=no --sysimage=/opt/julia/lib/julia/sys.so --project=/home/pkgeval/.julia/environments/v1.5 -e 'import ROS'`, ProcessExited(1)) [1]
+
+Stacktrace:
+ [1] pipeline_error at ./process.jl:525 [inlined]
+ [2] read(::Cmd) at ./process.jl:412
+ [3] read(::Cmd, ::Type{String}) at ./process.jl:421
+ [4] do_ensurecompiled(::String, ::Array{String,1}, ::String) at /home/pkgeval/.julia/packages/PackageCompiler/3BsME/src/PackageCompiler.jl:195
+ [5] create_sysimg_object_file(::String, ::Array{String,1}; project::String, base_sysimage::String, precompile_execution_file::Array{String,1}, precompile_statements_file::Array{String,1}, cpu_target::String, script::Nothing, isapp::Bool) at /home/pkgeval/.julia/packages/PackageCompiler/3BsME/src/PackageCompiler.jl:260
+ [6] create_sysimage(::Symbol; sysimage_path::String, project::String, precompile_execution_file::Array{String,1}, precompile_statements_file::Array{String,1}, incremental::Bool, filter_stdlibs::Bool, replace_default::Bool, cpu_target::String, script::Nothing, base_sysimage::Nothing, isapp::Bool) at /home/pkgeval/.julia/packages/PackageCompiler/3BsME/src/PackageCompiler.jl:442
+ [7] top-level scope at ./timing.jl:233
+

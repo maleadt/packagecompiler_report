@@ -1,0 +1,142 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T17:26:02.893
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T17:26:04.761
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Plugins ───────── v0.4.2
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [231a7ae5] + Plugins v0.4.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [231a7ae5] + Plugins v0.4.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T17:26:10.553
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 147.397 MiB, compilation took 168 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T17:29:07.725
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/Plugins-nOKSTD0W.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:29:09.622
+#
+
+ Installing known registries into `~/.julia`
+#########                                                                 13.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Plugins ─ v0.4.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [231a7ae5] + Plugins v0.4.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [231a7ae5] + Plugins v0.4.2
+
+
+################################################################################
+# Testing: 2021-01-11T17:29:13.685
+#
+
+    Testing Plugins
+Status `/tmp/jl_pMLvT9/Project.toml`
+  [231a7ae5] Plugins v0.4.2
+  [8dfed614] Test
+Status `/tmp/jl_pMLvT9/Manifest.toml`
+  [231a7ae5] Plugins v0.4.2
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+[ Info: 2-length chain, 1 counter (1e5 cycles):
+  0.000040 seconds (4 allocations: 160 bytes)
+[ Info: 2-length chain, 2 counters (1e5 cycles):
+  0.000281 seconds (4 allocations: 160 bytes)
+[ Info: 42-length chain,  2  counters (1e5 cycles):
+  0.000232 seconds (4 allocations: 160 bytes)
+[ Info: Measuring time to first hook call with 1040 plugins, 40 implementig the hook.
+  0.480283 seconds (726.24 k allocations: 39.990 MiB, 3.99% gc time)
+[ Info: op: A sample operation on the app, involving hook1() calls in a semi-realistic setting.
+[ Info: op: 2 CounterPlugins found, 1002 plugins in total, each CounterPlugin incrementing a private counter.
+[ Info: op: 1.0e7 hook1() calls took 0.023168496 secs. That is 2.3168496 nanosecs per call on average, or 1.1584248 ns per in-plugin counter increment.
+notallok = (allok = false, results = Any[nothing, (ErrorException("shutdown called with 42"), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007f885aeebfa6, Ptr{Nothing} @0x00007f884f3241e1, Ptr{Nothing} @0x00007f884f324349, Ptr{Nothing} @0x00007f88681f1747, Ptr{Nothing} @0x00007f884f323dcf, Ptr{Nothing} @0x00007f884f323e06, Ptr{Nothing} @0x00007f88681f1747, Ptr{Nothing} @0x00007f886820aef5, Ptr{Nothing} @0x00007f886820ab3f, Ptr{Nothing} @0x00007f886820b7f9, Ptr{Nothing} @0x00007f886820bb9c, Ptr{Nothing} @0x00007f886820bb9c, Ptr{Nothing} @0x00007f886820bb9c, Ptr{Nothing} @0x00007f886820bb9c, Ptr{Nothing} @0x00007f886820c7a7, Base.InterpreterIP in top-level CodeInfo for Main at statement 2055, Ptr{Nothing} @0x00007f8868229a49, Ptr{Nothing} @0x00007f88681fc215, Ptr{Nothing} @0x00007f886822aff1, Ptr{Nothing} @0x00007f884f2f9764, Ptr{Nothing} @0x00007f88681f1747, Ptr{Nothing} @0x00007f886820aef5, Ptr{Nothing} @0x00007f886820ab3f, Ptr{Nothing} @0x00007f886820b543, Ptr{Nothing} @0x00007f886820c7a7, Base.InterpreterIP in top-level CodeInfo for Main at statement 0, Ptr{Nothing} @0x00007f8868229a49, Ptr{Nothing} @0x00007f8868229549, Ptr{Nothing} @0x00007f886822acc0, Ptr{Nothing} @0x00007f885aeb84f1, Ptr{Nothing} @0x00007f88681f1c0a, Ptr{Nothing} @0x00007f885ae3bb9a, Ptr{Nothing} @0x00007f885adb0509, Ptr{Nothing} @0x00007f885adb0665, Ptr{Nothing} @0x00007f88681f1c0a, Ptr{Nothing} @0x0000000000401991, Ptr{Nothing} @0x0000000000401543, Ptr{Nothing} @0x00007f8867f5d151, Ptr{Nothing} @0x00000000004015e4])])
+Test Summary:     | Pass  Total
+Plugins.jl basics |   68     68
+Test Summary:            | Pass  Total
+Plugins.jl custom fields |   39     39
+    Testing Plugins tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:29:22.278
+CPU usage: 14.60s (11.76s user, 2.89s kernel)
+
+Network usage:
+- eth0: 2.888 MiB received, 32.745 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":19,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":19,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":77824,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":77824,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":290717696,"max_usage":463495168,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":181727232,"inactive_file":135168,"inactive_anon":79073280,"total_pgfault":275880,"total_cache":79818752,"total_rss_huge":0,"total_active_anon":182341632,"total_pgmajfault":0,"pgpgin":153087,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":270336,"pgpgout":89279,"hierarchical_memsw_limit":0,"cache":79818752,"active_file":135168,"pgfault":275880,"total_mapped_file":0,"total_pgpgout":89279,"total_writeback":270336,"rss":181727232,"unevictable":0,"total_inactive_anon":79073280,"total_pgpgin":153087,"active_anon":182341632,"total_active_file":135168},"limit":540965302272},"name":"/Plugins-61z7m15a","networks":{"eth0":{"rx_bytes":3028717,"rx_packets":365,"tx_packets":366,"tx_bytes":33531,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"d86c5fe56c6adf8624fee4d6eb9570959d58c85149df111694ffc249b94007b9","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4124351324522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":11760000000,"usage_in_kernelmode":2890000000,"total_usage":14602547180,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14602529630,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4120,0,0,13430,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:29:23.092344842Z"}

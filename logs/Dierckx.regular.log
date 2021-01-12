@@ -1,0 +1,106 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:40:19.82
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:40:21.633
+#
+
+ Installing known registries into `~/.julia`
+#################################################                         68.7%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Dierckx ────────────────────── v0.5.1
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed Dierckx_jll ────────────────── v0.0.1+0
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [39dd38d3] + Dierckx v0.5.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [39dd38d3] + Dierckx v0.5.1
+  [cd4c43a9] + Dierckx_jll v0.0.1+0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T15:40:26.63
+#
+
+    Testing Dierckx
+Status `/tmp/jl_5ur43T/Project.toml`
+  [39dd38d3] Dierckx v0.5.1
+  [cd4c43a9] Dierckx_jll v0.0.1+0
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_5ur43T/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [39dd38d3] Dierckx v0.5.1
+  [cd4c43a9] Dierckx_jll v0.0.1+0
+  [692b3bcd] JLLWrappers v1.2.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+All tests passed.
+    Testing Dierckx tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:40:42.918
+CPU usage: 23.17s (19.88s user, 3.37s kernel)
+
+Network usage:
+- eth0: 2.613 MiB received, 46.255 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":2,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":21,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":26,"op":"Total","minor":0},{"major":253,"value":2,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":21,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":26,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":110592,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":217088,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":237568,"op":"Total","minor":0},{"major":253,"value":110592,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":217088,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":237568,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":329170944,"max_usage":1005658112,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":217907200,"inactive_file":135168,"inactive_anon":79343616,"total_pgfault":554994,"total_cache":81018880,"total_rss_huge":0,"total_active_anon":219377664,"total_pgmajfault":0,"pgpgin":349767,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":135168,"pgpgout":276780,"hierarchical_memsw_limit":0,"cache":81018880,"active_file":270336,"pgfault":554994,"total_mapped_file":0,"total_pgpgout":276780,"total_writeback":135168,"rss":217907200,"unevictable":0,"total_inactive_anon":79343616,"total_pgpgin":349767,"active_anon":219377664,"total_active_file":270336},"limit":540965302272},"name":"/Dierckx-Q8KzC0XA","networks":{"eth0":{"rx_bytes":2740362,"rx_packets":426,"tx_packets":429,"tx_bytes":47365,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"256715d238ab14dd9e87faf610600fc4996d92776971b7cf1a56adcedb292800","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3291130104522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":19880000000,"usage_in_kernelmode":3370000000,"total_usage":23173302628,"percpu_usage":[0,0,0,0,0,23173298628,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:40:43.794125066Z"}

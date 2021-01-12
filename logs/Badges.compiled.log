@@ -1,0 +1,85 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T15:50:40.687
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T15:50:42.43
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Badges ────────── v1.0.0
+  Installed JSON3 ─────────── v1.5.1
+  Installed Parsers ───────── v1.0.15
+  Installed StructTypes ───── v1.2.1
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [f8f3bd14] + Badges v1.0.0
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [f8f3bd14] + Badges v1.0.0
+  [0f8b85d8] + JSON3 v1.5.1
+  [9b87118b] + PackageCompiler v1.2.5
+  [69de0a69] + Parsers v1.0.15
+  [856f2bd8] + StructTypes v1.2.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T15:50:48.207
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 156.735 MiB, compilation took 183 seconds
+
+
+fatal: error thrown and no exception handler available.
+InitError(mod=:Badges, error=MethodError(f=Base.Filesystem.dirname, args=(nothing,), world=0x0000000000006ca8))
+jl_method_error_bare at /workspace/srcdir/src/gf.c:1798
+jl_method_error at /workspace/srcdir/src/gf.c:1816
+jl_lookup_generic_ at /workspace/srcdir/src/gf.c:2373 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2394
+__init__ at /home/pkgeval/.julia/packages/Badges/D3JuT/src/Badges.jl:299
+jfptr___init___32914 at /cache/Badges-156whIqR.so (unknown line)
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+jl_module_run_initializer at /workspace/srcdir/src/toplevel.c:74
+_julia_init at /workspace/srcdir/src/init.c:780
+main at /workspace/srcdir/ui/repl.c:221
+__libc_start_main at /usr/lib/libc.so.6 (unknown line)
+unknown function (ip: 0x4015e4)
+
+No statistics gathered.

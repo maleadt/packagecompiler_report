@@ -1,0 +1,325 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:42:42.938
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:42:44.746
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed Reexport ───────────────────── v0.2.0
+  Installed TableTraits ────────────────── v1.0.0
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed Tables ─────────────────────── v0.2.11
+  Installed TranscodingStreams ─────────── v0.9.5
+  Installed CategoricalArrays ──────────── v0.7.7
+  Installed DataStructures ─────────────── v0.17.20
+  Installed StatsBase ──────────────────── v0.32.2
+  Installed DataFrames ─────────────────── v0.19.4
+  Installed JuMP ───────────────────────── v0.19.2
+  Installed Calculus ───────────────────── v0.5.1
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed DiffResults ────────────────── v1.0.3
+  Installed JLD2 ───────────────────────── v0.1.14
+  Installed FileIO ─────────────────────── v1.4.5
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed Clustering ─────────────────── v0.14.2
+  Installed InvertedIndices ────────────── v1.0.0
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed CodecZlib ──────────────────── v0.7.0
+  Installed Missings ───────────────────── v0.4.4
+  Installed MathOptInterface ───────────── v0.8.4
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed FilePathsBase ──────────────── v0.7.0
+  Installed PooledArrays ───────────────── v0.5.3
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed JSON ───────────────────────── v0.21.1
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed Distances ──────────────────── v0.9.2
+  Installed NearestNeighbors ───────────── v0.4.8
+  Installed CSV ────────────────────────── v0.5.23
+  Installed YAML ───────────────────────── v0.3.2
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed Codecs ─────────────────────── v0.5.0
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed WeakRefStrings ─────────────── v0.6.2
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed Compat ─────────────────────── v2.2.1
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Parsers ────────────────────── v0.3.12
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed TimeSeriesClustering ───────── v0.5.3
+  Installed CapacityExpansion ──────────── v0.2.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [c5f7ca31] + CapacityExpansion v0.2.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [336ed68f] + CSV v0.5.23
+  [49dc2e85] + Calculus v0.5.1
+  [c5f7ca31] + CapacityExpansion v0.2.2
+  [324d7699] + CategoricalArrays v0.7.7
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [aaaa29a8] + Clustering v0.14.2
+  [944b1d66] + CodecZlib v0.7.0
+  [19ecbf4d] + Codecs v0.5.0
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v2.2.1
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.19.4
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [b4f34e82] + Distances v0.9.2
+  [5789e2e9] + FileIO v1.4.5
+  [48062228] + FilePathsBase v0.7.0
+  [f6369f11] + ForwardDiff v0.10.14
+  [41ab1584] + InvertedIndices v1.0.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [033835bb] + JLD2 v0.1.14
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [4076af6c] + JuMP v0.19.2
+  [1914dd2f] + MacroTools v0.5.6
+  [b8f27783] + MathOptInterface v0.8.4
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [77ba4419] + NaNMath v0.3.5
+  [b8a86587] + NearestNeighbors v0.4.8
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [69de0a69] + Parsers v0.3.12
+  [2dfb63ee] + PooledArrays v0.5.3
+  [189a3867] + Reexport v0.2.0
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [2913bbd2] + StatsBase v0.32.2
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [61e8395a] + TimeSeriesClustering v0.5.3
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [ea10d353] + WeakRefStrings v0.6.2
+  [ddb6d928] + YAML v0.3.2
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T22:42:56.68
+#
+
+    Testing CapacityExpansion
+Status `/tmp/jl_jjHjMT/Project.toml`
+  [c5f7ca31] CapacityExpansion v0.2.2
+  [e2554f3b] Clp v0.6.2
+  [8dfed614] Test
+Status `/tmp/jl_jjHjMT/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [b99e7846] BinaryProvider v0.5.10
+  [336ed68f] CSV v0.5.23
+  [49dc2e85] Calculus v0.5.1
+  [c5f7ca31] CapacityExpansion v0.2.2
+  [324d7699] CategoricalArrays v0.7.7
+  [d360d2e6] ChainRulesCore v0.9.24
+  [e2554f3b] Clp v0.6.2
+  [aaaa29a8] Clustering v0.14.2
+  [944b1d66] CodecZlib v0.7.0
+  [19ecbf4d] Codecs v0.5.0
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v2.2.1
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] DataAPI v1.4.0
+  [a93c6f00] DataFrames v0.19.4
+  [864edb3b] DataStructures v0.17.20
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [b4f34e82] Distances v0.9.2
+  [5789e2e9] FileIO v1.4.5
+  [48062228] FilePathsBase v0.7.0
+  [f6369f11] ForwardDiff v0.10.14
+  [41ab1584] InvertedIndices v1.0.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [033835bb] JLD2 v0.1.14
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [4076af6c] JuMP v0.19.2
+  [f8899e07] LinQuadOptInterface v0.6.0
+  [1914dd2f] MacroTools v0.5.6
+  [b8f27783] MathOptInterface v0.8.4
+  [fdba3010] MathProgBase v0.7.8
+  [e1d29d7a] Missings v0.4.4
+  [46d2c3a1] MuladdMacro v0.2.2
+  [77ba4419] NaNMath v0.3.5
+  [b8a86587] NearestNeighbors v0.4.8
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [69de0a69] Parsers v0.3.12
+  [2dfb63ee] PooledArrays v0.5.3
+  [189a3867] Reexport v0.2.0
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.2.1
+  [90137ffa] StaticArrays v1.0.1
+  [2913bbd2] StatsBase v0.32.2
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v0.2.11
+  [61e8395a] TimeSeriesClustering v0.5.3
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [ea10d353] WeakRefStrings v0.6.2
+  [ddb6d928] YAML v0.3.2
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Warning: `getindex(df::DataFrame, col_ind::ColumnIndex)` is deprecated, use `df[!, col_ind]` instead.
+│   caller = add_timeseries_data!(::Dict{String,Array}, ::SubString{String}, ::DataFrames.DataFrame; K::Int64, T::Int64, years::Array{Int64,1}) at load_data.jl:132
+└ @ TimeSeriesClustering ~/.julia/packages/TimeSeriesClustering/3T6SG/src/utils/load_data.jl:132
+┌ Warning: `getindex(df::DataFrame, col_ind::ColumnIndex)` is deprecated, use `df[!, col_ind]` instead.
+│   caller = load_cep_data_nodes(::String, ::OptVariable{OptDataCEPTech,1,Tuple{Array{Any,1}},Tuple{Dict{Any,Int64}}}) at load_data.jl:118
+└ @ CapacityExpansion ~/.julia/packages/CapacityExpansion/dh4aY/src/utils/load_data.jl:118
+┌ Warning: `getindex(df::DataFrame, col_ind::ColumnIndex)` is deprecated, use `df[!, col_ind]` instead.
+│   caller = load_cep_data_costs(::String, ::OptVariable{OptDataCEPTech,1,Tuple{Array{Any,1}},Tuple{Dict{Any,Int64}}}, ::OptVariable{OptDataCEPNode,2,Tuple{Array{Any,1},Array{String,1}},Tuple{Dict{Any,Int64},Dict{String,Int64}}}) at load_data.jl:241
+└ @ CapacityExpansion ~/.julia/packages/CapacityExpansion/dh4aY/src/utils/load_data.jl:241
+[ Info: Solved Scenario : OPTIMAL min COST: 2.714e10 [USD] ⇨ 58.5 [USD per MWh] s.t. 
+┌ Warning: Limit is reached for techs ["demand-germany"]
+└ @ CapacityExpansion ~/.julia/packages/CapacityExpansion/dh4aY/src/utils/utils.jl:249
+[ Info: Solved Scenario co2: OPTIMAL min COST: 2.286e10 [EUR] ⇨ 45.19 [EUR per MWh] s.t. CO2-Emission ≤ 1000 [kg-CO2-eq. per MWh-electricity],
+┌ Warning: Limit is reached for techs ["demand-germany"]
+└ @ CapacityExpansion ~/.julia/packages/CapacityExpansion/dh4aY/src/utils/utils.jl:249
+[ Info: Solved Scenario slack: OPTIMAL min COST: 1.629e10 [EUR] ⇨ 32.2 [EUR per MWh] s.t. 
+┌ Warning: Limit is reached for techs ["demand-germany"]
+└ @ CapacityExpansion ~/.julia/packages/CapacityExpansion/dh4aY/src/utils/utils.jl:249
+[ Info: Solved Scenario ex: OPTIMAL min COST: 6.429e9 [EUR] ⇨ 12.71 [EUR per MWh] s.t. 
+┌ Warning: Limit is reached for techs ["demand-germany"]
+└ @ CapacityExpansion ~/.julia/packages/CapacityExpansion/dh4aY/src/utils/utils.jl:249
+[ Info: Solved Scenario simple storage: OPTIMAL min COST: 1.629e10 [EUR] ⇨ 32.2 [EUR per MWh] s.t. 
+┌ Warning: Limit is reached for techs ["demand-germany"]
+└ @ CapacityExpansion ~/.julia/packages/CapacityExpansion/dh4aY/src/utils/utils.jl:249
+[ Info: Solved Scenario seasonal storage: OPTIMAL min COST: 1.629e10 [EUR] ⇨ 32.2 [EUR per MWh] s.t. 
+┌ Warning: Limit is reached for techs ["demand-germany"]
+└ @ CapacityExpansion ~/.julia/packages/CapacityExpansion/dh4aY/src/utils/utils.jl:249
+[ Info: Solved Scenario des&op: OPTIMAL min COST: 1.629e10 [EUR] ⇨ 32.2 [EUR per MWh] s.t. 
+┌ Warning: Limit is reached for techs ["demand-germany"]
+└ @ CapacityExpansion ~/.julia/packages/CapacityExpansion/dh4aY/src/utils/utils.jl:249
+[ Info: Solved Scenario des&op: OPTIMAL min COST: 1.64e10 [EUR] ⇨ 32.41 [EUR per MWh] with LL: 606417.46 [MWh] s.t.  + 0.0 (violation) [kg-CO₂-eq. per MWh]
+┌ Warning: Limit is reached for techs ["demand-california"]
+└ @ CapacityExpansion ~/.julia/packages/CapacityExpansion/dh4aY/src/utils/utils.jl:249
+[ Info: Solved Scenario co2: OPTIMAL min COST: 1.213e10 [USD] ⇨ 52.48 [USD per MWh] s.t. CO2-Emission ≤ 1000 [kg-CO2-eq. per MWh-electricity],
+┌ Warning: Limit is reached for techs ["demand-california"]
+└ @ CapacityExpansion ~/.julia/packages/CapacityExpansion/dh4aY/src/utils/utils.jl:249
+[ Info: Solved Scenario slack: OPTIMAL min COST: 1.213e10 [USD] ⇨ 52.48 [USD per MWh] s.t. 
+┌ Warning: Limit is reached for techs ["demand-california"]
+└ @ CapacityExpansion ~/.julia/packages/CapacityExpansion/dh4aY/src/utils/utils.jl:249
+[ Info: Solved Scenario ex: OPTIMAL min COST: 7.812e9 [USD] ⇨ 33.8 [USD per MWh] s.t. 
+┌ Warning: Limit is reached for techs ["demand-california"]
+└ @ CapacityExpansion ~/.julia/packages/CapacityExpansion/dh4aY/src/utils/utils.jl:249
+[ Info: Solved Scenario simple storage: OPTIMAL min COST: 1.213e10 [USD] ⇨ 52.48 [USD per MWh] s.t. 
+┌ Warning: Limit is reached for techs ["demand-california"]
+└ @ CapacityExpansion ~/.julia/packages/CapacityExpansion/dh4aY/src/utils/utils.jl:249
+[ Info: Solved Scenario seasonal storage: OPTIMAL min COST: 1.213e10 [USD] ⇨ 52.48 [USD per MWh] s.t. 
+┌ Warning: Limit is reached for techs ["demand-california"]
+└ @ CapacityExpansion ~/.julia/packages/CapacityExpansion/dh4aY/src/utils/utils.jl:249
+[ Info: Solved Scenario des&op: OPTIMAL min COST: 1.213e10 [USD] ⇨ 52.48 [USD per MWh] s.t. 
+┌ Warning: Limit is reached for techs ["demand-california"]
+└ @ CapacityExpansion ~/.julia/packages/CapacityExpansion/dh4aY/src/utils/utils.jl:249
+[ Info: Solved Scenario des&op: OPTIMAL min COST: 1.218e10 [USD] ⇨ 52.69 [USD per MWh] with LL: 392095.0 [MWh] s.t.  + 0.0 (violation) [kg-CO₂-eq. per MWh]
+┌ Warning: `getindex(df::DataFrame, col_ind::ColumnIndex)` is deprecated, use `df[!, col_ind]` instead.
+│   caller = load_cep_data_lines(::String, ::OptVariable{OptDataCEPTech,1,Tuple{Array{Any,1}},Tuple{Dict{Any,Int64}}}) at load_data.jl:162
+└ @ CapacityExpansion ~/.julia/packages/CapacityExpansion/dh4aY/src/utils/load_data.jl:162
+┌ Warning: `getindex(df::DataFrame, col_ind::ColumnIndex)` is deprecated, use `df[!, col_ind]` instead.
+│   caller = load_cep_data_lines(::String, ::OptVariable{OptDataCEPTech,1,Tuple{Array{Any,1}},Tuple{Dict{Any,Int64}}}) at load_data.jl:162
+└ @ CapacityExpansion ~/.julia/packages/CapacityExpansion/dh4aY/src/utils/load_data.jl:162
+[ Info: Solved Scenario trans: OPTIMAL min COST: 1.624e10 [EUR] ⇨ 32.03 [EUR per MWh] s.t. 
+┌ Warning: Limit is reached for techs ["demand-CCT", "demand-CVA", "demand-ECA", "demand-ELU", "demand-FRE", "demand-LAX", "demand-NCT", "demand-NVA", "demand-PAC", "demand-SDG"]
+└ @ CapacityExpansion ~/.julia/packages/CapacityExpansion/dh4aY/src/utils/utils.jl:249
+[ Info: Solved Scenario trans: OPTIMAL min COST: 1.22e10 [USD] ⇨ 52.79 [USD per MWh] s.t. 
+┌ Warning: saved type OptResult is missing field config in workspace type; reconstructing
+└ @ JLD2 ~/.julia/packages/JLD2/4AJn8/src/data.jl:402
+Test Summary: | Pass  Total
+CEP           |   65     65
+    Testing CapacityExpansion tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:49:19.072
+CPU usage: 395.20s (371.65s user, 24.07s kernel)
+
+Network usage:
+- eth0: 92.342 MiB received, 555.578 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":163840,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":57344,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":163840,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":163840,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":57344,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":163840,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":766324736,"max_usage":2488557568,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":218746880,"inactive_file":135168,"inactive_anon":297369600,"total_pgfault":12199044,"total_cache":514146304,"total_rss_huge":0,"total_active_anon":435511296,"total_pgmajfault":0,"pgpgin":10186704,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":135168,"pgpgout":10007785,"hierarchical_memsw_limit":0,"cache":514146304,"active_file":135168,"pgfault":12199044,"total_mapped_file":0,"total_pgpgout":10007785,"total_writeback":135168,"rss":218746880,"unevictable":0,"total_inactive_anon":297369600,"total_pgpgin":10186704,"active_anon":435511296,"total_active_file":135168},"limit":540965302272},"name":"/CapacityExpansion-2Dq1nf7m","networks":{"eth0":{"rx_bytes":96827686,"rx_packets":8506,"tx_packets":6743,"tx_bytes":568912,"tx_dropped":0,"rx_dropped":13,"tx_errors":0,"rx_errors":0}},"id":"67b0dbf19615583c3790338daf83d35c8919b45b9e17ad271e93085952b66f2b","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6577324124522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":371650000000,"usage_in_kernelmode":24070000000,"total_usage":395200087645,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1133791,0,0,395197087474,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1861450,4930,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:49:19.94629163Z"}

@@ -1,0 +1,1350 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:11:52.383
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:11:54.185
+#
+
+ Installing known registries into `~/.julia`
+#############################                                             41.6%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MbedTLS_jll ──────── v2.16.8+1
+  Installed Reexport ─────────── v0.2.0
+  Installed TypeParsers ──────── v2.0.1
+  Installed MbedTLS ──────────── v1.0.3
+  Installed Compat ───────────── v3.25.0
+  Installed HTTP ─────────────── v0.8.19
+  Installed JLLWrappers ──────── v1.2.0
+  Installed Circo ────────────── v0.1.1
+  Installed Plugins ──────────── v0.4.2
+  Installed OrderedCollections ─ v1.3.2
+  Installed MsgPack ──────────── v1.1.0
+  Installed CircoCore ────────── v0.2.7
+  Installed DataStructures ───── v0.18.8
+  Installed IniFile ──────────── v0.5.0
+  Installed Artifacts ────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [36e45090] + Circo v0.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [36e45090] + Circo v0.1.1
+  [b491a1cf] + CircoCore v0.2.7
+  [34da2185] + Compat v3.25.0
+  [864edb3b] + DataStructures v0.18.8
+  [cd3eb016] + HTTP v0.8.19
+  [83e8ac13] + IniFile v0.5.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [99f44e22] + MsgPack v1.1.0
+  [bac558e1] + OrderedCollections v1.3.2
+  [231a7ae5] + Plugins v0.4.2
+  [189a3867] + Reexport v0.2.0
+  [6b5504e1] + TypeParsers v2.0.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T17:11:59.783
+#
+
+    Testing Circo
+Status `/tmp/jl_Ye1VjT/Project.toml`
+  [36e45090] Circo v0.1.1
+  [ba5e3d4b] Jive v0.2.13
+  [de0858da] Printf
+  [8dfed614] Test
+Status `/tmp/jl_Ye1VjT/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [36e45090] Circo v0.1.1
+  [b491a1cf] CircoCore v0.2.7
+  [34da2185] Compat v3.25.0
+  [864edb3b] DataStructures v0.18.8
+  [cd3eb016] HTTP v0.8.19
+  [83e8ac13] IniFile v0.5.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [ba5e3d4b] Jive v0.2.13
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [99f44e22] MsgPack v1.1.0
+  [bac558e1] OrderedCollections v1.3.2
+  [231a7ae5] Plugins v0.4.2
+  [189a3867] Reexport v0.2.0
+  [6b5504e1] TypeParsers v2.0.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [7b1f6079] FileWatching
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[4m1/8[24m debug.jl
+[ Info: Circo scheduler starting on thread 1
+stats = Circo.Debug.MsgStats(IdDict{Type,Int64}(Main.DebugTest.Start => 1,Main.DebugTest.Sample{Int64} => 1000,Main.DebugTest.Ack => 1000), 2001, 2000, Circo.Debug.MsgStatsHelper(Circo.Debug.MsgStats(#= circular reference @-2 =#), CircoCore.CoreState(172.17.0.47:24721/8f759d0015fb3e86, Float32[-985.0, 0.0, 0.0])))
+    [32m[1mPass [22m[39m[32m1[39m  (25.90 seconds)
+[4m2/8[24m host.jl
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2498
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2499
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2500
+[ Info: Sleeping to allow ping-pong to start.
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2497
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2501
+[ Info: Got new peer 172.17.0.47:24725/25ad27f3ac650ba7 . 2 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/bb07fe150b248ff8. (2 peers)
+[ Info: Measuring inter-thread ping-pong performance
+Inter-thread ping-pong performance: 990547.240085 rounds/sec
+[ Info: Sleeping to allow ping-pong to start.
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2502
+[ Info: Measuring in-thread ping-pong performance (10 secs)
+In-thread ping-pong performance: 2528009.830150 rounds/sec
+    [32m[1mPass [22m[39m[32m64[39m  (53.99 seconds)
+[4m3/8[24m monitor.jl
+    [32m[1mPass [22m[39m[32m2[39m  (0.03 seconds)
+[4m4/8[24m cluster/clustersym.jl
+[ Info: Circo scheduler starting on thread 1
+[ Info: Got new peer 172.17.0.47:24727/e68ab48b6a1d4a9 . 2 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (2 peers)
+[ Info: Got new peer 172.17.0.47:24727/25e36eeea834abb9 . 3 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (3 peers)
+[ Info: Got new peer 172.17.0.47:24727/23c56444f02bf1fe . 4 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/7d6c08305355b9c2 . 4 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/96202cc2b5f15c54 . 4 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (4 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (4 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (4 peers)
+[ Info: Got new peer 172.17.0.47:24727/5dc8c7f0fb69543d . 7 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/b3991a07fd909bb8 . 7 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/bcccea4c4ea67d6c . 8 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/c157d1f6b8ec788 . 8 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/5ddd225297a1f4e7 . 9 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/582019dfd9e56ef6 . 9 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/443dcc6d994ac76 . 10 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/259655a3b5b71d69 . 11 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/316382ceaeb91500 . 7 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/685e994557356f75 . 8 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/504e29947e9fc383 . 10 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/227e95ee754a065c . 9 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/291aefc4e51e871f . 10 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/93769f2853b20930 . 11 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/d193db90fe2e91eb . 12 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/d27e2aa41a7ae5a9 . 12 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/6287d4b8b314de7d . 13 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (7 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (7 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (8 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (8 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (9 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (9 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (10 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (11 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (7 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (8 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (10 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (9 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (10 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (11 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (12 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (12 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (13 peers)
+[ Info: Got new peer 172.17.0.47:24727/3f2e6777f1e12035 . 24 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/dc93f43042b422c4 . 25 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/1f7318c331cb0768 . 24 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/bc2fd5d04bd8d689 . 25 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/75750e0bd9adcc9e . 26 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (24 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (25 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (24 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (25 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (26 peers)
+[ Info: Got new peer 172.17.0.47:24727/8235fd05fabbb978 . 29 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/365e64de409735f0 . 29 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (29 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (29 peers)
+[ Info: Got new peer 172.17.0.47:24727/128d1d17eeaa37f9 . 31 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a5fbadb4276720e . 32 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/64ee6872715b072e . 31 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (31 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (32 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (31 peers)
+[ Info: Got new peer 172.17.0.47:24727/fe807f7a58f51abe . 34 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/ec66e93e6d26ebfc . 35 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a3b5d130108afb3c . 34 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/4b951c4d94ececd4 . 35 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/29093fc9b2f5ff15 . 36 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/2cab9c9598043b52 . 36 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/171e8718975be376 . 37 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/228344ec6be0352d . 34 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/bcd54b4de62a7c56 . 35 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/9ac3977945fb452d . 38 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/d10720a074118fd6 . 39 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (34 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (35 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (34 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (35 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (36 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (36 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (37 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (34 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (35 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (38 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (39 peers)
+[ Info: Got new peer 172.17.0.47:24727/c20cc3bd85592746 . 45 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/18d4a9cd14bd2875 . 45 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (45 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (45 peers)
+[ Info: Got new peer 172.17.0.47:24727/392d2b7d148a848a . 47 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/7955ab050389e92 . 47 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (47 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (47 peers)
+[ Info: Got new peer 172.17.0.47:24727/4b9c1d5240fa08e1 . 49 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (49 peers)
+[ Info: Got new peer 172.17.0.47:24727/714761b27e32fe36 . 50 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/e204b3693280dba1 . 50 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/ea00d1a4265886e0 . 51 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/bbe4abf0e68e95d1 . 52 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/88b84417b8f070f5 . 53 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/1c57e91a7863c8d2 . 51 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/3ab882942123258a . 50 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/6ab44208831d47ae . 51 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/841232851df21403 . 52 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/694b734f3f88bffb . 53 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/d1b4aa6f48c8e306 . 52 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (50 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (50 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (51 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (52 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (53 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (51 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (50 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (51 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (52 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (53 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (52 peers)
+[ Info: Got new peer 172.17.0.47:24727/1a627a488ba2d34d . 61 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/c68eae3495d1441f . 61 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/c8af4478094265d3 . 62 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/aae991050e650e36 . 62 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/37b216c494a23588 . 63 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (61 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (61 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (62 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (62 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (63 peers)
+[ Info: Got new peer 172.17.0.47:24727/a60d8c7b977ed47c . 66 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/98a4176d7f1e1a3b . 66 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/b90b87698148d1c5 . 67 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/6576a3a116067ebe . 66 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/f544d976976c864d . 68 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/2ad744b4851f4f22 . 67 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/4a92ccf5fe6b62a2 . 67 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/55e69f5b15cdc157 . 68 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/8a20266f7b5d22db . 68 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/434e6e3cd7f0e55e . 69 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/3a231b14d468485e . 70 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/528365b9a7384672 . 71 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (66 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (66 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (67 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (66 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (68 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (67 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (67 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (68 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (68 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (69 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (70 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (71 peers)
+[ Info: Got new peer 172.17.0.47:24727/99e1bd99cf9bf7db . 78 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (78 peers)
+[ Info: Got new peer 172.17.0.47:24727/aa1a4bba4b342236 . 79 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/435b84a93ed82d64 . 80 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/67cddc39d4d4b1a0 . 81 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (79 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (80 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (81 peers)
+[ Info: Got new peer 172.17.0.47:24727/2aebb1eb76b1a551 . 82 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/f25f92ac8f1ba452 . 83 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/ad41fc9a757f1f8c . 82 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/7684a579ec5da33f . 83 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/9ad3581ec6fb2a21 . 84 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (82 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (83 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (82 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (83 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (84 peers)
+[ Info: Got new peer 172.17.0.47:24727/c831558a71f0ef0b . 87 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/20e5477e12bf891e . 88 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/28597fac29f439ff . 87 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/96c4e90266a8481a . 89 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (87 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (88 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (87 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (89 peers)
+[ Info: Got new peer 172.17.0.47:24727/65568d1c799ed513 . 91 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/6a385075ef81aef8 . 91 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/16ffb985777f731 . 91 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/4c10189d4e01f241 . 92 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/2b97be7a10583538 . 92 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (91 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (91 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (91 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (92 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (92 peers)
+[ Info: Got new peer 172.17.0.47:24727/26120aa710f36cf1 . 96 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (96 peers)
+[ Info: Got new peer 172.17.0.47:24727/1a86fc86f7e9bb6b . 97 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/fac741e4723f244f . 97 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/de86f72c39faf35c . 97 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/2812102ab547cb8b . 98 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/43b82df7023494d9 . 99 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (97 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (97 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (97 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (98 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (99 peers)
+[ Info: Got new peer 172.17.0.47:24727/4d3470809c6594a7 . 102 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/d75050cf6291849f . 103 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/1223eeb4053b8346 . 104 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/7c826f016379203a . 102 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/6319aee483877284 . 105 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/439aa86a5f8ea318 . 102 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/6442ddd66380e8f2 . 106 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/9ae1f5e176609ba5 . 107 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (102 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (103 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (104 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (102 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (105 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (102 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (106 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (107 peers)
+[ Info: Got new peer 172.17.0.47:24727/6c3a5c7f95e23cde . 110 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/370c27b17e9ed43e . 111 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/e0794e0cac354d2f . 112 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/7a51a978dee960f0 . 110 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a249c912988a8d46 . 110 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/3fbac484b1eb4196 . 111 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (110 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (111 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (112 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (110 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (110 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (111 peers)
+[ Info: Got new peer 172.17.0.47:24727/a5c739dc3149772d . 116 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a0510de005fb6929 . 117 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/4ab4295186786ce4 . 118 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/85465cb5cdb26deb . 119 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/7a144fb3b1e0e070 . 116 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (116 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (117 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (118 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (119 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (116 peers)
+[ Info: Got new peer 172.17.0.47:24727/446bba7c33b58a8c . 121 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/c12871705ddb2078 . 122 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (121 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (122 peers)
+[ Info: Got new peer 172.17.0.47:24727/8c85e1d65dee9039 . 123 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/d808df50e7a96149 . 124 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/779e56b4fce09cc7 . 123 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/c41fa0b317b26db9 . 124 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/7f54e4098e01c91e . 125 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/e5f329530e06b682 . 125 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/bb8e4ac402ba95c1 . 126 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/d12dc43a2f8178b0 . 127 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/d989d72594cd7a25 . 128 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/8513d1fdcc79e727 . 123 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/76dd4a9e46ccb630 . 124 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/3298e2595bc52a25 . 126 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/ac860230fa2203fa . 127 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a508b9ef1a5878c8 . 128 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/e345946ec63b40e3 . 129 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a77294426ccbf726 . 129 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/65dd26d1f1eeea23 . 130 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/e86416372f2445c2 . 131 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (123 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (124 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (123 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (124 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (125 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (125 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (126 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (127 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (128 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (123 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (124 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (126 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (127 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (128 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (129 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (129 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (130 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (131 peers)
+[ Info: Got new peer 172.17.0.47:24727/643f648326bdc7f5 . 141 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/6083a43cbe027e78 . 141 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/1001e50c3c2d03c . 142 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (141 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (141 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (142 peers)
+[ Info: Got new peer 172.17.0.47:24727/89652714d2e76a88 . 144 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/963ac2308305912b . 144 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/9231576cdf244a6 . 145 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/62f586c6c3da0759 . 146 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/d2035b809f64e979 . 145 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/9b06c227b20f48fa . 144 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (144 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (144 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (145 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (146 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (145 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (144 peers)
+[ Info: Got new peer 172.17.0.47:24727/9843ead04068b8e1 . 150 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/e5b8723a68a65628 . 151 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (150 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (151 peers)
+[ Info: Got new peer 172.17.0.47:24727/e42761ad845d70f0 . 152 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/1f8f16332682a194 . 153 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/80ef769c2933e9fd . 152 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/cc2eea9126da12d . 152 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (152 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (153 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (152 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (152 peers)
+[ Info: Got new peer 172.17.0.47:24727/f414ae3c531349e5 . 156 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/dbd108bfe4a9d323 . 156 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/86e4890b0d649a70 . 156 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/af667a8e3411c596 . 157 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (156 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (156 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (156 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (157 peers)
+[ Info: Got new peer 172.17.0.47:24727/acf84f1d746ee67d . 160 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/1e2fc68fd1796d66 . 160 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/eb291535ce1aa033 . 161 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/b024c957b31cc3c . 160 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/f491794834c4ff77 . 161 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/b82aced6e7d87488 . 162 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a9c9f12e3f89e081 . 162 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/81b8670edb9b92bf . 161 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/b7c1ef4066ec6dc6 . 163 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/c054320a73395f31 . 163 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/19e9071f37fa201f . 162 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/c3ef9dce7bcf833a . 163 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/e0c0cfd890136076 . 164 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/6151bbf64038f7d8 . 164 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/2eeca546ca8f7b04 . 164 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/93b66e023e69c854 . 165 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/dac8825beeabe8a . 165 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/47228cfaae7f5307 . 166 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/5de2ead467757fe1 . 166 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/1f45ecc4be4ec4e0 . 167 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a18e77dbcc04cd72 . 167 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/70c2db61597b3d1f . 168 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/13a0dcc4c8488d11 . 168 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/ac1edd4e28f80970 . 169 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (160 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (160 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (161 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (160 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (161 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (162 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (162 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (161 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (163 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (163 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (162 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (163 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (164 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (164 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (164 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (165 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (165 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (166 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (166 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (167 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (167 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (168 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (168 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (169 peers)
+[ Info: Got new peer 172.17.0.47:24727/5032395b434e48b1 . 184 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/29c3ce1a1d3b1a52 . 184 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/dc62ba88fa1a8a4f . 185 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/6d27b08e1df02e3 . 184 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (184 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (184 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (185 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (184 peers)
+[ Info: Got new peer 172.17.0.47:24727/5cb8300316c689b1 . 188 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/da963295f52a033f . 189 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/ce435ea263ec1cf5 . 190 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/461d5137f52f5b1a . 188 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/d1059714fac33aa7 . 191 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/965be9ef7a472a10 . 188 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (188 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (189 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (190 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (188 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (191 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (188 peers)
+[ Info: Got new peer 172.17.0.47:24727/266a6538426775df . 194 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/f03b6c072471afb1 . 194 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/ce50863f526265a6 . 194 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/9e0ce511d39115d5 . 195 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/3dd769002df31827 . 195 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/c08094baae9a6897 . 196 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/b79012fc55fd4aa4 . 197 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a5292ad298eff095 . 196 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/fc13dbf97ec25215 . 197 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/4ac6c305e2c5ae47 . 195 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/7d2e9af9c674e521 . 196 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (194 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (194 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (194 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (195 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (195 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (196 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (197 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (196 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (197 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (195 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (196 peers)
+[ Info: Got new peer 172.17.0.47:24727/b7a57928fe32827b . 205 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/8113b08bdb63d2f0 . 205 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/3e7ba0a623881241 . 206 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/74ff8ddd4721d181 . 205 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/64f212eaa7e1c688 . 206 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/51d699bf10423bea . 207 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/8974ba66c850fd4b . 206 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/213330bd9614914e . 208 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/7318edf76df3262b . 209 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/f225b3659aa2a79f . 207 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/256698d4ad7511b1 . 207 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/aa6e43d447a6956a . 210 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/3fef3a61f67e9326 . 211 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/1ea0f12412279cce . 208 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/8eed48286acfd7bb . 208 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/7dc64d4fa8fd6b3e . 212 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/449cd84ed1f3a2ba . 209 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/8a27a6d5ba89c5b6 . 210 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/7674045aa78a0af0 . 213 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (205 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (205 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (206 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (205 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (206 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (207 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (206 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (208 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (209 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (207 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (207 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (210 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (211 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (208 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (208 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (212 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (209 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (210 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (213 peers)
+[ Info: Got new peer 172.17.0.47:24727/d1dc8856f85ded9d . 224 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (224 peers)
+[ Info: Got new peer 172.17.0.47:24727/78e32fe52987f75b . 225 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/845fec6763718b44 . 225 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a024a67496f6937e . 226 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/fc6b30d617097457 . 225 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (225 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (225 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (226 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (225 peers)
+[ Info: Got new peer 172.17.0.47:24727/a0b28078e3736fe4 . 229 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/80ec45a7c02f88fc . 229 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/ea2d655a7c091512 . 230 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (229 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (229 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (230 peers)
+[ Info: Got new peer 172.17.0.47:24727/7a21d3c266c117a5 . 232 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a10da77dbf093bfe . 232 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/6ab56f6dea8fef6b . 233 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/737c877e91877df9 . 234 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/52b02bd2f3548e1b . 232 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (232 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (232 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (233 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (234 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (232 peers)
+[ Info: Got new peer 172.17.0.47:24727/7f2e048f69176a9a . 237 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (237 peers)
+[ Info: Got new peer 172.17.0.47:24727/b9db53f137b0d516 . 238 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/8170c9b81e16df6b . 239 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/fa7f629781e30b8d . 238 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/cbdd6097a059717a . 238 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/dcf748ec6fc4bd06 . 239 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/dcf044c30f3e28d8 . 240 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (238 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (239 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (238 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (238 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (239 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (240 peers)
+[ Info: Got new peer 172.17.0.47:24727/7c4cba678139db71 . 244 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/75323a0eab466942 . 245 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (244 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (245 peers)
+[ Info: Got new peer 172.17.0.47:24727/5ad7950e0b41181b . 246 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (246 peers)
+[ Info: Got new peer 172.17.0.47:24727/ac9017f48c96a08 . 247 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/c00c3e02edbeca40 . 247 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/70d5c81707992868 . 247 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (247 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (247 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (247 peers)
+[ Info: Got new peer 172.17.0.47:24727/243421f569a89319 . 250 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/9d33bdf3fdbde8bd . 250 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (250 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (250 peers)
+[ Info: Got new peer 172.17.0.47:24727/11490053f5685144 . 252 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/8308e62708f6be19 . 252 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/1107edc74484a3a0 . 252 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/f5b165dcb1c1e7e2 . 253 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/e644edc37aea3b8c . 254 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/587c1ac128094843 . 255 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/c42ca66ba87b4f8e . 256 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/8c5f017f0623e434 . 253 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (252 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (252 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (252 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (253 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (254 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (255 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (256 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (253 peers)
+[ Info: Got new peer 172.17.0.47:24727/cc1261221acffc94 . 260 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (260 peers)
+[ Info: Got new peer 172.17.0.47:24727/929dbe8f3713b00d . 261 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (261 peers)
+[ Info: Got new peer 172.17.0.47:24727/fc16047dc785dc3e . 262 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/8a1333a58534338a . 262 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/1dc13239db4a38b8 . 263 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/7cbad7d55df0844d . 263 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/8dcf70d7da24d101 . 264 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/64ddcfc803fe911c . 265 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/20ff17657c8fc13a . 264 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/7ea74cb20c671aac . 265 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (262 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (262 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (263 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (263 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (264 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (265 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (264 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (265 peers)
+[ Info: Got new peer 172.17.0.47:24727/b0adf67cf036dac0 . 270 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/f48a28ec45841a0b . 271 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/800b23f1bf65b7c5 . 270 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (270 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (271 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (270 peers)
+[ Info: Got new peer 172.17.0.47:24727/61de02579d3900f4 . 273 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/9290f85dc9bcdd67 . 274 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/5c099cf5e0bb08d4 . 273 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/e8ca6a92123212b . 274 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/8444a25c61178b32 . 275 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/80f3668e2eacf302 . 276 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/f169466f0427c6eb . 277 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/cedb0ed86b1f5f87 . 275 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/108d1baf51b50faf . 278 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/4402aedda78975aa . 273 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/85fdebf91b62fe9b . 276 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/bc8fd472558a680b . 277 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (273 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (274 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (273 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (274 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (275 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (276 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (277 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (275 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (278 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (273 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (276 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (277 peers)
+[ Info: Got new peer 172.17.0.47:24727/caf293e2423d7633 . 285 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/dbf4cb6f18072870 . 285 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (285 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (285 peers)
+[ Info: Got new peer 172.17.0.47:24727/985d14a9e1974a26 . 287 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (287 peers)
+[ Info: Got new peer 172.17.0.47:24727/83d7d6b6c22d3502 . 288 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/27737626791b8ae1 . 288 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (288 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (288 peers)
+[ Info: Got new peer 172.17.0.47:24727/2953cd9b34464a7 . 290 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/5cbe26b9751d296e . 290 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/6aaaabb337351aa7 . 291 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/13adf608d49ab6f . 290 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (290 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (290 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (291 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (290 peers)
+[ Info: Got new peer 172.17.0.47:24727/7b3c7d967d98cad6 . 294 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/b3830012d2e45f . 294 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/c985c5e16508d73b . 294 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/ad31881fd14288ff . 295 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/f186ca2d8cd12e00 . 296 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/e7b002a4b1f8cb78 . 297 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (294 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (294 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (294 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (295 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (296 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (297 peers)
+[ Info: Got new peer 172.17.0.47:24727/82344cdb5c674128 . 300 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/306ab9f0ae7b53fc . 300 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/579b8c77a6f628f9 . 300 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a5c48954ec6b61d1 . 301 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/852ab400bed86571 . 301 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/d5016b8ef074b36f . 302 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (300 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (300 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (300 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (301 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (301 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (302 peers)
+[ Info: Got new peer 172.17.0.47:24727/b60d87eeae9a7756 . 306 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/91dea97722f60954 . 307 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/e007a9c02d65a7d5 . 306 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (306 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (307 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (306 peers)
+[ Info: Got new peer 172.17.0.47:24727/386ce1549fc95115 . 309 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/fa6e203b04199ab2 . 310 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/15679108974c2f86 . 309 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (309 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (310 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (309 peers)
+[ Info: Got new peer 172.17.0.47:24727/66d0140742ca0e75 . 312 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/732222edb025e0e0 . 312 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/e15e987825fbe8b5 . 313 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/5a6a6ce635cdecd3 . 312 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/1aa56a1127cf55ca . 313 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (312 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (312 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (313 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (312 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (313 peers)
+[ Info: Got new peer 172.17.0.47:24727/abc7a9192f65bd99 . 317 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/f0f2296b77cecceb . 317 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/2320d3bc2e05b4b4 . 318 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/79780c48be889bea . 319 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/8d30b9d8a99a065 . 318 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a975ffbaefe9ddb5 . 320 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/4a1f07a72c1a1651 . 319 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/9e3327903cf8598a . 321 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/520987a6980c1aee . 320 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/d0611357cb0957a2 . 321 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (317 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (317 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (318 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (319 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (318 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (320 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (319 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (321 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (320 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (321 peers)
+[ Info: Got new peer 172.17.0.47:24727/47267c3f42446f1a . 327 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/fab571f40c9beb53 . 327 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/95baef8e0e602669 . 327 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (327 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (327 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (327 peers)
+[ Info: Got new peer 172.17.0.47:24727/6941fa6fa2e33520 . 330 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/3e39394cea2e2a26 . 330 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/f104c22fd79a2ad2 . 331 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/7057d046ea30131a . 331 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/4d585c56c9a3938e . 332 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/5af26d0a0419e06a . 330 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/e8de13ee16acb7ef . 331 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/26c0cb5995c68907 . 332 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a00e4305a830b1d3 . 332 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/557bbdb966d56027 . 333 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/f9873cedfb0458a1 . 334 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/fbb112978a858785 . 333 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (330 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (330 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (331 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (331 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (332 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (330 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (331 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (332 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (332 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (333 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (334 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (333 peers)
+[ Info: Got new peer 172.17.0.47:24727/3ed66c0a0af981bd . 342 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/7d926521ae98b85a . 342 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/e23498e6f063bf14 . 343 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/cc5e60a36a91e879 . 343 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/ee882219304421e7 . 344 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/8a01a03de6691af6 . 342 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (342 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (342 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (343 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (343 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (344 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (342 peers)
+[ Info: Got new peer 172.17.0.47:24727/3110d9621827b47c . 348 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (348 peers)
+[ Info: Got new peer 172.17.0.47:24727/8066cabb9d802b00 . 349 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/54956889e519a8db . 349 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/6bef50569634c0b5 . 350 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (349 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (349 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (350 peers)
+[ Info: Got new peer 172.17.0.47:24727/501dbad82a91cfa . 352 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/3699537343a62a3 . 352 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (352 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (352 peers)
+[ Info: Got new peer 172.17.0.47:24727/6d20688ac9195198 . 354 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/45d3b8566b4e61bd . 354 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (354 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (354 peers)
+[ Info: Got new peer 172.17.0.47:24727/2bd16c1782f107ae . 356 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/9ef2a0866c5684a9 . 356 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/e5511e1c4095684e . 357 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/9cd4f96334b6408c . 357 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/4ba0de78a4977c94 . 358 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/8d165fda9ffc7ed2 . 358 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/3f3ac0181aac44dd . 356 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/9aa5764bc1474146 . 357 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/f2ebe74347acbc63 . 359 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/5d2d657c983575dc . 359 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/d461541529b2ea2c . 360 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/6ca2d0a66ad1f5a6 . 361 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/8152c0190e97d087 . 360 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/77713a881a895d48 . 361 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/bb735e2b86302d65 . 362 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/b69a813158f63166 . 363 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (356 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (356 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (357 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (357 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (358 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (358 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (356 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (357 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (359 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (359 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (360 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (361 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (360 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (361 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (362 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (363 peers)
+[ Info: Got new peer 172.17.0.47:24727/d0e2ee117a83e3c . 372 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/e2dcff29ea575786 . 372 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/869597aa29cdaa36 . 373 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/381efcc1a8019528 . 373 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/2a1403718f1b269e . 374 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/665b41e2a969c8ec . 375 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/c317655d41d433c1 . 376 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (372 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (372 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (373 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (373 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (374 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (375 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (376 peers)
+[ Info: Got new peer 172.17.0.47:24727/1c9682f4e810d56f . 379 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/6b0d973c7eef31d2 . 379 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/9df14798283418b2 . 380 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/e4f87efd5cafd3c0 . 381 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (379 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (379 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (380 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (381 peers)
+[ Info: Got new peer 172.17.0.47:24727/df29360c216598e8 . 383 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a4ac27113ba6eb38 . 384 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (383 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (384 peers)
+[ Info: Got new peer 172.17.0.47:24727/9034082d86a61404 . 385 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (385 peers)
+[ Info: Got new peer 172.17.0.47:24727/861fa00bad75d0a8 . 386 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (386 peers)
+[ Info: Got new peer 172.17.0.47:24727/54753d19c4826e0e . 387 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/c4b1f672c7e05ba5 . 388 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/18d73c3e5c3768d1 . 387 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/1f523a8c85d41657 . 387 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (387 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (388 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (387 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (387 peers)
+[ Info: Got new peer 172.17.0.47:24727/564b65a02354cbcc . 391 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/2d3c9274f3bbb3b . 391 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/f0b1daa6bfe22e66 . 392 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/5c67dfd063bf5b60 . 391 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/71bb5f9457076748 . 392 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/328dc09192285e9b . 393 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/974199332f39d0c0 . 394 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/2b614f9d0f318b50 . 392 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/60ddfd2d4c0b0f3f . 395 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/9b3221dde024b958 . 396 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/65b87132cb2753ae . 397 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (391 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (391 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (392 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (391 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (392 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (393 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (394 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (392 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (395 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (396 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (397 peers)
+[ Info: Got new peer 172.17.0.47:24727/26bae0a063aa8d8a . 402 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/fd9ed5fe56c27866 . 403 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/f9593edbe3b5714c . 402 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/bbe8170f6d89d79d . 404 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a3f83c53de929e97 . 402 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/fcbdf739ae546b27 . 405 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (402 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (403 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (402 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (404 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (402 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (405 peers)
+[ Info: Got new peer 172.17.0.47:24727/e17b28058858f56e . 408 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/306b5feddb0bb25f . 408 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/d8e2fdcdbf5afb38 . 409 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/c9444f67d96fd935 . 408 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/4c046715adaf9455 . 409 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/f0248b6f32a04dcc . 410 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/4d172ba90f717871 . 411 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/186c37b5309f4152 . 410 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (408 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (408 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (409 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (408 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (409 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (410 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (411 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (410 peers)
+[ Info: Got new peer 172.17.0.47:24727/f1f0f4338aef17c8 . 416 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (416 peers)
+[ Info: Got new peer 172.17.0.47:24727/d36eca8083104870 . 417 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/94e426e12a37b6b2 . 417 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (417 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (417 peers)
+[ Info: Got new peer 172.17.0.47:24727/72bd3b8cb8cd94ed . 419 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/27cd7e2a876efbba . 419 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (419 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (419 peers)
+[ Info: Got new peer 172.17.0.47:24727/88dd34a10bb4d443 . 421 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/48dfd3950318cd93 . 422 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/56c42a7a3c901523 . 421 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/9d33eee00021091f . 422 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (421 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (422 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (421 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (422 peers)
+[ Info: Got new peer 172.17.0.47:24727/4f71b77037d2ebdb . 425 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/cfc9440fca4fa83f . 425 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/f38b3ac770651748 . 426 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/536e47ab07608cdd . 426 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/530e3adc6e1a77e0 . 427 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/ed4f6438dc6d8acf . 425 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/3dc28349b432ae17 . 428 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a8464c6b853e89b2 . 427 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (425 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (425 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (426 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (426 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (427 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (425 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (428 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (427 peers)
+[ Info: Got new peer 172.17.0.47:24727/154080348bd1b1fe . 433 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a58524b6e8da5b9a . 434 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/2c9eecd6ca77929e . 433 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (433 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (434 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (433 peers)
+[ Info: Got new peer 172.17.0.47:24727/9a6f819941926c71 . 436 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (436 peers)
+[ Info: Got new peer 172.17.0.47:24727/33a2172a4b455997 . 437 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (437 peers)
+[ Info: Got new peer 172.17.0.47:24727/ee78681e82494506 . 438 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a4bb100ce3a231a5 . 439 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/216099018b9fa8a9 . 438 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (438 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (439 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (438 peers)
+[ Info: Got new peer 172.17.0.47:24727/2b9efffededaf3d0 . 441 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/881f1e7da195dca2 . 441 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (441 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (441 peers)
+[ Info: Got new peer 172.17.0.47:24727/f855c3a65c341610 . 443 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (443 peers)
+[ Info: Got new peer 172.17.0.47:24727/97f89f595d7821f0 . 444 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/b3b3c492ef835e7e . 444 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/3633b850e8a4b2e2 . 445 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/b466726bc2ce23b1 . 444 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/be617edeafcc75d1 . 445 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/8a203be482959432 . 446 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/195973715a7faed1 . 445 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/d9e788a17b84305e . 446 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/ae3b88c4ee585ec . 446 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (444 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (444 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (445 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (444 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (445 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (446 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (445 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (446 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (446 peers)
+[ Info: Got new peer 172.17.0.47:24727/fc20d09bd395e946 . 453 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (453 peers)
+[ Info: Got new peer 172.17.0.47:24727/8a2ca67b74e96182 . 454 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/8d4dc6e5af56ed3d . 455 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/1b86eca1370bda1e . 454 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/d511e9b305c57f75 . 455 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/f88cc47dc94d2f60 . 456 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/6fe64aca9fd394a6 . 456 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/8a737a6885f5478b . 454 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/ee8160ec3c05b563 . 455 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/3a658fd815a23d5c . 456 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/fab3abda3c17a7d5 . 457 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/18156a92f1f8b141 . 458 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (454 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (455 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (454 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (455 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (456 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (456 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (454 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (455 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (456 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (457 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (458 peers)
+[ Info: Got new peer 172.17.0.47:24727/4ac6a04fd08580f9 . 465 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a2ce5c12b8ae6f2f . 465 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/6a9d4a80441d8ddb . 465 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (465 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (465 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (465 peers)
+[ Info: Got new peer 172.17.0.47:24727/f035b0df6801e90e . 468 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/cf1c78ff6f59696f . 469 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/4b66a1a8b60ae0b1 . 468 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (468 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (469 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (468 peers)
+[ Info: Got new peer 172.17.0.47:24727/b18e6a76c37a45b7 . 471 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (471 peers)
+[ Info: Got new peer 172.17.0.47:24727/f9ccaffec7f2504c . 472 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (472 peers)
+[ Info: Got new peer 172.17.0.47:24727/2f50d969600a757a . 473 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/d661c60acc4b5664 . 473 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/6b237c321cfa234 . 473 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/e4dc724594d6623d . 474 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/d87f1da25c403c36 . 474 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (473 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (473 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (473 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (474 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (474 peers)
+[ Info: Got new peer 172.17.0.47:24727/7690492112df3c68 . 478 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/1197b2db73486cd3 . 478 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/cc77eacf0cde662f . 479 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a1f9e3375b584567 . 479 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/a77aaa7b1736da34 . 480 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/c823295d5ef852b3 . 480 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/b96ef47f75c55d57 . 481 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/86b98f2e1c43307a . 478 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (478 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (478 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (479 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (479 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (480 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (480 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (481 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (478 peers)
+[ Info: Got new peer 172.17.0.47:24727/619deaa57609427e . 486 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (486 peers)
+[ Info: Got new peer 172.17.0.47:24727/35bb58a97a605409 . 487 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/6cd8a419f3e5beb2 . 487 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/e1d3ac461dd21504 . 488 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/f5ddf682de377ea1 . 488 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/720616182936b289 . 489 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/41556166b202dd10 . 489 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/d740522d880b7a3e . 490 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/80cd27f719017bb9 . 491 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/62e3c1bb3dc92407 . 487 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/2ebe04cca50643b0 . 488 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/b90f22bf16806a32 . 489 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/fe26e5ce63aafd2f . 490 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/996c703e7785c918 . 492 nodes in cluster.
+[ Info: Got new peer 172.17.0.47:24727/7d0f1d4f6d63b215 . 491 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (487 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (487 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (488 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (488 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (489 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (489 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (490 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (491 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (487 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (488 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/e68ab48b6a1d4a9. (489 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (490 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/25e36eeea834abb9. (492 peers)
+[ Info: Joined to cluster using root node 172.17.0.47:24727/f1c470c9d5141b4f. (491 peers)
+Avg peer count: 500.0; Peer update max: 4980 avg: 2624.454; Upstream friends avg: 4.096
+    [32m[1mPass [22m[39m[32m1501[39m  (5.81 seconds)
+[4m5/8[24m cluster/hostcluster.jl
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2497
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2498
+[ Info: Got new peer 172.17.0.47:24722/452aa78da238fc4c . 2 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (2 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2499
+[ Info: Got new peer 172.17.0.47:24723/e2060ff85b9172da . 3 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (3 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2500
+[ Info: Got new peer 172.17.0.47:24724/d82806c0d44f58ac . 4 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (4 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2501
+[ Info: Got new peer 172.17.0.47:24725/ac273a3dddef20fb . 5 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (5 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2502
+[ Info: Got new peer 172.17.0.47:24726/193fd9975bb0a576 . 6 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (6 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2504
+[ Info: Got new peer 172.17.0.47:24728/74b09bd846391e1 . 7 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (7 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2505
+[ Info: Got new peer 172.17.0.47:24729/6d6bd34a4f3488e1 . 8 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (8 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2506
+[ Info: Got new peer 172.17.0.47:24730/556f3eef2d9ecd57 . 9 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (9 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2507
+[ Info: Got new peer 172.17.0.47:24731/4c54b3fe8bd37493 . 10 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (10 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2508
+[ Info: Got new peer 172.17.0.47:24732/78ba054d94b6e57b . 11 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (11 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2509
+[ Info: Got new peer 172.17.0.47:24733/65c939edb594f5fa . 12 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (12 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2510
+[ Info: Got new peer 172.17.0.47:24734/df59ad57c06845ca . 13 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (13 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2511
+[ Info: Got new peer 172.17.0.47:24735/2cffbc2b4a984b2e . 14 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (14 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2512
+[ Info: Got new peer 172.17.0.47:24736/47159015ca253e62 . 15 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (15 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2513
+[ Info: Got new peer 172.17.0.47:24737/e6196049d06ba0e9 . 16 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (16 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2514
+[ Info: Got new peer 172.17.0.47:24738/2dcd191d2b8c33e8 . 17 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (17 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2515
+[ Info: Got new peer 172.17.0.47:24739/8f945fbe2eea883c . 18 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (18 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2516
+[ Info: Got new peer 172.17.0.47:24740/78e031848caaa4c1 . 19 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (19 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2517
+[ Info: Got new peer 172.17.0.47:24741/3fbc3066074af126 . 20 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (20 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2518
+[ Info: Got new peer 172.17.0.47:24742/8a79a0296898c819 . 21 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (21 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2519
+[ Info: Got new peer 172.17.0.47:24743/e7c9938ed5e9877d . 22 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (22 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2520
+[ Info: Got new peer 172.17.0.47:24744/fe1044ef74d4ddf8 . 23 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (23 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2521
+[ Info: Got new peer 172.17.0.47:24745/92bb422f85dc5843 . 24 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (24 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2522
+[ Info: Got new peer 172.17.0.47:24746/835bf0c3c61fea96 . 25 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (25 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2523
+[ Info: Got new peer 172.17.0.47:24747/ff47c6037e191837 . 26 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (26 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2524
+[ Info: Got new peer 172.17.0.47:24748/7e31e4c6e8232867 . 27 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (27 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2525
+[ Info: Got new peer 172.17.0.47:24749/e5c3e6db0296f94e . 28 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (28 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2526
+[ Info: Got new peer 172.17.0.47:24750/1e9273de86a87c70 . 29 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (29 peers)
+[ Info: Circo scheduler starting on thread 1
+[ Info: Web Socket listening on 0.0.0.0:2527
+[ Info: Got new peer 172.17.0.47:24751/7ca8864a9ef7ee66 . 30 nodes in cluster.
+[ Info: Joined to cluster using root node 172.17.0.47:24721/46d1acd157f3ca04. (30 peers)
+    [32m[1mPass [22m[39m[32m30[39m  (40.18 seconds)
+[4m6/8[24m migrate/migrate-base.jl
+[4m7/8[24m migrate/migrate-source.jl
+[4m8/8[24m migrate/migrate.jl
+try cd("test") catch e end;include("migrate/migrate-source.jl");migratetoremote("172.17.0.47:24752", "172.17.0.47:24752/f1c470c9d5141b4f")
+Migration: Error During Test at /home/pkgeval/.julia/packages/Circo/eT4I1/test/migrate/migrate.jl:33
+  Got exception outside of a @test
+  IOError: could not spawn `julia --project -e 'try cd("test") catch e end;include("migrate/migrate-source.jl");migratetoremote("172.17.0.47:24752", "172.17.0.47:24752/f1c470c9d5141b4f")'`: no such file or directory (ENOENT)
+  Stacktrace:
+   [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:99
+   [2] #585 at ./process.jl:112 [inlined]
+   [3] setup_stdios(::Base.var"#585#586"{Cmd}, ::Array{Any,1}) at ./process.jl:196
+   [4] _spawn at ./process.jl:111 [inlined]
+   [5] _spawn(::Base.CmdRedirect, ::Array{Any,1}) at ./process.jl:139 (repeats 2 times)
+   [6] run(::Base.CmdRedirect; wait::Bool) at ./process.jl:443
+   [7] startsource(::String, ::Addr) at /home/pkgeval/.julia/packages/Circo/eT4I1/test/migrate/migrate.jl:30
+   [8] top-level scope at /home/pkgeval/.julia/packages/Circo/eT4I1/test/migrate/migrate.jl:37
+   [9] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [10] top-level scope at /home/pkgeval/.julia/packages/Circo/eT4I1/test/migrate/migrate.jl:34
+   [11] include(::String) at ./client.jl:457
+   [12] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [13] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [14] top-level scope at /home/pkgeval/.julia/packages/Circo/eT4I1/test/runtests.jl:3
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at none:6
+   [17] eval(::Module, ::Any) at ./boot.jl:331
+   [18] exec_options(::Base.JLOptions) at ./client.jl:272
+   [19] _start() at ./client.jl:506
+  
+    [91m[1mError [22m[39m[91m1[39m
+[31m❗️  [39mTest run finished with 1 error.  (127.67 seconds)
+ERROR: LoadError: Test run finished with errors.
+in expression starting at /home/pkgeval/.julia/packages/Circo/eT4I1/test/runtests.jl:3
+
+PkgEval failed: Package Circo errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:14:13.403
+CPU usage: 103.71s (95.32s user, 8.53s kernel)
+
+Network usage:
+- eth0: 5.155 MiB received, 111.235 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":135168,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":28672,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":135168,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":135168,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":28672,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":135168,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":322158592,"max_usage":1172819968,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":201740288,"inactive_file":135168,"inactive_anon":82857984,"total_pgfault":3217764,"total_cache":89800704,"total_rss_huge":0,"total_active_anon":208564224,"total_pgmajfault":0,"pgpgin":2499024,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":2427818,"hierarchical_memsw_limit":0,"cache":89800704,"active_file":135168,"pgfault":3217764,"total_mapped_file":0,"total_pgpgout":2427818,"total_writeback":0,"rss":201740288,"unevictable":0,"total_inactive_anon":82857984,"total_pgpgin":2499024,"active_anon":208564224,"total_active_file":135168},"limit":540965302272},"name":"/Circo-obaNOOe9","networks":{"eth0":{"rx_bytes":5404975,"rx_packets":1001,"tx_packets":1034,"tx_bytes":113905,"tx_dropped":0,"rx_dropped":5,"tx_errors":0,"rx_errors":0}},"id":"659655b8fe3a6d5dcaf732d69fef1743735a5e7547a690794b09ee1de4c915b7","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4008157374522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":95320000000,"usage_in_kernelmode":8530000000,"total_usage":103711392098,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,103711388628,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3470,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:14:13.406072858Z"}

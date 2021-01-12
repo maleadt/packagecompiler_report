@@ -1,0 +1,1003 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:21:16.095
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:21:17.888
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed NExOS ──────────────────────── v0.1.1
+  Installed MbedTLS_jll ────────────────── v2.16.8+1
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed JSONSchema ─────────────────── v0.3.3
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed MathProgBase ───────────────── v0.7.8
+  Installed JuMP ───────────────────────── v0.21.5
+  Installed TranscodingStreams ─────────── v0.9.5
+  Installed Calculus ───────────────────── v0.5.1
+  Installed OSQP ───────────────────────── v0.6.0
+  Installed MbedTLS ────────────────────── v1.0.3
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed DiffResults ────────────────── v1.0.3
+  Installed DataStructures ─────────────── v0.18.8
+  Installed Bzip2_jll ──────────────────── v1.0.6+5
+  Installed ProximalOperators ──────────── v0.11.0
+  Installed BenchmarkTools ─────────────── v0.5.0
+  Installed HTTP ───────────────────────── v0.9.2
+  Installed MosekTools ─────────────────── v0.9.4
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed CodecZlib ──────────────────── v0.7.0
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed MathOptInterface ───────────── v0.9.19
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed JSON ───────────────────────── v0.21.1
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed ZipFile ────────────────────── v0.9.3
+  Installed MutableArithmetics ─────────── v0.2.13
+  Installed Adapt ──────────────────────── v2.4.0
+  Installed URIs ───────────────────────── v1.1.0
+  Installed Mosek ──────────────────────── v1.1.3
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed IterativeSolvers ───────────── v0.8.5
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed CodecBzip2 ─────────────────── v0.7.2
+  Installed TSVD ───────────────────────── v0.4.2
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed Compat ─────────────────────── v3.25.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed BinaryProvider ─────────────── v0.5.10
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed Parsers ────────────────────── v1.0.15
+  Installed IniFile ────────────────────── v0.5.0
+  Installed WinReg ─────────────────────── v0.3.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a0d681ee] + NExOS v0.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [79e6a3ab] + Adapt v2.4.0
+  [56f22d72] + Artifacts v1.3.0
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [b99e7846] + BinaryProvider v0.5.10
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [49dc2e85] + Calculus v0.5.1
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [523fee87] + CodecBzip2 v0.7.2
+  [944b1d66] + CodecZlib v0.7.0
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [864edb3b] + DataStructures v0.18.8
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [cd3eb016] + HTTP v0.9.2
+  [83e8ac13] + IniFile v0.5.0
+  [42fd0dbc] + IterativeSolvers v0.8.5
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [7d188eb4] + JSONSchema v0.3.3
+  [4076af6c] + JuMP v0.21.5
+  [1914dd2f] + MacroTools v0.5.6
+  [b8f27783] + MathOptInterface v0.9.19
+  [fdba3010] + MathProgBase v0.7.8
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [6405355b] + Mosek v1.1.3
+  [1ec41992] + MosekTools v0.9.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [d8a4904e] + MutableArithmetics v0.2.13
+  [a0d681ee] + NExOS v0.1.1
+  [77ba4419] + NaNMath v0.3.5
+  [ab2f91bb] + OSQP v0.6.0
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [69de0a69] + Parsers v1.0.15
+  [a725b495] + ProximalOperators v0.11.0
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [9449cd9e] + TSVD v0.4.2
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [5c2747f8] + URIs v1.1.0
+  [1b915085] + WinReg v0.3.1
+  [a5390f91] + ZipFile v0.9.3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building OSQP ─→ `~/.julia/packages/OSQP/BU4WO/deps/build.log`
+   Building Mosek → `~/.julia/packages/Mosek/6LuE3/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T17:21:45.428
+#
+
+    Testing NExOS
+Status `/tmp/jl_D9ooMR/Project.toml`
+  [4076af6c] JuMP v0.21.5
+  [1ec41992] MosekTools v0.9.4
+  [a0d681ee] NExOS v0.1.1
+  [ab2f91bb] OSQP v0.6.0
+  [a725b495] ProximalOperators v0.11.0
+  [9449cd9e] TSVD v0.4.2
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_D9ooMR/Manifest.toml`
+  [79e6a3ab] Adapt v2.4.0
+  [56f22d72] Artifacts v1.3.0
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [b99e7846] BinaryProvider v0.5.10
+  [6e34b625] Bzip2_jll v1.0.6+5
+  [49dc2e85] Calculus v0.5.1
+  [d360d2e6] ChainRulesCore v0.9.24
+  [523fee87] CodecBzip2 v0.7.2
+  [944b1d66] CodecZlib v0.7.0
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [864edb3b] DataStructures v0.18.8
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [f6369f11] ForwardDiff v0.10.14
+  [cd3eb016] HTTP v0.9.2
+  [83e8ac13] IniFile v0.5.0
+  [42fd0dbc] IterativeSolvers v0.8.5
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [7d188eb4] JSONSchema v0.3.3
+  [4076af6c] JuMP v0.21.5
+  [1914dd2f] MacroTools v0.5.6
+  [b8f27783] MathOptInterface v0.9.19
+  [fdba3010] MathProgBase v0.7.8
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [6405355b] Mosek v1.1.3
+  [1ec41992] MosekTools v0.9.4
+  [46d2c3a1] MuladdMacro v0.2.2
+  [d8a4904e] MutableArithmetics v0.2.13
+  [a0d681ee] NExOS v0.1.1
+  [77ba4419] NaNMath v0.3.5
+  [ab2f91bb] OSQP v0.6.0
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [69de0a69] Parsers v1.0.15
+  [a725b495] ProximalOperators v0.11.0
+  [3cdcf5f2] RecipesBase v1.1.1
+  [276daf66] SpecialFunctions v1.2.1
+  [90137ffa] StaticArrays v1.0.1
+  [9449cd9e] TSVD v0.4.2
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [5c2747f8] URIs v1.1.0
+  [1b915085] WinReg v0.3.1
+  [a5390f91] ZipFile v0.9.3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: μ = 2.0 | iteration = 250 | log fixed point gap = -2.7273421168003456 | log feasibility gap = -0.47898899203302786
+[ Info: μ = 2.0 | iteration = 500 | log fixed point gap = -2.941552874467771 | log feasibility gap = -0.58348713055461
+[ Info: μ = 2.0 | iteration = 750 | log fixed point gap = -3.1512096817413062 | log feasibility gap = -0.9117399044513612
+[ Info: μ = 2.0 | iteration = 1000 | log fixed point gap = -3.435056131016852 | log feasibility gap = -1.0389684049931451
+[ Info: information about the best state found for μ = 2.0
+[ Info: μ = 2.0 | log fixed point gap = -3.435056131016852 | log feasibility gap = -1.0389684049931451 | inner iterations = 1001
+[ Info: μ = 1.7 | iteration = 250 | log fixed point gap = -3.750124888690653 | log feasibility gap = -0.8162668599538144
+[ Info: μ = 1.7 | iteration = 500 | log fixed point gap = -4.021196504404089 | log feasibility gap = -0.7313324704163046
+[ Info: μ = 1.7 | iteration = 750 | log fixed point gap = -4.2936820456082625 | log feasibility gap = -0.6919204178993265
+[ Info: μ = 1.7 | iteration = 1000 | log fixed point gap = -4.566733472655449 | log feasibility gap = -0.672267622419607
+[ Info: information about the best state found for μ = 1.7
+[ Info: μ = 1.7 | log fixed point gap = -4.566733472655449 | log feasibility gap = -0.672267622419607 | inner iterations = 1001
+[ Info: μ = 1.4449999999999998 | iteration = 250 | log fixed point gap = -3.9810906379620037 | log feasibility gap = -0.7012689428304344
+[ Info: μ = 1.4449999999999998 | iteration = 500 | log fixed point gap = -4.228666861228169 | log feasibility gap = -0.7150707549843404
+[ Info: μ = 1.4449999999999998 | iteration = 750 | log fixed point gap = -4.468128787651285 | log feasibility gap = -0.7211028655622551
+[ Info: μ = 1.4449999999999998 | iteration = 1000 | log fixed point gap = -4.6989197310168525 | log feasibility gap = -0.7244786526062944
+[ Info: information about the best state found for μ = 1.4449999999999998
+[ Info: μ = 1.4449999999999998 | log fixed point gap = -5.1672799577383195 | log feasibility gap = -0.6722680653233107 | inner iterations = 1001
+[ Info: μ = 1.2282499999999998 | iteration = 250 | log fixed point gap = -4.95611546200226 | log feasibility gap = -0.681275425242665
+[ Info: μ = 1.2282499999999998 | iteration = 500 | log fixed point gap = -5.262436015647092 | log feasibility gap = -0.685385186165075
+[ Info: μ = 1.2282499999999998 | iteration = 750 | log fixed point gap = -5.5413421979525 | log feasibility gap = -0.6874986964165137
+[ Info: μ = 1.2282499999999998 | iteration = 1000 | log fixed point gap = -5.808354247398529 | log feasibility gap = -0.6886308216332495
+[ Info: information about the best state found for μ = 1.2282499999999998
+[ Info: μ = 1.2282499999999998 | log fixed point gap = -5.808354247398529 | log feasibility gap = -0.6886308216332495 | inner iterations = 1001
+[ Info: μ = 1.0440124999999998 | iteration = 250 | log fixed point gap = -4.840431848034473 | log feasibility gap = -0.7000840817708927
+[ Info: μ = 1.0440124999999998 | iteration = 500 | log fixed point gap = -5.119005598961207 | log feasibility gap = -0.7058798220290547
+[ Info: μ = 1.0440124999999998 | iteration = 750 | log fixed point gap = -5.382010284330919 | log feasibility gap = -0.7090228391682356
+[ Info: μ = 1.0440124999999998 | iteration = 1000 | log fixed point gap = -5.638523682371371 | log feasibility gap = -0.710761322682046
+[ Info: information about the best state found for μ = 1.0440124999999998
+[ Info: μ = 1.0440124999999998 | log fixed point gap = -5.638523682371371 | log feasibility gap = -0.710761322682046 | inner iterations = 1001
+[ Info: μ = 0.8874106249999998 | iteration = 250 | log fixed point gap = -4.811694266719788 | log feasibility gap = -0.7235675820886415
+[ Info: μ = 0.8874106249999998 | iteration = 500 | log fixed point gap = -5.086747908823871 | log feasibility gap = -0.7301348888658611
+[ Info: μ = 0.8874106249999998 | iteration = 750 | log fixed point gap = -5.346345922796219 | log feasibility gap = -0.7337296115449414
+[ Info: μ = 0.8874106249999998 | iteration = 1000 | log fixed point gap = -5.5992606793830815 | log feasibility gap = -0.7357356439075191
+[ Info: information about the best state found for μ = 0.8874106249999998
+[ Info: μ = 0.8874106249999998 | log fixed point gap = -5.5992606793830815 | log feasibility gap = -0.7357356439075191 | inner iterations = 1001
+[ Info: μ = 0.7542990312499998 | iteration = 250 | log fixed point gap = -4.795725091464572 | log feasibility gap = -0.749783535032171
+[ Info: μ = 0.7542990312499998 | iteration = 500 | log fixed point gap = -5.069476026865211 | log feasibility gap = -0.7570370285195125
+[ Info: μ = 0.7542990312499998 | iteration = 750 | log fixed point gap = -5.327576434614121 | log feasibility gap = -0.7610248232919647
+[ Info: μ = 0.7542990312499998 | iteration = 1000 | log fixed point gap = -5.578667926288747 | log feasibility gap = -0.7632602692360418
+[ Info: information about the best state found for μ = 0.7542990312499998
+[ Info: μ = 0.7542990312499998 | log fixed point gap = -5.578667926288747 | log feasibility gap = -0.7632602692360418 | inner iterations = 1001
+[ Info: μ = 0.6411541765624997 | iteration = 250 | log fixed point gap = -4.785277538921298 | log feasibility gap = -0.7786020276428902
+[ Info: μ = 0.6411541765624997 | iteration = 500 | log fixed point gap = -5.059415544493422 | log feasibility gap = -0.786545704570723
+[ Info: μ = 0.6411541765624997 | iteration = 750 | log fixed point gap = -5.317661835304591 | log feasibility gap = -0.7909152863936101
+[ Info: μ = 0.6411541765624997 | iteration = 1000 | log fixed point gap = -5.568553168234344 | log feasibility gap = -0.7933665099133089
+[ Info: information about the best state found for μ = 0.6411541765624997
+[ Info: μ = 0.6411541765624997 | log fixed point gap = -5.568553168234344 | log feasibility gap = -0.7933665099133089 | inner iterations = 1001
+[ Info: μ = 0.5449810500781248 | iteration = 250 | log fixed point gap = -4.779776428808825 | log feasibility gap = -0.8100687337865938
+[ Info: μ = 0.5449810500781248 | iteration = 500 | log fixed point gap = -5.055944645943506 | log feasibility gap = -0.8187075786051101
+[ Info: μ = 0.5449810500781248 | iteration = 750 | log fixed point gap = -5.315945854647731 | log feasibility gap = -0.8234442100371786
+[ Info: μ = 0.5449810500781248 | iteration = 1000 | log fixed point gap = -5.568223466728431 | log feasibility gap = -0.8260933699938111
+[ Info: information about the best state found for μ = 0.5449810500781248
+[ Info: μ = 0.5449810500781248 | log fixed point gap = -5.568223466728431 | log feasibility gap = -0.8260933699938111 | inner iterations = 1001
+[ Info: μ = 0.46323389256640607 | iteration = 250 | log fixed point gap = -4.779218795908283 | log feasibility gap = -0.8442214442054902
+[ Info: μ = 0.46323389256640607 | iteration = 500 | log fixed point gap = -5.059061637078782 | log feasibility gap = -0.8535515577621776
+[ Info: μ = 0.46323389256640607 | iteration = 750 | log fixed point gap = -5.322418891569428 | log feasibility gap = -0.8586314259817776
+[ Info: μ = 0.46323389256640607 | iteration = 1000 | log fixed point gap = -5.577647205648343 | log feasibility gap = -0.8614535516952053
+[ Info: information about the best state found for μ = 0.46323389256640607
+[ Info: μ = 0.46323389256640607 | log fixed point gap = -5.577647205648343 | log feasibility gap = -0.8614535516952053 | inner iterations = 1001
+[ Info: μ = 0.39374880868144513 | iteration = 250 | log fixed point gap = -4.783614668614561 | log feasibility gap = -0.8810699857918468
+[ Info: μ = 0.39374880868144513 | iteration = 500 | log fixed point gap = -5.068789305048183 | log feasibility gap = -0.8910770563268167
+[ Info: μ = 0.39374880868144513 | iteration = 750 | log fixed point gap = -5.3371035128520035 | log feasibility gap = -0.8964667294561589
+[ Info: μ = 0.39374880868144513 | iteration = 1000 | log fixed point gap = -5.5968286784467995 | log feasibility gap = -0.89942992937027
+[ Info: information about the best state found for μ = 0.39374880868144513
+[ Info: μ = 0.39374880868144513 | log fixed point gap = -5.5968286784467995 | log feasibility gap = -0.89942992937027 | inner iterations = 1001
+[ Info: μ = 0.33468648737922835 | iteration = 250 | log fixed point gap = -4.792933747004895 | log feasibility gap = -0.9205944623141699
+[ Info: μ = 0.33468648737922835 | iteration = 500 | log fixed point gap = -5.085118343570056 | log feasibility gap = -0.9312534386296247
+[ Info: μ = 0.33468648737922835 | iteration = 750 | log fixed point gap = -5.359995007574016 | log feasibility gap = -0.9369102905702175
+[ Info: μ = 0.33468648737922835 | iteration = 1000 | log fixed point gap = -5.625745361012877 | log feasibility gap = -0.9399767290600831
+[ Info: information about the best state found for μ = 0.33468648737922835
+[ Info: μ = 0.33468648737922835 | log fixed point gap = -5.625745361012877 | log feasibility gap = -0.9399767290600831 | inner iterations = 1001
+[ Info: μ = 0.2844835142723441 | iteration = 250 | log fixed point gap = -4.807104463809109 | log feasibility gap = -0.9627468694173563
+[ Info: μ = 0.2844835142723441 | iteration = 500 | log fixed point gap = -5.108006896206378 | log feasibility gap = -0.9740220382314133
+[ Info: μ = 0.2844835142723441 | iteration = 750 | log fixed point gap = -5.391060130498449 | log feasibility gap = -0.9798951613349257
+[ Info: μ = 0.2844835142723441 | iteration = 1000 | log fixed point gap = -5.6643439595799485 | log feasibility gap = -0.9830224814100078
+[ Info: information about the best state found for μ = 0.2844835142723441
+[ Info: μ = 0.2844835142723441 | log fixed point gap = -5.6643439595799485 | log feasibility gap = -0.9830224814100078 | inner iterations = 1001
+[ Info: μ = 0.24181098713149246 | iteration = 250 | log fixed point gap = -4.826021645871288 | log feasibility gap = -1.0074542323889992
+[ Info: μ = 0.24181098713149246 | iteration = 500 | log fixed point gap = -5.137389482473928 | log feasibility gap = -1.0192995344405846
+[ Info: μ = 0.24181098713149246 | iteration = 750 | log fixed point gap = -5.430245918331654 | log feasibility gap = -1.0253310094696317
+[ Info: μ = 0.24181098713149246 | iteration = 1000 | log fixed point gap = -5.712546316622187 | log feasibility gap = -1.0284740580529312
+[ Info: information about the best state found for μ = 0.24181098713149246
+[ Info: μ = 0.24181098713149246 | log fixed point gap = -5.712546316622187 | log feasibility gap = -1.0284740580529312 | inner iterations = 1001
+[ Info: μ = 0.20553933906176858 | iteration = 250 | log fixed point gap = -4.84955760843666 | log feasibility gap = -1.0546226577479278
+[ Info: μ = 0.20553933906176858 | iteration = 500 | log fixed point gap = -5.1731897331283605 | log feasibility gap = -1.0669821265601933
+[ Info: μ = 0.20553933906176858 | iteration = 750 | log fixed point gap = -5.477492808398128 | log feasibility gap = -1.0731085393969897
+[ Info: μ = 0.20553933906176858 | iteration = 1000 | log fixed point gap = -5.770259179006781 | log feasibility gap = -1.0762212500868706
+[ Info: information about the best state found for μ = 0.20553933906176858
+[ Info: μ = 0.20553933906176858 | log fixed point gap = -5.770259179006781 | log feasibility gap = -1.0762212500868706 | inner iterations = 1001
+[ Info: μ = 0.17470843820250329 | iteration = 250 | log fixed point gap = -4.877574921694196 | log feasibility gap = -1.1041417582007
+[ Info: μ = 0.17470843820250329 | iteration = 500 | log fixed point gap = -5.2153349844886785 | log feasibility gap = -1.116949979428417
+[ Info: μ = 0.17470843820250329 | iteration = 750 | log fixed point gap = -5.53274991075862 | log feasibility gap = -1.123104082874873
+[ Info: μ = 0.17470843820250329 | iteration = 1000 | log fixed point gap = -5.8373853677792225 | log feasibility gap = -1.1261413736269275
+[ Info: information about the best state found for μ = 0.17470843820250329
+[ Info: μ = 0.17470843820250329 | log fixed point gap = -5.8373853677792225 | log feasibility gap = -1.1261413736269275 | inner iterations = 1001
+[ Info: μ = 0.1485021724721278 | iteration = 250 | log fixed point gap = -4.909939544958345 | log feasibility gap = -1.1558889356056161
+[ Info: μ = 0.1485021724721278 | iteration = 500 | log fixed point gap = -5.263771123381936 | log feasibility gap = -1.1690714552646961
+[ Info: μ = 0.1485021724721278 | iteration = 750 | log fixed point gap = -5.595990362961597 | log feasibility gap = -1.175183901033758
+[ Info: μ = 0.1485021724721278 | iteration = 1000 | log fixed point gap = -5.913833634463199 | log feasibility gap = -1.178103466851226
+[ Info: information about the best state found for μ = 0.1485021724721278
+[ Info: μ = 0.1485021724721278 | log fixed point gap = -5.913833634463199 | log feasibility gap = -1.178103466851226 | inner iterations = 1001
+[ Info: μ = 0.12622684660130862 | iteration = 250 | log fixed point gap = -4.946532620153071 | log feasibility gap = -1.2097331487673348
+[ Info: μ = 0.12622684660130862 | iteration = 500 | log fixed point gap = -5.31847580788206 | log feasibility gap = -1.2232068253638135
+[ Info: μ = 0.12622684660130862 | iteration = 750 | log fixed point gap = -5.667224412648992 | log feasibility gap = -1.2292079352137835
+[ Info: μ = 0.12622684660130862 | iteration = 1000 | log fixed point gap = -5.999524007908761 | log feasibility gap = -1.231971851651428
+[ Info: information about the best state found for μ = 0.12622684660130862
+[ Info: μ = 0.12622684660130862 | log fixed point gap = -5.999524007908761 | log feasibility gap = -1.231971851651428 | inner iterations = 1001
+[ Info: μ = 0.10729281961111233 | iteration = 250 | log fixed point gap = -4.987260287739634 | log feasibility gap = -1.2655379680423944
+[ Info: μ = 0.10729281961111233 | iteration = 500 | log fixed point gap = -5.379469103924777 | log feasibility gap = -1.2792113204386288
+[ Info: μ = 0.10729281961111233 | iteration = 750 | log fixed point gap = -5.746508457855891 | log feasibility gap = -1.2850328985911548
+[ Info: μ = 0.10729281961111233 | iteration = 1000 | log fixed point gap = -6.094385481849766 | log feasibility gap = -1.2876089833086661
+[ Info: information about the best state found for μ = 0.10729281961111233
+[ Info: μ = 0.10729281961111233 | log fixed point gap = -6.094385481849766 | log feasibility gap = -1.2876089833086661 | inner iterations = 1001
+[ Info: μ = 0.09119889666944547 | iteration = 250 | log fixed point gap = -5.032060855644313 | log feasibility gap = -1.3231639104938524
+[ Info: μ = 0.09119889666944547 | iteration = 500 | log fixed point gap = -5.446820794098391 | log feasibility gap = -1.336937575704803
+[ Info: μ = 0.09119889666944547 | iteration = 750 | log fixed point gap = -5.833948593109115 | log feasibility gap = -1.3425147826621746
+[ Info: μ = 0.09119889666944547 | iteration = 1000 | log fixed point gap = -6.198343028794701 | log feasibility gap = -1.344877681590787
+[ Info: information about the best state found for μ = 0.09119889666944547
+[ Info: μ = 0.09119889666944547 | log fixed point gap = -6.198343028794701 | log feasibility gap = -1.344877681590787 | inner iterations = 1001
+[ Info: μ = 0.07751906216902865 | iteration = 250 | log fixed point gap = -5.080909459941185 | log feasibility gap = -1.3824701912718846
+[ Info: μ = 0.07751906216902865 | iteration = 500 | log fixed point gap = -5.520654462280367 | log feasibility gap = -1.3962376392764473
+[ Info: μ = 0.07751906216902865 | iteration = 750 | log fixed point gap = -5.929697958123127 | log feasibility gap = -1.401510934054212
+[ Info: μ = 0.07751906216902865 | iteration = 1000 | log fixed point gap = -6.294600671690651 | log feasibility gap = -1.403642900855517
+[ Info: information about the best state found for μ = 0.07751906216902865
+[ Info: μ = 0.07751906216902865 | log fixed point gap = -6.294600671690651 | log feasibility gap = -1.403642900855517 | inner iterations = 1001
+[ Info: μ = 0.06589120284367435 | iteration = 250 | log fixed point gap = -5.133820628761041 | log feasibility gap = -1.4433160856753895
+[ Info: μ = 0.06589120284367435 | iteration = 500 | log fixed point gap = -5.6011488467836505 | log feasibility gap = -1.4569647448815886
+[ Info: μ = 0.06589120284367435 | iteration = 750 | log fixed point gap = -6.033947540994974 | log feasibility gap = -1.4618818639359654
+[ Info: μ = 0.06589120284367435 | iteration = 1000 | log fixed point gap = -6.3434279118063746 | log feasibility gap = -1.4637731935039824
+[ Info: information about the best state found for μ = 0.06589120284367435
+[ Info: μ = 0.06589120284367435 | log fixed point gap = -6.3434279118063746 | log feasibility gap = -1.4637731935039824 | inner iterations = 1001
+[ Info: μ = 0.056007522417123194 | iteration = 250 | log fixed point gap = -5.190849308906355 | log feasibility gap = -1.5055620842085604
+[ Info: μ = 0.056007522417123194 | iteration = 500 | log fixed point gap = -5.688537135783451 | log feasibility gap = -1.5189750092486938
+[ Info: μ = 0.056007522417123194 | iteration = 750 | log fixed point gap = -6.124137505825759 | log feasibility gap = -1.5234928960935579
+[ Info: μ = 0.056007522417123194 | iteration = 1000 | log fixed point gap = -6.39221746751055 | log feasibility gap = -1.5251419663250818
+[ Info: information about the best state found for μ = 0.056007522417123194
+[ Info: μ = 0.056007522417123194 | log fixed point gap = -6.39221746751055 | log feasibility gap = -1.5251419663250818 | inner iterations = 1001
+[ Info: μ = 0.04760639405455471 | iteration = 250 | log fixed point gap = -5.252090868261683 | log feasibility gap = -1.5690709655020707
+[ Info: μ = 0.04760639405455471 | iteration = 500 | log fixed point gap = -5.783104788008899 | log feasibility gap = -1.582129132718654
+[ Info: μ = 0.04760639405455471 | iteration = 750 | log fixed point gap = -6.179615322182267 | log feasibility gap = -1.58621567815278
+[ Info: μ = 0.04760639405455471 | iteration = 1000 | log fixed point gap = -6.440682727237915 | log feasibility gap = -1.5876285608675729
+[ Info: information about the best state found for μ = 0.04760639405455471
+[ Info: μ = 0.04760639405455471 | log fixed point gap = -6.440682727237915 | log feasibility gap = -1.5876285608675729 | inner iterations = 1001
+[ Info: μ = 0.040465434946371504 | iteration = 250 | log fixed point gap = -5.317680450270546 | log feasibility gap = -1.6337088445780803
+[ Info: μ = 0.040465434946371504 | iteration = 500 | log fixed point gap = -5.88518620154634 | log feasibility gap = -1.646294094706203
+[ Info: μ = 0.040465434946371504 | iteration = 750 | log fixed point gap = -6.236281999480239 | log feasibility gap = -1.6499295094681168
+[ Info: μ = 0.040465434946371504 | iteration = 1000 | log fixed point gap = -6.4886733956741685 | log feasibility gap = -1.65111913792014
+[ Info: information about the best state found for μ = 0.040465434946371504
+[ Info: μ = 0.040465434946371504 | log fixed point gap = -6.4886733956741685 | log feasibility gap = -1.65111913792014 | inner iterations = 1001
+[ Info: μ = 0.03439561970441578 | iteration = 250 | log fixed point gap = -5.3877919257952875 | log feasibility gap = -1.6993462026662798
+[ Info: μ = 0.03439561970441578 | iteration = 500 | log fixed point gap = -5.99516023020801 | log feasibility gap = -1.7113447695825859
+[ Info: μ = 0.03439561970441578 | iteration = 750 | log fixed point gap = -6.293867287460524 | log feasibility gap = -1.7145224015480183
+[ Info: μ = 0.03439561970441578 | iteration = 1000 | log fixed point gap = -6.5361631445694215 | log feasibility gap = -1.7155073274346957
+[ Info: information about the best state found for μ = 0.03439561970441578
+[ Info: μ = 0.03439561970441578 | log fixed point gap = -6.5361631445694215 | log feasibility gap = -1.7155073274346957 | inner iterations = 1001
+[ Info: μ = 0.029236276748753412 | iteration = 250 | log fixed point gap = -5.462636619344196 | log feasibility gap = -1.7658588796242185
+[ Info: μ = 0.029236276748753412 | iteration = 500 | log fixed point gap = -6.11344422232145 | log feasibility gap = -1.7771653544850394
+[ Info: μ = 0.029236276748753412 | iteration = 750 | log fixed point gap = -6.35214629372623 | log feasibility gap = -1.7798917883265406
+[ Info: μ = 0.029236276748753412 | iteration = 1000 | log fixed point gap = -6.583227442455785 | log feasibility gap = -1.7806946170212055
+[ Info: information about the best state found for μ = 0.029236276748753412
+[ Info: μ = 0.029236276748753412 | log fixed point gap = -6.583227442455785 | log feasibility gap = -1.7806946170212055 | inner iterations = 1001
+[ Info: μ = 0.0248508352364404 | iteration = 250 | log fixed point gap = -5.542461986316207 | log feasibility gap = -1.8331290067039703
+[ Info: μ = 0.0248508352364404 | iteration = 500 | log fixed point gap = -6.208142932407107 | log feasibility gap = -1.843650497276707
+[ Info: μ = 0.0248508352364404 | iteration = 750 | log fixed point gap = -6.410939801000626 | log feasibility gap = -1.845944836464159
+[ Info: μ = 0.0248508352364404 | iteration = 1000 | log fixed point gap = -6.630015145562156 | log feasibility gap = -1.8465904817747707
+[ Info: information about the best state found for μ = 0.0248508352364404
+[ Info: μ = 0.0248508352364404 | log fixed point gap = -6.630015145562156 | log feasibility gap = -1.8465904817747707 | inner iterations = 1001
+[ Info: μ = 0.021123209950974338 | iteration = 250 | log fixed point gap = -5.627550452692916 | log feasibility gap = -1.9010458644867143
+[ Info: μ = 0.021123209950974338 | iteration = 500 | log fixed point gap = -6.276074803972341 | log feasibility gap = -1.9107060329488592
+[ Info: μ = 0.021123209950974338 | iteration = 750 | log fixed point gap = -6.4701127078650345 | log feasibility gap = -1.912598355555467
+[ Info: μ = 0.021123209950974338 | iteration = 1000 | log fixed point gap = -6.676718224207976 | log feasibility gap = -1.9131122899899868
+[ Info: information about the best state found for μ = 0.021123209950974338
+[ Info: μ = 0.021123209950974338 | log fixed point gap = -6.676718224207976 | log feasibility gap = -1.9131122899899868 | inner iterations = 1001
+[ Info: μ = 0.017954728458328188 | iteration = 250 | log fixed point gap = -5.718218653413109 | log feasibility gap = -1.9695066571898021
+[ Info: μ = 0.017954728458328188 | iteration = 500 | log fixed point gap = -6.344879279535315 | log feasibility gap = -1.978249271731737
+[ Info: μ = 0.017954728458328188 | iteration = 750 | log fixed point gap = -6.529570498878207 | log feasibility gap = -1.9797783590101898
+[ Info: μ = 0.017954728458328188 | iteration = 1000 | log fixed point gap = -6.723543709913269 | log feasibility gap = -1.980185040989458
+[ Info: information about the best state found for μ = 0.017954728458328188
+[ Info: μ = 0.017954728458328188 | log fixed point gap = -6.723543709913269 | log feasibility gap = -1.980185040989458 | inner iterations = 1001
+[ Info: μ = 0.01526151918957896 | iteration = 250 | log fixed point gap = -5.814817285763706 | log feasibility gap = -2.0384171942253757
+[ Info: μ = 0.01526151918957896 | iteration = 500 | log fixed point gap = -6.41433242562551 | log feasibility gap = -2.046208825029993
+[ Info: μ = 0.01526151918957896 | iteration = 750 | log fixed point gap = -6.589253863944384 | log feasibility gap = -2.047419365754164
+[ Info: μ = 0.01526151918957896 | iteration = 1000 | log fixed point gap = -6.770690813446553 | log feasibility gap = -2.0477409972211507
+[ Info: information about the best state found for μ = 0.01526151918957896
+[ Info: μ = 0.01526151918957896 | log fixed point gap = -6.770690813446553 | log feasibility gap = -2.0477409972211507 | inner iterations = 1001
+[ Info: μ = 0.012972291311142116 | iteration = 250 | log fixed point gap = -5.9177317183732265 | log feasibility gap = -2.1076924628121403
+[ Info: μ = 0.012972291311142116 | iteration = 500 | log fixed point gap = -6.484228754481711 | log feasibility gap = -2.1145240002766084
+[ Info: μ = 0.012972291311142116 | iteration = 750 | log fixed point gap = -6.649131869442614 | log feasibility gap = -2.1154635529421966
+[ Info: μ = 0.012972291311142116 | iteration = 1000 | log fixed point gap = -6.818334697985765 | log feasibility gap = -2.115719264103823
+[ Info: information about the best state found for μ = 0.012972291311142116
+[ Info: μ = 0.012972291311142116 | log fixed point gap = -6.818334697985765 | log feasibility gap = -2.115719264103823 | inner iterations = 1001
+[ Info: μ = 0.011026447614470799 | iteration = 250 | log fixed point gap = -6.0273833782293575 | log feasibility gap = -2.177257065595513
+[ Info: μ = 0.011026447614470799 | iteration = 500 | log fixed point gap = -6.554385158073399 | log feasibility gap = -2.1831438374434584
+[ Info: μ = 0.011026447614470799 | iteration = 750 | log fixed point gap = -6.709194316507287 | log feasibility gap = -2.1838598682982364
+[ Info: μ = 0.011026447614470799 | iteration = 1000 | log fixed point gap = -6.866616995218991 | log feasibility gap = -2.1840653536452113
+[ Info: information about the best state found for μ = 0.011026447614470799
+[ Info: μ = 0.011026447614470799 | log fixed point gap = -6.866616995218991 | log feasibility gap = -2.1840653536452113 | inner iterations = 1001
+[ Info: μ = 0.009372480472300179 | iteration = 250 | log fixed point gap = -6.144231805834408 | log feasibility gap = -2.247045489645089
+[ Info: μ = 0.009372480472300179 | iteration = 500 | log fixed point gap = -6.624643983648877 | log feasibility gap = -2.2520258926646877
+[ Info: μ = 0.009372480472300179 | iteration = 750 | log fixed point gap = -6.769444064450413 | log feasibility gap = -2.2525631904575762
+[ Info: μ = 0.009372480472300179 | iteration = 1000 | log fixed point gap = -6.915642165596105 | log feasibility gap = -2.2527307490297344
+[ Info: information about the best state found for μ = 0.009372480472300179
+[ Info: μ = 0.009372480472300179 | log fixed point gap = -6.915642165596105 | log feasibility gap = -2.2527307490297344 | inner iterations = 1001
+[ Info: μ = 0.007966608401455152 | iteration = 250 | log fixed point gap = -6.268777152548885 | log feasibility gap = -2.3170021715278395
+[ Info: μ = 0.007966608401455152 | iteration = 500 | log fixed point gap = -6.694874693832902 | log feasibility gap = -2.321134893160752
+[ Info: μ = 0.007966608401455152 | iteration = 750 | log fixed point gap = -6.829890069294785 | log feasibility gap = -2.3215335937400843
+[ Info: μ = 0.007966608401455152 | iteration = 1000 | log fixed point gap = -6.965478255484135 | log feasibility gap = -2.3216724732048335
+[ Info: information about the best state found for μ = 0.007966608401455152
+[ Info: μ = 0.007966608401455152 | log fixed point gap = -6.965478255484135 | log feasibility gap = -2.3216724732048335 | inner iterations = 1001
+[ Info: μ = 0.006771617141236879 | iteration = 250 | log fixed point gap = -6.401562811041201 | log feasibility gap = -2.387081328706655
+[ Info: μ = 0.006771617141236879 | iteration = 500 | log fixed point gap = -6.764973799197374 | log feasibility gap = -2.39044138922125
+[ Info: μ = 0.006771617141236879 | iteration = 750 | log fixed point gap = -6.890541701814715 | log feasibility gap = -2.390735739010802
+[ Info: μ = 0.006771617141236879 | iteration = 1000 | log fixed point gap = -7.016160499261591 | log feasibility gap = -2.390852657832247
+[ Info: information about the best state found for μ = 0.006771617141236879
+[ Info: μ = 0.006771617141236879 | log fixed point gap = -7.016160499261591 | log feasibility gap = -2.390852657832247 | inner iterations = 1001
+[ Info: μ = 0.005755874570051347 | iteration = 250 | log fixed point gap = -6.54317781467383 | log feasibility gap = -2.4572465396104626
+[ Info: μ = 0.005755874570051347 | iteration = 500 | log fixed point gap = -6.834863082443006 | log feasibility gap = -2.459920513283538
+[ Info: μ = 0.005755874570051347 | iteration = 750 | log fixed point gap = -6.951404675648187 | log feasibility gap = -2.4601383829525107
+[ Info: μ = 0.005755874570051347 | iteration = 1000 | log fixed point gap = -7.06769638581916 | log feasibility gap = -2.4602381092218546
+[ Info: information about the best state found for μ = 0.005755874570051347
+[ Info: μ = 0.005755874570051347 | log fixed point gap = -7.06769638581916 | log feasibility gap = -2.4602381092218546 | inner iterations = 1001
+[ Info: μ = 0.004892493384543645 | iteration = 250 | log fixed point gap = -6.694258583902337 | log feasibility gap = -2.5274700716935103
+[ Info: μ = 0.004892493384543645 | iteration = 500 | log fixed point gap = -6.904486394743833 | log feasibility gap = -2.529550926396028
+[ Info: μ = 0.004892493384543645 | iteration = 750 | log fixed point gap = -7.012478589934166 | log feasibility gap = -2.529713979640055
+[ Info: μ = 0.004892493384543645 | iteration = 1000 | log fixed point gap = -7.120071124754682 | log feasibility gap = -2.529799872139811
+[ Info: information about the best state found for μ = 0.004892493384543645
+[ Info: μ = 0.004892493384543645 | log fixed point gap = -7.120071124754682 | log feasibility gap = -2.529799872139811 | inner iterations = 1001
+[ Info: μ = 0.004158619376862098 | iteration = 250 | log fixed point gap = -6.855489482647265 | log feasibility gap = -2.597731976731978
+[ Info: μ = 0.004158619376862098 | iteration = 500 | log fixed point gap = -6.97380553172212 | log feasibility gap = -2.599313994578633
+[ Info: μ = 0.004158619376862098 | iteration = 750 | log fixed point gap = -7.07375589826 | log feasibility gap = -2.5994383422583325
+[ Info: μ = 0.004158619376862098 | iteration = 1000 | log fixed point gap = -7.173252820833269 | log feasibility gap = -2.599512797253839
+[ Info: information about the best state found for μ = 0.004158619376862098
+[ Info: μ = 0.004158619376862098 | log fixed point gap = -7.173252820833269 | log feasibility gap = -2.599512797253839 | inner iterations = 1001
+[ Info: μ = 0.0035348264703327827 | iteration = 250 | log fixed point gap = -6.954020329120999 | log feasibility gap = -2.668018993532961
+[ Info: μ = 0.0035348264703327827 | iteration = 500 | log fixed point gap = -7.042795756954884 | log feasibility gap = -2.669193199159909
+[ Info: μ = 0.0035348264703327827 | iteration = 750 | log fixed point gap = -7.135221942545757 | log feasibility gap = -2.6692903369456165
+[ Info: μ = 0.0035348264703327827 | iteration = 1000 | log fixed point gap = -7.227196981448489 | log feasibility gap = -2.669355120998286
+[ Info: information about the best state found for μ = 0.0035348264703327827
+[ Info: μ = 0.0035348264703327827 | log fixed point gap = -7.227196981448489 | log feasibility gap = -2.669355120998286 | inner iterations = 1001
+[ Info: μ = 0.003004602499782865 | iteration = 250 | log fixed point gap = -7.0283339744728215 | log feasibility gap = -2.7383233178645208
+[ Info: μ = 0.003004602499782865 | iteration = 500 | log fixed point gap = -7.111441514833599 | log feasibility gap = -2.739173753092319
+[ Info: μ = 0.003004602499782865 | iteration = 750 | log fixed point gap = -7.196855682123123 | log feasibility gap = -2.7392515905979216
+[ Info: μ = 0.003004602499782865 | iteration = 1000 | log fixed point gap = -7.2818502197921156 | log feasibility gap = -2.7393080669623497
+[ Info: information about the best state found for μ = 0.003004602499782865
+[ Info: μ = 0.003004602499782865 | log fixed point gap = -7.2818502197921156 | log feasibility gap = -2.7393080669623497 | inner iterations = 1001
+[ Info: μ = 0.002553912124815435 | iteration = 250 | log fixed point gap = -7.102205447160244 | log feasibility gap = -2.8086413149640097
+[ Info: μ = 0.002553912124815435 | iteration = 500 | log fixed point gap = -7.179732722302441 | log feasibility gap = -2.8092423745927757
+[ Info: μ = 0.002553912124815435 | iteration = 750 | log fixed point gap = -7.2586307591479535 | log feasibility gap = -2.8093062052555924
+[ Info: μ = 0.002553912124815435 | iteration = 1000 | log fixed point gap = -7.337153173909359 | log feasibility gap = -2.809355476060365
+[ Info: information about the best state found for μ = 0.002553912124815435
+[ Info: μ = 0.002553912124815435 | log fixed point gap = -7.337153173909359 | log feasibility gap = -2.809355476060365 | inner iterations = 1001
+[ Info: μ = 0.00217082530609312 | iteration = 250 | log fixed point gap = -7.175553588650821 | log feasibility gap = -2.8789722584038353
+[ Info: μ = 0.00217082530609312 | iteration = 500 | log fixed point gap = -7.247661873436545 | log feasibility gap = -2.879387162232736
+[ Info: μ = 0.00217082530609312 | iteration = 750 | log fixed point gap = -7.320516646374854 | log feasibility gap = -2.8794404799200355
+[ Info: μ = 0.00217082530609312 | iteration = 1000 | log fixed point gap = -7.393042738010975 | log feasibility gap = -2.8794834698788625
+[ Info: information about the best state found for μ = 0.00217082530609312
+[ Info: μ = 0.00217082530609312 | log fixed point gap = -7.393042738010975 | log feasibility gap = -2.8794834698788625 | inner iterations = 1001
+[ Info: μ = 0.0018452015101791518 | iteration = 250 | log fixed point gap = -7.248314183470986 | log feasibility gap = -2.9493171778277505
+[ Info: μ = 0.0018452015101791518 | iteration = 500 | log fixed point gap = -7.31522198205502 | log feasibility gap = -2.949597520492685
+[ Info: μ = 0.0018452015101791518 | iteration = 750 | log fixed point gap = -7.382479720399932 | log feasibility gap = -2.9496426448848574
+[ Info: μ = 0.0018452015101791518 | iteration = 1000 | log fixed point gap = -7.4494537288760805 | log feasibility gap = -2.949680148780759
+[ Info: information about the best state found for μ = 0.0018452015101791518
+[ Info: μ = 0.0018452015101791518 | log fixed point gap = -7.4494537288760805 | log feasibility gap = -2.949680148780759 | inner iterations = 1001
+[ Info: μ = 0.001568421283652279 | iteration = 250 | log fixed point gap = -7.320438917886572 | log feasibility gap = -3.019677885965269
+[ Info: μ = 0.001568421283652279 | iteration = 500 | log fixed point gap = -7.382405300672546 | log feasibility gap = -3.0198640978413773
+[ Info: μ = 0.001568421283652279 | iteration = 750 | log fixed point gap = -7.444484162489572 | log feasibility gap = -3.0199026143061665
+[ Info: μ = 0.001568421283652279 | iteration = 1000 | log fixed point gap = -7.506320111731592 | log feasibility gap = -3.0199353241888245
+[ Info: information about the best state found for μ = 0.001568421283652279
+[ Info: μ = 0.001568421283652279 | log fixed point gap = -7.506320111731592 | log feasibility gap = -3.0199353241888245 | inner iterations = 1001
+[ Info: μ = 0.001333158091104437 | iteration = 250 | log fixed point gap = -7.391893502095683 | log feasibility gap = -3.0900562333477155
+[ Info: μ = 0.001333158091104437 | iteration = 500 | log fixed point gap = -7.449202629385065 | log feasibility gap = -3.0901787154564735
+[ Info: μ = 0.001333158091104437 | iteration = 750 | log fixed point gap = -7.506492704978687 | log feasibility gap = -3.0902117611717492
+[ Info: μ = 0.001333158091104437 | iteration = 1000 | log fixed point gap = -7.5635758810937 | log feasibility gap = -3.0902402831096616
+[ Info: information about the best state found for μ = 0.001333158091104437
+[ Info: μ = 0.001333158091104437 | log fixed point gap = -7.5635758810937 | log feasibility gap = -3.0902402831096616 | inner iterations = 1001
+[ Info: μ = 0.0011331843774387714 | iteration = 250 | log fixed point gap = -7.462655224840235 | log feasibility gap = -3.1604536105173446
+[ Info: μ = 0.0011331843774387714 | iteration = 500 | log fixed point gap = -7.5156030523045825 | log feasibility gap = -3.1605342791268756
+[ Info: μ = 0.0011331843774387714 | iteration = 750 | log fixed point gap = -7.568467175497513 | log feasibility gap = -3.1605627165412136
+[ Info: μ = 0.0011331843774387714 | iteration = 1000 | log fixed point gap = -7.621155699051791 | log feasibility gap = -3.160587582259499
+[ Info: information about the best state found for μ = 0.0011331843774387714
+[ Info: μ = 0.0011331843774387714 | log fixed point gap = -7.621155699051791 | log feasibility gap = -3.160587582259499 | inner iterations = 1001
+[ Info: μ = 0.0009632067208229557 | iteration = 250 | log fixed point gap = -7.532710255775999 | log feasibility gap = -3.2308706872234936
+[ Info: μ = 0.0009632067208229557 | iteration = 500 | log fixed point gap = -7.581593922435666 | log feasibility gap = -3.2309246767947877
+[ Info: μ = 0.0009632067208229557 | iteration = 750 | log fixed point gap = -7.630368947917514 | log feasibility gap = -3.2309491929245335
+[ Info: μ = 0.0009632067208229557 | iteration = 1000 | log fixed point gap = -7.678995334102357 | log feasibility gap = -3.2309708688971654
+[ Info: information about the best state found for μ = 0.0009632067208229557
+[ Info: μ = 0.0009632067208229557 | log fixed point gap = -7.678995334102357 | log feasibility gap = -3.2309708688971654 | inner iterations = 1001
+[ Info: μ = 0.0008187257126995123 | iteration = 250 | log fixed point gap = -7.602051007492634 | log feasibility gap = -3.301307351743561
+[ Info: μ = 0.0008187257126995123 | iteration = 500 | log fixed point gap = -7.647161009275866 | log feasibility gap = -3.3013446689126504
+[ Info: μ = 0.0008187257126995123 | iteration = 750 | log fixed point gap = -7.692159263658942 | log feasibility gap = -3.301365830348673
+[ Info: μ = 0.0008187257126995123 | iteration = 1000 | log fixed point gap = -7.737031978505255 | log feasibility gap = -3.30138472546858
+[ Info: information about the best state found for μ = 0.0008187257126995123
+[ Info: μ = 0.0008187257126995123 | log fixed point gap = -7.737031978505255 | log feasibility gap = -3.30138472546858 | inner iterations = 1001
+[ Info: μ = 0.0006959168557945855 | iteration = 250 | log fixed point gap = -7.670673771537731 | log feasibility gap = -3.3717627958423186
+[ Info: μ = 0.0006959168557945855 | iteration = 500 | log fixed point gap = -7.712288671612713 | log feasibility gap = -3.3717897793315372
+[ Info: μ = 0.0006959168557945855 | iteration = 750 | log fixed point gap = -7.7537994689945515 | log feasibility gap = -3.371808063007555
+[ Info: μ = 0.0006959168557945855 | iteration = 1000 | log fixed point gap = -7.795204460815224 | log feasibility gap = -3.371824535301338
+[ Info: information about the best state found for μ = 0.0006959168557945855
+[ Info: μ = 0.0006959168557945855 | log fixed point gap = -7.795204460815224 | log feasibility gap = -3.371824535301338 | inner iterations = 1001
+[ Info: μ = 0.0005915293274253976 | iteration = 250 | log fixed point gap = -7.7385768153331975 | log feasibility gap = -3.442235684654747
+[ Info: μ = 0.0005915293274253976 | iteration = 500 | log fixed point gap = -7.776960088742375 | log feasibility gap = -3.4422561926076596
+[ Info: μ = 0.0005915293274253976 | iteration = 750 | log fixed point gap = -7.815251243060115 | log feasibility gap = -3.442272004198343
+[ Info: μ = 0.0005915293274253976 | iteration = 1000 | log fixed point gap = -7.853453401946856 | log feasibility gap = -3.442286366788701
+[ Info: information about the best state found for μ = 0.0005915293274253976
+[ Info: μ = 0.0005915293274253976 | log fixed point gap = -7.853453401946856 | log feasibility gap = -3.442286366788701 | inner iterations = 1001
+[ Info: μ = 0.0005027999283115879 | iteration = 250 | log fixed point gap = -7.805758974850654 | log feasibility gap = -3.512724355756249
+[ Info: μ = 0.0005027999283115879 | iteration = 500 | log fixed point gap = -7.841157468807919 | log feasibility gap = -3.5127406610934373
+[ Info: μ = 0.0005027999283115879 | iteration = 750 | log fixed point gap = -7.87647674634428 | log feasibility gap = -3.51275434730673
+[ Info: μ = 0.0005027999283115879 | iteration = 1000 | log fixed point gap = -7.911721308204554 | log feasibility gap = -3.5127668737291935
+[ Info: information about the best state found for μ = 0.0005027999283115879
+[ Info: μ = 0.0005027999283115879 | log fixed point gap = -7.911721308204554 | log feasibility gap = -3.5127668737291935 | inner iterations = 1001
+[ Info: μ = 0.00042737993906484973 | iteration = 250 | log fixed point gap = -7.872217109268421 | log feasibility gap = -3.583227004651676
+[ Info: μ = 0.00042737993906484973 | iteration = 500 | log fixed point gap = -7.904860567845009 | log feasibility gap = -3.583240422629453
+[ Info: μ = 0.00042737993906484973 | iteration = 750 | log fixed point gap = -7.937437003804169 | log feasibility gap = -3.583252280337416
+[ Info: μ = 0.00042737993906484973 | iteration = 1000 | log fixed point gap = -7.969950830509436 | log feasibility gap = -3.5832632092437198
+[ Info: information about the best state found for μ = 0.00042737993906484973
+[ Info: μ = 0.00042737993906484973 | log fixed point gap = -7.969950830509436 | log feasibility gap = -3.5832632092437198 | inner iterations = 1001
+[ Info: μ = 0.00036327294820512226 | iteration = 250 | log fixed point gap = -7.937952372611746 | log feasibility gap = -3.6537418333571714
+[ Info: μ = 0.00036327294820512226 | iteration = 500 | log fixed point gap = -7.968054027150115 | log feasibility gap = -3.6537531309405753
+[ Info: μ = 0.00036327294820512226 | iteration = 750 | log fixed point gap = -7.998099487777763 | log feasibility gap = -3.653763414721393
+[ Info: μ = 0.00036327294820512226 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 0.00036327294820512226
+[ Info: μ = 0.00036327294820512226 | log fixed point gap = -8.00002056982058 | log feasibility gap = -3.65376404689135 | inner iterations = 766
+[ Info: μ = 0.0003087820059743539 | iteration = 250 | log fixed point gap = -7.979936904034714 | log feasibility gap = -3.724258839341651
+[ Info: μ = 0.0003087820059743539 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 0.0003087820059743539
+[ Info: μ = 0.0003087820059743539 | log fixed point gap = -8.000054013157843 | log feasibility gap = -3.724266308724962 | inner iterations = 431
+[ Info: μ = 0.0002624647050782008 | iteration = 250 | log fixed point gap = -7.994559580206775 | log feasibility gap = -3.7947753951589025
+[ Info: μ = 0.0002624647050782008 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 0.0002624647050782008
+[ Info: μ = 0.0002624647050782008 | log fixed point gap = -8.00000268347806 | log feasibility gap = -3.7947775617051627 | inner iterations = 303
+[ Info: μ = 0.00022309499931647068 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 0.00022309499931647068
+[ Info: μ = 0.00022309499931647068 | log fixed point gap = -8.000033984458158 | log feasibility gap = -3.8652958069549643 | inner iterations = 186
+[ Info: μ = 0.00018963074941900007 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 0.00018963074941900007
+[ Info: μ = 0.00018963074941900007 | log fixed point gap = -8.000049943208854 | log feasibility gap = -3.9354097921145264 | inner iterations = 74
+[ Info: μ = 0.00016118613700615006 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 0.00016118613700615006
+[ Info: μ = 0.00016118613700615006 | log fixed point gap = -8.007387163275846 | log feasibility gap = -4.005818866811668 | inner iterations = 65
+[ Info: μ = 0.00013700821645522756 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 0.00013700821645522756
+[ Info: μ = 0.00013700821645522756 | log fixed point gap = -8.014489224251514 | log feasibility gap = -4.076308501430726 | inner iterations = 59
+[ Info: μ = 0.00011645698398694342 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 0.00011645698398694342
+[ Info: μ = 0.00011645698398694342 | log fixed point gap = -8.028539583823997 | log feasibility gap = -4.146825642789906 | inner iterations = 54
+[ Info: μ = 9.898843638890191e-5 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 9.898843638890191e-5
+[ Info: μ = 9.898843638890191e-5 | log fixed point gap = -8.024973998431019 | log feasibility gap = -4.217319797176632 | inner iterations = 49
+[ Info: μ = 8.414017093056662e-5 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 8.414017093056662e-5
+[ Info: μ = 8.414017093056662e-5 | log fixed point gap = -8.000792221280534 | log feasibility gap = -4.287777227474881 | inner iterations = 44
+[ Info: μ = 7.151914529098163e-5 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 7.151914529098163e-5
+[ Info: μ = 7.151914529098163e-5 | log fixed point gap = -8.001507635766695 | log feasibility gap = -4.358273211220011 | inner iterations = 40
+[ Info: μ = 6.079127349733438e-5 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 6.079127349733438e-5
+[ Info: μ = 6.079127349733438e-5 | log fixed point gap = -8.036038154553882 | log feasibility gap = -4.428834830335408 | inner iterations = 37
+[ Info: μ = 5.167258247273422e-5 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 5.167258247273422e-5
+[ Info: μ = 5.167258247273422e-5 | log fixed point gap = -8.001253564080228 | log feasibility gap = -4.4992541755934825 | inner iterations = 33
+[ Info: μ = 4.392169510182408e-5 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 4.392169510182408e-5
+[ Info: μ = 4.392169510182408e-5 | log fixed point gap = -8.002345641407178 | log feasibility gap = -4.5697417515774275 | inner iterations = 30
+[ Info: μ = 3.733344083655047e-5 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 3.733344083655047e-5
+[ Info: μ = 3.733344083655047e-5 | log fixed point gap = -8.051993115466077 | log feasibility gap = -4.640346338268653 | inner iterations = 28
+[ Info: μ = 3.17334247110679e-5 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 3.17334247110679e-5
+[ Info: μ = 3.17334247110679e-5 | log fixed point gap = -8.021597254183968 | log feasibility gap = -4.710750138544862 | inner iterations = 25
+[ Info: μ = 2.6973411004407714e-5 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 2.6973411004407714e-5
+[ Info: μ = 2.6973411004407714e-5 | log fixed point gap = -8.04374848862697 | log feasibility gap = -4.78128649517851 | inner iterations = 23
+[ Info: μ = 2.2927399353746557e-5 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 2.2927399353746557e-5
+[ Info: μ = 2.2927399353746557e-5 | log fixed point gap = -8.053281476689667 | log feasibility gap = -4.8517854821801905 | inner iterations = 21
+[ Info: μ = 1.9488289450684572e-5 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.9488289450684572e-5
+[ Info: μ = 1.9488289450684572e-5 | log fixed point gap = -8.047083529618686 | log feasibility gap = -4.922229736835409 | inner iterations = 19
+[ Info: μ = 1.6565046033081885e-5 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.6565046033081885e-5
+[ Info: μ = 1.6565046033081885e-5 | log fixed point gap = -8.02296888340758 | log feasibility gap = -4.992595148564328 | inner iterations = 17
+[ Info: μ = 1.4080289128119603e-5 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.4080289128119603e-5
+[ Info: μ = 1.4080289128119603e-5 | log fixed point gap = -8.081135559296165 | log feasibility gap = -5.0632566176335505 | inner iterations = 16
+[ Info: μ = 1.1968245758901663e-5 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.1968245758901663e-5
+[ Info: μ = 1.1968245758901663e-5 | log fixed point gap = -8.024456555163285 | log feasibility gap = -5.1334654498834755 | inner iterations = 14
+[ Info: μ = 1.0173008895066413e-5 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.0173008895066413e-5
+[ Info: μ = 1.0173008895066413e-5 | log fixed point gap = -8.058609314783295 | log feasibility gap = -5.204038433371904 | inner iterations = 13
+[ Info: μ = 8.647057560806452e-6 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 8.647057560806452e-6
+[ Info: μ = 8.647057560806452e-6 | log fixed point gap = -8.085997758764108 | log feasibility gap = -5.274581388799035 | inner iterations = 12
+[ Info: μ = 7.349998926685484e-6 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 7.349998926685484e-6
+[ Info: μ = 7.349998926685484e-6 | log fixed point gap = -8.102387106353211 | log feasibility gap = -5.345072591471537 | inner iterations = 11
+[ Info: μ = 6.247499087682661e-6 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 6.247499087682661e-6
+[ Info: μ = 6.247499087682661e-6 | log fixed point gap = -8.10625427886674 | log feasibility gap = -5.415497354019673 | inner iterations = 10
+[ Info: μ = 5.310374224530262e-6 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 5.310374224530262e-6
+[ Info: μ = 5.310374224530262e-6 | log fixed point gap = -8.096038363785112 | log feasibility gap = -5.485832511324794 | inner iterations = 9
+[ Info: μ = 4.513818090850723e-6 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 4.513818090850723e-6
+[ Info: μ = 4.513818090850723e-6 | log fixed point gap = -8.070018870394378 | log feasibility gap = -5.556040098548925 | inner iterations = 8
+[ Info: μ = 3.836745377223114e-6 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 3.836745377223114e-6
+[ Info: μ = 3.836745377223114e-6 | log fixed point gap = -8.026259368282272 | log feasibility gap = -5.626056351116541 | inner iterations = 7
+[ Info: μ = 3.261233570639647e-6 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 3.261233570639647e-6
+[ Info: μ = 3.261233570639647e-6 | log fixed point gap = -8.153887260227071 | log feasibility gap = -5.697285264397674 | inner iterations = 7
+[ Info: μ = 2.7720485350437e-6 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 2.7720485350437e-6
+[ Info: μ = 2.7720485350437e-6 | log fixed point gap = -8.09357834298144 | log feasibility gap = -5.7671911748527975 | inner iterations = 6
+[ Info: μ = 2.356241254787145e-6 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 2.356241254787145e-6
+[ Info: μ = 2.356241254787145e-6 | log fixed point gap = -8.000598272941058 | log feasibility gap = -5.836601338834485 | inner iterations = 5
+[ Info: μ = 2.0028050665690732e-6 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 2.0028050665690732e-6
+[ Info: μ = 2.0028050665690732e-6 | log fixed point gap = -8.112126750611019 | log feasibility gap = -5.907918160865664 | inner iterations = 5
+[ Info: μ = 1.7023843065837122e-6 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.7023843065837122e-6
+[ Info: μ = 1.7023843065837122e-6 | log fixed point gap = -8.246696728569006 | log feasibility gap = -5.979284255344893 | inner iterations = 5
+[ Info: μ = 1.4470266605961554e-6 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.4470266605961554e-6
+[ Info: μ = 1.4470266605961554e-6 | log fixed point gap = -8.125605978113926 | log feasibility gap = -6.048540040855679 | inner iterations = 4
+[ Info: μ = 1.229972661506732e-6 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.229972661506732e-6
+[ Info: μ = 1.229972661506732e-6 | log fixed point gap = -8.235360393848424 | log feasibility gap = -6.119810601322033 | inner iterations = 4
+[ Info: μ = 1.0454767622807221e-6 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.0454767622807221e-6
+[ Info: μ = 1.0454767622807221e-6 | log fixed point gap = -8.076389357585347 | log feasibility gap = -6.188314116401233 | inner iterations = 3
+[ Info: μ = 8.886552479386138e-7 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 8.886552479386138e-7
+[ Info: μ = 8.886552479386138e-7 | log fixed point gap = -8.170659568073015 | log feasibility gap = -6.25962520194625 | inner iterations = 3
+[ Info: μ = 7.553569607478217e-7 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 7.553569607478217e-7
+[ Info: μ = 7.553569607478217e-7 | log fixed point gap = -8.304274900524016 | log feasibility gap = -6.331225264877415 | inner iterations = 3
+[ Info: μ = 6.420534166356484e-7 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 6.420534166356484e-7
+[ Info: μ = 6.420534166356484e-7 | log fixed point gap = -8.10043550918376 | log feasibility gap = -6.39886697363376 | inner iterations = 2
+[ Info: μ = 5.457454041403011e-7 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 5.457454041403011e-7
+[ Info: μ = 5.457454041403011e-7 | log fixed point gap = -8.18031011469343 | log feasibility gap = -6.470123389046726 | inner iterations = 2
+[ Info: μ = 4.63883593519256e-7 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 4.63883593519256e-7
+[ Info: μ = 4.63883593519256e-7 | log fixed point gap = -8.323821937888965 | log feasibility gap = -6.542085729155666 | inner iterations = 2
+[ Info: μ = 3.9430105449136756e-7 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 3.9430105449136756e-7
+[ Info: μ = 3.9430105449136756e-7 | log fixed point gap = -8.088418794340646 | log feasibility gap = -6.608457549382217 | inner iterations = 1
+[ Info: μ = 3.3515589631766243e-7 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 3.3515589631766243e-7
+[ Info: μ = 3.3515589631766243e-7 | log fixed point gap = -8.144337593507379 | log feasibility gap = -6.679457649984283 | inner iterations = 1
+[ Info: μ = 2.8488251187001305e-7 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 2.8488251187001305e-7
+[ Info: μ = 2.8488251187001305e-7 | log fixed point gap = -8.324417195947333 | log feasibility gap = -6.7524894894479495 | inner iterations = 1
+[ Info: μ = 2.421501350895111e-7 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 2.421501350895111e-7
+[ Info: μ = 2.421501350895111e-7 | log fixed point gap = -8.670394869325213 | log feasibility gap = -6.826256131078673 | inner iterations = 1
+[ Info: μ = 2.0582761482608443e-7 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 2.0582761482608443e-7
+[ Info: μ = 2.0582761482608443e-7 | log fixed point gap = -9.324670174636323 | log feasibility gap = -6.900147846444157 | inner iterations = 1
+[ Info: μ = 1.7495347260217177e-7 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.7495347260217177e-7
+[ Info: μ = 1.7495347260217177e-7 | log fixed point gap = -8.697954184549703 | log feasibility gap = -6.973904496124703 | inner iterations = 1
+[ Info: μ = 1.48710451711846e-7 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.48710451711846e-7
+[ Info: μ = 1.48710451711846e-7 | log fixed point gap = -8.464523930793069 | log feasibility gap = -7.047433007950996 | inner iterations = 1
+[ Info: μ = 1.2640388395506909e-7 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.2640388395506909e-7
+[ Info: μ = 1.2640388395506909e-7 | log fixed point gap = -8.347562174795053 | log feasibility gap = -7.120713896204977 | inner iterations = 1
+[ Info: μ = 1.0744330136180872e-7 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.0744330136180872e-7
+[ Info: μ = 1.0744330136180872e-7 | log fixed point gap = -8.279721069431204 | log feasibility gap = -7.193756661848668 | inner iterations = 1
+[ Info: μ = 9.132680615753741e-8 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 9.132680615753741e-8
+[ Info: μ = 9.132680615753741e-8 | log fixed point gap = -8.238912781137282 | log feasibility gap = -7.26658018759329 | inner iterations = 1
+[ Info: μ = 7.76277852339068e-8 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 7.76277852339068e-8
+[ Info: μ = 7.76277852339068e-8 | log fixed point gap = -8.215109322981203 | log feasibility gap = -7.3392049189549455 | inner iterations = 1
+[ Info: μ = 6.598361744882078e-8 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 6.598361744882078e-8
+[ Info: μ = 6.598361744882078e-8 | log fixed point gap = -8.20292167542038 | log feasibility gap = -7.41165014199321 | inner iterations = 1
+[ Info: μ = 5.608607483149766e-8 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 5.608607483149766e-8
+[ Info: μ = 5.608607483149766e-8 | log fixed point gap = -8.1991289423494 | log feasibility gap = -7.483933264915141 | inner iterations = 1
+[ Info: μ = 4.767316360677301e-8 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 4.767316360677301e-8
+[ Info: μ = 4.767316360677301e-8 | log fixed point gap = -8.201657536476409 | log feasibility gap = -7.556069799637467 | inner iterations = 1
+[ Info: μ = 4.052218906575706e-8 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 4.052218906575706e-8
+[ Info: μ = 4.052218906575706e-8 | log fixed point gap = -8.209096649937422 | log feasibility gap = -7.628073544444968 | inner iterations = 1
+[ Info: μ = 3.4443860705893504e-8 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 3.4443860705893504e-8
+[ Info: μ = 3.4443860705893504e-8 | log fixed point gap = -8.220444484251804 | log feasibility gap = -7.6999567973528995 | inner iterations = 1
+[ Info: μ = 2.9277281600009478e-8 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 2.9277281600009478e-8
+[ Info: μ = 2.9277281600009478e-8 | log fixed point gap = -8.234965054369463 | log feasibility gap = -7.77173055100253 | inner iterations = 1
+[ Info: μ = 2.4885689360008056e-8 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 2.4885689360008056e-8
+[ Info: μ = 2.4885689360008056e-8 | log fixed point gap = -8.252102481335466 | log feasibility gap = -7.8434046598526725 | inner iterations = 1
+[ Info: μ = 2.1152835956006847e-8 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 2.1152835956006847e-8
+[ Info: μ = 2.1152835956006847e-8 | log fixed point gap = -8.271427175090817 | log feasibility gap = -7.914987981635323 | inner iterations = 1
+[ Info: μ = 1.797991056260582e-8 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.797991056260582e-8
+[ Info: μ = 1.797991056260582e-8 | log fixed point gap = -8.292600671937548 | log feasibility gap = -7.986488497208871 | inner iterations = 1
+[ Info: μ = 1.5282923978214945e-8 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.5282923978214945e-8
+[ Info: μ = 1.5282923978214945e-8 | log fixed point gap = -8.31535187933154 | log feasibility gap = -8.057913412688478 | inner iterations = 1
+[ Info: μ = 1.2990485381482703e-8 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.2990485381482703e-8
+[ Info: μ = 1.2990485381482703e-8 | log fixed point gap = -8.339460563411103 | log feasibility gap = -8.129269247032923 | inner iterations = 1
+[ Info: μ = 1.1041912574260297e-8 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.1041912574260297e-8
+[ Info: μ = 1.1041912574260297e-8 | log fixed point gap = -8.364745585570953 | log feasibility gap = -8.200561907616756 | inner iterations = 1
+[ Info: μ = 9.385625688121253e-9 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 9.385625688121253e-9
+[ Info: μ = 9.385625688121253e-9 | log fixed point gap = -8.391056340983733 | log feasibility gap = -8.27179675579824 | inner iterations = 1
+[ Info: information about the best state found for smallest μ = 9.385625688121253e-9
+[ Info: μ = 9.385625688121253e-9 | log fixed point gap = -8.391056340983733 | log feasibility gap = -8.27179675579824 | inner iterations = 1
+Test Summary:     | Pass  Total
+sparse_regression |    3      3
+[ Info: μ = 2.0 | iteration = 250 | log fixed point gap = -4.70008989869409 | log feasibility gap = -1.6341026792959057
+[ Info: μ = 2.0 | iteration = 500 | log fixed point gap = -4.79020020564215 | log feasibility gap = -1.7162322241310062
+[ Info: μ = 2.0 | iteration = 750 | log fixed point gap = -4.8806611870469085 | log feasibility gap = -1.797511212894953
+[ Info: μ = 2.0 | iteration = 1000 | log fixed point gap = -4.97168398601587 | log feasibility gap = -1.8779936633880654
+[ Info: information about the best state found for μ = 2.0
+[ Info: μ = 2.0 | log fixed point gap = -4.97168398601587 | log feasibility gap = -1.8779936633880654 | inner iterations = 1001
+[ Info: μ = 1.0 | iteration = 250 | log fixed point gap = -4.833676979270473 | log feasibility gap = -2.0366398526228244
+[ Info: μ = 1.0 | iteration = 500 | log fixed point gap = -4.973062346419227 | log feasibility gap = -2.1870324120133557
+[ Info: μ = 1.0 | iteration = 750 | log fixed point gap = -5.107831175926858 | log feasibility gap = -2.3069321950117785
+[ Info: μ = 1.0 | iteration = 1000 | log fixed point gap = -5.237706661431195 | log feasibility gap = -2.421709227518819
+[ Info: information about the best state found for μ = 1.0
+[ Info: μ = 1.0 | log fixed point gap = -5.237706661431195 | log feasibility gap = -2.421709227518819 | inner iterations = 1001
+[ Info: μ = 0.5 | iteration = 250 | log fixed point gap = -5.168497347998708 | log feasibility gap = -2.595759569800759
+[ Info: μ = 0.5 | iteration = 500 | log fixed point gap = -5.2791068961737 | log feasibility gap = -2.73057649027123
+[ Info: μ = 0.5 | iteration = 750 | log fixed point gap = -5.402661905273637 | log feasibility gap = -2.866182833523009
+[ Info: μ = 0.5 | iteration = 1000 | log fixed point gap = -5.53339984241069 | log feasibility gap = -3.0022585539234523
+[ Info: information about the best state found for μ = 0.5
+[ Info: μ = 0.5 | log fixed point gap = -5.53339984241069 | log feasibility gap = -3.0022585539234523 | inner iterations = 1001
+[ Info: μ = 0.25 | iteration = 250 | log fixed point gap = -5.503507470221116 | log feasibility gap = -3.2759757441459163
+[ Info: μ = 0.25 | iteration = 500 | log fixed point gap = -5.7790795611298815 | log feasibility gap = -3.546539951551435
+[ Info: μ = 0.25 | iteration = 750 | log fixed point gap = -6.055808066781162 | log feasibility gap = -3.8164506358577777
+[ Info: μ = 0.25 | iteration = 1000 | log fixed point gap = -6.331951912529784 | log feasibility gap = -4.079239525287668
+[ Info: information about the best state found for μ = 0.25
+[ Info: μ = 0.25 | log fixed point gap = -6.331951912529784 | log feasibility gap = -4.079239525287668 | inner iterations = 1001
+[ Info: μ = 0.125 | iteration = 250 | log fixed point gap = -6.572793951608809 | log feasibility gap = -4.6033746527605315
+[ Info: μ = 0.125 | iteration = 500 | log fixed point gap = -7.108221690937311 | log feasibility gap = -5.122403077648984
+[ Info: μ = 0.125 | iteration = 750 | log fixed point gap = -7.638443814547784 | log feasibility gap = -5.640984448932629
+[ Info: μ = 0.125 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 0.125
+[ Info: μ = 0.125 | log fixed point gap = -8.00117288139083 | log feasibility gap = -5.997338227321845 | inner iterations = 922
+[ Info: μ = 0.0625 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 0.0625
+[ Info: μ = 0.0625 | log fixed point gap = -8.001731964724456 | log feasibility gap = -6.302684199531744 | inner iterations = 73
+[ Info: μ = 0.03125 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 0.03125
+[ Info: μ = 0.03125 | log fixed point gap = -8.001633794110644 | log feasibility gap = -6.614263202553882 | inner iterations = 38
+[ Info: μ = 0.015625 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 0.015625
+[ Info: μ = 0.015625 | log fixed point gap = -8.010639060607037 | log feasibility gap = -6.9456768983655905 | inner iterations = 21
+[ Info: μ = 0.0078125 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 0.0078125
+[ Info: μ = 0.0078125 | log fixed point gap = -8.00972942656733 | log feasibility gap = -7.278040123598174 | inner iterations = 11
+[ Info: μ = 0.00390625 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 0.00390625
+[ Info: μ = 0.00390625 | log fixed point gap = -8.017954643755477 | log feasibility gap = -7.6128107312822895 | inner iterations = 6
+[ Info: μ = 0.001953125 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 0.001953125
+[ Info: μ = 0.001953125 | log fixed point gap = -8.026979402575817 | log feasibility gap = -7.7775521155525125 | inner iterations = 1
+[ Info: μ = 0.0009765625 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 0.0009765625
+[ Info: μ = 0.0009765625 | log fixed point gap = -8.005827936167414 | log feasibility gap = -8.160252031773998 | inner iterations = 2
+[ Info: μ = 0.00048828125 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 0.00048828125
+[ Info: μ = 0.00048828125 | log fixed point gap = -8.02668771767626 | log feasibility gap = -8.46513787418545 | inner iterations = 1
+[ Info: μ = 0.000244140625 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 0.000244140625
+[ Info: μ = 0.000244140625 | log fixed point gap = -8.030044887003205 | log feasibility gap = -8.822175021741565 | inner iterations = 1
+[ Info: μ = 0.0001220703125 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 0.0001220703125
+[ Info: μ = 0.0001220703125 | log fixed point gap = -8.04683193410335 | log feasibility gap = -9.191292487404523 | inner iterations = 1
+[ Info: μ = 6.103515625e-5 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 6.103515625e-5
+[ Info: μ = 6.103515625e-5 | log fixed point gap = -8.080343564977131 | log feasibility gap = -9.55521996853798 | inner iterations = 1
+[ Info: μ = 3.0517578125e-5 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 3.0517578125e-5
+[ Info: μ = 3.0517578125e-5 | log fixed point gap = -8.124907432078462 | log feasibility gap = -9.912232227165376 | inner iterations = 1
+[ Info: μ = 1.52587890625e-5 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.52587890625e-5
+[ Info: μ = 1.52587890625e-5 | log fixed point gap = -8.175293918626963 | log feasibility gap = -10.264744296630345 | inner iterations = 1
+[ Info: μ = 7.62939453125e-6 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 7.62939453125e-6
+[ Info: μ = 7.62939453125e-6 | log fixed point gap = -8.228348987388653 | log feasibility gap = -10.614824313423446 | inner iterations = 1
+[ Info: μ = 3.814697265625e-6 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 3.814697265625e-6
+[ Info: μ = 3.814697265625e-6 | log fixed point gap = -8.28241866964293 | log feasibility gap = -10.963657177842627 | inner iterations = 1
+[ Info: μ = 1.9073486328125e-6 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.9073486328125e-6
+[ Info: μ = 1.9073486328125e-6 | log fixed point gap = -8.336711800781428 | log feasibility gap = -11.311847798821665 | inner iterations = 1
+[ Info: μ = 9.5367431640625e-7 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 9.5367431640625e-7
+[ Info: μ = 9.5367431640625e-7 | log fixed point gap = -8.390832446870258 | log feasibility gap = -11.659704797159092 | inner iterations = 1
+[ Info: μ = 4.76837158203125e-7 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 4.76837158203125e-7
+[ Info: μ = 4.76837158203125e-7 | log fixed point gap = -8.444637553268338 | log feasibility gap = -12.007347181766995 | inner iterations = 1
+[ Info: μ = 2.384185791015625e-7 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 2.384185791015625e-7
+[ Info: μ = 2.384185791015625e-7 | log fixed point gap = -8.49805727976581 | log feasibility gap = -12.354866143738377 | inner iterations = 1
+[ Info: μ = 1.1920928955078125e-7 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.1920928955078125e-7
+[ Info: μ = 1.1920928955078125e-7 | log fixed point gap = -8.551078280000208 | log feasibility gap = -12.70236649799784 | inner iterations = 1
+[ Info: μ = 5.960464477539063e-8 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 5.960464477539063e-8
+[ Info: μ = 5.960464477539063e-8 | log fixed point gap = -8.60370910446445 | log feasibility gap = -13.049747484043738 | inner iterations = 1
+[ Info: μ = 2.9802322387695312e-8 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 2.9802322387695312e-8
+[ Info: μ = 2.9802322387695312e-8 | log fixed point gap = -8.655966661344092 | log feasibility gap = -13.397002686801397 | inner iterations = 1
+[ Info: μ = 1.4901161193847656e-8 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 1.4901161193847656e-8
+[ Info: μ = 1.4901161193847656e-8 | log fixed point gap = -8.707874211001961 | log feasibility gap = -13.745724505000474 | inner iterations = 1
+[ Info: μ = 7.450580596923828e-9 | log fixed point gap reached -8.0
+[ Info: information about the best state found for μ = 7.450580596923828e-9
+[ Info: μ = 7.450580596923828e-9 | log fixed point gap = -8.759450962580935 | log feasibility gap = -14.110413644958578 | inner iterations = 1
+[ Info: information about the best state found for smallest μ = 7.450580596923828e-9
+[ Info: μ = 7.450580596923828e-9 | log fixed point gap = -8.759450962580935 | log feasibility gap = -14.110413644958578 | inner iterations = 1
+Test Summary:            | Pass  Total
+affine_rank_minimization |    2      2
+[ Info: μ = 5.0 | iteration = 250 | log fixed point gap = -2.386612999711339 | log feasibility gap = -0.6728067316881805
+[ Info: μ = 5.0 | iteration = 500 | log fixed point gap = -2.6201737936622993 | log feasibility gap = -0.49217358372957704
+[ Info: μ = 5.0 | iteration = 750 | log fixed point gap = -2.853755886868723 | log feasibility gap = -0.42304680574516484
+[ Info: μ = 5.0 | iteration = 1000 | log fixed point gap = -3.0873672245803196 | log feasibility gap = -0.3932614914547368
+[ Info: information about the best state found for μ = 5.0
+[ Info: μ = 5.0 | log fixed point gap = -3.0873672245803196 | log feasibility gap = -0.3932614914547368 | inner iterations = 1001
+[ Info: μ = 2.5 | iteration = 250 | log fixed point gap = -3.3198677544457205 | log feasibility gap = -0.4162850529273839
+[ Info: μ = 2.5 | iteration = 500 | log fixed point gap = -3.5539605973818253 | log feasibility gap = -0.4333003797697453
+[ Info: μ = 2.5 | iteration = 750 | log fixed point gap = -3.7882803292245675 | log feasibility gap = -0.44794209790100176
+[ Info: μ = 2.5 | iteration = 1000 | log fixed point gap = -3.998690485605346 | log feasibility gap = -0.46206522442974907
+[ Info: information about the best state found for μ = 2.5
+[ Info: μ = 2.5 | log fixed point gap = -3.9995651930722667 | log feasibility gap = -0.4607028366193573 | inner iterations = 1001
+[ Info: μ = 1.25 | iteration = 250 | log fixed point gap = -3.755640053280721 | log feasibility gap = -0.543506137695932
+[ Info: μ = 1.25 | iteration = 500 | log fixed point gap = -3.7798064044160355 | log feasibility gap = -0.5943470167231194
+[ Info: μ = 1.25 | iteration = 750 | log fixed point gap = -3.7918701071524628 | log feasibility gap = -0.613175221148478
+[ Info: μ = 1.25 | iteration = 1000 | log fixed point gap = -3.8015885277359556 | log feasibility gap = -0.6158385943658439
+[ Info: information about the best state found for μ = 1.25
+[ Info: μ = 1.25 | log fixed point gap = -3.8015885277359556 | log feasibility gap = -0.6158385943658439 | inner iterations = 1001
+[ Info: μ = 0.625 | iteration = 250 | log fixed point gap = -3.6350125429509297 | log feasibility gap = -0.7309145087064067
+[ Info: μ = 0.625 | iteration = 500 | log fixed point gap = -3.696618340157934 | log feasibility gap = -0.7650573851566114
+[ Info: μ = 0.625 | iteration = 750 | log fixed point gap = -3.734614920879526 | log feasibility gap = -0.7748125818631699
+[ Info: μ = 0.625 | iteration = 1000 | log fixed point gap = -3.767145013712931 | log feasibility gap = -0.778477062880085
+[ Info: information about the best state found for μ = 0.625
+[ Info: μ = 0.625 | log fixed point gap = -3.767145013712931 | log feasibility gap = -0.778477062880085 | inner iterations = 1001
+[ Info: μ = 0.3125 | iteration = 250 | log fixed point gap = -3.6962178227435976 | log feasibility gap = -0.9624966205907182
+[ Info: μ = 0.3125 | iteration = 500 | log fixed point gap = -3.7669992525184024 | log feasibility gap = -0.9894864594412242
+[ Info: μ = 0.3125 | iteration = 750 | log fixed point gap = -3.8101427990445234 | log feasibility gap = -0.9946817790483286
+[ Info: μ = 0.3125 | iteration = 1000 | log fixed point gap = -3.8488106226757646 | log feasibility gap = -0.9975085782105535
+[ Info: information about the best state found for μ = 0.3125
+[ Info: μ = 0.3125 | log fixed point gap = -3.8488106226757646 | log feasibility gap = -0.9975085782105535 | inner iterations = 1001
+[ Info: μ = 0.15625 | iteration = 250 | log fixed point gap = -3.839812844913938 | log feasibility gap = -1.2409602193934646
+[ Info: μ = 0.15625 | iteration = 500 | log fixed point gap = -3.8856766674586427 | log feasibility gap = -1.250078913172129
+[ Info: μ = 0.15625 | iteration = 750 | log fixed point gap = -3.9215471187038364 | log feasibility gap = -1.2530278194758608
+[ Info: μ = 0.15625 | iteration = 1000 | log fixed point gap = -3.954852479164438 | log feasibility gap = -1.2558601787419879
+[ Info: information about the best state found for μ = 0.15625
+[ Info: μ = 0.15625 | log fixed point gap = -3.954852479164438 | log feasibility gap = -1.2558601787419879 | inner iterations = 1001
+[ Info: μ = 0.078125 | iteration = 250 | log fixed point gap = -3.96327742407762 | log feasibility gap = -1.530080922405642
+[ Info: μ = 0.078125 | iteration = 500 | log fixed point gap = -3.993501953776044 | log feasibility gap = -1.5333710719149003
+[ Info: μ = 0.078125 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 0.078125
+[ Info: μ = 0.078125 | log fixed point gap = -4.000004074781498 | log feasibility gap = -1.5340691925764747 | inner iterations = 557
+[ Info: μ = 0.0390625 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 0.0390625
+[ Info: μ = 0.0390625 | log fixed point gap = -4.000034100285858 | log feasibility gap = -1.8204938258681604 | inner iterations = 118
+[ Info: μ = 0.01953125 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 0.01953125
+[ Info: μ = 0.01953125 | log fixed point gap = -4.00006689279843 | log feasibility gap = -2.1141918108713083 | inner iterations = 60
+[ Info: μ = 0.009765625 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 0.009765625
+[ Info: μ = 0.009765625 | log fixed point gap = -4.002783036417617 | log feasibility gap = -2.4110099912197027 | inner iterations = 29
+[ Info: μ = 0.0048828125 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 0.0048828125
+[ Info: μ = 0.0048828125 | log fixed point gap = -4.0017204799059085 | log feasibility gap = -2.7109028265851287 | inner iterations = 18
+[ Info: μ = 0.00244140625 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 0.00244140625
+[ Info: μ = 0.00244140625 | log fixed point gap = -4.000895367132326 | log feasibility gap = -3.0108242594617876 | inner iterations = 10
+[ Info: μ = 0.001220703125 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 0.001220703125
+[ Info: μ = 0.001220703125 | log fixed point gap = -4.0058524911892155 | log feasibility gap = -3.3094680293599423 | inner iterations = 5
+[ Info: μ = 0.0006103515625 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 0.0006103515625
+[ Info: μ = 0.0006103515625 | log fixed point gap = -4.00250076808386 | log feasibility gap = -3.6108391079484474 | inner iterations = 4
+[ Info: μ = 0.00030517578125 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 0.00030517578125
+[ Info: μ = 0.00030517578125 | log fixed point gap = -4.001146724698529 | log feasibility gap = -3.913142552700481 | inner iterations = 3
+[ Info: μ = 0.000152587890625 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 0.000152587890625
+[ Info: μ = 0.000152587890625 | log fixed point gap = -4.000031524260232 | log feasibility gap = -4.213032064797291 | inner iterations = 2
+[ Info: μ = 7.62939453125e-5 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 7.62939453125e-5
+[ Info: μ = 7.62939453125e-5 | log fixed point gap = -4.0015864601030335 | log feasibility gap = -4.5154819177549035 | inner iterations = 2
+[ Info: μ = 3.814697265625e-5 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 3.814697265625e-5
+[ Info: μ = 3.814697265625e-5 | log fixed point gap = -4.002850505807568 | log feasibility gap = -4.816910427182801 | inner iterations = 2
+[ Info: μ = 1.9073486328125e-5 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 1.9073486328125e-5
+[ Info: μ = 1.9073486328125e-5 | log fixed point gap = -4.003171785235702 | log feasibility gap = -5.118114384827443 | inner iterations = 3
+[ Info: μ = 9.5367431640625e-6 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 9.5367431640625e-6
+[ Info: μ = 9.5367431640625e-6 | log fixed point gap = -4.002611472221014 | log feasibility gap = -5.417245783963553 | inner iterations = 1
+[ Info: μ = 4.76837158203125e-6 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 4.76837158203125e-6
+[ Info: μ = 4.76837158203125e-6 | log fixed point gap = -4.0032802660361995 | log feasibility gap = -5.719226702029606 | inner iterations = 1
+[ Info: μ = 2.384185791015625e-6 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 2.384185791015625e-6
+[ Info: μ = 2.384185791015625e-6 | log fixed point gap = -4.002615540621043 | log feasibility gap = -6.020753835263515 | inner iterations = 1
+[ Info: μ = 1.1920928955078125e-6 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 1.1920928955078125e-6
+[ Info: μ = 1.1920928955078125e-6 | log fixed point gap = -4.003180810581608 | log feasibility gap = -6.322038389998189 | inner iterations = 1
+[ Info: μ = 5.960464477539062e-7 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 5.960464477539062e-7
+[ Info: μ = 5.960464477539062e-7 | log fixed point gap = -4.003745641138548 | log feasibility gap = -6.6232019434427 | inner iterations = 1
+[ Info: μ = 2.980232238769531e-7 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 2.980232238769531e-7
+[ Info: μ = 2.980232238769531e-7 | log fixed point gap = -4.003016278446461 | log feasibility gap = -6.924305226615777 | inner iterations = 1
+[ Info: μ = 1.4901161193847656e-7 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 1.4901161193847656e-7
+[ Info: μ = 1.4901161193847656e-7 | log fixed point gap = -4.004577412745962 | log feasibility gap = -7.225378581022057 | inner iterations = 1
+[ Info: μ = 7.450580596923828e-8 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 7.450580596923828e-8
+[ Info: μ = 7.450580596923828e-8 | log fixed point gap = -4.003499935524776 | log feasibility gap = -7.526436634899914 | inner iterations = 1
+[ Info: μ = 3.725290298461914e-8 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 3.725290298461914e-8
+[ Info: μ = 3.725290298461914e-8 | log fixed point gap = -4.002006728359185 | log feasibility gap = -7.827487428918998 | inner iterations = 1
+[ Info: μ = 1.862645149230957e-8 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 1.862645149230957e-8
+[ Info: μ = 1.862645149230957e-8 | log fixed point gap = -4.0031302706140375 | log feasibility gap = -8.128534426911722 | inner iterations = 1
+[ Info: μ = 9.313225746154785e-9 | log fixed point gap reached -4.0
+[ Info: information about the best state found for μ = 9.313225746154785e-9
+[ Info: μ = 9.313225746154785e-9 | log fixed point gap = -4.001048481336973 | log feasibility gap = -8.429579458525355 | inner iterations = 1
+[ Info: information about the best state found for smallest μ = 9.313225746154785e-9
+[ Info: μ = 9.313225746154785e-9 | log fixed point gap = -4.001048481336973 | log feasibility gap = -8.429579458525355 | inner iterations = 1
+Test Summary:     | Pass  Total
+matrix_completion |    2      2
+    Testing NExOS tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:24:25.928
+CPU usage: 186.01s (174.92s user, 11.36s kernel)
+
+Network usage:
+- eth0: 53.936 MiB received, 547.022 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":32,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":13,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":32,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":32,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":13,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":32,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":184320,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":77824,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":184320,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":184320,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":77824,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":184320,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":540000256,"max_usage":1973862400,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":213061632,"inactive_file":135168,"inactive_anon":163823616,"total_pgfault":4938945,"total_cache":293552128,"total_rss_huge":0,"total_active_anon":342786048,"total_pgmajfault":0,"pgpgin":3134967,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":3011271,"hierarchical_memsw_limit":0,"cache":293552128,"active_file":135168,"pgfault":4938945,"total_mapped_file":0,"total_pgpgout":3011271,"total_writeback":0,"rss":213061632,"unevictable":0,"total_inactive_anon":163823616,"total_pgpgin":3134967,"active_anon":342786048,"total_active_file":135168},"limit":540965302272},"name":"/NExOS-8MbEqwHj","networks":{"eth0":{"rx_bytes":56556139,"rx_packets":7368,"tx_packets":6496,"tx_bytes":560151,"tx_dropped":0,"rx_dropped":7,"tx_errors":0,"rx_errors":0}},"id":"c5e4fb62190aa635937b7b68c229e1bea9be4f7a9bed1c2c5b553fbe8fb8b918","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4086448284522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":174920000000,"usage_in_kernelmode":11360000000,"total_usage":186008147320,"percpu_usage":[0,0,0,186008142150,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5170,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:24:26.137780162Z"}

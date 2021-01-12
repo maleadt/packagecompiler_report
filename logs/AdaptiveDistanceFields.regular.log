@@ -1,0 +1,207 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:06:38.026
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:06:39.843
+#
+
+ Installing known registries into `~/.julia`
+###                                                                        5.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed AdaptiveDistanceFields ─ v0.1.0
+  Installed Adapt ────────────────── v2.4.0
+  Installed OffsetArrays ─────────── v1.5.0
+  Installed WoodburyMatrices ─────── v0.5.3
+  Installed Ratios ───────────────── v0.4.0
+  Installed IterTools ────────────── v1.3.0
+  Installed RegionTrees ──────────── v0.3.1
+  Installed AxisAlgorithms ───────── v1.0.0
+  Installed StaticArrays ─────────── v0.12.5
+  Installed Interpolations ───────── v0.12.10
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a1957575] + AdaptiveDistanceFields v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [79e6a3ab] + Adapt v2.4.0
+  [a1957575] + AdaptiveDistanceFields v0.1.0
+  [13072b0f] + AxisAlgorithms v1.0.0
+  [a98d9a8b] + Interpolations v0.12.10
+  [c8e1da08] + IterTools v1.3.0
+  [6fe1bfb0] + OffsetArrays v1.5.0
+  [c84ed2f1] + Ratios v0.4.0
+  [dee08c22] + RegionTrees v0.3.1
+  [90137ffa] + StaticArrays v0.12.5
+  [efce3f68] + WoodburyMatrices v0.5.3
+  [8ba89e20] + Distributed
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [a63ad114] + Mmap
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+
+
+################################################################################
+# Testing: 2021-01-11T23:06:45.287
+#
+
+    Testing AdaptiveDistanceFields
+┌ Error: Pkg.Resolve.ResolverError("empty intersection between RegionTrees@0.3.1 and project compatibility 0.2", nothing)
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1427
+Status `/tmp/jl_c7NJwb/Project.toml`
+  [a1957575] AdaptiveDistanceFields v0.1.0
+  [f6369f11] ForwardDiff v0.10.14
+  [a98d9a8b] Interpolations v0.11.2
+  [dee08c22] RegionTrees v0.2.0
+  [90137ffa] StaticArrays v0.11.1
+  [8dfed614] Test
+Status `/tmp/jl_c7NJwb/Manifest.toml`
+  [a1957575] AdaptiveDistanceFields v0.1.0
+  [56f22d72] Artifacts v1.3.0
+  [13072b0f] AxisAlgorithms v0.3.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v2.2.1
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [f6369f11] ForwardDiff v0.10.14
+  [a98d9a8b] Interpolations v0.11.2
+  [c8e1da08] IterTools v1.3.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [1914dd2f] MacroTools v0.5.6
+  [46d2c3a1] MuladdMacro v0.2.2
+  [77ba4419] NaNMath v0.3.5
+  [6fe1bfb0] OffsetArrays v0.11.4
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [c84ed2f1] Ratios v0.3.1
+  [dee08c22] RegionTrees v0.2.0
+  [276daf66] SpecialFunctions v1.2.1
+  [90137ffa] StaticArrays v0.11.1
+  [efce3f68] WoodburyMatrices v0.5.3
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+ERROR: LoadError: LoadError: TypeVar in Vararg length must have bounds Union{} and Any
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/AxisAlgorithms/m2HBJ/src/tridiag.jl:21
+ [2] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [3] include at ./Base.jl:368 [inlined]
+ [4] include(::String) at /home/pkgeval/.julia/packages/AxisAlgorithms/m2HBJ/src/AxisAlgorithms.jl:3
+ [5] top-level scope at /home/pkgeval/.julia/packages/AxisAlgorithms/m2HBJ/src/AxisAlgorithms.jl:46
+ [6] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [7] include(::Module, ::String) at ./Base.jl:368
+ [8] top-level scope at none:2
+ [9] eval at ./boot.jl:331 [inlined]
+ [10] eval(::Expr) at ./client.jl:467
+ [11] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/AxisAlgorithms/m2HBJ/src/tridiag.jl:21
+in expression starting at /home/pkgeval/.julia/packages/AxisAlgorithms/m2HBJ/src/AxisAlgorithms.jl:46
+ERROR: LoadError: Failed to precompile AxisAlgorithms [13072b0f-2c55-5437-9ae7-d433b7a33950] to /home/pkgeval/.julia/compiled/v1.5/AxisAlgorithms/lW7vi_7gX24.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1305
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ [6] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [7] include(::Module, ::String) at ./Base.jl:368
+ [8] top-level scope at none:2
+ [9] eval at ./boot.jl:331 [inlined]
+ [10] eval(::Expr) at ./client.jl:467
+ [11] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/Interpolations/0OnYb/src/Interpolations.jl:35
+ERROR: LoadError: Failed to precompile Interpolations [a98d9a8b-a2ab-59e6-89dd-64a1c18fca59] to /home/pkgeval/.julia/compiled/v1.5/Interpolations/VpKVx_7gX24.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1305
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ [6] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [7] include(::Module, ::String) at ./Base.jl:368
+ [8] top-level scope at none:2
+ [9] eval at ./boot.jl:331 [inlined]
+ [10] eval(::Expr) at ./client.jl:467
+ [11] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/AdaptiveDistanceFields/JiCwu/src/AdaptiveDistanceFields.jl:7
+ERROR: LoadError: Failed to precompile AdaptiveDistanceFields [a1957575-6125-5dba-8f92-417d2d1f4a46] to /home/pkgeval/.julia/compiled/v1.5/AdaptiveDistanceFields/1q04a_7gX24.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1305
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ [6] include(::String) at ./client.jl:457
+ [7] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/AdaptiveDistanceFields/JiCwu/test/runtests.jl:2
+
+PkgEval failed: Package AdaptiveDistanceFields errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:07:34.32
+CPU usage: 56.04s (50.11s user, 6.04s kernel)
+
+Network usage:
+- eth0: 13.340 MiB received, 199.338 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":131072,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":24576,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":131072,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":131072,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":24576,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":131072,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":359698432,"max_usage":1137430528,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":207421440,"inactive_file":135168,"inactive_anon":114081792,"total_pgfault":1768866,"total_cache":120922112,"total_rss_huge":0,"total_active_anon":214241280,"total_pgmajfault":0,"pgpgin":1161699,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":540672,"total_unevictable":0,"total_dirty":540672,"writeback":135168,"pgpgout":1081483,"hierarchical_memsw_limit":0,"cache":120922112,"active_file":135168,"pgfault":1768866,"total_mapped_file":0,"total_pgpgout":1081483,"total_writeback":135168,"rss":207421440,"unevictable":0,"total_inactive_anon":114081792,"total_pgpgin":1161699,"active_anon":214241280,"total_active_file":135168},"limit":540965302272},"name":"/AdaptiveDistanceFields-EVeD80If","networks":{"eth0":{"rx_bytes":13988143,"rx_packets":1873,"tx_packets":1887,"tx_bytes":204122,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"53235cb00888d7dc3ead40fdfa8d33bd68169fd87e625f9998fe1be1dff135d6","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6717200844522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":50110000000,"usage_in_kernelmode":6040000000,"total_usage":56037490765,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,56036005924,0,0,4160,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1480681]}},"read":"2021-01-11T23:07:34.322251003Z"}

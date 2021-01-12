@@ -1,0 +1,117 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:06:20.366
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:06:22.147
+#
+
+ Installing known registries into `~/.julia`
+#########                                                                 13.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Libiconv_jll ──────── v1.16.0+7
+  Installed Zlib_jll ──────────── v1.2.11+18
+  Installed ReadStat ──────────── v1.0.2
+  Installed ReadStat_jll ──────── v1.1.1+0
+  Installed DataValues ────────── v0.4.13
+  Installed JLLWrappers ───────── v1.2.0
+  Installed DataValueInterfaces ─ v1.0.0
+  Installed Artifacts ─────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [d71aba96] + ReadStat v1.0.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [e7dc6d0d] + DataValues v0.4.13
+  [692b3bcd] + JLLWrappers v1.2.0
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [d71aba96] + ReadStat v1.0.2
+  [a4dc8951] + ReadStat_jll v1.1.1+0
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T23:06:27.792
+#
+
+    Testing ReadStat
+Status `/tmp/jl_srFFFQ/Project.toml`
+  [e7dc6d0d] DataValues v0.4.13
+  [d71aba96] ReadStat v1.0.2
+  [a4dc8951] ReadStat_jll v1.1.1+0
+  [ade2ca70] Dates
+  [8dfed614] Test
+Status `/tmp/jl_srFFFQ/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [e7dc6d0d] DataValues v0.4.13
+  [692b3bcd] JLLWrappers v1.2.0
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [d71aba96] ReadStat v1.0.2
+  [a4dc8951] ReadStat_jll v1.1.1+0
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+ReadStat      |   24     24
+    Testing ReadStat tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:06:46.812
+CPU usage: 26.47s (22.93s user, 3.61s kernel)
+
+Network usage:
+- eth0: 2.665 MiB received, 64.644 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":330223616,"max_usage":1015037952,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":218951680,"inactive_file":135168,"inactive_anon":79343616,"total_pgfault":755964,"total_cache":81432576,"total_rss_huge":0,"total_active_anon":221134848,"total_pgmajfault":0,"pgpgin":463551,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":675840,"total_unevictable":0,"total_dirty":675840,"writeback":405504,"pgpgout":390215,"hierarchical_memsw_limit":0,"cache":81432576,"active_file":135168,"pgfault":755964,"total_mapped_file":0,"total_pgpgout":390215,"total_writeback":405504,"rss":218951680,"unevictable":0,"total_inactive_anon":79343616,"total_pgpgin":463551,"active_anon":221134848,"total_active_file":135168},"limit":540965302272},"name":"/ReadStat-arVZEEbN","networks":{"eth0":{"rx_bytes":2794020,"rx_packets":546,"tx_packets":604,"tx_bytes":66195,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"cba0cb249f781c48fba8f309a1723537a09950b1886807eca47a99ae20e1c312","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6711128464522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":22930000000,"usage_in_kernelmode":3610000000,"total_usage":26471070522,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26469389601,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31930,0,0,1648991]}},"read":"2021-01-11T23:06:46.814573093Z"}

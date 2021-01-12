@@ -1,0 +1,201 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T21:42:20.531
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T21:42:22.253
+#
+
+ Installing known registries into `~/.julia`
+####################                                                      29.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed BusinessDays ──── v0.9.12
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [4f18b42c] + BusinessDays v0.9.12
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [4f18b42c] + BusinessDays v0.9.12
+  [9b87118b] + PackageCompiler v1.2.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T21:42:27.769
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 147.587 MiB, compilation took 164 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T21:45:18.63
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/BusinessDays-3n7Jhw1k.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:45:20.406
+#
+
+ Installing known registries into `~/.julia`
+####################                                                      28.3%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed BusinessDays ─ v0.9.12
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [4f18b42c] + BusinessDays v0.9.12
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [4f18b42c] + BusinessDays v0.9.12
+  [ade2ca70] + Dates
+  [de0858da] + Printf
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T21:45:24.609
+#
+
+    Testing BusinessDays
+Status `/tmp/jl_F9YEfp/Project.toml`
+  [4f18b42c] BusinessDays v0.9.12
+  [ade2ca70] Dates
+  [8dfed614] Test
+Status `/tmp/jl_F9YEfp/Manifest.toml`
+  [4f18b42c] BusinessDays v0.9.12
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+##########################
+ Using cache: false
+##########################
+Timing composite calendar bdays calculation
+  0.000015 seconds (24 allocations: 384 bytes)
+Timing single bdays calculation
+  0.003659 seconds (1 allocation: 16 bytes)
+Timing 100 bdays calculations
+  0.364141 seconds (100 allocations: 1.562 KiB)
+Timing cache creation
+  0.003661 seconds (5 allocations: 269.500 KiB)
+Timing vectorized functions (vector length 7306)
+  3.146574 seconds (2 allocations: 57.203 KiB)
+  3.165878 seconds (18.73 k allocations: 1.066 MiB, 0.55% gc time)
+  3.182121 seconds (1.19 k allocations: 118.887 KiB)
+  0.000658 seconds (1 allocation: 7.312 KiB)
+  0.000823 seconds (1 allocation: 7.312 KiB)
+  0.000698 seconds (1 allocation: 7.312 KiB)
+##########################
+ Using cache: true
+##########################
+Timing composite calendar bdays calculation
+  0.000012 seconds (5 allocations: 80 bytes)
+Timing single bdays calculation
+  0.000014 seconds (5 allocations: 80 bytes)
+Timing 100 bdays calculations
+  0.000036 seconds (500 allocations: 7.812 KiB)
+a million...
+  0.246564 seconds (5.00 M allocations: 76.294 MiB, 2.69% gc time)
+Timing vectorized functions (vector length 7306)
+  0.001666 seconds (29.23 k allocations: 513.828 KiB)
+  0.001745 seconds (29.23 k allocations: 513.828 KiB)
+  0.001733 seconds (29.23 k allocations: 513.828 KiB)
+  0.000309 seconds (1 allocation: 7.312 KiB)
+  0.000360 seconds (1 allocation: 7.312 KiB)
+  0.000360 seconds (1 allocation: 7.312 KiB)
+Perftests
+  0.002414 seconds (528 allocations: 33.665 KiB)
+  0.000010 seconds (5 allocations: 80 bytes)
+  0.000198 seconds (5.00 k allocations: 78.125 KiB)
+  0.004141 seconds (8.00 k allocations: 125.000 KiB)
+  0.004577 seconds (8.00 k allocations: 125.000 KiB)
+type
+  0.000198 seconds (5.00 k allocations: 78.125 KiB)
+  0.000182 seconds (4.00 k allocations: 70.438 KiB)
+  0.000223 seconds (7.00 k allocations: 125.250 KiB)
+sym
+  0.004131 seconds (8.00 k allocations: 125.000 KiB)
+  0.000242 seconds (4.00 k allocations: 70.438 KiB)
+  0.003897 seconds (7.00 k allocations: 125.250 KiB)
+str
+  0.004256 seconds (8.00 k allocations: 125.000 KiB)
+  0.000245 seconds (4.00 k allocations: 70.438 KiB)
+  0.004061 seconds (7.00 k allocations: 125.250 KiB)
+initcache type
+  0.004186 seconds (5 allocations: 305.156 KiB)
+initcache sym
+  0.004250 seconds (7 allocations: 305.188 KiB)
+initcache str
+  0.004204 seconds (7 allocations: 305.188 KiB)
+WeekendsOnly no cache
+  0.000005 seconds
+WeekendsOnly cache enabled
+  0.000004 seconds
+Returns false: false
+Returns true: true
+a million with GenericHolidayCalendar...
+  0.101319 seconds (5.00 M allocations: 76.294 MiB, 10.13% gc time)
+    Testing BusinessDays tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:45:49.36
+CPU usage: 30.79s (28.38s user, 2.46s kernel)
+
+Network usage:
+- eth0: 2.563 MiB received, 32.305 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":19,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":19,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":77824,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":77824,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":293330944,"max_usage":503988224,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":183128064,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":352044,"total_cache":80322560,"total_rss_huge":0,"total_active_anon":183828480,"total_pgmajfault":0,"pgpgin":176814,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":112516,"hierarchical_memsw_limit":0,"cache":80322560,"active_file":811008,"pgfault":352044,"total_mapped_file":0,"total_pgpgout":112516,"total_writeback":0,"rss":183128064,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":176814,"active_anon":183828480,"total_active_file":811008},"limit":540965302272},"name":"/BusinessDays-DDc0klAS","networks":{"eth0":{"rx_bytes":2687988,"rx_packets":362,"tx_packets":359,"tx_bytes":33080,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"440daefede963799284fd946dccda5138e23180c9719d5bddbfea8eed06c4e62","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6090444604522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":28380000000,"usage_in_kernelmode":2460000000,"total_usage":30786104675,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30786102175,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:45:49.363044859Z"}

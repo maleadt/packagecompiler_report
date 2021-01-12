@@ -1,0 +1,152 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:47:24.439
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:47:26.223
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed BinaryDecisionDiagrams ─ v0.1.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [cd45f48d] + BinaryDecisionDiagrams v0.1.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [cd45f48d] + BinaryDecisionDiagrams v0.1.5
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T23:47:29.654
+#
+
+    Testing BinaryDecisionDiagrams
+Status `/tmp/jl_WBjOcT/Project.toml`
+  [cd45f48d] BinaryDecisionDiagrams v0.1.5
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_WBjOcT/Manifest.toml`
+  [cd45f48d] BinaryDecisionDiagrams v0.1.5
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary: | Pass  Total
+Valuations    | 8460   8460
+Test Summary: | Pass  Total
+Conjunctions  |   72     72
+Test Summary: | Pass  Total
+Convals       |   96     96
+Test Summary: | Pass  Total
+Terminal ⊤    |   14     14
+Test Summary: | Pass  Total
+Terminal ⊥    |   14     14
+Test Summary: | Pass  Total
+Variable      |   63     63
+Test Summary:       | Pass  Total
+Forced construction |   98     98
+Test Summary: | Pass  Total
+Reduce        |   10     10
+Test Summary: | Pass  Total
+Restrict      | 7420   7420
+Test Summary: | Pass  Total
+Evaluation    |  124    124
+Test Summary: | Pass  Total
+Negate        |   22     22
+Test Summary: | Pass  Total
+Conjunction   |   68     68
+Test Summary: | Pass  Total
+Disjunction   |   68     68
+Test Summary: | Pass  Total
+XOR           |   38     38
+Test Summary:           | Pass  Total
+Equality and inequality |   16     16
+Test Summary: | Pass  Total
+Iterators     |   12     12
+Test Summary: | Pass  Total
+Hash function |   36     36
+Test Summary:         | Pass  Total
+Shannon decomposition |   37     37
+Test Summary:      | Pass  Total
+Copy and deep copy |   12     12
+Test Summary:         | Pass  Total
+String representation |    6      6
+Test Summary: | Pass  Total
+Elimination   |   39     39
+Test Summary:   | Pass  Total
+Marginalization |  105    105
+Test Summary: | Pass  Total
+Scope         |   30     30
+Test Summary: | Pass  Total
+Mentions      |  576    576
+Test Summary:  | Pass  Total
+Literal vector |   10     10
+Test Summary:      | Pass  Total
+Literal conversion |  100    100
+Test Summary: | Pass  Total
+At least      |   44     44
+Test Summary: | Pass  Total
+At most       |   44     44
+Test Summary: | Pass  Total
+Exactly       |   88     88
+Test Summary: | Pass  Total
+Size          |   14     14
+Test Summary:          | Pass  Total
+Valuations as a Matrix | 2820   2820
+Test Summary:                   | Pass  Total
+Value of literal in conjunction | 1078   1078
+Test Summary:             | Pass  Total
+Pretty print conjunctions |    5      5
+Test Summary: | Pass  Total
+Parallelism   |  512    512
+Test Summary: | Pass  Total
+Post-order    |  271    271
+Test Summary:     | Pass  Total
+Load and save CNF |   40     40
+Test Summary:     | Pass  Total
+Load and save DNF |   40     40
+Test Summary:     | Pass  Total
+Save and load BDD |   11     11
+    Testing BinaryDecisionDiagrams tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:47:50.412
+CPU usage: 26.06s (23.57s user, 2.55s kernel)
+
+Network usage:
+- eth0: 2.559 MiB received, 25.655 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":321036288,"max_usage":619868160,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":211124224,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":509190,"total_cache":80281600,"total_rss_huge":0,"total_active_anon":211943424,"total_pgmajfault":0,"pgpgin":265980,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":194838,"hierarchical_memsw_limit":0,"cache":80281600,"active_file":675840,"pgfault":509190,"total_mapped_file":0,"total_pgpgout":194838,"total_writeback":0,"rss":211124224,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":265980,"active_anon":211943424,"total_active_file":675840},"limit":540965302272},"name":"/BinaryDecisionDiagrams-Km8oEvBs","networks":{"eth0":{"rx_bytes":2683333,"rx_packets":263,"tx_packets":256,"tx_bytes":26271,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"162fd2651fbf8950a8e4a99eacd910194304627f2d1547d74440e7a437b6f235","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":7025993854522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":23570000000,"usage_in_kernelmode":2550000000,"total_usage":26064984552,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26064981282,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3270,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:47:50.41491796Z"}

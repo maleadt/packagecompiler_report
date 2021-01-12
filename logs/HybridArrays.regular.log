@@ -1,0 +1,120 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:12:48.411
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:12:50.209
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Requires ───── v1.1.2
+  Installed HybridArrays ─ v0.4.4
+  Installed StaticArrays ─ v1.0.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [1baab800] + HybridArrays v0.4.4
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [1baab800] + HybridArrays v0.4.4
+  [ae029012] + Requires v1.1.2
+  [90137ffa] + StaticArrays v1.0.1
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [cf7118a7] + UUIDs
+
+
+################################################################################
+# Testing: 2021-01-11T22:12:54.336
+#
+
+    Testing HybridArrays
+Status `/tmp/jl_b7DWTQ/Project.toml`
+  [4fba245c] ArrayInterface v2.14.13
+  [1baab800] HybridArrays v0.4.4
+  [ae029012] Requires v1.1.2
+  [90137ffa] StaticArrays v1.0.1
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_b7DWTQ/Manifest.toml`
+  [4fba245c] ArrayInterface v2.14.13
+  [1baab800] HybridArrays v0.4.4
+  [ae029012] Requires v1.1.2
+  [90137ffa] StaticArrays v1.0.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+Test Summary:      | Pass  Total
+Inner Constructors |   10     10
+Test Summary:      | Pass  Total
+Outer Constructors |   10     10
+Test Summary:                 | Pass  Total
+HybridVector and HybridMatrix |    9      9
+Test Summary: | Pass  Total
+setindex      |    1      1
+Test Summary: | Pass  Total
+aliasing      |    7      7
+Test Summary: | Pass  Broken  Total
+back to Array |    8       1      9
+Test Summary: | Pass  Total
+promotion     |    3      3
+Test Summary:          | Pass  Total
+dynamically sized axes |   28     28
+Test Summary:           | Pass  Total
+AbstractArray interface |   42     42
+Test Summary:           | Pass  Total
+AbstractArray interface |    7      7
+Test Summary: | Pass  Broken  Total
+broadcasting  |   91       1     92
+Test Summary:  | Pass  Total
+Linear algebra |   25     25
+Test Summary:             | Pass  Total
+Statically sized SubArray |    6      6
+Test Summary:                | Pass  Total
+ArrayInterface compatibility |   14     14
+    Testing HybridArrays tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:13:42.986
+CPU usage: 54.50s (51.27s user, 3.30s kernel)
+
+Network usage:
+- eth0: 2.785 MiB received, 44.083 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":289193984,"max_usage":943398912,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":176467968,"inactive_file":135168,"inactive_anon":79749120,"total_pgfault":927696,"total_cache":83079168,"total_rss_huge":0,"total_active_anon":179773440,"total_pgmajfault":0,"pgpgin":595254,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":531888,"hierarchical_memsw_limit":0,"cache":83079168,"active_file":135168,"pgfault":927696,"total_mapped_file":0,"total_pgpgout":531888,"total_writeback":0,"rss":176467968,"unevictable":0,"total_inactive_anon":79749120,"total_pgpgin":595254,"active_anon":179773440,"total_active_file":135168},"limit":540965302272},"name":"/HybridArrays-IWGIgBtO","networks":{"eth0":{"rx_bytes":2920471,"rx_packets":439,"tx_packets":432,"tx_bytes":45141,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"245c9a78ca27dfb9052f18f2b204bcd693d78a34feaa9060d7057dc61938d2f3","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6304311574522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":51270000000,"usage_in_kernelmode":3300000000,"total_usage":54503664915,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,54503664915,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:13:42.989283514Z"}

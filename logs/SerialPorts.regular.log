@@ -1,0 +1,137 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:12:44.341
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:12:46.141
+#
+
+ Installing known registries into `~/.julia`
+###################################                                       49.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed SerialPorts ──── v0.2.2
+  Installed MacroTools ───── v0.5.6
+  Installed VersionParsing ─ v1.2.0
+  Installed Parsers ──────── v1.0.15
+  Installed Conda ────────── v1.5.0
+  Installed JSON ─────────── v0.21.1
+  Installed PyCall ───────── v1.92.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [5d0f9de7] + SerialPorts v0.2.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [8f4d0f93] + Conda v1.5.0
+  [682c06a0] + JSON v0.21.1
+  [1914dd2f] + MacroTools v0.5.6
+  [69de0a69] + Parsers v1.0.15
+  [438e738f] + PyCall v1.92.2
+  [5d0f9de7] + SerialPorts v0.2.2
+  [81def892] + VersionParsing v1.2.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [4ec0a83e] + Unicode
+   Building Conda ─→ `~/.julia/packages/Conda/x5ml4/deps/build.log`
+   Building PyCall → `~/.julia/packages/PyCall/tqyST/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T20:13:23.544
+#
+
+    Testing SerialPorts
+Status `/tmp/jl_oYuDxQ/Project.toml`
+  [438e738f] PyCall v1.92.2
+  [5d0f9de7] SerialPorts v0.2.2
+  [8dfed614] Test
+Status `/tmp/jl_oYuDxQ/Manifest.toml`
+  [8f4d0f93] Conda v1.5.0
+  [682c06a0] JSON v0.21.1
+  [1914dd2f] MacroTools v0.5.6
+  [69de0a69] Parsers v1.0.15
+  [438e738f] PyCall v1.92.2
+  [5d0f9de7] SerialPorts v0.2.2
+  [81def892] VersionParsing v1.2.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+[ Info: Installing serial via the Conda pyserial package...
+[ Info: Running `conda install -q -y pyserial` in root environment
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/pkgeval/.julia/conda/3
+
+  added / updated specs:
+    - pyserial
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    pyserial-3.5               |   py38h06a4308_0         127 KB
+    ------------------------------------------------------------
+                                           Total:         127 KB
+
+The following NEW packages will be INSTALLED:
+
+  pyserial           pkgs/main/linux-64::pyserial-3.5-py38h06a4308_0
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+list_serialports() = String[]
+┌ Warning: User pkgeval is not in the 'dialout' group.
+│ They can be added with:
+│  'usermod -a -G dialout pkgeval'
+└ @ SerialPorts ~/.julia/packages/SerialPorts/4zoml/src/SerialPorts.jl:127
+    Testing SerialPorts tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:13:45.726
+CPU usage: 60.41s (53.43s user, 7.06s kernel)
+
+Network usage:
+- eth0: 246.748 MiB received, 678.990 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":2,"op":"Read","minor":0},{"major":259,"value":34,"op":"Write","minor":0},{"major":259,"value":21,"op":"Sync","minor":0},{"major":259,"value":15,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":36,"op":"Total","minor":0},{"major":253,"value":2,"op":"Read","minor":2},{"major":253,"value":34,"op":"Write","minor":2},{"major":253,"value":21,"op":"Sync","minor":2},{"major":253,"value":15,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":36,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":40960,"op":"Read","minor":0},{"major":259,"value":167936,"op":"Write","minor":0},{"major":259,"value":147456,"op":"Sync","minor":0},{"major":259,"value":61440,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":208896,"op":"Total","minor":0},{"major":253,"value":40960,"op":"Read","minor":2},{"major":253,"value":167936,"op":"Write","minor":2},{"major":253,"value":147456,"op":"Sync","minor":2},{"major":253,"value":61440,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":208896,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":1847865344,"max_usage":2421395456,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":186314752,"inactive_file":135168,"inactive_anon":1169608704,"total_pgfault":1475892,"total_cache":1607532544,"total_rss_huge":0,"total_active_anon":624205824,"total_pgmajfault":0,"pgpgin":1514436,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":1076501,"hierarchical_memsw_limit":0,"cache":1607532544,"active_file":135168,"pgfault":1475892,"total_mapped_file":0,"total_pgpgout":1076501,"total_writeback":0,"rss":186314752,"unevictable":0,"total_inactive_anon":1169608704,"total_pgpgin":1514436,"active_anon":624205824,"total_active_file":135168},"limit":540965302272},"name":"/SerialPorts-blecjnL3","networks":{"eth0":{"rx_bytes":258734554,"rx_packets":29216,"tx_packets":11998,"tx_bytes":695286,"tx_dropped":0,"rx_dropped":3,"tx_errors":0,"rx_errors":0}},"id":"caca62355b593c087cc5401ad447a8cfca486b3f8ee233363fa2603cc713f799","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5384789994522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":53430000000,"usage_in_kernelmode":7060000000,"total_usage":60410602973,"percpu_usage":[0,0,0,0,60410598453,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4520,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:13:45.728715615Z"}

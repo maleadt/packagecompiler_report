@@ -1,0 +1,95 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:32:57.589
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:32:59.398
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ConstructionBase ─ v1.0.0
+  Installed Unitful ────────── v1.5.0
+  Installed UnitfulMoles ───── v0.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [999f2bd7] + UnitfulMoles v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [187b0558] + ConstructionBase v1.0.0
+  [1986cc42] + Unitful v1.5.0
+  [999f2bd7] + UnitfulMoles v0.1.0
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+
+
+################################################################################
+# Testing: 2021-01-11T19:33:03.059
+#
+
+    Testing UnitfulMoles
+Status `/tmp/jl_KLwalQ/Project.toml`
+  [1986cc42] Unitful v1.5.0
+  [999f2bd7] UnitfulMoles v0.1.0
+  [8dfed614] Test
+Status `/tmp/jl_KLwalQ/Manifest.toml`
+  [187b0558] ConstructionBase v1.0.0
+  [1986cc42] Unitful v1.5.0
+  [999f2bd7] UnitfulMoles v0.1.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary: | Pass  Total
+Printing      |    2      2
+Test Summary:          | Pass  Total
+units convert to grams |    1      1
+Test Summary:                 | Pass  Total
+Can add or subtract mol units |    4      4
+Test Summary:                    | Pass  Total
+Can multiply or divide mol units |    2      2
+Test Summary:                                | Pass  Total
+Compound weight is the sum of its components |    2      2
+Test Summary: | Pass  Total
+Sum base      |    1      1
+Test Summary:  | Pass  Total
+Parse compound |    5      5
+Test Summary:                                    |
+xmols are the correct fraction of their compound | No tests
+    Testing UnitfulMoles tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:33:33.347
+CPU usage: 35.83s (32.98s user, 2.91s kernel)
+
+Network usage:
+- eth0: 2.648 MiB received, 36.742 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":358440960,"max_usage":744431616,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":247693312,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":655677,"total_cache":81547264,"total_rss_huge":0,"total_active_anon":250331136,"total_pgmajfault":0,"pgpgin":323466,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":243076,"hierarchical_memsw_limit":0,"cache":81547264,"active_file":135168,"pgfault":655677,"total_mapped_file":0,"total_pgpgout":243076,"total_writeback":0,"rss":247693312,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":323466,"active_anon":250331136,"total_active_file":135168},"limit":540965302272},"name":"/UnitfulMoles-bdHaRXqK","networks":{"eth0":{"rx_bytes":2776965,"rx_packets":349,"tx_packets":354,"tx_bytes":37624,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"e734ab2aaf7571e81623ee502cf3edd585a5cbc469b9482ccd40c24cc7145a5d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5076511954522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":32980000000,"usage_in_kernelmode":2910000000,"total_usage":35832259779,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35832259779,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:33:34.221177021Z"}

@@ -1,0 +1,119 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:46:52.15
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:46:53.971
+#
+
+ Installing known registries into `~/.julia`
+#############                                                             18.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed TableOperations ───────────── v1.0.0
+  Installed DataAPI ───────────────────── v1.4.0
+  Installed IteratorInterfaceExtensions ─ v1.0.0
+  Installed SentinelArrays ────────────── v1.2.16
+  Installed TableTraits ───────────────── v1.0.0
+  Installed DataValueInterfaces ───────── v1.0.0
+  Installed Tables ────────────────────── v1.2.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [ab02a1b2] + TableOperations v1.0.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [9a962f9c] + DataAPI v1.4.0
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [91c51154] + SentinelArrays v1.2.16
+  [ab02a1b2] + TableOperations v1.0.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T20:46:58.326
+#
+
+    Testing TableOperations
+Status `/tmp/jl_zSNiad/Project.toml`
+  [91c51154] SentinelArrays v1.2.16
+  [ab02a1b2] TableOperations v1.0.0
+  [bd369af6] Tables v1.2.2
+  [8dfed614] Test
+Status `/tmp/jl_zSNiad/Manifest.toml`
+  [9a962f9c] DataAPI v1.4.0
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [91c51154] SentinelArrays v1.2.16
+  [ab02a1b2] TableOperations v1.0.0
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Test Summary:             | Pass  Total
+TableOperations.transform |   40     40
+Test Summary:          | Pass  Total
+TableOperations.select |   96     96
+Test Summary:          | Pass  Total
+TableOperations.filter |   12     12
+Test Summary:       | Pass  Total
+TableOperations.map |   11     11
+Test Summary:                  | Pass  Total
+TableOperations.joinpartitions |    6      6
+Test Summary:                  | Pass  Total
+TableOperations.makepartitions |   11     11
+Test Summary:               | Pass  Total
+TableOperations.narrowtypes |    4      4
+    Testing TableOperations tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:47:22.157
+CPU usage: 30.13s (26.83s user, 3.36s kernel)
+
+Network usage:
+- eth0: 2.664 MiB received, 54.326 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":11,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":30,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":35,"op":"Total","minor":0},{"major":253,"value":11,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":30,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":35,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":45056,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":151552,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":172032,"op":"Total","minor":0},{"major":253,"value":45056,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":151552,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":172032,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":323973120,"max_usage":978300928,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":213831680,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":692175,"total_cache":80576512,"total_rss_huge":0,"total_active_anon":215457792,"total_pgmajfault":0,"pgpgin":428703,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":356828,"hierarchical_memsw_limit":0,"cache":80576512,"active_file":135168,"pgfault":692175,"total_mapped_file":0,"total_pgpgout":356828,"total_writeback":0,"rss":213831680,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":428703,"active_anon":215457792,"total_active_file":135168},"limit":540965302272},"name":"/TableOperations-awexPJ4T","networks":{"eth0":{"rx_bytes":2793282,"rx_packets":444,"tx_packets":480,"tx_bytes":55630,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"da50f5745e993206de1ffbcc1f4cb72a7e779f365901271884517683323efdc3","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5642496344522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":26830000000,"usage_in_kernelmode":3360000000,"total_usage":30131502307,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30131498657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3650]}},"read":"2021-01-11T20:47:22.484932835Z"}

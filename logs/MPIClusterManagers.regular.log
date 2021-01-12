@@ -1,0 +1,130 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:52:20.389
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:52:22.174
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MPIClusterManagers ─────────── v0.2.0
+  Installed Requires ───────────────────── v1.1.2
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed MPICH_jll ──────────────────── v3.3.2+10
+  Installed MicrosoftMPI_jll ───────────── v10.1.2+3
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed OpenMPI_jll ────────────────── v4.0.2+2
+  Installed MPI ────────────────────────── v0.14.3
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed DocStringExtensions ────────── v0.8.3
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [e7922434] + MPIClusterManagers v0.2.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [ffbed154] + DocStringExtensions v0.8.3
+  [692b3bcd] + JLLWrappers v1.2.0
+  [da04e1cc] + MPI v0.14.3
+  [7cb0a576] + MPICH_jll v3.3.2+10
+  [e7922434] + MPIClusterManagers v0.2.0
+  [9237b28f] + MicrosoftMPI_jll v10.1.2+3
+  [fe0851c0] + OpenMPI_jll v4.0.2+2
+  [ae029012] + Requires v1.1.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building MPI → `~/.julia/packages/MPI/7RZhH/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T23:52:29.176
+#
+
+    Testing MPIClusterManagers
+Status `/tmp/jl_OjX0gR/Project.toml`
+  [da04e1cc] MPI v0.14.3
+  [e7922434] MPIClusterManagers v0.2.0
+  [8ba89e20] Distributed
+  [44cfe95a] Pkg
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Status `/tmp/jl_OjX0gR/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [ffbed154] DocStringExtensions v0.8.3
+  [692b3bcd] JLLWrappers v1.2.0
+  [da04e1cc] MPI v0.14.3
+  [7cb0a576] MPICH_jll v3.3.2+10
+  [e7922434] MPIClusterManagers v0.2.0
+  [9237b28f] MicrosoftMPI_jll v10.1.2+3
+  [fe0851c0] OpenMPI_jll v4.0.2+2
+  [ae029012] Requires v1.1.2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Precompiling project...
+[ Info: Testing: test_cman_julia.jl
+[ Info: Testing: test_cman_mpi.jl
+[ Info: Testing: test_cman_tcp.jl
+    Testing MPIClusterManagers tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:53:56.536
+CPU usage: 95.16s (82.44s user, 12.86s kernel)
+
+Network usage:
+- eth0: 2.749 MiB received, 67.190 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":75,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":94,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":103,"op":"Total","minor":0},{"major":253,"value":75,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":94,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":103,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":2228224,"op":"Read","minor":0},{"major":259,"value":143360,"op":"Write","minor":0},{"major":259,"value":2334720,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":2371584,"op":"Total","minor":0},{"major":253,"value":2228224,"op":"Read","minor":2},{"major":253,"value":143360,"op":"Write","minor":2},{"major":253,"value":2334720,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":2371584,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":340287488,"max_usage":1278447616,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":33,"total_rss":221413376,"inactive_file":2027520,"inactive_anon":80019456,"total_pgfault":2059563,"total_cache":85123072,"total_rss_huge":0,"total_active_anon":224378880,"total_pgmajfault":33,"pgpgin":1024815,"rss_huge":0,"mapped_file":675840,"total_inactive_file":2027520,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":949979,"hierarchical_memsw_limit":0,"cache":85123072,"active_file":270336,"pgfault":2059563,"total_mapped_file":675840,"total_pgpgout":949979,"total_writeback":0,"rss":221413376,"unevictable":0,"total_inactive_anon":80019456,"total_pgpgin":1024815,"active_anon":224378880,"total_active_file":270336},"limit":540965302272},"name":"/MPIClusterManagers-hCJWmZE9","networks":{"eth0":{"rx_bytes":2882344,"rx_packets":537,"tx_packets":570,"tx_bytes":68803,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"c8ffaa75f777fd6869163f9ab2e166a4af86e5c1761812d5e54e4114b20691ae","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":7072752924522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":82440000000,"usage_in_kernelmode":12860000000,"total_usage":95161788417,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,95161788417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:53:56.539056554Z"}

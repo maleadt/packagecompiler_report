@@ -1,0 +1,456 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T16:09:49.898
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:09:51.718
+#
+
+ Installing known registries into `~/.julia`
+#########################################                                 57.3%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed YAML ──────────────────────── v0.4.5
+  Installed DataAPI ───────────────────── v1.4.0
+  Installed Mustache ──────────────────── v1.0.10
+  Installed Requires ──────────────────── v1.1.2
+  Installed IteratorInterfaceExtensions ─ v1.0.0
+  Installed JSON ──────────────────────── v0.21.1
+  Installed DocStringExtensions ───────── v0.8.3
+  Installed Weave ─────────────────────── v0.10.6
+  Installed DataValueInterfaces ───────── v1.0.0
+  Installed TableTraits ───────────────── v1.0.0
+  Installed Highlights ────────────────── v0.4.5
+  Installed Parsers ───────────────────── v1.0.15
+  Installed Tables ────────────────────── v1.2.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [44d3d7a6] + Weave v0.10.6
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [9a962f9c] + DataAPI v1.4.0
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [ffbed154] + DocStringExtensions v0.8.3
+  [eafb193a] + Highlights v0.4.5
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [ffc61752] + Mustache v1.0.10
+  [69de0a69] + Parsers v1.0.15
+  [ae029012] + Requires v1.1.2
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [44d3d7a6] + Weave v0.10.6
+  [ddb6d928] + YAML v0.4.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T16:09:56.487
+#
+
+    Testing Weave
+Status `/tmp/jl_6uffWQ/Project.toml`
+  [a93c6f00] DataFrames v0.22.2
+  [eafb193a] Highlights v0.4.5
+  [682c06a0] JSON v0.21.1
+  [ffc61752] Mustache v1.0.10
+  [ae029012] Requires v1.1.2
+  [44d3d7a6] Weave v0.10.6
+  [ddb6d928] YAML v0.4.5
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9e88b42a] Serialization
+  [8dfed614] Test
+Status `/tmp/jl_6uffWQ/Manifest.toml`
+  [324d7699] CategoricalArrays v0.9.0
+  [34da2185] Compat v3.25.0
+  [a8cc5b0e] Crayons v4.0.4
+  [9a962f9c] DataAPI v1.4.0
+  [a93c6f00] DataFrames v0.22.2
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [ffbed154] DocStringExtensions v0.8.3
+  [59287772] Formatting v0.4.2
+  [eafb193a] Highlights v0.4.5
+  [41ab1584] InvertedIndices v1.0.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [682c06a0] JSON v0.21.1
+  [e1d29d7a] Missings v0.4.4
+  [ffc61752] Mustache v1.0.10
+  [bac558e1] OrderedCollections v1.3.2
+  [69de0a69] Parsers v1.0.15
+  [2dfb63ee] PooledArrays v0.5.3
+  [08abe8d2] PrettyTables v0.10.1
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [a2af1166] SortingAlgorithms v0.3.1
+  [856f2bd8] StructTypes v1.2.1
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [44d3d7a6] Weave v0.10.6
+  [ddb6d928] YAML v0.4.5
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+WARNING: Method definition latex(IO, Markdown.LaTeX) in module Markdown at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Markdown/src/IPython/IPython.jl:28 overwritten in module WeaveMarkdown at /home/pkgeval/.julia/packages/Weave/BarbQ/src/WeaveMarkdown/markdown.jl:10.
+  ** incremental compilation may be fatally broken for this module **
+
+┌ Info: Weaved all chunks
+└   progress = 1
+┌ Info: Weaved all chunks
+└   progress = 1
+┌ Info: Weaved all chunks
+└   progress = 1
+WARNING: redefinition of constant WEAVE_ARGS. This may fail, cause incorrect answers, or produce other errors.
+┌ Info: Weaved all chunks
+└   progress = 1
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_wMU3kp.md
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_Btx4ot.md
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_YyZq9p.html
+┌ Info: Weaving chunk 1 from line 1
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+┌ Info: Weaving chunk 1 from line 1
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+┌ Info: Weaving chunk 1 from line 1
+└   progress = 0.0
+┌ Info: Weaving chunk 2 from line 5
+└   progress = 0.16666666666666666
+┌ Info: Weaving chunk 3 from line 9
+└   progress = 0.3333333333333333
+┌ Info: Weaving chunk 4 from line 13
+└   progress = 0.5
+┌ Info: Weaving chunk 5 from line 17
+└   progress = 0.6666666666666666
+┌ Info: Weaving chunk 6 from line 21
+└   progress = 0.8333333333333334
+┌ Info: Weaved all chunks
+└   progress = 1
+┌ Info: Weaving chunk 1 from line 1
+└   progress = 0.0
+┌ Warning: ERROR: ArgumentError occurred, including output in Weaved document
+└ @ Weave ~/.julia/packages/Weave/BarbQ/src/run.jl:234
+┌ Info: Weaving chunk 2 from line 5
+└   progress = 0.3333333333333333
+┌ Warning: ERROR: ErrorException occurred, including output in Weaved document
+└ @ Weave ~/.julia/packages/Weave/BarbQ/src/run.jl:234
+┌ Info: Weaving chunk 3 from line 9
+└   progress = 0.6666666666666666
+┌ Warning: ERROR: UndefVarError occurred, including output in Weaved document
+└ @ Weave ~/.julia/packages/Weave/BarbQ/src/run.jl:234
+┌ Warning: ERROR: ErrorException occurred, including output in Weaved document
+└ @ Weave ~/.julia/packages/Weave/BarbQ/src/run.jl:234
+┌ Info: Weaved all chunks
+└   progress = 1
+┌ Info: Weaving chunk 1 from line 1
+└   progress = 0.0
+┌ Warning: ERROR: ErrorException occurred, including output in Weaved document
+└ @ Weave ~/.julia/packages/Weave/BarbQ/src/run.jl:234
+┌ Info: Weaving chunk 2 from line 5
+└   progress = 0.5
+┌ Info: Weaved all chunks
+└   progress = 1
+┌ Info: Weaving chunk 1 from line 1
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+┌ Info: Weaving chunk 1 from line 1
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+┌ Info: Weaving chunk 1 from line 1
+└   progress = 0.0
+┌ Warning: `DataFrame(columns::AbstractMatrix)` is deprecated, use `DataFrame(columns, :auto)` instead.
+│   caller = ip:0x0
+└ @ Core :-1
+┌ Info: Weaved all chunks
+└   progress = 1
+┌ Info: Weaving chunk 1 from line 1
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+┌ Info: Weaving chunk 1 from line 6
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_6dPPUp.md
+┌ Info: Weaving chunk 1 from line 6
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_jNeWTq.tex
+┌ Info: Weaving chunk 1 from line 6
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_8kue1s.md
+┌ Info: Weaving chunk 1 from line 6
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_XYIPet.tex
+┌ Info: Weaving chunk 1 from line 6
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_U3buCs.html
+┌ Info: Weaving chunk 1 from line 6
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_cMzxlt.rst
+┌ Info: Weaving chunk 1 from line 6
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_9woDKs.md
+┌ Info: Weaving chunk 1 from line 6
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_qvHNNp.txt
+┌ Info: Weaving chunk 1 from line 6
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_fDxFLr.md
+┌ Info: Weaving chunk 0 from line 6
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_u2I5yr.md
+┌ Info: Weaving chunk 0 from line 6
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_hMh1tr.tex
+┌ Info: Weaving chunk 0 from line 6
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_mWkJAs.md
+┌ Info: Weaving chunk 0 from line 6
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_06LYKq.tex
+┌ Info: Weaving chunk 0 from line 6
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_Mnlv0q.html
+┌ Info: Weaving chunk 0 from line 6
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_1GUaus.rst
+┌ Info: Weaving chunk 0 from line 6
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_2DhRMr.md
+┌ Info: Weaving chunk 0 from line 6
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_7QvQrs.txt
+┌ Info: Weaving chunk 0 from line 6
+└   progress = 0.0
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /tmp/jl_6DT2Xp.md
+[ Info: No cached results found, running code
+┌ Info: Weaving chunk 1 from line 2
+└   progress = 0.0
+┌ Info: Weaving chunk 2 from line 6
+└   progress = 0.09090909090909091
+┌ Info: Weaving chunk 3 from line 12
+└   progress = 0.18181818181818182
+┌ Info: Weaving chunk 4 from line 19
+└   progress = 0.2727272727272727
+┌ Info: Weaving chunk 5 from line 25
+└   progress = 0.36363636363636365
+┌ Info: Weaving chunk 6 from line 31
+└   progress = 0.45454545454545453
+┌ Info: Weaving chunk 7 from line 36
+└   progress = 0.5454545454545454
+┌ Info: Weaving chunk 8 from line 41
+└   progress = 0.6363636363636364
+┌ Info: Weaving chunk 9 from line 47
+└   progress = 0.7272727272727273
+┌ Info: Weaving chunk 10 from line 51
+└   progress = 0.8181818181818182
+┌ Info: Weaving chunk 11 from line 55
+└   progress = 0.9090909090909091
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /home/pkgeval/.julia/packages/Weave/BarbQ/test/documents/chunk_options.md
+┌ Info: Weaving chunk 1 from line 2
+└   progress = 0.0
+┌ Info: Weaving chunk 2 from line 6
+└   progress = 0.09090909090909091
+┌ Info: Weaving chunk 3 from line 12
+└   progress = 0.18181818181818182
+┌ Info: Weaving chunk 4 from line 19
+└   progress = 0.2727272727272727
+┌ Info: Weaving chunk 5 from line 25
+└   progress = 0.36363636363636365
+┌ Info: Weaving chunk 6 from line 31
+└   progress = 0.45454545454545453
+┌ Info: Weaving chunk 7 from line 36
+└   progress = 0.5454545454545454
+┌ Info: Weaving chunk 8 from line 41
+└   progress = 0.6363636363636364
+┌ Info: Weaving chunk 9 from line 47
+└   progress = 0.7272727272727273
+┌ Info: Weaving chunk 10 from line 51
+└   progress = 0.8181818181818182
+┌ Info: Weaving chunk 11 from line 55
+└   progress = 0.9090909090909091
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /home/pkgeval/.julia/packages/Weave/BarbQ/test/documents/chunk_options.md
+[ Info: No cached results found, running code
+┌ Info: Weaving chunk 1 from line 2
+└   progress = 0.0
+┌ Info: Weaving chunk 2 from line 8
+└   progress = 0.16666666666666666
+┌ Info: Weaving chunk 3 from line 13
+└   progress = 0.3333333333333333
+┌ Info: Weaving chunk 4 from line 19
+└   progress = 0.5
+┌ Info: Weaving chunk 5 from line 25
+└   progress = 0.6666666666666666
+┌ Info: Weaving chunk 6 from line 32
+└   progress = 0.8333333333333334
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /home/pkgeval/.julia/packages/Weave/BarbQ/test/documents/chunk_cache.md
+┌ Info: Weaving chunk 1 from line 2
+└   progress = 0.0
+┌ Info: Weaving chunk 2 from line 8
+└   progress = 0.16666666666666666
+┌ Info: Weaving chunk 3 from line 13
+└   progress = 0.3333333333333333
+┌ Info: Weaving chunk 4 from line 19
+└   progress = 0.5
+┌ Info: Weaving chunk 5 from line 25
+└   progress = 0.6666666666666666
+┌ Info: Weaving chunk 6 from line 32
+└   progress = 0.8333333333333334
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /home/pkgeval/.julia/packages/Weave/BarbQ/test/documents/chunk_cache.md
+[ Info: No cached results found, running code
+┌ Info: Weaving chunk 1 from line 2
+└   progress = 0.0
+┌ Info: Weaving chunk 2 from line 8
+└   progress = 0.16666666666666666
+┌ Info: Weaving chunk 3 from line 13
+└   progress = 0.3333333333333333
+┌ Info: Weaving chunk 4 from line 19
+└   progress = 0.5
+┌ Info: Weaving chunk 5 from line 25
+└   progress = 0.6666666666666666
+┌ Info: Weaving chunk 6 from line 32
+└   progress = 0.8333333333333334
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /home/pkgeval/.julia/packages/Weave/BarbQ/test/documents/chunk_cache.md
+┌ Info: Weaving chunk 1 from line 2
+└   progress = 0.0
+┌ Info: Weaving chunk 2 from line 8
+└   progress = 0.16666666666666666
+┌ Info: Weaving chunk 3 from line 13
+└   progress = 0.3333333333333333
+┌ Info: Weaving chunk 4 from line 19
+└   progress = 0.5
+┌ Info: Weaving chunk 5 from line 25
+└   progress = 0.6666666666666666
+┌ Info: Weaving chunk 6 from line 32
+└   progress = 0.8333333333333334
+┌ Info: Weaved all chunks
+└   progress = 1
+[ Info: Weaved to /home/pkgeval/.julia/packages/Weave/BarbQ/test/documents/chunk_cache.md
+Test Summary: | Pass  Broken  Total
+Weave         |  189       2    191
+    Testing Weave tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T16:11:30.553
+CPU usage: 100.66s (94.52s user, 6.24s kernel)
+
+Network usage:
+- eth0: 6.657 MiB received, 164.201 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":131072,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":24576,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":131072,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":131072,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":24576,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":131072,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":323207168,"max_usage":1706278912,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":185843712,"inactive_file":135168,"inactive_anon":86372352,"total_pgfault":2428866,"total_cache":106393600,"total_rss_huge":0,"total_active_anon":205860864,"total_pgmajfault":0,"pgpgin":1580931,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":540672,"total_unevictable":0,"total_dirty":540672,"writeback":135168,"pgpgout":1509615,"hierarchical_memsw_limit":0,"cache":106393600,"active_file":135168,"pgfault":2428866,"total_mapped_file":0,"total_pgpgout":1509615,"total_writeback":135168,"rss":185843712,"unevictable":0,"total_inactive_anon":86372352,"total_pgpgin":1580931,"active_anon":205860864,"total_active_file":135168},"limit":540965302272},"name":"/Weave-0rz5ZeZi","networks":{"eth0":{"rx_bytes":6980500,"rx_packets":1315,"tx_packets":1452,"tx_bytes":168142,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"3529aaa0b038d6366af86da5e734590f65214a034aef9c2110142005e7b3984e","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3527227614522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":94520000000,"usage_in_kernelmode":6240000000,"total_usage":100664421509,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,47250,0,0,100663239518,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3810,1360,1129571,0,0,0,0,0]}},"read":"2021-01-11T16:11:30.750496992Z"}

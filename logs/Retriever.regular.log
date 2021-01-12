@@ -1,0 +1,133 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:37:36.256
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:37:38.415
+#
+
+ Installing known registries into `~/.julia`
+###############                                                           22.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MacroTools ───── v0.5.6
+  Installed Retriever ────── v1.0.0
+  Installed Conda ────────── v1.5.0
+  Installed Parsers ──────── v1.0.15
+  Installed PyCall ───────── v1.92.2
+  Installed JSON ─────────── v0.21.1
+  Installed VersionParsing ─ v1.2.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [ed6da631] + Retriever v1.0.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [8f4d0f93] + Conda v1.5.0
+  [682c06a0] + JSON v0.21.1
+  [1914dd2f] + MacroTools v0.5.6
+  [69de0a69] + Parsers v1.0.15
+  [438e738f] + PyCall v1.92.2
+  [ed6da631] + Retriever v1.0.0
+  [81def892] + VersionParsing v1.2.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [4ec0a83e] + Unicode
+   Building Conda ─→ `~/.julia/packages/Conda/x5ml4/deps/build.log`
+   Building PyCall → `~/.julia/packages/PyCall/tqyST/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T18:38:19.142
+#
+
+    Testing Retriever
+Status `/tmp/jl_raApBR/Project.toml`
+  [ed6da631] Retriever v1.0.0
+  [44cfe95a] Pkg
+Status `/tmp/jl_raApBR/Manifest.toml`
+  [8f4d0f93] Conda v1.5.0
+  [682c06a0] JSON v0.21.1
+  [1914dd2f] MacroTools v0.5.6
+  [69de0a69] Parsers v1.0.15
+  [438e738f] PyCall v1.92.2
+  [ed6da631] Retriever v1.0.0
+  [81def892] VersionParsing v1.2.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+ERROR: LoadError: LoadError: ArgumentError: Package PyCall not found in current path:
+- Run `import Pkg; Pkg.add("PyCall")` to install the PyCall package.
+
+Stacktrace:
+ [1] require(::Module, ::Symbol) at ./loading.jl:893
+ [2] include(::String) at ./client.jl:457
+ [3] top-level scope at /home/pkgeval/.julia/packages/Retriever/dUCht/test/runtests.jl:4
+ [4] include(::String) at ./client.jl:457
+ [5] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/Retriever/dUCht/src/Retriever.jl:3
+in expression starting at /home/pkgeval/.julia/packages/Retriever/dUCht/test/runtests.jl:4
+
+PkgEval failed: Package Retriever errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:38:23.76
+CPU usage: 46.25s (37.92s user, 8.42s kernel)
+
+Network usage:
+- eth0: 246.410 MiB received, 621.279 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":253,"value":1,"op":"Read","minor":0},{"major":253,"value":0,"op":"Write","minor":0},{"major":253,"value":1,"op":"Sync","minor":0},{"major":253,"value":0,"op":"Async","minor":0},{"major":253,"value":0,"op":"Discard","minor":0},{"major":253,"value":1,"op":"Total","minor":0},{"major":259,"value":412,"op":"Read","minor":0},{"major":259,"value":34,"op":"Write","minor":0},{"major":259,"value":431,"op":"Sync","minor":0},{"major":259,"value":15,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":446,"op":"Total","minor":0},{"major":253,"value":411,"op":"Read","minor":2},{"major":253,"value":34,"op":"Write","minor":2},{"major":253,"value":430,"op":"Sync","minor":2},{"major":253,"value":15,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":445,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":253,"value":4096,"op":"Read","minor":0},{"major":253,"value":0,"op":"Write","minor":0},{"major":253,"value":4096,"op":"Sync","minor":0},{"major":253,"value":0,"op":"Async","minor":0},{"major":253,"value":0,"op":"Discard","minor":0},{"major":253,"value":4096,"op":"Total","minor":0},{"major":259,"value":5107712,"op":"Read","minor":0},{"major":259,"value":167936,"op":"Write","minor":0},{"major":259,"value":5214208,"op":"Sync","minor":0},{"major":259,"value":61440,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":5275648,"op":"Total","minor":0},{"major":253,"value":5103616,"op":"Read","minor":2},{"major":253,"value":167936,"op":"Write","minor":2},{"major":253,"value":5210112,"op":"Sync","minor":2},{"major":253,"value":61440,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":5271552,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":1893765120,"max_usage":2425114624,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":66,"total_rss":203452416,"inactive_file":471040,"inactive_anon":1289773056,"total_pgfault":1116951,"total_cache":1631981568,"total_rss_huge":0,"total_active_anon":518217728,"total_pgmajfault":66,"pgpgin":1440681,"rss_huge":0,"mapped_file":540672,"total_inactive_file":471040,"dirty":540672,"total_unevictable":0,"total_dirty":540672,"writeback":135168,"pgpgout":992606,"hierarchical_memsw_limit":0,"cache":1631981568,"active_file":26542080,"pgfault":1116951,"total_mapped_file":540672,"total_pgpgout":992606,"total_writeback":135168,"rss":203452416,"unevictable":0,"total_inactive_anon":1289773056,"total_pgpgin":1440681,"active_anon":518217728,"total_active_file":26542080},"limit":540965302272},"name":"/Retriever-Jgag0bOZ","networks":{"eth0":{"rx_bytes":258379973,"rx_packets":20725,"tx_packets":10902,"tx_bytes":636190,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"d353e1d7ee70f7665091ddc2f17a5d37da1e871be3754e33af84d7d8c951a776","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4653339054522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":37920000000,"usage_in_kernelmode":8420000000,"total_usage":46249262199,"percpu_usage":[0,0,0,0,0,0,0,46249254679,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7520,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:38:23.763218102Z"}

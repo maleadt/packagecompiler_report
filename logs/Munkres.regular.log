@@ -1,0 +1,84 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:40:14.135
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:40:15.922
+#
+
+ Installing known registries into `~/.julia`
+#############################################                             63.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Munkres ─ v0.2.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [4cefb923] + Munkres v0.2.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [4cefb923] + Munkres v0.2.0
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T15:40:19.711
+#
+
+┌ Warning: using test/REQUIRE files is deprecated and current support is lacking in some areas
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1475
+    Testing Munkres
+Status `/tmp/jl_UdjiSR/Project.toml`
+  [861a8166] Combinatorics v1.0.2
+  [4cefb923] Munkres v0.2.0
+  [37e2e46d] LinearAlgebra
+  [8dfed614] Test
+Status `/tmp/jl_UdjiSR/Manifest.toml`
+  [861a8166] Combinatorics v1.0.2
+  [4cefb923] Munkres v0.2.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+    Testing Munkres tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:40:29.75
+CPU usage: 15.57s (12.16s user, 3.47s kernel)
+
+Network usage:
+- eth0: 2.565 MiB received, 36.719 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":337,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":356,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":361,"op":"Total","minor":0},{"major":253,"value":337,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":356,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":361,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":1380352,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":1486848,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1507328,"op":"Total","minor":0},{"major":253,"value":1380352,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":1486848,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1507328,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":323801088,"max_usage":598265856,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":186601472,"inactive_file":270336,"inactive_anon":78532608,"total_pgfault":767283,"total_cache":104960000,"total_rss_huge":0,"total_active_anon":187748352,"total_pgmajfault":0,"pgpgin":624360,"rss_huge":0,"mapped_file":0,"total_inactive_file":270336,"dirty":540672,"total_unevictable":0,"total_dirty":540672,"writeback":0,"pgpgout":553158,"hierarchical_memsw_limit":0,"cache":104960000,"active_file":25411584,"pgfault":767283,"total_mapped_file":0,"total_pgpgout":553158,"total_writeback":0,"rss":186601472,"unevictable":0,"total_inactive_anon":78532608,"total_pgpgin":624360,"active_anon":187748352,"total_active_file":25411584},"limit":540965302272},"name":"/Munkres-HIMgK17i","networks":{"eth0":{"rx_bytes":2689982,"rx_packets":384,"tx_packets":391,"tx_bytes":37600,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"55d933b3f9fa282e0ca1012183aba82e3480f1c09af3098ef7b86df4af04b6ff","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3289337364522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":12160000000,"usage_in_kernelmode":3470000000,"total_usage":15567241175,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15567236895,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4280,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:40:29.758462266Z"}

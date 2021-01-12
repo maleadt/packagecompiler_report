@@ -1,0 +1,87 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:29:12.744
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:29:14.523
+#
+
+ Installing known registries into `~/.julia`
+#############################################################             85.7%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ConcreteStructs ─ v0.2.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [2569d6c7] + ConcreteStructs v0.2.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [2569d6c7] + ConcreteStructs v0.2.2
+
+
+################################################################################
+# Testing: 2021-01-11T20:29:18.026
+#
+
+    Testing ConcreteStructs
+Status `/tmp/jl_I5nTZT/Project.toml`
+  [2569d6c7] ConcreteStructs v0.2.2
+  [fd094767] Suppressor v0.2.0
+  [37e2e46d] LinearAlgebra
+  [8dfed614] Test
+Status `/tmp/jl_I5nTZT/Manifest.toml`
+  [2569d6c7] ConcreteStructs v0.2.2
+  [fd094767] Suppressor v0.2.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary: | Pass  Total
+_parse_line   |    4      4
+Test Summary:     | Pass  Total
+_parse_struct_def |    2      2
+Test Summary: | Pass  Total
+_parse_head   |    3      3
+Test Summary: | Pass  Total
+_strip_super  |    3      3
+Test Summary:  | Pass  Total
+_get_subparams |    2      2
+Test Summary:           | Pass  Total
+_get_constructor_params |    3      3
+Test Summary:      | Pass  Total
+ConcreteStructs.jl |   10     10
+Test Summary: | Pass  Total
+Issue #3      |    1      1
+    Testing ConcreteStructs tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:29:27.158
+CPU usage: 14.40s (11.86s user, 2.59s kernel)
+
+Network usage:
+- eth0: 2.552 MiB received, 32.296 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":278417408,"max_usage":524636160,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":169885696,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":403854,"total_cache":79495168,"total_rss_huge":0,"total_active_anon":170446848,"total_pgmajfault":0,"pgpgin":234135,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":173311,"hierarchical_memsw_limit":0,"cache":79495168,"active_file":135168,"pgfault":403854,"total_mapped_file":0,"total_pgpgout":173311,"total_writeback":0,"rss":169885696,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":234135,"active_anon":170446848,"total_active_file":135168},"limit":540965302272},"name":"/ConcreteStructs-vBanqQDS","networks":{"eth0":{"rx_bytes":2675986,"rx_packets":313,"tx_packets":322,"tx_bytes":33071,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"55209adc197bb72a8b0dea130d19dbd7278a0df8e59453c3ee425278de4b52da","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5505115984522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":11860000000,"usage_in_kernelmode":2590000000,"total_usage":14404477580,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,14404474630,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2950,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:29:27.161227123Z"}

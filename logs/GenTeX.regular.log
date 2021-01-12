@@ -1,0 +1,292 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:40:12.142
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:40:13.893
+#
+
+ Installing known registries into `~/.julia`
+########################################                                  56.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed GenTeX ─ v1.0.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [986b9465] + GenTeX v1.0.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [986b9465] + GenTeX v1.0.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T21:40:18.595
+#
+
+    Testing GenTeX
+Status `/tmp/jl_hjAn7Q/Project.toml`
+  [986b9465] GenTeX v1.0.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [9e88b42a] Serialization
+  [8dfed614] Test
+Status `/tmp/jl_hjAn7Q/Manifest.toml`
+  [986b9465] GenTeX v1.0.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+LaTeX: Error During Test at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/latex.jl:12
+  Test threw exception
+  Expression: startswith(GenTeX.substitute_latex(raw"$$x_y$$", 1, tmpdir), "<center")
+  Failed to run pdflatex
+  Stacktrace:
+   [1] check_latex() at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:126
+   [2] latex_im(::GenTeX.Equation, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:140
+   [3] _eq!(::GenTeX.Cache, ::GenTeX.Equation, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:227
+   [4] eq_replace!(::GenTeX.Cache, ::SubString{String}, ::Int64, ::String, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:238
+   [5] #9 at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:255 [inlined]
+   [6] _replace(::Base.GenericIOBuffer{Array{UInt8,1}}, ::GenTeX.var"#9#10"{String,Int64,String,GenTeX.Cache}, ::String, ::UnitRange{Int64}, ::Base.RegexAndMatchData) at ./strings/util.jl:484
+   [7] replace(::String, ::Pair{Regex,GenTeX.var"#9#10"{String,Int64,String,GenTeX.Cache}}; count::Int64) at ./strings/util.jl:514
+   [8] replace(::String, ::Pair{Regex,GenTeX.var"#9#10"{String,Int64,String,GenTeX.Cache}}) at ./strings/util.jl:501
+   [9] substitute_latex(::String, ::Int64, ::String; extra_packages::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:255
+   [10] substitute_latex(::String, ::Int64, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:251
+   [11] top-level scope at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/latex.jl:12
+   [12] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [13] top-level scope at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/latex.jl:5
+  caused by [exception 1]
+  IOError: could not spawn `pdflatex --help`: no such file or directory (ENOENT)
+  Stacktrace:
+   [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:99
+   [2] #585 at ./process.jl:112 [inlined]
+   [3] setup_stdios(::Base.var"#585#586"{Cmd}, ::Array{Any,1}) at ./process.jl:196
+   [4] _spawn at ./process.jl:111 [inlined]
+   [5] _spawn(::Base.CmdRedirect, ::Array{Any,1}) at ./process.jl:139
+   [6] run(::Base.CmdRedirect; wait::Bool) at ./process.jl:439
+   [7] run at ./process.jl:438 [inlined]
+   [8] check_latex() at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:124
+   [9] latex_im(::GenTeX.Equation, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:140
+   [10] _eq!(::GenTeX.Cache, ::GenTeX.Equation, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:227
+   [11] eq_replace!(::GenTeX.Cache, ::SubString{String}, ::Int64, ::String, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:238
+   [12] #9 at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:255 [inlined]
+   [13] _replace(::Base.GenericIOBuffer{Array{UInt8,1}}, ::GenTeX.var"#9#10"{String,Int64,String,GenTeX.Cache}, ::String, ::UnitRange{Int64}, ::Base.RegexAndMatchData) at ./strings/util.jl:484
+   [14] replace(::String, ::Pair{Regex,GenTeX.var"#9#10"{String,Int64,String,GenTeX.Cache}}; count::Int64) at ./strings/util.jl:514
+   [15] replace(::String, ::Pair{Regex,GenTeX.var"#9#10"{String,Int64,String,GenTeX.Cache}}) at ./strings/util.jl:501
+   [16] substitute_latex(::String, ::Int64, ::String; extra_packages::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:255
+   [17] substitute_latex(::String, ::Int64, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:251
+   [18] top-level scope at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/latex.jl:12
+   [19] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [20] top-level scope at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/latex.jl:5
+  
+LaTeX: Error During Test at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/latex.jl:13
+  Test threw exception
+  Expression: startswith(GenTeX.substitute_latex(raw"$x$", 1, tmpdir), "<img")
+  Failed to run pdflatex
+  Stacktrace:
+   [1] check_latex() at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:126
+   [2] latex_im(::GenTeX.Equation, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:140
+   [3] _eq!(::GenTeX.Cache, ::GenTeX.Equation, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:227
+   [4] eq_replace!(::GenTeX.Cache, ::SubString{String}, ::Int64, ::String, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:238
+   [5] #9 at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:255 [inlined]
+   [6] _replace(::Base.GenericIOBuffer{Array{UInt8,1}}, ::GenTeX.var"#9#10"{String,Int64,String,GenTeX.Cache}, ::String, ::UnitRange{Int64}, ::Base.RegexAndMatchData) at ./strings/util.jl:484
+   [7] replace(::String, ::Pair{Regex,GenTeX.var"#9#10"{String,Int64,String,GenTeX.Cache}}; count::Int64) at ./strings/util.jl:514
+   [8] replace(::String, ::Pair{Regex,GenTeX.var"#9#10"{String,Int64,String,GenTeX.Cache}}) at ./strings/util.jl:501
+   [9] substitute_latex(::String, ::Int64, ::String; extra_packages::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:255
+   [10] substitute_latex(::String, ::Int64, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:251
+   [11] top-level scope at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/latex.jl:13
+   [12] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [13] top-level scope at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/latex.jl:5
+  caused by [exception 1]
+  IOError: could not spawn `pdflatex --help`: no such file or directory (ENOENT)
+  Stacktrace:
+   [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:99
+   [2] #585 at ./process.jl:112 [inlined]
+   [3] setup_stdios(::Base.var"#585#586"{Cmd}, ::Array{Any,1}) at ./process.jl:196
+   [4] _spawn at ./process.jl:111 [inlined]
+   [5] _spawn(::Base.CmdRedirect, ::Array{Any,1}) at ./process.jl:139
+   [6] run(::Base.CmdRedirect; wait::Bool) at ./process.jl:439
+   [7] run at ./process.jl:438 [inlined]
+   [8] check_latex() at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:124
+   [9] latex_im(::GenTeX.Equation, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:140
+   [10] _eq!(::GenTeX.Cache, ::GenTeX.Equation, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:227
+   [11] eq_replace!(::GenTeX.Cache, ::SubString{String}, ::Int64, ::String, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:238
+   [12] #9 at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:255 [inlined]
+   [13] _replace(::Base.GenericIOBuffer{Array{UInt8,1}}, ::GenTeX.var"#9#10"{String,Int64,String,GenTeX.Cache}, ::String, ::UnitRange{Int64}, ::Base.RegexAndMatchData) at ./strings/util.jl:484
+   [14] replace(::String, ::Pair{Regex,GenTeX.var"#9#10"{String,Int64,String,GenTeX.Cache}}; count::Int64) at ./strings/util.jl:514
+   [15] replace(::String, ::Pair{Regex,GenTeX.var"#9#10"{String,Int64,String,GenTeX.Cache}}) at ./strings/util.jl:501
+   [16] substitute_latex(::String, ::Int64, ::String; extra_packages::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:255
+   [17] substitute_latex(::String, ::Int64, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:251
+   [18] top-level scope at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/latex.jl:13
+   [19] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [20] top-level scope at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/latex.jl:5
+  
+LaTeX: Error During Test at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/latex.jl:14
+  Test threw exception
+  Expression: startswith(GenTeX.substitute_latex(raw"$$\text{mean} = 1$$", 1, tmpdir), "<center")
+  Failed to run pdflatex
+  Stacktrace:
+   [1] check_latex() at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:126
+   [2] latex_im(::GenTeX.Equation, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:140
+   [3] _eq!(::GenTeX.Cache, ::GenTeX.Equation, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:227
+   [4] eq_replace!(::GenTeX.Cache, ::SubString{String}, ::Int64, ::String, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:238
+   [5] #9 at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:255 [inlined]
+   [6] _replace(::Base.GenericIOBuffer{Array{UInt8,1}}, ::GenTeX.var"#9#10"{String,Int64,String,GenTeX.Cache}, ::String, ::UnitRange{Int64}, ::Base.RegexAndMatchData) at ./strings/util.jl:484
+   [7] replace(::String, ::Pair{Regex,GenTeX.var"#9#10"{String,Int64,String,GenTeX.Cache}}; count::Int64) at ./strings/util.jl:514
+   [8] replace(::String, ::Pair{Regex,GenTeX.var"#9#10"{String,Int64,String,GenTeX.Cache}}) at ./strings/util.jl:501
+   [9] substitute_latex(::String, ::Int64, ::String; extra_packages::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:255
+   [10] substitute_latex(::String, ::Int64, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:251
+   [11] top-level scope at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/latex.jl:14
+   [12] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [13] top-level scope at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/latex.jl:5
+  caused by [exception 1]
+  IOError: could not spawn `pdflatex --help`: no such file or directory (ENOENT)
+  Stacktrace:
+   [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:99
+   [2] #585 at ./process.jl:112 [inlined]
+   [3] setup_stdios(::Base.var"#585#586"{Cmd}, ::Array{Any,1}) at ./process.jl:196
+   [4] _spawn at ./process.jl:111 [inlined]
+   [5] _spawn(::Base.CmdRedirect, ::Array{Any,1}) at ./process.jl:139
+   [6] run(::Base.CmdRedirect; wait::Bool) at ./process.jl:439
+   [7] run at ./process.jl:438 [inlined]
+   [8] check_latex() at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:124
+   [9] latex_im(::GenTeX.Equation, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:140
+   [10] _eq!(::GenTeX.Cache, ::GenTeX.Equation, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:227
+   [11] eq_replace!(::GenTeX.Cache, ::SubString{String}, ::Int64, ::String, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:238
+   [12] #9 at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:255 [inlined]
+   [13] _replace(::Base.GenericIOBuffer{Array{UInt8,1}}, ::GenTeX.var"#9#10"{String,Int64,String,GenTeX.Cache}, ::String, ::UnitRange{Int64}, ::Base.RegexAndMatchData) at ./strings/util.jl:484
+   [14] replace(::String, ::Pair{Regex,GenTeX.var"#9#10"{String,Int64,String,GenTeX.Cache}}; count::Int64) at ./strings/util.jl:514
+   [15] replace(::String, ::Pair{Regex,GenTeX.var"#9#10"{String,Int64,String,GenTeX.Cache}}) at ./strings/util.jl:501
+   [16] substitute_latex(::String, ::Int64, ::String; extra_packages::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:255
+   [17] substitute_latex(::String, ::Int64, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:251
+   [18] top-level scope at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/latex.jl:14
+   [19] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [20] top-level scope at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/latex.jl:5
+  
+cache: Error During Test at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/cache.jl:6
+  Got exception outside of a @test
+  Failed to run pdflatex
+  Stacktrace:
+   [1] check_latex() at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:126
+   [2] latex_im(::GenTeX.Equation, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:140
+   [3] _eq!(::GenTeX.Cache, ::GenTeX.Equation, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:227
+   [4] eq_replace!(::GenTeX.Cache, ::SubString{String}, ::Float64, ::String, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:238
+   [5] #9 at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:255 [inlined]
+   [6] _replace(::Base.GenericIOBuffer{Array{UInt8,1}}, ::GenTeX.var"#9#10"{String,Float64,String,GenTeX.Cache}, ::String, ::UnitRange{Int64}, ::Base.RegexAndMatchData) at ./strings/util.jl:484
+   [7] replace(::String, ::Pair{Regex,GenTeX.var"#9#10"{String,Float64,String,GenTeX.Cache}}; count::Int64) at ./strings/util.jl:514
+   [8] replace(::String, ::Pair{Regex,GenTeX.var"#9#10"{String,Float64,String,GenTeX.Cache}}) at ./strings/util.jl:501
+   [9] substitute_latex(::String, ::Float64, ::String; extra_packages::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:255
+   [10] substitute_latex(::String, ::Float64, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:251
+   [11] top-level scope at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/cache.jl:32
+   [12] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [13] top-level scope at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/cache.jl:7
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/runtests.jl:5
+   [16] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [17] top-level scope at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/runtests.jl:4
+   [18] include(::String) at ./client.jl:457
+   [19] top-level scope at none:6
+   [20] eval(::Module, ::Any) at ./boot.jl:331
+   [21] exec_options(::Base.JLOptions) at ./client.jl:272
+   [22] _start() at ./client.jl:506
+  caused by [exception 1]
+  IOError: could not spawn `pdflatex --help`: no such file or directory (ENOENT)
+  Stacktrace:
+   [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:99
+   [2] #585 at ./process.jl:112 [inlined]
+   [3] setup_stdios(::Base.var"#585#586"{Cmd}, ::Array{Any,1}) at ./process.jl:196
+   [4] _spawn at ./process.jl:111 [inlined]
+   [5] _spawn(::Base.CmdRedirect, ::Array{Any,1}) at ./process.jl:139
+   [6] run(::Base.CmdRedirect; wait::Bool) at ./process.jl:439
+   [7] run at ./process.jl:438 [inlined]
+   [8] check_latex() at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:124
+   [9] latex_im(::GenTeX.Equation, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:140
+   [10] _eq!(::GenTeX.Cache, ::GenTeX.Equation, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:227
+   [11] eq_replace!(::GenTeX.Cache, ::SubString{String}, ::Float64, ::String, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:238
+   [12] #9 at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:255 [inlined]
+   [13] _replace(::Base.GenericIOBuffer{Array{UInt8,1}}, ::GenTeX.var"#9#10"{String,Float64,String,GenTeX.Cache}, ::String, ::UnitRange{Int64}, ::Base.RegexAndMatchData) at ./strings/util.jl:484
+   [14] replace(::String, ::Pair{Regex,GenTeX.var"#9#10"{String,Float64,String,GenTeX.Cache}}; count::Int64) at ./strings/util.jl:514
+   [15] replace(::String, ::Pair{Regex,GenTeX.var"#9#10"{String,Float64,String,GenTeX.Cache}}) at ./strings/util.jl:501
+   [16] substitute_latex(::String, ::Float64, ::String; extra_packages::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:255
+   [17] substitute_latex(::String, ::Float64, ::String) at /home/pkgeval/.julia/packages/GenTeX/JRVuk/src/latex.jl:251
+   [18] top-level scope at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/cache.jl:32
+   [19] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [20] top-level scope at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/cache.jl:7
+   [21] include(::String) at ./client.jl:457
+   [22] top-level scope at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/runtests.jl:5
+   [23] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [24] top-level scope at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/runtests.jl:4
+   [25] include(::String) at ./client.jl:457
+   [26] top-level scope at none:6
+   [27] eval(::Module, ::Any) at ./boot.jl:331
+   [28] exec_options(::Base.JLOptions) at ./client.jl:272
+   [29] _start() at ./client.jl:506
+  
+Test Summary: | Pass  Error  Total
+GenTeX        |    7      4     11
+  LaTeX       |    1      3      4
+  cache       |    6      1      7
+ERROR: LoadError: Some tests did not pass: 7 passed, 0 failed, 4 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/GenTeX/JRVuk/test/runtests.jl:3
+
+PkgEval failed: Package GenTeX errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:40:28.791
+CPU usage: 15.66s (13.02s user, 2.69s kernel)
+
+Network usage:
+- eth0: 2.541 MiB received, 30.519 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":291762176,"max_usage":577429504,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":182984704,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":370029,"total_cache":79396864,"total_rss_huge":0,"total_active_anon":183558144,"total_pgmajfault":0,"pgpgin":213939,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":135168,"pgpgout":149872,"hierarchical_memsw_limit":0,"cache":79396864,"active_file":135168,"pgfault":370029,"total_mapped_file":0,"total_pgpgout":149872,"total_writeback":135168,"rss":182984704,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":213939,"active_anon":183558144,"total_active_file":135168},"limit":540965302272},"name":"/GenTeX-I1qAv2ch","networks":{"eth0":{"rx_bytes":2664701,"rx_packets":327,"tx_packets":331,"tx_bytes":31251,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"79a4e6edda0835ef528d09f0188b9df21689169345136305f993fe6bc5aebf7c","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6049594164522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":13020000000,"usage_in_kernelmode":2690000000,"total_usage":15664054743,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15664049393,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5350,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:40:29.565091705Z"}

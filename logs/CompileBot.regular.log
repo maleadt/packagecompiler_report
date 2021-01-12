@@ -1,0 +1,649 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:42:27.461
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:42:29.286
+#
+
+ Installing known registries into `~/.julia`
+#########                                                                 13.2%#########                                                                 13.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Cthulhu ──────────────────── v1.5.0
+  Installed Reexport ─────────────────── v1.0.0
+  Installed GitHubActions ────────────── v0.1.3
+  Installed Tokenize ─────────────────── v0.5.8
+  Installed Requires ─────────────────── v1.1.2
+  Installed DataStructures ───────────── v0.18.8
+  Installed SnoopCompileCore ─────────── v2.3.0
+  Installed SnoopCompile ─────────────── v2.3.0
+  Installed CommonMark ───────────────── v0.6.4
+  Installed CompileBot ───────────────── v1.0.5
+  Installed Documenter ───────────────── v0.25.5
+  Installed FileIO ───────────────────── v1.4.5
+  Installed IndirectArrays ───────────── v0.5.1
+  Installed ColorTypes ───────────────── v0.10.9
+  Installed OrderedCollections ───────── v1.3.2
+  Installed Colors ───────────────────── v0.12.6
+  Installed CodeTracking ─────────────── v1.0.5
+  Installed URIParser ────────────────── v0.4.1
+  Installed FilePathsBase ────────────── v0.9.6
+  Installed JuliaFormatter ───────────── v0.10.9
+  Installed FoldingTrees ─────────────── v1.0.1
+  Installed LeftChildRightSiblingTrees ─ v0.1.2
+  Installed IOCapture ────────────────── v0.1.1
+  Installed JSON ─────────────────────── v0.21.1
+  Installed Crayons ──────────────────── v4.0.4
+  Installed CSTParser ────────────────── v2.5.0
+  Installed YAML ─────────────────────── v0.4.5
+  Installed FixedPointNumbers ────────── v0.8.4
+  Installed AbstractTrees ────────────── v0.3.3
+  Installed DocStringExtensions ──────── v0.8.3
+  Installed FlameGraphs ──────────────── v0.2.5
+  Installed Compat ───────────────────── v3.25.0
+  Installed Parsers ──────────────────── v1.0.15
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [877fb49a] + CompileBot v1.0.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [1520ce14] + AbstractTrees v0.3.3
+  [00ebfdb7] + CSTParser v2.5.0
+  [da1fd8a2] + CodeTracking v1.0.5
+  [3da002f7] + ColorTypes v0.10.9
+  [5ae59095] + Colors v0.12.6
+  [a80b9123] + CommonMark v0.6.4
+  [34da2185] + Compat v3.25.0
+  [877fb49a] + CompileBot v1.0.5
+  [a8cc5b0e] + Crayons v4.0.4
+  [f68482b8] + Cthulhu v1.5.0
+  [864edb3b] + DataStructures v0.18.8
+  [ffbed154] + DocStringExtensions v0.8.3
+  [e30172f5] + Documenter v0.25.5
+  [5789e2e9] + FileIO v1.4.5
+  [48062228] + FilePathsBase v0.9.6
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [08572546] + FlameGraphs v0.2.5
+  [1eca21be] + FoldingTrees v1.0.1
+  [6b79fd1a] + GitHubActions v0.1.3
+  [b5f81e59] + IOCapture v0.1.1
+  [9b13fd28] + IndirectArrays v0.5.1
+  [682c06a0] + JSON v0.21.1
+  [98e50ef6] + JuliaFormatter v0.10.9
+  [1d6d02ad] + LeftChildRightSiblingTrees v0.1.2
+  [bac558e1] + OrderedCollections v1.3.2
+  [69de0a69] + Parsers v1.0.15
+  [189a3867] + Reexport v1.0.0
+  [ae029012] + Requires v1.1.2
+  [aa65fe97] + SnoopCompile v2.3.0
+  [e2b509da] + SnoopCompileCore v2.3.0
+  [0796e94c] + Tokenize v0.5.8
+  [30578b45] + URIParser v0.4.1
+  [ddb6d928] + YAML v0.4.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T21:42:36.741
+#
+
+    Testing CompileBot
+Status `/tmp/jl_CgRpvS/Project.toml`
+  [877fb49a] CompileBot v1.0.5
+  [7876af07] Example v0.5.3
+  [48062228] FilePathsBase v0.9.6
+  [6b79fd1a] GitHubActions v0.1.3
+  [98e50ef6] JuliaFormatter v0.10.9
+  [aa65fe97] SnoopCompile v2.3.0
+  [e2b509da] SnoopCompileCore v2.3.0
+  [ddb6d928] YAML v0.4.5
+  [56ddb016] Logging
+  [44cfe95a] Pkg
+  [8dfed614] Test
+Status `/tmp/jl_CgRpvS/Manifest.toml`
+  [1520ce14] AbstractTrees v0.3.3
+  [00ebfdb7] CSTParser v2.5.0
+  [da1fd8a2] CodeTracking v1.0.5
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.6
+  [a80b9123] CommonMark v0.6.4
+  [34da2185] Compat v3.25.0
+  [877fb49a] CompileBot v1.0.5
+  [a8cc5b0e] Crayons v4.0.4
+  [f68482b8] Cthulhu v1.5.0
+  [864edb3b] DataStructures v0.18.8
+  [ffbed154] DocStringExtensions v0.8.3
+  [e30172f5] Documenter v0.25.5
+  [7876af07] Example v0.5.3
+  [5789e2e9] FileIO v1.4.5
+  [48062228] FilePathsBase v0.9.6
+  [53c48c17] FixedPointNumbers v0.8.4
+  [08572546] FlameGraphs v0.2.5
+  [1eca21be] FoldingTrees v1.0.1
+  [6b79fd1a] GitHubActions v0.1.3
+  [b5f81e59] IOCapture v0.1.1
+  [9b13fd28] IndirectArrays v0.5.1
+  [682c06a0] JSON v0.21.1
+  [98e50ef6] JuliaFormatter v0.10.9
+  [1d6d02ad] LeftChildRightSiblingTrees v0.1.2
+  [bac558e1] OrderedCollections v1.3.2
+  [69de0a69] Parsers v1.0.15
+  [189a3867] Reexport v1.0.0
+  [ae029012] Requires v1.1.2
+  [aa65fe97] SnoopCompile v2.3.0
+  [e2b509da] SnoopCompileCore v2.3.0
+  [0796e94c] Tokenize v0.5.8
+  [30578b45] URIParser v0.4.1
+  [ddb6d928] YAML v0.4.5
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [9abbd945] Profile
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: Package already has "include("precompile_includer.jl")"
+[ Info: /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/src/precompile_includer.jl file will be created/overwritten
+[ Info: /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/src/precompile_includer.jl file will be created/overwritten
+[ Info: /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/src/precompile_includer.jl file will be created/overwritten
+[ Info: /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/src/precompile_includer.jl file will be created/overwritten
+[ Info: /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/src/precompile_includer.jl file will be created/overwritten
+[ Info: /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/src/precompile_includer.jl file will be created/overwritten
+[ Info: /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/src/precompile_includer.jl file will be created/overwritten
+[ Info: /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/src/precompile_includer.jl file will be created/overwritten
+[ Info: /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/src/precompile_includer.jl file will be created/overwritten
+Path `/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage1.jl` exists and looks like the correct package. Using existing path.
+  Resolving package versions...
+Updating `/tmp/jl_CgRpvS/Project.toml`
+  [9065cccb] + TestPackage1 v0.5.4 `~/.julia/packages/CompileBot/4M9LN/test/TestPackage1.jl`
+Updating `/tmp/jl_CgRpvS/Manifest.toml`
+  [9065cccb] + TestPackage1 v0.5.4 `~/.julia/packages/CompileBot/4M9LN/test/TestPackage1.jl`
+Path `/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage2.jl` exists and looks like the correct package. Using existing path.
+  Resolving package versions...
+Updating `/tmp/jl_CgRpvS/Project.toml`
+  [e96a28cf] + TestPackage2 v0.5.4 `~/.julia/packages/CompileBot/4M9LN/test/TestPackage2.jl`
+Updating `/tmp/jl_CgRpvS/Manifest.toml`
+  [e96a28cf] + TestPackage2 v0.5.4 `~/.julia/packages/CompileBot/4M9LN/test/TestPackage2.jl`
+Path `/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage3.jl` exists and looks like the correct package. Using existing path.
+  Resolving package versions...
+Updating `/tmp/jl_CgRpvS/Project.toml`
+  [e4e5126f] + TestPackage3 v0.5.4 `~/.julia/packages/CompileBot/4M9LN/test/TestPackage3.jl`
+Updating `/tmp/jl_CgRpvS/Manifest.toml`
+  [e4e5126f] + TestPackage3 v0.5.4 `~/.julia/packages/CompileBot/4M9LN/test/TestPackage3.jl`
+Path `/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl` exists and looks like the correct package. Using existing path.
+  Resolving package versions...
+Updating `/tmp/jl_CgRpvS/Project.toml`
+  [90cc3496] + TestPackage0 v0.5.4 `~/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl`
+Updating `/tmp/jl_CgRpvS/Manifest.toml`
+  [90cc3496] + TestPackage0 v0.5.4 `~/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl`
+Path `/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage5.jl` exists and looks like the correct package. Using existing path.
+  Resolving package versions...
+Updating `/tmp/jl_CgRpvS/Project.toml`
+  [523531c9] + TestPackage5 v0.5.4 `~/.julia/packages/CompileBot/4M9LN/test/TestPackage5.jl`
+Updating `/tmp/jl_CgRpvS/Manifest.toml`
+  [523531c9] + TestPackage5 v0.5.4 `~/.julia/packages/CompileBot/4M9LN/test/TestPackage5.jl`
+package_rootpath = ["/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage1.jl", "/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage2.jl", "/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage3.jl", "/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl", "/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage5.jl"]
+[ Info: /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage1.jl/src/precompile_includer.jl file will be created/overwritten
+[ Info: SnoopCompile will try to write  "include("precompile_includer.jl")" before end of the module in /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage1.jl/src/TestPackage1.jl. Assume that the last `end` is the end of a module.
+snoop_bot: Error During Test at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:403
+  Got exception outside of a @test
+  LoadError: SystemError: opening file "/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage1.jl/src/TestPackage1.jl": Permission denied
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Bool, append::Nothing) at ./iostream.jl:284
+   [5] open(::String, ::String; lock::Bool) at ./iostream.jl:346
+   [6] open(::String, ::String) at ./iostream.jl:346
+   [7] open(::CompileBot.var"#3#5"{Array{String,1}}, ::String, ::Vararg{String,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [8] open at ./io.jl:323 [inlined]
+   [9] add_includer(::String, ::String) at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/precompile_include.jl:252
+   [10] _snoop_bot_expr(::BotConfig, ::Expr, ::Module; snoop_mode::Symbol) at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:77
+   [11] _snoop_bot_expr(::BotConfig, ::Module; snoop_mode::Symbol) at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:160
+   [12] #snoop_bot#13 at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:213 [inlined]
+   [13] snoop_bot(::BotConfig, ::Module) at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:213 (repeats 2 times)
+   [14] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage1.jl/deps/SnoopCompile/snoop_bot.jl:4
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:405
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:405
+   [19] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [20] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:10
+   [21] include(::String) at ./client.jl:457
+   [22] top-level scope at none:6
+   [23] eval(::Module, ::Any) at ./boot.jl:331
+   [24] exec_options(::Base.JLOptions) at ./client.jl:272
+   [25] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage1.jl/deps/SnoopCompile/snoop_bot.jl:4
+  
+tests infer benchmark
+┌ Info: ------------------------
+│ Benchmark Started
+└ ------------------------
+┌ Info: ------------------------
+│ Precompile Deactivated Benchmark
+└ ------------------------
+snoop_bench: Error During Test at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:418
+  Got exception outside of a @test
+  LoadError: IOError: could not spawn `julia --code-coverage=none --project=@. -e '
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:5 =#
+      global SnoopCompile_ENV = true
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:6 =#
+      using SnoopCompileCore
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:8 =#
+      data = #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:8 =# @snoopi(tmin = 0.0, begin
+                  #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:9 =#
+                  begin
+                      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:104 =#
+                      using TestPackage1
+                      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:105 =#
+                      include("/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage1.jl/test/runtests.jl")
+                  end
+              end)
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:12 =#
+      global SnoopCompile_ENV = false
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:14 =#
+      using CompileBot: timesum
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:15 =#
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:15 =# @info "\nTotal inference time (ms): \t" * string(timesum(data, :ms))
+  '`: no such file or directory (ENOENT)
+  Stacktrace:
+   [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:99
+   [2] #585 at ./process.jl:112 [inlined]
+   [3] setup_stdios(::Base.var"#585#586"{Cmd}, ::Array{Any,1}) at ./process.jl:196
+   [4] _spawn at ./process.jl:111 [inlined]
+   [5] run(::Cmd; wait::Bool) at ./process.jl:439
+   [6] run(::Cmd) at ./process.jl:438
+   [7] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:78
+   [8] eval at ./boot.jl:331 [inlined]
+   [9] #snoop_bench#18 at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:164 [inlined]
+   [10] snoop_bench(::BotConfig, ::Module) at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:163 (repeats 2 times)
+   [11] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage1.jl/deps/SnoopCompile/snoop_bench.jl:5
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:419
+   [14] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [15] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:419
+   [16] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [17] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:10
+   [18] include(::String) at ./client.jl:457
+   [19] top-level scope at none:6
+   [20] eval(::Module, ::Any) at ./boot.jl:331
+   [21] exec_options(::Base.JLOptions) at ./client.jl:272
+   [22] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage1.jl/deps/SnoopCompile/snoop_bench.jl:5
+  
+[ Info: /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage2.jl/src/precompile_includer.jl file will be created/overwritten
+[ Info: SnoopCompile will try to write  "include("precompile_includer.jl")" before end of the module in /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage2.jl/src/TestPackage2.jl. Assume that the last `end` is the end of a module.
+snoop_bot_multios: Error During Test at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:422
+  Got exception outside of a @test
+  LoadError: SystemError: opening file "/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage2.jl/src/TestPackage2.jl": Permission denied
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Bool, append::Nothing) at ./iostream.jl:284
+   [5] open(::String, ::String; lock::Bool) at ./iostream.jl:346
+   [6] open(::String, ::String) at ./iostream.jl:346
+   [7] open(::CompileBot.var"#3#5"{Array{String,1}}, ::String, ::Vararg{String,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [8] open at ./io.jl:323 [inlined]
+   [9] add_includer(::String, ::String) at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/precompile_include.jl:252
+   [10] _snoop_bot_expr(::BotConfig, ::Expr, ::Module; snoop_mode::Symbol) at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:77
+   [11] _snoop_bot_expr(::BotConfig, ::Module; snoop_mode::Symbol) at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:160
+   [12] #snoop_bot#13 at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:213 [inlined]
+   [13] snoop_bot(::BotConfig, ::Module) at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:213 (repeats 2 times)
+   [14] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage2.jl/deps/SnoopCompile/snoop_bot.jl:4
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:425
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:423
+   [19] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [20] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:10
+   [21] include(::String) at ./client.jl:457
+   [22] top-level scope at none:6
+   [23] eval(::Module, ::Any) at ./boot.jl:331
+   [24] exec_options(::Base.JLOptions) at ./client.jl:272
+   [25] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage2.jl/deps/SnoopCompile/snoop_bot.jl:4
+  
+tests infer benchmark
+┌ Info: ------------------------
+│ Benchmark Started
+└ ------------------------
+┌ Info: ------------------------
+│ Precompile Deactivated Benchmark
+└ ------------------------
+snoop_bench-multios: Error During Test at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:443
+  Got exception outside of a @test
+  LoadError: IOError: could not spawn `julia --code-coverage=none --project=@. -e '
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:5 =#
+      global SnoopCompile_ENV = true
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:6 =#
+      using SnoopCompileCore
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:8 =#
+      data = #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:8 =# @snoopi(tmin = 0.0, begin
+                  #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:9 =#
+                  begin
+                      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:104 =#
+                      using TestPackage2
+                      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:105 =#
+                      include("/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage2.jl/test/runtests.jl")
+                  end
+              end)
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:12 =#
+      global SnoopCompile_ENV = false
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:14 =#
+      using CompileBot: timesum
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:15 =#
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:15 =# @info "\nTotal inference time (ms): \t" * string(timesum(data, :ms))
+  '`: no such file or directory (ENOENT)
+  Stacktrace:
+   [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:99
+   [2] #585 at ./process.jl:112 [inlined]
+   [3] setup_stdios(::Base.var"#585#586"{Cmd}, ::Array{Any,1}) at ./process.jl:196
+   [4] _spawn at ./process.jl:111 [inlined]
+   [5] run(::Cmd; wait::Bool) at ./process.jl:439
+   [6] run(::Cmd) at ./process.jl:438
+   [7] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:78
+   [8] eval at ./boot.jl:331 [inlined]
+   [9] #snoop_bench#18 at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:164 [inlined]
+   [10] snoop_bench(::BotConfig, ::Module) at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:163 (repeats 2 times)
+   [11] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage2.jl/deps/SnoopCompile/snoop_bench.jl:5
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:444
+   [14] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [15] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:444
+   [16] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [17] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:10
+   [18] include(::String) at ./client.jl:457
+   [19] top-level scope at none:6
+   [20] eval(::Module, ::Any) at ./boot.jl:331
+   [21] exec_options(::Base.JLOptions) at ./client.jl:272
+   [22] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage2.jl/deps/SnoopCompile/snoop_bench.jl:5
+  
+[ Info: /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage3.jl/src/precompile_includer.jl file will be created/overwritten
+[ Info: SnoopCompile will try to write  "include("precompile_includer.jl")" before end of the module in /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage3.jl/src/TestPackage3.jl. Assume that the last `end` is the end of a module.
+snoop_bot_multiversion: Error During Test at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:447
+  Got exception outside of a @test
+  LoadError: SystemError: opening file "/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage3.jl/src/TestPackage3.jl": Permission denied
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Bool, append::Nothing) at ./iostream.jl:284
+   [5] open(::String, ::String; lock::Bool) at ./iostream.jl:346
+   [6] open(::String, ::String) at ./iostream.jl:346
+   [7] open(::CompileBot.var"#3#5"{Array{String,1}}, ::String, ::Vararg{String,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+   [8] open at ./io.jl:323 [inlined]
+   [9] add_includer(::String, ::String) at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/precompile_include.jl:252
+   [10] _snoop_bot_expr(::BotConfig, ::Expr, ::Module; snoop_mode::Symbol) at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:77
+   [11] _snoop_bot_expr(::BotConfig, ::Module; snoop_mode::Symbol) at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:160
+   [12] #snoop_bot#13 at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:213 [inlined]
+   [13] snoop_bot(::BotConfig, ::Module) at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:213 (repeats 2 times)
+   [14] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage3.jl/deps/SnoopCompile/snoop_bot.jl:4
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:450
+   [17] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:448
+   [19] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [20] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:10
+   [21] include(::String) at ./client.jl:457
+   [22] top-level scope at none:6
+   [23] eval(::Module, ::Any) at ./boot.jl:331
+   [24] exec_options(::Base.JLOptions) at ./client.jl:272
+   [25] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage3.jl/deps/SnoopCompile/snoop_bot.jl:4
+  
+┌ Warning: else version is set to 1.2, so we should not run the benchmark test on nightly, when we have not generated such files yet (unlike in the realworld tests).
+└ @ Main ~/.julia/packages/CompileBot/4M9LN/test/runtests.jl:479
+[ Info: /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/src/precompile_includer.jl file will be created/overwritten
+[ Info: Package already has "include("precompile_includer.jl")"
+Nothing is generated: Error During Test at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:483
+  Got exception outside of a @test
+  LoadError: IOError: could not spawn `julia --code-coverage=none --project=@. -e "
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:4 =#
+      using SnoopCompileCore
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:6 =#
+      data = #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:6 =# @snoopi(tmin = 0.0, begin
+                  #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:7 =#
+                  begin
+                      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:157 =#
+                      using TestPackage0
+                      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:158 =#
+                      include(\"/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/test/runtests.jl\")
+                  end
+              end)
+  ; 
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:29 =#
+      packageSym = Symbol(\"TestPackage0\")
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:32 =#
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:32 =# @info \"Processsing the generated precompile signatures\"
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:34 =#
+      using SnoopCompile
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:37 =#
+      pc = SnoopCompile.parcel(data; subst = Pair{Union{Regex, AbstractChar, AbstractString},Union{Regex, AbstractChar, AbstractString}}[], exclusions = Union{Regex, AbstractChar, AbstractString}[], check_eval = true)
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:38 =#
+      if !(haskey(pc, packageSym))
+          #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:39 =#
+          #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:39 =# @warn \"no precompile signature is found for TestPackage0. Don't load the package before snooping. Restart your Julia session.\"
+          #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:40 =#
+          if !(isdir(\"/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/deps/SnoopCompile/precompile\"))
+              #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:41 =#
+              mkpath(\"/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/deps/SnoopCompile/precompile\")
+          end
+          #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:43 =#
+          Base.write(\"/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/deps/SnoopCompile/precompile/precompile_TestPackage0.jl\", \"function _precompile_()\n    # nothing\nend\n\")
+      else
+          #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:49 =#
+          onlypackage = Dict(packageSym => Base.sort(pc[packageSym]))
+          #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:50 =#
+          SnoopCompile.write(\"/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/deps/SnoopCompile/precompile\", onlypackage)
+          #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:51 =#
+          #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:51 =# @info \"precompile signatures were written to /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/deps/SnoopCompile/precompile\"
+      end
+  ;"`: no such file or directory (ENOENT)
+  Stacktrace:
+   [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:99
+   [2] #585 at ./process.jl:112 [inlined]
+   [3] setup_stdios(::Base.var"#585#586"{Cmd}, ::Array{Any,1}) at ./process.jl:196
+   [4] _spawn at ./process.jl:111 [inlined]
+   [5] run(::Cmd; wait::Bool) at ./process.jl:439
+   [6] run(::Cmd) at ./process.jl:438
+   [7] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:139
+   [8] eval at ./boot.jl:331 [inlined]
+   [9] #snoop_bot#13 at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:214 [inlined]
+   [10] snoop_bot(::BotConfig, ::Module) at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bot.jl:213 (repeats 2 times)
+   [11] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/deps/SnoopCompile/snoop_bot.jl:4
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:485
+   [14] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [15] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:485
+   [16] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [17] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:10
+   [18] include(::String) at ./client.jl:457
+   [19] top-level scope at none:6
+   [20] eval(::Module, ::Any) at ./boot.jl:331
+   [21] exec_options(::Base.JLOptions) at ./client.jl:272
+   [22] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/deps/SnoopCompile/snoop_bot.jl:4
+  
+tests infer benchmark
+┌ Info: ------------------------
+│ Benchmark Started
+└ ------------------------
+┌ Info: ------------------------
+│ Precompile Deactivated Benchmark
+└ ------------------------
+Nothing is generated: Error During Test at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:498
+  Got exception outside of a @test
+  LoadError: IOError: could not spawn `julia --code-coverage=none --project=@. -e '
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:5 =#
+      global SnoopCompile_ENV = true
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:6 =#
+      using SnoopCompileCore
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:8 =#
+      data = #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:8 =# @snoopi(tmin = 0.0, begin
+                  #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:9 =#
+                  begin
+                      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:104 =#
+                      using TestPackage0
+                      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:105 =#
+                      include("/home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/test/runtests.jl")
+                  end
+              end)
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:12 =#
+      global SnoopCompile_ENV = false
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:14 =#
+      using CompileBot: timesum
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:15 =#
+      #= /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:15 =# @info "\nTotal inference time (ms): \t" * string(timesum(data, :ms))
+  '`: no such file or directory (ENOENT)
+  Stacktrace:
+   [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:99
+   [2] #585 at ./process.jl:112 [inlined]
+   [3] setup_stdios(::Base.var"#585#586"{Cmd}, ::Array{Any,1}) at ./process.jl:196
+   [4] _spawn at ./process.jl:111 [inlined]
+   [5] run(::Cmd; wait::Bool) at ./process.jl:439
+   [6] run(::Cmd) at ./process.jl:438
+   [7] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:78
+   [8] eval at ./boot.jl:331 [inlined]
+   [9] #snoop_bench#18 at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:164 [inlined]
+   [10] snoop_bench(::BotConfig, ::Module) at /home/pkgeval/.julia/packages/CompileBot/4M9LN/src/snoop_bench.jl:163 (repeats 2 times)
+   [11] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/deps/SnoopCompile/snoop_bench.jl:5
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:499
+   [14] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [15] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:499
+   [16] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [17] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:10
+   [18] include(::String) at ./client.jl:457
+   [19] top-level scope at none:6
+   [20] eval(::Module, ::Any) at ./boot.jl:331
+   [21] exec_options(::Base.JLOptions) at ./client.jl:272
+   [22] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage0.jl/deps/SnoopCompile/snoop_bench.jl:5
+  
+Updating `/tmp/jl_CgRpvS/Project.toml`
+  [9065cccb] - TestPackage1 v0.5.4 `~/.julia/packages/CompileBot/4M9LN/test/TestPackage1.jl`
+Updating `/tmp/jl_CgRpvS/Manifest.toml`
+  [9065cccb] - TestPackage1 v0.5.4 `~/.julia/packages/CompileBot/4M9LN/test/TestPackage1.jl`
+fatal: not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+bot: Error During Test at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:8
+  Got exception outside of a @test
+  failed process: Process(`git checkout -- /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/TestPackage1.jl/src/TestPackage1.jl`, ProcessExited(128)) [128]
+  
+  Stacktrace:
+   [1] pipeline_error at ./process.jl:525 [inlined]
+   [2] run(::Cmd; wait::Bool) at ./process.jl:440
+   [3] run(::Cmd) at ./process.jl:438
+   [4] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:514
+   [5] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:10
+   [7] include(::String) at ./client.jl:457
+   [8] top-level scope at none:6
+   [9] eval(::Module, ::Any) at ./boot.jl:331
+   [10] exec_options(::Base.JLOptions) at ./client.jl:272
+   [11] _start() at ./client.jl:506
+  
+Test Summary:                  | Pass  Error  Total
+bot                            |   35      8     43
+  add_includer                 |    1             1
+  precompile de/activation     |    2             2
+  precompile new_includer_file |   24            24
+  snoop_bot                    |           1      1
+  snoop_bench                  |           1      1
+  snoop_bot_multios            |           1      1
+  snoop_bench-multios          |           1      1
+  snoop_bot_multiversion       |           1      1
+  Nothing is generated         |           1      1
+  Nothing is generated         |           1      1
+  yaml os and version parse    |    8             8
+ERROR: LoadError: Some tests did not pass: 35 passed, 0 failed, 8 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/CompileBot/4M9LN/test/runtests.jl:8
+
+PkgEval failed: Package CompileBot errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:43:32.324
+CPU usage: 63.32s (58.26s user, 5.17s kernel)
+
+Network usage:
+- eth0: 5.387 MiB received, 194.632 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":36,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":17,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":36,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":36,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":17,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":36,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":241664,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":135168,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":241664,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":241664,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":135168,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":241664,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":344637440,"max_usage":1295462400,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":204435456,"inactive_file":135168,"inactive_anon":92319744,"total_pgfault":1525095,"total_cache":108974080,"total_rss_huge":0,"total_active_anon":220999680,"total_pgmajfault":0,"pgpgin":989769,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":913250,"hierarchical_memsw_limit":0,"cache":108974080,"active_file":135168,"pgfault":1525095,"total_mapped_file":0,"total_pgpgout":913250,"total_writeback":0,"rss":204435456,"unevictable":0,"total_inactive_anon":92319744,"total_pgpgin":989769,"active_anon":220999680,"total_active_file":135168},"limit":540965302272},"name":"/CompileBot-3RIgbvbl","networks":{"eth0":{"rx_bytes":5648165,"rx_packets":1504,"tx_packets":1667,"tx_bytes":199303,"tx_dropped":0,"rx_dropped":3,"tx_errors":0,"rx_errors":0}},"id":"4e61417635f078dd70c084ac72ff38e3a27553795b84f4e5a8c51f54933743e2","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6072938764522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":58260000000,"usage_in_kernelmode":5170000000,"total_usage":63315497568,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,63315492118,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5450,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:43:32.327326679Z"}

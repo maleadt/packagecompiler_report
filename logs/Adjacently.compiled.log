@@ -1,0 +1,134 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T19:05:02.714
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T19:05:04.473
+#
+
+ Installing known registries into `~/.julia`
+##########################                                                37.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed JLD ──────────────── v0.9.2
+  Installed CMakeWrapper ─────── v0.2.4
+  Installed Parameters ───────── v0.12.1
+  Installed DataStructures ───── v0.17.20
+  Installed FileIO ───────────── v1.4.5
+  Installed OrderedCollections ─ v1.3.2
+  Installed HDF5 ─────────────── v0.12.5
+  Installed Blosc ────────────── v0.5.1
+  Installed URIParser ────────── v0.4.1
+  Installed PackageCompiler ──── v1.2.5
+  Installed Graphs ───────────── v0.10.3
+  Installed Distances ────────── v0.8.2
+  Installed UnPack ───────────── v1.0.2
+  Installed LegacyStrings ────── v0.4.1
+  Installed CMake ────────────── v1.2.0
+  Installed BinDeps ──────────── v1.0.2
+  Installed Compat ───────────── v2.2.1
+  Installed BinaryProvider ───── v0.5.10
+  Installed Adjacently ───────── v0.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [411c8731] + Adjacently v0.1.0
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [411c8731] + Adjacently v0.1.0
+  [9e28174c] + BinDeps v1.0.2
+  [b99e7846] + BinaryProvider v0.5.10
+  [a74b3585] + Blosc v0.5.1
+  [631607c0] + CMake v1.2.0
+  [d5fb7624] + CMakeWrapper v0.2.4
+  [34da2185] + Compat v2.2.1
+  [864edb3b] + DataStructures v0.17.20
+  [b4f34e82] + Distances v0.8.2
+  [5789e2e9] + FileIO v1.4.5
+  [86223c79] + Graphs v0.10.3
+  [f67ccb44] + HDF5 v0.12.5
+  [4138dd39] + JLD v0.9.2
+  [1b4a561d] + LegacyStrings v0.4.1
+  [bac558e1] + OrderedCollections v1.3.2
+  [9b87118b] + PackageCompiler v1.2.5
+  [d96e819e] + Parameters v0.12.1
+  [30578b45] + URIParser v0.4.1
+  [3a884ed6] + UnPack v1.0.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building CMake → `~/.julia/packages/CMake/ULbyn/deps/build.log`
+   Building Blosc → `~/.julia/packages/Blosc/lzFr0/deps/build.log`
+   Building HDF5 ─→ `~/.julia/packages/HDF5/Zh9on/deps/build.log`
+
+
+################################################################################
+# Compiling: 2021-01-11T19:05:39.685
+#
+
+┌ Warning: Package Adjacently does not have SparseArrays in its dependencies:
+│ - If you have Adjacently checked out for development and have
+│   added SparseArrays as a dependency but haven't updated your primary
+│   environment's manifest file, try `Pkg.resolve()`.
+│ - Otherwise you may need to report an issue with Adjacently
+└ Loading SparseArrays into Adjacently from project dependency, future warnings for Adjacently are suppressed.
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+┌ Warning: Package Adjacently does not have SparseArrays in its dependencies:
+│ - If you have Adjacently checked out for development and have
+│   added SparseArrays as a dependency but haven't updated your primary
+│   environment's manifest file, try `Pkg.resolve()`.
+│ - Otherwise you may need to report an issue with Adjacently
+│ Loading SparseArrays into Adjacently from project dependency, future warnings for Adjacently are suppressed.
+└ @ nothing nothing:910
+Generated system image is 160.500 MiB, compilation took 198 seconds
+
+
+fatal: error thrown and no exception handler available.
+InitError(mod=:Blosc, error=ErrorException("/home/pkgeval/.julia/packages/Blosc/lzFr0/deps/usr/lib/libblosc.so does not exist, Please re-run Pkg.build("Blosc"), and restart Julia."))
+error at ./error.jl:33
+check_deps at /home/pkgeval/.julia/packages/Blosc/lzFr0/deps/deps.jl:16
+__init__ at /home/pkgeval/.julia/packages/Blosc/lzFr0/src/Blosc.jl:16
+jfptr___init___66048 at /cache/Adjacently-JeBJXV9Y.so (unknown line)
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+jl_module_run_initializer at /workspace/srcdir/src/toplevel.c:74
+_julia_init at /workspace/srcdir/src/init.c:780
+main at /workspace/srcdir/ui/repl.c:221
+__libc_start_main at /usr/lib/libc.so.6 (unknown line)
+unknown function (ip: 0x4015e4)
+
+No statistics gathered.

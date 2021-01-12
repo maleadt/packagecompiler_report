@@ -1,0 +1,85 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:19:16.626
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:19:18.395
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed LibYAML ──────── v0.1.1
+  Installed BinaryProvider ─ v0.5.10
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [893b89ae] + LibYAML v0.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [b99e7846] + BinaryProvider v0.5.10
+  [893b89ae] + LibYAML v0.1.1
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+   Building LibYAML → `~/.julia/packages/LibYAML/Ze35M/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T22:19:30.137
+#
+
+    Testing LibYAML
+Status `/tmp/jl_qIVDpT/Project.toml`
+  [b99e7846] BinaryProvider v0.5.10
+  [893b89ae] LibYAML v0.1.1
+  [8f399da3] Libdl
+  [8dfed614] Test
+Status `/tmp/jl_qIVDpT/Manifest.toml`
+  [b99e7846] BinaryProvider v0.5.10
+  [893b89ae] LibYAML v0.1.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+    Testing LibYAML tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:19:32.69
+CPU usage: 15.95s (13.23s user, 2.77s kernel)
+
+Network usage:
+- eth0: 2.715 MiB received, 40.709 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":143360,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":143360,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":143360,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":143360,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":333774848,"max_usage":655585280,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":223363072,"inactive_file":135168,"inactive_anon":79208448,"total_pgfault":483318,"total_cache":81260544,"total_rss_huge":0,"total_active_anon":225460224,"total_pgmajfault":0,"pgpgin":346962,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":272604,"hierarchical_memsw_limit":0,"cache":81260544,"active_file":135168,"pgfault":483318,"total_mapped_file":0,"total_pgpgout":272604,"total_writeback":0,"rss":223363072,"unevictable":0,"total_inactive_anon":79208448,"total_pgpgin":346962,"active_anon":225460224,"total_active_file":135168},"limit":540965302272},"name":"/LibYAML-4GhJnysF","networks":{"eth0":{"rx_bytes":2847307,"rx_packets":437,"tx_packets":431,"tx_bytes":41686,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"890ab50480a92078a0ee08c15aeb4574e1b99dfbde20587fd790f7a27d77a33b","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6349081074522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":13230000000,"usage_in_kernelmode":2770000000,"total_usage":15950427493,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15950420713,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2410,0,4370,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:19:33.263075699Z"}

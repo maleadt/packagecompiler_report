@@ -1,0 +1,146 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:38:44.567
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:38:46.389
+#
+
+ Installing known registries into `~/.julia`
+                                                                           0.6%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed TimerOutputs ───────────────── v0.5.7
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed AutoGrad ───────────────────── v1.2.4
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [6710c13c] + AutoGrad v1.2.4
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [6710c13c] + AutoGrad v1.2.4
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [276daf66] + SpecialFunctions v1.2.1
+  [a759f4b9] + TimerOutputs v0.5.7
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T15:38:52.084
+#
+
+    Testing AutoGrad
+Status `/tmp/jl_BqhO7S/Project.toml`
+  [6710c13c] AutoGrad v1.2.4
+  [276daf66] SpecialFunctions v1.2.1
+  [a759f4b9] TimerOutputs v0.5.7
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_BqhO7S/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [6710c13c] AutoGrad v1.2.4
+  [d360d2e6] ChainRulesCore v0.9.24
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [692b3bcd] JLLWrappers v1.2.0
+  [46d2c3a1] MuladdMacro v0.2.2
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [276daf66] SpecialFunctions v1.2.1
+  [a759f4b9] TimerOutputs v0.5.7
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+ 70.982289 seconds (112.81 M allocations: 5.846 GiB, 3.28% gc time)
+ 12.916355 seconds (20.39 M allocations: 1.202 GiB, 2.59% gc time)
+┌ Warning: Output independent of params
+└ @ AutoGrad ~/.julia/packages/AutoGrad/TTpeo/test/gradcheck.jl:159
+(pa, xi, f0, nd, ad) = ("2-element Array{Float64,1}", 0.13430023756127, Inf, NaN, 0)
+ 13.637470 seconds (23.88 M allocations: 1.291 GiB, 3.03% gc time)
+ 60.756853 seconds (85.70 M allocations: 4.975 GiB, 3.00% gc time)
+  7.125396 seconds (12.54 M allocations: 658.583 MiB, 2.87% gc time)
+ 11.551817 seconds (18.08 M allocations: 1.280 GiB, 3.68% gc time)
+ 17.389063 seconds (27.16 M allocations: 1.632 GiB, 3.40% gc time)
+100.269127 seconds (144.33 M allocations: 8.997 GiB, 3.72% gc time)
+ 10.163135 seconds (12.52 M allocations: 767.928 MiB, 6.88% gc time)
+  1.314448 seconds (3.29 M allocations: 129.054 MiB, 9.10% gc time)
+  6.560181 seconds (9.87 M allocations: 576.468 MiB, 4.96% gc time)
+  3.841972 seconds (5.68 M allocations: 323.667 MiB, 3.93% gc time)
+ 48.448997 seconds (58.58 M allocations: 3.614 GiB, 3.35% gc time)
+ 29.775421 seconds (28.45 M allocations: 1.742 GiB, 2.75% gc time)
+Test Summary: | Pass  Broken  Total
+AutoGrad      |  574      15    589
+    Testing AutoGrad tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:45:28.045
+CPU usage: 402.90s (398.08s user, 5.43s kernel)
+
+Network usage:
+- eth0: 2.946 MiB received, 64.611 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":342847488,"max_usage":1075560448,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":228610048,"inactive_file":135168,"inactive_anon":79884288,"total_pgfault":2038641,"total_cache":84230144,"total_rss_huge":0,"total_active_anon":232894464,"total_pgmajfault":0,"pgpgin":819654,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":743279,"hierarchical_memsw_limit":0,"cache":84230144,"active_file":135168,"pgfault":2038641,"total_mapped_file":0,"total_pgpgout":743279,"total_writeback":0,"rss":228610048,"unevictable":0,"total_inactive_anon":79884288,"total_pgpgin":819654,"active_anon":232894464,"total_active_file":135168},"limit":540965302272},"name":"/AutoGrad-9o8z34lO","networks":{"eth0":{"rx_bytes":3089364,"rx_packets":714,"tx_packets":567,"tx_bytes":66162,"tx_dropped":0,"rx_dropped":14,"tx_errors":0,"rx_errors":0}},"id":"2b680f13cef83432dd3fe2b171fa592bba70529c5fbcc99b4339425ab259ac39","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3327442454522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":398080000000,"usage_in_kernelmode":5430000000,"total_usage":402895005005,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39594326,0,0,402855407259,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3420,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:45:28.047718963Z"}

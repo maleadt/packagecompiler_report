@@ -1,0 +1,102 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:59:53.245
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:59:55.06
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed GLNS ─ v1.0.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [516e1c79] + GLNS v1.0.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [516e1c79] + GLNS v1.0.0
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T22:59:58.779
+#
+
+    Testing GLNS
+Status `/tmp/jl_RQgicR/Project.toml`
+  [516e1c79] GLNS v1.0.0
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_RQgicR/Manifest.toml`
+  [516e1c79] GLNS v1.0.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+
+--------- Problem Data ------------
+Instance Name      : test.gtsp
+Number of Vertices : 266
+Number of Sets     : 133
+Initial Tour       : Random
+Maximum Removals   : 40
+Trials             : 5
+Restart Attempts   : 3
+Rate of Adaptation : 0.5
+Prob of Reopt      : 1.0
+Maximum Time       : 360
+Tour Budget        : None
+-----------------------------------
+
+ |1     2     3     4     5     |  Cost = 595568  Time = 1.6 sec       |1     2     3     4     5     |  Cost = 592226  Time = 2.1 sec       |1=    2     3     4     5     |  Cost = 592226  Time = 2.6 sec       |1===  2     3     4     5     |  Cost = 592226  Time = 3.1 sec       |1=====2     3     4     5     |  Cost = 592225  Time = 3.6 sec       |1=====2     3     4     5     |  Cost = 592225  Time = 4.1 sec       |1=====2     3     4     5     |  Cost = 592225  Time = 4.6 sec       |1=====2=    3     4     5     |  Cost = 592225  Time = 5.1 sec       |1=====2=    3     4     5     |  Cost = 591944  Time = 5.6 sec       |1=====2=    3     4     5     |  Cost = 591472  Time = 6.1 sec       |1=====2=    3     4     5     |  Cost = 590841  Time = 6.6 sec       |1=====2=    3     4     5     |  Cost = 590765  Time = 7.1 sec       |1=====2=    3     4     5     |  Cost = 590587  Time = 7.6 sec       |1=====2=    3     4     5     |  Cost = 590581  Time = 8.1 sec       |1=====2==== 3     4     5     |  Cost = 590581  Time = 8.6 sec       |1=====2=====3     4     5     |  Cost = 590581  Time = 9.1 sec       |1=====2=====3     4     5     |  Cost = 590581  Time = 9.6 sec       |1=====2=====3     4     5     |  Cost = 590581  Time = 10.1 sec       |1=====2=====3     4     5     |  Cost = 590581  Time = 10.6 sec       |1=====2=====3     4     5     |  Cost = 590581  Time = 11.1 sec       |1=====2=====3     4     5     |  Cost = 590581  Time = 11.6 sec       |1=====2=====3     4     5     |  Cost = 590581  Time = 12.1 sec       |1=====2=====3     4     5     |  Cost = 590479  Time = 12.6 sec       |1=====2=====3     4     5     |  Cost = 590468  Time = 13.1 sec       |1=====2=====3=    4     5     |  Cost = 590468  Time = 13.6 sec       |1=====2=====3=====4     5     |  Cost = 590468  Time = 14.1 sec       |1=====2=====3=====4     5     |  Cost = 590468  Time = 14.6 sec       |1=====2=====3=====4     5     |  Cost = 590468  Time = 15.1 sec       |1=====2=====3=====4=    5     |  Cost = 590468  Time = 15.6 sec       |1=====2=====3=====4=    5     |  Cost = 590468  Time = 16.1 sec       |1=====2=====3=====4=    5     |  Cost = 590468  Time = 16.6 sec       |1=====2=====3=====4=    5     |  Cost = 590468  Time = 17.1 sec       |1=====2=====3=====4=    5     |  Cost = 590468  Time = 17.6 sec       |1=====2=====3=====4===  5     |  Cost = 590468  Time = 18.1 sec       |1=====2=====3=====4=====5     |  Cost = 590468  Time = 18.6 sec       |1=====2=====3=====4=====5     |  Cost = 590468  Time = 19.1 sec       |1=====2=====3=====4=====5==   |  Cost = 590468  Time = 19.6 sec       |1=====2=====3=====4=====5==   |  Cost = 590468  Time = 20.1 sec       |1=====2=====3=====4=====5==   |  Cost = 590468  Time = 20.6 sec       |1=====2=====3=====4=====5==   |  Cost = 590468  Time = 21.1 sec       |1=====2=====3=====4=====5==   |  Cost = 590468  Time = 21.6 sec       |1=====2=====3=====4=====5=====|  Cost = 590468  Time = 22.1 sec       |1=====2=====3=====4=====5=====|  Cost = 590468  Time = 22.1 sec      
+
+--------- Tour Summary ------------
+Cost              : 590468
+Total Time        : 22.09 sec
+Solver Timeout?   : false
+Tour is Feasible? : true
+Output File       : None
+Tour Ordering     : [265, 187, 252, 255, 50, 179, 178, 175, 263, 52, 262, 259, 258, 53, 170, 173, 166, 160, 161, 164, 167, 172, 56, 254, 181, 184, 185, 194, 209, 207, 212, 215, 213, 203, 205, 245, 249, 242, 244, 247, 59, 31, 29, 36, 48, 39, 37, 33, 42, 44, 46, 12, 13, 16, 18, 19, 26, 22, 24, 27, 57, 222, 224, 226, 228, 217, 220, 233, 238, 239, 230, 232, 235, 191, 190, 145, 142, 151, 158, 155, 153, 149, 147, 136, 144, 139, 137, 134, 107, 114, 119, 126, 128, 130, 132, 123, 118, 111, 115, 122, 109, 102, 104, 106, 99, 96, 91, 89, 86, 77, 67, 65, 70, 72, 73, 82, 98, 93, 88, 83, 80, 75, 61, 64, 198, 200, 195, 201, 10, 7, 6, 3, 2]
+-----------------------------------
+ 26.360562 seconds (30.85 M allocations: 7.103 GiB, 2.36% gc time)
+    Testing GLNS tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:00:27.798
+CPU usage: 34.61s (32.02s user, 2.66s kernel)
+
+Network usage:
+- eth0: 2.794 MiB received, 30.125 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":334884864,"max_usage":587808768,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":211636224,"inactive_file":135168,"inactive_anon":79343616,"total_pgfault":395604,"total_cache":92663808,"total_rss_huge":0,"total_active_anon":212889600,"total_pgmajfault":0,"pgpgin":210012,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":135731,"hierarchical_memsw_limit":0,"cache":92663808,"active_file":12029952,"pgfault":395604,"total_mapped_file":0,"total_pgpgout":135731,"total_writeback":0,"rss":211636224,"unevictable":0,"total_inactive_anon":79343616,"total_pgpgin":210012,"active_anon":212889600,"total_active_file":12029952},"limit":540965302272},"name":"/GLNS-9zD43sav","networks":{"eth0":{"rx_bytes":2929908,"rx_packets":337,"tx_packets":325,"tx_bytes":30848,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"a165b7827ae2e65cdf23143a2bb13dae5af5c8fe4f6228995a21d6e2d058b659","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6662671804522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":32020000000,"usage_in_kernelmode":2660000000,"total_usage":34607713423,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34607699943,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13480,0,0,0]}},"read":"2021-01-11T23:00:27.801625302Z"}

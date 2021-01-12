@@ -1,0 +1,436 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:06:45.715
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:06:47.488
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed MbedTLS_jll ────────────────── v2.16.8+1
+  Installed ConstrainedDynamicsVis ─────── v0.2.4
+  Installed libass_jll ─────────────────── v0.14.0+4
+  Installed Opus_jll ───────────────────── v1.3.1+3
+  Installed FriBidi_jll ────────────────── v1.0.5+6
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed x265_jll ───────────────────── v3.0.0+3
+  Installed libvorbis_jll ──────────────── v1.3.6+6
+  Installed libfdk_aac_jll ─────────────── v0.1.6+4
+  Installed Reexport ───────────────────── v0.2.0
+  Installed TableTraits ────────────────── v1.0.0
+  Installed LAME_jll ───────────────────── v3.100.0+3
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed GeometryBasics ─────────────── v0.2.15
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed OpenSSL_jll ────────────────── v1.1.1+6
+  Installed MsgPack ────────────────────── v1.1.0
+  Installed Widgets ────────────────────── v0.6.2
+  Installed Tables ─────────────────────── v1.2.2
+  Installed FunctionalCollections ──────── v0.5.0
+  Installed Requires ───────────────────── v1.1.2
+  Installed Libiconv_jll ───────────────── v1.16.0+7
+  Installed MbedTLS ────────────────────── v1.0.3
+  Installed Mustache ───────────────────── v1.0.10
+  Installed Blink ──────────────────────── v0.12.3
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed Hiccup ─────────────────────── v0.2.2
+  Installed FFMPEG ─────────────────────── v0.4.0
+  Installed Bzip2_jll ──────────────────── v1.0.6+5
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Parameters ─────────────────── v0.12.1
+  Installed FFMPEG_jll ─────────────────── v4.3.1+4
+  Installed HTTP ───────────────────────── v0.9.2
+  Installed Observables ────────────────── v0.3.3
+  Installed Ogg_jll ────────────────────── v1.3.4+2
+  Installed Lazy ───────────────────────── v0.15.1
+  Installed IterTools ──────────────────── v1.3.0
+  Installed Colors ─────────────────────── v0.12.6
+  Installed StaticArrays ───────────────── v0.12.5
+  Installed MeshCat ────────────────────── v0.12.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed WebIO ──────────────────────── v0.8.15
+  Installed XML2_jll ───────────────────── v2.9.10+3
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed AssetRegistry ──────────────── v0.1.0
+  Installed ColorTypes ─────────────────── v0.10.9
+  Installed Rotations ──────────────────── v1.0.2
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed LightXML ───────────────────── v0.9.0
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed JSExpr ─────────────────────── v0.5.2
+  Installed LibVPX_jll ─────────────────── v1.9.0+1
+  Installed URIParser ──────────────────── v0.4.1
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed StructArrays ───────────────── v0.4.4
+  Installed WebSockets ─────────────────── v1.5.7
+  Installed JSON ───────────────────────── v0.21.1
+  Installed Mux ────────────────────────── v0.7.5
+  Installed ConstrainedDynamics ────────── v0.6.2
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed CoordinateTransformations ──── v0.6.1
+  Installed URIs ───────────────────────── v1.1.0
+  Installed FreeType2_jll ──────────────── v2.10.1+5
+  Installed Adapt ──────────────────────── v2.4.0
+  Installed Pidfile ────────────────────── v1.2.0
+  Installed FixedPointNumbers ──────────── v0.8.4
+  Installed BinDeps ────────────────────── v1.0.2
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed DocStringExtensions ────────── v0.8.3
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed x264_jll ───────────────────── v2020.7.14+2
+  Installed Cassette ───────────────────── v0.3.4
+  Installed Parsers ────────────────────── v1.0.15
+  Installed IniFile ────────────────────── v0.5.0
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [07ee0992] + ConstrainedDynamicsVis v0.2.4
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [79e6a3ab] + Adapt v2.4.0
+  [56f22d72] + Artifacts v1.3.0
+  [bf4720bc] + AssetRegistry v0.1.0
+  [9e28174c] + BinDeps v1.0.2
+  [ad839575] + Blink v0.12.3
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [7057c7e9] + Cassette v0.3.4
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [3da002f7] + ColorTypes v0.10.9
+  [5ae59095] + Colors v0.12.6
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [65b0d8a9] + ConstrainedDynamics v0.6.2
+  [07ee0992] + ConstrainedDynamicsVis v0.2.4
+  [150eb455] + CoordinateTransformations v0.6.1
+  [9a962f9c] + DataAPI v1.4.0
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [ffbed154] + DocStringExtensions v0.8.3
+  [c87230d0] + FFMPEG v0.4.0
+  [b22a6f82] + FFMPEG_jll v4.3.1+4
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [f6369f11] + ForwardDiff v0.10.14
+  [d7e528f0] + FreeType2_jll v2.10.1+5
+  [559328eb] + FriBidi_jll v1.0.5+6
+  [de31a74c] + FunctionalCollections v0.5.0
+  [5c1252a2] + GeometryBasics v0.2.15
+  [cd3eb016] + HTTP v0.9.2
+  [9fb69e20] + Hiccup v0.2.2
+  [83e8ac13] + IniFile v0.5.0
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [97c1335a] + JSExpr v0.5.2
+  [682c06a0] + JSON v0.21.1
+  [c1c5ebd0] + LAME_jll v3.100.0+3
+  [50d2b5c4] + Lazy v0.15.1
+  [dd192d2f] + LibVPX_jll v1.9.0+1
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [9c8b4983] + LightXML v0.9.0
+  [1914dd2f] + MacroTools v0.5.6
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [283c5d60] + MeshCat v0.12.0
+  [99f44e22] + MsgPack v1.1.0
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [ffc61752] + Mustache v1.0.10
+  [a975b10e] + Mux v0.7.5
+  [77ba4419] + NaNMath v0.3.5
+  [510215fc] + Observables v0.3.3
+  [e7412a2a] + Ogg_jll v1.3.4+2
+  [458c3c95] + OpenSSL_jll v1.1.1+6
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [91d4177d] + Opus_jll v1.3.1+3
+  [bac558e1] + OrderedCollections v1.3.2
+  [d96e819e] + Parameters v0.12.1
+  [69de0a69] + Parsers v1.0.15
+  [fa939f87] + Pidfile v1.2.0
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [6038ab10] + Rotations v1.0.2
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v0.12.5
+  [09ab397b] + StructArrays v0.4.4
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [30578b45] + URIParser v0.4.1
+  [5c2747f8] + URIs v1.1.0
+  [3a884ed6] + UnPack v1.0.2
+  [0f1e0344] + WebIO v0.8.15
+  [104b5d7c] + WebSockets v1.5.7
+  [cc8bc4a8] + Widgets v0.6.2
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [0ac62f75] + libass_jll v0.14.0+4
+  [f638f0a6] + libfdk_aac_jll v0.1.6+4
+  [f27f6e37] + libvorbis_jll v1.3.6+6
+  [1270edf5] + x264_jll v2020.7.14+2
+  [dfaa095f] + x265_jll v3.0.0+3
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [7b1f6079] + FileWatching
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building WebIO ──→ `~/.julia/packages/WebIO/Fy9h1/deps/build.log`
+   Building Blink ──→ `~/.julia/packages/Blink/u1xcH/deps/build.log`
+   Building MeshCat → `~/.julia/packages/MeshCat/rJuuK/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T22:07:10.554
+#
+
+    Testing ConstrainedDynamicsVis
+Status `/tmp/jl_kgNAlR/Project.toml`
+  [ad839575] Blink v0.12.3
+  [65b0d8a9] ConstrainedDynamics v0.6.2
+  [07ee0992] ConstrainedDynamicsVis v0.2.4
+  [150eb455] CoordinateTransformations v0.6.1
+  [5c1252a2] GeometryBasics v0.2.15
+  [283c5d60] MeshCat v0.12.0
+  [6038ab10] Rotations v1.0.2
+  [1bc83da4] SafeTestsets v0.0.1
+  [8dfed614] Test
+Status `/tmp/jl_kgNAlR/Manifest.toml`
+  [79e6a3ab] Adapt v2.4.0
+  [56f22d72] Artifacts v1.3.0
+  [bf4720bc] AssetRegistry v0.1.0
+  [9e28174c] BinDeps v1.0.2
+  [ad839575] Blink v0.12.3
+  [6e34b625] Bzip2_jll v1.0.6+5
+  [7057c7e9] Cassette v0.3.4
+  [d360d2e6] ChainRulesCore v0.9.24
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.6
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [65b0d8a9] ConstrainedDynamics v0.6.2
+  [07ee0992] ConstrainedDynamicsVis v0.2.4
+  [150eb455] CoordinateTransformations v0.6.1
+  [9a962f9c] DataAPI v1.4.0
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [ffbed154] DocStringExtensions v0.8.3
+  [c87230d0] FFMPEG v0.4.0
+  [b22a6f82] FFMPEG_jll v4.3.1+4
+  [53c48c17] FixedPointNumbers v0.8.4
+  [f6369f11] ForwardDiff v0.10.14
+  [d7e528f0] FreeType2_jll v2.10.1+5
+  [559328eb] FriBidi_jll v1.0.5+6
+  [de31a74c] FunctionalCollections v0.5.0
+  [5c1252a2] GeometryBasics v0.2.15
+  [cd3eb016] HTTP v0.9.2
+  [9fb69e20] Hiccup v0.2.2
+  [83e8ac13] IniFile v0.5.0
+  [c8e1da08] IterTools v1.3.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [97c1335a] JSExpr v0.5.2
+  [682c06a0] JSON v0.21.1
+  [c1c5ebd0] LAME_jll v3.100.0+3
+  [50d2b5c4] Lazy v0.15.1
+  [dd192d2f] LibVPX_jll v1.9.0+1
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [9c8b4983] LightXML v0.9.0
+  [1914dd2f] MacroTools v0.5.6
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [283c5d60] MeshCat v0.12.0
+  [99f44e22] MsgPack v1.1.0
+  [46d2c3a1] MuladdMacro v0.2.2
+  [ffc61752] Mustache v1.0.10
+  [a975b10e] Mux v0.7.5
+  [77ba4419] NaNMath v0.3.5
+  [510215fc] Observables v0.3.3
+  [e7412a2a] Ogg_jll v1.3.4+2
+  [458c3c95] OpenSSL_jll v1.1.1+6
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [91d4177d] Opus_jll v1.3.1+3
+  [bac558e1] OrderedCollections v1.3.2
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.15
+  [fa939f87] Pidfile v1.2.0
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [6038ab10] Rotations v1.0.2
+  [1bc83da4] SafeTestsets v0.0.1
+  [276daf66] SpecialFunctions v1.2.1
+  [90137ffa] StaticArrays v0.12.5
+  [09ab397b] StructArrays v0.4.4
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [30578b45] URIParser v0.4.1
+  [5c2747f8] URIs v1.1.0
+  [3a884ed6] UnPack v1.0.2
+  [0f1e0344] WebIO v0.8.15
+  [104b5d7c] WebSockets v1.5.7
+  [cc8bc4a8] Widgets v0.6.2
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [83775a58] Zlib_jll v1.2.11+18
+  [0ac62f75] libass_jll v0.14.0+4
+  [f638f0a6] libfdk_aac_jll v0.1.6+4
+  [f27f6e37] libvorbis_jll v1.3.6+6
+  [1270edf5] x264_jll v2020.7.14+2
+  [dfaa095f] x265_jll v3.0.0+3
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [7b1f6079] FileWatching
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Info: MeshCat server started. You can open the visualizer by visiting the following URL in your browser:
+└ http://127.0.0.1:8700
+┌ Info: MeshCat server started. You can open the visualizer by visiting the following URL in your browser:
+└ http://127.0.0.1:8701
+┌ Info: MeshCat server started. You can open the visualizer by visiting the following URL in your browser:
+└ http://127.0.0.1:8702
+┌ Info: MeshCat server started. You can open the visualizer by visiting the following URL in your browser:
+└ http://127.0.0.1:8703
+Test Summary:    | Pass  Total
+Preparation Test |    4      4
+┌ Info: MeshCat server started. You can open the visualizer by visiting the following URL in your browser:
+└ http://127.0.0.1:8704
+Could not open browser automatically: Base.IOError("could not spawn `xdg-open http://127.0.0.1:8704`: no such file or directory (ENOENT)", -2)
+Please open the following URL in your browser:
+http://127.0.0.1:8704
+┌ Info: MeshCat server started. You can open the visualizer by visiting the following URL in your browser:
+└ http://127.0.0.1:8705
+Could not open browser automatically: Base.IOError("could not spawn `xdg-open http://127.0.0.1:8705`: no such file or directory (ENOENT)", -2)
+Please open the following URL in your browser:
+http://127.0.0.1:8705
+┌ Info: MeshCat server started. You can open the visualizer by visiting the following URL in your browser:
+└ http://127.0.0.1:8706
+Could not open browser automatically: Base.IOError("could not spawn `xdg-open http://127.0.0.1:8706`: no such file or directory (ENOENT)", -2)
+Please open the following URL in your browser:
+http://127.0.0.1:8706
+┌ Info: MeshCat server started. You can open the visualizer by visiting the following URL in your browser:
+└ http://127.0.0.1:8707
+Could not open browser automatically: Base.IOError("could not spawn `xdg-open http://127.0.0.1:8707`: no such file or directory (ENOENT)", -2)
+Please open the following URL in your browser:
+http://127.0.0.1:8707
+Test Summary:      | Pass  Total
+Visualization Test |    4      4
+Creating test.mp4.
+ffmpeg version 4.3.1 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 8.1.0 (GCC)
+  configuration: --enable-cross-compile --cross-prefix=/opt/x86_64-linux-gnu/bin/x86_64-linux-gnu- --arch=x86_64 --target-os=linux --cc=cc --cxx=c++ --dep-cc=cc --ar=ar --nm=nm --objcc=objc --sysinclude=/workspace/destdir/include --pkg-config=/usr/bin/pkg-config --pkg-config-flags=--static --prefix=/workspace/destdir --sysroot=/opt/x86_64-linux-gnu/x86_64-linux-gnu/sys-root --extra-libs=-lpthread --enable-gpl --enable-version3 --enable-nonfree --disable-static --enable-shared --enable-pic --disable-debug --disable-doc --enable-avresample --enable-libass --enable-libfdk-aac --enable-libfreetype --enable-libmp3lame --enable-libopus --enable-libvorbis --enable-libx264 --enable-libx265 --enable-libvpx --enable-encoders --enable-decoders --enable-muxers --enable-demuxers --enable-parsers --enable-openssl --disable-schannel --extra-cflags=-I/workspace/destdir/include --extra-ldflags=-L/workspace/destdir/lib --enable-nvenc --enable-cuda-llvm
+  libavutil      56. 51.100 / 56. 51.100
+  libavcodec     58. 91.100 / 58. 91.100
+  libavformat    58. 45.100 / 58. 45.100
+  libavdevice    58. 10.100 / 58. 10.100
+  libavfilter     7. 85.100 /  7. 85.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  7.100 /  5.  7.100
+  libswresample   3.  7.100 /  3.  7.100
+  libpostproc    55.  7.100 / 55.  7.100
+Input #0, image2, from '%07d.png':
+  Duration: 00:00:00.24, start: 0.000000, bitrate: N/A
+    Stream #0:0: Video: png, rgba(pc), 784x561, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x1a35840] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x1a35840] profile High 4:4:4 Predictive, level 3.1, 4:4:4, 8-bit
+[libx264 @ 0x1a35840] 264 - core 161 - H.264/MPEG-4 AVC codec - Copyleft 2003-2020 - http://www.videolan.org/x264.html - options: cabac=1 ref=5 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=8 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=4 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=50 rc=crf mbtree=1 crf=18.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/home/pkgeval/.julia/packages/ConstrainedDynamicsVis/UIUO1/test/test_files/test.mp4':
+  Metadata:
+    encoder         : Lavf58.45.100
+    Stream #0:0: Video: h264 (libx264) (avc1 / 0x31637661), yuv444p, 784x561, q=-1--1, 60 fps, 15360 tbn, 60 tbc
+    Metadata:
+      encoder         : Lavc58.91.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    7 fps=0.0 q=26.0 Lsize=      21kB time=00:00:00.06 bitrate=2601.0kbits/s dup=1 drop=0 speed=0.349x    
+video:20kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 4.453324%
+[libx264 @ 0x1a35840] frame I:1     Avg QP:18.79  size: 18785
+[libx264 @ 0x1a35840] frame P:2     Avg QP:21.28  size:   355
+[libx264 @ 0x1a35840] frame B:4     Avg QP:20.35  size:   150
+[libx264 @ 0x1a35840] consecutive B-frames: 14.3% 28.6%  0.0% 57.1%
+[libx264 @ 0x1a35840] mb I  I16..4: 21.7% 57.6% 20.7%
+[libx264 @ 0x1a35840] mb P  I16..4:  2.1%  0.1%  0.1%  P16..4: 12.8%  1.1%  0.1%  0.0%  0.0%    skip:83.7%
+[libx264 @ 0x1a35840] mb B  I16..4:  0.2%  0.0%  0.0%  B16..8: 11.7%  0.3%  0.0%  direct: 0.0%  skip:87.8%  L0:28.8% L1:70.9% BI: 0.3%
+[libx264 @ 0x1a35840] 8x8 transform intra:55.0% inter:86.7%
+[libx264 @ 0x1a35840] direct mvs  spatial:75.0% temporal:25.0%
+[libx264 @ 0x1a35840] coded y,u,v intra: 17.9% 18.2% 16.1% inter: 0.1% 0.0% 0.0%
+[libx264 @ 0x1a35840] i16 v,h,dc,p:  1% 96%  1%  3%
+[libx264 @ 0x1a35840] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  3% 89%  4%  0%  0%  0%  1%  0%  2%
+[libx264 @ 0x1a35840] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 10% 50% 12%  5%  4%  2%  7%  3%  7%
+[libx264 @ 0x1a35840] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x1a35840] ref P L0: 96.7%  1.6%  1.0%  0.7%
+[libx264 @ 0x1a35840] ref B L0: 30.9% 66.3%  2.8%
+[libx264 @ 0x1a35840] ref B L1: 80.8% 19.2%
+[libx264 @ 0x1a35840] kb/s:1378.08
+[ Info: Saved output as /home/pkgeval/.julia/packages/ConstrainedDynamicsVis/UIUO1/test/test_files/test.mp4
+Test Summary:      | Pass  Total
+Convert Video Test |    2      2
+    Testing ConstrainedDynamicsVis tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:11:11.36
+CPU usage: 263.11s (247.40s user, 16.10s kernel)
+
+Network usage:
+- eth0: 84.060 MiB received, 988.906 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":36,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":17,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":36,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":36,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":17,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":36,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":258048,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":151552,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":258048,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":258048,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":151552,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":258048,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":610263040,"max_usage":2059448320,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":230981632,"inactive_file":135168,"inactive_anon":309669888,"total_pgfault":6423483,"total_cache":345681920,"total_rss_huge":0,"total_active_anon":267091968,"total_pgmajfault":0,"pgpgin":4423716,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":540672,"total_unevictable":0,"total_dirty":540672,"writeback":135168,"pgpgout":4282924,"hierarchical_memsw_limit":0,"cache":345681920,"active_file":135168,"pgfault":6423483,"total_mapped_file":0,"total_pgpgout":4282924,"total_writeback":135168,"rss":230981632,"unevictable":0,"total_inactive_anon":309669888,"total_pgpgin":4423716,"active_anon":267091968,"total_active_file":135168},"limit":540965302272},"name":"/ConstrainedDynamicsVis-854RhUSN","networks":{"eth0":{"rx_bytes":88142795,"rx_packets":16677,"tx_packets":13921,"tx_bytes":1012640,"tx_dropped":0,"rx_dropped":9,"tx_errors":0,"rx_errors":0}},"id":"6dadce2863c797c12613acf2a989592c6047b382837c90100bccf87e94936d1c","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6284942694522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":247400000000,"usage_in_kernelmode":16100000000,"total_usage":263111259275,"percpu_usage":[0,127790,0,263110535564,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4860,0,0,591061,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:11:11.363347767Z"}

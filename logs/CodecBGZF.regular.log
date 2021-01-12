@@ -1,0 +1,120 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:02:22.083
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:02:23.873
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CodecBGZF ────────── v0.1.1
+  Installed libdeflate_jll ───── v1.6.0+0
+  Installed LibDeflate ───────── v0.1.0
+  Installed TranscodingStreams ─ v0.9.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [d9d91ef6] + CodecBGZF v0.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [d9d91ef6] + CodecBGZF v0.1.1
+  [9255714d] + LibDeflate v0.1.0
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [46979653] + libdeflate_jll v1.6.0+0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T23:02:28.071
+#
+
+    Testing CodecBGZF
+Status `/tmp/jl_WLuXeS/Project.toml`
+  [d9d91ef6] CodecBGZF v0.1.1
+  [9255714d] LibDeflate v0.1.0
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [8dfed614] Test
+Status `/tmp/jl_WLuXeS/Manifest.toml`
+  [d9d91ef6] CodecBGZF v0.1.1
+  [9255714d] LibDeflate v0.1.0
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [46979653] libdeflate_jll v1.6.0+0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+VirtualOffset |   22     22
+Test Summary: | Pass  Total
+Basics        |   11     11
+Test Summary: | Pass  Total
+Simple I/O    |   15     15
+Test Summary: | Pass  Total
+Larger files  |    3      3
+Test Summary:   | Pass  Total
+More roundtrips |    1      1
+Test Summary: | Pass  Total
+Seeking       |    2      2
+Test Summary: | Pass  Total
+BGZF offsets  |    6      6
+Test Summary: | Pass  Total
+gzi           |    4      4
+    Testing CodecBGZF tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:02:38.361
+CPU usage: 16.37s (13.36s user, 3.04s kernel)
+
+Network usage:
+- eth0: 2.680 MiB received, 40.308 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":324964352,"max_usage":873050112,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":215171072,"inactive_file":135168,"inactive_anon":79073280,"total_pgfault":454542,"total_cache":80314368,"total_rss_huge":0,"total_active_anon":216539136,"total_pgmajfault":0,"pgpgin":317526,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":245379,"hierarchical_memsw_limit":0,"cache":80314368,"active_file":135168,"pgfault":454542,"total_mapped_file":0,"total_pgpgout":245379,"total_writeback":0,"rss":215171072,"unevictable":0,"total_inactive_anon":79073280,"total_pgpgin":317526,"active_anon":216539136,"total_active_file":135168},"limit":540965302272},"name":"/CodecBGZF-s60XGSOm","networks":{"eth0":{"rx_bytes":2810571,"rx_packets":363,"tx_packets":373,"tx_bytes":41275,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"0e028f36a868c330d5aeaf9594c982f03a9b629836e499fd5d621a1830c8eadf","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6679364254522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":13360000000,"usage_in_kernelmode":3040000000,"total_usage":16369437978,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16369434158,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3820,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:02:38.364070937Z"}

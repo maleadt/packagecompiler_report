@@ -1,0 +1,126 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:44:53.027
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:44:54.787
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MPSolve ───── v0.9.9
+  Installed Artifacts ─── v1.3.0
+  Installed GMP_jll ───── v6.1.2+6
+  Installed JLLWrappers ─ v1.2.0
+  Installed MPSolve_jll ─ v3.2.1+0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9b0ab244] + MPSolve v0.9.9
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [781609d7] + GMP_jll v6.1.2+6
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9b0ab244] + MPSolve v0.9.9
+  [184ad7ad] + MPSolve_jll v3.2.1+0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T23:44:58.787
+#
+
+    Testing MPSolve
+Status `/tmp/jl_8M9UmU/Project.toml`
+  [9b0ab244] MPSolve v0.9.9
+  [184ad7ad] MPSolve_jll v3.2.1+0
+Status `/tmp/jl_8M9UmU/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [781609d7] GMP_jll v6.1.2+6
+  [692b3bcd] JLLWrappers v1.2.0
+  [9b0ab244] MPSolve v0.9.9
+  [184ad7ad] MPSolve_jll v3.2.1+0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+ERROR: LoadError: ArgumentError: Package Test not found in current path:
+- Run `import Pkg; Pkg.add("Test")` to install the Test package.
+
+Stacktrace:
+ [1] require(::Module, ::Symbol) at ./loading.jl:893
+ [2] include(::String) at ./client.jl:457
+ [3] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/MPSolve/5LRbi/test/runtests.jl:4
+
+PkgEval failed: Package MPSolve errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:45:08.079
+CPU usage: 15.12s (12.28s user, 2.90s kernel)
+
+Network usage:
+- eth0: 2.599 MiB received, 46.834 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":8,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":27,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":32,"op":"Total","minor":0},{"major":253,"value":8,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":27,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":32,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":581632,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":688128,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":708608,"op":"Total","minor":0},{"major":253,"value":581632,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":688128,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":708608,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":287252480,"max_usage":923500544,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":176480256,"inactive_file":540672,"inactive_anon":79208448,"total_pgfault":473682,"total_cache":81162240,"total_rss_huge":0,"total_active_anon":177881088,"total_pgmajfault":0,"pgpgin":329934,"rss_huge":0,"mapped_file":0,"total_inactive_file":540672,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":135168,"pgpgout":267021,"hierarchical_memsw_limit":0,"cache":81162240,"active_file":270336,"pgfault":473682,"total_mapped_file":0,"total_pgpgout":267021,"total_writeback":135168,"rss":176480256,"unevictable":0,"total_inactive_anon":79208448,"total_pgpgin":329934,"active_anon":177881088,"total_active_file":270336},"limit":540965302272},"name":"/MPSolve-KxgzpssD","networks":{"eth0":{"rx_bytes":2725549,"rx_packets":412,"tx_packets":438,"tx_bytes":47958,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"df5d0b7c78d4fd8a5d9ef304b468919eb3ec19436990a82a2ab4993b1322a11f","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":7005276104522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":12280000000,"usage_in_kernelmode":2900000000,"total_usage":15124626823,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15124556313,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,70510,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:45:08.283552761Z"}

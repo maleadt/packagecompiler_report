@@ -1,0 +1,77 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:49:56.042
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:49:57.79
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed TwoDimensional ─ v0.2.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [1907e7ba] + TwoDimensional v0.2.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [1907e7ba] + TwoDimensional v0.2.1
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+
+
+################################################################################
+# Testing: 2021-01-11T15:50:01.539
+#
+
+    Testing TwoDimensional
+Status `/tmp/jl_x1t89T/Project.toml`
+  [1907e7ba] TwoDimensional v0.2.1
+  [37e2e46d] LinearAlgebra
+  [8dfed614] Test
+Status `/tmp/jl_x1t89T/Manifest.toml`
+  [1907e7ba] TwoDimensional v0.2.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary:             | Pass  Total
+Points and bounding-boxes |  242    242
+Test Summary:          |    Pass    Total
+Bounding-box algorithm | 1048576  1048576
+Test Summary:    | Pass  Total
+AffineTransforms |  864    864
+    Testing TwoDimensional tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:50:13.643
+CPU usage: 17.63s (15.04s user, 2.66s kernel)
+
+Network usage:
+- eth0: 2.553 MiB received, 26.879 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":334,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":353,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":358,"op":"Total","minor":0},{"major":253,"value":334,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":353,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":358,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":1368064,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":1474560,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1495040,"op":"Total","minor":0},{"major":253,"value":1368064,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":1474560,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1495040,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":348893184,"max_usage":611495936,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":210903040,"inactive_file":270336,"inactive_anon":78802944,"total_pgfault":375210,"total_cache":105852928,"total_rss_huge":0,"total_active_anon":211808256,"total_pgmajfault":0,"pgpgin":219978,"rss_huge":0,"mapped_file":0,"total_inactive_file":270336,"dirty":3244032,"total_unevictable":0,"total_dirty":3244032,"writeback":0,"pgpgout":142628,"hierarchical_memsw_limit":0,"cache":105852928,"active_file":26222592,"pgfault":375210,"total_mapped_file":0,"total_pgpgout":142628,"total_writeback":0,"rss":210903040,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":219978,"active_anon":211808256,"total_active_file":26222592},"limit":540965302272},"name":"/TwoDimensional-ySJysN6W","networks":{"eth0":{"rx_bytes":2676974,"rx_packets":301,"tx_packets":275,"tx_bytes":27524,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"b7ad83c335a4e299aef6b52a1406480e4347a5522c8774acc1b2081b11559fce","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3363907014522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":15040000000,"usage_in_kernelmode":2660000000,"total_usage":17629823872,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17629823872,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:50:13.64647933Z"}

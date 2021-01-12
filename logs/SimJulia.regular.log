@@ -1,0 +1,173 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:19:01.062
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:19:02.89
+#
+
+ Installing known registries into `~/.julia`
+########################################################                  78.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed SimJulia ─────────── v0.8.0
+  Installed ResumableFunctions ─ v0.5.2
+  Installed Compat ───────────── v3.25.0
+  Installed MacroTools ───────── v0.5.6
+  Installed OrderedCollections ─ v1.3.2
+  Installed DataStructures ───── v0.18.8
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [428bdadb] + SimJulia v0.8.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [34da2185] + Compat v3.25.0
+  [864edb3b] + DataStructures v0.18.8
+  [1914dd2f] + MacroTools v0.5.6
+  [bac558e1] + OrderedCollections v1.3.2
+  [c5292f4c] + ResumableFunctions v0.5.2
+  [428bdadb] + SimJulia v0.8.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T15:19:08.088
+#
+
+    Testing SimJulia
+Status `/tmp/jl_A14aJR/Project.toml`
+  [864edb3b] DataStructures v0.18.8
+  [c5292f4c] ResumableFunctions v0.5.2
+  [428bdadb] SimJulia v0.8.0
+  [ade2ca70] Dates
+  [8dfed614] Test
+Status `/tmp/jl_A14aJR/Manifest.toml`
+  [34da2185] Compat v3.25.0
+  [864edb3b] DataStructures v0.18.8
+  [1914dd2f] MacroTools v0.5.6
+  [bac558e1] OrderedCollections v1.3.2
+  [c5292f4c] ResumableFunctions v0.5.2
+  [428bdadb] SimJulia v0.8.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Event
+idle
+nothing
+scheduled
+Hi
+I am a callback function running in Simulation
+SimJulia.EventProcessed(Event 1) has been thrown!
+processed
+Hi
+SimJulia.EventNotIdle(Event 2) has been thrown!
+Hi Event 1 has value Succes
+Hi Event 2 has value TestException()
+Hi SimJulia.Timeout 3 timed out at 1.0
+One of both events is triggered: Dict{AbstractEvent,SimJulia.StateValue}(SimJulia.Timeout 1 => SimJulia.StateValue(SimJulia.processed, nothing),Event 2 => SimJulia.StateValue(SimJulia.idle, nothing))
+Both events are triggered: Dict{AbstractEvent,SimJulia.StateValue}(SimJulia.Timeout 1 => SimJulia.StateValue(SimJulia.processed, nothing),Event 2 => SimJulia.StateValue(SimJulia.processed, nothing))
+One of both events is triggered: TestException()
+Both events are triggered: TestException()
+One of both events is triggered: TestException()
+One of both events is triggered: Dict{AbstractEvent,SimJulia.StateValue}(SimJulia.Timeout 1 => SimJulia.StateValue(SimJulia.processed, nothing),SimJulia.Timeout 2 => SimJulia.StateValue(SimJulia.processed, nothing))
+Hi I timed out at 1.0
+SimJulia.EmptySchedule() has been thrown!
+Hi I timed out at 4.0
+2.0
+TestException() has been thrown after 0.0!
+ERROR: LoadError: LoadError: UndefVarError: ResumableFunctions not defined
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/SimJulia/alkAr/test/processes.jl:3
+ [2] include(::String) at ./client.jl:457
+ [3] top-level scope at /home/pkgeval/.julia/packages/SimJulia/alkAr/test/runtests.jl:13
+ [4] include(::String) at ./client.jl:457
+ [5] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/SimJulia/alkAr/test/processes.jl:3
+in expression starting at /home/pkgeval/.julia/packages/SimJulia/alkAr/test/runtests.jl:3
+
+PkgEval failed: Package SimJulia errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:19:30.497
+CPU usage: 29.46s (26.21s user, 3.31s kernel)
+
+Network usage:
+- eth0: 2.811 MiB received, 53.708 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":349851648,"max_usage":943054848,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":237088768,"inactive_file":135168,"inactive_anon":79749120,"total_pgfault":705903,"total_cache":82935808,"total_rss_huge":0,"total_active_anon":240328704,"total_pgmajfault":0,"pgpgin":456060,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":377913,"hierarchical_memsw_limit":0,"cache":82935808,"active_file":135168,"pgfault":705903,"total_mapped_file":0,"total_pgpgout":377913,"total_writeback":0,"rss":237088768,"unevictable":0,"total_inactive_anon":79749120,"total_pgpgin":456060,"active_anon":240328704,"total_active_file":135168},"limit":540965302272},"name":"/SimJulia-4VD55MuF","networks":{"eth0":{"rx_bytes":2947061,"rx_packets":486,"tx_packets":508,"tx_bytes":54997,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"4e21b496fcb745882ca12a9fa9118543ed334c380665218e0d3d6e74bba29cff","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3128494704522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":26210000000,"usage_in_kernelmode":3310000000,"total_usage":29463747624,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29462472664,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4690,0,0,1270270,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:19:30.50030904Z"}

@@ -1,0 +1,79 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:48:07.543
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:48:09.332
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed SoftGlobalScope ─ v1.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [b85f4697] + SoftGlobalScope v1.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [b85f4697] + SoftGlobalScope v1.1.0
+  [2a0f44e3] + Base64
+  [b77e0a4c] + InteractiveUtils
+  [d6f4376e] + Markdown
+  [3fa0cd96] + REPL
+  [6462fe0b] + Sockets
+
+
+################################################################################
+# Testing: 2021-01-11T17:48:13.254
+#
+
+    Testing SoftGlobalScope
+Status `/tmp/jl_NGbj0Q/Project.toml`
+  [b85f4697] SoftGlobalScope v1.1.0
+  [3fa0cd96] REPL
+  [8dfed614] Test
+Status `/tmp/jl_NGbj0Q/Manifest.toml`
+  [b85f4697] SoftGlobalScope v1.1.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary: |
+softscope     | No tests
+Test Summary:            | Pass  Total
+softscope_include_string |   11     11
+Test Summary:   | Pass  Total
+softscope_macro |    2      2
+    Testing SoftGlobalScope tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:48:17.102
+CPU usage: 9.68s (7.58s user, 2.11s kernel)
+
+Network usage:
+- eth0: 2.629 MiB received, 29.065 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":324571136,"max_usage":572772352,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":215740416,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":260040,"total_cache":79388672,"total_rss_huge":0,"total_active_anon":216268800,"total_pgmajfault":0,"pgpgin":185889,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":113853,"hierarchical_memsw_limit":0,"cache":79388672,"active_file":135168,"pgfault":260040,"total_mapped_file":0,"total_pgpgout":113853,"total_writeback":0,"rss":215740416,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":185889,"active_anon":216268800,"total_active_file":135168},"limit":540965302272},"name":"/SoftGlobalScope-rqQZZsLb","networks":{"eth0":{"rx_bytes":2756331,"rx_packets":308,"tx_packets":306,"tx_bytes":29763,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"588836d746692251e339520a8e863bd26a57d04c064cdf9fc17ee63e42283411","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4269191064522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":7580000000,"usage_in_kernelmode":2110000000,"total_usage":9677838704,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9677833624,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5080,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:48:17.105198554Z"}

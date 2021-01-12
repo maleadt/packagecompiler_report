@@ -1,0 +1,82 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:01:07.453
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:01:09.218
+#
+
+ Installing known registries into `~/.julia`
+##                                                                         3.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed DICOM ─ v0.7.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a26e6606] + DICOM v0.7.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [a26e6606] + DICOM v0.7.0
+
+
+################################################################################
+# Testing: 2021-01-11T20:01:13.717
+#
+
+    Testing DICOM
+Status `/tmp/jl_Erw5I8/Project.toml`
+  [a26e6606] DICOM v0.7.0
+  [8dfed614] Test
+Status `/tmp/jl_Erw5I8/Manifest.toml`
+  [a26e6606] DICOM v0.7.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary: | Pass  Total
+Reading DICOM |   10     10
+Test Summary: | Pass  Total
+Writing DICOM |   11     11
+Test Summary:  | Pass  Total
+Uncommon DICOM |   11     11
+Test Summary:   | Pass  Total
+Test big endian |    2      2
+Test Summary:    | Pass  Total
+Test interleaved |    1      1
+Test Summary: | Pass  Total
+DICOMData API |    9      9
+Test Summary:       | Pass  Total
+Parse entire folder |    2      2
+Test Summary:  | Pass  Total
+Test tag macro |    5      5
+    Testing DICOM tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:01:31.981
+CPU usage: 20.29s (17.39s user, 2.92s kernel)
+
+Network usage:
+- eth0: 19.941 MiB received, 171.643 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":345735168,"max_usage":672690176,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":216064000,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":419595,"total_cache":100438016,"total_rss_huge":0,"total_active_anon":237760512,"total_pgmajfault":0,"pgpgin":259842,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":182559,"hierarchical_memsw_limit":0,"cache":100438016,"active_file":135168,"pgfault":419595,"total_mapped_file":0,"total_pgpgout":182559,"total_writeback":0,"rss":216064000,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":259842,"active_anon":237760512,"total_active_file":135168},"limit":540965302272},"name":"/DICOM-n8cVRjKF","networks":{"eth0":{"rx_bytes":20909385,"rx_packets":2495,"tx_packets":2301,"tx_bytes":175762,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"972150f37bc14a8b91d83467fbdc3573ad4b4f4422e30f4d00a51ff30107fe14","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5290982024522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":17390000000,"usage_in_kernelmode":2920000000,"total_usage":20285084724,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20285080174,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4550,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:01:31.984321125Z"}

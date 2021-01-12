@@ -1,0 +1,123 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:24:32.347
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:24:34.165
+#
+
+ Installing known registries into `~/.julia`
+####################################                                      51.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed TERMIOS ─ v0.2.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [10233e3b] + TERMIOS v0.2.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [10233e3b] + TERMIOS v0.2.1
+
+
+################################################################################
+# Testing: 2021-01-11T22:24:37.566
+#
+
+    Testing TERMIOS
+Status `/tmp/jl_l3T6OQ/Project.toml`
+  [10233e3b] TERMIOS v0.2.1
+  [8dfed614] Test
+Status `/tmp/jl_l3T6OQ/Manifest.toml`
+  [10233e3b] TERMIOS v0.2.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+termios.jl stdout: Error During Test at /home/pkgeval/.julia/packages/TERMIOS/00cfD/test/runtests.jl:13
+  Got exception outside of a @test
+  TERMIOSError: tcgetattr failed: Inappropriate ioctl for device
+  Stacktrace:
+   [1] tcgetattr(::RawFD, ::TERMIOS.termios) at /home/pkgeval/.julia/packages/TERMIOS/00cfD/src/TERMIOS.jl:610
+   [2] tcgetattr(::Base.PipeEndpoint, ::TERMIOS.termios) at /home/pkgeval/.julia/packages/TERMIOS/00cfD/src/TERMIOS.jl:612
+   [3] top-level scope at /home/pkgeval/.julia/packages/TERMIOS/00cfD/test/runtests.jl:16
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/pkgeval/.julia/packages/TERMIOS/00cfD/test/runtests.jl:15
+   [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [7] top-level scope at /home/pkgeval/.julia/packages/TERMIOS/00cfD/test/runtests.jl:13
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+termios.jl stdin: Error During Test at /home/pkgeval/.julia/packages/TERMIOS/00cfD/test/runtests.jl:54
+  Got exception outside of a @test
+  TERMIOSError: tcgetattr failed: Inappropriate ioctl for device
+  Stacktrace:
+   [1] tcgetattr(::RawFD, ::TERMIOS.termios) at /home/pkgeval/.julia/packages/TERMIOS/00cfD/src/TERMIOS.jl:610
+   [2] tcgetattr(::Base.PipeEndpoint, ::TERMIOS.termios) at /home/pkgeval/.julia/packages/TERMIOS/00cfD/src/TERMIOS.jl:612
+   [3] top-level scope at /home/pkgeval/.julia/packages/TERMIOS/00cfD/test/runtests.jl:57
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/pkgeval/.julia/packages/TERMIOS/00cfD/test/runtests.jl:56
+   [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [7] top-level scope at /home/pkgeval/.julia/packages/TERMIOS/00cfD/test/runtests.jl:13
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at none:6
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+Test Summary:       | Error  Total
+All                 |     2      2
+  termios.jl stdout |     1      1
+  termios.jl stdin  |     1      1
+ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 2 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/TERMIOS/00cfD/test/runtests.jl:12
+
+PkgEval failed: Package TERMIOS errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:24:44.287
+CPU usage: 12.03s (9.65s user, 2.41s kernel)
+
+Network usage:
+- eth0: 2.541 MiB received, 26.450 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":302505984,"max_usage":569933824,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":193662976,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":290895,"total_cache":79396864,"total_rss_huge":0,"total_active_anon":194236416,"total_pgmajfault":0,"pgpgin":202422,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":135766,"hierarchical_memsw_limit":0,"cache":79396864,"active_file":135168,"pgfault":290895,"total_mapped_file":0,"total_pgpgout":135766,"total_writeback":0,"rss":193662976,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":202422,"active_anon":194236416,"total_active_file":135168},"limit":540965302272},"name":"/TERMIOS-YIJLA0bT","networks":{"eth0":{"rx_bytes":2664382,"rx_packets":290,"tx_packets":268,"tx_bytes":27085,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"9eef3c587575d1f1a2c57f63fae721c0fac43b9dca222772588bd3aaccbbe1cc","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6388870314522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":9650000000,"usage_in_kernelmode":2410000000,"total_usage":12032164565,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12032161155,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:24:44.530091251Z"}

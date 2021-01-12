@@ -1,0 +1,151 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T18:35:28.606
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T18:35:30.326
+#
+
+ Installing known registries into `~/.julia`
+###########################################                               61.1%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ContextualMacros ─ v0.1.0
+  Installed PackageCompiler ── v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [18b01625] + ContextualMacros v0.1.0
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [18b01625] + ContextualMacros v0.1.0
+  [9b87118b] + PackageCompiler v1.2.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T18:35:35.912
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 147.313 MiB, compilation took 153 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T18:38:16.464
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/ContextualMacros-1sd49AtP.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:38:18.294
+#
+
+ Installing known registries into `~/.julia`
+##################                                                        25.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ContextualMacros ─ v0.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [18b01625] + ContextualMacros v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [18b01625] + ContextualMacros v0.1.0
+
+
+################################################################################
+# Testing: 2021-01-11T18:38:21.634
+#
+
+    Testing ContextualMacros
+Status `/tmp/jl_3p4W3c/Project.toml`
+  [18b01625] ContextualMacros v0.1.0
+  [e30172f5] Documenter v0.26.1
+  [8dfed614] Test
+Status `/tmp/jl_3p4W3c/Manifest.toml`
+  [18b01625] ContextualMacros v0.1.0
+  [ffbed154] DocStringExtensions v0.8.3
+  [e30172f5] Documenter v0.26.1
+  [b5f81e59] IOCapture v0.1.1
+  [682c06a0] JSON v0.21.1
+  [69de0a69] Parsers v1.0.15
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+test_core.jl  |    1      1
+[ Info: Skipping doctests on PkgEval.
+Test Summary:   |
+test_doctest.jl | No tests
+Test Summary:            | Pass  Total
+test_expansion_errors.jl |    6      6
+Test Summary: | Pass  Total
+test_share.jl |    3      3
+    Testing ContextualMacros tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:38:27.325
+CPU usage: 10.90s (8.69s user, 2.23s kernel)
+
+Network usage:
+- eth0: 3.154 MiB received, 55.514 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":42,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":56,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":61,"op":"Total","minor":0},{"major":253,"value":42,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":56,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":61,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":1028096,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":1085440,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1105920,"op":"Total","minor":0},{"major":253,"value":1028096,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":1085440,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1105920,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":297738240,"max_usage":449265664,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":33,"total_rss":183869440,"inactive_file":1081344,"inactive_anon":82857984,"total_pgfault":233442,"total_cache":83976192,"total_rss_huge":0,"total_active_anon":183582720,"total_pgmajfault":33,"pgpgin":161172,"rss_huge":0,"mapped_file":0,"total_inactive_file":1081344,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":95856,"hierarchical_memsw_limit":0,"cache":83976192,"active_file":135168,"pgfault":233442,"total_mapped_file":0,"total_pgpgout":95856,"total_writeback":0,"rss":183869440,"unevictable":0,"total_inactive_anon":82857984,"total_pgpgin":161172,"active_anon":183582720,"total_active_file":135168},"limit":540965302272},"name":"/ContextualMacros-G0myUL0o","networks":{"eth0":{"rx_bytes":3306979,"rx_packets":544,"tx_packets":536,"tx_bytes":56846,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"ffb32fe4c3f26979185029cf67d8691b227b855269bcc50ee818d4532e685fa5","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4653830384522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":8690000000,"usage_in_kernelmode":2230000000,"total_usage":10901537916,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10901537916,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:38:27.586245717Z"}

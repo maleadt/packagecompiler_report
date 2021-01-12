@@ -1,0 +1,79 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T21:46:46.65
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T21:46:48.391
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed NASAEarthObservations ─ v0.1.0
+  Installed Glob ────────────────── v1.3.0
+  Installed PackageCompiler ─────── v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9526e54e] + NASAEarthObservations v0.1.0
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [c27321d9] + Glob v1.3.0
+  [9526e54e] + NASAEarthObservations v0.1.0
+  [9b87118b] + PackageCompiler v1.2.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T21:46:54.031
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 147.797 MiB, compilation took 161 seconds
+
+
+fatal: error thrown and no exception handler available.
+InitError(mod=:NASAEarthObservations, error=Base.IOError(msg="open: no such file or directory (ENOENT)", code=-2))
+uv_error at ./libuv.jl:97 [inlined]
+open at ./filesystem.jl:87
+touch at ./file.jl:422
+__init__ at /home/pkgeval/.julia/packages/NASAEarthObservations/Ur9QL/src/NASAEarthObservations.jl:79
+jfptr___init___66910 at /cache/NASAEarthObservations-748aEaAP.so (unknown line)
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+jl_module_run_initializer at /workspace/srcdir/src/toplevel.c:74
+_julia_init at /workspace/srcdir/src/init.c:780
+main at /workspace/srcdir/ui/repl.c:221
+__libc_start_main at /usr/lib/libc.so.6 (unknown line)
+unknown function (ip: 0x4015e4)
+
+No statistics gathered.

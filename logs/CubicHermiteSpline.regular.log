@@ -1,0 +1,79 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:49:29.13
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:49:30.923
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ArgCheck ─────────── v2.1.0
+  Installed CubicHermiteSpline ─ v0.2.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [2338ea46] + CubicHermiteSpline v0.2.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [dce04be8] + ArgCheck v2.1.0
+  [2338ea46] + CubicHermiteSpline v0.2.2
+
+
+################################################################################
+# Testing: 2021-01-11T20:49:34.528
+#
+
+    Testing CubicHermiteSpline
+Status `/tmp/jl_aGbA0R/Project.toml`
+  [2338ea46] CubicHermiteSpline v0.2.2
+  [8dfed614] Test
+Status `/tmp/jl_aGbA0R/Manifest.toml`
+  [dce04be8] ArgCheck v2.1.0
+  [2338ea46] CubicHermiteSpline v0.2.2
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary:  | Pass  Total
+basis function |   12     12
+Test Summary:             | Pass  Total
+basis_derivative function |   12     12
+Test Summary:                     | Pass  Total
+Interval enclosing the data point |   12     12
+Test Summary: | Pass  Total
+Interpolation |    8      8
+Test Summary:      | Pass  Total
+Interpolation grad |    8      8
+    Testing CubicHermiteSpline tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:49:39.613
+CPU usage: 10.61s (8.20s user, 2.44s kernel)
+
+Network usage:
+- eth0: 2.672 MiB received, 34.738 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":323149824,"max_usage":704638976,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":214007808,"inactive_file":135168,"inactive_anon":79208448,"total_pgfault":319440,"total_cache":79962112,"total_rss_huge":0,"total_active_anon":214646784,"total_pgmajfault":0,"pgpgin":222057,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":150330,"hierarchical_memsw_limit":0,"cache":79962112,"active_file":135168,"pgfault":319440,"total_mapped_file":0,"total_pgpgout":150330,"total_writeback":0,"rss":214007808,"unevictable":0,"total_inactive_anon":79208448,"total_pgpgin":222057,"active_anon":214646784,"total_active_file":135168},"limit":540965302272},"name":"/CubicHermiteSpline-l2wYavv9","networks":{"eth0":{"rx_bytes":2802187,"rx_packets":353,"tx_packets":359,"tx_bytes":35572,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"0279f3427e88f24f978839f0781dc4df7d2b52f8fefdf269372a7699407b8e79","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5660063814522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":8200000000,"usage_in_kernelmode":2440000000,"total_usage":10610397574,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10610397574,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:49:40.155048031Z"}

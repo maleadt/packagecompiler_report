@@ -1,0 +1,172 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:40:10.175
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:40:12
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Compat ───────────── v3.25.0
+  Installed Reactive ─────────── v0.8.3
+  Installed OrderedCollections ─ v1.3.2
+  Installed DataStructures ───── v0.18.8
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a223df75] + Reactive v0.8.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [34da2185] + Compat v3.25.0
+  [864edb3b] + DataStructures v0.18.8
+  [bac558e1] + OrderedCollections v1.3.2
+  [a223df75] + Reactive v0.8.3
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T18:40:16.288
+#
+
+    Testing Reactive
+Status `/tmp/jl_g7hXST/Project.toml`
+  [864edb3b] DataStructures v0.18.8
+  [a223df75] Reactive v0.8.3
+  [8ba89e20] Distributed
+  [8dfed614] Test
+Status `/tmp/jl_g7hXST/Manifest.toml`
+  [34da2185] Compat v3.25.0
+  [864edb3b] DataStructures v0.18.8
+  [bac558e1] OrderedCollections v1.3.2
+  [a223df75] Reactive v0.8.3
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+Queue runner  |    2      2
+step 1
+step 2
+step 3
+queue_size() = 0
+Test Summary: | Pass  Total
+Basic checks  |   91     91
+Test Summary:           | Pass  Total
+Push to non-input nodes |   32     32
+av = 1
+bv = 2
+av = 1
+bv = 3
+av = 7
+bv = 7
+Test Summary:       | Pass  Total
+multi-path graphs 1 |   17     17
+Test Summary:       | Pass  Total
+multi-path graphs 2 |   16     16
+Test Summary:                        | Pass  Total
+multi-path graphs: dfs good, bfs bad |    2      2
+Test Summary:                        | Pass  Total
+multi-path graphs: bfs good, dfs bad |    2      2
+Test Summary:                       | Pass  Total
+multi-path graphs: dfs bad, bfs bad |    2      2
+Test Summary: | Pass  Total
+Call counting |  600    600
+Test Summary: | Pass  Total
+Flatten       |   30     30
+dt = 1.136937979
+end_t = 1.61039043607371e9
+end_t .- accval = [1.5072460174560547, 1.007422924041748, 0.5067548751831055, 0.006114006042480469]
+z got 3
+z got 6
+z′ got [1, 2, 3, 4, 5, 6, 7]
+z got 8
+z got 11
+z′ got [8, 9, 10, 11, 12, 13]
+z got 13
+i = 13
+dt = 2.3333799839019775
+ydt = 0.5
+y′dt = 1.1
+zcount = 5.0
+z′count = 3.0
+value(y) = 13
+value(y′) = [8, 9, 10, 11, 12, 13]
+value(z) = 5
+value(z′) = 2
+Test Summary:    | Pass  Total
+Timing functions |   28     28
+Test Summary: | Pass  Total
+Async         |    5      5
+Test Summary: | Pass  Total
+Queue runner  |   24     24
+    Testing Reactive tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:40:46.535
+CPU usage: 25.32s (22.62s user, 2.78s kernel)
+
+Network usage:
+- eth0: 2.754 MiB received, 40.218 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":81,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":100,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":105,"op":"Total","minor":0},{"major":253,"value":81,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":100,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":105,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":3563520,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":3670016,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":3690496,"op":"Total","minor":0},{"major":253,"value":3563520,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":3670016,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":3690496,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":332685312,"max_usage":876007424,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":33,"total_rss":216756224,"inactive_file":3649536,"inactive_anon":79478784,"total_pgfault":573705,"total_cache":85929984,"total_rss_huge":0,"total_active_anon":219648000,"total_pgmajfault":33,"pgpgin":355146,"rss_huge":0,"mapped_file":270336,"total_inactive_file":3649536,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":281263,"hierarchical_memsw_limit":0,"cache":85929984,"active_file":270336,"pgfault":573705,"total_mapped_file":270336,"total_pgpgout":281263,"total_writeback":0,"rss":216756224,"unevictable":0,"total_inactive_anon":79478784,"total_pgpgin":355146,"active_anon":219648000,"total_active_file":270336},"limit":540965302272},"name":"/Reactive-X3xfpWuO","networks":{"eth0":{"rx_bytes":2887509,"rx_packets":354,"tx_packets":372,"tx_bytes":41183,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"c91c4e3440f4af96bef0d9ebeaed56e10b07c7bd71cd1914ea4b22dc8b8c3b61","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4671589094522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":22620000000,"usage_in_kernelmode":2780000000,"total_usage":25315254218,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25315254218,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:40:46.538570992Z"}

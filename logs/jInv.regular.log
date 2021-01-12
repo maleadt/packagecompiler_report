@@ -1,0 +1,415 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T16:56:22.228
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:56:24.021
+#
+
+ Installing known registries into `~/.julia`
+#######################################################                   77.5%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ParSpMatVec ─── v0.1.1
+  Installed KrylovMethods ─ v0.6.0
+  Installed jInv ────────── v1.0.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [3dacf901] + jInv v1.0.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [9a2cd570] + KrylovMethods v0.6.0
+  [ccf9b6e2] + ParSpMatVec v0.1.1
+  [3dacf901] + jInv v1.0.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building ParSpMatVec → `~/.julia/packages/ParSpMatVec/Rtbqp/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T16:56:29.222
+#
+
+    Testing jInv
+Status `/tmp/jl_FD8CyS/Project.toml`
+  [9a2cd570] KrylovMethods v0.6.0
+  [ccf9b6e2] ParSpMatVec v0.1.1
+  [3dacf901] jInv v1.0.0
+  [8ba89e20] Distributed
+  [37e2e46d] LinearAlgebra
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_FD8CyS/Manifest.toml`
+  [9a2cd570] KrylovMethods v0.6.0
+  [ccf9b6e2] ParSpMatVec v0.1.1
+  [3dacf901] jInv v1.0.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+/home/pkgeval/.julia/packages/ParSpMatVec/Rtbqp/deps/builds/ParSpMatVec
+3-dimensional regular mesh of size [3, 4, 5]
+Number of cells:   60
+Number of faces:   [80, 75, 72] = 227
+Number of edges:   [90, 96, 100] = 286
+Number of nodes:   120
+Coordinate origin: [1.2, 0.0, 0.0]
+Domain size:       [1.2, 2.4, 0.0, 1.1, 0.0, 2.3]
+Cell size:         [0.39999999999999997, 0.275, 0.45999999999999996]
+2-dimensional regular mesh of size [3, 4]
+Number of cells:   12
+Number of faces:   [16, 15] = 31
+Number of edges:   [15, 16] = 31
+Number of nodes:   20
+Coordinate origin: [1.2, 0.0]
+Domain size:       [1.2, 2.4, 0.0, 1.1]
+Cell size:         [0.39999999999999997, 0.275]
+3-dimensional tensor mesh of size [4, 5, 6]
+Number of cells:   120
+Number of faces:   [150, 144, 140] = 434
+Number of edges:   [168, 175, 180] = 523
+Number of nodes:   210
+Coordinate origin: [0.0, 0.0, 0.0]
+Domain size:       1.9853806219679733m x 2.3176434622772057m x 2.5877530904927735m
+Minimum cell size: 0.26726711578360507m x 0.15773411373496216m x 0.17369159668718726m
+Maximum cell size: 0.6904685566094046m x 0.9069309588748973m x 0.742852763891098m
+	test cell-centered axes...passed
+	test nodal axes...passed
+	test cell-centered grid...passed
+	test nodal grid...passed
+	test face grid...passed
+	test edge grid...passed
+	test volume...passed
+	test area...passed
+	test length...passed
+	test counting...passed
+	test nodal gradient matrix...passed
+	test divergence matrix...passed
+	test curl matrix...passed
+	test face average matrix...passed
+	test edge average matrix...passed
+	testing differential operators for TensorMesh3D...passed!
+	testing differential operators for RegularMesh...passed!
+	testing differential operators for TensorMesh3D...passed!
+   test getInterpolationMatrix (RegularMesh) ...  dim=2 dim=3 passed
+   test getInterpolationMatrix (TensorMesh) ... passed
+	testing nodal averaging for TensorMesh3D...passed!
+	testing nodal averaging for RegularMesh...passed!
+	testing nodal averaging for TensorMesh3D...passed!
+	testing nodal averaging for RegularMesh...passed!
+	testing boundary nodes for TensorMesh3D...passed!
+
+	testing boundary nodes for RegularMesh...passed!
+
+	testing boundary nodes for RegularMesh...passed!
+
+	test getEdgeMassMatrix on RegularMesh
+	test getNodalMassMatrix on RegularMesh
+	test getFaceMassMatrix on RegularMesh
+	test getEdgeMassMatrix on TensorMesh3D
+	test getNodalMassMatrix on TensorMesh3D
+	test getFaceMassMatrix on TensorMesh3D
+	testing forward operators for RegularMesh...passed!
+	testing forward operators for RegularMesh...passed!
+	testing forward operators for RegularMesh...passed!
+	testing forward operators for RegularMesh...passed!
+	testing 2D elasticity operators for RegularMesh...passed!
+	testing 3D elasticity operators for RegularMesh...passed!
+WARNING: could not import Base.Test into Main
+        h	       E0	       E1	       O1	       O2	  OK?
+1.000e-01	9.713e-02	1.315e-16	0.000e+00	0.000e+00	    1
+1.000e-02	9.713e-03	1.425e-16	1.000e+00	-3.510e-02	    1
+1.000e-03	9.713e-04	9.897e-17	1.000e+00	1.584e-01	    1
+1.000e-04	9.713e-05	9.163e-17	1.000e+00	3.349e-02	    1
+1.000e-05	9.713e-06	1.098e-16	1.000e+00	-7.850e-02	    1
+1.000e-06	9.713e-07	1.379e-16	1.000e+00	-9.893e-02	    1
+1.000e-07	9.713e-08	2.071e-16	1.000e+00	-1.767e-01	    1
+1.000e-08	9.713e-09	1.106e-16	1.000e+00	2.722e-01	    1
+1.000e-09	9.713e-10	9.100e-17	1.000e+00	8.482e-02	    1
+1.000e-10	9.713e-11	1.272e-16	1.000e+00	-1.455e-01	    1
+        h	       E0	       E1	       O1	       O2	  OK?
+1.000e-01	5.765e-01	1.220e-01	0.000e+00	0.000e+00	    0
+1.000e-02	6.862e-02	1.220e-03	9.243e-01	2.000e+00	    1
+1.000e-03	6.972e-03	1.220e-05	9.931e-01	2.000e+00	    1
+1.000e-04	6.983e-04	1.220e-07	9.993e-01	2.000e+00	    1
+1.000e-05	6.984e-05	1.220e-09	9.999e-01	2.000e+00	    1
+1.000e-06	6.984e-06	1.220e-11	1.000e+00	2.000e+00	    1
+1.000e-07	6.984e-07	1.218e-13	1.000e+00	2.000e+00	    1
+1.000e-08	6.984e-08	1.100e-15	1.000e+00	2.044e+00	    1
+1.000e-09	6.984e-09	0.000e+00	1.000e+00	Inf	    1
+1.000e-10	6.984e-10	1.572e-16	1.000e+00	-Inf	    1
+        h	       E0	       E1	       O1	       O2	  OK?
+1.000e-01	4.586e-02	1.381e-03	0.000e+00	0.000e+00	    0
+1.000e-02	4.661e-03	1.381e-05	9.929e-01	2.000e+00	    1
+1.000e-03	4.669e-04	1.381e-07	9.993e-01	2.000e+00	    1
+1.000e-04	4.670e-05	1.381e-09	9.999e-01	2.000e+00	    1
+1.000e-05	4.670e-06	1.381e-11	1.000e+00	2.000e+00	    1
+1.000e-06	4.670e-07	1.381e-13	1.000e+00	2.000e+00	    1
+1.000e-07	4.670e-08	1.377e-15	1.000e+00	2.001e+00	    1
+1.000e-08	4.670e-09	1.878e-16	1.000e+00	8.651e-01	    1
+1.000e-09	4.670e-10	8.622e-17	1.000e+00	3.381e-01	    1
+1.000e-10	4.670e-11	1.737e-16	1.000e+00	-3.041e-01	    1
+
+ i.LS	       F	       R	alpha[1]	   Jc/J0	 #Active
+  1.0	1.66e+02	0.00e+00	1.00e+00	1.00e+00	  0
+   .1	4.74e+00	5.36e+00			6.10e-02
+  2.0	4.74e+00	5.36e+00	1.00e+00	6.10e-02	  0
+   .1	3.53e+00	5.87e+00			5.67e-02
+  3.0	3.53e+00	5.87e+00	1.00e+00	5.67e-02	  1
+   .1	3.55e+00	5.85e+00			5.67e-02
+  4.0	3.55e+00	5.85e+00	1.00e+00	5.67e-02	  1
+   .1	3.54e+00	5.85e+00			5.67e-02
+  5.0	3.54e+00	5.85e+00	1.00e+00	5.67e-02	  1
+   .1	3.55e+00	5.85e+00			5.67e-02
+projGN reached desired accuracy at iteration 5.
+
+ i.LS	       F	       R	alpha[1]	   Jc/J0	 #Active
+  1.0	1.66e+02	0.00e+00	1.00e+00	1.00e+00	  0
+   .1	4.74e+00	5.36e+00			6.10e-02
+  2.0	4.74e+00	5.36e+00	1.00e+00	6.10e-02	  0
+   .1	3.53e+00	5.87e+00			5.67e-02
+  3.0	3.53e+00	5.87e+00	1.00e+00	5.67e-02	  1
+   .1	3.55e+00	5.85e+00			5.67e-02
+  4.0	3.55e+00	5.85e+00	1.00e+00	5.67e-02	  1
+   .1	3.54e+00	5.85e+00			5.67e-02
+  5.0	3.54e+00	5.85e+00	1.00e+00	5.67e-02	  1
+   .1	3.55e+00	5.85e+00			5.67e-02
+projGN reached desired accuracy at iteration 5.
+
+ i.LS	       F	       R	alpha[1]	   Jc/J0	 #Active
+  1.0	2.78e+01	0.00e+00	1.00e+00	1.00e+00	  0
+   .1	1.65e+00	3.32e+00			1.78e-01
+  2.0	1.65e+00	3.32e+00	1.00e+00	1.78e-01	  0
+   .1	1.36e+00	3.47e+00			1.73e-01
+  3.0	1.36e+00	3.47e+00	1.00e+00	1.73e-01	  0
+   .1	1.35e+00	3.47e+00			1.73e-01
+  4.0	1.35e+00	3.47e+00	1.00e+00	1.73e-01	  0
+   .1	1.35e+00	3.47e+00			1.73e-01
+  5.0	1.35e+00	3.47e+00	1.00e+00	1.73e-01	  0
+   .1	1.35e+00	3.47e+00			1.73e-01
+projGN reached desired accuracy at iteration 5.
+projGN reached desired accuracy at iteration 5.
+
+ i.LS	       F	       R	alpha[1]	   Jc/J0	 #Active
+  1.0	2.78e+01	0.00e+00	1.00e+00	1.00e+00	  0
+   .1	1.65e+00	4.03e+00			2.04e-01
+  2.0	1.65e+00	4.03e+00	1.00e+00	2.04e-01	  0
+   .1	1.35e+00	3.55e+00			1.76e-01
+  3.0	1.35e+00	3.55e+00	1.00e+00	1.76e-01	  0
+   .1	1.47e+00	3.37e+00			1.74e-01
+  4.0	1.47e+00	3.37e+00	1.00e+00	1.74e-01	  0
+   .1	1.45e+00	3.39e+00			1.74e-01
+  5.0	1.45e+00	3.39e+00	1.00e+00	1.74e-01	  0
+   .1	1.45e+00	3.39e+00			1.74e-01
+projGN iterated maxIter=5 times but reached only stepNorm of 0.0019126742135826547 instead 0.0001.
+projGN iterated maxIter=5 times but reached only stepNorm of 0.0019126742135826547 instead 0.0001.
+Starting projGNCG minimization with alpha 1 of 3.0
+alpha = 100.0
+
+ i.LS	       F	       R	alpha[1]	   Jc/J0	 #Active
+  1.0	2.78e+01	0.00e+00	1.00e+02	1.00e+00	  0
+   .1	2.48e+01	1.45e+00			9.45e-01
+  2.0	2.48e+01	1.45e+00	1.00e+02	9.45e-01	  0
+   .1	2.48e+01	1.45e+00			9.45e-01
+projGN iterated maxIter=2 times but reached only stepNorm of 0.000563657377512114 instead 0.0001.
+[27.79752202027707, 24.805518701884946, 24.805566176915683]
+Starting projGNCG minimization with alpha 2 of 3.0
+alpha = 10.0
+
+ i.LS	       F	       R	alpha[1]	   Jc/J0	 #Active
+  1.0	2.48e+01	0.00e+00	1.00e+01	1.00e+00	  0
+   .1	1.04e+01	5.50e+00			6.41e-01
+  2.0	1.04e+01	5.50e+00	1.00e+01	6.41e-01	  0
+   .1	1.04e+01	5.50e+00			6.41e-01
+projGN iterated maxIter=2 times but reached only stepNorm of 0.003942390524501099 instead 0.0001.
+[24.805566176915683, 10.40552267809798, 10.410406763933846]
+iteratedTikhonov exiting after reaching desired misfit
+Starting projGNCG minimization with alpha 1 of 3.0
+alpha = 100.0
+
+ i.LS	       F	       R	alpha[1]	   Jc/J0	 #Active
+  1.0	2.78e+01	0.00e+00	1.00e+02	1.00e+00	  0
+   .1	2.48e+01	1.45e+00			9.45e-01
+  2.0	2.48e+01	1.45e+00	1.00e+02	9.45e-01	  0
+   .1	2.48e+01	1.45e+00			9.45e-01
+projGN iterated maxIter=2 times but reached only stepNorm of 0.000563657377512114 instead 0.0001.
+[27.79752202027707, 24.805518701884946, 24.805566176915683]
+Starting projGNCG minimization with alpha 2 of 3.0
+alpha = 10.0
+
+ i.LS	       F	       R	alpha[1]	   Jc/J0	 #Active
+  1.0	2.48e+01	0.00e+00	1.00e+01	1.00e+00	  0
+   .1	1.04e+01	5.50e+00			6.41e-01
+  2.0	1.04e+01	5.50e+00	1.00e+01	6.41e-01	  0
+   .1	1.04e+01	5.50e+00			6.41e-01
+projGN iterated maxIter=2 times but reached only stepNorm of 0.003942390524501099 instead 0.0001.
+[24.805566176915683, 10.40552267809798, 10.410406763933846]
+iteratedTikhonov exiting after reaching desired misfit
+i.LS	       F	       R	alpha[1]	   Jc/J0	 #Active
+  1.0	2.78e+01	7.42e-01	1.00e+00	1.00e+00	  0
+   .1	5.23e+00	1.45e+01			6.92e-01
+  2.0	5.23e+00	1.45e+01	1.00e+00	6.92e-01	  1
+   .1	1.86e+01	1.45e+01			1.16e+00
+   .2	8.28e+00	2.22e+00			3.68e-01
+  3.0	8.28e+00	2.22e+00	1.00e+00	3.68e-01	  0
+   .1	4.36e+00	1.92e+01			8.25e-01
+   .2	3.95e+00	6.00e+00			3.48e-01
+  4.0	3.95e+00	6.00e+00	1.00e+00	3.48e-01	  0
+   .1	1.02e+01	1.28e+01			8.08e-01
+   .2	4.97e+00	1.74e+00			2.35e-01
+  5.0	4.97e+00	1.74e+00	1.00e+00	2.35e-01	  0
+   .1	3.36e+00	1.34e+01			5.86e-01
+   .2	2.69e+00	3.61e+00			2.21e-01
+  6.0	2.69e+00	3.61e+00	1.00e+00	2.21e-01	  0
+   .1	7.05e+00	1.00e+01			5.98e-01
+   .2	3.41e+00	1.70e+00			1.79e-01
+  7.0	3.41e+00	1.70e+00	1.00e+00	1.79e-01	  0
+   .1	2.85e+00	1.02e+01			4.57e-01
+   .2	2.05e+00	2.63e+00			1.64e-01
+  8.0	2.05e+00	2.63e+00	1.00e+00	1.64e-01	  0
+   .1	5.42e+00	8.45e+00			4.86e-01
+   .2	2.57e+00	1.70e+00			1.50e-01
+  9.0	2.57e+00	1.70e+00	1.00e+00	1.50e-01	  0
+   .1	2.51e+00	8.20e+00			3.75e-01
+   .2	1.68e+00	2.19e+00			1.35e-01
+ 10.0	1.68e+00	2.19e+00	1.00e+00	1.35e-01	  0
+   .1	4.49e+00	7.53e+00			4.21e-01
+   .2	2.08e+00	1.73e+00			1.34e-01
+ 11.0	2.08e+00	1.73e+00	1.00e+00	1.34e-01	  0
+   .1	2.31e+00	7.01e+00			3.27e-01
+   .2	1.46e+00	1.97e+00			1.20e-01
+ 12.0	1.46e+00	1.97e+00	1.00e+00	1.20e-01	  0
+   .1	3.93e+00	7.00e+00			3.83e-01
+   .2	1.79e+00	1.77e+00			1.25e-01
+   .3	1.40e+00	1.19e+00			9.07e-02
+ 13.0	1.40e+00	1.19e+00	1.00e+00	9.07e-02	  0
+   .1	1.11e+00	1.50e+00			9.16e-02
+   .2	1.22e+00	1.28e+00			8.73e-02
+ 14.0	1.22e+00	1.28e+00	1.00e+00	8.73e-02	  0
+   .1	2.04e+00	3.93e+00			2.09e-01
+   .2	1.33e+00	1.75e+00			1.08e-01
+   .3	1.20e+00	1.30e+00			8.75e-02
+   .4	1.19e+00	1.24e+00			8.49e-02
+ 15.0	1.19e+00	1.24e+00	1.00e+00	8.49e-02	  0
+   .1	1.04e+00	1.42e+00			8.59e-02
+   .2	1.09e+00	1.29e+00			8.37e-02
+ 16.0	1.09e+00	1.29e+00	1.00e+00	8.37e-02	  0
+   .1	1.48e+00	2.52e+00			1.40e-01
+   .2	1.15e+00	1.52e+00			9.34e-02
+   .3	1.09e+00	1.31e+00			8.39e-02
+   .4	1.08e+00	1.28e+00			8.26e-02
+ 17.0	1.08e+00	1.28e+00	1.00e+00	8.26e-02	  0
+   .1	9.98e-01	1.38e+00			8.33e-02
+   .2	1.03e+00	1.31e+00			8.22e-02
+ 18.0	1.03e+00	1.31e+00	1.00e+00	8.22e-02	  0
+   .1	1.21e+00	1.90e+00			1.09e-01
+   .2	1.06e+00	1.42e+00			8.68e-02
+   .3	1.03e+00	1.32e+00			8.23e-02
+   .4	1.03e+00	1.31e+00			8.17e-02
+ 19.0	1.03e+00	1.31e+00	1.00e+00	8.17e-02	  0
+   .1	9.77e-01	1.37e+00			8.21e-02
+   .2	9.98e-01	1.33e+00			8.16e-02
+ 20.0	9.98e-01	1.33e+00	1.00e+00	8.16e-02	  0
+   .1	1.08e+00	1.61e+00			9.42e-02
+   .2	1.01e+00	1.38e+00			8.38e-02
+   .3	9.95e-01	1.33e+00			8.16e-02
+   .4	9.95e-01	1.33e+00			8.13e-02
+projSD iterated maxIter=20 times but reached only stepNorm of 0.024624631003255293 instead 0.0001.
+projSD iterated maxIter=20 times but reached only stepNorm of 0.024624631003255293 instead 0.0001.
+---jInv.InverseSolve.InverseParam---
+inverse mesh type:    RegularMesh
+number of cells:      1024
+model function:       fMod
+maxStep:              1.0
+pcgMaxIter:           10
+pcgTol:               0.1
+minUpdate:            0.0001
+maxIter:              10
+===  Example 2D DivSigGrad ====
+cg achieved desired tolerance at iteration 3. Residual norm is 4.03e-06.
+bcgstb achieved desired tolerance at iteration 2. Residual norm is 1.81e-07.
+===  Test for nonsymmetric matrices ====
+===  Example 2D DivSigGrad ====
+blockCG achieved desired tolerance at iteration 1. Residual norm is 4.23e-06.
+blockBiCGSTB achieved desired tolerance at iteration 0.5. Residual norm is 3.92e-06.
+===  Test for nonsymmetric matrices ====
+===  Test Julia wrapper with symmetric (real) matrix ====
+nrhs=1, issparse(rhs)=false : sym=0, sym=1, sym=2, 
+nrhs=1, issparse(rhs)=true : sym=0, sym=1, sym=2, 
+nrhs=3, issparse(rhs)=false : sym=0, sym=1, sym=2, 
+nrhs=3, issparse(rhs)=true : sym=0, sym=1, sym=2, 
+
+
+===  Test Julia wrapper with shifted (complex) Laplacian ====
+nrhs=1, issparse(rhs)=false : sym=0, sym=1, sym=2, 
+nrhs=1, issparse(rhs)=true : sym=0, sym=1, sym=2, 
+nrhs=3, issparse(rhs)=false : sym=0, sym=1, sym=2, 
+nrhs=3, issparse(rhs)=true : sym=0, sym=1, sym=2, 
+
+
+===  Test Julia Wrapper: nonsymmetric matrices ====
+===  End Test Julia Wrapper ====
+Test Summary: | Pass  Total
+jInv          |  282    282
+    Testing jInv tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T16:57:44.402
+CPU usage: 82.08s (78.81s user, 3.38s kernel)
+
+Network usage:
+- eth0: 15.367 MiB received, 98.130 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":34,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":15,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":34,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":34,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":15,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":34,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":274432,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":167936,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":274432,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":274432,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":167936,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":274432,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":352227328,"max_usage":799248384,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":218697728,"inactive_file":135168,"inactive_anon":100970496,"total_pgfault":905223,"total_cache":103346176,"total_rss_huge":0,"total_active_anon":221134848,"total_pgmajfault":0,"pgpgin":442728,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":364086,"hierarchical_memsw_limit":0,"cache":103346176,"active_file":135168,"pgfault":905223,"total_mapped_file":0,"total_pgpgout":364086,"total_writeback":0,"rss":218697728,"unevictable":0,"total_inactive_anon":100970496,"total_pgpgin":442728,"active_anon":221134848,"total_active_file":135168},"limit":540965302272},"name":"/jInv-eOxEO0Vj","networks":{"eth0":{"rx_bytes":16113181,"rx_packets":1386,"tx_packets":1305,"tx_bytes":100485,"tx_dropped":0,"rx_dropped":3,"tx_errors":0,"rx_errors":0}},"id":"94f94589f11ce23043e30853849da45971d6b252e0910fe4bbb0da5dff4862dd","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3881826124522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":78810000000,"usage_in_kernelmode":3380000000,"total_usage":82077963898,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2911941,82075051957,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T16:57:44.405618218Z"}

@@ -1,0 +1,180 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T16:37:36.505
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T16:37:38.233
+#
+
+ Installing known registries into `~/.julia`
+##############                                                            20.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed PolygonInbounds ─ v0.2.0
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [e4521ec6] + PolygonInbounds v0.2.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [e4521ec6] + PolygonInbounds v0.2.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T16:37:45.73
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 147.517 MiB, compilation took 159 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T16:40:31.906
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/PolygonInbounds-d3ZMHEwn.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:40:33.715
+#
+
+ Installing known registries into `~/.julia`
+#########                                                                 13.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed PolygonInbounds ─ v0.2.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [e4521ec6] + PolygonInbounds v0.2.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [e4521ec6] + PolygonInbounds v0.2.0
+
+
+################################################################################
+# Testing: 2021-01-11T16:40:40.634
+#
+
+    Testing PolygonInbounds
+Status `/tmp/jl_s5Msvb/Project.toml`
+  [e4521ec6] PolygonInbounds v0.2.0
+  [8dfed614] Test
+Status `/tmp/jl_s5Msvb/Manifest.toml`
+  [e4521ec6] PolygonInbounds v0.2.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  0.029340 seconds (52 allocations: 6.893 MiB)
+Test Summary:        | Pass  Total
+PolygonInboundsTests |   18     18
+        INPOLY2 provides fast point-in-polygon queries for ob-
+ 
+        jects in R^2. Like INPOLYGON, it detects points inside
+
+        and on the boundary of polygonal geometries.
+
+
+  0.015969 seconds (54 allocations: 8.461 MiB)
+        INPOLY2 supports multiply-connected geometries, consi-
+
+        sting of arbitrarily nested sets of outer + inner bou-
+
+        ndaries.
+
+
+ERROR: LoadError: SystemError: opening file "/home/pkgeval/.julia/packages/PolygonInbounds/xx0XQ/src/../test-data/lakes.msh": No such file or directory
+Stacktrace:
+ [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+ [2] #systemerror#48 at ./error.jl:167 [inlined]
+ [3] systemerror at ./error.jl:167 [inlined]
+ [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+ [5] open at ./iostream.jl:273 [inlined]
+ [6] open(::PolygonInbounds.Demo.var"#27#28", ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+ [7] open at ./io.jl:323 [inlined]
+ [8] loadmsh(::String) at /home/pkgeval/.julia/packages/PolygonInbounds/xx0XQ/src/polydemo.jl:249
+ [9] testdata(::String, ::Int64) at /home/pkgeval/.julia/packages/PolygonInbounds/xx0XQ/src/polydemo.jl:169
+ [10] demo2(; r::Int64, tol::Float64, do_plot::Bool) at /home/pkgeval/.julia/packages/PolygonInbounds/xx0XQ/src/polydemo.jl:75
+ [11] demo2() at /home/pkgeval/.julia/packages/PolygonInbounds/xx0XQ/src/polydemo.jl:69
+ [12] polydemo(::Int64; args::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/PolygonInbounds/xx0XQ/src/polydemo.jl:35
+ [13] polydemo at /home/pkgeval/.julia/packages/PolygonInbounds/xx0XQ/src/polydemo.jl:35 [inlined]
+ [14] top-level scope at /home/user/.julia/packages/PolygonInbounds/xx0XQ/test/runtests.jl:49
+ [15] include(::String) at ./client.jl:457
+ [16] top-level scope at none:6
+in expression starting at /home/user/.julia/packages/PolygonInbounds/xx0XQ/test/runtests.jl:48
+
+PkgEval failed: Package PolygonInbounds errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T16:40:52.932
+CPU usage: 21.08s (18.84s user, 2.28s kernel)
+
+Network usage:
+- eth0: 3.372 MiB received, 32.356 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":19,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":19,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":77824,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":77824,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":368971776,"max_usage":597426176,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":259055616,"inactive_file":135168,"inactive_anon":77586432,"total_pgfault":406593,"total_cache":80490496,"total_rss_huge":0,"total_active_anon":261820416,"total_pgmajfault":0,"pgpgin":210507,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":127637,"hierarchical_memsw_limit":0,"cache":80490496,"active_file":135168,"pgfault":406593,"total_mapped_file":0,"total_pgpgout":127637,"total_writeback":0,"rss":259055616,"unevictable":0,"total_inactive_anon":77586432,"total_pgpgin":210507,"active_anon":261820416,"total_active_file":135168},"limit":540965302272},"name":"/PolygonInbounds-iq5jol6A","networks":{"eth0":{"rx_bytes":3536232,"rx_packets":372,"tx_packets":360,"tx_bytes":33133,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"cff68fca64ea9181dc4ab60643792e5e696ab90723f82b6078b57e6973346e31","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3752573364522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":18840000000,"usage_in_kernelmode":2280000000,"total_usage":21078524547,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21078524547,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T16:40:52.934464782Z"}

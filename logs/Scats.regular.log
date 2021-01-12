@@ -1,0 +1,128 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:28:41.587
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:28:43.421
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Adapt ──────── v2.4.0
+  Installed Scats ──────── v0.2.2
+  Installed OffsetArrays ─ v1.5.0
+  Installed Formatting ─── v0.4.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a40fd361] + Scats v0.2.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [79e6a3ab] + Adapt v2.4.0
+  [59287772] + Formatting v0.4.2
+  [6fe1bfb0] + OffsetArrays v1.5.0
+  [a40fd361] + Scats v0.2.2
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T20:28:47.859
+#
+
+    Testing Scats
+Status `/tmp/jl_4XD8FQ/Project.toml`
+  [59287772] Formatting v0.4.2
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [a40fd361] Scats v0.2.2
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_4XD8FQ/Manifest.toml`
+  [79e6a3ab] Adapt v2.4.0
+  [59287772] Formatting v0.4.2
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [a40fd361] Scats v0.2.2
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+[1;32mRUNNING TESTS[0m for Scats
+[1;32mRUNNING[0m: input_test.jl
+Test Summary:     | Pass  Total
+Check file status |   30     30
+Test Summary:    | Pass  Total
+Read `good` data |   15     15
+Test Summary:                | Pass  Total
+Check creation of an example |   14     14
+Test Summary:   | Pass  Total
+Read `bad` data |   10     10
+Test Summary: | Pass  Total
+Check writing |   10     10
+Test Summary:   | Pass  Total
+Check resetting |    5      5
+[1;32mPASSED[0m: input_test.jl
+[1;32mRUNNING[0m: result_test.jl
+Test Summary:   | Pass  Total
+Check resetting |   11     11
+[1;32mPASSED[0m: result_test.jl
+[1;32mRUNNING[0m: gen_test.jl
+Test Summary:     | Pass  Total
+Check file status |   60     60
+Test Summary:          | Pass  Total
+Read `good` parameters |   30     30
+Test Summary:                | Pass  Total
+Check creation of an example |   24     24
+Test Summary:         | Pass  Total
+Read `bad` parameters |   20     20
+Test Summary:    | Pass  Total
+Check generation |  463    463
+Test Summary:   | Pass  Total
+Check resetting |   10     10
+[1;32mPASSED[0m: gen_test.jl
+    Testing Scats tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:28:58.978
+CPU usage: 17.48s (14.56s user, 2.95s kernel)
+
+Network usage:
+- eth0: 2.868 MiB received, 43.528 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":38,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":19,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":38,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":38,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":19,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":38,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":249856,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":143360,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":249856,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":249856,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":143360,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":249856,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":327233536,"max_usage":869253120,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":216899584,"inactive_file":135168,"inactive_anon":79343616,"total_pgfault":452199,"total_cache":80891904,"total_rss_huge":0,"total_active_anon":218431488,"total_pgmajfault":0,"pgpgin":320100,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":247415,"hierarchical_memsw_limit":0,"cache":80891904,"active_file":135168,"pgfault":452199,"total_mapped_file":0,"total_pgpgout":247415,"total_writeback":0,"rss":216899584,"unevictable":0,"total_inactive_anon":79343616,"total_pgpgin":320100,"active_anon":218431488,"total_active_file":135168},"limit":540965302272},"name":"/Scats-7OvjomGi","networks":{"eth0":{"rx_bytes":3007337,"rx_packets":407,"tx_packets":423,"tx_bytes":44573,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"703aa8c375ec4dbcc31f96c10ee0e221917c27ec9a320b493f16485ee809f1b4","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5501513074522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":14560000000,"usage_in_kernelmode":2950000000,"total_usage":17475410032,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17475409182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,850,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:28:58.981435418Z"}

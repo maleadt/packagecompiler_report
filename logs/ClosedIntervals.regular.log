@@ -1,0 +1,70 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:13:00.835
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:13:02.681
+#
+
+ Installing known registries into `~/.julia`
+############################################################              83.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ClosedIntervals ── v0.3.0
+  Installed AbstractLattices ─ v0.2.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [059b0e18] + ClosedIntervals v0.3.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [398f06c4] + AbstractLattices v0.2.1
+  [059b0e18] + ClosedIntervals v0.3.0
+
+
+################################################################################
+# Testing: 2021-01-11T19:13:07.225
+#
+
+    Testing ClosedIntervals
+Status `/tmp/jl_wc4Y6R/Project.toml`
+  [398f06c4] AbstractLattices v0.2.1
+  [059b0e18] ClosedIntervals v0.3.0
+  [8dfed614] Test
+Status `/tmp/jl_wc4Y6R/Manifest.toml`
+  [398f06c4] AbstractLattices v0.2.1
+  [059b0e18] ClosedIntervals v0.3.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+    Testing ClosedIntervals tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:13:10.865
+CPU usage: 10.11s (7.29s user, 2.87s kernel)
+
+Network usage:
+- eth0: 2.553 MiB received, 36.654 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":757,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":776,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":781,"op":"Total","minor":0},{"major":253,"value":757,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":776,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":781,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":3100672,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":3207168,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":3227648,"op":"Total","minor":0},{"major":253,"value":3100672,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":3207168,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":3227648,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":342302720,"max_usage":717918208,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":216621056,"inactive_file":270336,"inactive_anon":78667776,"total_pgfault":271029,"total_cache":94810112,"total_rss_huge":0,"total_active_anon":217214976,"total_pgmajfault":0,"pgpgin":229416,"rss_huge":0,"mapped_file":0,"total_inactive_file":270336,"dirty":0,"total_unevictable":0,"total_dirty":0,"writeback":0,"pgpgout":153385,"hierarchical_memsw_limit":0,"cache":94810112,"active_file":15409152,"pgfault":271029,"total_mapped_file":0,"total_pgpgout":153385,"total_writeback":0,"rss":216621056,"unevictable":0,"total_inactive_anon":78667776,"total_pgpgin":229416,"active_anon":217214976,"total_active_file":15409152},"limit":540965302272},"name":"/ClosedIntervals-A5C0XVH1","networks":{"eth0":{"rx_bytes":2676655,"rx_packets":395,"tx_packets":390,"tx_bytes":37534,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"2a61caccdea5bcc168a05d74b8a033e2eb9097f128ade56d0ba30e5590a7e867","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4920230234522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":7290000000,"usage_in_kernelmode":2870000000,"total_usage":10107299529,"percpu_usage":[0,0,0,0,7460,0,10107292069,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:13:11.68663079Z"}

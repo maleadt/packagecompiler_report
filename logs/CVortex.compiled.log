@@ -1,0 +1,90 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T22:52:53.403
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T22:52:55.171
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed URIParser ─────── v0.4.1
+  Installed CVortex ───────── v0.1.2
+  Installed BinDeps ───────── v1.0.2
+  Installed Compat ────────── v3.25.0
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [01b28500] + CVortex v0.1.2
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [9e28174c] + BinDeps v1.0.2
+  [01b28500] + CVortex v0.1.2
+  [34da2185] + Compat v3.25.0
+  [9b87118b] + PackageCompiler v1.2.5
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building CVortex → `~/.julia/packages/CVortex/FWUmA/deps/build.log`
+
+
+################################################################################
+# Compiling: 2021-01-11T22:53:04.468
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 147.730 MiB, compilation took 165 seconds
+
+
+fatal: error thrown and no exception handler available.
+InitError(mod=:CVortex, error=ErrorException("/home/pkgeval/.julia/packages/CVortex/FWUmA/deps/libcvortex cannot be opened. Consider rebuilding the package."))
+error at ./error.jl:33
+__init__ at /home/pkgeval/.julia/packages/CVortex/FWUmA/src/CVortex.jl:73
+jfptr___init___63564 at /cache/CVortex-im9F8Po4.so (unknown line)
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+jl_module_run_initializer at /workspace/srcdir/src/toplevel.c:74
+_julia_init at /workspace/srcdir/src/init.c:780
+main at /workspace/srcdir/ui/repl.c:221
+__libc_start_main at /usr/lib/libc.so.6 (unknown line)
+unknown function (ip: 0x4015e4)
+
+No statistics gathered.

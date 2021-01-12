@@ -1,0 +1,341 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:45:19
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:45:20.841
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Missings ─────────── v0.4.4
+  Installed DataAPI ──────────── v1.4.0
+  Installed SortingAlgorithms ── v0.3.1
+  Installed OrderedCollections ─ v1.3.2
+  Installed SimilaritySearch ─── v0.3.21
+  Installed JSON ─────────────── v0.21.1
+  Installed StatsBase ────────── v0.32.2
+  Installed DataStructures ───── v0.17.20
+  Installed Parsers ──────────── v1.0.15
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [053f045d] + SimilaritySearch v0.3.21
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.17.20
+  [682c06a0] + JSON v0.21.1
+  [e1d29d7a] + Missings v0.4.4
+  [bac558e1] + OrderedCollections v1.3.2
+  [69de0a69] + Parsers v1.0.15
+  [053f045d] + SimilaritySearch v0.3.21
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [2913bbd2] + StatsBase v0.32.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T19:45:25.479
+#
+
+    Testing SimilaritySearch
+Status `/tmp/jl_sCLh1P/Project.toml`
+  [682c06a0] JSON v0.21.1
+  [053f045d] SimilaritySearch v0.3.21
+  [2913bbd2] StatsBase v0.32.2
+  [ade2ca70] Dates
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_sCLh1P/Manifest.toml`
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.17.20
+  [682c06a0] JSON v0.21.1
+  [e1d29d7a] Missings v0.4.4
+  [bac558e1] OrderedCollections v1.3.2
+  [69de0a69] Parsers v1.0.15
+  [053f045d] SimilaritySearch v0.3.21
+  [a2af1166] SortingAlgorithms v0.3.1
+  [2913bbd2] StatsBase v0.32.2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+bit ops       |    3      3
+res = KnnResult(4, 4, Item[Item(24, 0.0816704f0), Item(37, 0.14519334f0), Item(3, 0.1848005f0), Item(1, 0.21659815f0)])
+Vsorted = Item[Item(24, 0.0816704f0), Item(37, 0.14519334f0), Item(3, 0.1848005f0), Item(1, 0.21659815f0)]
+Test Summary: | Pass  Total
+Result set    |    3      3
+Test Summary: | Pass  Total
+pairwise      |    1      1
+(recall_lower_bound, dist) = (1.0, SimilaritySearch.l2_distance)
+(dist, p) = (SimilaritySearch.l2_distance, PerformanceResult(1.0, 1.0, 1.0, 0.0023240963617960613, 0.002763795852661133, 301.0, 50.33868766576052))
+(recall_lower_bound, dist) = (1.0, SimilaritySearch.l1_distance)
+(dist, p) = (SimilaritySearch.l1_distance, PerformanceResult(1.0, 1.0, 1.0, 0.0021985054016113283, 0.0022425015767415365, 301.0, 72.96442306041718))
+(recall_lower_bound, dist) = (1.0, SimilaritySearch.linf_distance)
+(dist, p) = (SimilaritySearch.linf_distance, PerformanceResult(1.0, 1.0, 1.0, 0.0022254308064778646, 0.002239561080932617, 301.0, 41.24433982372284))
+(recall_lower_bound, dist) = (0.1, SimilaritySearch.squared_l2_distance)
+(dist, p) = (SimilaritySearch.squared_l2_distance, PerformanceResult(1.0, 1.0, 1.0, 0.0021718502044677734, 0.0021033366521199543, 301.0, 9.416535502998158))
+(recall_lower_bound, dist) = (1.0, SimilaritySearch.var"#_lp#1"{Float64}(Core.Box(3.0), 0.3333333333333333))
+(dist, p) = (SimilaritySearch.var"#_lp#1"{Float64}(Core.Box(3.0), 0.3333333333333333), PerformanceResult(1.0, 1.0, 1.0, 0.000689244270324707, 0.003017433484395345, 301.0, 45.65791183337569))
+(recall_lower_bound, dist) = (0.1, SimilaritySearch.var"#_lp#1"{Float64}(Core.Box(0.5), 2.0))
+(dist, p) = (SimilaritySearch.var"#_lp#1"{Float64}(Core.Box(0.5), 2.0), PerformanceResult(1.0, 1.0, 1.0, 0.00011741320292154947, 0.00010592937469482422, 301.0, 180.4646809399128))
+Test Summary:    | Pass  Total
+indexing vectors |   18     18
+[ Info: inserting items into the index
+[ Info: inserting items into the index
+[ Info: Creating a pivot table with 1 pivots and distance=jaccard_distance
+[ Info: inserting items into the index
+[ Info: inserting items into the index
+[ Info: Creating a pivot table with 1 pivots and distance=dice_distance
+[ Info: inserting items into the index
+[ Info: inserting items into the index
+[ Info: Creating a pivot table with 1 pivots and distance=intersection_distance
+[ Info: inserting items into the index
+[ Info: inserting items into the index
+[ Info: Creating a pivot table with 1 pivots and distance=common_prefix_distance
+[ Info: inserting items into the index
+[ Info: inserting items into the index
+[ Info: Creating a pivot table with 1 pivots and distance=levenshtein_distance
+[ Info: inserting items into the index
+[ Info: inserting items into the index
+[ Info: Creating a pivot table with 1 pivots and distance=lcs_distance
+[ Info: inserting items into the index
+[ Info: inserting items into the index
+[ Info: Creating a pivot table with 1 pivots and distance=hamming_distance
+Test Summary:      | Pass  Total
+indexing sequences |   28     28
+p = PerformanceResult(1.0, 1.0, 1.0, 2.799034118652344e-5, 0.0026511589686075846, 300.0, 26.316327470354736)
+p = PerformanceResult(1.0, 1.0, 1.0, 2.742608388264974e-5, 1.906553904215495e-5, 300.0, 26.316327470354736)
+p = PerformanceResult(1.0, 1.0, 1.0, 0.002149160703023275, 0.001965506871541341, 300.0, 1.4286300545318227)
+p = PerformanceResult(1.0, 1.0, 1.0, 1.4185905456542969e-5, 7.836023966471354e-6, 300.0, 1.4286300545318227)
+(p1, p2, p3, p4) = (PerformanceResult(1.0, 1.0, 1.0, 2.799034118652344e-5, 0.0026511589686075846, 300.0, 26.316327470354736), PerformanceResult(1.0, 1.0, 1.0, 2.742608388264974e-5, 1.906553904215495e-5, 300.0, 26.316327470354736), PerformanceResult(1.0, 1.0, 1.0, 0.002149160703023275, 0.001965506871541341, 300.0, 1.4286300545318227), PerformanceResult(1.0, 1.0, 1.0, 1.4185905456542969e-5, 7.836023966471354e-6, 300.0, 1.4286300545318227))
+[ Info: select_sss: db=Array{Array{UInt32,1},1}, alpha=0.35, distance=hamming_distance, shuf=false
+[ Info: the maximum distance estimated as 120.0, now selecting pivots
+[ Info: Creating a pivot table with 300 pivots and distance=hamming_distance
+p = PerformanceResult(1.0, 1.0, 1.0, 0.00460359255472819, 0.002072604497273763, 347.8666666666667, 28726.0)
+[ Info: Creating a pivot table with 16 pivots and distance=hamming_distance
+p = PerformanceResult(1.0, 1.0, 1.0, 0.003896284103393555, 0.0018122355143229167, 304.0, 6987.0)
+Test Summary: | Pass  Total
+misc          |   10     10
+(recall_lower_bound, dist) = (1.0, SimilaritySearch.l2_distance)
+Kvp = Kvp
+[ Info: Kvp, refs=Array{Array{Float32,1},1}, k=3, numrefs=32, dist=l2_distance
+(dist, p) = (SimilaritySearch.l2_distance, PerformanceResult(1.0, 1.0, 1.0, 1.2056032816569011e-5, 6.095568339029948e-6, 101.93333333333334, 50.19063123315573))
+(recall_lower_bound, dist) = (1.0, SimilaritySearch.l1_distance)
+Kvp = Kvp
+[ Info: Kvp, refs=Array{Array{Float32,1},1}, k=3, numrefs=32, dist=l1_distance
+(dist, p) = (SimilaritySearch.l1_distance, PerformanceResult(1.0, 1.0, 1.0, 1.3128916422526042e-5, 6.659825642903646e-6, 91.06666666666666, 72.75786256790161))
+(recall_lower_bound, dist) = (1.0, SimilaritySearch.linf_distance)
+Kvp = Kvp
+[ Info: Kvp, refs=Array{Array{Float32,1},1}, k=3, numrefs=32, dist=linf_distance
+(dist, p) = (SimilaritySearch.linf_distance, PerformanceResult(1.0, 1.0, 1.0, 1.5401840209960936e-5, 6.230672200520833e-6, 97.5, 41.132511615753174))
+(recall_lower_bound, dist) = (1.0, SimilaritySearch.var"#_lp#1"{Float64}(Core.Box(3.0), 0.3333333333333333))
+Kvp = Kvp
+[ Info: Kvp, refs=Array{Array{Float32,1},1}, k=3, numrefs=32, dist=_lp
+(dist, p) = (SimilaritySearch.var"#_lp#1"{Float64}(Core.Box(3.0), 0.3333333333333333), PerformanceResult(1.0, 1.0, 1.0, 0.0014858563741048177, 8.854071299235026e-5, 102.76666666666667, 45.52593622729182))
+(recall_lower_bound, dist) = (0.1, SimilaritySearch.var"#_lp#1"{Float64}(Core.Box(0.5), 2.0))
+Kvp = Kvp
+[ Info: Kvp, refs=Array{Array{Float32,1},1}, k=3, numrefs=32, dist=_lp
+(dist, p) = (SimilaritySearch.var"#_lp#1"{Float64}(Core.Box(0.5), 2.0), PerformanceResult(0.8466666666666666, 0.8466666666666666, 0.8466666666666666, 0.00011073748270670572, 9.389718373616536e-5, 74.06666666666666, 187.2109136581421))
+Test Summary:    | Pass  Total
+indexing vectors |   10     10
+[ Info: inserting items into the index
+[ Info: Kvp, refs=Array{Array{Int64,1},1}, k=3, numrefs=32, dist=jaccard_distance
+[ Info: inserting items into the index
+[ Info: Kvp, refs=Array{Array{Int64,1},1}, k=3, numrefs=32, dist=dice_distance
+[ Info: inserting items into the index
+[ Info: Kvp, refs=Array{Array{Int64,1},1}, k=3, numrefs=32, dist=intersection_distance
+[ Info: inserting items into the index
+[ Info: Kvp, refs=Array{Array{Int64,1},1}, k=3, numrefs=32, dist=common_prefix_distance
+[ Info: inserting items into the index
+[ Info: Kvp, refs=Array{Array{Int64,1},1}, k=3, numrefs=32, dist=levenshtein_distance
+[ Info: inserting items into the index
+[ Info: Kvp, refs=Array{Array{Int64,1},1}, k=3, numrefs=32, dist=lcs_distance
+[ Info: inserting items into the index
+[ Info: Kvp, refs=Array{Array{Int64,1},1}, k=3, numrefs=32, dist=hamming_distance
+Test Summary:      | Pass  Total
+indexing sequences |   14     14
+*** advance 1 from 1000; 2021-01-11T19:46:01.129
+(dist, p) = (SimilaritySearch.l2_distance, PerformanceResult(0.9037500000000003, 0.9030000000000002, 0.9033333333333335, 9.293556213378906e-6, 1.0821819305419922e-5, 151.43, 52.663857361942064))
+[ Info: adding more items
+(dist, p) = (SimilaritySearch.l2_distance, PerformanceResult(1.0, 1.0, 1.0, 8.709430694580078e-6, 7.579326629638672e-6, 154.83, 0.0))
+*** advance 1 from 1000; 2021-01-11T19:46:01.508
+(dist, p) = (SimilaritySearch.l1_distance, PerformanceResult(0.9109999999999999, 0.9109999999999999, 0.9109999999999999, 1.0898113250732422e-5, 9.71078872680664e-6, 151.28, 77.5394312190474))
+[ Info: adding more items
+(dist, p) = (SimilaritySearch.l1_distance, PerformanceResult(1.0, 1.0, 1.0, 1.0623931884765626e-5, 6.7687034606933595e-6, 154.66, 0.0))
+*** advance 1 from 1000; 2021-01-11T19:46:01.842
+(dist, p) = (SimilaritySearch.linf_distance, PerformanceResult(0.8609206349206349, 0.8549999999999999, 0.8575841073271414, 9.398460388183594e-6, 1.1868476867675782e-5, 151.51, 43.06598626455525))
+[ Info: adding more items
+(dist, p) = (SimilaritySearch.linf_distance, PerformanceResult(1.0, 1.0, 1.0, 9.295940399169922e-6, 8.98122787475586e-6, 154.96, 0.0))
+*** advance 1 from 1000; 2021-01-11T19:46:02.19
+(dist, p) = (SimilaritySearch.var"#_lp#1"{Float64}(Core.Box(3.0), 0.3333333333333333), PerformanceResult(0.8918333333333335, 0.8900000000000001, 0.8908245614035089, 5.916595458984375e-5, 0.0002932596206665039, 150.9, 47.7494718466769))
+[ Info: adding more items
+(dist, p) = (SimilaritySearch.var"#_lp#1"{Float64}(Core.Box(3.0), 0.3333333333333333), PerformanceResult(1.0, 1.0, 1.0, 5.073308944702148e-5, 0.0004336810111999512, 154.18, 0.0))
+*** advance 1 from 1000; 2021-01-11T19:46:02.526
+(dist, p) = (SimilaritySearch.var"#_lp#1"{Float64}(Core.Box(0.5), 2.0), PerformanceResult(0.9619999999999997, 0.9619999999999997, 0.9619999999999997, 5.625486373901367e-5, 0.00027678012847900393, 166.37, 193.1954251753632))
+[ Info: adding more items
+(dist, p) = (SimilaritySearch.var"#_lp#1"{Float64}(Core.Box(0.5), 2.0), PerformanceResult(1.0, 1.0, 1.0, 5.875110626220703e-5, 0.00032919883728027344, 171.21, 0.0))
+*** advance 1 from 1000; 2021-01-11T19:46:02.95
+(dist, p) = (SimilaritySearch.angle_distance, PerformanceResult(0.9037500000000003, 0.9030000000000002, 0.9033333333333335, 1.6922950744628907e-5, 5.944967269897461e-5, 151.43, 52.67784915532684))
+[ Info: adding more items
+(dist, p) = (SimilaritySearch.angle_distance, PerformanceResult(1.0, 1.0, 1.0, 1.6667842864990234e-5, 6.592988967895507e-5, 154.83, 0.015535336977336556))
+Test Summary:    | Pass  Total
+indexing vectors |   12     12
+[ Info: inserting items into the index
+*** advance 1 from 1000; 2021-01-11T19:46:03.652
+(dist, p) = (SimilaritySearch.jaccard_distance, PerformanceResult(0.7479999999999997, 0.7479999999999997, 0.7479999999999997, 0.0008106064796447754, 5.120038986206055e-5, 197.34, 191.48333552479744))
+[ Info: inserting items into the index
+*** advance 1 from 1000; 2021-01-11T19:46:04.157
+(dist, p) = (SimilaritySearch.dice_distance, PerformanceResult(0.7479999999999996, 0.7479999999999996, 0.7479999999999996, 0.0008153724670410156, 4.9960613250732425e-5, 199.87, 109.26587522774935))
+[ Info: inserting items into the index
+*** advance 1 from 1000; 2021-01-11T19:46:04.617
+(dist, p) = (SimilaritySearch.intersection_distance, PerformanceResult(0.6220000000000002, 0.6220000000000002, 0.6220000000000002, 0.00081193208694458, 4.607915878295899e-5, 258.72, 0.0))
+[ Info: inserting items into the index
+*** advance 1 from 1000; 2021-01-11T19:46:05.075
+(dist, p) = (SimilaritySearch.common_prefix_distance, PerformanceResult(0.9410000000000004, 0.9400000000000003, 0.9404736842105267, 0.0008092331886291504, 8.668899536132812e-6, 217.41, 601.0000203251839))
+[ Info: inserting items into the index
+*** advance 1 from 1000; 2021-01-11T19:46:05.623
+(dist, p) = (SimilaritySearch.levenshtein_distance, PerformanceResult(0.571, 0.571, 0.571, 0.000978400707244873, 0.00020114898681640624, 251.17, 2347.0))
+[ Info: inserting items into the index
+*** advance 1 from 1000; 2021-01-11T19:46:06.134
+(dist, p) = (SimilaritySearch.lcs_distance, PerformanceResult(0.3899999999999999, 0.3899999999999999, 0.3899999999999999, 0.0008599019050598145, 0.00019573211669921876, 250.85, 3692.0))
+[ Info: inserting items into the index
+*** advance 1 from 1000; 2021-01-11T19:46:06.648
+(dist, p) = (SimilaritySearch.hamming_distance, PerformanceResult(0.6040000000000005, 0.6040000000000005, 0.6040000000000005, 0.0008170199394226074, 1.2979507446289062e-5, 244.09, 2365.0))
+Test Summary:      | Pass  Total
+indexing sequences |    7      7
+[ Info: inserting items to the index
+==== BEGIN Opt. IHCSearch, expected recall: 0.9, n: 9
+  == Begin Opt. IHCSearch iteration: 1, expected recall: 0.9, n: 9
+    ** Opt. IHCSearch. A new best conf was found> score: 2.0539798719121682, conf: {"restarts":5}, perf: {"precision":1.0,"recall":0.9423828125,"f1":0.9673992673992677,"seconds":2.387911081314087e-6,"exhaustive_search_seconds":1.000240445137024e-6,"evaluations":8.5390625,"distances_sum":649.5837146341801}, best_list's length: 2, n: 9
+    ** Opt. IHCSearch. A new best conf was found> score: 2.0549450549450547, conf: {"restarts":7}, perf: {"precision":1.0,"recall":0.94140625,"f1":0.9671359890109894,"seconds":2.5331974029541016e-6,"exhaustive_search_seconds":1.000240445137024e-6,"evaluations":8.53125,"distances_sum":647.6078336834908}, best_list's length: 3, n: 9
+    ** Opt. IHCSearch. A new best conf was found> score: 2.045372050816697, conf: {"restarts":6}, perf: {"precision":1.0,"recall":0.951171875,"f1":0.9717121420246424,"seconds":2.4996697902679443e-6,"exhaustive_search_seconds":1.000240445137024e-6,"evaluations":8.609375,"distances_sum":653.7861047387123}, best_list's length: 4, n: 9
+  == End Opt. IHCSearch. Iteration finished; {"score":2.0549450549450547,"state":{"restarts":7},"perf":{"precision":1.0,"recall":0.94140625,"f1":0.9671359890109894,"seconds":2.5331974029541016e-6,"exhaustive_search_seconds":1.000240445137024e-6,"evaluations":8.53125,"distances_sum":647.6078336834908}}, beam: 4, n: 9
+  == Begin Opt. IHCSearch iteration: 2, expected recall: 0.9, n: 9
+    ** Opt. IHCSearch. A new best conf was found> score: 2.0816901408450703, conf: {"restarts":4}, perf: {"precision":1.0,"recall":0.9150390625,"f1":0.9518658424908429,"seconds":2.1345913410186768e-6,"exhaustive_search_seconds":1.000240445137024e-6,"evaluations":8.3203125,"distances_sum":628.0946419537067}, best_list's length: 5, n: 9
+  == End Opt. IHCSearch. Iteration finished; {"score":2.0816901408450703,"state":{"restarts":4},"perf":{"precision":1.0,"recall":0.9150390625,"f1":0.9518658424908429,"seconds":2.1345913410186768e-6,"exhaustive_search_seconds":1.000240445137024e-6,"evaluations":8.3203125,"distances_sum":628.0946419537067}}, beam: 4, n: 9
+  == Begin Opt. IHCSearch iteration: 3, expected recall: 0.9, n: 9
+  == End Opt. IHCSearch. Iteration finished; {"score":2.0816901408450703,"state":{"restarts":4},"perf":{"precision":1.0,"recall":0.9150390625,"f1":0.9518658424908429,"seconds":2.1345913410186768e-6,"exhaustive_search_seconds":1.000240445137024e-6,"evaluations":8.3203125,"distances_sum":628.0946419537067}}, beam: 4, n: 9
+==== END Opt. IHCSearch. Finished, best: {"score":2.0816901408450703,"state":{"restarts":4},"perf":{"precision":1.0,"recall":0.9150390625,"f1":0.9518658424908429,"seconds":2.1345913410186768e-6,"exhaustive_search_seconds":1.000240445137024e-6,"evaluations":8.3203125,"distances_sum":628.0946419537067}}, n: 9
+==== BEGIN Opt. IHCSearch, expected recall: 0.9, n: 99
+  == Begin Opt. IHCSearch iteration: 1, expected recall: 0.9, n: 99
+  == End Opt. IHCSearch. Iteration finished; {"score":0.8749999999999988,"state":{"restarts":4},"perf":{"precision":0.8749999999999988,"recall":0.8749999999999988,"f1":0.8749999999999988,"seconds":8.283182978630066e-6,"exhaustive_search_seconds":3.593042492866516e-6,"evaluations":41.375,"distances_sum":299.69608277082443}}, beam: 4, n: 99
+==== END Opt. IHCSearch. Finished, best: {"score":0.8749999999999988,"state":{"restarts":4},"perf":{"precision":0.8749999999999988,"recall":0.8749999999999988,"f1":0.8749999999999988,"seconds":8.283182978630066e-6,"exhaustive_search_seconds":3.593042492866516e-6,"evaluations":41.375,"distances_sum":299.69608277082443}}, n: 99
+==== BEGIN Opt. IHCSearch, expected recall: 0.9, n: 999
+  == Begin Opt. IHCSearch iteration: 1, expected recall: 0.9, n: 999
+    ** Opt. IHCSearch. A new best conf was found> score: 0.8532986111111103, conf: {"restarts":1}, perf: {"precision":0.8532986111111103,"recall":0.8532986111111103,"f1":0.8532986111111103,"seconds":1.4528632164001465e-5,"exhaustive_search_seconds":1.3571232557296753e-5,"evaluations":65.6015625,"distances_sum":127.97647408070043}, best_list's length: 2, n: 999
+    ** Opt. IHCSearch. A new best conf was found> score: 0.85329861111111, conf: {"restarts":7}, perf: {"precision":0.85329861111111,"recall":0.85329861111111,"f1":0.85329861111111,"seconds":1.987069845199585e-5,"exhaustive_search_seconds":1.3571232557296753e-5,"evaluations":108.953125,"distances_sum":127.87082259776071}, best_list's length: 3, n: 999
+    ** Opt. IHCSearch. A new best conf was found> score: 0.8541666666666657, conf: {"restarts":3}, perf: {"precision":0.8541666666666657,"recall":0.8541666666666657,"f1":0.8541666666666657,"seconds":1.613609492778778e-5,"exhaustive_search_seconds":1.3571232557296753e-5,"evaluations":81.7109375,"distances_sum":127.48807251499966}, best_list's length: 4, n: 999
+    ** Opt. IHCSearch. A new best conf was found> score: 0.8637152777777769, conf: {"restarts":11}, perf: {"precision":0.8637152777777769,"recall":0.8637152777777769,"f1":0.8637152777777769,"seconds":2.269446849822998e-5,"exhaustive_search_seconds":1.3571232557296753e-5,"evaluations":132.203125,"distances_sum":127.13724704878405}, best_list's length: 5, n: 999
+  == End Opt. IHCSearch. Iteration finished; {"score":0.8637152777777769,"state":{"restarts":11},"perf":{"precision":0.8637152777777769,"recall":0.8637152777777769,"f1":0.8637152777777769,"seconds":2.269446849822998e-5,"exhaustive_search_seconds":1.3571232557296753e-5,"evaluations":132.203125,"distances_sum":127.13724704878405}}, beam: 4, n: 999
+  == Begin Opt. IHCSearch iteration: 2, expected recall: 0.9, n: 999
+    ** Opt. IHCSearch. A new best conf was found> score: 0.8645833333333321, conf: {"restarts":17}, perf: {"precision":0.8645833333333321,"recall":0.8645833333333321,"f1":0.8645833333333321,"seconds":3.455206751823425e-5,"exhaustive_search_seconds":1.3571232557296753e-5,"evaluations":173.03125,"distances_sum":127.22593843238428}, best_list's length: 5, n: 999
+    ** Opt. IHCSearch. A new best conf was found> score: 0.8732638888888878, conf: {"restarts":18}, perf: {"precision":0.8732638888888878,"recall":0.8732638888888878,"f1":0.8732638888888878,"seconds":3.339909017086029e-5,"exhaustive_search_seconds":1.3571232557296753e-5,"evaluations":178.8671875,"distances_sum":127.0037130867131}, best_list's length: 6, n: 999
+    ** Opt. IHCSearch. A new best conf was found> score: 0.8776041666666659, conf: {"restarts":14}, perf: {"precision":0.8776041666666659,"recall":0.8776041666666659,"f1":0.8776041666666659,"seconds":2.689659595489502e-5,"exhaustive_search_seconds":1.3571232557296753e-5,"evaluations":156.6015625,"distances_sum":126.64244370581582}, best_list's length: 8, n: 999
+    ** Opt. IHCSearch. A new best conf was found> score: 0.8680555555555546, conf: {"restarts":12}, perf: {"precision":0.8680555555555546,"recall":0.8680555555555546,"f1":0.8680555555555546,"seconds":2.5851652026176453e-5,"exhaustive_search_seconds":1.3571232557296753e-5,"evaluations":144.203125,"distances_sum":126.87864882918075}, best_list's length: 9, n: 999
+  == End Opt. IHCSearch. Iteration finished; {"score":0.8776041666666659,"state":{"restarts":14},"perf":{"precision":0.8776041666666659,"recall":0.8776041666666659,"f1":0.8776041666666659,"seconds":2.689659595489502e-5,"exhaustive_search_seconds":1.3571232557296753e-5,"evaluations":156.6015625,"distances_sum":126.64244370581582}}, beam: 4, n: 999
+  == Begin Opt. IHCSearch iteration: 3, expected recall: 0.9, n: 999
+  == End Opt. IHCSearch. Iteration finished; {"score":0.8776041666666659,"state":{"restarts":14},"perf":{"precision":0.8776041666666659,"recall":0.8776041666666659,"f1":0.8776041666666659,"seconds":2.689659595489502e-5,"exhaustive_search_seconds":1.3571232557296753e-5,"evaluations":156.6015625,"distances_sum":126.64244370581582}}, beam: 4, n: 999
+==== END Opt. IHCSearch. Finished, best: {"score":0.8776041666666659,"state":{"restarts":14},"perf":{"precision":0.8776041666666659,"recall":0.8776041666666659,"f1":0.8776041666666659,"seconds":2.689659595489502e-5,"exhaustive_search_seconds":1.3571232557296753e-5,"evaluations":156.6015625,"distances_sum":126.64244370581582}}, n: 999
+==== BEGIN Opt. IHCSearch, expected recall: 0.9, n: 9999
+  == Begin Opt. IHCSearch iteration: 1, expected recall: 0.9, n: 9999
+    ** Opt. IHCSearch. A new best conf was found> score: 0.851562499999999, conf: {"restarts":27}, perf: {"precision":0.851562499999999,"recall":0.851562499999999,"f1":null,"seconds":7.939524948596954e-5,"exhaustive_search_seconds":0.00014281272888183594,"evaluations":361.125,"distances_sum":55.70158059056848}, best_list's length: 4, n: 9999
+  == End Opt. IHCSearch. Iteration finished; {"score":0.851562499999999,"state":{"restarts":27},"perf":{"precision":0.851562499999999,"recall":0.851562499999999,"f1":null,"seconds":7.939524948596954e-5,"exhaustive_search_seconds":0.00014281272888183594,"evaluations":361.125,"distances_sum":55.70158059056848}}, beam: 4, n: 9999
+==== END Opt. IHCSearch. Finished, best: {"score":0.851562499999999,"state":{"restarts":27},"perf":{"precision":0.851562499999999,"recall":0.851562499999999,"f1":null,"seconds":7.939524948596954e-5,"exhaustive_search_seconds":0.00014281272888183594,"evaluations":361.125,"distances_sum":55.70158059056848}}, n: 9999
+added n=10000, neighborhood=4, IHCSearch(27), SatNeighborhood(32), 2021-01-11T19:46:10.327
+[ Info: done; now testing
+res = KnnResult(10, 10, Item[Item(1371, 0.032044653f0), Item(6489, 0.035146996f0), Item(2537, 0.045001864f0), Item(5855, 0.04598862f0), Item(7692, 0.05126996f0), Item(2393, 0.07429251f0), Item(6487, 0.07836772f0), Item(566, 0.07946634f0), Item(3901, 0.09279623f0), Item(5579, 0.09638249f0)])
+[ Info: inserting items to the index
+==== BEGIN Opt. BeamSearch, expected recall: 0.9, n: 9
+  == Begin Opt. BeamSearch iteration: 1, expected recall: 0.9, n: 9
+    ** Opt. BeamSearch. A new best conf was found> score: 2.089877010406812, conf: {"bsize":6}, perf: {"precision":1.0,"recall":0.9072265625,"f1":0.9440054736929739,"seconds":2.736225724220276e-6,"exhaustive_search_seconds":9.611248970031738e-7,"evaluations":8.2578125,"distances_sum":622.2681081593037}, best_list's length: 3, n: 9
+    ** Opt. BeamSearch. A new best conf was found> score: 2.0472727272727274, conf: {"bsize":4}, perf: {"precision":1.0,"recall":0.94921875,"f1":0.9686074342324344,"seconds":2.950429916381836e-6,"exhaustive_search_seconds":9.611248970031738e-7,"evaluations":8.59375,"distances_sum":654.8103418946266}, best_list's length: 4, n: 9
+  == End Opt. BeamSearch. Iteration finished; {"score":2.089877010406812,"state":{"bsize":6},"perf":{"precision":1.0,"recall":0.9072265625,"f1":0.9440054736929739,"seconds":2.736225724220276e-6,"exhaustive_search_seconds":9.611248970031738e-7,"evaluations":8.2578125,"distances_sum":622.2681081593037}}, beam: 4, n: 9
+  == Begin Opt. BeamSearch iteration: 2, expected recall: 0.9, n: 9
+    ** Opt. BeamSearch. A new best conf was found> score: 2.0960989533777354, conf: {"bsize":8}, perf: {"precision":1.0,"recall":0.9013671875,"f1":0.941403388278389,"seconds":2.5425106287002563e-6,"exhaustive_search_seconds":9.611248970031738e-7,"evaluations":8.2109375,"distances_sum":620.9609912037849}, best_list's length: 6, n: 9
+  == End Opt. BeamSearch. Iteration finished; {"score":2.0960989533777354,"state":{"bsize":8},"perf":{"precision":1.0,"recall":0.9013671875,"f1":0.941403388278389,"seconds":2.5425106287002563e-6,"exhaustive_search_seconds":9.611248970031738e-7,"evaluations":8.2109375,"distances_sum":620.9609912037849}}, beam: 4, n: 9
+==== END Opt. BeamSearch. Finished, best: {"score":2.0960989533777354,"state":{"bsize":8},"perf":{"precision":1.0,"recall":0.9013671875,"f1":0.941403388278389,"seconds":2.5425106287002563e-6,"exhaustive_search_seconds":9.611248970031738e-7,"evaluations":8.2109375,"distances_sum":620.9609912037849}}, n: 9
+==== BEGIN Opt. BeamSearch, expected recall: 0.9, n: 99
+  == Begin Opt. BeamSearch iteration: 1, expected recall: 0.9, n: 99
+    ** Opt. BeamSearch. A new best conf was found> score: 3.965597940556986, conf: {"bsize":4}, perf: {"precision":0.9913194444444443,"recall":0.9913194444444443,"f1":0.9913194444444443,"seconds":7.739290595054626e-6,"exhaustive_search_seconds":3.563240170478821e-6,"evaluations":33.3828125,"distances_sum":271.3807630315423}, best_list's length: 2, n: 99
+    ** Opt. BeamSearch. A new best conf was found> score: 4.2146118721461185, conf: {"bsize":2}, perf: {"precision":0.9392361111111102,"recall":0.9392361111111102,"f1":0.9392361111111102,"seconds":7.076188921928406e-6,"exhaustive_search_seconds":3.563240170478821e-6,"evaluations":30.796875,"distances_sum":274.3404406234622}, best_list's length: 4, n: 99
+  == End Opt. BeamSearch. Iteration finished; {"score":4.2146118721461185,"state":{"bsize":2},"perf":{"precision":0.9392361111111102,"recall":0.9392361111111102,"f1":0.9392361111111102,"seconds":7.076188921928406e-6,"exhaustive_search_seconds":3.563240170478821e-6,"evaluations":30.796875,"distances_sum":274.3404406234622}}, beam: 4, n: 99
+  == Begin Opt. BeamSearch iteration: 2, expected recall: 0.9, n: 99
+  == End Opt. BeamSearch. Iteration finished; {"score":4.2146118721461185,"state":{"bsize":2},"perf":{"precision":0.9392361111111102,"recall":0.9392361111111102,"f1":0.9392361111111102,"seconds":7.076188921928406e-6,"exhaustive_search_seconds":3.563240170478821e-6,"evaluations":30.796875,"distances_sum":274.3404406234622}}, beam: 4, n: 99
+==== END Opt. BeamSearch. Finished, best: {"score":4.2146118721461185,"state":{"bsize":2},"perf":{"precision":0.9392361111111102,"recall":0.9392361111111102,"f1":0.9392361111111102,"seconds":7.076188921928406e-6,"exhaustive_search_seconds":3.563240170478821e-6,"evaluations":30.796875,"distances_sum":274.3404406234622}}, n: 99
+==== BEGIN Opt. BeamSearch, expected recall: 0.9, n: 999
+  == Begin Opt. BeamSearch iteration: 1, expected recall: 0.9, n: 999
+    ** Opt. BeamSearch. A new best conf was found> score: 17.64133263925039, conf: {"bsize":3}, perf: {"precision":0.9704861111111106,"recall":0.9704861111111106,"f1":0.9704861111111106,"seconds":1.3150274753570557e-5,"exhaustive_search_seconds":1.2882053852081299e-5,"evaluations":60.03125,"distances_sum":123.29274613875896}, best_list's length: 6, n: 999
+  == End Opt. BeamSearch. Iteration finished; {"score":17.64133263925039,"state":{"bsize":3},"perf":{"precision":0.9704861111111106,"recall":0.9704861111111106,"f1":0.9704861111111106,"seconds":1.3150274753570557e-5,"exhaustive_search_seconds":1.2882053852081299e-5,"evaluations":60.03125,"distances_sum":123.29274613875896}}, beam: 4, n: 999
+  == Begin Opt. BeamSearch iteration: 2, expected recall: 0.9, n: 999
+  == End Opt. BeamSearch. Iteration finished; {"score":17.64133263925039,"state":{"bsize":3},"perf":{"precision":0.9704861111111106,"recall":0.9704861111111106,"f1":0.9704861111111106,"seconds":1.3150274753570557e-5,"exhaustive_search_seconds":1.2882053852081299e-5,"evaluations":60.03125,"distances_sum":123.29274613875896}}, beam: 4, n: 999
+==== END Opt. BeamSearch. Finished, best: {"score":17.64133263925039,"state":{"bsize":3},"perf":{"precision":0.9704861111111106,"recall":0.9704861111111106,"f1":0.9704861111111106,"seconds":1.3150274753570557e-5,"exhaustive_search_seconds":1.2882053852081299e-5,"evaluations":60.03125,"distances_sum":123.29274613875896}}, n: 999
+==== BEGIN Opt. BeamSearch, expected recall: 0.9, n: 9999
+  == Begin Opt. BeamSearch iteration: 1, expected recall: 0.9, n: 9999
+  == End Opt. BeamSearch. Iteration finished; {"score":92.62230653590092,"state":{"bsize":3},"perf":{"precision":0.9748263888888884,"recall":0.9748263888888884,"f1":0.9748263888888884,"seconds":2.8094276785850525e-5,"exhaustive_search_seconds":0.00012828968465328217,"evaluations":109.1328125,"distances_sum":53.58345810812898}}, beam: 3, n: 9999
+==== END Opt. BeamSearch. Finished, best: {"score":92.62230653590092,"state":{"bsize":3},"perf":{"precision":0.9748263888888884,"recall":0.9748263888888884,"f1":0.9748263888888884,"seconds":2.8094276785850525e-5,"exhaustive_search_seconds":0.00012828968465328217,"evaluations":109.1328125,"distances_sum":53.58345810812898}}, n: 9999
+added n=10000, neighborhood=4, BeamSearch(3), SatNeighborhood(32), 2021-01-11T19:46:12.342
+[ Info: done; now testing
+res = KnnResult(10, 10, Item[Item(2761, 0.025853787f0), Item(7622, 0.035723366f0), Item(1020, 0.035885133f0), Item(1455, 0.039207563f0), Item(3711, 0.0410174f0), Item(4415, 0.041538686f0), Item(4567, 0.047410138f0), Item(8478, 0.04778754f0), Item(4927, 0.053992216f0), Item(6005, 0.056174066f0)])
+Test Summary:        | Pass  Total
+some vector indexing |    2      2
+    Testing SimilaritySearch tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:46:12.38
+CPU usage: 53.42s (49.68s user, 3.80s kernel)
+
+Network usage:
+- eth0: 3.000 MiB received, 66.942 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":340922368,"max_usage":1019764736,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":222343168,"inactive_file":135168,"inactive_anon":80289792,"total_pgfault":985050,"total_cache":88657920,"total_rss_huge":0,"total_active_anon":230866944,"total_pgmajfault":0,"pgpgin":614295,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":538360,"hierarchical_memsw_limit":0,"cache":88657920,"active_file":135168,"pgfault":985050,"total_mapped_file":0,"total_pgpgout":538360,"total_writeback":0,"rss":222343168,"unevictable":0,"total_inactive_anon":80289792,"total_pgpgin":614295,"active_anon":230866944,"total_active_file":135168},"limit":540965302272},"name":"/SimilaritySearch-EbT7UHY1","networks":{"eth0":{"rx_bytes":3146240,"rx_packets":621,"tx_packets":603,"tx_bytes":68549,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"636018aec663acd0d17c249471169bf217b671e69df83e274d1670ecbc20e16f","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5173452404522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":49680000000,"usage_in_kernelmode":3800000000,"total_usage":53416331016,"percpu_usage":[0,0,0,0,53416071836,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,259180,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:46:12.398912015Z"}

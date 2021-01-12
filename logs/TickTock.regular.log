@@ -1,0 +1,124 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:21:33.571
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:21:35.33
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed TickTock ─ v1.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9ff05d80] + TickTock v1.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [9ff05d80] + TickTock v1.1.0
+  [ade2ca70] + Dates
+  [de0858da] + Printf
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T22:21:39.559
+#
+
+    Testing TickTock
+Status `/tmp/jl_YhCxCS/Project.toml`
+  [9ff05d80] TickTock v1.1.0
+  [ade2ca70] Dates
+  [8dfed614] Test
+Status `/tmp/jl_YhCxCS/Manifest.toml`
+  [9ff05d80] TickTock v1.1.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+[ Info:  started timer at: 2021-01-11T22:21:42.056
+1         [ Info: TickTock: "TickTock alarm" alarm for 0 hours, 0 minutes, 10 seconds
+[ Info: TickTock: "TickTock alarm" alarm for 0 hours, 0 minutes, 5 seconds
+[ Info:          2.128033777s: 2 seconds, 128 milliseconds
+[ Info:  started timer at: 2021-01-11T22:21:44.546
+[ Info:  started timer at: 2021-01-11T22:21:44.575
+[ Info:  started timer at: 2021-01-11T22:21:44.601
+[ Info:          0.003389128s: 3 milliseconds
+Make 10 timers
+[ Info:  started timer at: 2021-01-11T22:21:44.615
+[ Info:  started timer at: 2021-01-11T22:21:45.619
+[ Info:  started timer at: 2021-01-11T22:21:46.622
+[ Info:  started timer at: 2021-01-11T22:21:47.623
+[ Info:  started timer at: 2021-01-11T22:21:48.625
+[ Info: TickTock alarm
+This is an alarm. Do not be alarmed.
+[ Info:          5.029307849s: 5 seconds, 29 milliseconds
+[ Info:  started timer at: 2021-01-11T22:21:49.627
+[ Info:  started timer at: 2021-01-11T22:21:50.629
+[ Info:  started timer at: 2021-01-11T22:21:51.632
+[ Info:  started timer at: 2021-01-11T22:21:52.634
+[ Info:  started timer at: 2021-01-11T22:21:53.636
+[ Info: TickTock alarm
+test alarm has fired
+[ Info:         10.059417102s: 10 seconds, 59 milliseconds
+Check that there are 10 timers
+wait a second
+Print all the timers
+10        [ Info:          2.015208462s: 2 seconds, 15 milliseconds
+9         [ Info:          3.017440818s: 3 seconds, 17 milliseconds
+8         [ Info:          4.019712684s: 4 seconds, 19 milliseconds
+7         [ Info:           5.02195024s: 5 seconds, 21 milliseconds
+6         [ Info:          6.024205026s: 6 seconds, 24 milliseconds
+5         [ Info:          7.025911467s: 7 seconds, 25 milliseconds
+4         [ Info:          8.028179183s: 8 seconds, 28 milliseconds
+3         [ Info:          9.029843234s: 9 seconds, 29 milliseconds
+2         [ Info:         10.032048741s: 10 seconds, 32 milliseconds
+1         [ Info:         11.036277698s: 11 seconds, 36 milliseconds
+Check that the most recent timer is more than 1 second
+  2.027352348
+Finish 10 timers and show canonical
+[ Info:           2.26566927s: 2 seconds, 265 milliseconds
+[ Info:          3.268079024s: 3 seconds, 268 milliseconds
+[ Info:          4.270395369s: 4 seconds, 270 milliseconds
+[ Info:          5.272678575s: 5 seconds, 272 milliseconds
+[ Info:          6.274978991s: 6 seconds, 274 milliseconds
+[ Info:          7.276733431s: 7 seconds, 276 milliseconds
+[ Info:          8.279049027s: 8 seconds, 279 milliseconds
+[ Info:          9.280748147s: 9 seconds, 280 milliseconds
+[ Info:         10.283006874s: 10 seconds, 283 milliseconds
+[ Info:         11.287269421s: 11 seconds, 287 milliseconds
+    Testing TickTock tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:21:55.964
+CPU usage: 10.44s (8.12s user, 2.33s kernel)
+
+Network usage:
+- eth0: 2.685 MiB received, 29.093 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":335921152,"max_usage":583077888,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":220352512,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":262284,"total_cache":85725184,"total_rss_huge":0,"total_active_anon":220999680,"total_pgmajfault":0,"pgpgin":194733,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":120024,"hierarchical_memsw_limit":0,"cache":85725184,"active_file":6217728,"pgfault":262284,"total_mapped_file":0,"total_pgpgout":120024,"total_writeback":0,"rss":220352512,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":194733,"active_anon":220999680,"total_active_file":6217728},"limit":540965302272},"name":"/TickTock-KENrYo1K","networks":{"eth0":{"rx_bytes":2815090,"rx_packets":320,"tx_packets":309,"tx_bytes":29791,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"fbdfb03f6f6e173db7ef0d78b5acdd1192e2145a56dc691f3168b259d8e1bfe7","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6367323304522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":8120000000,"usage_in_kernelmode":2330000000,"total_usage":10443582035,"percpu_usage":[0,0,0,10447435617,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3030,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:21:55.96713843Z"}

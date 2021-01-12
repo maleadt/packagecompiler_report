@@ -1,0 +1,154 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:26:24.431
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:26:26.245
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed EventSimulation ─ v0.7.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [bf752c2e] + EventSimulation v0.7.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [bf752c2e] + EventSimulation v0.7.2
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+
+
+################################################################################
+# Testing: 2021-01-11T21:26:30.569
+#
+
+    Testing EventSimulation
+Status `/tmp/jl_XqW95R/Project.toml`
+  [bf752c2e] EventSimulation v0.7.2
+  [9fa8497b] Future
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_XqW95R/Manifest.toml`
+  [bf752c2e] EventSimulation v0.7.2
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Running tests:
+ * core.jl ...
+Test Summary:                   | Pass  Total
+Testing core Scheduler creation |    5      5
+Test Summary:                                      | Pass  Total
+Testing if register! and go! produce correct order |    2      2
+Test Summary:                                                   | Pass  Total
+Testing register! and terminate! for correct number of elements |    2      2
+Test Summary:            | Pass  Total
+Testing repeat_register! |    2      2
+Test Summary:                  | Pass  Total
+Testing ordered bulk_register! |    1      1
+Test Summary:                 | Pass  Total
+Testing random bulk_register! |   11     11
+Test Summary:                         | Pass  Total
+Testing ordered repeat_bulk_register! |    2      2
+Test Summary:                                                     | Pass  Total
+Testing random repeat_bulk_register!. Visual inspection required. |   11     11
+Test Summary:      | Pass  Total
+Testing interrupt. |    3      3
+Test Summary:    | Pass  Total
+Testing monitor. |    1      1
+ * prioritytime.jl ...
+Test Summary:                       | Pass  Total
+Testing Scheduler with PriorityTime |  198    198
+Test Summary:                          | Pass  Total
+Testing +, -, promotion and conversion |    9      9
+Test Summary: | Pass  Total
+Testing zero  |    3      3
+Test Summary:      | Pass  Total
+Testing comparison |   32     32
+ * queue.jl ...
+Test Summary:                          | Pass  Total
+SimQueue FIFO/LIFO, Resource FIFO/LIFO |   92     92
+Test Summary:        | Pass  Total
+SimQueue waive! test |    8      8
+Test Summary:           | Pass  Total
+SimQueue withdraw! test |    8      8
+ * resource.jl ...
+Test Summary:         | Pass  Total
+SimResource FIFO/LIFO |   28     28
+Test Summary:           | Pass  Total
+SimResource waive! test |    8      8
+ * ../examples/mms_example.jl ...
+MM1 fast time: 0.209385684
+MM1 queue time: 0.242113308
+MM1 resource time: 0.209257146
+Test Summary:       | Pass  Total
+Test of M/M/1 queue |    2      2
+MM2 queue time: 0.272350376
+MM2 resource time: 0.125910464
+Test Summary:       | Pass  Total
+Test of M/M/2 queue |    2      2
+MM5 queue time: 0.243797973
+MM5 resource time: 0.176532441
+Test Summary:       | Pass  Total
+Test of M/M/5 queue |    2      2
+ * ../examples/mm1_example.jl ...
+0	=> 0.571 	0.5714
+1	=> 0.2445	0.2449
+2	=> 0.1049	0.105
+3	=> 0.0452	0.045
+4	=> 0.0195	0.0193
+5	=> 0.0085	0.0083
+6	=> 0.0037	0.0035
+7	=> 0.0016	0.0015
+8	=> 0.0007	0.0007
+9	=> 0.0003	0.0003
+10	=> 0.0001	0.0001
+11	=> 0.0   	0.0001
+12	=> 0.0   	0.0
+13	=> 0.0   	0.0
+14	=> 0.0   	0.0
+15	=> 0.0   	0.0
+16	=> 0.0   	0.0
+17	=> 0.0   	0.0
+Test Summary:                    | Pass  Total
+Test of M/M/1 queue with monitor |    1      1
+    Testing EventSimulation tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:26:41.085
+CPU usage: 16.75s (14.04s user, 2.76s kernel)
+
+Network usage:
+- eth0: 2.553 MiB received, 26.633 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":325292032,"max_usage":576274432,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":216293376,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":442101,"total_cache":79532032,"total_rss_huge":0,"total_active_anon":217079808,"total_pgmajfault":0,"pgpgin":294756,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":222507,"hierarchical_memsw_limit":0,"cache":79532032,"active_file":135168,"pgfault":442101,"total_mapped_file":0,"total_pgpgout":222507,"total_writeback":0,"rss":216293376,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":294756,"active_anon":217079808,"total_active_file":135168},"limit":540965302272},"name":"/EventSimulation-cgjgvptb","networks":{"eth0":{"rx_bytes":2677409,"rx_packets":280,"tx_packets":271,"tx_bytes":27272,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"4c250150b328802cb3ffb1bd6b4ee423b64250c33792778ef631d8f479a870bf","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5943769424522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":14040000000,"usage_in_kernelmode":2760000000,"total_usage":16754030831,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16754028131,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2700,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:26:41.088611233Z"}

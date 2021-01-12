@@ -1,0 +1,68 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:49:11.58
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:49:13.341
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed LayerDicts ─ v1.0.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [6f188dcb] + LayerDicts v1.0.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [6f188dcb] + LayerDicts v1.0.0
+
+
+################################################################################
+# Testing: 2021-01-11T15:49:18.295
+#
+
+    Testing LayerDicts
+Status `/tmp/jl_zChKiS/Project.toml`
+  [6f188dcb] LayerDicts v1.0.0
+  [8dfed614] Test
+Status `/tmp/jl_zChKiS/Manifest.toml`
+  [6f188dcb] LayerDicts v1.0.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary: | Pass  Total
+LayerDicts    |   42     42
+    Testing LayerDicts tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:49:22.858
+CPU usage: 11.28s (8.58s user, 2.74s kernel)
+
+Network usage:
+- eth0: 2.537 MiB received, 32.744 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":449,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":468,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":473,"op":"Total","minor":0},{"major":253,"value":449,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":468,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":473,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":1839104,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":1945600,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1966080,"op":"Total","minor":0},{"major":253,"value":1839104,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":1945600,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1966080,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":337862656,"max_usage":582688768,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":216584192,"inactive_file":270336,"inactive_anon":78667776,"total_pgfault":292446,"total_cache":90894336,"total_rss_huge":0,"total_active_anon":217079808,"total_pgmajfault":0,"pgpgin":187737,"rss_huge":0,"mapped_file":0,"total_inactive_file":270336,"dirty":0,"total_unevictable":0,"total_dirty":0,"writeback":0,"pgpgout":112683,"hierarchical_memsw_limit":0,"cache":90894336,"active_file":11624448,"pgfault":292446,"total_mapped_file":0,"total_pgpgout":112683,"total_writeback":0,"rss":216584192,"unevictable":0,"total_inactive_anon":78667776,"total_pgpgin":187737,"active_anon":217079808,"total_active_file":11624448},"limit":540965302272},"name":"/LayerDicts-z9Jmecy9","networks":{"eth0":{"rx_bytes":2660183,"rx_packets":353,"tx_packets":366,"tx_bytes":33530,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"59fae8d6fb039bf39542873d705b0e2c121a6d2840dfd2b60c6f5ff5f76232fc","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3357422414522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":8580000000,"usage_in_kernelmode":2740000000,"total_usage":11284975547,"percpu_usage":[0,0,0,0,0,0,0,11284969197,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6350,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:49:22.861313422Z"}

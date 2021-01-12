@@ -1,0 +1,116 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T16:12:56.267
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:12:58.029
+#
+
+ Installing known registries into `~/.julia`
+###############################################                           66.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed AbstractTrees ─ v0.3.3
+  Installed D3Trees ─────── v0.3.1
+  Installed JSON ────────── v0.21.1
+  Installed Parsers ─────── v1.0.15
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [e3df1716] + D3Trees v0.3.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [1520ce14] + AbstractTrees v0.3.3
+  [e3df1716] + D3Trees v0.3.1
+  [682c06a0] + JSON v0.21.1
+  [69de0a69] + Parsers v1.0.15
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T16:13:02.1
+#
+
+    Testing D3Trees
+Status `/tmp/jl_2GrE3R/Project.toml`
+  [1520ce14] AbstractTrees v0.3.3
+  [e3df1716] D3Trees v0.3.1
+  [682c06a0] JSON v0.21.1
+  [0db19996] NBInclude v2.2.0
+  [2a0f44e3] Base64
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_2GrE3R/Manifest.toml`
+  [1520ce14] AbstractTrees v0.3.3
+  [e3df1716] D3Trees v0.3.1
+  [682c06a0] JSON v0.21.1
+  [0db19996] NBInclude v2.2.0
+  [69de0a69] Parsers v1.0.15
+  [b85f4697] SoftGlobalScope v1.1.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+json(t1) = "{\"children\":[[2,3],[],[4],[]],\"text\":[\"one\\n(second line)\",\"2\",\"III\",\"four\"],\"tooltip\":[\"pops\",\"up\",\"on\",\"hover\"],\"style\":[\"\",\"fill:red\",\"r:14\",\"opacity:0.7\"],\"link_style\":[\"\",\"stroke:blue\",\"\",\"stroke-width:10px\"],\"title\":\"Julia D3Tree\",\"options\":{\"tooltip\":[\"pops\",\"up\",\"on\",\"hover\"],\"link_style\":[\"\",\"stroke:blue\",\"\",\"stroke-width:10px\"],\"text\":[\"one\\n(second line)\",\"2\",\"III\",\"four\"],\"style\":[\"\",\"fill:red\",\"r:14\",\"opacity:0.7\"]}}"
+D3Trees.children(D3TreeNode(t1, 1)) = Base.Generator{Array{Int64,1},D3Trees.var"#3#4"{D3TreeNode}}(D3Trees.var"#3#4"{D3TreeNode}(D3TreeNode(D3Tree([[2, 3], Int64[], [4], Int64[]], ["one\n(second line)", "2", "III", "four"], ["pops", "up", "on", "hover"], ["", "fill:red", "r:14", "opacity:0.7"], ["", "stroke:blue", "", "stroke-width:10px"], "Julia D3Tree", Dict{Symbol,Any}(:tooltip => ["pops", "up", "on", "hover"],:link_style => ["", "stroke:blue", "", "stroke-width:10px"],:text => ["one\n(second line)", "2", "III", "four"],:style => ["", "fill:red", "r:14", "opacity:0.7"])), 1)), [2, 3])
+one
+(second line)
+├──2
+└──III
+   └──four
+generating 1000000 children
+  0.189542 seconds (1.05 M allocations: 109.171 MiB, 38.51% gc time)
+creating tree object
+  0.231190 seconds (2.15 M allocations: 130.111 MiB, 24.73% gc time)
+html string
+  0.877858 seconds (2.00 M allocations: 200.208 MiB, 24.94% gc time)
+AbstractTrees constructor
+  0.295308 seconds (319.60 k allocations: 14.968 MiB)
+  0.076721 seconds (6.62 k allocations: 381.902 KiB)
+    Testing D3Trees tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T16:13:19.44
+CPU usage: 23.22s (20.01s user, 3.26s kernel)
+
+Network usage:
+- eth0: 2.726 MiB received, 50.229 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":338329600,"max_usage":969768960,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":223174656,"inactive_file":135168,"inactive_anon":79478784,"total_pgfault":775368,"total_cache":84987904,"total_rss_huge":0,"total_active_anon":228839424,"total_pgmajfault":0,"pgpgin":576015,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":500782,"hierarchical_memsw_limit":0,"cache":84987904,"active_file":135168,"pgfault":775368,"total_mapped_file":0,"total_pgpgout":500782,"total_writeback":0,"rss":223174656,"unevictable":0,"total_inactive_anon":79478784,"total_pgpgin":576015,"active_anon":228839424,"total_active_file":135168},"limit":540965302272},"name":"/D3Trees-HHDc39Ym","networks":{"eth0":{"rx_bytes":2857909,"rx_packets":434,"tx_packets":454,"tx_bytes":51434,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"b8e20fb09d9ff486f03dd9e2f2ae22f2a5701cd71b30ffbc923ff91620b9fca0","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3541118564522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":20010000000,"usage_in_kernelmode":3260000000,"total_usage":23217976891,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23217969441,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7450,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T16:13:19.443073952Z"}

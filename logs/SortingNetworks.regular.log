@@ -1,0 +1,130 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:08:34.545
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:08:36.336
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed SortingNetworks ─ v0.3.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [07e3d4f1] + SortingNetworks v0.3.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [07e3d4f1] + SortingNetworks v0.3.1
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T18:08:39.879
+#
+
+    Testing SortingNetworks
+Status `/tmp/jl_fNPQQT/Project.toml`
+  [07e3d4f1] SortingNetworks v0.3.1
+  [8dfed614] Test
+Status `/tmp/jl_fNPQQT/Manifest.toml`
+  [07e3d4f1] SortingNetworks v0.3.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+WARNING: Method definition swapsort(Tuple{T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T}) where {T} in module SortingNetworks at /home/pkgeval/.julia/packages/SortingNetworks/eaWvM/src/swapsort_17to25.jl:27 overwritten at /home/pkgeval/.julia/packages/SortingNetworks/eaWvM/src/swapsort_17to25.jl:133.
+  ** incremental compilation may be fatally broken for this module **
+
+Test Summary:                     | Pass  Total
+test 0-1 principle implementation |    2      2
+Test Summary: | Pass  Total
+0-1 principle |    2      2
+Test Summary: | Pass  Total
+0-1 principle |    4      4
+Test Summary: | Pass  Total
+0-1 principle |    8      8
+Test Summary: | Pass  Total
+0-1 principle |   16     16
+Test Summary: | Pass  Total
+0-1 principle |   32     32
+Test Summary: | Pass  Total
+0-1 principle |   64     64
+Test Summary: | Pass  Total
+0-1 principle |  128    128
+Test Summary: | Pass  Total
+0-1 principle |  256    256
+Test Summary: | Pass  Total
+0-1 principle |  512    512
+Test Summary: | Pass  Total
+0-1 principle | 1024   1024
+Test Summary: | Pass  Total
+0-1 principle | 2048   2048
+Test Summary: | Pass  Total
+0-1 principle | 4096   4096
+Test Summary: | Pass  Total
+0-1 principle | 8192   8192
+Test Summary: |  Pass  Total
+0-1 principle | 16384  16384
+Test Summary: |  Pass  Total
+0-1 principle | 32768  32768
+Test Summary: |  Pass  Total
+0-1 principle | 65536  65536
+Test Summary: |   Pass   Total
+0-1 principle | 131072  131072
+Test Summary: |   Pass   Total
+0-1 principle | 262144  262144
+Test Summary: |   Pass   Total
+0-1 principle | 524288  524288
+Test Summary: |    Pass    Total
+0-1 principle | 1048576  1048576
+Test Summary: |    Pass    Total
+0-1 principle | 2097152  2097152
+Test Summary: |    Pass    Total
+0-1 principle | 4194304  4194304
+Test Summary: |    Pass    Total
+0-1 principle | 8388608  8388608
+Test Summary: |     Pass     Total
+0-1 principle | 16777216  16777216
+Test Summary: |     Pass     Total
+0-1 principle | 33554432  33554432
+    Testing SortingNetworks tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:09:15.948
+CPU usage: 41.44s (34.61s user, 6.92s kernel)
+
+Network usage:
+- eth0: 2.542 MiB received, 29.328 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":320237568,"max_usage":2318876672,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":210702336,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":2856645,"total_cache":79859712,"total_rss_huge":0,"total_active_anon":211808256,"total_pgmajfault":0,"pgpgin":2640528,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":135168,"pgpgout":2569594,"hierarchical_memsw_limit":0,"cache":79859712,"active_file":135168,"pgfault":2856645,"total_mapped_file":0,"total_pgpgout":2569594,"total_writeback":135168,"rss":210702336,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":2640528,"active_anon":211808256,"total_active_file":135168},"limit":540965302272},"name":"/SortingNetworks-8arH8okw","networks":{"eth0":{"rx_bytes":2665654,"rx_packets":320,"tx_packets":313,"tx_bytes":30032,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"8081219d61abe06280057bd75e031dedce7f068d28e38d5abecd2075aca3edd3","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4429984914522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":34610000000,"usage_in_kernelmode":6920000000,"total_usage":41444627416,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,41444621696,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5720,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:09:15.951721407Z"}

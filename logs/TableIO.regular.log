@@ -1,0 +1,379 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:11:58.853
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:12:00.677
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Reexport ──────────────────── v0.2.0
+  Installed TableIO ───────────────────── v0.3.0
+  Installed TableIOInterface ──────────── v0.1.6
+  Installed TableTraits ───────────────── v1.0.0
+  Installed CategoricalArrays ─────────── v0.9.0
+  Installed Tables ────────────────────── v1.2.2
+  Installed DataStructures ────────────── v0.18.8
+  Installed Requires ──────────────────── v1.1.2
+  Installed DataFrames ────────────────── v0.22.2
+  Installed DataAPI ───────────────────── v1.4.0
+  Installed OrderedCollections ────────── v1.3.2
+  Installed InvertedIndices ───────────── v1.0.0
+  Installed DataValueInterfaces ───────── v1.0.0
+  Installed Missings ──────────────────── v0.4.4
+  Installed PooledArrays ──────────────── v0.5.3
+  Installed JSON ──────────────────────── v0.21.1
+  Installed StructTypes ───────────────── v1.2.1
+  Installed Crayons ───────────────────── v4.0.4
+  Installed Suppressor ────────────────── v0.2.0
+  Installed Formatting ────────────────── v0.4.2
+  Installed IteratorInterfaceExtensions ─ v1.0.0
+  Installed SortingAlgorithms ─────────── v0.3.1
+  Installed Compat ────────────────────── v3.25.0
+  Installed PrettyTables ──────────────── v0.10.1
+  Installed Parsers ───────────────────── v1.0.15
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [8545f849] + TableIO v0.3.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [324d7699] + CategoricalArrays v0.9.0
+  [34da2185] + Compat v3.25.0
+  [a8cc5b0e] + Crayons v4.0.4
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.22.2
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [59287772] + Formatting v0.4.2
+  [41ab1584] + InvertedIndices v1.0.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [e1d29d7a] + Missings v0.4.4
+  [bac558e1] + OrderedCollections v1.3.2
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [08abe8d2] + PrettyTables v0.10.1
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [856f2bd8] + StructTypes v1.2.1
+  [fd094767] + Suppressor v0.2.0
+  [8545f849] + TableIO v0.3.0
+  [d1efa939] + TableIOInterface v0.1.6
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T20:12:07.38
+#
+
+    Testing TableIO
+Status `/tmp/jl_xzij0P/Project.toml`
+  [69666777] Arrow v1.1.0
+  [336ed68f] CSV v0.8.2
+  [8f4d0f93] Conda v1.5.0
+  [a93c6f00] DataFrames v0.22.2
+  [babc3d20] JDF v0.3.0
+  [033835bb] JLD2 v0.3.1
+  [b9914132] JSONTables v1.0.0
+  [194296ae] LibPQ v1.6.2
+  [eadc2687] Pandas v1.4.0
+  [626c502c] Parquet v0.7.1
+  [438e738f] PyCall v1.92.2
+  [0aa819cd] SQLite v1.0.5
+  [1463e38c] StatFiles v0.8.0
+  [8545f849] TableIO v0.3.0
+  [fdbf4ff8] XLSX v0.7.3
+  [a5390f91] ZipFile v0.9.3
+  [ade2ca70] Dates
+  [44cfe95a] Pkg
+  [8dfed614] Test
+Status `/tmp/jl_xzij0P/Manifest.toml`
+  [79e6a3ab] Adapt v2.4.0
+  [69666777] Arrow v1.1.0
+  [56f22d72] Artifacts v1.3.0
+  [b99e7846] BinaryProvider v0.5.10
+  [c3b6d118] BitIntegers v0.2.4
+  [a74b3585] Blosc v0.7.0
+  [0b7ba130] Blosc_jll v1.14.3+1
+  [e1450e63] BufferedStreams v1.0.0
+  [fa961155] CEnum v0.4.1
+  [336ed68f] CSV v0.8.2
+  [324d7699] CategoricalArrays v0.9.0
+  [5ba52731] CodecLz4 v0.4.0
+  [944b1d66] CodecZlib v0.7.0
+  [6b39b394] CodecZstd v0.7.0
+  [34da2185] Compat v3.25.0
+  [8f4d0f93] Conda v1.5.0
+  [a8cc5b0e] Crayons v4.0.4
+  [a10d1c49] DBInterface v2.2.0
+  [9a962f9c] DataAPI v1.4.0
+  [a93c6f00] DataFrames v0.22.2
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [e7dc6d0d] DataValues v0.4.13
+  [abce61dc] Decimals v0.4.1
+  [ffbed154] DocStringExtensions v0.8.3
+  [e2ba6199] ExprTools v0.1.3
+  [8f5d6c58] EzXML v1.1.0
+  [5789e2e9] FileIO v1.4.5
+  [59287772] Formatting v0.4.2
+  [a303e19e] Infinity v0.2.3
+  [d8418881] Intervals v1.5.0
+  [41ab1584] InvertedIndices v1.0.0
+  [c8e1da08] IterTools v1.3.0
+  [1c8ee90f] IterableTables v1.0.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [babc3d20] JDF v0.3.0
+  [033835bb] JLD2 v0.3.1
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [0f8b85d8] JSON3 v1.5.1
+  [b9914132] JSONTables v1.0.0
+  [6f188dcb] LayerDicts v1.0.0
+  [50d2b5c4] Lazy v0.15.1
+  [194296ae] LibPQ v1.6.2
+  [08be9ffa] LibPQ_jll v12.3.0+0
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [1724a1d5] LittleEndianBase128 v0.3.0
+  [5ced341a] Lz4_jll v1.9.2+2
+  [1914dd2f] MacroTools v0.5.6
+  [f28f55f0] Memento v1.1.2
+  [e1d29d7a] Missings v0.4.4
+  [78c3b35d] Mocking v0.7.1
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [458c3c95] OpenSSL_jll v1.1.1+6
+  [bac558e1] OrderedCollections v1.3.2
+  [eadc2687] Pandas v1.4.0
+  [626c502c] Parquet v0.7.1
+  [69de0a69] Parsers v1.0.15
+  [2dfb63ee] PooledArrays v0.5.3
+  [08abe8d2] PrettyTables v0.10.1
+  [438e738f] PyCall v1.92.2
+  [d71aba96] ReadStat v1.0.2
+  [a4dc8951] ReadStat_jll v1.1.1+0
+  [3cdcf5f2] RecipesBase v1.1.1
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [0aa819cd] SQLite v1.0.5
+  [76ed43ae] SQLite_jll v3.34.0+0
+  [91c51154] SentinelArrays v1.2.16
+  [59d4ed8c] Snappy v0.3.0
+  [a2af1166] SortingAlgorithms v0.3.1
+  [1463e38c] StatFiles v0.8.0
+  [2913bbd2] StatsBase v0.33.2
+  [856f2bd8] StructTypes v1.2.1
+  [fd094767] Suppressor v0.2.0
+  [cea106d9] Syslogs v0.3.0
+  [8545f849] TableIO v0.3.0
+  [d1efa939] TableIOInterface v0.1.6
+  [5e66a065] TableShowUtils v0.2.5
+  [3783bdb8] TableTraits v1.0.0
+  [382cd787] TableTraitsUtils v1.0.1
+  [bd369af6] Tables v1.2.2
+  [8d9c9c80] Thrift v0.8.0
+  [815b9798] ThriftJuliaCompiler_jll v0.12.0+0
+  [f269a46b] TimeZones v1.5.3
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [81def892] VersionParsing v1.2.0
+  [ea10d353] WeakRefStrings v0.6.2
+  [fdbf4ff8] XLSX v0.7.3
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [a5390f91] ZipFile v0.9.3
+  [83775a58] Zlib_jll v1.2.11+18
+  [3161d3a3] Zstd_jll v1.4.5+2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [7b1f6079] FileWatching
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Temporary directory for test files: /tmp/jl_x2YCkQ
+ Activating environment at `~/.julia/packages/TableIO/hbFzA/test/Project.toml`
+   Updating registry at `~/.julia/registries/General`
+######################################################################## 100.0%
+  Resolving package versions...
+File IO: Error During Test at /home/pkgeval/.julia/packages/TableIO/hbFzA/test/file_io.jl:1
+  Got exception outside of a @test
+  LoadError: SystemError: opening file "/home/pkgeval/.julia/packages/TableIO/hbFzA/test/Project.toml": Permission denied
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Bool, append::Nothing) at ./iostream.jl:284
+   [5] open(::Pkg.Types.var"#31#33"{Base.GenericIOBuffer{Array{UInt8,1}}}, ::String; kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:truncate,),Tuple{Bool}}}) at ./io.jl:323
+   [6] write_project at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/project.jl:180 [inlined]
+   [7] write_project(::Pkg.Types.Project, ::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/project.jl:175
+   [8] write_project at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/project.jl:173 [inlined]
+   [9] write_env(::Pkg.Types.EnvCache; update_undo::Bool) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:1366
+   [10] write_env at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:1366 [inlined]
+   [11] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Array{Base.UUID,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1143
+   [12] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:188
+   [13] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:139
+   [14] #add#21 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+   [15] add at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+   [16] #add#20 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+   [17] add(::Array{String,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66
+   [18] top-level scope at /home/pkgeval/.julia/packages/TableIO/hbFzA/test/test_pandas.jl:5
+   [19] include(::String) at ./client.jl:457
+   [20] macro expansion at /home/pkgeval/.julia/packages/TableIO/hbFzA/test/file_io.jl:178 [inlined]
+   [21] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [22] top-level scope at /home/pkgeval/.julia/packages/TableIO/hbFzA/test/file_io.jl:3
+   [23] include(::String) at ./client.jl:457
+   [24] top-level scope at /home/pkgeval/.julia/packages/TableIO/hbFzA/test/runtests.jl:32
+   [25] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [26] top-level scope at /home/pkgeval/.julia/packages/TableIO/hbFzA/test/runtests.jl:32
+   [27] include(::String) at ./client.jl:457
+   [28] top-level scope at none:6
+   [29] eval(::Module, ::Any) at ./boot.jl:331
+   [30] exec_options(::Base.JLOptions) at ./client.jl:272
+   [31] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/TableIO/hbFzA/test/test_pandas.jl:5
+  
+[ Info: LibPQ.jl is available - including functionality to read / write PostgreSQL databases
+[error | LibPQ]: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+PostgreSQL: Error During Test at /home/pkgeval/.julia/packages/TableIO/hbFzA/test/database_io.jl:28
+  Got exception outside of a @test
+  could not connect to server: No such file or directory
+  	Is the server running locally and accepting
+  	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+  Stacktrace:
+   [1] error(::Memento.Logger, ::LibPQ.Errors.PQConnectionError) at /home/pkgeval/.julia/packages/Memento/i6gAL/src/loggers.jl:458
+   [2] handle_new_connection(::LibPQ.Connection; throw_error::Bool) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:127
+   [3] LibPQ.Connection(::String; throw_error::Bool, connect_timeout::Int64, options::Dict{String,String}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:320
+   [4] LibPQ.Connection(::String) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:272
+   [5] top-level scope at /home/pkgeval/.julia/packages/TableIO/hbFzA/test/database_io.jl:31
+   [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [7] top-level scope at /home/pkgeval/.julia/packages/TableIO/hbFzA/test/database_io.jl:31
+   [8] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [9] top-level scope at /home/pkgeval/.julia/packages/TableIO/hbFzA/test/database_io.jl:6
+   [10] include(::String) at ./client.jl:457
+   [11] top-level scope at /home/pkgeval/.julia/packages/TableIO/hbFzA/test/runtests.jl:33
+   [12] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [13] top-level scope at /home/pkgeval/.julia/packages/TableIO/hbFzA/test/runtests.jl:32
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  
+[ Info: testing import of file test.csv from PlutoUI.FilePicker
+[ Info: testing import of file test.xlsx from PlutoUI.FilePicker
+[ Info: testing import of file test_array.json from PlutoUI.FilePicker
+[ Info: testing import of file test.arrow from PlutoUI.FilePicker
+[ Info: testing import of file test.zip from PlutoUI.FilePicker
+[ Info: testing import of file test3.zip from PlutoUI.FilePicker
+Test Summary:   | Pass  Error  Total
+TableIO.jl      |   62      2     64
+  File IO       |   47      1     48
+    CSV         |    4             4
+    JDF         |    4             4
+    Parquet     |    4             4
+    Arrow       |    4             4
+    JDF2        |    3             3
+    XLSX        |    5             5
+    JSON        |    7             7
+    Julia       |    3             3
+    StatFiles   |    2             2
+    zipped      |    8             8
+    conversions |    3             3
+  Database IO   |    8      1      9
+    SQLite      |    8             8
+    PostgreSQL  |           1      1
+  PlutoUI       |    7             7
+ERROR: LoadError: Some tests did not pass: 62 passed, 0 failed, 2 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/TableIO/hbFzA/test/runtests.jl:30
+
+PkgEval failed: Package TableIO errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:18:09.833
+CPU usage: 369.20s (347.96s user, 21.82s kernel)
+
+Network usage:
+- eth0: 262.043 MiB received, 1.148 MiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":8,"op":"Read","minor":0},{"major":259,"value":65,"op":"Write","minor":0},{"major":259,"value":42,"op":"Sync","minor":0},{"major":259,"value":31,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":73,"op":"Total","minor":0},{"major":253,"value":8,"op":"Read","minor":2},{"major":253,"value":65,"op":"Write","minor":2},{"major":253,"value":42,"op":"Sync","minor":2},{"major":253,"value":31,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":73,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":471040,"op":"Read","minor":0},{"major":259,"value":348160,"op":"Write","minor":0},{"major":259,"value":663552,"op":"Sync","minor":0},{"major":259,"value":155648,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":819200,"op":"Total","minor":0},{"major":253,"value":471040,"op":"Read","minor":2},{"major":253,"value":348160,"op":"Write","minor":2},{"major":253,"value":663552,"op":"Sync","minor":2},{"major":253,"value":155648,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":819200,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":1989914624,"max_usage":3029475328,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":239038464,"inactive_file":405504,"inactive_anon":1222189056,"total_pgfault":7443744,"total_cache":1692364800,"total_rss_huge":0,"total_active_anon":708550656,"total_pgmajfault":0,"pgpgin":5431404,"rss_huge":0,"mapped_file":0,"total_inactive_file":405504,"dirty":946176,"total_unevictable":0,"total_dirty":946176,"writeback":0,"pgpgout":4959871,"hierarchical_memsw_limit":0,"cache":1692364800,"active_file":270336,"pgfault":7443744,"total_mapped_file":0,"total_pgpgout":4959871,"total_writeback":0,"rss":239038464,"unevictable":0,"total_inactive_anon":1222189056,"total_pgpgin":5431404,"active_anon":708550656,"total_active_file":270336},"limit":540965302272},"name":"/TableIO-GjNA5Src","networks":{"eth0":{"rx_bytes":274771628,"rx_packets":27537,"tx_packets":16613,"tx_bytes":1204232,"tx_dropped":0,"rx_dropped":13,"tx_errors":0,"rx_errors":0}},"id":"f6ed536cf679d9ce5b5102192567893c1ea69bb850d31c5b0b645b303ea4a1dc","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5418566824522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":347960000000,"usage_in_kernelmode":21820000000,"total_usage":369199351509,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2625371,369196397198,299760,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29180,0,0,0]}},"read":"2021-01-11T20:18:09.836102074Z"}

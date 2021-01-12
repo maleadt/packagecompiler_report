@@ -1,0 +1,161 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:24:05.995
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:24:07.814
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Ripemd ──── v0.3.0
+  Installed BTCParser ─ v0.1.0
+  Installed Compat ──── v3.25.0
+  Installed Base58 ──── v0.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [27a35ec8] + BTCParser v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [27a35ec8] + BTCParser v0.1.0
+  [a832ea1e] + Base58 v0.3.0
+  [34da2185] + Compat v3.25.0
+  [92ef3814] + Ripemd v0.3.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T21:24:11.928
+#
+
+    Testing BTCParser
+Status `/tmp/jl_svzk5R/Project.toml`
+  [27a35ec8] BTCParser v0.1.0
+  [a832ea1e] Base58 v0.3.0
+  [92ef3814] Ripemd v0.3.0
+  [de0858da] Printf
+  [ea8e919c] SHA
+  [8dfed614] Test
+Status `/tmp/jl_svzk5R/Manifest.toml`
+  [27a35ec8] BTCParser v0.1.0
+  [a832ea1e] Base58 v0.3.0
+  [34da2185] Compat v3.25.0
+  [92ef3814] Ripemd v0.3.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+BCIterator: Error During Test at /home/pkgeval/.julia/packages/BTCParser/rLZZT/test/test_bciterator.jl:6
+  Got exception outside of a @test
+  SystemError: opening file "/home/pkgeval/.bitcoin/blocks/blk00000.dat": No such file or directory
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+   [5] open at ./iostream.jl:273 [inlined]
+   [6] BCIterator at /home/pkgeval/.julia/packages/BTCParser/rLZZT/src/lib/file_ops.jl:18 [inlined]
+   [7] macro expansion at /home/pkgeval/.julia/packages/BTCParser/rLZZT/test/test_bciterator.jl:8 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] top-level scope at /home/pkgeval/.julia/packages/BTCParser/rLZZT/test/test_bciterator.jl:7
+   [10] include(::String) at ./client.jl:457
+   [11] top-level scope at /home/pkgeval/.julia/packages/BTCParser/rLZZT/test/runtests.jl:17
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+Test Summary: | Error  Total
+BCIterator    |     1      1
+ERROR: LoadError: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/BTCParser/rLZZT/test/test_bciterator.jl:6
+in expression starting at /home/pkgeval/.julia/packages/BTCParser/rLZZT/test/runtests.jl:16
+
+PkgEval failed: Package BTCParser errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:24:22.575
+CPU usage: 16.61s (13.54s user, 3.11s kernel)
+
+Network usage:
+- eth0: 2.607 MiB received, 41.056 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":307040256,"max_usage":846131200,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":197324800,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":453387,"total_cache":80211968,"total_rss_huge":0,"total_active_anon":198561792,"total_pgmajfault":0,"pgpgin":332640,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":264886,"hierarchical_memsw_limit":0,"cache":80211968,"active_file":135168,"pgfault":453387,"total_mapped_file":0,"total_pgpgout":264886,"total_writeback":0,"rss":197324800,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":332640,"active_anon":198561792,"total_active_file":135168},"limit":540965302272},"name":"/BTCParser-IBNBU1bL","networks":{"eth0":{"rx_bytes":2733221,"rx_packets":358,"tx_packets":385,"tx_bytes":42041,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"79fee5d7a43b9aeb2b15b1ca9aa356f9c277b47db1a56d349ae12d717796ca2b","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5926084384522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":13540000000,"usage_in_kernelmode":3110000000,"total_usage":16605781797,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16605781797,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:24:22.578335713Z"}

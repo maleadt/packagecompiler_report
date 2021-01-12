@@ -1,0 +1,531 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T18:00:19.232
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T18:00:21.002
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Arb_jll ───────────────────── v2.17.0+1
+  Installed Reexport ──────────────────── v0.2.0
+  Installed TableTraits ───────────────── v1.0.0
+  Installed FLINT_jll ─────────────────── v0.0.2+0
+  Installed ALFA ──────────────────────── v0.1.0
+  Installed CategoricalArrays ─────────── v0.8.3
+  Installed DataFrames ────────────────── v0.21.8
+  Installed Tables ────────────────────── v1.2.2
+  Installed GMP_jll ───────────────────── v6.1.2+6
+  Installed Antic_jll ─────────────────── v0.1.0+2
+  Installed PackageCompiler ───────────── v1.2.5
+  Installed DataAPI ───────────────────── v1.4.0
+  Installed DataStructures ────────────── v0.17.20
+  Installed Colors ────────────────────── v0.12.6
+  Installed StaticArrays ──────────────── v0.12.5
+  Installed OrderedCollections ────────── v1.3.2
+  Installed ColorTypes ────────────────── v0.10.9
+  Installed DataValueInterfaces ───────── v1.0.0
+  Installed InvertedIndices ───────────── v1.0.0
+  Installed MPFR_jll ──────────────────── v4.1.0+1
+  Installed RecipesBase ───────────────── v1.1.1
+  Installed Missings ──────────────────── v0.4.4
+  Installed PooledArrays ──────────────── v0.5.3
+  Installed LoadFlint ─────────────────── v0.2.1
+  Installed MacroTools ────────────────── v0.5.6
+  Installed JSON ──────────────────────── v0.21.1
+  Installed JLLWrappers ───────────────── v1.2.0
+  Installed Nemo ──────────────────────── v0.17.6
+  Installed AbstractAlgebra ───────────── v0.9.2
+  Installed StructTypes ───────────────── v1.2.1
+  Installed FixedPointNumbers ─────────── v0.8.4
+  Installed Formatting ────────────────── v0.4.2
+  Installed IteratorInterfaceExtensions ─ v1.0.0
+  Installed SortingAlgorithms ─────────── v0.3.1
+  Installed Compat ────────────────────── v3.25.0
+  Installed BinaryProvider ────────────── v0.5.10
+  Installed Parsers ───────────────────── v1.0.15
+  Installed ColorSchemes ──────────────── v3.10.2
+  Installed Artifacts ─────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [f8dd4131] + ALFA v0.1.0
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [f8dd4131] + ALFA v0.1.0
+  [c3fe647b] + AbstractAlgebra v0.9.2
+  [e21ec000] + Antic_jll v0.1.0+2
+  [d9960996] + Arb_jll v2.17.0+1
+  [56f22d72] + Artifacts v1.3.0
+  [b99e7846] + BinaryProvider v0.5.10
+  [324d7699] + CategoricalArrays v0.8.3
+  [35d6a980] + ColorSchemes v3.10.2
+  [3da002f7] + ColorTypes v0.10.9
+  [5ae59095] + Colors v0.12.6
+  [34da2185] + Compat v3.25.0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.21.8
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [e134572f] + FLINT_jll v0.0.2+0
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [59287772] + Formatting v0.4.2
+  [781609d7] + GMP_jll v6.1.2+6
+  [41ab1584] + InvertedIndices v1.0.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [472f376f] + LoadFlint v0.2.1
+  [3a97d323] + MPFR_jll v4.1.0+1
+  [1914dd2f] + MacroTools v0.5.6
+  [e1d29d7a] + Missings v0.4.4
+  [2edaba10] + Nemo v0.17.6
+  [bac558e1] + OrderedCollections v1.3.2
+  [9b87118b] + PackageCompiler v1.2.5
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [189a3867] + Reexport v0.2.0
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [90137ffa] + StaticArrays v0.12.5
+  [856f2bd8] + StructTypes v1.2.1
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building LoadFlint → `~/.julia/packages/LoadFlint/jHlQx/deps/build.log`
+   Building Nemo ─────→ `~/.julia/packages/Nemo/vCIJx/deps/build.log`
+
+
+################################################################################
+# Compiling: 2021-01-11T18:00:30.077
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 205.919 MiB, compilation took 299 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T18:05:37.853
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/ALFA-wPhJsgKR.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:05:39.449
+#
+
+ Installing known registries into `~/.julia`
+#####################################################                     73.7%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Reexport ──────────────────── v0.2.0
+  Installed Arb_jll ───────────────────── v2.17.0+1
+  Installed FLINT_jll ─────────────────── v0.0.2+0
+  Installed TableTraits ───────────────── v1.0.0
+  Installed ALFA ──────────────────────── v0.1.0
+  Installed CategoricalArrays ─────────── v0.8.3
+  Installed DataStructures ────────────── v0.17.20
+  Installed Tables ────────────────────── v1.2.2
+  Installed DataFrames ────────────────── v0.21.8
+  Installed GMP_jll ───────────────────── v6.1.2+6
+  Installed DataAPI ───────────────────── v1.4.0
+  Installed Antic_jll ─────────────────── v0.1.0+2
+  Installed InvertedIndices ───────────── v1.0.0
+  Installed ColorTypes ────────────────── v0.10.9
+  Installed DataValueInterfaces ───────── v1.0.0
+  Installed OrderedCollections ────────── v1.3.2
+  Installed MPFR_jll ──────────────────── v4.1.0+1
+  Installed Colors ────────────────────── v0.12.6
+  Installed StaticArrays ──────────────── v0.12.5
+  Installed RecipesBase ───────────────── v1.1.1
+  Installed Missings ──────────────────── v0.4.4
+  Installed PooledArrays ──────────────── v0.5.3
+  Installed LoadFlint ─────────────────── v0.2.1
+  Installed MacroTools ────────────────── v0.5.6
+  Installed JSON ──────────────────────── v0.21.1
+  Installed JLLWrappers ───────────────── v1.2.0
+  Installed Nemo ──────────────────────── v0.17.6
+  Installed AbstractAlgebra ───────────── v0.9.2
+  Installed StructTypes ───────────────── v1.2.1
+  Installed FixedPointNumbers ─────────── v0.8.4
+  Installed Formatting ────────────────── v0.4.2
+  Installed IteratorInterfaceExtensions ─ v1.0.0
+  Installed SortingAlgorithms ─────────── v0.3.1
+  Installed Compat ────────────────────── v3.25.0
+  Installed BinaryProvider ────────────── v0.5.10
+  Installed Parsers ───────────────────── v1.0.15
+  Installed Artifacts ─────────────────── v1.3.0
+  Installed ColorSchemes ──────────────── v3.10.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [f8dd4131] + ALFA v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [f8dd4131] + ALFA v0.1.0
+  [c3fe647b] + AbstractAlgebra v0.9.2
+  [e21ec000] + Antic_jll v0.1.0+2
+  [d9960996] + Arb_jll v2.17.0+1
+  [56f22d72] + Artifacts v1.3.0
+  [b99e7846] + BinaryProvider v0.5.10
+  [324d7699] + CategoricalArrays v0.8.3
+  [35d6a980] + ColorSchemes v3.10.2
+  [3da002f7] + ColorTypes v0.10.9
+  [5ae59095] + Colors v0.12.6
+  [34da2185] + Compat v3.25.0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.21.8
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [e134572f] + FLINT_jll v0.0.2+0
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [59287772] + Formatting v0.4.2
+  [781609d7] + GMP_jll v6.1.2+6
+  [41ab1584] + InvertedIndices v1.0.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [472f376f] + LoadFlint v0.2.1
+  [3a97d323] + MPFR_jll v4.1.0+1
+  [1914dd2f] + MacroTools v0.5.6
+  [e1d29d7a] + Missings v0.4.4
+  [2edaba10] + Nemo v0.17.6
+  [bac558e1] + OrderedCollections v1.3.2
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [189a3867] + Reexport v0.2.0
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [90137ffa] + StaticArrays v0.12.5
+  [856f2bd8] + StructTypes v1.2.1
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building LoadFlint → `~/.julia/packages/LoadFlint/jHlQx/deps/build.log`
+   Building Nemo ─────→ `~/.julia/packages/Nemo/vCIJx/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T18:05:48.137
+#
+
+    Testing ALFA
+Status `/tmp/jl_hfct7a/Project.toml`
+  [f8dd4131] ALFA v0.1.0
+  [35d6a980] ColorSchemes v3.10.2
+  [a93c6f00] DataFrames v0.21.8
+  [864edb3b] DataStructures v0.17.20
+  [59287772] Formatting v0.4.2
+  [1914dd2f] MacroTools v0.5.6
+  [2edaba10] Nemo v0.17.6
+  [91a5bcdd] Plots v1.10.1
+  [3cdcf5f2] RecipesBase v1.1.1
+  [1bc83da4] SafeTestsets v0.0.1
+  [90137ffa] StaticArrays v0.12.5
+  [37e2e46d] LinearAlgebra
+  [8dfed614] Test
+Status `/tmp/jl_hfct7a/Manifest.toml`
+  [f8dd4131] ALFA v0.1.0
+  [c3fe647b] AbstractAlgebra v0.9.2
+  [79e6a3ab] Adapt v2.4.0
+  [e21ec000] Antic_jll v0.1.0+2
+  [d9960996] Arb_jll v2.17.0+1
+  [56f22d72] Artifacts v1.3.0
+  [b99e7846] BinaryProvider v0.5.10
+  [6e34b625] Bzip2_jll v1.0.6+5
+  [83423d85] Cairo_jll v1.16.0+6
+  [324d7699] CategoricalArrays v0.8.3
+  [35d6a980] ColorSchemes v3.10.2
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.6
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [d38c429a] Contour v0.5.7
+  [9a962f9c] DataAPI v1.4.0
+  [a93c6f00] DataFrames v0.21.8
+  [864edb3b] DataStructures v0.17.20
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [5ae413db] EarCut_jll v2.1.5+1
+  [2e619515] Expat_jll v2.2.7+6
+  [c87230d0] FFMPEG v0.4.0
+  [b22a6f82] FFMPEG_jll v4.3.1+4
+  [e134572f] FLINT_jll v0.0.2+0
+  [53c48c17] FixedPointNumbers v0.8.4
+  [a3f928ae] Fontconfig_jll v2.13.1+14
+  [59287772] Formatting v0.4.2
+  [d7e528f0] FreeType2_jll v2.10.1+5
+  [559328eb] FriBidi_jll v1.0.5+6
+  [0656b61e] GLFW_jll v3.3.2+1
+  [781609d7] GMP_jll v6.1.2+6
+  [28b8d3ca] GR v0.53.0
+  [d2c73de3] GR_jll v0.53.0+0
+  [5c1252a2] GeometryBasics v0.3.5
+  [78b55507] Gettext_jll v0.20.1+7
+  [7746bdde] Glib_jll v2.59.0+4
+  [42e2da0e] Grisu v1.0.0
+  [cd3eb016] HTTP v0.8.19
+  [83e8ac13] IniFile v0.5.0
+  [41ab1584] InvertedIndices v1.0.0
+  [c8e1da08] IterTools v1.3.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [aacddb02] JpegTurbo_jll v2.0.1+3
+  [c1c5ebd0] LAME_jll v3.100.0+3
+  [dd4b983a] LZO_jll v2.10.0+3
+  [b964fa9f] LaTeXStrings v1.2.0
+  [23fbe1c1] Latexify v0.14.7
+  [dd192d2f] LibVPX_jll v1.9.0+1
+  [e9f186c6] Libffi_jll v3.2.1+4
+  [d4300ac3] Libgcrypt_jll v1.8.5+4
+  [7e76a0d4] Libglvnd_jll v1.3.0+3
+  [7add5ba3] Libgpg_error_jll v1.36.0+3
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [4b2f31a3] Libmount_jll v2.34.0+3
+  [89763e89] Libtiff_jll v4.1.0+2
+  [38a345b3] Libuuid_jll v2.34.0+7
+  [472f376f] LoadFlint v0.2.1
+  [3a97d323] MPFR_jll v4.1.0+1
+  [1914dd2f] MacroTools v0.5.6
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [442fdcdd] Measures v0.3.1
+  [e1d29d7a] Missings v0.4.4
+  [77ba4419] NaNMath v0.3.5
+  [2edaba10] Nemo v0.17.6
+  [e7412a2a] Ogg_jll v1.3.4+2
+  [458c3c95] OpenSSL_jll v1.1.1+6
+  [91d4177d] Opus_jll v1.3.1+3
+  [bac558e1] OrderedCollections v1.3.2
+  [2f80f16e] PCRE_jll v8.42.0+4
+  [69de0a69] Parsers v1.0.15
+  [30392449] Pixman_jll v0.40.0+0
+  [ccf2f8ad] PlotThemes v2.0.0
+  [995b91a9] PlotUtils v1.0.10
+  [91a5bcdd] Plots v1.10.1
+  [2dfb63ee] PooledArrays v0.5.3
+  [ede63266] Qt_jll v5.15.2+1
+  [3cdcf5f2] RecipesBase v1.1.1
+  [01d81517] RecipesPipeline v0.2.1
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [1bc83da4] SafeTestsets v0.0.1
+  [6c6a2e73] Scratch v1.0.3
+  [992d4aef] Showoff v0.3.2
+  [a2af1166] SortingAlgorithms v0.3.1
+  [90137ffa] StaticArrays v0.12.5
+  [2913bbd2] StatsBase v0.33.2
+  [09ab397b] StructArrays v0.4.4
+  [856f2bd8] StructTypes v1.2.1
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [a2964d1f] Wayland_jll v1.17.0+4
+  [2381bf8a] Wayland_protocols_jll v1.18.0+4
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [aed1982a] XSLT_jll v1.1.33+4
+  [4f6342f7] Xorg_libX11_jll v1.6.9+4
+  [0c0b7dd1] Xorg_libXau_jll v1.0.9+4
+  [935fb764] Xorg_libXcursor_jll v1.2.0+4
+  [a3789734] Xorg_libXdmcp_jll v1.1.3+4
+  [1082639a] Xorg_libXext_jll v1.3.4+4
+  [d091e8ba] Xorg_libXfixes_jll v5.0.3+4
+  [a51aa0fd] Xorg_libXi_jll v1.7.10+4
+  [d1454406] Xorg_libXinerama_jll v1.1.4+4
+  [ec84b674] Xorg_libXrandr_jll v1.5.2+4
+  [ea2f1a96] Xorg_libXrender_jll v0.9.10+4
+  [14d82f49] Xorg_libpthread_stubs_jll v0.1.0+3
+  [c7cfdc94] Xorg_libxcb_jll v1.13.0+3
+  [cc61e674] Xorg_libxkbfile_jll v1.1.0+4
+  [12413925] Xorg_xcb_util_image_jll v0.4.0+1
+  [2def613f] Xorg_xcb_util_jll v0.4.0+1
+  [975044d2] Xorg_xcb_util_keysyms_jll v0.4.0+1
+  [0d47668e] Xorg_xcb_util_renderutil_jll v0.3.9+1
+  [c22f9ab0] Xorg_xcb_util_wm_jll v0.4.1+1
+  [35661453] Xorg_xkbcomp_jll v1.4.2+4
+  [33bec58e] Xorg_xkeyboard_config_jll v2.27.0+4
+  [c5fb5394] Xorg_xtrans_jll v1.4.0+3
+  [83775a58] Zlib_jll v1.2.11+18
+  [3161d3a3] Zstd_jll v1.4.5+2
+  [0ac62f75] libass_jll v0.14.0+4
+  [f638f0a6] libfdk_aac_jll v0.1.6+4
+  [b53b4c65] libpng_jll v1.6.37+6
+  [f27f6e37] libvorbis_jll v1.3.6+6
+  [1270edf5] x264_jll v2020.7.14+2
+  [dfaa095f] x265_jll v3.0.0+3
+  [d8fb68d0] xkbcommon_jll v0.9.1+5
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+Nemo Wrapper  |   12     12
+Test Summary: | Pass  Total
+Lattice       |   69     69
+Test Summary: | Pass  Total
+Crystal       |   40     40
+Test Summary: | Pass  Total
+Multiplier    |   21     21
+Test Summary:   | Pass  Total
+CrystalOperator |  252    252
+Test Summary:       | Pass  Total
+OperatorComposition |    6      6
+Test Summary: | Pass  Total
+Gallery       |    9      9
+Test Summary: | Pass  Total
+Show          |    3      3
+Test Summary: | Pass  Total
+PlotRecipes   |    5      5
+N=1
+T=Float64
+....................AB: 20 / 20 successful ; ✓
+....................commProp: 20 / 20 successful ; ✓
+....................distProp1: 20 / 20 successful ; ✓
+....................distProp2: 20 / 20 successful ; ✓
+....................transposeProp: 20 / 20 successful ; ✓
+....................adjointProp: 20 / 20 successful ; ✓
+T=Rational{BigInt}
+....................AB: 20 / 20 successful ; ✓
+....................commProp: 20 / 20 successful ; ✓
+....................distProp1: 20 / 20 successful ; ✓
+....................distProp2: 20 / 20 successful ; ✓
+....................transposeProp: 20 / 20 successful ; ✓
+....................adjointProp: 20 / 20 successful ; ✓
+N=2
+T=Float64
+....................AB: 20 / 20 successful ; ✓
+....................commProp: 20 / 20 successful ; ✓
+....................distProp1: 20 / 20 successful ; ✓
+....................distProp2: 20 / 20 successful ; ✓
+....................transposeProp: 20 / 20 successful ; ✓
+....................adjointProp: 20 / 20 successful ; ✓
+T=Rational{BigInt}
+....................AB: 20 / 20 successful ; ✓
+....................commProp: 20 / 20 successful ; ✓
+....................distProp1: 20 / 20 successful ; ✓
+....................distProp2: 20 / 20 successful ; ✓
+....................transposeProp: 20 / 20 successful ; ✓
+....................adjointProp: 20 / 20 successful ; ✓
+N=3
+T=Float64
+....................AB: 20 / 20 successful ; ✓
+....................commProp: 20 / 20 successful ; ✓
+....................distProp1: 20 / 20 successful ; ✓
+....................distProp2: 20 / 20 successful ; ✓
+....................transposeProp: 20 / 20 successful ; ✓
+....................adjointProp: 20 / 20 successful ; ✓
+T=Rational{BigInt}
+....................AB: 20 / 20 successful ; ✓
+....................commProp: 20 / 20 successful ; ✓
+....................distProp1: 20 / 20 successful ; ✓
+....................distProp2: 20 / 20 successful ; ✓
+....................transposeProp: 20 / 20 successful ; ✓
+....................adjointProp: 20 / 20 successful ; ✓
+Test Summary:                  | Pass  Total
+OperatorCompositionComputation |   36     36
+    Testing ALFA tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:11:54.033
+CPU usage: 373.91s (359.95s user, 14.46s kernel)
+
+Network usage:
+- eth0: 51.993 MiB received, 1.179 MiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":31,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":17,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":31,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":31,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":17,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":31,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":196608,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":139264,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":196608,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":196608,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":139264,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":196608,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":526012416,"max_usage":2084626432,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":272293888,"inactive_file":135168,"inactive_anon":179097600,"total_pgfault":6055599,"total_cache":219320320,"total_rss_huge":0,"total_active_anon":312643584,"total_pgmajfault":0,"pgpgin":4006596,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":0,"pgpgout":3886571,"hierarchical_memsw_limit":0,"cache":219320320,"active_file":135168,"pgfault":6055599,"total_mapped_file":0,"total_pgpgout":3886571,"total_writeback":0,"rss":272293888,"unevictable":0,"total_inactive_anon":179097600,"total_pgpgin":4006596,"active_anon":312643584,"total_active_file":135168},"limit":540965302272},"name":"/ALFA-Bz6K2LvN","networks":{"eth0":{"rx_bytes":54518780,"rx_packets":24926,"tx_packets":15714,"tx_bytes":1235992,"tx_dropped":0,"rx_dropped":13,"tx_errors":0,"rx_errors":0}},"id":"d922f49e6260c5370e1642c5e3b91c79133bb7efa622a77a9915b8ad0012a3e0","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4450175014522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":359950000000,"usage_in_kernelmode":14460000000,"total_usage":373911560525,"percpu_usage":[0,0,0,0,5386663,373899900401,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,431380,387060,3499521,1955500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:11:54.036056763Z"}

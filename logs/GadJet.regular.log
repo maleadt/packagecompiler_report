@@ -1,0 +1,121 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:52:29.831
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:52:31.589
+#
+
+ Installing known registries into `~/.julia`
+####                                                                       6.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ProgressMeter ─ v1.4.1
+  Installed Roots ───────── v0.8.4
+  Installed GadJet ──────── v0.1.0
+  Installed GR ──────────── v0.44.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [1cc33cce] + GadJet v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [28b8d3ca] + GR v0.44.0
+  [1cc33cce] + GadJet v0.1.0
+  [92933f4c] + ProgressMeter v1.4.1
+  [f2b01f46] + Roots v0.8.4
+  [2a0f44e3] + Base64
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [4ec0a83e] + Unicode
+   Building GR → `~/.julia/packages/GR/oiZD3/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T15:52:38.929
+#
+
+    Testing GadJet
+Status `/tmp/jl_yNu86T/Project.toml`
+  [28b8d3ca] GR v0.44.0
+  [1cc33cce] GadJet v0.1.0
+  [92933f4c] ProgressMeter v1.4.1
+  [f2b01f46] Roots v0.8.4
+  [8bb1440f] DelimitedFiles
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_yNu86T/Manifest.toml`
+  [28b8d3ca] GR v0.44.0
+  [1cc33cce] GadJet v0.1.0
+  [92933f4c] ProgressMeter v1.4.1
+  [f2b01f46] Roots v0.8.4
+  [2a0f44e3] Base64
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+[ Info: Testing snapshot reading.
+Test Summary: | Pass  Total
+Read Snapshot |    4      4
+[ Info: Testing unit conversion.
+Test Summary:   | Pass  Total
+Unit Conversion |    2      2
+[ Info: Testing Riemann solver for hydro Sod-Shock.
+[ Info: Setting up parameters for pure hydro Sod-shock.
+Test Summary:     | Pass  Total
+Riemann Sod-Shock |    3      3
+[ Info: Testing Riemann solver for CR-Shock with acceleration.
+[ Info: Setting up parameters for Sod-shock with CR acceleration.
+[ Info: No seed CRs.
+Test Summary:    | Pass  Total
+Riemann CR-Shock |    4      4
+    Testing GadJet tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:52:54.005
+CPU usage: 22.98s (19.66s user, 3.31s kernel)
+
+Network usage:
+- eth0: 30.482 MiB received, 380.014 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":143360,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":143360,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":143360,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":143360,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":364101632,"max_usage":788783104,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":180826112,"inactive_file":135168,"inactive_anon":121245696,"total_pgfault":606969,"total_cache":153145344,"total_rss_huge":0,"total_active_anon":212484096,"total_pgmajfault":0,"pgpgin":412368,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":330847,"hierarchical_memsw_limit":0,"cache":153145344,"active_file":405504,"pgfault":606969,"total_mapped_file":0,"total_pgpgout":330847,"total_writeback":0,"rss":180826112,"unevictable":0,"total_inactive_anon":121245696,"total_pgpgin":412368,"active_anon":212484096,"total_active_file":405504},"limit":540965302272},"name":"/GadJet-KW5oiW84","networks":{"eth0":{"rx_bytes":31963195,"rx_packets":11378,"tx_packets":6558,"tx_bytes":389134,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"3624c985448af9710a3b8f4511f3673b0d8796078aa6c72bad95443c8fae0cdd","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3384397674522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":19660000000,"usage_in_kernelmode":3310000000,"total_usage":22979187091,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22979183821,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3270,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:52:54.007523126Z"}

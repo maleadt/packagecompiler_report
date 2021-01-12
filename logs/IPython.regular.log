@@ -1,0 +1,303 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T16:03:47.191
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:03:48.966
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed IPython ──────── v0.5.0
+  Installed Conda ────────── v1.5.0
+  Installed MacroTools ───── v0.5.6
+  Installed Compat ───────── v3.25.0
+  Installed JSON ─────────── v0.21.1
+  Installed PyCall ───────── v1.92.2
+  Installed VersionParsing ─ v1.2.0
+  Installed Parsers ──────── v1.0.15
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [18364772] + IPython v0.5.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [34da2185] + Compat v3.25.0
+  [8f4d0f93] + Conda v1.5.0
+  [18364772] + IPython v0.5.0
+  [682c06a0] + JSON v0.21.1
+  [1914dd2f] + MacroTools v0.5.6
+  [69de0a69] + Parsers v1.0.15
+  [438e738f] + PyCall v1.92.2
+  [81def892] + VersionParsing v1.2.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building Conda ─→ `~/.julia/packages/Conda/x5ml4/deps/build.log`
+   Building PyCall → `~/.julia/packages/PyCall/tqyST/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T16:04:25.732
+#
+
+    Testing IPython
+Status `/tmp/jl_LEwJgU/Project.toml`
+  [34da2185] Compat v3.25.0
+  [8f4d0f93] Conda v1.5.0
+  [18364772] IPython v0.5.0
+  [438e738f] PyCall v1.92.2
+  [b77e0a4c] InteractiveUtils
+  [3fa0cd96] REPL
+  [8dfed614] Test
+Status `/tmp/jl_LEwJgU/Manifest.toml`
+  [34da2185] Compat v3.25.0
+  [8f4d0f93] Conda v1.5.0
+  [18364772] IPython v0.5.0
+  [682c06a0] JSON v0.21.1
+  [1914dd2f] MacroTools v0.5.6
+  [69de0a69] Parsers v1.0.15
+  [438e738f] PyCall v1.92.2
+  [81def892] VersionParsing v1.2.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+   Building Conda ─→ `~/.julia/packages/Conda/x5ml4/deps/build.log`
+   Building PyCall → `~/.julia/packages/PyCall/tqyST/deps/build.log`
+WARNING: Compat.REPL is deprecated, use REPL instead.
+  likely near /home/pkgeval/.julia/packages/IPython/omuVH/src/julia_api.jl:4
+┌ Info: Installing pytest via Conda.jl
+│ Execute?:
+└     Conda.add(pytest)
+[ Info: Running `conda install -q -y pytest` in root environment
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/pkgeval/.julia/conda/3
+
+  added / updated specs:
+    - pytest
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    attrs-20.3.0               |     pyhd3eb1b0_0          43 KB
+    iniconfig-1.1.1            |             py_0           9 KB
+    more-itertools-8.6.0       |     pyhd3eb1b0_0          40 KB
+    packaging-20.8             |     pyhd3eb1b0_0          36 KB
+    pluggy-0.13.1              |           py38_0          33 KB
+    py-1.10.0                  |     pyhd3eb1b0_0          76 KB
+    pyparsing-2.4.7            |             py_0          65 KB
+    pytest-6.2.1               |   py38h06a4308_0         423 KB
+    toml-0.10.1                |             py_0          20 KB
+    ------------------------------------------------------------
+                                           Total:         745 KB
+
+The following NEW packages will be INSTALLED:
+
+  attrs              pkgs/main/noarch::attrs-20.3.0-pyhd3eb1b0_0
+  iniconfig          pkgs/main/noarch::iniconfig-1.1.1-py_0
+  more-itertools     pkgs/main/noarch::more-itertools-8.6.0-pyhd3eb1b0_0
+  packaging          pkgs/main/noarch::packaging-20.8-pyhd3eb1b0_0
+  pluggy             pkgs/main/linux-64::pluggy-0.13.1-py38_0
+  py                 pkgs/main/noarch::py-1.10.0-pyhd3eb1b0_0
+  pyparsing          pkgs/main/noarch::pyparsing-2.4.7-py_0
+  pytest             pkgs/main/linux-64::pytest-6.2.1-py38h06a4308_0
+  toml               pkgs/main/noarch::toml-0.10.1-py_0
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+┌ Info: Installing ipython via Conda.jl
+│ Execute?:
+└     Conda.add(ipython)
+[ Info: Running `conda install -q -y ipython` in root environment
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: ...working... failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/pkgeval/.julia/conda/3
+
+  added / updated specs:
+    - ipython
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    backcall-0.2.0             |             py_0          15 KB
+    decorator-4.4.2            |             py_0          14 KB
+    ipython-7.19.0             |   py38hb070fc8_0         982 KB
+    ipython_genutils-0.2.0     |     pyhd3eb1b0_1          27 KB
+    jedi-0.18.0                |   py38h06a4308_0         904 KB
+    parso-0.7.0                |             py_0          72 KB
+    pexpect-4.8.0              |     pyhd3eb1b0_3          53 KB
+    pickleshare-0.7.5          |  pyhd3eb1b0_1003          13 KB
+    prompt-toolkit-3.0.8       |             py_0         248 KB
+    ptyprocess-0.7.0           |     pyhd3eb1b0_2          17 KB
+    pygments-2.7.3             |     pyhd3eb1b0_0         676 KB
+    traitlets-5.0.5            |             py_0          83 KB
+    wcwidth-0.2.5              |             py_0          29 KB
+    ------------------------------------------------------------
+                                           Total:         3.1 MB
+
+The following NEW packages will be INSTALLED:
+
+  backcall           pkgs/main/noarch::backcall-0.2.0-py_0
+  decorator          pkgs/main/noarch::decorator-4.4.2-py_0
+  ipython            pkgs/main/linux-64::ipython-7.19.0-py38hb070fc8_0
+  ipython_genutils   pkgs/main/noarch::ipython_genutils-0.2.0-pyhd3eb1b0_1
+  jedi               pkgs/main/linux-64::jedi-0.18.0-py38h06a4308_0
+  parso              pkgs/main/noarch::parso-0.7.0-py_0
+  pexpect            pkgs/main/noarch::pexpect-4.8.0-pyhd3eb1b0_3
+  pickleshare        pkgs/main/noarch::pickleshare-0.7.5-pyhd3eb1b0_1003
+  prompt-toolkit     pkgs/main/noarch::prompt-toolkit-3.0.8-py_0
+  ptyprocess         pkgs/main/noarch::ptyprocess-0.7.0-pyhd3eb1b0_2
+  pygments           pkgs/main/noarch::pygments-2.7.3-pyhd3eb1b0_0
+  traitlets          pkgs/main/noarch::traitlets-5.0.5-py_0
+  wcwidth            pkgs/main/noarch::wcwidth-0.2.5-py_0
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+   Building Conda ─→ `~/.julia/packages/Conda/x5ml4/deps/build.log`
+   Building PyCall → `~/.julia/packages/PyCall/tqyST/deps/build.log`
+[ Info: PyCall/deps/build.log:
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+# All requested packages already installed.
+
+┌ Info: Using the Python distribution in the Conda package by default.
+└ To use a different Python version, set ENV["PYTHON"]="pythoncommand" and re-run Pkg.build("PyCall").
+[ Info: Running `conda install -q -y numpy` in root environment
+[ Info: PyCall is using /home/pkgeval/.julia/conda/3/bin/python (Python 3.8.5) at /home/pkgeval/.julia/conda/3/bin/python, libpython = /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0
+[ Info: /home/pkgeval/.julia/packages/PyCall/tqyST/deps/deps.jl has not changed
+[ Info: /home/pkgeval/.julia/prefs/PyCall has not changed
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+  JULIA_LOAD_PATH = @:/tmp/jl_LEwJgU
+
+PyCall.pyprogramname = "/home/pkgeval/.julia/conda/3/bin/python"
+PyCall.pyversion = v"3.8.5"
+PyCall.libpython = "/home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0"
+PyCall.conda = true
+pyversion("IPython") = "7.19.0"
+pyversion("julia") = nothing
+  0.356318 seconds (505.17 k allocations: 26.173 MiB)
+Test Summary: | Pass  Total
+Main          |    1      1
+Test Summary: | Pass  Total
+afterreplinit |    1      1
+Test Summary: | Pass  Total
+init_repl     |    1      1
+vvv DRY RUN vvv
+┌ Info: Installing ipython via Conda.jl
+│ Execute?:
+└     Conda.add(ipython)
+┌ Warning: Installing spam not supported.
+└ @ IPython ~/.julia/packages/IPython/omuVH/src/convenience.jl:147
+^^^ DRY RUN ^^^
+┌ Warning: Please enter "yes" or  "no".  Got: spam
+└ @ IPython ~/.julia/packages/IPython/omuVH/src/convenience.jl:76
+Test Summary: | Pass  Total
+Convenience   |   12     12
+============================= test session starts ==============================
+platform linux -- Python 3.8.5, pytest-6.2.1, py-1.10.0, pluggy-0.13.1
+rootdir: /home/pkgeval/.julia/packages/IPython/omuVH/src
+collected 16 items
+
+ipython_jl/tests/test_api.py ...                                         [ 18%]
+ipython_jl/tests/test_convenience.py ......                              [ 56%]
+ipython_jl/tests/test_ipyext.py .......                                  [100%]
+
+============================== 16 passed in 1.13s ==============================
+    Testing IPython tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T16:05:38.241
+CPU usage: 109.35s (99.72s user, 9.84s kernel)
+
+Network usage:
+- eth0: 255.746 MiB received, 724.377 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":24,"op":"Read","minor":0},{"major":259,"value":71,"op":"Write","minor":0},{"major":259,"value":60,"op":"Sync","minor":0},{"major":259,"value":35,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":95,"op":"Total","minor":0},{"major":253,"value":24,"op":"Read","minor":2},{"major":253,"value":71,"op":"Write","minor":2},{"major":253,"value":60,"op":"Sync","minor":2},{"major":253,"value":35,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":95,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":98304,"op":"Read","minor":0},{"major":259,"value":376832,"op":"Write","minor":0},{"major":259,"value":331776,"op":"Sync","minor":0},{"major":259,"value":143360,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":475136,"op":"Total","minor":0},{"major":253,"value":98304,"op":"Read","minor":2},{"major":253,"value":376832,"op":"Write","minor":2},{"major":253,"value":331776,"op":"Sync","minor":2},{"major":253,"value":143360,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":475136,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":1947082752,"max_usage":2538487808,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":180629504,"inactive_file":135168,"inactive_anon":1219620864,"total_pgfault":2476815,"total_cache":1704648704,"total_rss_huge":0,"total_active_anon":662863872,"total_pgmajfault":0,"pgpgin":2017521,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":946176,"total_unevictable":0,"total_dirty":946176,"writeback":270336,"pgpgout":1557245,"hierarchical_memsw_limit":0,"cache":1704648704,"active_file":2838528,"pgfault":2476815,"total_mapped_file":0,"total_pgpgout":1557245,"total_writeback":270336,"rss":180629504,"unevictable":0,"total_inactive_anon":1219620864,"total_pgpgin":2017521,"active_anon":662863872,"total_active_file":2838528},"limit":540965302272},"name":"/IPython-Xq0eiXTG","networks":{"eth0":{"rx_bytes":268168659,"rx_packets":28328,"tx_packets":12481,"tx_bytes":741762,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"c70c21fe7fbbc75b607e911f41ab0955bed214de692467974bdc3d424227eef3","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3482122804522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":99720000000,"usage_in_kernelmode":9840000000,"total_usage":109351323702,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1740522,0,109340566555,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12070,9004555,0,0]}},"read":"2021-01-11T16:05:38.243738333Z"}

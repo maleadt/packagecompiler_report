@@ -1,0 +1,147 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:49:44.971
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:49:46.798
+#
+
+ Installing known registries into `~/.julia`
+#############################################################             85.1%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Kronecker ────────── v0.4.2
+  Installed SortingAlgorithms ── v0.3.1
+  Installed Missings ─────────── v0.4.4
+  Installed DataAPI ──────────── v1.4.0
+  Installed FillArrays ───────── v0.10.2
+  Installed Requires ─────────── v1.1.2
+  Installed Compat ───────────── v3.25.0
+  Installed NamedDims ────────── v0.2.29
+  Installed OrderedCollections ─ v1.3.2
+  Installed DataStructures ───── v0.18.8
+  Installed StatsBase ────────── v0.33.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [2c470bb0] + Kronecker v0.4.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [34da2185] + Compat v3.25.0
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [1a297f60] + FillArrays v0.10.2
+  [2c470bb0] + Kronecker v0.4.2
+  [e1d29d7a] + Missings v0.4.4
+  [356022a1] + NamedDims v0.2.29
+  [bac558e1] + OrderedCollections v1.3.2
+  [ae029012] + Requires v1.1.2
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [2913bbd2] + StatsBase v0.33.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T18:49:53.141
+#
+
+    Testing Kronecker
+Status `/tmp/jl_3e20LS/Project.toml`
+  [1a297f60] FillArrays v0.10.2
+  [2c470bb0] Kronecker v0.4.2
+  [356022a1] NamedDims v0.2.29
+  [2913bbd2] StatsBase v0.33.2
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_3e20LS/Manifest.toml`
+  [34da2185] Compat v3.25.0
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [1a297f60] FillArrays v0.10.2
+  [2c470bb0] Kronecker v0.4.2
+  [e1d29d7a] Missings v0.4.4
+  [356022a1] NamedDims v0.2.29
+  [bac558e1] OrderedCollections v1.3.2
+  [ae029012] Requires v1.1.2
+  [a2af1166] SortingAlgorithms v0.3.1
+  [2913bbd2] StatsBase v0.33.2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Warning: Inplace scaling of a Kronecker product, consider rewriting as `copy(A) ⊗ (A ⊗ 3 - 1)`
+└ @ Kronecker ~/.julia/packages/Kronecker/Rap1Y/src/kroneckerpowers.jl:161
+┌ Warning: Inplace scaling of a Kronecker product, consider rewriting as `copy(A) ⊗ (A ⊗ 3 - 1)`
+└ @ Kronecker ~/.julia/packages/Kronecker/Rap1Y/src/kroneckerpowers.jl:161
+Test Summary: | Pass  Total
+Kronecker     | 1686   1686
+    Testing Kronecker tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:52:11.526
+CPU usage: 146.45s (139.80s user, 6.90s kernel)
+
+Network usage:
+- eth0: 3.103 MiB received, 81.392 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":4,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":23,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":4,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":23,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":368640,"op":"Read","minor":0},{"major":259,"value":135168,"op":"Write","minor":0},{"major":259,"value":475136,"op":"Sync","minor":0},{"major":259,"value":28672,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":503808,"op":"Total","minor":0},{"major":253,"value":368640,"op":"Read","minor":2},{"major":253,"value":135168,"op":"Write","minor":2},{"major":253,"value":475136,"op":"Sync","minor":2},{"major":253,"value":28672,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":503808,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":313319424,"max_usage":3420475392,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":197038080,"inactive_file":405504,"inactive_anon":79749120,"total_pgfault":2751705,"total_cache":86102016,"total_rss_huge":0,"total_active_anon":202887168,"total_pgmajfault":0,"pgpgin":2076822,"rss_huge":0,"mapped_file":0,"total_inactive_file":405504,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":2007708,"hierarchical_memsw_limit":0,"cache":86102016,"active_file":270336,"pgfault":2751705,"total_mapped_file":0,"total_pgpgout":2007708,"total_writeback":0,"rss":197038080,"unevictable":0,"total_inactive_anon":79749120,"total_pgpgin":2076822,"active_anon":202887168,"total_active_file":270336},"limit":540965302272},"name":"/Kronecker-Jbgekd0S","networks":{"eth0":{"rx_bytes":3253278,"rx_packets":767,"tx_packets":753,"tx_bytes":83345,"tx_dropped":0,"rx_dropped":5,"tx_errors":0,"rx_errors":0}},"id":"6499d2c31394157ec1355769b3b60b1c1971ca2f8552aa3a516a98b53d8fae52","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4759112654522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":139800000000,"usage_in_kernelmode":6900000000,"total_usage":146451950502,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,146451950502,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:52:11.528578048Z"}

@@ -1,0 +1,94 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:57:20.305
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:57:22.119
+#
+
+ Installing known registries into `~/.julia`
+#####                                                                      7.6%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed InterProcessCommunication ─ v0.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a7427343] + InterProcessCommunication v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [a7427343] + InterProcessCommunication v0.1.0
+  [de0858da] + Printf
+  [4ec0a83e] + Unicode
+   Building InterProcessCommunication → `~/.julia/packages/InterProcessCommunication/Sg3aH/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T15:57:26.715
+#
+
+    Testing InterProcessCommunication
+Status `/tmp/jl_mC8yaU/Project.toml`
+  [a7427343] InterProcessCommunication v0.1.0
+  [de0858da] Printf
+  [8dfed614] Test
+Status `/tmp/jl_mC8yaU/Manifest.toml`
+  [a7427343] InterProcessCommunication v0.1.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Test Summary:          | Pass  Total
+Basic Functions        |    5      5
+Test Summary:          | Pass  Total
+File Functions         |    7      7
+Test Summary:          | Pass  Total
+Time Functions         |    6      6
+Test Summary:          | Pass  Total
+Signals                |    9      9
+Test Summary:          | Pass  Total
+BSD System V Keys      |    1      1
+Test Summary:          | Pass  Total
+Named Semaphores       |    9      9
+Test Summary:          | Pass  Total
+Anonymous Semaphores   |    8      8
+Test Summary:          | Pass  Total
+Wrapped Arrays         |   18     18
+Test Summary:          | Pass  Total
+Shared Memory (BSD)    |   14     14
+Test Summary:          | Pass  Total
+Shared Memory (POSIX)  |   12     12
+Test Summary:          | Pass  Total
+Wrapped Shared Arrays  |   33     33
+    Testing InterProcessCommunication tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:57:34.817
+CPU usage: 14.32s (11.44s user, 2.93s kernel)
+
+Network usage:
+- eth0: 2.595 MiB received, 29.814 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":11,"op":"Read","minor":0},{"major":259,"value":30,"op":"Write","minor":0},{"major":259,"value":30,"op":"Sync","minor":0},{"major":259,"value":11,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":41,"op":"Total","minor":0},{"major":253,"value":11,"op":"Read","minor":2},{"major":253,"value":30,"op":"Write","minor":2},{"major":253,"value":30,"op":"Sync","minor":2},{"major":253,"value":11,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":41,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":45056,"op":"Read","minor":0},{"major":259,"value":253952,"op":"Write","minor":0},{"major":259,"value":151552,"op":"Sync","minor":0},{"major":259,"value":147456,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":299008,"op":"Total","minor":0},{"major":253,"value":45056,"op":"Read","minor":2},{"major":253,"value":253952,"op":"Write","minor":2},{"major":253,"value":151552,"op":"Sync","minor":2},{"major":253,"value":147456,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":299008,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":324792320,"max_usage":606474240,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":215363584,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":393855,"total_cache":80093184,"total_rss_huge":0,"total_active_anon":216539136,"total_pgmajfault":0,"pgpgin":230208,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":158093,"hierarchical_memsw_limit":0,"cache":80093184,"active_file":135168,"pgfault":393855,"total_mapped_file":0,"total_pgpgout":158093,"total_writeback":0,"rss":215363584,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":230208,"active_anon":216539136,"total_active_file":135168},"limit":540965302272},"name":"/InterProcessCommunication-kG0wVkAZ","networks":{"eth0":{"rx_bytes":2720801,"rx_packets":322,"tx_packets":320,"tx_bytes":30530,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"203b7de7dc0aecb23b60c63a74cddcc5c415a85b12dc68473390405d8b0cef6e","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3420312314522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":11440000000,"usage_in_kernelmode":2930000000,"total_usage":14324546198,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14324542318,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3880,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:57:34.820046514Z"}

@@ -1,0 +1,103 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:13:34.084
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:13:35.722
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ##O#- #                                                                       ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed HNSW ────── v0.1.0
+  Installed Reexport ── v1.0.0
+  Installed Distances ─ v0.8.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [540f64fa] + HNSW v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [b4f34e82] + Distances v0.8.2
+  [540f64fa] + HNSW v0.1.0
+  [189a3867] + Reexport v1.0.0
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+
+
+################################################################################
+# Testing: 2021-01-11T15:13:50.967
+#
+
+    Testing HNSW
+Status `/tmp/jl_Gk4mqS/Project.toml`
+  [b4f34e82] Distances v0.8.2
+  [540f64fa] HNSW v0.1.0
+  [b8a86587] NearestNeighbors v0.4.4
+  [189a3867] Reexport v1.0.0
+  [90137ffa] StaticArrays v0.12.5
+  [37e2e46d] LinearAlgebra
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_Gk4mqS/Manifest.toml`
+  [b4f34e82] Distances v0.8.2
+  [540f64fa] HNSW v0.1.0
+  [b8a86587] NearestNeighbors v0.4.4
+  [189a3867] Reexport v1.0.0
+  [90137ffa] StaticArrays v0.12.5
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Test Summary:      | Pass  Total
+Nearest & Furthest |   50     50
+HNSW.VisitedList(UInt8[0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00], 0x02)
+HNSW.VisitedList(UInt8[0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00], 0xf7)
+Test Summary:   | Pass  Total
+VisitedListPool |  540    540
+Test Summary: | Pass  Total
+LayeredGraph  |   19     19
+Test Summary:                  | Pass  Total
+Compare To NearestNeighbors.jl |    7      7
+
+Test took total time of:
+19.266 seconds or 0.321 minutes
+    Testing HNSW tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:14:12.708
+CPU usage: 33.13s (24.35s user, 8.82s kernel)
+
+Network usage:
+- eth0: 3.028 MiB received, 50.832 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":871,"op":"Read","minor":0},{"major":259,"value":13493,"op":"Write","minor":0},{"major":259,"value":14359,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":14364,"op":"Total","minor":0},{"major":253,"value":871,"op":"Read","minor":2},{"major":253,"value":13493,"op":"Write","minor":2},{"major":253,"value":14359,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":14364,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":3567616,"op":"Read","minor":0},{"major":259,"value":55296000,"op":"Write","minor":0},{"major":259,"value":58843136,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":58863616,"op":"Total","minor":0},{"major":253,"value":3567616,"op":"Read","minor":2},{"major":253,"value":55296000,"op":"Write","minor":2},{"major":253,"value":58843136,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":58863616,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":357138432,"max_usage":818565120,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":216432640,"inactive_file":540672,"inactive_anon":80154624,"total_pgfault":760320,"total_cache":108195840,"total_rss_huge":0,"total_active_anon":219377664,"total_pgmajfault":0,"pgpgin":502029,"rss_huge":0,"mapped_file":0,"total_inactive_file":540672,"dirty":675840,"total_unevictable":0,"total_dirty":675840,"writeback":0,"pgpgout":422757,"hierarchical_memsw_limit":0,"cache":108195840,"active_file":25141248,"pgfault":760320,"total_mapped_file":0,"total_pgpgout":422757,"total_writeback":0,"rss":216432640,"unevictable":0,"total_inactive_anon":80154624,"total_pgpgin":502029,"active_anon":219377664,"total_active_file":25141248},"limit":540965302272},"name":"/HNSW-skKiPiUv","networks":{"eth0":{"rx_bytes":3175609,"rx_packets":538,"tx_packets":500,"tx_bytes":52052,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"a5a2e61c0c932d87b2b9dc7b568ab129df9da2ed225ec7d8ef6c43911d0fbf67","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3087899474522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":24350000000,"usage_in_kernelmode":8820000000,"total_usage":33134259342,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33134051192,208150,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:14:12.711328578Z"}

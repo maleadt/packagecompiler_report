@@ -1,0 +1,122 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:56:37.89
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:56:39.666
+#
+
+ Installing known registries into `~/.julia`
+##############################                                            42.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CoordinateDescent ── v0.3.0
+  Installed OrderedCollections ─ v1.3.2
+  Installed DataStructures ───── v0.17.20
+  Installed ProximalBase ─────── v0.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [c00ed354] + CoordinateDescent v0.3.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [c00ed354] + CoordinateDescent v0.3.0
+  [864edb3b] + DataStructures v0.17.20
+  [bac558e1] + OrderedCollections v1.3.2
+  [0a755509] + ProximalBase v0.3.0
+  [2a0f44e3] + Base64
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+
+
+################################################################################
+# Testing: 2021-01-11T20:56:46.53
+#
+
+    Testing CoordinateDescent
+Status `/tmp/jl_f3mH5W/Project.toml`
+  [c00ed354] CoordinateDescent v0.3.0
+  [0a755509] ProximalBase v0.3.0
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_f3mH5W/Manifest.toml`
+  [c00ed354] CoordinateDescent v0.3.0
+  [864edb3b] DataStructures v0.17.20
+  [bac558e1] OrderedCollections v1.3.2
+  [0a755509] ProximalBase v0.3.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+* running atom_iterator.jl ...
+Test Summary: | Pass  Total
+Ordered       |    6      6
+Test Summary: | Pass  Total
+Random        |    6      6
+* running coordinate_descent.jl ...
+Test Summary: | Pass  Total
+Small ProxL1  |    1      1
+Test Summary: | Pass  Total
+ProxL1        |    3      3
+Test Summary: | Pass  Total
+AProxL1       |    3      3
+* running lasso.jl ...
+Test Summary: | Pass  Total
+lasso         |    4      4
+Test Summary: | Pass  Total
+cd lasso      |    3      3
+Test Summary: | Pass  Total
+cd sqrt-lasso |   12     12
+Test Summary: | Pass  Total
+scaled lasso  |    3      3
+Test Summary: | Pass  Total
+lasso path    |   10     10
+* running varying_coefficient_lasso.jl ...
+Test Summary: | Pass  Total
+kernels       |    2      2
+Test Summary: | Pass  Total
+expand_X      |    3      3
+Test Summary:            | Pass  Total
+expand_X multiplications |    9      9
+    Testing CoordinateDescent tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:57:09.252
+CPU usage: 30.63s (27.42s user, 3.29s kernel)
+
+Network usage:
+- eth0: 2.725 MiB received, 48.145 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":313868288,"max_usage":859254784,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":202031104,"inactive_file":135168,"inactive_anon":78397440,"total_pgfault":595221,"total_cache":81952768,"total_rss_huge":0,"total_active_anon":205725696,"total_pgmajfault":0,"pgpgin":374715,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":305372,"hierarchical_memsw_limit":0,"cache":81952768,"active_file":135168,"pgfault":595221,"total_mapped_file":0,"total_pgpgout":305372,"total_writeback":0,"rss":202031104,"unevictable":0,"total_inactive_anon":78397440,"total_pgpgin":374715,"active_anon":205725696,"total_active_file":135168},"limit":540965302272},"name":"/CoordinateDescent-QM2RgOe8","networks":{"eth0":{"rx_bytes":2857338,"rx_packets":451,"tx_packets":471,"tx_bytes":49300,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"7bcabbc31961f978f1539c8c2628442cadee63db8c378203fe03b2e8db7d51fa","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5717475014522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":27420000000,"usage_in_kernelmode":3290000000,"total_usage":30627569759,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,30627569759,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:57:09.25473059Z"}

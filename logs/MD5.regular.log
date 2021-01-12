@@ -1,0 +1,126 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:13:48.7
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:13:50.488
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MD5 ─ v0.2.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [6ac74813] + MD5 v0.2.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [6ac74813] + MD5 v0.2.1
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+
+
+################################################################################
+# Testing: 2021-01-11T19:13:54.608
+#
+
+    Testing MD5
+Status `/tmp/jl_9TsNUS/Project.toml`
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [6ac74813] MD5 v0.2.1
+  [49dea1ee] Nettle v0.5.0
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [8dfed614] Test
+Status `/tmp/jl_9TsNUS/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [781609d7] GMP_jll v6.1.2+6
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [6ac74813] MD5 v0.2.1
+  [49dea1ee] Nettle v0.5.0
+  [4c82536e] Nettle_jll v3.4.1+2
+  [69de0a69] Parsers v1.0.15
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+String Tests  |    7      7
+Test Summary:                            | Pass  Total
+Different forms of input data consistent |   10     10
+Test Summary: | Pass  Total
+misc          |    2      2
+Test Summary:                               | Pass  Total
+Against Nettle initialize, update!, digest! | 1280   1280
+Test Summary:             | Pass  Total
+Against Nettle end to end | 4004   4004
+Nettle.hexdigest("md5", data) = "e1f534ca5bec294db420951d5dd01d93"
+  18.279 μs (7 allocations: 560 bytes)
+"e1f534ca5bec294db420951d5dd01d93"
+bytes2hex(MD5.md5(data)) = "e1f534ca5bec294db420951d5dd01d93"
+  48.630 μs (4 allocations: 320 bytes)
+16-element reinterpret(UInt8, ::Array{UInt32,1}):
+ 0xe1
+ 0xf5
+ 0x34
+ 0xca
+ 0x5b
+ 0xec
+ 0x29
+ 0x4d
+ 0xb4
+ 0x20
+ 0x95
+ 0x1d
+ 0x5d
+ 0xd0
+ 0x1d
+ 0x93
+    Testing MD5 tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:14:26.944
+CPU usage: 38.34s (34.64s user, 3.80s kernel)
+
+Network usage:
+- eth0: 2.784 MiB received, 62.892 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":43,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":62,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":67,"op":"Total","minor":0},{"major":253,"value":43,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":62,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":67,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":942080,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":1048576,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1069056,"op":"Total","minor":0},{"major":253,"value":942080,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":1048576,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1069056,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":291684352,"max_usage":996835328,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":174284800,"inactive_file":675840,"inactive_anon":79749120,"total_pgfault":873708,"total_cache":87273472,"total_rss_huge":0,"total_active_anon":180989952,"total_pgmajfault":0,"pgpgin":573177,"rss_huge":0,"mapped_file":0,"total_inactive_file":675840,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":135168,"pgpgout":509316,"hierarchical_memsw_limit":0,"cache":87273472,"active_file":405504,"pgfault":873708,"total_mapped_file":0,"total_pgpgout":509316,"total_writeback":135168,"rss":174284800,"unevictable":0,"total_inactive_anon":79749120,"total_pgpgin":573177,"active_anon":180989952,"total_active_file":405504},"limit":540965302272},"name":"/MD5-uuBk4zYu","networks":{"eth0":{"rx_bytes":2919456,"rx_packets":486,"tx_packets":540,"tx_bytes":64401,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"049389bfad03332a94e259b8d8fec53cce22f2f27283195a6547492f6dfc7019","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4929856464522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":34640000000,"usage_in_kernelmode":3800000000,"total_usage":38342439234,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,38342434394,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4840,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:14:26.947026215Z"}

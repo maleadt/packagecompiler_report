@@ -1,0 +1,91 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:11:11.224
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:11:13.029
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Combinatorics ─ v1.0.2
+  Installed Equations ───── v1.0.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [3a41ca7c] + Equations v1.0.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [861a8166] + Combinatorics v1.0.2
+  [3a41ca7c] + Equations v1.0.0
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+
+
+################################################################################
+# Testing: 2021-01-11T18:11:18.146
+#
+
+    Testing Equations
+Status `/tmp/jl_hZRfuT/Project.toml`
+  [861a8166] Combinatorics v1.0.2
+  [3a41ca7c] Equations v1.0.0
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_hZRfuT/Manifest.toml`
+  [861a8166] Combinatorics v1.0.2
+  [3a41ca7c] Equations v1.0.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Running test # 1 2 3 ┌ Warning: Assignment to `l` in soft scope is ambiguous because a global variable by the same name exists: `l` will be treated as a new local. Disambiguate by using `local l` to suppress this warning or `global l` to assign to the existing global variable.
+└ @ ~/.julia/packages/Equations/IvrkN/test/equationsTests.jl:26
+┌ Warning: Assignment to `r` in soft scope is ambiguous because a global variable by the same name exists: `r` will be treated as a new local. Disambiguate by using `local r` to suppress this warning or `global r` to assign to the existing global variable.
+└ @ ~/.julia/packages/Equations/IvrkN/test/equationsTests.jl:26
+4 5 6 7 8 9 10 11 12 13 14 2964.444444444445 [m]
+A 3 meters long pole is traveling quickly toward a barn that is shorter than its length.
+Measured in the inertial system of the pole with l=length of pole and c=1,
+at time t:
+Base of pole: x´ = 0,	t´ = t
+Tip of pole: x´ = 1.3333333333333333 l,	t´ = t + (-0.6666666666666666) l
+Time at the tip is earlier than at the base, hence when the tip touches the barn wall the base has had time to enter.
+The pole is rotated about the time axis of the barn. When one object is rotated relative to another their projections become dwarfed, like when drawing a line at right angle from the minute pointer of a clock to its hour pointer, the projection becomes progressively smaller until it disappears at ninety degrees which in this analogy is light speed. Photons can therefore be complete universes that are rotated at right angles with respect to this universe.
+15 
+    Testing Equations tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:12:02.937
+CPU usage: 51.64s (48.85s user, 2.90s kernel)
+
+Network usage:
+- eth0: 3.036 MiB received, 34.592 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":332591104,"max_usage":741924864,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":221949952,"inactive_file":135168,"inactive_anon":79073280,"total_pgfault":671286,"total_cache":80830464,"total_rss_huge":0,"total_active_anon":223703040,"total_pgmajfault":0,"pgpgin":314589,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":240671,"hierarchical_memsw_limit":0,"cache":80830464,"active_file":135168,"pgfault":671286,"total_mapped_file":0,"total_pgpgout":240671,"total_writeback":0,"rss":221949952,"unevictable":0,"total_inactive_anon":79073280,"total_pgpgin":314589,"active_anon":223703040,"total_active_file":135168},"limit":540965302272},"name":"/Equations-Heuwrlzr","networks":{"eth0":{"rx_bytes":3183398,"rx_packets":378,"tx_packets":358,"tx_bytes":35422,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"16db130f724916a52b92c38520450480b8a6c2b22a1e336515470d194eb58ff7","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4451313194522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":48850000000,"usage_in_kernelmode":2900000000,"total_usage":51642234105,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,51642231035,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3070,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:12:02.939858351Z"}

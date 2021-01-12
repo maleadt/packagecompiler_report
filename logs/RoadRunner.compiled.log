@@ -1,0 +1,135 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T18:14:20.247
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T18:14:21.954
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed IOCapture ─────────── v0.1.1
+  Installed JSON ──────────────── v0.21.1
+  Installed DocStringExtensions ─ v0.8.3
+  Installed Parsers ───────────── v1.0.15
+  Installed Documenter ────────── v0.25.5
+  Installed PackageCompiler ───── v1.2.5
+  Installed RoadRunner ────────── v0.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [e916ade1] + RoadRunner v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [ffbed154] + DocStringExtensions v0.8.3
+  [e30172f5] + Documenter v0.25.5
+  [b5f81e59] + IOCapture v0.1.1
+  [682c06a0] + JSON v0.21.1
+  [9b87118b] + PackageCompiler v1.2.5
+  [69de0a69] + Parsers v1.0.15
+  [e916ade1] + RoadRunner v0.1.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T18:14:28.253
+#
+
+┌ Warning: Replacing docs for `RoadRunner.checkModule :: Tuple{String}` in module `RoadRunner`
+└ @ Base.Docs docs/Docs.jl:227
+┌ Warning: Replacing docs for `RoadRunner.getLastError :: Tuple{}` in module `RoadRunner`
+└ @ Base.Docs docs/Docs.jl:227
+┌ Warning: Replacing docs for `RoadRunner.getCurrentSteadyStateSolverNthParameterType :: Tuple{Ptr{Nothing},Int64}` in module `RoadRunner`
+└ @ Base.Docs docs/Docs.jl:227
+┌ Warning: Replacing docs for `RoadRunner.isModelLoaded :: Tuple{Ptr{Nothing}}` in module `RoadRunner`
+└ @ Base.Docs docs/Docs.jl:227
+┌ Warning: The current version of RoadRunner.jl only supports the platform of Windows x64.
+└ @ RoadRunner ~/.julia/packages/RoadRunner/26HKU/src/RoadRunner.jl:25
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+ERROR: LoadError: Declaring __precompile__(false) is not allowed in files that are being precompiled.
+Stacktrace:
+ [1] __precompile__(::Bool) at ./loading.jl:855
+ [2] top-level scope at /home/pkgeval/.julia/packages/RoadRunner/26HKU/src/RoadRunner.jl:2
+ [3] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [4] include at ./Base.jl:368 [inlined]
+ [5] _require(::Base.PkgId) at ./loading.jl:1059
+ [6] require(::Base.PkgId) at ./loading.jl:928
+ [7] require(::Module, ::Symbol) at ./loading.jl:923
+in expression starting at /home/pkgeval/.julia/packages/RoadRunner/26HKU/src/RoadRunner.jl:2
+ERROR: failed process: Process(`/opt/julia/bin/julia --color=yes --startup-file=no --cpu-target=native --sysimage=/opt/julia/lib/julia/sys.so --project=/home/pkgeval/.julia/environments/v1.5 --output-o=/tmp/jl_JQFx6z.o -e 'Base.reinit_stdio()
+@eval Sys BINDIR = ccall(:jl_get_julia_bindir, Any, ())::String
+@eval Sys STDLIB = "/opt/julia/share/julia/stdlib/v1.5"
+Base.init_load_path()
+if isdefined(Base, :init_active_project)
+    Base.init_active_project()
+end
+Base.init_depot_path()
+import RoadRunner
+# This @eval prevents symbols from being put into Main
+@eval Module() begin
+    PrecompileStagingArea = Module()
+    for (_pkgid, _mod) in Base.loaded_modules
+        if !(_pkgid.name in ("Main", "Core", "Base"))
+            eval(PrecompileStagingArea, :(const $(Symbol(_mod)) = $_mod))
+        end
+    end
+    precompile_files = String[
+        "/tmp/jl_xws01z"
+    ]
+    for file in precompile_files, statement in eachline(file)
+        # println(statement)
+        # The compiler has problem caching signatures with \`Vararg{?, N}\`. Replacing
+        # N with a large number seems to work around it.
+        statement = replace(statement, r"Vararg{(.*?), N} where N" => s"Vararg{\1, 100}")
+        try
+            Base.include_string(PrecompileStagingArea, statement)
+        catch
+            # See julia issue #28808
+            @debug "failed to execute $statement"
+        end
+    end
+end # module
+empty!(LOAD_PATH)
+empty!(DEPOT_PATH)
+'`, ProcessExited(1)) [1]
+
+Stacktrace:
+ [1] pipeline_error at ./process.jl:525 [inlined]
+ [2] run(::Cmd; wait::Bool) at ./process.jl:440
+ [3] run at ./process.jl:438 [inlined]
+ [4] create_sysimg_object_file(::String, ::Array{String,1}; project::String, base_sysimage::String, precompile_execution_file::Array{String,1}, precompile_statements_file::Array{String,1}, cpu_target::String, script::Nothing, isapp::Bool) at /home/pkgeval/.julia/packages/PackageCompiler/3BsME/src/PackageCompiler.jl:306
+ [5] create_sysimage(::Symbol; sysimage_path::String, project::String, precompile_execution_file::Array{String,1}, precompile_statements_file::Array{String,1}, incremental::Bool, filter_stdlibs::Bool, replace_default::Bool, cpu_target::String, script::Nothing, base_sysimage::Nothing, isapp::Bool) at /home/pkgeval/.julia/packages/PackageCompiler/3BsME/src/PackageCompiler.jl:442
+ [6] top-level scope at ./timing.jl:233
+

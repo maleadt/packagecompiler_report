@@ -1,0 +1,135 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:13:38.041
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:13:39.62
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed HnswAnn ─ v0.0.1
+  Installed Match ─── v1.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [dff2f42d] + HnswAnn v0.0.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [dff2f42d] + HnswAnn v0.0.1
+  [7eb4fadd] + Match v1.1.0
+  [56ddb016] + Logging
+  [de0858da] + Printf
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T15:13:58.329
+#
+
+    Testing HnswAnn
+Status `/tmp/jl_OuFPRQ/Project.toml`
+  [dff2f42d] HnswAnn v0.0.1
+  [7eb4fadd] Match v1.1.0
+  [56ddb016] Logging
+  [de0858da] Printf
+  [8dfed614] Test
+Status `/tmp/jl_OuFPRQ/Manifest.toml`
+  [dff2f42d] HnswAnn v0.0.1
+  [7eb4fadd] Match v1.1.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+
+ in testdistl1
+distf32: Error During Test at /home/pkgeval/.julia/packages/HnswAnn/i2hiZ/test/runtests.jl:18
+  Test threw exception
+  Expression: testdistl1()
+  could not load library "libhnsw_rs"
+  libhnsw_rs.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] top-level scope at ./none:1
+   [2] eval at ./boot.jl:331 [inlined]
+   [3] hnswInit(::DataType, ::Int64, ::Int64, ::String) at /home/pkgeval/.julia/packages/HnswAnn/i2hiZ/src/hnswrs.jl:129
+   [4] createHnswApi(::DataType, ::Int64, ::Int64, ::String) at /home/pkgeval/.julia/packages/HnswAnn/i2hiZ/src/HnswAnn.jl:68
+   [5] testdistl1() at /home/pkgeval/.julia/packages/HnswAnn/i2hiZ/test/distf32.jl:5
+   [6] top-level scope at /home/pkgeval/.julia/packages/HnswAnn/i2hiZ/test/runtests.jl:18
+   [7] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [8] top-level scope at /home/pkgeval/.julia/packages/HnswAnn/i2hiZ/test/runtests.jl:18
+  
+
+
+ in testdistptr
+┌ Info: recieving function ptr : 
+└   f = Ptr{Nothing} @0x00007fd70111de10
+distf32: Error During Test at /home/pkgeval/.julia/packages/HnswAnn/i2hiZ/test/runtests.jl:19
+  Test threw exception
+  Expression: testdistptr()
+  could not load library "libhnsw_rs"
+  libhnsw_rs.so: cannot open shared object file: No such file or directory
+  Stacktrace:
+   [1] top-level scope at ./none:1
+   [2] eval at ./boot.jl:331 [inlined]
+   [3] hnswInit(::DataType, ::Int64, ::Int64, ::Ptr{Nothing}) at /home/pkgeval/.julia/packages/HnswAnn/i2hiZ/src/hnswrs.jl:164
+   [4] createHnswApi(::DataType, ::Int64, ::Int64, ::Ptr{Nothing}) at /home/pkgeval/.julia/packages/HnswAnn/i2hiZ/src/HnswAnn.jl:81
+   [5] testdistptr() at /home/pkgeval/.julia/packages/HnswAnn/i2hiZ/test/distf32.jl:47
+   [6] top-level scope at /home/pkgeval/.julia/packages/HnswAnn/i2hiZ/test/runtests.jl:19
+   [7] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [8] top-level scope at /home/pkgeval/.julia/packages/HnswAnn/i2hiZ/test/runtests.jl:18
+  
+Test Summary: | Error  Total
+distf32       |     2      2
+ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 2 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/HnswAnn/i2hiZ/test/runtests.jl:17
+
+PkgEval failed: Package HnswAnn errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:14:07.113
+CPU usage: 23.03s (11.58s user, 11.69s kernel)
+
+Network usage:
+- eth0: 2.722 MiB received, 34.475 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":559,"op":"Read","minor":0},{"major":259,"value":486,"op":"Write","minor":0},{"major":259,"value":1040,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1045,"op":"Total","minor":0},{"major":253,"value":559,"op":"Read","minor":2},{"major":253,"value":486,"op":"Write","minor":2},{"major":253,"value":1040,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1045,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":2289664,"op":"Read","minor":0},{"major":259,"value":2019328,"op":"Write","minor":0},{"major":259,"value":4288512,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":4308992,"op":"Total","minor":0},{"major":253,"value":2289664,"op":"Read","minor":2},{"major":253,"value":2019328,"op":"Write","minor":2},{"major":253,"value":4288512,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":4308992,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":319873024,"max_usage":614666240,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":188436480,"inactive_file":405504,"inactive_anon":79343616,"total_pgfault":362043,"total_cache":99590144,"total_rss_huge":0,"total_active_anon":189100032,"total_pgmajfault":0,"pgpgin":226413,"rss_huge":0,"mapped_file":0,"total_inactive_file":405504,"dirty":1081344,"total_unevictable":0,"total_dirty":1081344,"writeback":0,"pgpgout":156035,"hierarchical_memsw_limit":0,"cache":99590144,"active_file":19599360,"pgfault":362043,"total_mapped_file":0,"total_pgpgout":156035,"total_writeback":0,"rss":188436480,"unevictable":0,"total_inactive_anon":79343616,"total_pgpgin":226413,"active_anon":189100032,"total_active_file":19599360},"limit":540965302272},"name":"/HnswAnn-tR78VSpa","networks":{"eth0":{"rx_bytes":2853810,"rx_packets":393,"tx_packets":356,"tx_bytes":35302,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"db9ae2295c6300561d79e896171f9610c04a65ae2581a3b19d0d8ef8b9910fb0","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3087240164522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":11580000000,"usage_in_kernelmode":11690000000,"total_usage":23025965686,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3748632,0,87240,23022129244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,570,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:14:07.54366508Z"}

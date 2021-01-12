@@ -1,0 +1,73 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T16:48:15.418
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:48:17.251
+#
+
+ Installing known registries into `~/.julia`
+###############################################################           87.6%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed UnicodeFun ─ v0.4.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [1cfade01] + UnicodeFun v0.4.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [1cfade01] + UnicodeFun v0.4.1
+  [2a0f44e3] + Base64
+  [b77e0a4c] + InteractiveUtils
+  [d6f4376e] + Markdown
+  [3fa0cd96] + REPL
+  [6462fe0b] + Sockets
+
+
+################################################################################
+# Testing: 2021-01-11T16:48:21.428
+#
+
+    Testing UnicodeFun
+Status `/tmp/jl_9avI0T/Project.toml`
+  [1cfade01] UnicodeFun v0.4.1
+  [3fa0cd96] REPL
+  [8dfed614] Test
+Status `/tmp/jl_9avI0T/Manifest.toml`
+  [1cfade01] UnicodeFun v0.4.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+    Testing UnicodeFun tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T16:48:25.096
+CPU usage: 9.76s (7.40s user, 2.38s kernel)
+
+Network usage:
+- eth0: 2.538 MiB received, 27.288 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":344113152,"max_usage":615219200,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":220811264,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":292215,"total_cache":92114944,"total_rss_huge":0,"total_active_anon":221540352,"total_pgmajfault":0,"pgpgin":201795,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":540672,"total_unevictable":0,"total_dirty":540672,"writeback":0,"pgpgout":125387,"hierarchical_memsw_limit":0,"cache":92114944,"active_file":12705792,"pgfault":292215,"total_mapped_file":0,"total_pgpgout":125387,"total_writeback":0,"rss":220811264,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":201795,"active_anon":221540352,"total_active_file":12705792},"limit":540965302272},"name":"/UnicodeFun-U6O4jOfA","networks":{"eth0":{"rx_bytes":2661110,"rx_packets":282,"tx_packets":281,"tx_bytes":27943,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"13487d9a67a5b4af6bffd0a375283fe314b1f5d0e37ae9f221db004dbf21007b","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3810472764522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":7400000000,"usage_in_kernelmode":2380000000,"total_usage":9759637363,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9759632113,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5250,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T16:48:26.075407059Z"}

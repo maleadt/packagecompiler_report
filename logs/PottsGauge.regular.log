@@ -1,0 +1,82 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:03:18.142
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:03:19.935
+#
+
+ Installing known registries into `~/.julia`
+###################################                                       49.1%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed PottsGauge ─ v0.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [3bb3bcb6] + PottsGauge v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [3bb3bcb6] + PottsGauge v0.1.0
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+
+
+################################################################################
+# Testing: 2021-01-11T20:03:23.721
+#
+
+    Testing PottsGauge
+Status `/tmp/jl_wB4OEQ/Project.toml`
+  [3bb3bcb6] PottsGauge v0.1.0
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_wB4OEQ/Manifest.toml`
+  [3bb3bcb6] PottsGauge v0.1.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Running tests:
+All TestGauge passed!
+Potentially stale exports: 
+
+    Testing PottsGauge tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:03:29.974
+CPU usage: 11.88s (9.14s user, 2.77s kernel)
+
+Network usage:
+- eth0: 2.565 MiB received, 28.180 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":322125824,"max_usage":570568704,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":213692416,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":343002,"total_cache":79417344,"total_rss_huge":0,"total_active_anon":214241280,"total_pgmajfault":0,"pgpgin":202488,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":130942,"hierarchical_memsw_limit":0,"cache":79417344,"active_file":135168,"pgfault":343002,"total_mapped_file":0,"total_pgpgout":130942,"total_writeback":0,"rss":213692416,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":202488,"active_anon":214241280,"total_active_file":135168},"limit":540965302272},"name":"/PottsGauge-m0vDZsqS","networks":{"eth0":{"rx_bytes":2689168,"rx_packets":297,"tx_packets":293,"tx_bytes":28856,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"9ac2e1f7bd3d9c493c124364cd6dc085dcada73046f39b5d2eee0d95cca263bf","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5306067594522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":9140000000,"usage_in_kernelmode":2770000000,"total_usage":11878373934,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11878373934,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:03:29.977567016Z"}

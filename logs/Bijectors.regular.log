@@ -1,0 +1,654 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T16:19:53.957
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:19:55.791
+#
+
+ Installing known registries into `~/.julia`
+###########################################################               83.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed ZygoteRules ────────────────── v0.2.1
+  Installed Reexport ───────────────────── v1.0.0
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed NonlinearSolve ─────────────── v0.3.4
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed FillArrays ─────────────────── v0.10.2
+  Installed QuadGK ─────────────────────── v2.4.1
+  Installed Requires ───────────────────── v1.1.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed Bijectors ──────────────────── v0.8.12
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Setfield ───────────────────── v0.7.0
+  Installed ConstructionBase ───────────── v1.0.0
+  Installed RecursiveArrayTools ────────── v2.10.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed Missings ───────────────────── v0.4.4
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed ArgCheck ───────────────────── v2.1.0
+  Installed MappedArrays ───────────────── v0.3.0
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed ArrayInterface ─────────────── v2.14.13
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed PDMats ─────────────────────── v0.10.1
+  Installed FiniteDiff ─────────────────── v2.7.2
+  Installed Distributions ──────────────── v0.24.10
+  Installed FixedPointNumbers ──────────── v0.8.4
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed Compat ─────────────────────── v3.25.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed NNlib ──────────────────────── v0.7.11
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [76274a88] + Bijectors v0.8.12
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [dce04be8] + ArgCheck v2.1.0
+  [4fba245c] + ArrayInterface v2.14.13
+  [56f22d72] + Artifacts v1.3.0
+  [76274a88] + Bijectors v0.8.12
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [187b0558] + ConstructionBase v1.0.0
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [31c24e10] + Distributions v0.24.10
+  [1a297f60] + FillArrays v0.10.2
+  [6a86dc24] + FiniteDiff v2.7.2
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [f6369f11] + ForwardDiff v0.10.14
+  [692b3bcd] + JLLWrappers v1.2.0
+  [1914dd2f] + MacroTools v0.5.6
+  [dbb5928d] + MappedArrays v0.3.0
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [872c559c] + NNlib v0.7.11
+  [77ba4419] + NaNMath v0.3.5
+  [8913a72c] + NonlinearSolve v0.3.4
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.10.1
+  [1fd47b50] + QuadGK v2.4.1
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [731186ca] + RecursiveArrayTools v2.10.0
+  [189a3867] + Reexport v1.0.0
+  [ae029012] + Requires v1.1.2
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [efcf1570] + Setfield v0.7.0
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [3a884ed6] + UnPack v1.0.2
+  [700de1a5] + ZygoteRules v0.2.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T16:20:03.424
+#
+
+    Testing Bijectors
+Status `/tmp/jl_GOozSS/Project.toml`
+  [76274a88] Bijectors v0.8.12
+  [861a8166] Combinatorics v1.0.2
+  [ced4e74d] DistributionsAD v0.6.15
+  [26cc04aa] FiniteDifferences v0.11.7
+  [f6369f11] ForwardDiff v0.10.14
+  [872c559c] NNlib v0.7.11
+  [37e2e3b7] ReverseDiff v1.5.0
+  [9f7883ad] Tracker v0.2.14
+  [e88e6eb3] Zygote v0.6.0
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_GOozSS/Manifest.toml`
+  [621f4979] AbstractFFTs v0.5.0
+  [79e6a3ab] Adapt v2.4.0
+  [dce04be8] ArgCheck v2.1.0
+  [4fba245c] ArrayInterface v2.14.13
+  [56f22d72] Artifacts v1.3.0
+  [76274a88] Bijectors v0.8.12
+  [082447d4] ChainRules v0.7.45
+  [d360d2e6] ChainRulesCore v0.9.24
+  [861a8166] Combinatorics v1.0.2
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [187b0558] ConstructionBase v1.0.0
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [31c24e10] Distributions v0.24.10
+  [ced4e74d] DistributionsAD v0.6.15
+  [1a297f60] FillArrays v0.10.2
+  [6a86dc24] FiniteDiff v2.7.2
+  [26cc04aa] FiniteDifferences v0.11.7
+  [53c48c17] FixedPointNumbers v0.8.4
+  [f6369f11] ForwardDiff v0.10.14
+  [069b7b12] FunctionWrappers v1.1.1
+  [7869d1d1] IRTools v0.4.2
+  [692b3bcd] JLLWrappers v1.2.0
+  [1914dd2f] MacroTools v0.5.6
+  [dbb5928d] MappedArrays v0.3.0
+  [e1d29d7a] Missings v0.4.4
+  [46d2c3a1] MuladdMacro v0.2.2
+  [872c559c] NNlib v0.7.11
+  [77ba4419] NaNMath v0.3.5
+  [8913a72c] NonlinearSolve v0.3.4
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [90014a1f] PDMats v0.10.1
+  [1fd47b50] QuadGK v2.4.1
+  [3cdcf5f2] RecipesBase v1.1.1
+  [731186ca] RecursiveArrayTools v2.10.0
+  [189a3867] Reexport v1.0.0
+  [ae029012] Requires v1.1.2
+  [37e2e3b7] ReverseDiff v1.5.0
+  [708f8203] Richardson v1.4.0
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [efcf1570] Setfield v0.7.0
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.2.1
+  [90137ffa] StaticArrays v1.0.1
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [9f7883ad] Tracker v0.2.14
+  [3a884ed6] UnPack v1.0.2
+  [e88e6eb3] Zygote v0.6.0
+  [700de1a5] ZygoteRules v0.2.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary:     | Pass  Total
+<: ADBijector{AD} |    1      1
+Test Summary: | Pass  Total
+Univariate    |  550    550
+Test Summary:     | Pass  Total
+Batch computation |  570    570
+Test Summary: | Pass  Total
+Truncated     |    9      9
+Test Summary: | Pass  Total
+Multivariate  |  105    105
+Test Summary:  | Pass  Total
+Matrix variate |   20     20
+Test Summary:           | Pass  Total
+Composition <: Bijector |   11     11
+Test Summary:       | Pass  Total
+Stacked <: Bijector |   42     42
+Test Summary:        | Pass  Total
+Example: ADVI single |    1      1
+Test Summary:                | Pass  Total
+Jacobians of SimplexBijector |    4      4
+Test Summary: | Pass  Total
+Equality      | 1482   1482
+Test Summary: | Pass  Total
+scalar        |  275    275
+Test Summary: | Pass  Total
+vector        |   82     82
+Test Summary: | Pass  Total
+matrix        |   22     22
+Test Summary:      | Pass  Total
+correlation matrix |   11     11
+Test Summary:       | Pass  Total
+Dirichlet Jacobians |   20     20
+Test Summary:       | Pass  Total
+InvertibleBatchNorm |    7      7
+Test Summary: | Pass  Total
+PlanarLayer   |   13     13
+Test Summary: | Pass  Total
+RadialLayer   |   13     13
+Test Summary: | Pass  Total
+Flows         |    5      5
+Test Summary: | Pass  Total
+Permute       |   20     20
+Test Summary: | Pass  Total
+NamedBijector |    1      1
+Test Summary:    | Pass  Total
+NamedComposition |    5      5
+Test Summary: | Pass  Total
+NamedCoupling |   10     10
+Test Summary:                | Pass  Total
+0-dim parameter, 0-dim input |   12     12
+Test Summary:                | Pass  Total
+0-dim parameter, 1-dim input |   10     10
+Test Summary: | Pass  Total
+Coupling      |   66     66
+
+Testing: Univariate distributions
+
+[ Info: Testing: Bernoulli
+[ Info: Testing: Bernoulli
+[ Info: Testing: Bernoulli
+[ Info: Testing: Bernoulli
+[ Info: Testing: BetaBinomial
+[ Info: Testing: BetaBinomial
+[ Info: Testing: Binomial
+[ Info: Testing: Binomial
+[ Info: Testing: DiscreteNonParametric
+[ Info: Testing: DiscreteNonParametric
+[ Info: Testing: Geometric
+[ Info: Testing: Geometric
+[ Info: Testing: NegativeBinomial
+[ Info: Testing: NegativeBinomial
+[ Info: Testing: Poisson
+[ Info: Testing: Poisson
+[ Info: Testing: Skellam
+[ Info: Testing: Skellam
+[ Info: Testing: PoissonBinomial
+[ Info: Testing: PoissonBinomial
+[ Info: Testing: TuringPoissonBinomial
+[ Info: Testing: TuringPoissonBinomial
+[ Info: Testing: Arcsine
+[ Info: Testing: Arcsine
+[ Info: Testing: Arcsine
+[ Info: Testing: Beta
+[ Info: Testing: Beta
+[ Info: Testing: Beta
+[ Info: Testing: BetaPrime
+[ Info: Testing: BetaPrime
+[ Info: Testing: BetaPrime
+[ Info: Testing: Biweight
+[ Info: Testing: Biweight
+[ Info: Testing: Biweight
+[ Info: Testing: Cauchy
+[ Info: Testing: Cauchy
+[ Info: Testing: Cauchy
+[ Info: Testing: Chernoff
+[ Info: Testing: Chi
+[ Info: Testing: Chisq
+[ Info: Testing: Cosine
+[ Info: Testing: Epanechnikov
+[ Info: Testing: Erlang
+[ Info: Testing: Exponential
+[ Info: Testing: FDist
+[ Info: Testing: Frechet
+[ Info: Testing: Frechet
+[ Info: Testing: Frechet
+[ Info: Testing: Gamma
+[ Info: Testing: Gamma
+[ Info: Testing: Gamma
+[ Info: Testing: GeneralizedExtremeValue
+[ Info: Testing: GeneralizedPareto
+[ Info: Testing: GeneralizedPareto
+[ Info: Testing: GeneralizedPareto
+[ Info: Testing: Gumbel
+[ Info: Testing: Gumbel
+[ Info: Testing: Gumbel
+[ Info: Testing: InverseGamma
+[ Info: Testing: InverseGamma
+[ Info: Testing: InverseGamma
+[ Info: Testing: InverseGaussian
+[ Info: Testing: InverseGaussian
+[ Info: Testing: InverseGaussian
+[ Info: Testing: Kolmogorov
+[ Info: Testing: Laplace
+[ Info: Testing: Laplace
+[ Info: Testing: Laplace
+[ Info: Testing: Levy
+[ Info: Testing: Levy
+[ Info: Testing: Levy
+[ Info: Testing: LocationScale
+[ Info: Testing: Logistic
+[ Info: Testing: Logistic
+[ Info: Testing: Logistic
+[ Info: Testing: LogitNormal
+[ Info: Testing: LogitNormal
+[ Info: Testing: LogitNormal
+[ Info: Testing: LogNormal
+[ Info: Testing: LogNormal
+[ Info: Testing: LogNormal
+[ Info: Testing: NoncentralBeta
+[ Info: Testing: NoncentralChisq
+[ Info: Testing: NoncentralF
+[ Info: Testing: NoncentralT
+[ Info: Testing: Normal
+[ Info: Testing: Normal
+[ Info: Testing: Normal
+[ Info: Testing: NormalCanon
+[ Info: Testing: NormalInverseGaussian
+[ Info: Testing: Pareto
+[ Info: Testing: Pareto
+[ Info: Testing: PGeneralizedGaussian
+[ Info: Testing: PGeneralizedGaussian
+[ Info: Testing: Rayleigh
+[ Info: Testing: Rayleigh
+[ Info: Testing: Semicircle
+[ Info: Testing: SymTriangularDist
+[ Info: Testing: SymTriangularDist
+[ Info: Testing: SymTriangularDist
+[ Info: Testing: TDist
+[ Info: Testing: TriangularDist
+[ Info: Testing: TriangularDist
+[ Info: Testing: Triweight
+[ Info: Testing: Truncated
+[ Info: Testing: Uniform
+[ Info: Testing: Uniform
+[ Info: Testing: TuringUniform
+[ Info: Testing: TuringUniform
+[ Info: Testing: VonMises
+[ Info: Testing: Weibull
+[ Info: Testing: Weibull
+[ Info: Testing: Weibull
+
+Testing: Multivariate distributions
+
+[ Info: Testing: Multinomial
+[ Info: Testing: Multinomial
+[ Info: Testing: MvNormal
+[ Info: Testing: MvNormal
+[ Info: Testing: MvNormal
+[ Info: Testing: MvNormal
+[ Info: Testing: MvNormal
+[ Info: Testing: MvNormal
+[ Info: Testing: MvNormal
+[ Info: Testing: MvNormal
+[ Info: Testing: MvNormal
+[ Info: Testing: TuringDenseMvNormal
+[ Info: Testing: TuringDiagMvNormal
+[ Info: Testing: TuringDiagMvNormal
+[ Info: Testing: TuringScalMvNormal
+[ Info: Testing: TuringScalMvNormal
+[ Info: Testing: TuringDenseMvNormal
+[ Info: Testing: TuringDiagMvNormal
+[ Info: Testing: TuringDiagMvNormal
+[ Info: Testing: TuringScalMvNormal
+[ Info: Testing: MvLogNormal
+[ Info: Testing: MvLogNormal
+[ Info: Testing: MvLogNormal
+[ Info: Testing: MvLogNormal
+[ Info: Testing: MvLogNormal
+[ Info: Testing: MvLogNormal
+[ Info: Testing: MvLogNormal
+[ Info: Testing: MvLogNormal
+[ Info: Testing: Dirichlet
+[ Info: Testing: MvNormal
+[ Info: Testing: MvNormal
+[ Info: Testing: MvNormal
+[ Info: Testing: MvNormal
+[ Info: Testing: MvNormal
+[ Info: Testing: MvNormal
+[ Info: Testing: MvNormal
+[ Info: Testing: MvNormal
+[ Info: Testing: MvNormal
+[ Info: Testing: MvLogNormal
+[ Info: Testing: MvLogNormal
+[ Info: Testing: MvLogNormal
+[ Info: Testing: MvLogNormal
+[ Info: Testing: MvLogNormal
+[ Info: Testing: MvLogNormal
+[ Info: Testing: MvLogNormal
+[ Info: Testing: MvLogNormal
+[ Info: Testing: Dirichlet
+[ Info: Testing: filldist (Bernoulli, (2,))
+[ Info: Testing: arraydist (Bernoulli, (2,))
+[ Info: Testing: filldist (Bernoulli, (2, 2))
+[ Info: Testing: arraydist (Bernoulli, (2, 2))
+[ Info: Testing: filldist (Bernoulli, (2,))
+[ Info: Testing: arraydist (Bernoulli, (2,))
+[ Info: Testing: filldist (Bernoulli, (2, 2))
+[ Info: Testing: arraydist (Bernoulli, (2, 2))
+[ Info: Testing: filldist (BetaBinomial, (2,))
+[ Info: Testing: arraydist (BetaBinomial, (2,))
+[ Info: Testing: filldist (BetaBinomial, (2, 2))
+[ Info: Testing: arraydist (BetaBinomial, (2, 2))
+[ Info: Testing: filldist (Binomial, (2,))
+[ Info: Testing: arraydist (Binomial, (2,))
+[ Info: Testing: filldist (Binomial, (2, 2))
+[ Info: Testing: arraydist (Binomial, (2, 2))
+[ Info: Testing: filldist (DiscreteNonParametric, (2,))
+[ Info: Testing: arraydist (DiscreteNonParametric, (2,))
+[ Info: Testing: filldist (DiscreteNonParametric, (2, 2))
+[ Info: Testing: arraydist (DiscreteNonParametric, (2, 2))
+[ Info: Testing: filldist (Geometric, (2,))
+[ Info: Testing: arraydist (Geometric, (2,))
+[ Info: Testing: filldist (Geometric, (2, 2))
+[ Info: Testing: arraydist (Geometric, (2, 2))
+[ Info: Testing: filldist (NegativeBinomial, (2,))
+[ Info: Testing: arraydist (NegativeBinomial, (2,))
+[ Info: Testing: filldist (NegativeBinomial, (2, 2))
+[ Info: Testing: arraydist (NegativeBinomial, (2, 2))
+[ Info: Testing: filldist (Poisson, (2,))
+[ Info: Testing: arraydist (Poisson, (2,))
+[ Info: Testing: filldist (Poisson, (2, 2))
+[ Info: Testing: arraydist (Poisson, (2, 2))
+[ Info: Testing: filldist (Skellam, (2,))
+[ Info: Testing: arraydist (Skellam, (2,))
+[ Info: Testing: filldist (Skellam, (2, 2))
+[ Info: Testing: arraydist (Skellam, (2, 2))
+[ Info: Testing: filldist (PoissonBinomial, (2,))
+[ Info: Testing: arraydist (PoissonBinomial, (2,))
+[ Info: Testing: filldist (PoissonBinomial, (2, 2))
+[ Info: Testing: arraydist (PoissonBinomial, (2, 2))
+[ Info: Testing: filldist (TuringPoissonBinomial, (2,))
+[ Info: Testing: arraydist (TuringPoissonBinomial, (2,))
+[ Info: Testing: filldist (TuringPoissonBinomial, (2, 2))
+[ Info: Testing: arraydist (TuringPoissonBinomial, (2, 2))
+[ Info: Testing: filldist (Arcsine, (2,))
+[ Info: Testing: arraydist (Arcsine, (2,))
+[ Info: Testing: filldist (Arcsine, (2,))
+[ Info: Testing: arraydist (Arcsine, (2,))
+[ Info: Testing: filldist (Arcsine, (2,))
+[ Info: Testing: arraydist (Arcsine, (2,))
+[ Info: Testing: filldist (Beta, (2,))
+[ Info: Testing: arraydist (Beta, (2,))
+[ Info: Testing: filldist (Beta, (2,))
+[ Info: Testing: arraydist (Beta, (2,))
+[ Info: Testing: filldist (Beta, (2,))
+[ Info: Testing: arraydist (Beta, (2,))
+[ Info: Testing: filldist (BetaPrime, (2,))
+[ Info: Testing: arraydist (BetaPrime, (2,))
+[ Info: Testing: filldist (BetaPrime, (2,))
+[ Info: Testing: arraydist (BetaPrime, (2,))
+[ Info: Testing: filldist (BetaPrime, (2,))
+[ Info: Testing: arraydist (BetaPrime, (2,))
+[ Info: Testing: filldist (Biweight, (2,))
+[ Info: Testing: arraydist (Biweight, (2,))
+[ Info: Testing: filldist (Biweight, (2,))
+[ Info: Testing: arraydist (Biweight, (2,))
+[ Info: Testing: filldist (Biweight, (2,))
+[ Info: Testing: arraydist (Biweight, (2,))
+[ Info: Testing: filldist (Cauchy, (2,))
+[ Info: Testing: arraydist (Cauchy, (2,))
+[ Info: Testing: filldist (Cauchy, (2,))
+[ Info: Testing: arraydist (Cauchy, (2,))
+[ Info: Testing: filldist (Cauchy, (2,))
+[ Info: Testing: arraydist (Cauchy, (2,))
+[ Info: Testing: filldist (Chernoff, (2,))
+[ Info: Testing: arraydist (Chernoff, (2,))
+[ Info: Testing: filldist (Chi, (2,))
+[ Info: Testing: arraydist (Chi, (2,))
+[ Info: Testing: filldist (Chisq, (2,))
+[ Info: Testing: arraydist (Chisq, (2,))
+[ Info: Testing: filldist (Cosine, (2,))
+[ Info: Testing: arraydist (Cosine, (2,))
+[ Info: Testing: filldist (Epanechnikov, (2,))
+[ Info: Testing: arraydist (Epanechnikov, (2,))
+[ Info: Testing: filldist (Erlang, (2,))
+[ Info: Testing: arraydist (Erlang, (2,))
+[ Info: Testing: filldist (Exponential, (2,))
+[ Info: Testing: arraydist (Exponential, (2,))
+[ Info: Testing: filldist (FDist, (2,))
+[ Info: Testing: arraydist (FDist, (2,))
+[ Info: Testing: filldist (Frechet, (2,))
+[ Info: Testing: arraydist (Frechet, (2,))
+[ Info: Testing: filldist (Frechet, (2,))
+[ Info: Testing: arraydist (Frechet, (2,))
+[ Info: Testing: filldist (Frechet, (2,))
+[ Info: Testing: arraydist (Frechet, (2,))
+[ Info: Testing: filldist (Gamma, (2,))
+[ Info: Testing: arraydist (Gamma, (2,))
+[ Info: Testing: filldist (Gamma, (2,))
+[ Info: Testing: arraydist (Gamma, (2,))
+[ Info: Testing: filldist (Gamma, (2,))
+[ Info: Testing: arraydist (Gamma, (2,))
+[ Info: Testing: filldist (GeneralizedExtremeValue, (2,))
+[ Info: Testing: arraydist (GeneralizedExtremeValue, (2,))
+[ Info: Testing: filldist (GeneralizedPareto, (2,))
+[ Info: Testing: arraydist (GeneralizedPareto, (2,))
+[ Info: Testing: filldist (GeneralizedPareto, (2,))
+[ Info: Testing: arraydist (GeneralizedPareto, (2,))
+[ Info: Testing: filldist (GeneralizedPareto, (2,))
+[ Info: Testing: arraydist (GeneralizedPareto, (2,))
+[ Info: Testing: filldist (Gumbel, (2,))
+[ Info: Testing: arraydist (Gumbel, (2,))
+[ Info: Testing: filldist (Gumbel, (2,))
+[ Info: Testing: arraydist (Gumbel, (2,))
+[ Info: Testing: filldist (Gumbel, (2,))
+[ Info: Testing: arraydist (Gumbel, (2,))
+[ Info: Testing: filldist (InverseGamma, (2,))
+[ Info: Testing: arraydist (InverseGamma, (2,))
+[ Info: Testing: filldist (InverseGamma, (2,))
+[ Info: Testing: arraydist (InverseGamma, (2,))
+[ Info: Testing: filldist (InverseGamma, (2,))
+[ Info: Testing: arraydist (InverseGamma, (2,))
+[ Info: Testing: filldist (InverseGaussian, (2,))
+[ Info: Testing: arraydist (InverseGaussian, (2,))
+[ Info: Testing: filldist (InverseGaussian, (2,))
+[ Info: Testing: arraydist (InverseGaussian, (2,))
+[ Info: Testing: filldist (InverseGaussian, (2,))
+[ Info: Testing: arraydist (InverseGaussian, (2,))
+[ Info: Testing: filldist (Kolmogorov, (2,))
+[ Info: Testing: arraydist (Kolmogorov, (2,))
+[ Info: Testing: filldist (Laplace, (2,))
+[ Info: Testing: arraydist (Laplace, (2,))
+[ Info: Testing: filldist (Laplace, (2,))
+[ Info: Testing: arraydist (Laplace, (2,))
+[ Info: Testing: filldist (Laplace, (2,))
+[ Info: Testing: arraydist (Laplace, (2,))
+[ Info: Testing: filldist (Levy, (2,))
+[ Info: Testing: arraydist (Levy, (2,))
+[ Info: Testing: filldist (Levy, (2,))
+[ Info: Testing: arraydist (Levy, (2,))
+[ Info: Testing: filldist (Levy, (2,))
+[ Info: Testing: arraydist (Levy, (2,))
+[ Info: Testing: filldist (LocationScale, (2,))
+[ Info: Testing: arraydist (LocationScale, (2,))
+[ Info: Testing: filldist (Logistic, (2,))
+[ Info: Testing: arraydist (Logistic, (2,))
+[ Info: Testing: filldist (Logistic, (2,))
+[ Info: Testing: arraydist (Logistic, (2,))
+[ Info: Testing: filldist (Logistic, (2,))
+[ Info: Testing: arraydist (Logistic, (2,))
+[ Info: Testing: filldist (LogitNormal, (2,))
+[ Info: Testing: arraydist (LogitNormal, (2,))
+[ Info: Testing: filldist (LogitNormal, (2,))
+[ Info: Testing: arraydist (LogitNormal, (2,))
+[ Info: Testing: filldist (LogitNormal, (2,))
+[ Info: Testing: arraydist (LogitNormal, (2,))
+[ Info: Testing: filldist (LogNormal, (2,))
+[ Info: Testing: arraydist (LogNormal, (2,))
+[ Info: Testing: filldist (LogNormal, (2,))
+[ Info: Testing: arraydist (LogNormal, (2,))
+[ Info: Testing: filldist (LogNormal, (2,))
+[ Info: Testing: arraydist (LogNormal, (2,))
+[ Info: Testing: filldist (NoncentralBeta, (2,))
+[ Info: Testing: arraydist (NoncentralBeta, (2,))
+[ Info: Testing: filldist (NoncentralChisq, (2,))
+[ Info: Testing: arraydist (NoncentralChisq, (2,))
+[ Info: Testing: filldist (NoncentralF, (2,))
+[ Info: Testing: arraydist (NoncentralF, (2,))
+[ Info: Testing: filldist (NoncentralT, (2,))
+[ Info: Testing: arraydist (NoncentralT, (2,))
+[ Info: Testing: filldist (Normal, (2,))
+[ Info: Testing: arraydist (Normal, (2,))
+[ Info: Testing: filldist (Normal, (2,))
+[ Info: Testing: arraydist (Normal, (2,))
+[ Info: Testing: filldist (Normal, (2,))
+[ Info: Testing: arraydist (Normal, (2,))
+[ Info: Testing: filldist (NormalCanon, (2,))
+[ Info: Testing: arraydist (NormalCanon, (2,))
+[ Info: Testing: filldist (NormalInverseGaussian, (2,))
+[ Info: Testing: arraydist (NormalInverseGaussian, (2,))
+[ Info: Testing: filldist (Pareto, (2,))
+[ Info: Testing: arraydist (Pareto, (2,))
+[ Info: Testing: filldist (Pareto, (2,))
+[ Info: Testing: arraydist (Pareto, (2,))
+[ Info: Testing: filldist (PGeneralizedGaussian, (2,))
+
+No statistics gathered.

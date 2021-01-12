@@ -1,0 +1,170 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T16:35:10.185
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:35:11.98
+#
+
+ Installing known registries into `~/.julia`
+#####                                                                      8.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ViZDoom ────────────── v0.1.0
+  Installed CxxWrap ────────────── v0.11.1
+  Installed MacroTools ─────────── v0.5.6
+  Installed JLLWrappers ────────── v1.2.0
+  Installed libcxxwrap_julia_jll ─ v0.8.5+1
+  Installed BinaryProvider ─────── v0.5.10
+  Installed Artifacts ──────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [13bb3beb] + ViZDoom v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [b99e7846] + BinaryProvider v0.5.10
+  [1f15a43c] + CxxWrap v0.11.1
+  [692b3bcd] + JLLWrappers v1.2.0
+  [1914dd2f] + MacroTools v0.5.6
+  [13bb3beb] + ViZDoom v0.1.0
+  [3eaa8342] + libcxxwrap_julia_jll v0.8.5+1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building ViZDoom → `~/.julia/packages/ViZDoom/IubYP/deps/build.log`
+┌ Error: Error building `ViZDoom`: 
+│ ┌ Warning: Could not extract the platform key of https://github.com/mwydmuch/ViZDoom/archive/1.1.6.tar.gz; continuing...
+│ └ @ BinaryProvider ~/.julia/packages/BinaryProvider/U2dKK/src/Prefix.jl:185
+│ [ Info: Downloading https://github.com/mwydmuch/ViZDoom/archive/1.1.6.tar.gz to /home/pkgeval/.julia/packages/ViZDoom/IubYP/deps/usr/downloads/1.1.6.tar.gz...
+│ ERROR: LoadError: UndefVarError: jlcxx_path not defined
+│ Stacktrace:
+│  [1] getproperty(::Module, ::Symbol) at ./Base.jl:26
+│  [2] top-level scope at /home/pkgeval/.julia/packages/ViZDoom/IubYP/deps/build.jl:17
+│  [3] include(::String) at ./client.jl:457
+│  [4] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/ViZDoom/IubYP/deps/build.jl:17
+│ [16:35:43] #=#=#                                                                         [16:35:43] [16:35:43] ######################################################################## 100.0%##O#- #                                                                       [16:35:43] ##=O#- #                                                                      [16:35:43] # #=O#- #                                                                     [16:35:43]  # #=O#-  #                                                                   [16:35:43]   # #=O=#   #                                                                 [16:35:44]    # -#O=#    #                                                               [16:35:44]     # -#O=-#   #                                                              [16:35:44]      # -#O=- #   #                                                            [16:35:44] 
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+
+
+################################################################################
+# Testing: 2021-01-11T16:35:46.375
+#
+
+    Testing ViZDoom
+Status `/tmp/jl_8owaJQ/Project.toml`
+  [b99e7846] BinaryProvider v0.5.10
+  [1f15a43c] CxxWrap v0.11.1
+  [13bb3beb] ViZDoom v0.1.0
+  [8f399da3] Libdl
+  [8dfed614] Test
+Status `/tmp/jl_8owaJQ/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [b99e7846] BinaryProvider v0.5.10
+  [1f15a43c] CxxWrap v0.11.1
+  [692b3bcd] JLLWrappers v1.2.0
+  [1914dd2f] MacroTools v0.5.6
+  [13bb3beb] ViZDoom v0.1.0
+  [3eaa8342] libcxxwrap_julia_jll v0.8.5+1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+ERROR: LoadError: could not load library "/home/pkgeval/.julia/packages/ViZDoom/IubYP/src/../deps/usr/ViZDoom-1.1.6/bin/libvizdoomjl.so"
+/home/pkgeval/.julia/packages/ViZDoom/IubYP/src/../deps/usr/ViZDoom-1.1.6/bin/libvizdoomjl.so: cannot open shared object file: No such file or directory
+Stacktrace:
+ [1] dlopen(::String, ::UInt32; throw_error::Bool) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Libdl/src/Libdl.jl:109
+ [2] dlopen at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Libdl/src/Libdl.jl:109 [inlined]
+ [3] readmodule(::String, ::Symbol, ::Module, ::Nothing) at /home/pkgeval/.julia/packages/CxxWrap/68Y7I/src/CxxWrap.jl:702
+ [4] wrapmodule(::String, ::Symbol, ::Module, ::Nothing) at /home/pkgeval/.julia/packages/CxxWrap/68Y7I/src/CxxWrap.jl:707
+ [5] top-level scope at /home/pkgeval/.julia/packages/ViZDoom/IubYP/src/ViZDoom.jl:4
+ [6] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [7] include(::Module, ::String) at ./Base.jl:368
+ [8] top-level scope at none:2
+ [9] eval at ./boot.jl:331 [inlined]
+ [10] eval(::Expr) at ./client.jl:467
+ [11] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/ViZDoom/IubYP/src/ViZDoom.jl:4
+ERROR: LoadError: Failed to precompile ViZDoom [13bb3beb-38fe-5ca7-9a46-050a216300b1] to /home/pkgeval/.julia/compiled/v1.5/ViZDoom/MvPVa_T02rZ.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1305
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ [6] include(::String) at ./client.jl:457
+ [7] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/ViZDoom/IubYP/test/runtests.jl:1
+
+PkgEval failed: Package ViZDoom errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T16:35:53.931
+CPU usage: 42.89s (39.20s user, 3.77s kernel)
+
+Network usage:
+- eth0: 7.682 MiB received, 166.505 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":143360,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":143360,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":143360,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":143360,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":360599552,"max_usage":895422464,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":213340160,"inactive_file":135168,"inactive_anon":97996800,"total_pgfault":1023825,"total_cache":114421760,"total_rss_huge":0,"total_active_anon":229515264,"total_pgmajfault":0,"pgpgin":605418,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":525373,"hierarchical_memsw_limit":0,"cache":114421760,"active_file":270336,"pgfault":1023825,"total_mapped_file":0,"total_pgpgout":525373,"total_writeback":0,"rss":213340160,"unevictable":0,"total_inactive_anon":97996800,"total_pgpgin":605418,"active_anon":229515264,"total_active_file":270336},"limit":540965302272},"name":"/ViZDoom-6TJjYLMZ","networks":{"eth0":{"rx_bytes":8055388,"rx_packets":4025,"tx_packets":2197,"tx_bytes":170501,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"b93e8d2e711acc8950ad0af6e9f2667f6930b5a6e4fd4422c7f254b4d1695098","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3714362344522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":39200000000,"usage_in_kernelmode":3770000000,"total_usage":42889293806,"percpu_usage":[0,0,0,0,42889273786,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15470,0,0,4550,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T16:35:53.970886677Z"}

@@ -1,0 +1,165 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:32:43.565
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:32:45.384
+#
+
+ Installing known registries into `~/.julia`
+####################                                                      29.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Calculus ───── v0.5.1
+  Installed FEMBase ────── v0.3.1
+  Installed FEMBasis ───── v0.2.0
+  Installed FEMQuad ────── v0.3.2
+  Installed TimerOutputs ─ v0.5.7
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [fbcbbc08] + FEMBase v0.3.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [49dc2e85] + Calculus v0.5.1
+  [fbcbbc08] + FEMBase v0.3.1
+  [353fb843] + FEMBasis v0.2.0
+  [be8e8821] + FEMQuad v0.3.2
+  [a759f4b9] + TimerOutputs v0.5.7
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T21:32:49.956
+#
+
+    Testing FEMBase
+Status `/tmp/jl_Mn9DgR/Project.toml`
+  [fbcbbc08] FEMBase v0.3.1
+  [353fb843] FEMBasis v0.2.0
+  [be8e8821] FEMQuad v0.3.2
+  [a759f4b9] TimerOutputs v0.5.7
+  [37e2e46d] LinearAlgebra
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_Mn9DgR/Manifest.toml`
+  [49dc2e85] Calculus v0.5.1
+  [fbcbbc08] FEMBase v0.3.1
+  [353fb843] FEMBasis v0.2.0
+  [be8e8821] FEMQuad v0.3.2
+  [a759f4b9] TimerOutputs v0.5.7
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+ERROR: LoadError: LoadError: Evaluation into the closed module `Calculus` breaks incremental compilation because the side effects will not be permanent. This is likely due to some other module mutating `Calculus` with `eval` during precompilation - don't do this.
+Stacktrace:
+ [1] eval at ./boot.jl:331 [inlined]
+ [2] simplify(::Expr) at /home/pkgeval/.julia/packages/Calculus/mbqhh/src/symbolic.jl:96
+ [3] calculate_interpolation_polynomials(::Expr, ::Array{Float64,2}) at /home/pkgeval/.julia/packages/FEMBasis/hrK6J/src/create_basis.jl:25
+ [4] create_basis(::Symbol, ::String, ::Tuple{Tuple{Float64},Tuple{Float64}}, ::Expr) at /home/pkgeval/.julia/packages/FEMBasis/hrK6J/src/create_basis.jl:48
+ [5] top-level scope at /home/pkgeval/.julia/packages/FEMBasis/hrK6J/src/lagrange_segments.jl:4
+ [6] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [7] include at ./Base.jl:368 [inlined]
+ [8] include(::String) at /home/pkgeval/.julia/packages/FEMBasis/hrK6J/src/FEMBasis.jl:4
+ [9] top-level scope at /home/pkgeval/.julia/packages/FEMBasis/hrK6J/src/FEMBasis.jl:16
+ [10] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [11] include(::Module, ::String) at ./Base.jl:368
+ [12] top-level scope at none:2
+ [13] eval at ./boot.jl:331 [inlined]
+ [14] eval(::Expr) at ./client.jl:467
+ [15] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/FEMBasis/hrK6J/src/lagrange_segments.jl:4
+in expression starting at /home/pkgeval/.julia/packages/FEMBasis/hrK6J/src/FEMBasis.jl:16
+ERROR: LoadError: Failed to precompile FEMBasis [353fb843-c566-51e6-ba49-78b3e3d5ebb5] to /home/pkgeval/.julia/compiled/v1.5/FEMBasis/x3cNT_fxbnA.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1305
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ [6] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [7] include(::Module, ::String) at ./Base.jl:368
+ [8] top-level scope at none:2
+ [9] eval at ./boot.jl:331 [inlined]
+ [10] eval(::Expr) at ./client.jl:467
+ [11] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/FEMBase/qGDOl/src/FEMBase.jl:19
+ERROR: LoadError: Failed to precompile FEMBase [fbcbbc08-f1bf-5204-9233-b69f5d396135] to /home/pkgeval/.julia/compiled/v1.5/FEMBase/6HUoq_fxbnA.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1305
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ [6] include(::String) at ./client.jl:457
+ [7] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/FEMBase/qGDOl/test/runtests.jl:4
+
+PkgEval failed: Package FEMBase errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:33:00.592
+CPU usage: 17.11s (14.31s user, 2.84s kernel)
+
+Network usage:
+- eth0: 2.724 MiB received, 46.653 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":308019200,"max_usage":862203904,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":197521408,"inactive_file":135168,"inactive_anon":79208448,"total_pgfault":478335,"total_cache":80576512,"total_rss_huge":0,"total_active_anon":198832128,"total_pgmajfault":0,"pgpgin":327690,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":259806,"hierarchical_memsw_limit":0,"cache":80576512,"active_file":135168,"pgfault":478335,"total_mapped_file":0,"total_pgpgout":259806,"total_writeback":0,"rss":197521408,"unevictable":0,"total_inactive_anon":79208448,"total_pgpgin":327690,"active_anon":198832128,"total_active_file":135168},"limit":540965302272},"name":"/FEMBase-JywOKlWC","networks":{"eth0":{"rx_bytes":2855864,"rx_packets":422,"tx_packets":435,"tx_bytes":47773,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"fcfe03b0c9b2b84610222b884db673824e511d8fa0bde2bb97081621beea9e7a","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5992242214522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":14310000000,"usage_in_kernelmode":2840000000,"total_usage":17110332354,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17109457122,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,875232,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:33:00.595386963Z"}

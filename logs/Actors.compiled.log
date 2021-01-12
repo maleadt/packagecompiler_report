@@ -1,0 +1,212 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T20:00:32.481
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T20:00:34.119
+#
+
+ Installing known registries into `~/.julia`
+#                                                                          2.5%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ActorInterfaces ─ v0.1.0
+  Installed Actors ────────── v0.2.2
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [18269d71] + Actors v0.2.2
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [7e194583] + ActorInterfaces v0.1.0
+  [18269d71] + Actors v0.2.2
+  [9b87118b] + PackageCompiler v1.2.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T20:00:39.356
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 147.911 MiB, compilation took 156 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T20:03:22.492
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/Actors-VA5BWHae.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:03:24.218
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ActorInterfaces ─ v0.1.0
+  Installed Actors ────────── v0.2.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [18269d71] + Actors v0.2.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [7e194583] + ActorInterfaces v0.1.0
+  [18269d71] + Actors v0.2.2
+  [8ba89e20] + Distributed
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+
+
+################################################################################
+# Testing: 2021-01-11T20:03:28.243
+#
+
+    Testing Actors
+Status `/tmp/jl_gyPoku/Project.toml`
+  [7e194583] ActorInterfaces v0.1.0
+  [18269d71] Actors v0.2.2
+  [e30172f5] Documenter v0.26.1
+  [1bc83da4] SafeTestsets v0.0.1
+  [8ba89e20] Distributed
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [8dfed614] Test
+Status `/tmp/jl_gyPoku/Manifest.toml`
+  [7e194583] ActorInterfaces v0.1.0
+  [18269d71] Actors v0.2.2
+  [ffbed154] DocStringExtensions v0.8.3
+  [e30172f5] Documenter v0.26.1
+  [b5f81e59] IOCapture v0.1.1
+  [682c06a0] JSON v0.21.1
+  [69de0a69] Parsers v1.0.15
+  [1bc83da4] SafeTestsets v0.0.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+	From worker startup:	ERROR: AssertionError: isempty(PGRP.refs)
+	From worker startup:	Stacktrace:
+	From worker startup:	 [1] init_worker(::String, ::Distributed.DefaultClusterManager) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/cluster.jl:376
+	From worker startup:	 [2] init_worker at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/cluster.jl:367 [inlined]
+	From worker startup:	 [3] start_worker(::Base.PipeEndpoint, ::String; close_stdin::Bool, stderr_to_stdout::Bool) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/cluster.jl:236
+	From worker startup:	 [4] start_worker(::Base.PipeEndpoint, ::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/cluster.jl:231
+	From worker startup:	 [5] start_worker(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/cluster.jl:229
+	From worker startup:	 [6] start_worker at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/cluster.jl:229 [inlined] (repeats 2 times)
+	From worker startup:	 [7] process_opts(::Base.JLOptions) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/cluster.jl:1310
+	From worker startup:	 [8] #invokelatest#1 at ./essentials.jl:710 [inlined]
+	From worker startup:	 [9] invokelatest at ./essentials.jl:709 [inlined]
+	From worker startup:	 [10] exec_options(::Base.JLOptions) at ./client.jl:263
+	From worker startup:	 [11] _start() at ./client.jl:506
+ERROR: LoadError: TaskFailedException:
+Unable to read host:port string from worker. Launch command exited with error?
+Stacktrace:
+ [1] worker_from_id(::Distributed.ProcessGroup, ::Int64) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/cluster.jl:1074
+ [2] worker_from_id at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/cluster.jl:1071 [inlined]
+ [3] #remote_do#154 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/remotecall.jl:486 [inlined]
+ [4] remote_do at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/remotecall.jl:486 [inlined]
+ [5] kill at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/managers.jl:598 [inlined]
+ [6] create_worker(::Distributed.LocalManager, ::WorkerConfig) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/cluster.jl:585
+ [7] setup_launched_worker(::Distributed.LocalManager, ::WorkerConfig, ::Array{Int64,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/cluster.jl:526
+ [8] (::Distributed.var"#41#44"{Distributed.LocalManager,Array{Int64,1},WorkerConfig})() at ./task.jl:356
+Stacktrace:
+ [1] sync_end(::Channel{Any}) at ./task.jl:314
+ [2] macro expansion at ./task.jl:333 [inlined]
+ [3] addprocs_locked(::Distributed.LocalManager; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/cluster.jl:480
+ [4] addprocs_locked at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/cluster.jl:451 [inlined]
+ [5] addprocs(::Distributed.LocalManager; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/cluster.jl:444
+ [6] addprocs at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/cluster.jl:438 [inlined]
+ [7] #addprocs#245 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/managers.jl:366 [inlined]
+ [8] addprocs(::Int64) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Distributed/src/managers.jl:365
+ [9] top-level scope at /home/user/.julia/packages/Actors/ZoM7J/test/runtests.jl:16
+ [10] include(::String) at ./client.jl:457
+ [11] top-level scope at none:6
+in expression starting at /home/user/.julia/packages/Actors/ZoM7J/test/runtests.jl:16
+
+PkgEval failed: Package Actors errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:03:37.759
+CPU usage: 15.67s (12.82s user, 2.88s kernel)
+
+Network usage:
+- eth0: 3.223 MiB received, 66.319 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":19,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":19,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":77824,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":77824,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":330805248,"max_usage":617967616,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":217210880,"inactive_file":135168,"inactive_anon":82452480,"total_pgfault":363198,"total_cache":83259392,"total_rss_huge":0,"total_active_anon":217890816,"total_pgmajfault":0,"pgpgin":255948,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":182579,"hierarchical_memsw_limit":0,"cache":83259392,"active_file":135168,"pgfault":363198,"total_mapped_file":0,"total_pgpgout":182579,"total_writeback":0,"rss":217210880,"unevictable":0,"total_inactive_anon":82452480,"total_pgpgin":255948,"active_anon":217890816,"total_active_file":135168},"limit":540965302272},"name":"/Actors-0zUju0DD","networks":{"eth0":{"rx_bytes":3379897,"rx_packets":611,"tx_packets":630,"tx_bytes":67911,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"0090f4ba51cca2ad0edae2b93226cc664edd33d1ec9e70608dad7c5f0bec9e88","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5307060704522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":12820000000,"usage_in_kernelmode":2880000000,"total_usage":15666844241,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15636762257,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4570,0,30077414,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:03:37.76184175Z"}

@@ -1,0 +1,133 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T16:16:45.715
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T16:16:47.455
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed VersionParsing ── v1.2.0
+  Installed Conda ─────────── v1.5.0
+  Installed Parsers ───────── v1.0.15
+  Installed MacroTools ────── v0.5.6
+  Installed PyCall ────────── v1.92.2
+  Installed GPMLj ─────────── v0.0.1
+  Installed JSON ──────────── v0.21.1
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [261d18cc] + GPMLj v0.0.1
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [8f4d0f93] + Conda v1.5.0
+  [261d18cc] + GPMLj v0.0.1
+  [682c06a0] + JSON v0.21.1
+  [1914dd2f] + MacroTools v0.5.6
+  [9b87118b] + PackageCompiler v1.2.5
+  [69de0a69] + Parsers v1.0.15
+  [438e738f] + PyCall v1.92.2
+  [81def892] + VersionParsing v1.2.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building Conda ─→ `~/.julia/packages/Conda/x5ml4/deps/build.log`
+   Building PyCall → `~/.julia/packages/PyCall/tqyST/deps/build.log`
+   Building GPMLj ─→ `~/.julia/packages/GPMLj/gnfTM/deps/build.log`
+┌ Error: Error building `GPMLj`: 
+│ Requirement already satisfied: pip in /home/pkgeval/.julia/conda/3/lib/python3.8/site-packages (20.3.3)
+│ Requirement already satisfied: setuptools in /home/pkgeval/.julia/conda/3/lib/python3.8/site-packages (51.1.2.post20210110)
+│ ERROR: Could not find a version that satisfies the requirement tensorflow==1.15.0
+│ ERROR: No matching distribution found for tensorflow==1.15.0
+│ ERROR: LoadError: failed process: Process(`/home/pkgeval/.julia/conda/3/bin/python -m pip install gpflow==1.5.1 tensorflow==1.15.0`, ProcessExited(1)) [1]
+│ 
+│ Stacktrace:
+│  [1] pipeline_error at ./process.jl:525 [inlined]
+│  [2] run(::Cmd; wait::Bool) at ./process.jl:440
+│  [3] run(::Cmd) at ./process.jl:438
+│  [4] top-level scope at /home/pkgeval/.julia/packages/GPMLj/gnfTM/deps/build.jl:28
+│  [5] include(::String) at ./client.jl:457
+│  [6] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/GPMLj/gnfTM/deps/build.jl:28
+│ Running build.jl for the GPMLj package.
+│ Installing required python packages using pip
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+
+
+################################################################################
+# Compiling: 2021-01-11T16:17:46.526
+#
+
+ERROR: InitError: PyError (PyImport_ImportModule
+
+The Python package gpflow could not be imported by pyimport. Usually this means
+that you did not install gpflow in the Python version being used by PyCall.
+
+PyCall is currently configured to use the Julia-specific Python distribution
+installed by the Conda.jl package.  To install the gpflow module, you can
+use `pyimport_conda("gpflow", PKG)`, where PKG is the Anaconda
+package the contains the module gpflow, or alternatively you can use the
+Conda package directly (via `using Conda` followed by `Conda.add` etcetera).
+
+Alternatively, if you want to use a different Python distribution on your
+system, such as a system-wide Python (as opposed to the Julia-specific Python),
+you can re-configure PyCall with that Python.   As explained in the PyCall
+documentation, set ENV["PYTHON"] to the path/name of the python executable
+you want to use, run Pkg.build("PyCall"), and re-launch Julia.
+
+) <class 'ModuleNotFoundError'>
+ModuleNotFoundError("No module named 'gpflow'")
+
+Stacktrace:
+ [1] pyimport(::String) at /home/pkgeval/.julia/packages/PyCall/tqyST/src/PyCall.jl:547
+ [2] __init__() at /home/pkgeval/.julia/packages/GPMLj/gnfTM/src/gpflow.jl:32
+ [3] _include_from_serialized(::String, ::Array{Any,1}) at ./loading.jl:697
+ [4] _require_from_serialized(::String) at ./loading.jl:749
+ [5] _require(::Base.PkgId) at ./loading.jl:1040
+ [6] require(::Base.PkgId) at ./loading.jl:928
+ [7] require(::Module, ::Symbol) at ./loading.jl:923
+during initialization of module gpflow
+ERROR: failed process: Process(`/opt/julia/bin/julia --color=yes --startup-file=no --sysimage=/opt/julia/lib/julia/sys.so --project=/home/pkgeval/.julia/environments/v1.5 -e 'import GPMLj'`, ProcessExited(1)) [1]
+
+Stacktrace:
+ [1] pipeline_error at ./process.jl:525 [inlined]
+ [2] read(::Cmd) at ./process.jl:412
+ [3] read(::Cmd, ::Type{String}) at ./process.jl:421
+ [4] do_ensurecompiled(::String, ::Array{String,1}, ::String) at /home/pkgeval/.julia/packages/PackageCompiler/3BsME/src/PackageCompiler.jl:195
+ [5] create_sysimg_object_file(::String, ::Array{String,1}; project::String, base_sysimage::String, precompile_execution_file::Array{String,1}, precompile_statements_file::Array{String,1}, cpu_target::String, script::Nothing, isapp::Bool) at /home/pkgeval/.julia/packages/PackageCompiler/3BsME/src/PackageCompiler.jl:260
+ [6] create_sysimage(::Symbol; sysimage_path::String, project::String, precompile_execution_file::Array{String,1}, precompile_statements_file::Array{String,1}, incremental::Bool, filter_stdlibs::Bool, replace_default::Bool, cpu_target::String, script::Nothing, base_sysimage::Nothing, isapp::Bool) at /home/pkgeval/.julia/packages/PackageCompiler/3BsME/src/PackageCompiler.jl:442
+ [7] top-level scope at ./timing.jl:233
+

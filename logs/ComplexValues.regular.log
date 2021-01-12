@@ -1,0 +1,103 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:59:42.154
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:59:43.967
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ComplexValues ─ v0.2.1
+  Installed RecipesBase ─── v1.1.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [41a84b80] + ComplexValues v0.2.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [41a84b80] + ComplexValues v0.2.1
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T18:59:47.435
+#
+
+    Testing ComplexValues
+Status `/tmp/jl_L4Y3US/Project.toml`
+  [41a84b80] ComplexValues v0.2.1
+  [3cdcf5f2] RecipesBase v1.1.1
+  [8dfed614] Test
+Status `/tmp/jl_L4Y3US/Manifest.toml`
+  [41a84b80] ComplexValues v0.2.1
+  [3cdcf5f2] RecipesBase v1.1.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary:          | Pass  Total
+Constructions of Polar |    6      6
+Test Summary:              | Pass  Total
+Constructions of Spherical |    7      7
+Test Summary:                        | Pass  Total
+Conversions between Polar, Spherical |   10     10
+Test Summary:                     | Pass  Total
+Conversions in and out of Complex |   24     24
+Test Summary:                             | Pass  Total
+Zero and infinity for ComplexValues.Polar |    9      9
+Test Summary:                                 | Pass  Total
+Zero and infinity for ComplexValues.Spherical |    9      9
+Test Summary:                                               | Pass  Total
+Binary functions on ComplexValues.Polar,ComplexValues.Polar |    5      5
+Test Summary:                                                   | Pass  Total
+Binary functions on ComplexValues.Polar,ComplexValues.Spherical |    5      5
+Test Summary:                                                   | Pass  Total
+Binary functions on ComplexValues.Spherical,ComplexValues.Polar |    5      5
+Test Summary:                                                       | Pass  Total
+Binary functions on ComplexValues.Spherical,ComplexValues.Spherical |    5      5
+Test Summary:                          | Pass  Total
+Unary functions on ComplexValues.Polar |    4      4
+Test Summary:                              | Pass  Total
+Unary functions on ComplexValues.Spherical |    4      4
+    Testing ComplexValues tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:59:55.064
+CPU usage: 12.96s (10.67s user, 2.34s kernel)
+
+Network usage:
+- eth0: 2.561 MiB received, 29.008 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":322334720,"max_usage":735539200,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":212185088,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":351747,"total_cache":80470016,"total_rss_huge":0,"total_active_anon":213159936,"total_pgmajfault":0,"pgpgin":244299,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":270336,"pgpgout":172873,"hierarchical_memsw_limit":0,"cache":80470016,"active_file":675840,"pgfault":351747,"total_mapped_file":0,"total_pgpgout":172873,"total_writeback":270336,"rss":212185088,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":244299,"active_anon":213159936,"total_active_file":675840},"limit":540965302272},"name":"/ComplexValues-GExDHmbJ","networks":{"eth0":{"rx_bytes":2685110,"rx_packets":261,"tx_packets":271,"tx_bytes":29704,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"3ba804620c8d4dbbf5eefc5878b617c0b7df803c247ebf1a3baae94bb1dfcbcd","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4818380754522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":10670000000,"usage_in_kernelmode":2340000000,"total_usage":12959861474,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12963480226,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3810,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:59:55.067155838Z"}

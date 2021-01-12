@@ -1,0 +1,448 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:27:34.452
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:27:36.274
+#
+
+ Installing known registries into `~/.julia`
+#####################################################                     74.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed MbedTLS_jll ────────────────── v2.16.8+1
+  Installed GEOS_jll ───────────────────── v3.9.0+0
+  Installed GeoArrays ──────────────────── v0.3.4
+  Installed GeoFormatTypes ─────────────── v0.3.0
+  Installed ZygoteRules ────────────────── v0.2.1
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed SQLite_jll ─────────────────── v3.34.0+0
+  Installed Reexport ───────────────────── v0.2.0
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed InitialValues ──────────────── v0.2.10
+  Installed LossFunctions ──────────────── v0.6.2
+  Installed TableTraits ────────────────── v1.0.0
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed LearnBase ──────────────────── v0.4.1
+  Installed GDAL ───────────────────────── v1.2.0
+  Installed Libtiff_jll ────────────────── v4.1.0+2
+  Installed CEnum ──────────────────────── v0.4.1
+  Installed CategoricalArrays ──────────── v0.9.0
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed DataFrames ─────────────────── v0.22.2
+  Installed Tables ─────────────────────── v1.2.2
+  Installed Zstd_jll ───────────────────── v1.4.5+2
+  Installed PositiveFactorizations ─────── v0.2.4
+  Installed Combinatorics ──────────────── v1.0.2
+  Installed FillArrays ─────────────────── v0.10.2
+  Installed Requires ───────────────────── v1.1.2
+  Installed QuadGK ─────────────────────── v2.4.1
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed Parameters ─────────────────── v0.12.1
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Setfield ───────────────────── v0.7.0
+  Installed LibSSH2_jll ────────────────── v1.9.0+3
+  Installed LittleCMS_jll ──────────────── v2.9.0+0
+  Installed ConstructionBase ───────────── v1.0.0
+  Installed nghttp2_jll ────────────────── v1.40.0+2
+  Installed ArchGDAL ───────────────────── v0.5.2
+  Installed StaticArrays ───────────────── v0.12.5
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed InvertedIndices ────────────── v1.0.0
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed libgeotiff_jll ─────────────── v1.6.0+1
+  Installed MLJModelInterface ──────────── v0.3.7
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed Missings ───────────────────── v0.4.4
+  Installed Optim ──────────────────────── v1.2.2
+  Installed libpng_jll ─────────────────── v1.6.37+6
+  Installed ScientificTypes ────────────── v1.1.1
+  Installed ArgCheck ───────────────────── v2.1.0
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed CSV ────────────────────────── v0.8.2
+  Installed PooledArrays ───────────────── v0.5.3
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed GeoStatsBase ───────────────── v0.15.2
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed Distances ──────────────────── v0.10.0
+  Installed FiniteDiff ─────────────────── v2.7.2
+  Installed DefineSingletons ───────────── v0.1.0
+  Installed JSON ───────────────────────── v0.21.1
+  Installed BangBang ───────────────────── v0.3.29
+  Installed PROJ_jll ───────────────────── v7.2.0+0
+  Installed Distributions ──────────────── v0.24.10
+  Installed PrettyTables ───────────────── v0.10.1
+  Installed LineSearches ───────────────── v7.1.1
+  Installed ArrayInterface ─────────────── v2.14.13
+  Installed StructTypes ────────────────── v1.2.1
+  Installed PDMats ─────────────────────── v0.10.1
+  Installed NearestNeighbors ───────────── v0.4.8
+  Installed Crayons ────────────────────── v4.0.4
+  Installed Expat_jll ──────────────────── v2.2.7+6
+  Installed CoordinateTransformations ──── v0.6.1
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed GeoInterface ───────────────── v0.5.4
+  Installed AverageShiftedHistograms ───── v0.8.5
+  Installed Formatting ─────────────────── v0.4.2
+  Installed MicroCollections ───────────── v0.1.0
+  Installed MozillaCACerts_jll ─────────── v2020.10.14+0
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed DiskArrays ─────────────────── v0.2.7
+  Installed LibCURL_jll ────────────────── v7.70.0+2
+  Installed DensityRatioEstimation ─────── v0.4.2
+  Installed JpegTurbo_jll ──────────────── v2.0.1+3
+  Installed Compat ─────────────────────── v3.25.0
+  Installed NLSolversBase ──────────────── v7.7.1
+  Installed SplittablesBase ────────────── v0.1.10
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed GDAL_jll ───────────────────── v3.2.0+2
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed Transducers ────────────────── v0.4.54
+  Installed OpenJpeg_jll ───────────────── v2.3.1+0
+  Installed CompositionsBase ───────────── v0.1.0
+  Installed ReferenceFrameRotations ────── v0.5.6
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed SentinelArrays ─────────────── v1.2.16
+  Installed Parsers ────────────────────── v1.0.15
+  Installed UnicodePlots ───────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [2fb1d81b] + GeoArrays v0.3.4
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [c9ce4bd3] + ArchGDAL v0.5.2
+  [dce04be8] + ArgCheck v2.1.0
+  [4fba245c] + ArrayInterface v2.14.13
+  [56f22d72] + Artifacts v1.3.0
+  [77b51b56] + AverageShiftedHistograms v0.8.5
+  [198e06fe] + BangBang v0.3.29
+  [fa961155] + CEnum v0.4.1
+  [336ed68f] + CSV v0.8.2
+  [324d7699] + CategoricalArrays v0.9.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [861a8166] + Combinatorics v1.0.2
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [a33af91c] + CompositionsBase v0.1.0
+  [187b0558] + ConstructionBase v1.0.0
+  [150eb455] + CoordinateTransformations v0.6.1
+  [a8cc5b0e] + Crayons v4.0.4
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.22.2
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [244e2a9f] + DefineSingletons v0.1.0
+  [ab46fb84] + DensityRatioEstimation v0.4.2
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [3c3547ce] + DiskArrays v0.2.7
+  [b4f34e82] + Distances v0.10.0
+  [31c24e10] + Distributions v0.24.10
+  [2e619515] + Expat_jll v2.2.7+6
+  [1a297f60] + FillArrays v0.10.2
+  [6a86dc24] + FiniteDiff v2.7.2
+  [59287772] + Formatting v0.4.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [add2ef01] + GDAL v1.2.0
+  [a7073274] + GDAL_jll v3.2.0+2
+  [d604d12d] + GEOS_jll v3.9.0+0
+  [2fb1d81b] + GeoArrays v0.3.4
+  [68eda718] + GeoFormatTypes v0.3.0
+  [cf35fbd7] + GeoInterface v0.5.4
+  [323cb8eb] + GeoStatsBase v0.15.2
+  [22cec73e] + InitialValues v0.2.10
+  [41ab1584] + InvertedIndices v1.0.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [aacddb02] + JpegTurbo_jll v2.0.1+3
+  [7f8f8fb0] + LearnBase v0.4.1
+  [deac9b47] + LibCURL_jll v7.70.0+2
+  [29816b5a] + LibSSH2_jll v1.9.0+3
+  [89763e89] + Libtiff_jll v4.1.0+2
+  [d3d80556] + LineSearches v7.1.1
+  [d3a379c0] + LittleCMS_jll v2.9.0+0
+  [30fc2ffe] + LossFunctions v0.6.2
+  [e80e1ace] + MLJModelInterface v0.3.7
+  [1914dd2f] + MacroTools v0.5.6
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [128add7d] + MicroCollections v0.1.0
+  [e1d29d7a] + Missings v0.4.4
+  [14a3606d] + MozillaCACerts_jll v2020.10.14+0
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [d41bc354] + NLSolversBase v7.7.1
+  [77ba4419] + NaNMath v0.3.5
+  [b8a86587] + NearestNeighbors v0.4.8
+  [643b3616] + OpenJpeg_jll v2.3.1+0
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [429524aa] + Optim v1.2.2
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.10.1
+  [58948b4f] + PROJ_jll v7.2.0+0
+  [d96e819e] + Parameters v0.12.1
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [85a6dd25] + PositiveFactorizations v0.2.4
+  [08abe8d2] + PrettyTables v0.10.1
+  [1fd47b50] + QuadGK v2.4.1
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [189a3867] + Reexport v0.2.0
+  [74f56ac7] + ReferenceFrameRotations v0.5.6
+  [ae029012] + Requires v1.1.2
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [76ed43ae] + SQLite_jll v3.34.0+0
+  [321657f4] + ScientificTypes v1.1.1
+  [91c51154] + SentinelArrays v1.2.16
+  [efcf1570] + Setfield v0.7.0
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [171d559e] + SplittablesBase v0.1.10
+  [90137ffa] + StaticArrays v0.12.5
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [856f2bd8] + StructTypes v1.2.1
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [28d57a85] + Transducers v0.4.54
+  [3a884ed6] + UnPack v1.0.2
+  [b8865327] + UnicodePlots v1.3.0
+  [83775a58] + Zlib_jll v1.2.11+18
+  [3161d3a3] + Zstd_jll v1.4.5+2
+  [700de1a5] + ZygoteRules v0.2.1
+  [06c338fa] + libgeotiff_jll v1.6.0+1
+  [b53b4c65] + libpng_jll v1.6.37+6
+  [8e850ede] + nghttp2_jll v1.40.0+2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T20:27:48.274
+#
+
+    Testing GeoArrays
+Status `/tmp/jl_tLLrBR/Project.toml`
+  [c9ce4bd3] ArchGDAL v0.5.2
+  [150eb455] CoordinateTransformations v0.6.1
+  [2fb1d81b] GeoArrays v0.3.4
+  [68eda718] GeoFormatTypes v0.3.0
+  [323cb8eb] GeoStatsBase v0.15.2
+  [d293930c] KrigingEstimators v0.4.5
+  [3cdcf5f2] RecipesBase v1.1.1
+  [90137ffa] StaticArrays v0.12.5
+  [8dfed614] Test
+Status `/tmp/jl_tLLrBR/Manifest.toml`
+  [c9ce4bd3] ArchGDAL v0.5.2
+  [dce04be8] ArgCheck v2.1.0
+  [4fba245c] ArrayInterface v2.14.13
+  [56f22d72] Artifacts v1.3.0
+  [77b51b56] AverageShiftedHistograms v0.8.5
+  [198e06fe] BangBang v0.3.29
+  [fa961155] CEnum v0.4.1
+  [336ed68f] CSV v0.8.2
+  [324d7699] CategoricalArrays v0.9.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [861a8166] Combinatorics v1.0.2
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [a33af91c] CompositionsBase v0.1.0
+  [187b0558] ConstructionBase v1.0.0
+  [150eb455] CoordinateTransformations v0.6.1
+  [a8cc5b0e] Crayons v4.0.4
+  [9a962f9c] DataAPI v1.4.0
+  [a93c6f00] DataFrames v0.22.2
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [244e2a9f] DefineSingletons v0.1.0
+  [ab46fb84] DensityRatioEstimation v0.4.2
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [3c3547ce] DiskArrays v0.2.7
+  [b4f34e82] Distances v0.10.0
+  [31c24e10] Distributions v0.24.10
+  [2e619515] Expat_jll v2.2.7+6
+  [1a297f60] FillArrays v0.10.2
+  [6a86dc24] FiniteDiff v2.7.2
+  [59287772] Formatting v0.4.2
+  [f6369f11] ForwardDiff v0.10.14
+  [add2ef01] GDAL v1.2.0
+  [a7073274] GDAL_jll v3.2.0+2
+  [d604d12d] GEOS_jll v3.9.0+0
+  [2fb1d81b] GeoArrays v0.3.4
+  [68eda718] GeoFormatTypes v0.3.0
+  [cf35fbd7] GeoInterface v0.5.4
+  [323cb8eb] GeoStatsBase v0.15.2
+  [22cec73e] InitialValues v0.2.10
+  [41ab1584] InvertedIndices v1.0.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [aacddb02] JpegTurbo_jll v2.0.1+3
+  [d293930c] KrigingEstimators v0.4.5
+  [7f8f8fb0] LearnBase v0.4.1
+  [deac9b47] LibCURL_jll v7.70.0+2
+  [29816b5a] LibSSH2_jll v1.9.0+3
+  [89763e89] Libtiff_jll v4.1.0+2
+  [d3d80556] LineSearches v7.1.1
+  [d3a379c0] LittleCMS_jll v2.9.0+0
+  [30fc2ffe] LossFunctions v0.6.2
+  [e80e1ace] MLJModelInterface v0.3.7
+  [1914dd2f] MacroTools v0.5.6
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [128add7d] MicroCollections v0.1.0
+  [e1d29d7a] Missings v0.4.4
+  [14a3606d] MozillaCACerts_jll v2020.10.14+0
+  [46d2c3a1] MuladdMacro v0.2.2
+  [d41bc354] NLSolversBase v7.7.1
+  [77ba4419] NaNMath v0.3.5
+  [b8a86587] NearestNeighbors v0.4.8
+  [643b3616] OpenJpeg_jll v2.3.1+0
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [429524aa] Optim v1.2.2
+  [bac558e1] OrderedCollections v1.3.2
+  [90014a1f] PDMats v0.10.1
+  [58948b4f] PROJ_jll v7.2.0+0
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.15
+  [2dfb63ee] PooledArrays v0.5.3
+  [85a6dd25] PositiveFactorizations v0.2.4
+  [08abe8d2] PrettyTables v0.10.1
+  [1fd47b50] QuadGK v2.4.1
+  [3cdcf5f2] RecipesBase v1.1.1
+  [189a3867] Reexport v0.2.0
+  [74f56ac7] ReferenceFrameRotations v0.5.6
+  [ae029012] Requires v1.1.2
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [76ed43ae] SQLite_jll v3.34.0+0
+  [321657f4] ScientificTypes v1.1.1
+  [91c51154] SentinelArrays v1.2.16
+  [efcf1570] Setfield v0.7.0
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.2.1
+  [171d559e] SplittablesBase v0.1.10
+  [90137ffa] StaticArrays v0.12.5
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [856f2bd8] StructTypes v1.2.1
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [28d57a85] Transducers v0.4.54
+  [3a884ed6] UnPack v1.0.2
+  [b8865327] UnicodePlots v1.3.0
+  [04a0146e] Variography v0.10.1
+  [83775a58] Zlib_jll v1.2.11+18
+  [3161d3a3] Zstd_jll v1.4.5+2
+  [700de1a5] ZygoteRules v0.2.1
+  [06c338fa] libgeotiff_jll v1.6.0+1
+  [b53b4c65] libpng_jll v1.6.37+6
+  [8e850ede] nghttp2_jll v1.40.0+2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Warning: Casting Int64 to Int32 to fit in GDAL.
+└ @ GeoArrays ~/.julia/packages/GeoArrays/SPTgk/src/utils.jl:55
+┌ Warning: Failed to get geotransform
+└ @ GeoArrays ~/.julia/packages/GeoArrays/SPTgk/src/geoutils.jl:8
+┌ Warning: Failed to get geotransform
+└ @ GeoArrays ~/.julia/packages/GeoArrays/SPTgk/src/geoutils.jl:8
+┌ Warning: Failed to get geotransform
+└ @ GeoArrays ~/.julia/packages/GeoArrays/SPTgk/src/geoutils.jl:8
+┌ Warning: Failed to get geotransform
+└ @ GeoArrays ~/.julia/packages/GeoArrays/SPTgk/src/geoutils.jl:8
+┌ Warning: Failed to get geotransform
+└ @ GeoArrays ~/.julia/packages/GeoArrays/SPTgk/src/geoutils.jl:8
+┌ Warning: Failed to get geotransform
+└ @ GeoArrays ~/.julia/packages/GeoArrays/SPTgk/src/geoutils.jl:8
+┌ Warning: Failed to get geotransform
+└ @ GeoArrays ~/.julia/packages/GeoArrays/SPTgk/src/geoutils.jl:8
+┌ Warning: Failed to get geotransform
+└ @ GeoArrays ~/.julia/packages/GeoArrays/SPTgk/src/geoutils.jl:8
+Test Summary: | Pass  Total
+GeoArrays     |  235    235
+CPLDestroyMutex: Error = 16 (Device or resource busy)
+    Testing GeoArrays tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:33:39.611
+CPU usage: 356.71s (335.77s user, 21.40s kernel)
+
+Network usage:
+- eth0: 218.669 MiB received, 1.209 MiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":10,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":29,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":34,"op":"Total","minor":0},{"major":253,"value":10,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":29,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":34,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":417792,"op":"Read","minor":0},{"major":259,"value":167936,"op":"Write","minor":0},{"major":259,"value":524288,"op":"Sync","minor":0},{"major":259,"value":61440,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":585728,"op":"Total","minor":0},{"major":253,"value":417792,"op":"Read","minor":2},{"major":253,"value":167936,"op":"Write","minor":2},{"major":253,"value":524288,"op":"Sync","minor":2},{"major":253,"value":61440,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":585728,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":698970112,"max_usage":2004086784,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":266579968,"inactive_file":405504,"inactive_anon":335757312,"total_pgfault":9063087,"total_cache":396562432,"total_rss_huge":0,"total_active_anon":327106560,"total_pgmajfault":0,"pgpgin":6036723,"rss_huge":0,"mapped_file":0,"total_inactive_file":405504,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":5874798,"hierarchical_memsw_limit":0,"cache":396562432,"active_file":135168,"pgfault":9063087,"total_mapped_file":0,"total_pgpgout":5874798,"total_writeback":0,"rss":266579968,"unevictable":0,"total_inactive_anon":335757312,"total_pgpgin":6036723,"active_anon":327106560,"total_active_file":135168},"limit":540965302272},"name":"/GeoArrays-9rKJCKqW","networks":{"eth0":{"rx_bytes":229290990,"rx_packets":15733,"tx_packets":14818,"tx_bytes":1267994,"tx_dropped":0,"rx_dropped":13,"tx_errors":0,"rx_errors":0}},"id":"925e9d65bb7488695177b862ae64e92b040a9ad69d69c1dafb395be0058fd911","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5537416974522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":335770000000,"usage_in_kernelmode":21400000000,"total_usage":356710445553,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,156790,0,0,356706568013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24450,3696300,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:33:40.047981121Z"}

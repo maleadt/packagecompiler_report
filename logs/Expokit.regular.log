@@ -1,0 +1,155 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:08:15.758
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:08:17.569
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Expokit ─ v0.2.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a1e7a1ef] + Expokit v0.2.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [a1e7a1ef] + Expokit v0.2.0
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T19:08:21.932
+#
+
+    Testing Expokit
+Status `/tmp/jl_Xn359P/Project.toml`
+  [a1e7a1ef] Expokit v0.2.0
+  [37e2e46d] LinearAlgebra
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_Xn359P/Manifest.toml`
+  [a1e7a1ef] Expokit v0.2.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+testing real n=100 (first expmv, then expm)
+residuum: 8.248624520425267e-15
+time dif: -0.0002942069999999999
+
+testing complex n=100 (first expmv, then expm)
+residuum: 1.237000342545845e-15
+time dif: -0.0019645110000000004
+
+testing real n=1000 (first expmv, then expm)
+residuum: 8.43997291756302e-11
+time dif: -0.755461621
+
+testing complex n=1000 (first expmv, then expm)
+residuum: 1.3671873497639836e-14
+time dif: -2.903291543
+
+testing linear operator n=1000 (first expmv, then expm)
+┌ Warning: opnorm(LinearOp, Inf) is not defined, fall back to using `anorm = 1.0`.
+│ To suppress this warning, please specify the `anorm` keyword manually.
+└ @ Expokit ~/.julia/packages/Expokit/fQbKs/src/expmv.jl:8
+residuum: 1.1035213797501946e-14
+time dif: 0.147792056
+
+testing 2x2 cases
+residua: 2.482534153247273e-16, 0.0
+
+testing real n=1000 (first padm, then expm)
+residuum: 1.4030273835919252e-16
+time dif: -0.14781251700000003
+
+testing complex n=100 (first padm, then expm)
+residuum: 1.4326668599074275e-16
+time dif: -0.5864211650000001
+
+testing real n=100 (first chbv, then expm)
+residuum: 2.9167562913041467e-12
+time dif: 0.000385266
+
+testing complex n=100 (first chbv, then expm)
+residuum: 2.866617062506056e-12
+time dif: -0.0014978950000000004
+
+testing real n=1000 (first chbv, then expm)
+residuum: 4.5041741944052724e-12
+time dif: -0.4439017270000001
+
+testing real n=100 (first phimv, then expm)
+residuum: 5.1235054677550505e-15
+time dif: -0.000749092
+
+testing complex n=100 (first phimv, then expm)
+residuum: 1.1658776411067598e-15
+time dif: -0.002713923
+
+testing real n=1000 (first phimv, then expm)
+residuum: 7.791554670408955e-15
+time dif: -0.695607008
+
+testing complex n=1000 (first phimv, then expm)
+residuum: 3.799274934210356e-15
+time dif: -2.441662123
+
+testing real n=1000 (first phimv, then expm), the linear operator version.
+┌ Warning: opnorm(LinearOp, Inf) is not defined, fall back to using `anorm = 1.0`.
+│ To suppress this warning, please specify the `anorm` keyword manually.
+└ @ Expokit ~/.julia/packages/Expokit/fQbKs/src/expmv.jl:8
+┌ Warning: opnorm(LinearOp, Inf) is not defined, fall back to using `anorm = 1.0`.
+│ To suppress this warning, please specify the `anorm` keyword manually.
+└ @ Expokit ~/.julia/packages/Expokit/fQbKs/src/expmv.jl:8
+residuum: 1.812218228823663e-14
+time dif: -0.668044623
+
+    Testing Expokit tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:09:10.667
+CPU usage: 54.98s (51.93s user, 3.14s kernel)
+
+Network usage:
+- eth0: 2.539 MiB received, 27.588 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":1,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":20,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":25,"op":"Total","minor":0},{"major":253,"value":1,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":20,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":25,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":77824,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":184320,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":204800,"op":"Total","minor":0},{"major":253,"value":77824,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":184320,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":204800,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":327585792,"max_usage":1057726464,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":216784896,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":993366,"total_cache":81076224,"total_rss_huge":0,"total_active_anon":217485312,"total_pgmajfault":0,"pgpgin":552684,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":479963,"hierarchical_memsw_limit":0,"cache":81076224,"active_file":1757184,"pgfault":993366,"total_mapped_file":0,"total_pgpgout":479963,"total_writeback":0,"rss":216784896,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":552684,"active_anon":217485312,"total_active_file":1757184},"limit":540965302272},"name":"/Expokit-JqRf0v7X","networks":{"eth0":{"rx_bytes":2662814,"rx_packets":307,"tx_packets":286,"tx_bytes":28250,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"60a15b77dcc73c9be2872996dadd33aa56b067abf357eafcf24f7fb0b7706d48","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4889425274522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":51930000000,"usage_in_kernelmode":3140000000,"total_usage":54984596581,"percpu_usage":[0,0,0,0,0,0,0,54984596581,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:09:10.670291026Z"}

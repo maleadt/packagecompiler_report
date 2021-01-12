@@ -1,0 +1,164 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T18:22:21.721
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T18:22:23.428
+#
+
+ Installing known registries into `~/.julia`
+########################################                                  56.1%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed Calculus ───────────────────── v0.5.1
+  Installed MortarContact2DAD ──────────── v0.2.0
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed TimerOutputs ───────────────── v0.5.7
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed DiffResults ────────────────── v1.0.3
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed FEMBase ────────────────────── v0.3.1
+  Installed FEMQuad ────────────────────── v0.3.2
+  Installed PackageCompiler ────────────── v1.2.5
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed FEMBasis ───────────────────── v0.2.0
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [c1673bdb] + MortarContact2DAD v0.2.0
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [49dc2e85] + Calculus v0.5.1
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [fbcbbc08] + FEMBase v0.3.1
+  [353fb843] + FEMBasis v0.2.0
+  [be8e8821] + FEMQuad v0.3.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [692b3bcd] + JLLWrappers v1.2.0
+  [1914dd2f] + MacroTools v0.5.6
+  [c1673bdb] + MortarContact2DAD v0.2.0
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [77ba4419] + NaNMath v0.3.5
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [9b87118b] + PackageCompiler v1.2.5
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [a759f4b9] + TimerOutputs v0.5.7
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T18:22:29.621
+#
+
+ERROR: LoadError: LoadError: Evaluation into the closed module `Calculus` breaks incremental compilation because the side effects will not be permanent. This is likely due to some other module mutating `Calculus` with `eval` during precompilation - don't do this.
+Stacktrace:
+ [1] eval at ./boot.jl:331 [inlined]
+ [2] simplify(::Expr) at /home/pkgeval/.julia/packages/Calculus/mbqhh/src/symbolic.jl:96
+ [3] calculate_interpolation_polynomials(::Expr, ::Array{Float64,2}) at /home/pkgeval/.julia/packages/FEMBasis/hrK6J/src/create_basis.jl:25
+ [4] create_basis(::Symbol, ::String, ::Tuple{Tuple{Float64},Tuple{Float64}}, ::Expr) at /home/pkgeval/.julia/packages/FEMBasis/hrK6J/src/create_basis.jl:48
+ [5] top-level scope at /home/pkgeval/.julia/packages/FEMBasis/hrK6J/src/lagrange_segments.jl:4
+ [6] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [7] include at ./Base.jl:368 [inlined]
+ [8] include(::String) at /home/pkgeval/.julia/packages/FEMBasis/hrK6J/src/FEMBasis.jl:4
+ [9] top-level scope at /home/pkgeval/.julia/packages/FEMBasis/hrK6J/src/FEMBasis.jl:16
+ [10] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [11] include(::Module, ::String) at ./Base.jl:368
+ [12] top-level scope at none:2
+ [13] eval at ./boot.jl:331 [inlined]
+ [14] eval(::Expr) at ./client.jl:467
+ [15] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/FEMBasis/hrK6J/src/lagrange_segments.jl:4
+in expression starting at /home/pkgeval/.julia/packages/FEMBasis/hrK6J/src/FEMBasis.jl:16
+ERROR: LoadError: Failed to precompile FEMBasis [353fb843-c566-51e6-ba49-78b3e3d5ebb5] to /home/pkgeval/.julia/compiled/v1.5/FEMBasis/x3cNT_MqueV.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1305
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ [6] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [7] include(::Module, ::String) at ./Base.jl:368
+ [8] top-level scope at none:2
+ [9] eval at ./boot.jl:331 [inlined]
+ [10] eval(::Expr) at ./client.jl:467
+ [11] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/FEMBase/qGDOl/src/FEMBase.jl:19
+ERROR: LoadError: Failed to precompile FEMBase [fbcbbc08-f1bf-5204-9233-b69f5d396135] to /home/pkgeval/.julia/compiled/v1.5/FEMBase/6HUoq_MqueV.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1305
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ [6] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [7] include(::Module, ::String) at ./Base.jl:368
+ [8] top-level scope at none:2
+ [9] eval at ./boot.jl:331 [inlined]
+ [10] eval(::Expr) at ./client.jl:467
+ [11] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/MortarContact2DAD/Rq4yL/src/MortarContact2DAD.jl:9
+ERROR: Failed to precompile MortarContact2DAD [c1673bdb-6aff-560b-99da-c78ea6da9af3] to /home/pkgeval/.julia/compiled/v1.5/MortarContact2DAD/eGRmF_MqueV.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1305
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ERROR: failed process: Process(`/opt/julia/bin/julia --color=yes --startup-file=no --sysimage=/opt/julia/lib/julia/sys.so --project=/home/pkgeval/.julia/environments/v1.5 -e 'import MortarContact2DAD'`, ProcessExited(1)) [1]
+
+Stacktrace:
+ [1] pipeline_error at ./process.jl:525 [inlined]
+ [2] read(::Cmd) at ./process.jl:412
+ [3] read(::Cmd, ::Type{String}) at ./process.jl:421
+ [4] do_ensurecompiled(::String, ::Array{String,1}, ::String) at /home/pkgeval/.julia/packages/PackageCompiler/3BsME/src/PackageCompiler.jl:195
+ [5] create_sysimg_object_file(::String, ::Array{String,1}; project::String, base_sysimage::String, precompile_execution_file::Array{String,1}, precompile_statements_file::Array{String,1}, cpu_target::String, script::Nothing, isapp::Bool) at /home/pkgeval/.julia/packages/PackageCompiler/3BsME/src/PackageCompiler.jl:260
+ [6] create_sysimage(::Symbol; sysimage_path::String, project::String, precompile_execution_file::Array{String,1}, precompile_statements_file::Array{String,1}, incremental::Bool, filter_stdlibs::Bool, replace_default::Bool, cpu_target::String, script::Nothing, base_sysimage::Nothing, isapp::Bool) at /home/pkgeval/.julia/packages/PackageCompiler/3BsME/src/PackageCompiler.jl:442
+ [7] top-level scope at ./timing.jl:233
+

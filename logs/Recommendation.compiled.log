@@ -1,0 +1,162 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T16:28:04.585
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T16:28:06.349
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ###################################                                       49.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Recommendation ── v0.3.0
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [d27d45ae] + Recommendation v0.3.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [d27d45ae] + Recommendation v0.3.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T16:28:12.244
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 147.487 MiB, compilation took 163 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T16:31:02.505
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/Recommendation-t3ztITPP.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:31:04.273
+#
+
+ Installing known registries into `~/.julia`
+###############################################                           66.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Recommendation ─ v0.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [d27d45ae] + Recommendation v0.3.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [d27d45ae] + Recommendation v0.3.0
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+
+
+################################################################################
+# Testing: 2021-01-11T16:31:08.475
+#
+
+    Testing Recommendation
+Status `/tmp/jl_eOBSLm/Project.toml`
+  [d27d45ae] Recommendation v0.3.0
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_eOBSLm/Manifest.toml`
+  [d27d45ae] Recommendation v0.3.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+-- Testing recommender not built case
+-- Testing recommender not implemented case
+-- Testing recommender execution
+-- Testing data accessor
+-- Testing ItemMean recommender
+-- Testing UserMean recommender
+-- Testing MostPopular recommender
+-- Testing ThresholdPercentage recommender
+-- Testing CoOccurrence recommender
+-- Testing TF-IDF content-based recommender
+-- Testing UserKNN rating prediction
+-- Testing ItemKNN rating prediction
+-- Testing SVD-based recommender
+-- Testing MF-based recommender
+-- Testing accuracy metrics
+-- Testing ranking metrics
+-- Testing evaluate function for explicit feedback
+-- Testing evaluate function for implicit feedback
+-- Testing cross validation
+    Testing Recommendation tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T16:31:21.254
+CPU usage: 18.75s (16.30s user, 2.51s kernel)
+
+Network usage:
+- eth0: 2.860 MiB received, 28.232 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":19,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":19,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":77824,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":77824,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":292302848,"max_usage":468254720,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":183267328,"inactive_file":135168,"inactive_anon":79208448,"total_pgfault":337359,"total_cache":79855616,"total_rss_huge":0,"total_active_anon":183828480,"total_pgmajfault":0,"pgpgin":167310,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":103088,"hierarchical_memsw_limit":0,"cache":79855616,"active_file":135168,"pgfault":337359,"total_mapped_file":0,"total_pgpgout":103088,"total_writeback":0,"rss":183267328,"unevictable":0,"total_inactive_anon":79208448,"total_pgpgin":167310,"active_anon":183828480,"total_active_file":135168},"limit":540965302272},"name":"/Recommendation-OK7ox1xz","networks":{"eth0":{"rx_bytes":2999191,"rx_packets":326,"tx_packets":296,"tx_bytes":28910,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"826812e08bbe0871d1605e80d266ca44dbfaa832ecfa0e7a4e366f6ac06dde72","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3679480054522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":16300000000,"usage_in_kernelmode":2510000000,"total_usage":18753336695,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18753331925,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4770,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T16:31:21.256609581Z"}

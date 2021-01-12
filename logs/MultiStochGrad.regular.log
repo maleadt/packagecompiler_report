@@ -1,0 +1,705 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:13:32.671
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:13:34.287
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ##O#- #                                                                       ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed MultiStochGrad ─────────────── v0.1.2
+  Installed FillArrays ─────────────────── v0.10.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed QuadGK ─────────────────────── v2.4.1
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed Missings ───────────────────── v0.4.4
+  Installed PDMats ─────────────────────── v0.10.1
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed Distributions ──────────────── v0.24.10
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Compat ─────────────────────── v3.25.0
+  Installed ChainRulesCore ─────────────── v0.9.24
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [323ce080] + MultiStochGrad v0.1.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [31c24e10] + Distributions v0.24.10
+  [1a297f60] + FillArrays v0.10.2
+  [692b3bcd] + JLLWrappers v1.2.0
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [323ce080] + MultiStochGrad v0.1.2
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.10.1
+  [1fd47b50] + QuadGK v2.4.1
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T15:13:41.893
+#
+
+    Testing MultiStochGrad
+Status `/tmp/jl_T9M9Nc/Project.toml`
+  [31c24e10] Distributions v0.24.10
+  [323ce080] MultiStochGrad v0.1.2
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [de0858da] Printf
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_T9M9Nc/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [31c24e10] Distributions v0.24.10
+  [1a297f60] FillArrays v0.10.2
+  [692b3bcd] JLLWrappers v1.2.0
+  [e1d29d7a] Missings v0.4.4
+  [46d2c3a1] MuladdMacro v0.2.2
+  [323ce080] MultiStochGrad v0.1.2
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [90014a1f] PDMats v0.10.1
+  [1fd47b50] QuadGK v2.4.1
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.2.1
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Debug: Precompiling Distributions [31c24e10-a181-5473-b8eb-7969acd0382f]
+└ @ Base loading.jl:1278
+┌ Info: 
+│  initial error 
+│ 
+└   initial_error = 59.34057310972921
+┌ Debug: batch growing factor : 
+│   batch_growing_factor = 1.0035731178594376
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:137
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(1, 71, 1, 30.160933848930625, 0.0998218214548108)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 31
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 8.99092504947131
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: initial value 
+│   initial_value = 2.609663047629042
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:220
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(2, 72, 1, 30.322731021318976, 0.09964396038556127)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 31
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.4816793992227482
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(3, 72, 1, 30.485396148430613, 0.09946641622657738)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 31
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 1.0153565406376759
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(4, 73, 1, 30.648933886375346, 0.09928918841319301)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 31
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.32253453345944577
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(5, 73, 1, 30.81334891624051, 0.09911227638174822)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 31
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.30108728252447536
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(6, 74, 1, 30.97864594422494, 0.09893567956958732)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 31
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.23621883666539134
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(7, 74, 1, 31.144829701773713, 0.0987593974150572)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 32
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.2258159138751243
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(8, 75, 1, 31.311904945713568, 0.09858342935750541)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 32
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.14518115353204114
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(9, 75, 1, 31.479876458389015, 0.09840777483727861)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 32
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.14683106317579214
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(10, 76, 1, 31.648749047799324, 0.09823243329572048)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 32
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.10227496650576177
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(11, 76, 1, 31.81852754773606, 0.09805740417517021)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 32
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.06098237345325858
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(12, 77, 1, 31.98921681792147, 0.09788268691896061)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 32
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.03754081995464263
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(13, 77, 1, 32.160821744147626, 0.09770828097141629)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 33
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.07598987728197974
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(14, 78, 1, 32.3333472384162, 0.09753418577785206)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 33
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.03797248272616202
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(15, 78, 1, 32.50679823907917, 0.09736040078457095)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 33
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.042734509989134126
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(16, 79, 1, 32.681179710980054, 0.09718692543886262)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 33
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.050653722564568994
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(17, 80, 1, 32.85649664559611, 0.09701375918900154)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 33
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.013017038803269152
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(18, 80, 1, 33.032754061181166, 0.09684090148424523)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 34
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.02050687664190181
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(19, 81, 1, 33.20995700290933, 0.0966683517748325)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 34
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.023290740025345594
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(20, 81, 1, 33.388110543019295, 0.09649610951198173)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 34
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.09693838591482491
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(21, 82, 1, 33.5672197809596, 0.0963241741478891)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 34
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.025363967676419085
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(22, 82, 1, 33.74728984353462, 0.09615254513572687)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 34
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.03286906775377696
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(23, 83, 1, 33.9283258850512, 0.09598122192964165)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 34
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.02698659495004532
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(24, 84, 1, 34.11033308746633, 0.09581020398475261)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 35
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.019009466286195913
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(25, 84, 1, 34.293316660535396, 0.09563949075714975)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 35
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.012886540390643495
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(26, 85, 1, 34.477281841961286, 0.09546908170389232)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 35
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.061365305655731554
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(27, 85, 1, 34.66223389754438, 0.09529897628300683)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 35
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.0880581461367847
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(28, 86, 1, 34.84817812133323, 0.09512917395348557)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 35
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.029211652057089726
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(29, 87, 1, 35.03511983577611, 0.09495967417528475)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 36
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.005470859998353624
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(30, 87, 1, 35.22306439187335, 0.09479047640932282)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 36
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.03579453530635712
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(31, 88, 1, 35.41201716933053, 0.09462158011747879)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 36
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.051165921848437226
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(32, 88, 1, 35.601983576712456, 0.09445298476259044)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 36
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.021864407321885816
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(33, 89, 1, 35.79296905159798, 0.09428468980845267)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 36
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.02538967753974013
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(34, 90, 1, 35.9849790607356, 0.0941166947198158)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 36
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.012801709499117346
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(35, 90, 1, 36.178019100200004, 0.09394899896238389)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 37
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.017082166740273037
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(36, 91, 1, 36.37209469554937, 0.0937816020028129)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 37
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.041384593548017004
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(37, 92, 1, 36.567211401983506, 0.09361450330870916)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 37
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.03181467015199031
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(38, 92, 1, 36.76337480450288, 0.0934477023486276)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 37
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.05437408841079032
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(39, 93, 1, 36.96059051806848, 0.09328119859207008)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 37
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.010477519597668388
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(40, 94, 1, 37.158864187762525, 0.0931149915094837)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 38
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.058018991458512484
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(41, 94, 1, 37.35820148895011, 0.09294908057225905)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 38
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.013563757756973655
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(42, 95, 1, 37.55860812744152, 0.09278346525272867)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 38
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.00866729204459857
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(43, 96, 1, 37.76008983965574, 0.09261814502416522)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 38
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.014256099379012791
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(44, 96, 1, 37.96265239278448, 0.09245311936077995)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 38
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.016561321888587298
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(45, 97, 1, 38.16630158495736, 0.09228838773772087)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 39
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.004181021395988886
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(46, 98, 1, 38.37104324540784, 0.09212394963107122)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 39
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.007388790893449669
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(47, 98, 1, 38.57688323464007, 0.09195980451784774)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 39
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.009139051816206565
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(48, 99, 1, 38.78382744459668, 0.09179595187599902)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 39
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.00381740731527956
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(49, 100, 1, 38.99188179882736, 0.09163239118440379)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 39
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.003907386036446255
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Debug: batch_info
+│   batch_info = BatchSizeInfo(50, 100, 1, 39.20105225265847, 0.09146912192286934)
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:199
+┌ Debug:  nb mini batch = 
+│   n_j = 40
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:152
+┌ Debug: norm L2 direction
+│   norm(direction) = 0.0036687441320407506
+└ @ MultiStochGrad ~/.julia/packages/MultiStochGrad/E0Zyj/src/scsg.jl:216
+┌ Info: Reached maximal number of iterations required , initial_value value 
+│   initial_value = 2.609663047629042
+└   value = 0.5368655807925627
+value = 0.536866, position = 13.155473 -3.989843 3.323166 
+
+ test_linear_regression_scsg done 
+ 
+┌ Info: 
+│  initial error 
+│ 
+└   initial_error = 61.776462442120355
+┌ Info: Reached maximal number of iterations required, initial_value final value:
+│   initial_value = 3.012927055997041
+└   value = 0.38487586941791774
+value = 0.384876, position = 13.193899 -4.424893 3.667001 
+
+ test_linear_regression_svrg done 
+ 
+Test Summary: | Pass  Total
+linreg        |    2      2
+
+
+
+ begining mnist_logistic_regression_svrg ...┌ Warning: 
+│ 
+│  mnist_logistic_regression : bad path to mnist data file, cannot do tests, download and install files
+└ @ Main ~/.julia/packages/MultiStochGrad/E0Zyj/test/TestLogisticRegression.jl:24
+logistic_reg: Test Failed at /home/pkgeval/.julia/packages/MultiStochGrad/E0Zyj/test/runtests.jl:22
+  Expression: mnist_logistic_regression_svrg()
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/MultiStochGrad/E0Zyj/test/runtests.jl:22
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/MultiStochGrad/E0Zyj/test/runtests.jl:22
+
+
+
+ begining mnist_logistic_regression_scsg ...┌ Warning: 
+│ 
+│  mnist_logistic_regression : bad path to mnist data file, cannot do tests, download and install files
+└ @ Main ~/.julia/packages/MultiStochGrad/E0Zyj/test/TestLogisticRegression.jl:24
+logistic_reg: Test Failed at /home/pkgeval/.julia/packages/MultiStochGrad/E0Zyj/test/runtests.jl:23
+  Expression: mnist_logistic_regression_scsg()
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/MultiStochGrad/E0Zyj/test/runtests.jl:23
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/MultiStochGrad/E0Zyj/test/runtests.jl:22
+Test Summary: | Fail  Total
+logistic_reg  |    2      2
+ERROR: LoadError: Some tests did not pass: 0 passed, 2 failed, 0 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/MultiStochGrad/E0Zyj/test/runtests.jl:21
+
+PkgEval failed: Package MultiStochGrad errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:14:35.261
+CPU usage: 60.74s (55.15s user, 5.69s kernel)
+
+Network usage:
+- eth0: 3.675 MiB received, 130.408 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":306,"op":"Read","minor":0},{"major":259,"value":173,"op":"Write","minor":0},{"major":259,"value":474,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":479,"op":"Total","minor":0},{"major":253,"value":306,"op":"Read","minor":2},{"major":253,"value":173,"op":"Write","minor":2},{"major":253,"value":474,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":479,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":2080768,"op":"Read","minor":0},{"major":259,"value":745472,"op":"Write","minor":0},{"major":259,"value":2797568,"op":"Sync","minor":0},{"major":259,"value":28672,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":2826240,"op":"Total","minor":0},{"major":253,"value":2080768,"op":"Read","minor":2},{"major":253,"value":745472,"op":"Write","minor":2},{"major":253,"value":2797568,"op":"Sync","minor":2},{"major":253,"value":28672,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":2826240,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":360161280,"max_usage":1205575680,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":206782464,"inactive_file":405504,"inactive_anon":81911808,"total_pgfault":1670625,"total_cache":120610816,"total_rss_huge":0,"total_active_anon":217890816,"total_pgmajfault":0,"pgpgin":1048080,"rss_huge":0,"mapped_file":811008,"total_inactive_file":405504,"dirty":946176,"total_unevictable":0,"total_dirty":946176,"writeback":0,"pgpgout":968144,"hierarchical_memsw_limit":0,"cache":120610816,"active_file":27303936,"pgfault":1670625,"total_mapped_file":811008,"total_pgpgout":968144,"total_writeback":0,"rss":206782464,"unevictable":0,"total_inactive_anon":81911808,"total_pgpgin":1048080,"active_anon":217890816,"total_active_file":27303936},"limit":540965302272},"name":"/MultiStochGrad-aiQ5CIOg","networks":{"eth0":{"rx_bytes":3853146,"rx_packets":1008,"tx_packets":1111,"tx_bytes":133538,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"dffc2114d259366c9ae736e729c607d6e28a4b9999b2816f59373ca4ddebcbf0","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3090809254522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":55150000000,"usage_in_kernelmode":5690000000,"total_usage":60737601940,"percpu_usage":[0,0,0,0,195440,279910,0,60737126590,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:14:35.446875085Z"}

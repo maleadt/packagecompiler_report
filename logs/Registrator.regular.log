@@ -1,0 +1,515 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:56:23.952
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:56:25.739
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MbedTLS_jll ───────────────── v2.16.8+1
+  Installed TableTraits ───────────────── v1.0.0
+  Installed AutoHashEquals ────────────── v0.2.0
+  Installed Tables ────────────────────── v1.2.2
+  Installed Mustache ──────────────────── v1.0.10
+  Installed MbedTLS ───────────────────── v1.0.3
+  Installed Registrator ───────────────── v1.2.2
+  Installed DataAPI ───────────────────── v1.4.0
+  Installed Hiccup ────────────────────── v0.2.2
+  Installed ZeroMQ_jll ────────────────── v4.3.2+5
+  Installed DataValueInterfaces ───────── v1.0.0
+  Installed libsodium_jll ─────────────── v1.0.18+1
+  Installed AssetRegistry ─────────────── v0.1.0
+  Installed SodiumSeal ────────────────── v0.1.1
+  Installed HTTP ──────────────────────── v0.8.19
+  Installed ZMQ ───────────────────────── v1.2.1
+  Installed GitForge ──────────────────── v0.1.6
+  Installed RegistryTools ─────────────── v1.5.3
+  Installed TimeToLive ────────────────── v0.3.0
+  Installed MacroTools ────────────────── v0.5.6
+  Installed Mux ───────────────────────── v0.7.5
+  Installed WebSockets ────────────────── v1.5.7
+  Installed JSON ──────────────────────── v0.21.1
+  Installed Pidfile ───────────────────── v1.2.0
+  Installed JLLWrappers ───────────────── v1.2.0
+  Installed IteratorInterfaceExtensions ─ v1.0.0
+  Installed JSON2 ─────────────────────── v0.3.2
+  Installed IniFile ───────────────────── v0.5.0
+  Installed Parsers ───────────────────── v1.0.15
+  Installed GitHub ────────────────────── v5.4.0
+  Installed Artifacts ─────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [4418983a] + Registrator v1.2.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [bf4720bc] + AssetRegistry v0.1.0
+  [15f4f7f2] + AutoHashEquals v0.2.0
+  [9a962f9c] + DataAPI v1.4.0
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [8f6bce27] + GitForge v0.1.6
+  [bc5e4493] + GitHub v5.4.0
+  [cd3eb016] + HTTP v0.8.19
+  [9fb69e20] + Hiccup v0.2.2
+  [83e8ac13] + IniFile v0.5.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [2535ab7d] + JSON2 v0.3.2
+  [1914dd2f] + MacroTools v0.5.6
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [ffc61752] + Mustache v1.0.10
+  [a975b10e] + Mux v0.7.5
+  [69de0a69] + Parsers v1.0.15
+  [fa939f87] + Pidfile v1.2.0
+  [4418983a] + Registrator v1.2.2
+  [d1eb7eb1] + RegistryTools v1.5.3
+  [2133526b] + SodiumSeal v0.1.1
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [37f0c46e] + TimeToLive v0.3.0
+  [104b5d7c] + WebSockets v1.5.7
+  [c2297ded] + ZMQ v1.2.1
+  [8f1865be] + ZeroMQ_jll v4.3.2+5
+  [a9144af2] + libsodium_jll v1.0.18+1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [7b1f6079] + FileWatching
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T23:56:31.666
+#
+
+    Testing Registrator
+Status `/tmp/jl_akqNbU/Project.toml`
+  [15f4f7f2] AutoHashEquals v0.2.0
+  [8f6bce27] GitForge v0.1.6
+  [bc5e4493] GitHub v5.4.0
+  [cd3eb016] HTTP v0.8.19
+  [682c06a0] JSON v0.21.1
+  [739be429] MbedTLS v1.0.3
+  [ffc61752] Mustache v1.0.10
+  [a975b10e] Mux v0.7.5
+  [4418983a] Registrator v1.2.2
+  [d1eb7eb1] RegistryTools v1.5.3
+  [37f0c46e] TimeToLive v0.3.0
+  [c2297ded] ZMQ v1.2.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [7b1f6079] FileWatching
+  [76f85450] LibGit2
+  [56ddb016] Logging
+  [44cfe95a] Pkg
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+Status `/tmp/jl_akqNbU/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [bf4720bc] AssetRegistry v0.1.0
+  [15f4f7f2] AutoHashEquals v0.2.0
+  [9a962f9c] DataAPI v1.4.0
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [8f6bce27] GitForge v0.1.6
+  [bc5e4493] GitHub v5.4.0
+  [cd3eb016] HTTP v0.8.19
+  [9fb69e20] Hiccup v0.2.2
+  [83e8ac13] IniFile v0.5.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [2535ab7d] JSON2 v0.3.2
+  [1914dd2f] MacroTools v0.5.6
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [ffc61752] Mustache v1.0.10
+  [a975b10e] Mux v0.7.5
+  [69de0a69] Parsers v1.0.15
+  [fa939f87] Pidfile v1.2.0
+  [4418983a] Registrator v1.2.2
+  [d1eb7eb1] RegistryTools v1.5.3
+  [2133526b] SodiumSeal v0.1.1
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [37f0c46e] TimeToLive v0.3.0
+  [104b5d7c] WebSockets v1.5.7
+  [c2297ded] ZMQ v1.2.1
+  [8f1865be] ZeroMQ_jll v4.3.2+5
+  [a9144af2] libsodium_jll v1.0.18+1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [7b1f6079] FileWatching
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: Waiting for server to start...
+┌ Warning: API request failed
+│   exception =
+│    HTTP.ExceptionRequest.StatusError(404, "GET", "/repos/JuliaLang/NotARealRepo", HTTP.Messages.Response:
+│    """
+│    HTTP/1.1 404 Not Found
+│    Server: GitHub.com
+│    Date: Mon, 11 Jan 2021 23:57:55 GMT
+│    Content-Type: application/json; charset=utf-8
+│    Status: 404 Not Found
+│    X-GitHub-Media-Type: github.v3; format=json
+│    Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
+│    Access-Control-Allow-Origin: *
+│    Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+│    X-Frame-Options: deny
+│    X-Content-Type-Options: nosniff
+│    X-XSS-Protection: 1; mode=block
+│    Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+│    Content-Security-Policy: default-src 'none'
+│    Vary: Accept-Encoding, Accept, X-Requested-With
+│    X-RateLimit-Limit: 60
+│    X-RateLimit-Remaining: 56
+│    X-RateLimit-Reset: 1610413049
+│    x-ratelimit-used: 4
+│    Content-Length: 107
+│    X-GitHub-Request-Id: EE20:1A49:32B641:5585D8:5FFCE601
+│    
+│    {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/repos#get-a-repository"}""")
+│    Stacktrace:
+│     [1] request(::GitHubAPI, ::Function, ::GitForge.Endpoint; headers::Array{Pair{SubString{String},SubString{String}},1}, query::Dict{Any,Any}, request_opts::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/GitForge/cPPnd/src/request.jl:158
+│     [2] request at /home/pkgeval/.julia/packages/GitForge/cPPnd/src/request.jl:122 [inlined]
+│     [3] get_repo(::GitHubAPI, ::String, ::SubString{String}; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/GitForge/cPPnd/src/helpers.jl:8
+│     [4] get_repo(::GitHubAPI, ::String, ::SubString{String}) at /home/pkgeval/.julia/packages/GitForge/cPPnd/src/helpers.jl:8
+│     [5] getrepo(::GitHubAPI, ::String, ::SubString{String}) at /home/pkgeval/.julia/packages/Registrator/jZ75g/src/webui/gitutils.jl:6
+│     [6] register(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Registrator/jZ75g/src/webui/routes/register.jl:31
+│     [7] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [8] (::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [9] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [10] (::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [11] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [12] (::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [13] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.auth)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [14] (::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.auth)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}}}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [15] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.index)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [16] #1 at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10 [inlined]
+│     [17] error_handler(::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.index)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.auth)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}}}}}, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Registrator/jZ75g/src/webui/WebUI.jl:122
+│     [18] (::Mux.var"#1#2"{typeof(Registrator.WebUI.error_handler),Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.index)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.auth)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}}}}}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [19] (::Mux.var"#7#8"{Mux.App})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/server.jl:42
+│     [20] handle at /home/pkgeval/.julia/packages/HTTP/IAI92/src/Handlers.jl:253 [inlined]
+│     [21] handle(::HTTP.Handlers.RequestHandlerFunction{Mux.var"#7#8"{Mux.App}}, ::HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}) at /home/pkgeval/.julia/packages/HTTP/IAI92/src/Handlers.jl:276
+│     [22] #4 at /home/pkgeval/.julia/packages/HTTP/IAI92/src/Handlers.jl:345 [inlined]
+│     [23] macro expansion at /home/pkgeval/.julia/packages/HTTP/IAI92/src/Servers.jl:367 [inlined]
+│     [24] (::HTTP.Servers.var"#13#14"{HTTP.Handlers.var"#4#5"{HTTP.Handlers.RequestHandlerFunction{Mux.var"#7#8"{Mux.App}}},HTTP.ConnectionPool.Transaction{Sockets.TCPSocket},HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}})() at ./task.jl:356
+└ @ Registrator.WebUI ~/.julia/packages/Registrator/jZ75g/src/webui/gitutils.jl:8
+┌ Warning: API request failed
+│   exception =
+│    HTTP.ExceptionRequest.StatusError(404, "GET", "/repos/JuliaLang/julia/contents/JuliaProject.toml?ref=master", HTTP.Messages.Response:
+│    """
+│    HTTP/1.1 404 Not Found
+│    Server: GitHub.com
+│    Date: Mon, 11 Jan 2021 23:57:58 GMT
+│    Content-Type: application/json; charset=utf-8
+│    Status: 404 Not Found
+│    X-GitHub-Media-Type: github.v3; format=json
+│    Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
+│    Access-Control-Allow-Origin: *
+│    Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+│    X-Frame-Options: deny
+│    X-Content-Type-Options: nosniff
+│    X-XSS-Protection: 1; mode=block
+│    Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+│    Content-Security-Policy: default-src 'none'
+│    Vary: Accept-Encoding, Accept, X-Requested-With
+│    X-RateLimit-Limit: 60
+│    X-RateLimit-Remaining: 52
+│    X-RateLimit-Reset: 1610413050
+│    x-ratelimit-used: 8
+│    Content-Length: 113
+│    X-GitHub-Request-Id: EE20:1A49:32B71A:5588F7:5FFCE605
+│    
+│    {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/repos#get-repository-content"}""")
+│    Stacktrace:
+│     [1] request(::GitHubAPI, ::Function, ::GitForge.Endpoint; headers::Array{Pair{SubString{String},SubString{String}},1}, query::Dict{Any,Any}, request_opts::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Symbol,SubString{String},Tuple{Symbol},NamedTuple{(:ref,),Tuple{SubString{String}}}}) at /home/pkgeval/.julia/packages/GitForge/cPPnd/src/request.jl:158
+│     [2] get_file_contents(::GitHubAPI, ::String, ::String, ::String; kwargs::Base.Iterators.Pairs{Symbol,SubString{String},Tuple{Symbol},NamedTuple{(:ref,),Tuple{SubString{String}}}}) at /home/pkgeval/.julia/packages/GitForge/cPPnd/src/helpers.jl:8
+│     [3] gettoml(::GitHubAPI, ::GitForge.GitHub.Repo, ::SubString{String}) at /home/pkgeval/.julia/packages/Registrator/jZ75g/src/webui/gitutils.jl:6
+│     [4] register(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Registrator/jZ75g/src/webui/routes/register.jl:36
+│     [5] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [6] (::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [7] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [8] (::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [9] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [10] (::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [11] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.auth)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [12] (::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.auth)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}}}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [13] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.index)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [14] #1 at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10 [inlined]
+│     [15] error_handler(::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.index)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.auth)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}}}}}, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Registrator/jZ75g/src/webui/WebUI.jl:122
+│     [16] (::Mux.var"#1#2"{typeof(Registrator.WebUI.error_handler),Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.index)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.auth)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}}}}}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [17] (::Mux.var"#7#8"{Mux.App})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/server.jl:42
+│     [18] handle at /home/pkgeval/.julia/packages/HTTP/IAI92/src/Handlers.jl:253 [inlined]
+│     [19] handle(::HTTP.Handlers.RequestHandlerFunction{Mux.var"#7#8"{Mux.App}}, ::HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}) at /home/pkgeval/.julia/packages/HTTP/IAI92/src/Handlers.jl:276
+│     [20] #4 at /home/pkgeval/.julia/packages/HTTP/IAI92/src/Handlers.jl:345 [inlined]
+│     [21] macro expansion at /home/pkgeval/.julia/packages/HTTP/IAI92/src/Servers.jl:367 [inlined]
+│     [22] (::HTTP.Servers.var"#13#14"{HTTP.Handlers.var"#4#5"{HTTP.Handlers.RequestHandlerFunction{Mux.var"#7#8"{Mux.App}}},HTTP.ConnectionPool.Transaction{Sockets.TCPSocket},HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}})() at ./task.jl:356
+└ @ Registrator.WebUI ~/.julia/packages/Registrator/jZ75g/src/webui/gitutils.jl:8
+┌ Warning: API request failed
+│   exception =
+│    HTTP.ExceptionRequest.StatusError(404, "GET", "/repos/JuliaLang/julia/contents/Project.toml?ref=master", HTTP.Messages.Response:
+│    """
+│    HTTP/1.1 404 Not Found
+│    Server: GitHub.com
+│    Date: Mon, 11 Jan 2021 23:57:58 GMT
+│    Content-Type: application/json; charset=utf-8
+│    Status: 404 Not Found
+│    X-GitHub-Media-Type: github.v3; format=json
+│    Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
+│    Access-Control-Allow-Origin: *
+│    Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+│    X-Frame-Options: deny
+│    X-Content-Type-Options: nosniff
+│    X-XSS-Protection: 1; mode=block
+│    Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+│    Content-Security-Policy: default-src 'none'
+│    Vary: Accept-Encoding, Accept, X-Requested-With
+│    X-RateLimit-Limit: 60
+│    X-RateLimit-Remaining: 51
+│    X-RateLimit-Reset: 1610413049
+│    x-ratelimit-used: 9
+│    Content-Length: 113
+│    X-GitHub-Request-Id: EE20:1A49:32B728:5589B0:5FFCE606
+│    
+│    {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/repos#get-repository-content"}""")
+│    Stacktrace:
+│     [1] request(::GitHubAPI, ::Function, ::GitForge.Endpoint; headers::Array{Pair{SubString{String},SubString{String}},1}, query::Dict{Any,Any}, request_opts::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Symbol,SubString{String},Tuple{Symbol},NamedTuple{(:ref,),Tuple{SubString{String}}}}) at /home/pkgeval/.julia/packages/GitForge/cPPnd/src/request.jl:158
+│     [2] get_file_contents(::GitHubAPI, ::String, ::String, ::String; kwargs::Base.Iterators.Pairs{Symbol,SubString{String},Tuple{Symbol},NamedTuple{(:ref,),Tuple{SubString{String}}}}) at /home/pkgeval/.julia/packages/GitForge/cPPnd/src/helpers.jl:8
+│     [3] gettoml(::GitHubAPI, ::GitForge.GitHub.Repo, ::SubString{String}) at /home/pkgeval/.julia/packages/Registrator/jZ75g/src/webui/gitutils.jl:6
+│     [4] register(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Registrator/jZ75g/src/webui/routes/register.jl:36
+│     [5] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [6] (::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [7] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [8] (::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [9] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [10] (::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [11] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.auth)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [12] (::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.auth)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}}}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [13] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.index)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [14] #1 at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10 [inlined]
+│     [15] error_handler(::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.index)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.auth)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}}}}}, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Registrator/jZ75g/src/webui/WebUI.jl:122
+│     [16] (::Mux.var"#1#2"{typeof(Registrator.WebUI.error_handler),Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.index)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.auth)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}}}}}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [17] (::Mux.var"#7#8"{Mux.App})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/server.jl:42
+│     [18] handle at /home/pkgeval/.julia/packages/HTTP/IAI92/src/Handlers.jl:253 [inlined]
+│     [19] handle(::HTTP.Handlers.RequestHandlerFunction{Mux.var"#7#8"{Mux.App}}, ::HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}) at /home/pkgeval/.julia/packages/HTTP/IAI92/src/Handlers.jl:276
+│     [20] #4 at /home/pkgeval/.julia/packages/HTTP/IAI92/src/Handlers.jl:345 [inlined]
+│     [21] macro expansion at /home/pkgeval/.julia/packages/HTTP/IAI92/src/Servers.jl:367 [inlined]
+│     [22] (::HTTP.Servers.var"#13#14"{HTTP.Handlers.var"#4#5"{HTTP.Handlers.RequestHandlerFunction{Mux.var"#7#8"{Mux.App}}},HTTP.ConnectionPool.Transaction{Sockets.TCPSocket},HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}})() at ./task.jl:356
+└ @ Registrator.WebUI ~/.julia/packages/Registrator/jZ75g/src/webui/gitutils.jl:8
+Route: /register (validation): Test Failed at /home/pkgeval/.julia/packages/Registrator/jZ75g/test/webui.jl:181
+  Expression: occursin("Unauthorized to release this package", String(resp.body))
+   Evaluated: occursin("Unauthorized to release this package", "{\"error\":\"(Julia)Project.toml was not found\"}")
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/Registrator/jZ75g/test/webui.jl:181
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/Registrator/jZ75g/test/webui.jl:141
+ [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.julia/packages/Registrator/jZ75g/test/webui.jl:38
+┌ Warning: API request failed
+│   exception =
+│    HTTP.ExceptionRequest.StatusError(404, "GET", "/repos/JuliaLang/julia/contents/JuliaProject.toml?ref=master", HTTP.Messages.Response:
+│    """
+│    HTTP/1.1 404 Not Found
+│    Server: GitHub.com
+│    Date: Mon, 11 Jan 2021 23:57:58 GMT
+│    Content-Type: application/json; charset=utf-8
+│    Status: 404 Not Found
+│    X-GitHub-Media-Type: github.v3; format=json
+│    Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
+│    Access-Control-Allow-Origin: *
+│    Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+│    X-Frame-Options: deny
+│    X-Content-Type-Options: nosniff
+│    X-XSS-Protection: 1; mode=block
+│    Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+│    Content-Security-Policy: default-src 'none'
+│    Vary: Accept-Encoding, Accept, X-Requested-With
+│    X-RateLimit-Limit: 60
+│    X-RateLimit-Remaining: 47
+│    X-RateLimit-Reset: 1610413049
+│    x-ratelimit-used: 13
+│    Content-Length: 113
+│    X-GitHub-Request-Id: EE20:1A49:32B845:558BB9:5FFCE608
+│    
+│    {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/repos#get-repository-content"}""")
+│    Stacktrace:
+│     [1] request(::GitHubAPI, ::Function, ::GitForge.Endpoint; headers::Array{Pair{SubString{String},SubString{String}},1}, query::Dict{Any,Any}, request_opts::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Symbol,SubString{String},Tuple{Symbol},NamedTuple{(:ref,),Tuple{SubString{String}}}}) at /home/pkgeval/.julia/packages/GitForge/cPPnd/src/request.jl:158
+│     [2] get_file_contents(::GitHubAPI, ::String, ::String, ::String; kwargs::Base.Iterators.Pairs{Symbol,SubString{String},Tuple{Symbol},NamedTuple{(:ref,),Tuple{SubString{String}}}}) at /home/pkgeval/.julia/packages/GitForge/cPPnd/src/helpers.jl:8
+│     [3] gettoml(::GitHubAPI, ::GitForge.GitHub.Repo, ::SubString{String}) at /home/pkgeval/.julia/packages/Registrator/jZ75g/src/webui/gitutils.jl:6
+│     [4] register(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Registrator/jZ75g/src/webui/routes/register.jl:36
+│     [5] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [6] (::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [7] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [8] (::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [9] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [10] (::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [11] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.auth)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [12] (::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.auth)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}}}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [13] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.index)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [14] #1 at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10 [inlined]
+│     [15] error_handler(::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.index)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.auth)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}}}}}, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Registrator/jZ75g/src/webui/WebUI.jl:122
+│     [16] (::Mux.var"#1#2"{typeof(Registrator.WebUI.error_handler),Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.index)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.auth)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}}}}}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [17] (::Mux.var"#7#8"{Mux.App})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/server.jl:42
+│     [18] handle at /home/pkgeval/.julia/packages/HTTP/IAI92/src/Handlers.jl:253 [inlined]
+│     [19] handle(::HTTP.Handlers.RequestHandlerFunction{Mux.var"#7#8"{Mux.App}}, ::HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}) at /home/pkgeval/.julia/packages/HTTP/IAI92/src/Handlers.jl:276
+│     [20] #4 at /home/pkgeval/.julia/packages/HTTP/IAI92/src/Handlers.jl:345 [inlined]
+│     [21] macro expansion at /home/pkgeval/.julia/packages/HTTP/IAI92/src/Servers.jl:367 [inlined]
+│     [22] (::HTTP.Servers.var"#13#14"{HTTP.Handlers.var"#4#5"{HTTP.Handlers.RequestHandlerFunction{Mux.var"#7#8"{Mux.App}}},HTTP.ConnectionPool.Transaction{Sockets.TCPSocket},HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}})() at ./task.jl:356
+└ @ Registrator.WebUI ~/.julia/packages/Registrator/jZ75g/src/webui/gitutils.jl:8
+┌ Warning: API request failed
+│   exception =
+│    HTTP.ExceptionRequest.StatusError(404, "GET", "/repos/JuliaLang/julia/contents/Project.toml?ref=master", HTTP.Messages.Response:
+│    """
+│    HTTP/1.1 404 Not Found
+│    Server: GitHub.com
+│    Date: Mon, 11 Jan 2021 23:57:58 GMT
+│    Content-Type: application/json; charset=utf-8
+│    Status: 404 Not Found
+│    X-GitHub-Media-Type: github.v3; format=json
+│    Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
+│    Access-Control-Allow-Origin: *
+│    Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+│    X-Frame-Options: deny
+│    X-Content-Type-Options: nosniff
+│    X-XSS-Protection: 1; mode=block
+│    Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+│    Content-Security-Policy: default-src 'none'
+│    Vary: Accept-Encoding, Accept, X-Requested-With
+│    X-RateLimit-Limit: 60
+│    X-RateLimit-Remaining: 46
+│    X-RateLimit-Reset: 1610413049
+│    x-ratelimit-used: 14
+│    Content-Length: 113
+│    X-GitHub-Request-Id: EE20:1A49:32B849:558BC1:5FFCE608
+│    
+│    {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/repos#get-repository-content"}""")
+│    Stacktrace:
+│     [1] request(::GitHubAPI, ::Function, ::GitForge.Endpoint; headers::Array{Pair{SubString{String},SubString{String}},1}, query::Dict{Any,Any}, request_opts::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Symbol,SubString{String},Tuple{Symbol},NamedTuple{(:ref,),Tuple{SubString{String}}}}) at /home/pkgeval/.julia/packages/GitForge/cPPnd/src/request.jl:158
+│     [2] get_file_contents(::GitHubAPI, ::String, ::String, ::String; kwargs::Base.Iterators.Pairs{Symbol,SubString{String},Tuple{Symbol},NamedTuple{(:ref,),Tuple{SubString{String}}}}) at /home/pkgeval/.julia/packages/GitForge/cPPnd/src/helpers.jl:8
+│     [3] gettoml(::GitHubAPI, ::GitForge.GitHub.Repo, ::SubString{String}) at /home/pkgeval/.julia/packages/Registrator/jZ75g/src/webui/gitutils.jl:6
+│     [4] register(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Registrator/jZ75g/src/webui/routes/register.jl:36
+│     [5] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [6] (::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [7] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [8] (::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [9] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [10] (::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [11] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.auth)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [12] (::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.auth)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}}}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [13] (::Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.index)})(::Function, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:17
+│     [14] #1 at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10 [inlined]
+│     [15] error_handler(::Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.index)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.auth)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}}}}}, ::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Registrator/jZ75g/src/webui/WebUI.jl:122
+│     [16] (::Mux.var"#1#2"{typeof(Registrator.WebUI.error_handler),Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.index)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.auth)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.callback)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.select)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.register)},Mux.var"#1#2"{Mux.var"#5#6"{Registrator.WebUI.var"#32#33"{String},typeof(Registrator.WebUI.status)},Registrator.WebUI.var"#38#40"}}}}}}})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/Mux.jl:10
+│     [17] (::Mux.var"#7#8"{Mux.App})(::HTTP.Messages.Request) at /home/pkgeval/.julia/packages/Mux/Ej61O/src/server.jl:42
+│     [18] handle at /home/pkgeval/.julia/packages/HTTP/IAI92/src/Handlers.jl:253 [inlined]
+│     [19] handle(::HTTP.Handlers.RequestHandlerFunction{Mux.var"#7#8"{Mux.App}}, ::HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}) at /home/pkgeval/.julia/packages/HTTP/IAI92/src/Handlers.jl:276
+│     [20] #4 at /home/pkgeval/.julia/packages/HTTP/IAI92/src/Handlers.jl:345 [inlined]
+│     [21] macro expansion at /home/pkgeval/.julia/packages/HTTP/IAI92/src/Servers.jl:367 [inlined]
+│     [22] (::HTTP.Servers.var"#13#14"{HTTP.Handlers.var"#4#5"{HTTP.Handlers.RequestHandlerFunction{Mux.var"#7#8"{Mux.App}}},HTTP.ConnectionPool.Transaction{Sockets.TCPSocket},HTTP.Streams.Stream{HTTP.Messages.Request,HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}})() at ./task.jl:356
+└ @ Registrator.WebUI ~/.julia/packages/Registrator/jZ75g/src/webui/gitutils.jl:8
+Route: /register (validation): Test Failed at /home/pkgeval/.julia/packages/Registrator/jZ75g/test/webui.jl:186
+  Expression: occursin("Unauthorized to release this package", String(resp.body))
+   Evaluated: occursin("Unauthorized to release this package", "{\"error\":\"(Julia)Project.toml was not found\"}")
+Stacktrace:
+ [1] top-level scope at /home/pkgeval/.julia/packages/Registrator/jZ75g/test/webui.jl:186
+ [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/pkgeval/.julia/packages/Registrator/jZ75g/test/webui.jl:141
+ [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [5] top-level scope at /home/pkgeval/.julia/packages/Registrator/jZ75g/test/webui.jl:38
+Test Summary:                     | Pass  Fail  Total
+Registrator                       |   60     2     62
+  Server                          |   16           16
+  Web UI                          |   44     2     46
+    Provider initialization       |    5            5
+    Registry initialization       |    4            4
+    404s                          |   12           12
+    Route: /                      |    7            7
+    Route: /select                |    2            2
+    Route: /register (validation) |   14     2     16
+ERROR: LoadError: Some tests did not pass: 60 passed, 2 failed, 0 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/Registrator/jZ75g/test/runtests.jl:3
+
+PkgEval failed: Package Registrator errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:58:04.685
+CPU usage: 89.76s (82.00s user, 7.92s kernel)
+
+Network usage:
+- eth0: 3.648 MiB received, 171.168 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":5,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":24,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":29,"op":"Total","minor":0},{"major":253,"value":5,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":24,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":29,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":20480,"op":"Read","minor":0},{"major":259,"value":135168,"op":"Write","minor":0},{"major":259,"value":126976,"op":"Sync","minor":0},{"major":259,"value":28672,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":155648,"op":"Total","minor":0},{"major":253,"value":20480,"op":"Read","minor":2},{"major":253,"value":135168,"op":"Write","minor":2},{"major":253,"value":126976,"op":"Sync","minor":2},{"major":253,"value":28672,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":155648,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":347938816,"max_usage":1209933824,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":210182144,"inactive_file":135168,"inactive_anon":81776640,"total_pgfault":2385471,"total_cache":105177088,"total_rss_huge":0,"total_active_anon":224378880,"total_pgmajfault":0,"pgpgin":1752894,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":1216512,"total_unevictable":0,"total_dirty":1216512,"writeback":0,"pgpgout":1675912,"hierarchical_memsw_limit":0,"cache":105177088,"active_file":9326592,"pgfault":2385471,"total_mapped_file":0,"total_pgpgout":1675912,"total_writeback":0,"rss":210182144,"unevictable":0,"total_inactive_anon":81776640,"total_pgpgin":1752894,"active_anon":224378880,"total_active_file":9326592},"limit":540965302272},"name":"/Registrator-xA2mmEr5","networks":{"eth0":{"rx_bytes":3825088,"rx_packets":1178,"tx_packets":1365,"tx_bytes":175276,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"777504e2d50e17c30be8edf3c5d1ddcac16fe72157e7e21a7457b2009d6f9a22","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":7104540314522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":82000000000,"usage_in_kernelmode":7920000000,"total_usage":89764683203,"percpu_usage":[0,0,0,0,0,0,0,89764677323,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4410,1470,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:58:05.275776981Z"}

@@ -1,0 +1,159 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T18:29:05.584
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T18:29:07.346
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed DevIL ─────────── v0.5.0
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [01638602] + DevIL v0.5.0
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [01638602] + DevIL v0.5.0
+  [9b87118b] + PackageCompiler v1.2.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building DevIL → `~/.julia/packages/DevIL/J5xvy/deps/build.log`
+┌ Error: Error building `DevIL`: 
+│ Reading package lists...
+│ Building dependency tree...
+│ Reading state information...
+│ E: Unable to locate package libdevil1c2
+│ ERROR: LoadError: failed process: Process(`sudo apt-get install libdevil1c2`, ProcessExited(100)) [100]
+│ 
+│ Stacktrace:
+│  [1] pipeline_error at ./process.jl:525 [inlined]
+│  [2] run(::Cmd; wait::Bool) at ./process.jl:440
+│  [3] run(::Cmd) at ./process.jl:438
+│  [4] top-level scope at /home/pkgeval/.julia/packages/DevIL/J5xvy/deps/build.jl:25
+│  [5] include(::String) at ./client.jl:457
+│  [6] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/DevIL/J5xvy/deps/build.jl:24
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+
+
+################################################################################
+# Compiling: 2021-01-11T18:29:14.587
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 147.506 MiB, compilation took 162 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T18:32:03.687
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/DevIL-NkBM1FaH.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:32:05.529
+#
+
+ Installing known registries into `~/.julia`
+###########################################                               59.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed DevIL ─ v0.5.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [01638602] + DevIL v0.5.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [01638602] + DevIL v0.5.0
+  [8f399da3] + Libdl
+   Building DevIL → `~/.julia/packages/DevIL/J5xvy/deps/build.log`
+┌ Error: Error building `DevIL`: 
+│ 
+│ We trust you have received the usual lecture from the local System
+│ Administrator. It usually boils down to these three things:
+│ 
+│     #1) Respect the privacy of others.
+│     #2) Think before you type.
+│     #3) With great power comes great responsibility.
+│ 
+│ sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+│ sudo: a password is required
+│ ERROR: LoadError: failed process: Process(`sudo apt-get install libdevil1c2`, ProcessExited(1)) [1]
+│ 
+│ Stacktrace:
+│  [1] pipeline_error at ./process.jl:525 [inlined]
+│  [2] run(::Cmd; wait::Bool) at ./process.jl:440
+│  [3] run(::Cmd) at ./process.jl:438
+│  [4] top-level scope at /home/user/.julia/packages/DevIL/J5xvy/deps/build.jl:25
+│  [5] include(::String) at ./client.jl:457
+│  [6] top-level scope at none:5
+│ in expression starting at /home/user/.julia/packages/DevIL/J5xvy/deps/build.jl:24
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+
+
+################################################################################
+# Testing: 2021-01-11T18:32:12.857
+#
+
+    Testing DevIL
+Status `/tmp/jl_lqhk8b/Project.toml`
+  [01638602] DevIL v0.5.0
+  [8f399da3] Libdl
+Status `/tmp/jl_lqhk8b/Manifest.toml`
+  [01638602] DevIL v0.5.0
+  [8f399da3] Libdl
+    Testing DevIL tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:32:14.624
+CPU usage: 8.98s (6.64s user, 2.38s kernel)
+
+Network usage:
+- eth0: 2.544 MiB received, 33.452 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":62,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":76,"op":"Sync","minor":0},{"major":259,"value":10,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":86,"op":"Total","minor":0},{"major":253,"value":62,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":76,"op":"Sync","minor":2},{"major":253,"value":10,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":86,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":3485696,"op":"Read","minor":0},{"major":259,"value":98304,"op":"Write","minor":0},{"major":259,"value":3543040,"op":"Sync","minor":0},{"major":259,"value":40960,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":3584000,"op":"Total","minor":0},{"major":253,"value":3485696,"op":"Read","minor":2},{"major":253,"value":98304,"op":"Write","minor":2},{"major":253,"value":3543040,"op":"Sync","minor":2},{"major":253,"value":40960,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":3584000,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":286535680,"max_usage":443564032,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":33,"total_rss":174841856,"inactive_file":1683456,"inactive_anon":96915456,"total_pgfault":242814,"total_cache":82653184,"total_rss_huge":0,"total_active_anon":157065216,"total_pgmajfault":33,"pgpgin":174735,"rss_huge":0,"mapped_file":2973696,"total_inactive_file":1683456,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":135168,"pgpgout":111859,"hierarchical_memsw_limit":0,"cache":82653184,"active_file":1757184,"pgfault":242814,"total_mapped_file":2973696,"total_pgpgout":111859,"total_writeback":135168,"rss":174841856,"unevictable":0,"total_inactive_anon":96915456,"total_pgpgin":174735,"active_anon":157065216,"total_active_file":1757184},"limit":540965302272},"name":"/DevIL-0BGW7Veb","networks":{"eth0":{"rx_bytes":2667569,"rx_packets":371,"tx_packets":377,"tx_bytes":34255,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"3f9507363721c6cc30bc490bb48b24fb52d4261ef7e34786f4a917b119b64fec","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4606173524522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":6640000000,"usage_in_kernelmode":2380000000,"total_usage":8975520924,"percpu_usage":[0,0,0,0,0,0,0,0,0,8975517464,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3460,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:32:14.627494293Z"}

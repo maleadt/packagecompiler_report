@@ -1,0 +1,112 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T16:41:17.738
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:41:19.517
+#
+
+ Installing known registries into `~/.julia`
+###########                                                               16.4%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed FLAC ──────── v0.3.0
+  Installed FLAC_jll ──── v1.3.3+2
+  Installed JLLWrappers ─ v1.2.0
+  Installed Ogg_jll ───── v1.3.4+2
+  Installed Artifacts ─── v1.3.0
+  Installed FileIO ────── v1.4.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [abae9e3b] + FLAC v0.3.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [abae9e3b] + FLAC v0.3.0
+  [1d38b3a6] + FLAC_jll v1.3.3+2
+  [5789e2e9] + FileIO v1.4.5
+  [692b3bcd] + JLLWrappers v1.2.0
+  [e7412a2a] + Ogg_jll v1.3.4+2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T16:41:24.043
+#
+
+    Testing FLAC
+Status `/tmp/jl_h6eprS/Project.toml`
+  [abae9e3b] FLAC v0.3.0
+  [1d38b3a6] FLAC_jll v1.3.3+2
+  [5789e2e9] FileIO v1.4.5
+  [8149f6b0] WAV v1.1.0
+  [8dfed614] Test
+Status `/tmp/jl_h6eprS/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [abae9e3b] FLAC v0.3.0
+  [1d38b3a6] FLAC_jll v1.3.3+2
+  [5789e2e9] FileIO v1.4.5
+  [692b3bcd] JLLWrappers v1.2.0
+  [e7412a2a] Ogg_jll v1.3.4+2
+  [8149f6b0] WAV v1.1.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+FLAC          |   25     25
+    Testing FLAC tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T16:41:41.069
+CPU usage: 23.33s (20.19s user, 3.20s kernel)
+
+Network usage:
+- eth0: 2.982 MiB received, 57.231 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":2,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":21,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":26,"op":"Total","minor":0},{"major":253,"value":2,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":21,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":26,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":155648,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":262144,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":282624,"op":"Total","minor":0},{"major":253,"value":155648,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":262144,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":282624,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":340164608,"max_usage":1025884160,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":226258944,"inactive_file":135168,"inactive_anon":80560128,"total_pgfault":682605,"total_cache":83976192,"total_rss_huge":0,"total_active_anon":229380096,"total_pgmajfault":0,"pgpgin":411708,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":336005,"hierarchical_memsw_limit":0,"cache":83976192,"active_file":135168,"pgfault":682605,"total_mapped_file":0,"total_pgpgout":336005,"total_writeback":0,"rss":226258944,"unevictable":0,"total_inactive_anon":80560128,"total_pgpgin":411708,"active_anon":229380096,"total_active_file":135168},"limit":540965302272},"name":"/FLAC-t1hUE9zg","networks":{"eth0":{"rx_bytes":3127288,"rx_packets":486,"tx_packets":526,"tx_bytes":58605,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"9bb698b81d16f1a5dcfec215ec24240b589864cc8e6b484b7dc2d149ac6ad195","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3758731154522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":20190000000,"usage_in_kernelmode":3200000000,"total_usage":23333963608,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23333932238,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31370,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T16:41:41.072519349Z"}

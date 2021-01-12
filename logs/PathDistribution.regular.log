@@ -1,0 +1,69 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:30:15.769
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:30:17.569
+#
+
+ Installing known registries into `~/.julia`
+###############                                                           22.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed PathDistribution ─ v0.2.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [1a7fcfa4] + PathDistribution v0.2.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [1a7fcfa4] + PathDistribution v0.2.1
+
+
+################################################################################
+# Testing: 2021-01-11T17:30:21.674
+#
+
+    Testing PathDistribution
+Status `/tmp/jl_1c4zWS/Project.toml`
+  [1a7fcfa4] PathDistribution v0.2.1
+Status `/tmp/jl_1c4zWS/Manifest.toml`
+  [1a7fcfa4] PathDistribution v0.2.1
+===== Case 1 of Roberts & Kroese (2007) =====
+The total number of paths:
+- Full enumeration      : 397
+- Monte Carlo estimation: 395.6893957543825
+- Monte Carlo estimation: 395.3919127982426
+- Monte Carlo estimation: 401.15795851143633
+- Monte Carlo estimation: 402.9174875335099
+- Monte Carlo estimation: 390.2601766638665
+- Monte Carlo estimation: 391.77224185343044
+===== Another Example =====
+The total number of paths:
+- Full enumeration      : 9851
+- Monte Carlo estimation: 10027.907745590446
+    Testing PathDistribution tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:30:27.995
+CPU usage: 12.29s (9.87s user, 2.46s kernel)
+
+Network usage:
+- eth0: 2.536 MiB received, 27.330 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":324415488,"max_usage":574300160,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":215261184,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":396066,"total_cache":79319040,"total_rss_huge":0,"total_active_anon":215998464,"total_pgmajfault":0,"pgpgin":267069,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":195138,"hierarchical_memsw_limit":0,"cache":79319040,"active_file":135168,"pgfault":396066,"total_mapped_file":0,"total_pgpgout":195138,"total_writeback":0,"rss":215261184,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":267069,"active_anon":215998464,"total_active_file":135168},"limit":540965302272},"name":"/PathDistribution-V54kdz3W","networks":{"eth0":{"rx_bytes":2659426,"rx_packets":288,"tx_packets":282,"tx_bytes":27986,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"9fe994f7b2f2a113a95b3fd43d6a97011b3a05ed6849d17e570de1ecf19f17ee","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4132737364522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":9870000000,"usage_in_kernelmode":2460000000,"total_usage":12287361887,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12287357657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4230,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:30:28.713250095Z"}

@@ -1,0 +1,68 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:13:36.483
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:13:38.152
+#
+
+ Installing known registries into `~/.julia`
+##                                                                         3.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed AutoGainCtrl ─ v0.1.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [0e8e90c2] + AutoGainCtrl v0.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [0e8e90c2] + AutoGainCtrl v0.1.1
+
+
+################################################################################
+# Testing: 2021-01-11T15:13:58.34
+#
+
+
+PkgEval failed: Package AutoGainCtrl did not provide a `test/runtests.jl` file
+Stacktrace:
+ [1] pkgerror(::String, ::Vararg{String,N} where N) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1536
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:14:00.598
+CPU usage: 17.27s (5.32s user, 12.18s kernel)
+
+Network usage:
+- eth0: 2.678 MiB received, 30.564 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":1014,"op":"Read","minor":0},{"major":259,"value":163,"op":"Write","minor":0},{"major":259,"value":1176,"op":"Sync","minor":0},{"major":259,"value":1,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1177,"op":"Total","minor":0},{"major":253,"value":1014,"op":"Read","minor":2},{"major":253,"value":163,"op":"Write","minor":2},{"major":253,"value":1176,"op":"Sync","minor":2},{"major":253,"value":1,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1177,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":4153344,"op":"Read","minor":0},{"major":259,"value":696320,"op":"Write","minor":0},{"major":259,"value":4845568,"op":"Sync","minor":0},{"major":259,"value":4096,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":4849664,"op":"Total","minor":0},{"major":253,"value":4153344,"op":"Read","minor":2},{"major":253,"value":696320,"op":"Write","minor":2},{"major":253,"value":4845568,"op":"Sync","minor":2},{"major":253,"value":4096,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":4849664,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":310312960,"max_usage":459493376,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":173981696,"inactive_file":540672,"inactive_anon":78802944,"total_pgfault":249711,"total_cache":104615936,"total_rss_huge":0,"total_active_anon":174501888,"total_pgmajfault":0,"pgpgin":126885,"rss_huge":0,"mapped_file":0,"total_inactive_file":540672,"dirty":1486848,"total_unevictable":0,"total_dirty":1486848,"writeback":135168,"pgpgout":58890,"hierarchical_memsw_limit":0,"cache":104615936,"active_file":24870912,"pgfault":249711,"total_mapped_file":0,"total_pgpgout":58890,"total_writeback":135168,"rss":173981696,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":126885,"active_anon":174501888,"total_active_file":24870912},"limit":540965302272},"name":"/AutoGainCtrl-vupVzDYX","networks":{"eth0":{"rx_bytes":2808283,"rx_packets":380,"tx_packets":332,"tx_bytes":31298,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"6627fdd0cce1707d801a50dc015dd5c746b022311b3593611fe153db8b61060d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3086357514522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":5320000000,"usage_in_kernelmode":12180000000,"total_usage":17274352966,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17274351196,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1770,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:14:00.601113635Z"}

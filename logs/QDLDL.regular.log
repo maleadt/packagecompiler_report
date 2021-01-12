@@ -1,0 +1,90 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:09:06.569
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:09:08.393
+#
+
+ Installing known registries into `~/.julia`
+###################################################################       93.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed QDLDL ─ v0.1.4
+  Installed AMD ─── v0.4.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [bfc457fd] + QDLDL v0.1.4
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [14f7f29c] + AMD v0.4.0
+  [bfc457fd] + QDLDL v0.1.4
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T19:09:12.401
+#
+
+    Testing QDLDL
+Status `/tmp/jl_9EASfS/Project.toml`
+  [14f7f29c] AMD v0.4.0
+  [bfc457fd] QDLDL v0.1.4
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_9EASfS/Manifest.toml`
+  [14f7f29c] AMD v0.4.0
+  [bfc457fd] QDLDL v0.1.4
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Test Summary:  | Pass  Total
+All Unit Tests |   12     12
+    Testing QDLDL tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:09:25.807
+CPU usage: 19.23s (16.35s user, 2.91s kernel)
+
+Network usage:
+- eth0: 2.566 MiB received, 36.783 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":540,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":559,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":564,"op":"Total","minor":0},{"major":253,"value":540,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":559,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":564,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":2211840,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":2318336,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":2338816,"op":"Total","minor":0},{"major":253,"value":2211840,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":2318336,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":2338816,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":366608384,"max_usage":757112832,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":230506496,"inactive_file":270336,"inactive_anon":78802944,"total_pgfault":402765,"total_cache":103743488,"total_rss_huge":0,"total_active_anon":231272448,"total_pgmajfault":0,"pgpgin":261459,"rss_huge":0,"mapped_file":0,"total_inactive_file":270336,"dirty":5001216,"total_unevictable":0,"total_dirty":5001216,"writeback":135168,"pgpgout":179865,"hierarchical_memsw_limit":0,"cache":103743488,"active_file":24195072,"pgfault":402765,"total_mapped_file":0,"total_pgpgout":179865,"total_writeback":135168,"rss":230506496,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":261459,"active_anon":231272448,"total_active_file":24195072},"limit":540965302272},"name":"/QDLDL-EuUjiwbt","networks":{"eth0":{"rx_bytes":2690232,"rx_packets":378,"tx_packets":392,"tx_bytes":37666,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"f7d8f6af1aba07995d84238f35a729c582b9b35559a8cdf47ce02097d5254afc","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4891471294522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":16350000000,"usage_in_kernelmode":2910000000,"total_usage":19226248613,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19226210853,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4970,32790,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:09:26.684581972Z"}

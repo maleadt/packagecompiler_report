@@ -1,0 +1,284 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:58:51.877
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:58:53.691
+#
+
+ Installing known registries into `~/.julia`
+####################                                                      28.3%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed EllipsisNotation ─ v1.0.0
+  Installed Requires ───────── v1.1.2
+  Installed Reexport ───────── v0.2.0
+  Installed ArrayInterface ─── v2.14.13
+  Installed StaticRanges ───── v0.8.3
+  Installed IntervalSets ───── v0.5.2
+  Installed ChainedFixes ───── v0.2.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [d8176aec] + StaticRanges v0.8.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [4fba245c] + ArrayInterface v2.14.13
+  [9706b775] + ChainedFixes v0.2.1
+  [da5c29d0] + EllipsisNotation v1.0.0
+  [8197267c] + IntervalSets v0.5.2
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [d8176aec] + StaticRanges v0.8.3
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T20:58:58.262
+#
+
+    Testing StaticRanges
+Status `/tmp/jl_hAqZKQ/Project.toml`
+  [4fba245c] ArrayInterface v2.14.13
+  [9706b775] ChainedFixes v0.2.1
+  [e30172f5] Documenter v0.26.1
+  [8197267c] IntervalSets v0.5.2
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [90137ffa] StaticArrays v1.0.1
+  [d8176aec] StaticRanges v0.8.3
+  [ade2ca70] Dates
+  [37e2e46d] LinearAlgebra
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_hAqZKQ/Manifest.toml`
+  [79e6a3ab] Adapt v2.4.0
+  [4fba245c] ArrayInterface v2.14.13
+  [9706b775] ChainedFixes v0.2.1
+  [ffbed154] DocStringExtensions v0.8.3
+  [e30172f5] Documenter v0.26.1
+  [da5c29d0] EllipsisNotation v1.0.0
+  [b5f81e59] IOCapture v0.1.1
+  [8197267c] IntervalSets v0.5.2
+  [682c06a0] JSON v0.21.1
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [69de0a69] Parsers v1.0.15
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [90137ffa] StaticArrays v1.0.1
+  [d8176aec] StaticRanges v0.8.3
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Skipping Base.active_repl
+Skipping Base.active_repl_backend
+Skipping Base.active_repl
+Skipping Base.active_repl_backend
+Test Summary: | Pass  Total
+checkindex    |    8      8
+Test Summary:  | Pass  Total
+length - tests |  153    153
+Test Summary: |  Pass  Total
+find methods  | 20275  20275
+Test Summary:             | Pass  Total
+findall(::ChainedFix,...) | 9600   9600
+Test Summary:                  | Pass  Total
+find_all(!=(0), Base.OneTo(5)) |    2      2
+Test Summary:                  | Pass  Total
+find_all(!=(1), Base.OneTo(5)) |    2      2
+Test Summary:                  | Pass  Total
+find_all(!=(4), Base.OneTo(5)) |    2      2
+Test Summary:                  | Pass  Total
+find_all(!=(7), Base.OneTo(5)) |    2      2
+Test Summary:        | Pass  Total
+find_all(!=(1), 2:6) |    2      2
+Test Summary:        | Pass  Total
+find_all(!=(2), 2:6) |    2      2
+Test Summary:        | Pass  Total
+find_all(!=(5), 2:6) |    2      2
+Test Summary:        | Pass  Total
+find_all(!=(8), 2:6) |    2      2
+Test Summary:            | Pass  Total
+find_all(!=(-1), 1:2:11) |    2      2
+Test Summary:           | Pass  Total
+find_all(!=(1), 1:2:11) |    2      2
+Test Summary:           | Pass  Total
+find_all(!=(7), 1:2:11) |    2      2
+Test Summary:            | Pass  Total
+find_all(!=(13), 1:2:11) |    2      2
+Test Summary:             | Pass  Total
+find_all(!=(13), 11:-2:1) |    2      2
+Test Summary:             | Pass  Total
+find_all(!=(11), 11:-2:1) |    2      2
+Test Summary:            | Pass  Total
+find_all(!=(5), 11:-2:1) |    2      2
+Test Summary:             | Pass  Total
+find_all(!=(-1), 11:-2:1) |    2      2
+Test Summary:                                        | Pass  Total
+find_all(!=(-1.25), range(1.0, stop=10.0, length=5)) |    2      2
+Test Summary:                                      | Pass  Total
+find_all(!=(1.0), range(1.0, stop=10.0, length=5)) |    2      2
+Test Summary:                                       | Pass  Total
+find_all(!=(7.75), range(1.0, stop=10.0, length=5)) |    2      2
+Test Summary:                                       | Pass  Total
+find_all(!=(14.5), range(1.0, stop=10.0, length=5)) |    2      2
+Test Summary:            | Pass  Total
+find_all(!=(-2), 1:3:13) |    2      2
+Test Summary:           | Pass  Total
+find_all(!=(1), 1:3:13) |    2      2
+Test Summary:            | Pass  Total
+find_all(!=(10), 1:3:13) |    2      2
+Test Summary:            | Pass  Total
+find_all(!=(19), 1:3:13) |    2      2
+Test Summary:       | Pass  Total
+filter non numerics |    3      3
+Test Summary:      | Pass  Total
+find_all(in(x), r) |   27     27
+Test Summary: | Pass  Total
+filter        | 8068   8068
+Test Summary: | Pass  Total
+GapRange      |   67     67
+Test Summary: | Pass  Total
+vcat_sort     |   45     45
+Test Summary: | Pass  Total
+first_segment |   12     12
+Test Summary: | Pass  Total
+merge_sort    |   45     45
+Test Summary: | Pass  Total
+pop           |   12     12
+Test Summary: | Pass  Total
+popfirst      |   12     12
+Test Summary: | Pass  Total
+Continuity    |    3      3
+Test Summary: | Pass  Total
+Order tests   |   84     84
+Test Summary: | Pass  Total
+UnitRange     |   32     32
+Test Summary: | Pass  Total
+promotion     |   98     98
+Test Summary:              | Pass  Total
+nitty_gritty_promote_rules |   81     81
+Test Summary:     | Pass  Total
+Mutable interface |    4      4
+Test Summary: | Pass  Total
+first         |   26     26
+Test Summary: | Pass  Total
+step(r)       |   35     35
+Test Summary: | Pass  Total
+last          |   29     29
+Test Summary: | Pass  Total
+Staticness    |   65     65
+Test Summary:   | Pass  Total
+Range Interface |   76     76
+Test Summary: | Pass  Total
+broadcast     |   80     80
+Test Summary: | Pass  Total
+OneToMRange   |   49     49
+Test Summary: | Pass  Total
+show          |    2      2
+Test Summary: | Pass  Total
+OneToSRange   |   49     49
+Test Summary: | Pass  Total
+show          |    2      2
+Test Summary: | Pass  Total
+UnitRange     |   32     32
+Test Summary: | Pass  Total
+StepRange     |   25     25
+Test Summary:    | Pass  Total
+intersect-mrange |   41     41
+Test Summary:    | Pass  Total
+intersect-srange |   41     41
+Test Summary:  | Pass  Total
+reverse-mrange |    3      3
+Test Summary:  | Pass  Total
+reverse-srange |    3      3
+Test Summary: | Pass  Total
+reverse!      |    6      6
+Test Summary:        | Pass  Total
+AbstractStepRangeLen |   44     44
+Test Summary: | Pass  Total
+LinRange      |   32     32
+Test Summary: | Pass  Total
+empty         |   15     15
+Test Summary: |    Pass  Broken    Total
+mrange        | 8292154  327680  8619834
+Test Summary: |    Pass  Broken    Total
+srange        | 1968154  327680  2295834
+Test Summary:        | Pass  Total
+AbstractStepRangeLen |    2      2
+Test Summary: | Pass  Total
+resize tests  |   82     82
+Test Summary: | Pass  Total
+cont          | 1940   1940
+[ Info: SetupBuildDirectory: setting up build directory.
+[ Info: Doctest: running doctests.
+[ Info: Skipped ExpandTemplates step (doctest only).
+[ Info: Skipped CrossReferences step (doctest only).
+[ Info: Skipped CheckDocument step (doctest only).
+[ Info: Skipped Populate step (doctest only).
+[ Info: Skipped RenderDocument step (doctest only).
+Test Summary: | Pass  Total
+docs          |    1      1
+    Testing StaticRanges tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:03:18.03
+CPU usage: 265.95s (260.13s user, 6.16s kernel)
+
+Network usage:
+- eth0: 3.561 MiB received, 97.875 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":131072,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":24576,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":131072,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":131072,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":24576,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":131072,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":352780288,"max_usage":1178066944,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":227721216,"inactive_file":135168,"inactive_anon":82993152,"total_pgfault":2429361,"total_cache":94502912,"total_rss_huge":0,"total_active_anon":239247360,"total_pgmajfault":0,"pgpgin":1401774,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":1323118,"hierarchical_memsw_limit":0,"cache":94502912,"active_file":135168,"pgfault":2429361,"total_mapped_file":0,"total_pgpgout":1323118,"total_writeback":0,"rss":227721216,"unevictable":0,"total_inactive_anon":82993152,"total_pgpgin":1401774,"active_anon":239247360,"total_active_file":135168},"limit":540965302272},"name":"/StaticRanges-gKJQCeQT","networks":{"eth0":{"rx_bytes":3733576,"rx_packets":888,"tx_packets":863,"tx_bytes":100224,"tx_dropped":0,"rx_dropped":9,"tx_errors":0,"rx_errors":0}},"id":"d8927462aee4a8a6bb41172f391b37405e3beeb983cd484504937f7406dbb5cc","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5764602754522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":260130000000,"usage_in_kernelmode":6160000000,"total_usage":265953882469,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,265953882469,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:03:18.032731696Z"}

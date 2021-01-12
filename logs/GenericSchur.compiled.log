@@ -1,0 +1,201 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T16:03:44.915
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T16:03:46.588
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed GenericSchur ──── v0.4.0
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [c145ed77] + GenericSchur v0.4.0
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [c145ed77] + GenericSchur v0.4.0
+  [9b87118b] + PackageCompiler v1.2.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T16:03:52.093
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 148.080 MiB, compilation took 155 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T16:06:34.101
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/GenericSchur-f6gL5Sui.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:06:35.87
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed GenericSchur ─ v0.4.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [c145ed77] + GenericSchur v0.4.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [c145ed77] + GenericSchur v0.4.0
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [de0858da] + Printf
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T16:06:39.808
+#
+
+    Testing GenericSchur
+Status `/tmp/jl_8dqLz8/Project.toml`
+  [01680d73] GenericSVD v0.3.0
+  [c145ed77] GenericSchur v0.4.0
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [de0858da] Printf
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_8dqLz8/Manifest.toml`
+  [01680d73] GenericSVD v0.3.0
+  [c145ed77] GenericSchur v0.4.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Test Summary:     | Pass  Total
+balancing Float64 |    1      1
+Test Summary:              | Pass  Total
+balancing Complex{Float64} |    1      1
+Test Summary:      | Pass  Total
+balancing BigFloat |    1      1
+Test Summary:               | Pass  Total
+balancing Complex{BigFloat} |    1      1
+Test Summary:                 | Pass  Total
+vector normalization BigFloat |    3      3
+Test Summary:                          | Pass  Total
+vector normalization Complex{BigFloat} |    3      3
+Test Summary:  | Pass  Total
+group BigFloat |   38     38
+Test Summary: | Pass  Total
+group Float16 |   38     38
+Test Summary: | Pass  Total
+Godunov       |    2      2
+Test Summary: | Pass  Total
+group Float64 |  324    324
+Test Summary: | Pass  Total
+group Float32 |  324    324
+Test Summary:           | Pass  Total
+group Complex{BigFloat} |   30     30
+Test Summary:          | Pass  Total
+group Complex{Float16} |   30     30
+Test Summary:     | Pass  Total
+Godunov (complex) |    2      2
+Test Summary:          | Pass  Total
+group Complex{Float64} |  204    204
+Test Summary:          | Pass  Total
+group Complex{Float32} |  204    204
+Test Summary:             | Pass  Total
+ordschur Complex{Float64} |    4      4
+Test Summary:                       | Pass  Total
+subspace condition Complex{Float64} |    2      2
+Test Summary:                       | Pass  Total
+generalized sanity Complex{Float64} |   14     14
+Test Summary:                        | Pass  Total
+generalized sanity Complex{BigFloat} |   14     14
+Test Summary:                   | Pass  Total
+gen. sylvester Complex{Float64} |   10     10
+Test Summary:                        | Pass  Total
+gen. adj. sylvester Complex{Float64} |   10     10
+Test Summary:          | Pass  Total
+gen. sylvester Float64 |   10     10
+Test Summary:               | Pass  Total
+gen. adj. sylvester Float64 |   10     10
+Test Summary:                    | Pass  Total
+gen. sylvester Complex{BigFloat} |   10     10
+Test Summary:                         | Pass  Total
+gen. adj. sylvester Complex{BigFloat} |   10     10
+Test Summary:                  | Pass  Total
+gen. ordschur Complex{Float64} |    7      7
+Test Summary:                   | Pass  Total
+gen. ordschur Complex{BigFloat} |    7      7
+Test Summary:                   | Pass  Total
+gen. condition Complex{Float64} |   20     20
+Test Summary:                    | Pass  Total
+gen. condition Complex{BigFloat} |   20     20
+    Testing GenericSchur tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T16:08:25.887
+CPU usage: 111.65s (108.88s user, 2.90s kernel)
+
+Network usage:
+- eth0: 2.590 MiB received, 33.700 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":19,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":19,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":77824,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":77824,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":324743168,"max_usage":842567680,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":215302144,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":976305,"total_cache":80023552,"total_rss_huge":0,"total_active_anon":216133632,"total_pgmajfault":0,"pgpgin":386100,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":314004,"hierarchical_memsw_limit":0,"cache":80023552,"active_file":405504,"pgfault":976305,"total_mapped_file":0,"total_pgpgout":314004,"total_writeback":0,"rss":215302144,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":386100,"active_anon":216133632,"total_active_file":405504},"limit":540965302272},"name":"/GenericSchur-7MVuNw0D","networks":{"eth0":{"rx_bytes":2715760,"rx_packets":360,"tx_packets":344,"tx_bytes":34509,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"2b68faa70fd6e59ec768ae45d8705da013bbb693a58f272ad9d0c026e77749ad","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3503576654522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":108880000000,"usage_in_kernelmode":2900000000,"total_usage":111645453588,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,111645446538,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7050,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T16:08:25.890494975Z"}

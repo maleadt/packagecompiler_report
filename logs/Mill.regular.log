@@ -1,0 +1,665 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:10:11.809
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:10:13.625
+#
+
+ Installing known registries into `~/.julia`
+###########                                                               16.4%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed Functors ───────────────────── v0.1.0
+  Installed Media ──────────────────────── v0.5.0
+  Installed Juno ───────────────────────── v0.8.4
+  Installed ZygoteRules ────────────────── v0.2.1
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed GPUArrays ──────────────────── v6.2.0
+  Installed Zygote ─────────────────────── v0.5.17
+  Installed Mill ───────────────────────── v2.1.2
+  Installed Scratch ────────────────────── v1.0.3
+  Installed Reexport ───────────────────── v0.2.0
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed TableTraits ────────────────── v1.0.0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed LearnBase ──────────────────── v0.4.1
+  Installed CEnum ──────────────────────── v0.4.1
+  Installed TranscodingStreams ─────────── v0.9.5
+  Installed CategoricalArrays ──────────── v0.9.0
+  Installed LLVM ───────────────────────── v3.5.2
+  Installed DataFrames ─────────────────── v0.22.2
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed Flux ───────────────────────── v0.11.3
+  Installed Tables ─────────────────────── v1.2.2
+  Installed FillArrays ─────────────────── v0.10.2
+  Installed Combinatorics ──────────────── v1.0.2
+  Installed Requires ───────────────────── v1.1.2
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed TimerOutputs ───────────────── v0.5.7
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Setfield ───────────────────── v0.7.0
+  Installed Colors ─────────────────────── v0.12.6
+  Installed CUDA ───────────────────────── v2.4.0
+  Installed ConstructionBase ───────────── v1.0.0
+  Installed ArrayLayouts ───────────────── v0.4.12
+  Installed InvertedIndices ────────────── v1.0.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed MLLabelUtils ───────────────── v0.5.5
+  Installed IRTools ────────────────────── v0.4.2
+  Installed ColorTypes ─────────────────── v0.10.9
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed CodecZlib ──────────────────── v0.7.0
+  Installed Missings ───────────────────── v0.4.4
+  Installed HierarchicalUtils ──────────── v1.4.0
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed MappedArrays ───────────────── v0.3.0
+  Installed AbstractFFTs ───────────────── v0.5.0
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed PooledArrays ───────────────── v0.5.3
+  Installed Hwloc ──────────────────────── v1.1.0
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed VectorizationBase ──────────── v0.15.2
+  Installed JSON ───────────────────────── v0.21.1
+  Installed LoopVectorization ──────────── v0.9.18
+  Installed ZipFile ────────────────────── v0.9.3
+  Installed ArrayInterface ─────────────── v2.14.13
+  Installed IfElse ─────────────────────── v0.1.0
+  Installed StructTypes ────────────────── v1.2.1
+  Installed Crayons ────────────────────── v4.0.4
+  Installed MLDataPattern ──────────────── v0.5.4
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed PrettyTables ───────────────── v0.10.1
+  Installed ChainRules ─────────────────── v0.7.45
+  Installed Adapt ──────────────────────── v2.4.0
+  Installed OffsetArrays ───────────────── v1.5.0
+  Installed FixedPointNumbers ──────────── v0.8.4
+  Installed ExprTools ──────────────────── v0.1.3
+  Installed BFloat16s ──────────────────── v0.1.0
+  Installed Formatting ─────────────────── v0.4.2
+  Installed AbstractTrees ──────────────── v0.3.3
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed DocStringExtensions ────────── v0.8.3
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Compat ─────────────────────── v3.25.0
+  Installed SLEEFPirates ───────────────── v0.6.4
+  Installed GPUCompiler ────────────────── v0.8.3
+  Installed NNlib ──────────────────────── v0.7.11
+  Installed Hwloc_jll ──────────────────── v2.2.0+0
+  Installed Parsers ────────────────────── v1.0.15
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [1d0525e4] + Mill v2.1.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [621f4979] + AbstractFFTs v0.5.0
+  [1520ce14] + AbstractTrees v0.3.3
+  [79e6a3ab] + Adapt v2.4.0
+  [4fba245c] + ArrayInterface v2.14.13
+  [4c555306] + ArrayLayouts v0.4.12
+  [56f22d72] + Artifacts v1.3.0
+  [ab4f0b2a] + BFloat16s v0.1.0
+  [fa961155] + CEnum v0.4.1
+  [052768ef] + CUDA v2.4.0
+  [324d7699] + CategoricalArrays v0.9.0
+  [082447d4] + ChainRules v0.7.45
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [944b1d66] + CodecZlib v0.7.0
+  [3da002f7] + ColorTypes v0.10.9
+  [5ae59095] + Colors v0.12.6
+  [861a8166] + Combinatorics v1.0.2
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [187b0558] + ConstructionBase v1.0.0
+  [a8cc5b0e] + Crayons v4.0.4
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.22.2
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [ffbed154] + DocStringExtensions v0.8.3
+  [e2ba6199] + ExprTools v0.1.3
+  [1a297f60] + FillArrays v0.10.2
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [587475ba] + Flux v0.11.3
+  [59287772] + Formatting v0.4.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [d9f16b24] + Functors v0.1.0
+  [0c68f7d7] + GPUArrays v6.2.0
+  [61eb1bfa] + GPUCompiler v0.8.3
+  [f9ccea15] + HierarchicalUtils v1.4.0
+  [0e44f5e4] + Hwloc v1.1.0
+  [e33a78d0] + Hwloc_jll v2.2.0+0
+  [7869d1d1] + IRTools v0.4.2
+  [615f187c] + IfElse v0.1.0
+  [41ab1584] + InvertedIndices v1.0.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [e5e0dc1b] + Juno v0.8.4
+  [929cbde3] + LLVM v3.5.2
+  [7f8f8fb0] + LearnBase v0.4.1
+  [bdcacae8] + LoopVectorization v0.9.18
+  [9920b226] + MLDataPattern v0.5.4
+  [66a33bbf] + MLLabelUtils v0.5.5
+  [1914dd2f] + MacroTools v0.5.6
+  [dbb5928d] + MappedArrays v0.3.0
+  [e89f7d12] + Media v0.5.0
+  [1d0525e4] + Mill v2.1.2
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [872c559c] + NNlib v0.7.11
+  [77ba4419] + NaNMath v0.3.5
+  [6fe1bfb0] + OffsetArrays v1.5.0
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [08abe8d2] + PrettyTables v0.10.1
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [476501e8] + SLEEFPirates v0.6.4
+  [6c6a2e73] + Scratch v1.0.3
+  [efcf1570] + Setfield v0.7.0
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [2913bbd2] + StatsBase v0.33.2
+  [856f2bd8] + StructTypes v1.2.1
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [a759f4b9] + TimerOutputs v0.5.7
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [3a884ed6] + UnPack v1.0.2
+  [3d5dd08c] + VectorizationBase v0.15.2
+  [a5390f91] + ZipFile v0.9.3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [e88e6eb3] + Zygote v0.5.17
+  [700de1a5] + ZygoteRules v0.2.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T19:10:23.933
+#
+
+    Testing Mill
+Status `/tmp/jl_TfQHFT/Project.toml`
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [861a8166] Combinatorics v1.0.2
+  [a93c6f00] DataFrames v0.22.2
+  [e30172f5] Documenter v0.26.1
+  [587475ba] Flux v0.11.3
+  [f9ccea15] HierarchicalUtils v1.4.0
+  [1d0525e4] Mill v2.1.2
+  [2913bbd2] StatsBase v0.33.2
+  [9a3f8284] Random
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_TfQHFT/Manifest.toml`
+  [621f4979] AbstractFFTs v0.5.0
+  [1520ce14] AbstractTrees v0.3.3
+  [79e6a3ab] Adapt v2.4.0
+  [4fba245c] ArrayInterface v2.14.13
+  [4c555306] ArrayLayouts v0.4.12
+  [56f22d72] Artifacts v1.3.0
+  [ab4f0b2a] BFloat16s v0.1.0
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [fa961155] CEnum v0.4.1
+  [052768ef] CUDA v2.4.0
+  [324d7699] CategoricalArrays v0.9.0
+  [082447d4] ChainRules v0.7.45
+  [d360d2e6] ChainRulesCore v0.9.24
+  [944b1d66] CodecZlib v0.7.0
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.6
+  [861a8166] Combinatorics v1.0.2
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [187b0558] ConstructionBase v1.0.0
+  [a8cc5b0e] Crayons v4.0.4
+  [9a962f9c] DataAPI v1.4.0
+  [a93c6f00] DataFrames v0.22.2
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [ffbed154] DocStringExtensions v0.8.3
+  [e30172f5] Documenter v0.26.1
+  [e2ba6199] ExprTools v0.1.3
+  [1a297f60] FillArrays v0.10.2
+  [53c48c17] FixedPointNumbers v0.8.4
+  [587475ba] Flux v0.11.3
+  [59287772] Formatting v0.4.2
+  [f6369f11] ForwardDiff v0.10.14
+  [d9f16b24] Functors v0.1.0
+  [0c68f7d7] GPUArrays v6.2.0
+  [61eb1bfa] GPUCompiler v0.8.3
+  [f9ccea15] HierarchicalUtils v1.4.0
+  [0e44f5e4] Hwloc v1.1.0
+  [e33a78d0] Hwloc_jll v2.2.0+0
+  [b5f81e59] IOCapture v0.1.1
+  [7869d1d1] IRTools v0.4.2
+  [615f187c] IfElse v0.1.0
+  [41ab1584] InvertedIndices v1.0.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [e5e0dc1b] Juno v0.8.4
+  [929cbde3] LLVM v3.5.2
+  [7f8f8fb0] LearnBase v0.4.1
+  [bdcacae8] LoopVectorization v0.9.18
+  [9920b226] MLDataPattern v0.5.4
+  [66a33bbf] MLLabelUtils v0.5.5
+  [1914dd2f] MacroTools v0.5.6
+  [dbb5928d] MappedArrays v0.3.0
+  [e89f7d12] Media v0.5.0
+  [1d0525e4] Mill v2.1.2
+  [e1d29d7a] Missings v0.4.4
+  [46d2c3a1] MuladdMacro v0.2.2
+  [872c559c] NNlib v0.7.11
+  [77ba4419] NaNMath v0.3.5
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [69de0a69] Parsers v1.0.15
+  [2dfb63ee] PooledArrays v0.5.3
+  [08abe8d2] PrettyTables v0.10.1
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [476501e8] SLEEFPirates v0.6.4
+  [6c6a2e73] Scratch v1.0.3
+  [efcf1570] Setfield v0.7.0
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.2.1
+  [90137ffa] StaticArrays v1.0.1
+  [2913bbd2] StatsBase v0.33.2
+  [856f2bd8] StructTypes v1.2.1
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [a759f4b9] TimerOutputs v0.5.7
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [3a884ed6] UnPack v1.0.2
+  [3d5dd08c] VectorizationBase v0.15.2
+  [a5390f91] ZipFile v0.9.3
+  [83775a58] Zlib_jll v1.2.11+18
+  [e88e6eb3] Zygote v0.5.17
+  [700de1a5] ZygoteRules v0.2.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [9abbd945] Profile
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: SetupBuildDirectory: setting up build directory.
+[ Info: Doctest: running doctests.
+[ Info: Skipped ExpandTemplates step (doctest only).
+[ Info: Skipped CrossReferences step (doctest only).
+[ Info: Skipped CheckDocument step (doctest only).
+[ Info: Skipped Populate step (doctest only).
+[ Info: Skipped RenderDocument step (doctest only).
+Test Summary: | Pass  Total
+Doctests      |    1      1
+Test Summary:                      | Pass  Total
+activations of simple matrix model |    3      3
+Test Summary:                    | Pass  Total
+testing simple aggregation model |    4      4
+Test Summary:               | Pass  Total
+testing simple tuple models |    3      3
+Test Summary:    | Pass  Total
+basic attributes |    6      6
+Test Summary: | Pass  Total
+vcat          |    7      7
+Test Summary: | Pass  Total
+flattening    |    4      4
+Test Summary:                   | Pass  Total
+basic aggregation functionality |    7      7
+Test Summary:  | Pass  Total
+matrix weights |    9      9
+Test Summary:       | Pass  Total
+pnorm functionality |   90     90
+Test Summary:     | Pass  Total
+lse functionality |   70     70
+Test Summary:             | Pass  Total
+pnorm numerical stability |  189    189
+Test Summary:           | Pass  Broken  Total
+lse numerical stability |   66       6     72
+Test Summary:  | Pass  Total
+missing values |   60     60
+Test Summary:   | Pass  Total
+bagcount switch |    7      7
+Test Summary:   |
+type inferrence | No tests
+Test Summary:                       | Pass  Total
+aggregation grad check w.r.t. input |  750    750
+Test Summary:                        | Pass  Total
+aggregation grad check w.r.t. params |  512    512
+Test Summary:                       | Pass  Total
+aggregation gradcheck w.r.t weights |   80     80
+Test Summary: | Pass  Total
+Constructors  |   17     17
+Test Summary: | Pass  Total
+bags()        |    4      4
+Test Summary: | Pass  Total
+length2bags   |    5      5
+Test Summary: | Pass  Total
+aligned hcat  |   17     17
+Test Summary:  | Pass  Total
+scattered hcat |   17     17
+Test Summary:                      | Pass  Total
+testing remapping for aligned bags |   10     10
+Test Summary:                        | Pass  Total
+testing remapping for scattered bags |   22     22
+Test Summary:   | Pass  Total
+equals and hash |    5      5
+Test Summary: | Pass  Total
+length.       |    4      4
+Test Summary:         | Pass  Total
+length type stability |    4      4
+Test Summary:             | Pass  Total
+testing convolution shift |    4      4
+Test Summary:                       | Pass  Total
+testing matvec and vecvec products  |    8      8
+Test Summary:                          | Pass  Total
+testing forward convolution & gradient |   14     14
+Test Summary:           | Pass  Total
+testing the convolution |   18     18
+Test Summary:                          | Pass  Total
+testing convolution with ScatteredBags |   11     11
+Test Summary:             | Pass  Total
+testing convolution layer |   12     12
+Test Summary: | Pass  Total
+creating bags |    1      1
+Test Summary: | Pass  Total
+testing nobs  |    9      9
+Test Summary:                   | Pass  Total
+testing ArrayNode hcat and vcat |    6      6
+Test Summary:        | Pass  Total
+testing BagNode hcat |   25     25
+Test Summary:                | Pass  Total
+testing WeightedBagNode hcat |   24     24
+Test Summary:                      | Pass  Total
+testing catobs with missing values |    5      5
+Test Summary:                              | Pass  Broken  Total
+testing hierarchical hcat on product nodes |    9       6     15
+Test Summary:            | Pass  Total
+testing BagNode indexing |   22     22
+Test Summary:                    | Pass  Total
+testing WeightedBagNode indexing |   20     20
+Test Summary:               | Pass  Total
+testing nested ragged array |    6      6
+Test Summary:       | Pass  Total
+testing ProductNode |   10     10
+Test Summary:    | Pass  Total
+testing sparsify |    3      3
+Test Summary:                | Pass  Total
+testing sparsify and mapdata |    3      3
+Test Summary:           | Pass  Total
+testing missing mapdata |    3      3
+Test Summary:           | Pass  Total
+testing equals and hash |   16     16
+Test Summary:                | Pass  Total
+testing equals with missings |   28     28
+Test Summary:  | Pass  Total
+list traversal |    7      7
+Test Summary:       | Pass  Total
+getindex on strings |   14     14
+Test Summary: | Pass  Total
+children      |    8      8
+Test Summary: | Pass  Total
+nchildren     |    6      6
+Test Summary: | Pass  Total
+nnodes        |    8      8
+Test Summary: | Pass  Total
+nnodes        |    8      8
+Test Summary: | Pass  Total
+NodeIterator  |    2      2
+Test Summary: | Pass  Total
+LeafIterator  |    2      2
+Test Summary: | Pass  Total
+TypeIterator  |    6      6
+Test Summary:                 | Pass  Total
+Iteration over multiple trees |    1      1
+Test Summary: | Pass  Total
+printtree     |    2      2
+Test Summary: | Pass  Total
+LazyNode      |    4      4
+Test Summary: | Pass  Total
+cat           |  256    256
+Test Summary:                                                     | Pass  Total
+correct pre imputing behavior for standard vector (maybe missing) |   44     44
+Test Summary:    | Pass  Total
+Wrong dimensions |   12     12
+Test Summary:                                                     | Pass  Total
+correct pre imputing behavior for standard matrix (maybe missing) |    5      5
+Test Summary:                                           | Pass  Total
+correct post imputing behavior for full standard arrays |   20     20
+Test Summary:                                       | Pass  Total
+correct post imputing behavior for maybe hot vector |   64     64
+Test Summary:                                       | Pass  Total
+correct post imputing behavior for maybe hot matrix |  448    448
+Test Summary:                                   | Pass  Total
+correct post imputing behavior for ngram matrix |  448    448
+Test Summary:                                  | Pass  Total
+imputing matrix * full vector gradient testing |  288    288
+Test Summary:                                  | Pass  Total
+imputing matrix * full matrix gradient testing | 1152   1152
+Test Summary:                                                 | Pass  Total
+post imputing matrix * full maybe hot vector gradient testing |  432    432
+Test Summary:                                                 | Pass  Total
+post imputing matrix * full maybe hot matrix gradient testing | 1728   1728
+Test Summary:                                             | Pass  Total
+post imputing matrix * full ngram matrix gradient testing |  576    576
+Test Summary:                                                  | Pass  Total
+post imputing matrix * empty maybe hot vector gradient testing |  144    144
+Test Summary:                                                  | Pass  Total
+post imputing matrix * empty maybe hot matrix gradient testing |  576    576
+Test Summary:                                              | Pass  Total
+post imputing matrix * empty ngram matrix gradient testing |  576    576
+Test Summary:                                                  | Pass  Total
+post imputing matrix * mixed maybe hot matrix gradient testing |  640    640
+Test Summary:                                              | Pass  Total
+post imputing matrix * mixed ngram matrix gradient testing |  640    640
+Test Summary:                                       | Pass  Total
+pre imputing matrix * empty vector gradient testing |  144    144
+Test Summary:                                               | Pass  Total
+pre imputing matrix * empty missing matrix gradient testing |  576    576
+Test Summary:                                       | Pass  Total
+pre imputing matrix * mixed vector gradient testing |   64     64
+Test Summary:                                       | Pass  Total
+pre imputing matrix * mixed matrix gradient testing |  256    256
+Test Summary:               | Pass  Total
+Imputing Dense construction |    6      6
+Test Summary:          | Pass  Total
+data and model node io |   30     30
+Test Summary:  | Pass  Total
+aggregation io |    9      9
+Test Summary:       | Pass  Total
+maybe hot vector io |    6      6
+Test Summary:       | Pass  Total
+maybe hot matrix io |    9      9
+Test Summary:          | Pass  Total
+pre imputing matrix io |    3      3
+Test Summary:           | Pass  Total
+post imputing matrix io |    3      3
+Test Summary:     | Pass  Total
+imputing dense io |    4      4
+Test Summary:   | Pass  Total
+ngram matrix io |   12     12
+Test Summary: | Pass  Total
+LazyNode      |    9      9
+Test Summary: | Pass  Total
+attributes    |   12     12
+Test Summary:     | Pass  Total
+type construction |    5      5
+Test Summary: | Pass  Total
+comparisons   |    7      7
+Test Summary: | Pass  Total
+hcat          |   18     18
+Test Summary: | Pass  Total
+indexing      |   43     43
+Test Summary:  | Pass  Total
+multiplication |   14     14
+Test Summary: | Pass  Total
+equality      |    8      8
+Test Summary:          | Pass  Total
+onehot and onehotbatch |    4      4
+Test Summary:                                       | Pass  Total
+AbstractMatrix * MaybeHotVector{<:Integer} gradtest |  240    240
+Test Summary:                                       | Pass  Total
+AbstractMatrix * MaybeHotMatrix{<:Integer} gradtest |  960    960
+Test Summary: | Pass  Total
+maybehot      |    9      9
+Test Summary: | Pass  Total
+maybehotbatch |   12     12
+Test Summary:                                       | Pass  Total
+testing catobs & getindex operations missing values |   21     21
+Test Summary:                                                    | Pass  Total
+testing catobs & getindex operations missing values for weighted |   17     17
+Test Summary:                           | Pass  Total
+testing model operations missing values |   11     11
+Test Summary:                         | Pass  Total
+testing reduction with missing values |    8      8
+Test Summary:               | Pass  Total
+testing simple matrix model |    3      3
+Test Summary:                    | Pass  Total
+testing simple aggregation model |    3      3
+Test Summary:               | Pass  Total
+testing simple tuple models |   13     13
+Test Summary:            | Pass  Total
+testing nested bag model |   14     14
+Test Summary:                          | Pass  Total
+single key dictionary reflect in model |   32     32
+Test Summary:             | Pass  Total
+single scalar as identity |   24     24
+Test Summary:                              | Pass  Total
+model aggregation grad check w.r.t. inputs |   20     20
+Test Summary:                                       | Pass  Total
+model aggregation grad check w.r.t. inputs weighted |   12     12
+Test Summary:                              | Pass  Total
+model aggregation grad check w.r.t. params |   20     20
+Test Summary:                                       | Pass  Total
+model aggregation grad check w.r.t. params weighted |   13     13
+Test Summary:             | Pass  Total
+NGramIterator and friends |   30     30
+Test Summary:                             | Pass  Total
+NGramMatrix construction types and basics |   27     27
+Test Summary: | Pass  Total
+Indexing      |   27     27
+Test Summary: | Pass  Total
+hcat          |    7      7
+Test Summary:     | Pass  Total
+ngram computation |   13     13
+Test Summary: | Pass  Total
+string2ngrams |    1      1
+Test Summary:               | Pass  Total
+NGramMatrix to SparseMatrix |   36     36
+Test Summary:              | Pass  Total
+NGramMatrix multiplication |   81     81
+Test Summary:                       | Pass  Total
+NGramMatrix multiplication gradtest |  162    162
+Test Summary:                | Pass  Total
+integration with MILL & Flux |   10     10
+Test Summary:        | Pass  Total
+equals with missings |   12     12
+Benchmarking multiplication
+A * B::NGramMatrix (This should be the fastest)
+  1.510 ms (2 allocations: 625.08 KiB)
+A * string2ngrams(s, 3, 256, size(A, 2))
+  193.330 ms (13 allocations: 16.29 MiB)
+A * sparse(string2ngrams(s, 3, 256, size(A, 2)))
+  11.962 ms (13 allocations: 16.48 MiB)
+A * C where C = sparse(string2ngrams(s, 3, 256, size(A, 2)));  2.581 ms (2 allocations: 625.08 KiB)
+Test Summary: | Pass  Total
+partialeval   |   31     31
+Test Summary: |
+findnonempty  | No tests
+Test Summary: |
+ModelLens     | No tests
+Test Summary: | Pass  Total
+replacein     |   14     14
+Test Summary: | Pass  Total
+findin        |   14     14
+    Testing Mill tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:37:51.372
+CPU usage: 1657.62s (1633.46s user, 26.04s kernel)
+
+Network usage:
+- eth0: 26.601 MiB received, 632.235 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":670,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":689,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":694,"op":"Total","minor":0},{"major":253,"value":670,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":689,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":694,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":2744320,"op":"Read","minor":0},{"major":259,"value":159744,"op":"Write","minor":0},{"major":259,"value":2850816,"op":"Sync","minor":0},{"major":259,"value":53248,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":2904064,"op":"Total","minor":0},{"major":253,"value":2744320,"op":"Read","minor":2},{"major":253,"value":159744,"op":"Write","minor":2},{"major":253,"value":2850816,"op":"Sync","minor":2},{"major":253,"value":53248,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":2904064,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":467623936,"max_usage":2167902208,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":223080448,"inactive_file":270336,"inactive_anon":112730112,"total_pgfault":13673385,"total_cache":206069760,"total_rss_huge":0,"total_active_anon":301424640,"total_pgmajfault":0,"pgpgin":7259406,"rss_huge":0,"mapped_file":0,"total_inactive_file":270336,"dirty":540672,"total_unevictable":0,"total_dirty":540672,"writeback":0,"pgpgout":7154675,"hierarchical_memsw_limit":0,"cache":206069760,"active_file":14868480,"pgfault":13673385,"total_mapped_file":0,"total_pgpgout":7154675,"total_writeback":0,"rss":223080448,"unevictable":0,"total_inactive_anon":112730112,"total_pgpgin":7259406,"active_anon":301424640,"total_active_file":14868480},"limit":540965302272},"name":"/Mill-kmjMYqcx","networks":{"eth0":{"rx_bytes":27892701,"rx_packets":13613,"tx_packets":6389,"tx_bytes":647409,"tx_dropped":0,"rx_dropped":56,"tx_errors":0,"rx_errors":0}},"id":"7b0a3e0915011291e1939adc2fe1034fe9a5169d50d8c15711cd0cfa2ddea8bd","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5109477234522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":1633460000000,"usage_in_kernelmode":26040000000,"total_usage":1657618419893,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,376370,650130,0,1657617223763,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36100,0,133530,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:37:51.939359418Z"}

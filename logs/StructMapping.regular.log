@@ -1,0 +1,113 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:51:16.62
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:51:18.388
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed StructMapping ─ v0.2.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [7c3b921d] + StructMapping v0.2.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [7c3b921d] + StructMapping v0.2.1
+
+
+################################################################################
+# Testing: 2021-01-11T21:51:23.141
+#
+
+    Testing StructMapping
+Status `/tmp/jl_EMsukQ/Project.toml`
+  [e30172f5] Documenter v0.26.1
+  [d96e819e] Parameters v0.12.1
+  [7c3b921d] StructMapping v0.2.1
+  [8dfed614] Test
+Status `/tmp/jl_EMsukQ/Manifest.toml`
+  [ffbed154] DocStringExtensions v0.8.3
+  [e30172f5] Documenter v0.26.1
+  [b5f81e59] IOCapture v0.1.1
+  [682c06a0] JSON v0.21.1
+  [bac558e1] OrderedCollections v1.3.2
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.15
+  [7c3b921d] StructMapping v0.2.1
+  [3a884ed6] UnPack v1.0.2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+basic         |    1      1
+Test Summary: | Pass  Total
+basic2        |    2      2
+Test Summary: | Pass  Total
+nested        |    1      1
+Test Summary: | Pass  Total
+default       |    1      1
+Test Summary: | Pass  Total
+vector        |    1      1
+Test Summary: | Pass  Total
+union         |    2      2
+Test Summary: | Pass  Total
+union_vector  |    2      2
+Test Summary: | Pass  Total
+deeply_nested |    2      2
+Test Summary: | Pass  Total
+dict          |    2      2
+[ Info: SetupBuildDirectory: setting up build directory.
+[ Info: Doctest: running doctests.
+[ Info: Skipped ExpandTemplates step (doctest only).
+[ Info: Skipped CrossReferences step (doctest only).
+[ Info: Skipped CheckDocument step (doctest only).
+[ Info: Skipped Populate step (doctest only).
+[ Info: Skipped RenderDocument step (doctest only).
+Test Summary: | Pass  Total
+doctest       |    1      1
+    Testing StructMapping tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:51:51.154
+CPU usage: 34.52s (30.93s user, 3.64s kernel)
+
+Network usage:
+- eth0: 3.219 MiB received, 67.415 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":296042496,"max_usage":960163840,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":176353280,"inactive_file":135168,"inactive_anon":81776640,"total_pgfault":858132,"total_cache":89305088,"total_rss_huge":0,"total_active_anon":183963648,"total_pgmajfault":0,"pgpgin":549681,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":484842,"hierarchical_memsw_limit":0,"cache":89305088,"active_file":135168,"pgfault":858132,"total_mapped_file":0,"total_pgpgout":484842,"total_writeback":0,"rss":176353280,"unevictable":0,"total_inactive_anon":81776640,"total_pgpgin":549681,"active_anon":183963648,"total_active_file":135168},"limit":540965302272},"name":"/StructMapping-yaDZljU6","networks":{"eth0":{"rx_bytes":3375434,"rx_packets":573,"tx_packets":610,"tx_bytes":69033,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"f236d95a34f6901c080d6fcf96b9a501375bd34b3bb72c701694c141d140155a","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6136716564522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":30930000000,"usage_in_kernelmode":3640000000,"total_usage":34520007059,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34520002869,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4190,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:51:51.539957793Z"}

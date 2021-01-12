@@ -1,0 +1,173 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T18:37:54.716
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T18:37:56.434
+#
+
+ Installing known registries into `~/.julia`
+#####                                                                      8.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Expokit ───────── v0.2.0
+  Installed QSWalk ────────── v1.1.1
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [2ef04bfc] + QSWalk v1.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [a1e7a1ef] + Expokit v0.2.0
+  [9b87118b] + PackageCompiler v1.2.5
+  [2ef04bfc] + QSWalk v1.1.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T18:38:03.029
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 147.668 MiB, compilation took 167 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T18:40:56.97
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/QSWalk-cUxopO6A.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:40:59.006
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Expokit ─ v0.2.0
+  Installed QSWalk ── v1.1.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [2ef04bfc] + QSWalk v1.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [a1e7a1ef] + Expokit v0.2.0
+  [2ef04bfc] + QSWalk v1.1.1
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T18:41:03.971
+#
+
+    Testing QSWalk
+Status `/tmp/jl_RORZjc/Project.toml`
+  [a1e7a1ef] Expokit v0.2.0
+  [2ef04bfc] QSWalk v1.1.1
+  [37e2e46d] LinearAlgebra
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_RORZjc/Manifest.toml`
+  [a1e7a1ef] Expokit v0.2.0
+  [2ef04bfc] QSWalk v1.1.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Test Summary: | Pass  Total
+Vertex test   |   10     10
+Test Summary: | Pass  Total
+Vertex set    |   10     10
+Test Summary:           | Pass  Total
+Basic arrays generators |   14     14
+Test Summary:    | Pass  Total
+Array reshuffles |    6      6
+Test Summary:                    | Pass  Total
+Evolution generator construction |    7      7
+Test Summary:                 | Pass  Total
+Classical lindblad generators |    8      8
+Test Summary:             | Pass  Total
+Demoralization user utils |   50     50
+Test Summary:          | Pass  Total
+Cannonical measurement |    4      4
+Test Summary:           | Pass  Total
+Initial states creation |    4      4
+Test Summary: | Pass  Total
+Evolution     |   13     13
+    Testing QSWalk tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:41:38.487
+CPU usage: 41.60s (38.24s user, 3.39s kernel)
+
+Network usage:
+- eth0: 2.588 MiB received, 33.777 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":849,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":863,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":868,"op":"Total","minor":0},{"major":253,"value":849,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":863,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":868,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":26488832,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":26546176,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":26566656,"op":"Total","minor":0},{"major":253,"value":26488832,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":26546176,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":26566656,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":310996992,"max_usage":580780032,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":330,"total_rss":183861248,"inactive_file":13561856,"inactive_anon":148471808,"total_pgfault":408540,"total_cache":97812480,"total_rss_huge":0,"total_active_anon":114855936,"total_pgmajfault":330,"pgpgin":244761,"rss_huge":0,"mapped_file":6352896,"total_inactive_file":13561856,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":175986,"hierarchical_memsw_limit":0,"cache":97812480,"active_file":4927488,"pgfault":408540,"total_mapped_file":6352896,"total_pgpgout":175986,"total_writeback":0,"rss":183861248,"unevictable":0,"total_inactive_anon":148471808,"total_pgpgin":244761,"active_anon":114855936,"total_active_file":4927488},"limit":540965302272},"name":"/QSWalk-0XTCW4ck","networks":{"eth0":{"rx_bytes":2713376,"rx_packets":355,"tx_packets":345,"tx_bytes":34588,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"45adcaacdfe2f1a52ef370e622c910e65cd87f8b88d1bc873ebc809ba72a3e98","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4678286054522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":38240000000,"usage_in_kernelmode":3390000000,"total_usage":41602599366,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,41602599366,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:41:38.951235741Z"}

@@ -1,0 +1,175 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:08:00.787
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:08:02.605
+#
+
+ Installing known registries into `~/.julia`
+                                                                           0.6%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed TimerOutputs ─────── v0.5.7
+  Installed GPUCompiler ──────── v0.8.3
+  Installed Scratch ──────────── v1.0.3
+  Installed Compat ───────────── v3.25.0
+  Installed CEnum ────────────── v0.4.1
+  Installed OrderedCollections ─ v1.3.2
+  Installed LLVM ─────────────── v3.5.2
+  Installed DataStructures ───── v0.18.8
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [61eb1bfa] + GPUCompiler v0.8.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [fa961155] + CEnum v0.4.1
+  [34da2185] + Compat v3.25.0
+  [864edb3b] + DataStructures v0.18.8
+  [61eb1bfa] + GPUCompiler v0.8.3
+  [929cbde3] + LLVM v3.5.2
+  [bac558e1] + OrderedCollections v1.3.2
+  [6c6a2e73] + Scratch v1.0.3
+  [a759f4b9] + TimerOutputs v0.5.7
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T19:08:07.706
+#
+
+    Testing GPUCompiler
+Status `/tmp/jl_7b3KbQ/Project.toml`
+  [864edb3b] DataStructures v0.18.8
+  [61eb1bfa] GPUCompiler v0.8.3
+  [929cbde3] LLVM v3.5.2
+  [4a5d46fc] SPIRV_LLVM_Translator_jll v9.0.0+2
+  [6ac6d60f] SPIRV_Tools_jll v2020.6.0+0
+  [6c6a2e73] Scratch v1.0.3
+  [a759f4b9] TimerOutputs v0.5.7
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [44cfe95a] Pkg
+  [9e88b42a] Serialization
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+Status `/tmp/jl_7b3KbQ/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [fa961155] CEnum v0.4.1
+  [34da2185] Compat v3.25.0
+  [864edb3b] DataStructures v0.18.8
+  [61eb1bfa] GPUCompiler v0.8.3
+  [692b3bcd] JLLWrappers v1.2.0
+  [929cbde3] LLVM v3.5.2
+  [bac558e1] OrderedCollections v1.3.2
+  [4a5d46fc] SPIRV_LLVM_Translator_jll v9.0.0+2
+  [6ac6d60f] SPIRV_Tools_jll v2020.6.0+0
+  [6c6a2e73] Scratch v1.0.3
+  [a759f4b9] TimerOutputs v0.5.7
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+ ──────────────────────────────────────────────────────────────────────────────
+                                       Time                   Allocations      
+                               ──────────────────────   ───────────────────────
+       Tot / % measured:            37.2s / 26.3%           1.95GiB / 34.2%    
+
+ Section               ncalls     time   %tot     avg     alloc   %tot      avg
+ ──────────────────────────────────────────────────────────────────────────────
+ IR generation            193    6.34s  64.7%  32.8ms    469MiB  68.7%  2.43MiB
+   rewrite                193    2.54s  26.0%  13.2ms    180MiB  26.4%   956KiB
+     lower throw          193    872ms  8.89%  4.52ms   99.1MiB  14.5%   526KiB
+     hide unreachable     171   67.3ms  0.69%   394μs   1.41MiB  0.21%  8.47KiB
+       predecessors       171   54.4ms  0.56%   318μs   1.16MiB  0.17%  6.98KiB
+       find               171   10.1ms  0.10%  58.8μs   22.8KiB  0.00%     137B
+       replace            171    732μs  0.01%  4.28μs   3.89KiB  0.00%    23.3B
+     lower throw (e...     43   29.3ms  0.30%   682μs    364KiB  0.05%  8.47KiB
+     hide trap             58   11.1ms  0.11%   192μs   92.5KiB  0.01%  1.60KiB
+   emission               193    1.56s  15.9%  8.07ms    195MiB  28.6%  1.01MiB
+   clean-up               193    125ms  1.28%   649μs    493KiB  0.07%  2.55KiB
+ validation               208    1.89s  19.2%  9.07ms    124MiB  18.2%   610KiB
+ LLVM middle-end          193    910ms  9.29%  4.72ms   34.4MiB  5.04%   182KiB
+   optimization            73    637ms  6.50%  8.73ms   27.5MiB  4.04%   386KiB
+   runtime library         54    107ms  1.09%  1.98ms   4.18MiB  0.61%  79.4KiB
+   clean-up               193   36.5ms  0.37%   189μs   69.4KiB  0.01%     368B
+   target libraries        77    184μs  0.00%  2.39μs      896B  0.00%    11.6B
+ LLVM back-end             37    664ms  6.78%  17.9ms   55.2MiB  8.09%  1.49MiB
+   machine-code gen...     37    506ms  5.16%  13.7ms   43.9MiB  6.43%  1.19MiB
+   preparation             37    158ms  1.61%  4.27ms   11.3MiB  1.66%   313KiB
+ Julia front-end          194   2.38ms  0.02%  12.3μs   61.1KiB  0.01%     323B
+ strip debug info          33    170μs  0.00%  5.16μs     0.00B  0.00%    0.00B
+ remove trap                1   1.49μs  0.00%  1.49μs     0.00B  0.00%    0.00B
+ ──────────────────────────────────────────────────────────────────────────────
+
+Test Summary: | Pass  Broken  Total
+GPUCompiler   |  108       3    111
+    Testing GPUCompiler tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:09:04.88
+CPU usage: 64.05s (60.01s user, 4.13s kernel)
+
+Network usage:
+- eth0: 2.998 MiB received, 79.742 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":199,"op":"Read","minor":0},{"major":259,"value":26,"op":"Write","minor":0},{"major":259,"value":218,"op":"Sync","minor":0},{"major":259,"value":7,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":225,"op":"Total","minor":0},{"major":253,"value":199,"op":"Read","minor":2},{"major":253,"value":26,"op":"Write","minor":2},{"major":253,"value":218,"op":"Sync","minor":2},{"major":253,"value":7,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":225,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":8200192,"op":"Read","minor":0},{"major":259,"value":139264,"op":"Write","minor":0},{"major":259,"value":8306688,"op":"Sync","minor":0},{"major":259,"value":32768,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":8339456,"op":"Total","minor":0},{"major":253,"value":8200192,"op":"Read","minor":2},{"major":253,"value":139264,"op":"Write","minor":2},{"major":253,"value":8306688,"op":"Sync","minor":2},{"major":253,"value":32768,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":8339456,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":307765248,"max_usage":893083648,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":66,"total_rss":180916224,"inactive_file":5541888,"inactive_anon":80154624,"total_pgfault":1252185,"total_cache":96735232,"total_rss_huge":0,"total_active_anon":189100032,"total_pgmajfault":66,"pgpgin":712668,"rss_huge":0,"mapped_file":675840,"total_inactive_file":5541888,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":644873,"hierarchical_memsw_limit":0,"cache":96735232,"active_file":2838528,"pgfault":1252185,"total_mapped_file":675840,"total_pgpgout":644873,"total_writeback":0,"rss":180916224,"unevictable":0,"total_inactive_anon":80154624,"total_pgpgin":712668,"active_anon":189100032,"total_active_file":2838528},"limit":540965302272},"name":"/GPUCompiler-k8C4espl","networks":{"eth0":{"rx_bytes":3143980,"rx_packets":635,"tx_packets":692,"tx_bytes":81656,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"58a40131666d67efbbb96f7a9356d352763c3bb7363442cdf65cc0ce1f9634a5","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4888689944522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":60010000000,"usage_in_kernelmode":4130000000,"total_usage":64049610366,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64049610366,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:09:04.882683093Z"}

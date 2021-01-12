@@ -1,0 +1,101 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:02:37.025
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:02:38.877
+#
+
+ Installing known registries into `~/.julia`
+##################################                                        47.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed TensorValues ────────── v0.3.5
+  Installed TensorPolynomialBases ─ v0.1.4
+  Installed StaticArrays ────────── v0.10.3
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [f77b161d] + TensorPolynomialBases v0.1.4
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [90137ffa] + StaticArrays v0.10.3
+  [f77b161d] + TensorPolynomialBases v0.1.4
+  [31c64edf] + TensorValues v0.3.5
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T21:02:42.811
+#
+
+    Testing TensorPolynomialBases
+Status `/tmp/jl_J47ghU/Project.toml`
+  [90137ffa] StaticArrays v0.10.3
+  [f77b161d] TensorPolynomialBases v0.1.4
+  [31c64edf] TensorValues v0.3.5
+  [8dfed614] Test
+Status `/tmp/jl_J47ghU/Manifest.toml`
+  [90137ffa] StaticArrays v0.10.3
+  [f77b161d] TensorPolynomialBases v0.1.4
+  [31c64edf] TensorValues v0.3.5
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Test Summary: | Pass  Total
+UtilsTests    |    4      4
+Test Summary:   | Pass  Total
+InterfacesTests |   11     11
+Test Summary:      | Pass  Total
+MonomialBasesTests |   34     34
+Test Summary:           | Pass  Total
+QGradMonomialBasesTests |    8      8
+Test Summary:               | Pass  Total
+QCurlGradMonomialBasesTests |    8      8
+    Testing TensorPolynomialBases tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:03:02.623
+CPU usage: 25.64s (22.49s user, 3.22s kernel)
+
+Network usage:
+- eth0: 2.705 MiB received, 38.664 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":322641920,"max_usage":828043264,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":211259392,"inactive_file":135168,"inactive_anon":79613952,"total_pgfault":581394,"total_cache":81739776,"total_rss_huge":0,"total_active_anon":213565440,"total_pgmajfault":0,"pgpgin":368049,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":135168,"pgpgout":296486,"hierarchical_memsw_limit":0,"cache":81739776,"active_file":135168,"pgfault":581394,"total_mapped_file":0,"total_pgpgout":296486,"total_writeback":135168,"rss":211259392,"unevictable":0,"total_inactive_anon":79613952,"total_pgpgin":368049,"active_anon":213565440,"total_active_file":135168},"limit":540965302272},"name":"/TensorPolynomialBases-ehk79EBG","networks":{"eth0":{"rx_bytes":2836192,"rx_packets":375,"tx_packets":384,"tx_bytes":39592,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"e964ef668c5321f95553c8d35ff2a6110c4a19c9b450b9d8b8480d8997d1fff2","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5762633844522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":22490000000,"usage_in_kernelmode":3220000000,"total_usage":25641627702,"percpu_usage":[0,0,0,0,5970,0,25641621732,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:03:02.62635702Z"}

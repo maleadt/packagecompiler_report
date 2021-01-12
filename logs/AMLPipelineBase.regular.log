@@ -1,0 +1,282 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:35:47.158
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:35:48.953
+#
+
+ Installing known registries into `~/.julia`
+##################################                                        47.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Reexport ──────────────────── v0.2.0
+  Installed AMLPipelineBase ───────────── v0.1.3
+  Installed TableTraits ───────────────── v1.0.0
+  Installed MLBase ────────────────────── v0.8.0
+  Installed CategoricalArrays ─────────── v0.9.0
+  Installed DataStructures ────────────── v0.18.8
+  Installed StatsBase ─────────────────── v0.33.2
+  Installed Tables ────────────────────── v1.2.2
+  Installed DecisionTree ──────────────── v0.10.10
+  Installed DataFrames ────────────────── v0.22.2
+  Installed DataAPI ───────────────────── v1.4.0
+  Installed IterTools ─────────────────── v1.3.0
+  Installed OrderedCollections ────────── v1.3.2
+  Installed InvertedIndices ───────────── v1.0.0
+  Installed DataValueInterfaces ───────── v1.0.0
+  Installed ScikitLearnBase ───────────── v0.5.0
+  Installed PooledArrays ──────────────── v0.5.3
+  Installed Missings ──────────────────── v0.4.4
+  Installed Crayons ───────────────────── v4.0.4
+  Installed StructTypes ───────────────── v1.2.1
+  Installed JSON ──────────────────────── v0.21.1
+  Installed Formatting ────────────────── v0.4.2
+  Installed SortingAlgorithms ─────────── v0.3.1
+  Installed IteratorInterfaceExtensions ─ v1.0.0
+  Installed PrettyTables ──────────────── v0.10.1
+  Installed Compat ────────────────────── v3.25.0
+  Installed SentinelArrays ────────────── v1.2.16
+  Installed CSV ───────────────────────── v0.8.2
+  Installed Parsers ───────────────────── v1.0.15
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [e3c3008a] + AMLPipelineBase v0.1.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [e3c3008a] + AMLPipelineBase v0.1.3
+  [336ed68f] + CSV v0.8.2
+  [324d7699] + CategoricalArrays v0.9.0
+  [34da2185] + Compat v3.25.0
+  [a8cc5b0e] + Crayons v4.0.4
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.22.2
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [7806a523] + DecisionTree v0.10.10
+  [59287772] + Formatting v0.4.2
+  [41ab1584] + InvertedIndices v1.0.0
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f0e99cf1] + MLBase v0.8.0
+  [e1d29d7a] + Missings v0.4.4
+  [bac558e1] + OrderedCollections v1.3.2
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [08abe8d2] + PrettyTables v0.10.1
+  [189a3867] + Reexport v0.2.0
+  [6e75b9c4] + ScikitLearnBase v0.5.0
+  [91c51154] + SentinelArrays v1.2.16
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [2913bbd2] + StatsBase v0.33.2
+  [856f2bd8] + StructTypes v1.2.1
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T17:35:55.534
+#
+
+    Testing AMLPipelineBase
+Status `/tmp/jl_3QsvDR/Project.toml`
+  [e3c3008a] AMLPipelineBase v0.1.3
+  [336ed68f] CSV v0.8.2
+  [a93c6f00] DataFrames v0.22.2
+  [7806a523] DecisionTree v0.10.10
+  [c8e1da08] IterTools v1.3.0
+  [f0e99cf1] MLBase v0.8.0
+  [2dfb63ee] PooledArrays v0.5.3
+  [2913bbd2] StatsBase v0.33.2
+  [ade2ca70] Dates
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_3QsvDR/Manifest.toml`
+  [e3c3008a] AMLPipelineBase v0.1.3
+  [336ed68f] CSV v0.8.2
+  [324d7699] CategoricalArrays v0.9.0
+  [34da2185] Compat v3.25.0
+  [a8cc5b0e] Crayons v4.0.4
+  [9a962f9c] DataAPI v1.4.0
+  [a93c6f00] DataFrames v0.22.2
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [7806a523] DecisionTree v0.10.10
+  [59287772] Formatting v0.4.2
+  [41ab1584] InvertedIndices v1.0.0
+  [c8e1da08] IterTools v1.3.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [682c06a0] JSON v0.21.1
+  [f0e99cf1] MLBase v0.8.0
+  [e1d29d7a] Missings v0.4.4
+  [bac558e1] OrderedCollections v1.3.2
+  [69de0a69] Parsers v1.0.15
+  [2dfb63ee] PooledArrays v0.5.3
+  [08abe8d2] PrettyTables v0.10.1
+  [189a3867] Reexport v0.2.0
+  [6e75b9c4] ScikitLearnBase v0.5.0
+  [91c51154] SentinelArrays v1.2.16
+  [a2af1166] SortingAlgorithms v0.3.1
+  [2913bbd2] StatsBase v0.33.2
+  [856f2bd8] StructTypes v1.2.1
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary:           | Pass  Total
+Feature Selectors: Iris |    7      7
+┌ Warning: `DataFrame(columns::AbstractMatrix)` is deprecated, use `DataFrame(columns, :auto)` instead.
+│   caller = ip:0x0
+└ @ Core :-1
+┌ Warning: Unseen value found in OneHotEncoder,
+│                 for entry (44, 1) = 15.
+│                 Patching value to 6.
+└ @ AMLPipelineBase.BaseFilters ~/.julia/packages/AMLPipelineBase/fEYi1/src/basefilters.jl:99
+┌ Warning: Unseen value found in OneHotEncoder,
+│                 for entry (87, 1) = 17.
+│                 Patching value to 6.
+└ @ AMLPipelineBase.BaseFilters ~/.julia/packages/AMLPipelineBase/fEYi1/src/basefilters.jl:99
+┌ Warning: Unseen value found in OneHotEncoder,
+│                 for entry (155, 1) = 14.
+│                 Patching value to 6.
+└ @ AMLPipelineBase.BaseFilters ~/.julia/packages/AMLPipelineBase/fEYi1/src/basefilters.jl:99
+┌ Warning: Unseen value found in OneHotEncoder,
+│                 for entry (227, 1) = 14.
+│                 Patching value to 6.
+└ @ AMLPipelineBase.BaseFilters ~/.julia/packages/AMLPipelineBase/fEYi1/src/basefilters.jl:99
+Test Summary:               | Pass  Total
+Feature Selectors: Diabetes |    1      1
+Test Summary: | Pass  Total
+Utils         |   13     13
+Test Summary: | Pass  Total
+Utils Metrics |    8      8
+Test Summary:  | Pass  Total
+Baseline Tests |    3      3
+Test Summary: | Pass  Total
+BaseFilter    |    5      5
+Test Summary: | Pass  Total
+DecisionTrees |    6      6
+Test Summary:     | Pass  Total
+Ensemble learners |    3      3
+Test Summary:        | Pass  Total
+Vararg Ensemble Test |    3      3
+fold: 1, 80.0
+fold: 2, 100.0
+fold: 3, 100.0
+fold: 4, 100.0
+fold: 5, 100.0
+fold: 6, 93.33333333333333
+fold: 7, 86.66666666666667
+fold: 8, 100.0
+fold: 9, 100.0
+fold: 10, 100.0
+errors: 0
+fold: 1, 100.0
+fold: 2, 93.33333333333333
+fold: 3, 93.33333333333333
+fold: 4, 93.33333333333333
+fold: 5, 96.66666666666667
+errors: 0
+fold: 1, 86.66666666666667
+fold: 2, 100.0
+fold: 3, 93.33333333333333
+fold: 4, 93.33333333333333
+fold: 5, 100.0
+fold: 6, 100.0
+fold: 7, 93.33333333333333
+fold: 8, 93.33333333333333
+fold: 9, 93.33333333333333
+fold: 10, 100.0
+errors: 0
+fold: 1, 93.33333333333333
+fold: 2, 100.0
+fold: 3, 93.33333333333333
+fold: 4, 93.33333333333333
+fold: 5, 100.0
+errors: 0
+Test Summary:  | Pass  Total
+CrossValidator |    8      8
+Test Summary: | Pass  Total
+NA Remover    |    3      3
+Test Summary: | Pass  Total
+Pipelines     |    3      3
+Test Summary:                   | Pass  Total
+Symbolic Pipeline: Global Scope |    4      4
+Test Summary:                  | Pass  Total
+Symbolic Pipeline: Local Scope |    2      2
+    Testing AMLPipelineBase tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:38:11.312
+CPU usage: 144.03s (136.53s user, 7.71s kernel)
+
+Network usage:
+- eth0: 13.415 MiB received, 198.628 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":135168,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":28672,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":135168,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":135168,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":28672,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":135168,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":366501888,"max_usage":2373652480,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":193064960,"inactive_file":135168,"inactive_anon":119758848,"total_pgfault":3021447,"total_cache":142352384,"total_rss_huge":0,"total_active_anon":215728128,"total_pgmajfault":0,"pgpgin":1914726,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":540672,"total_unevictable":0,"total_dirty":540672,"writeback":0,"pgpgout":1832828,"hierarchical_memsw_limit":0,"cache":142352384,"active_file":135168,"pgfault":3021447,"total_mapped_file":0,"total_pgpgout":1832828,"total_writeback":0,"rss":193064960,"unevictable":0,"total_inactive_anon":119758848,"total_pgpgin":1914726,"active_anon":215728128,"total_active_file":135168},"limit":540965302272},"name":"/AMLPipelineBase-ISJlLrr6","networks":{"eth0":{"rx_bytes":14066990,"rx_packets":1934,"tx_packets":1911,"tx_bytes":203395,"tx_dropped":0,"rx_dropped":5,"tx_errors":0,"rx_errors":0}},"id":"b81c673333e34d0388fa7d57c0778427f5118ae34a266eec8d7717ee5a5b5c02","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4191802624522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":136530000000,"usage_in_kernelmode":7710000000,"total_usage":144027073992,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,144027069482,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4510,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:38:11.314879166Z"}

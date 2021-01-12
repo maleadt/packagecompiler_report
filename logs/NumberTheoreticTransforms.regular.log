@@ -1,0 +1,172 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T16:18:52.359
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:18:54.167
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed NumberTheoreticTransforms ─ v1.0.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [8497c1d1] + NumberTheoreticTransforms v1.0.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [8497c1d1] + NumberTheoreticTransforms v1.0.0
+
+
+################################################################################
+# Testing: 2021-01-11T16:18:57.63
+#
+
+    Testing NumberTheoreticTransforms
+Status `/tmp/jl_HG2E7T/Project.toml`
+  [717857b8] DSP v0.6.10
+  [8497c1d1] NumberTheoreticTransforms v1.0.0
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_HG2E7T/Manifest.toml`
+  [621f4979] AbstractFFTs v1.0.0
+  [79e6a3ab] Adapt v2.4.0
+  [56f22d72] Artifacts v1.3.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [717857b8] DSP v0.6.10
+  [e2ba6199] ExprTools v0.1.3
+  [8f5d6c58] EzXML v1.1.0
+  [7a1cc6ca] FFTW v1.3.1
+  [f5851436] FFTW_jll v3.3.9+7
+  [1d5cc7b8] IntelOpenMP_jll v2018.0.3+0
+  [d8418881] Intervals v1.5.0
+  [c8e1da08] IterTools v1.3.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [856f044c] MKL_jll v2020.2.254+0
+  [78c3b35d] Mocking v0.7.1
+  [46d2c3a1] MuladdMacro v0.2.2
+  [8497c1d1] NumberTheoreticTransforms v1.0.0
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [f27b6e38] Polynomials v1.2.0
+  [3cdcf5f2] RecipesBase v1.1.1
+  [189a3867] Reexport v1.0.0
+  [276daf66] SpecialFunctions v1.2.1
+  [f269a46b] TimeZones v1.5.3
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+NTT 1D        |    2      2
+Test Summary:      | Pass  Total
+NTT 1D convolution |    1      1
+Test Summary: | Pass  Total
+NTT 2D        |    3      3
+Test Summary:      | Pass  Total
+NTT 2D convolution |    1      1
+t = 1
+length(x) = 4
+  0.041333 seconds (104.15 k allocations: 5.368 MiB, 27.94% gc time)
+t = 2
+length(x) = 8
+  0.000131 seconds (1.15 k allocations: 24.172 KiB)
+t = 3
+length(x) = 16
+  0.000214 seconds (2.71 k allocations: 56.594 KiB)
+t = 4
+length(x) = 32
+  0.000493 seconds (6.29 k allocations: 131.406 KiB)
+t = 5
+length(x) = 64
+  0.000701 seconds (14.38 k allocations: 300.250 KiB)
+t = 6
+length(x) = 128
+  0.001256 seconds (32.20 k allocations: 722.617 KiB)
+t = 7
+length(x) = 256
+  0.003116 seconds (74.03 k allocations: 1.780 MiB)
+t = 8
+length(x) = 512
+  0.006590 seconds (163.78 k allocations: 4.879 MiB)
+t = 9
+length(x) = 1024
+  0.016027 seconds (358.80 k allocations: 14.752 MiB)
+t = 10
+length(x) = 2048
+  0.120287 seconds (780.12 k allocations: 49.824 MiB, 30.34% gc time)
+t = 11
+length(x) = 4096
+  0.321694 seconds (1.68 M allocations: 184.635 MiB, 31.94% gc time)
+t = 12
+length(x) = 8192
+  1.146322 seconds (3.62 M allocations: 729.022 MiB, 16.76% gc time)
+t = 13
+length(x) = 16384
+  4.104473 seconds (7.74 M allocations: 2.916 GiB, 9.11% gc time)
+Test Summary: | Pass  Total
+FNT 1D        |   13     13
+Test Summary:         | Pass  Total
+FNT and NTT coherence |    1      1
+Test Summary:      | Pass  Total
+FNT 1D convolution |    1      1
+Test Summary: | Pass  Total
+FNT 2D        |    2      2
+Test Summary:      | Pass  Total
+FNT 2D convolution |    1      1
+Test Summary: | Pass  Total
+FNT in-place  |    4      4
+Test Summary:                    | Pass  Total
+FNT fails for non fermat modulus |    2      2
+Test Summary:    | Pass  Total
+isfermat() tests |    1      1
+Test Summary:     | Pass  Total
+modfermat() tests |   15     15
+    Testing NumberTheoreticTransforms tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T16:20:04.174
+CPU usage: 71.72s (66.40s user, 5.47s kernel)
+
+Network usage:
+- eth0: 4.140 MiB received, 155.400 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":32,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":13,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":32,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":32,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":13,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":32,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":163840,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":57344,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":163840,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":163840,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":57344,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":163840,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":333279232,"max_usage":1110233088,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":204988416,"inactive_file":135168,"inactive_anon":86913024,"total_pgfault":1919544,"total_cache":96804864,"total_rss_huge":0,"total_active_anon":214917120,"total_pgmajfault":0,"pgpgin":1191564,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":1117889,"hierarchical_memsw_limit":0,"cache":96804864,"active_file":135168,"pgfault":1919544,"total_mapped_file":0,"total_pgpgout":1117889,"total_writeback":0,"rss":204988416,"unevictable":0,"total_inactive_anon":86913024,"total_pgpgin":1191564,"active_anon":214917120,"total_active_file":135168},"limit":540965302272},"name":"/NumberTheoreticTransforms-scvdyYDf","networks":{"eth0":{"rx_bytes":4340613,"rx_packets":1106,"tx_packets":1279,"tx_bytes":159130,"tx_dropped":0,"rx_dropped":3,"tx_errors":0,"rx_errors":0}},"id":"b4c1033476dd4e5e46d5efcc25843deb2769f7eb7e022fc29947e8f0a6cc962a","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3592909124522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":66400000000,"usage_in_kernelmode":5470000000,"total_usage":71715634515,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,71694517547,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4350,21112618,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T16:20:04.176900496Z"}

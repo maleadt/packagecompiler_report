@@ -1,0 +1,70 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T16:02:06.844
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:02:08.658
+#
+
+ Installing known registries into `~/.julia`
+####                                                                       5.7%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+
+PkgEval failed: Unsatisfiable requirements detected for package FHIRClient [b44d2ca2]:
+ FHIRClient [b44d2ca2] log:
+ ├─possible versions are: [0.3.0-0.3.3, 0.4.0, 0.5.0, 0.6.0-0.6.1, 0.7.0-0.7.4] or uninstalled
+ └─found to have no compatible versions left with DICOMClient [552a5c7d] 
+   └─DICOMClient [552a5c7d] log:
+     ├─possible versions are: 0.1.0 or uninstalled
+     └─restricted to versions * by an explicit requirement, leaving only versions 0.1.0
+Stacktrace:
+ [1] propagate_constraints!(::Pkg.Resolve.Graph, ::Set{Int64}; log_events::Bool) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1005
+ [2] propagate_constraints! at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:946 [inlined] (repeats 2 times)
+ [3] simplify_graph!(::Pkg.Resolve.Graph, ::Set{Int64}; clean_graph::Bool) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1460
+ [4] simplify_graph! at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1460 [inlined] (repeats 2 times)
+ [5] resolve_versions!(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:375
+ [6] targeted_resolve at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1114 [inlined]
+ [7] tiered_resolve(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1100
+ [8] _resolve at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1120 [inlined]
+ [9] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Array{Base.UUID,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1135
+ [10] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:188
+ [11] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:139
+ [12] #add#21 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [13] add at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [14] #add#20 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [15] add at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [16] add(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [17] add(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [18] top-level scope at none:17
+ [19] eval at ./boot.jl:331 [inlined]
+ [20] eval(::Expr) at ./client.jl:467
+ [21] top-level scope at none:1
+ [22] eval(::Module, ::Any) at ./boot.jl:331
+ [23] exec_options(::Base.JLOptions) at ./client.jl:272
+ [24] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T16:02:14.1
+CPU usage: 7.36s (4.95s user, 2.44s kernel)
+
+Network usage:
+- eth0: 2.523 MiB received, 25.226 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":20,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":1,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":20,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":20,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":1,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":20,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":110592,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":4096,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":110592,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":110592,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":4096,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":110592,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":299855872,"max_usage":434298880,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":191029248,"inactive_file":135168,"inactive_anon":77451264,"total_pgfault":193578,"total_cache":79319040,"total_rss_huge":0,"total_active_anon":192749568,"total_pgmajfault":0,"pgpgin":127347,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":135168,"pgpgout":61374,"hierarchical_memsw_limit":0,"cache":79319040,"active_file":135168,"pgfault":193578,"total_mapped_file":0,"total_pgpgout":61374,"total_writeback":135168,"rss":191029248,"unevictable":0,"total_inactive_anon":77451264,"total_pgpgin":127347,"active_anon":192749568,"total_active_file":135168},"limit":540965302272},"name":"/DICOMClient-wjVm3dMp","networks":{"eth0":{"rx_bytes":2645627,"rx_packets":288,"tx_packets":286,"tx_bytes":25831,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"9d1ac373199ae79a322ccf069a68afa4c68031ae62b6259b40248ad09abaad66","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3456017714522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":4950000000,"usage_in_kernelmode":2440000000,"total_usage":7358965169,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7358965169,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T16:02:14.103306135Z"}

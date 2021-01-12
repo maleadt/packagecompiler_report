@@ -1,0 +1,715 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:23:11.791
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:23:13.555
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Octo ─ v0.2.8
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [16905944] + Octo v0.2.8
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [16905944] + Octo v0.2.8
+  [ade2ca70] + Dates
+  [de0858da] + Printf
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T20:23:18.258
+#
+
+    Testing Octo
+Status `/tmp/jl_nPPAvQ/Project.toml`
+  [a93c6f00] DataFrames v0.21.8
+  [6735fb99] Hive v0.4.0
+  [6042db11] JDBC v0.5.0
+  [ba5e3d4b] Jive v0.2.13
+  [194296ae] LibPQ v1.6.2
+  [aabc7e14] MariaDB_Connector_C_jll v3.1.6+0
+  [39abe10b] MySQL v1.1.2
+  [be6f12e9] ODBC v1.0.4
+  [16905944] Octo v0.2.8
+  [0aa819cd] SQLite v1.0.5
+  [ade2ca70] Dates
+  [8dfed614] Test
+Status `/tmp/jl_nPPAvQ/Manifest.toml`
+  [79e6a3ab] Adapt v2.4.0
+  [56f22d72] Artifacts v1.3.0
+  [b99e7846] BinaryProvider v0.5.10
+  [fa961155] CEnum v0.4.1
+  [324d7699] CategoricalArrays v0.8.3
+  [d360d2e6] ChainRulesCore v0.9.24
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [a10d1c49] DBInterface v2.2.0
+  [9a962f9c] DataAPI v1.4.0
+  [a93c6f00] DataFrames v0.21.8
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [55939f99] DecFP v1.1.0
+  [47200ebd] DecFP_jll v2.0.2+0
+  [abce61dc] Decimals v0.4.1
+  [ffbed154] DocStringExtensions v0.8.3
+  [e2ba6199] ExprTools v0.1.3
+  [8f5d6c58] EzXML v1.1.0
+  [6735fb99] Hive v0.4.0
+  [a303e19e] Infinity v0.2.3
+  [d8418881] Intervals v1.5.0
+  [41ab1584] InvertedIndices v1.0.0
+  [c8e1da08] IterTools v1.3.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [6042db11] JDBC v0.5.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [494afd89] JavaCall v0.7.6
+  [ba5e3d4b] Jive v0.2.13
+  [6f188dcb] LayerDicts v1.0.0
+  [deac9b47] LibCURL_jll v7.70.0+2
+  [194296ae] LibPQ v1.6.2
+  [08be9ffa] LibPQ_jll v12.3.0+0
+  [29816b5a] LibSSH2_jll v1.9.0+3
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [aabc7e14] MariaDB_Connector_C_jll v3.1.6+0
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [f28f55f0] Memento v1.1.2
+  [e1d29d7a] Missings v0.4.4
+  [78c3b35d] Mocking v0.7.1
+  [46d2c3a1] MuladdMacro v0.2.2
+  [39abe10b] MySQL v1.1.2
+  [be6f12e9] ODBC v1.0.4
+  [16905944] Octo v0.2.8
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [458c3c95] OpenSSL_jll v1.1.1+6
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [69de0a69] Parsers v1.0.15
+  [2dfb63ee] PooledArrays v0.5.3
+  [3cdcf5f2] RecipesBase v1.1.1
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [0aa819cd] SQLite v1.0.5
+  [76ed43ae] SQLite_jll v3.34.0+0
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.2.1
+  [856f2bd8] StructTypes v1.2.1
+  [cea106d9] Syslogs v0.3.0
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [8d9c9c80] Thrift v0.7.1
+  [815b9798] ThriftJuliaCompiler_jll v0.11.0+0
+  [f269a46b] TimeZones v1.5.3
+  [ea10d353] WeakRefStrings v0.6.2
+  [1b915085] WinReg v0.3.1
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [83775a58] Zlib_jll v1.2.11+18
+  [80337aba] iODBC_jll v3.52.13+1
+  [8e850ede] nghttp2_jll v1.40.0+2
+  [1841a5aa] unixODBC_jll v2.3.7+0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [7b1f6079] FileWatching
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[4m1/35[24m adapters/mysql/execute_result_test.jl
+: Error During Test at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/mysql/execute_result_test.jl:9
+  Got exception outside of a @test
+  LoadError: MySQL.API.Error(0x000007d2, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+  Stacktrace:
+   [1] connect at /home/pkgeval/.julia/packages/MySQL/pLoSZ/src/api/capi.jl:12 [inlined]
+   [2] MySQL.Connection(::String, ::String, ::String, ::String, ::Int64, ::String; kw::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/MySQL/pLoSZ/src/MySQL.jl:30
+   [3] Connection at /home/pkgeval/.julia/packages/MySQL/pLoSZ/src/MySQL.jl:25 [inlined]
+   [4] #connect#5 at /home/pkgeval/.julia/packages/MySQL/pLoSZ/src/MySQL.jl:284 [inlined]
+   [5] db_connect(; kwargs::Base.Iterators.Pairs{Symbol,Any,NTuple{6,Symbol},NamedTuple{(:username, :password, :hostname, :port, :db, :unix_socket),Tuple{String,String,String,Int64,String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Backends/MySQL.jl:22
+   [6] (::Base.var"#inner#2"{Base.Iterators.Pairs{Symbol,Any,NTuple{6,Symbol},NamedTuple{(:username, :password, :hostname, :port, :db, :unix_socket),Tuple{String,String,String,Int64,String,String}}},typeof(Main.MySQLLoader.db_connect),Tuple{}})() at ./essentials.jl:713
+   [7] #invokelatest#1 at ./essentials.jl:714 [inlined]
+   [8] connect(; adapter::Module, database::Nothing, multiple::Bool, kwargs::Base.Iterators.Pairs{Symbol,Any,NTuple{6,Symbol},NamedTuple{(:username, :password, :hostname, :port, :db, :unix_socket),Tuple{String,String,String,Int64,String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Repo.jl:83
+   [9] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/mysql/execute_result_test.jl:9
+   [10] include(::String) at ./client.jl:457
+   [11] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [12] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [13] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/runtests.jl:35
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/mysql/execute_result_test.jl:9
+  
+    [91m[1mError [22m[39m[91m1[39m
+[4m2/35[24m adapters/mysql/multiple_databases_test.jl
+: Error During Test at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/mysql/multiple_databases_test.jl:11
+  Got exception outside of a @test
+  LoadError: MySQL.API.Error(0x000007d2, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+  Stacktrace:
+   [1] connect at /home/pkgeval/.julia/packages/MySQL/pLoSZ/src/api/capi.jl:12 [inlined]
+   [2] MySQL.Connection(::String, ::String, ::String, ::String, ::Int64, ::String; kw::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/MySQL/pLoSZ/src/MySQL.jl:30
+   [3] Connection at /home/pkgeval/.julia/packages/MySQL/pLoSZ/src/MySQL.jl:25 [inlined]
+   [4] #connect#5 at /home/pkgeval/.julia/packages/MySQL/pLoSZ/src/MySQL.jl:284 [inlined]
+   [5] db_connect(; kwargs::Base.Iterators.Pairs{Symbol,Any,NTuple{6,Symbol},NamedTuple{(:username, :password, :hostname, :port, :db, :unix_socket),Tuple{String,String,String,Int64,String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Backends/MySQL.jl:22
+   [6] (::Base.var"#inner#2"{Base.Iterators.Pairs{Symbol,Any,NTuple{6,Symbol},NamedTuple{(:username, :password, :hostname, :port, :db, :unix_socket),Tuple{String,String,String,Int64,String,String}}},typeof(Main.MySQLLoader.db_connect),Tuple{}})() at ./essentials.jl:713
+   [7] #invokelatest#1 at ./essentials.jl:714 [inlined]
+   [8] connect(; adapter::Module, database::Nothing, multiple::Bool, kwargs::Base.Iterators.Pairs{Symbol,Any,NTuple{6,Symbol},NamedTuple{(:username, :password, :hostname, :port, :db, :unix_socket),Tuple{String,String,String,Int64,String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Repo.jl:83
+   [9] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/mysql/multiple_databases_test.jl:11
+   [10] include(::String) at ./client.jl:457
+   [11] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [12] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [13] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/runtests.jl:35
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/mysql/multiple_databases_test.jl:11
+  
+    [91m[1mError [22m[39m[91m1[39m
+[4m3/35[24m adapters/mysql/placeholder_test.jl
+: Error During Test at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/mysql/placeholder_test.jl:10
+  Got exception outside of a @test
+  LoadError: MySQL.API.Error(0x000007d2, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+  Stacktrace:
+   [1] connect at /home/pkgeval/.julia/packages/MySQL/pLoSZ/src/api/capi.jl:12 [inlined]
+   [2] MySQL.Connection(::String, ::String, ::String, ::String, ::Int64, ::String; kw::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/MySQL/pLoSZ/src/MySQL.jl:30
+   [3] Connection at /home/pkgeval/.julia/packages/MySQL/pLoSZ/src/MySQL.jl:25 [inlined]
+   [4] #connect#5 at /home/pkgeval/.julia/packages/MySQL/pLoSZ/src/MySQL.jl:284 [inlined]
+   [5] db_connect(; kwargs::Base.Iterators.Pairs{Symbol,Any,NTuple{6,Symbol},NamedTuple{(:username, :password, :hostname, :port, :db, :unix_socket),Tuple{String,String,String,Int64,String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Backends/MySQL.jl:22
+   [6] (::Base.var"#inner#2"{Base.Iterators.Pairs{Symbol,Any,NTuple{6,Symbol},NamedTuple{(:username, :password, :hostname, :port, :db, :unix_socket),Tuple{String,String,String,Int64,String,String}}},typeof(Main.MySQLLoader.db_connect),Tuple{}})() at ./essentials.jl:713
+   [7] #invokelatest#1 at ./essentials.jl:714 [inlined]
+   [8] connect(; adapter::Module, database::Nothing, multiple::Bool, kwargs::Base.Iterators.Pairs{Symbol,Any,NTuple{6,Symbol},NamedTuple{(:username, :password, :hostname, :port, :db, :unix_socket),Tuple{String,String,String,Int64,String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Repo.jl:83
+   [9] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/mysql/placeholder_test.jl:10
+   [10] include(::String) at ./client.jl:457
+   [11] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [12] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [13] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/runtests.jl:35
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/mysql/placeholder_test.jl:10
+  
+    [91m[1mError [22m[39m[91m1[39m
+[4m4/35[24m adapters/mysql/repo_test.jl
+: Error During Test at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/mysql/repo_test.jl:9
+  Got exception outside of a @test
+  LoadError: MySQL.API.Error(0x000007d2, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+  Stacktrace:
+   [1] connect at /home/pkgeval/.julia/packages/MySQL/pLoSZ/src/api/capi.jl:12 [inlined]
+   [2] MySQL.Connection(::String, ::String, ::String, ::String, ::Int64, ::String; kw::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/MySQL/pLoSZ/src/MySQL.jl:30
+   [3] Connection at /home/pkgeval/.julia/packages/MySQL/pLoSZ/src/MySQL.jl:25 [inlined]
+   [4] #connect#5 at /home/pkgeval/.julia/packages/MySQL/pLoSZ/src/MySQL.jl:284 [inlined]
+   [5] db_connect(; kwargs::Base.Iterators.Pairs{Symbol,Any,NTuple{6,Symbol},NamedTuple{(:username, :password, :hostname, :port, :db, :unix_socket),Tuple{String,String,String,Int64,String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Backends/MySQL.jl:22
+   [6] (::Base.var"#inner#2"{Base.Iterators.Pairs{Symbol,Any,NTuple{6,Symbol},NamedTuple{(:username, :password, :hostname, :port, :db, :unix_socket),Tuple{String,String,String,Int64,String,String}}},typeof(Main.MySQLLoader.db_connect),Tuple{}})() at ./essentials.jl:713
+   [7] #invokelatest#1 at ./essentials.jl:714 [inlined]
+   [8] connect(; adapter::Module, database::Nothing, multiple::Bool, kwargs::Base.Iterators.Pairs{Symbol,Any,NTuple{6,Symbol},NamedTuple{(:username, :password, :hostname, :port, :db, :unix_socket),Tuple{String,String,String,Int64,String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Repo.jl:83
+   [9] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/mysql/repo_test.jl:9
+   [10] include(::String) at ./client.jl:457
+   [11] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [12] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [13] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/runtests.jl:35
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/mysql/repo_test.jl:9
+  
+    [91m[1mError [22m[39m[91m1[39m
+[4m5/35[24m adapters/mysql/structured_test.jl
+    [32m[1mPass [22m[39m[32m11[39m  (3.63 seconds)
+[4m6/35[24m adapters/odbc/mariadb_repo_test.jl
+: Error During Test at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/odbc/mariadb_repo_test.jl:11
+  Got exception outside of a @test
+  LoadError: 01000: [unixODBC][Driver Manager]Can't open lib 'ODBC_Test_MariaDB' : file not found
+  Stacktrace:
+   [1] error(::String) at ./error.jl:33
+   [2] driverconnect(::String) at /home/pkgeval/.julia/packages/ODBC/qhwMX/src/API.jl:114
+   [3] connect at /home/pkgeval/.julia/packages/ODBC/qhwMX/src/API.jl:351 [inlined]
+   [4] ODBC.Connection(::String; user::Nothing, password::Nothing, extraauth::Nothing) at /home/pkgeval/.julia/packages/ODBC/qhwMX/src/dbinterface.jl:57
+   [5] Connection at /home/pkgeval/.julia/packages/ODBC/qhwMX/src/dbinterface.jl:55 [inlined]
+   [6] #connect#14 at /home/pkgeval/.julia/packages/ODBC/qhwMX/src/dbinterface.jl:84 [inlined]
+   [7] connect at /home/pkgeval/.julia/packages/ODBC/qhwMX/src/dbinterface.jl:84 [inlined]
+   [8] #db_connect#1 at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Backends/ODBC.jl:20 [inlined]
+   [9] (::Base.var"#inner#2"{Base.Iterators.Pairs{Symbol,String,Tuple{Symbol},NamedTuple{(:dsn,),Tuple{String}}},typeof(Main.ODBCLoader.db_connect),Tuple{}})() at ./essentials.jl:713
+   [10] #invokelatest#1 at ./essentials.jl:714 [inlined]
+   [11] connect(; adapter::Module, database::Nothing, multiple::Bool, kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol},NamedTuple{(:dsn,),Tuple{String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Repo.jl:83
+   [12] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/odbc/mariadb_repo_test.jl:11
+   [13] include(::String) at ./client.jl:457
+   [14] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [15] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [16] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/runtests.jl:35
+   [17] include(::String) at ./client.jl:457
+   [18] top-level scope at none:6
+   [19] eval(::Module, ::Any) at ./boot.jl:331
+   [20] exec_options(::Base.JLOptions) at ./client.jl:272
+   [21] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/odbc/mariadb_repo_test.jl:11
+  
+    [91m[1mError [22m[39m[91m1[39m
+[4m7/35[24m adapters/postgresql/bigserial_pk_test.jl
+[error | LibPQ]: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+: Error During Test at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/bigserial_pk_test.jl:8
+  Got exception outside of a @test
+  LoadError: LibPQ.Errors.PQConnectionError("could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"/tmp/.s.PGSQL.5432\"?\n")
+  Stacktrace:
+   [1] error(::Memento.Logger, ::LibPQ.Errors.PQConnectionError) at /home/pkgeval/.julia/packages/Memento/i6gAL/src/loggers.jl:458
+   [2] handle_new_connection(::LibPQ.Connection; throw_error::Bool) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:127
+   [3] LibPQ.Connection(::String; throw_error::Bool, connect_timeout::Int64, options::Dict{String,String}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:320
+   [4] Connection at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:272 [inlined]
+   [5] db_connect(; kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Backends/PostgreSQL.jl:19
+   [6] (::Base.var"#inner#2"{Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}},typeof(Main.PostgreSQLLoader.db_connect),Tuple{}})() at ./essentials.jl:713
+   [7] #invokelatest#1 at ./essentials.jl:714 [inlined]
+   [8] connect(; adapter::Module, database::Nothing, multiple::Bool, kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Repo.jl:83
+   [9] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/bigserial_pk_test.jl:8
+   [10] include(::String) at ./client.jl:457
+   [11] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [12] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [13] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/runtests.jl:35
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/bigserial_pk_test.jl:8
+  
+    [91m[1mError [22m[39m[91m1[39m
+[4m8/35[24m adapters/postgresql/boolean_test.jl
+[error | LibPQ]: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+: Error During Test at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/boolean_test.jl:10
+  Got exception outside of a @test
+  LoadError: LibPQ.Errors.PQConnectionError("could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"/tmp/.s.PGSQL.5432\"?\n")
+  Stacktrace:
+   [1] error(::Memento.Logger, ::LibPQ.Errors.PQConnectionError) at /home/pkgeval/.julia/packages/Memento/i6gAL/src/loggers.jl:458
+   [2] handle_new_connection(::LibPQ.Connection; throw_error::Bool) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:127
+   [3] LibPQ.Connection(::String; throw_error::Bool, connect_timeout::Int64, options::Dict{String,String}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:320
+   [4] Connection at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:272 [inlined]
+   [5] db_connect(; kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Backends/PostgreSQL.jl:19
+   [6] (::Base.var"#inner#2"{Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}},typeof(Main.PostgreSQLLoader.db_connect),Tuple{}})() at ./essentials.jl:713
+   [7] #invokelatest#1 at ./essentials.jl:714 [inlined]
+   [8] connect(; adapter::Module, database::Nothing, multiple::Bool, kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Repo.jl:83
+   [9] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/boolean_test.jl:10
+   [10] include(::String) at ./client.jl:457
+   [11] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [12] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [13] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/runtests.jl:35
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/boolean_test.jl:10
+  
+    [91m[1mError [22m[39m[91m1[39m
+    [32m[1mPass [22m[39m[32m1[39m  (0.95 seconds)
+[4m9/35[24m adapters/postgresql/dates_test.jl
+    [32m[1mPass [22m[39m[32m6[39m  (1.52 seconds)
+[4m10/35[24m adapters/postgresql/execute_result_test.jl
+[error | LibPQ]: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+: Error During Test at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/execute_result_test.jl:12
+  Got exception outside of a @test
+  LoadError: LibPQ.Errors.PQConnectionError("could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"/tmp/.s.PGSQL.5432\"?\n")
+  Stacktrace:
+   [1] error(::Memento.Logger, ::LibPQ.Errors.PQConnectionError) at /home/pkgeval/.julia/packages/Memento/i6gAL/src/loggers.jl:458
+   [2] handle_new_connection(::LibPQ.Connection; throw_error::Bool) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:127
+   [3] LibPQ.Connection(::String; throw_error::Bool, connect_timeout::Int64, options::Dict{String,String}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:320
+   [4] Connection at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:272 [inlined]
+   [5] db_connect(; kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Backends/PostgreSQL.jl:19
+   [6] (::Base.var"#inner#2"{Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}},typeof(Main.PostgreSQLLoader.db_connect),Tuple{}})() at ./essentials.jl:713
+   [7] #invokelatest#1 at ./essentials.jl:714 [inlined]
+   [8] connect(; adapter::Module, database::Nothing, multiple::Bool, kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Repo.jl:83
+   [9] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/execute_result_test.jl:12
+   [10] include(::String) at ./client.jl:457
+   [11] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [12] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [13] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/runtests.jl:35
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/execute_result_test.jl:12
+  
+    [91m[1mError [22m[39m[91m1[39m
+[4m11/35[24m adapters/postgresql/functions_test.jl
+[error | LibPQ]: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+: Error During Test at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/functions_test.jl:8
+  Got exception outside of a @test
+  LoadError: LibPQ.Errors.PQConnectionError("could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"/tmp/.s.PGSQL.5432\"?\n")
+  Stacktrace:
+   [1] error(::Memento.Logger, ::LibPQ.Errors.PQConnectionError) at /home/pkgeval/.julia/packages/Memento/i6gAL/src/loggers.jl:458
+   [2] handle_new_connection(::LibPQ.Connection; throw_error::Bool) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:127
+   [3] LibPQ.Connection(::String; throw_error::Bool, connect_timeout::Int64, options::Dict{String,String}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:320
+   [4] Connection at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:272 [inlined]
+   [5] db_connect(; kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol},NamedTuple{(:user,),Tuple{String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Backends/PostgreSQL.jl:19
+   [6] (::Base.var"#inner#2"{Base.Iterators.Pairs{Symbol,String,Tuple{Symbol},NamedTuple{(:user,),Tuple{String}}},typeof(Main.PostgreSQLLoader.db_connect),Tuple{}})() at ./essentials.jl:713
+   [7] #invokelatest#1 at ./essentials.jl:714 [inlined]
+   [8] connect(; adapter::Module, database::Nothing, multiple::Bool, kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol},NamedTuple{(:user,),Tuple{String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Repo.jl:83
+   [9] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/functions_test.jl:8
+   [10] include(::String) at ./client.jl:457
+   [11] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [12] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [13] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/runtests.jl:35
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/functions_test.jl:8
+  
+    [91m[1mError [22m[39m[91m1[39m
+[4m12/35[24m adapters/postgresql/multiple_databases_test.jl
+[error | LibPQ]: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+: Error During Test at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/multiple_databases_test.jl:22
+  Got exception outside of a @test
+  LoadError: LibPQ.Errors.PQConnectionError("could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"/tmp/.s.PGSQL.5432\"?\n")
+  Stacktrace:
+   [1] error(::Memento.Logger, ::LibPQ.Errors.PQConnectionError) at /home/pkgeval/.julia/packages/Memento/i6gAL/src/loggers.jl:458
+   [2] handle_new_connection(::LibPQ.Connection; throw_error::Bool) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:127
+   [3] LibPQ.Connection(::String; throw_error::Bool, connect_timeout::Int64, options::Dict{String,String}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:320
+   [4] Connection at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:272 [inlined]
+   [5] db_connect(; kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Backends/PostgreSQL.jl:19
+   [6] (::Base.var"#inner#2"{Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}},typeof(Main.PostgreSQLLoader.db_connect),Tuple{}})() at ./essentials.jl:713
+   [7] #invokelatest#1 at ./essentials.jl:714 [inlined]
+   [8] connect(; adapter::Module, database::Nothing, multiple::Bool, kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Repo.jl:83
+   [9] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/multiple_databases_test.jl:22
+   [10] include(::String) at ./client.jl:457
+   [11] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [12] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [13] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/runtests.jl:35
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/multiple_databases_test.jl:22
+  
+    [91m[1mError [22m[39m[91m1[39m
+[4m13/35[24m adapters/postgresql/null.jl
+[error | LibPQ]: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+: Error During Test at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/null.jl:8
+  Got exception outside of a @test
+  LoadError: LibPQ.Errors.PQConnectionError("could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"/tmp/.s.PGSQL.5432\"?\n")
+  Stacktrace:
+   [1] error(::Memento.Logger, ::LibPQ.Errors.PQConnectionError) at /home/pkgeval/.julia/packages/Memento/i6gAL/src/loggers.jl:458
+   [2] handle_new_connection(::LibPQ.Connection; throw_error::Bool) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:127
+   [3] LibPQ.Connection(::String; throw_error::Bool, connect_timeout::Int64, options::Dict{String,String}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:320
+   [4] Connection at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:272 [inlined]
+   [5] db_connect(; kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Backends/PostgreSQL.jl:19
+   [6] (::Base.var"#inner#2"{Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}},typeof(Main.PostgreSQLLoader.db_connect),Tuple{}})() at ./essentials.jl:713
+   [7] #invokelatest#1 at ./essentials.jl:714 [inlined]
+   [8] connect(; adapter::Module, database::Nothing, multiple::Bool, kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Repo.jl:83
+   [9] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/null.jl:8
+   [10] include(::String) at ./client.jl:457
+   [11] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [12] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [13] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/runtests.jl:35
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/null.jl:8
+  
+    [91m[1mError [22m[39m[91m1[39m
+[4m14/35[24m adapters/postgresql/placeholder_test.jl
+[error | LibPQ]: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+: Error During Test at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/placeholder_test.jl:8
+  Got exception outside of a @test
+  LoadError: LibPQ.Errors.PQConnectionError("could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"/tmp/.s.PGSQL.5432\"?\n")
+  Stacktrace:
+   [1] error(::Memento.Logger, ::LibPQ.Errors.PQConnectionError) at /home/pkgeval/.julia/packages/Memento/i6gAL/src/loggers.jl:458
+   [2] handle_new_connection(::LibPQ.Connection; throw_error::Bool) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:127
+   [3] LibPQ.Connection(::String; throw_error::Bool, connect_timeout::Int64, options::Dict{String,String}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:320
+   [4] Connection at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:272 [inlined]
+   [5] db_connect(; kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Backends/PostgreSQL.jl:19
+   [6] (::Base.var"#inner#2"{Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}},typeof(Main.PostgreSQLLoader.db_connect),Tuple{}})() at ./essentials.jl:713
+   [7] #invokelatest#1 at ./essentials.jl:714 [inlined]
+   [8] connect(; adapter::Module, database::Nothing, multiple::Bool, kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Repo.jl:83
+   [9] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/placeholder_test.jl:8
+   [10] include(::String) at ./client.jl:457
+   [11] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [12] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [13] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/runtests.jl:35
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/placeholder_test.jl:8
+  
+    [91m[1mError [22m[39m[91m1[39m
+[4m15/35[24m adapters/postgresql/pool_test.jl
+[error | LibPQ]: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+: Error During Test at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/pool_test.jl:12
+  Got exception outside of a @test
+  LoadError: LibPQ.Errors.PQConnectionError("could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"/tmp/.s.PGSQL.5432\"?\n")
+  Stacktrace:
+   [1] error(::Memento.Logger, ::LibPQ.Errors.PQConnectionError) at /home/pkgeval/.julia/packages/Memento/i6gAL/src/loggers.jl:458
+   [2] handle_new_connection(::LibPQ.Connection; throw_error::Bool) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:127
+   [3] LibPQ.Connection(::String; throw_error::Bool, connect_timeout::Int64, options::Dict{String,String}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:320
+   [4] Connection at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:272 [inlined]
+   [5] db_connect(; kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Backends/PostgreSQL.jl:19
+   [6] (::Base.var"#inner#2"{Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}},typeof(Main.PostgreSQLLoader.db_connect),Tuple{}})() at ./essentials.jl:713
+   [7] #invokelatest#1 at ./essentials.jl:714 [inlined]
+   [8] connect(; adapter::Module, database::Nothing, multiple::Bool, kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Repo.jl:83
+   [9] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/pool_test.jl:12
+   [10] include(::String) at ./client.jl:457
+   [11] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [12] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [13] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/runtests.jl:35
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/pool_test.jl:12
+  
+    [91m[1mError [22m[39m[91m1[39m
+[4m16/35[24m adapters/postgresql/prepare_test.jl
+    [32m[1mPass [22m[39m[32m2[39m  (0.91 seconds)
+[4m17/35[24m adapters/postgresql/repo_test.jl
+[error | LibPQ]: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+: Error During Test at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/repo_test.jl:14
+  Got exception outside of a @test
+  LoadError: LibPQ.Errors.PQConnectionError("could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"/tmp/.s.PGSQL.5432\"?\n")
+  Stacktrace:
+   [1] error(::Memento.Logger, ::LibPQ.Errors.PQConnectionError) at /home/pkgeval/.julia/packages/Memento/i6gAL/src/loggers.jl:458
+   [2] handle_new_connection(::LibPQ.Connection; throw_error::Bool) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:127
+   [3] LibPQ.Connection(::String; throw_error::Bool, connect_timeout::Int64, options::Dict{String,String}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:320
+   [4] Connection at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:272 [inlined]
+   [5] db_connect(; kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Backends/PostgreSQL.jl:19
+   [6] (::Base.var"#inner#2"{Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}},typeof(Main.PostgreSQLLoader.db_connect),Tuple{}})() at ./essentials.jl:713
+   [7] #invokelatest#1 at ./essentials.jl:714 [inlined]
+   [8] connect(; adapter::Module, database::Nothing, multiple::Bool, kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Repo.jl:83
+   [9] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/repo_test.jl:14
+   [10] include(::String) at ./client.jl:457
+   [11] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [12] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [13] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/runtests.jl:35
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/repo_test.jl:14
+  
+    [91m[1mError [22m[39m[91m1[39m
+[4m18/35[24m adapters/postgresql/structured_test.jl
+    [32m[1mPass [22m[39m[32m8[39m  (0.70 seconds)
+[4m19/35[24m adapters/postgresql/subquery_test.jl
+    [32m[1mPass [22m[39m[32m1[39m  (0.57 seconds)
+[4m20/35[24m adapters/postgresql/transactions_test.jl
+[error | LibPQ]: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+: Error During Test at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/transactions_test.jl:14
+  Got exception outside of a @test
+  LoadError: LibPQ.Errors.PQConnectionError("could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"/tmp/.s.PGSQL.5432\"?\n")
+  Stacktrace:
+   [1] error(::Memento.Logger, ::LibPQ.Errors.PQConnectionError) at /home/pkgeval/.julia/packages/Memento/i6gAL/src/loggers.jl:458
+   [2] handle_new_connection(::LibPQ.Connection; throw_error::Bool) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:127
+   [3] LibPQ.Connection(::String; throw_error::Bool, connect_timeout::Int64, options::Dict{String,String}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:320
+   [4] Connection at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:272 [inlined]
+   [5] db_connect(; kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Backends/PostgreSQL.jl:19
+   [6] (::Base.var"#inner#2"{Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}},typeof(Main.PostgreSQLLoader.db_connect),Tuple{}})() at ./essentials.jl:713
+   [7] #invokelatest#1 at ./essentials.jl:714 [inlined]
+   [8] connect(; adapter::Module, database::Nothing, multiple::Bool, kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol,Symbol},NamedTuple{(:dbname, :user),Tuple{String,String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Repo.jl:83
+   [9] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/transactions_test.jl:14
+   [10] include(::String) at ./client.jl:457
+   [11] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [12] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [13] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/runtests.jl:35
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/transactions_test.jl:14
+  
+    [91m[1mError [22m[39m[91m1[39m
+[4m21/35[24m adapters/postgresql/window_frames_test.jl
+[error | LibPQ]: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+: Error During Test at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/window_frames_test.jl:19
+  Got exception outside of a @test
+  LoadError: LibPQ.Errors.PQConnectionError("could not connect to server: No such file or directory\n\tIs the server running locally and accepting\n\tconnections on Unix domain socket \"/tmp/.s.PGSQL.5432\"?\n")
+  Stacktrace:
+   [1] error(::Memento.Logger, ::LibPQ.Errors.PQConnectionError) at /home/pkgeval/.julia/packages/Memento/i6gAL/src/loggers.jl:458
+   [2] handle_new_connection(::LibPQ.Connection; throw_error::Bool) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:127
+   [3] LibPQ.Connection(::String; throw_error::Bool, connect_timeout::Int64, options::Dict{String,String}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:320
+   [4] Connection at /home/pkgeval/.julia/packages/LibPQ/LSA5x/src/connections.jl:272 [inlined]
+   [5] db_connect(; kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol},NamedTuple{(:user,),Tuple{String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Backends/PostgreSQL.jl:19
+   [6] (::Base.var"#inner#2"{Base.Iterators.Pairs{Symbol,String,Tuple{Symbol},NamedTuple{(:user,),Tuple{String}}},typeof(Main.PostgreSQLLoader.db_connect),Tuple{}})() at ./essentials.jl:713
+   [7] #invokelatest#1 at ./essentials.jl:714 [inlined]
+   [8] connect(; adapter::Module, database::Nothing, multiple::Bool, kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol},NamedTuple{(:user,),Tuple{String}}}) at /home/pkgeval/.julia/packages/Octo/9a5y7/src/Repo.jl:83
+   [9] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/window_frames_test.jl:19
+   [10] include(::String) at ./client.jl:457
+   [11] normal_run(::String, ::Array{String,1}, ::Int64, ::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:469
+   [12] runtests(::String; skip::Array{String,1}, node1::Array{Any,1}, targets::Array{String,1}, enable_distributed::Bool, stop_on_failure::Bool) at /home/pkgeval/.julia/packages/Jive/S1UMt/src/runtests.jl:87
+   [13] top-level scope at /home/pkgeval/.julia/packages/Octo/9a5y7/test/runtests.jl:35
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/Octo/9a5y7/test/adapters/postgresql/window_frames_test.jl:19
+  
+    [91m[1mError [22m[39m[91m1[39m
+    [32m[1mPass [22m[39m[32m5[39m  (0.50 seconds)
+[4m22/35[24m adapters/sql/structured_test.jl
+    [32m[1mPass [22m[39m[32m17[39m  (1.34 seconds)
+[4m23/35[24m adapters/sqlite/execute_result_test.jl
+[ Info: [36mCREATE[39m [36mTABLE[39m [36mIF[39m [36mNOT[39m [36mEXISTS[39m [0mtemp [36mAS[39m [36mSELECT[39m [0m* [36mFROM[39m [0mAlbum
+[ Info: [36mDELETE[39m [36mFROM[39m [0mtemp
+[ Info: [0mselect[0m [0m*[0m [0mfrom[0m [0mtemp
+[ Info: [36mDELETE[39m [36mFROM[39m [0mtemp
+[ Info: [36mINSERT[39m [36mINTO[39m [0mtemp [0m([0mAlbumId, [0mTitle, [0mArtistId[0m) [36mVALUES[39m [0m([32m[1m?[22m[39m, [32m[1m?[22m[39m, [32m[1m?[22m[39m[0m)    [33m(AlbumId = 0, Title = "Test Album", ArtistId = 0)[39m
+[ Info: [0mselect[0m [0m*[0m [0mfrom[0m [0mtemp
+[ Info: [0mupdate[0m [0mTemp[0m [0mset[0m [0mTitle[0m [0m=[0m [0m'New[0m [0mTitle'[0m [0mwhere[0m [0mAlbumId[0m [0m>[0m [0m100
+[ Info: [0mdelete[0m [0mfrom[0m [0mTemp
+    [32m[1mPass [22m[39m[32m8[39m  (4.44 seconds)
+[4m24/35[24m adapters/sqlite/repo_test.jl
+[ Info: [36mDROP[39m [36mTABLE[39m [36mIF[39m [36mEXISTS[39m [0mtemp
+┌ Info: [36mCREATE[39m[0m [36mTABLE[39m[0m [0mTemp[0m [0m(
+│ [0m [0m [0m [0m [0mid[0m [0mINTEGER[0m [36mPRIMARY[39m[0m [36mKEY[39m[0m,
+│ [0m [0m [0m [0m [0mlabel[0m [0mTEXT[0m [36mNOT[39m[0m [36mNULL[39m
+└ [0m)
+[ Info: [36mINSERT[39m [36mINTO[39m [0mtemp [0m([0mlabel[0m) [36mVALUES[39m [0m([32m[1m?[22m[39m[0m)    [33m(label = "d",)[39m[0m, [33m(label = "c",)[39m[0m, [33m(label = "c",)[39m[0m, [33m(label = "b",)[39m[0m, [33m(label = "a",)[39m
+[ Info: [36mSELECT[39m [0m* [36mFROM[39m [0mtemp [36mWHERE[39m [0mlabel [36mIN[39m [0m([95m'[39m[95ma[39m[95m'[39m, [95m'[39m[95mb[39m[95m'[39m, [95m'[39m[95mc[39m[95m'[39m[0m)
+[ Info: [36mSELECT[39m [0m* [36mFROM[39m [0mtemp [36mWHERE[39m [0mlabel [36mIN[39m [0m([95m'[39m[95ma[39m[95m'[39m[0m)
+[ Info: [36mSELECT[39m [0m* [36mFROM[39m [0mtemp [36mWHERE[39m [0mlabel [36mIN[39m [0m([0m)
+[ Info: [36mSELECT[39m [0m* [36mFROM[39m [0mEmployee
+[ Info: [36mSELECT[39m [0m* [36mFROM[39m [0mEmployee [36mWHERE[39m [0mEmployeeId [0m= [0m2
+[ Info: [36mSELECT[39m [0m* [36mFROM[39m [0mEmployee [36mWHERE[39m [0mEmployeeId [0m= [0m2
+[ Info: [36mCREATE[39m [36mTABLE[39m [36mIF[39m [36mNOT[39m [36mEXISTS[39m [0mtemp [36mAS[39m [36mSELECT[39m [0m* [36mFROM[39m [0mAlbum
+[ Info: [36mSELECT[39m [0m* [36mFROM[39m [0mtemp
+[ Info: [36mINSERT[39m [36mINTO[39m [0mtemp [0m([0mAlbumId, [0mTitle, [0mArtistId[0m) [36mVALUES[39m [0m([32m[1m?[22m[39m, [32m[1m?[22m[39m, [32m[1m?[22m[39m[0m)    [33m(AlbumId = 0, Title = "Test Album", ArtistId = 0)[39m
+[ Info: [36mSELECT[39m [0m* [36mFROM[39m [0mtemp
+[ Info: [36mSELECT[39m [0m* [36mFROM[39m [0mtemp [36mWHERE[39m [0mAlbumId [0m= [0m6
+[ Info: [36mSELECT[39m [0m* [36mFROM[39m [0mtemp [36mWHERE[39m [0mTitle [0m= [95m'[39m[95mJagged Little Pill[39m[95m'[39m
+[ Info: [36mUPDATE[39m [0mtemp [36mSET[39m [0mTitle [0m= [32m[1m?[22m[39m [36mWHERE[39m [0mAlbumId [0m= [0m6    [33m"Texas"[39m
+[ Info: [36mSELECT[39m [0m* [36mFROM[39m [0mtemp [36mWHERE[39m [0mAlbumId [0m= [0m6
+[ Info: [36mDELETE[39m [36mFROM[39m [0mtemp [36mWHERE[39m [0mAlbumId [0m= [0m6 [36mAND[39m [0mTitle [0m= [95m'[39m[95mTexas[39m[95m'[39m
+[ Info: [36mSELECT[39m [0m* [36mFROM[39m [0mtemp [36mWHERE[39m [0mAlbumId [0m= [0m6
+[ Info: [36mSELECT[39m [0m* [36mFROM[39m [0mtemp [36mWHERE[39m [0mTitle [0m= [32m[1m?[22m[39m [36mAND[39m [0mArtistId [0m= [32m[1m?[22m[39m    [33m"The Doors"[39m[0m, [33m140[39m
+    [32m[1mPass [22m[39m[32m17[39m  (3.31 seconds)
+[4m25/35[24m adapters/sqlite/structured_test.jl
+    [32m[1mPass [22m[39m[32m12[39m  (0.32 seconds)
+[4m26/35[24m octo/as.jl
+    [32m[1mPass [22m[39m[32m2[39m  (0.06 seconds)
+[4m27/35[24m octo/backends.jl
+    [32m[1mPass [22m[39m[32m1[39m  (0.03 seconds)
+[4m28/35[24m octo/predicates.jl
+    [32m[1mPass [22m[39m[32m7[39m  (1.16 seconds)
+[4m29/35[24m octo/pretty.jl
+    [32m[1mPass [22m[39m[32m8[39m  (4.20 seconds)
+[4m30/35[24m octo/raw.jl
+    [32m[1mPass [22m[39m[32m1[39m  (0.01 seconds)
+[4m31/35[24m octo/repo.jl
+[ Info: [0mselect[0m [0m*[0m [0mfrom[0m [0malbums
+[ Info: [0mselect[0m [0m*[0m [0mfrom[0m [0malbums
+[ Info: [0mselect[0m [0m*[0m [0mfrom[0m [0malbums
+[ Info: [0mselect[0m [0m*[0m [0mfrom[0m [0malbums
+[4m32/35[24m octo/schema.jl
+[ Info: [36mINSERT[39m [36mINTO[39m [0musers [0m([0musername[0m) [36mVALUES[39m [0m([32m[1m?[22m[39m[0m)    [33m(username = "abcdef",)[39m
+[ Info: [36mSELECT[39m [0m* [36mFROM[39m [0musers [36mWHERE[39m [0mpk1 [0m= [0m1 [36mAND[39m [0mpk2 [0m= [0m2
+    [32m[1mPass [22m[39m[32m1[39m  (0.66 seconds)
+[4m33/35[24m octo/sql_functions.jl
+    [32m[1mPass [22m[39m[32m6[39m  (0.19 seconds)
+[4m34/35[24m octo/structured.jl
+    [32m[1mPass [22m[39m[32m13[39m  (0.97 seconds)
+[4m35/35[24m octo/subquery.jl
+    [32m[1mPass [22m[39m[32m8[39m  (0.65 seconds)
+[31m❗️  [39mTest run finished with 16 errors.  (121.32 seconds)
+ERROR: LoadError: Test run finished with errors.
+in expression starting at /home/pkgeval/.julia/packages/Octo/9a5y7/test/runtests.jl:35
+
+PkgEval failed: Package Octo errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:25:39.863
+CPU usage: 147.80s (137.21s user, 10.84s kernel)
+
+Network usage:
+- eth0: 8.719 MiB received, 367.415 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":44,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":25,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":44,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":44,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":25,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":44,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":245760,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":139264,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":245760,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":245760,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":139264,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":245760,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":376422400,"max_usage":1279082496,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":222785536,"inactive_file":135168,"inactive_anon":98131968,"total_pgfault":3765894,"total_cache":120803328,"total_rss_huge":0,"total_active_anon":245465088,"total_pgmajfault":0,"pgpgin":2531727,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":135168,"pgpgout":2447829,"hierarchical_memsw_limit":0,"cache":120803328,"active_file":135168,"pgfault":3765894,"total_mapped_file":0,"total_pgpgout":2447829,"total_writeback":135168,"rss":222785536,"unevictable":0,"total_inactive_anon":98131968,"total_pgpgin":2531727,"active_anon":245465088,"total_active_file":135168},"limit":540965302272},"name":"/Octo-5BzkePAj","networks":{"eth0":{"rx_bytes":9143004,"rx_packets":2591,"tx_packets":2956,"tx_bytes":376233,"tx_dropped":0,"rx_dropped":5,"tx_errors":0,"rx_errors":0}},"id":"7351113ced38ae12436d7e8771ebe139003b6a310fdbf13e89fda39cde15708c","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5476077214522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":137210000000,"usage_in_kernelmode":10840000000,"total_usage":147801177354,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,147792908881,2263630,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2878242,1960071,4150,1162380,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:25:39.865846961Z"}

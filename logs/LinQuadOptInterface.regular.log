@@ -1,0 +1,181 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:03:06.689
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:03:08.473
+#
+
+ Installing known registries into `~/.julia`
+####                                                                       5.7%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Compat ────────────── v2.2.1
+  Installed LinQuadOptInterface ─ v0.6.0
+  Installed MathOptInterface ──── v0.8.4
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [f8899e07] + LinQuadOptInterface v0.6.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [34da2185] + Compat v2.2.1
+  [f8899e07] + LinQuadOptInterface v0.6.0
+  [b8f27783] + MathOptInterface v0.8.4
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T17:03:12.199
+#
+
+    Testing LinQuadOptInterface
+Status `/tmp/jl_dzqWWT/Project.toml`
+  [34da2185] Compat v2.2.1
+  [f8899e07] LinQuadOptInterface v0.6.0
+  [b8f27783] MathOptInterface v0.8.4
+Status `/tmp/jl_dzqWWT/Manifest.toml`
+  [34da2185] Compat v2.2.1
+  [f8899e07] LinQuadOptInterface v0.6.0
+  [b8f27783] MathOptInterface v0.8.4
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+partial_start: Error During Test at /home/pkgeval/.julia/packages/MathOptInterface/C3lip/src/Test/config.jl:52
+  Got exception outside of a @test
+  MathOptInterface.UnsupportedAttribute{MathOptInterface.VariablePrimalStart}: Attribute MathOptInterface.VariablePrimalStart() is not supported by the model.
+  Stacktrace:
+   [1] set(::LinQuadOptInterface.MockLinQuadOptimizer, ::MathOptInterface.VariablePrimalStart, ::Array{MathOptInterface.VariableIndex,1}, ::Array{Float64,1}) at /home/pkgeval/.julia/packages/LinQuadOptInterface/ZMx9f/src/variables.jl:211
+   [2] set(::LinQuadOptInterface.MockLinQuadOptimizer, ::MathOptInterface.VariablePrimalStart, ::MathOptInterface.VariableIndex, ::Float64) at /home/pkgeval/.julia/packages/LinQuadOptInterface/ZMx9f/src/variables.jl:218
+   [3] partial_start_test(::LinQuadOptInterface.MockLinQuadOptimizer, ::MathOptInterface.Test.TestConfig) at /home/pkgeval/.julia/packages/MathOptInterface/C3lip/src/Test/contlinear.jl:1638
+   [4] macro expansion at /home/pkgeval/.julia/packages/MathOptInterface/C3lip/src/Test/config.jl:53 [inlined]
+   [5] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [6] contlineartest(::LinQuadOptInterface.MockLinQuadOptimizer, ::MathOptInterface.Test.TestConfig, ::Array{String,1}) at /home/pkgeval/.julia/packages/MathOptInterface/C3lip/src/Test/config.jl:53
+   [7] contlineartest(::LinQuadOptInterface.MockLinQuadOptimizer, ::MathOptInterface.Test.TestConfig) at /home/pkgeval/.julia/packages/MathOptInterface/C3lip/src/Test/config.jl:48
+   [8] top-level scope at /home/pkgeval/.julia/packages/LinQuadOptInterface/ZMx9f/test/runtests.jl:44
+   [9] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [10] top-level scope at /home/pkgeval/.julia/packages/LinQuadOptInterface/ZMx9f/test/runtests.jl:43
+   [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [12] top-level scope at /home/pkgeval/.julia/packages/LinQuadOptInterface/ZMx9f/test/runtests.jl:21
+   [13] include(::String) at ./client.jl:457
+   [14] top-level scope at none:6
+   [15] eval(::Module, ::Any) at ./boot.jl:331
+   [16] exec_options(::Base.JLOptions) at ./client.jl:272
+   [17] _start() at ./client.jl:506
+  
+Test Summary:          | Pass  Error  Total
+LinQuadOptInterface    | 1507      1   1508
+  Printing             |    1             1
+  Unit Tests           |  362           362
+  Linear tests         |  569      1    570
+    linear8a           |    6             6
+    linear14           |    7             7
+    linear6            |    6             6
+    linear4            |    6             6
+    linear3            |   15            15
+    linear9            |    7             7
+    linear8c           |    6             6
+    linear1            |   43            43
+    linear2            |   10            10
+    partial_start      |    1      1      2
+    linear12           |    6             6
+    linear7            |    6             6
+    linear8b           |    6             6
+    linear10b          |    6             6
+    linear10           |    7             7
+    linear15           |    5             5
+    linear5            |    9             9
+    linear13           |    5             5
+    linear11           |    9             9
+  Quadratic tests      |  176           176
+  Linear Conic tests   |  190           190
+  Integer Linear tests |   87            87
+  ModelLike tests      |  122           122
+ERROR: LoadError: Some tests did not pass: 1507 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/LinQuadOptInterface/ZMx9f/test/runtests.jl:20
+
+PkgEval failed: Package LinQuadOptInterface errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:04:44.561
+CPU usage: 97.80s (94.78s user, 3.15s kernel)
+
+Network usage:
+- eth0: 2.773 MiB received, 40.187 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":304631808,"max_usage":686510080,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":190050304,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":935385,"total_cache":84348928,"total_rss_huge":0,"total_active_anon":195452928,"total_pgmajfault":0,"pgpgin":376530,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":309551,"hierarchical_memsw_limit":0,"cache":84348928,"active_file":135168,"pgfault":935385,"total_mapped_file":0,"total_pgpgout":309551,"total_writeback":0,"rss":190050304,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":376530,"active_anon":195452928,"total_active_file":135168},"limit":540965302272},"name":"/LinQuadOptInterface-QyrWiTPe","networks":{"eth0":{"rx_bytes":2908035,"rx_packets":447,"tx_packets":408,"tx_bytes":41151,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"d2a90884ad8a45330d6e9f6b4a05c84be79f142ce11e6c468a9e99e504deaf41","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3935491614522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":94780000000,"usage_in_kernelmode":3150000000,"total_usage":97800861524,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,97800854534,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6990,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:04:44.563745931Z"}

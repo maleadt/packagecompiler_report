@@ -1,0 +1,89 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:22:37.987
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:22:39.788
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed AntColony ─ v0.1.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [75b11117] + AntColony v0.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [75b11117] + AntColony v0.1.1
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+
+
+################################################################################
+# Testing: 2021-01-11T20:22:43.27
+#
+
+    Testing AntColony
+Status `/tmp/jl_zd5yCR/Project.toml`
+  [75b11117] AntColony v0.1.1
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_zd5yCR/Manifest.toml`
+  [75b11117] AntColony v0.1.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Test Summary:          | Pass  Total
+Travel a specific path | 3480   3480
+Test Summary:   | Pass  Total
+Travel any path |   90     90
+Test Summary: | Pass  Total
+Travel a tour |   90     90
+Test Summary:                  | Pass  Total
+ACO constructs a specific path | 1520   1520
+Test Summary:           | Pass  Total
+ACO constructs any path |   40     40
+Test Summary:         | Pass  Total
+ACO constructs a tour |   40     40
+    Testing AntColony tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:22:50.009
+CPU usage: 12.13s (9.71s user, 2.46s kernel)
+
+Network usage:
+- eth0: 2.599 MiB received, 32.316 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":325459968,"max_usage":571957248,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":217149440,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":313962,"total_cache":79380480,"total_rss_huge":0,"total_active_anon":217755648,"total_pgmajfault":0,"pgpgin":212784,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":140413,"hierarchical_memsw_limit":0,"cache":79380480,"active_file":135168,"pgfault":313962,"total_mapped_file":0,"total_pgpgout":140413,"total_writeback":0,"rss":217149440,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":212784,"active_anon":217755648,"total_active_file":135168},"limit":540965302272},"name":"/AntColony-uAtK0yaJ","networks":{"eth0":{"rx_bytes":2725026,"rx_packets":345,"tx_packets":359,"tx_bytes":33092,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"5b56d303a5a75f74d1716c0249febf0f466a3dfc684daaa6043141aacc95787d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5454378544522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":9710000000,"usage_in_kernelmode":2460000000,"total_usage":12125350281,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12125350281,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:22:50.011440404Z"}

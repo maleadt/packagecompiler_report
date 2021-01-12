@@ -1,0 +1,588 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:14:11.26
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:14:13.092
+#
+
+ Installing known registries into `~/.julia`
+##################                                                        25.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Artifacts ─────────── v1.3.0
+  Installed CodecZlib ─────────── v0.7.0
+  Installed MbedTLS_jll ───────── v2.16.8+1
+  Installed StorageMirrorServer ─ v0.2.1
+  Installed MbedTLS ───────────── v1.0.3
+  Installed RecipesBase ───────── v1.1.1
+  Installed Zlib_jll ──────────── v1.2.11+18
+  Installed ThreadPools ───────── v1.2.1
+  Installed JLLWrappers ───────── v1.2.0
+  Installed IterTools ─────────── v1.3.0
+  Installed HTTP ──────────────── v0.8.19
+  Installed ProgressMeter ─────── v1.4.1
+  Installed Tar ───────────────── v1.9.0
+  Installed ArgTools ──────────── v1.1.1
+  Installed TranscodingStreams ── v0.9.5
+  Installed Glob ──────────────── v1.3.0
+  Installed IniFile ───────────── v0.5.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [c599abfa] + StorageMirrorServer v0.2.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [0dad84c5] + ArgTools v1.1.1
+  [56f22d72] + Artifacts v1.3.0
+  [944b1d66] + CodecZlib v0.7.0
+  [c27321d9] + Glob v1.3.0
+  [cd3eb016] + HTTP v0.8.19
+  [83e8ac13] + IniFile v0.5.0
+  [c8e1da08] + IterTools v1.3.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [92933f4c] + ProgressMeter v1.4.1
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [c599abfa] + StorageMirrorServer v0.2.1
+  [a4e569a6] + Tar v1.9.0
+  [b189fb0b] + ThreadPools v1.2.1
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T20:14:18.121
+#
+
+    Testing StorageMirrorServer
+Status `/tmp/jl_Hf1mOQ/Project.toml`
+  [944b1d66] CodecZlib v0.7.0
+  [c27321d9] Glob v1.3.0
+  [cd3eb016] HTTP v0.8.19
+  [c8e1da08] IterTools v1.3.0
+  [92933f4c] ProgressMeter v1.4.1
+  [c599abfa] StorageMirrorServer v0.2.1
+  [fd094767] Suppressor v0.2.0
+  [a4e569a6] Tar v1.9.0
+  [b189fb0b] ThreadPools v1.2.1
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [ade2ca70] Dates
+  [44cfe95a] Pkg
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_Hf1mOQ/Manifest.toml`
+  [0dad84c5] ArgTools v1.1.1
+  [56f22d72] Artifacts v1.3.0
+  [944b1d66] CodecZlib v0.7.0
+  [c27321d9] Glob v1.3.0
+  [cd3eb016] HTTP v0.8.19
+  [83e8ac13] IniFile v0.5.0
+  [c8e1da08] IterTools v1.3.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [92933f4c] ProgressMeter v1.4.1
+  [3cdcf5f2] RecipesBase v1.1.1
+  [c599abfa] StorageMirrorServer v0.2.1
+  [fd094767] Suppressor v0.2.0
+  [a4e569a6] Tar v1.9.0
+  [b189fb0b] ThreadPools v1.2.1
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Warning: resource does not exist
+│   resource = "https://mirrors.bfsu.edu.cn/julia/registry/23338594-aafe-5451-b93e-139f81909106/79a697e1153f711734210b8031171612a0845e40"
+└ @ StorageMirrorServer ~/.julia/packages/StorageMirrorServer/XCiPW/src/utils/server_utils.jl:275
+┌ Warning: resource does not exist
+│   resource = "https://mirrors.sjtug.sjtu.edu.cn/julia/registry/23338594-aafe-5451-b93e-139f81909106/79a697e1153f711734210b8031171612a0845e40"
+└ @ StorageMirrorServer ~/.julia/packages/StorageMirrorServer/XCiPW/src/utils/server_utils.jl:275
+┌ Info: downloading resource...
+│   resource = "/registry/23338594-aafe-5451-b93e-139f81909106/79a697e1153f711734210b8031171612a0845e40"
+│   tarball = "/tmp/jl_oH52m3/registry/23338594-aafe-5451-b93e-139f81909106/79a697e1153f711734210b8031171612a0845e40"
+└   date = 2021-01-11T20:15:40.263
+┌ Info: Start mirrorring
+│   date = 2021-01-11T20:15:40.424
+│   registry = "General"
+│   uuid = "23338594-aafe-5451-b93e-139f81909106"
+│   hash = "79a697e1153f711734210b8031171612a0845e40"
+│   num_versions = 10
+└   upstreams = "https://mirrors.bfsu.edu.cn/julia, https://mirrors.sjtug.sjtu.edu.cn/julia, https://us-east.storage.juliahub.com, https://kr.storage.juliahub.com"
+┌ Info: downloading resource...
+│   resource = "/package/56f22d72-fd6d-98f1-02f0-08ddc0907c33/c30985d8821e0cd73870b17b0ed0ce6dc44cb744"
+│   tarball = "/tmp/jl_oH52m3/package/56f22d72-fd6d-98f1-02f0-08ddc0907c33/c30985d8821e0cd73870b17b0ed0ce6dc44cb744"
+└   date = 2021-01-11T20:15:40.652
+General: Pulling packages:  10%|██▍                     |  ETA: 0:00:09[K
+  date:     2021-01-11T20:15:41.261[K
+  package:  Artifacts[K
+  version:  1.3.0[K
+  uuid:     56f22d72-fd6d-98f1-02f0-08ddc0907c33[K
+  hash:     c30985d8821e0cd73870b17b0ed0ce6dc44cb744[K[A[A[A[A[A┌ Info: downloading resource...
+│   resource = "/package/b99e7846-7c00-51b0-8f62-c81ae34c0232/ecdec412a9abc8db54c0efc5548c64dfce072058"
+│   tarball = "/tmp/jl_oH52m3/package/b99e7846-7c00-51b0-8f62-c81ae34c0232/ecdec412a9abc8db54c0efc5548c64dfce072058"
+└   date = 2021-01-11T20:15:41.699
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[AGeneral: Pulling packages:  20%|████▊                   |  ETA: 0:00:06[K
+  date:     2021-01-11T20:15:42.205[K
+  package:  BinaryProvider[K
+  version:  0.5.10[K
+  uuid:     b99e7846-7c00-51b0-8f62-c81ae34c0232[K
+  hash:     ecdec412a9abc8db54c0efc5548c64dfce072058[K[A[A[A[A[A┌ Info: downloading resource...
+│   resource = "/package/34da2185-b29b-5c13-b0c7-acf172513d20/919c7f3151e79ff196add81d7f4e45d91bbf420b"
+│   tarball = "/tmp/jl_oH52m3/package/34da2185-b29b-5c13-b0c7-acf172513d20/919c7f3151e79ff196add81d7f4e45d91bbf420b"
+└   date = 2021-01-11T20:15:42.205
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[AGeneral: Pulling packages:  30%|███████▎                |  ETA: 0:00:05[K
+  date:     2021-01-11T20:15:42.727[K
+  package:  Compat[K
+  version:  3.25.0[K
+  uuid:     34da2185-b29b-5c13-b0c7-acf172513d20[K
+  hash:     919c7f3151e79ff196add81d7f4e45d91bbf420b[K[A[A[A[A[A┌ Info: downloading resource...
+│   resource = "/package/692b3bcd-3c85-4b1f-b108-f13ce0eb3210/a431f5f2ca3f4feef3bd7a5e94b8b8d4f2f647a0"
+│   tarball = "/tmp/jl_oH52m3/package/692b3bcd-3c85-4b1f-b108-f13ce0eb3210/a431f5f2ca3f4feef3bd7a5e94b8b8d4f2f647a0"
+└   date = 2021-01-11T20:15:42.728
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[AGeneral: Pulling packages:  40%|█████████▋              |  ETA: 0:00:04[K
+  date:     2021-01-11T20:15:43.132[K
+  package:  JLLWrappers[K
+  version:  1.2.0[K
+  uuid:     692b3bcd-3c85-4b1f-b108-f13ce0eb3210[K
+  hash:     a431f5f2ca3f4feef3bd7a5e94b8b8d4f2f647a0[K[A[A[A[A[A┌ Info: downloading resource...
+│   resource = "/package/739be429-bea8-5141-9913-cc70e7f3736d/1c38e51c3d08ef2278062ebceade0e46cefc96fe"
+│   tarball = "/tmp/jl_oH52m3/package/739be429-bea8-5141-9913-cc70e7f3736d/1c38e51c3d08ef2278062ebceade0e46cefc96fe"
+└   date = 2021-01-11T20:15:43.132
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[AGeneral: Pulling packages:  50%|████████████            |  ETA: 0:00:03[K
+  date:     2021-01-11T20:15:43.639[K
+  package:  MbedTLS[K
+  version:  1.0.3[K
+  uuid:     739be429-bea8-5141-9913-cc70e7f3736d[K
+  hash:     1c38e51c3d08ef2278062ebceade0e46cefc96fe[K[A[A[A[A[A┌ Info: downloading resource...
+│   resource = "/package/c8ffd9c3-330d-5841-b78e-0817d7145fa1/bf50d4a1911612ee8f662d0038fc05dda1bea57d"
+│   tarball = "/tmp/jl_oH52m3/package/c8ffd9c3-330d-5841-b78e-0817d7145fa1/bf50d4a1911612ee8f662d0038fc05dda1bea57d"
+└   date = 2021-01-11T20:15:43.639
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[AGeneral: Pulling packages:  60%|██████████████▍         |  ETA: 0:00:02[K
+  date:     2021-01-11T20:15:44.146[K
+  package:  MbedTLS_jll[K
+  version:  2.25.0+0[K
+  uuid:     c8ffd9c3-330d-5841-b78e-0817d7145fa1[K
+  hash:     bf50d4a1911612ee8f662d0038fc05dda1bea57d[K[A[A[A[A[A┌ Info: downloading resource...
+│   resource = "/package/ea8e919c-243c-51af-8825-aaa63cd721ce/3ffd86cea4d68534c9ebfd8427df3dcf5c86597b"
+│   tarball = "/tmp/jl_oH52m3/package/ea8e919c-243c-51af-8825-aaa63cd721ce/3ffd86cea4d68534c9ebfd8427df3dcf5c86597b"
+└   date = 2021-01-11T20:15:44.147
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[AGeneral: Pulling packages:  70%|████████████████▊       |  ETA: 0:00:02[K
+  date:     2021-01-11T20:15:44.56[K
+  package:  SHA[K
+  version:  0.5.7[K
+  uuid:     ea8e919c-243c-51af-8825-aaa63cd721ce[K
+  hash:     3ffd86cea4d68534c9ebfd8427df3dcf5c86597b[K[A[A[A[A[A┌ Info: downloading resource...
+│   resource = "/package/8f1571ae-b3a1-52af-8ab1-32258739efdb/89923f35770072260c53ff2cfa593dc31a6626cf"
+│   tarball = "/tmp/jl_oH52m3/package/8f1571ae-b3a1-52af-8ab1-32258739efdb/89923f35770072260c53ff2cfa593dc31a6626cf"
+└   date = 2021-01-11T20:15:44.56
+┌ Warning: resource does not exist
+│   resource = "https://us-east.storage.juliahub.com/package/8f1571ae-b3a1-52af-8ab1-32258739efdb/89923f35770072260c53ff2cfa593dc31a6626cf"
+└ @ StorageMirrorServer ~/.julia/packages/StorageMirrorServer/XCiPW/src/utils/server_utils.jl:275
+┌ Warning: resource does not exist
+│   resource = "https://mirrors.bfsu.edu.cn/julia/package/8f1571ae-b3a1-52af-8ab1-32258739efdb/89923f35770072260c53ff2cfa593dc31a6626cf"
+└ @ StorageMirrorServer ~/.julia/packages/StorageMirrorServer/XCiPW/src/utils/server_utils.jl:275
+┌ Warning: resource does not exist
+│   resource = "https://mirrors.sjtug.sjtu.edu.cn/julia/package/8f1571ae-b3a1-52af-8ab1-32258739efdb/89923f35770072260c53ff2cfa593dc31a6626cf"
+└ @ StorageMirrorServer ~/.julia/packages/StorageMirrorServer/XCiPW/src/utils/server_utils.jl:275
+┌ Warning: resource does not exist
+│   resource = "https://kr.storage.juliahub.com/package/8f1571ae-b3a1-52af-8ab1-32258739efdb/89923f35770072260c53ff2cfa593dc31a6626cf"
+└ @ StorageMirrorServer ~/.julia/packages/StorageMirrorServer/XCiPW/src/utils/server_utils.jl:275
+┌ Warning: fail to download resource
+│   resource = "/package/8f1571ae-b3a1-52af-8ab1-32258739efdb/89923f35770072260c53ff2cfa593dc31a6626cf"
+│   tarball = "/tmp/jl_oH52m3/package/8f1571ae-b3a1-52af-8ab1-32258739efdb/89923f35770072260c53ff2cfa593dc31a6626cf"
+│   upstreams = "https://mirrors.bfsu.edu.cn/julia, https://mirrors.sjtug.sjtu.edu.cn/julia, https://us-east.storage.juliahub.com, https://kr.storage.juliahub.com"
+└ @ StorageMirrorServer ~/.julia/packages/StorageMirrorServer/XCiPW/src/utils/server_utils.jl:292
+┌ Warning: unable to download resource from all given upstreams
+│   resource = "/package/8f1571ae-b3a1-52af-8ab1-32258739efdb/89923f35770072260c53ff2cfa593dc31a6626cf"
+│   tarball = "/tmp/jl_oH52m3/package/8f1571ae-b3a1-52af-8ab1-32258739efdb/89923f35770072260c53ff2cfa593dc31a6626cf"
+│   upstreams = "https://mirrors.bfsu.edu.cn/julia, https://mirrors.sjtug.sjtu.edu.cn/julia, https://us-east.storage.juliahub.com, https://kr.storage.juliahub.com"
+└ @ StorageMirrorServer ~/.julia/packages/StorageMirrorServer/XCiPW/src/utils/server_utils.jl:311
+┌ Info: skip resource fetching in next 24 hours
+│   resource = "/package/8f1571ae-b3a1-52af-8ab1-32258739efdb/89923f35770072260c53ff2cfa593dc31a6626cf"
+└   date = 2021-01-11T20:15:45.067
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[AGeneral: Pulling packages:  80%|███████████████████▎    |  ETA: 0:00:01[K
+  date:     2021-01-11T20:15:45.089[K
+  package:  StanMCMCChain[K
+  version:  4.1.0[K
+  uuid:     8f1571ae-b3a1-52af-8ab1-32258739efdb[K
+  hash:     89923f35770072260c53ff2cfa593dc31a6626cf[K[A[A[A[A[A┌ Info: downloading resource...
+│   resource = "/package/e9003ee5-8d1f-52e9-81b4-38b583c0e573/1b14a3565caa4f93aebbe4c1e221345320394fbd"
+│   tarball = "/tmp/jl_oH52m3/package/e9003ee5-8d1f-52e9-81b4-38b583c0e573/1b14a3565caa4f93aebbe4c1e221345320394fbd"
+└   date = 2021-01-11T20:15:45.089
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[AGeneral: Pulling packages:  90%|█████████████████████▋  |  ETA: 0:00:01[K
+  date:     2021-01-11T20:15:45.797[K
+  package:  StanMCMCChains[K
+  version:  5.1.0[K
+  uuid:     e9003ee5-8d1f-52e9-81b4-38b583c0e573[K
+  hash:     1b14a3565caa4f93aebbe4c1e221345320394fbd[K[A[A[A[A[A┌ Info: downloading resource...
+│   resource = "/package/5e47fb64-e119-507b-a336-dd2b206d9990/364f99e536508e8b6d13a939d577297295ca424f"
+│   tarball = "/tmp/jl_oH52m3/package/5e47fb64-e119-507b-a336-dd2b206d9990/364f99e536508e8b6d13a939d577297295ca424f"
+└   date = 2021-01-11T20:15:45.798
+
+
+
+
+
+[K[A[K[A[K[A[K[A[K[AGeneral: Pulling packages: 100%|████████████████████████| Time: 0:00:05[K
+  date:     2021-01-11T20:15:46.404[K
+  package:  TestImages[K
+  version:  1.4.0[K
+  uuid:     5e47fb64-e119-507b-a336-dd2b206d9990[K
+  hash:     364f99e536508e8b6d13a939d577297295ca424f[K
+┌ Info: querying artifacts info, this may take some time...
+└   date = 2021-01-11T20:15:46.411
+┌ Info: extract Artifacts.toml from source package
+│   date = 2021-01-11T20:15:46.936
+│   uuid = "34da2185-b29b-5c13-b0c7-acf172513d20"
+└   hash = "919c7f3151e79ff196add81d7f4e45d91bbf420b"
+┌ Info: extract Artifacts.toml from source package
+│   date = 2021-01-11T20:15:47.115
+│   uuid = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
+└   hash = "c30985d8821e0cd73870b17b0ed0ce6dc44cb744"
+┌ Info: extract Artifacts.toml from source package
+│   date = 2021-01-11T20:15:47.116
+│   uuid = "5e47fb64-e119-507b-a336-dd2b206d9990"
+└   hash = "364f99e536508e8b6d13a939d577297295ca424f"
+┌ Info: extract Artifacts.toml from source package
+│   date = 2021-01-11T20:15:47.116
+│   uuid = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
+└   hash = "a431f5f2ca3f4feef3bd7a5e94b8b8d4f2f647a0"
+┌ Info: extract Artifacts.toml from source package
+│   date = 2021-01-11T20:15:47.118
+│   uuid = "739be429-bea8-5141-9913-cc70e7f3736d"
+└   hash = "1c38e51c3d08ef2278062ebceade0e46cefc96fe"
+┌ Info: extract Artifacts.toml from source package
+│   date = 2021-01-11T20:15:47.12
+│   uuid = "b99e7846-7c00-51b0-8f62-c81ae34c0232"
+└   hash = "ecdec412a9abc8db54c0efc5548c64dfce072058"
+┌ Info: extract Artifacts.toml from source package
+│   date = 2021-01-11T20:15:47.121
+│   uuid = "c8ffd9c3-330d-5841-b78e-0817d7145fa1"
+└   hash = "bf50d4a1911612ee8f662d0038fc05dda1bea57d"
+┌ Info: extract Artifacts.toml from source package
+│   date = 2021-01-11T20:15:47.121
+│   uuid = "e9003ee5-8d1f-52e9-81b4-38b583c0e573"
+└   hash = "1b14a3565caa4f93aebbe4c1e221345320394fbd"
+┌ Info: extract Artifacts.toml from source package
+│   date = 2021-01-11T20:15:47.15
+│   uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+└   hash = "3ffd86cea4d68534c9ebfd8427df3dcf5c86597b"
+┌ Info: found 17 new artifacts
+└   date = 2021-01-11T20:15:47.166
+┌ Info: downloading resource...
+│   resource = "/artifact/829b9c083f7b32aca9600fc18d6f4b2fdf9d0d26"
+│   tarball = "/tmp/jl_oH52m3/artifact/829b9c083f7b32aca9600fc18d6f4b2fdf9d0d26"
+└   date = 2021-01-11T20:15:47.167
+General: Pulling artifacts:   6%|█▍                     |  ETA: 0:00:09[K
+  date:      2021-01-11T20:15:47.718[K
+  artifact:  829b9c083f7b32aca9600fc18d6f4b2fdf9d0d26[K
+  resource:  /artifact/829b9c083f7b32aca9600fc18d6f4b2fdf9d0d26[K
+  tarball:   /tmp/jl_oH52m3/artifact/829b9c083f7b32aca9600fc18d6f4b2fdf9d0d26[K[A[A[A[A┌ Info: downloading resource...
+│   resource = "/artifact/80348c643e3e429aa8a36ebd040c1010945a3878"
+│   tarball = "/tmp/jl_oH52m3/artifact/80348c643e3e429aa8a36ebd040c1010945a3878"
+└   date = 2021-01-11T20:15:47.745
+
+
+
+
+[K[A[K[A[K[A[K[AGeneral: Pulling artifacts:  12%|██▊                    |  ETA: 0:00:10[K
+  date:      2021-01-11T20:15:48.513[K
+  artifact:  80348c643e3e429aa8a36ebd040c1010945a3878[K
+  resource:  /artifact/80348c643e3e429aa8a36ebd040c1010945a3878[K
+  tarball:   /tmp/jl_oH52m3/artifact/80348c643e3e429aa8a36ebd040c1010945a3878[K[A[A[A[A┌ Info: downloading resource...
+│   resource = "/artifact/dae4d8e28629be37af5bc2e5f116ef2998fb8027"
+│   tarball = "/tmp/jl_oH52m3/artifact/dae4d8e28629be37af5bc2e5f116ef2998fb8027"
+└   date = 2021-01-11T20:15:48.513
+
+
+
+
+[K[A[K[A[K[A[K[AGeneral: Pulling artifacts:  18%|████                   |  ETA: 0:00:09[K
+  date:      2021-01-11T20:15:49.178[K
+  artifact:  dae4d8e28629be37af5bc2e5f116ef2998fb8027[K
+  resource:  /artifact/dae4d8e28629be37af5bc2e5f116ef2998fb8027[K
+  tarball:   /tmp/jl_oH52m3/artifact/dae4d8e28629be37af5bc2e5f116ef2998fb8027[K[A[A[A[A┌ Info: downloading resource...
+│   resource = "/artifact/22d310f59da0177d8e7ed6140fcad3a145b748fd"
+│   tarball = "/tmp/jl_oH52m3/artifact/22d310f59da0177d8e7ed6140fcad3a145b748fd"
+└   date = 2021-01-11T20:15:49.179
+
+
+
+
+[K[A[K[A[K[A[K[AGeneral: Pulling artifacts:  24%|█████▍                 |  ETA: 0:00:09[K
+  date:      2021-01-11T20:15:49.785[K
+  artifact:  22d310f59da0177d8e7ed6140fcad3a145b748fd[K
+  resource:  /artifact/22d310f59da0177d8e7ed6140fcad3a145b748fd[K
+  tarball:   /tmp/jl_oH52m3/artifact/22d310f59da0177d8e7ed6140fcad3a145b748fd[K[A[A[A[A┌ Info: downloading resource...
+│   resource = "/artifact/dd57ad5ce3051ad646bfc799a626a0048015d9a2"
+│   tarball = "/tmp/jl_oH52m3/artifact/dd57ad5ce3051ad646bfc799a626a0048015d9a2"
+└   date = 2021-01-11T20:15:49.785
+
+
+
+
+[K[A[K[A[K[A[K[AGeneral: Pulling artifacts:  29%|██████▊                |  ETA: 0:00:09[K
+  date:      2021-01-11T20:15:51.034[K
+  artifact:  dd57ad5ce3051ad646bfc799a626a0048015d9a2[K
+  resource:  /artifact/dd57ad5ce3051ad646bfc799a626a0048015d9a2[K
+  tarball:   /tmp/jl_oH52m3/artifact/dd57ad5ce3051ad646bfc799a626a0048015d9a2[K[A[A[A[A┌ Info: downloading resource...
+│   resource = "/artifact/2ed6effeecb8912f8096cfb3d189649a4b2d5059"
+│   tarball = "/tmp/jl_oH52m3/artifact/2ed6effeecb8912f8096cfb3d189649a4b2d5059"
+└   date = 2021-01-11T20:15:51.035
+
+
+
+
+[K[A[K[A[K[A[K[AGeneral: Pulling artifacts:  35%|████████▏              |  ETA: 0:00:08[K
+  date:      2021-01-11T20:15:51.703[K
+  artifact:  2ed6effeecb8912f8096cfb3d189649a4b2d5059[K
+  resource:  /artifact/2ed6effeecb8912f8096cfb3d189649a4b2d5059[K
+  tarball:   /tmp/jl_oH52m3/artifact/2ed6effeecb8912f8096cfb3d189649a4b2d5059[K[A[A[A[A┌ Info: downloading resource...
+│   resource = "/artifact/31a16b0e842405aad2a37f60eadb8b99a8223e7f"
+│   tarball = "/tmp/jl_oH52m3/artifact/31a16b0e842405aad2a37f60eadb8b99a8223e7f"
+└   date = 2021-01-11T20:15:51.703
+
+
+
+
+[K[A[K[A[K[A[K[AGeneral: Pulling artifacts:  41%|█████████▌             |  ETA: 0:00:07[K
+  date:      2021-01-11T20:15:52.311[K
+  artifact:  31a16b0e842405aad2a37f60eadb8b99a8223e7f[K
+  resource:  /artifact/31a16b0e842405aad2a37f60eadb8b99a8223e7f[K
+  tarball:   /tmp/jl_oH52m3/artifact/31a16b0e842405aad2a37f60eadb8b99a8223e7f[K[A[A[A[A┌ Info: downloading resource...
+│   resource = "/artifact/9d0aba788de6f6c89eb27279ac9d189232c6ca6e"
+│   tarball = "/tmp/jl_oH52m3/artifact/9d0aba788de6f6c89eb27279ac9d189232c6ca6e"
+└   date = 2021-01-11T20:15:52.311
+
+
+
+
+[K[A[K[A[K[A[K[AGeneral: Pulling artifacts:  47%|██████████▉            |  ETA: 0:00:07[K
+  date:      2021-01-11T20:15:53.219[K
+  artifact:  9d0aba788de6f6c89eb27279ac9d189232c6ca6e[K
+  resource:  /artifact/9d0aba788de6f6c89eb27279ac9d189232c6ca6e[K
+  tarball:   /tmp/jl_oH52m3/artifact/9d0aba788de6f6c89eb27279ac9d189232c6ca6e[K[A[A[A[A┌ Info: downloading resource...
+│   resource = "/artifact/acb67fdaa0948aa8e45e3fff862b770dcceb8e10"
+│   tarball = "/tmp/jl_oH52m3/artifact/acb67fdaa0948aa8e45e3fff862b770dcceb8e10"
+└   date = 2021-01-11T20:15:53.219
+
+
+
+
+[K[A[K[A[K[A[K[AGeneral: Pulling artifacts:  53%|████████████▏          |  ETA: 0:00:06[K
+  date:      2021-01-11T20:15:53.826[K
+  artifact:  acb67fdaa0948aa8e45e3fff862b770dcceb8e10[K
+  resource:  /artifact/acb67fdaa0948aa8e45e3fff862b770dcceb8e10[K
+  tarball:   /tmp/jl_oH52m3/artifact/acb67fdaa0948aa8e45e3fff862b770dcceb8e10[K[A[A[A[A┌ Info: downloading resource...
+│   resource = "/artifact/a75fc0d831d46a66d955230df0dd9953f74e8668"
+│   tarball = "/tmp/jl_oH52m3/artifact/a75fc0d831d46a66d955230df0dd9953f74e8668"
+└   date = 2021-01-11T20:15:53.827
+
+
+
+
+[K[A[K[A[K[A[K[AGeneral: Pulling artifacts:  59%|█████████████▌         |  ETA: 0:00:05[K
+  date:      2021-01-11T20:15:54.567[K
+  artifact:  a75fc0d831d46a66d955230df0dd9953f74e8668[K
+  resource:  /artifact/a75fc0d831d46a66d955230df0dd9953f74e8668[K
+  tarball:   /tmp/jl_oH52m3/artifact/a75fc0d831d46a66d955230df0dd9953f74e8668[K[A[A[A[A┌ Info: downloading resource...
+│   resource = "/artifact/de2feed71f7c3882da9979d4a4afcb96e9201c8f"
+│   tarball = "/tmp/jl_oH52m3/artifact/de2feed71f7c3882da9979d4a4afcb96e9201c8f"
+└   date = 2021-01-11T20:15:54.567
+
+
+
+
+[K[A[K[A[K[A[K[AGeneral: Pulling artifacts:  65%|██████████████▉        |  ETA: 0:00:04[K
+  date:      2021-01-11T20:15:55.132[K
+  artifact:  de2feed71f7c3882da9979d4a4afcb96e9201c8f[K
+  resource:  /artifact/de2feed71f7c3882da9979d4a4afcb96e9201c8f[K
+  tarball:   /tmp/jl_oH52m3/artifact/de2feed71f7c3882da9979d4a4afcb96e9201c8f[K[A[A[A[A┌ Info: downloading resource...
+│   resource = "/artifact/6f64d045c8e95a8fe6cbd04f8fc3595cdb764b69"
+│   tarball = "/tmp/jl_oH52m3/artifact/6f64d045c8e95a8fe6cbd04f8fc3595cdb764b69"
+└   date = 2021-01-11T20:15:55.132
+
+
+
+
+[K[A[K[A[K[A[K[AGeneral: Pulling artifacts:  71%|████████████████▎      |  ETA: 0:00:04[K
+  date:      2021-01-11T20:15:55.717[K
+  artifact:  6f64d045c8e95a8fe6cbd04f8fc3595cdb764b69[K
+  resource:  /artifact/6f64d045c8e95a8fe6cbd04f8fc3595cdb764b69[K
+  tarball:   /tmp/jl_oH52m3/artifact/6f64d045c8e95a8fe6cbd04f8fc3595cdb764b69[K[A[A[A[A┌ Info: downloading resource...
+│   resource = "/artifact/4eb269d4c2175c1a47a980530bbe2d6a3068ea27"
+│   tarball = "/tmp/jl_oH52m3/artifact/4eb269d4c2175c1a47a980530bbe2d6a3068ea27"
+└   date = 2021-01-11T20:15:55.718
+
+
+
+
+[K[A[K[A[K[A[K[AGeneral: Pulling artifacts:  76%|█████████████████▋     |  ETA: 0:00:03[K
+  date:      2021-01-11T20:15:56.396[K
+  artifact:  4eb269d4c2175c1a47a980530bbe2d6a3068ea27[K
+  resource:  /artifact/4eb269d4c2175c1a47a980530bbe2d6a3068ea27[K
+  tarball:   /tmp/jl_oH52m3/artifact/4eb269d4c2175c1a47a980530bbe2d6a3068ea27[K[A[A[A[A┌ Info: downloading resource...
+│   resource = "/artifact/d65468984789af55d3231f4187141bcb8d359e9a"
+│   tarball = "/tmp/jl_oH52m3/artifact/d65468984789af55d3231f4187141bcb8d359e9a"
+└   date = 2021-01-11T20:15:56.396
+
+
+
+
+[K[A[K[A[K[A[K[AGeneral: Pulling artifacts:  82%|███████████████████    |  ETA: 0:00:02[K
+  date:      2021-01-11T20:15:57.004[K
+  artifact:  d65468984789af55d3231f4187141bcb8d359e9a[K
+  resource:  /artifact/d65468984789af55d3231f4187141bcb8d359e9a[K
+  tarball:   /tmp/jl_oH52m3/artifact/d65468984789af55d3231f4187141bcb8d359e9a[K[A[A[A[A┌ Info: downloading resource...
+│   resource = "/artifact/b1292a9a6b0511e19205e6139c921b911676a39b"
+│   tarball = "/tmp/jl_oH52m3/artifact/b1292a9a6b0511e19205e6139c921b911676a39b"
+└   date = 2021-01-11T20:15:57.004
+
+
+
+
+[K[A[K[A[K[A[K[AGeneral: Pulling artifacts:  88%|████████████████████▎  |  ETA: 0:00:01[K
+  date:      2021-01-11T20:15:57.669[K
+  artifact:  b1292a9a6b0511e19205e6139c921b911676a39b[K
+  resource:  /artifact/b1292a9a6b0511e19205e6139c921b911676a39b[K
+  tarball:   /tmp/jl_oH52m3/artifact/b1292a9a6b0511e19205e6139c921b911676a39b[K[A[A[A[A┌ Info: downloading resource...
+│   resource = "/artifact/9155d52f51efab4ebc8a467305bbd22a9894e920"
+│   tarball = "/tmp/jl_oH52m3/artifact/9155d52f51efab4ebc8a467305bbd22a9894e920"
+└   date = 2021-01-11T20:15:57.67
+
+
+
+
+[K[A[K[A[K[A[K[AGeneral: Pulling artifacts:  94%|█████████████████████▋ |  ETA: 0:00:01[K
+  date:      2021-01-11T20:15:58.326[K
+  artifact:  9155d52f51efab4ebc8a467305bbd22a9894e920[K
+  resource:  /artifact/9155d52f51efab4ebc8a467305bbd22a9894e920[K
+  tarball:   /tmp/jl_oH52m3/artifact/9155d52f51efab4ebc8a467305bbd22a9894e920[K[A[A[A[A┌ Info: downloading resource...
+│   resource = "/artifact/25bf6392fe9a755f1722103c480afbd746f6bda4"
+│   tarball = "/tmp/jl_oH52m3/artifact/25bf6392fe9a755f1722103c480afbd746f6bda4"
+└   date = 2021-01-11T20:15:58.326
+
+
+
+
+[K[A[K[A[K[A[K[AGeneral: Pulling artifacts: 100%|███████████████████████| Time: 0:00:11[K
+  date:      2021-01-11T20:15:58.981[K
+  artifact:  25bf6392fe9a755f1722103c480afbd746f6bda4[K
+  resource:  /artifact/25bf6392fe9a755f1722103c480afbd746f6bda4[K
+  tarball:   /tmp/jl_oH52m3/artifact/25bf6392fe9a755f1722103c480afbd746f6bda4[K
+┌ Info: Mirror completed. There are 1 new fail-to-fetch resources and will be skipped in the next 24 hours.
+│   date = 2021-01-11T20:15:59.472
+│   registry = "General"
+│   uuid = "23338594-aafe-5451-b93e-139f81909106"
+│   hash = "79a697e1153f711734210b8031171612a0845e40"
+└   upstreams = "https://mirrors.bfsu.edu.cn/julia, https://mirrors.sjtug.sjtu.edu.cn/julia, https://us-east.storage.juliahub.com, https://kr.storage.juliahub.com"
+  0.664971 seconds (995.71 k allocations: 50.856 MiB, 1.01% gc time)
+Test Summary: | Pass  Total
+StorageServer |   69     69
+    Testing StorageMirrorServer tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:16:04.763
+CPU usage: 63.36s (53.99s user, 9.60s kernel)
+
+Network usage:
+- eth0: 65.692 MiB received, 955.950 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":27,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":8,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":27,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":27,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":8,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":27,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":147456,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":40960,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":147456,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":147456,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":40960,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":147456,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":290619392,"max_usage":986894336,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":172892160,"inactive_file":135168,"inactive_anon":81371136,"total_pgfault":1376001,"total_cache":87392256,"total_rss_huge":0,"total_active_anon":178827264,"total_pgmajfault":0,"pgpgin":989109,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":811008,"total_unevictable":0,"total_dirty":811008,"writeback":270336,"pgpgout":925587,"hierarchical_memsw_limit":0,"cache":87392256,"active_file":135168,"pgfault":1376001,"total_mapped_file":0,"total_pgpgout":925587,"total_writeback":270336,"rss":172892160,"unevictable":0,"total_inactive_anon":81371136,"total_pgpgin":989109,"active_anon":178827264,"total_active_file":135168},"limit":540965302272},"name":"/StorageMirrorServer-E83gb6G3","networks":{"eth0":{"rx_bytes":68882582,"rx_packets":18974,"tx_packets":14512,"tx_bytes":978893,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"8dad746d16d6396609e2947f9c9da290630fd12b4ef15c72840266f251880732","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5402657494522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":53990000000,"usage_in_kernelmode":9600000000,"total_usage":63357724539,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,63351970598,0,376550,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5377391,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:16:05.479493804Z"}

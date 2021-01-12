@@ -1,0 +1,83 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:03:31.572
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:03:33.389
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ##O#- #                                                                       ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Showoff ─ v0.3.2
+  Installed Grisu ─── v1.0.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [992d4aef] + Showoff v0.3.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [42e2da0e] + Grisu v1.0.0
+  [992d4aef] + Showoff v0.3.2
+  [ade2ca70] + Dates
+  [de0858da] + Printf
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T21:03:39.2
+#
+
+    Testing Showoff
+Status `/tmp/jl_LtZYpS/Project.toml`
+  [42e2da0e] Grisu v1.0.0
+  [992d4aef] Showoff v0.3.2
+  [ade2ca70] Dates
+  [8dfed614] Test
+Status `/tmp/jl_LtZYpS/Manifest.toml`
+  [42e2da0e] Grisu v1.0.0
+  [992d4aef] Showoff v0.3.2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+Internals     |    8      8
+Test Summary: | Pass  Total
+Formatting    |   12     12
+Test Summary: | Pass  Total
+Showoff       |   10     10
+    Testing Showoff tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:03:44.402
+CPU usage: 11.84s (9.26s user, 2.61s kernel)
+
+Network usage:
+- eth0: 2.566 MiB received, 35.050 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":333959168,"max_usage":582844416,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":225267712,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":311751,"total_cache":79532032,"total_rss_huge":0,"total_active_anon":225865728,"total_pgmajfault":0,"pgpgin":194337,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":119947,"hierarchical_memsw_limit":0,"cache":79532032,"active_file":135168,"pgfault":311751,"total_mapped_file":0,"total_pgpgout":119947,"total_writeback":0,"rss":225267712,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":194337,"active_anon":225865728,"total_active_file":135168},"limit":540965302272},"name":"/Showoff-k5NeTtJC","networks":{"eth0":{"rx_bytes":2690682,"rx_packets":357,"tx_packets":365,"tx_bytes":35891,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"96aef55189b9af3fbf8e5bc9c7fd24ec1c5fbb62537cc870d5c7a620cb34b872","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5768050054522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":9260000000,"usage_in_kernelmode":2610000000,"total_usage":11837209475,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11837208455,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:03:44.986809695Z"}

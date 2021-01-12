@@ -1,0 +1,885 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T15:14:59.662
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T15:15:01.409
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed MbedTLS_jll ────────────────── v2.16.8+1
+  Installed JSONSchema ─────────────────── v0.3.3
+  Installed LossFunctions ──────────────── v0.6.2
+  Installed PackageCompiler ────────────── v1.2.5
+  Installed JuMP ───────────────────────── v0.21.5
+  Installed Fairness ───────────────────── v0.2.0
+  Installed TimeZones ──────────────────── v1.5.3
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed Reexport ───────────────────── v0.2.0
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed MUMPS_seq_jll ──────────────── v5.3.5+0
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed TableTraits ────────────────── v1.0.0
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed LearnBase ──────────────────── v0.4.1
+  Installed MLJModels ──────────────────── v0.12.11
+  Installed MLJBase ────────────────────── v0.15.7
+  Installed Memento ────────────────────── v1.1.2
+  Installed ASL_jll ────────────────────── v0.1.1+4
+  Installed CEnum ──────────────────────── v0.4.1
+  Installed Mocking ────────────────────── v0.7.1
+  Installed MathProgBase ───────────────── v0.7.8
+  Installed TranscodingStreams ─────────── v0.9.5
+  Installed CategoricalArrays ──────────── v0.8.3
+  Installed DataFrames ─────────────────── v0.21.8
+  Installed OpenBLAS32_jll ─────────────── v0.3.9+4
+  Installed JLSO ───────────────────────── v2.4.0
+  Installed FillArrays ─────────────────── v0.9.7
+  Installed Tables ─────────────────────── v1.2.2
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed Requires ───────────────────── v1.1.2
+  Installed Calculus ───────────────────── v0.5.1
+  Installed Libiconv_jll ───────────────── v1.16.0+7
+  Installed QuadGK ─────────────────────── v2.4.1
+  Installed MbedTLS ────────────────────── v1.0.3
+  Installed MLJScientificTypes ─────────── v0.3.2
+  Installed GMP_jll ────────────────────── v6.1.2+6
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed EzXML ──────────────────────── v1.1.0
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed Parameters ─────────────────── v0.12.1
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Bzip2_jll ──────────────────── v1.0.6+5
+  Installed HTTP ───────────────────────── v0.8.19
+  Installed Roots ──────────────────────── v1.0.7
+  Installed BenchmarkTools ─────────────── v0.5.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed XML2_jll ───────────────────── v2.9.10+3
+  Installed BSON ───────────────────────── v0.2.6
+  Installed Combinatorics ──────────────── v1.0.2
+  Installed Ipopt ──────────────────────── v0.6.3
+  Installed HypothesisTests ────────────── v0.10.2
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed InvertedIndices ────────────── v1.0.0
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed MLJModelInterface ──────────── v0.3.7
+  Installed ColorTypes ─────────────────── v0.10.9
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed CSV ────────────────────────── v0.7.10
+  Installed PersistenceDiagramsBase ────── v0.1.1
+  Installed MathOptInterface ───────────── v0.9.19
+  Installed FilePathsBase ──────────────── v0.9.6
+  Installed Missings ───────────────────── v0.4.4
+  Installed CodecZlib ──────────────────── v0.7.0
+  Installed PooledArrays ───────────────── v0.5.3
+  Installed ScientificTypes ────────────── v1.1.1
+  Installed GLPK_jll ───────────────────── v4.64.0+0
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed JSON ───────────────────────── v0.21.1
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed Ipopt_jll ──────────────────── v3.13.1+1
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed Distances ──────────────────── v0.10.0
+  Installed Syslogs ────────────────────── v0.3.0
+  Installed ComputationalResources ─────── v0.3.2
+  Installed PrettyTables ───────────────── v0.10.1
+  Installed Distributions ──────────────── v0.23.11
+  Installed ZipFile ────────────────────── v0.9.3
+  Installed StructTypes ────────────────── v1.2.1
+  Installed Crayons ────────────────────── v4.0.4
+  Installed PDMats ─────────────────────── v0.10.1
+  Installed MutableArithmetics ─────────── v0.2.13
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed GLPK ───────────────────────── v0.14.5
+  Installed ExprTools ──────────────────── v0.1.3
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed FixedPointNumbers ──────────── v0.8.4
+  Installed METIS_jll ──────────────────── v5.1.0+5
+  Installed Formatting ─────────────────── v0.4.2
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed CodecBzip2 ─────────────────── v0.7.2
+  Installed SpecialFunctions ───────────── v0.10.3
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed ProgressMeter ──────────────── v1.4.1
+  Installed Compat ─────────────────────── v3.25.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed BinaryProvider ─────────────── v0.5.10
+  Installed SentinelArrays ─────────────── v1.2.16
+  Installed Parsers ────────────────────── v1.0.15
+  Installed IniFile ────────────────────── v0.5.0
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [7c232609] + Fairness v0.2.0
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [ae81ac8f] + ASL_jll v0.1.1+4
+  [56f22d72] + Artifacts v1.3.0
+  [fbb218c0] + BSON v0.2.6
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [b99e7846] + BinaryProvider v0.5.10
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [fa961155] + CEnum v0.4.1
+  [336ed68f] + CSV v0.7.10
+  [49dc2e85] + Calculus v0.5.1
+  [324d7699] + CategoricalArrays v0.8.3
+  [523fee87] + CodecBzip2 v0.7.2
+  [944b1d66] + CodecZlib v0.7.0
+  [3da002f7] + ColorTypes v0.10.9
+  [861a8166] + Combinatorics v1.0.2
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [ed09eef8] + ComputationalResources v0.3.2
+  [a8cc5b0e] + Crayons v4.0.4
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.21.8
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [b4f34e82] + Distances v0.10.0
+  [31c24e10] + Distributions v0.23.11
+  [e2ba6199] + ExprTools v0.1.3
+  [8f5d6c58] + EzXML v1.1.0
+  [7c232609] + Fairness v0.2.0
+  [48062228] + FilePathsBase v0.9.6
+  [1a297f60] + FillArrays v0.9.7
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [59287772] + Formatting v0.4.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [60bf3e95] + GLPK v0.14.5
+  [e8aa6df9] + GLPK_jll v4.64.0+0
+  [781609d7] + GMP_jll v6.1.2+6
+  [cd3eb016] + HTTP v0.8.19
+  [09f84164] + HypothesisTests v0.10.2
+  [83e8ac13] + IniFile v0.5.0
+  [41ab1584] + InvertedIndices v1.0.0
+  [b6b21f68] + Ipopt v0.6.3
+  [9cc047cb] + Ipopt_jll v3.13.1+1
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v2.4.0
+  [682c06a0] + JSON v0.21.1
+  [7d188eb4] + JSONSchema v0.3.3
+  [4076af6c] + JuMP v0.21.5
+  [7f8f8fb0] + LearnBase v0.4.1
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [30fc2ffe] + LossFunctions v0.6.2
+  [d00139f3] + METIS_jll v5.1.0+5
+  [a7f614a8] + MLJBase v0.15.7
+  [e80e1ace] + MLJModelInterface v0.3.7
+  [d491faf4] + MLJModels v0.12.11
+  [2e2323e0] + MLJScientificTypes v0.3.2
+  [d7ed1dd3] + MUMPS_seq_jll v5.3.5+0
+  [1914dd2f] + MacroTools v0.5.6
+  [b8f27783] + MathOptInterface v0.9.19
+  [fdba3010] + MathProgBase v0.7.8
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [f28f55f0] + Memento v1.1.2
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.7.1
+  [d8a4904e] + MutableArithmetics v0.2.13
+  [77ba4419] + NaNMath v0.3.5
+  [656ef2d0] + OpenBLAS32_jll v0.3.9+4
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.10.1
+  [9b87118b] + PackageCompiler v1.2.5
+  [d96e819e] + Parameters v0.12.1
+  [69de0a69] + Parsers v1.0.15
+  [b1ad91c1] + PersistenceDiagramsBase v0.1.1
+  [2dfb63ee] + PooledArrays v0.5.3
+  [08abe8d2] + PrettyTables v0.10.1
+  [92933f4c] + ProgressMeter v1.4.1
+  [1fd47b50] + QuadGK v2.4.1
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [f2b01f46] + Roots v1.0.7
+  [321657f4] + ScientificTypes v1.1.1
+  [91c51154] + SentinelArrays v1.2.16
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.10.3
+  [90137ffa] + StaticArrays v1.0.1
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [856f2bd8] + StructTypes v1.2.1
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [f269a46b] + TimeZones v1.5.3
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [3a884ed6] + UnPack v1.0.2
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [a5390f91] + ZipFile v0.9.3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building TimeZones → `~/.julia/packages/TimeZones/K98G0/deps/build.log`
+   Building Ipopt ────→ `~/.julia/packages/Ipopt/bYzBL/deps/build.log`
+   Building GLPK ─────→ `~/.julia/packages/GLPK/hDmA0/deps/build.log`
+
+
+################################################################################
+# Compiling: 2021-01-11T15:15:22.633
+#
+
+[ Info: Model metadata loaded from registry. 
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 245.749 MiB, compilation took 484 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T15:23:35.166
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/Fairness-RCHL4nzD.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:23:36.897
+#
+
+ Installing known registries into `~/.julia`
+┌ Warning: could not download https://pkg.julialang.org/registries
+└ @ Pkg.Types /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:951
+┌ Warning: could not download https://pkg.julialang.org/registries
+└ @ Pkg.Types /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:951
+[?25l    Cloning registry from "https://github.com/JuliaRegistries/General.git"
+    Fetching: [>                                        ]  0.0 %    Fetching: [===========>                             ]  27.0 %    Fetching: [=================>                       ]  42.1 %    Fetching: [================================>        ]  77.9 %[2K[?25h      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+[?25l    Cloning [c8ffd9c3-330d-5841-b78e-0817d7145fa1] MbedTLS_jll from https://github.com/JuliaBinaryWrappers/MbedTLS_jll.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MbedTLS_jll ────────────────── v2.16.8+1
+    Cloning [f269a46b-ccf7-5d73-abea-4c690281aa53] TimeZones from https://github.com/JuliaTime/TimeZones.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed TimeZones ──────────────────── v1.5.3
+    Cloning [4076af6c-e467-56ae-b986-b466b2749572] JuMP from https://github.com/jump-dev/JuMP.jl.git
+    Fetching: [>                                        ]  0.0 %    Resolving Deltas: [=====================>                   ]  51.1 %[2K[?25h  Installed JuMP ───────────────────────── v0.21.5
+    Cloning [7d188eb4-7ad8-530c-ae41-71a32a6d4692] JSONSchema from https://github.com/fredo-dedup/JSONSchema.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed JSONSchema ─────────────────── v0.3.3
+    Cloning [7c232609-d7a1-4356-98a6-13e736dd6dcd] Fairness from https://github.com/ashryaagr/Fairness.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Fairness ───────────────────── v0.2.0
+    Cloning [e66e0078-7015-5450-92f7-15fbd957f2ae] CompilerSupportLibraries_jll from https://github.com/JuliaBinaryWrappers/CompilerSupportLibraries_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+    Cloning [30fc2ffe-d236-52d8-8643-a9d8f7c094a7] LossFunctions from https://github.com/JuliaML/LossFunctions.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LossFunctions ──────────────── v0.6.2
+    Cloning [83775a58-1f1d-513f-b197-d71354ab007a] Zlib_jll from https://github.com/JuliaBinaryWrappers/Zlib_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Zlib_jll ───────────────────── v1.2.11+18
+    Cloning [189a3867-3050-52da-a836-e630ba90ab69] Reexport from https://github.com/simonster/Reexport.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Reexport ───────────────────── v0.2.0
+    Cloning [a7f614a8-145f-11e9-1d2a-a57a1082229d] MLJBase from https://github.com/alan-turing-institute/MLJBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MLJBase ────────────────────── v0.15.7
+    Cloning [bbf7d656-a473-5ed7-a52c-81e309532950] CommonSubexpressions from https://github.com/rdeits/CommonSubexpressions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CommonSubexpressions ───────── v0.3.0
+    Cloning [f50d1b31-88e8-58de-be2c-1cc44531875f] Rmath_jll from https://github.com/JuliaBinaryWrappers/Rmath_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Rmath_jll ──────────────────── v0.2.2+1
+    Cloning [3783bdb8-4a98-5b6b-af9a-565f29a5fe9c] TableTraits from https://github.com/queryverse/TableTraits.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed TableTraits ────────────────── v1.0.0
+    Cloning [d7ed1dd3-d0ae-5e8e-bfb4-87a502085b8d] MUMPS_seq_jll from https://github.com/JuliaBinaryWrappers/MUMPS_seq_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MUMPS_seq_jll ──────────────── v5.3.5+0
+    Cloning [d491faf4-2d78-11e9-2867-c94bc002c0b7] MLJModels from https://github.com/alan-turing-institute/MLJModels.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed MLJModels ──────────────────── v0.12.11
+    Cloning [79098fc4-a85e-5d69-aa6a-4863f24498fa] Rmath from https://github.com/JuliaStats/Rmath.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Rmath ──────────────────────── v0.6.1
+    Cloning [7f8f8fb0-2700-5f03-b4bd-41f8cfc144b6] LearnBase from https://github.com/JuliaML/LearnBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed LearnBase ──────────────────── v0.4.1
+    Cloning [f28f55f0-a522-5efc-85c2-fe41dfb9b2d9] Memento from https://github.com/invenia/Memento.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Memento ────────────────────── v1.1.2
+    Cloning [ae81ac8f-d209-56e5-92de-9978fef736f9] ASL_jll from https://github.com/JuliaBinaryWrappers/ASL_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed ASL_jll ────────────────────── v0.1.1+4
+    Cloning [324d7699-5711-5eae-9e2f-1d82baa6b597] CategoricalArrays from https://github.com/JuliaData/CategoricalArrays.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed CategoricalArrays ──────────── v0.8.3
+    Cloning [78c3b35d-d492-501b-9361-3d52fe80e533] Mocking from https://github.com/invenia/Mocking.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Mocking ────────────────────── v0.7.1
+    Cloning [fdba3010-5040-5b88-9595-932c9decdf73] MathProgBase from https://github.com/JuliaOpt/MathProgBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MathProgBase ───────────────── v0.7.8
+    Cloning [a93c6f00-e57d-5684-b7b6-d8193f3e46c0] DataFrames from https://github.com/JuliaData/DataFrames.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %    Resolving Deltas: [==================>                      ]  43.9 %[2K[?25h[?25l  Installed DataFrames ─────────────────── v0.21.8
+    Cloning [fa961155-64e5-5f13-b03f-caf6b980ea82] CEnum from https://github.com/JuliaInterop/CEnum.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CEnum ──────────────────────── v0.4.1
+    Cloning [3bb67fe8-82b1-5028-8e26-92a6c54297fa] TranscodingStreams from https://github.com/bicycle1885/TranscodingStreams.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed TranscodingStreams ─────────── v0.9.5
+    Cloning [9da8a3cd-07a3-59c0-a743-3fdc52c30d11] JLSO from https://github.com/invenia/JLSO.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed JLSO ───────────────────────── v2.4.0
+    Cloning [656ef2d0-ae68-5445-9ca0-591084a874a2] OpenBLAS32_jll from https://github.com/JuliaBinaryWrappers/OpenBLAS32_jll.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OpenBLAS32_jll ─────────────── v0.3.9+4
+    Cloning [2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91] StatsBase from https://github.com/JuliaStats/StatsBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed StatsBase ──────────────────── v0.33.2
+    Cloning [bd369af6-aec1-5ad0-b16a-f7cc5008161c] Tables from https://github.com/JuliaData/Tables.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Tables ─────────────────────── v1.2.2
+    Cloning [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8] DataStructures from https://github.com/JuliaCollections/DataStructures.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataStructures ─────────────── v0.18.8
+    Cloning [49dc2e85-a5d0-5ad3-a950-438e2897f1b9] Calculus from https://github.com/JuliaMath/Calculus.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Calculus ───────────────────── v0.5.1
+    Cloning [1a297f60-69ca-5386-bcde-b61e274b549b] FillArrays from https://github.com/JuliaArrays/FillArrays.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FillArrays ─────────────────── v0.9.7
+    Cloning [1fd47b50-473d-5c70-9696-f719f8f3bcdc] QuadGK from https://github.com/JuliaMath/QuadGK.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed QuadGK ─────────────────────── v2.4.1
+    Cloning [861a8166-3701-5b0c-9a16-15d98fcdc6aa] Combinatorics from https://github.com/JuliaMath/Combinatorics.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Combinatorics ──────────────── v1.0.2
+    Cloning [ae029012-a4dd-5104-9daa-d747884805df] Requires from https://github.com/JuliaPackaging/Requires.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Requires ───────────────────── v1.1.2
+    Cloning [94ce4f54-9a6c-5748-9c1c-f9c7231a4531] Libiconv_jll from https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Libiconv_jll ───────────────── v1.16.0+7
+    Cloning [739be429-bea8-5141-9913-cc70e7f3736d] MbedTLS from https://github.com/JuliaLang/MbedTLS.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed MbedTLS ────────────────────── v1.0.3
+    Cloning [8f5d6c58-4d21-5cfd-889c-e3ad7ee6a615] EzXML from https://github.com/JuliaIO/EzXML.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed EzXML ──────────────────────── v1.1.0
+    Cloning [2e2323e0-db8b-457b-ae0d-bdfb3bc63afd] MLJScientificTypes from https://github.com/alan-turing-institute/MLJScientificTypes.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MLJScientificTypes ─────────── v0.3.2
+    Cloning [781609d7-10c4-51f6-84f2-b8444358ff6d] GMP_jll from https://github.com/JuliaBinaryWrappers/GMP_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed GMP_jll ────────────────────── v6.1.2+6
+    Cloning [?25l[b552c78f-8df3-52c6-915a-8e097449b14b] DiffRules from https://github.com/JuliaDiff/DiffRules.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffRules ──────────────────── v1.0.2
+    Cloning [d96e819e-fc66-5662-9728-84c9c7592b0a] Parameters from https://github.com/mauro3/Parameters.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed Parameters ─────────────────── v0.12.1
+    Cloning [9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a] DataAPI from https://github.com/JuliaData/DataAPI.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataAPI ────────────────────── v1.4.0
+    Cloning [163ba53b-c6d8-5494-b064-1a9d43ac40c5] DiffResults from https://github.com/JuliaDiff/DiffResults.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DiffResults ────────────────── v1.0.3
+    Cloning [cd3eb016-35fb-5094-929b-558a96fad6f3] HTTP from https://github.com/JuliaWeb/HTTP.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed HTTP ───────────────────────── v0.9.2
+    Cloning [6e34b625-4abd-537c-b88f-471c36dfa7a0] Bzip2_jll from https://github.com/JuliaBinaryWrappers/Bzip2_jll.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Bzip2_jll ──────────────────── v1.0.6+5
+    Cloning [f2b01f46-fcfa-551c-844a-d8ac1e96c665] Roots from https://github.com/JuliaMath/Roots.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Roots ──────────────────────── v1.0.7
+    Cloning [bac558e1-5e72-5ebc-8fee-abe8a469f55d] OrderedCollections from https://github.com/JuliaCollections/OrderedCollections.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed OrderedCollections ─────────── v1.3.2
+    Cloning [6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf] BenchmarkTools from https://github.com/JuliaCI/BenchmarkTools.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed BenchmarkTools ─────────────── v0.5.0
+    Cloning [90137ffa-7385-5640-81b9-e52037218182] StaticArrays from https://github.com/JuliaArrays/StaticArrays.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StaticArrays ───────────────── v1.0.1
+    Cloning [336ed68f-0bac-5ca0-87d4-7b16caf5d00b] CSV from https://github.com/JuliaData/CSV.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed CSV ────────────────────────── v0.7.10
+    Cloning [fbb218c0-5317-5bc6-957e-2ee96dd4b1f0] BSON from https://github.com/JuliaIO/BSON.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BSON ───────────────────────── v0.2.6
+    Cloning [b6b21f68-93f8-5de0-b562-5493be1d77c9] Ipopt from https://github.com/jump-dev/Ipopt.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Ipopt ──────────────────────── v0.6.3
+    Cloning [09f84164-cd44-5f33-b23f-e6b0d136a0d5] HypothesisTests from https://github.com/JuliaStats/HypothesisTests.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed HypothesisTests ────────────── v0.10.2
+    Cloning [02c8fc9c-b97f-50b9-bbe4-9be30ff0a78a] XML2_jll from https://github.com/JuliaBinaryWrappers/XML2_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed XML2_jll ───────────────────── v2.9.10+3
+    Cloning [b8f27783-ece8-5eb3-8dc8-9495eed66fee] MathOptInterface from https://github.com/jump-dev/MathOptInterface.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %    Resolving Deltas: [================================>        ]  78.1 %[2K[?25h[?25l  Installed MathOptInterface ───────────── v0.9.19
+    Cloning [3da002f7-5984-5a60-b8a6-cbb66c0b333f] ColorTypes from https://github.com/JuliaGraphics/ColorTypes.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed ColorTypes ─────────────────── v0.10.9
+    Cloning [e2d170a0-9d28-54be-80f0-106bbe20a464] DataValueInterfaces from https://github.com/queryverse/DataValueInterfaces.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed DataValueInterfaces ────────── v1.0.0
+    Cloning [b1ad91c1-539c-4ace-90bd-ea06abc420fa] PersistenceDiagramsBase from https://github.com/mtsch/PersistenceDiagramsBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PersistenceDiagramsBase ────── v0.1.1
+    Cloning [3cdcf5f2-1ef4-517c-9805-6587b60abb01] RecipesBase from https://github.com/JuliaPlots/RecipesBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed RecipesBase ────────────────── v1.1.1
+[?25l    Cloning [41ab1584-1d38-5bbf-9106-f11c6c58b48f] InvertedIndices from https://github.com/mbauman/InvertedIndices.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed InvertedIndices ────────────── v1.0.0
+    Cloning [e80e1ace-859a-464e-9ed9-23947d8ae3ea] MLJModelInterface from https://github.com/alan-turing-institute/MLJModelInterface.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed MLJModelInterface ──────────── v0.3.7
+    Cloning [e8aa6df9-e6ca-548a-97ff-1f85fc5b8b98] GLPK_jll from https://github.com/JuliaBinaryWrappers/GLPK_jll.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed GLPK_jll ───────────────────── v4.64.0+0
+    Cloning [944b1d66-785c-5afd-91f1-9de20f533193] CodecZlib from https://github.com/JuliaIO/CodecZlib.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CodecZlib ──────────────────── v0.7.0
+    Cloning [e1d29d7a-bbdc-5cf2-9ac0-f12de2c33e28] Missings from https://github.com/JuliaData/Missings.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Missings ───────────────────── v0.4.4
+    Cloning [1914dd2f-81c6-5fcd-8719-6d5c9610ff09] MacroTools from https://github.com/FluxML/MacroTools.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MacroTools ─────────────────── v0.5.6
+    Cloning [321657f4-b219-11e9-178b-2701a2544e81] ScientificTypes from https://github.com/alan-turing-institute/ScientificTypes.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ScientificTypes ────────────── v1.1.1
+    Cloning [692b3bcd-3c85-4b1f-b108-f13ce0eb3210] JLLWrappers from https://github.com/JuliaPackaging/JLLWrappers.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed JLLWrappers ────────────────── v1.2.0
+    Cloning [2dfb63ee-cc39-5dd5-95bd-886bf059d720] PooledArrays from https://github.com/JuliaData/PooledArrays.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PooledArrays ───────────────── v0.5.3
+    Cloning [48062228-2e41-5def-b9a4-89aafe57970f] FilePathsBase from https://github.com/rofinn/FilePathsBase.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed FilePathsBase ──────────────── v0.9.6
+    Cloning [682c06a0-de6a-54ab-a142-c8b1cf79cde6] JSON from https://github.com/JuliaIO/JSON.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed JSON ───────────────────────── v0.21.1
+    Cloning [31c24e10-a181-5473-b8eb-7969acd0382f] Distributions from https://github.com/JuliaStats/Distributions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Distributions ──────────────── v0.23.11
+    Cloning [77ba4419-2d1f-58cd-9bb1-8ffee604a2e3] NaNMath from https://github.com/mlubin/NaNMath.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed NaNMath ────────────────────── v0.3.5
+    Cloning [9cc047cb-c261-5740-88fc-0cf96f7bdcc7] Ipopt_jll from https://github.com/JuliaBinaryWrappers/Ipopt_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed Ipopt_jll ──────────────────── v3.13.1+1
+    Cloning [08abe8d2-0d0c-5749-adfa-8a2ac140af0d] PrettyTables from https://github.com/ronisbr/PrettyTables.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed PrettyTables ───────────────── v0.10.1
+    Cloning [60bf3e95-4087-53dc-ae20-288a0d20c6a6] GLPK from https://github.com/jump-dev/GLPK.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed GLPK ───────────────────────── v0.14.5
+    Cloning [b4f34e82-e78d-54a5-968a-f98e89d6e8f7] Distances from https://github.com/JuliaStats/Distances.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Distances ──────────────────── v0.10.0
+    Cloning [ed09eef8-17a6-5b46-8889-db040fac31e3] ComputationalResources from https://github.com/timholy/ComputationalResources.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ComputationalResources ─────── v0.3.2
+    Cloning [a5390f91-8eb1-5f08-bee0-b1d1ffed6cea] ZipFile from https://github.com/fhs/ZipFile.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ZipFile ────────────────────── v0.9.3
+    Cloning [856f2bd8-1eba-4b0a-8007-ebc267875bd4] StructTypes from https://github.com/JuliaData/StructTypes.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StructTypes ────────────────── v1.2.1
+    Cloning [90014a1f-27ba-587c-ab20-58faa44d9150] PDMats from https://github.com/JuliaStats/PDMats.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed PDMats ─────────────────────── v0.10.1
+    Cloning [cea106d9-e007-5e6c-ad93-58fe2094e9c4] Syslogs from https://github.com/invenia/Syslogs.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Syslogs ────────────────────── v0.3.0
+    Cloning [4c63d2b9-4356-54db-8cca-17b64c39e42c] StatsFuns from https://github.com/JuliaStats/StatsFuns.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed StatsFuns ──────────────────── v0.9.6
+    Cloning [a8cc5b0e-0ffa-5ad4-8c14-923d3ee1735f] Crayons from https://github.com/KristofferC/Crayons.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Crayons ────────────────────── v4.0.4
+    Cloning [f6369f11-7733-5829-9624-2563aa707210] ForwardDiff from https://github.com/JuliaDiff/ForwardDiff.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ForwardDiff ────────────────── v0.10.14
+    Cloning [d8a4904e-b15c-11e9-3269-09a3773c0cb0] MutableArithmetics from https://github.com/jump-dev/MutableArithmetics.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed MutableArithmetics ─────────── v0.2.13
+    Cloning [5c2747f8-b7ea-4ff2-ba2e-563bfd36b1d4] URIs from https://github.com/JuliaWeb/URIs.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed URIs ───────────────────────── v1.1.0
+    Cloning [53c48c17-4a7d-5ca2-90c5-79b7896eea93] FixedPointNumbers from https://github.com/JuliaMath/FixedPointNumbers.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed FixedPointNumbers ──────────── v0.8.4
+    Cloning [e2ba6199-217a-4e67-a87a-7c52f15ade04] ExprTools from https://github.com/invenia/ExprTools.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ExprTools ──────────────────── v0.1.3
+    Cloning [59287772-0a20-5a39-b81b-1366585eb4c0] Formatting from https://github.com/JuliaIO/Formatting.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Formatting ─────────────────── v0.4.2
+    Cloning [d00139f3-1899-568f-a2f0-47f597d42d70] METIS_jll from https://github.com/JuliaBinaryWrappers/METIS_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed METIS_jll ──────────────────── v5.1.0+5
+    Cloning [276daf66-3868-5448-9aa4-cd146d93841b] SpecialFunctions from https://github.com/JuliaMath/SpecialFunctions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SpecialFunctions ───────────── v0.10.3
+    Cloning [82899510-4779-5014-852e-03e436cf321d] IteratorInterfaceExtensions from https://github.com/queryverse/IteratorInterfaceExtensions.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IteratorInterfaceExtensions ── v1.0.0
+    Cloning [3a884ed6-31ef-47d7-9d2a-63182c4928ed] UnPack from https://github.com/mauro3/UnPack.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed UnPack ─────────────────────── v1.0.2
+    Cloning [523fee87-0ab8-5b00-afb7-3ecf72e48cfd] CodecBzip2 from https://github.com/JuliaIO/CodecBzip2.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed CodecBzip2 ─────────────────── v0.7.2
+    Cloning [a2af1166-a08f-5f64-846c-94a0d3cef48c] SortingAlgorithms from https://github.com/JuliaCollections/SortingAlgorithms.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l  Installed SortingAlgorithms ──────────── v0.3.1
+    Cloning [92933f4c-e287-5a05-a399-4b506db050ca] ProgressMeter from https://github.com/timholy/ProgressMeter.jl.git
+    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed ProgressMeter ──────────────── v1.4.1
+    Cloning [efe28fd5-8261-553b-a9e1-b2916fc3738e] OpenSpecFun_jll from https://github.com/JuliaBinaryWrappers/OpenSpecFun_jll.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+    Cloning [34da2185-b29b-5c13-b0c7-acf172513d20] Compat from https://github.com/JuliaLang/Compat.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Compat ─────────────────────── v3.25.0
+    Cloning [b99e7846-7c00-51b0-8f62-c81ae34c0232] BinaryProvider from https://github.com/JuliaPackaging/BinaryProvider.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed BinaryProvider ─────────────── v0.5.10
+    Cloning [69de0a69-1ddd-5017-9359-2bf0b02dc9f0] Parsers from https://github.com/JuliaData/Parsers.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Parsers ────────────────────── v1.0.15
+    Cloning [91c51154-3ec4-41a3-a24f-3f23e20d615c] SentinelArrays from https://github.com/JuliaData/SentinelArrays.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed SentinelArrays ─────────────── v1.2.16
+    Cloning [56f22d72-fd6d-98f1-02f0-08ddc0907c33] Artifacts from https://github.com/JuliaPackaging/Artifacts.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed Artifacts ──────────────────── v1.3.0
+    Cloning [83e8ac13-25f8-5344-8a64-a9f2b223428f] IniFile from https://github.com/JuliaIO/IniFile.jl.git
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h  Installed IniFile ────────────────────── v0.5.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [7c232609] + Fairness v0.2.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [ae81ac8f] + ASL_jll v0.1.1+4
+  [56f22d72] + Artifacts v1.3.0
+  [fbb218c0] + BSON v0.2.6
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [b99e7846] + BinaryProvider v0.5.10
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [fa961155] + CEnum v0.4.1
+  [336ed68f] + CSV v0.7.10
+  [49dc2e85] + Calculus v0.5.1
+  [324d7699] + CategoricalArrays v0.8.3
+  [523fee87] + CodecBzip2 v0.7.2
+  [944b1d66] + CodecZlib v0.7.0
+  [3da002f7] + ColorTypes v0.10.9
+  [861a8166] + Combinatorics v1.0.2
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [ed09eef8] + ComputationalResources v0.3.2
+  [a8cc5b0e] + Crayons v4.0.4
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.21.8
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [b4f34e82] + Distances v0.10.0
+  [31c24e10] + Distributions v0.23.11
+  [e2ba6199] + ExprTools v0.1.3
+  [8f5d6c58] + EzXML v1.1.0
+  [7c232609] + Fairness v0.2.0
+  [48062228] + FilePathsBase v0.9.6
+  [1a297f60] + FillArrays v0.9.7
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [59287772] + Formatting v0.4.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [60bf3e95] + GLPK v0.14.5
+  [e8aa6df9] + GLPK_jll v4.64.0+0
+  [781609d7] + GMP_jll v6.1.2+6
+  [cd3eb016] + HTTP v0.9.2
+  [09f84164] + HypothesisTests v0.10.2
+  [83e8ac13] + IniFile v0.5.0
+  [41ab1584] + InvertedIndices v1.0.0
+  [b6b21f68] + Ipopt v0.6.3
+  [9cc047cb] + Ipopt_jll v3.13.1+1
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v2.4.0
+  [682c06a0] + JSON v0.21.1
+  [7d188eb4] + JSONSchema v0.3.3
+  [4076af6c] + JuMP v0.21.5
+  [7f8f8fb0] + LearnBase v0.4.1
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [30fc2ffe] + LossFunctions v0.6.2
+  [d00139f3] + METIS_jll v5.1.0+5
+  [a7f614a8] + MLJBase v0.15.7
+  [e80e1ace] + MLJModelInterface v0.3.7
+  [d491faf4] + MLJModels v0.12.11
+  [2e2323e0] + MLJScientificTypes v0.3.2
+  [d7ed1dd3] + MUMPS_seq_jll v5.3.5+0
+  [1914dd2f] + MacroTools v0.5.6
+  [b8f27783] + MathOptInterface v0.9.19
+  [fdba3010] + MathProgBase v0.7.8
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [f28f55f0] + Memento v1.1.2
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.7.1
+  [d8a4904e] + MutableArithmetics v0.2.13
+  [77ba4419] + NaNMath v0.3.5
+  [656ef2d0] + OpenBLAS32_jll v0.3.9+4
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.10.1
+  [d96e819e] + Parameters v0.12.1
+  [69de0a69] + Parsers v1.0.15
+  [b1ad91c1] + PersistenceDiagramsBase v0.1.1
+  [2dfb63ee] + PooledArrays v0.5.3
+  [08abe8d2] + PrettyTables v0.10.1
+  [92933f4c] + ProgressMeter v1.4.1
+  [1fd47b50] + QuadGK v2.4.1
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [f2b01f46] + Roots v1.0.7
+  [321657f4] + ScientificTypes v1.1.1
+  [91c51154] + SentinelArrays v1.2.16
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.10.3
+  [90137ffa] + StaticArrays v1.0.1
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [856f2bd8] + StructTypes v1.2.1
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [f269a46b] + TimeZones v1.5.3
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [5c2747f8] + URIs v1.1.0
+  [3a884ed6] + UnPack v1.0.2
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [a5390f91] + ZipFile v0.9.3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building TimeZones → `~/.julia/packages/TimeZones/K98G0/deps/build.log`
+┌ Error: Error building `TimeZones`: 
+│ ERROR: LoadError: IOError: mkdir: permission denied (EACCES)
+│ Stacktrace:
+│  [1] uv_error at ./libuv.jl:97 [inlined]
+│  [2] mkdir(::String; mode::UInt16) at ./file.jl:177
+│  [3] mkpath(::String; mode::UInt16) at ./file.jl:227
+│  [4] mkpath(::String; mode::UInt16) at ./file.jl:225 (repeats 6 times)
+│  [5] mkpath at ./file.jl:222 [inlined]
+│  [6] build(::String) at /home/pkgeval/.julia/packages/TimeZones/K98G0/src/tzdata/build.jl:105
+│  [7] build(::String; force::Bool) at /home/pkgeval/.julia/packages/TimeZones/K98G0/src/build.jl:11
+│  [8] build at /home/pkgeval/.julia/packages/TimeZones/K98G0/src/build.jl:11 [inlined] (repeats 2 times)
+│  [9] top-level scope at /home/user/.julia/packages/TimeZones/K98G0/deps/build.jl:3
+│  [10] include(::String) at ./client.jl:457
+│  [11] top-level scope at none:5
+│ in expression starting at /home/user/.julia/packages/TimeZones/K98G0/deps/build.jl:3
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+   Building Ipopt ────→ `~/.julia/packages/Ipopt/bYzBL/deps/build.log`
+   Building GLPK ─────→ `~/.julia/packages/GLPK/hDmA0/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T15:25:09.73
+#
+
+    Testing Fairness
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h[?25l    Fetching: [>                                        ]  0.0 %[2K[?25hStatus `/tmp/jl_5Etsoa/Project.toml`
+  [336ed68f] CSV v0.7.10
+  [324d7699] CategoricalArrays v0.8.3
+  [a93c6f00] DataFrames v0.21.8
+  [7806a523] DecisionTree v0.10.10
+  [31c24e10] Distributions v0.23.11
+  [7c232609] Fairness v0.2.0
+  [f6369f11] ForwardDiff v0.10.14
+  [60bf3e95] GLPK v0.14.5
+  [09f84164] HypothesisTests v0.10.2
+  [b6b21f68] Ipopt v0.6.3
+  [4076af6c] JuMP v0.21.5
+  [a7f614a8] MLJBase v0.15.7
+  [e80e1ace] MLJModelInterface v0.3.7
+  [d491faf4] MLJModels v0.12.11
+  [2913bbd2] StatsBase v0.33.2
+  [a5390f91] ZipFile v0.9.3
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_5Etsoa/Manifest.toml`
+  [ae81ac8f] ASL_jll v0.1.1+4
+  [56f22d72] Artifacts v1.3.0
+  [fbb218c0] BSON v0.2.6
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [b99e7846] BinaryProvider v0.5.10
+  [6e34b625] Bzip2_jll v1.0.6+5
+  [fa961155] CEnum v0.4.1
+  [336ed68f] CSV v0.7.10
+  [49dc2e85] Calculus v0.5.1
+  [324d7699] CategoricalArrays v0.8.3
+  [523fee87] CodecBzip2 v0.7.2
+  [944b1d66] CodecZlib v0.7.0
+  [3da002f7] ColorTypes v0.10.9
+  [861a8166] Combinatorics v1.0.2
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [ed09eef8] ComputationalResources v0.3.2
+  [a8cc5b0e] Crayons v4.0.4
+  [9a962f9c] DataAPI v1.4.0
+  [a93c6f00] DataFrames v0.21.8
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [7806a523] DecisionTree v0.10.10
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [b4f34e82] Distances v0.10.0
+  [31c24e10] Distributions v0.23.11
+  [e2ba6199] ExprTools v0.1.3
+  [8f5d6c58] EzXML v1.1.0
+  [7c232609] Fairness v0.2.0
+  [48062228] FilePathsBase v0.9.6
+  [1a297f60] FillArrays v0.9.7
+  [53c48c17] FixedPointNumbers v0.8.4
+  [59287772] Formatting v0.4.2
+  [f6369f11] ForwardDiff v0.10.14
+  [60bf3e95] GLPK v0.14.5
+  [e8aa6df9] GLPK_jll v4.64.0+0
+  [781609d7] GMP_jll v6.1.2+6
+  [cd3eb016] HTTP v0.9.2
+  [09f84164] HypothesisTests v0.10.2
+  [83e8ac13] IniFile v0.5.0
+  [41ab1584] InvertedIndices v1.0.0
+  [b6b21f68] Ipopt v0.6.3
+  [9cc047cb] Ipopt_jll v3.13.1+1
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [9da8a3cd] JLSO v2.4.0
+  [682c06a0] JSON v0.21.1
+  [7d188eb4] JSONSchema v0.3.3
+  [4076af6c] JuMP v0.21.5
+  [7f8f8fb0] LearnBase v0.4.1
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [30fc2ffe] LossFunctions v0.6.2
+  [d00139f3] METIS_jll v5.1.0+5
+  [a7f614a8] MLJBase v0.15.7
+  [e80e1ace] MLJModelInterface v0.3.7
+  [d491faf4] MLJModels v0.12.11
+  [2e2323e0] MLJScientificTypes v0.3.2
+  [d7ed1dd3] MUMPS_seq_jll v5.3.5+0
+  [1914dd2f] MacroTools v0.5.6
+  [b8f27783] MathOptInterface v0.9.19
+  [fdba3010] MathProgBase v0.7.8
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [f28f55f0] Memento v1.1.2
+  [e1d29d7a] Missings v0.4.4
+  [78c3b35d] Mocking v0.7.1
+  [d8a4904e] MutableArithmetics v0.2.13
+  [77ba4419] NaNMath v0.3.5
+  [656ef2d0] OpenBLAS32_jll v0.3.9+4
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [90014a1f] PDMats v0.10.1
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.15
+  [b1ad91c1] PersistenceDiagramsBase v0.1.1
+  [2dfb63ee] PooledArrays v0.5.3
+  [08abe8d2] PrettyTables v0.10.1
+  [92933f4c] ProgressMeter v1.4.1
+  [1fd47b50] QuadGK v2.4.1
+  [3cdcf5f2] RecipesBase v1.1.1
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [f2b01f46] Roots v1.0.7
+  [321657f4] ScientificTypes v1.1.1
+  [6e75b9c4] ScikitLearnBase v0.5.0
+  [91c51154] SentinelArrays v1.2.16
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v0.10.3
+  [90137ffa] StaticArrays v1.0.1
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [856f2bd8] StructTypes v1.2.1
+  [cea106d9] Syslogs v0.3.0
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [f269a46b] TimeZones v1.5.3
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [5c2747f8] URIs v1.1.0
+  [3a884ed6] UnPack v1.0.2
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [a5390f91] ZipFile v0.9.3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+fair_tensor: Error During Test at /home/user/.julia/packages/Fairness/Cs0Na/test/fair_tensor.jl:6
+  Got exception outside of a @test
+  ArgumentError: "/home/pkgeval/.julia/packages/Fairness/Cs0Na/src/../data/jobs.csv" is not a valid file
+  Stacktrace:
+   [1] CSV.Header(::String, ::Int64, ::Bool, ::Int64, ::Nothing, ::Int64, ::Bool, ::Nothing, ::Nothing, ::Bool, ::Nothing, ::Nothing, ::Array{String,1}, ::String, ::Nothing, ::Bool, ::Char, ::Nothing, ::Nothing, ::Char, ::Nothing, ::Nothing, ::UInt8, ::Array{String,1}, ::Array{String,1}, ::Nothing, ::Nothing, ::Dict{Type,Type}, ::Nothing, ::Float64, ::Bool, ::Bool, ::Bool, ::Bool, ::Bool, ::Bool) at /home/pkgeval/.julia/packages/CSV/UIgP3/src/header.jl:92
+   [2] CSV.File(::String; header::Int64, normalizenames::Bool, datarow::Int64, skipto::Nothing, footerskip::Int64, transpose::Bool, comment::Nothing, use_mmap::Nothing, ignoreemptylines::Bool, select::Nothing, drop::Nothing, missingstrings::Array{String,1}, missingstring::String, delim::Nothing, ignorerepeated::Bool, quotechar::Char, openquotechar::Nothing, closequotechar::Nothing, escapechar::Char, dateformat::Nothing, dateformats::Nothing, decimal::UInt8, truestrings::Array{String,1}, falsestrings::Array{String,1}, type::Nothing, types::Nothing, typemap::Dict{Type,Type}, categorical::Nothing, pool::Float64, lazystrings::Bool, strict::Bool, silencewarnings::Bool, debug::Bool, parsingdebug::Bool, kw::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/CSV/UIgP3/src/file.jl:216
+   [3] CSV.File(::String) at /home/pkgeval/.julia/packages/CSV/UIgP3/src/file.jl:216
+   [4] top-level scope at /home/pkgeval/.julia/packages/Fairness/Cs0Na/src/datasets/datasets.jl:39
+   [5] top-level scope at /home/user/.julia/packages/Fairness/Cs0Na/test/fair_tensor.jl:7
+   [6] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [7] top-level scope at /home/user/.julia/packages/Fairness/Cs0Na/test/fair_tensor.jl:7
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at /home/user/.julia/packages/Fairness/Cs0Na/test/runtests.jl:6
+   [10] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [11] top-level scope at /home/user/.julia/packages/Fairness/Cs0Na/test/runtests.jl:6
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+Test Summary: | Error  Total
+fair_tensor   |     1      1
+  fair_tensor |     1      1
+ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/user/.julia/packages/Fairness/Cs0Na/test/runtests.jl:5
+
+PkgEval failed: Package Fairness errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:25:17.707
+CPU usage: 63.80s (57.77s user, 6.14s kernel)
+
+Network usage:
+- eth0: 237.016 MiB received, 1.630 MiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":39,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":25,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":39,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":39,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":25,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":39,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":217088,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":159744,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":217088,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":217088,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":159744,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":217088,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":832794624,"max_usage":1098059776,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":14619,"total_rss":352587776,"inactive_file":135168,"inactive_anon":293179392,"total_pgfault":1079595,"total_cache":437010432,"total_rss_huge":0,"total_active_anon":495390720,"total_pgmajfault":14619,"pgpgin":584760,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":0,"pgpgout":391952,"hierarchical_memsw_limit":0,"cache":437010432,"active_file":946176,"pgfault":1079595,"total_mapped_file":0,"total_pgpgout":391952,"total_writeback":0,"rss":352587776,"unevictable":0,"total_inactive_anon":293179392,"total_pgpgin":584760,"active_anon":495390720,"total_active_file":946176},"limit":540965302272},"name":"/Fairness-ctif0EQN","networks":{"eth0":{"rx_bytes":248529763,"rx_packets":24333,"tx_packets":19225,"tx_bytes":1708898,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"9e546074b671567fea7a74d929d67e4c44fe97e0d73ac0e6bf4ea95fa5b49955","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3172840784522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":57770000000,"usage_in_kernelmode":6140000000,"total_usage":63799448374,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,773400,0,267190,63794689152,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3718632,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:25:17.709814645Z"}

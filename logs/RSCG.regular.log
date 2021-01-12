@@ -1,0 +1,152 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:14:06.253
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:14:08.191
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed RSCG ───── v0.1.1
+  Installed Requires ─ v0.5.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [4e41d8b6] + RSCG v0.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [4e41d8b6] + RSCG v0.1.1
+  [ae029012] + Requires v0.5.2
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T21:14:11.875
+#
+
+    Testing RSCG
+Status `/tmp/jl_c2MLUR/Project.toml`
+  [7a12625a] LinearMaps v3.0.1
+  [4e41d8b6] RSCG v0.1.1
+  [37e2e46d] LinearAlgebra
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_c2MLUR/Manifest.toml`
+  [7a12625a] LinearMaps v3.0.1
+  [4e41d8b6] RSCG v0.1.1
+  [ae029012] Requires v0.5.2
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+┌ Warning: Package RSCG does not have LinearMaps in its dependencies:
+│ - If you have RSCG checked out for development and have
+│   added LinearMaps as a dependency but haven't updated your primary
+│   environment's manifest file, try `Pkg.resolve()`.
+│ - Otherwise you may need to report an issue with RSCG
+└ Loading LinearMaps into RSCG from project dependency, future warnings for RSCG are suppressed.
+n = 10
+Residual 1.3985787785349405e-17
+  0.263402 seconds (501.14 k allocations: 23.519 MiB)
+n = 100
+Residual 1.3985787785349405e-17
+  0.002097 seconds (9.01 k allocations: 1.354 MiB)
+n = 1000
+Residual 1.3985787785349405e-17
+  0.296983 seconds (12.83 k allocations: 35.976 MiB, 11.33% gc time)
+n = 10
+Residual 3.469446951953614e-18
+  0.000489 seconds (4.54 k allocations: 469.656 KiB)
+n = 100
+Residual 1.4821483875836085e-17
+  0.001930 seconds (13.96 k allocations: 1.918 MiB)
+n = 1000
+Residual 1.734723475976807e-18
+  0.269613 seconds (14.61 k allocations: 34.747 MiB, 5.78% gc time)
+n = 10
+Residual 3.908020529499657e-16
+Residual 1.8596365118996589e-16
+Residual 3.1556713261518936e-16
+Residual 1.9107173916696979e-16
+  0.000699 seconds (6.82 k allocations: 1009.000 KiB)
+n = 100
+Residual 2.1944142894642436e-8
+Residual 1.4812441492998914e-8
+Residual 6.636067125448698e-14
+Residual 6.903475892002461e-9
+  0.004486 seconds (29.53 k allocations: 4.697 MiB)
+n = 1000
+Residual 8.12027156868718e-66
+Residual 6.3863445381724155e-65
+Residual 1.6915619224300436e-13
+Residual 1.0227430489112594e-65
+  0.285416 seconds (31.87 k allocations: 37.787 MiB, 10.28% gc time)
+Test Summary: | Pass  Total
+SparseArrays  |   18     18
+n = 10
+Residual 2.8232559286154947e-15
+Residual 1.2797724780422362e-15
+Residual 3.26938646683766e-15
+Residual 3.1595310679839663e-15
+  0.000415 seconds (4.35 k allocations: 654.938 KiB)
+n = 100
+Residual 3.2851340654618366e-12
+Residual 3.74492168834019e-12
+Residual 1.90055573605839e-10
+Residual 3.373601501768403e-12
+  0.003296 seconds (20.30 k allocations: 3.322 MiB)
+n = 1000
+Residual 2.6865195604687363e-8
+Residual 1.1648232496585793e-8
+Residual 9.13609298090604e-12
+Residual 1.5460193154899995e-8
+  0.315643 seconds (37.94 k allocations: 41.237 MiB, 17.29% gc time)
+Test Summary: | Pass  Total
+Linearmaps    |   12     12
+    Testing RSCG tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:14:24.68
+CPU usage: 18.46s (15.80s user, 2.71s kernel)
+
+Network usage:
+- eth0: 2.596 MiB received, 36.783 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":321978368,"max_usage":744951808,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":212664320,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":413160,"total_cache":79929344,"total_rss_huge":0,"total_active_anon":213700608,"total_pgmajfault":0,"pgpgin":297957,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":226498,"hierarchical_memsw_limit":0,"cache":79929344,"active_file":135168,"pgfault":413160,"total_mapped_file":0,"total_pgpgout":226498,"total_writeback":0,"rss":212664320,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":297957,"active_anon":213700608,"total_active_file":135168},"limit":540965302272},"name":"/RSCG-jXlcp8u3","networks":{"eth0":{"rx_bytes":2721740,"rx_packets":351,"tx_packets":355,"tx_bytes":37666,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"bdc190ce11e19f673bb203fb6890f2b6f3e136fe5c3c1694d3d3d0e72241645f","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5849756024522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":15800000000,"usage_in_kernelmode":2710000000,"total_usage":18464945118,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18464437737,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11010,0,496371,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:14:24.68281594Z"}

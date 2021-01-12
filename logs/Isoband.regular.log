@@ -1,0 +1,117 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:03:22.105
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:03:23.922
+#
+
+ Installing known registries into `~/.julia`
+####                                                                       5.7%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Isoband ───── v0.1.1
+  Installed isoband_jll ─ v0.2.2+0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [f1662d9f] + Isoband v0.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [f1662d9f] + Isoband v0.1.1
+  [9a68df92] + isoband_jll v0.2.2+0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T22:03:28.401
+#
+
+    Testing Isoband
+Status `/tmp/jl_YwAULQ/Project.toml`
+  [f1662d9f] Isoband v0.1.1
+  [9a68df92] isoband_jll v0.2.2+0
+  [8dfed614] Test
+Status `/tmp/jl_YwAULQ/Manifest.toml`
+  [f1662d9f] Isoband v0.1.1
+  [9a68df92] isoband_jll v0.2.2+0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary:                  | Pass  Total
+elementary polygons get merged |   10     10
+Test Summary:              | Pass  Total
+NaNs are handled correctly |    5      5
+Test Summary:                                  | Pass  Total
+All elementary shapes are calculated correctly |    3      3
+Test Summary:     | Pass  Total
+Six-sided saddles |    6      6
+Test Summary:       | Pass  Total
+Seven-sided saddles |    6      6
+Test Summary:       | Pass  Total
+Eight-sided saddles |    8      8
+Test Summary:                                         | Pass  Total
+Inconsistent numbers of isoband levels cause an error |    2      2
+Test Summary:            | Pass  Total
+line segments get merged |   11     11
+Test Summary:             | Pass  Total
+NAs are handled correctly |    3      3
+Test Summary:                                    | Pass  Total
+All elementary segments are calculated correctly |    3      3
+Test Summary: | Pass  Total
+Saddles       |    6      6
+    Testing Isoband tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:03:35.25
+CPU usage: 13.17s (10.21s user, 2.99s kernel)
+
+Network usage:
+- eth0: 2.558 MiB received, 37.347 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":322666496,"max_usage":742244352,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":213774336,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":324852,"total_cache":79667200,"total_rss_huge":0,"total_active_anon":214646784,"total_pgmajfault":0,"pgpgin":238095,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":166430,"hierarchical_memsw_limit":0,"cache":79667200,"active_file":135168,"pgfault":324852,"total_mapped_file":0,"total_pgpgout":166430,"total_writeback":0,"rss":213774336,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":238095,"active_anon":214646784,"total_active_file":135168},"limit":540965302272},"name":"/Isoband-p8W2caFh","networks":{"eth0":{"rx_bytes":2682738,"rx_packets":392,"tx_packets":400,"tx_bytes":38243,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"aabd4bed1d05bd3642146eb743ead2e40ba45faa4208b49b00b6e70af3a3e8bf","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6226647524522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":10210000000,"usage_in_kernelmode":2990000000,"total_usage":13173794650,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13173794650,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:03:35.275202179Z"}

@@ -1,0 +1,95 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:28:09.054
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:28:10.868
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed DynamicSparseArrays ─ v0.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [8086fd22] + DynamicSparseArrays v0.3.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [8086fd22] + DynamicSparseArrays v0.3.0
+
+
+################################################################################
+# Testing: 2021-01-11T17:28:14.618
+#
+
+    Testing DynamicSparseArrays
+Status `/tmp/jl_uTFCSR/Project.toml`
+  [8086fd22] DynamicSparseArrays v0.3.0
+  [9a3f8284] Random
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_uTFCSR/Manifest.toml`
+  [8086fd22] DynamicSparseArrays v0.3.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Test Summary:      |    Pass    Total
+Moves - unit tests | 3040545  3040545
+Test Summary:      | Pass  Total
+Finds - unit tests |   18     18
+Test Summary:       | Pass  Total
+Writes - unit tests |   13     13
+Test Summary:           | Pass  Total
+Comparison - unit tests |    2      2
+Test Summary: | Pass  Total
+Views         |    6      6
+Test Summary:                                           |   Pass   Total
+dynsparsevector (PackedMemoryArray) - func - simple use | 222275  222275
+Test Summary:                                         |    Pass    Total
+Insertions & finds in dyn sparse vector - performance | 3099760  3099760
+Test Summary:                 | Pass  Broken  Total
+PackedCSC - func - simple use |  144       2    146
+Test Summary:                                        |   Pass   Total
+Insertions & finds in PackedCSC matrix - performance | 206028  206028
+Test Summary:                       |   Pass  Broken   Total
+dynsparsematrix - func - simple use | 201032       2  201034
+Test Summary:                                              |  Pass  Total
+Insertions & finds in MappedPackedCSC matrix - performance | 32039  32039
+Test Summary: |    Pass    Total
+Fillin mode   | 3300240  3300240
+    Testing DynamicSparseArrays tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:28:47.801
+CPU usage: 38.77s (35.00s user, 3.84s kernel)
+
+Network usage:
+- eth0: 2.555 MiB received, 26.874 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":331239424,"max_usage":922091520,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":222294016,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":1038840,"total_cache":79572992,"total_rss_huge":0,"total_active_anon":223162368,"total_pgmajfault":0,"pgpgin":807345,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":733640,"hierarchical_memsw_limit":0,"cache":79572992,"active_file":135168,"pgfault":1038840,"total_mapped_file":0,"total_pgpgout":733640,"total_writeback":0,"rss":222294016,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":807345,"active_anon":223162368,"total_active_file":135168},"limit":540965302272},"name":"/DynamicSparseArrays-CrleYLc7","networks":{"eth0":{"rx_bytes":2678743,"rx_packets":296,"tx_packets":274,"tx_bytes":27519,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"198f0025d36de122a089984a8d07af6e14a60b3e63f851027e23cf1d0e2a8ff5","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4119864224522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":35000000000,"usage_in_kernelmode":3840000000,"total_usage":38769022938,"percpu_usage":[0,0,0,38769016838,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:28:47.804191916Z"}

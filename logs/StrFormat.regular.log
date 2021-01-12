@@ -1,0 +1,435 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:09:48.471
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:09:50.296
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed StrFormat ──────────── v1.0.0
+  Installed ModuleInterfaceTools ─ v1.0.1
+  Installed Format ─────────────── v1.3.0
+  Installed StrLiterals ────────── v1.0.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [b5087856] + StrFormat v1.0.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [1fa38f19] + Format v1.3.0
+  [5cb8414e] + ModuleInterfaceTools v1.0.1
+  [b5087856] + StrFormat v1.0.0
+  [68059f60] + StrLiterals v1.0.0
+
+
+################################################################################
+# Testing: 2021-01-11T23:09:54.909
+#
+
+    Testing StrFormat
+Status `/tmp/jl_RHwfIS/Project.toml`
+  [1fa38f19] Format v1.3.0
+  [5cb8414e] ModuleInterfaceTools v1.0.1
+  [b5087856] StrFormat v1.0.0
+  [68059f60] StrLiterals v1.0.0
+  [8dfed614] Test
+Status `/tmp/jl_RHwfIS/Manifest.toml`
+  [1fa38f19] Format v1.3.0
+  [5cb8414e] ModuleInterfaceTools v1.0.1
+  [b5087856] StrFormat v1.0.0
+  [68059f60] StrLiterals v1.0.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+int: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:10
+  Expression: f"\%a(typemax(Int64))" == "0x7.fffffffffffffffp+60"
+   Evaluated: "0x1p+63" == "0x7.fffffffffffffffp+60"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:10 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:9 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+int: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:11
+  Expression: f"\%A(typemax(Int64))" == "0X7.FFFFFFFFFFFFFFFP+60"
+   Evaluated: "0X1P+63" == "0X7.FFFFFFFFFFFFFFFP+60"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:11 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:9 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:27
+  Expression: f"\%a(num)" == "0x2.ap+4"
+   Evaluated: "0x1.5p+5" == "0x2.ap+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:27 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:28
+  Expression: f"\%A(num)" == "0X2.AP+4"
+   Evaluated: "0X1.5P+5" == "0X2.AP+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:28 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:29
+  Expression: f"\%20a(num)" == "            0x2.ap+4"
+   Evaluated: "            0x1.5p+5" == "            0x2.ap+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:29 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:30
+  Expression: f"\%-20a(num)" == "0x2.ap+4            "
+   Evaluated: "0x1.5p+5            " == "0x2.ap+4            "
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:30 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:27
+  Expression: f"\%a(num)" == "0x2.ap+4"
+   Evaluated: "0x1.5p+5" == "0x2.ap+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:27 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:28
+  Expression: f"\%A(num)" == "0X2.AP+4"
+   Evaluated: "0X1.5P+5" == "0X2.AP+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:28 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:29
+  Expression: f"\%20a(num)" == "            0x2.ap+4"
+   Evaluated: "            0x1.5p+5" == "            0x2.ap+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:29 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:30
+  Expression: f"\%-20a(num)" == "0x2.ap+4            "
+   Evaluated: "0x1.5p+5            " == "0x2.ap+4            "
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:30 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:27
+  Expression: f"\%a(num)" == "0x2.ap+4"
+   Evaluated: "0x1.5p+5" == "0x2.ap+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:27 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:28
+  Expression: f"\%A(num)" == "0X2.AP+4"
+   Evaluated: "0X1.5P+5" == "0X2.AP+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:28 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:29
+  Expression: f"\%20a(num)" == "            0x2.ap+4"
+   Evaluated: "            0x1.5p+5" == "            0x2.ap+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:29 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:30
+  Expression: f"\%-20a(num)" == "0x2.ap+4            "
+   Evaluated: "0x1.5p+5            " == "0x2.ap+4            "
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:30 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:27
+  Expression: f"\%a(num)" == "0x2.ap+4"
+   Evaluated: "0x1.5p+5" == "0x2.ap+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:27 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:28
+  Expression: f"\%A(num)" == "0X2.AP+4"
+   Evaluated: "0X1.5P+5" == "0X2.AP+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:28 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:29
+  Expression: f"\%20a(num)" == "            0x2.ap+4"
+   Evaluated: "            0x1.5p+5" == "            0x2.ap+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:29 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:30
+  Expression: f"\%-20a(num)" == "0x2.ap+4            "
+   Evaluated: "0x1.5p+5            " == "0x2.ap+4            "
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:30 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:27
+  Expression: f"\%a(num)" == "0x2.ap+4"
+   Evaluated: "0x1.5p+5" == "0x2.ap+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:27 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:28
+  Expression: f"\%A(num)" == "0X2.AP+4"
+   Evaluated: "0X1.5P+5" == "0X2.AP+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:28 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:29
+  Expression: f"\%20a(num)" == "            0x2.ap+4"
+   Evaluated: "            0x1.5p+5" == "            0x2.ap+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:29 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:30
+  Expression: f"\%-20a(num)" == "0x2.ap+4            "
+   Evaluated: "0x1.5p+5            " == "0x2.ap+4            "
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:30 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:27
+  Expression: f"\%a(num)" == "0x2.ap+4"
+   Evaluated: "0x1.5p+5" == "0x2.ap+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:27 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:28
+  Expression: f"\%A(num)" == "0X2.AP+4"
+   Evaluated: "0X1.5P+5" == "0X2.AP+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:28 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:29
+  Expression: f"\%20a(num)" == "            0x2.ap+4"
+   Evaluated: "            0x1.5p+5" == "            0x2.ap+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:29 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:30
+  Expression: f"\%-20a(num)" == "0x2.ap+4            "
+   Evaluated: "0x1.5p+5            " == "0x2.ap+4            "
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:30 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:27
+  Expression: f"\%a(num)" == "0x2.ap+4"
+   Evaluated: "0x1.5p+5" == "0x2.ap+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:27 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:28
+  Expression: f"\%A(num)" == "0X2.AP+4"
+   Evaluated: "0X1.5P+5" == "0X2.AP+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:28 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:29
+  Expression: f"\%20a(num)" == "            0x2.ap+4"
+   Evaluated: "            0x1.5p+5" == "            0x2.ap+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:29 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:30
+  Expression: f"\%-20a(num)" == "0x2.ap+4            "
+   Evaluated: "0x1.5p+5            " == "0x2.ap+4            "
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:30 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:27
+  Expression: f"\%a(num)" == "0x2.ap+4"
+   Evaluated: "0x1.5p+5" == "0x2.ap+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:27 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:28
+  Expression: f"\%A(num)" == "0X2.AP+4"
+   Evaluated: "0X1.5P+5" == "0X2.AP+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:28 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:29
+  Expression: f"\%20a(num)" == "            0x2.ap+4"
+   Evaluated: "            0x1.5p+5" == "            0x2.ap+4"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:29 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+printing an int value: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:30
+  Expression: f"\%-20a(num)" == "0x2.ap+4            "
+   Evaluated: "0x1.5p+5            " == "0x2.ap+4            "
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:30 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:14 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+chars: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:134
+  Expression: f"\%3c('A')" == "  A"
+   Evaluated: "A  " == "  A"
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:134 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:132 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+chars: Test Failed at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:135
+  Expression: f"\%-3c('A')" == "A  "
+   Evaluated: "  A" == "A  "
+Stacktrace:
+ [1] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:135 [inlined]
+ [2] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [3] macro expansion at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:132 [inlined]
+ [4] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+ [5] top-level scope at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:8
+Test Summary:                            | Pass  Fail  Total
+C Formatting                             |  221    36    257
+  int                                    |    1     2      3
+  printing an int value                  |  104    32    136
+  pointers                               |    2            2
+  float / BigFloat                       |   18           18
+  Inf / NaN handling                     |    4            4
+  scientific notation                    |   13           13
+  %g                                     |   34           34
+  hex float                              |    5            5
+  chars                                  |    4     2      6
+  type width specifier parsing (ignored) |   10           10
+  strings                                |   12           12
+  type based formatting                  |   14           14
+ERROR: LoadError: Some tests did not pass: 221 passed, 36 failed, 0 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/StrFormat/BHUzg/test/runtests.jl:7
+
+PkgEval failed: Package StrFormat errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:10:20.536
+CPU usage: 32.08s (29.01s user, 3.14s kernel)
+
+Network usage:
+- eth0: 2.605 MiB received, 42.114 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":346591232,"max_usage":642670592,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":236986368,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":585948,"total_cache":79937536,"total_rss_huge":0,"total_active_anon":238030848,"total_pgmajfault":0,"pgpgin":370359,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":0,"pgpgout":292956,"hierarchical_memsw_limit":0,"cache":79937536,"active_file":135168,"pgfault":585948,"total_mapped_file":0,"total_pgpgout":292956,"total_writeback":0,"rss":236986368,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":370359,"active_anon":238030848,"total_active_file":135168},"limit":540965302272},"name":"/StrFormat-zL23QlFP","networks":{"eth0":{"rx_bytes":2731508,"rx_packets":425,"tx_packets":401,"tx_bytes":43125,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"b1af7b8be1231cb54c16e80e24fd48e7e09ca080b3f00b3ae5acd87ef347b1cb","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6738456054522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":29010000000,"usage_in_kernelmode":3140000000,"total_usage":32083648526,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32083648526,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:10:20.53928528Z"}

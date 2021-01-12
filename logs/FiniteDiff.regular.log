@@ -1,0 +1,277 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:49:58.149
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:49:59.962
+#
+
+ Installing known registries into `~/.julia`
+#####################################                                     51.7%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Requires ─────── v1.1.2
+  Installed FiniteDiff ───── v2.7.2
+  Installed ArrayInterface ─ v2.14.13
+  Installed StaticArrays ─── v1.0.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [6a86dc24] + FiniteDiff v2.7.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [4fba245c] + ArrayInterface v2.14.13
+  [6a86dc24] + FiniteDiff v2.7.2
+  [ae029012] + Requires v1.1.2
+  [90137ffa] + StaticArrays v1.0.1
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [cf7118a7] + UUIDs
+
+
+################################################################################
+# Testing: 2021-01-11T18:50:04.534
+#
+
+    Testing FiniteDiff
+Status `/tmp/jl_XATCOR/Project.toml`
+  [4fba245c] ArrayInterface v2.14.13
+  [aae01518] BandedMatrices v0.15.25
+  [ffab5731] BlockBandedMatrices v0.9.6
+  [6a86dc24] FiniteDiff v2.7.2
+  [ae029012] Requires v1.1.2
+  [1bc83da4] SafeTestsets v0.0.1
+  [90137ffa] StaticArrays v1.0.1
+  [37e2e46d] LinearAlgebra
+  [44cfe95a] Pkg
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_XATCOR/Manifest.toml`
+  [4fba245c] ArrayInterface v2.14.13
+  [4c555306] ArrayLayouts v0.4.12
+  [aae01518] BandedMatrices v0.15.25
+  [8e7c35d0] BlockArrays v0.13.0
+  [ffab5731] BlockBandedMatrices v0.9.6
+  [34da2185] Compat v3.25.0
+  [1a297f60] FillArrays v0.10.2
+  [6a86dc24] FiniteDiff v2.7.2
+  [a3b82374] MatrixFactorizations v0.7.1
+  [ae029012] Requires v1.1.2
+  [1bc83da4] SafeTestsets v0.0.1
+  [90137ffa] StaticArrays v1.0.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+  0.873143 seconds (2.52 M allocations: 131.628 MiB, 2.25% gc time)
+┌ Warning: Pre-computed function values are only useful for fdtype==Val(:forward).
+└ @ FiniteDiff ~/.julia/packages/FiniteDiff/jLwWI/src/derivatives.jl:49
+┌ Warning: Pre-computed function values are only useful for fdtype==Val(:forward).
+└ @ FiniteDiff ~/.julia/packages/FiniteDiff/jLwWI/src/derivatives.jl:49
+┌ Warning: Val(:complex) makes the epsilon array redundant.
+└ @ FiniteDiff ~/.julia/packages/FiniteDiff/jLwWI/src/derivatives.jl:60
+┌ Warning: Pre-computed function values are only useful for fdtype==Val(:forward).
+└ @ FiniteDiff ~/.julia/packages/FiniteDiff/jLwWI/src/derivatives.jl:49
+┌ Warning: Pre-computed function values are only useful for fdtype==Val(:forward).
+└ @ FiniteDiff ~/.julia/packages/FiniteDiff/jLwWI/src/derivatives.jl:49
+┌ Warning: Val(:complex) makes the epsilon array redundant.
+└ @ FiniteDiff ~/.julia/packages/FiniteDiff/jLwWI/src/derivatives.jl:60
+  0.764002 seconds (1.46 M allocations: 72.974 MiB, 2.91% gc time)
+┌ Warning: Pre-computed function values are only useful for fdtype==Val(:forward).
+└ @ FiniteDiff ~/.julia/packages/FiniteDiff/jLwWI/src/derivatives.jl:49
+  0.057901 seconds (98.31 k allocations: 5.335 MiB)
+┌ Warning: Pre-computed function values are only useful for fdtype==Val(:forward).
+└ @ FiniteDiff ~/.julia/packages/FiniteDiff/jLwWI/src/derivatives.jl:49
+┌ Warning: Pre-computed function values are only useful for fdtype==Val(:forward).
+└ @ FiniteDiff ~/.julia/packages/FiniteDiff/jLwWI/src/derivatives.jl:49
+┌ Warning: Pre-computed function values are only useful for fdtype==Val(:forward).
+└ @ FiniteDiff ~/.julia/packages/FiniteDiff/jLwWI/src/derivatives.jl:49
+┌ Warning: Pre-computed function values are only useful for fdtype==Val(:forward).
+└ @ FiniteDiff ~/.julia/packages/FiniteDiff/jLwWI/src/derivatives.jl:49
+  0.432496 seconds (880.49 k allocations: 44.089 MiB, 1.78% gc time)
+┌ Warning: Pre-computed function values are only useful for fdtype==Val(:forward).
+└ @ FiniteDiff ~/.julia/packages/FiniteDiff/jLwWI/src/derivatives.jl:49
+  0.039290 seconds (26.43 k allocations: 1.201 MiB)
+┌ Warning: Pre-computed function values are only useful for fdtype==Val(:forward).
+└ @ FiniteDiff ~/.julia/packages/FiniteDiff/jLwWI/src/derivatives.jl:49
+┌ Warning: Pre-computed function values are only useful for fdtype==Val(:forward).
+└ @ FiniteDiff ~/.julia/packages/FiniteDiff/jLwWI/src/derivatives.jl:49
+┌ Warning: Pre-computed function values are only useful for fdtype==Val(:forward).
+└ @ FiniteDiff ~/.julia/packages/FiniteDiff/jLwWI/src/derivatives.jl:49
+┌ Warning: Pre-computed function values are only useful for fdtype==Val(:forward).
+└ @ FiniteDiff ~/.julia/packages/FiniteDiff/jLwWI/src/derivatives.jl:49
+  0.375472 seconds (692.35 k allocations: 35.016 MiB, 3.34% gc time)
+  0.861442 seconds (2.21 M allocations: 114.606 MiB, 2.66% gc time)
+  0.406561 seconds (1.02 M allocations: 51.893 MiB, 2.02% gc time)
+  0.069471 seconds (77.76 k allocations: 4.008 MiB)
+  0.181052 seconds (202.53 k allocations: 10.178 MiB)
+  0.791556 seconds (2.25 M allocations: 117.032 MiB, 4.21% gc time)
+  0.333669 seconds (967.67 k allocations: 48.109 MiB, 2.48% gc time)
+  1.617016 seconds (5.25 M allocations: 269.650 MiB, 3.82% gc time)
+  0.932245 seconds (2.71 M allocations: 135.099 MiB, 2.63% gc time)
+  0.681994 seconds (1.76 M allocations: 90.987 MiB, 2.60% gc time)
+  0.611202 seconds (1.85 M allocations: 90.381 MiB, 3.38% gc time)
+  1.540191 seconds (4.51 M allocations: 230.035 MiB, 2.59% gc time)
+  0.715774 seconds (1.68 M allocations: 80.271 MiB, 5.87% gc time)
+Test Summary:             | Pass  Broken  Total
+FiniteDiff Standard Tests |  164       1    165
+ 37.767726 seconds (56.78 M allocations: 2.896 GiB, 2.24% gc time)
+Test Summary:               | Pass  Total
+Color Differentiation Tests |   24     24
+114.763079 seconds (545.99 M allocations: 42.884 GiB, 5.22% gc time)
+Test Summary:      | Pass  Total
+Out of Place Tests |   25     25
+ 23.827352 seconds (28.53 M allocations: 1.293 GiB, 1.00% gc time)
+ Activating environment at `~/.julia/packages/FiniteDiff/jLwWI/test/downstream/Project.toml`
+Path `/home/pkgeval/.julia/packages/FiniteDiff/jLwWI` exists and looks like the correct package. Using existing path.
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed ZygoteRules ────────────────── v0.2.1
+  Installed Reexport ───────────────────── v1.0.0
+  Installed CpuId ──────────────────────── v0.2.2
+  Installed TableTraits ────────────────── v1.0.0
+  Installed Inflate ────────────────────── v0.1.2
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed OrdinaryDiffEq ─────────────── v5.49.1
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed NonlinearSolve ─────────────── v0.3.4
+  Installed VertexSafeGraphs ───────────── v0.1.2
+  Installed FunctionWrappers ───────────── v1.1.1
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed Tables ─────────────────────── v1.2.2
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed Parameters ─────────────────── v0.12.1
+  Installed DataStructures ─────────────── v0.18.8
+  Installed LoopVectorization ──────────── v0.8.26
+  Installed SparseDiffTools ────────────── v1.12.0
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Setfield ───────────────────── v0.7.0
+  Installed TreeViews ──────────────────── v0.3.0
+  Installed SimpleTraits ───────────────── v0.9.3
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed ConstructionBase ───────────── v1.0.0
+  Installed RecursiveArrayTools ────────── v2.10.0
+  Installed SIMDPirates ────────────────── v0.8.26
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed StaticArrays ───────────────── v0.12.5
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed DiffEqBase ─────────────────── v6.53.4
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed VectorizationBase ──────────── v0.12.33
+  Installed Distances ──────────────────── v0.10.0
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed NLsolve ────────────────────── v4.5.1
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed LineSearches ───────────────── v7.1.1
+  Installed LightGraphs ────────────────── v1.3.4
+  Installed ArnoldiMethod ──────────────── v0.0.4
+  Installed FastClosures ───────────────── v0.3.2
+  Installed Adapt ──────────────────────── v3.0.0
+  Installed LabelledArrays ─────────────── v1.4.0
+  Installed OffsetArrays ───────────────── v1.3.1
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed IterativeSolvers ───────────── v0.9.0
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed ExponentialUtilities ───────── v1.8.0
+  Installed GenericSVD ─────────────────── v0.3.0
+  Installed NLSolversBase ──────────────── v7.7.1
+  Installed RecursiveFactorization ─────── v0.1.6
+  Installed DocStringExtensions ────────── v0.8.3
+  Installed SLEEFPirates ───────────────── v0.5.5
+ERROR: LoadError: SystemError: opening file "/home/pkgeval/.julia/packages/FiniteDiff/jLwWI/test/downstream/Project.toml": Permission denied
+Stacktrace:
+ [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+ [2] #systemerror#48 at ./error.jl:167 [inlined]
+ [3] systemerror at ./error.jl:167 [inlined]
+ [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Bool, append::Nothing) at ./iostream.jl:284
+ [5] open(::Pkg.Types.var"#31#33"{Base.GenericIOBuffer{Array{UInt8,1}}}, ::String; kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:truncate,),Tuple{Bool}}}) at ./io.jl:323
+ [6] write_project at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/project.jl:180 [inlined]
+ [7] write_project(::Pkg.Types.Project, ::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/project.jl:175
+ [8] write_project at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/project.jl:173 [inlined]
+ [9] write_env(::Pkg.Types.EnvCache; update_undo::Bool) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:1366
+ [10] write_env at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:1366 [inlined]
+ [11] develop(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Array{Base.UUID,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1161
+ [12] develop(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; shared::Bool, preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:133
+ [13] develop(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:93
+ [14] #develop#13 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [15] develop at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [16] #develop#11 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65 [inlined]
+ [17] develop at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65 [inlined]
+ [18] activate_downstream_env() at /home/pkgeval/.julia/packages/FiniteDiff/jLwWI/test/runtests.jl:10
+ [19] top-level scope at /home/pkgeval/.julia/packages/FiniteDiff/jLwWI/test/runtests.jl:23
+ [20] top-level scope at timing.jl:174
+ [21] include(::String) at ./client.jl:457
+ [22] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/FiniteDiff/jLwWI/test/runtests.jl:14
+
+PkgEval failed: Package FiniteDiff errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:53:29.492
+CPU usage: 211.11s (186.64s user, 24.78s kernel)
+
+Network usage:
+- eth0: 13.247 MiB received, 388.046 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":10,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":29,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":34,"op":"Total","minor":0},{"major":253,"value":10,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":29,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":34,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":958464,"op":"Read","minor":0},{"major":259,"value":131072,"op":"Write","minor":0},{"major":259,"value":1064960,"op":"Sync","minor":0},{"major":259,"value":24576,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1089536,"op":"Total","minor":0},{"major":253,"value":958464,"op":"Read","minor":2},{"major":253,"value":131072,"op":"Write","minor":2},{"major":253,"value":1064960,"op":"Sync","minor":2},{"major":253,"value":24576,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1089536,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":349134848,"max_usage":2580803584,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":201342976,"inactive_file":946176,"inactive_anon":103673856,"total_pgfault":12257322,"total_cache":114491392,"total_rss_huge":0,"total_active_anon":210862080,"total_pgmajfault":0,"pgpgin":11408232,"rss_huge":0,"mapped_file":135168,"total_inactive_file":946176,"dirty":1081344,"total_unevictable":0,"total_dirty":1081344,"writeback":270336,"pgpgout":11331114,"hierarchical_memsw_limit":0,"cache":114491392,"active_file":135168,"pgfault":12257322,"total_mapped_file":135168,"total_pgpgout":11331114,"total_writeback":270336,"rss":201342976,"unevictable":0,"total_inactive_anon":103673856,"total_pgpgin":11408232,"active_anon":210862080,"total_active_file":135168},"limit":540965302272},"name":"/FiniteDiff-ERCoTL1d","networks":{"eth0":{"rx_bytes":13890693,"rx_packets":3073,"tx_packets":3324,"tx_bytes":397359,"tx_dropped":0,"rx_dropped":7,"tx_errors":0,"rx_errors":0}},"id":"635a1e804fdfab831124850e2b0724721bad680e07f666530e01edc38a4ab58a","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4769078844522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":186640000000,"usage_in_kernelmode":24780000000,"total_usage":211106979618,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,211106979618,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:53:29.49460678Z"}

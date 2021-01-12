@@ -1,0 +1,144 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:04:04.497
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:04:06.309
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed LearningStrategies ─ v0.4.0
+  Installed LearnBase ────────── v0.4.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [4e8a8231] + LearningStrategies v0.4.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [7f8f8fb0] + LearnBase v0.4.1
+  [4e8a8231] + LearningStrategies v0.4.0
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T23:04:10.651
+#
+
+    Testing LearningStrategies
+Status `/tmp/jl_TftOHS/Project.toml`
+  [7f8f8fb0] LearnBase v0.4.1
+  [4e8a8231] LearningStrategies v0.4.0
+  [37e2e46d] LinearAlgebra
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_TftOHS/Manifest.toml`
+  [7f8f8fb0] LearnBase v0.4.1
+  [4e8a8231] LearningStrategies v0.4.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+[ Info: Verbose
+[ Info: MaxIter: 1/5
+[ Info: MaxIter: 2/5
+[ Info: MaxIter: 3/5
+[ Info: MaxIter: 4/5
+[ Info: MaxIter: 5/5
+[ Info: MaxIter(5) finished
+[ Info: TimeLimit(0.5) finished
+[ Info: Converged after 2 iterations: true
+[ Info: Type Stability and Printing
+MetaStrategy
+  > MaxIter(20)
+  > TimeLimit(2.0)
+  > Converged(#3, 1.0e-6, 1)
+  > ConvergedTo(#4, 1.0e-6, [1.0, 1.0], 1)
+  > IterFunction(#5, 1)
+  > Breaker(#6)
+  > Tracer(1, #7, 0-element Array{Float64,1})
+  > MaxIter(20)
+  > TimeLimit(2.0)
+  > Converged(#3, 1.0e-6, 1)
+  > ConvergedTo(#4, 1.0e-6, [1.0, 1.0], 1)
+[ Info: Converged after 5 iterations: [1.0, 1.0]
+  > IterFunction(#5, 1)
+  > Breaker(#6)
+  > Tracer(1, #7, 0-element Array{Float64,1})
+Test Summary:               |
+Type Stability and Printing | No tests
+Test Summary: | Pass  Total
+MaxIter       |   10     10
+Test Summary: | Pass  Total
+TimeLimit     |    1      1
+Test Summary: |
+Converged     | No tests
+[ Info: Converged after 1 iterations: [1.0, 1.0, 1.0, 1.0, 1.0]
+Test Summary: |
+ConvergedTo   | No tests
+Print twice:  > 1
+Print twice:  > 2
+Test Summary: |
+IterFunction  | No tests
+Test Summary: | Pass  Total
+Tracer        |    2      2
+Test Summary: | Pass  Total
+Breaker       |    1      1
+Test Summary: | Pass  Total
+LinRegModel   |    1      1
+[ Info: MaxIter: 1/5
+[ Info: MaxIter: 2/5
+[ Info: MaxIter: 3/5
+[ Info: MaxIter: 4/5
+[ Info: MaxIter: 5/5
+[ Info: MaxIter(5) finished
+Test Summary:          | Pass  Total
+update!(m, s, i, item) |   10     10
+    Testing LearningStrategies tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:04:20.732
+CPU usage: 16.33s (13.87s user, 2.50s kernel)
+
+Network usage:
+- eth0: 2.558 MiB received, 32.241 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":332931072,"max_usage":716824576,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":223965184,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":396462,"total_cache":79667200,"total_rss_huge":0,"total_active_anon":224919552,"total_pgmajfault":0,"pgpgin":288189,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":214049,"hierarchical_memsw_limit":0,"cache":79667200,"active_file":135168,"pgfault":396462,"total_mapped_file":0,"total_pgpgout":214049,"total_writeback":0,"rss":223965184,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":288189,"active_anon":224919552,"total_active_file":135168},"limit":540965302272},"name":"/LearningStrategies-4EJMEZsE","networks":{"eth0":{"rx_bytes":2682152,"rx_packets":309,"tx_packets":321,"tx_bytes":33015,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"26100d54455ad124b37fed31f7258d0390ddec58cc530eab224aeedede473fae","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6692455494522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":13870000000,"usage_in_kernelmode":2500000000,"total_usage":16330839246,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16330839246,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:04:20.73436796Z"}

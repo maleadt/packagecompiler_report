@@ -1,15 +1,15 @@
 ################################################################################
-# PkgEval set-up: 2021-01-11T15:12:08.163
+# PkgEval set-up: 2021-01-11T21:04:38.414
 #
 
 Julia Version 1.5.3
 Commit 599f52c4c6 (2020-12-18 13:33 UTC)
 Platform Info:
   OS: Linux (x86_64-linux-gnu)
-  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  CPU: AMD EPYC 7502 32-Core Processor
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-9.0.1 (ORCJIT, znver1)
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
 Environment:
   JULIA_PKG_PRECOMPILE_AUTO = 0
   JULIA_PKGEVAL = true
@@ -18,27 +18,27 @@ Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so 
 
 
 ################################################################################
-# Installation: 2021-01-11T15:12:09.748
+# Installation: 2021-01-11T21:04:40.228
 #
 
  Installing known registries into `~/.julia`
-#=#=#                                                                         #####################                                                     29.6%######################################################################## 100.0%
+######################                                                    31.5%######################################################################## 100.0%
       Added registry `General` to `~/.julia/registries/General`
   Resolving package versions...
-  Installed Artifacts ──────────────────── v1.3.0
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed DiffRules ──────────────────── v1.0.2
   Installed MacroTools ─────────────────── v0.5.6
-  Installed ForwardDiff ────────────────── v0.10.14
-  Installed NaNMath ────────────────────── v0.3.5
-  Installed OpenSpecFun_jll ────────────── v0.5.3+4
   Installed DiffResults ────────────────── v1.0.3
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed JLLWrappers ────────────────── v1.2.0
   Installed CommonSubexpressions ───────── v0.3.0
   Installed ChainRulesCore ─────────────── v0.9.24
-  Installed DiffRules ──────────────────── v1.0.2
-  Installed JLLWrappers ────────────────── v1.2.0
   Installed MuladdMacro ────────────────── v0.2.2
-  Installed SpecialFunctions ───────────── v1.2.1
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Artifacts ──────────────────── v1.3.0
   Installed StaticArrays ───────────────── v1.0.1
-  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
 Updating `~/.julia/environments/v1.5/Project.toml`
   [f6369f11] + ForwardDiff v0.10.14
 Updating `~/.julia/environments/v1.5/Manifest.toml`
@@ -80,11 +80,11 @@ Updating `~/.julia/environments/v1.5/Manifest.toml`
 
 
 ################################################################################
-# Testing: 2021-01-11T15:12:14.418
+# Testing: 2021-01-11T21:04:46.156
 #
 
     Testing ForwardDiff
-Status `/tmp/jl_ByJrhj/Project.toml`
+Status `/tmp/jl_0Hcf5Q/Project.toml`
   [49dc2e85] Calculus v0.5.1
   [bbf7d656] CommonSubexpressions v0.3.0
   [163ba53b] DiffResults v1.0.3
@@ -99,7 +99,7 @@ Status `/tmp/jl_ByJrhj/Project.toml`
   [9a3f8284] Random
   [2f01184e] SparseArrays
   [8dfed614] Test
-Status `/tmp/jl_ByJrhj/Manifest.toml`
+Status `/tmp/jl_0Hcf5Q/Manifest.toml`
   [56f22d72] Artifacts v1.3.0
   [49dc2e85] Calculus v0.5.1
   [d360d2e6] ChainRulesCore v0.9.24
@@ -144,7 +144,7 @@ Testing Partials...
   ...testing Partials{3,Int64}
   ...testing Partials{3,Float32}
   ...testing Partials{3,Float64}
-done (took 3.502143372 seconds).
+done (took 4.005653555 seconds).
 Testing Dual...
   ...testing Dual{TestTag(),Int64,0} and Dual{TestTag(),Dual{TestTag(),Int64,0},0}
   ...testing Dual{TestTag(),Float32,0} and Dual{TestTag(),Dual{TestTag(),Float32,0},0}
@@ -602,7 +602,7 @@ Test Summary:          | Pass  Total
 Exponentiation of zero |    3      3
 Test Summary: | Pass  Total
 Type min/max  |    5      5
-done (took 14.255752063 seconds).
+done (took 17.459865825 seconds).
 Testing derivative functionality...
   ...testing num2num_1
   ...testing num2num_2
@@ -614,7 +614,7 @@ Testing derivative functionality...
   ...testing num2arr_1!
 Test Summary:                     | Pass  Total
 exponential function at base zero |    4      4
-done (took 2.653408883 seconds).
+done (took 3.09734497 seconds).
 Testing gradient functionality...
   ...running hardcoded test with chunk size = 1 and tag = nothing
   ...running hardcoded test with chunk size = 1 and tag = ForwardDiff.Tag{typeof(DiffTests.rosenbrock_1),Float64}()
@@ -777,7 +777,7 @@ Test Summary:                     | Pass  Total
 exponential function at base zero |    4      4
 Test Summary:   | Pass  Total
 chunk size zero |    2      2
-done (took 79.723386289 seconds).
+done (took 95.555783023 seconds).
 Testing jacobian functionality...
   ...running hardcoded test with chunk size = 1 and tag = (nothing, nothing)
   ...running hardcoded test with chunk size = 1 and tag = (ForwardDiff.Tag{Main.JacobianTest.var"#3#4",Int64}(), ForwardDiff.Tag{Main.JacobianTest.var"#1#2",Int64}())
@@ -926,7 +926,7 @@ Testing jacobian functionality...
   ...testing mutation_test_2! with chunk size = 13 and tag = nothing
   ...testing mutation_test_2! with chunk size = 13 and tag = ForwardDiff.Tag{typeof(DiffTests.mutation_test_2!),Float64}()
   ...testing specialized StaticArray codepaths
-done (took 78.23068972 seconds).
+done (took 94.623869172 seconds).
 Testing hessian functionality...
   ...running hardcoded test with chunk size = 1 and tag = nothing
   ...running hardcoded test with chunk size = 1 and tag = ForwardDiff.Tag{Tuple{typeof(DiffTests.rosenbrock_1),typeof(ForwardDiff.gradient)},Float64}()
@@ -1025,25 +1025,25 @@ Testing hessian functionality...
   ...testing first with chunk size = 3 and tag = nothing
   ...testing first with chunk size = 3 and tag = ForwardDiff.Tag{Tuple{typeof(first),typeof(ForwardDiff.gradient)},Float64}()
   ...testing specialized StaticArray codepaths
-done (took 166.458159763 seconds).
+done (took 199.970968769 seconds).
 Testing perturbation confusion functionality...
-done (took 10.442884991 seconds).
+done (took 12.708335247 seconds).
 Testing miscellaneous functionality...
-done (took 27.666706057 seconds).
+done (took 35.398129133 seconds).
 Testing allocations...
 Test Summary:          | Pass  Total
 Test seed! allocations |    4      4
-done (took 0.110112551 seconds).
+done (took 0.137281415 seconds).
     Testing ForwardDiff tests passed 
 
 PkgEval succeeded
 
 
 ################################################################################
-# PkgEval teardown: 2021-01-11T15:19:05.183
-CPU usage: 415.60s (411.72s user, 4.32s kernel)
+# PkgEval teardown: 2021-01-11T21:13:07.865
+CPU usage: 508.84s (501.92s user, 7.55s kernel)
 
 Network usage:
-- eth0: 3.360 MiB received, 122.418 KiB sent
+- eth0: 3.237 MiB received, 96.771 KiB sent
 
-Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":26,"op":"Write","minor":0},{"major":259,"value":21,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":26,"op":"Total","minor":0}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":143360,"op":"Write","minor":0},{"major":259,"value":114688,"op":"Sync","minor":0},{"major":259,"value":28672,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":143360,"op":"Total","minor":0}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":341614592,"max_usage":1490747392,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":224419840,"inactive_file":135168,"inactive_anon":81100800,"total_pgfault":2470149,"total_cache":87502848,"total_rss_huge":4194304,"total_active_anon":230772736,"total_pgmajfault":0,"pgpgin":1403160,"rss_huge":4194304,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":135168,"pgpgout":1328548,"hierarchical_memsw_limit":0,"cache":87502848,"active_file":135168,"pgfault":2470149,"total_mapped_file":0,"total_pgpgout":1328548,"total_writeback":135168,"rss":224419840,"unevictable":0,"total_inactive_anon":81100800,"total_pgpgin":1403160,"active_anon":230772736,"total_active_file":135168},"limit":67467247616},"name":"/ForwardDiff-o6c7d1we","networks":{"eth0":{"rx_bytes":3523700,"rx_packets":2709,"tx_packets":1184,"tx_bytes":125356,"tx_dropped":0,"rx_dropped":0,"tx_errors":0,"rx_errors":0}},"id":"52fe0904cceaeb52943738e7c809bfeeb04fc2e0d4b2accaa3f95e5447d5f626","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":7089974605808967,"online_cpus":64,"cpu_usage":{"usage_in_usermode":411720000000,"usage_in_kernelmode":4320000000,"total_usage":415600139613,"percpu_usage":[0,0,0,0,0,415530468918,69670695,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:19:05.185801265Z"}
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":135168,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":28672,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":135168,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":135168,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":28672,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":135168,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":292511744,"max_usage":1367261184,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":175116288,"inactive_file":135168,"inactive_anon":80965632,"total_pgfault":2916903,"total_cache":87568384,"total_rss_huge":0,"total_active_anon":181800960,"total_pgmajfault":0,"pgpgin":1391412,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":135168,"pgpgout":1327284,"hierarchical_memsw_limit":0,"cache":87568384,"active_file":135168,"pgfault":2916903,"total_mapped_file":0,"total_pgpgout":1327284,"total_writeback":135168,"rss":175116288,"unevictable":0,"total_inactive_anon":80965632,"total_pgpgin":1391412,"active_anon":181800960,"total_active_file":135168},"limit":540965302272},"name":"/ForwardDiff-zsQRu6lz","networks":{"eth0":{"rx_bytes":3393784,"rx_packets":940,"tx_packets":809,"tx_bytes":99094,"tx_dropped":0,"rx_dropped":17,"tx_errors":0,"rx_errors":0}},"id":"192558b1798de883b165a82031c975160e089718bef7bce8b0a11e0cef70037f","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5839944994522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":501920000000,"usage_in_kernelmode":7550000000,"total_usage":508838085145,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,508838085145,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:13:07.868528411Z"}

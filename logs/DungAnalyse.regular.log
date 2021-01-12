@@ -1,0 +1,80 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:09:18.114
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:09:19.926
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+
+PkgEval failed: Unsatisfiable requirements detected for package JuliaDB [a93385a2]:
+ JuliaDB [a93385a2] log:
+ ├─possible versions are: [0.9.0, 0.10.0, 0.11.0-0.11.2, 0.12.0, 0.13.0-0.13.1] or uninstalled
+ ├─restricted by compatibility requirements with DungAnalyse [4b12b552] to versions: 0.13.0-0.13.1
+ │ └─DungAnalyse [4b12b552] log:
+ │   ├─possible versions are: 0.2.0-0.2.1 or uninstalled
+ │   ├─restricted to versions * by an explicit requirement, leaving only versions 0.2.0-0.2.1
+ │   └─restricted by compatibility requirements with DungBase [bd6f3a87] to versions: 0.2.1 or uninstalled, leaving only versions: 0.2.1
+ │     └─DungBase [bd6f3a87] log:
+ │       ├─possible versions are: [0.1.0, 0.2.0, 1.0.0-1.0.2] or uninstalled
+ │       └─restricted by compatibility requirements with DungAnalyse [4b12b552] to versions: 1.0.0-1.0.2
+ │         └─DungAnalyse [4b12b552] log: see above
+ └─restricted by compatibility requirements with StatsBase [2913bbd2] to versions: uninstalled — no versions left
+   └─StatsBase [2913bbd2] log:
+     ├─possible versions are: [0.24.0, 0.25.0, 0.26.0, 0.27.0, 0.28.0-0.28.1, 0.29.0, 0.30.0, 0.31.0, 0.32.0-0.32.2, 0.33.0-0.33.2] or uninstalled
+     └─restricted by compatibility requirements with DungAnalyse [4b12b552] to versions: 0.33.0-0.33.2
+       └─DungAnalyse [4b12b552] log: see above
+Stacktrace:
+ [1] propagate_constraints!(::Pkg.Resolve.Graph, ::Set{Int64}; log_events::Bool) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1005
+ [2] propagate_constraints! at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:946 [inlined] (repeats 2 times)
+ [3] simplify_graph!(::Pkg.Resolve.Graph, ::Set{Int64}; clean_graph::Bool) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1460
+ [4] simplify_graph! at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1460 [inlined] (repeats 2 times)
+ [5] resolve_versions!(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:375
+ [6] targeted_resolve at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1114 [inlined]
+ [7] tiered_resolve(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1100
+ [8] _resolve at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1120 [inlined]
+ [9] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Array{Base.UUID,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1135
+ [10] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:188
+ [11] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:139
+ [12] #add#21 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [13] add at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [14] #add#20 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [15] add at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [16] add(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [17] add(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [18] top-level scope at none:17
+ [19] eval at ./boot.jl:331 [inlined]
+ [20] eval(::Expr) at ./client.jl:467
+ [21] top-level scope at none:1
+ [22] eval(::Module, ::Any) at ./boot.jl:331
+ [23] exec_options(::Base.JLOptions) at ./client.jl:272
+ [24] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:09:25.35
+CPU usage: 7.33s (5.07s user, 2.29s kernel)
+
+Network usage:
+- eth0: 2.522 MiB received, 23.896 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":20,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":1,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":20,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":20,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":1,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":20,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":110592,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":4096,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":110592,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":110592,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":4096,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":110592,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":298414080,"max_usage":434270208,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":189616128,"inactive_file":135168,"inactive_anon":77180928,"total_pgfault":167607,"total_cache":79331328,"total_rss_huge":0,"total_active_anon":191668224,"total_pgmajfault":0,"pgpgin":130416,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":64765,"hierarchical_memsw_limit":0,"cache":79331328,"active_file":135168,"pgfault":167607,"total_mapped_file":0,"total_pgpgout":64765,"total_writeback":0,"rss":189616128,"unevictable":0,"total_inactive_anon":77180928,"total_pgpgin":130416,"active_anon":191668224,"total_active_file":135168},"limit":540965302272},"name":"/DungAnalyse-Q73FOXxb","networks":{"eth0":{"rx_bytes":2644260,"rx_packets":259,"tx_packets":265,"tx_bytes":24469,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"13d23805bb232b7934f6b51bb80bd5a1642f683581be2db299736768740381a7","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4431182494522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":5070000000,"usage_in_kernelmode":2290000000,"total_usage":7334843988,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7334838718,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5270,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:09:25.352809377Z"}

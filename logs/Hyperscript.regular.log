@@ -1,0 +1,75 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:44:30.652
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:44:32.432
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Hyperscript ─ v0.0.4
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [47d2ed2b] + Hyperscript v0.0.4
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [47d2ed2b] + Hyperscript v0.0.4
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T19:44:36.044
+#
+
+    Testing Hyperscript
+Status `/tmp/jl_YL8Ju1/Project.toml`
+  [47d2ed2b] Hyperscript v0.0.4
+  [8dfed614] Test
+Status `/tmp/jl_YL8Ju1/Manifest.toml`
+  [47d2ed2b] Hyperscript v0.0.4
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+    Testing Hyperscript tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:44:43.87
+CPU usage: 13.35s (10.89s user, 2.50s kernel)
+
+Network usage:
+- eth0: 2.542 MiB received, 25.140 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":337256448,"max_usage":597676032,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":217169920,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":307593,"total_cache":89853952,"total_rss_huge":0,"total_active_anon":217890816,"total_pgmajfault":0,"pgpgin":201564,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":126632,"hierarchical_memsw_limit":0,"cache":89853952,"active_file":10407936,"pgfault":307593,"total_mapped_file":0,"total_pgpgout":126632,"total_writeback":0,"rss":217169920,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":201564,"active_anon":217890816,"total_active_file":10407936},"limit":540965302272},"name":"/Hyperscript-gpn4Va8R","networks":{"eth0":{"rx_bytes":2665807,"rx_packets":250,"tx_packets":248,"tx_bytes":25743,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"8d8f5bdc5d5024deeec745e541352adf6a7b07e08bae9b0f032f4f6575ee6c8d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5162166074522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":10890000000,"usage_in_kernelmode":2500000000,"total_usage":13353180957,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13353174647,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6310,0,0,0]}},"read":"2021-01-11T19:44:44.090680031Z"}

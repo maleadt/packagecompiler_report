@@ -1,0 +1,574 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T22:42:54.608
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T22:42:56.325
+#
+
+ Installing known registries into `~/.julia`
+############################                                              39.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed BeliefGridValueIteration ───── v0.1.1
+  Installed Inflate ────────────────────── v0.1.2
+  Installed NamedTupleTools ────────────── v0.13.7
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed PackageCompiler ────────────── v1.2.5
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed FillArrays ─────────────────── v0.10.2
+  Installed QuadGK ─────────────────────── v2.4.1
+  Installed POMDPLinter ────────────────── v0.1.1
+  Installed DataStructures ─────────────── v0.18.8
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed Parameters ─────────────────── v0.12.1
+  Installed POMDPModelTools ────────────── v0.3.4
+  Installed SimpleTraits ───────────────── v0.9.3
+  Installed Missings ───────────────────── v0.4.4
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed CommonRLInterface ──────────── v0.2.2
+  Installed StaticArrays ───────────────── v0.12.5
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed Distributions ──────────────── v0.24.10
+  Installed LightGraphs ────────────────── v1.3.4
+  Installed ArnoldiMethod ──────────────── v0.0.4
+  Installed Crayons ────────────────────── v4.0.4
+  Installed PDMats ─────────────────────── v0.10.1
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed ProgressMeter ──────────────── v1.4.1
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Compat ─────────────────────── v3.25.0
+  Installed POMDPs ─────────────────────── v0.9.2
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed UnicodePlots ───────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [d6851e30] + BeliefGridValueIteration v0.1.1
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [ec485272] + ArnoldiMethod v0.0.4
+  [56f22d72] + Artifacts v1.3.0
+  [d6851e30] + BeliefGridValueIteration v0.1.1
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [d842c3ba] + CommonRLInterface v0.2.2
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [a8cc5b0e] + Crayons v4.0.4
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [31c24e10] + Distributions v0.24.10
+  [1a297f60] + FillArrays v0.10.2
+  [d25df0c9] + Inflate v0.1.2
+  [692b3bcd] + JLLWrappers v1.2.0
+  [093fc24a] + LightGraphs v1.3.4
+  [1914dd2f] + MacroTools v0.5.6
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [d9ec5142] + NamedTupleTools v0.13.7
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.10.1
+  [f3bd98c0] + POMDPLinter v0.1.1
+  [08074719] + POMDPModelTools v0.3.4
+  [a93abf59] + POMDPs v0.9.2
+  [9b87118b] + PackageCompiler v1.2.5
+  [d96e819e] + Parameters v0.12.1
+  [92933f4c] + ProgressMeter v1.4.1
+  [1fd47b50] + QuadGK v2.4.1
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [699a6c99] + SimpleTraits v0.9.3
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v0.12.5
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [3a884ed6] + UnPack v1.0.2
+  [b8865327] + UnicodePlots v1.3.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T22:43:03.603
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 176.180 MiB, compilation took 271 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T22:47:43.243
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/BeliefGridValueIteration-s83kAJae.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:47:44.786
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ##O#-#                                                                        ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed BeliefGridValueIteration ───── v0.1.1
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed Inflate ────────────────────── v0.1.2
+  Installed NamedTupleTools ────────────── v0.13.7
+  Installed POMDPLinter ────────────────── v0.1.1
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed FillArrays ─────────────────── v0.10.2
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed QuadGK ─────────────────────── v2.4.1
+  Installed Parameters ─────────────────── v0.12.1
+  Installed DataStructures ─────────────── v0.18.8
+  Installed POMDPModelTools ────────────── v0.3.4
+  Installed SimpleTraits ───────────────── v0.9.3
+  Installed StaticArrays ───────────────── v0.12.5
+  Installed CommonRLInterface ──────────── v0.2.2
+  Installed Missings ───────────────────── v0.4.4
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed Crayons ────────────────────── v4.0.4
+  Installed PDMats ─────────────────────── v0.10.1
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed ArnoldiMethod ──────────────── v0.0.4
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed Distributions ──────────────── v0.24.10
+  Installed LightGraphs ────────────────── v1.3.4
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed ProgressMeter ──────────────── v1.4.1
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed Compat ─────────────────────── v3.25.0
+  Installed POMDPs ─────────────────────── v0.9.2
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed UnicodePlots ───────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [d6851e30] + BeliefGridValueIteration v0.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [ec485272] + ArnoldiMethod v0.0.4
+  [56f22d72] + Artifacts v1.3.0
+  [d6851e30] + BeliefGridValueIteration v0.1.1
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [d842c3ba] + CommonRLInterface v0.2.2
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [a8cc5b0e] + Crayons v4.0.4
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [31c24e10] + Distributions v0.24.10
+  [1a297f60] + FillArrays v0.10.2
+  [d25df0c9] + Inflate v0.1.2
+  [692b3bcd] + JLLWrappers v1.2.0
+  [093fc24a] + LightGraphs v1.3.4
+  [1914dd2f] + MacroTools v0.5.6
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [d9ec5142] + NamedTupleTools v0.13.7
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.10.1
+  [f3bd98c0] + POMDPLinter v0.1.1
+  [08074719] + POMDPModelTools v0.3.4
+  [a93abf59] + POMDPs v0.9.2
+  [d96e819e] + Parameters v0.12.1
+  [92933f4c] + ProgressMeter v1.4.1
+  [1fd47b50] + QuadGK v2.4.1
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [699a6c99] + SimpleTraits v0.9.3
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v0.12.5
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [3a884ed6] + UnPack v1.0.2
+  [b8865327] + UnicodePlots v1.3.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T22:47:51.561
+#
+
+    Testing BeliefGridValueIteration
+┌ Error: Pkg.Resolve.ResolverError("Unsatisfiable requirements detected for package POMDPModels [355abbd5]:\n POMDPModels [355abbd5] log:\n ├─possible versions are: [0.3.0-0.3.5, 0.4.0-0.4.10] or uninstalled\n ├─restricted to versions * by an explicit requirement, leaving only versions [0.3.0-0.3.5, 0.4.0-0.4.10]\n ├─restricted by compatibility requirements with Distributions [31c24e10] to versions: 0.4.10 or uninstalled, leaving only versions: 0.4.10\n │ └─Distributions [31c24e10] log:\n │   ├─possible versions are: [0.16.0-0.16.4, 0.17.0, 0.18.0, 0.19.1-0.19.2, 0.20.0, 0.21.0-0.21.3, 0.21.5-0.21.12, 0.22.0-0.22.6, 0.23.0-0.23.12, 0.24.0-0.24.10] or uninstalled\n │   └─restricted to versions 0.24.10 by an explicit requirement, leaving only versions 0.24.10\n └─restricted by compatibility requirements with StaticArrays [90137ffa] to versions: [0.3.0-0.3.5, 0.4.0-0.4.9] or uninstalled — no versions left\n   └─StaticArrays [90137ffa] log:\n     ├─possible versions are: [0.8.0-0.8.3, 0.9.0-0.9.2, 0.10.0, 0.10.2-0.10.3, 0.11.0-0.11.1, 0.12.0-0.12.5, 1.0.0-1.0.1] or uninstalled\n     └─restricted to versions 0.12.5 by an explicit requirement, leaving only versions 0.12.5", nothing)
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1427
+Status `/tmp/jl_Yq0c0c/Project.toml`
+  [d6851e30] BeliefGridValueIteration v0.1.1
+  [f3bd98c0] POMDPLinter v0.1.1
+  [08074719] POMDPModelTools v0.3.4
+  [355abbd5] POMDPModels v0.4.10
+  [a93abf59] POMDPs v0.9.2
+  [d96e819e] Parameters v0.12.1
+  [92933f4c] ProgressMeter v1.4.1
+  [cef570c6] SARSOP v0.5.4
+  [37e2e46d] LinearAlgebra
+  [de0858da] Printf
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_Yq0c0c/Manifest.toml`
+  [ec485272] ArnoldiMethod v0.0.2
+  [56f22d72] Artifacts v1.3.0
+  [d6851e30] BeliefGridValueIteration v0.1.1
+  [8bb6e9a1] BeliefUpdaters v0.2.2
+  [d360d2e6] ChainRulesCore v0.9.24
+  [35d6a980] ColorSchemes v3.10.2
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.6
+  [d842c3ba] CommonRLInterface v0.2.2
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [a81c6b42] Compose v0.9.1
+  [a8cc5b0e] Crayons v4.0.4
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [31c24e10] Distributions v0.24.10
+  [1a297f60] FillArrays v0.10.2
+  [53c48c17] FixedPointNumbers v0.8.4
+  [d25df0c9] Inflate v0.1.2
+  [c8e1da08] IterTools v1.3.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [093fc24a] LightGraphs v1.3.4
+  [9c8b4983] LightXML v0.9.0
+  [1914dd2f] MacroTools v0.5.6
+  [442fdcdd] Measures v0.3.1
+  [e1d29d7a] Missings v0.4.4
+  [46d2c3a1] MuladdMacro v0.2.2
+  [d9ec5142] NamedTupleTools v0.13.7
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [90014a1f] PDMats v0.10.1
+  [f3bd98c0] POMDPLinter v0.1.1
+  [08074719] POMDPModelTools v0.3.4
+  [355abbd5] POMDPModels v0.4.10
+  [182e52fb] POMDPPolicies v0.3.3
+  [c6f6ee83] POMDPXFiles v0.2.2
+  [a93abf59] POMDPs v0.9.2
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.15
+  [92933f4c] ProgressMeter v1.4.1
+  [1fd47b50] QuadGK v2.4.1
+  [189a3867] Reexport v1.0.0
+  [ae029012] Requires v1.1.2
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [cef570c6] SARSOP v0.5.4
+  [e478675d] SARSOP_jll v0.96.0+0
+  [699a6c99] SimpleTraits v0.9.3
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.2.1
+  [90137ffa] StaticArrays v1.0.1
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [3a884ed6] UnPack v1.0.2
+  [b8865327] UnicodePlots v1.3.0
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Preprocessing discretized belief space... 
+Problem size: |S| = 2 | |A| = 3, |O| = 2 
+Granularity 1 resulting in 2 belief points 
+Computing next belief points...Computing coordinates associated coordinates 50%|███▌   |  ETA: 0:00:00[KComputing coordinates associated coordinates100%|███████| Time: 0:00:00[K
+Finish Preprocessing in 0.639 s 
+Starting Dynamic Programming... 
+iteration 1 / 100 : precision 10.0000 | it time 0.130 | total time 0.769 
+iteration 2 / 100 : precision 9.5000 | it time 0.000 | total time 0.769 
+iteration 3 / 100 : precision 9.0250 | it time 0.000 | total time 0.769 
+iteration 4 / 100 : precision 8.5737 | it time 0.000 | total time 0.769 
+iteration 5 / 100 : precision 8.1451 | it time 0.000 | total time 0.769 
+iteration 6 / 100 : precision 7.7378 | it time 0.000 | total time 0.769 
+iteration 7 / 100 : precision 7.3509 | it time 0.000 | total time 0.769 
+iteration 8 / 100 : precision 6.9834 | it time 0.000 | total time 0.769 
+iteration 9 / 100 : precision 6.6342 | it time 0.000 | total time 0.769 
+iteration 10 / 100 : precision 6.3025 | it time 0.000 | total time 0.769 
+iteration 11 / 100 : precision 5.9874 | it time 0.000 | total time 0.769 
+iteration 12 / 100 : precision 5.6880 | it time 0.000 | total time 0.769 
+iteration 13 / 100 : precision 5.4036 | it time 0.000 | total time 0.769 
+iteration 14 / 100 : precision 5.1334 | it time 0.000 | total time 0.769 
+iteration 15 / 100 : precision 4.8767 | it time 0.000 | total time 0.769 
+iteration 16 / 100 : precision 4.6329 | it time 0.000 | total time 0.769 
+iteration 17 / 100 : precision 4.4013 | it time 0.000 | total time 0.769 
+iteration 18 / 100 : precision 4.1812 | it time 0.000 | total time 0.769 
+iteration 19 / 100 : precision 3.9721 | it time 0.000 | total time 0.769 
+iteration 20 / 100 : precision 3.7735 | it time 0.000 | total time 0.769 
+iteration 21 / 100 : precision 3.5849 | it time 0.000 | total time 0.769 
+iteration 22 / 100 : precision 3.4056 | it time 0.000 | total time 0.769 
+iteration 23 / 100 : precision 3.2353 | it time 0.000 | total time 0.769 
+iteration 24 / 100 : precision 3.0736 | it time 0.000 | total time 0.769 
+iteration 25 / 100 : precision 2.9199 | it time 0.000 | total time 0.769 
+iteration 26 / 100 : precision 2.7739 | it time 0.000 | total time 0.769 
+iteration 27 / 100 : precision 2.6352 | it time 0.000 | total time 0.769 
+iteration 28 / 100 : precision 2.5034 | it time 0.000 | total time 0.769 
+iteration 29 / 100 : precision 2.3783 | it time 0.000 | total time 0.769 
+iteration 30 / 100 : precision 2.2594 | it time 0.000 | total time 0.769 
+iteration 31 / 100 : precision 2.1464 | it time 0.000 | total time 0.769 
+iteration 32 / 100 : precision 2.0391 | it time 0.000 | total time 0.769 
+iteration 33 / 100 : precision 1.9371 | it time 0.000 | total time 0.769 
+iteration 34 / 100 : precision 1.8403 | it time 0.000 | total time 0.769 
+iteration 35 / 100 : precision 1.7482 | it time 0.000 | total time 0.769 
+iteration 36 / 100 : precision 1.6608 | it time 0.000 | total time 0.769 
+iteration 37 / 100 : precision 1.5778 | it time 0.000 | total time 0.769 
+iteration 38 / 100 : precision 1.4989 | it time 0.000 | total time 0.769 
+iteration 39 / 100 : precision 1.4240 | it time 0.000 | total time 0.769 
+iteration 40 / 100 : precision 1.3528 | it time 0.000 | total time 0.769 
+iteration 41 / 100 : precision 1.2851 | it time 0.000 | total time 0.769 
+iteration 42 / 100 : precision 1.2209 | it time 0.000 | total time 0.769 
+iteration 43 / 100 : precision 1.1598 | it time 0.000 | total time 0.769 
+iteration 44 / 100 : precision 1.1018 | it time 0.000 | total time 0.769 
+iteration 45 / 100 : precision 1.0467 | it time 0.000 | total time 0.769 
+iteration 46 / 100 : precision 0.9944 | it time 0.000 | total time 0.769 
+iteration 47 / 100 : precision 0.9447 | it time 0.000 | total time 0.769 
+iteration 48 / 100 : precision 0.8974 | it time 0.000 | total time 0.769 
+iteration 49 / 100 : precision 0.8526 | it time 0.000 | total time 0.769 
+iteration 50 / 100 : precision 0.8099 | it time 0.000 | total time 0.769 
+iteration 51 / 100 : precision 0.7694 | it time 0.000 | total time 0.769 
+iteration 52 / 100 : precision 0.7310 | it time 0.000 | total time 0.769 
+iteration 53 / 100 : precision 0.6944 | it time 0.000 | total time 0.769 
+iteration 54 / 100 : precision 0.6597 | it time 0.000 | total time 0.769 
+iteration 55 / 100 : precision 0.6267 | it time 0.000 | total time 0.769 
+iteration 56 / 100 : precision 0.5954 | it time 0.000 | total time 0.769 
+iteration 57 / 100 : precision 0.5656 | it time 0.000 | total time 0.769 
+iteration 58 / 100 : precision 0.5373 | it time 0.000 | total time 0.769 
+iteration 59 / 100 : precision 0.5105 | it time 0.000 | total time 0.769 
+iteration 60 / 100 : precision 0.4849 | it time 0.000 | total time 0.769 
+iteration 61 / 100 : precision 0.4607 | it time 0.000 | total time 0.769 
+iteration 62 / 100 : precision 0.4377 | it time 0.000 | total time 0.769 
+iteration 63 / 100 : precision 0.4158 | it time 0.000 | total time 0.769 
+iteration 64 / 100 : precision 0.3950 | it time 0.000 | total time 0.769 
+iteration 65 / 100 : precision 0.3752 | it time 0.000 | total time 0.769 
+iteration 66 / 100 : precision 0.3565 | it time 0.000 | total time 0.769 
+iteration 67 / 100 : precision 0.3387 | it time 0.000 | total time 0.769 
+iteration 68 / 100 : precision 0.3217 | it time 0.000 | total time 0.769 
+iteration 69 / 100 : precision 0.3056 | it time 0.000 | total time 0.769 
+iteration 70 / 100 : precision 0.2904 | it time 0.000 | total time 0.769 
+iteration 71 / 100 : precision 0.2758 | it time 0.000 | total time 0.769 
+iteration 72 / 100 : precision 0.2620 | it time 0.000 | total time 0.769 
+iteration 73 / 100 : precision 0.2489 | it time 0.000 | total time 0.769 
+iteration 74 / 100 : precision 0.2365 | it time 0.000 | total time 0.769 
+iteration 75 / 100 : precision 0.2247 | it time 0.000 | total time 0.769 
+iteration 76 / 100 : precision 0.2134 | it time 0.000 | total time 0.769 
+iteration 77 / 100 : precision 0.2028 | it time 0.000 | total time 0.769 
+iteration 78 / 100 : precision 0.1926 | it time 0.000 | total time 0.769 
+iteration 79 / 100 : precision 0.1830 | it time 0.000 | total time 0.769 
+iteration 80 / 100 : precision 0.1738 | it time 0.000 | total time 0.769 
+iteration 81 / 100 : precision 0.1652 | it time 0.000 | total time 0.769 
+iteration 82 / 100 : precision 0.1569 | it time 0.000 | total time 0.769 
+iteration 83 / 100 : precision 0.1491 | it time 0.000 | total time 0.769 
+iteration 84 / 100 : precision 0.1416 | it time 0.000 | total time 0.769 
+iteration 85 / 100 : precision 0.1345 | it time 0.000 | total time 0.769 
+iteration 86 / 100 : precision 0.1278 | it time 0.000 | total time 0.769 
+iteration 87 / 100 : precision 0.1214 | it time 0.000 | total time 0.769 
+iteration 88 / 100 : precision 0.1153 | it time 0.000 | total time 0.769 
+iteration 89 / 100 : precision 0.1096 | it time 0.000 | total time 0.769 
+iteration 90 / 100 : precision 0.1041 | it time 0.000 | total time 0.769 
+iteration 91 / 100 : precision 0.0989 | it time 0.000 | total time 0.769 
+iteration 92 / 100 : precision 0.0939 | it time 0.000 | total time 0.769 
+iteration 93 / 100 : precision 0.0892 | it time 0.000 | total time 0.769 
+iteration 94 / 100 : precision 0.0848 | it time 0.000 | total time 0.769 
+iteration 95 / 100 : precision 0.0805 | it time 0.000 | total time 0.769 
+iteration 96 / 100 : precision 0.0765 | it time 0.000 | total time 0.769 
+iteration 97 / 100 : precision 0.0727 | it time 0.000 | total time 0.769 
+iteration 98 / 100 : precision 0.0691 | it time 0.000 | total time 0.769 
+iteration 99 / 100 : precision 0.0656 | it time 0.000 | total time 0.769 
+Granularity 1 resulting in 2 belief points 
+Granularity 5 resulting in 6 belief points 
+Test Summary: | Pass  Total
+basic         |    1      1
+INFO: POMDPLinter requirements for solve(::BeliefGridValueIterationSolver, ::POMDP) and dependencies. ([✔] = implemented correctly; [X] = not implemented; [?] = could not determine)
+
+For solve(::BeliefGridValueIterationSolver, ::POMDP):
+  [No additional requirements]
+For (POMDPModelTools.SparseTabularPOMDP, Tuple{POMDP}) (in solve(::BeliefGridValueIterationSolver, ::POMDP)):
+  [✔] discount(::TigerPOMDP)
+  [✔] transition(::TigerPOMDP, ::Bool, ::Int64)
+  [✔] reward(::TigerPOMDP, ::Bool, ::Int64, ::Bool)
+  [✔] observation(::TigerPOMDP, ::Int64, ::Bool)
+  [✔] stateindex(::TigerPOMDP, ::Bool)
+  [✔] actionindex(::TigerPOMDP, ::Int64)
+  [✔] actions(::TigerPOMDP, ::Bool)
+  [✔] observations(::TigerPOMDP)
+  [✔] obsindex(::TigerPOMDP, ::Bool)
+  [✔] length(::Array{Int641})
+  [✔] length(::Tuple{BoolBool})
+  [✔] support(::BoolDistribution)
+  [✔] pdf(::BoolDistribution, ::Bool)
+For ordered_states(::Union{MDP,POMDP}) (in (POMDPModelTools.SparseTabularPOMDP, Tuple{POMDP})):
+  [✔] states(::TigerPOMDP)
+For ordered_actions(::Union{MDP,POMDP}) (in (POMDPModelTools.SparseTabularPOMDP, Tuple{POMDP})):
+  [✔] actions(::TigerPOMDP)
+For ordered_observations(::Union{MDP,POMDP}) (in (POMDPModelTools.SparseTabularPOMDP, Tuple{POMDP})):
+  [No additional requirements]
+Test Summary: |
+requirements  | No tests
+Granularity 10 resulting in 11 belief points 
+SARSOP comparison: Error During Test at /home/user/.julia/packages/BeliefGridValueIteration/qxE5V/test/runtests.jl:29
+  Got exception outside of a @test
+  SystemError: opening file "model.pomdpx": Permission denied
+  Stacktrace:
+   [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+   [2] #systemerror#48 at ./error.jl:167 [inlined]
+   [3] systemerror at ./error.jl:167 [inlined]
+   [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Bool, append::Nothing) at ./iostream.jl:284
+   [5] open(::String, ::String; lock::Bool) at ./iostream.jl:346
+   [6] open(::String, ::String) at ./iostream.jl:346
+   [7] write(::TigerPOMDP, ::POMDPXFiles.POMDPXFile) at /home/user/.julia/packages/POMDPXFiles/f6sNq/src/writer.jl:51
+   [8] POMDPFile(::TigerPOMDP, ::String; verbose::Bool) at /home/user/.julia/packages/SARSOP/SiuJd/src/file.jl:24
+   [9] solve(::SARSOPSolver, ::TigerPOMDP; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/user/.julia/packages/SARSOP/SiuJd/src/solver.jl:65
+   [10] solve(::SARSOPSolver, ::TigerPOMDP) at /home/user/.julia/packages/SARSOP/SiuJd/src/solver.jl:62
+   [11] top-level scope at /home/user/.julia/packages/BeliefGridValueIteration/qxE5V/test/runtests.jl:35
+   [12] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [13] top-level scope at /home/user/.julia/packages/BeliefGridValueIteration/qxE5V/test/runtests.jl:30
+   [14] include(::String) at ./client.jl:457
+   [15] top-level scope at none:6
+   [16] eval(::Module, ::Any) at ./boot.jl:331
+   [17] exec_options(::Base.JLOptions) at ./client.jl:272
+   [18] _start() at ./client.jl:506
+  
+Test Summary:     | Error  Total
+SARSOP comparison |     1      1
+ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/user/.julia/packages/BeliefGridValueIteration/qxE5V/test/runtests.jl:29
+
+PkgEval failed: Package BeliefGridValueIteration errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:49:07.084
+CPU usage: 83.72s (77.26s user, 6.56s kernel)
+
+Network usage:
+- eth0: 15.193 MiB received, 359.245 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":19,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":19,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":98304,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":40960,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":98304,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":98304,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":40960,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":98304,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":420270080,"max_usage":1471287296,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":252694528,"inactive_file":135168,"inactive_anon":113135616,"total_pgfault":2248092,"total_cache":133939200,"total_rss_huge":0,"total_active_anon":273580032,"total_pgmajfault":0,"pgpgin":1360128,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":1265714,"hierarchical_memsw_limit":0,"cache":133939200,"active_file":135168,"pgfault":2248092,"total_mapped_file":0,"total_pgpgout":1265714,"total_writeback":0,"rss":252694528,"unevictable":0,"total_inactive_anon":113135616,"total_pgpgin":1360128,"active_anon":273580032,"total_active_file":135168},"limit":540965302272},"name":"/BeliefGridValueIteration-bQlbsr3H","networks":{"eth0":{"rx_bytes":15930970,"rx_packets":2980,"tx_packets":3232,"tx_bytes":367867,"tx_dropped":0,"rx_dropped":3,"tx_errors":0,"rx_errors":0}},"id":"6a6e720b5c0d1d0082b91ff13be0ba4e2566ae49ed94cb3647090f52af7afb07","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6575681414522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":77260000000,"usage_in_kernelmode":6560000000,"total_usage":83717873012,"percpu_usage":[0,0,0,0,83717868392,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4620,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:49:07.087660927Z"}

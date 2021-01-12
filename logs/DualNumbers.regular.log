@@ -1,15 +1,15 @@
 ################################################################################
-# PkgEval set-up: 2021-01-11T15:21:39.019
+# PkgEval set-up: 2021-01-11T20:26:58.998
 #
 
 Julia Version 1.5.3
 Commit 599f52c4c6 (2020-12-18 13:33 UTC)
 Platform Info:
   OS: Linux (x86_64-linux-gnu)
-  CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor
+  CPU: AMD EPYC 7502 32-Core Processor
   WORD_SIZE: 64
   LIBM: libopenlibm
-  LLVM: libLLVM-9.0.1 (ORCJIT, znver1)
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
 Environment:
   JULIA_PKG_PRECOMPILE_AUTO = 0
   JULIA_PKGEVAL = true
@@ -18,23 +18,23 @@ Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so 
 
 
 ################################################################################
-# Installation: 2021-01-11T15:21:40.662
+# Installation: 2021-01-11T20:27:00.84
 #
 
  Installing known registries into `~/.julia`
-#=#=#                                                                         ##############################                                            42.2%######################################################################## 100.0%
+######################################################################## 100.0%
       Added registry `General` to `~/.julia/registries/General`
   Resolving package versions...
   Installed DualNumbers ────────────────── v0.6.3
-  Installed NaNMath ────────────────────── v0.3.5
-  Installed Artifacts ──────────────────── v1.3.0
-  Installed ChainRulesCore ─────────────── v0.9.24
-  Installed OpenSpecFun_jll ────────────── v0.5.3+4
-  Installed JLLWrappers ────────────────── v1.2.0
-  Installed MuladdMacro ────────────────── v0.2.2
-  Installed SpecialFunctions ───────────── v1.2.1
   Installed CompilerSupportLibraries_jll ─ v0.3.4+0
   Installed Calculus ───────────────────── v0.5.1
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Artifacts ──────────────────── v1.3.0
 Updating `~/.julia/environments/v1.5/Project.toml`
   [fa6b7ba4] + DualNumbers v0.6.3
 Updating `~/.julia/environments/v1.5/Manifest.toml`
@@ -69,18 +69,18 @@ Updating `~/.julia/environments/v1.5/Manifest.toml`
 
 
 ################################################################################
-# Testing: 2021-01-11T15:21:45.257
+# Testing: 2021-01-11T20:27:06.27
 #
 
     Testing DualNumbers
-Status `/tmp/jl_1eSH6h/Project.toml`
+Status `/tmp/jl_iG2EoU/Project.toml`
   [49dc2e85] Calculus v0.5.1
   [fa6b7ba4] DualNumbers v0.6.3
   [77ba4419] NaNMath v0.3.5
   [276daf66] SpecialFunctions v1.2.1
   [37e2e46d] LinearAlgebra
   [8dfed614] Test
-Status `/tmp/jl_1eSH6h/Manifest.toml`
+Status `/tmp/jl_iG2EoU/Manifest.toml`
   [56f22d72] Artifacts v1.3.0
   [49dc2e85] Calculus v0.5.1
   [d360d2e6] ChainRulesCore v0.9.24
@@ -115,7 +115,7 @@ Skipping Base.active_repl
 Skipping Base.active_repl_backend
 Test Failed at /home/pkgeval/.julia/packages/DualNumbers/832Cq/test/runtests.jl:4
   Expression: isempty(detect_ambiguities(DualNumbers, Base, Core))
-   Evaluated: isempty(Tuple{Method,Method}[(*(s, comp::ChainRulesCore.Composite) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:138, *(p::SpecialFunctions.SimplePoly, c) in SpecialFunctions at /home/pkgeval/.julia/packages/SpecialFunctions/ERZOU/src/expint.jl:8), (*(a::ChainRulesCore.AbstractThunk, b) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:111, *(c, p::SpecialFunctions.SimplePoly) in SpecialFunctions at /home/pkgeval/.julia/packages/SpecialFunctions/ERZOU/src/expint.jl:9), (+(a::ChainRulesCore.One, b) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:94, +(a::P, d::ChainRulesCore.Composite{P,T} where T) where P in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:119), (*(::Any, ::ChainRulesCore.Zero) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:69, *(p::SpecialFunctions.SimplePoly, c) in SpecialFunctions at /home/pkgeval/.julia/packages/SpecialFunctions/ERZOU/src/expint.jl:8), (*(::ChainRulesCore.DoesNotExist, ::Any) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:28, *(c, p::SpecialFunctions.SimplePoly) in SpecialFunctions at /home/pkgeval/.julia/packages/SpecialFunctions/ERZOU/src/expint.jl:9), (*(::ChainRulesCore.One, b) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:98, *(c, p::SpecialFunctions.SimplePoly) in SpecialFunctions at /home/pkgeval/.julia/packages/SpecialFunctions/ERZOU/src/expint.jl:9), (*(::Any, ::ChainRulesCore.DoesNotExist) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:29, *(p::SpecialFunctions.SimplePoly, c) in SpecialFunctions at /home/pkgeval/.julia/packages/SpecialFunctions/ERZOU/src/expint.jl:8), (*(comp::ChainRulesCore.Composite, s) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:139, *(c, p::SpecialFunctions.SimplePoly) in SpecialFunctions at /home/pkgeval/.julia/packages/SpecialFunctions/ERZOU/src/expint.jl:9), (+(a, b::ChainRulesCore.One) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:95, +(a::ChainRulesCore.Composite{P,T} where T, b::P) where P in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:132), (+(a::P, d::ChainRulesCore.Composite{P,T} where T) where P in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:119, +(a::ChainRulesCore.Composite{P,T} where T, b::P) where P in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:132), (*(::ChainRulesCore.Zero, ::Any) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:68, *(c, p::SpecialFunctions.SimplePoly) in SpecialFunctions at /home/pkgeval/.julia/packages/SpecialFunctions/ERZOU/src/expint.jl:9), (*(a, b::ChainRulesCore.AbstractThunk) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:112, *(p::SpecialFunctions.SimplePoly, c) in SpecialFunctions at /home/pkgeval/.julia/packages/SpecialFunctions/ERZOU/src/expint.jl:8), (*(a, ::ChainRulesCore.One) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:99, *(p::SpecialFunctions.SimplePoly, c) in SpecialFunctions at /home/pkgeval/.julia/packages/SpecialFunctions/ERZOU/src/expint.jl:8), (*(s, comp::ChainRulesCore.Composite) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:138, *(comp::ChainRulesCore.Composite, s) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:139)])
+   Evaluated: isempty(Tuple{Method,Method}[(*(a, ::ChainRulesCore.One) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:99, *(p::SpecialFunctions.SimplePoly, c) in SpecialFunctions at /home/pkgeval/.julia/packages/SpecialFunctions/ERZOU/src/expint.jl:8), (*(s, comp::ChainRulesCore.Composite) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:138, *(p::SpecialFunctions.SimplePoly, c) in SpecialFunctions at /home/pkgeval/.julia/packages/SpecialFunctions/ERZOU/src/expint.jl:8), (*(comp::ChainRulesCore.Composite, s) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:139, *(c, p::SpecialFunctions.SimplePoly) in SpecialFunctions at /home/pkgeval/.julia/packages/SpecialFunctions/ERZOU/src/expint.jl:9), (*(::Any, ::ChainRulesCore.DoesNotExist) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:29, *(p::SpecialFunctions.SimplePoly, c) in SpecialFunctions at /home/pkgeval/.julia/packages/SpecialFunctions/ERZOU/src/expint.jl:8), (*(::ChainRulesCore.One, b) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:98, *(c, p::SpecialFunctions.SimplePoly) in SpecialFunctions at /home/pkgeval/.julia/packages/SpecialFunctions/ERZOU/src/expint.jl:9), (+(a::ChainRulesCore.One, b) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:94, +(a::P, d::ChainRulesCore.Composite{P,T} where T) where P in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:119), (*(::Any, ::ChainRulesCore.Zero) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:69, *(p::SpecialFunctions.SimplePoly, c) in SpecialFunctions at /home/pkgeval/.julia/packages/SpecialFunctions/ERZOU/src/expint.jl:8), (*(a::ChainRulesCore.AbstractThunk, b) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:111, *(c, p::SpecialFunctions.SimplePoly) in SpecialFunctions at /home/pkgeval/.julia/packages/SpecialFunctions/ERZOU/src/expint.jl:9), (*(s, comp::ChainRulesCore.Composite) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:138, *(comp::ChainRulesCore.Composite, s) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:139), (+(a::P, d::ChainRulesCore.Composite{P,T} where T) where P in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:119, +(a::ChainRulesCore.Composite{P,T} where T, b::P) where P in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:132), (*(a, b::ChainRulesCore.AbstractThunk) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:112, *(p::SpecialFunctions.SimplePoly, c) in SpecialFunctions at /home/pkgeval/.julia/packages/SpecialFunctions/ERZOU/src/expint.jl:8), (*(::ChainRulesCore.DoesNotExist, ::Any) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:28, *(c, p::SpecialFunctions.SimplePoly) in SpecialFunctions at /home/pkgeval/.julia/packages/SpecialFunctions/ERZOU/src/expint.jl:9), (*(::ChainRulesCore.Zero, ::Any) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:68, *(c, p::SpecialFunctions.SimplePoly) in SpecialFunctions at /home/pkgeval/.julia/packages/SpecialFunctions/ERZOU/src/expint.jl:9), (+(a, b::ChainRulesCore.One) in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:95, +(a::ChainRulesCore.Composite{P,T} where T, b::P) where P in ChainRulesCore at /home/pkgeval/.julia/packages/ChainRulesCore/cpHLu/src/differential_arithmetic.jl:132)])
 ERROR: LoadError: There was an error during testing
 in expression starting at /home/pkgeval/.julia/packages/DualNumbers/832Cq/test/runtests.jl:4
 
@@ -141,10 +141,10 @@ Stacktrace:
 
 
 ################################################################################
-# PkgEval teardown: 2021-01-11T15:22:03.821
-CPU usage: 24.48s (22.20s user, 2.31s kernel)
+# PkgEval teardown: 2021-01-11T20:27:32.811
+CPU usage: 33.76s (30.28s user, 3.55s kernel)
 
 Network usage:
-- eth0: 2.923 MiB received, 84.680 KiB sent
+- eth0: 2.883 MiB received, 67.912 KiB sent
 
-Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":26,"op":"Write","minor":0},{"major":259,"value":21,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":26,"op":"Total","minor":0}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":135168,"op":"Write","minor":0},{"major":259,"value":114688,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":135168,"op":"Total","minor":0}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":327884800,"max_usage":1031942144,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":215248896,"inactive_file":135168,"inactive_anon":79749120,"total_pgfault":669702,"total_cache":83148800,"total_rss_huge":4194304,"total_active_anon":218525696,"total_pgmajfault":0,"pgpgin":531036,"rss_huge":4194304,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":459219,"hierarchical_memsw_limit":0,"cache":83148800,"active_file":135168,"pgfault":669702,"total_mapped_file":0,"total_pgpgout":459219,"total_writeback":0,"rss":215248896,"unevictable":0,"total_inactive_anon":79749120,"total_pgpgin":531036,"active_anon":218525696,"total_active_file":135168},"limit":67467247616},"name":"/DualNumbers-1BzkCSHW","networks":{"eth0":{"rx_bytes":3064734,"rx_packets":875,"tx_packets":826,"tx_bytes":86712,"tx_dropped":0,"rx_dropped":0,"tx_errors":0,"rx_errors":0}},"id":"683f609cd578e75146efc2d24dc0915780d1cbcb7d1d2045a03c01fba2a2dc89","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":7101482425808967,"online_cpus":64,"cpu_usage":{"usage_in_usermode":22200000000,"usage_in_kernelmode":2310000000,"total_usage":24483830396,"percpu_usage":[0,24483546323,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,280005,4068,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:22:03.822987856Z"}
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":319557632,"max_usage":1017122816,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":206581760,"inactive_file":135168,"inactive_anon":79749120,"total_pgfault":840477,"total_cache":83124224,"total_rss_huge":0,"total_active_anon":210051072,"total_pgmajfault":0,"pgpgin":561825,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":491059,"hierarchical_memsw_limit":0,"cache":83124224,"active_file":135168,"pgfault":840477,"total_mapped_file":0,"total_pgpgout":491059,"total_writeback":0,"rss":206581760,"unevictable":0,"total_inactive_anon":79749120,"total_pgpgin":561825,"active_anon":210051072,"total_active_file":135168},"limit":540965302272},"name":"/DualNumbers-X8LVVn6s","networks":{"eth0":{"rx_bytes":3022947,"rx_packets":532,"tx_packets":581,"tx_bytes":69542,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"e1e46d3195fe626642ec9f39f485801a665e7b77a0b4716bb728427cab1b140b","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5490505774522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":30280000000,"usage_in_kernelmode":3550000000,"total_usage":33755564690,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33755559910,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4780,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:27:32.814445723Z"}

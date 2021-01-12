@@ -1,0 +1,119 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:43:05.813
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:43:07.99
+#
+
+ Installing known registries into `~/.julia`
+####                                                                       5.7%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed PaddedViews ── v0.5.7
+  Installed OffsetArrays ─ v1.5.0
+  Installed Adapt ──────── v2.4.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [5432bcbf] + PaddedViews v0.5.7
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [79e6a3ab] + Adapt v2.4.0
+  [6fe1bfb0] + OffsetArrays v1.5.0
+  [5432bcbf] + PaddedViews v0.5.7
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+
+
+################################################################################
+# Testing: 2021-01-11T20:43:12.477
+#
+
+    Testing PaddedViews
+Status `/tmp/jl_l0u53Q/Project.toml`
+  [e30172f5] Documenter v0.26.1
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [5432bcbf] PaddedViews v0.5.7
+  [8dfed614] Test
+Status `/tmp/jl_l0u53Q/Manifest.toml`
+  [79e6a3ab] Adapt v2.4.0
+  [ffbed154] DocStringExtensions v0.8.3
+  [e30172f5] Documenter v0.26.1
+  [b5f81e59] IOCapture v0.1.1
+  [682c06a0] JSON v0.21.1
+  [6fe1bfb0] OffsetArrays v1.5.0
+  [5432bcbf] PaddedViews v0.5.7
+  [69de0a69] Parsers v1.0.15
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Skipping Base.active_repl
+Skipping Base.active_repl_backend
+Skipping Base.active_repl
+Skipping Base.active_repl_backend
+Test Summary: | Pass  Total
+ambiguities   |    1      1
+[ Info: SetupBuildDirectory: setting up build directory.
+[ Info: Doctest: running doctests.
+[ Info: Skipped ExpandTemplates step (doctest only).
+[ Info: Skipped CrossReferences step (doctest only).
+[ Info: Skipped CheckDocument step (doctest only).
+[ Info: Skipped Populate step (doctest only).
+[ Info: Skipped RenderDocument step (doctest only).
+Test Summary:         | Pass  Total
+Doctests: PaddedViews |    1      1
+Test Summary: | Pass  Total
+PaddedView    |   74     74
+Test Summary: | Pass  Total
+paddedviews   |   19     19
+Test Summary:   | Pass  Total
+sym_paddedviews |   26     26
+Test Summary: | Pass  Total
+showarg       |    1      1
+Test Summary: | Pass  Total
+similar       |   60     60
+Test Summary:   | Pass  Total
+nothing/missing |   38     38
+    Testing PaddedViews tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:43:49.201
+CPU usage: 43.44s (39.88s user, 3.62s kernel)
+
+Network usage:
+- eth0: 3.207 MiB received, 67.972 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":341725184,"max_usage":1055653888,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":218181632,"inactive_file":135168,"inactive_anon":81776640,"total_pgfault":912021,"total_cache":92979200,"total_rss_huge":0,"total_active_anon":225730560,"total_pgmajfault":0,"pgpgin":558393,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":482412,"hierarchical_memsw_limit":0,"cache":92979200,"active_file":3919872,"pgfault":912021,"total_mapped_file":0,"total_pgpgout":482412,"total_writeback":0,"rss":218181632,"unevictable":0,"total_inactive_anon":81776640,"total_pgpgin":558393,"active_anon":225730560,"total_active_file":3919872},"limit":540965302272},"name":"/PaddedViews-zU8cWMj1","networks":{"eth0":{"rx_bytes":3362514,"rx_packets":629,"tx_packets":656,"tx_bytes":69603,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"9089adac613b6b12a1e4bd700c3e3d40409e9ec1c0125003eea5f2035303d6de","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5615247994522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":39880000000,"usage_in_kernelmode":3620000000,"total_usage":43436594183,"percpu_usage":[0,0,0,0,0,0,0,0,0,43436594183,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:43:49.204201783Z"}

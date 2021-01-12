@@ -1,0 +1,194 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:45:26.734
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:45:28.556
+#
+
+ Installing known registries into `~/.julia`
+#############################################                             63.6%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Serd ─────────── v0.2.0
+  Installed Homebrew ─────── v0.7.1
+  Installed BinDeps ──────── v0.8.10
+  Installed URIParser ────── v0.4.1
+  Installed JSON ─────────── v0.21.1
+  Installed Compat ───────── v2.2.1
+  Installed AutoHashEquals ─ v0.2.0
+  Installed Parsers ──────── v1.0.15
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [42699a24] + Serd v0.2.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [15f4f7f2] + AutoHashEquals v0.2.0
+  [9e28174c] + BinDeps v0.8.10
+  [34da2185] + Compat v2.2.1
+  [d9be37ee] + Homebrew v0.7.1
+  [682c06a0] + JSON v0.21.1
+  [69de0a69] + Parsers v1.0.15
+  [42699a24] + Serd v0.2.0
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building Homebrew → `~/.julia/packages/Homebrew/s09IX/deps/build.log`
+   Building Serd ────→ `~/.julia/packages/Serd/cF1ug/deps/build.log`
+┌ Error: Error building `Serd`: 
+│ ERROR: LoadError: None of the selected providers can install dependency serd.
+│ Use BinDeps.debug(package_name) to see available providers
+│ 
+│ Stacktrace:
+│  [1] error(::String) at ./error.jl:33
+│  [2] satisfy!(::BinDeps.LibraryDependency, ::Array{DataType,1}) at /home/pkgeval/.julia/packages/BinDeps/ZEval/src/dependencies.jl:949
+│  [3] satisfy!(::BinDeps.LibraryDependency) at /home/pkgeval/.julia/packages/BinDeps/ZEval/src/dependencies.jl:922
+│  [4] top-level scope at /home/pkgeval/.julia/packages/BinDeps/ZEval/src/dependencies.jl:977
+│  [5] include(::String) at ./client.jl:457
+│  [6] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/Serd/cF1ug/deps/build.jl:11
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+
+
+################################################################################
+# Testing: 2021-01-11T21:45:38.238
+#
+
+    Testing Serd
+Status `/tmp/jl_AyAk1Q/Project.toml`
+  [15f4f7f2] AutoHashEquals v0.2.0
+  [9e28174c] BinDeps v0.8.10
+  [34da2185] Compat v2.2.1
+  [d9be37ee] Homebrew v0.7.1
+  [42699a24] Serd v0.2.0
+  [8f399da3] Libdl
+  [8dfed614] Test
+Status `/tmp/jl_AyAk1Q/Manifest.toml`
+  [15f4f7f2] AutoHashEquals v0.2.0
+  [9e28174c] BinDeps v0.8.10
+  [34da2185] Compat v2.2.1
+  [d9be37ee] Homebrew v0.7.1
+  [682c06a0] JSON v0.21.1
+  [69de0a69] Parsers v1.0.15
+  [42699a24] Serd v0.2.0
+  [30578b45] URIParser v0.4.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+ERROR: LoadError: LoadError: could not open file /home/pkgeval/.julia/packages/Serd/cF1ug/deps/deps.jl
+Stacktrace:
+ [1] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [2] include at ./Base.jl:368 [inlined]
+ [3] include(::String) at /home/pkgeval/.julia/packages/Serd/cF1ug/src/CSerd.jl:3
+ [4] top-level scope at /home/pkgeval/.julia/packages/Serd/cF1ug/src/CSerd.jl:15
+ [5] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [6] include at ./Base.jl:368 [inlined]
+ [7] include(::String) at /home/pkgeval/.julia/packages/Serd/cF1ug/src/Serd.jl:1
+ [8] top-level scope at /home/pkgeval/.julia/packages/Serd/cF1ug/src/Serd.jl:7
+ [9] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [10] include(::Module, ::String) at ./Base.jl:368
+ [11] top-level scope at none:2
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at ./none:3
+in expression starting at /home/pkgeval/.julia/packages/Serd/cF1ug/src/CSerd.jl:15
+in expression starting at /home/pkgeval/.julia/packages/Serd/cF1ug/src/Serd.jl:7
+ERROR: LoadError: LoadError: Failed to precompile Serd [42699a24-3520-5f41-a549-6a478ed667c2] to /home/pkgeval/.julia/compiled/v1.5/Serd/icxYJ_uWmKH.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1305
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ [6] include(::String) at ./client.jl:457
+ [7] top-level scope at /home/pkgeval/.julia/packages/Serd/cF1ug/test/runtests.jl:3
+ [8] include(::String) at ./client.jl:457
+ [9] top-level scope at none:6
+in expression starting at /home/pkgeval/.julia/packages/Serd/cF1ug/test/data/turtle_ex1.jl:2
+in expression starting at /home/pkgeval/.julia/packages/Serd/cF1ug/test/runtests.jl:3
+
+PkgEval failed: Package Serd errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:45:44.212
+CPU usage: 17.49s (14.43s user, 3.11s kernel)
+
+Network usage:
+- eth0: 2.782 MiB received, 60.948 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":32,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":13,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":32,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":32,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":13,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":32,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":159744,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":53248,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":159744,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":159744,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":53248,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":159744,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":310321152,"max_usage":739581952,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":198709248,"inactive_file":135168,"inactive_anon":79884288,"total_pgfault":591822,"total_cache":81522688,"total_rss_huge":0,"total_active_anon":200318976,"total_pgmajfault":0,"pgpgin":401412,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":332998,"hierarchical_memsw_limit":0,"cache":81522688,"active_file":135168,"pgfault":591822,"total_mapped_file":0,"total_pgpgout":332998,"total_writeback":0,"rss":198709248,"unevictable":0,"total_inactive_anon":79884288,"total_pgpgin":401412,"active_anon":200318976,"total_active_file":135168},"limit":540965302272},"name":"/Serd-iOkpWeLc","networks":{"eth0":{"rx_bytes":2917526,"rx_packets":505,"tx_packets":547,"tx_bytes":62411,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"df03df68f71c659fbd05efb4cb0e3811170568bcea9b1ad85386c9ba8a67b549","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6089781554522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":14430000000,"usage_in_kernelmode":3110000000,"total_usage":17494644022,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17494641052,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2970,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:45:44.215911542Z"}

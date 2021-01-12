@@ -1,0 +1,198 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:08:26.489
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:08:28.315
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Requires ────────── v1.1.2
+  Installed Hwloc_jll ───────── v2.2.0+0
+  Installed Hwloc ───────────── v1.1.0
+  Installed ArrayInterface ──── v2.14.13
+  Installed IfElse ──────────── v0.1.0
+  Installed VectorizationBase ─ v0.15.2
+  Installed SLEEFPirates ────── v0.6.4
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [476501e8] + SLEEFPirates v0.6.4
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [4fba245c] + ArrayInterface v2.14.13
+  [0e44f5e4] + Hwloc v1.1.0
+  [e33a78d0] + Hwloc_jll v2.2.0+0
+  [615f187c] + IfElse v0.1.0
+  [ae029012] + Requires v1.1.2
+  [476501e8] + SLEEFPirates v0.6.4
+  [3d5dd08c] + VectorizationBase v0.15.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T17:08:34.622
+#
+
+    Testing SLEEFPirates
+Status `/tmp/jl_PJwRq9/Project.toml`
+  [4c88cf16] Aqua v0.5.0
+  [476501e8] SLEEFPirates v0.6.4
+  [3d5dd08c] VectorizationBase v0.15.2
+  [8dfed614] Test
+Status `/tmp/jl_PJwRq9/Manifest.toml`
+  [4c88cf16] Aqua v0.5.0
+  [4fba245c] ArrayInterface v2.14.13
+  [0e44f5e4] Hwloc v1.1.0
+  [e33a78d0] Hwloc_jll v2.2.0+0
+  [615f187c] IfElse v0.1.0
+  [ae029012] Requires v1.1.2
+  [476501e8] SLEEFPirates v0.6.4
+  [3d5dd08c] VectorizationBase v0.15.2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Skipping Base.Filesystem.JL_O_RANDOM
+Skipping Base.Filesystem.JL_O_SEQUENTIAL
+Skipping Base.Filesystem.JL_O_SHORT_LIVED
+Skipping Base.Filesystem.JL_O_TEMPORARY
+Skipping Base.active_repl
+Skipping Base.active_repl_backend
+Accuracy tests for Float32
+exp               : max 0.9315635561943054 at x = 37.863457                       : mean 0.2665475394615339
+asinh             : max 0.5239218473434448 at x = -947.36                         : mean 0.24976974112500575
+atanh             : max 0.5048303008079529 at x = 0.202                           : mean 0.2479037493330466
+acosh             : max 0.5103896856307983 at x = 1.0824                          : mean 0.2508816756435975
+cos               : max 0.9199888110160828 at x = 1583.3651                       : mean 0.2522556703582676
+sin               : max 0.9094935655593872 at x = 1556.6604                       : mean 0.252371198794601
+tan               : max 1.009971261024475 at x = 2647.5781                       : mean 0.2961919354071046
+cos_fast          : max 1.7095487117767334 at x = 7046.593                        : mean 0.34603441400456275
+sin_fast          : max 1.6963168382644653 at x = 1908.52                         : mean 0.34382828553004674
+tan_fast          : max 3.1237261295318604 at x = 2309.8552                       : mean 0.4886726591135699
+sin_sincos_fast   : max 1.6828246116638184 at x = 3901.0713                       : mean 0.32182619301331694
+cos_sincos_fast   : max 1.7208495140075684 at x = 2361.6938                       : mean 0.32471985710798795
+cos_sincos        : max 0.8821758031845093 at x = 6166.1704                       : mean 0.25388458191748314
+sin_sincos        : max 0.8941673040390015 at x = 753.1963                        : mean 0.2537058697200127
+acos_fast         : max 2.421334743499756 at x = 0.68704                         : mean 0.42344907010014493
+asin_fast         : max 2.354989767074585 at x = 0.2447                          : mean 0.4620244666696027
+acos              : max 0.8610202074050903 at x = 0.68968                         : mean 0.25265419449881676
+asin              : max 0.8321952223777771 at x = 0.7292                          : mean 0.2546848257920135
+atan_fast         : max 2.4062461853027344 at x = 1.007                           : mean 0.39008577052557286
+atan              : max 0.8387206196784973 at x = 1.065                           : mean 0.25020498687078574
+atan_fast         : max 0.9826280474662781 at x = 42.29, 45.08                    : mean 0.31648243250897873
+atan              : max 0.7576087713241577 at x = 41.27, 44.04                    : mean 0.2957435097086721
+log_fast          : max 2.4908556938171387 at x = 1.2701                          : mean 0.3237609027102584
+log               : max 0.5902544856071472 at x = 0.7194                          : mean 0.2477699417743692
+log10             : max 0.5022841691970825 at x = 1.4178                          : mean 0.25029572117951243
+log2              : max 0.5061692595481873 at x = 0.7161                          : mean 0.24988235206621487
+log1p             : max 1.0 at x = -1.0e-45                        : mean 0.22028513134966785
+pow               : max 0.7071853876113892 at x = 2.9, 77.76                      : mean 0.034696276294199274
+cbrt_fast         : max 1.5276296138763428 at x = 2013.6                          : mean 0.33345327015293447
+cbrt              : max 0.49999576807022095 at x = 1705.0                          : mean 0.24177612811324656
+exp2              : max 0.9119170904159546 at x = 127.520004                      : mean 0.24915774337773203
+exp10             : max 0.8770288228988647 at x = -37.729774                      : mean 0.2633155634565768
+expm1             : max 1.0302045345306396 at x = -0.4286785                      : mean 0.2685346925297061
+tanh              : max 0.5642557740211487 at x = 0.3476                          : mean 0.11978063395382298
+cosh              : max 0.5266055464744568 at x = 8.003                           : mean 0.13635898251095785
+sinh              : max 0.5648414492607117 at x = 0.3726                          : mean 0.13681719526698063
+Accuracy tests for Float64
+exp               : max 1.1642133197114732 at x = 321.48358146773614              : mean 0.34011770010868714
+asinh             : max 0.504840270218849 at x = -0.37                           : mean 0.2499282423226349
+atanh             : max 0.5014470177821108 at x = 0.053                           : mean 0.2566786052511576
+acosh             : max 0.5012130243148949 at x = 1.127                           : mean 0.24977950297103693
+cos               : max 0.7448464753656046 at x = 9.4218                          : mean 0.20862328031282823
+sin               : max 0.7989949289913338 at x = 1.5724                          : mean 0.208193240943644
+tan               : max 0.675634012166378 at x = 6678.240583368507               : mean 0.25099578057394034
+cos_fast          : max 2.380638627677767 at x = 4.7831879e6                     : mean 0.30765049101183917
+sin_fast          : max 2.4077368677302493 at x = 1.9315628e6                     : mean 0.30398828332048816
+tan_fast          : max 2.603572045148083 at x = 6.5094506e6                     : mean 0.42845124423971814
+sin_sincos_fast   : max 1.536017563561393 at x = 3.5375654e6                     : mean 0.25464240845078034
+cos_sincos_fast   : max 1.4399801286210892 at x = 7.6014                          : mean 0.25648028831046277
+cos_sincos        : max 0.8767041083960657 at x = 3224.059460746519               : mean 0.2146801608026118
+sin_sincos        : max 0.8732286242797076 at x = 3117.245310524474               : mean 0.21408664835309305
+acos_fast         : max 2.0827101578368117 at x = 0.96982                         : mean 0.36373525037778104
+asin_fast         : max 2.2629442722643422 at x = 0.24504                         : mean 0.4216418019937454
+acos              : max 0.9196713044247699 at x = 0.7067                          : mean 0.2528318622432504
+asin              : max 0.8723023301581104 at x = 0.689                           : mean 0.25920044465215764
+atan_fast         : max 1.7468436178645819 at x = 1.1154                          : mean 0.33153537797157145
+atan              : max 0.8209950627761206 at x = 1.0554                          : mean 0.2503364079414454
+atan_fast         : max 1.063052055633788 at x = 5.555, 5.86                     : mean 0.2716704208353696
+atan              : max 0.895234485131745 at x = 35.15, 37.8                     : mean 0.24992947130339552
+log_fast          : max 2.6716125069234966 at x = 0.743                           : mean 0.39847289392255214
+log               : max 0.7416786826277655 at x = 1.4898                          : mean 0.24941780923315723
+log10             : max 0.5029167982287911 at x = 1.286                           : mean 0.2499514545418465
+log2              : max 0.5036918793521963 at x = 1.4027                          : mean 0.25017394935273946
+log1p             : max 0.8385085460136625 at x = -6.309573444801943e-17          : mean 0.21900237165886768
+pow               : max 0.792791125025193 at x = 93.8, 89.9                      : mean 0.12714922595578013
+cbrt_fast         : max 1.6139781531881676 at x = 9447.0                          : mean 0.3612074261909764
+cbrt              : max 0.531322309716995 at x = 8194.6                          : mean 0.24966711690695917
+exp2              : max 0.962389142276053 at x = 1023.7200000000001              : mean 0.31635504457136576
+exp10             : max 0.9946818996959722 at x = -147.51259999999994             : mean 0.3370349494677739
+expm1             : max 1.1047623476639779 at x = 392.030052249763                : mean 0.2708124834260289
+tanh              : max 0.989998105231458 at x = 18.72                           : mean 0.12739486592813515
+cosh              : max 0.5271522243019784 at x = 196.52                          : mean 0.21327375822714825
+sinh              : max 0.5815771544390032 at x = 0.2288                          : mean 0.21355266357902664
+Test Summary: | Pass  Total
+SLEEFPirates  |  596    596
+    Testing SLEEFPirates tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:14:14.177
+CPU usage: 347.08s (341.48s user, 5.96s kernel)
+
+Network usage:
+- eth0: 2.816 MiB received, 68.841 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":295993344,"max_usage":1025138688,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":178696192,"inactive_file":135168,"inactive_anon":79208448,"total_pgfault":2510805,"total_cache":84873216,"total_rss_huge":0,"total_active_anon":184369152,"total_pgmajfault":0,"pgpgin":1219878,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":270336,"pgpgout":1155531,"hierarchical_memsw_limit":0,"cache":84873216,"active_file":135168,"pgfault":2510805,"total_mapped_file":0,"total_pgpgout":1155531,"total_writeback":270336,"rss":178696192,"unevictable":0,"total_inactive_anon":79208448,"total_pgpgin":1219878,"active_anon":184369152,"total_active_file":135168},"limit":540965302272},"name":"/SLEEFPirates-PPNzbL48","networks":{"eth0":{"rx_bytes":2952390,"rx_packets":681,"tx_packets":622,"tx_bytes":70493,"tx_dropped":0,"rx_dropped":12,"tx_errors":0,"rx_errors":0}},"id":"c4cd1b15485dd1bfe02b20ba77eec3f36b97e9ec2036a918c29f7c512679247d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4008285484522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":341480000000,"usage_in_kernelmode":5960000000,"total_usage":347078898075,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,347078897315,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,760,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:14:14.411285228Z"}

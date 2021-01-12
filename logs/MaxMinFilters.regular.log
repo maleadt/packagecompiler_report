@@ -1,0 +1,82 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:53:56.687
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:53:58.501
+#
+
+ Installing known registries into `~/.julia`
+#####################################                                     52.3%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MaxMinFilters ────── v0.1.0
+  Installed OrderedCollections ─ v1.3.2
+  Installed DataStructures ───── v0.17.20
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [be03bc56] + MaxMinFilters v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [864edb3b] + DataStructures v0.17.20
+  [be03bc56] + MaxMinFilters v0.1.0
+  [bac558e1] + OrderedCollections v1.3.2
+  [2a0f44e3] + Base64
+  [b77e0a4c] + InteractiveUtils
+  [d6f4376e] + Markdown
+
+
+################################################################################
+# Testing: 2021-01-11T23:54:02.643
+#
+
+    Testing MaxMinFilters
+Status `/tmp/jl_HiRjvR/Project.toml`
+  [be03bc56] MaxMinFilters v0.1.0
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_HiRjvR/Manifest.toml`
+  [864edb3b] DataStructures v0.17.20
+  [be03bc56] MaxMinFilters v0.1.0
+  [bac558e1] OrderedCollections v1.3.2
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Skipping Base.active_repl
+Skipping Base.active_repl_backend
+/home/pkgeval/.julia/packages/MaxMinFilters/dGky5/test/test_movmaxmin.jl ...
+/home/pkgeval/.julia/packages/MaxMinFilters/dGky5/test/test_movmaxmin_stateful.jl ...
+Test Summary: | Pass  Total
+MaxMinFilters |   25     25
+    Testing MaxMinFilters tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:54:09.165
+CPU usage: 12.60s (10.00s user, 2.65s kernel)
+
+Network usage:
+- eth0: 2.749 MiB received, 38.565 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":332627968,"max_usage":582483968,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":215388160,"inactive_file":135168,"inactive_anon":79749120,"total_pgfault":314523,"total_cache":87130112,"total_rss_huge":0,"total_active_anon":216133632,"total_pgmajfault":0,"pgpgin":207900,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":134063,"hierarchical_memsw_limit":0,"cache":87130112,"active_file":6623232,"pgfault":314523,"total_mapped_file":0,"total_pgpgout":134063,"total_writeback":0,"rss":215388160,"unevictable":0,"total_inactive_anon":79749120,"total_pgpgin":207900,"active_anon":216133632,"total_active_file":6623232},"limit":540965302272},"name":"/MaxMinFilters-6z77GDMG","networks":{"eth0":{"rx_bytes":2882399,"rx_packets":377,"tx_packets":383,"tx_bytes":39491,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"87c250d2675dc6b02f70d6fddbc592335a9cc544b6aaa740222dc6a49b3f4e2a","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":7074442104522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":10000000000,"usage_in_kernelmode":2650000000,"total_usage":12597792376,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,12597787706,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4670,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:54:09.760010352Z"}

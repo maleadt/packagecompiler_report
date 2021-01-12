@@ -1,0 +1,80 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:34:16.13
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:34:17.914
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Expect ─ v0.3.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [6a31a4e8] + Expect v0.3.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [6a31a4e8] + Expect v0.3.1
+  [de0858da] + Printf
+  [4ec0a83e] + Unicode
+   Building Expect → `~/.julia/packages/Expect/ary8b/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T22:34:22.292
+#
+
+    Testing Expect
+Status `/tmp/jl_Q9hH0R/Project.toml`
+  [6a31a4e8] Expect v0.3.1
+  [de0858da] Printf
+  [8dfed614] Test
+Status `/tmp/jl_Q9hH0R/Manifest.toml`
+  [6a31a4e8] Expect v0.3.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+drain        ... OK
+expect       ... OK
+io           ... OK
+pty          ... OK
+sendeof      ... OK
+timeout      ... OK
+Test Summary: | Pass  Total
+all           |   52     52
+    Testing Expect tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:34:46.392
+CPU usage: 12.37s (9.86s user, 2.54s kernel)
+
+Network usage:
+- eth0: 2.543 MiB received, 27.845 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":2,"op":"Read","minor":0},{"major":259,"value":30,"op":"Write","minor":0},{"major":259,"value":21,"op":"Sync","minor":0},{"major":259,"value":11,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":32,"op":"Total","minor":0},{"major":253,"value":2,"op":"Read","minor":2},{"major":253,"value":30,"op":"Write","minor":2},{"major":253,"value":21,"op":"Sync","minor":2},{"major":253,"value":11,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":32,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":61440,"op":"Read","minor":0},{"major":259,"value":151552,"op":"Write","minor":0},{"major":259,"value":167936,"op":"Sync","minor":0},{"major":259,"value":45056,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":212992,"op":"Total","minor":0},{"major":253,"value":61440,"op":"Read","minor":2},{"major":253,"value":151552,"op":"Write","minor":2},{"major":253,"value":167936,"op":"Sync","minor":2},{"major":253,"value":45056,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":212992,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":331161600,"max_usage":585375744,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":222744576,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":332607,"total_cache":79396864,"total_rss_huge":0,"total_active_anon":223297536,"total_pgmajfault":0,"pgpgin":228063,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":135168,"pgpgout":154329,"hierarchical_memsw_limit":0,"cache":79396864,"active_file":135168,"pgfault":332607,"total_mapped_file":0,"total_pgpgout":154329,"total_writeback":135168,"rss":222744576,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":228063,"active_anon":223297536,"total_active_file":135168},"limit":540965302272},"name":"/Expect-4fZmovb1","networks":{"eth0":{"rx_bytes":2666154,"rx_packets":311,"tx_packets":290,"tx_bytes":28513,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"40f95cbdf6ffb59308863eb2ed66fd5ccf164acfc1c86cb4bc8015ed4eae50e6","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6465876934522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":9860000000,"usage_in_kernelmode":2540000000,"total_usage":12371003266,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12370999716,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3550,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:34:47.326664069Z"}

@@ -1,0 +1,134 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:10:10.456
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:10:12.24
+#
+
+ Installing known registries into `~/.julia`
+####################################################                      73.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Combinatorics ────── v1.0.2
+  Installed DirectSum ────────── v0.7.5
+  Installed Grassmann ────────── v0.7.1
+  Installed Requires ─────────── v1.1.2
+  Installed Leibniz ──────────── v0.1.3
+  Installed AbstractLattices ─── v0.2.1
+  Installed ComputedFieldTypes ─ v0.1.0
+  Installed AbstractTensors ──── v0.6.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [4df31cd9] + Grassmann v0.7.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [398f06c4] + AbstractLattices v0.2.1
+  [a8e43f4a] + AbstractTensors v0.6.5
+  [861a8166] + Combinatorics v1.0.2
+  [459fdd68] + ComputedFieldTypes v0.1.0
+  [22fd7b30] + DirectSum v0.7.5
+  [4df31cd9] + Grassmann v0.7.1
+  [edad4870] + Leibniz v0.1.3
+  [ae029012] + Requires v1.1.2
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+
+
+################################################################################
+# Testing: 2021-01-11T23:10:17.918
+#
+
+    Testing Grassmann
+Status `/tmp/jl_VET5xR/Project.toml`
+  [a8e43f4a] AbstractTensors v0.6.5
+  [459fdd68] ComputedFieldTypes v0.1.0
+  [22fd7b30] DirectSum v0.7.5
+  [4df31cd9] Grassmann v0.7.1
+  [edad4870] Leibniz v0.1.3
+  [ae029012] Requires v1.1.2
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_VET5xR/Manifest.toml`
+  [398f06c4] AbstractLattices v0.2.1
+  [a8e43f4a] AbstractTensors v0.6.5
+  [861a8166] Combinatorics v1.0.2
+  [459fdd68] ComputedFieldTypes v0.1.0
+  [22fd7b30] DirectSum v0.7.5
+  [4df31cd9] Grassmann v0.7.1
+  [edad4870] Leibniz v0.1.3
+  [ae029012] Requires v1.1.2
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+Test Summary:                      | Pass  Total
+Issue #19: Conformal split example |    5      5
+Test Summary:                                      | Pass  Total
+Issue #17: Equality between Number and MultiVector |    6      6
+Test Summary:                                 | Pass  Total
+Issue #16: Adding basis vector to multivector |    5      5
+Test Summary:                             | Pass  Total
+Issue #14: Error when adding MultiVectors |    1      1
+Test Summary:                                      | Pass  Total
+Issue #15: generate rotation quaternions using exp |    2      2
+Test Summary:                                                  | Pass  Total
+Issue #20: geometric product of null basis and negative origin |    4      4
+Test Summary:                                          | Pass  Total
+Issue #22: Error in MultiVector constructor for Chains |    3      3
+Test Summary: | Pass  Total
+Test isapprox |   31     31
+Test Summary:  | Pass  Total
+method: scalar |    6      6
+Test Summary:  |  Pass  Total
+Field: Float64 | 18998  18998
+    Testing Grassmann tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:13:32.654
+CPU usage: 201.62s (197.48s user, 4.44s kernel)
+
+Network usage:
+- eth0: 3.352 MiB received, 69.992 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":358244352,"max_usage":943329280,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":221569024,"inactive_file":135168,"inactive_anon":79749120,"total_pgfault":1657689,"total_cache":106729472,"total_rss_huge":0,"total_active_anon":248709120,"total_pgmajfault":0,"pgpgin":827871,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":747734,"hierarchical_memsw_limit":0,"cache":106729472,"active_file":135168,"pgfault":1657689,"total_mapped_file":0,"total_pgpgout":747734,"total_writeback":0,"rss":221569024,"unevictable":0,"total_inactive_anon":79749120,"total_pgpgin":827871,"active_anon":248709120,"total_active_file":135168},"limit":540965302272},"name":"/Grassmann-OVrnqukb","networks":{"eth0":{"rx_bytes":3515249,"rx_packets":669,"tx_packets":663,"tx_bytes":71672,"tx_dropped":0,"rx_dropped":7,"tx_errors":0,"rx_errors":0}},"id":"8b7031787d3be94b9f9bc99f86474ff79d6da33901d1e3606b027d4c00746b1c","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6763011054522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":197480000000,"usage_in_kernelmode":4440000000,"total_usage":201621172121,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,201621163531,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8590,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:13:32.658035018Z"}

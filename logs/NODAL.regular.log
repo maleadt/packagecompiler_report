@@ -1,0 +1,1893 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:07:25.077
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:07:26.906
+#
+
+ Installing known registries into `~/.julia`
+##############                                                            20.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed NODAL ─ v0.4.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [44063525] + NODAL v0.4.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [44063525] + NODAL v0.4.0
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T23:07:30.726
+#
+
+    Testing NODAL
+Status `/tmp/jl_TiAnfS/Project.toml`
+  [44063525] NODAL v0.4.0
+  [8ba89e20] Distributed
+  [de0858da] Printf
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_TiAnfS/Manifest.toml`
+  [44063525] NODAL v0.4.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Test Summary:   | Pass  Total
+NumberParameter |   86     86
+    [EnumParameter]
+    name   : test
+    current: test
+    values : 
+    [EnumParameter]
+    name   : test
+    current: test
+    values : 
+    [StringParameter]
+    name : test
+    value: "a"
+    ***
+    [StringParameter]
+    name : test
+    value: "b"
+    ***
+    [EnumParameter]
+    name   : test
+    current: test
+    values : 
+    [StringParameter]
+    name : test
+    value: "c"
+Test Summary: | Pass  Total
+EnumParameter |   37     37
+    [PermutationParameter]
+    name : test
+    value: [1, 2, 3, 4, 5, 6]
+    size : 6
+    [PermutationParameter]
+    name : test
+    value: [1, 2, 4, 3, 5, 6]
+    size : 6
+    [PermutationParameter]
+    name : test
+    value: [1, 2, 4, 3, 5, 6]
+    size : 6
+    [PermutationParameter]
+    name : test
+    value: [1, 5, 4, 2, 3, 6]
+    size : 6
+    [PermutationParameter]
+    name : test
+    value: [1, 2, 3, 4, 5, 6]
+    size : 6
+    [PermutationParameter]
+    name : test
+    value: [4, 2, 3, 5, 6, 1]
+    size : 6
+Test Summary:        | Pass  Total
+PermutationParameter |    9      9
+Test Summary:   | Pass  Total
+StringParameter |    6      6
+    [BoolParameter]
+    name : test
+    value: true
+Test Summary: | Pass  Total
+BoolParameter |    6      6
+  [Configuration]
+  name      : test
+  parameters:
+    [NumberParameter]
+    name : i0
+    min  : 1.000000
+    max  : 38.000000
+    value: 3.000000
+    ***
+    [NumberParameter]
+    name : i3
+    min  : 2.330000
+    max  : 85.330000
+    value: 22.200000
+    ***
+    [NumberParameter]
+    name : i1
+    min  : 4.000000
+    max  : 66.000000
+    value: 55.000000
+    ***
+    [StringParameter]
+    name : i2
+    value: "value"
+
+Test Summary: | Pass  Total
+Configuration |   27     27
+Test Summary: | Pass  Total
+Run           |    1      1
+[Result]
+Cost              : 1.0
+Found in Iteration: 1
+Current Iteration : 7
+Technique         : Initialize
+Function Calls    : 1
+  ***
+[Result]
+Cost              : 0.3402469499125207
+Found in Iteration: 51
+Current Iteration : 101
+Technique         : Simulated Annealing
+Function Calls    : 51
+  ***
+[Result]
+Cost              : 0.11358516782709406
+Found in Iteration: 151
+Current Iteration : 207
+Technique         : Simulated Annealing
+Function Calls    : 151
+  ***
+[Result]
+Cost              : 0.11358516782709406
+Found in Iteration: 151
+Current Iteration : 307
+Technique         : Simulated Annealing
+Function Calls    : 151
+  ***
+[Result]
+Cost              : 0.005737771604146526
+Found in Iteration: 351
+Current Iteration : 407
+Technique         : Simulated Annealing
+Function Calls    : 351
+  ***
+[Result]
+Cost              : 0.005737771604146526
+Found in Iteration: 351
+Current Iteration : 501
+Technique         : Simulated Annealing
+Function Calls    : 351
+  ***
+[Result]
+Cost              : 0.0028049786199109447
+Found in Iteration: 501
+Current Iteration : 607
+Technique         : Simulated Annealing
+Function Calls    : 501
+  ***
+[Result]
+Cost              : 0.0028049786199109447
+Found in Iteration: 501
+Current Iteration : 707
+Technique         : Simulated Annealing
+Function Calls    : 501
+  ***
+[Result]
+Cost              : 0.0028049786199109447
+Found in Iteration: 501
+Current Iteration : 807
+Technique         : Simulated Annealing
+Function Calls    : 501
+  ***
+[Result]
+Cost              : 0.0028049786199109447
+Found in Iteration: 501
+Current Iteration : 907
+Technique         : Simulated Annealing
+Function Calls    : 501
+  ***
+[Result]
+Cost              : 0.0028049786199109447
+Found in Iteration: 501
+Current Iteration : 1001
+Technique         : Simulated Annealing
+Function Calls    : 501
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 1107
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 1207
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 1307
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 1407
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 1507
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 1607
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 1707
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 1807
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 1907
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 2007
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 2107
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 2207
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 2307
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 2407
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 2507
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 2607
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 2707
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 2807
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 2907
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 3007
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 3107
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 3207
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 3307
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 3407
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 3507
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 3607
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 3707
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 3807
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 3907
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 4007
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 4107
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 4207
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 4307
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 4407
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 4507
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 4607
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 4707
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 4807
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 4907
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 5007
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 5107
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 5207
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 5307
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 5407
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 5507
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 5607
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 5707
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 5807
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 5907
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 6007
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 6107
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 6207
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 6307
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 6407
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 6507
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 6607
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 6707
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 6807
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 6907
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 7007
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 7107
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 7207
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 7307
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 7407
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 7507
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 7607
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 7707
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 7807
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 7907
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 8007
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 8107
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 8207
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 8307
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 8407
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 8507
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 8607
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 8707
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 8807
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 8907
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 9007
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 9107
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 9207
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 9307
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 9407
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 9507
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 9607
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 9707
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 9807
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 9907
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 10007
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 10107
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 10207
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 10307
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 10407
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 10507
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 10607
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 10707
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 10807
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 10907
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 11007
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 11107
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 11207
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 11307
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 11407
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 11507
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 11607
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 11707
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 11807
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 11907
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.000534082300502287
+Found in Iteration: 1001
+Current Iteration : 12007
+Technique         : Simulated Annealing
+Function Calls    : 1001
+  ***
+[Result]
+Cost              : 0.0005273553640852906
+Found in Iteration: 12051
+Current Iteration : 12107
+Technique         : Simulated Annealing
+Function Calls    : 12051
+  ***
+[Result]
+Cost              : 0.0005273553640852906
+Found in Iteration: 12051
+Current Iteration : 12207
+Technique         : Simulated Annealing
+Function Calls    : 12051
+  ***
+[Result]
+Cost              : 0.0005273553640852906
+Found in Iteration: 12051
+Current Iteration : 12307
+Technique         : Simulated Annealing
+Function Calls    : 12051
+  ***
+[Result]
+Cost              : 0.0005273553640852906
+Found in Iteration: 12051
+Current Iteration : 12407
+Technique         : Simulated Annealing
+Function Calls    : 12051
+  ***
+[Result]
+Cost              : 0.0005273553640852906
+Found in Iteration: 12051
+Current Iteration : 12507
+Technique         : Simulated Annealing
+Function Calls    : 12051
+  ***
+[Result]
+Cost              : 0.0005273553640852906
+Found in Iteration: 12051
+Current Iteration : 12607
+Technique         : Simulated Annealing
+Function Calls    : 12051
+  ***
+[Result]
+Cost              : 0.0005273553640852906
+Found in Iteration: 12051
+Current Iteration : 12707
+Technique         : Simulated Annealing
+Function Calls    : 12051
+  ***
+[Result]
+Cost              : 0.0005273553640852906
+Found in Iteration: 12051
+Current Iteration : 12807
+Technique         : Simulated Annealing
+Function Calls    : 12051
+  ***
+[Result]
+Cost              : 0.0005273553640852906
+Found in Iteration: 12051
+Current Iteration : 12907
+Technique         : Simulated Annealing
+Function Calls    : 12051
+  ***
+[Result]
+Cost              : 0.0005273553640852906
+Found in Iteration: 12051
+Current Iteration : 13007
+Technique         : Simulated Annealing
+Function Calls    : 12051
+  ***
+[Result]
+Cost              : 0.0005273553640852906
+Found in Iteration: 12051
+Current Iteration : 13107
+Technique         : Simulated Annealing
+Function Calls    : 12051
+  ***
+[Result]
+Cost              : 0.0005273553640852906
+Found in Iteration: 12051
+Current Iteration : 13207
+Technique         : Simulated Annealing
+Function Calls    : 12051
+  ***
+[Result]
+Cost              : 3.118098943999061e-5
+Found in Iteration: 13251
+Current Iteration : 13301
+Technique         : Simulated Annealing
+Function Calls    : 13251
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 13407
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 13507
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 13607
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 13707
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 13807
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 13907
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 14007
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 14107
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 14207
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 14307
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 14407
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 14507
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 14607
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 14707
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 14807
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 14907
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 15007
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 15107
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 15207
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 15307
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 15407
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 15507
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 15607
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 15707
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 15807
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 15907
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 16007
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 16107
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 16207
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 16307
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 16407
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 16507
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 16607
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 16707
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 16807
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 16907
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 17007
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 17107
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 17207
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 17307
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 17407
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 17507
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 17607
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 17707
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 17807
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 17907
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 18007
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 18107
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 18207
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 18307
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[Result]
+Cost              : 2.9582193250118577e-5
+Found in Iteration: 13301
+Current Iteration : 18407
+Technique         : Simulated Annealing
+Function Calls    : 13301
+  ***
+[bioFinal Result]
+Cost                  : 2.9582193250118577e-5
+Found in Iteration    : 13301
+Current Iteration     : 18472
+Technique             : Simulated Annealing
+Function Calls        : 13301
+Starting Configuration:
+  [Configuration]
+  name      : rosenbrock_config
+  parameters:
+    [NumberParameter]
+    name : i0
+    min  : -2.000000
+    max  : 2.000000
+    value: 0.994738
+    ***
+    [NumberParameter]
+    name : i1
+    min  : -2.000000
+    max  : 2.000000
+    value: 0.989642
+Minimum Configuration :
+  [Configuration]
+  name      : rosenbrock_config
+  parameters:
+    [NumberParameter]
+    name : i0
+    min  : -2.000000
+    max  : 2.000000
+    value: 0.994738
+    ***
+    [NumberParameter]
+    name : i1
+    min  : -2.000000
+    max  : 2.000000
+    value: 0.989642
+2.9582193250118577e-5
+Test Summary: | Pass  Total
+Search        |    3      3
+[Result]
+Cost              : 1.0
+Found in Iteration: 1
+Current Iteration : 7
+Technique         : Initialize
+Function Calls    : 1
+  ***
+[Result]
+Cost              : 1.0
+Found in Iteration: 1
+Current Iteration : 25997
+Technique         : Initialize
+Function Calls    : 1
+  ***
+[Result]
+Cost              : 0.00293106059305677
+Found in Iteration: 6
+Current Iteration : 66865
+Technique         : Iterative First Improvement
+Function Calls    : 28792
+  ***
+[Result]
+Cost              : 0.00293106059305677
+Found in Iteration: 6
+Current Iteration : 106875
+Technique         : Iterative First Improvement
+Function Calls    : 28792
+  ***
+[Result]
+Cost              : 0.0015711345805924557
+Found in Iteration: 10
+Current Iteration : 148125
+Technique         : Iterative First Improvement
+Function Calls    : 61403
+  ***
+[Result]
+Cost              : 0.0006390577087739231
+Found in Iteration: 14
+Current Iteration : 189147
+Technique         : Iterative First Improvement
+Function Calls    : 85422
+  ***
+[Result]
+Cost              : 0.0006390577087739231
+Found in Iteration: 14
+Current Iteration : 229427
+Technique         : Iterative First Improvement
+Function Calls    : 85422
+  ***
+[Result]
+Cost              : 0.0005586531310945819
+Found in Iteration: 19
+Current Iteration : 270369
+Technique         : Iterative First Improvement
+Function Calls    : 134634
+  ***
+[bioFinal Result]
+Cost                  : 0.000463676936921411
+Found in Iteration    : 21
+Current Iteration     : 310604
+Technique             : Iterative First Improvement
+Function Calls        : 153052
+Starting Configuration:
+  [Configuration]
+  name      : rosenbrock_config
+  parameters:
+    [NumberParameter]
+    name : i0
+    min  : -2.000000
+    max  : 2.000000
+    value: 1.020832
+    ***
+    [NumberParameter]
+    name : i1
+    min  : -2.000000
+    max  : 2.000000
+    value: 1.042643
+Minimum Configuration :
+  [Configuration]
+  name      : rosenbrock_config
+  parameters:
+    [NumberParameter]
+    name : i0
+    min  : -2.000000
+    max  : 2.000000
+    value: 1.020832
+    ***
+    [NumberParameter]
+    name : i1
+    min  : -2.000000
+    max  : 2.000000
+    value: 1.042643
+0.000463676936921411
+Test Summary: | Pass  Total
+Search        |    3      3
+[Result]
+Cost              : 1.0
+Found in Iteration: 1
+Current Iteration : 7
+Technique         : Initialize
+Function Calls    : 1
+  ***
+[Result]
+Cost              : 1.0
+Found in Iteration: 1
+Current Iteration : 105423
+Technique         : Initialize
+Function Calls    : 1
+  ***
+[Result]
+Cost              : 1.0
+Found in Iteration: 1
+Current Iteration : 252286
+Technique         : Initialize
+Function Calls    : 1
+  ***
+[Result]
+Cost              : 1.0
+Found in Iteration: 1
+Current Iteration : 398286
+Technique         : Initialize
+Function Calls    : 1
+  ***
+[Result]
+Cost              : 1.0
+Found in Iteration: 1
+Current Iteration : 544921
+Technique         : Initialize
+Function Calls    : 1
+  ***
+[Result]
+Cost              : 1.0
+Found in Iteration: 1
+Current Iteration : 692755
+Technique         : Initialize
+Function Calls    : 1
+  ***
+[bioFinal Result]
+Cost                  : 0.11655656319178206
+Found in Iteration    : 384074
+Current Iteration     : 840566
+Technique             : Iterative Probabilistic Improvement
+Function Calls        : 384074
+Starting Configuration:
+  [Configuration]
+  name      : rosenbrock_config
+  parameters:
+    [NumberParameter]
+    name : i0
+    min  : -2.000000
+    max  : 2.000000
+    value: 1.243432
+    ***
+    [NumberParameter]
+    name : i1
+    min  : -2.000000
+    max  : 2.000000
+    value: 1.522185
+Minimum Configuration :
+  [Configuration]
+  name      : rosenbrock_config
+  parameters:
+    [NumberParameter]
+    name : i0
+    min  : -2.000000
+    max  : 2.000000
+    value: 1.243432
+    ***
+    [NumberParameter]
+    name : i1
+    min  : -2.000000
+    max  : 2.000000
+    value: 1.522185
+0.11655656319178206
+Test Summary: | Pass  Total
+Search        |    3      3
+[Result]
+Cost              : 1.0
+Found in Iteration: 1
+Current Iteration : 7
+Technique         : Initialize
+Function Calls    : 1
+  ***
+[Result]
+Cost              : 1.0
+Found in Iteration: 1
+Current Iteration : 196435
+Technique         : Initialize
+Function Calls    : 1
+  ***
+[Result]
+Cost              : 0.00026950168482041143
+Found in Iteration: 2459
+Current Iteration : 395745
+Technique         : Randomized First Improvement
+Function Calls    : 122144
+  ***
+[Result]
+Cost              : 0.00026950168482041143
+Found in Iteration: 2459
+Current Iteration : 596367
+Technique         : Randomized First Improvement
+Function Calls    : 122144
+  ***
+[Result]
+Cost              : 0.00026950168482041143
+Found in Iteration: 2459
+Current Iteration : 796135
+Technique         : Randomized First Improvement
+Function Calls    : 122144
+  ***
+[Result]
+Cost              : 0.00026950168482041143
+Found in Iteration: 2459
+Current Iteration : 996405
+Technique         : Randomized First Improvement
+Function Calls    : 122144
+  ***
+[bioFinal Result]
+Cost                  : 0.00026950168482041143
+Found in Iteration    : 2459
+Current Iteration     : 1196792
+Technique             : Randomized First Improvement
+Function Calls        : 122144
+Starting Configuration:
+  [Configuration]
+  name      : rosenbrock_config
+  parameters:
+    [NumberParameter]
+    name : i0
+    min  : -2.000000
+    max  : 2.000000
+    value: 0.986021
+    ***
+    [NumberParameter]
+    name : i1
+    min  : -2.000000
+    max  : 2.000000
+    value: 0.971377
+Minimum Configuration :
+  [Configuration]
+  name      : rosenbrock_config
+  parameters:
+    [NumberParameter]
+    name : i0
+    min  : -2.000000
+    max  : 2.000000
+    value: 0.986021
+    ***
+    [NumberParameter]
+    name : i1
+    min  : -2.000000
+    max  : 2.000000
+    value: 0.971377
+0.00026950168482041143
+Test Summary: | Pass  Total
+Search        |    3      3
+[Result]
+Cost              : 1.0
+Found in Iteration: 1
+Current Iteration : 7
+Technique         : Initialize
+Function Calls    : 1
+  ***
+[Result]
+Cost              : 1.0
+Found in Iteration: 1
+Current Iteration : 821397
+Technique         : Initialize
+Function Calls    : 1
+  ***
+[Result]
+Cost              : 1.0
+Found in Iteration: 1
+Current Iteration : 1865745
+Technique         : Initialize
+Function Calls    : 1
+  ***
+[bioFinal Result]
+Cost                  : 1.0
+Found in Iteration    : 1
+Current Iteration     : 2907505
+Technique             : Initialize
+Function Calls        : 1
+Starting Configuration:
+  [Configuration]
+  name      : rosenbrock_config
+  parameters:
+    [NumberParameter]
+    name : i0
+    min  : -2.000000
+    max  : 2.000000
+    value: 0.000000
+    ***
+    [NumberParameter]
+    name : i1
+    min  : -2.000000
+    max  : 2.000000
+    value: 0.000000
+Minimum Configuration :
+  [Configuration]
+  name      : rosenbrock_config
+  parameters:
+    [NumberParameter]
+    name : i0
+    min  : -2.000000
+    max  : 2.000000
+    value: 0.000000
+    ***
+    [NumberParameter]
+    name : i1
+    min  : -2.000000
+    max  : 2.000000
+    value: 0.000000
+1.0
+Test Summary: | Pass  Total
+Search        |    3      3
+[Result]
+Cost              : 1.0
+Found in Iteration: 1
+Current Iteration : 7
+Technique         : Initialize
+Function Calls    : 1
+  ***
+[Result]
+Cost              : 1.0
+Found in Iteration: 1
+Current Iteration : 204862
+Technique         : Initialize
+Function Calls    : 1
+  ***
+[Result]
+Cost              : 1.0
+Found in Iteration: 1
+Current Iteration : 421736
+Technique         : Initialize
+Function Calls    : 1
+  ***
+[bioFinal Result]
+Cost                  : 1.0
+Found in Iteration    : 1
+Current Iteration     : 639426
+Technique             : Initialize
+Function Calls        : 1
+Starting Configuration:
+  [Configuration]
+  name      : rosenbrock_config
+  parameters:
+    [NumberParameter]
+    name : i0
+    min  : -2.000000
+    max  : 2.000000
+    value: 0.000000
+    ***
+    [NumberParameter]
+    name : i1
+    min  : -2.000000
+    max  : 2.000000
+    value: 0.000000
+Minimum Configuration :
+  [Configuration]
+  name      : rosenbrock_config
+  parameters:
+    [NumberParameter]
+    name : i0
+    min  : -2.000000
+    max  : 2.000000
+    value: 0.000000
+    ***
+    [NumberParameter]
+    name : i1
+    min  : -2.000000
+    max  : 2.000000
+    value: 0.000000
+1.0
+Test Summary: | Pass  Total
+Search        |    3      3
+Test Summary: | Pass  Total
+unit_value    |    6      6
+    Testing NODAL tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:09:08.803
+CPU usage: 103.72s (91.28s user, 12.56s kernel)
+
+Network usage:
+- eth0: 2.569 MiB received, 28.696 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":324861952,"max_usage":578961408,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":215519232,"inactive_file":135168,"inactive_anon":78938112,"total_pgfault":683727,"total_cache":79798272,"total_rss_huge":0,"total_active_anon":216403968,"total_pgmajfault":0,"pgpgin":375837,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":303711,"hierarchical_memsw_limit":0,"cache":79798272,"active_file":135168,"pgfault":683727,"total_mapped_file":0,"total_pgpgout":303711,"total_writeback":0,"rss":215519232,"unevictable":0,"total_inactive_anon":78938112,"total_pgpgin":375837,"active_anon":216403968,"total_active_file":135168},"limit":540965302272},"name":"/NODAL-E8E4DdrW","networks":{"eth0":{"rx_bytes":2693632,"rx_packets":354,"tx_packets":303,"tx_bytes":29385,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"6fe8b48b0a98c003a844fd257f5289700d794cf9d43df79d25b7d7167e79c750","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6729288554522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":91280000000,"usage_in_kernelmode":12560000000,"total_usage":103717011471,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,103717011471,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:09:08.806008611Z"}

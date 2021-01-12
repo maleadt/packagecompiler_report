@@ -1,0 +1,177 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:52:17.099
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:52:18.9
+#
+
+ Installing known registries into `~/.julia`
+###############                                                           22.1%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed GPMLj ────────── v0.0.1
+  Installed MacroTools ───── v0.5.6
+  Installed VersionParsing ─ v1.2.0
+  Installed Conda ────────── v1.5.0
+  Installed PyCall ───────── v1.92.2
+  Installed JSON ─────────── v0.21.1
+  Installed Parsers ──────── v1.0.15
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [261d18cc] + GPMLj v0.0.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [8f4d0f93] + Conda v1.5.0
+  [261d18cc] + GPMLj v0.0.1
+  [682c06a0] + JSON v0.21.1
+  [1914dd2f] + MacroTools v0.5.6
+  [69de0a69] + Parsers v1.0.15
+  [438e738f] + PyCall v1.92.2
+  [81def892] + VersionParsing v1.2.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [4ec0a83e] + Unicode
+   Building Conda ─→ `~/.julia/packages/Conda/x5ml4/deps/build.log`
+   Building PyCall → `~/.julia/packages/PyCall/tqyST/deps/build.log`
+   Building GPMLj ─→ `~/.julia/packages/GPMLj/gnfTM/deps/build.log`
+┌ Error: Error building `GPMLj`: 
+│ Requirement already satisfied: pip in /home/pkgeval/.julia/conda/3/lib/python3.8/site-packages (20.3.3)
+│ Requirement already satisfied: setuptools in /home/pkgeval/.julia/conda/3/lib/python3.8/site-packages (51.1.2.post20210110)
+│ ERROR: Could not find a version that satisfies the requirement tensorflow==1.15.0
+│ ERROR: No matching distribution found for tensorflow==1.15.0
+│ ERROR: LoadError: failed process: Process(`/home/pkgeval/.julia/conda/3/bin/python -m pip install gpflow==1.5.1 tensorflow==1.15.0`, ProcessExited(1)) [1]
+│ 
+│ Stacktrace:
+│  [1] pipeline_error at ./process.jl:525 [inlined]
+│  [2] run(::Cmd; wait::Bool) at ./process.jl:440
+│  [3] run(::Cmd) at ./process.jl:438
+│  [4] top-level scope at /home/pkgeval/.julia/packages/GPMLj/gnfTM/deps/build.jl:28
+│  [5] include(::String) at ./client.jl:457
+│  [6] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/GPMLj/gnfTM/deps/build.jl:28
+│ Running build.jl for the GPMLj package.
+│ Installing required python packages using pip
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+
+
+################################################################################
+# Testing: 2021-01-11T15:53:16.643
+#
+
+    Testing GPMLj
+Status `/tmp/jl_DBP9kS/Project.toml`
+  [261d18cc] GPMLj v0.0.1
+  [438e738f] PyCall v1.92.2
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_DBP9kS/Manifest.toml`
+  [8f4d0f93] Conda v1.5.0
+  [261d18cc] GPMLj v0.0.1
+  [682c06a0] JSON v0.21.1
+  [1914dd2f] MacroTools v0.5.6
+  [69de0a69] Parsers v1.0.15
+  [438e738f] PyCall v1.92.2
+  [81def892] VersionParsing v1.2.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+ERROR: LoadError: InitError: PyError (PyImport_ImportModule
+
+The Python package gpflow could not be imported by pyimport. Usually this means
+that you did not install gpflow in the Python version being used by PyCall.
+
+PyCall is currently configured to use the Julia-specific Python distribution
+installed by the Conda.jl package.  To install the gpflow module, you can
+use `pyimport_conda("gpflow", PKG)`, where PKG is the Anaconda
+package the contains the module gpflow, or alternatively you can use the
+Conda package directly (via `using Conda` followed by `Conda.add` etcetera).
+
+Alternatively, if you want to use a different Python distribution on your
+system, such as a system-wide Python (as opposed to the Julia-specific Python),
+you can re-configure PyCall with that Python.   As explained in the PyCall
+documentation, set ENV["PYTHON"] to the path/name of the python executable
+you want to use, run Pkg.build("PyCall"), and re-launch Julia.
+
+) <class 'ModuleNotFoundError'>
+ModuleNotFoundError("No module named 'gpflow'")
+
+Stacktrace:
+ [1] pyimport(::String) at /home/pkgeval/.julia/packages/PyCall/tqyST/src/PyCall.jl:547
+ [2] __init__() at /home/pkgeval/.julia/packages/GPMLj/gnfTM/src/gpflow.jl:32
+ [3] _include_from_serialized(::String, ::Array{Any,1}) at ./loading.jl:697
+ [4] _require_from_serialized(::String) at ./loading.jl:749
+ [5] _require(::Base.PkgId) at ./loading.jl:1040
+ [6] require(::Base.PkgId) at ./loading.jl:928
+ [7] require(::Module, ::Symbol) at ./loading.jl:923
+ [8] include(::String) at ./client.jl:457
+ [9] top-level scope at none:6
+during initialization of module gpflow
+in expression starting at /home/pkgeval/.julia/packages/GPMLj/gnfTM/test/runtests.jl:1
+
+PkgEval failed: Package GPMLj errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:53:25.556
+CPU usage: 66.34s (58.56s user, 7.94s kernel)
+
+Network usage:
+- eth0: 246.520 MiB received, 611.404 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":38,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":19,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":38,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":38,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":19,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":38,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":184320,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":77824,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":184320,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":184320,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":77824,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":184320,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":1873022976,"max_usage":2414600192,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":203583488,"inactive_file":135168,"inactive_anon":1164877824,"total_pgfault":1552815,"total_cache":1613938688,"total_rss_huge":0,"total_active_anon":645697536,"total_pgmajfault":0,"pgpgin":1575024,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":540672,"total_unevictable":0,"total_dirty":540672,"writeback":0,"pgpgout":1131279,"hierarchical_memsw_limit":0,"cache":1613938688,"active_file":7028736,"pgfault":1552815,"total_mapped_file":0,"total_pgpgout":1131279,"total_writeback":0,"rss":203583488,"unevictable":0,"total_inactive_anon":1164877824,"total_pgpgin":1575024,"active_anon":645697536,"total_active_file":7028736},"limit":540965302272},"name":"/GPMLj-tMeuYwdM","networks":{"eth0":{"rx_bytes":258494500,"rx_packets":19940,"tx_packets":10620,"tx_bytes":626078,"tx_dropped":0,"rx_dropped":3,"tx_errors":0,"rx_errors":0}},"id":"1c9b6020cecc432b5a944e437b0507dcf09ee4a9d7b689168d84b467d231550f","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3388526344522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":58560000000,"usage_in_kernelmode":7940000000,"total_usage":66337306021,"percpu_usage":[0,66335104030,0,2201991,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:53:26.281152419Z"}

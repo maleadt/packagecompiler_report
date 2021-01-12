@@ -1,0 +1,2380 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:01:20.086
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:01:22.019
+#
+
+ Installing known registries into `~/.julia`
+###############################################                           65.5%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed RecipesBase ──────── v1.1.1
+  Installed CodecZlib ────────── v0.7.0
+  Installed Libiconv_jll ─────── v1.16.0+7
+  Installed Zlib_jll ─────────── v1.2.11+18
+  Installed EzXML ────────────── v1.1.0
+  Installed ExprTools ────────── v0.1.3
+  Installed JLSO ─────────────── v2.4.0
+  Installed JLLWrappers ──────── v1.2.0
+  Installed TimeZones ────────── v1.5.3
+  Installed FilePathsBase ────── v0.9.6
+  Installed Syslogs ──────────── v0.3.0
+  Installed JSON ─────────────── v0.21.1
+  Installed XML2_jll ─────────── v2.9.10+3
+  Installed Mocking ──────────── v0.7.1
+  Installed TranscodingStreams ─ v0.9.5
+  Installed Parsers ──────────── v1.0.15
+  Installed Memento ──────────── v1.1.2
+  Installed Artifacts ────────── v1.3.0
+  Installed BSON ─────────────── v0.2.6
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9da8a3cd] + JLSO v2.4.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [fbb218c0] + BSON v0.2.6
+  [944b1d66] + CodecZlib v0.7.0
+  [e2ba6199] + ExprTools v0.1.3
+  [8f5d6c58] + EzXML v1.1.0
+  [48062228] + FilePathsBase v0.9.6
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v2.4.0
+  [682c06a0] + JSON v0.21.1
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [f28f55f0] + Memento v1.1.2
+  [78c3b35d] + Mocking v0.7.1
+  [69de0a69] + Parsers v1.0.15
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [cea106d9] + Syslogs v0.3.0
+  [f269a46b] + TimeZones v1.5.3
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building TimeZones → `~/.julia/packages/TimeZones/K98G0/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T21:01:37.158
+#
+
+    Testing JLSO
+Status `/tmp/jl_Gk3rJS/Project.toml`
+  [39de3d68] AxisArrays v0.4.3
+  [fbb218c0] BSON v0.2.6
+  [944b1d66] CodecZlib v0.7.0
+  [a93c6f00] DataFrames v0.22.2
+  [31c24e10] Distributions v0.24.10
+  [e30172f5] Documenter v0.26.1
+  [48062228] FilePathsBase v0.9.6
+  [9da8a3cd] JLSO v2.4.0
+  [f28f55f0] Memento v1.1.2
+  [fd094767] Suppressor v0.2.0
+  [f269a46b] TimeZones v1.5.3
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [44cfe95a] Pkg
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [8dfed614] Test
+Status `/tmp/jl_Gk3rJS/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [39de3d68] AxisArrays v0.4.3
+  [fbb218c0] BSON v0.2.6
+  [324d7699] CategoricalArrays v0.9.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [944b1d66] CodecZlib v0.7.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [a8cc5b0e] Crayons v4.0.4
+  [9a962f9c] DataAPI v1.4.0
+  [a93c6f00] DataFrames v0.22.2
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [31c24e10] Distributions v0.24.10
+  [ffbed154] DocStringExtensions v0.8.3
+  [e30172f5] Documenter v0.26.1
+  [da5c29d0] EllipsisNotation v1.0.0
+  [e2ba6199] ExprTools v0.1.3
+  [8f5d6c58] EzXML v1.1.0
+  [48062228] FilePathsBase v0.9.6
+  [1a297f60] FillArrays v0.10.2
+  [59287772] Formatting v0.4.2
+  [b5f81e59] IOCapture v0.1.1
+  [8197267c] IntervalSets v0.5.2
+  [41ab1584] InvertedIndices v1.0.0
+  [c8e1da08] IterTools v1.3.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [9da8a3cd] JLSO v2.4.0
+  [682c06a0] JSON v0.21.1
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [f28f55f0] Memento v1.1.2
+  [e1d29d7a] Missings v0.4.4
+  [78c3b35d] Mocking v0.7.1
+  [46d2c3a1] MuladdMacro v0.2.2
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [90014a1f] PDMats v0.10.1
+  [69de0a69] Parsers v1.0.15
+  [2dfb63ee] PooledArrays v0.5.3
+  [08abe8d2] PrettyTables v0.10.1
+  [1fd47b50] QuadGK v2.4.1
+  [b3c3ace0] RangeArrays v0.3.2
+  [3cdcf5f2] RecipesBase v1.1.1
+  [189a3867] Reexport v0.2.0
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.2.1
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [856f2bd8] StructTypes v1.2.1
+  [fd094767] Suppressor v0.2.0
+  [cea106d9] Syslogs v0.3.0
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [f269a46b] TimeZones v1.5.3
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Warning: Pkg.installed() is deprecated
+└ @ Pkg /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
+[info | JLSO]: Upgrading JLSO format from v1 to v2
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+[info | JLSO]: Upgrading JLSO format from v1 to v2
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+[info | JLSO]: Upgrading JLSO format from v1 to v2
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_OLKQcF/Project.toml`
+   Updating registry at `~/.julia/registries/General`
+  Resolving package versions...
+[warn | JLSO]: Failed to construct an environment with the provide package version (Dict{String,VersionNumber}("TimeZones" => v"1.5.3","Documenter" => v"0.26.1","BSON" => v"0.2.6","Distributions" => v"0.24.10","JLSO" => v"0.3.14","Suppressor" => v"0.2.0","Memento" => v"1.1.2","CodecZlib" => v"0.7.0","AxisArrays" => v"0.4.3","FilePathsBase" => v"0.9.6","DataFrames" => v"0.22.2")): Pkg.Resolve.ResolverError("Unsatisfiable requirements detected for package JLSO [9da8a3cd]:\n JLSO [9da8a3cd] log:\n ├─possible versions are: [1.0.0, 1.1.0-1.1.2, 1.2.0-1.2.2, 1.3.0, 2.0.0-2.0.1, 2.1.0, 2.2.0, 2.3.0-2.3.3, 2.4.0] or uninstalled\n └─restricted to versions 0.3.14 by an explicit requirement — no versions left", nothing).
+ Falling back to simply adding the packages.
+  Resolving package versions...
+Updating `/tmp/jl_OLKQcF/Project.toml`
+  [39de3d68] + AxisArrays v0.4.3
+  [fbb218c0] + BSON v0.2.6
+  [944b1d66] + CodecZlib v0.7.0
+  [a93c6f00] + DataFrames v0.22.2
+  [31c24e10] + Distributions v0.24.10
+  [e30172f5] + Documenter v0.26.1
+  [48062228] + FilePathsBase v0.9.6
+  [9da8a3cd] + JLSO v2.4.0
+  [f28f55f0] + Memento v1.1.2
+  [fd094767] + Suppressor v0.2.0
+  [f269a46b] + TimeZones v1.5.3
+Updating `/tmp/jl_OLKQcF/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.4.3
+  [fbb218c0] + BSON v0.2.6
+  [324d7699] + CategoricalArrays v0.9.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [944b1d66] + CodecZlib v0.7.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [a8cc5b0e] + Crayons v4.0.4
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.22.2
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.24.10
+  [ffbed154] + DocStringExtensions v0.8.3
+  [e30172f5] + Documenter v0.26.1
+  [da5c29d0] + EllipsisNotation v1.0.0
+  [e2ba6199] + ExprTools v0.1.3
+  [8f5d6c58] + EzXML v1.1.0
+  [48062228] + FilePathsBase v0.9.6
+  [1a297f60] + FillArrays v0.10.2
+  [59287772] + Formatting v0.4.2
+  [b5f81e59] + IOCapture v0.1.1
+  [8197267c] + IntervalSets v0.5.2
+  [41ab1584] + InvertedIndices v1.0.0
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v2.4.0
+  [682c06a0] + JSON v0.21.1
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [f28f55f0] + Memento v1.1.2
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.7.1
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.10.1
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [08abe8d2] + PrettyTables v0.10.1
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [856f2bd8] + StructTypes v1.2.1
+  [fd094767] + Suppressor v0.2.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [f269a46b] + TimeZones v1.5.3
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading JLSO format from v1 to v2
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_aeE1wD/Project.toml`
+  Resolving package versions...
+  Installed BSON ────────────── v0.2.3
+  Installed Mocking ─────────── v0.5.7
+  Installed AxisArrays ──────── v0.3.0
+  Installed JLSO ────────────── v1.0.0
+  Installed BinaryProvider ──── v0.5.4
+  Installed Memento ─────────── v0.12.1
+  Installed Distributions ───── v0.20.0
+  Installed TimeZones ───────── v0.9.1
+  Installed Compat ──────────── v2.1.0
+  Installed EzXML ───────────── v0.9.1
+  Installed Tables ──────────── v0.2.11
+  Installed IntervalSets ────── v0.3.2
+  Installed Rmath ───────────── v0.5.1
+  Installed OpenBLAS_jll ────── v0.3.9+5
+  Installed StatsBase ───────── v0.30.0
+  Installed CategoricalArrays ─ v0.7.7
+  Installed DataStructures ──── v0.17.20
+  Installed DataFrames ──────── v0.18.2
+  Installed URIParser ───────── v0.4.1
+  Installed PDMats ──────────── v0.9.12
+  Installed StatsFuns ───────── v0.8.0
+  Installed Arpack_jll ──────── v3.5.0+3
+  Installed BinDeps ─────────── v0.8.10
+  Installed SpecialFunctions ── v0.7.2
+  Installed Arpack ──────────── v0.4.0
+Updating `/tmp/jl_aeE1wD/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_aeE1wD/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building EzXML ───────────→ `~/.julia/packages/EzXML/r19gO/deps/build.log`
+   Building TimeZones ───────→ `~/.julia/packages/TimeZones/Z0kpK/deps/build.log`
+   Building Rmath ───────────→ `~/.julia/packages/Rmath/4wt82/deps/build.log`
+   Building SpecialFunctions → `~/.julia/packages/SpecialFunctions/fvheQ/deps/build.log`
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading JLSO format from v1 to v2
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_YM7AGD/Project.toml`
+  Resolving package versions...
+Updating `/tmp/jl_YM7AGD/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_YM7AGD/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_fpBR9E/Project.toml`
+  Resolving package versions...
+  Installed CodecZlib ─ v0.5.2
+Updating `/tmp/jl_fpBR9E/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_fpBR9E/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building CodecZlib → `~/.julia/packages/CodecZlib/9jDi1/deps/build.log`
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_tvS0wH/Project.toml`
+  Resolving package versions...
+Updating `/tmp/jl_tvS0wH/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_tvS0wH/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_uV1JcE/Project.toml`
+  Resolving package versions...
+Updating `/tmp/jl_uV1JcE/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_uV1JcE/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_x5y0YD/Project.toml`
+  Resolving package versions...
+Updating `/tmp/jl_x5y0YD/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_x5y0YD/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_OxElXG/Project.toml`
+  Resolving package versions...
+Updating `/tmp/jl_OxElXG/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_OxElXG/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_P6qMFE/Project.toml`
+  Resolving package versions...
+Updating `/tmp/jl_P6qMFE/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_P6qMFE/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_K9Oi5E/Project.toml`
+  Resolving package versions...
+Updating `/tmp/jl_K9Oi5E/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_K9Oi5E/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_yojMQF/Project.toml`
+  Resolving package versions...
+Updating `/tmp/jl_yojMQF/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_yojMQF/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v1_bson.jlso -> /tmp/jl_eCFV0E/v1_bson.jlso
+[info | JLSO]: Upgrading JLSO format from v1 to v2
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_iUTebE/Project.toml`
+  Resolving package versions...
+Updating `/tmp/jl_iUTebE/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_iUTebE/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v1_serialize.jlso -> /tmp/jl_eCFV0E/v1_serialize.jlso
+[info | JLSO]: Upgrading JLSO format from v1 to v2
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_5PlScG/Project.toml`
+  Resolving package versions...
+Updating `/tmp/jl_5PlScG/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_5PlScG/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v2_bson_gzip.jlso -> /tmp/jl_eCFV0E/v2_bson_gzip.jlso
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_CH9hbF/Project.toml`
+  Resolving package versions...
+Updating `/tmp/jl_CH9hbF/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_CH9hbF/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v2_bson_gzip_fastest.jlso -> /tmp/jl_eCFV0E/v2_bson_gzip_fastest.jlso
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_LsXC8E/Project.toml`
+  Resolving package versions...
+Updating `/tmp/jl_LsXC8E/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_LsXC8E/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v2_bson_gzip_smallest.jlso -> /tmp/jl_eCFV0E/v2_bson_gzip_smallest.jlso
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_1sz92F/Project.toml`
+  Resolving package versions...
+Updating `/tmp/jl_1sz92F/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_1sz92F/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v2_bson_none.jlso -> /tmp/jl_eCFV0E/v2_bson_none.jlso
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_jItpWE/Project.toml`
+  Resolving package versions...
+Updating `/tmp/jl_jItpWE/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_jItpWE/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v2_julia_serialize_gzip.jlso -> /tmp/jl_eCFV0E/v2_julia_serialize_gzip.jlso
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_WZ870G/Project.toml`
+  Resolving package versions...
+Updating `/tmp/jl_WZ870G/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_WZ870G/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v2_julia_serialize_gzip_fastest.jlso -> /tmp/jl_eCFV0E/v2_julia_serialize_gzip_fastest.jlso
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_I3PvyE/Project.toml`
+  Resolving package versions...
+Updating `/tmp/jl_I3PvyE/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_I3PvyE/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v2_julia_serialize_gzip_smallest.jlso -> /tmp/jl_eCFV0E/v2_julia_serialize_gzip_smallest.jlso
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_9nv5WD/Project.toml`
+  Resolving package versions...
+Updating `/tmp/jl_9nv5WD/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_9nv5WD/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v2_julia_serialize_none.jlso -> /tmp/jl_eCFV0E/v2_julia_serialize_none.jlso
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_jJrbaG/Project.toml`
+  Resolving package versions...
+Updating `/tmp/jl_jJrbaG/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_jJrbaG/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [944b1d66] + CodecZlib v0.5.2
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v3_bson_gzip.jlso -> /tmp/jl_eCFV0E/v3_bson_gzip.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v3_bson_gzip_fastest.jlso -> /tmp/jl_eCFV0E/v3_bson_gzip_fastest.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v3_bson_gzip_smallest.jlso -> /tmp/jl_eCFV0E/v3_bson_gzip_smallest.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v3_bson_none.jlso -> /tmp/jl_eCFV0E/v3_bson_none.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v3_julia_serialize_gzip.jlso -> /tmp/jl_eCFV0E/v3_julia_serialize_gzip.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v3_julia_serialize_gzip_fastest.jlso -> /tmp/jl_eCFV0E/v3_julia_serialize_gzip_fastest.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v3_julia_serialize_gzip_smallest.jlso -> /tmp/jl_eCFV0E/v3_julia_serialize_gzip_smallest.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v3_julia_serialize_none.jlso -> /tmp/jl_eCFV0E/v3_julia_serialize_none.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v4_bson_gzip.jlso -> /tmp/jl_eCFV0E/v4_bson_gzip.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v4_bson_gzip_fastest.jlso -> /tmp/jl_eCFV0E/v4_bson_gzip_fastest.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v4_bson_gzip_smallest.jlso -> /tmp/jl_eCFV0E/v4_bson_gzip_smallest.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v4_bson_none.jlso -> /tmp/jl_eCFV0E/v4_bson_none.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v4_julia_serialize_gzip.jlso -> /tmp/jl_eCFV0E/v4_julia_serialize_gzip.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v4_julia_serialize_gzip_fastest.jlso -> /tmp/jl_eCFV0E/v4_julia_serialize_gzip_fastest.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v4_julia_serialize_gzip_smallest.jlso -> /tmp/jl_eCFV0E/v4_julia_serialize_gzip_smallest.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v4_julia_serialize_none.jlso -> /tmp/jl_eCFV0E/v4_julia_serialize_none.jlso
+[info | JLSO]: Upgrading JLSO format from v1 to v2
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_fBgc8E/Project.toml`
+  Resolving package versions...
+Updating `/tmp/jl_fBgc8E/Project.toml`
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [b99e7846] + BinaryProvider v0.5.4
+  [34da2185] + Compat v2.1.0
+  [a93c6f00] + DataFrames v0.18.2
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [9da8a3cd] + JLSO v1.0.0
+  [f28f55f0] + Memento v0.12.1
+  [78c3b35d] + Mocking v0.5.7
+  [f269a46b] + TimeZones v0.9.1
+Updating `/tmp/jl_fBgc8E/Manifest.toml`
+  [7d9fca2a] + Arpack v0.4.0
+  [68821587] + Arpack_jll v3.5.0+3
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.3.0
+  [fbb218c0] + BSON v0.2.3
+  [9e28174c] + BinDeps v0.8.10
+  [b99e7846] + BinaryProvider v0.5.4
+  [324d7699] + CategoricalArrays v0.7.7
+  [34da2185] + Compat v2.1.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.18.2
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [31c24e10] + Distributions v0.20.0
+  [8f5d6c58] + EzXML v0.9.1
+  [8197267c] + IntervalSets v0.3.2
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [9da8a3cd] + JLSO v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [f28f55f0] + Memento v0.12.1
+  [e1d29d7a] + Missings v0.4.4
+  [78c3b35d] + Mocking v0.5.7
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.9.12
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [189a3867] + Reexport v0.2.0
+  [79098fc4] + Rmath v0.5.1
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v0.7.2
+  [2913bbd2] + StatsBase v0.30.0
+  [4c63d2b9] + StatsFuns v0.8.0
+  [cea106d9] + Syslogs v0.3.0
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v0.2.11
+  [f269a46b] + TimeZones v0.9.1
+  [30578b45] + URIParser v0.4.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [9abbd945] + Profile
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v1_serialize.jlso -> /tmp/jl_iPEU2G/v1_serialize.jlso
+[info | JLSO]: Upgrading JLSO format from v1 to v2
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_rpPnfH/Project.toml`
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v2_bson_gzip.jlso -> /tmp/jl_iPEU2G/v2_bson_gzip.jlso
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_OI6hLE/Project.toml`
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v2_bson_gzip_fastest.jlso -> /tmp/jl_iPEU2G/v2_bson_gzip_fastest.jlso
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_TtkVVG/Project.toml`
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v2_bson_gzip_smallest.jlso -> /tmp/jl_iPEU2G/v2_bson_gzip_smallest.jlso
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_LrMGKG/Project.toml`
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v2_bson_none.jlso -> /tmp/jl_iPEU2G/v2_bson_none.jlso
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_CLDPdG/Project.toml`
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v2_julia_serialize_gzip.jlso -> /tmp/jl_iPEU2G/v2_julia_serialize_gzip.jlso
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_XrsKUH/Project.toml`
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v2_julia_serialize_gzip_fastest.jlso -> /tmp/jl_iPEU2G/v2_julia_serialize_gzip_fastest.jlso
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_wYJciG/Project.toml`
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v2_julia_serialize_gzip_smallest.jlso -> /tmp/jl_iPEU2G/v2_julia_serialize_gzip_smallest.jlso
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_7RfAZD/Project.toml`
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v2_julia_serialize_none.jlso -> /tmp/jl_iPEU2G/v2_julia_serialize_none.jlso
+[info | JLSO]: Upgrading JLSO format from v2 to v3
+ Activating new environment at `/tmp/jl_IzOUOE/Project.toml`
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v3_bson_gzip.jlso -> /tmp/jl_iPEU2G/v3_bson_gzip.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v3_bson_gzip_fastest.jlso -> /tmp/jl_iPEU2G/v3_bson_gzip_fastest.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v3_bson_gzip_smallest.jlso -> /tmp/jl_iPEU2G/v3_bson_gzip_smallest.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v3_bson_none.jlso -> /tmp/jl_iPEU2G/v3_bson_none.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v3_julia_serialize_gzip.jlso -> /tmp/jl_iPEU2G/v3_julia_serialize_gzip.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v3_julia_serialize_gzip_fastest.jlso -> /tmp/jl_iPEU2G/v3_julia_serialize_gzip_fastest.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v3_julia_serialize_gzip_smallest.jlso -> /tmp/jl_iPEU2G/v3_julia_serialize_gzip_smallest.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v3_julia_serialize_none.jlso -> /tmp/jl_iPEU2G/v3_julia_serialize_none.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v4_bson_gzip.jlso -> /tmp/jl_iPEU2G/v4_bson_gzip.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v4_bson_gzip_fastest.jlso -> /tmp/jl_iPEU2G/v4_bson_gzip_fastest.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v4_bson_gzip_smallest.jlso -> /tmp/jl_iPEU2G/v4_bson_gzip_smallest.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v4_bson_none.jlso -> /tmp/jl_iPEU2G/v4_bson_none.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v4_julia_serialize_gzip.jlso -> /tmp/jl_iPEU2G/v4_julia_serialize_gzip.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v4_julia_serialize_gzip_fastest.jlso -> /tmp/jl_iPEU2G/v4_julia_serialize_gzip_fastest.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v4_julia_serialize_gzip_smallest.jlso -> /tmp/jl_iPEU2G/v4_julia_serialize_gzip_smallest.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v4_julia_serialize_none.jlso -> /tmp/jl_iPEU2G/v4_julia_serialize_none.jlso
+[info | JLSO]: Upgrading /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/specimens/v3_bson_none.jlso -> /tmp/jl_G7qw0G/v3_bson_none.jlso
+ Activating environment at `/tmp/jl_qNSbvG/Project.toml`
+Base.active_project() = "/tmp/jl_qNSbvG/Project.toml"
+ Activating environment at `/tmp/jl_Gk3rJS/Project.toml`
+keys are not Symbols: Test Failed at /home/pkgeval/.julia/packages/Memento/i6gAL/src/memento_test.jl:123
+  Expression: $(Expr(:escape, :(JLSO.save("breakfast.jlso", "food" => "☕️🥓🍳", "time" => Time(9, 0)))))
+    Expected: MethodError
+      Thrown: SystemError
+Stacktrace:
+ [1] (::var"#54#59")() at /home/pkgeval/.julia/packages/Memento/i6gAL/src/memento_test.jl:123
+ [2] setpropagating!(::var"#54#59", ::Logger, ::Bool) at /home/pkgeval/.julia/packages/Memento/i6gAL/src/loggers.jl:113
+ [3] #53 at /home/pkgeval/.julia/packages/Memento/i6gAL/src/memento_test.jl:122 [inlined]
+ [4] setlevel!(::var"#53#58", ::Logger, ::String; recursive::Bool) at /home/pkgeval/.julia/packages/Memento/i6gAL/src/loggers.jl:339
+ [5] setlevel!(::Function, ::Logger, ::String) at /home/pkgeval/.julia/packages/Memento/i6gAL/src/loggers.jl:320
+ [6] top-level scope at /home/pkgeval/.julia/packages/Memento/i6gAL/src/memento_test.jl:121
+ [7] top-level scope at /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/file_io.jl:167
+ [8] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [9] top-level scope at /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/file_io.jl:167
+ [10] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [11] top-level scope at /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/file_io.jl:151
+[ Info: SetupBuildDirectory: setting up build directory.
+[ Info: Doctest: running doctests.
+[ Info: Skipped ExpandTemplates step (doctest only).
+[ Info: Skipped CrossReferences step (doctest only).
+[ Info: Skipped CheckDocument step (doctest only).
+[ Info: Skipped Populate step (doctest only).
+[ Info: Skipped RenderDocument step (doctest only).
+Test Summary:            | Pass  Fail  Total
+JLSO                     |  263     1    264
+  Upgrading              |   76           76
+  JLSOFile               |   17           17
+  unknown format         |    1            1
+  show                   |    1            1
+  activate               |    4            4
+  reading and writing    |  112          112
+  deserialization        |   22           22
+  saving and loading     |   29     1     30
+    String-type paths    |   14           14
+    Path-type paths      |   14           14
+    keys are not Symbols |          1      1
+    Size Limits          |             No tests
+    README example       |    1            1
+  Doctests: JLSO         |    1            1
+ERROR: LoadError: Some tests did not pass: 263 passed, 1 failed, 0 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/JLSO/zhJ7y/test/runtests.jl:23
+
+PkgEval failed: Package JLSO errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:05:11.229
+CPU usage: 229.48s (216.01s user, 13.82s kernel)
+
+Network usage:
+- eth0: 19.067 MiB received, 572.609 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":48,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":29,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":48,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":48,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":29,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":48,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":241664,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":135168,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":241664,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":241664,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":135168,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":241664,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":418598912,"max_usage":1680916480,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":207654912,"inactive_file":135168,"inactive_anon":129085440,"total_pgfault":5111535,"total_cache":174723072,"total_rss_huge":0,"total_active_anon":253169664,"total_pgmajfault":0,"pgpgin":3394908,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":675840,"total_unevictable":0,"total_dirty":675840,"writeback":135168,"pgpgout":3301530,"hierarchical_memsw_limit":0,"cache":174723072,"active_file":135168,"pgfault":5111535,"total_mapped_file":0,"total_pgpgout":3301530,"total_writeback":135168,"rss":207654912,"unevictable":0,"total_inactive_anon":129085440,"total_pgpgin":3394908,"active_anon":253169664,"total_active_file":135168},"limit":540965302272},"name":"/JLSO-anO3yuyU","networks":{"eth0":{"rx_bytes":19993140,"rx_packets":5934,"tx_packets":5681,"tx_bytes":586352,"tx_dropped":0,"rx_dropped":8,"tx_errors":0,"rx_errors":0}},"id":"0ea736a0a2ccaad38487c03f35e20f3346bf89debddb8706c725d7373fa5684d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5779073704522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":216010000000,"usage_in_kernelmode":13820000000,"total_usage":229479345063,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,229478970752,14040,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35800,7040,115440,201991,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:05:11.23151277Z"}

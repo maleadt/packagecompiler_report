@@ -1,0 +1,87 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:32:59.646
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:33:01.406
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed TensorRefinement ─ v0.1.2
+  Installed Reexport ───────── v1.0.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a3b9d4e2] + TensorRefinement v0.1.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [189a3867] + Reexport v1.0.0
+  [a3b9d4e2] + TensorRefinement v0.1.2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+
+
+################################################################################
+# Testing: 2021-01-11T19:33:05.693
+#
+
+    Testing TensorRefinement
+Status `/tmp/jl_eJVEwQ/Project.toml`
+  [189a3867] Reexport v1.0.0
+  [1bc83da4] SafeTestsets v0.0.1
+  [a3b9d4e2] TensorRefinement v0.1.2
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_eJVEwQ/Manifest.toml`
+  [189a3867] Reexport v1.0.0
+  [1bc83da4] SafeTestsets v0.0.1
+  [a3b9d4e2] TensorRefinement v0.1.2
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary:           | Pass  Total
+TensorTrainFactor tests |   96     96
+  2.998980 seconds (5.73 M allocations: 326.874 MiB, 5.05% gc time)
+Test Summary:                  | Pass  Total
+TensorTrainFactorization tests |   80     80
+Test Summary: | Pass  Total
+FEM tests     |  110    110
+    Testing TensorRefinement tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:34:05.168
+CPU usage: 65.49s (56.31s user, 9.31s kernel)
+
+Network usage:
+- eth0: 2.580 MiB received, 35.379 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":12,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":31,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":36,"op":"Total","minor":0},{"major":253,"value":12,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":31,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":36,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":987136,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":1093632,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1114112,"op":"Total","minor":0},{"major":253,"value":987136,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":1093632,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1114112,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":331608064,"max_usage":3143761920,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":218996736,"inactive_file":675840,"inactive_anon":78802944,"total_pgfault":4851924,"total_cache":83230720,"total_rss_huge":0,"total_active_anon":220188672,"total_pgmajfault":0,"pgpgin":4371246,"rss_huge":0,"mapped_file":135168,"total_inactive_file":675840,"dirty":0,"total_unevictable":0,"total_dirty":0,"writeback":0,"pgpgout":4297472,"hierarchical_memsw_limit":0,"cache":83230720,"active_file":2568192,"pgfault":4851924,"total_mapped_file":135168,"total_pgpgout":4297472,"total_writeback":0,"rss":218996736,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":4371246,"active_anon":220188672,"total_active_file":2568192},"limit":540965302272},"name":"/TensorRefinement-Ld05OBCZ","networks":{"eth0":{"rx_bytes":2704852,"rx_packets":339,"tx_packets":333,"tx_bytes":36228,"tx_dropped":0,"rx_dropped":3,"tx_errors":0,"rx_errors":0}},"id":"4a9da1c7305bfd8ec6a9cbd22ca479825e03dae68017c1462f49ec29deabd15d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5080472134522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":56310000000,"usage_in_kernelmode":9310000000,"total_usage":65488651080,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,65488651080,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:34:05.172123004Z"}

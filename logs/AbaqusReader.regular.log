@@ -1,0 +1,247 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:41:36.534
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:41:38.332
+#
+
+ Installing known registries into `~/.julia`
+#######################################                                   54.8%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Nullables ──── v1.0.0
+  Installed AbaqusReader ─ v0.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [bc6b9049] + AbaqusReader v0.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [bc6b9049] + AbaqusReader v0.2.5
+  [4d1e1d77] + Nullables v1.0.0
+
+
+################################################################################
+# Testing: 2021-01-11T20:41:43.338
+#
+
+    Testing AbaqusReader
+Status `/tmp/jl_onYxkQ/Project.toml`
+  [bc6b9049] AbaqusReader v0.2.5
+  [4d1e1d77] Nullables v1.0.0
+  [8dfed614] Test
+Status `/tmp/jl_onYxkQ/Manifest.toml`
+  [bc6b9049] AbaqusReader v0.2.5
+  [4d1e1d77] Nullables v1.0.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+[ Info: 298 nodes found
+[ Info: Parsing elements. Type: C3D10. Topology: Tet10
+[ Info: Adding elset: Body1
+[ Info: Creating nset SUPPORT
+[ Info: Creating nset LOAD
+[ Info: Creating nset TOP
+[ Info: Parsing elements. Type: C3D10. Topology: Tet10
+[ Info: Adding elset: BEAM
+[ Info: 10 nodes found
+[ Info: Parsing elements. Type: C3D4. Topology: Tet4
+[ Info: Adding elset: CUBE
+┌ Warning: Unknown section: 'SOLID SECTION'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'MATERIAL'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'ELASTIC'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+[ Info: Creating nset SYM12
+[ Info: Creating nset SYM23
+[ Info: Creating nset SYM13
+┌ Warning: Unknown section: 'STEP'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'STATIC'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'BOUNDARY'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'DSLOAD'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'NODE FILE'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'END STEP'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+[ Info: 3 nodes found
+[ Info: Creating elset EALL
+[ Info: 2 nodes found
+[ Info: Creating nset testgen
+[ Info: Creating elset TEST1
+[ Info: 116 nodes found
+[ Info: Parsing elements. Type: C3D4. Topology: Tet4
+[ Info: Adding elset: UPPER
+[ Info: Parsing elements. Type: C3D4. Topology: Tet4
+[ Info: Adding elset: LOWER
+┌ Warning: Unknown section: 'SOLID SECTION'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'SOLID SECTION'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'MATERIAL'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'ELASTIC'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'DENSITY'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'SPECIFIC HEAT'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'CONDUCTIVITY'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+[ Info: Creating nset Without
+[ Info: Creating nset With quotes
+[ Info: Creating elset Without
+[ Info: Creating elset With quotes
+[ Info: 10 nodes found
+[ Info: Parsing elements. Type: C3D4. Topology: Tet4
+[ Info: Adding elset: CUBE
+┌ Warning: Unknown section: 'SOLID SECTION'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'MATERIAL'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'ELASTIC'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+[ Info: Creating nset SYM12
+[ Info: Creating nset SYM23
+[ Info: Creating nset SYM13
+┌ Warning: Unknown section: 'BOUNDARY'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'STEP'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'STATIC'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'BOUNDARY'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'DSLOAD'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'NODE FILE'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'NODE PRINT'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+┌ Warning: Unknown section: 'END STEP'
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_mesh.jl:270
+[ Info: section = nothing! line = *NODE, NSET=NALL
+[ Info: section = nothing! line = 1,                4.07417,        3.51532,        4.43035
+[ Info: section = nothing! line = 2,                6.24583,        4.69753,        6.40067
+[ Info: section = nothing! line = 3,1.0e1,10.00000,0.00000
+[ Info: section = nothing! line = 4,               1.0E1,        0.00000,        0.00000
+[ Info: section = nothing! line = 5,                0.00000,        0.00000,        0.00000
+[ Info: section = nothing! line = 6,                0.00000,       10.00000,        0.00000
+[ Info: section = nothing! line = 7,                0.00000,       10.00000,       10.00000
+[ Info: section = nothing! line = 8,                0.00000,        0.00000,       10.00000
+[ Info: section = nothing! line = 9, 100.0e-1,10.00000,10.00000
+[ Info: section = nothing! line = 10,100.0E-1,0.00000,10.00000
+[ Info: section = nothing! line = *ELEMENT, TYPE=C3D4, ELSET=CUBE
+[ Info: section = nothing! line = 1,         8,        10,         1,         2
+[ Info: section = nothing! line = 2,         4,         1,        10,         2
+[ Info: section = nothing! line = 3,         3,         9,         7,         2
+[ Info: section = nothing! line = 4,         3,         5,         4,         1
+[ Info: section = nothing! line = 5,         8,         7,         2,         1
+[ Info: section = nothing! line = 6,         5,         6,         8,         1
+[ Info: section = nothing! line = 7,         7,         6,         1,         8
+[ Info: section = nothing! line = 8,         7,         9,         8,         2
+[ Info: section = nothing! line = 9,         5,         8,        10,         1
+[ Info: section = nothing! line = 10,         3,         6,         5,         1
+[ Info: section = nothing! line = 11,         4,        10,         9,         2
+[ Info: section = nothing! line = 12,         1,         7,         2,         3
+[ Info: section = nothing! line = 13,         3,         4,         9,         2
+[ Info: section = nothing! line = 14,         3,         1,         4,         2
+[ Info: section = nothing! line = 15,         4,         5,        10,         1
+[ Info: section = nothing! line = 16,         8,         9,        10,         2
+[ Info: section = nothing! line = 17,         3,         6,         1,         7
+[ Info: New section: SOLID SECTION with options Union{String, Pair}["ELSET" => "CUBE", "MATERIAL" => "MAT"]
+[ Info: Close section: SOLID SECTION
+[ Info: New section: MATERIAL with options Union{String, Pair}["NAME" => "MAT"]
+[ Info: Close section: MATERIAL
+┌ Warning: no close_section! found for MATERIAL
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_model.jl:168
+[ Info: New section: ELASTIC with options Union{String, Pair}[]
+┌ Warning: no open_section! found for ELASTIC
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_model.jl:182
+┌ Warning: missing keyword? line = *NSET, NSET=SYM12
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_model.jl:199
+[ Info: Close section: ELASTIC
+[ Info: section = nothing! line = 5,         6,         3,         4,
+[ Info: section = nothing! line = *NSET, NSET=SYM23
+[ Info: section = nothing! line = 5,         6,         7,         8,
+[ Info: section = nothing! line = *NSET, NSET=SYM13
+[ Info: section = nothing! line = 5,        10,         8,         4,
+[ Info: section = nothing! line = *SURFACE, TYPE=ELEMENT, NAME=LOAD
+[ Info: section = nothing! line = 16, S1
+[ Info: section = nothing! line = 8, S1
+[ Info: section = nothing! line = *SURFACE, NAME=ORDER , TYPE=ELEMENT
+[ Info: section = nothing! line = 16, S1
+[ Info: section = nothing! line = 8, S1
+[ Info: New section: BOUNDARY with options Union{String, Pair}[]
+┌ Warning: no open_section! found for BOUNDARY
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_model.jl:182
+[ Info: Close section: BOUNDARY
+[ Info: New section: STEP with options Union{String, Pair}[]
+[ Info: Close section: STEP
+┌ Warning: no close_section! found for STEP
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_model.jl:168
+[ Info: New section: STATIC with options Union{String, Pair}[]
+[ Info: Close section: STATIC
+┌ Warning: no close_section! found for STATIC
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_model.jl:168
+[ Info: New section: BOUNDARY with options Union{String, Pair}[]
+┌ Warning: no open_section! found for BOUNDARY
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_model.jl:182
+[ Info: Close section: BOUNDARY
+[ Info: New section: DSLOAD with options Union{String, Pair}[]
+┌ Warning: no open_section! found for DSLOAD
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_model.jl:182
+┌ Warning: missing keyword? line = *NODE FILE
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_model.jl:199
+[ Info: Close section: DSLOAD
+[ Info: section = nothing! line = COORD
+[ Info: section = nothing! line = U
+[ Info: New section: NODE PRINT with options Union{String, Pair}[]
+┌ Warning: no open_section! found for NODE PRINT
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_model.jl:182
+[ Info: Close section: NODE PRINT
+[ Info: New section: END STEP with options Union{String, Pair}[]
+[ Info: Close section: END STEP
+┌ Warning: no close_section! found for END STEP
+└ @ AbaqusReader ~/.julia/packages/AbaqusReader/C1mY0/src/parse_model.jl:168
+[ Info: Downloading model jl_EnbQnZ to /tmp/jl_EnbQnZ
+[ Info: 7 nodes found
+[ Info: Parsing elements. Type: B33. Topology: Seg2
+Test Summary:   | Pass  Total
+AbaqusReader.jl |   71     71
+    Testing AbaqusReader tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:41:54.389
+CPU usage: 17.88s (14.88s user, 3.02s kernel)
+
+Network usage:
+- eth0: 2.574 MiB received, 33.045 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":332632064,"max_usage":716513280,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":223399936,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":427317,"total_cache":79794176,"total_rss_huge":0,"total_active_anon":224514048,"total_pgmajfault":0,"pgpgin":261921,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":135168,"pgpgout":187880,"hierarchical_memsw_limit":0,"cache":79794176,"active_file":135168,"pgfault":427317,"total_mapped_file":0,"total_pgpgout":187880,"total_writeback":135168,"rss":223399936,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":261921,"active_anon":224514048,"total_active_file":135168},"limit":540965302272},"name":"/AbaqusReader-CQVVfBhx","networks":{"eth0":{"rx_bytes":2698909,"rx_packets":363,"tx_packets":334,"tx_bytes":33838,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"0c12a138750628ae6ccb06dd73a47084cf657705d8e46cad2d142eef66592da9","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5600676524522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":14880000000,"usage_in_kernelmode":3020000000,"total_usage":17878301689,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,17878295879,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5810,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:41:55.073604156Z"}

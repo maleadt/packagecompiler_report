@@ -1,0 +1,206 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T19:34:54.698
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T19:34:56.428
+#
+
+ Installing known registries into `~/.julia`
+#######                                                                   10.1%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ChipSort ──────── v0.1.0
+  Installed SIMD ──────────── v3.2.1
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [06416c39] + ChipSort v0.1.0
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [06416c39] + ChipSort v0.1.0
+  [9b87118b] + PackageCompiler v1.2.5
+  [fdea26ae] + SIMD v3.2.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T19:35:02.306
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 154.214 MiB, compilation took 178 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T19:38:07.999
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/ChipSort-WcZVBlJg.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:38:09.796
+#
+
+ Installing known registries into `~/.julia`
+################################################                          67.4%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ChipSort ─ v0.1.0
+  Installed SIMD ───── v3.2.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [06416c39] + ChipSort v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [06416c39] + ChipSort v0.1.0
+  [fdea26ae] + SIMD v3.2.1
+
+
+################################################################################
+# Testing: 2021-01-11T19:38:14.767
+#
+
+    Testing ChipSort
+Status `/tmp/jl_pHMfJ9/Project.toml`
+  [06416c39] ChipSort v0.1.0
+  [fdea26ae] SIMD v3.2.1
+  [8dfed614] Test
+Status `/tmp/jl_pHMfJ9/Manifest.toml`
+  [06416c39] ChipSort v0.1.0
+  [fdea26ae] SIMD v3.2.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary:    |   Pass   Total
+Sorting networks | 197312  197312
+T = UInt16: Error During Test at /home/user/.julia/packages/ChipSort/ZSK0t/test/test-transpose.jl:40
+  Got exception outside of a @test
+  MethodError: no method matching shufflevector(::Vec{2,UInt16}, ::Vec{2,UInt16}, ::Type{Val{(0, 2)}})
+  Closest candidates are:
+    shufflevector(::Vec{N,T}, ::Vec{N,T}, !Matched::Val{I}) where {N, T, I} at /home/pkgeval/.julia/packages/SIMD/AgnHl/src/simdvec.jl:477
+    shufflevector(::Vec{N,T}, !Matched::Val{I}) where {N, T, I} at /home/pkgeval/.julia/packages/SIMD/AgnHl/src/simdvec.jl:474
+  Stacktrace:
+   [1] macro expansion at /home/pkgeval/.julia/packages/ChipSort/ZSK0t/src/transpose-vecs.jl:134 [inlined]
+   [2] transpose_vecs(::Vec{2,UInt16}, ::Vec{2,UInt16}) at /home/pkgeval/.julia/packages/ChipSort/ZSK0t/src/transpose-vecs.jl:68
+   [3] (::var"#test_transpose_vecs#17")(::Type{T} where T, ::Int64, ::Int64) at /home/user/.julia/packages/ChipSort/ZSK0t/test/test-transpose.jl:36
+   [4] top-level scope at /home/user/.julia/packages/ChipSort/ZSK0t/test/test-transpose.jl:43
+   [5] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1190
+   [6] top-level scope at /home/user/.julia/packages/ChipSort/ZSK0t/test/test-transpose.jl:40
+   [7] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [8] top-level scope at /home/user/.julia/packages/ChipSort/ZSK0t/test/test-transpose.jl:11
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at /home/user/.julia/packages/ChipSort/ZSK0t/test/runtests.jl:2
+   [11] include(::String) at ./client.jl:457
+   [12] top-level scope at none:6
+   [13] eval(::Module, ::Any) at ./boot.jl:331
+   [14] exec_options(::Base.JLOptions) at ./client.jl:272
+   [15] _start() at ./client.jl:506
+  
+T = Float64: Error During Test at /home/user/.julia/packages/ChipSort/ZSK0t/test/test-transpose.jl:40
+  Got exception outside of a @test
+  MethodError: no method matching shufflevector(::Vec{2,Float64}, ::Vec{2,Float64}, ::Type{Val{(0, 2)}})
+  Closest candidates are:
+    shufflevector(::Vec{N,T}, ::Vec{N,T}, !Matched::Val{I}) where {N, T, I} at /home/pkgeval/.julia/packages/SIMD/AgnHl/src/simdvec.jl:477
+    shufflevector(::Vec{N,T}, !Matched::Val{I}) where {N, T, I} at /home/pkgeval/.julia/packages/SIMD/AgnHl/src/simdvec.jl:474
+  Stacktrace:
+   [1] macro expansion at /home/pkgeval/.julia/packages/ChipSort/ZSK0t/src/transpose-vecs.jl:134 [inlined]
+   [2] transpose_vecs(::Vec{2,Float64}, ::Vec{2,Float64}) at /home/pkgeval/.julia/packages/ChipSort/ZSK0t/src/transpose-vecs.jl:68
+   [3] (::var"#test_transpose_vecs#17")(::Type{T} where T, ::Int64, ::Int64) at /home/user/.julia/packages/ChipSort/ZSK0t/test/test-transpose.jl:36
+   [4] top-level scope at /home/user/.julia/packages/ChipSort/ZSK0t/test/test-transpose.jl:43
+   [5] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1190
+   [6] top-level scope at /home/user/.julia/packages/ChipSort/ZSK0t/test/test-transpose.jl:40
+   [7] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [8] top-level scope at /home/user/.julia/packages/ChipSort/ZSK0t/test/test-transpose.jl:11
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at /home/user/.julia/packages/ChipSort/ZSK0t/test/runtests.jl:2
+   [11] include(::String) at ./client.jl:457
+   [12] top-level scope at none:6
+   [13] eval(::Module, ::Any) at ./boot.jl:331
+   [14] exec_options(::Base.JLOptions) at ./client.jl:272
+   [15] _start() at ./client.jl:506
+  
+Test Summary: | Pass  Error  Total
+Transpose     |   36      2     38
+  T = UInt16  |   18            18
+  T = Float64 |   18            18
+  T = UInt16  |           1      1
+  T = Float64 |           1      1
+ERROR: LoadError: LoadError: Some tests did not pass: 36 passed, 0 failed, 2 errored, 0 broken.
+in expression starting at /home/user/.julia/packages/ChipSort/ZSK0t/test/test-transpose.jl:8
+in expression starting at /home/user/.julia/packages/ChipSort/ZSK0t/test/runtests.jl:2
+
+PkgEval failed: Package ChipSort errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:39:01.443
+CPU usage: 53.47s (49.92s user, 3.64s kernel)
+
+Network usage:
+- eth0: 2.791 MiB received, 34.351 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":166,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":180,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":185,"op":"Total","minor":0},{"major":253,"value":166,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":180,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":185,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":679936,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":737280,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":757760,"op":"Total","minor":0},{"major":253,"value":679936,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":737280,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":757760,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":347701248,"max_usage":613224448,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":232591360,"inactive_file":135168,"inactive_anon":79208448,"total_pgfault":932349,"total_cache":85168128,"total_rss_huge":0,"total_active_anon":233164800,"total_pgmajfault":0,"pgpgin":497046,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":419496,"hierarchical_memsw_limit":0,"cache":85168128,"active_file":5406720,"pgfault":932349,"total_mapped_file":0,"total_pgpgout":419496,"total_writeback":0,"rss":232591360,"unevictable":0,"total_inactive_anon":79208448,"total_pgpgin":497046,"active_anon":233164800,"total_active_file":5406720},"limit":540965302272},"name":"/ChipSort-0MLcNQA7","networks":{"eth0":{"rx_bytes":2926184,"rx_packets":376,"tx_packets":353,"tx_bytes":35175,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"f70b77dc16140e5e48639203930b8db95b98a4da39d3f72b115ab284e25de5a9","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5118442854522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":49920000000,"usage_in_kernelmode":3640000000,"total_usage":53473772392,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,53473772392,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T19:39:02.122073489Z"}

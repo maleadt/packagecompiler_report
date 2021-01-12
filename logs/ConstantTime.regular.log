@@ -1,0 +1,100 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T18:38:08.401
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T18:38:10.24
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ConstantTime ─ v0.1.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [adc38e39] + ConstantTime v0.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [adc38e39] + ConstantTime v0.1.1
+
+
+################################################################################
+# Testing: 2021-01-11T18:38:13.912
+#
+
+    Testing ConstantTime
+Status `/tmp/jl_tYnGYS/Project.toml`
+  [adc38e39] ConstantTime v0.1.1
+  [82bedeac] Jute v0.2.5
+Status `/tmp/jl_tYnGYS/Manifest.toml`
+  [c7e460c6] ArgParse v0.6.2
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [34da2185] Compat v2.2.1
+  [adc38e39] ConstantTime v0.1.1
+  [864edb3b] DataStructures v0.17.20
+  [682c06a0] JSON v0.21.1
+  [82bedeac] Jute v0.2.5
+  [bac558e1] OrderedCollections v1.3.2
+  [69de0a69] Parsers v1.0.15
+  [b718987f] TextWrap v0.3.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Collecting testcases...
+Using 18 out of 18 testcase definitions...
+================================================================================
+Platform: Linux (x86_64-linux-gnu), Julia 1.5.3, Jute nothing
+--------------------------------------------------------------------------------
+
+Value: ..........................................................................................
+Choice: ...........................
+--------------------------------------------------------------------------------
+117 tests passed, 0 failed, 0 errored in 3.61s (total test time 1.52s)
+    Testing ConstantTime tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T18:38:45.789
+CPU usage: 37.40s (33.54s user, 3.93s kernel)
+
+Network usage:
+- eth0: 3.005 MiB received, 74.438 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":55,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":74,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":79,"op":"Total","minor":0},{"major":253,"value":55,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":74,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":79,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":757760,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":864256,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":884736,"op":"Total","minor":0},{"major":253,"value":757760,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":864256,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":884736,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":288522240,"max_usage":1074073600,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":33,"total_rss":168894464,"inactive_file":811008,"inactive_anon":82046976,"total_pgfault":959178,"total_cache":89292800,"total_rss_huge":0,"total_active_anon":175497216,"total_pgmajfault":33,"pgpgin":617100,"rss_huge":0,"mapped_file":135168,"total_inactive_file":811008,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":554044,"hierarchical_memsw_limit":0,"cache":89292800,"active_file":135168,"pgfault":959178,"total_mapped_file":135168,"total_pgpgout":554044,"total_writeback":0,"rss":168894464,"unevictable":0,"total_inactive_anon":82046976,"total_pgpgin":617100,"active_anon":175497216,"total_active_file":135168},"limit":540965302272},"name":"/ConstantTime-npAF5TTO","networks":{"eth0":{"rx_bytes":3151349,"rx_packets":630,"tx_packets":683,"tx_bytes":76224,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"7212c32b6c312f1f2daa815d93459ae7dc1808dea47dbfc4edd6ada51668f5d9","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4656221104522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":33540000000,"usage_in_kernelmode":3930000000,"total_usage":37400967218,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37400961938,2110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3170,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T18:38:46.209626285Z"}

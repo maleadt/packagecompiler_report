@@ -1,0 +1,199 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:55:13.673
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:55:15.466
+#
+
+ Installing known registries into `~/.julia`
+##########################################################                81.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ArnoldiMethod ─ v0.1.0
+  Installed StaticArrays ── v1.0.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [ec485272] + ArnoldiMethod v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [ec485272] + ArnoldiMethod v0.1.0
+  [90137ffa] + StaticArrays v1.0.1
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+
+
+################################################################################
+# Testing: 2021-01-11T21:55:19.722
+#
+
+    Testing ArnoldiMethod
+Status `/tmp/jl_JoWh9S/Project.toml`
+  [ec485272] ArnoldiMethod v0.1.0
+  [90137ffa] StaticArrays v1.0.1
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_JoWh9S/Manifest.toml`
+  [ec485272] ArnoldiMethod v0.1.0
+  [90137ffa] StaticArrays v1.0.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Test Summary:  | Pass  Total
+Initialization |    1      1
+Test Summary:         | Pass  Total
+Arnoldi Factorization |    4      4
+Test Summary:      | Pass  Total
+Invariant subspace |    2      2
+Test Summary:   | Pass  Total
+Givens rotation |   16     16
+Test Summary:               | Pass  Total
+Stable permutation ordering |   20     20
+Test Summary:       | Pass  Total
+Schur factorization |  104    104
+Test Summary:                          | Pass  Total
+Schur with nearly repeated eigenvalues |    1      1
+Test Summary:                           | Pass  Total
+Tiny sylvester equation Float64, (2, 2) |    2      2
+Test Summary:                           | Pass  Total
+Tiny sylvester equation Float64, (2, 1) |    2      2
+Test Summary:                           | Pass  Total
+Tiny sylvester equation Float64, (1, 2) |    2      2
+Test Summary:                                    | Pass  Total
+Tiny sylvester equation Complex{Float64}, (2, 2) |    2      2
+Test Summary:                                    | Pass  Total
+Tiny sylvester equation Complex{Float64}, (2, 1) |    2      2
+Test Summary:                                    | Pass  Total
+Tiny sylvester equation Complex{Float64}, (1, 2) |    2      2
+Test Summary:              | Pass  Total
+Singular sylvester Float64 |    3      3
+Test Summary:                       | Pass  Total
+Singular sylvester Complex{Float64} |    3      3
+Test Summary:                             | Pass  Total
+Reordering the Schur form 1 ↔ 1 (Float64) |    3      3
+Test Summary:                                      | Pass  Total
+Reordering the Schur form 1 ↔ 1 (Complex{Float64}) |    3      3
+Test Summary:                             | Pass  Total
+Reordering the Schur form 1 ↔ 2 (Float64) |    5      5
+Test Summary:                                      | Pass  Total
+Reordering the Schur form 1 ↔ 2 (Complex{Float64}) |    5      5
+Test Summary:                             | Pass  Total
+Reordering the Schur form 2 ↔ 1 (Float64) |    5      5
+Test Summary:                                      | Pass  Total
+Reordering the Schur form 2 ↔ 1 (Complex{Float64}) |    5      5
+Test Summary:                             | Pass  Total
+Reordering the Schur form 2 ↔ 2 (Float64) |    7      7
+Test Summary:                                      | Pass  Total
+Reordering the Schur form 2 ↔ 2 (Complex{Float64}) |    7      7
+Test Summary:                          | Pass  Total
+Rotation right with single eigenvalues |   12     12
+Test Summary:                           | Pass  Total
+Rotation right with two conjugate pairs |   10     10
+Test Summary:                                    | Pass  Total
+Rotation right with one 2 × 2 block on the right |   12     12
+Test Summary:                                   | Pass  Total
+Rotation right with one 2 × 2 block on the left |   12     12
+Test Summary:     | Pass  Total
+Stewart's example |    6      6
+Test Summary:               | Pass  Total
+Small eigenvalue separation |    4      4
+Test Summary:                            | Pass  Total
+Identical eigenvalues should not blow up |    3      3
+Test Summary:                       | Pass  Total
+Eigenvector upper triangular matrix |   80     80
+Test Summary:                              | Pass  Total
+Eigenvectors quasi-upper triangular matrix |   40     40
+Test Summary:   | Pass  Total
+Extract partial |    2      2
+Test Summary:                        | Pass  Total
+Zero eigenvalues & low-rank matrices |    5      5
+Test Summary:     | Pass  Total
+Right number type |    1      1
+Test Summary:                          | Pass  Total
+Find all eigenvalues of a small matrix |    2      2
+Test Summary:   | Pass  Total
+Incorrect input |    5      5
+Test Summary:                   | Pass  Total
+Target non-dominant eigenvalues |    1      1
+Test Summary:                 | Pass  Total
+Schur to eigen Float64 take 1 |   11     11
+Test Summary:                 | Pass  Total
+Schur to eigen Float64 take 2 |   11     11
+Test Summary:                 | Pass  Total
+Schur to eigen Float64 take 3 |   11     11
+Test Summary:                 | Pass  Total
+Schur to eigen Float64 take 4 |   11     11
+Test Summary:                 | Pass  Total
+Schur to eigen Float64 take 5 |   11     11
+Test Summary:                 | Pass  Total
+Schur to eigen Float64 take 6 |   11     11
+Test Summary:                 | Pass  Total
+Schur to eigen Float64 take 7 |   11     11
+Test Summary:                 | Pass  Total
+Schur to eigen Float64 take 8 |   11     11
+Test Summary:                 | Pass  Total
+Schur to eigen Float64 take 9 |   11     11
+Test Summary:                  | Pass  Total
+Schur to eigen Float64 take 10 |   11     11
+Test Summary:                          | Pass  Total
+Schur to eigen Complex{Float64} take 1 |   11     11
+Test Summary:                          | Pass  Total
+Schur to eigen Complex{Float64} take 2 |   11     11
+Test Summary:                          | Pass  Total
+Schur to eigen Complex{Float64} take 3 |   11     11
+Test Summary:                          | Pass  Total
+Schur to eigen Complex{Float64} take 4 |   11     11
+Test Summary:                          | Pass  Total
+Schur to eigen Complex{Float64} take 5 |   11     11
+Test Summary:                          | Pass  Total
+Schur to eigen Complex{Float64} take 6 |   11     11
+Test Summary:                          | Pass  Total
+Schur to eigen Complex{Float64} take 7 |   11     11
+Test Summary:                          | Pass  Total
+Schur to eigen Complex{Float64} take 8 |   11     11
+Test Summary:                          | Pass  Total
+Schur to eigen Complex{Float64} take 9 |   11     11
+Test Summary:                           | Pass  Total
+Schur to eigen Complex{Float64} take 10 |   11     11
+    Testing ArnoldiMethod tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:56:05.392
+CPU usage: 51.73s (48.69s user, 3.10s kernel)
+
+Network usage:
+- eth0: 2.742 MiB received, 33.841 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":332292096,"max_usage":875143168,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":217247744,"inactive_file":135168,"inactive_anon":79749120,"total_pgfault":768306,"total_cache":85213184,"total_rss_huge":0,"total_active_anon":219648000,"total_pgmajfault":0,"pgpgin":469095,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":395261,"hierarchical_memsw_limit":0,"cache":85213184,"active_file":3108864,"pgfault":768306,"total_mapped_file":0,"total_pgpgout":395261,"total_writeback":0,"rss":217247744,"unevictable":0,"total_inactive_anon":79749120,"total_pgpgin":469095,"active_anon":219648000,"total_active_file":3108864},"limit":540965302272},"name":"/ArnoldiMethod-7dWulrSN","networks":{"eth0":{"rx_bytes":2874872,"rx_packets":360,"tx_packets":346,"tx_bytes":34653,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"5c0d4f119c702fcea4e537b47824bdf67c7c10574e321a9f3b374a38d8d17b5a","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6169159664522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":48690000000,"usage_in_kernelmode":3100000000,"total_usage":51725927032,"percpu_usage":[0,51725919372,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5550,2110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:56:05.394644778Z"}

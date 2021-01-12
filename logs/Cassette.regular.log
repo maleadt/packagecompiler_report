@@ -1,0 +1,141 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T22:40:14.705
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:40:16.514
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Cassette ─ v0.3.4
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [7057c7e9] + Cassette v0.3.4
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [7057c7e9] + Cassette v0.3.4
+
+
+################################################################################
+# Testing: 2021-01-11T22:40:21.06
+#
+
+    Testing Cassette
+Status `/tmp/jl_0khg7Q/Project.toml`
+  [7057c7e9] Cassette v0.3.4
+  [b77e0a4c] InteractiveUtils
+  [37e2e46d] LinearAlgebra
+  [44cfe95a] Pkg
+  [8dfed614] Test
+Status `/tmp/jl_0khg7Q/Manifest.toml`
+  [7057c7e9] Cassette v0.3.4
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+running unit tests
+Test Summary: | Pass  Total
+unit tests    |  115    115
+  1.136216 seconds (2.79 M allocations: 149.291 MiB, 2.51% gc time)
+running misc. tests (w/o tagging)
+   running RosCtx test...done (took 5.431572914123535 seconds)
+   running HookCtx test...done (took 0.7759919166564941 seconds)
+   running SinCtx test...done (took 3.318148136138916 seconds)
+   running FoldCtx test...done (took 0.08523988723754883 seconds)
+   running CountCtx test...done (took 3.290850877761841 seconds)
+   running CountCtx2 test...done (took 3.849721908569336 seconds)
+   running SqrCtx test...done (took 0.12773585319519043 seconds)
+   running CompCtx test...done (took 1.7896430492401123 seconds)
+   running PassCtx test...done (took 10.986876010894775 seconds)
+   running PassFallbackCtx test...done (took 0.6623640060424805 seconds)
+   running WorldCtx test...done (took 4.601363897323608 seconds)
+   running TraceCtx test...done (took 0.9853610992431641 seconds)
+   running NestedReflectCtx test...done (took 0.09849691390991211 seconds)
+   running GemvCtx test...done (took 1.06889009475708 seconds)
+   running InferCtx test...done (took 16.91695785522461 seconds)
+   running InModuleCtx test...done (took 1.2491400241851807 seconds)
+   running InvokeCtx test...done (took 0.15244603157043457 seconds)
+   running Invoke2Ctx test...done (took 0.16196513175964355 seconds)
+   running MemoizeCtx test...done (took 0.22932696342468262 seconds)
+   running NoOpCtx test...done (took 27.2604238986969 seconds)
+   running DisableHooksCtx test...done (took 5.447365999221802 seconds)
+   running SliceCtx test...done (took 4.128101110458374 seconds)
+   running OverdubOverdubCtx test...   running NukeCtx test...Launching Nukes
+Test Summary:             | Pass  Broken  Total
+misc. tests (w/o tagging) |  101       4    105
+ 94.958162 seconds (292.04 M allocations: 15.232 GiB, 7.28% gc time)
+running misc. tests (w/ tagging)
+   running BazCtx test...done (took 8.667080163955688 seconds)
+   running FooBarCtx test...done (took 6.580099105834961 seconds)
+   running TaggedTupleCtx test...done (took 4.125144958496094 seconds)
+   running ApplyCtx test...done (took 6.947520017623901 seconds)
+   running VATupleCtx test...done (took 19.199027061462402 seconds)
+   running BroadcastCtx test...done (took 18.60653305053711 seconds)
+   running BroadcastCtx2 test...done (took 31.50054693222046 seconds)
+   running MetaTypeCtx test...done (took 0.3434150218963623 seconds)
+   running TagConditionalCtx test...done (took 1.583611011505127 seconds)
+   running KwargCtx test...done (took 1.3444910049438477 seconds)
+   running RecurTagCtx test...done (took 0.6520459651947021 seconds)
+   running CrazyPropCtx test...done (took 26.62602996826172 seconds)
+   running DiffCtx test...done (took 95.58053708076477 seconds)
+   running ArrayIndexCtx test...done (took 5.1576759815216064 seconds)
+Test Summary:            | Pass  Total
+misc. tests (w/ tagging) |  119    119
+226.946863 seconds (274.94 M allocations: 15.048 GiB, 3.46% gc time)
+running precompile test
+ Generating  project MyPkg:
+    MyPkg/Project.toml
+    MyPkg/src/MyPkg.jl
+ Activating environment at `/tmp/jl_u3HwEA/MyPkg/Project.toml`
+Path `/home/pkgeval/.julia/packages/Cassette/Wjztv/test/..` exists and looks like the correct package. Using existing path.
+  Resolving package versions...
+Updating `/tmp/jl_u3HwEA/MyPkg/Project.toml`
+  [7057c7e9] + Cassette v0.3.4 `~/.julia/packages/Cassette/Wjztv`
+Updating `/tmp/jl_u3HwEA/MyPkg/Manifest.toml`
+  [7057c7e9] + Cassette v0.3.4 `~/.julia/packages/Cassette/Wjztv`
+Test Summary:  | Pass  Total
+Precompilation |    1      1
+    Testing Cassette tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:45:49.303
+CPU usage: 334.25s (330.57s user, 4.10s kernel)
+
+Network usage:
+- eth0: 3.053 MiB received, 35.666 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":26,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":7,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":26,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":26,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":7,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":26,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":135168,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":28672,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":135168,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":135168,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":28672,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":135168,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":324104192,"max_usage":1111494656,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":214417408,"inactive_file":135168,"inactive_anon":79613952,"total_pgfault":1290960,"total_cache":80642048,"total_rss_huge":0,"total_active_anon":215457792,"total_pgmajfault":0,"pgpgin":443784,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":371763,"hierarchical_memsw_limit":0,"cache":80642048,"active_file":135168,"pgfault":1290960,"total_mapped_file":0,"total_pgpgout":371763,"total_writeback":0,"rss":214417408,"unevictable":0,"total_inactive_anon":79613952,"total_pgpgin":443784,"active_anon":215457792,"total_active_file":135168},"limit":540965302272},"name":"/Cassette-NxFJrDFP","networks":{"eth0":{"rx_bytes":3200911,"rx_packets":539,"tx_packets":411,"tx_bytes":36522,"tx_dropped":0,"rx_dropped":11,"tx_errors":0,"rx_errors":0}},"id":"b13a1c956cef392ae3895b1262e12dffb21c7b634a916b5e3f11af68ced7201c","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":41},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6550408814522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":330570000000,"usage_in_kernelmode":4100000000,"total_usage":334245164545,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,334245162235,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2310,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:45:49.305799108Z"}

@@ -1,0 +1,209 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:52:56.297
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:52:58.068
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed FastClosures ─ v0.3.2
+  Installed Requires ───── v1.1.2
+  Installed GCMAES ─────── v0.1.21
+  Installed BSON ───────── v0.2.6
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [4aa9d100] + GCMAES v0.1.21
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [fbb218c0] + BSON v0.2.6
+  [9aa1b823] + FastClosures v0.3.2
+  [4aa9d100] + GCMAES v0.1.21
+  [ae029012] + Requires v1.1.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T21:53:02.539
+#
+
+    Testing GCMAES
+Status `/tmp/jl_2HIAvT/Project.toml`
+  [fbb218c0] BSON v0.2.6
+  [9aa1b823] FastClosures v0.3.2
+  [4aa9d100] GCMAES v0.1.21
+  [ae029012] Requires v1.1.2
+  [e88e6eb3] Zygote v0.4.22
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [37e2e46d] LinearAlgebra
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_2HIAvT/Manifest.toml`
+  [621f4979] AbstractFFTs v0.5.0
+  [4c555306] ArrayLayouts v0.3.8
+  [56f22d72] Artifacts v1.3.0
+  [fbb218c0] BSON v0.2.6
+  [b99e7846] BinaryProvider v0.5.10
+  [082447d4] ChainRules v0.6.5
+  [d360d2e6] ChainRulesCore v0.8.1
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [9aa1b823] FastClosures v0.3.2
+  [1a297f60] FillArrays v0.8.14
+  [f6369f11] ForwardDiff v0.10.14
+  [4aa9d100] GCMAES v0.1.21
+  [7869d1d1] IRTools v0.4.2
+  [692b3bcd] JLLWrappers v1.2.0
+  [1914dd2f] MacroTools v0.5.6
+  [46d2c3a1] MuladdMacro v0.2.2
+  [872c559c] NNlib v0.6.6
+  [77ba4419] NaNMath v0.3.5
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [276daf66] SpecialFunctions v1.1.0
+  [90137ffa] StaticArrays v1.0.1
+  [e88e6eb3] Zygote v0.4.22
+  [700de1a5] ZygoteRules v0.2.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+20-10 CMA-ES
+time:21:54:25.988  iter:1  elapsed-time:3.49  pmap-time:0.38  grad-time:0.00  ls-time:0.13 ls-dec:0.00e+00
+fcount:20  fval:2.56e+03  fmin:2.56e+03  norm:4.22e+00  axis-ratio:1.01e+00  free-mem:152.43GB
+time:21:54:28.492  iter:2  elapsed-time:2.36  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:40  fval:2.52e+03  fmin:2.52e+03  norm:4.17e+00  axis-ratio:1.01e+00  free-mem:153.25GB
+time:21:54:28.501  iter:3  elapsed-time:0.01  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:60  fval:2.47e+03  fmin:2.47e+03  norm:4.11e+00  axis-ratio:1.01e+00  free-mem:153.21GB
+time:21:54:28.509  iter:4  elapsed-time:0.01  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:80  fval:2.42e+03  fmin:2.42e+03  norm:4.07e+00  axis-ratio:1.01e+00  free-mem:153.20GB
+time:21:54:28.518  iter:5  elapsed-time:0.01  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:100  fval:2.41e+03  fmin:2.41e+03  norm:4.07e+00  axis-ratio:1.01e+00  free-mem:153.17GB
+20-10 CMA-ES
+time:21:54:47.729  iter:1  elapsed-time:19.00  pmap-time:0.00  grad-time:0.34  ls-time:0.13 ls-dec:0.00e+00
+fcount:20  fval:2.36e+03  fmin:2.36e+03  norm:4.01e+00  axis-ratio:1.01e+00  free-mem:148.84GB
+time:21:54:47.923  iter:2  elapsed-time:0.19  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:40  fval:2.31e+03  fmin:2.31e+03  norm:3.95e+00  axis-ratio:1.01e+00  free-mem:148.30GB
+time:21:54:47.932  iter:3  elapsed-time:0.01  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:60  fval:2.30e+03  fmin:2.30e+03  norm:3.95e+00  axis-ratio:1.01e+00  free-mem:148.27GB
+time:21:54:47.941  iter:4  elapsed-time:0.01  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:80  fval:2.27e+03  fmin:2.27e+03  norm:3.93e+00  axis-ratio:1.01e+00  free-mem:148.24GB
+time:21:54:47.95  iter:5  elapsed-time:0.01  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:100  fval:2.25e+03  fmin:2.25e+03  norm:3.90e+00  axis-ratio:1.01e+00  free-mem:148.25GB
+20-10 CMA-ES
+time:21:54:49.462  iter:1  elapsed-time:0.62  pmap-time:0.13  grad-time:0.00  ls-time:0.01 ls-dec:0.00e+00
+fcount:20  fval:2.33e+03  fmin:2.33e+03  norm:3.99e+00  axis-ratio:1.01e+00  free-mem:149.61GB
+time:21:54:49.65  iter:2  elapsed-time:0.19  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:40  fval:2.29e+03  fmin:2.29e+03  norm:3.93e+00  axis-ratio:1.01e+00  free-mem:150.24GB
+time:21:54:49.659  iter:3  elapsed-time:0.01  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:60  fval:2.24e+03  fmin:2.24e+03  norm:3.89e+00  axis-ratio:1.01e+00  free-mem:150.28GB
+time:21:54:49.666  iter:4  elapsed-time:0.01  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:80  fval:2.17e+03  fmin:2.17e+03  norm:3.83e+00  axis-ratio:1.01e+00  free-mem:150.27GB
+time:21:54:49.675  iter:5  elapsed-time:0.01  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:100  fval:2.17e+03  fmin:2.17e+03  norm:3.82e+00  axis-ratio:1.01e+00  free-mem:150.26GB
+20-10 CMA-ES
+time:21:54:51.111  iter:1  elapsed-time:0.61  pmap-time:0.11  grad-time:0.00  ls-time:0.01 ls-dec:0.00e+00
+fcount:20  fval:7.34e+02  fmin:7.34e+02  norm:3.87e+00  axis-ratio:1.01e+00  free-mem:150.26GB
+time:21:54:51.299  iter:2  elapsed-time:0.19  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:40  fval:7.32e+02  fmin:7.32e+02  norm:3.85e+00  axis-ratio:1.01e+00  free-mem:150.10GB
+time:21:54:51.308  iter:3  elapsed-time:0.01  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:60  fval:7.31e+02  fmin:7.31e+02  norm:3.87e+00  axis-ratio:1.01e+00  free-mem:150.08GB
+time:21:54:51.316  iter:4  elapsed-time:0.01  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:80  fval:7.29e+02  fmin:7.29e+02  norm:3.89e+00  axis-ratio:1.01e+00  free-mem:150.08GB
+time:21:54:51.325  iter:5  elapsed-time:0.01  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:100  fval:7.25e+02  fmin:7.25e+02  norm:3.93e+00  axis-ratio:1.01e+00  free-mem:150.07GB
+20-10 CMA-ES
+time:21:54:52.857  iter:1  elapsed-time:0.68  pmap-time:0.15  grad-time:0.00  ls-time:0.01 ls-dec:0.00e+00
+fcount:20  fval:2.07e+03  fmin:2.07e+03  norm:3.85e+00  axis-ratio:1.01e+00  free-mem:150.02GB
+time:21:54:53.071  iter:2  elapsed-time:0.21  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:40  fval:2.03e+03  fmin:2.03e+03  norm:3.81e+00  axis-ratio:1.01e+00  free-mem:149.49GB
+time:21:54:53.08  iter:3  elapsed-time:0.01  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:60  fval:2.01e+03  fmin:2.01e+03  norm:3.76e+00  axis-ratio:1.01e+00  free-mem:149.44GB
+time:21:54:53.088  iter:4  elapsed-time:0.01  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:80  fval:1.99e+03  fmin:1.99e+03  norm:3.76e+00  axis-ratio:1.01e+00  free-mem:149.41GB
+time:21:54:53.096  iter:5  elapsed-time:0.01  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:100  fval:1.97e+03  fmin:1.97e+03  norm:3.71e+00  axis-ratio:1.01e+00  free-mem:149.37GB
+20-10 CMA-ES
+time:21:54:53.105  iter:1  elapsed-time:0.01  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:20  fval:1.90e+03  fmin:1.90e+03  norm:7.43e+00  axis-ratio:1.01e+00  free-mem:149.33GB
+time:21:54:53.122  iter:2  elapsed-time:0.02  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:40  fval:1.85e+03  fmin:1.85e+03  norm:7.44e+00  axis-ratio:1.01e+00  free-mem:149.22GB
+time:21:54:53.132  iter:3  elapsed-time:0.01  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:60  fval:1.82e+03  fmin:1.82e+03  norm:7.40e+00  axis-ratio:1.01e+00  free-mem:149.32GB
+time:21:54:53.14  iter:4  elapsed-time:0.01  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:80  fval:1.93e+03  fmin:1.82e+03  norm:7.43e+00  axis-ratio:1.01e+00  free-mem:149.38GB
+time:21:54:53.149  iter:5  elapsed-time:0.01  pmap-time:0.00  grad-time:0.00  ls-time:0.00 ls-dec:0.00e+00
+fcount:100  fval:1.84e+03  fmin:1.82e+03  norm:7.46e+00  axis-ratio:1.01e+00  free-mem:149.36GB
+    Testing GCMAES tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:54:53.197
+CPU usage: 116.81s (109.62s user, 7.33s kernel)
+
+Network usage:
+- eth0: 6.273 MiB received, 168.979 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":147456,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":40960,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":147456,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":147456,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":40960,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":147456,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":330059776,"max_usage":1502420992,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":198991872,"inactive_file":135168,"inactive_anon":87318528,"total_pgfault":2972178,"total_cache":100614144,"total_rss_huge":0,"total_active_anon":211808256,"total_pgmajfault":0,"pgpgin":2008512,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":1935409,"hierarchical_memsw_limit":0,"cache":100614144,"active_file":405504,"pgfault":2972178,"total_mapped_file":0,"total_pgpgout":1935409,"total_writeback":0,"rss":198991872,"unevictable":0,"total_inactive_anon":87318528,"total_pgpgin":2008512,"active_anon":211808256,"total_active_file":405504},"limit":540965302272},"name":"/GCMAES-4ulVpgYB","networks":{"eth0":{"rx_bytes":6577851,"rx_packets":1352,"tx_packets":1490,"tx_bytes":173035,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"68cdbc39957a34a2bb65f39f7c1f51ef1153d47d4741d595ee130db630e4badf","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6159934914522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":109620000000,"usage_in_kernelmode":7330000000,"total_usage":116805969486,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,116805969486,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:54:53.199929115Z"}

@@ -1,0 +1,216 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T19:22:03.068
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T19:22:04.76
+#
+
+ Installing known registries into `~/.julia`
+##########################                                                36.5%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed StructDatabaseMapping ─ v0.3.3
+  Installed Requires ────────────── v1.1.2
+  Installed JSON ────────────────── v0.21.1
+  Installed DBInterface ─────────── v2.2.0
+  Installed Parsers ─────────────── v1.0.15
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [66daddfc] + StructDatabaseMapping v0.3.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [a10d1c49] + DBInterface v2.2.0
+  [682c06a0] + JSON v0.21.1
+  [69de0a69] + Parsers v1.0.15
+  [ae029012] + Requires v1.1.2
+  [66daddfc] + StructDatabaseMapping v0.3.3
+  [ade2ca70] + Dates
+  [a63ad114] + Mmap
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T19:22:09.283
+#
+
+    Testing StructDatabaseMapping
+Status `/tmp/jl_QKN2uS/Project.toml`
+  [66daddfc] StructDatabaseMapping v0.3.3
+  [ade2ca70] Dates
+  [44cfe95a] Pkg
+  [8dfed614] Test
+Status `/tmp/jl_QKN2uS/Manifest.toml`
+  [a10d1c49] DBInterface v2.2.0
+  [682c06a0] JSON v0.21.1
+  [69de0a69] Parsers v1.0.15
+  [ae029012] Requires v1.1.2
+  [66daddfc] StructDatabaseMapping v0.3.3
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: |
+Connections   | No tests
+Test Summary: |
+Mapper        | No tests
+    Cloning git-repo `https://github.com/JuliaDatabases/Redis.jl.git`
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h   Updating git-repo `https://github.com/JuliaDatabases/Redis.jl.git`
+[?25l    Fetching: [>                                        ]  0.0 %[2K[?25h   Updating registry at `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Compat ───────────── v3.25.0
+  Installed OrderedCollections ─ v1.3.2
+  Installed DataStructures ───── v0.18.8
+Updating `/tmp/jl_QKN2uS/Project.toml`
+  [0cf705f9] + Redis v1.0.0 `https://github.com/JuliaDatabases/Redis.jl.git#master`
+Updating `/tmp/jl_QKN2uS/Manifest.toml`
+  [34da2185] + Compat v3.25.0
+  [864edb3b] + DataStructures v0.18.8
+  [bac558e1] + OrderedCollections v1.3.2
+  [0cf705f9] + Redis v1.0.0 `https://github.com/JuliaDatabases/Redis.jl.git#master`
+  [8bb1440f] + DelimitedFiles
+  [37e2e46d] + LinearAlgebra
+  [1a1011a3] + SharedArrays
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+Redis: Error During Test at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/test/runtests.jl:17
+  Got exception outside of a @test
+  Redis.ConnectionException("Failed to connect to Redis server")
+  Stacktrace:
+   [1] Redis.RedisConnection(; host::String, port::Int64, password::String, db::Int64) at /home/pkgeval/.julia/packages/Redis/KsyS4/src/connection.jl:55
+   [2] cleanup() at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/test/redis/TestRedis.jl:19
+   [3] top-level scope at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/test/runtests.jl:24
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/test/runtests.jl:18
+   [6] include(::String) at ./client.jl:457
+   [7] top-level scope at none:6
+   [8] eval(::Module, ::Any) at ./boot.jl:331
+   [9] exec_options(::Base.JLOptions) at ./client.jl:272
+   [10] _start() at ./client.jl:506
+  caused by [exception 3]
+  IOError: connect: connection refused (ECONNREFUSED)
+  Stacktrace:
+   [1] wait_connected(::Sockets.TCPSocket) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Sockets/src/Sockets.jl:525
+   [2] connect at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Sockets/src/Sockets.jl:560 [inlined]
+   [3] connect at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Sockets/src/Sockets.jl:545 [inlined]
+   [4] Redis.RedisConnection(; host::String, port::Int64, password::String, db::Int64) at /home/pkgeval/.julia/packages/Redis/KsyS4/src/connection.jl:51
+   [5] cleanup() at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/test/redis/TestRedis.jl:19
+   [6] top-level scope at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/test/runtests.jl:24
+   [7] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [8] top-level scope at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/test/runtests.jl:18
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at none:6
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  caused by [exception 2]
+  Redis.ConnectionException("Failed to connect to Redis server")
+  Stacktrace:
+   [1] Redis.RedisConnection(; host::String, port::Int64, password::String, db::Int64) at /home/pkgeval/.julia/packages/Redis/KsyS4/src/connection.jl:55
+   [2] (::Main.TestRedis.var"#5#6")() at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/test/redis/TestRedis.jl:23
+   [3] #invokelatest#1 at ./essentials.jl:710 [inlined]
+   [4] invokelatest at ./essentials.jl:709 [inlined]
+   [5] SimplePool at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/src/Connection/Pool.jl:21 [inlined]
+   [6] DBMapper at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/src/StructDatabaseMapping.jl:106 [inlined]
+   [7] _test_basic_functionalities(::Function) at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/test/includes/basic_test.jl:56
+   [8] test_redis at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/test/redis/TestRedis.jl:24 [inlined]
+   [9] test() at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/test/redis/TestRedis.jl:13
+   [10] top-level scope at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/test/runtests.jl:22
+   [11] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [12] top-level scope at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/test/runtests.jl:18
+   [13] include(::String) at ./client.jl:457
+   [14] top-level scope at none:6
+   [15] eval(::Module, ::Any) at ./boot.jl:331
+   [16] exec_options(::Base.JLOptions) at ./client.jl:272
+   [17] _start() at ./client.jl:506
+  caused by [exception 1]
+  IOError: connect: connection refused (ECONNREFUSED)
+  Stacktrace:
+   [1] wait_connected(::Sockets.TCPSocket) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Sockets/src/Sockets.jl:525
+   [2] connect at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Sockets/src/Sockets.jl:560 [inlined]
+   [3] connect at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Sockets/src/Sockets.jl:545 [inlined]
+   [4] Redis.RedisConnection(; host::String, port::Int64, password::String, db::Int64) at /home/pkgeval/.julia/packages/Redis/KsyS4/src/connection.jl:51
+   [5] (::Main.TestRedis.var"#5#6")() at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/test/redis/TestRedis.jl:23
+   [6] #invokelatest#1 at ./essentials.jl:710 [inlined]
+   [7] invokelatest at ./essentials.jl:709 [inlined]
+   [8] SimplePool at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/src/Connection/Pool.jl:21 [inlined]
+   [9] DBMapper at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/src/StructDatabaseMapping.jl:106 [inlined]
+   [10] _test_basic_functionalities(::Function) at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/test/includes/basic_test.jl:56
+   [11] test_redis at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/test/redis/TestRedis.jl:24 [inlined]
+   [12] test() at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/test/redis/TestRedis.jl:13
+   [13] top-level scope at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/test/runtests.jl:22
+   [14] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [15] top-level scope at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/test/runtests.jl:18
+   [16] include(::String) at ./client.jl:457
+   [17] top-level scope at none:6
+   [18] eval(::Module, ::Any) at ./boot.jl:331
+   [19] exec_options(::Base.JLOptions) at ./client.jl:272
+   [20] _start() at ./client.jl:506
+  
+Test Summary: | Error  Total
+Redis         |     1      1
+ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/StructDatabaseMapping/XTzHJ/test/runtests.jl:17
+
+PkgEval failed: Package StructDatabaseMapping errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T19:22:40.097
+CPU usage: 36.23s (32.68s user, 3.60s kernel)
+
+Network usage:
+- eth0: 3.088 MiB received, 78.170 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":26,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":7,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":26,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":26,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":7,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":26,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":135168,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":28672,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":135168,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":135168,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":28672,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":135168,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":317833216,"max_usage":979517440,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":198778880,"inactive_file":135168,"inactive_anon":80289792,"total_pgfault":892815,"total_cache":88592384,"total_rss_huge":0,"total_active_anon":207077376,"total_pgmajfault":0,"pgpgin":575784,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":505615,"hierarchical_memsw_limit":0,"cache":88592384,"active_file":135168,"pgfault":892815,"total_mapped_file":0,"total_pgpgout":505615,"total_writeback":0,"rss":198778880,"unevictable":0,"total_inactive_anon":80289792,"total_pgpgin":575784,"active_anon":207077376,"total_active_file":135168},"limit":540965302272},"name":"/StructDatabaseMapping-aOY9GLJk","networks":{"eth0":{"rx_bytes":3238180,"rx_packets":667,"tx_packets":677,"tx_bytes":80046,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"5e3c1c9c6b26bb85cf41bd39fba2cdf1c41a31ad109f2174a1692ad42a6f3bbb","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4992975454522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":32680000000,"usage_in_kernelmode":3600000000,"total_usage":36232594399,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36232589619,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4780,0,0]}},"read":"2021-01-11T19:22:40.687390724Z"}

@@ -1,0 +1,952 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T22:17:13.317
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T22:17:14.943
+#
+
+ Installing known registries into `~/.julia`
+##################################                                        48.5%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed FillArrays ─────────────────── v0.11.0
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed DynamicHMC ─────────────────── v2.2.0
+  Installed DataStructures ─────────────── v0.18.8
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed PackageCompiler ────────────── v1.2.5
+  Installed Requires ───────────────────── v1.1.2
+  Installed LogDensityProblems ─────────── v0.10.3
+  Installed PositiveFactorizations ─────── v0.2.4
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed DiffResults ────────────────── v1.0.3
+  Installed BenchmarkTools ─────────────── v0.5.0
+  Installed TransformVariables ─────────── v0.3.10
+  Installed Parameters ─────────────────── v0.12.1
+  Installed Missings ───────────────────── v0.4.4
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed ArgCheck ───────────────────── v2.1.0
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed FiniteDiff ─────────────────── v2.7.2
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed LineSearches ───────────────── v7.1.1
+  Installed Optim ──────────────────────── v1.2.2
+  Installed ArrayInterface ─────────────── v2.14.13
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed ProgressMeter ──────────────── v1.4.1
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed DocStringExtensions ────────── v0.8.3
+  Installed Compat ─────────────────────── v3.25.0
+  Installed NLSolversBase ──────────────── v7.7.1
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Parsers ────────────────────── v1.0.15
+  Installed JSON ───────────────────────── v0.21.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [bbc10e6e] + DynamicHMC v2.2.0
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [dce04be8] + ArgCheck v2.1.0
+  [4fba245c] + ArrayInterface v2.14.13
+  [56f22d72] + Artifacts v1.3.0
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [ffbed154] + DocStringExtensions v0.8.3
+  [bbc10e6e] + DynamicHMC v2.2.0
+  [1a297f60] + FillArrays v0.11.0
+  [6a86dc24] + FiniteDiff v2.7.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [d3d80556] + LineSearches v7.1.1
+  [6fdf6af0] + LogDensityProblems v0.10.3
+  [1914dd2f] + MacroTools v0.5.6
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [d41bc354] + NLSolversBase v7.7.1
+  [77ba4419] + NaNMath v0.3.5
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [429524aa] + Optim v1.2.2
+  [bac558e1] + OrderedCollections v1.3.2
+  [9b87118b] + PackageCompiler v1.2.5
+  [d96e819e] + Parameters v0.12.1
+  [69de0a69] + Parsers v1.0.15
+  [85a6dd25] + PositiveFactorizations v0.2.4
+  [92933f4c] + ProgressMeter v1.4.1
+  [ae029012] + Requires v1.1.2
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [2913bbd2] + StatsBase v0.33.2
+  [84d833dd] + TransformVariables v0.3.10
+  [3a884ed6] + UnPack v1.0.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T22:17:23.108
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 174.538 MiB, compilation took 286 seconds
+
+
+┌ Warning: Error requiring `ForwardDiff` from `LogDensityProblems`
+│   exception =
+│    LoadError: ArgumentError: Package LogDensityProblems does not have BenchmarkTools in its dependencies:
+│    - If you have LogDensityProblems checked out for development and have
+│      added BenchmarkTools as a dependency but haven't updated your primary
+│      environment's manifest file, try `Pkg.resolve()`.
+│    - Otherwise you may need to report an issue with LogDensityProblems
+│    Stacktrace:
+│     [1] require(::Module, ::Symbol) at ./loading.jl:906
+│     [2] include_string(::Function, ::Module, ::String, ::String) at ./loading.jl:1088
+│     [3] include_string(::Module, ::String, ::String) at ./loading.jl:1096
+│     [4] top-level scope at /home/pkgeval/.julia/packages/Requires/035xH/src/Requires.jl:38
+│     [5] eval at ./boot.jl:331 [inlined]
+│     [6] eval at /home/pkgeval/.julia/packages/LogDensityProblems/7AvD8/src/LogDensityProblems.jl:13 [inlined]
+│     [7] (::LogDensityProblems.var"#8#20")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:94
+│     [8] err(::Any, ::Module, ::String) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:42
+│     [9] (::LogDensityProblems.var"#7#19")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:93
+│     [10] withpath(::Any, ::String) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:32
+│     [11] (::LogDensityProblems.var"#6#18")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:92
+│     [12] listenpkg(::Any, ::Base.PkgId) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:15
+│     [13] macro expansion at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:90 [inlined]
+│     [14] __init__() at /home/pkgeval/.julia/packages/LogDensityProblems/7AvD8/src/LogDensityProblems.jl:229
+│    in expression starting at AD_ForwardDiff.jl:6
+└ @ Requires /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:44
+################################################################################
+# PkgEval set-up: 2021-01-11T22:22:17.118
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/DynamicHMC-PJQvuOnt.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:22:18.691
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed DynamicHMC ─────────────────── v2.2.0
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed FillArrays ─────────────────── v0.11.0
+  Installed Requires ───────────────────── v1.1.2
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed PositiveFactorizations ─────── v0.2.4
+  Installed LogDensityProblems ─────────── v0.10.3
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed DiffResults ────────────────── v1.0.3
+  Installed TransformVariables ─────────── v0.3.10
+  Installed Missings ───────────────────── v0.4.4
+  Installed ArgCheck ───────────────────── v2.1.0
+  Installed Parameters ─────────────────── v0.12.1
+  Installed BenchmarkTools ─────────────── v0.5.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed ArrayInterface ─────────────── v2.14.13
+  Installed FiniteDiff ─────────────────── v2.7.2
+  Installed JSON ───────────────────────── v0.21.1
+  Installed LineSearches ───────────────── v7.1.1
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed Optim ──────────────────────── v1.2.2
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed Compat ─────────────────────── v3.25.0
+  Installed ProgressMeter ──────────────── v1.4.1
+  Installed NLSolversBase ──────────────── v7.7.1
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed DocStringExtensions ────────── v0.8.3
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed Parsers ────────────────────── v1.0.15
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [bbc10e6e] + DynamicHMC v2.2.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [dce04be8] + ArgCheck v2.1.0
+  [4fba245c] + ArrayInterface v2.14.13
+  [56f22d72] + Artifacts v1.3.0
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [ffbed154] + DocStringExtensions v0.8.3
+  [bbc10e6e] + DynamicHMC v2.2.0
+  [1a297f60] + FillArrays v0.11.0
+  [6a86dc24] + FiniteDiff v2.7.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [d3d80556] + LineSearches v7.1.1
+  [6fdf6af0] + LogDensityProblems v0.10.3
+  [1914dd2f] + MacroTools v0.5.6
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [d41bc354] + NLSolversBase v7.7.1
+  [77ba4419] + NaNMath v0.3.5
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [429524aa] + Optim v1.2.2
+  [bac558e1] + OrderedCollections v1.3.2
+  [d96e819e] + Parameters v0.12.1
+  [69de0a69] + Parsers v1.0.15
+  [85a6dd25] + PositiveFactorizations v0.2.4
+  [92933f4c] + ProgressMeter v1.4.1
+  [ae029012] + Requires v1.1.2
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [90137ffa] + StaticArrays v1.0.1
+  [2913bbd2] + StatsBase v0.33.2
+  [84d833dd] + TransformVariables v0.3.10
+  [3a884ed6] + UnPack v1.0.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T22:22:26.82
+#
+
+    Testing DynamicHMC
+┌ Error: Pkg.Resolve.ResolverError("Unsatisfiable requirements detected for package Distributions [31c24e10]:\n Distributions [31c24e10] log:\n ├─possible versions are: [0.16.0-0.16.4, 0.17.0, 0.18.0, 0.19.1-0.19.2, 0.20.0, 0.21.0-0.21.3, 0.21.5-0.21.12, 0.22.0-0.22.6, 0.23.0-0.23.12, 0.24.0-0.24.10] or uninstalled\n ├─restricted by compatibility requirements with StatsBase [2913bbd2] to versions: [0.23.2-0.23.12, 0.24.0-0.24.10] or uninstalled\n │ └─StatsBase [2913bbd2] log:\n │   ├─possible versions are: [0.24.0, 0.25.0, 0.26.0, 0.27.0, 0.28.0-0.28.1, 0.29.0, 0.30.0, 0.31.0, 0.32.0-0.32.2, 0.33.0-0.33.2] or uninstalled\n │   └─restricted to versions 0.33.2 by an explicit requirement, leaving only versions 0.33.2\n ├─restricted by compatibility requirements with FillArrays [1a297f60] to versions: [0.16.0-0.16.4, 0.17.0, 0.18.0, 0.19.1-0.19.2, 0.20.0, 0.21.0-0.21.3, 0.21.5-0.21.9] or uninstalled, leaving only versions: uninstalled\n │ └─FillArrays [1a297f60] log:\n │   ├─possible versions are: [0.2.0-0.2.1, 0.3.0, 0.4.0, 0.5.0, 0.6.0-0.6.4, 0.7.0-0.7.4, 0.8.0-0.8.14, 0.9.0-0.9.7, 0.10.0-0.10.2, 0.11.0] or uninstalled\n │   └─restricted to versions 0.11.0 by an explicit requirement, leaving only versions 0.11.0\n └─restricted by compatibility requirements with HypothesisTests [09f84164] to versions: [0.19.1-0.19.2, 0.20.0, 0.21.0-0.21.3, 0.21.5-0.21.12, 0.22.0-0.22.6, 0.23.0-0.23.12, 0.24.0-0.24.10] — no versions left\n   └─HypothesisTests [09f84164] log:\n     ├─possible versions are: [0.7.0, 0.8.0, 0.9.0-0.9.2, 0.10.0-0.10.2] or uninstalled\n     ├─restricted to versions * by an explicit requirement, leaving only versions [0.7.0, 0.8.0, 0.9.0-0.9.2, 0.10.0-0.10.2]\n     └─restricted by compatibility requirements with StatsBase [2913bbd2] to versions: [0.9.2, 0.10.0-0.10.2] or uninstalled, leaving only versions: [0.9.2, 0.10.0-0.10.2]\n       └─StatsBase [2913bbd2] log: see above", nothing)
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1427
+Status `/tmp/jl_nUVUCc/Project.toml`
+  [dce04be8] ArgCheck v2.1.0
+  [ffbed154] DocStringExtensions v0.8.3
+  [e30172f5] Documenter v0.26.1
+  [bbc10e6e] DynamicHMC v2.2.0
+  [f6369f11] ForwardDiff v0.10.14
+  [09f84164] HypothesisTests v0.10.2
+  [6fdf6af0] LogDensityProblems v0.10.3
+  [feb245ec] LogDensityTestSuite v0.5.2
+  [6e857e4b] MCMCDiagnostics v0.3.0
+  [d41bc354] NLSolversBase v7.7.1
+  [429524aa] Optim v1.2.2
+  [d96e819e] Parameters v0.12.1
+  [92933f4c] ProgressMeter v1.4.1
+  [2913bbd2] StatsBase v0.33.2
+  [84d833dd] TransformVariables v0.3.10
+  [37e2e46d] LinearAlgebra
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_nUVUCc/Manifest.toml`
+  [dce04be8] ArgCheck v2.1.0
+  [4fba245c] ArrayInterface v2.14.13
+  [56f22d72] Artifacts v1.3.0
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [861a8166] Combinatorics v1.0.2
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.18.8
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [31c24e10] Distributions v0.24.10
+  [ffbed154] DocStringExtensions v0.8.3
+  [e30172f5] Documenter v0.26.1
+  [bbc10e6e] DynamicHMC v2.2.0
+  [1a297f60] FillArrays v0.10.2
+  [6a86dc24] FiniteDiff v2.7.2
+  [f6369f11] ForwardDiff v0.10.14
+  [09f84164] HypothesisTests v0.10.2
+  [b5f81e59] IOCapture v0.1.1
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [d3d80556] LineSearches v7.1.1
+  [6fdf6af0] LogDensityProblems v0.10.3
+  [feb245ec] LogDensityTestSuite v0.5.2
+  [6e857e4b] MCMCDiagnostics v0.3.0
+  [1914dd2f] MacroTools v0.5.6
+  [e1d29d7a] Missings v0.4.4
+  [46d2c3a1] MuladdMacro v0.2.2
+  [d41bc354] NLSolversBase v7.7.1
+  [77ba4419] NaNMath v0.3.5
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [429524aa] Optim v1.2.2
+  [bac558e1] OrderedCollections v1.3.2
+  [90014a1f] PDMats v0.10.1
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.15
+  [85a6dd25] PositiveFactorizations v0.2.4
+  [92933f4c] ProgressMeter v1.4.1
+  [1fd47b50] QuadGK v2.4.1
+  [ae029012] Requires v1.1.2
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [f2b01f46] Roots v1.0.7
+  [ed01d8cd] Sobol v1.4.0
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.2.1
+  [90137ffa] StaticArrays v1.0.1
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [84d833dd] TransformVariables v0.3.10
+  [3a884ed6] UnPack v1.0.2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary:     | Pass  Total
+simulated meancov |    2      2
+Test Summary: |    Pass    Total
+test-trees.jl | 2003798  2003798
+Test Summary:       |  Pass  Total
+test-hamiltonian.jl | 13262  13262
+Test Summary: | Pass  Total
+test-NUTS.jl  |   32     32
+Test Summary:    | Pass  Total
+test-stepsize.jl | 1132   1132
+Test Summary: | Pass  Total
+test-mcmc.jl  |   13     13
+Test Summary:       | Pass  Total
+test-diagnostics.jl |   20     20
+[ Info: finding initial optimum
+┌ Info: found initial stepsize
+└   ϵ = 3.0
+┌ Info: Starting MCMC
+│   total_steps = 75
+└   tuning = "stepsize"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 1.3e-5
+│   estimated_seconds_left = 0.00093
+└   ϵ = 3.0
+┌ Info: Starting MCMC
+│   total_steps = 25
+└   tuning = "stepsize and Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 3.1e-6
+│   estimated_seconds_left = 7.5e-5
+└   ϵ = 1.26
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.7390023198110706]
+┌ Info: Starting MCMC
+│   total_steps = 50
+└   tuning = "stepsize and Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 7.2e-6
+│   estimated_seconds_left = 0.00035
+└   ϵ = 0.805
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.972938179248748]
+┌ Info: Starting MCMC
+│   total_steps = 100
+└   tuning = "stepsize and Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 3.5e-6
+│   estimated_seconds_left = 0.00035
+└   ϵ = 1.18
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.8679245395954698]
+┌ Info: Starting MCMC
+│   total_steps = 200
+└   tuning = "stepsize and Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 2.4e-6
+│   estimated_seconds_left = 0.00048
+└   ϵ = 1.12
+┌ Info: MCMC progress
+│   step = 101
+│   seconds_per_step = 6.0e-6
+│   estimated_seconds_left = 0.0006
+└   ϵ = 2.1
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.9197311859631772]
+┌ Info: Starting MCMC
+│   total_steps = 400
+└   tuning = "stepsize and Diagonal metric"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 2.0e-6
+│   estimated_seconds_left = 0.00081
+└   ϵ = 1.46
+┌ Info: MCMC progress
+│   step = 101
+│   seconds_per_step = 5.7e-6
+│   estimated_seconds_left = 0.0017
+└   ϵ = 2.59
+┌ Info: MCMC progress
+│   step = 201
+│   seconds_per_step = 5.3e-6
+│   estimated_seconds_left = 0.0011
+└   ϵ = 0.729
+┌ Info: MCMC progress
+│   step = 301
+│   seconds_per_step = 3.9e-6
+│   estimated_seconds_left = 0.00038
+└   ϵ = 1.73
+┌ Info: adaptation finished
+└   adapted_kinetic_energy = Gaussian kinetic energy (Diagonal), √diag(M⁻¹): [0.9840240475332611]
+┌ Info: Starting MCMC
+│   total_steps = 50
+└   tuning = "stepsize"
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 3.4e-6
+│   estimated_seconds_left = 0.00017
+└   ϵ = 1.37
+┌ Info: Starting MCMC
+└   total_steps = 10000
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 1.6e-6
+└   estimated_seconds_left = 0.016
+┌ Info: MCMC progress
+│   step = 101
+│   seconds_per_step = 4.3e-6
+└   estimated_seconds_left = 0.043
+┌ Info: MCMC progress
+│   step = 201
+│   seconds_per_step = 5.1e-6
+└   estimated_seconds_left = 0.05
+┌ Info: MCMC progress
+│   step = 301
+│   seconds_per_step = 5.2e-6
+└   estimated_seconds_left = 0.051
+┌ Info: MCMC progress
+│   step = 401
+│   seconds_per_step = 4.5e-6
+└   estimated_seconds_left = 0.043
+┌ Info: MCMC progress
+│   step = 501
+│   seconds_per_step = 4.6e-6
+└   estimated_seconds_left = 0.044
+┌ Info: MCMC progress
+│   step = 601
+│   seconds_per_step = 4.4e-6
+└   estimated_seconds_left = 0.042
+┌ Info: MCMC progress
+│   step = 701
+│   seconds_per_step = 4.5e-6
+└   estimated_seconds_left = 0.041
+┌ Info: MCMC progress
+│   step = 801
+│   seconds_per_step = 4.8e-6
+└   estimated_seconds_left = 0.044
+┌ Info: MCMC progress
+│   step = 901
+│   seconds_per_step = 4.3e-6
+└   estimated_seconds_left = 0.039
+┌ Info: MCMC progress
+│   step = 1001
+│   seconds_per_step = 4.4e-6
+└   estimated_seconds_left = 0.039
+┌ Info: MCMC progress
+│   step = 1101
+│   seconds_per_step = 4.2e-6
+└   estimated_seconds_left = 0.038
+┌ Info: MCMC progress
+│   step = 1201
+│   seconds_per_step = 4.6e-6
+└   estimated_seconds_left = 0.04
+┌ Info: MCMC progress
+│   step = 1301
+│   seconds_per_step = 4.4e-6
+└   estimated_seconds_left = 0.039
+┌ Info: MCMC progress
+│   step = 1401
+│   seconds_per_step = 4.6e-6
+└   estimated_seconds_left = 0.04
+┌ Info: MCMC progress
+│   step = 1501
+│   seconds_per_step = 4.4e-6
+└   estimated_seconds_left = 0.038
+┌ Info: MCMC progress
+│   step = 1601
+│   seconds_per_step = 4.3e-6
+└   estimated_seconds_left = 0.036
+┌ Info: MCMC progress
+│   step = 1701
+│   seconds_per_step = 4.2e-6
+└   estimated_seconds_left = 0.035
+┌ Info: MCMC progress
+│   step = 1801
+│   seconds_per_step = 4.5e-6
+└   estimated_seconds_left = 0.037
+┌ Info: MCMC progress
+│   step = 1901
+│   seconds_per_step = 4.8e-6
+└   estimated_seconds_left = 0.039
+┌ Info: MCMC progress
+│   step = 2001
+│   seconds_per_step = 4.7e-6
+└   estimated_seconds_left = 0.038
+┌ Info: MCMC progress
+│   step = 2101
+│   seconds_per_step = 4.7e-6
+└   estimated_seconds_left = 0.037
+┌ Info: MCMC progress
+│   step = 2201
+│   seconds_per_step = 4.5e-6
+└   estimated_seconds_left = 0.035
+┌ Info: MCMC progress
+│   step = 2301
+│   seconds_per_step = 4.3e-6
+└   estimated_seconds_left = 0.033
+┌ Info: MCMC progress
+│   step = 2401
+│   seconds_per_step = 4.4e-6
+└   estimated_seconds_left = 0.034
+┌ Info: MCMC progress
+│   step = 2501
+│   seconds_per_step = 4.5e-6
+└   estimated_seconds_left = 0.034
+┌ Info: MCMC progress
+│   step = 2601
+│   seconds_per_step = 4.4e-6
+└   estimated_seconds_left = 0.033
+┌ Info: MCMC progress
+│   step = 2701
+│   seconds_per_step = 4.7e-6
+└   estimated_seconds_left = 0.034
+┌ Info: MCMC progress
+│   step = 2801
+│   seconds_per_step = 4.6e-6
+└   estimated_seconds_left = 0.033
+┌ Info: MCMC progress
+│   step = 2901
+│   seconds_per_step = 4.6e-6
+└   estimated_seconds_left = 0.032
+┌ Info: MCMC progress
+│   step = 3001
+│   seconds_per_step = 4.5e-6
+└   estimated_seconds_left = 0.031
+┌ Info: MCMC progress
+│   step = 3101
+│   seconds_per_step = 4.1e-6
+└   estimated_seconds_left = 0.028
+┌ Info: MCMC progress
+│   step = 3201
+│   seconds_per_step = 4.6e-6
+└   estimated_seconds_left = 0.032
+┌ Info: MCMC progress
+│   step = 3301
+│   seconds_per_step = 4.4e-6
+└   estimated_seconds_left = 0.029
+┌ Info: MCMC progress
+│   step = 3401
+│   seconds_per_step = 4.2e-6
+└   estimated_seconds_left = 0.028
+┌ Info: MCMC progress
+│   step = 3501
+│   seconds_per_step = 4.4e-6
+└   estimated_seconds_left = 0.028
+┌ Info: MCMC progress
+│   step = 3601
+│   seconds_per_step = 4.6e-6
+└   estimated_seconds_left = 0.029
+┌ Info: MCMC progress
+│   step = 3701
+│   seconds_per_step = 5.0e-6
+└   estimated_seconds_left = 0.032
+┌ Info: MCMC progress
+│   step = 3801
+│   seconds_per_step = 4.8e-6
+└   estimated_seconds_left = 0.03
+┌ Info: MCMC progress
+│   step = 3901
+│   seconds_per_step = 4.4e-6
+└   estimated_seconds_left = 0.027
+┌ Info: MCMC progress
+│   step = 4001
+│   seconds_per_step = 0.00013
+└   estimated_seconds_left = 0.75
+┌ Info: MCMC progress
+│   step = 4101
+│   seconds_per_step = 7.4e-6
+└   estimated_seconds_left = 0.044
+┌ Info: MCMC progress
+│   step = 4201
+│   seconds_per_step = 5.7e-6
+└   estimated_seconds_left = 0.033
+┌ Info: MCMC progress
+│   step = 4301
+│   seconds_per_step = 5.2e-6
+└   estimated_seconds_left = 0.029
+┌ Info: MCMC progress
+│   step = 4401
+│   seconds_per_step = 5.2e-6
+└   estimated_seconds_left = 0.029
+┌ Info: MCMC progress
+│   step = 4501
+│   seconds_per_step = 5.5e-6
+└   estimated_seconds_left = 0.03
+┌ Info: MCMC progress
+│   step = 4601
+│   seconds_per_step = 4.9e-6
+└   estimated_seconds_left = 0.026
+┌ Info: MCMC progress
+│   step = 4701
+│   seconds_per_step = 4.9e-6
+└   estimated_seconds_left = 0.026
+┌ Info: MCMC progress
+│   step = 4801
+│   seconds_per_step = 4.5e-6
+└   estimated_seconds_left = 0.024
+┌ Info: MCMC progress
+│   step = 4901
+│   seconds_per_step = 4.6e-6
+└   estimated_seconds_left = 0.023
+┌ Info: MCMC progress
+│   step = 5001
+│   seconds_per_step = 5.2e-6
+└   estimated_seconds_left = 0.026
+┌ Info: MCMC progress
+│   step = 5101
+│   seconds_per_step = 5.0e-6
+└   estimated_seconds_left = 0.025
+┌ Info: MCMC progress
+│   step = 5201
+│   seconds_per_step = 4.5e-6
+└   estimated_seconds_left = 0.021
+┌ Info: MCMC progress
+│   step = 5301
+│   seconds_per_step = 4.8e-6
+└   estimated_seconds_left = 0.023
+┌ Info: MCMC progress
+│   step = 5401
+│   seconds_per_step = 6.3e-6
+└   estimated_seconds_left = 0.029
+┌ Info: MCMC progress
+│   step = 5501
+│   seconds_per_step = 4.5e-6
+└   estimated_seconds_left = 0.02
+┌ Info: MCMC progress
+│   step = 5601
+│   seconds_per_step = 4.0e-6
+└   estimated_seconds_left = 0.018
+┌ Info: MCMC progress
+│   step = 5701
+│   seconds_per_step = 4.3e-6
+└   estimated_seconds_left = 0.019
+┌ Info: MCMC progress
+│   step = 5801
+│   seconds_per_step = 4.3e-6
+└   estimated_seconds_left = 0.018
+┌ Info: MCMC progress
+│   step = 5901
+│   seconds_per_step = 4.7e-6
+└   estimated_seconds_left = 0.019
+┌ Info: MCMC progress
+│   step = 6001
+│   seconds_per_step = 4.1e-6
+└   estimated_seconds_left = 0.016
+┌ Info: MCMC progress
+│   step = 6101
+│   seconds_per_step = 4.6e-6
+└   estimated_seconds_left = 0.018
+┌ Info: MCMC progress
+│   step = 6201
+│   seconds_per_step = 4.5e-6
+└   estimated_seconds_left = 0.017
+┌ Info: MCMC progress
+│   step = 6301
+│   seconds_per_step = 5.4e-6
+└   estimated_seconds_left = 0.02
+┌ Info: MCMC progress
+│   step = 6401
+│   seconds_per_step = 5.5e-6
+└   estimated_seconds_left = 0.02
+┌ Info: MCMC progress
+│   step = 6501
+│   seconds_per_step = 5.1e-6
+└   estimated_seconds_left = 0.018
+┌ Info: MCMC progress
+│   step = 6601
+│   seconds_per_step = 4.9e-6
+└   estimated_seconds_left = 0.017
+┌ Info: MCMC progress
+│   step = 6701
+│   seconds_per_step = 4.5e-6
+└   estimated_seconds_left = 0.015
+┌ Info: MCMC progress
+│   step = 6801
+│   seconds_per_step = 4.5e-6
+└   estimated_seconds_left = 0.014
+┌ Info: MCMC progress
+│   step = 6901
+│   seconds_per_step = 4.4e-6
+└   estimated_seconds_left = 0.014
+┌ Info: MCMC progress
+│   step = 7001
+│   seconds_per_step = 4.7e-6
+└   estimated_seconds_left = 0.014
+┌ Info: MCMC progress
+│   step = 7101
+│   seconds_per_step = 4.3e-6
+└   estimated_seconds_left = 0.013
+┌ Info: MCMC progress
+│   step = 7201
+│   seconds_per_step = 4.4e-6
+└   estimated_seconds_left = 0.012
+┌ Info: MCMC progress
+│   step = 7301
+│   seconds_per_step = 4.2e-6
+└   estimated_seconds_left = 0.011
+┌ Info: MCMC progress
+│   step = 7401
+│   seconds_per_step = 4.5e-6
+└   estimated_seconds_left = 0.012
+┌ Info: MCMC progress
+│   step = 7501
+│   seconds_per_step = 4.9e-6
+└   estimated_seconds_left = 0.012
+┌ Info: MCMC progress
+│   step = 7601
+│   seconds_per_step = 4.5e-6
+└   estimated_seconds_left = 0.011
+┌ Info: MCMC progress
+│   step = 7701
+│   seconds_per_step = 5.0e-6
+└   estimated_seconds_left = 0.011
+┌ Info: MCMC progress
+│   step = 7801
+│   seconds_per_step = 4.6e-6
+└   estimated_seconds_left = 0.01
+┌ Info: MCMC progress
+│   step = 7901
+│   seconds_per_step = 4.7e-6
+└   estimated_seconds_left = 0.0099
+┌ Info: MCMC progress
+│   step = 8001
+│   seconds_per_step = 4.8e-6
+└   estimated_seconds_left = 0.0097
+┌ Info: MCMC progress
+│   step = 8101
+│   seconds_per_step = 4.6e-6
+└   estimated_seconds_left = 0.0088
+┌ Info: MCMC progress
+│   step = 8201
+│   seconds_per_step = 4.5e-6
+└   estimated_seconds_left = 0.0081
+┌ Info: MCMC progress
+│   step = 8301
+│   seconds_per_step = 4.2e-6
+└   estimated_seconds_left = 0.0071
+┌ Info: MCMC progress
+│   step = 8401
+│   seconds_per_step = 4.6e-6
+└   estimated_seconds_left = 0.0073
+┌ Info: MCMC progress
+│   step = 8501
+│   seconds_per_step = 4.4e-6
+└   estimated_seconds_left = 0.0066
+┌ Info: MCMC progress
+│   step = 8601
+│   seconds_per_step = 4.5e-6
+└   estimated_seconds_left = 0.0063
+┌ Info: MCMC progress
+│   step = 8701
+│   seconds_per_step = 4.7e-6
+└   estimated_seconds_left = 0.0061
+┌ Info: MCMC progress
+│   step = 8801
+│   seconds_per_step = 4.9e-6
+└   estimated_seconds_left = 0.0059
+┌ Info: MCMC progress
+│   step = 8901
+│   seconds_per_step = 4.4e-6
+└   estimated_seconds_left = 0.0048
+┌ Info: MCMC progress
+│   step = 9001
+│   seconds_per_step = 4.6e-6
+└   estimated_seconds_left = 0.0046
+┌ Info: MCMC progress
+│   step = 9101
+│   seconds_per_step = 4.7e-6
+└   estimated_seconds_left = 0.0042
+┌ Info: MCMC progress
+│   step = 9201
+│   seconds_per_step = 4.1e-6
+└   estimated_seconds_left = 0.0033
+┌ Info: MCMC progress
+│   step = 9301
+│   seconds_per_step = 4.5e-6
+└   estimated_seconds_left = 0.0031
+┌ Info: MCMC progress
+│   step = 9401
+│   seconds_per_step = 4.5e-6
+└   estimated_seconds_left = 0.0027
+┌ Info: MCMC progress
+│   step = 9501
+│   seconds_per_step = 4.4e-6
+└   estimated_seconds_left = 0.0022
+┌ Info: MCMC progress
+│   step = 9601
+│   seconds_per_step = 4.6e-6
+└   estimated_seconds_left = 0.0018
+┌ Info: MCMC progress
+│   step = 9701
+│   seconds_per_step = 4.4e-6
+└   estimated_seconds_left = 0.0013
+┌ Info: MCMC progress
+│   step = 9801
+│   seconds_per_step = 4.1e-6
+└   estimated_seconds_left = 0.00082
+┌ Info: MCMC progress
+│   step = 9901
+│   seconds_per_step = 4.5e-6
+└   estimated_seconds_left = 0.00045
+[ Info: 
+┌ Info: Starting MCMC
+└   total_steps = 1000
+[ Info: 
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 0.021
+└   estimated_seconds_left = 21.0
+┌ Info: Starting MCMC
+└   total_steps = 1000
+[ Info: 
+┌ Info: MCMC progress
+│   step = 1
+│   seconds_per_step = 1.5e-5
+└   estimated_seconds_left = 0.015
+Test Summary:   |
+test-logging.jl | No tests
+INFO while testing: mixture of two normals, dimension 3
+ALERT some τ = [0.169, 0.184, 0.147] < 0.15
+Test Summary:               | Pass  Total
+sample-correctness-tests.jl |  158    158
+    Testing DynamicHMC tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:24:13.786
+CPU usage: 117.76s (111.35s user, 6.63s kernel)
+
+Network usage:
+- eth0: 8.633 MiB received, 305.551 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":19,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":19,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":98304,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":40960,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":98304,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":98304,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":40960,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":98304,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":380067840,"max_usage":1400004608,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":220078080,"inactive_file":135168,"inactive_anon":110161920,"total_pgfault":2433090,"total_cache":127074304,"total_rss_huge":0,"total_active_anon":237084672,"total_pgmajfault":0,"pgpgin":1327029,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":135168,"pgpgout":1242282,"hierarchical_memsw_limit":0,"cache":127074304,"active_file":135168,"pgfault":2433090,"total_mapped_file":0,"total_pgpgout":1242282,"total_writeback":135168,"rss":220078080,"unevictable":0,"total_inactive_anon":110161920,"total_pgpgin":1327029,"active_anon":237084672,"total_active_file":135168},"limit":540965302272},"name":"/DynamicHMC-Ky68EPr5","networks":{"eth0":{"rx_bytes":9052425,"rx_packets":2291,"tx_packets":2593,"tx_bytes":312884,"tx_dropped":0,"rx_dropped":4,"tx_errors":0,"rx_errors":0}},"id":"27057d95c4238b5de66b7b9cc64799be610fba1620dd28b674270447f2d07eef","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6384942964522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":111350000000,"usage_in_kernelmode":6630000000,"total_usage":117762010616,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5799222,0,117756206244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5150,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T22:24:13.789370249Z"}

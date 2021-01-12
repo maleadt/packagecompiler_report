@@ -1,0 +1,153 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T17:37:05.627
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T17:37:07.338
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Mortar2D ──────── v0.1.3
+  Installed PackageCompiler ─ v1.2.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [0b7cd5e2] + Mortar2D v0.1.3
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [0b7cd5e2] + Mortar2D v0.1.3
+  [9b87118b] + PackageCompiler v1.2.5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T17:37:12.581
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 147.329 MiB, compilation took 160 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T17:39:59.462
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/Mortar2D-k9MQX7Jv.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:40:01.33
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Mortar2D ─ v0.1.3
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [0b7cd5e2] + Mortar2D v0.1.3
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [0b7cd5e2] + Mortar2D v0.1.3
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T17:40:04.675
+#
+
+    Testing Mortar2D
+Status `/tmp/jl_kMSn98/Project.toml`
+  [0b7cd5e2] Mortar2D v0.1.3
+  [37e2e46d] LinearAlgebra
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_kMSn98/Manifest.toml`
+  [0b7cd5e2] Mortar2D v0.1.3
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+┌ Warning: Mortar2D.calculate_projections(): negative discriminant -1315.3157103692167
+└ @ Mortar2D /home/pkgeval/.julia/packages/Mortar2D/RUhNG/src/calculate_projections.jl:82
+┌ Warning: xm = [111.013, 283.152], xs1 = [244.82, 366.732], xs2 = [291.474, 359.169], ns1 = [-0.0765221, 0.997068], ns2 = [0.251347, 0.967897]
+└ @ Mortar2D /home/pkgeval/.julia/packages/Mortar2D/RUhNG/src/calculate_projections.jl:83
+Test Summary: | Pass  Total
+Mortar2D.jl   |   14     14
+    Testing Mortar2D tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:40:15.623
+CPU usage: 16.24s (14.07s user, 2.20s kernel)
+
+Network usage:
+- eth0: 2.583 MiB received, 29.844 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":19,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":19,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":77824,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":77824,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":281448448,"max_usage":462843904,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":172986368,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":298815,"total_cache":79364096,"total_rss_huge":0,"total_active_anon":173555712,"total_pgmajfault":0,"pgpgin":162690,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":135168,"pgpgout":101102,"hierarchical_memsw_limit":0,"cache":79364096,"active_file":135168,"pgfault":298815,"total_mapped_file":0,"total_pgpgout":101102,"total_writeback":135168,"rss":172986368,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":162690,"active_anon":173555712,"total_active_file":135168},"limit":540965302272},"name":"/Mortar2D-dTa9Z44h","networks":{"eth0":{"rx_bytes":2708627,"rx_packets":323,"tx_packets":321,"tx_bytes":30560,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"3b5b777f6e8882d84523259678263d27935314a70235a0ef3b9d614ba13a11b8","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4207678814522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":14070000000,"usage_in_kernelmode":2200000000,"total_usage":16239965246,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16239962116,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3130,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:40:15.626847837Z"}

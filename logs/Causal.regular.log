@@ -1,0 +1,1129 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:15:13.652
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:15:15.452
+#
+
+ Installing known registries into `~/.julia`
+###############################################                           65.5%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed ZygoteRules ────────────────── v0.2.1
+  Installed x265_jll ───────────────────── v3.0.0+3
+  Installed CanonicalTraits ────────────── v0.2.3
+  Installed Inflate ────────────────────── v0.1.2
+  Installed Xorg_libXi_jll ─────────────── v1.7.10+4
+  Installed libvorbis_jll ──────────────── v1.3.6+6
+  Installed LAME_jll ───────────────────── v3.100.0+3
+  Installed BoundaryValueDiffEq ────────── v2.7.0
+  Installed CEnum ──────────────────────── v0.4.1
+  Installed DelayDiffEq ────────────────── v5.24.1
+  Installed VertexSafeGraphs ───────────── v0.1.2
+  Installed DataStructures ─────────────── v0.17.20
+  Installed Causal ─────────────────────── v0.3.0
+  Installed Xorg_xcb_util_renderutil_jll ─ v0.3.9+1
+  Installed DiffEqJump ─────────────────── v6.10.0
+  Installed FunctionWrappers ───────────── v1.1.1
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed Random123 ──────────────────── v1.2.0
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Sundials ───────────────────── v4.2.6
+  Installed Xorg_xcb_util_image_jll ────── v0.4.0+1
+  Installed Xorg_libXrender_jll ────────── v0.9.10+4
+  Installed Ratios ─────────────────────── v0.4.0
+  Installed ConstructionBase ───────────── v1.0.0
+  Installed RecursiveArrayTools ────────── v2.10.0
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed Colors ─────────────────────── v0.12.6
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed StaticArrays ───────────────── v0.12.5
+  Installed VectorizationBase ──────────── v0.12.33
+  Installed GLFW_jll ───────────────────── v3.3.2+1
+  Installed Grisu ──────────────────────── v1.0.0
+  Installed StructArrays ───────────────── v0.4.2
+  Installed FiniteDiff ─────────────────── v2.7.2
+  Installed NLsolve ────────────────────── v4.5.1
+  Installed MLStyle ────────────────────── v0.4.6
+  Installed Distributions ──────────────── v0.23.8
+  Installed RandomExtensions ───────────── v0.4.3
+  Installed AxisAlgorithms ─────────────── v1.0.0
+  Installed LibVPX_jll ─────────────────── v1.9.0+1
+  Installed Expat_jll ──────────────────── v2.2.7+6
+  Installed SteadyStateDiffEq ──────────── v1.6.0
+  Installed xkbcommon_jll ──────────────── v0.9.1+5
+  Installed GR ─────────────────────────── v0.53.0
+  Installed BandedMatrices ─────────────── v0.15.15
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed AbstractAlgebra ────────────── v0.11.2
+  Installed Gettext_jll ────────────────── v0.20.1+7
+  Installed FreeType2_jll ──────────────── v2.10.1+5
+  Installed Fontconfig_jll ─────────────── v2.13.1+14
+  Installed Wayland_protocols_jll ──────── v1.18.0+4
+  Installed Formatting ─────────────────── v0.4.2
+  Installed FixedPointNumbers ──────────── v0.8.4
+  Installed SpecialFunctions ───────────── v0.10.3
+  Installed Compat ─────────────────────── v3.25.0
+  Installed Libmount_jll ───────────────── v2.34.0+3
+  Installed Showoff ────────────────────── v0.3.2
+  Installed NLSolversBase ──────────────── v7.7.1
+  Installed SuiteSparse_jll ────────────── v5.4.0+9
+  Installed PlotThemes ─────────────────── v2.0.0
+  Installed Opus_jll ───────────────────── v1.3.1+3
+  Installed CpuId ──────────────────────── v0.2.2
+  Installed Zlib_jll ───────────────────── v1.2.11+18
+  Installed WoodburyMatrices ───────────── v0.5.3
+  Installed Contour ────────────────────── v0.5.7
+  Installed Xorg_libXdmcp_jll ──────────── v1.1.3+4
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed Pixman_jll ─────────────────── v0.40.0+0
+  Installed SymbolicUtils ──────────────── v0.5.2
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed Tables ─────────────────────── v1.2.2
+  Installed FFMPEG ─────────────────────── v0.4.0
+  Installed FillArrays ─────────────────── v0.8.14
+  Installed QuadGK ─────────────────────── v2.4.1
+  Installed Requires ───────────────────── v1.1.2
+  Installed Parameters ─────────────────── v0.12.1
+  Installed ResettableStacks ───────────── v1.1.0
+  Installed LoopVectorization ──────────── v0.8.26
+  Installed Xorg_libpthread_stubs_jll ──── v0.1.0+3
+  Installed FFMPEG_jll ─────────────────── v4.3.1+4
+  Installed Xorg_libxkbfile_jll ────────── v1.1.0+4
+  Installed SIMDPirates ────────────────── v0.8.26
+  Installed XML2_jll ───────────────────── v2.9.10+3
+  Installed FileIO ─────────────────────── v1.4.5
+  Installed JLD2 ───────────────────────── v0.1.14
+  Installed SparseDiffTools ────────────── v1.12.0
+  Installed GeneralizedGenerated ───────── v0.2.8
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed Qt_jll ─────────────────────── v5.15.2+1
+  Installed Xorg_libXau_jll ────────────── v1.0.9+4
+  Installed Missings ───────────────────── v0.4.4
+  Installed LoggingExtras ──────────────── v0.4.2
+  Installed ArnoldiMethod ──────────────── v0.0.4
+  Installed JSON ───────────────────────── v0.21.1
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed LightGraphs ────────────────── v1.3.4
+  Installed PDMats ─────────────────────── v0.10.1
+  Installed LeftChildRightSiblingTrees ─── v0.1.2
+  Installed Libgpg_error_jll ───────────── v1.36.0+3
+  Installed Compose ────────────────────── v0.9.1
+  Installed StochasticDiffEq ───────────── v6.25.0
+  Installed METIS_jll ──────────────────── v5.1.0+5
+  Installed IfElse ─────────────────────── v0.1.0
+  Installed Adapt ──────────────────────── v3.0.0
+  Installed Unitful ────────────────────── v1.5.0
+  Installed Libuuid_jll ────────────────── v2.34.0+7
+  Installed LabelledArrays ─────────────── v1.4.0
+  Installed IterativeSolvers ───────────── v0.8.5
+  Installed DifferentialEquations ──────── v6.16.0
+  Installed AbstractTrees ──────────────── v0.3.3
+  Installed EarCut_jll ─────────────────── v2.1.5+1
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed DiffEqNoiseProcess ─────────── v5.5.0
+  Installed JpegTurbo_jll ──────────────── v2.0.1+3
+  Installed x264_jll ───────────────────── v2020.7.14+2
+  Installed ConsoleProgressMonitor ─────── v0.1.2
+  Installed Xorg_xkeyboard_config_jll ──── v2.27.0+4
+  Installed PoissonRandom ──────────────── v0.4.0
+  Installed GenericSVD ─────────────────── v0.3.0
+  Installed MbedTLS_jll ────────────────── v2.16.8+1
+  Installed RandomNumbers ──────────────── v1.4.0
+  Installed Xorg_libXcursor_jll ────────── v1.2.0+4
+  Installed libfdk_aac_jll ─────────────── v0.1.6+4
+  Installed Scratch ────────────────────── v1.0.3
+  Installed Reexport ───────────────────── v0.2.0
+  Installed Wayland_jll ────────────────── v1.17.0+4
+  Installed ParameterizedFunctions ─────── v5.6.0
+  Installed Xorg_libX11_jll ────────────── v1.6.9+4
+  Installed GraphPlot ──────────────────── v0.4.4
+  Installed Libiconv_jll ───────────────── v1.16.0+7
+  Installed Zstd_jll ───────────────────── v1.4.5+2
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed TranscodingStreams ─────────── v0.9.5
+  Installed TimerOutputs ───────────────── v0.5.7
+  Installed TreeViews ──────────────────── v0.3.0
+  Installed IterTools ──────────────────── v1.3.0
+  Installed HTTP ───────────────────────── v0.8.19
+  Installed Xorg_libXrandr_jll ─────────── v1.5.2+4
+  Installed OpenBLAS_jll ───────────────── v0.3.9+5
+  Installed Xorg_libXfixes_jll ─────────── v5.0.3+4
+  Installed libpng_jll ─────────────────── v1.6.37+6
+  Installed Xorg_libxcb_jll ────────────── v1.13.0+3
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed DiffEqBase ─────────────────── v6.44.3
+  Installed DiffEqPhysics ──────────────── v3.8.0
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed LineSearches ───────────────── v7.1.1
+  Installed Distances ──────────────────── v0.10.0
+  Installed PCRE_jll ───────────────────── v8.42.0+4
+  Installed Libffi_jll ─────────────────── v3.2.1+4
+  Installed Xorg_libXext_jll ───────────── v1.3.4+4
+  Installed ArrayInterface ─────────────── v2.14.13
+  Installed DimensionalPlotRecipes ─────── v1.2.0
+  Installed PlotUtils ──────────────────── v1.0.10
+  Installed OffsetArrays ───────────────── v1.3.1
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed DocStringExtensions ────────── v0.8.3
+  Installed RecursiveFactorization ─────── v0.1.6
+  Installed ExponentialUtilities ───────── v1.8.0
+  Installed SLEEFPirates ───────────────── v0.5.5
+  Installed libass_jll ─────────────────── v0.14.0+4
+  Installed FriBidi_jll ────────────────── v1.0.5+6
+  Installed Libglvnd_jll ───────────────── v1.3.0+3
+  Installed Xorg_libXinerama_jll ───────── v1.1.4+4
+  Installed Cairo_jll ──────────────────── v1.16.0+6
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed TableTraits ────────────────── v1.0.0
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed ModelingToolkit ────────────── v3.20.1
+  Installed GeometryBasics ─────────────── v0.3.5
+  Installed Libtiff_jll ────────────────── v4.1.0+2
+  Installed ColorSchemes ───────────────── v3.10.2
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed OpenSSL_jll ────────────────── v1.1.1+6
+  Installed Xorg_xcb_util_keysyms_jll ──── v0.4.0+1
+  Installed Bzip2_jll ──────────────────── v1.0.6+5
+  Installed Combinatorics ──────────────── v1.0.2
+  Installed Measures ───────────────────── v0.3.1
+  Installed MbedTLS ────────────────────── v1.0.3
+  Installed NameResolution ─────────────── v0.1.5
+  Installed DiffEqCallbacks ────────────── v2.13.5
+  Installed Plots ──────────────────────── v1.10.1
+  Installed Latexify ───────────────────── v0.14.7
+  Installed DiffEqFinancial ────────────── v2.4.0
+  Installed Xorg_xkbcomp_jll ───────────── v1.4.2+4
+  Installed Ogg_jll ────────────────────── v1.3.4+2
+  Installed Roots ──────────────────────── v1.0.7
+  Installed ArrayLayouts ───────────────── v0.3.8
+  Installed SimpleTraits ───────────────── v0.9.3
+  Installed GR_jll ─────────────────────── v0.53.0+0
+  Installed RecipesPipeline ────────────── v0.2.1
+  Installed ColorTypes ─────────────────── v0.10.9
+  Installed OrdinaryDiffEq ─────────────── v5.39.1
+  Installed LZO_jll ────────────────────── v2.10.0+3
+  Installed Xorg_xcb_util_jll ──────────── v0.4.0+1
+  Installed CodecZlib ──────────────────── v0.7.0
+  Installed Xorg_xtrans_jll ────────────── v1.4.0+3
+  Installed Sundials_jll ───────────────── v5.2.0+1
+  Installed Libgcrypt_jll ──────────────── v1.8.5+4
+  Installed PrettyPrint ────────────────── v0.2.0
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed XSLT_jll ───────────────────── v1.1.33+4
+  Installed Interpolations ─────────────── v0.12.10
+  Installed ProgressMeter ──────────────── v1.4.1
+  Installed TerminalLoggers ────────────── v0.1.2
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed MultiScaleArrays ───────────── v1.8.1
+  Installed SafeTestsets ───────────────── v0.0.1
+  Installed Xorg_xcb_util_wm_jll ───────── v0.4.1+1
+  Installed ProgressLogging ────────────── v0.1.3
+  Installed Glib_jll ───────────────────── v2.59.0+4
+  Installed JuliaVariables ─────────────── v0.2.3
+  Installed LaTeXStrings ───────────────── v1.2.0
+  Installed Parsers ────────────────────── v1.0.15
+  Installed IniFile ────────────────────── v0.5.0
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [c45f814d] + Causal v0.3.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [c3fe647b] + AbstractAlgebra v0.11.2
+  [1520ce14] + AbstractTrees v0.3.3
+  [79e6a3ab] + Adapt v3.0.0
+  [ec485272] + ArnoldiMethod v0.0.4
+  [4fba245c] + ArrayInterface v2.14.13
+  [4c555306] + ArrayLayouts v0.3.8
+  [56f22d72] + Artifacts v1.3.0
+  [13072b0f] + AxisAlgorithms v1.0.0
+  [aae01518] + BandedMatrices v0.15.15
+  [764a87c0] + BoundaryValueDiffEq v2.7.0
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [fa961155] + CEnum v0.4.1
+  [83423d85] + Cairo_jll v1.16.0+6
+  [a603d957] + CanonicalTraits v0.2.3
+  [c45f814d] + Causal v0.3.0
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [944b1d66] + CodecZlib v0.7.0
+  [35d6a980] + ColorSchemes v3.10.2
+  [3da002f7] + ColorTypes v0.10.9
+  [5ae59095] + Colors v0.12.6
+  [861a8166] + Combinatorics v1.0.2
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [a81c6b42] + Compose v0.9.1
+  [88cd18e8] + ConsoleProgressMonitor v0.1.2
+  [187b0558] + ConstructionBase v1.0.0
+  [d38c429a] + Contour v0.5.7
+  [adafc99b] + CpuId v0.2.2
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.17.20
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [bcd4f6db] + DelayDiffEq v5.24.1
+  [2b5f629d] + DiffEqBase v6.44.3
+  [459566f4] + DiffEqCallbacks v2.13.5
+  [5a0ffddc] + DiffEqFinancial v2.4.0
+  [c894b116] + DiffEqJump v6.10.0
+  [77a26b50] + DiffEqNoiseProcess v5.5.0
+  [055956cb] + DiffEqPhysics v3.8.0
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [0c46a032] + DifferentialEquations v6.16.0
+  [c619ae07] + DimensionalPlotRecipes v1.2.0
+  [b4f34e82] + Distances v0.10.0
+  [31c24e10] + Distributions v0.23.8
+  [ffbed154] + DocStringExtensions v0.8.3
+  [5ae413db] + EarCut_jll v2.1.5+1
+  [2e619515] + Expat_jll v2.2.7+6
+  [d4d017d3] + ExponentialUtilities v1.8.0
+  [c87230d0] + FFMPEG v0.4.0
+  [b22a6f82] + FFMPEG_jll v4.3.1+4
+  [5789e2e9] + FileIO v1.4.5
+  [1a297f60] + FillArrays v0.8.14
+  [6a86dc24] + FiniteDiff v2.7.2
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [a3f928ae] + Fontconfig_jll v2.13.1+14
+  [59287772] + Formatting v0.4.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [d7e528f0] + FreeType2_jll v2.10.1+5
+  [559328eb] + FriBidi_jll v1.0.5+6
+  [069b7b12] + FunctionWrappers v1.1.1
+  [0656b61e] + GLFW_jll v3.3.2+1
+  [28b8d3ca] + GR v0.53.0
+  [d2c73de3] + GR_jll v0.53.0+0
+  [6b9d7cbe] + GeneralizedGenerated v0.2.8
+  [01680d73] + GenericSVD v0.3.0
+  [5c1252a2] + GeometryBasics v0.3.5
+  [78b55507] + Gettext_jll v0.20.1+7
+  [7746bdde] + Glib_jll v2.59.0+4
+  [a2cc645c] + GraphPlot v0.4.4
+  [42e2da0e] + Grisu v1.0.0
+  [cd3eb016] + HTTP v0.8.19
+  [615f187c] + IfElse v0.1.0
+  [d25df0c9] + Inflate v0.1.2
+  [83e8ac13] + IniFile v0.5.0
+  [a98d9a8b] + Interpolations v0.12.10
+  [c8e1da08] + IterTools v1.3.0
+  [42fd0dbc] + IterativeSolvers v0.8.5
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [033835bb] + JLD2 v0.1.14
+  [692b3bcd] + JLLWrappers v1.2.0
+  [682c06a0] + JSON v0.21.1
+  [aacddb02] + JpegTurbo_jll v2.0.1+3
+  [b14d175d] + JuliaVariables v0.2.3
+  [c1c5ebd0] + LAME_jll v3.100.0+3
+  [dd4b983a] + LZO_jll v2.10.0+3
+  [b964fa9f] + LaTeXStrings v1.2.0
+  [2ee39098] + LabelledArrays v1.4.0
+  [23fbe1c1] + Latexify v0.14.7
+  [1d6d02ad] + LeftChildRightSiblingTrees v0.1.2
+  [dd192d2f] + LibVPX_jll v1.9.0+1
+  [e9f186c6] + Libffi_jll v3.2.1+4
+  [d4300ac3] + Libgcrypt_jll v1.8.5+4
+  [7e76a0d4] + Libglvnd_jll v1.3.0+3
+  [7add5ba3] + Libgpg_error_jll v1.36.0+3
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [4b2f31a3] + Libmount_jll v2.34.0+3
+  [89763e89] + Libtiff_jll v4.1.0+2
+  [38a345b3] + Libuuid_jll v2.34.0+7
+  [093fc24a] + LightGraphs v1.3.4
+  [d3d80556] + LineSearches v7.1.1
+  [e6f89c97] + LoggingExtras v0.4.2
+  [bdcacae8] + LoopVectorization v0.8.26
+  [d00139f3] + METIS_jll v5.1.0+5
+  [d8e11817] + MLStyle v0.4.6
+  [1914dd2f] + MacroTools v0.5.6
+  [739be429] + MbedTLS v1.0.3
+  [c8ffd9c3] + MbedTLS_jll v2.16.8+1
+  [442fdcdd] + Measures v0.3.1
+  [e1d29d7a] + Missings v0.4.4
+  [961ee093] + ModelingToolkit v3.20.1
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [f9640e96] + MultiScaleArrays v1.8.1
+  [d41bc354] + NLSolversBase v7.7.1
+  [2774e3e8] + NLsolve v4.5.1
+  [77ba4419] + NaNMath v0.3.5
+  [71a1bf82] + NameResolution v0.1.5
+  [6fe1bfb0] + OffsetArrays v1.3.1
+  [e7412a2a] + Ogg_jll v1.3.4+2
+  [4536629a] + OpenBLAS_jll v0.3.9+5
+  [458c3c95] + OpenSSL_jll v1.1.1+6
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [91d4177d] + Opus_jll v1.3.1+3
+  [bac558e1] + OrderedCollections v1.3.2
+  [1dea7af3] + OrdinaryDiffEq v5.39.1
+  [2f80f16e] + PCRE_jll v8.42.0+4
+  [90014a1f] + PDMats v0.10.1
+  [65888b18] + ParameterizedFunctions v5.6.0
+  [d96e819e] + Parameters v0.12.1
+  [69de0a69] + Parsers v1.0.15
+  [30392449] + Pixman_jll v0.40.0+0
+  [ccf2f8ad] + PlotThemes v2.0.0
+  [995b91a9] + PlotUtils v1.0.10
+  [91a5bcdd] + Plots v1.10.1
+  [e409e4f3] + PoissonRandom v0.4.0
+  [8162dcfd] + PrettyPrint v0.2.0
+  [33c8b6b6] + ProgressLogging v0.1.3
+  [92933f4c] + ProgressMeter v1.4.1
+  [ede63266] + Qt_jll v5.15.2+1
+  [1fd47b50] + QuadGK v2.4.1
+  [74087812] + Random123 v1.2.0
+  [fb686558] + RandomExtensions v0.4.3
+  [e6cf234a] + RandomNumbers v1.4.0
+  [c84ed2f1] + Ratios v0.4.0
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [01d81517] + RecipesPipeline v0.2.1
+  [731186ca] + RecursiveArrayTools v2.10.0
+  [f2c3362d] + RecursiveFactorization v0.1.6
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [ae5879a3] + ResettableStacks v1.1.0
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [f2b01f46] + Roots v1.0.7
+  [21efa798] + SIMDPirates v0.8.26
+  [476501e8] + SLEEFPirates v0.5.5
+  [1bc83da4] + SafeTestsets v0.0.1
+  [6c6a2e73] + Scratch v1.0.3
+  [992d4aef] + Showoff v0.3.2
+  [699a6c99] + SimpleTraits v0.9.3
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [47a9eef4] + SparseDiffTools v1.12.0
+  [276daf66] + SpecialFunctions v0.10.3
+  [90137ffa] + StaticArrays v0.12.5
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [9672c7b4] + SteadyStateDiffEq v1.6.0
+  [789caeaf] + StochasticDiffEq v6.25.0
+  [09ab397b] + StructArrays v0.4.2
+  [bea87d4a] + SuiteSparse_jll v5.4.0+9
+  [c3572dad] + Sundials v4.2.6
+  [fb77eaff] + Sundials_jll v5.2.0+1
+  [d1185830] + SymbolicUtils v0.5.2
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [5d786b92] + TerminalLoggers v0.1.2
+  [a759f4b9] + TimerOutputs v0.5.7
+  [3bb67fe8] + TranscodingStreams v0.9.5
+  [a2a6695c] + TreeViews v0.3.0
+  [3a884ed6] + UnPack v1.0.2
+  [1986cc42] + Unitful v1.5.0
+  [3d5dd08c] + VectorizationBase v0.12.33
+  [19fa3120] + VertexSafeGraphs v0.1.2
+  [a2964d1f] + Wayland_jll v1.17.0+4
+  [2381bf8a] + Wayland_protocols_jll v1.18.0+4
+  [efce3f68] + WoodburyMatrices v0.5.3
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [aed1982a] + XSLT_jll v1.1.33+4
+  [4f6342f7] + Xorg_libX11_jll v1.6.9+4
+  [0c0b7dd1] + Xorg_libXau_jll v1.0.9+4
+  [935fb764] + Xorg_libXcursor_jll v1.2.0+4
+  [a3789734] + Xorg_libXdmcp_jll v1.1.3+4
+  [1082639a] + Xorg_libXext_jll v1.3.4+4
+  [d091e8ba] + Xorg_libXfixes_jll v5.0.3+4
+  [a51aa0fd] + Xorg_libXi_jll v1.7.10+4
+  [d1454406] + Xorg_libXinerama_jll v1.1.4+4
+  [ec84b674] + Xorg_libXrandr_jll v1.5.2+4
+  [ea2f1a96] + Xorg_libXrender_jll v0.9.10+4
+  [14d82f49] + Xorg_libpthread_stubs_jll v0.1.0+3
+  [c7cfdc94] + Xorg_libxcb_jll v1.13.0+3
+  [cc61e674] + Xorg_libxkbfile_jll v1.1.0+4
+  [12413925] + Xorg_xcb_util_image_jll v0.4.0+1
+  [2def613f] + Xorg_xcb_util_jll v0.4.0+1
+  [975044d2] + Xorg_xcb_util_keysyms_jll v0.4.0+1
+  [0d47668e] + Xorg_xcb_util_renderutil_jll v0.3.9+1
+  [c22f9ab0] + Xorg_xcb_util_wm_jll v0.4.1+1
+  [35661453] + Xorg_xkbcomp_jll v1.4.2+4
+  [33bec58e] + Xorg_xkeyboard_config_jll v2.27.0+4
+  [c5fb5394] + Xorg_xtrans_jll v1.4.0+3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [3161d3a3] + Zstd_jll v1.4.5+2
+  [700de1a5] + ZygoteRules v0.2.1
+  [0ac62f75] + libass_jll v0.14.0+4
+  [f638f0a6] + libfdk_aac_jll v0.1.6+4
+  [b53b4c65] + libpng_jll v1.6.37+6
+  [f27f6e37] + libvorbis_jll v1.3.6+6
+  [1270edf5] + x264_jll v2020.7.14+2
+  [dfaa095f] + x265_jll v3.0.0+3
+  [d8fb68d0] + xkbcommon_jll v0.9.1+5
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building Random123 ───→ `~/.julia/packages/Random123/Y2Du3/deps/build.log`
+   Building GR ──────────→ `~/.julia/packages/GR/RlE5Y/deps/build.log`
+   Building SLEEFPirates → `~/.julia/packages/SLEEFPirates/jGsib/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T23:15:47.209
+#
+
+    Testing Causal
+Status `/tmp/jl_D3KrgT/Project.toml`
+  [c45f814d] Causal v0.3.0
+  [0c46a032] DifferentialEquations v6.16.0
+  [5789e2e9] FileIO v1.4.5
+  [033835bb] JLD2 v0.1.14
+  [093fc24a] LightGraphs v1.3.4
+  [56ddb016] Logging
+  [9a3f8284] Random
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+Status `/tmp/jl_D3KrgT/Manifest.toml`
+  [c3fe647b] AbstractAlgebra v0.11.2
+  [1520ce14] AbstractTrees v0.3.3
+  [79e6a3ab] Adapt v3.0.0
+  [ec485272] ArnoldiMethod v0.0.4
+  [4fba245c] ArrayInterface v2.14.13
+  [4c555306] ArrayLayouts v0.3.8
+  [56f22d72] Artifacts v1.3.0
+  [13072b0f] AxisAlgorithms v1.0.0
+  [aae01518] BandedMatrices v0.15.15
+  [764a87c0] BoundaryValueDiffEq v2.7.0
+  [6e34b625] Bzip2_jll v1.0.6+5
+  [fa961155] CEnum v0.4.1
+  [83423d85] Cairo_jll v1.16.0+6
+  [a603d957] CanonicalTraits v0.2.3
+  [c45f814d] Causal v0.3.0
+  [d360d2e6] ChainRulesCore v0.9.24
+  [944b1d66] CodecZlib v0.7.0
+  [35d6a980] ColorSchemes v3.10.2
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.6
+  [861a8166] Combinatorics v1.0.2
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [a81c6b42] Compose v0.9.1
+  [88cd18e8] ConsoleProgressMonitor v0.1.2
+  [187b0558] ConstructionBase v1.0.0
+  [d38c429a] Contour v0.5.7
+  [adafc99b] CpuId v0.2.2
+  [9a962f9c] DataAPI v1.4.0
+  [864edb3b] DataStructures v0.17.20
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [bcd4f6db] DelayDiffEq v5.24.1
+  [2b5f629d] DiffEqBase v6.44.3
+  [459566f4] DiffEqCallbacks v2.13.5
+  [5a0ffddc] DiffEqFinancial v2.4.0
+  [c894b116] DiffEqJump v6.10.0
+  [77a26b50] DiffEqNoiseProcess v5.5.0
+  [055956cb] DiffEqPhysics v3.8.0
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [0c46a032] DifferentialEquations v6.16.0
+  [c619ae07] DimensionalPlotRecipes v1.2.0
+  [b4f34e82] Distances v0.10.0
+  [31c24e10] Distributions v0.23.8
+  [ffbed154] DocStringExtensions v0.8.3
+  [5ae413db] EarCut_jll v2.1.5+1
+  [2e619515] Expat_jll v2.2.7+6
+  [d4d017d3] ExponentialUtilities v1.8.0
+  [c87230d0] FFMPEG v0.4.0
+  [b22a6f82] FFMPEG_jll v4.3.1+4
+  [5789e2e9] FileIO v1.4.5
+  [1a297f60] FillArrays v0.8.14
+  [6a86dc24] FiniteDiff v2.7.2
+  [53c48c17] FixedPointNumbers v0.8.4
+  [a3f928ae] Fontconfig_jll v2.13.1+14
+  [59287772] Formatting v0.4.2
+  [f6369f11] ForwardDiff v0.10.14
+  [d7e528f0] FreeType2_jll v2.10.1+5
+  [559328eb] FriBidi_jll v1.0.5+6
+  [069b7b12] FunctionWrappers v1.1.1
+  [0656b61e] GLFW_jll v3.3.2+1
+  [28b8d3ca] GR v0.53.0
+  [d2c73de3] GR_jll v0.53.0+0
+  [6b9d7cbe] GeneralizedGenerated v0.2.8
+  [01680d73] GenericSVD v0.3.0
+  [5c1252a2] GeometryBasics v0.3.5
+  [78b55507] Gettext_jll v0.20.1+7
+  [7746bdde] Glib_jll v2.59.0+4
+  [a2cc645c] GraphPlot v0.4.4
+  [42e2da0e] Grisu v1.0.0
+  [cd3eb016] HTTP v0.8.19
+  [615f187c] IfElse v0.1.0
+  [d25df0c9] Inflate v0.1.2
+  [83e8ac13] IniFile v0.5.0
+  [a98d9a8b] Interpolations v0.12.10
+  [c8e1da08] IterTools v1.3.0
+  [42fd0dbc] IterativeSolvers v0.8.5
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [033835bb] JLD2 v0.1.14
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [aacddb02] JpegTurbo_jll v2.0.1+3
+  [b14d175d] JuliaVariables v0.2.3
+  [c1c5ebd0] LAME_jll v3.100.0+3
+  [dd4b983a] LZO_jll v2.10.0+3
+  [b964fa9f] LaTeXStrings v1.2.0
+  [2ee39098] LabelledArrays v1.4.0
+  [23fbe1c1] Latexify v0.14.7
+  [1d6d02ad] LeftChildRightSiblingTrees v0.1.2
+  [dd192d2f] LibVPX_jll v1.9.0+1
+  [e9f186c6] Libffi_jll v3.2.1+4
+  [d4300ac3] Libgcrypt_jll v1.8.5+4
+  [7e76a0d4] Libglvnd_jll v1.3.0+3
+  [7add5ba3] Libgpg_error_jll v1.36.0+3
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [4b2f31a3] Libmount_jll v2.34.0+3
+  [89763e89] Libtiff_jll v4.1.0+2
+  [38a345b3] Libuuid_jll v2.34.0+7
+  [093fc24a] LightGraphs v1.3.4
+  [d3d80556] LineSearches v7.1.1
+  [e6f89c97] LoggingExtras v0.4.2
+  [bdcacae8] LoopVectorization v0.8.26
+  [d00139f3] METIS_jll v5.1.0+5
+  [d8e11817] MLStyle v0.4.6
+  [1914dd2f] MacroTools v0.5.6
+  [739be429] MbedTLS v1.0.3
+  [c8ffd9c3] MbedTLS_jll v2.16.8+1
+  [442fdcdd] Measures v0.3.1
+  [e1d29d7a] Missings v0.4.4
+  [961ee093] ModelingToolkit v3.20.1
+  [46d2c3a1] MuladdMacro v0.2.2
+  [f9640e96] MultiScaleArrays v1.8.1
+  [d41bc354] NLSolversBase v7.7.1
+  [2774e3e8] NLsolve v4.5.1
+  [77ba4419] NaNMath v0.3.5
+  [71a1bf82] NameResolution v0.1.5
+  [6fe1bfb0] OffsetArrays v1.3.1
+  [e7412a2a] Ogg_jll v1.3.4+2
+  [4536629a] OpenBLAS_jll v0.3.9+5
+  [458c3c95] OpenSSL_jll v1.1.1+6
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [91d4177d] Opus_jll v1.3.1+3
+  [bac558e1] OrderedCollections v1.3.2
+  [1dea7af3] OrdinaryDiffEq v5.39.1
+  [2f80f16e] PCRE_jll v8.42.0+4
+  [90014a1f] PDMats v0.10.1
+  [65888b18] ParameterizedFunctions v5.6.0
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.15
+  [30392449] Pixman_jll v0.40.0+0
+  [ccf2f8ad] PlotThemes v2.0.0
+  [995b91a9] PlotUtils v1.0.10
+  [91a5bcdd] Plots v1.10.1
+  [e409e4f3] PoissonRandom v0.4.0
+  [8162dcfd] PrettyPrint v0.2.0
+  [33c8b6b6] ProgressLogging v0.1.3
+  [92933f4c] ProgressMeter v1.4.1
+  [ede63266] Qt_jll v5.15.2+1
+  [1fd47b50] QuadGK v2.4.1
+  [74087812] Random123 v1.2.0
+  [fb686558] RandomExtensions v0.4.3
+  [e6cf234a] RandomNumbers v1.4.0
+  [c84ed2f1] Ratios v0.4.0
+  [3cdcf5f2] RecipesBase v1.1.1
+  [01d81517] RecipesPipeline v0.2.1
+  [731186ca] RecursiveArrayTools v2.10.0
+  [f2c3362d] RecursiveFactorization v0.1.6
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [ae5879a3] ResettableStacks v1.1.0
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [f2b01f46] Roots v1.0.7
+  [21efa798] SIMDPirates v0.8.26
+  [476501e8] SLEEFPirates v0.5.5
+  [1bc83da4] SafeTestsets v0.0.1
+  [6c6a2e73] Scratch v1.0.3
+  [992d4aef] Showoff v0.3.2
+  [699a6c99] SimpleTraits v0.9.3
+  [a2af1166] SortingAlgorithms v0.3.1
+  [47a9eef4] SparseDiffTools v1.12.0
+  [276daf66] SpecialFunctions v0.10.3
+  [90137ffa] StaticArrays v0.12.5
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [9672c7b4] SteadyStateDiffEq v1.6.0
+  [789caeaf] StochasticDiffEq v6.25.0
+  [09ab397b] StructArrays v0.4.2
+  [bea87d4a] SuiteSparse_jll v5.4.0+9
+  [c3572dad] Sundials v4.2.6
+  [fb77eaff] Sundials_jll v5.2.0+1
+  [d1185830] SymbolicUtils v0.5.2
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [5d786b92] TerminalLoggers v0.1.2
+  [a759f4b9] TimerOutputs v0.5.7
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [a2a6695c] TreeViews v0.3.0
+  [3a884ed6] UnPack v1.0.2
+  [1986cc42] Unitful v1.5.0
+  [3d5dd08c] VectorizationBase v0.12.33
+  [19fa3120] VertexSafeGraphs v0.1.2
+  [a2964d1f] Wayland_jll v1.17.0+4
+  [2381bf8a] Wayland_protocols_jll v1.18.0+4
+  [efce3f68] WoodburyMatrices v0.5.3
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [aed1982a] XSLT_jll v1.1.33+4
+  [4f6342f7] Xorg_libX11_jll v1.6.9+4
+  [0c0b7dd1] Xorg_libXau_jll v1.0.9+4
+  [935fb764] Xorg_libXcursor_jll v1.2.0+4
+  [a3789734] Xorg_libXdmcp_jll v1.1.3+4
+  [1082639a] Xorg_libXext_jll v1.3.4+4
+  [d091e8ba] Xorg_libXfixes_jll v5.0.3+4
+  [a51aa0fd] Xorg_libXi_jll v1.7.10+4
+  [d1454406] Xorg_libXinerama_jll v1.1.4+4
+  [ec84b674] Xorg_libXrandr_jll v1.5.2+4
+  [ea2f1a96] Xorg_libXrender_jll v0.9.10+4
+  [14d82f49] Xorg_libpthread_stubs_jll v0.1.0+3
+  [c7cfdc94] Xorg_libxcb_jll v1.13.0+3
+  [cc61e674] Xorg_libxkbfile_jll v1.1.0+4
+  [12413925] Xorg_xcb_util_image_jll v0.4.0+1
+  [2def613f] Xorg_xcb_util_jll v0.4.0+1
+  [975044d2] Xorg_xcb_util_keysyms_jll v0.4.0+1
+  [0d47668e] Xorg_xcb_util_renderutil_jll v0.3.9+1
+  [c22f9ab0] Xorg_xcb_util_wm_jll v0.4.1+1
+  [35661453] Xorg_xkbcomp_jll v1.4.2+4
+  [33bec58e] Xorg_xkeyboard_config_jll v2.27.0+4
+  [c5fb5394] Xorg_xtrans_jll v1.4.0+3
+  [83775a58] Zlib_jll v1.2.11+18
+  [3161d3a3] Zstd_jll v1.4.5+2
+  [700de1a5] ZygoteRules v0.2.1
+  [0ac62f75] libass_jll v0.14.0+4
+  [f638f0a6] libfdk_aac_jll v0.1.6+4
+  [b53b4c65] libpng_jll v1.6.37+6
+  [f27f6e37] libvorbis_jll v1.3.6+6
+  [1270edf5] x264_jll v2020.7.14+2
+  [dfaa095f] x265_jll v3.0.0+3
+  [d8fb68d0] xkbcommon_jll v0.9.1+5
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: Running PrinterTestSet ...
+┌ Warning: `prepare` function has been deprecated in favor of `equip`
+└ @ Main ~/.julia/packages/Causal/vsleZ/test/runtests.jl:18
+For time[100.0 ... 1.0] => [100.0 99.0 100.0 99.0 98.0 97.0 96.0 95.0 96.0 95.0 94.0 93.0 92.0 91.0 92.0 91.0 90.0 89.0 88.0 87.0 88.0 87.0 86.0 85.0 84.0 83.0 84.0 83.0 82.0 81.0 80.0 79.0 80.0 79.0 78.0 77.0 76.0 75.0 76.0 75.0 74.0 73.0 72.0 71.0 72.0 71.0 70.0 69.0 68.0 67.0 68.0 67.0 66.0 65.0 64.0 63.0 64.0 63.0 62.0 61.0 60.0 59.0 60.0 59.0 58.0 57.0 56.0 55.0 56.0 55.0 54.0 53.0 52.0 51.0 52.0 51.0 50.0 49.0 48.0 47.0 48.0 47.0 46.0 45.0 44.0 43.0 44.0 43.0 42.0 41.0 40.0 39.0 40.0 39.0 38.0 37.0 36.0 35.0 36.0 35.0; 134.0 133.0 132.0 131.0 132.0 131.0 130.0 129.0 128.0 127.0 128.0 127.0 126.0 125.0 124.0 123.0 124.0 123.0 122.0 121.0 120.0 119.0 120.0 119.0 118.0 117.0 116.0 115.0 116.0 115.0 114.0 113.0 112.0 111.0 112.0 111.0 110.0 109.0 108.0 107.0 108.0 107.0 106.0 105.0 104.0 103.0 104.0 103.0 102.0 101.0 100.0 99.0 100.0 99.0 98.0 97.0 96.0 95.0 96.0 95.0 94.0 93.0 92.0 91.0 92.0 91.0 90.0 89.0 88.0 87.0 88.0 87.0 86.0 85.0 84.0 83.0 84.0 83.0 82.0 81.0 80.0 79.0 80.0 79.0 78.0 77.0 76.0 75.0 76.0 75.0 74.0 73.0 72.0 71.0 72.0 71.0 70.0 69.0 68.0 67.0]
+For time[200.0 ... 101.0] => [200.0 199.0 198.0 197.0 196.0 195.0 194.0 193.0 192.0 191.0 190.0 189.0 188.0 187.0 186.0 185.0 184.0 183.0 182.0 181.0 180.0 179.0 178.0 177.0 176.0 175.0 174.0 173.0 172.0 171.0 170.0 169.0 168.0 167.0 166.0 165.0 164.0 163.0 162.0 161.0 160.0 159.0 158.0 157.0 156.0 155.0 154.0 153.0 152.0 151.0 150.0 149.0 148.0 147.0 146.0 145.0 144.0 143.0 142.0 141.0 140.0 139.0 138.0 137.0 136.0 135.0 134.0 133.0 132.0 131.0 130.0 129.0 128.0 127.0 126.0 125.0 124.0 123.0 122.0 121.0 120.0 119.0 118.0 117.0 116.0 115.0 114.0 113.0 112.0 111.0 110.0 109.0 108.0 107.0 106.0 105.0 104.0 103.0 102.0 101.0; 200.0 199.0 198.0 197.0 196.0 195.0 194.0 193.0 192.0 191.0 190.0 189.0 188.0 187.0 186.0 185.0 184.0 183.0 182.0 181.0 180.0 179.0 178.0 177.0 176.0 175.0 174.0 173.0 172.0 171.0 170.0 169.0 168.0 167.0 166.0 165.0 164.0 163.0 162.0 161.0 160.0 159.0 158.0 157.0 156.0 155.0 154.0 153.0 152.0 151.0 150.0 149.0 148.0 147.0 146.0 145.0 144.0 143.0 142.0 141.0 140.0 139.0 138.0 137.0 136.0 135.0 134.0 133.0 132.0 131.0 130.0 129.0 128.0 127.0 126.0 125.0 124.0 123.0 122.0 121.0 120.0 119.0 118.0 117.0 116.0 115.0 114.0 113.0 112.0 111.0 110.0 109.0 108.0 107.0 106.0 105.0 104.0 103.0 102.0 101.0]
+[ Info: Done PrinterTestSet ...
+[ Info: Running ScopeTestSet ...
+/home/pkgeval/.julia/packages/GR/RlE5Y/src/../deps/gr/bin/gksqt: error while loading shared libraries: libQt5Widgets.so.5: cannot open shared object file: No such file or directory
+connect: Connection refused
+GKS: can't connect to GKS socket application
+
+GKS: Open failed in routine OPEN_WS
+GKS: GKS not in proper state. GKS must be either in the state WSOP or WSAC in routine ACTIVATE_WS
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine FILLAREA
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine FILLAREA
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine TEXT
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine TEXT
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine TEXT
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine TEXT
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine TEXT
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine TEXT
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine POLYLINE
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine TEXT
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine TEXT
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine TEXT
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine TEXT
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine TEXT
+GKS: GKS not in proper state. GKS must be either in the state WSAC or SGOP in routine TEXT
+┌ Warning: `prepare` function has been deprecated in favor of `equip`
+└ @ Main ~/.julia/packages/Causal/vsleZ/test/runtests.jl:18
+t = 1
+t = 2
+t = 3
+t = 4
+t = 5
+t = 6
+t = 7
+t = 8
+t = 9
+t = 10
+t = 11
+t = 12
+t = 13
+t = 14
+t = 15
+t = 16
+t = 17
+t = 18
+t = 19
+t = 20
+t = 21
+t = 22
+t = 23
+t = 24
+t = 25
+t = 26
+t = 27
+t = 28
+t = 29
+t = 30
+t = 31
+t = 32
+t = 33
+t = 34
+t = 35
+t = 36
+t = 37
+t = 38
+t = 39
+t = 40
+t = 41
+t = 42
+t = 43
+t = 44
+t = 45
+t = 46
+t = 47
+t = 48
+t = 49
+t = 50
+t = 51
+t = 52
+t = 53
+t = 54
+t = 55
+t = 56
+t = 57
+t = 58
+t = 59
+t = 60
+t = 61
+t = 62
+t = 63
+t = 64
+t = 65
+t = 66
+t = 67
+t = 68
+t = 69
+t = 70
+t = 71
+t = 72
+t = 73
+t = 74
+t = 75
+t = 76
+t = 77
+t = 78
+t = 79
+t = 80
+t = 81
+t = 82
+t = 83
+t = 84
+t = 85
+t = 86
+t = 87
+t = 88
+t = 89
+t = 90
+t = 91
+t = 92
+t = 93
+t = 94
+t = 95
+t = 96
+t = 97
+t = 98
+t = 99
+t = 100
+t = 101
+t = 102
+t = 103
+t = 104
+t = 105
+t = 106
+t = 107
+t = 108
+t = 109
+t = 110
+t = 111
+t = 112
+t = 113
+t = 114
+t = 115
+t = 116
+t = 117
+t = 118
+t = 119
+t = 120
+t = 121
+t = 122
+t = 123
+t = 124
+t = 125
+t = 126
+t = 127
+t = 128
+t = 129
+t = 130
+t = 131
+t = 132
+t = 133
+t = 134
+t = 135
+t = 136
+t = 137
+t = 138
+t = 139
+t = 140
+t = 141
+t = 142
+t = 143
+t = 144
+t = 145
+t = 146
+t = 147
+t = 148
+t = 149
+t = 150
+t = 151
+t = 152
+t = 153
+t = 154
+t = 155
+t = 156
+t = 157
+t = 158
+t = 159
+t = 160
+t = 161
+t = 162
+t = 163
+t = 164
+t = 165
+t = 166
+t = 167
+t = 168
+t = 169
+t = 170
+t = 171
+t = 172
+t = 173
+t = 174
+t = 175
+t = 176
+t = 177
+t = 178
+t = 179
+t = 180
+t = 181
+t = 182
+t = 183
+t = 184
+t = 185
+t = 186
+t = 187
+t = 188
+t = 189
+t = 190
+t = 191
+t = 192
+t = 193
+t = 194
+t = 195
+t = 196
+t = 197
+t = 198
+t = 199
+t = 200
+[ Info: Done ScopeTestSet ...
+[ Info: Running WriterTestSet ...
+┌ Warning: `prepare` function has been deprecated in favor of `equip`
+└ @ Main ~/.julia/packages/Causal/vsleZ/test/runtests.jl:18
+[ Info: Done WriterTestSet.
+[ Info: Running ClockTestSet ...
+┌ Warning: Clock is paused.
+└ @ Causal ~/.julia/packages/Causal/vsleZ/src/components/sources/clock.jl:62
+┌ Warning: Clock is paused.
+└ @ Causal ~/.julia/packages/Causal/vsleZ/src/components/sources/clock.jl:62
+┌ Warning: Clock is paused.
+└ @ Causal ~/.julia/packages/Causal/vsleZ/src/components/sources/clock.jl:62
+┌ Warning: Clock is paused.
+└ @ Causal ~/.julia/packages/Causal/vsleZ/src/components/sources/clock.jl:62
+┌ Warning: Clock is paused.
+└ @ Causal ~/.julia/packages/Causal/vsleZ/src/components/sources/clock.jl:62
+┌ Warning: Clock is paused.
+└ @ Causal ~/.julia/packages/Causal/vsleZ/src/components/sources/clock.jl:62
+┌ Warning: Clock is paused.
+└ @ Causal ~/.julia/packages/Causal/vsleZ/src/components/sources/clock.jl:62
+┌ Warning: Clock is paused.
+└ @ Causal ~/.julia/packages/Causal/vsleZ/src/components/sources/clock.jl:62
+┌ Warning: Clock is paused.
+└ @ Causal ~/.julia/packages/Causal/vsleZ/src/components/sources/clock.jl:62
+┌ Warning: Clock is paused.
+└ @ Causal ~/.julia/packages/Causal/vsleZ/src/components/sources/clock.jl:62
+[ Info: Done ClockTestSet.
+[ Info: Running GeneratorsTestSet ...
+[ Info: Done GeneratorsTestSet ...
+[ Info: Running DAESystemTestSet ...
+[ Info: Done DAESystemTestSet.
+[ Info: Running DDESystemTestSet ...
+[ Info: Done DDESystemTestSet ...
+[ Info: Running DiscreteSystemTestSet ...
+[ Info: Done DiscreteSystemTestSet ...
+[ Info: Running ODESystemTestSet ...
+[ Info: Done ODESystemTestSet.
+[ Info: Running RODESystemTestSet ...
+[ Info: Done RODESystemTestSet ...
+[ Info: Running SDESystemTestSet ...
+[ Info: Running SDESystemTestSet ...
+[ Info: Running StaticSystemTestSet ...
+[ Info: Done StaticSystemTestSet ...
+[ Info: Running LinkTestSet ...
+[ Info: Done LinkTestSet.
+[ Info: Running PinTestSet ...
+[ Info: Done PinTestSet.
+[ Info: Running PortTestSet ...
+[ Info: Donke PortTestSet.
+[ Info: Running ModelTestSet ...
+Progress:   6%|██▋                                      |  ETA: 0:00:03[KProgress: 100%|█████████████████████████████████████████| Time: 0:00:00[K
+[ Info: 2021-01-11T23:33:40.655 Started simulation...
+[ Info: 2021-01-11T23:33:40.68 Inspecting model...
+[ Info: 2021-01-11T23:33:40.93 Done.
+[ Info: 2021-01-11T23:33:40.93 Initializing the model...
+[ Info: 2021-01-11T23:33:41.105 Done...
+[ Info: 2021-01-11T23:33:41.105 Running the simulation...
+[ Info: 2021-01-11T23:33:41.108 Done...
+[ Info: 2021-01-11T23:33:41.108 Terminating the simulation...
+[ Info: 2021-01-11T23:33:41.136 Done.
+[ Info: Done ModelTestSet.
+[ Info: Running SimulationTestSet ...
+[ Info: 2021-01-11T23:33:41.215 Started simulation...
+[ Info: 2021-01-11T23:33:41.216 Inspecting model...
+[ Info: 2021-01-11T23:33:41.228 Done.
+[ Info: 2021-01-11T23:33:41.228 Initializing the model...
+[ Info: 2021-01-11T23:33:41.229 Done...
+[ Info: 2021-01-11T23:33:41.229 Running the simulation...
+Progress:  60%|████████████████████████▍                |  ETA: 0:00:00[KProgress: 100%|█████████████████████████████████████████| Time: 0:00:00[K
+[ Info: 2021-01-11T23:33:41.245 Done...
+[ Info: 2021-01-11T23:33:41.246 Terminating the simulation...
+[ Info: 2021-01-11T23:33:41.251 Done.
+[ Info: Done SimulationTestSet.
+[ Info: Running TaskManagerTestSet ...
+┌ Error: Failed for Mytype1(1)
+└ @ Causal ~/.julia/packages/Causal/vsleZ/src/models/taskmanager.jl:39
+[ Info: Done TaskManagerTestSet.
+[ Info: Running PluginTestSet ...
+[ Info: 2021-01-11T23:33:54.126 Started simulation...
+[ Info: 2021-01-11T23:33:54.126 Inspecting model...
+[ Info: 2021-01-11T23:33:54.143 Done.
+[ Info: 2021-01-11T23:33:54.144 Initializing the model...
+[ Info: 2021-01-11T23:33:54.221 Done...
+[ Info: 2021-01-11T23:33:54.221 Running the simulation...
+Progress:   5%|██                                       |  ETA: 0:00:02[KProgress:  68%|███████████████████████████▉             |  ETA: 0:00:00[KProgress: 100%|█████████████████████████████████████████| Time: 0:00:00[K
+[ Info: 2021-01-11T23:33:54.335 Done...
+[ Info: 2021-01-11T23:33:54.335 Terminating the simulation...
+[ Info: 2021-01-11T23:33:54.337 Done.
+[ Info: Done PluginTestSet ...
+[ Info: Running BufferTestSet ...
+[ Info: Done BufferTestSet.
+[ Info: Running CallbackTestSet ...
+[ Info: Done CallbackTestSet.
+Callaback activated . obj.x = Test Summary: | 10Pass  
+Total
+Callaback activated . obj.x = 10
+Callaback activated . obj.x = 10
+Callaback activated . obj.x = 10
+Callaback activated . obj.x = 10
+Callaback activated . obj.x = 10
+CausalTestSet | 2060   2060
+400.088928 seconds (651.14 M allocations: 132.137 GiB, 6.57% gc time)
+    Testing Causal tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:33:56.238
+CPU usage: 1110.33s (1027.81s user, 83.74s kernel)
+
+Network usage:
+- eth0: 70.151 MiB received, 1.651 MiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":55,"op":"Read","minor":0},{"major":259,"value":86,"op":"Write","minor":0},{"major":259,"value":120,"op":"Sync","minor":0},{"major":259,"value":21,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":141,"op":"Total","minor":0},{"major":253,"value":55,"op":"Read","minor":2},{"major":253,"value":86,"op":"Write","minor":2},{"major":253,"value":120,"op":"Sync","minor":2},{"major":253,"value":21,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":141,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":872448,"op":"Read","minor":0},{"major":259,"value":536576,"op":"Write","minor":0},{"major":259,"value":1183744,"op":"Sync","minor":0},{"major":259,"value":225280,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":1409024,"op":"Total","minor":0},{"major":253,"value":872448,"op":"Read","minor":2},{"major":253,"value":536576,"op":"Write","minor":2},{"major":253,"value":1183744,"op":"Sync","minor":2},{"major":253,"value":225280,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":1409024,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":611749888,"max_usage":2916405248,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":33,"total_rss":222015488,"inactive_file":946176,"inactive_anon":213159936,"total_pgfault":43362198,"total_cache":350150656,"total_rss_huge":0,"total_active_anon":357924864,"total_pgmajfault":33,"pgpgin":36744345,"rss_huge":0,"mapped_file":135168,"total_inactive_file":946176,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":36604690,"hierarchical_memsw_limit":0,"cache":350150656,"active_file":270336,"pgfault":43362198,"total_mapped_file":135168,"total_pgpgout":36604690,"total_writeback":0,"rss":222015488,"unevictable":0,"total_inactive_anon":213159936,"total_pgpgin":36744345,"active_anon":357924864,"total_active_file":270336},"limit":540965302272},"name":"/Causal-J1oJgX3m","networks":{"eth0":{"rx_bytes":73558406,"rx_packets":28581,"tx_packets":19787,"tx_bytes":1731222,"tx_dropped":0,"rx_dropped":38,"tx_errors":0,"rx_errors":0}},"id":"57e610fa08708350890a056fc7b064c46764f91251f74fcba760fff8d4fb2070","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6919386074522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":1027810000000,"usage_in_kernelmode":83740000000,"total_usage":1110331219241,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,745930,827741,2253812,1110321067784,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2179261,0,0,0,0,0,0,0,0,140950,2213733,0,1790030,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:33:56.241824513Z"}

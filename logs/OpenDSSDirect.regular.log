@@ -1,0 +1,193 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:32:28.006
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:32:29.783
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed DocStringExtensions ─ v0.8.3
+  Installed CEnum ─────────────── v0.4.1
+  Installed OpenDSSDirect ─────── v0.7.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [a8b11937] + OpenDSSDirect v0.7.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [fa961155] + CEnum v0.4.1
+  [ffbed154] + DocStringExtensions v0.8.3
+  [a8b11937] + OpenDSSDirect v0.7.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building OpenDSSDirect → `~/.julia/packages/OpenDSSDirect/SpRsF/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T15:32:37.091
+#
+
+    Testing OpenDSSDirect
+Status `/tmp/jl_5OwC0R/Project.toml`
+  [fa961155] CEnum v0.4.1
+  [ffbed154] DocStringExtensions v0.8.3
+  [a8b11937] OpenDSSDirect v0.7.1
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [3fa0cd96] REPL
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_5OwC0R/Manifest.toml`
+  [fa961155] CEnum v0.4.1
+  [ffbed154] DocStringExtensions v0.8.3
+  [a8b11937] OpenDSSDirect v0.7.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+DSS C-API Library version 0.10.7 revision 9642345b4bb68b3d780f1bd1a28c6dc0a6fbb349 based on OpenDSS SVN 2963 (v7/classic variation) MVMULT [FPC 3.2.0] (64-bit build); License Status: Open 
+howclose(v₁, v₂) = 0.05737317405180584
+Test Summary: | Pass  Broken  Total
+lowlevel      |    2       1      3
+Test Summary: | Pass  Total
+basicsX       |    2      2
+Test Summary: | Pass  Total
+basicsY       |    3      3
+Test Summary: | Pass  Total
+ActiveClass   |   24     24
+Test Summary: | Pass  Total
+Bus           |   36     36
+Test Summary: | Pass  Total
+Capacitors    |   33     33
+Test Summary: | Pass  Total
+CapControls   |   45     45
+Test Summary: | Pass  Total
+Circuit       |   42     42
+Test Summary: | Pass  Broken  Total
+CktElement    |   47       1     48
+Test Summary: | Pass  Total
+Element       |    3      3
+Test Summary: | Pass  Total
+Error         |    8      8
+Test Summary: | Pass  Total
+Executive     |    7      7
+Test Summary: | Pass  Total
+Fuses         |   54     54
+Test Summary: | Pass  Total
+Generators    |   33     33
+Test Summary: | Pass  Total
+Isource       |   21     21
+Test Summary: | Pass  Total
+Lines         | 3762   3762
+Test Summary: | Pass  Total
+LineCodes     |  110    110
+Test Summary: | Pass  Total
+Loads         | 1260   1260
+Test Summary: | Pass  Total
+LoadShape     |   33     33
+Test Summary: | Pass  Total
+Meters        |   59     59
+Test Summary: | Pass  Total
+Monitors      |   33     33
+Test Summary: | Pass  Total
+PDElements    | 4921   4921
+Test Summary: | Pass  Total
+Properties    |   14     14
+Test Summary: | Pass  Total
+PVsystems     |   24     24
+Test Summary: | Pass  Total
+Reclosers     |   35     35
+Test Summary: | Pass  Total
+RegControls   |   62     62
+Test Summary: | Pass  Total
+Relays        |   19     19
+Test Summary: | Pass  Total
+Settings      |   35     35
+Test Summary: | Pass  Total
+Solution      |   84     84
+Test Summary: | Pass  Broken  Total
+Topology      | 4913       1   4914
+Test Summary: | Pass  Total
+Transformers  | 1230   1230
+Test Summary: | Pass  Total
+Vsources      |   19     19
+Test Summary: | Pass  Total
+XYCurves      |   27     27
+Test Summary: | Pass  Total
+YMatrix       |    8      8
+Timing 8760.jl
+┌ Warning: Result of running OpenDSS Command "    closeDI" is: SystemMeter.CSV
+└ @ OpenDSSDirect.Text ~/.julia/packages/OpenDSSDirect/SpRsF/src/text.jl:28
+ 52.702317 seconds (300.95 k allocations: 14.121 MiB)
+ 52.723700 seconds (319.33 k allocations: 15.053 MiB)
+Timing custom_8760.jl
+  0.167519 seconds (27 allocations: 1.844 KiB)
+ 20.455365 seconds (4 allocations: 90.391 KiB)
+ 20.847916 seconds (75.62 k allocations: 3.787 MiB)
+  0.550638 seconds (1 allocation: 16 bytes)
+  0.559839 seconds (1 allocation: 16 bytes)
+Test Summary: | Pass  Total
+Examples      |    4      4
+    Testing OpenDSSDirect tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:34:42.348
+CPU usage: 129.97s (122.77s user, 7.41s kernel)
+
+Network usage:
+- eth0: 30.337 MiB received, 470.117 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":201,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":220,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":229,"op":"Total","minor":0},{"major":253,"value":201,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":220,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":229,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":823296,"op":"Read","minor":0},{"major":259,"value":143360,"op":"Write","minor":0},{"major":259,"value":929792,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":966656,"op":"Total","minor":0},{"major":253,"value":823296,"op":"Read","minor":2},{"major":253,"value":143360,"op":"Write","minor":2},{"major":253,"value":929792,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":966656,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":471932928,"max_usage":3914305536,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":223129600,"inactive_file":135168,"inactive_anon":156389376,"total_pgfault":2639472,"total_cache":214896640,"total_rss_huge":0,"total_active_anon":273580032,"total_pgmajfault":0,"pgpgin":2305710,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":946176,"total_unevictable":0,"total_dirty":946176,"writeback":0,"pgpgout":2198770,"hierarchical_memsw_limit":0,"cache":214896640,"active_file":8245248,"pgfault":2639472,"total_mapped_file":0,"total_pgpgout":2198770,"total_writeback":0,"rss":223129600,"unevictable":0,"total_inactive_anon":156389376,"total_pgpgin":2305710,"active_anon":273580032,"total_active_file":8245248},"limit":540965302272},"name":"/OpenDSSDirect-ymRdHMC3","networks":{"eth0":{"rx_bytes":31810130,"rx_packets":19739,"tx_packets":7452,"tx_bytes":481400,"tx_dropped":0,"rx_dropped":5,"tx_errors":0,"rx_errors":0}},"id":"4c583458d676a03d985e296680e1989a662a38683648c587aaf39681a8d3a63d","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3244940714522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":122770000000,"usage_in_kernelmode":7410000000,"total_usage":129972281519,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,129972226639,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51080,3800,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:34:42.350750407Z"}

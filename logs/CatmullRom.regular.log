@@ -1,0 +1,145 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:45:59.529
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:46:01.329
+#
+
+ Installing known registries into `~/.julia`
+#########################                                                 35.3%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Libiconv_jll ─ v1.16.0+7
+  Installed EzXML ──────── v1.1.0
+  Installed RecipesBase ── v1.1.1
+  Installed ExprTools ──── v0.1.3
+  Installed Polynomials ── v0.8.0
+  Installed MacroTools ─── v0.5.6
+  Installed CatmullRom ─── v0.3.2
+  Installed JLLWrappers ── v1.2.0
+  Installed TimeZones ──── v1.5.3
+  Installed Zlib_jll ───── v1.2.11+18
+  Installed Intervals ──── v1.5.0
+  Installed XML2_jll ───── v2.9.10+3
+  Installed Artifacts ──── v1.3.0
+  Installed Mocking ────── v0.7.1
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [5b5b35a2] + CatmullRom v0.3.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [5b5b35a2] + CatmullRom v0.3.2
+  [e2ba6199] + ExprTools v0.1.3
+  [8f5d6c58] + EzXML v1.1.0
+  [d8418881] + Intervals v1.5.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [94ce4f54] + Libiconv_jll v1.16.0+7
+  [1914dd2f] + MacroTools v0.5.6
+  [78c3b35d] + Mocking v0.7.1
+  [f27b6e38] + Polynomials v0.8.0
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [f269a46b] + TimeZones v1.5.3
+  [02c8fc9c] + XML2_jll v2.9.10+3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building TimeZones → `~/.julia/packages/TimeZones/K98G0/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T15:46:17.209
+#
+
+    Testing CatmullRom
+Status `/tmp/jl_KiS3IR/Project.toml`
+  [5b5b35a2] CatmullRom v0.3.2
+  [1914dd2f] MacroTools v0.5.6
+  [f27b6e38] Polynomials v0.8.0
+  [37e2e46d] LinearAlgebra
+  [8dfed614] Test
+Status `/tmp/jl_KiS3IR/Manifest.toml`
+  [56f22d72] Artifacts v1.3.0
+  [5b5b35a2] CatmullRom v0.3.2
+  [e2ba6199] ExprTools v0.1.3
+  [8f5d6c58] EzXML v1.1.0
+  [d8418881] Intervals v1.5.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [94ce4f54] Libiconv_jll v1.16.0+7
+  [1914dd2f] MacroTools v0.5.6
+  [78c3b35d] Mocking v0.7.1
+  [f27b6e38] Polynomials v0.8.0
+  [3cdcf5f2] RecipesBase v1.1.1
+  [f269a46b] TimeZones v1.5.3
+  [02c8fc9c] XML2_jll v2.9.10+3
+  [83775a58] Zlib_jll v1.2.11+18
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Warning: Use of `Poly` from v1.0 forward will require `using Polynomials.PolyCompat`
+│   caller = Poly at Poly.jl:26 [inlined]
+└ @ Core ~/.julia/packages/Polynomials/ghqdF/src/polynomials/Poly.jl:26
+Test Summary:               | Pass  Total
+closed curve interpositions |    3      3
+Test Summary: | Pass  Total
+interpolation |    3      3
+Test Summary:          | Pass  Total
+approximate arclengths |    1      1
+    Testing CatmullRom tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:46:37.373
+CPU usage: 37.78s (33.75s user, 4.13s kernel)
+
+Network usage:
+- eth0: 8.783 MiB received, 107.970 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":75,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":94,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":103,"op":"Total","minor":0},{"major":253,"value":75,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":94,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":103,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":307200,"op":"Read","minor":0},{"major":259,"value":147456,"op":"Write","minor":0},{"major":259,"value":413696,"op":"Sync","minor":0},{"major":259,"value":40960,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":454656,"op":"Total","minor":0},{"major":253,"value":307200,"op":"Read","minor":2},{"major":253,"value":147456,"op":"Write","minor":2},{"major":253,"value":413696,"op":"Sync","minor":2},{"major":253,"value":40960,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":454656,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":363327488,"max_usage":932618240,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":223784960,"inactive_file":270336,"inactive_anon":90697728,"total_pgfault":967362,"total_cache":107192320,"total_rss_huge":0,"total_active_anon":228163584,"total_pgmajfault":0,"pgpgin":560439,"rss_huge":0,"mapped_file":0,"total_inactive_file":270336,"dirty":0,"total_unevictable":0,"total_dirty":0,"writeback":135168,"pgpgout":479621,"hierarchical_memsw_limit":0,"cache":107192320,"active_file":12165120,"pgfault":967362,"total_mapped_file":0,"total_pgpgout":479621,"total_writeback":135168,"rss":223784960,"unevictable":0,"total_inactive_anon":90697728,"total_pgpgin":560439,"active_anon":228163584,"total_active_file":12165120},"limit":540965302272},"name":"/CatmullRom-ohCaJ7hY","networks":{"eth0":{"rx_bytes":9209521,"rx_packets":1079,"tx_packets":1055,"tx_bytes":110561,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"8da5b54b9d5471f072c4dc3bb4066d464918e26aca66416e029b8eb6ac5cdeb1","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3336292794522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":33750000000,"usage_in_kernelmode":4130000000,"total_usage":37780039791,"percpu_usage":[0,0,0,37780039791,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:46:37.375650118Z"}

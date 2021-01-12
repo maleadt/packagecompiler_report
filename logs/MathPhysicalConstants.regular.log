@@ -1,0 +1,87 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:59:59.317
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T22:00:01.14
+#
+
+ Installing known registries into `~/.julia`
+#################                                                         24.6%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MathPhysicalConstants ─ v0.0.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [b5851bab] + MathPhysicalConstants v0.0.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [b5851bab] + MathPhysicalConstants v0.0.5
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T22:00:04.743
+#
+
+
+PkgEval failed: Dependency `Test` in target `test` not listed in `deps` or `extras` section.
+
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] validate(::Pkg.Types.Project) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/project.jl:100
+ [3] Pkg.Types.Project(::Dict{String,Any}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/project.jl:123
+ [4] read_project(::IOStream; path::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/project.jl:140
+ [5] #24 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/project.jl:144 [inlined]
+ [6] open(::Pkg.Types.var"#24#25"{String}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:325
+ [7] open at ./io.jl:323 [inlined]
+ [8] read_project(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/project.jl:143
+ [9] Pkg.Types.EnvCache(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:282
+ [10] gen_target_project(::Pkg.Types.Context, ::Pkg.Types.PackageSpec, ::String, ::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1489
+ [11] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1545
+ [12] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [13] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [14] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [15] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [16] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [17] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [18] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [19] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [20] top-level scope at none:22
+ [21] eval at ./boot.jl:331 [inlined]
+ [22] eval(::Expr) at ./client.jl:467
+ [23] top-level scope at none:1
+ [24] eval(::Module, ::Any) at ./boot.jl:331
+ [25] exec_options(::Base.JLOptions) at ./client.jl:272
+ [26] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T22:00:07.007
+CPU usage: 7.72s (5.49s user, 2.26s kernel)
+
+Network usage:
+- eth0: 2.539 MiB received, 27.870 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":2,"op":"Read","minor":0},{"major":259,"value":20,"op":"Write","minor":0},{"major":259,"value":21,"op":"Sync","minor":0},{"major":259,"value":1,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":22,"op":"Total","minor":0},{"major":253,"value":2,"op":"Read","minor":2},{"major":253,"value":20,"op":"Write","minor":2},{"major":253,"value":21,"op":"Sync","minor":2},{"major":253,"value":1,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":22,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":28672,"op":"Read","minor":0},{"major":259,"value":110592,"op":"Write","minor":0},{"major":259,"value":135168,"op":"Sync","minor":0},{"major":259,"value":4096,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":139264,"op":"Total","minor":0},{"major":253,"value":28672,"op":"Read","minor":2},{"major":253,"value":110592,"op":"Write","minor":2},{"major":253,"value":135168,"op":"Sync","minor":2},{"major":253,"value":4096,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":139264,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":294412288,"max_usage":434257920,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":185638912,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":175857,"total_cache":79364096,"total_rss_huge":0,"total_active_anon":185991168,"total_pgmajfault":0,"pgpgin":123618,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":135168,"pgpgout":58931,"hierarchical_memsw_limit":0,"cache":79364096,"active_file":135168,"pgfault":175857,"total_mapped_file":0,"total_pgpgout":58931,"total_writeback":135168,"rss":185638912,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":123618,"active_anon":185991168,"total_active_file":135168},"limit":540965302272},"name":"/MathPhysicalConstants-vJh0naQs","networks":{"eth0":{"rx_bytes":2662430,"rx_packets":309,"tx_packets":290,"tx_bytes":28539,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"4d73dc6f9e0e194308fdc2c8644c07314af3697029e1bd098baea25cc36e5b4a","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6200031774522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":5490000000,"usage_in_kernelmode":2260000000,"total_usage":7717286082,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7717283172,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2910,0,0,0,0,0,0]}},"read":"2021-01-11T22:00:07.009806571Z"}

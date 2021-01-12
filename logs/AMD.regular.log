@@ -1,0 +1,122 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:31:07.655
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:31:09.423
+#
+
+ Installing known registries into `~/.julia`
+#####################################                                     52.3%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed AMD ─ v0.4.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [14f7f29c] + AMD v0.4.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [14f7f29c] + AMD v0.4.0
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [8dfed614] + Test
+
+
+################################################################################
+# Testing: 2021-01-11T23:31:13.253
+#
+
+    Testing AMD
+Status `/tmp/jl_EHrArR/Project.toml`
+  [14f7f29c] AMD v0.4.0
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_EHrArR/Manifest.toml`
+  [14f7f29c] AMD v0.4.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Control:
+  dense row parameter: 10.0
+  aggressive absorption: 1.0
+Info:
+  status: ok
+  number of nonzeros in A + Aᵀ: 64.0
+  number of dense columns: 0.0
+  memory used: 664.0
+  approx number of nonzeros in factor: 36.0
+  max nonzeros in any column of factor: 8.0
+Control:
+  dense row parameter: 10.0
+  aggressive absorption: 1.0
+Info:
+  status: ok
+  matrix size: 10.0
+  number of nonzeros: 56.0
+  pattern symmetry: 0.72
+  number of nonzeros on diagonal: 6.0
+  number of nonzeros in A + Aᵀ: 64.0
+  number of dense columns: 0.0
+  memory used: 664.0
+  number of garbage collections: 0.0
+  approx number of nonzers in factor: 36.0
+  number of float divides: 36.0
+  number of float * or - for LDL: 105.0
+  number of float * or - for LU: 174.0
+  max nonzeros in any column of factor: 8.0
+dense row parameter: 10.0
+dense col parameter: 10.0
+aggressive absorption: 1.0
+memory defragmentation: 0
+status: ok
+dense row parameter: 10.0
+dense col parameter: 10.0
+aggressive absorption: 1.0
+memory defragmentation: 0
+status: ok
+    Testing AMD tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:31:19.876
+CPU usage: 12.17s (9.54s user, 2.66s kernel)
+
+Network usage:
+- eth0: 2.555 MiB received, 33.782 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":326508544,"max_usage":577724416,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":217608192,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":331485,"total_cache":79781888,"total_rss_huge":0,"total_active_anon":218296320,"total_pgmajfault":0,"pgpgin":203907,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":135168,"pgpgout":131315,"hierarchical_memsw_limit":0,"cache":79781888,"active_file":405504,"pgfault":331485,"total_mapped_file":0,"total_pgpgout":131315,"total_writeback":135168,"rss":217608192,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":203907,"active_anon":218296320,"total_active_file":405504},"limit":540965302272},"name":"/AMD-nwyt03im","networks":{"eth0":{"rx_bytes":2679118,"rx_packets":409,"tx_packets":381,"tx_bytes":34593,"tx_dropped":0,"rx_dropped":0,"tx_errors":0,"rx_errors":0}},"id":"6ee43a71a783e8356bf7ab36a24fd5f9c58ce26022ad6aa9fadebeca4900c6e2","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6899398684522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":9540000000,"usage_in_kernelmode":2660000000,"total_usage":12166095823,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12166087283,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8540,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:31:19.880007023Z"}

@@ -1,0 +1,169 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T21:18:54.318
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:18:56.121
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed MultivariateMoments ───── v0.3.5
+  Installed Compat ────────────────── v3.25.0
+  Installed SemialgebraicSets ─────── v0.2.2
+  Installed RowEchelon ────────────── v0.2.1
+  Installed OrderedCollections ────── v1.3.2
+  Installed MultivariateBases ─────── v0.1.2
+  Installed MultivariatePolynomials ─ v0.3.12
+  Installed MutableArithmetics ────── v0.2.13
+  Installed DataStructures ────────── v0.18.8
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [f4abf1af] + MultivariateMoments v0.3.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [34da2185] + Compat v3.25.0
+  [864edb3b] + DataStructures v0.18.8
+  [be282fd4] + MultivariateBases v0.1.2
+  [f4abf1af] + MultivariateMoments v0.3.5
+  [102ac46a] + MultivariatePolynomials v0.3.12
+  [d8a4904e] + MutableArithmetics v0.2.13
+  [bac558e1] + OrderedCollections v1.3.2
+  [af85af4c] + RowEchelon v0.2.1
+  [8e049039] + SemialgebraicSets v0.2.2
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T21:19:01.02
+#
+
+    Testing MultivariateMoments
+Status `/tmp/jl_UtKsnT/Project.toml`
+  [7c1d4256] DynamicPolynomials v0.3.15
+  [be282fd4] MultivariateBases v0.1.2
+  [f4abf1af] MultivariateMoments v0.3.5
+  [102ac46a] MultivariatePolynomials v0.3.12
+  [d8a4904e] MutableArithmetics v0.2.13
+  [af85af4c] RowEchelon v0.2.1
+  [8e049039] SemialgebraicSets v0.2.2
+  [37e2e46d] LinearAlgebra
+  [8dfed614] Test
+Status `/tmp/jl_UtKsnT/Manifest.toml`
+  [34da2185] Compat v3.25.0
+  [864edb3b] DataStructures v0.18.8
+  [7c1d4256] DynamicPolynomials v0.3.15
+  [be282fd4] MultivariateBases v0.1.2
+  [f4abf1af] MultivariateMoments v0.3.5
+  [102ac46a] MultivariatePolynomials v0.3.12
+  [d8a4904e] MutableArithmetics v0.2.13
+  [bac558e1] OrderedCollections v1.3.2
+  [189a3867] Reexport v0.2.0
+  [af85af4c] RowEchelon v0.2.1
+  [8e049039] SemialgebraicSets v0.2.2
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+SymMatrix     |   28     28
+Test Summary:             | Pass  Total
+VectorizedHermitianMatrix |   50     50
+Test Summary: | Pass  Total
+Measure       |   11     11
+Test Summary: | Pass  Total
+Expectation   |    4      4
+Test Summary: | Pass  Total
+MomentMatrix  |   19     19
+Test Summary:      | Pass  Total
+[HL05] Section 2.3 |    4      4
+Test Summary:        | Pass  Total
+[HL05] Section 3.3.1 |   10     10
+Test Summary:    | Pass  Total
+[HL05] Section 4 |    4      4
+Test Summary:     | Pass  Total
+[LJP17] Example ? |    4      4
+Test Summary:     | Pass  Total
+[LJP17] Example ? |    2      2
+Test Summary:     | Pass  Total
+[LJP17] Example ? |   13     13
+Test Summary:                          | Pass  Total
+[LJP17] applied to [JCG14] Example 6.1 |    3      3
+Test Summary: | Pass  Total
+Large norm    |    1      1
+Test Summary:   | Pass  Total
+Atomic measures |    6      6
+Test Summary:                             | Pass  Total
+VectorizedHermitianMatrix with polynomial |   18     18
+    Testing MultivariateMoments tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:20:00.391
+CPU usage: 66.05s (61.97s user, 4.20s kernel)
+
+Network usage:
+- eth0: 2.933 MiB received, 75.608 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":135168,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":28672,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":135168,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":135168,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":28672,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":135168,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":289460224,"max_usage":864620544,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":173060096,"inactive_file":135168,"inactive_anon":80019456,"total_pgfault":1276374,"total_cache":86433792,"total_rss_huge":0,"total_active_anon":178421760,"total_pgmajfault":0,"pgpgin":791340,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":728010,"hierarchical_memsw_limit":0,"cache":86433792,"active_file":1216512,"pgfault":1276374,"total_mapped_file":0,"total_pgpgout":728010,"total_writeback":0,"rss":173060096,"unevictable":0,"total_inactive_anon":80019456,"total_pgpgin":791340,"active_anon":178421760,"total_active_file":1216512},"limit":540965302272},"name":"/MultivariateMoments-lfZ0qxbo","networks":{"eth0":{"rx_bytes":3075034,"rx_packets":618,"tx_packets":664,"tx_bytes":77423,"tx_dropped":0,"rx_dropped":3,"tx_errors":0,"rx_errors":0}},"id":"aa90e24e516bbc797d17c86be07700e6f1ac23d7a6fb803291fb44e9c0a7f134","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5892608044522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":61970000000,"usage_in_kernelmode":4200000000,"total_usage":66048588788,"percpu_usage":[0,66048149818,436460,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2510,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:20:00.394627196Z"}

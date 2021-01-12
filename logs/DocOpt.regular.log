@@ -1,0 +1,157 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:13:34.354
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:13:36.18
+#
+
+ Installing known registries into `~/.julia`
+#####################                                                     30.2%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed DocOpt ─ v0.4.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [968ba79b] + DocOpt v0.4.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [968ba79b] + DocOpt v0.4.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [de0858da] + Printf
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T23:13:40.281
+#
+
+    Testing DocOpt
+Status `/tmp/jl_45vwVS/Project.toml`
+  [968ba79b] DocOpt v0.4.0
+  [ade2ca70] Dates
+  [de0858da] Printf
+  [8dfed614] Test
+Status `/tmp/jl_45vwVS/Manifest.toml`
+  [968ba79b] DocOpt v0.4.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Test Summary: | Pass  Total
+pattern_flat  |    2      2
+Test Summary: | Pass  Total
+option        |   18     18
+Test Summary: | Pass  Total
+option_name   |    3      3
+Test Summary: | Pass  Total
+commands      |    7      7
+Test Summary: | Pass  Total
+formal_usage  |    2      2
+Test Summary: | Pass  Total
+parse_argv    |    7      7
+Test Summary: | Pass  Total
+parse_pattern |   13     13
+Test Summary: | Pass  Total
+option_match  |    5      5
+Test Summary:  | Pass  Total
+argument_match |    4      4
+Test Summary: | Pass  Total
+command_match |    4      4
+Test Summary:  | Pass  Total
+optional_match |    8      8
+Test Summary:  | Pass  Total
+required_match |    4      4
+Test Summary: | Pass  Total
+either_match  |    5      5
+Test Summary:     | Pass  Total
+one_or_more_match |    9      9
+Test Summary:       | Pass  Total
+list_argument_match |    4      4
+Test Summary:          | Pass  Total
+basic_pattern_matching |    3      3
+Test Summary:  | Pass  Total
+pattern_either |    6      6
+Test Summary:                   | Pass  Total
+pattern_fix_repeating_arguments |    4      4
+Test Summary: | Pass  Total
+set           |    2      2
+Test Summary:            | Pass  Total
+pattern_fix_identities_1 |    3      3
+Test Summary:            | Pass  Total
+pattern_fix_identities_2 |    3      3
+Test Summary:               | Pass  Total
+long_options_error_handling |    6      6
+Test Summary:                | Pass  Total
+short_options_error_handling |    4      4
+Test Summary:  | Pass  Total
+matching_paren |    1      1
+Test Summary:     | Pass  Total
+allow_double_dash |    3      3
+Test Summary: | Pass  Total
+docopt        |    6      6
+Test Summary:   | Pass  Total
+language_errors |    2      2
+Test Summary: | Pass  Total
+issue_40      |    1      1
+Test Summary:        | Pass  Total
+count_multiple_flags |    8      8
+Test Summary:         | Pass  Total
+any_options_parameter |    4      4
+Test Summary:                          | Pass  Total
+default_value_for_positional_arguments |    3      3
+Test Summary: | Pass  Total
+issue_59      |    2      2
+Test Summary: | Pass  Total
+options_first |    3      3
+Test Summary:                                                       | Pass  Total
+issue_68_options_shortcut_does_not_include_options_in_usage_pattern |    4      4
+Test Summary:                                        | Pass  Total
+issue_65_evaluate_argv_when_called_not_when_imported |    2      2
+Test Summary:                                       | Pass  Total
+issue_71_double_dash_is_not_a_valid_option_argument |    2      2
+Test Summary: | Pass  Total
+parse_section |   10     10
+    Testing DocOpt tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:13:55.782
+CPU usage: 21.42s (18.47s user, 3.02s kernel)
+
+Network usage:
+- eth0: 2.548 MiB received, 28.784 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":322097152,"max_usage":583720960,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":213381120,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":367059,"total_cache":79396864,"total_rss_huge":0,"total_active_anon":213970944,"total_pgmajfault":0,"pgpgin":200145,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":405504,"total_unevictable":0,"total_dirty":405504,"writeback":270336,"pgpgout":128676,"hierarchical_memsw_limit":0,"cache":79396864,"active_file":135168,"pgfault":367059,"total_mapped_file":0,"total_pgpgout":128676,"total_writeback":270336,"rss":213381120,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":200145,"active_anon":213970944,"total_active_file":135168},"limit":540965302272},"name":"/DocOpt-bGuip6YY","networks":{"eth0":{"rx_bytes":2671480,"rx_packets":313,"tx_packets":304,"tx_bytes":29475,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"0604e971eb1c76d9376840cf46556fb40d7503f6de6eddfa6a99b4ffbff1a36f","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6766000874522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":18470000000,"usage_in_kernelmode":3020000000,"total_usage":21419242344,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21419242344,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:13:56.069099352Z"}

@@ -1,0 +1,256 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T20:58:23.489
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T20:58:25.211
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed BaslerCamera ──── v0.1.1
+  Installed Artifacts ─────── v1.3.0
+  Installed libass_jll ────── v0.14.0+4
+  Installed Opus_jll ──────── v1.3.1+3
+  Installed FreeType2_jll ─── v2.10.1+5
+  Installed FriBidi_jll ───── v1.0.5+6
+  Installed Zlib_jll ──────── v1.2.11+18
+  Installed x265_jll ──────── v3.0.0+3
+  Installed JLLWrappers ───── v1.2.0
+  Installed Bzip2_jll ─────── v1.0.6+5
+  Installed libfdk_aac_jll ── v0.1.6+4
+  Installed FFMPEG_jll ────── v4.3.1+4
+  Installed PackageCompiler ─ v1.2.5
+  Installed FFMPEG ────────── v0.4.0
+  Installed libvorbis_jll ─── v1.3.6+6
+  Installed LibVPX_jll ────── v1.9.0+1
+  Installed Ogg_jll ───────── v1.3.4+2
+  Installed LAME_jll ──────── v3.100.0+3
+  Installed x264_jll ──────── v2020.7.14+2
+  Installed OpenSSL_jll ───── v1.1.1+6
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [e40af120] + BaslerCamera v0.1.1
+  [9b87118b] + PackageCompiler v1.2.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [e40af120] + BaslerCamera v0.1.1
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [c87230d0] + FFMPEG v0.4.0
+  [b22a6f82] + FFMPEG_jll v4.3.1+4
+  [d7e528f0] + FreeType2_jll v2.10.1+5
+  [559328eb] + FriBidi_jll v1.0.5+6
+  [692b3bcd] + JLLWrappers v1.2.0
+  [c1c5ebd0] + LAME_jll v3.100.0+3
+  [dd192d2f] + LibVPX_jll v1.9.0+1
+  [e7412a2a] + Ogg_jll v1.3.4+2
+  [458c3c95] + OpenSSL_jll v1.1.1+6
+  [91d4177d] + Opus_jll v1.3.1+3
+  [9b87118b] + PackageCompiler v1.2.5
+  [83775a58] + Zlib_jll v1.2.11+18
+  [0ac62f75] + libass_jll v0.14.0+4
+  [f638f0a6] + libfdk_aac_jll v0.1.6+4
+  [f27f6e37] + libvorbis_jll v1.3.6+6
+  [1270edf5] + x264_jll v2020.7.14+2
+  [dfaa095f] + x265_jll v3.0.0+3
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building BaslerCamera → `~/.julia/packages/BaslerCamera/1Spsh/deps/build.log`
+┌ Error: Error building `BaslerCamera`: 
+│ ERROR: LoadError: IOError: could not spawn `wget https://www.dropbox.com/s/1m0gfqxt7944kay/BaslerCamera.so`: no such file or directory (ENOENT)
+│ Stacktrace:
+│  [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:99
+│  [2] #585 at ./process.jl:112 [inlined]
+│  [3] setup_stdios(::Base.var"#585#586"{Cmd}, ::Array{Any,1}) at ./process.jl:196
+│  [4] _spawn at ./process.jl:111 [inlined]
+│  [5] run(::Cmd; wait::Bool) at ./process.jl:439
+│  [6] run(::Cmd) at ./process.jl:438
+│  [7] top-level scope at /home/pkgeval/.julia/packages/BaslerCamera/1Spsh/deps/build.jl:32
+│  [8] include(::String) at ./client.jl:457
+│  [9] top-level scope at none:5
+│ in expression starting at /home/pkgeval/.julia/packages/BaslerCamera/1Spsh/deps/build.jl:30
+│ Try version 5
+│ Try version 6
+│ Pylon 5 or 6 not found :(. Setting version as 5 by default.
+│ 5
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+
+
+################################################################################
+# Compiling: 2021-01-11T20:58:33.813
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 149.161 MiB, compilation took 186 seconds
+
+
+Could not successfully load Pylon libraries. Are they installed?
+################################################################################
+# PkgEval set-up: 2021-01-11T21:01:48.147
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/BaslerCamera-XQq3zv8Y.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T21:01:50.034
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed BaslerCamera ─── v0.1.1
+  Installed Artifacts ────── v1.3.0
+  Installed libass_jll ───── v0.14.0+4
+  Installed Opus_jll ─────── v1.3.1+3
+  Installed FreeType2_jll ── v2.10.1+5
+  Installed FriBidi_jll ──── v1.0.5+6
+  Installed Zlib_jll ─────── v1.2.11+18
+  Installed libfdk_aac_jll ─ v0.1.6+4
+  Installed FFMPEG_jll ───── v4.3.1+4
+  Installed x265_jll ─────── v3.0.0+3
+  Installed Bzip2_jll ────── v1.0.6+5
+  Installed libvorbis_jll ── v1.3.6+6
+  Installed FFMPEG ───────── v0.4.0
+  Installed JLLWrappers ──── v1.2.0
+  Installed LibVPX_jll ───── v1.9.0+1
+  Installed Ogg_jll ──────── v1.3.4+2
+  Installed OpenSSL_jll ──── v1.1.1+6
+  Installed LAME_jll ─────── v3.100.0+3
+  Installed x264_jll ─────── v2020.7.14+2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [e40af120] + BaslerCamera v0.1.1
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [56f22d72] + Artifacts v1.3.0
+  [e40af120] + BaslerCamera v0.1.1
+  [6e34b625] + Bzip2_jll v1.0.6+5
+  [c87230d0] + FFMPEG v0.4.0
+  [b22a6f82] + FFMPEG_jll v4.3.1+4
+  [d7e528f0] + FreeType2_jll v2.10.1+5
+  [559328eb] + FriBidi_jll v1.0.5+6
+  [692b3bcd] + JLLWrappers v1.2.0
+  [c1c5ebd0] + LAME_jll v3.100.0+3
+  [dd192d2f] + LibVPX_jll v1.9.0+1
+  [e7412a2a] + Ogg_jll v1.3.4+2
+  [458c3c95] + OpenSSL_jll v1.1.1+6
+  [91d4177d] + Opus_jll v1.3.1+3
+  [83775a58] + Zlib_jll v1.2.11+18
+  [0ac62f75] + libass_jll v0.14.0+4
+  [f638f0a6] + libfdk_aac_jll v0.1.6+4
+  [f27f6e37] + libvorbis_jll v1.3.6+6
+  [1270edf5] + x264_jll v2020.7.14+2
+  [dfaa095f] + x265_jll v3.0.0+3
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building BaslerCamera → `~/.julia/packages/BaslerCamera/1Spsh/deps/build.log`
+┌ Error: Error building `BaslerCamera`: 
+│ ERROR: LoadError: IOError: could not spawn `wget https://www.dropbox.com/s/1m0gfqxt7944kay/BaslerCamera.so`: no such file or directory (ENOENT)
+│ Stacktrace:
+│  [1] _spawn_primitive(::String, ::Cmd, ::Array{Any,1}) at ./process.jl:99
+│  [2] #585 at ./process.jl:112 [inlined]
+│  [3] setup_stdios(::Base.var"#585#586"{Cmd}, ::Array{Any,1}) at ./process.jl:196
+│  [4] _spawn at ./process.jl:111 [inlined]
+│  [5] run(::Cmd; wait::Bool) at ./process.jl:439
+│  [6] run(::Cmd) at ./process.jl:438
+│  [7] top-level scope at /home/user/.julia/packages/BaslerCamera/1Spsh/deps/build.jl:32
+│  [8] include(::String) at ./client.jl:457
+│  [9] top-level scope at none:5
+│ in expression starting at /home/user/.julia/packages/BaslerCamera/1Spsh/deps/build.jl:30
+│ Could not successfully load Pylon libraries. Are they installed?
+│ Try version 5
+│ Try version 6
+│ Pylon 5 or 6 not found :(. Setting version as 5 by default.
+│ 5
+└ @ Pkg.Operations /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:949
+
+
+################################################################################
+# Testing: 2021-01-11T21:01:57.398
+#
+
+
+PkgEval failed: Package BaslerCamera did not provide a `test/runtests.jl` file
+Stacktrace:
+ [1] pkgerror(::String, ::Vararg{String,N} where N) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1536
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T21:01:59.551
+CPU usage: 11.66s (9.18s user, 2.53s kernel)
+
+Network usage:
+- eth0: 2.767 MiB received, 105.442 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":19,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":19,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":86016,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":28672,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":86016,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":86016,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":28672,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":86016,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":326778880,"max_usage":493961216,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":215191552,"inactive_file":135168,"inactive_anon":79884288,"total_pgfault":282117,"total_cache":80904192,"total_rss_huge":0,"total_active_anon":216133632,"total_pgmajfault":0,"pgpgin":196680,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":0,"total_unevictable":0,"total_dirty":0,"writeback":0,"pgpgout":124371,"hierarchical_memsw_limit":0,"cache":80904192,"active_file":135168,"pgfault":282117,"total_mapped_file":0,"total_pgpgout":124371,"total_writeback":0,"rss":215191552,"unevictable":0,"total_inactive_anon":79884288,"total_pgpgin":196680,"active_anon":216133632,"total_active_file":135168},"limit":540965302272},"name":"/BaslerCamera-gSFmEf17","networks":{"eth0":{"rx_bytes":2901167,"rx_packets":715,"tx_packets":834,"tx_bytes":107973,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"10973f831b284eca68756872dbc8345b7c0f0d9d35848e99083a82b78f9e893a","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5754688514522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":9180000000,"usage_in_kernelmode":2530000000,"total_usage":11656567663,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11656559983,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7680,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T21:02:00.444386169Z"}

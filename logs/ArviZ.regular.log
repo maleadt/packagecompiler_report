@@ -1,0 +1,694 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:33:43.358
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:33:45.165
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Reexport ──────────────────── v0.2.0
+  Installed PyPlot ────────────────────── v2.9.0
+  Installed NamedTupleTools ───────────── v0.13.7
+  Installed TableTraits ───────────────── v1.0.0
+  Installed VersionParsing ────────────── v1.2.0
+  Installed ArviZ ─────────────────────── v0.4.10
+  Installed CategoricalArrays ─────────── v0.9.0
+  Installed StatsBase ─────────────────── v0.33.2
+  Installed DataFrames ────────────────── v0.22.2
+  Installed DataStructures ────────────── v0.18.8
+  Installed DataAPI ───────────────────── v1.4.0
+  Installed Tables ────────────────────── v1.2.2
+  Installed Requires ──────────────────── v1.1.2
+  Installed Colors ────────────────────── v0.12.6
+  Installed OrderedCollections ────────── v1.3.2
+  Installed InvertedIndices ───────────── v1.0.0
+  Installed DataValueInterfaces ───────── v1.0.0
+  Installed Missings ──────────────────── v0.4.4
+  Installed ColorTypes ────────────────── v0.10.9
+  Installed PooledArrays ──────────────── v0.5.3
+  Installed MacroTools ────────────────── v0.5.6
+  Installed JSON ──────────────────────── v0.21.1
+  Installed StructTypes ───────────────── v1.2.1
+  Installed Crayons ───────────────────── v4.0.4
+  Installed SortingAlgorithms ─────────── v0.3.1
+  Installed Formatting ────────────────── v0.4.2
+  Installed IteratorInterfaceExtensions ─ v1.0.0
+  Installed FixedPointNumbers ─────────── v0.8.4
+  Installed Conda ─────────────────────── v1.5.0
+  Installed Compat ────────────────────── v3.25.0
+  Installed PrettyTables ──────────────── v0.10.1
+  Installed LaTeXStrings ──────────────── v1.2.0
+  Installed PyCall ────────────────────── v1.92.2
+  Installed Parsers ───────────────────── v1.0.15
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [131c737c] + ArviZ v0.4.10
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [131c737c] + ArviZ v0.4.10
+  [324d7699] + CategoricalArrays v0.9.0
+  [3da002f7] + ColorTypes v0.10.9
+  [5ae59095] + Colors v0.12.6
+  [34da2185] + Compat v3.25.0
+  [8f4d0f93] + Conda v1.5.0
+  [a8cc5b0e] + Crayons v4.0.4
+  [9a962f9c] + DataAPI v1.4.0
+  [a93c6f00] + DataFrames v0.22.2
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [59287772] + Formatting v0.4.2
+  [41ab1584] + InvertedIndices v1.0.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [682c06a0] + JSON v0.21.1
+  [b964fa9f] + LaTeXStrings v1.2.0
+  [1914dd2f] + MacroTools v0.5.6
+  [e1d29d7a] + Missings v0.4.4
+  [d9ec5142] + NamedTupleTools v0.13.7
+  [bac558e1] + OrderedCollections v1.3.2
+  [69de0a69] + Parsers v1.0.15
+  [2dfb63ee] + PooledArrays v0.5.3
+  [08abe8d2] + PrettyTables v0.10.1
+  [438e738f] + PyCall v1.92.2
+  [d330b81b] + PyPlot v2.9.0
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [2913bbd2] + StatsBase v0.33.2
+  [856f2bd8] + StructTypes v1.2.1
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [81def892] + VersionParsing v1.2.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+   Building Conda ─→ `~/.julia/packages/Conda/x5ml4/deps/build.log`
+   Building PyCall → `~/.julia/packages/PyCall/tqyST/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T15:34:24.469
+#
+
+    Testing ArviZ
+Status `/tmp/jl_nr3huT/Project.toml`
+  [131c737c] ArviZ v0.4.10
+  [593b3428] CmdStan v6.1.4
+  [8f4d0f93] Conda v1.5.0
+  [a93c6f00] DataFrames v0.22.2
+  [c7f686f2] MCMCChains v4.4.0
+  [0987c9cc] MonteCarloMeasurements v0.8.12
+  [d9ec5142] NamedTupleTools v0.13.7
+  [438e738f] PyCall v1.92.2
+  [d330b81b] PyPlot v2.9.0
+  [ae029012] Requires v1.1.2
+  [2913bbd2] StatsBase v0.33.2
+  [d6f4376e] Markdown
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_nr3huT/Manifest.toml`
+  [621f4979] AbstractFFTs v0.5.0
+  [80f14c24] AbstractMCMC v2.2.1
+  [1520ce14] AbstractTrees v0.3.3
+  [dce04be8] ArgCheck v2.1.0
+  [56f22d72] Artifacts v1.3.0
+  [131c737c] ArviZ v0.4.10
+  [39de3d68] AxisArrays v0.4.3
+  [198e06fe] BangBang v0.3.29
+  [336ed68f] CSV v0.8.2
+  [324d7699] CategoricalArrays v0.9.0
+  [593b3428] CmdStan v6.1.4
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.6
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [a33af91c] CompositionsBase v0.1.0
+  [8f4d0f93] Conda v1.5.0
+  [88cd18e8] ConsoleProgressMonitor v0.1.2
+  [187b0558] ConstructionBase v1.0.0
+  [a8cc5b0e] Crayons v4.0.4
+  [9a962f9c] DataAPI v1.4.0
+  [a93c6f00] DataFrames v0.22.2
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [244e2a9f] DefineSingletons v0.1.0
+  [31c24e10] Distributions v0.23.12
+  [ffbed154] DocStringExtensions v0.8.3
+  [da5c29d0] EllipsisNotation v1.0.0
+  [1a297f60] FillArrays v0.9.7
+  [53c48c17] FixedPointNumbers v0.8.4
+  [59287772] Formatting v0.4.2
+  [14197337] GenericLinearAlgebra v0.2.4
+  [22cec73e] InitialValues v0.2.10
+  [8197267c] IntervalSets v0.5.2
+  [41ab1584] InvertedIndices v1.0.0
+  [c8e1da08] IterTools v1.3.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [b964fa9f] LaTeXStrings v1.2.0
+  [1d6d02ad] LeftChildRightSiblingTrees v0.1.2
+  [e6f89c97] LoggingExtras v0.4.2
+  [c7f686f2] MCMCChains v4.4.0
+  [e80e1ace] MLJModelInterface v0.3.7
+  [1914dd2f] MacroTools v0.5.6
+  [128add7d] MicroCollections v0.1.0
+  [e1d29d7a] Missings v0.4.4
+  [0987c9cc] MonteCarloMeasurements v0.8.12
+  [d9ec5142] NamedTupleTools v0.13.7
+  [c020b1a1] NaturalSort v1.0.0
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [bac558e1] OrderedCollections v1.3.2
+  [90014a1f] PDMats v0.10.1
+  [69de0a69] Parsers v1.0.15
+  [2dfb63ee] PooledArrays v0.5.3
+  [08abe8d2] PrettyTables v0.10.1
+  [33c8b6b6] ProgressLogging v0.1.3
+  [92933f4c] ProgressMeter v1.4.1
+  [438e738f] PyCall v1.92.2
+  [d330b81b] PyPlot v2.9.0
+  [1fd47b50] QuadGK v2.4.1
+  [b3c3ace0] RangeArrays v0.3.2
+  [3cdcf5f2] RecipesBase v1.1.1
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [321657f4] ScientificTypes v1.1.1
+  [91c51154] SentinelArrays v1.2.16
+  [efcf1570] Setfield v0.7.0
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v0.10.3
+  [171d559e] SplittablesBase v0.1.10
+  [90137ffa] StaticArrays v0.12.5
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [856f2bd8] StructTypes v1.2.1
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [5d786b92] TerminalLoggers v0.1.2
+  [28d57a85] Transducers v0.4.54
+  [81def892] VersionParsing v1.2.0
+  [700de1a5] ZygoteRules v0.2.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[ Info: Installing matplotlib via the Conda matplotlib package...
+[ Info: Running `conda install -q -y matplotlib` in root environment
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/pkgeval/.julia/conda/3
+
+  added / updated specs:
+    - matplotlib
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    cycler-0.10.0              |           py38_0          14 KB
+    dbus-1.13.18               |       hb2f20db_0         504 KB
+    expat-2.2.10               |       he6710b0_2         153 KB
+    fontconfig-2.13.0          |       h9420a91_0         227 KB
+    freetype-2.10.4            |       h5ab3b9f_0         596 KB
+    glib-2.66.1                |       h92f7085_0         2.9 MB
+    gst-plugins-base-1.14.0    |       h8213a91_2         4.9 MB
+    gstreamer-1.14.0           |       h28cd5cc_2         3.2 MB
+    icu-58.2                   |       he6710b0_3        10.5 MB
+    jpeg-9b                    |       h024ee3a_2         214 KB
+    kiwisolver-1.3.0           |   py38h2531618_0          80 KB
+    lcms2-2.11                 |       h396b838_0         307 KB
+    libpng-1.6.37              |       hbc83047_0         278 KB
+    libtiff-4.1.0              |       h2733197_1         449 KB
+    libuuid-1.0.3              |       h1bed415_2          15 KB
+    libxcb-1.14                |       h7b6447c_0         505 KB
+    libxml2-2.9.10             |       hb55368b_3         1.2 MB
+    lz4-c-1.9.2                |       heb0550a_3         175 KB
+    matplotlib-3.3.2           |       h06a4308_0          24 KB
+    matplotlib-base-3.3.2      |   py38h817c723_0         5.1 MB
+    olefile-0.46               |             py_0          33 KB
+    pcre-8.44                  |       he6710b0_0         212 KB
+    pillow-8.1.0               |   py38he98fc37_0         626 KB
+    pyparsing-2.4.7            |             py_0          65 KB
+    pyqt-5.9.2                 |   py38h05f1152_4         4.5 MB
+    python-dateutil-2.8.1      |             py_0         215 KB
+    qt-5.9.7                   |       h5867ecd_1        68.5 MB
+    sip-4.19.13                |   py38he6710b0_0         277 KB
+    tornado-6.1                |   py38h27cfd23_0         588 KB
+    zstd-1.4.5                 |       h9ceee32_0         619 KB
+    ------------------------------------------------------------
+                                           Total:       106.9 MB
+
+The following NEW packages will be INSTALLED:
+
+  cycler             pkgs/main/linux-64::cycler-0.10.0-py38_0
+  dbus               pkgs/main/linux-64::dbus-1.13.18-hb2f20db_0
+  expat              pkgs/main/linux-64::expat-2.2.10-he6710b0_2
+  fontconfig         pkgs/main/linux-64::fontconfig-2.13.0-h9420a91_0
+  freetype           pkgs/main/linux-64::freetype-2.10.4-h5ab3b9f_0
+  glib               pkgs/main/linux-64::glib-2.66.1-h92f7085_0
+  gst-plugins-base   pkgs/main/linux-64::gst-plugins-base-1.14.0-h8213a91_2
+  gstreamer          pkgs/main/linux-64::gstreamer-1.14.0-h28cd5cc_2
+  icu                pkgs/main/linux-64::icu-58.2-he6710b0_3
+  jpeg               pkgs/main/linux-64::jpeg-9b-h024ee3a_2
+  kiwisolver         pkgs/main/linux-64::kiwisolver-1.3.0-py38h2531618_0
+  lcms2              pkgs/main/linux-64::lcms2-2.11-h396b838_0
+  libpng             pkgs/main/linux-64::libpng-1.6.37-hbc83047_0
+  libtiff            pkgs/main/linux-64::libtiff-4.1.0-h2733197_1
+  libuuid            pkgs/main/linux-64::libuuid-1.0.3-h1bed415_2
+  libxcb             pkgs/main/linux-64::libxcb-1.14-h7b6447c_0
+  libxml2            pkgs/main/linux-64::libxml2-2.9.10-hb55368b_3
+  lz4-c              pkgs/main/linux-64::lz4-c-1.9.2-heb0550a_3
+  matplotlib         pkgs/main/linux-64::matplotlib-3.3.2-h06a4308_0
+  matplotlib-base    pkgs/main/linux-64::matplotlib-base-3.3.2-py38h817c723_0
+  olefile            pkgs/main/noarch::olefile-0.46-py_0
+  pcre               pkgs/main/linux-64::pcre-8.44-he6710b0_0
+  pillow             pkgs/main/linux-64::pillow-8.1.0-py38he98fc37_0
+  pyparsing          pkgs/main/noarch::pyparsing-2.4.7-py_0
+  pyqt               pkgs/main/linux-64::pyqt-5.9.2-py38h05f1152_4
+  python-dateutil    pkgs/main/noarch::python-dateutil-2.8.1-py_0
+  qt                 pkgs/main/linux-64::qt-5.9.7-h5867ecd_1
+  sip                pkgs/main/linux-64::sip-4.19.13-py38he6710b0_0
+  tornado            pkgs/main/linux-64::tornado-6.1-py38h27cfd23_0
+  zstd               pkgs/main/linux-64::zstd-1.4.5-h9ceee32_0
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+[ Info: Installing arviz via the Conda arviz package...
+[ Info: Running `conda config --add channels conda-forge --file /home/pkgeval/.julia/conda/3/condarc-julia.yml --force` in root environment
+[ Info: Running `conda install -q -y arviz` in root environment
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/pkgeval/.julia/conda/3
+
+  added / updated specs:
+    - arviz
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    arviz-0.10.0               |             py_0         1.3 MB  conda-forge
+    bzip2-1.0.8                |       h516909a_3         398 KB  conda-forge
+    c-ares-1.17.1              |       h36c2ea0_0         111 KB  conda-forge
+    ca-certificates-2020.12.5  |       ha878542_0         137 KB  conda-forge
+    certifi-2020.12.5          |   py38h578d9bd_1         143 KB  conda-forge
+    cftime-1.3.0               |   py38h0b5ebd8_0         310 KB  conda-forge
+    conda-4.9.2                |   py38h578d9bd_0         3.0 MB  conda-forge
+    curl-7.71.1                |       he644dc0_8         139 KB  conda-forge
+    hdf4-4.2.13                |                0         969 KB  conda-forge
+    hdf5-1.10.4                |nompi_h3c11f04_1106         5.3 MB  conda-forge
+    krb5-1.17.2                |       h926e7f8_0         1.4 MB  conda-forge
+    libcurl-7.71.1             |       hcdd3856_8         312 KB  conda-forge
+    libev-4.33                 |       h516909a_1         104 KB  conda-forge
+    libgfortran-ng-7.5.0       |      hae1eefd_17          22 KB  conda-forge
+    libgfortran4-7.5.0         |      hae1eefd_17         1.3 MB  conda-forge
+    libnetcdf-4.7.3            |       hb80b6cc_0         897 KB
+    libnghttp2-1.41.0          |       h8cfc5f6_2         774 KB  conda-forge
+    libssh2-1.9.0              |       hab1572f_5         225 KB  conda-forge
+    netcdf4-1.5.3              |   py38hbf33ddf_0         527 KB
+    packaging-20.8             |     pyhd3deb0d_0          34 KB  conda-forge
+    pandas-1.1.4               |   py38h0ef3d22_0        10.9 MB  conda-forge
+    python_abi-3.8             |           1_cp38           4 KB  conda-forge
+    pytz-2020.5                |     pyhd8ed1ab_0         244 KB  conda-forge
+    scipy-1.5.2                |   py38h0b6359f_0        14.5 MB
+    xarray-0.16.2              |     pyhd8ed1ab_0         546 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:        43.4 MB
+
+The following NEW packages will be INSTALLED:
+
+  arviz              conda-forge/noarch::arviz-0.10.0-py_0
+  bzip2              conda-forge/linux-64::bzip2-1.0.8-h516909a_3
+  c-ares             conda-forge/linux-64::c-ares-1.17.1-h36c2ea0_0
+  cftime             conda-forge/linux-64::cftime-1.3.0-py38h0b5ebd8_0
+  curl               conda-forge/linux-64::curl-7.71.1-he644dc0_8
+  hdf4               conda-forge/linux-64::hdf4-4.2.13-0
+  hdf5               conda-forge/linux-64::hdf5-1.10.4-nompi_h3c11f04_1106
+  krb5               conda-forge/linux-64::krb5-1.17.2-h926e7f8_0
+  libcurl            conda-forge/linux-64::libcurl-7.71.1-hcdd3856_8
+  libev              conda-forge/linux-64::libev-4.33-h516909a_1
+  libgfortran-ng     conda-forge/linux-64::libgfortran-ng-7.5.0-hae1eefd_17
+  libgfortran4       conda-forge/linux-64::libgfortran4-7.5.0-hae1eefd_17
+  libnetcdf          pkgs/main/linux-64::libnetcdf-4.7.3-hb80b6cc_0
+  libnghttp2         conda-forge/linux-64::libnghttp2-1.41.0-h8cfc5f6_2
+  libssh2            conda-forge/linux-64::libssh2-1.9.0-hab1572f_5
+  netcdf4            pkgs/main/linux-64::netcdf4-1.5.3-py38hbf33ddf_0
+  packaging          conda-forge/noarch::packaging-20.8-pyhd3deb0d_0
+  pandas             conda-forge/linux-64::pandas-1.1.4-py38h0ef3d22_0
+  python_abi         conda-forge/linux-64::python_abi-3.8-1_cp38
+  pytz               conda-forge/noarch::pytz-2020.5-pyhd8ed1ab_0
+  scipy              pkgs/main/linux-64::scipy-1.5.2-py38h0b6359f_0
+  xarray             conda-forge/noarch::xarray-0.16.2-pyhd8ed1ab_0
+
+The following packages will be UPDATED:
+
+  certifi            pkgs/main::certifi-2020.12.5-py38h06a~ --> conda-forge::certifi-2020.12.5-py38h578d9bd_1
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  ca-certificates    pkgs/main::ca-certificates-2020.12.8-~ --> conda-forge::ca-certificates-2020.12.5-ha878542_0
+  conda               pkgs/main::conda-4.9.2-py38h06a4308_0 --> conda-forge::conda-4.9.2-py38h578d9bd_0
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+[ Info: Installing dask via the Conda dask package...
+[ Info: Running `conda config --add channels conda-forge --file /home/pkgeval/.julia/conda/3/condarc-julia.yml --force` in root environment
+Warning: 'conda-forge' already in 'channels' list, moving to the top
+[ Info: Running `conda install -q -y dask` in root environment
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/pkgeval/.julia/conda/3
+
+  added / updated specs:
+    - dask
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    bokeh-2.2.3                |   py38h578d9bd_0         7.0 MB  conda-forge
+    click-7.1.2                |     pyh9f0ad1d_0          64 KB  conda-forge
+    cloudpickle-1.6.0          |             py_0          22 KB  conda-forge
+    cytoolz-0.11.0             |   py38h25fe258_1         396 KB  conda-forge
+    dask-2020.12.0             |     pyhd8ed1ab_0           4 KB  conda-forge
+    dask-core-2020.12.0        |     pyhd8ed1ab_0         669 KB  conda-forge
+    distributed-2020.12.0      |   py38h578d9bd_0         1.1 MB  conda-forge
+    fsspec-0.8.5               |     pyhd8ed1ab_0          69 KB  conda-forge
+    heapdict-1.0.1             |             py_0           7 KB  conda-forge
+    jinja2-2.11.2              |     pyh9f0ad1d_0          93 KB  conda-forge
+    locket-0.2.0               |             py_2           6 KB  conda-forge
+    markupsafe-1.1.1           |   py38h8df0ef7_2          27 KB  conda-forge
+    msgpack-python-1.0.1       |   py38hff7bd54_0          84 KB
+    partd-1.1.0                |             py_0          17 KB  conda-forge
+    psutil-5.7.2               |   py38h7b6447c_0         330 KB
+    pyyaml-5.3.1               |   py38h8df0ef7_1         190 KB  conda-forge
+    sortedcontainers-2.3.0     |     pyhd8ed1ab_0          26 KB  conda-forge
+    tblib-1.6.0                |             py_0          14 KB  conda-forge
+    toolz-0.11.1               |             py_0          46 KB  conda-forge
+    typing_extensions-3.7.4.3  |             py_0          25 KB  conda-forge
+    zict-2.0.0                 |             py_0          10 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:        10.1 MB
+
+The following NEW packages will be INSTALLED:
+
+  bokeh              conda-forge/linux-64::bokeh-2.2.3-py38h578d9bd_0
+  click              conda-forge/noarch::click-7.1.2-pyh9f0ad1d_0
+  cloudpickle        conda-forge/noarch::cloudpickle-1.6.0-py_0
+  cytoolz            conda-forge/linux-64::cytoolz-0.11.0-py38h25fe258_1
+  dask               conda-forge/noarch::dask-2020.12.0-pyhd8ed1ab_0
+  dask-core          conda-forge/noarch::dask-core-2020.12.0-pyhd8ed1ab_0
+  distributed        conda-forge/linux-64::distributed-2020.12.0-py38h578d9bd_0
+  fsspec             conda-forge/noarch::fsspec-0.8.5-pyhd8ed1ab_0
+  heapdict           conda-forge/noarch::heapdict-1.0.1-py_0
+  jinja2             conda-forge/noarch::jinja2-2.11.2-pyh9f0ad1d_0
+  locket             conda-forge/noarch::locket-0.2.0-py_2
+  markupsafe         conda-forge/linux-64::markupsafe-1.1.1-py38h8df0ef7_2
+  msgpack-python     pkgs/main/linux-64::msgpack-python-1.0.1-py38hff7bd54_0
+  partd              conda-forge/noarch::partd-1.1.0-py_0
+  psutil             pkgs/main/linux-64::psutil-5.7.2-py38h7b6447c_0
+  pyyaml             conda-forge/linux-64::pyyaml-5.3.1-py38h8df0ef7_1
+  sortedcontainers   conda-forge/noarch::sortedcontainers-2.3.0-pyhd8ed1ab_0
+  tblib              conda-forge/noarch::tblib-1.6.0-py_0
+  toolz              conda-forge/noarch::toolz-0.11.1-py_0
+  typing_extensions  conda-forge/noarch::typing_extensions-3.7.4.3-py_0
+  zict               conda-forge/noarch::zict-2.0.0-py_0
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+This application failed to start because it could not find or load the Qt platform plugin "xcb"
+in "".
+
+Available platform plugins are: eglfs, minimal, minimalegl, offscreen, vnc, xcb.
+
+Reinstalling the application may fix this problem.
+
+signal (6): Aborted
+in expression starting at /home/pkgeval/.julia/packages/ArviZ/MAo9Q/test/test_backend.jl:3
+gsignal at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+abort at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+_ZNK14QMessageLogger5fatalEPKcz at /home/pkgeval/.julia/conda/3/lib/python3.8/site-packages/PyQt5/../../../libQt5Core.so.5 (unknown line)
+_ZN22QGuiApplicationPrivate25createPlatformIntegrationEv at /home/pkgeval/.julia/conda/3/lib/python3.8/site-packages/PyQt5/../../../libQt5Gui.so.5 (unknown line)
+_ZN22QGuiApplicationPrivate21createEventDispatcherEv at /home/pkgeval/.julia/conda/3/lib/python3.8/site-packages/PyQt5/../../../libQt5Gui.so.5 (unknown line)
+_ZN23QCoreApplicationPrivate4initEv at /home/pkgeval/.julia/conda/3/lib/python3.8/site-packages/PyQt5/../../../libQt5Core.so.5 (unknown line)
+_ZN22QGuiApplicationPrivate4initEv at /home/pkgeval/.julia/conda/3/lib/python3.8/site-packages/PyQt5/../../../libQt5Gui.so.5 (unknown line)
+_ZN19QApplicationPrivate4initEv at /home/pkgeval/.julia/conda/3/lib/python3.8/site-packages/PyQt5/../../../libQt5Widgets.so.5 (unknown line)
+_ZN15sipQApplicationC1ERiPPci at /home/pkgeval/.julia/conda/3/lib/python3.8/site-packages/PyQt5/QtWidgets.so (unknown line)
+init_type_QApplication at /home/pkgeval/.julia/conda/3/lib/python3.8/site-packages/PyQt5/QtWidgets.so (unknown line)
+unknown function (ip: 0x7f87de810873)
+type_call.lto_priv.242 at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyObject_MakeTpCall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+call_function at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+function_code_fastcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+call_function at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalCodeWithName at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyFunction_Vectorcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+method_vectorcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+call_function at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalCodeWithName at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyFunction_Vectorcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyObject_FastCallDict at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyObject_Call_Prepend at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+slot_tp_init at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+type_call.lto_priv.242 at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyObject_MakeTpCall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+call_function at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+function_code_fastcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+method_vectorcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+call_function at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalCodeWithName at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyFunction_Vectorcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+method_vectorcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+PyVectorcall_Call at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalCodeWithName at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyFunction_Vectorcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+PyVectorcall_Call at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalCodeWithName at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyFunction_Vectorcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+PyVectorcall_Call at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+macro expansion at /home/pkgeval/.julia/packages/PyCall/tqyST/src/exception.jl:95 [inlined]
+#109 at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:43 [inlined]
+disable_sigint at ./c.jl:446 [inlined]
+__pycall! at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:42 [inlined]
+_pycall! at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:29
+_pycall! at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:11
+#pycall#115 at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:83 [inlined]
+pycall##kw at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:83 [inlined]
+#figure#7 at /home/pkgeval/.julia/packages/PyPlot/XHEG0/src/PyPlot.jl:147 [inlined]
+figure##kw at /home/pkgeval/.julia/packages/PyPlot/XHEG0/src/PyPlot.jl:146 [inlined]
+inner at ./essentials.jl:713
+unknown function (ip: 0x7f87fb3060bc)
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_apply at /workspace/srcdir/src/builtins.c:655
+jl_f__apply_latest at /workspace/srcdir/src/builtins.c:705
+#invokelatest#1 at ./essentials.jl:714 [inlined]
+invokelatest##kw at ./essentials.jl:709
+unknown function (ip: 0x7f87fb3055d5)
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_apply at /workspace/srcdir/src/builtins.c:655
+_pyjlwrap_call at /home/pkgeval/.julia/packages/PyCall/tqyST/src/callback.jl:32
+unknown function (ip: 0x7f87fb300b11)
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+pyjlwrap_call at /home/pkgeval/.julia/packages/PyCall/tqyST/src/callback.jl:44
+unknown function (ip: 0x7f87fb24d319)
+PyObject_Call at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalCodeWithName at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyFunction_Vectorcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+PyVectorcall_Call at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalFrameDefault at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyEval_EvalCodeWithName at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+_PyFunction_Vectorcall at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+PyVectorcall_Call at /home/pkgeval/.julia/conda/3/lib/libpython3.8.so.1.0 (unknown line)
+macro expansion at /home/pkgeval/.julia/packages/PyCall/tqyST/src/exception.jl:95 [inlined]
+#109 at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:43 [inlined]
+disable_sigint at ./c.jl:446 [inlined]
+__pycall! at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:42 [inlined]
+_pycall! at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:29
+_pycall! at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:11
+#_#116 at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:86 [inlined]
+Any##kw at /home/pkgeval/.julia/packages/PyCall/tqyST/src/pyfncall.jl:86
+unknown function (ip: 0x7f87fb2ffddd)
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+#plot_trace#104 at /home/pkgeval/.julia/packages/ArviZ/MAo9Q/src/utils.jl:129
+plot_trace at /home/pkgeval/.julia/packages/ArviZ/MAo9Q/src/utils.jl:122
+unknown function (ip: 0x7f87fb2fd911)
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_call at /workspace/srcdir/src/interpreter.c:117
+eval_value at /workspace/srcdir/src/interpreter.c:206
+eval_stmt_value at /workspace/srcdir/src/interpreter.c:157 [inlined]
+eval_body at /workspace/srcdir/src/interpreter.c:566
+eval_body at /workspace/srcdir/src/interpreter.c:492
+eval_body at /workspace/srcdir/src/interpreter.c:492
+eval_body at /workspace/srcdir/src/interpreter.c:492
+jl_interpret_toplevel_thunk at /workspace/srcdir/src/interpreter.c:660
+jl_toplevel_eval_flex at /workspace/srcdir/src/toplevel.c:840
+jl_parse_eval_all at /workspace/srcdir/src/ast.c:913
+jl_load_rewrite at /workspace/srcdir/src/toplevel.c:914
+include at ./client.jl:457
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_call at /workspace/srcdir/src/interpreter.c:117
+eval_value at /workspace/srcdir/src/interpreter.c:206
+eval_stmt_value at /workspace/srcdir/src/interpreter.c:157 [inlined]
+eval_body at /workspace/srcdir/src/interpreter.c:566
+eval_body at /workspace/srcdir/src/interpreter.c:492
+eval_body at /workspace/srcdir/src/interpreter.c:492
+jl_interpret_toplevel_thunk at /workspace/srcdir/src/interpreter.c:660
+jl_toplevel_eval_flex at /workspace/srcdir/src/toplevel.c:840
+jl_parse_eval_all at /workspace/srcdir/src/ast.c:913
+jl_load_rewrite at /workspace/srcdir/src/toplevel.c:914
+include at ./client.jl:457
+_jl_invoke at /workspace/srcdir/src/gf.c:2231 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/src/julia.h:1690 [inlined]
+do_call at /workspace/srcdir/src/interpreter.c:117
+eval_value at /workspace/srcdir/src/interpreter.c:206
+eval_stmt_value at /workspace/srcdir/src/interpreter.c:157 [inlined]
+eval_body at /workspace/srcdir/src/interpreter.c:566
+jl_interpret_toplevel_thunk at /workspace/srcdir/src/interpreter.c:660
+jl_toplevel_eval_flex at /workspace/srcdir/src/toplevel.c:840
+jl_toplevel_eval_flex at /workspace/srcdir/src/toplevel.c:790
+jl_toplevel_eval_in at /workspace/srcdir/src/toplevel.c:883
+eval at ./boot.jl:331
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+exec_options at ./client.jl:272
+_start at ./client.jl:506
+jfptr__start_43715.clone_1 at /opt/julia/lib/julia/sys.so (unknown line)
+_jl_invoke at /workspace/srcdir/src/gf.c:2214 [inlined]
+jl_apply_generic at /workspace/srcdir/src/gf.c:2398
+jl_apply at /workspace/srcdir/ui/../src/julia.h:1690 [inlined]
+true_main at /workspace/srcdir/ui/repl.c:106
+main at /workspace/srcdir/ui/repl.c:227
+__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x4015e4)
+Allocations: 43149905 (Pool: 43138945; Big: 10960); GC: 44
+
+PkgEval failed: Package ArviZ errored during testing (received signal: 6)
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:37:07.101
+CPU usage: 198.76s (182.15s user, 16.94s kernel)
+
+Network usage:
+- eth0: 442.695 MiB received, 1.586 MiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":34,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":15,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":34,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":34,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":15,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":34,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":192512,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":86016,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":192512,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":192512,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":86016,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":192512,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":3194437632,"max_usage":3839201280,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":276340736,"inactive_file":135168,"inactive_anon":1923981312,"total_pgfault":4821762,"total_cache":2821566464,"total_rss_huge":0,"total_active_anon":1173934080,"total_pgmajfault":0,"pgpgin":3871329,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":675840,"total_unevictable":0,"total_dirty":675840,"writeback":0,"pgpgout":3114959,"hierarchical_memsw_limit":0,"cache":2821566464,"active_file":135168,"pgfault":4821762,"total_mapped_file":0,"total_pgpgout":3114959,"total_writeback":0,"rss":276340736,"unevictable":0,"total_inactive_anon":1923981312,"total_pgpgin":3871329,"active_anon":1173934080,"total_active_file":135168},"limit":540965302272},"name":"/ArviZ-1H8xX2nz","networks":{"eth0":{"rx_bytes":464199045,"rx_packets":43299,"tx_packets":24854,"tx_bytes":1662617,"tx_dropped":0,"rx_dropped":7,"tx_errors":0,"rx_errors":0}},"id":"ab91d1932be8a9fbaa18294c8b0d41dec308dd9c59668c97f666292adf19a0fb","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3263528424522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":182150000000,"usage_in_kernelmode":16940000000,"total_usage":198757965157,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,198757962027,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3130,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:37:07.842041671Z"}

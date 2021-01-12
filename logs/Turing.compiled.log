@@ -1,0 +1,2268 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T16:36:29.308
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T16:36:31.046
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed ZygoteRules ────────────────── v0.2.1
+  Installed Reexport ───────────────────── v0.2.0
+  Installed InitialValues ──────────────── v0.2.10
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed Libtask_jll ────────────────── v0.4.2+0
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed TableTraits ────────────────── v1.0.0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed Bijectors ──────────────────── v0.8.12
+  Installed PackageCompiler ────────────── v1.2.5
+  Installed Turing ─────────────────────── v0.15.8
+  Installed NonlinearSolve ─────────────── v0.3.4
+  Installed AdvancedMH ─────────────────── v0.5.6
+  Installed EllipticalSliceSampling ────── v0.4.0
+  Installed Combinatorics ──────────────── v1.0.2
+  Installed FillArrays ─────────────────── v0.10.2
+  Installed Tables ─────────────────────── v1.2.2
+  Installed RangeArrays ────────────────── v0.3.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed Libtask ────────────────────── v0.5.1
+  Installed Requires ───────────────────── v1.1.2
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed QuadGK ─────────────────────── v2.4.1
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Parameters ─────────────────── v0.12.1
+  Installed Setfield ───────────────────── v0.7.0
+  Installed IterTools ──────────────────── v1.3.0
+  Installed ConstructionBase ───────────── v1.0.0
+  Installed RecursiveArrayTools ────────── v2.10.0
+  Installed IntervalSets ───────────────── v0.5.2
+  Installed Tracker ────────────────────── v0.2.14
+  Installed InvertedIndices ────────────── v1.0.0
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed AdvancedVI ─────────────────── v0.1.1
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed InplaceOps ─────────────────── v0.3.0
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed MLJModelInterface ──────────── v0.3.7
+  Installed Missings ───────────────────── v0.4.4
+  Installed LoggingExtras ──────────────── v0.4.2
+  Installed DistributionsAD ────────────── v0.6.15
+  Installed ScientificTypes ────────────── v1.1.1
+  Installed ArgCheck ───────────────────── v2.1.0
+  Installed MCMCChains ─────────────────── v4.4.0
+  Installed AxisArrays ─────────────────── v0.4.3
+  Installed MappedArrays ───────────────── v0.3.0
+  Installed AbstractFFTs ───────────────── v0.5.0
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed AdvancedPS ─────────────────── v0.1.0
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed BangBang ───────────────────── v0.3.29
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed Distributions ──────────────── v0.24.10
+  Installed DefineSingletons ───────────── v0.1.0
+  Installed ArrayInterface ─────────────── v2.14.13
+  Installed FiniteDiff ─────────────────── v2.7.2
+  Installed PDMats ─────────────────────── v0.10.1
+  Installed LeftChildRightSiblingTrees ─── v0.1.2
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed ChainRules ─────────────────── v0.7.45
+  Installed PrettyTables ───────────────── v0.10.1
+  Installed Crayons ────────────────────── v4.0.4
+  Installed AdvancedHMC ────────────────── v0.2.27
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed Adapt ──────────────────────── v2.4.0
+  Installed FixedPointNumbers ──────────── v0.8.4
+  Installed Formatting ─────────────────── v0.4.2
+  Installed AbstractMCMC ───────────────── v2.2.1
+  Installed NamedArrays ────────────────── v0.9.4
+  Installed MicroCollections ───────────── v0.1.0
+  Installed EllipsisNotation ───────────── v1.0.0
+  Installed AbstractTrees ──────────────── v0.3.3
+  Installed NaturalSort ────────────────── v1.0.0
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed DynamicPPL ─────────────────── v0.10.5
+  Installed TerminalLoggers ────────────── v0.1.2
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed ProgressMeter ──────────────── v1.4.1
+  Installed Compat ─────────────────────── v3.25.0
+  Installed SplittablesBase ────────────── v0.1.10
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed DocStringExtensions ────────── v0.8.3
+  Installed ProgressLogging ────────────── v0.1.3
+  Installed Transducers ────────────────── v0.4.54
+  Installed NNlib ──────────────────────── v0.7.11
+  Installed ConsoleProgressMonitor ─────── v0.1.2
+  Installed CompositionsBase ───────────── v0.1.0
+  Installed Artifacts ──────────────────── v1.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [fce5fe82] + Turing v0.15.8
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [621f4979] + AbstractFFTs v0.5.0
+  [80f14c24] + AbstractMCMC v2.2.1
+  [1520ce14] + AbstractTrees v0.3.3
+  [79e6a3ab] + Adapt v2.4.0
+  [0bf59076] + AdvancedHMC v0.2.27
+  [5b7e9947] + AdvancedMH v0.5.6
+  [576499cb] + AdvancedPS v0.1.0
+  [b5ca4192] + AdvancedVI v0.1.1
+  [dce04be8] + ArgCheck v2.1.0
+  [4fba245c] + ArrayInterface v2.14.13
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.4.3
+  [198e06fe] + BangBang v0.3.29
+  [76274a88] + Bijectors v0.8.12
+  [082447d4] + ChainRules v0.7.45
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [861a8166] + Combinatorics v1.0.2
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [a33af91c] + CompositionsBase v0.1.0
+  [88cd18e8] + ConsoleProgressMonitor v0.1.2
+  [187b0558] + ConstructionBase v1.0.0
+  [a8cc5b0e] + Crayons v4.0.4
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [244e2a9f] + DefineSingletons v0.1.0
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [31c24e10] + Distributions v0.24.10
+  [ced4e74d] + DistributionsAD v0.6.15
+  [ffbed154] + DocStringExtensions v0.8.3
+  [366bfd00] + DynamicPPL v0.10.5
+  [da5c29d0] + EllipsisNotation v1.0.0
+  [cad2338a] + EllipticalSliceSampling v0.4.0
+  [1a297f60] + FillArrays v0.10.2
+  [6a86dc24] + FiniteDiff v2.7.2
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [59287772] + Formatting v0.4.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [22cec73e] + InitialValues v0.2.10
+  [505f98c9] + InplaceOps v0.3.0
+  [8197267c] + IntervalSets v0.5.2
+  [41ab1584] + InvertedIndices v1.0.0
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [1d6d02ad] + LeftChildRightSiblingTrees v0.1.2
+  [6f1fad26] + Libtask v0.5.1
+  [3ae2931a] + Libtask_jll v0.4.2+0
+  [e6f89c97] + LoggingExtras v0.4.2
+  [c7f686f2] + MCMCChains v4.4.0
+  [e80e1ace] + MLJModelInterface v0.3.7
+  [1914dd2f] + MacroTools v0.5.6
+  [dbb5928d] + MappedArrays v0.3.0
+  [128add7d] + MicroCollections v0.1.0
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [872c559c] + NNlib v0.7.11
+  [77ba4419] + NaNMath v0.3.5
+  [86f7a689] + NamedArrays v0.9.4
+  [c020b1a1] + NaturalSort v1.0.0
+  [8913a72c] + NonlinearSolve v0.3.4
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.10.1
+  [9b87118b] + PackageCompiler v1.2.5
+  [d96e819e] + Parameters v0.12.1
+  [08abe8d2] + PrettyTables v0.10.1
+  [33c8b6b6] + ProgressLogging v0.1.3
+  [92933f4c] + ProgressMeter v1.4.1
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [731186ca] + RecursiveArrayTools v2.10.0
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [321657f4] + ScientificTypes v1.1.1
+  [efcf1570] + Setfield v0.7.0
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [171d559e] + SplittablesBase v0.1.10
+  [90137ffa] + StaticArrays v1.0.1
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [5d786b92] + TerminalLoggers v0.1.2
+  [9f7883ad] + Tracker v0.2.14
+  [28d57a85] + Transducers v0.4.54
+  [fce5fe82] + Turing v0.15.8
+  [3a884ed6] + UnPack v1.0.2
+  [700de1a5] + ZygoteRules v0.2.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T16:36:42.96
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 203.263 MiB, compilation took 427 seconds
+
+
+┌ Warning: Error requiring `Tracker` from `DistributionsAD`
+│   exception =
+│    ArgumentError: Package DistributionsAD does not have DiffRules in its dependencies:
+│    - If you have DistributionsAD checked out for development and have
+│      added DiffRules as a dependency but haven't updated your primary
+│      environment's manifest file, try `Pkg.resolve()`.
+│    - Otherwise you may need to report an issue with DistributionsAD
+│    Stacktrace:
+│     [1] require(::Module, ::Symbol) at ./loading.jl:906
+│     [2] top-level scope at /home/pkgeval/.julia/packages/DistributionsAD/NSpwv/src/DistributionsAD.jl:78
+│     [3] eval at ./boot.jl:331 [inlined]
+│     [4] eval at /home/pkgeval/.julia/packages/DistributionsAD/NSpwv/src/DistributionsAD.jl:1 [inlined]
+│     [5] (::DistributionsAD.var"#349#362")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:94
+│     [6] err(::Any, ::Module, ::String) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:42
+│     [7] (::DistributionsAD.var"#348#361")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:93
+│     [8] withpath(::Any, ::String) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:32
+│     [9] (::DistributionsAD.var"#347#360")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:92
+│     [10] listenpkg(::Any, ::Base.PkgId) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:15
+│     [11] macro expansion at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:90 [inlined]
+│     [12] macro expansion at /home/pkgeval/.julia/packages/DistributionsAD/NSpwv/src/DistributionsAD.jl:77 [inlined]
+│     [13] (::DistributionsAD.var"#340#353")() at /home/pkgeval/.julia/packages/Requires/035xH/src/init.jl:11
+│     [14] __init__() at /home/pkgeval/.julia/packages/Requires/035xH/src/init.jl:18
+└ @ Requires /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:44
+┌ Warning: Error requiring `Tracker` from `Bijectors`
+│   exception =
+│    LoadError: ArgumentError: Package Bijectors does not have Compat in its dependencies:
+│    - If you have Bijectors checked out for development and have
+│      added Compat as a dependency but haven't updated your primary
+│      environment's manifest file, try `Pkg.resolve()`.
+│    - Otherwise you may need to report an issue with Bijectors
+│    Stacktrace:
+│     [1] require(::Module, ::Symbol) at ./loading.jl:906
+│     [2] include_string(::Function, ::Module, ::String, ::String) at ./loading.jl:1088
+│     [3] include_string(::Module, ::String, ::String) at ./loading.jl:1096
+│     [4] top-level scope at /home/pkgeval/.julia/packages/Requires/035xH/src/Requires.jl:38
+│     [5] eval at ./boot.jl:331 [inlined]
+│     [6] eval at /home/pkgeval/.julia/packages/Bijectors/0PJJc/src/Bijectors.jl:1 [inlined]
+│     [7] (::Bijectors.var"#122#143")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:94
+│     [8] err(::Any, ::Module, ::String) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:42
+│     [9] (::Bijectors.var"#121#142")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:93
+│     [10] withpath(::Any, ::String) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:32
+│     [11] (::Bijectors.var"#120#141")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:92
+│     [12] listenpkg(::Any, ::Base.PkgId) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:15
+│     [13] macro expansion at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:90 [inlined]
+│     [14] __init__() at /home/pkgeval/.julia/packages/Bijectors/0PJJc/src/Bijectors.jl:265
+│    in expression starting at compat/tracker.jl:12
+└ @ Requires /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:44
+┌ Warning: Error requiring `DistributionsAD` from `Bijectors`
+│   exception =
+│    LoadError: ArgumentError: Package Bijectors does not have Distributions in its dependencies:
+│    - If you have Bijectors checked out for development and have
+│      added Distributions as a dependency but haven't updated your primary
+│      environment's manifest file, try `Pkg.resolve()`.
+│    - Otherwise you may need to report an issue with Bijectors
+│    Stacktrace:
+│     [1] require(::Module, ::Symbol) at ./loading.jl:906
+│     [2] include_string(::Function, ::Module, ::String, ::String) at ./loading.jl:1088
+│     [3] include_string(::Module, ::String, ::String) at ./loading.jl:1096
+│     [4] top-level scope at /home/pkgeval/.julia/packages/Requires/035xH/src/Requires.jl:38
+│     [5] eval at ./boot.jl:331 [inlined]
+│     [6] eval at /home/pkgeval/.julia/packages/Bijectors/0PJJc/src/Bijectors.jl:1 [inlined]
+│     [7] (::Bijectors.var"#131#152")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:94
+│     [8] err(::Any, ::Module, ::String) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:42
+│     [9] (::Bijectors.var"#130#151")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:93
+│     [10] withpath(::Any, ::String) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:32
+│     [11] (::Bijectors.var"#129#150")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:92
+│     [12] listenpkg(::Any, ::Base.PkgId) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:15
+│     [13] macro expansion at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:90 [inlined]
+│     [14] __init__() at /home/pkgeval/.julia/packages/Bijectors/0PJJc/src/Bijectors.jl:268
+│    in expression starting at compat/distributionsad.jl:5
+└ @ Requires /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:44
+################################################################################
+# PkgEval set-up: 2021-01-11T16:44:01.551
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/Turing-EfO1837V.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T16:44:03.221
+#
+
+ Installing known registries into `~/.julia`
+##################################################                        70.6%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed CompilerSupportLibraries_jll ─ v0.3.4+0
+  Installed ZygoteRules ────────────────── v0.2.1
+  Installed Reexport ───────────────────── v0.2.0
+  Installed Rmath_jll ──────────────────── v0.2.2+1
+  Installed Rmath ──────────────────────── v0.6.1
+  Installed CommonSubexpressions ───────── v0.3.0
+  Installed InitialValues ──────────────── v0.2.10
+  Installed Turing ─────────────────────── v0.15.8
+  Installed Bijectors ──────────────────── v0.8.12
+  Installed Libtask_jll ────────────────── v0.4.2+0
+  Installed TableTraits ────────────────── v1.0.0
+  Installed MuladdMacro ────────────────── v0.2.2
+  Installed NonlinearSolve ─────────────── v0.3.4
+  Installed AdvancedMH ─────────────────── v0.5.6
+  Installed EllipticalSliceSampling ────── v0.4.0
+  Installed Tables ─────────────────────── v1.2.2
+  Installed DataStructures ─────────────── v0.18.8
+  Installed StatsBase ──────────────────── v0.33.2
+  Installed FillArrays ─────────────────── v0.10.2
+  Installed Combinatorics ──────────────── v1.0.2
+  Installed RangeArrays ────────────────── v0.3.2
+  Installed Libtask ────────────────────── v0.5.1
+  Installed DataAPI ────────────────────── v1.4.0
+  Installed QuadGK ─────────────────────── v2.4.1
+  Installed Requires ───────────────────── v1.1.2
+  Installed DiffRules ──────────────────── v1.0.2
+  Installed DiffResults ────────────────── v1.0.3
+  Installed Parameters ─────────────────── v0.12.1
+  Installed IterTools ──────────────────── v1.3.0
+  Installed Setfield ───────────────────── v0.7.0
+  Installed ConstructionBase ───────────── v1.0.0
+  Installed RecursiveArrayTools ────────── v2.10.0
+  Installed InvertedIndices ────────────── v1.0.0
+  Installed IntervalSets ───────────────── v0.5.2
+  Installed Tracker ────────────────────── v0.2.14
+  Installed OrderedCollections ─────────── v1.3.2
+  Installed StaticArrays ───────────────── v1.0.1
+  Installed AdvancedVI ─────────────────── v0.1.1
+  Installed DataValueInterfaces ────────── v1.0.0
+  Installed InplaceOps ─────────────────── v0.3.0
+  Installed RecipesBase ────────────────── v1.1.1
+  Installed MLJModelInterface ──────────── v0.3.7
+  Installed Missings ───────────────────── v0.4.4
+  Installed LoggingExtras ──────────────── v0.4.2
+  Installed ScientificTypes ────────────── v1.1.1
+  Installed DistributionsAD ────────────── v0.6.15
+  Installed ArgCheck ───────────────────── v2.1.0
+  Installed MCMCChains ─────────────────── v4.4.0
+  Installed MappedArrays ───────────────── v0.3.0
+  Installed AbstractFFTs ───────────────── v0.5.0
+  Installed AxisArrays ─────────────────── v0.4.3
+  Installed AdvancedPS ─────────────────── v0.1.0
+  Installed MacroTools ─────────────────── v0.5.6
+  Installed BangBang ───────────────────── v0.3.29
+  Installed JLLWrappers ────────────────── v1.2.0
+  Installed Distributions ──────────────── v0.24.10
+  Installed NaNMath ────────────────────── v0.3.5
+  Installed FiniteDiff ─────────────────── v2.7.2
+  Installed DefineSingletons ───────────── v0.1.0
+  Installed ArrayInterface ─────────────── v2.14.13
+  Installed PDMats ─────────────────────── v0.10.1
+  Installed LeftChildRightSiblingTrees ─── v0.1.2
+  Installed AdvancedHMC ────────────────── v0.2.27
+  Installed ForwardDiff ────────────────── v0.10.14
+  Installed ChainRules ─────────────────── v0.7.45
+  Installed PrettyTables ───────────────── v0.10.1
+  Installed StatsFuns ──────────────────── v0.9.6
+  Installed FixedPointNumbers ──────────── v0.8.4
+  Installed Crayons ────────────────────── v4.0.4
+  Installed Adapt ──────────────────────── v2.4.0
+  Installed NamedArrays ────────────────── v0.9.4
+  Installed Formatting ─────────────────── v0.4.2
+  Installed AbstractMCMC ───────────────── v2.2.1
+  Installed EllipsisNotation ───────────── v1.0.0
+  Installed MicroCollections ───────────── v0.1.0
+  Installed SpecialFunctions ───────────── v1.2.1
+  Installed IteratorInterfaceExtensions ── v1.0.0
+  Installed AbstractTrees ──────────────── v0.3.3
+  Installed NaturalSort ────────────────── v1.0.0
+  Installed SortingAlgorithms ──────────── v0.3.1
+  Installed UnPack ─────────────────────── v1.0.2
+  Installed ProgressMeter ──────────────── v1.4.1
+  Installed DynamicPPL ─────────────────── v0.10.5
+  Installed TerminalLoggers ────────────── v0.1.2
+  Installed Compat ─────────────────────── v3.25.0
+  Installed ChainRulesCore ─────────────── v0.9.24
+  Installed SplittablesBase ────────────── v0.1.10
+  Installed Transducers ────────────────── v0.4.54
+  Installed DocStringExtensions ────────── v0.8.3
+  Installed Artifacts ──────────────────── v1.3.0
+  Installed OpenSpecFun_jll ────────────── v0.5.3+4
+  Installed ConsoleProgressMonitor ─────── v0.1.2
+  Installed ProgressLogging ────────────── v0.1.3
+  Installed NNlib ──────────────────────── v0.7.11
+  Installed CompositionsBase ───────────── v0.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [fce5fe82] + Turing v0.15.8
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [621f4979] + AbstractFFTs v0.5.0
+  [80f14c24] + AbstractMCMC v2.2.1
+  [1520ce14] + AbstractTrees v0.3.3
+  [79e6a3ab] + Adapt v2.4.0
+  [0bf59076] + AdvancedHMC v0.2.27
+  [5b7e9947] + AdvancedMH v0.5.6
+  [576499cb] + AdvancedPS v0.1.0
+  [b5ca4192] + AdvancedVI v0.1.1
+  [dce04be8] + ArgCheck v2.1.0
+  [4fba245c] + ArrayInterface v2.14.13
+  [56f22d72] + Artifacts v1.3.0
+  [39de3d68] + AxisArrays v0.4.3
+  [198e06fe] + BangBang v0.3.29
+  [76274a88] + Bijectors v0.8.12
+  [082447d4] + ChainRules v0.7.45
+  [d360d2e6] + ChainRulesCore v0.9.24
+  [861a8166] + Combinatorics v1.0.2
+  [bbf7d656] + CommonSubexpressions v0.3.0
+  [34da2185] + Compat v3.25.0
+  [e66e0078] + CompilerSupportLibraries_jll v0.3.4+0
+  [a33af91c] + CompositionsBase v0.1.0
+  [88cd18e8] + ConsoleProgressMonitor v0.1.2
+  [187b0558] + ConstructionBase v1.0.0
+  [a8cc5b0e] + Crayons v4.0.4
+  [9a962f9c] + DataAPI v1.4.0
+  [864edb3b] + DataStructures v0.18.8
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [244e2a9f] + DefineSingletons v0.1.0
+  [163ba53b] + DiffResults v1.0.3
+  [b552c78f] + DiffRules v1.0.2
+  [31c24e10] + Distributions v0.24.10
+  [ced4e74d] + DistributionsAD v0.6.15
+  [ffbed154] + DocStringExtensions v0.8.3
+  [366bfd00] + DynamicPPL v0.10.5
+  [da5c29d0] + EllipsisNotation v1.0.0
+  [cad2338a] + EllipticalSliceSampling v0.4.0
+  [1a297f60] + FillArrays v0.10.2
+  [6a86dc24] + FiniteDiff v2.7.2
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [59287772] + Formatting v0.4.2
+  [f6369f11] + ForwardDiff v0.10.14
+  [22cec73e] + InitialValues v0.2.10
+  [505f98c9] + InplaceOps v0.3.0
+  [8197267c] + IntervalSets v0.5.2
+  [41ab1584] + InvertedIndices v1.0.0
+  [c8e1da08] + IterTools v1.3.0
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.2.0
+  [1d6d02ad] + LeftChildRightSiblingTrees v0.1.2
+  [6f1fad26] + Libtask v0.5.1
+  [3ae2931a] + Libtask_jll v0.4.2+0
+  [e6f89c97] + LoggingExtras v0.4.2
+  [c7f686f2] + MCMCChains v4.4.0
+  [e80e1ace] + MLJModelInterface v0.3.7
+  [1914dd2f] + MacroTools v0.5.6
+  [dbb5928d] + MappedArrays v0.3.0
+  [128add7d] + MicroCollections v0.1.0
+  [e1d29d7a] + Missings v0.4.4
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [872c559c] + NNlib v0.7.11
+  [77ba4419] + NaNMath v0.3.5
+  [86f7a689] + NamedArrays v0.9.4
+  [c020b1a1] + NaturalSort v1.0.0
+  [8913a72c] + NonlinearSolve v0.3.4
+  [efe28fd5] + OpenSpecFun_jll v0.5.3+4
+  [bac558e1] + OrderedCollections v1.3.2
+  [90014a1f] + PDMats v0.10.1
+  [d96e819e] + Parameters v0.12.1
+  [08abe8d2] + PrettyTables v0.10.1
+  [33c8b6b6] + ProgressLogging v0.1.3
+  [92933f4c] + ProgressMeter v1.4.1
+  [1fd47b50] + QuadGK v2.4.1
+  [b3c3ace0] + RangeArrays v0.3.2
+  [3cdcf5f2] + RecipesBase v1.1.1
+  [731186ca] + RecursiveArrayTools v2.10.0
+  [189a3867] + Reexport v0.2.0
+  [ae029012] + Requires v1.1.2
+  [79098fc4] + Rmath v0.6.1
+  [f50d1b31] + Rmath_jll v0.2.2+1
+  [321657f4] + ScientificTypes v1.1.1
+  [efcf1570] + Setfield v0.7.0
+  [a2af1166] + SortingAlgorithms v0.3.1
+  [276daf66] + SpecialFunctions v1.2.1
+  [171d559e] + SplittablesBase v0.1.10
+  [90137ffa] + StaticArrays v1.0.1
+  [2913bbd2] + StatsBase v0.33.2
+  [4c63d2b9] + StatsFuns v0.9.6
+  [3783bdb8] + TableTraits v1.0.0
+  [bd369af6] + Tables v1.2.2
+  [5d786b92] + TerminalLoggers v0.1.2
+  [9f7883ad] + Tracker v0.2.14
+  [28d57a85] + Transducers v0.4.54
+  [fce5fe82] + Turing v0.15.8
+  [3a884ed6] + UnPack v1.0.2
+  [700de1a5] + ZygoteRules v0.2.1
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8bb1440f] + DelimitedFiles
+  [8ba89e20] + Distributed
+  [9fa8497b] + Future
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [1a1011a3] + SharedArrays
+  [6462fe0b] + Sockets
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+  [4607b0f0] + SuiteSparse
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T16:44:14.727
+#
+
+    Testing Turing
+Status `/tmp/jl_yDVUwa/Project.toml`
+  [80f14c24] AbstractMCMC v2.2.1
+  [5b7e9947] AdvancedMH v0.5.6
+  [576499cb] AdvancedPS v0.1.0
+  [b5ca4192] AdvancedVI v0.1.1
+  [aaaa29a8] Clustering v0.14.2
+  [593b3428] CmdStan v6.1.4
+  [31c24e10] Distributions v0.24.10
+  [ced4e74d] DistributionsAD v0.6.15
+  [bbc10e6e] DynamicHMC v2.2.0
+  [366bfd00] DynamicPPL v0.10.5
+  [26cc04aa] FiniteDifferences v0.11.7
+  [f6369f11] ForwardDiff v0.10.14
+  [c7f686f2] MCMCChains v4.4.0
+  [6fafb56a] Memoization v0.1.5
+  [86f7a689] NamedArrays v0.9.4
+  [429524aa] Optim v1.2.2
+  [90014a1f] PDMats v0.10.1
+  [37e2e3b7] ReverseDiff v1.5.0
+  [276daf66] SpecialFunctions v1.2.1
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [9f7883ad] Tracker v0.2.14
+  [fce5fe82] Turing v0.15.8
+  [e88e6eb3] Zygote v0.6.0
+  [37e2e46d] LinearAlgebra
+  [44cfe95a] Pkg
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_yDVUwa/Manifest.toml`
+  [621f4979] AbstractFFTs v0.5.0
+  [80f14c24] AbstractMCMC v2.2.1
+  [1520ce14] AbstractTrees v0.3.3
+  [79e6a3ab] Adapt v2.4.0
+  [0bf59076] AdvancedHMC v0.2.27
+  [5b7e9947] AdvancedMH v0.5.6
+  [576499cb] AdvancedPS v0.1.0
+  [b5ca4192] AdvancedVI v0.1.1
+  [dce04be8] ArgCheck v2.1.0
+  [4fba245c] ArrayInterface v2.14.13
+  [56f22d72] Artifacts v1.3.0
+  [39de3d68] AxisArrays v0.4.3
+  [198e06fe] BangBang v0.3.29
+  [6e4b80f9] BenchmarkTools v0.5.0
+  [76274a88] Bijectors v0.8.12
+  [336ed68f] CSV v0.8.2
+  [324d7699] CategoricalArrays v0.9.0
+  [082447d4] ChainRules v0.7.45
+  [d360d2e6] ChainRulesCore v0.9.24
+  [aaaa29a8] Clustering v0.14.2
+  [593b3428] CmdStan v6.1.4
+  [861a8166] Combinatorics v1.0.2
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v3.25.0
+  [e66e0078] CompilerSupportLibraries_jll v0.3.4+0
+  [a33af91c] CompositionsBase v0.1.0
+  [88cd18e8] ConsoleProgressMonitor v0.1.2
+  [187b0558] ConstructionBase v1.0.0
+  [a8cc5b0e] Crayons v4.0.4
+  [9a962f9c] DataAPI v1.4.0
+  [a93c6f00] DataFrames v0.22.2
+  [864edb3b] DataStructures v0.18.8
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [244e2a9f] DefineSingletons v0.1.0
+  [163ba53b] DiffResults v1.0.3
+  [b552c78f] DiffRules v1.0.2
+  [b4f34e82] Distances v0.10.0
+  [31c24e10] Distributions v0.24.10
+  [ced4e74d] DistributionsAD v0.6.15
+  [ffbed154] DocStringExtensions v0.8.3
+  [bbc10e6e] DynamicHMC v2.2.0
+  [366bfd00] DynamicPPL v0.10.5
+  [da5c29d0] EllipsisNotation v1.0.0
+  [cad2338a] EllipticalSliceSampling v0.4.0
+  [1a297f60] FillArrays v0.10.2
+  [6a86dc24] FiniteDiff v2.7.2
+  [26cc04aa] FiniteDifferences v0.11.7
+  [53c48c17] FixedPointNumbers v0.8.4
+  [59287772] Formatting v0.4.2
+  [f6369f11] ForwardDiff v0.10.14
+  [069b7b12] FunctionWrappers v1.1.1
+  [7869d1d1] IRTools v0.4.2
+  [22cec73e] InitialValues v0.2.10
+  [505f98c9] InplaceOps v0.3.0
+  [8197267c] IntervalSets v0.5.2
+  [41ab1584] InvertedIndices v1.0.0
+  [c8e1da08] IterTools v1.3.0
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] JLLWrappers v1.2.0
+  [682c06a0] JSON v0.21.1
+  [1d6d02ad] LeftChildRightSiblingTrees v0.1.2
+  [6f1fad26] Libtask v0.5.1
+  [3ae2931a] Libtask_jll v0.4.2+0
+  [d3d80556] LineSearches v7.1.1
+  [6fdf6af0] LogDensityProblems v0.10.3
+  [e6f89c97] LoggingExtras v0.4.2
+  [c7f686f2] MCMCChains v4.4.0
+  [e80e1ace] MLJModelInterface v0.3.7
+  [1914dd2f] MacroTools v0.5.6
+  [dbb5928d] MappedArrays v0.3.0
+  [6fafb56a] Memoization v0.1.5
+  [128add7d] MicroCollections v0.1.0
+  [e1d29d7a] Missings v0.4.4
+  [46d2c3a1] MuladdMacro v0.2.2
+  [d41bc354] NLSolversBase v7.7.1
+  [872c559c] NNlib v0.7.11
+  [77ba4419] NaNMath v0.3.5
+  [86f7a689] NamedArrays v0.9.4
+  [c020b1a1] NaturalSort v1.0.0
+  [b8a86587] NearestNeighbors v0.4.8
+  [8913a72c] NonlinearSolve v0.3.4
+  [efe28fd5] OpenSpecFun_jll v0.5.3+4
+  [429524aa] Optim v1.2.2
+  [bac558e1] OrderedCollections v1.3.2
+  [90014a1f] PDMats v0.10.1
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.15
+  [2dfb63ee] PooledArrays v0.5.3
+  [85a6dd25] PositiveFactorizations v0.2.4
+  [08abe8d2] PrettyTables v0.10.1
+  [33c8b6b6] ProgressLogging v0.1.3
+  [92933f4c] ProgressMeter v1.4.1
+  [1fd47b50] QuadGK v2.4.1
+  [b3c3ace0] RangeArrays v0.3.2
+  [3cdcf5f2] RecipesBase v1.1.1
+  [731186ca] RecursiveArrayTools v2.10.0
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v1.1.2
+  [37e2e3b7] ReverseDiff v1.5.0
+  [708f8203] Richardson v1.4.0
+  [79098fc4] Rmath v0.6.1
+  [f50d1b31] Rmath_jll v0.2.2+1
+  [321657f4] ScientificTypes v1.1.1
+  [91c51154] SentinelArrays v1.2.16
+  [efcf1570] Setfield v0.7.0
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v1.2.1
+  [171d559e] SplittablesBase v0.1.10
+  [90137ffa] StaticArrays v1.0.1
+  [2913bbd2] StatsBase v0.33.2
+  [4c63d2b9] StatsFuns v0.9.6
+  [856f2bd8] StructTypes v1.2.1
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.2.2
+  [5d786b92] TerminalLoggers v0.1.2
+  [9f7883ad] Tracker v0.2.14
+  [28d57a85] Transducers v0.4.54
+  [84d833dd] TransformVariables v0.3.10
+  [fce5fe82] Turing v0.15.8
+  [3a884ed6] UnPack v1.0.2
+  [e88e6eb3] Zygote v0.6.0
+  [700de1a5] ZygoteRules v0.2.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Warning: Error requiring `ReverseDiff` from `DistributionsAD`
+│   exception =
+│    LoadError: could not open file /home/pkgeval/.julia/packages/DistributionsAD/NSpwv/src/reversediffx.jl
+│    Stacktrace:
+│     [1] include(::Function, ::Module, ::String) at ./Base.jl:380
+│     [2] include at ./Base.jl:368 [inlined]
+│     [3] include(::String) at ./reversediff.jl:1
+│     [4] top-level scope at reversediff.jl:52
+│     [5] include_string(::Function, ::Module, ::String, ::String) at ./loading.jl:1088
+│     [6] include_string(::Module, ::String, ::String) at ./loading.jl:1096
+│     [7] top-level scope at /home/pkgeval/.julia/packages/Requires/035xH/src/Requires.jl:38
+│     [8] top-level scope at /home/pkgeval/.julia/packages/DistributionsAD/NSpwv/src/DistributionsAD.jl:74
+│     [9] eval at ./boot.jl:331 [inlined]
+│     [10] eval at /home/pkgeval/.julia/packages/DistributionsAD/NSpwv/src/DistributionsAD.jl:1 [inlined]
+│     [11] (::DistributionsAD.var"#346#359")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:94
+│     [12] err(::Any, ::Module, ::String) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:42
+│     [13] (::DistributionsAD.var"#345#358")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:93
+│     [14] withpath(::Any, ::String) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:32
+│     [15] (::DistributionsAD.var"#344#357")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:92
+│     [16] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│     [17] invokelatest at ./essentials.jl:709 [inlined]
+│     [18] foreach at ./abstractarray.jl:2009 [inlined]
+│     [19] loadpkg(::Base.PkgId) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:22
+│     [20] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│     [21] invokelatest at ./essentials.jl:709 [inlined]
+│     [22] require(::Base.PkgId) at ./loading.jl:931
+│     [23] require(::Module, ::Symbol) at ./loading.jl:923
+│     [24] include(::String) at ./client.jl:457
+│     [25] top-level scope at none:6
+│     [26] eval(::Module, ::Any) at ./boot.jl:331
+│     [27] exec_options(::Base.JLOptions) at ./client.jl:272
+│     [28] _start() at ./client.jl:506
+│    in expression starting at reversediff.jl:52
+└ @ Requires /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:44
+[ Info: [Turing]: progress logging is disabled globally
+[ Info: [AdvancedVI]: global PROGRESS is set as false
+┌ Info: Found initial step size
+└   ϵ = 0.025
+┌ Info: Found initial step size
+└   ϵ = 0.05
+┌ Warning: The current proposal will be rejected due to numerical error(s).
+│   isfinite.((θ, r, ℓπ, ℓκ)) = (true, true, true, false)
+└ @ AdvancedHMC /home/pkgeval/.julia/packages/AdvancedHMC/MIxdK/src/hamiltonian.jl:47
+┌ Info: Found initial step size
+└   ϵ = 0.021875000000000002
+┌ Info: Found initial step size
+└   ϵ = 0.0125
+┌ Info: Found initial step size
+└   ϵ = 0.025
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1042585342031166)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.2059470624547017)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1348884719921575)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.164111835844871)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.0907789055490134)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1255560835592475)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.2152965394780906)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.0973413351776324)
+[ Info: [Turing]: global ADSAFE is set as true
+[ Info: (symbol = :z1, exact = 1.0, evaluated = 1.0913333333333333)
+[ Info: (symbol = :z2, exact = 1.0, evaluated = 1.0886666666666667)
+[ Info: (symbol = :z3, exact = 2.0, evaluated = 1.9053333333333333)
+[ Info: (symbol = :z4, exact = 2.0, evaluated = 1.9233333333333333)
+[ Info: (symbol = :mu1, exact = 1.0, evaluated = 1.1521672662157143)
+[ Info: (symbol = :mu2, exact = 4.0, evaluated = 3.8465183556279285)
+[ Info: [Turing]: global ADSAFE is set as false
+[ Info: (symbol = :z1, exact = 1.0, evaluated = 1.066)
+[ Info: (symbol = :z2, exact = 1.0, evaluated = 1.0766666666666667)
+[ Info: (symbol = :z3, exact = 2.0, evaluated = 1.9446666666666668)
+[ Info: (symbol = :z4, exact = 2.0, evaluated = 1.9406666666666668)
+[ Info: (symbol = :mu1, exact = 1.0, evaluated = 1.0897108436022218)
+[ Info: (symbol = :mu2, exact = 4.0, evaluated = 3.8573303832607198)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1507492380313187)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.041666666666669)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1666666666666605)
+[ Info: (symbol = :s, exact = 1.6333333333333335, evaluated = 1.6438030438492046)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.009732100884674)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1528171102341498)
+[ Info: (symbol = :p, exact = 0.7142857142857143, evaluated = 0.6665480784503524)
+[ Info: (symbol = "ps[1]", exact = 0.3125, evaluated = 0.3175557526986687)
+[ Info: (symbol = "ps[2]", exact = 0.6875, evaluated = 0.6824442473013322)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.0161572616386696)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.151443732010904)
+┌ Info: Found initial step size
+└   ϵ = 1.6
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.0730397995676304)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.194773131913657)
+┌ Info: Found initial step size
+└   ϵ = 1.8
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1058273854257044)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.0753316776100785)
+HMCDA{ForwardDiffAD{40},(),AdvancedHMC.UnitEuclideanMetric}(-1, 0.8, 0.75, 0.0)
+HMCDA{ForwardDiffAD{40},(),AdvancedHMC.UnitEuclideanMetric}(200, 0.8, 0.75, 0.0)
+HMCDA{ForwardDiffAD{40},(:s,),AdvancedHMC.UnitEuclideanMetric}(200, 0.8, 0.75, 0.0)
+┌ Info: Found initial step size
+└   ϵ = 1.6
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.0063647722604854)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.174104690234714)
+┌ Info: Found initial step size
+└   ϵ = 1.6
+┌ Info: Found initial step size
+└   ϵ = 0.4
+┌ Info: Found initial step size
+└   ϵ = 1.6
+┌ Info: Found initial step size
+└   ϵ = 3.2
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.026208485140398)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1590890896140291)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 1.9716361762591583)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1710500621059223)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.072198156319336)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.11108066146821)
+[ Info: (symbol = :z1, exact = 1.0, evaluated = 1.0594)
+[ Info: (symbol = :z2, exact = 1.0, evaluated = 1.0608)
+[ Info: (symbol = :z3, exact = 2.0, evaluated = 1.9388)
+[ Info: (symbol = :z4, exact = 2.0, evaluated = 1.9432)
+[ Info: (symbol = :mu1, exact = 1.0, evaluated = 1.0785325061543025)
+[ Info: (symbol = :mu2, exact = 4.0, evaluated = 3.9174968700593396)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 1.9556978714154167)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1702295917910068)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.018637269528937)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1851527052687947)
+[ Info: (symbol = :m, exact = 0.8, evaluated = 0.8071917957209604)
+[ Info: (symbol = "m[1]", exact = 0.0, evaluated = 0.012101637236617845)
+[ Info: (symbol = "m[2]", exact = 0.8, evaluated = 0.7977683305612436)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1085945170055056)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1220093740473789)
+[ Info: (symbol = :z1, exact = 1.0, evaluated = 1.0616666666666668)
+[ Info: (symbol = :z2, exact = 1.0, evaluated = 1.059)
+[ Info: (symbol = :z3, exact = 2.0, evaluated = 1.9446666666666668)
+[ Info: (symbol = :z4, exact = 2.0, evaluated = 1.9413333333333334)
+[ Info: (symbol = :mu1, exact = 1.0, evaluated = 1.0795172736706435)
+[ Info: (symbol = :mu2, exact = 4.0, evaluated = 3.9150337696168984)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.0742361786659536)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1541232775909886)
+┌ Warning: you are using the internal variable `_varinfo`
+└ @ DynamicPPL /home/pkgeval/.julia/packages/DynamicPPL/u14IH/src/compiler.jl:169
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.182505635311648)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1798087261991645)
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Info: Found initial step size
+└   ϵ = 0.9
+┌ Warning: The current proposal will be rejected due to numerical error(s).
+│   isfinite.((θ, r, ℓπ, ℓκ)) = (true, false, false, false)
+└ @ AdvancedHMC /home/pkgeval/.julia/packages/AdvancedHMC/MIxdK/src/hamiltonian.jl:47
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1086055591615205)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.191012272209897)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.0460479525216866)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1476623147964953)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1340405833404303)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.231077741803069)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.030238607268383)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1180802211453782)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1064851035851566)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1515908848568)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1693197781284375)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.0976511860056362)
+┌ Info: Found initial step size
+└   ϵ = 3.2
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 1.9463960660674462)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.0997244101088144)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 1.9792051481205828)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 0.9583523173250322)
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Error requiring `Optim` from `Turing`
+│   exception =
+│    LoadError: SystemError: opening file "/home/pkgeval/.julia/packages/Turing/O1Pn0/src/modes/ModeEstimation.jl": No such file or directory
+│    Stacktrace:
+│     [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+│     [2] #systemerror#48 at ./error.jl:167 [inlined]
+│     [3] systemerror at ./error.jl:167 [inlined]
+│     [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+│     [5] open at ./iostream.jl:273 [inlined]
+│     [6] open(::Base.var"#294#295"{Tuple{}}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+│     [7] open at ./io.jl:323 [inlined]
+│     [8] read(::String) at ./io.jl:408
+│     [9] @include(::LineNumberNode, ::Module, ::Any) at /home/pkgeval/.julia/packages/Requires/035xH/src/Requires.jl:28
+│     [10] eval(::Module, ::Any) at ./boot.jl:331
+│     [11] top-level scope at none:1
+│     [12] eval at ./boot.jl:331 [inlined]
+│     [13] eval at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/Turing.jl:1 [inlined]
+│     [14] (::Turing.var"#18#22")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:94
+│     [15] err(::Any, ::Module, ::String) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:42
+│     [16] (::Turing.var"#17#21")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:93
+│     [17] withpath(::Any, ::String) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:32
+│     [18] (::Turing.var"#16#20")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:92
+│     [19] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│     [20] invokelatest at ./essentials.jl:709 [inlined]
+│     [21] foreach at ./abstractarray.jl:2009 [inlined]
+│     [22] loadpkg(::Base.PkgId) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:22
+│     [23] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│     [24] invokelatest at ./essentials.jl:709 [inlined]
+│     [25] _tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::Nothing) at ./loading.jl:715
+│     [26] _require_from_serialized(::String) at ./loading.jl:744
+│     [27] _require(::Base.PkgId) at ./loading.jl:1040
+│     [28] require(::Base.PkgId) at ./loading.jl:928
+│     [29] require(::Module, ::Symbol) at ./loading.jl:923
+│     [30] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/contrib/inference/dynamichmc.jl:8
+│     [31] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+│     [32] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/contrib/inference/dynamichmc.jl:8
+│     [33] include(::String) at ./client.jl:457
+│     [34] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:33 [inlined]
+│     [35] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+│     [36] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:24 [inlined]
+│     [37] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+│     [38] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:23 [inlined]
+│     [39] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+│     [40] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+│     [41] include(::String) at ./client.jl:457
+│     [42] top-level scope at none:6
+│     [43] eval(::Module, ::Any) at ./boot.jl:331
+│     [44] exec_options(::Base.JLOptions) at ./client.jl:272
+│     [45] _start() at ./client.jl:506
+│    in expression starting at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/Turing.jl:70
+└ @ Requires /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:44
+┌ Warning: Error requiring `DynamicHMC` from `Turing`
+│   exception =
+│    LoadError: SystemError: opening file "/home/pkgeval/.julia/packages/Turing/O1Pn0/src/contrib/inference/dynamichmc.jl": No such file or directory
+│    Stacktrace:
+│     [1] systemerror(::String, ::Int32; extrainfo::Nothing) at ./error.jl:168
+│     [2] #systemerror#48 at ./error.jl:167 [inlined]
+│     [3] systemerror at ./error.jl:167 [inlined]
+│     [4] open(::String; lock::Bool, read::Nothing, write::Nothing, create::Nothing, truncate::Nothing, append::Nothing) at ./iostream.jl:284
+│     [5] open at ./iostream.jl:273 [inlined]
+│     [6] open(::Base.var"#294#295"{Tuple{}}, ::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:323
+│     [7] open at ./io.jl:323 [inlined]
+│     [8] read(::String) at ./io.jl:408
+│     [9] @include(::LineNumberNode, ::Module, ::Any) at /home/pkgeval/.julia/packages/Requires/035xH/src/Requires.jl:28
+│     [10] eval(::Module, ::Any) at ./boot.jl:331
+│     [11] top-level scope at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/Turing.jl:59
+│     [12] eval at ./boot.jl:331 [inlined]
+│     [13] eval at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/Turing.jl:1 [inlined]
+│     [14] (::Turing.var"#10#14")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:94
+│     [15] err(::Any, ::Module, ::String) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:42
+│     [16] (::Turing.var"#9#13")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:93
+│     [17] withpath(::Any, ::String) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:32
+│     [18] (::Turing.var"#8#12")() at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:92
+│     [19] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│     [20] invokelatest at ./essentials.jl:709 [inlined]
+│     [21] foreach at ./abstractarray.jl:2009 [inlined]
+│     [22] loadpkg(::Base.PkgId) at /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:22
+│     [23] #invokelatest#1 at ./essentials.jl:710 [inlined]
+│     [24] invokelatest at ./essentials.jl:709 [inlined]
+│     [25] require(::Base.PkgId) at ./loading.jl:931
+│     [26] require(::Module, ::Symbol) at ./loading.jl:923
+│     [27] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/contrib/inference/dynamichmc.jl:8
+│     [28] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+│     [29] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/contrib/inference/dynamichmc.jl:8
+│     [30] include(::String) at ./client.jl:457
+│     [31] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:33 [inlined]
+│     [32] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+│     [33] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:24 [inlined]
+│     [34] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+│     [35] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:23 [inlined]
+│     [36] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+│     [37] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+│     [38] include(::String) at ./client.jl:457
+│     [39] top-level scope at none:6
+│     [40] eval(::Module, ::Any) at ./boot.jl:331
+│     [41] exec_options(::Base.JLOptions) at ./client.jl:272
+│     [42] _start() at ./client.jl:506
+│    in expression starting at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/Turing.jl:58
+└ @ Requires /home/pkgeval/.julia/packages/Requires/035xH/src/require.jl:44
+dynamichmc.jl: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/contrib/inference/dynamichmc.jl:11
+  Test threw exception
+  Expression: DynamicPPL.alg_str(Sampler(DynamicNUTS(), gdemo_default)) == "DynamicNUTS"
+  UndefVarError: DynamicNUTS not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/contrib/inference/dynamichmc.jl:11
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/contrib/inference/dynamichmc.jl:8
+  
+dynamichmc.jl: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/test_utils/staging.jl:42
+  Got exception outside of a @test
+  UndefVarError: DynamicNUTS not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/contrib/inference/dynamichmc.jl:13
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/contrib/inference/dynamichmc.jl:8
+   [4] include(::String) at ./client.jl:457
+   [5] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:33 [inlined]
+   [6] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [7] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:24 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:23 [inlined]
+   [10] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.032059538122104)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.132319079659294)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 1.8431201827231518)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.0612641295161451)
+┌ Info: [ADVI] Should only be seen once: optimizer created for θ
+└   objectid(θ) = 0x88134892109d4d0b
+┌ Info: [ADVI] Should only be seen once: optimizer created for θ
+└   objectid(θ) = 0xafb1ecf7d94f9bd6
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 1.9243505766564128)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.131006257978716)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 1.986925576092688)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.222200541230073)
+┌ Info: [ADVI] Should only be seen once: optimizer created for θ
+└   objectid(θ) = 0x5491f39320aadace
+┌ Info: [ADVI] Should only be seen once: optimizer created for θ
+└   objectid(θ) = 0x853a797eed8f54e1
+MLE: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:15
+  Got exception outside of a @test
+  UndefVarError: MLE not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:19
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:16
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:15
+   [6] include(::String) at ./client.jl:457
+   [7] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [10] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+MAP: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:30
+  Got exception outside of a @test
+  UndefVarError: MAP not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:34
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:31
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:15
+   [6] include(::String) at ./client.jl:457
+   [7] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [10] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+StatsBase integration: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:45
+  Got exception outside of a @test
+  UndefVarError: MLE not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:47
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:46
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:15
+   [6] include(::String) at ./client.jl:457
+   [7] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [10] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+Linear regression test: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:69
+  Got exception outside of a @test
+  UndefVarError: MLE not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:82
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:70
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:15
+   [6] include(::String) at ./client.jl:457
+   [7] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [10] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+Dot tilde test: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:91
+  Got exception outside of a @test
+  UndefVarError: MLE not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:101
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:92
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:15
+   [6] include(::String) at ./client.jl:457
+   [7] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [10] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1042585342031166)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.2059470624547017)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1348884719921575)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.164111835844871)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.0907789055490134)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1255560835592475)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.2152965394780906)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.0973413351776324)
+[ Info: [Turing]: global ADSAFE is set as true
+[ Info: (symbol = :z1, exact = 1.0, evaluated = 1.0913333333333333)
+[ Info: (symbol = :z2, exact = 1.0, evaluated = 1.0886666666666667)
+[ Info: (symbol = :z3, exact = 2.0, evaluated = 1.9053333333333333)
+[ Info: (symbol = :z4, exact = 2.0, evaluated = 1.9233333333333333)
+[ Info: (symbol = :mu1, exact = 1.0, evaluated = 1.1521672662157143)
+[ Info: (symbol = :mu2, exact = 4.0, evaluated = 3.8465183556279285)
+[ Info: [Turing]: global ADSAFE is set as false
+[ Info: (symbol = :z1, exact = 1.0, evaluated = 1.066)
+[ Info: (symbol = :z2, exact = 1.0, evaluated = 1.0766666666666667)
+[ Info: (symbol = :z3, exact = 2.0, evaluated = 1.9446666666666668)
+[ Info: (symbol = :z4, exact = 2.0, evaluated = 1.9406666666666668)
+[ Info: (symbol = :mu1, exact = 1.0, evaluated = 1.0897108436022218)
+[ Info: (symbol = :mu2, exact = 4.0, evaluated = 3.8573303832607198)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1507492380313187)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.041666666666669)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1666666666666605)
+[ Info: (symbol = :s, exact = 1.6333333333333335, evaluated = 1.6438030438492046)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.009732100884674)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1528171102341498)
+[ Info: (symbol = :p, exact = 0.7142857142857143, evaluated = 0.7290275860607116)
+[ Info: (symbol = "ps[1]", exact = 0.3125, evaluated = 0.31755575269866854)
+[ Info: (symbol = "ps[2]", exact = 0.6875, evaluated = 0.6824442473013326)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.0161572616386696)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.151443732010904)
+┌ Info: Found initial step size
+└   ϵ = 1.6
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.0730391723513146)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1947731970380795)
+┌ Info: Found initial step size
+└   ϵ = 1.8
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1058273854257044)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.0753316776100785)
+HMCDA{TrackerAD,(),AdvancedHMC.UnitEuclideanMetric}(-1, 0.8, 0.75, 0.0)
+HMCDA{TrackerAD,(),AdvancedHMC.UnitEuclideanMetric}(200, 0.8, 0.75, 0.0)
+HMCDA{TrackerAD,(:s,),AdvancedHMC.UnitEuclideanMetric}(200, 0.8, 0.75, 0.0)
+┌ Info: Found initial step size
+└   ϵ = 1.6
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.0586503569992316)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.170892691892918)
+┌ Info: Found initial step size
+└   ϵ = 1.6
+┌ Info: Found initial step size
+└   ϵ = 0.4
+┌ Info: Found initial step size
+└   ϵ = 1.6
+┌ Info: Found initial step size
+└   ϵ = 3.2
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.026208485140398)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1590890896140291)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 1.9716361762591583)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1710500621059223)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.072198156319336)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.11108066146821)
+[ Info: (symbol = :z1, exact = 1.0, evaluated = 1.0594)
+[ Info: (symbol = :z2, exact = 1.0, evaluated = 1.0608)
+[ Info: (symbol = :z3, exact = 2.0, evaluated = 1.9388)
+[ Info: (symbol = :z4, exact = 2.0, evaluated = 1.9432)
+[ Info: (symbol = :mu1, exact = 1.0, evaluated = 1.0785325061543025)
+[ Info: (symbol = :mu2, exact = 4.0, evaluated = 3.9174968700593396)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 1.9556978714154167)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1702295917910068)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.018637269528937)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1851527052687947)
+[ Info: (symbol = :m, exact = 0.8, evaluated = 0.8071917957209604)
+[ Info: (symbol = "m[1]", exact = 0.0, evaluated = 0.012101637236617845)
+[ Info: (symbol = "m[2]", exact = 0.8, evaluated = 0.7977683305612436)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1085945170055056)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1220093740473789)
+[ Info: (symbol = :z1, exact = 1.0, evaluated = 1.0616666666666668)
+[ Info: (symbol = :z2, exact = 1.0, evaluated = 1.059)
+[ Info: (symbol = :z3, exact = 2.0, evaluated = 1.9446666666666668)
+[ Info: (symbol = :z4, exact = 2.0, evaluated = 1.9413333333333334)
+[ Info: (symbol = :mu1, exact = 1.0, evaluated = 1.0795172736706435)
+[ Info: (symbol = :mu2, exact = 4.0, evaluated = 3.9150337696168984)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.0742361786659536)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1541232775909886)
+┌ Warning: you are using the internal variable `_varinfo`
+└ @ DynamicPPL /home/pkgeval/.julia/packages/DynamicPPL/u14IH/src/compiler.jl:169
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1825056353116468)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1798087261991645)
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Info: Found initial step size
+└   ϵ = 0.9
+┌ Warning: The current proposal will be rejected due to numerical error(s).
+│   isfinite.((θ, r, ℓπ, ℓκ)) = (true, false, false, false)
+└ @ AdvancedHMC /home/pkgeval/.julia/packages/AdvancedHMC/MIxdK/src/hamiltonian.jl:47
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1088686491043127)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1928497423257234)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.0513732429105227)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1622404032097258)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1322816100488495)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.2289338966581855)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.0220496724935804)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1159703503177927)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1064851035851566)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1515908848568)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1693197781284375)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.0976511860056362)
+┌ Info: Found initial step size
+└   ϵ = 3.2
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 1.9463960660674462)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.0997244101088144)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 1.9792051481205828)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 0.9583523173250322)
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+dynamichmc.jl: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/contrib/inference/dynamichmc.jl:11
+  Test threw exception
+  Expression: DynamicPPL.alg_str(Sampler(DynamicNUTS(), gdemo_default)) == "DynamicNUTS"
+  UndefVarError: DynamicNUTS not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/contrib/inference/dynamichmc.jl:11
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/contrib/inference/dynamichmc.jl:8
+  
+dynamichmc.jl: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/test_utils/staging.jl:42
+  Got exception outside of a @test
+  UndefVarError: DynamicNUTS not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/contrib/inference/dynamichmc.jl:13
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/contrib/inference/dynamichmc.jl:8
+   [4] include(::String) at ./client.jl:457
+   [5] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:33 [inlined]
+   [6] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [7] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:24 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:23 [inlined]
+   [10] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.0320595381221036)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.132319079659294)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 1.8431201827231518)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.0612641295161451)
+┌ Info: [ADVI] Should only be seen once: optimizer created for θ
+└   objectid(θ) = 0xf34fd883b6885cad
+┌ Info: [ADVI] Should only be seen once: optimizer created for θ
+└   objectid(θ) = 0x72000684302188c1
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 1.9243505766564128)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.131006257978716)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 1.986925576092688)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.2222005412300732)
+┌ Info: [ADVI] Should only be seen once: optimizer created for θ
+└   objectid(θ) = 0x01386a367a5929b2
+┌ Info: [ADVI] Should only be seen once: optimizer created for θ
+└   objectid(θ) = 0x3289a80915e7b454
+MLE: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:15
+  Got exception outside of a @test
+  UndefVarError: MLE not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:19
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:16
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:15
+   [6] include(::String) at ./client.jl:457
+   [7] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [10] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+MAP: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:30
+  Got exception outside of a @test
+  UndefVarError: MAP not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:34
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:31
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:15
+   [6] include(::String) at ./client.jl:457
+   [7] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [10] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+StatsBase integration: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:45
+  Got exception outside of a @test
+  UndefVarError: MLE not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:47
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:46
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:15
+   [6] include(::String) at ./client.jl:457
+   [7] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [10] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+Linear regression test: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:69
+  Got exception outside of a @test
+  UndefVarError: MLE not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:82
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:70
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:15
+   [6] include(::String) at ./client.jl:457
+   [7] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [10] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+Dot tilde test: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:91
+  Got exception outside of a @test
+  UndefVarError: MLE not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:101
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:92
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:15
+   [6] include(::String) at ./client.jl:457
+   [7] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [10] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1042585342031166)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.2059470624547017)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1348884719921575)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1641118358448712)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.0907789055490134)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1255560835592475)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.2152965394780906)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.0973413351776324)
+[ Info: [Turing]: global ADSAFE is set as true
+[ Info: (symbol = :z1, exact = 1.0, evaluated = 1.0913333333333333)
+[ Info: (symbol = :z2, exact = 1.0, evaluated = 1.0886666666666667)
+[ Info: (symbol = :z3, exact = 2.0, evaluated = 1.9053333333333333)
+[ Info: (symbol = :z4, exact = 2.0, evaluated = 1.9233333333333333)
+[ Info: (symbol = :mu1, exact = 1.0, evaluated = 1.1521672662157143)
+[ Info: (symbol = :mu2, exact = 4.0, evaluated = 3.8465183556279285)
+[ Info: [Turing]: global ADSAFE is set as false
+[ Info: (symbol = :z1, exact = 1.0, evaluated = 1.066)
+[ Info: (symbol = :z2, exact = 1.0, evaluated = 1.0766666666666667)
+[ Info: (symbol = :z3, exact = 2.0, evaluated = 1.9446666666666668)
+[ Info: (symbol = :z4, exact = 2.0, evaluated = 1.9406666666666668)
+[ Info: (symbol = :mu1, exact = 1.0, evaluated = 1.0897108436022218)
+[ Info: (symbol = :mu2, exact = 4.0, evaluated = 3.8573303832607198)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1507492380313187)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.041666666666669)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1666666666666605)
+[ Info: (symbol = :s, exact = 1.6333333333333335, evaluated = 1.6438030438492046)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.009732100884674)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1528171102341498)
+[ Info: (symbol = :p, exact = 0.7142857142857143, evaluated = 0.7083841660396129)
+[ Info: (symbol = "ps[1]", exact = 0.3125, evaluated = 0.31755575269866854)
+[ Info: (symbol = "ps[2]", exact = 0.6875, evaluated = 0.6824442473013322)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.016157261638669)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.151443732010904)
+matrix support: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/test_utils/staging.jl:42
+  Got exception outside of a @test
+  MethodError: no method matching cholesky(::ReverseDiff.TrackedArray{Float64,Float64,2,Array{Float64,2},Array{Float64,2}}; check=false)
+  Closest candidates are:
+    cholesky(!Matched::Union{Hermitian{Complex{T},SparseArrays.SparseMatrixCSC{Complex{T},Int64}}, Hermitian{T,SparseArrays.SparseMatrixCSC{T,Int64}}, Symmetric{T,SparseArrays.SparseMatrixCSC{T,Int64}}, SparseArrays.SparseMatrixCSC{T,Ti} where Ti<:Integer, SparseArrays.SparseMatrixCSC{Complex{T},Ti} where Ti<:Integer}; kws...) where T<:Real at /workspace/srcdir/usr/share/julia/stdlib/v1.5/SuiteSparse/src/cholmod.jl:1458
+    cholesky(!Matched::Union{StridedArray{T, 2} where T, Union{Hermitian{var"#s823",var"#s822"}, Hermitian{Complex{var"#s823"},var"#s822"}, Symmetric{var"#s823",var"#s822"}} where var"#s822"<:(StridedArray{T, 2} where T) where var"#s823"<:Real}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/LinearAlgebra/src/cholesky.jl:344 got unsupported keyword argument "check"
+    cholesky(!Matched::Union{StridedArray{T, 2} where T, Union{Hermitian{var"#s821",var"#s820"}, Hermitian{Complex{var"#s821"},var"#s820"}, Symmetric{var"#s821",var"#s820"}} where var"#s820"<:(StridedArray{T, 2} where T) where var"#s821"<:Real}, !Matched::Val{false}; check) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/LinearAlgebra/src/cholesky.jl:344
+    ...
+  Stacktrace:
+   [1] pd_logpdf_with_trans(::Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64}, ::ReverseDiff.TrackedArray{Float64,Float64,2,Array{Float64,2},Array{Float64,2}}, ::Bool) at /home/pkgeval/.julia/packages/Bijectors/0PJJc/src/Bijectors.jl:218
+   [2] logpdf_with_trans(::Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64}, ::ReverseDiff.TrackedArray{Float64,Float64,2,Array{Float64,2},Array{Float64,2}}, ::Bool) at /home/pkgeval/.julia/packages/Bijectors/0PJJc/src/Bijectors.jl:123
+   [3] assume(::Random._GLOBAL_RNG, ::Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}}, ::Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64}, ::DynamicPPL.VarName{:v,Tuple{}}, ::DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},Array{Set{DynamicPPL.Selector},1}}}},ReverseDiff.TrackedReal{Float64,Float64,ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}}) at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/inference/hmc.jl:524
+   [4] _tilde(::Random._GLOBAL_RNG, ::Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}}, ::Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64}, ::DynamicPPL.VarName{:v,Tuple{}}, ::DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},Array{Set{DynamicPPL.Selector},1}}}},ReverseDiff.TrackedReal{Float64,Float64,ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}}) at /home/pkgeval/.julia/packages/DynamicPPL/u14IH/src/context_implementations.jl:59
+   [5] tilde(::Random._GLOBAL_RNG, ::DynamicPPL.DefaultContext, ::Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}}, ::Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64}, ::DynamicPPL.VarName{:v,Tuple{}}, ::Tuple{}, ::DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},Array{Set{DynamicPPL.Selector},1}}}},ReverseDiff.TrackedReal{Float64,Float64,ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}}) at /home/pkgeval/.julia/packages/DynamicPPL/u14IH/src/context_implementations.jl:23
+   [6] tilde_assume(::Random._GLOBAL_RNG, ::DynamicPPL.DefaultContext, ::Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}}, ::Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64}, ::DynamicPPL.VarName{:v,Tuple{}}, ::Tuple{}, ::DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},Array{Set{DynamicPPL.Selector},1}}}},ReverseDiff.TrackedReal{Float64,Float64,ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}}) at /home/pkgeval/.julia/packages/DynamicPPL/u14IH/src/context_implementations.jl:52
+   [7] (::var"#1130#1145")(::Random._GLOBAL_RNG, ::DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}}, ::DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},Array{Set{DynamicPPL.Selector},1}}}},ReverseDiff.TrackedReal{Float64,Float64,ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}}, ::Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}}, ::DynamicPPL.DefaultContext) at ./none:0
+   [8] macro expansion at /home/pkgeval/.julia/packages/DynamicPPL/u14IH/src/model.jl:0 [inlined]
+   [9] _evaluate(::Random._GLOBAL_RNG, ::DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}}, ::DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},Array{Set{DynamicPPL.Selector},1}}}},ReverseDiff.TrackedReal{Float64,Float64,ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}}, ::Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}}, ::DynamicPPL.DefaultContext) at /home/pkgeval/.julia/packages/DynamicPPL/u14IH/src/model.jl:154
+   [10] evaluate_threadunsafe(::Random._GLOBAL_RNG, ::DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}}, ::DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},Array{Set{DynamicPPL.Selector},1}}}},ReverseDiff.TrackedReal{Float64,Float64,ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}}, ::Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}}, ::DynamicPPL.DefaultContext) at /home/pkgeval/.julia/packages/DynamicPPL/u14IH/src/model.jl:127
+   [11] (::DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}})(::Random._GLOBAL_RNG, ::DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},Array{Set{DynamicPPL.Selector},1}}}},ReverseDiff.TrackedReal{Float64,Float64,ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}}, ::Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}}, ::DynamicPPL.DefaultContext) at /home/pkgeval/.julia/packages/DynamicPPL/u14IH/src/model.jl:92
+   [12] (::DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}})(::DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},Array{Set{DynamicPPL.Selector},1}}}},ReverseDiff.TrackedReal{Float64,Float64,ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}}, ::Vararg{Any,N} where N) at /home/pkgeval/.julia/packages/DynamicPPL/u14IH/src/model.jl:98
+   [13] (::Turing.Core.var"#f#18"{DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64},DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}},Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}},DynamicPPL.DefaultContext})(::ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}) at ./compat/reversediff.jl:30
+   [14] ReverseDiff.GradientTape(::Turing.Core.var"#f#18"{DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64},DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}},Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}},DynamicPPL.DefaultContext}, ::Array{Float64,1}, ::ReverseDiff.GradientConfig{ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}) at /home/user/.julia/packages/ReverseDiff/vScHI/src/api/tape.jl:199
+   [15] ReverseDiff.GradientTape(::Function, ::Array{Float64,1}) at /home/user/.julia/packages/ReverseDiff/vScHI/src/api/tape.jl:198
+   [16] tape at ./compat/reversediff.jl:41 [inlined]
+   [17] taperesult(::Function, ::Array{Float64,1}) at ./compat/reversediff.jl:43
+   [18] gradient_logp(::Turing.Core.ReverseDiffAD{false}, ::Array{Float64,1}, ::DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64}, ::DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}}, ::Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}}, ::DynamicPPL.DefaultContext) at ./compat/reversediff.jl:33
+   [19] gradient_logp(::Array{Float64,1}, ::DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64}, ::DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}}, ::Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}}, ::DynamicPPL.DefaultContext) at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/core/ad.jl:83 (repeats 2 times)
+   [20] (::Turing.Inference.var"#∂logπ∂θ#51"{DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64},Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}},DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}}})(::Array{Float64,1}) at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/inference/hmc.jl:477
+   [21] ∂H∂θ(::AdvancedHMC.Hamiltonian{AdvancedHMC.UnitEuclideanMetric{Float64,Tuple{Int64}},Turing.Inference.var"#logπ#52"{DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64},Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}},DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}}},Turing.Inference.var"#∂logπ∂θ#51"{DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64},Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}},DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}}}}, ::Array{Float64,1}) at /home/pkgeval/.julia/packages/AdvancedHMC/MIxdK/src/hamiltonian.jl:31
+   [22] phasepoint(::AdvancedHMC.Hamiltonian{AdvancedHMC.UnitEuclideanMetric{Float64,Tuple{Int64}},Turing.Inference.var"#logπ#52"{DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64},Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}},DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}}},Turing.Inference.var"#∂logπ∂θ#51"{DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64},Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}},DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}}}}, ::Array{Float64,1}, ::Array{Float64,1}) at /home/pkgeval/.julia/packages/AdvancedHMC/MIxdK/src/hamiltonian.jl:69
+   [23] phasepoint(::Random._GLOBAL_RNG, ::Array{Float64,1}, ::AdvancedHMC.Hamiltonian{AdvancedHMC.UnitEuclideanMetric{Float64,Tuple{Int64}},Turing.Inference.var"#logπ#52"{DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64},Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}},DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}}},Turing.Inference.var"#∂logπ∂θ#51"{DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64},Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}},DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}}}}) at /home/pkgeval/.julia/packages/AdvancedHMC/MIxdK/src/hamiltonian.jl:139
+   [24] initialstep(::Random._GLOBAL_RNG, ::DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}}, ::Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}}, ::DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64}; init_params::Nothing, nadapts::Int64, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/inference/hmc.jl:174
+   [25] initialstep(::Random._GLOBAL_RNG, ::DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}}, ::Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}}, ::DynamicPPL.VarInfo{NamedTuple{(:v,),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:v,Tuple{}},Int64},Array{Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64},1},Array{DynamicPPL.VarName{:v,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64}) at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/inference/hmc.jl:160
+   [26] step(::Random._GLOBAL_RNG, ::DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}}, ::Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}}; resume_from::Nothing, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/DynamicPPL/u14IH/src/sampler.jl:83
+   [27] step at /home/pkgeval/.julia/packages/DynamicPPL/u14IH/src/sampler.jl:66 [inlined]
+   [28] macro expansion at /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:78 [inlined]
+   [29] macro expansion at /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/logging.jl:15 [inlined]
+   [30] mcmcsample(::Random._GLOBAL_RNG, ::DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}}, ::Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}}, ::Int64; progress::Bool, progressname::String, callback::Nothing, discard_initial::Int64, thinning::Int64, chain_type::Type{T} where T, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:76
+   [31] sample(::Random._GLOBAL_RNG, ::DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}}, ::Sampler{HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}}, ::Int64; chain_type::Type{T} where T, resume_from::Nothing, progress::Bool, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/inference/Inference.jl:157
+   [32] sample at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/inference/Inference.jl:156 [inlined]
+   [33] #sample#2 at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/inference/Inference.jl:143 [inlined]
+   [34] sample at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/inference/Inference.jl:143 [inlined]
+   [35] #sample#1 at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/inference/Inference.jl:133 [inlined]
+   [36] sample(::DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}}, ::HMC{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}, ::Int64) at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/inference/Inference.jl:133
+   [37] (::var"#1131#1146"{DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}},Int64})(::Int64) at /home/user/.julia/packages/Turing/O1Pn0/test/inference/hmc.jl:66
+   [38] iterate at ./generator.jl:47 [inlined]
+   [39] _collect(::UnitRange{Int64}, ::Base.Generator{UnitRange{Int64},var"#1131#1146"{DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}},Int64}}, ::Base.EltypeUnknown, ::Base.HasShape{1}) at ./array.jl:699
+   [40] collect_similar(::UnitRange{Int64}, ::Base.Generator{UnitRange{Int64},var"#1131#1146"{DynamicPPL.Model{var"#1130#1145",(),(),(),Tuple{},Tuple{}},Int64}}) at ./array.jl:628
+   [41] map(::Function, ::UnitRange{Int64}) at ./abstractarray.jl:2162
+   [42] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/inference/hmc.jl:65
+   [43] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [44] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/inference/hmc.jl:59
+   [45] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [46] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/inference/hmc.jl:12
+   [47] include(::String) at ./client.jl:457
+   [48] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:26 [inlined]
+   [49] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [50] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:24 [inlined]
+   [51] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [52] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:23 [inlined]
+   [53] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [54] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [55] include(::String) at ./client.jl:457
+   [56] top-level scope at none:6
+   [57] eval(::Module, ::Any) at ./boot.jl:331
+   [58] exec_options(::Base.JLOptions) at ./client.jl:272
+  
+┌ Info: Found initial step size
+└   ϵ = 1.6
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.073046715862339)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1947724138323106)
+┌ Info: Found initial step size
+└   ϵ = 1.8
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1058273854257044)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.0753316736197078)
+HMCDA{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}(-1, 0.8, 0.75, 0.0)
+HMCDA{Turing.Core.ReverseDiffAD{false},(),AdvancedHMC.UnitEuclideanMetric}(200, 0.8, 0.75, 0.0)
+HMCDA{Turing.Core.ReverseDiffAD{false},(:s,),AdvancedHMC.UnitEuclideanMetric}(200, 0.8, 0.75, 0.0)
+┌ Info: Found initial step size
+└   ϵ = 1.6
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1102664884069013)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1813462345406955)
+┌ Info: Found initial step size
+└   ϵ = 1.6
+┌ Info: Found initial step size
+└   ϵ = 0.4
+┌ Info: Found initial step size
+└   ϵ = 1.6
+┌ Info: Found initial step size
+└   ϵ = 3.2
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.026208485140398)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1590890896140291)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 1.9716361762591583)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1710500621059223)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.072198156319336)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.11108066146821)
+[ Info: (symbol = :z1, exact = 1.0, evaluated = 1.0594)
+[ Info: (symbol = :z2, exact = 1.0, evaluated = 1.0608)
+[ Info: (symbol = :z3, exact = 2.0, evaluated = 1.9388)
+[ Info: (symbol = :z4, exact = 2.0, evaluated = 1.9432)
+[ Info: (symbol = :mu1, exact = 1.0, evaluated = 1.0785325061543025)
+[ Info: (symbol = :mu2, exact = 4.0, evaluated = 3.9174968700593396)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 1.9556978714154167)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1702295917910068)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.018637269528937)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1851527052687947)
+[ Info: (symbol = :m, exact = 0.8, evaluated = 0.8071917957209604)
+[ Info: (symbol = "m[1]", exact = 0.0, evaluated = 0.012101637236617845)
+[ Info: (symbol = "m[2]", exact = 0.8, evaluated = 0.7977683305612436)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1085945170055056)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1220093740473789)
+[ Info: (symbol = :z1, exact = 1.0, evaluated = 1.0616666666666668)
+[ Info: (symbol = :z2, exact = 1.0, evaluated = 1.059)
+[ Info: (symbol = :z3, exact = 2.0, evaluated = 1.9446666666666668)
+[ Info: (symbol = :z4, exact = 2.0, evaluated = 1.9413333333333334)
+[ Info: (symbol = :mu1, exact = 1.0, evaluated = 1.0795172736706435)
+[ Info: (symbol = :mu2, exact = 4.0, evaluated = 3.9150337696168984)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.0742361786659536)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1541232775909886)
+┌ Warning: you are using the internal variable `_varinfo`
+└ @ DynamicPPL /home/pkgeval/.julia/packages/DynamicPPL/u14IH/src/compiler.jl:169
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1825056353116468)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1798087261991645)
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Info: Found initial step size
+└   ϵ = 0.9
+┌ Warning: The current proposal will be rejected due to numerical error(s).
+│   isfinite.((θ, r, ℓπ, ℓκ)) = (true, false, false, false)
+└ @ AdvancedHMC /home/pkgeval/.julia/packages/AdvancedHMC/MIxdK/src/hamiltonian.jl:47
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.08670540825909)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.17780599140148)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.0105820025406342)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1414414367644632)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1116713066583324)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.2365416410059271)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 1.9900024646351107)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1204841135822314)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1064851035851566)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.1515908848568)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.1693197781284375)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.0976511860056362)
+┌ Info: Found initial step size
+└   ϵ = 3.2
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 1.9240918351540781)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.0655119896751915)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.076934960088825)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.0086680944608906)
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+dynamichmc.jl: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/contrib/inference/dynamichmc.jl:11
+  Test threw exception
+  Expression: DynamicPPL.alg_str(Sampler(DynamicNUTS(), gdemo_default)) == "DynamicNUTS"
+  UndefVarError: DynamicNUTS not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/contrib/inference/dynamichmc.jl:11
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/contrib/inference/dynamichmc.jl:8
+  
+dynamichmc.jl: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/test_utils/staging.jl:42
+  Got exception outside of a @test
+  UndefVarError: DynamicNUTS not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/contrib/inference/dynamichmc.jl:13
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/contrib/inference/dynamichmc.jl:8
+   [4] include(::String) at ./client.jl:457
+   [5] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:33 [inlined]
+   [6] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [7] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:24 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:23 [inlined]
+   [10] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 2.0320595381221036)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.132319079659294)
+[ Info: (symbol = :s, exact = 2.0416666666666665, evaluated = 1.8431201827231518)
+[ Info: (symbol = :m, exact = 1.1666666666666667, evaluated = 1.0612641295161451)
+┌ Info: [ADVI] Should only be seen once: optimizer created for θ
+└   objectid(θ) = 0xbbf92e3c5fbaac6b
+advi constructor: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/test_utils/staging.jl:42
+  Got exception outside of a @test
+  MethodError: no method matching randn(::Random._GLOBAL_RNG, ::Type{ReverseDiff.TrackedReal{Float64,Float64,ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}})
+  Closest candidates are:
+    randn(::AbstractRNG, ::Type{T}, !Matched::Tuple{Vararg{Int64,N}} where N) where T at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Random/src/normal.jl:201
+    randn(::AbstractRNG, ::Type{T}, !Matched::Integer, !Matched::Integer...) where T at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Random/src/normal.jl:204
+    randn(::AbstractRNG) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Random/src/normal.jl:38
+    ...
+  Stacktrace:
+   [1] randn!(::Random._GLOBAL_RNG, ::Array{ReverseDiff.TrackedReal{Float64,Float64,ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}},1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Random/src/normal.jl:178
+   [2] randn at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Random/src/normal.jl:204 [inlined]
+   [3] adapt_randn at /home/pkgeval/.julia/packages/DistributionsAD/NSpwv/src/common.jl:36 [inlined]
+   [4] rand(::Random._GLOBAL_RNG, ::TuringDiagMvNormal{ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}) at /home/pkgeval/.julia/packages/DistributionsAD/NSpwv/src/multivariate.jl:121
+   [5] forward(::Random._GLOBAL_RNG, ::Bijectors.TransformedDistribution{TuringDiagMvNormal{ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate}) at /home/pkgeval/.julia/packages/Bijectors/0PJJc/src/transformed_distribution.jl:241
+   [6] (::AdvancedVI.ELBO)(::Random._GLOBAL_RNG, ::ADVI{AdvancedVI.ReverseDiffAD{false}}, ::Bijectors.TransformedDistribution{TuringDiagMvNormal{ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate}, ::Turing.Variational.var"#logπ#2"{DynamicPPL.Model{var"#1433#1434",(),(),(),Tuple{},Tuple{}},DynamicPPL.VarInfo{NamedTuple{(:s, :m),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:s,Tuple{}},Int64},Array{InverseGamma{Float64},1},Array{DynamicPPL.VarName{:s,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}},DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:m,Tuple{}},Int64},Array{Normal{Float64},1},Array{DynamicPPL.VarName{:m,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64}}, ::Int64) at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/advi.jl:85
+   [7] #_#21 at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/objectives.jl:6 [inlined]
+   [8] ELBO at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/objectives.jl:6 [inlined]
+   [9] (::AdvancedVI.var"#f#27"{AdvancedVI.ELBO,ADVI{AdvancedVI.ReverseDiffAD{false}},Bijectors.TransformedDistribution{TuringDiagMvNormal{Array{Float64,1},Array{Float64,1}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate},Turing.Variational.var"#logπ#2"{DynamicPPL.Model{var"#1433#1434",(),(),(),Tuple{},Tuple{}},DynamicPPL.VarInfo{NamedTuple{(:s, :m),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:s,Tuple{}},Int64},Array{InverseGamma{Float64},1},Array{DynamicPPL.VarName{:s,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}},DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:m,Tuple{}},Int64},Array{Normal{Float64},1},Array{DynamicPPL.VarName{:m,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64}},Tuple{Int64}})(::ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}) at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/AdvancedVI.jl:69
+   [10] ReverseDiff.GradientTape(::AdvancedVI.var"#f#27"{AdvancedVI.ELBO,ADVI{AdvancedVI.ReverseDiffAD{false}},Bijectors.TransformedDistribution{TuringDiagMvNormal{Array{Float64,1},Array{Float64,1}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate},Turing.Variational.var"#logπ#2"{DynamicPPL.Model{var"#1433#1434",(),(),(),Tuple{},Tuple{}},DynamicPPL.VarInfo{NamedTuple{(:s, :m),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:s,Tuple{}},Int64},Array{InverseGamma{Float64},1},Array{DynamicPPL.VarName{:s,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}},DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:m,Tuple{}},Int64},Array{Normal{Float64},1},Array{DynamicPPL.VarName{:m,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64}},Tuple{Int64}}, ::Array{Float64,1}, ::ReverseDiff.GradientConfig{ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}) at /home/user/.julia/packages/ReverseDiff/vScHI/src/api/tape.jl:199
+   [11] ReverseDiff.GradientTape(::Function, ::Array{Float64,1}) at /home/user/.julia/packages/ReverseDiff/vScHI/src/api/tape.jl:198
+   [12] tape at ./compat/reversediff.jl:13 [inlined]
+   [13] grad!(::AdvancedVI.ELBO, ::ADVI{AdvancedVI.ReverseDiffAD{false}}, ::Bijectors.TransformedDistribution{TuringDiagMvNormal{Array{Float64,1},Array{Float64,1}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate}, ::Function, ::Array{Float64,1}, ::DiffResults.MutableDiffResult{1,Float64,Tuple{Array{Float64,1}}}, ::Int64) at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/AdvancedVI.jl:73
+   [14] macro expansion at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/AdvancedVI.jl:213 [inlined]
+   [15] macro expansion at ./timing.jl:233 [inlined]
+   [16] optimize!(::AdvancedVI.ELBO, ::ADVI{AdvancedVI.ReverseDiffAD{false}}, ::Bijectors.TransformedDistribution{TuringDiagMvNormal{Array{Float64,1},Array{Float64,1}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate}, ::Function, ::Array{Float64,1}; optimizer::TruncatedADAGrad) at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/AdvancedVI.jl:212
+   [17] vi(::DynamicPPL.Model{var"#1433#1434",(),(),(),Tuple{},Tuple{}}, ::ADVI{AdvancedVI.ReverseDiffAD{false}}, ::Bijectors.TransformedDistribution{TuringDiagMvNormal{Array{Float64,1},Array{Float64,1}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate}; optimizer::TruncatedADAGrad) at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/variational/advi.jl:125
+   [18] vi(::DynamicPPL.Model{var"#1433#1434",(),(),(),Tuple{},Tuple{}}, ::ADVI{AdvancedVI.ReverseDiffAD{false}}; optimizer::TruncatedADAGrad) at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/variational/advi.jl:110
+   [19] vi(::DynamicPPL.Model{var"#1433#1434",(),(),(),Tuple{},Tuple{}}, ::ADVI{AdvancedVI.ReverseDiffAD{false}}) at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/variational/advi.jl:109
+   [20] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/variational/advi.jl:15
+   [21] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [22] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/variational/advi.jl:11
+   [23] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [24] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/variational/advi.jl:10
+   [25] include(::String) at ./client.jl:457
+   [26] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:39 [inlined]
+   [27] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [28] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:39 [inlined]
+   [29] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [30] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [31] include(::String) at ./client.jl:457
+   [32] top-level scope at none:6
+   [33] eval(::Module, ::Any) at ./boot.jl:331
+   [34] exec_options(::Base.JLOptions) at ./client.jl:272
+   [35] _start() at ./client.jl:506
+  
+┌ Info: [ADVI] Should only be seen once: optimizer created for θ
+└   objectid(θ) = 0x62f7a6aa9ada41e5
+opt = TruncatedADAGrad(0.1, 1.0, 100, IdDict{Any,Any}(), IdDict{Any,Any}()): Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/variational/advi.jl:19
+  Got exception outside of a @test
+  MethodError: no method matching randn(::Random._GLOBAL_RNG, ::Type{ReverseDiff.TrackedReal{Float64,Float64,ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}})
+  Closest candidates are:
+    randn(::AbstractRNG, ::Type{T}, !Matched::Tuple{Vararg{Int64,N}} where N) where T at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Random/src/normal.jl:201
+    randn(::AbstractRNG, ::Type{T}, !Matched::Integer, !Matched::Integer...) where T at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Random/src/normal.jl:204
+    randn(::AbstractRNG) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Random/src/normal.jl:38
+    ...
+  Stacktrace:
+   [1] randn!(::Random._GLOBAL_RNG, ::Array{ReverseDiff.TrackedReal{Float64,Float64,ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}},1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Random/src/normal.jl:178
+   [2] randn at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Random/src/normal.jl:204 [inlined]
+   [3] adapt_randn at /home/pkgeval/.julia/packages/DistributionsAD/NSpwv/src/common.jl:36 [inlined]
+   [4] rand(::Random._GLOBAL_RNG, ::TuringDiagMvNormal{ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}) at /home/pkgeval/.julia/packages/DistributionsAD/NSpwv/src/multivariate.jl:121
+   [5] forward(::Random._GLOBAL_RNG, ::Bijectors.TransformedDistribution{TuringDiagMvNormal{ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate}) at /home/pkgeval/.julia/packages/Bijectors/0PJJc/src/transformed_distribution.jl:241
+   [6] (::AdvancedVI.ELBO)(::Random._GLOBAL_RNG, ::ADVI{AdvancedVI.ReverseDiffAD{false}}, ::Bijectors.TransformedDistribution{TuringDiagMvNormal{ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate}, ::Turing.Variational.var"#logπ#2"{DynamicPPL.Model{var"#1433#1434",(),(),(),Tuple{},Tuple{}},DynamicPPL.VarInfo{NamedTuple{(:s, :m),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:s,Tuple{}},Int64},Array{InverseGamma{Float64},1},Array{DynamicPPL.VarName{:s,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}},DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:m,Tuple{}},Int64},Array{Normal{Float64},1},Array{DynamicPPL.VarName{:m,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64}}, ::Int64) at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/advi.jl:85
+   [7] #_#21 at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/objectives.jl:6 [inlined]
+   [8] ELBO at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/objectives.jl:6 [inlined]
+   [9] (::AdvancedVI.var"#f#27"{AdvancedVI.ELBO,ADVI{AdvancedVI.ReverseDiffAD{false}},Bijectors.TransformedDistribution{TuringDiagMvNormal{Array{Float64,1},Array{Float64,1}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate},Turing.Variational.var"#logπ#2"{DynamicPPL.Model{var"#1433#1434",(),(),(),Tuple{},Tuple{}},DynamicPPL.VarInfo{NamedTuple{(:s, :m),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:s,Tuple{}},Int64},Array{InverseGamma{Float64},1},Array{DynamicPPL.VarName{:s,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}},DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:m,Tuple{}},Int64},Array{Normal{Float64},1},Array{DynamicPPL.VarName{:m,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64}},Tuple{Int64}})(::ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}) at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/AdvancedVI.jl:69
+   [10] ReverseDiff.GradientTape(::AdvancedVI.var"#f#27"{AdvancedVI.ELBO,ADVI{AdvancedVI.ReverseDiffAD{false}},Bijectors.TransformedDistribution{TuringDiagMvNormal{Array{Float64,1},Array{Float64,1}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate},Turing.Variational.var"#logπ#2"{DynamicPPL.Model{var"#1433#1434",(),(),(),Tuple{},Tuple{}},DynamicPPL.VarInfo{NamedTuple{(:s, :m),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:s,Tuple{}},Int64},Array{InverseGamma{Float64},1},Array{DynamicPPL.VarName{:s,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}},DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:m,Tuple{}},Int64},Array{Normal{Float64},1},Array{DynamicPPL.VarName{:m,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64}},Tuple{Int64}}, ::Array{Float64,1}, ::ReverseDiff.GradientConfig{ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}) at /home/user/.julia/packages/ReverseDiff/vScHI/src/api/tape.jl:199
+   [11] ReverseDiff.GradientTape(::Function, ::Array{Float64,1}) at /home/user/.julia/packages/ReverseDiff/vScHI/src/api/tape.jl:198
+   [12] tape at ./compat/reversediff.jl:13 [inlined]
+   [13] grad!(::AdvancedVI.ELBO, ::ADVI{AdvancedVI.ReverseDiffAD{false}}, ::Bijectors.TransformedDistribution{TuringDiagMvNormal{Array{Float64,1},Array{Float64,1}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate}, ::Function, ::Array{Float64,1}, ::DiffResults.MutableDiffResult{1,Float64,Tuple{Array{Float64,1}}}, ::Int64) at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/AdvancedVI.jl:73
+   [14] macro expansion at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/AdvancedVI.jl:213 [inlined]
+   [15] macro expansion at ./timing.jl:233 [inlined]
+   [16] optimize!(::AdvancedVI.ELBO, ::ADVI{AdvancedVI.ReverseDiffAD{false}}, ::Bijectors.TransformedDistribution{TuringDiagMvNormal{Array{Float64,1},Array{Float64,1}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate}, ::Function, ::Array{Float64,1}; optimizer::TruncatedADAGrad) at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/AdvancedVI.jl:212
+   [17] vi(::DynamicPPL.Model{var"#1433#1434",(),(),(),Tuple{},Tuple{}}, ::ADVI{AdvancedVI.ReverseDiffAD{false}}, ::Bijectors.TransformedDistribution{TuringDiagMvNormal{Array{Float64,1},Array{Float64,1}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate}; optimizer::TruncatedADAGrad) at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/variational/advi.jl:125
+   [18] vi(::DynamicPPL.Model{var"#1433#1434",(),(),(),Tuple{},Tuple{}}, ::ADVI{AdvancedVI.ReverseDiffAD{false}}; optimizer::TruncatedADAGrad) at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/variational/advi.jl:110
+   [19] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/variational/advi.jl:24
+   [20] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1190
+   [21] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/variational/advi.jl:19
+   [22] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [23] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/variational/advi.jl:19
+   [24] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [25] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/variational/advi.jl:10
+   [26] include(::String) at ./client.jl:457
+   [27] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:39 [inlined]
+   [28] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [29] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:39 [inlined]
+   [30] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [31] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [32] include(::String) at ./client.jl:457
+   [33] top-level scope at none:6
+   [34] eval(::Module, ::Any) at ./boot.jl:331
+   [35] exec_options(::Base.JLOptions) at ./client.jl:272
+   [36] _start() at ./client.jl:506
+  
+opt = DecayedADAGrad(0.1, 1.0, 0.9, IdDict{Any,Any}()): Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/variational/advi.jl:19
+  Got exception outside of a @test
+  MethodError: no method matching randn(::Random._GLOBAL_RNG, ::Type{ReverseDiff.TrackedReal{Float64,Float64,ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}})
+  Closest candidates are:
+    randn(::AbstractRNG, ::Type{T}, !Matched::Tuple{Vararg{Int64,N}} where N) where T at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Random/src/normal.jl:201
+    randn(::AbstractRNG, ::Type{T}, !Matched::Integer, !Matched::Integer...) where T at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Random/src/normal.jl:204
+    randn(::AbstractRNG) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Random/src/normal.jl:38
+    ...
+  Stacktrace:
+   [1] randn!(::Random._GLOBAL_RNG, ::Array{ReverseDiff.TrackedReal{Float64,Float64,ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}},1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Random/src/normal.jl:178
+   [2] randn at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Random/src/normal.jl:204 [inlined]
+   [3] adapt_randn at /home/pkgeval/.julia/packages/DistributionsAD/NSpwv/src/common.jl:36 [inlined]
+   [4] rand(::Random._GLOBAL_RNG, ::TuringDiagMvNormal{ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}) at /home/pkgeval/.julia/packages/DistributionsAD/NSpwv/src/multivariate.jl:121
+   [5] forward(::Random._GLOBAL_RNG, ::Bijectors.TransformedDistribution{TuringDiagMvNormal{ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate}) at /home/pkgeval/.julia/packages/Bijectors/0PJJc/src/transformed_distribution.jl:241
+   [6] (::AdvancedVI.ELBO)(::Random._GLOBAL_RNG, ::ADVI{AdvancedVI.ReverseDiffAD{false}}, ::Bijectors.TransformedDistribution{TuringDiagMvNormal{ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate}, ::Turing.Variational.var"#logπ#2"{DynamicPPL.Model{var"#1433#1434",(),(),(),Tuple{},Tuple{}},DynamicPPL.VarInfo{NamedTuple{(:s, :m),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:s,Tuple{}},Int64},Array{InverseGamma{Float64},1},Array{DynamicPPL.VarName{:s,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}},DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:m,Tuple{}},Int64},Array{Normal{Float64},1},Array{DynamicPPL.VarName{:m,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64}}, ::Int64) at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/advi.jl:85
+   [7] #_#21 at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/objectives.jl:6 [inlined]
+   [8] ELBO at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/objectives.jl:6 [inlined]
+   [9] (::AdvancedVI.var"#f#27"{AdvancedVI.ELBO,ADVI{AdvancedVI.ReverseDiffAD{false}},Bijectors.TransformedDistribution{TuringDiagMvNormal{Array{Float64,1},Array{Float64,1}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate},Turing.Variational.var"#logπ#2"{DynamicPPL.Model{var"#1433#1434",(),(),(),Tuple{},Tuple{}},DynamicPPL.VarInfo{NamedTuple{(:s, :m),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:s,Tuple{}},Int64},Array{InverseGamma{Float64},1},Array{DynamicPPL.VarName{:s,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}},DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:m,Tuple{}},Int64},Array{Normal{Float64},1},Array{DynamicPPL.VarName{:m,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64}},Tuple{Int64}})(::ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}) at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/AdvancedVI.jl:69
+   [10] ReverseDiff.GradientTape(::AdvancedVI.var"#f#27"{AdvancedVI.ELBO,ADVI{AdvancedVI.ReverseDiffAD{false}},Bijectors.TransformedDistribution{TuringDiagMvNormal{Array{Float64,1},Array{Float64,1}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate},Turing.Variational.var"#logπ#2"{DynamicPPL.Model{var"#1433#1434",(),(),(),Tuple{},Tuple{}},DynamicPPL.VarInfo{NamedTuple{(:s, :m),Tuple{DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:s,Tuple{}},Int64},Array{InverseGamma{Float64},1},Array{DynamicPPL.VarName{:s,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}},DynamicPPL.Metadata{Dict{DynamicPPL.VarName{:m,Tuple{}},Int64},Array{Normal{Float64},1},Array{DynamicPPL.VarName{:m,Tuple{}},1},Array{Float64,1},Array{Set{DynamicPPL.Selector},1}}}},Float64}},Tuple{Int64}}, ::Array{Float64,1}, ::ReverseDiff.GradientConfig{ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}) at /home/user/.julia/packages/ReverseDiff/vScHI/src/api/tape.jl:199
+   [11] ReverseDiff.GradientTape(::Function, ::Array{Float64,1}) at /home/user/.julia/packages/ReverseDiff/vScHI/src/api/tape.jl:198
+   [12] tape at ./compat/reversediff.jl:13 [inlined]
+   [13] grad!(::AdvancedVI.ELBO, ::ADVI{AdvancedVI.ReverseDiffAD{false}}, ::Bijectors.TransformedDistribution{TuringDiagMvNormal{Array{Float64,1},Array{Float64,1}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate}, ::Function, ::Array{Float64,1}, ::DiffResults.MutableDiffResult{1,Float64,Tuple{Array{Float64,1}}}, ::Int64) at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/AdvancedVI.jl:73
+   [14] macro expansion at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/AdvancedVI.jl:213 [inlined]
+   [15] macro expansion at ./timing.jl:233 [inlined]
+   [16] optimize!(::AdvancedVI.ELBO, ::ADVI{AdvancedVI.ReverseDiffAD{false}}, ::Bijectors.TransformedDistribution{TuringDiagMvNormal{Array{Float64,1},Array{Float64,1}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate}, ::Function, ::Array{Float64,1}; optimizer::DecayedADAGrad) at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/AdvancedVI.jl:212
+   [17] vi(::DynamicPPL.Model{var"#1433#1434",(),(),(),Tuple{},Tuple{}}, ::ADVI{AdvancedVI.ReverseDiffAD{false}}, ::Bijectors.TransformedDistribution{TuringDiagMvNormal{Array{Float64,1},Array{Float64,1}},Stacked{Tuple{Bijectors.Exp{0},Identity{0}},2},Multivariate}; optimizer::DecayedADAGrad) at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/variational/advi.jl:125
+   [18] vi(::DynamicPPL.Model{var"#1433#1434",(),(),(),Tuple{},Tuple{}}, ::ADVI{AdvancedVI.ReverseDiffAD{false}}; optimizer::DecayedADAGrad) at /home/pkgeval/.julia/packages/Turing/O1Pn0/src/variational/advi.jl:110
+   [19] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/variational/advi.jl:24
+   [20] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1190
+   [21] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/variational/advi.jl:19
+   [22] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [23] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/variational/advi.jl:19
+   [24] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [25] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/variational/advi.jl:10
+   [26] include(::String) at ./client.jl:457
+   [27] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:39 [inlined]
+   [28] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [29] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:39 [inlined]
+   [30] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [31] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [32] include(::String) at ./client.jl:457
+   [33] top-level scope at none:6
+   [34] eval(::Module, ::Any) at ./boot.jl:331
+   [35] exec_options(::Base.JLOptions) at ./client.jl:272
+   [36] _start() at ./client.jl:506
+  
+┌ Info: [ADVI] Should only be seen once: optimizer created for θ
+└   objectid(θ) = 0xc32c700796f2d8ea
+advi different interfaces: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/test_utils/staging.jl:42
+  Got exception outside of a @test
+  MethodError: no method matching randn(::Random._GLOBAL_RNG, ::Type{ReverseDiff.TrackedReal{Float64,Float64,ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}})
+  Closest candidates are:
+    randn(::AbstractRNG, ::Type{T}, !Matched::Tuple{Vararg{Int64,N}} where N) where T at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Random/src/normal.jl:201
+    randn(::AbstractRNG, ::Type{T}, !Matched::Integer, !Matched::Integer...) where T at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Random/src/normal.jl:204
+    randn(::AbstractRNG) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Random/src/normal.jl:38
+    ...
+  Stacktrace:
+   [1] randn!(::Random._GLOBAL_RNG, ::Array{ReverseDiff.TrackedReal{Float64,Float64,ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}},1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Random/src/normal.jl:178
+   [2] randn at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Random/src/normal.jl:204 [inlined]
+   [3] adapt_randn at /home/pkgeval/.julia/packages/DistributionsAD/NSpwv/src/common.jl:36 [inlined]
+   [4] rand(::Random._GLOBAL_RNG, ::TuringDiagMvNormal{ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}) at /home/pkgeval/.julia/packages/DistributionsAD/NSpwv/src/multivariate.jl:121
+   [5] forward(::Random._GLOBAL_RNG, ::TuringDiagMvNormal{ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}) at /home/pkgeval/.julia/packages/Bijectors/0PJJc/src/transformed_distribution.jl:222
+   [6] (::AdvancedVI.ELBO)(::Random._GLOBAL_RNG, ::ADVI{AdvancedVI.ReverseDiffAD{false}}, ::TuringDiagMvNormal{ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}},ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}, ::var"#logπ#1445"{MvNormal{Float64,PDiagMat{Float64,Array{Float64,1}},FillArrays.Zeros{Float64,1,Tuple{Base.OneTo{Int64}}}}}, ::Int64) at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/advi.jl:85
+   [7] #_#21 at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/objectives.jl:6 [inlined]
+   [8] ELBO at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/objectives.jl:6 [inlined]
+   [9] (::AdvancedVI.var"#f#27"{AdvancedVI.ELBO,ADVI{AdvancedVI.ReverseDiffAD{false}},var"#getq#1446",var"#logπ#1445"{MvNormal{Float64,PDiagMat{Float64,Array{Float64,1}},FillArrays.Zeros{Float64,1,Tuple{Base.OneTo{Int64}}}}},Tuple{Int64}})(::ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}) at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/AdvancedVI.jl:71
+   [10] ReverseDiff.GradientTape(::AdvancedVI.var"#f#27"{AdvancedVI.ELBO,ADVI{AdvancedVI.ReverseDiffAD{false}},var"#getq#1446",var"#logπ#1445"{MvNormal{Float64,PDiagMat{Float64,Array{Float64,1}},FillArrays.Zeros{Float64,1,Tuple{Base.OneTo{Int64}}}}},Tuple{Int64}}, ::Array{Float64,1}, ::ReverseDiff.GradientConfig{ReverseDiff.TrackedArray{Float64,Float64,1,Array{Float64,1},Array{Float64,1}}}) at /home/user/.julia/packages/ReverseDiff/vScHI/src/api/tape.jl:199
+   [11] ReverseDiff.GradientTape(::Function, ::Array{Float64,1}) at /home/user/.julia/packages/ReverseDiff/vScHI/src/api/tape.jl:198
+   [12] tape at ./compat/reversediff.jl:13 [inlined]
+   [13] grad!(::AdvancedVI.ELBO, ::ADVI{AdvancedVI.ReverseDiffAD{false}}, ::var"#getq#1446", ::Function, ::Array{Float64,1}, ::DiffResults.MutableDiffResult{1,Float64,Tuple{Array{Float64,1}}}, ::Int64) at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/AdvancedVI.jl:73
+   [14] macro expansion at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/AdvancedVI.jl:213 [inlined]
+   [15] macro expansion at ./timing.jl:233 [inlined]
+   [16] optimize!(::AdvancedVI.ELBO, ::ADVI{AdvancedVI.ReverseDiffAD{false}}, ::Function, ::Function, ::Array{Float64,1}; optimizer::TruncatedADAGrad) at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/AdvancedVI.jl:212
+   [17] vi(::Function, ::ADVI{AdvancedVI.ReverseDiffAD{false}}, ::var"#getq#1446", ::Array{Float64,1}; optimizer::TruncatedADAGrad) at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/advi.jl:33
+   [18] vi(::Function, ::ADVI{AdvancedVI.ReverseDiffAD{false}}, ::Function, ::Array{Float64,1}) at /home/pkgeval/.julia/packages/AdvancedVI/8ttTK/src/advi.jl:32
+   [19] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/variational/advi.jl:42
+   [20] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [21] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/variational/advi.jl:34
+   [22] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [23] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/variational/advi.jl:10
+   [24] include(::String) at ./client.jl:457
+   [25] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:39 [inlined]
+   [26] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [27] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:39 [inlined]
+   [28] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [29] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [30] include(::String) at ./client.jl:457
+   [31] top-level scope at none:6
+   [32] eval(::Module, ::Any) at ./boot.jl:331
+   [33] exec_options(::Base.JLOptions) at ./client.jl:272
+   [34] _start() at ./client.jl:506
+  
+MLE: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:15
+  Got exception outside of a @test
+  UndefVarError: MLE not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:19
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:16
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:15
+   [6] include(::String) at ./client.jl:457
+   [7] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [10] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+MAP: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:30
+  Got exception outside of a @test
+  UndefVarError: MAP not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:34
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:31
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:15
+   [6] include(::String) at ./client.jl:457
+   [7] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [10] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+StatsBase integration: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:45
+  Got exception outside of a @test
+  UndefVarError: MLE not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:47
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:46
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:15
+   [6] include(::String) at ./client.jl:457
+   [7] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [10] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+Linear regression test: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:69
+  Got exception outside of a @test
+  UndefVarError: MLE not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:82
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:70
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:15
+   [6] include(::String) at ./client.jl:457
+   [7] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [10] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+Dot tilde test: Error During Test at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:91
+  Got exception outside of a @test
+  UndefVarError: MLE not defined
+  Stacktrace:
+   [1] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:101
+   [2] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:92
+   [4] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/modes/ModeEstimation.jl:15
+   [6] include(::String) at ./client.jl:457
+   [7] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [8] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [9] macro expansion at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:43 [inlined]
+   [10] macro expansion at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [11] top-level scope at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:15
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  
+┌ Info: Distribution(params)
+└   dist = Arcsine{Float64}(a=1.0, b=3.0)
+┌ Info: Distribution(params)
+└   dist = Beta{Float64}(α=2.0, β=1.0)
+┌ Info: Distribution(params)
+└   dist = BetaPrime{Float64}(α=1.0, β=1.0)
+┌ Info: Distribution(params)
+└   dist = Biweight{Float64}(μ=0.0, σ=1.0)
+┌ Info: Distribution(params)
+└   dist = Chi{Float64}(ν=7.0)
+┌ Info: Distribution(params)
+└   dist = Chisq{Float64}(ν=7.0)
+┌ Info: Distribution(params)
+└   dist = Cosine{Float64}(μ=0.0, σ=1.0)
+┌ Info: Distribution(params)
+└   dist = Epanechnikov{Float64}(μ=0.0, σ=1.0)
+┌ Info: Distribution(params)
+└   dist = Erlang{Float64}(α=2, θ=3.0)
+┌ Info: Distribution(params)
+└   dist = Exponential{Float64}(θ=0.1)
+┌ Info: Distribution(params)
+└   dist = FDist{Float64}(ν1=7.0, ν2=7.0)
+┌ Info: Distribution(params)
+└   dist = Frechet{Float64}(α=2.0, θ=0.5)
+┌ Info: Distribution(params)
+└   dist = Normal{Float64}(μ=0.0, σ=1.0)
+┌ Info: Distribution(params)
+└   dist = GeneralizedExtremeValue{Float64}(μ=0.0, σ=1.0, ξ=0.5)
+┌ Info: Distribution(params)
+└   dist = GeneralizedPareto{Float64}(μ=0.0, σ=1.0, ξ=0.5)
+┌ Info: Distribution(params)
+└   dist = Gumbel{Float64}(μ=0.0, θ=0.5)
+┌ Info: Distribution(params)
+└   dist = InverseGaussian{Float64}(μ=1.0, λ=1.0)
+┌ Info: Distribution(params)
+└   dist = Kolmogorov()
+┌ Info: Distribution(params)
+└   dist = Laplace{Float64}(μ=0.0, θ=0.5)
+┌ Info: Distribution(params)
+└   dist = Levy{Float64}(μ=0.0, σ=1.0)
+┌ Info: Distribution(params)
+└   dist = Logistic{Float64}(μ=0.0, θ=1.0)
+┌ Info: Distribution(params)
+└   dist = LogNormal{Float64}(μ=0.0, σ=1.0)
+┌ Info: Distribution(params)
+└   dist = Gamma{Float64}(α=2.0, θ=3.0)
+┌ Info: Distribution(params)
+│   dist =
+│    InverseGamma{Float64}(
+│    invd: Gamma{Float64}(α=3.0, θ=1.0)
+│    θ: 1.0
+│    )
+└    
+┌ Info: Distribution(params)
+└   dist = NormalCanon{Float64}(η=0.0, λ=1.0, μ=0.0)
+┌ Info: Distribution(params)
+└   dist = NormalInverseGaussian{Float64}(μ=0.0, α=2.0, β=1.0, δ=1.0, γ=1.7320508075688772)
+┌ Info: Distribution(params)
+└   dist = Pareto{Float64}(α=1.0, θ=1.0)
+┌ Info: Distribution(params)
+└   dist = Rayleigh{Float64}(σ=1.0)
+┌ Info: Distribution(params)
+└   dist = SymTriangularDist{Float64}(μ=0.0, σ=1.0)
+┌ Info: Distribution(params)
+└   dist = TDist{Float64}(ν=2.5)
+┌ Info: Distribution(params)
+└   dist = TriangularDist{Float64}(a=1.0, b=3.0, c=2.0)
+┌ Info: Distribution(params)
+└   dist = Triweight{Float64}(μ=0.0, σ=1.0)
+┌ Info: Distribution(params)
+└   dist = Uniform{Float64}(a=0.0, b=1.0)
+┌ Info: Distribution(params)
+└   dist = Weibull{Float64}(α=2.0, θ=1.0)
+┌ Info: Distribution(params)
+│   dist =
+│    DiagNormal(
+│    dim: 4
+│    μ: [0.0, 0.0, 0.0, 0.0]
+│    Σ: [1.0 0.0 0.0 0.0; 0.0 1.0 0.0 0.0; 0.0 0.0 1.0 0.0; 0.0 0.0 0.0 1.0]
+│    )
+└    
+┌ Info: Distribution(params)
+│   dist =
+│    FullNormal(
+│    dim: 2
+│    μ: [0.0, 0.0]
+│    Σ: [2.0 1.0; 1.0 4.0]
+│    )
+└    
+┌ Info: Distribution(params)
+└   dist = Dirichlet{Float64}(alpha=[2.0, 2.0, 2.0, 2.0])
+┌ Info: Distribution(params)
+│   dist =
+│    Wishart{Float64,PDMat{Float64,Array{Float64,2}},Int64}(
+│    df: 7.0
+│    S: [1.0 0.5; 0.5 1.0]
+│    )
+└    
+┌ Info: Distribution(params)
+│   dist =
+│    InverseWishart{Float64,PDMat{Float64,Array{Float64,2}}}(
+│    df: 7.0
+│    Ψ: [1.0 0.5; 0.5 1.0]
+│    )
+└    
+┌ Info: Found initial step size
+└   ϵ = 0.003125
+┌ Warning: Only a single thread available: MCMC chains are not sampled in parallel
+└ @ AbstractMCMC /home/pkgeval/.julia/packages/AbstractMCMC/Nw3Wn/src/sample.jl:228
+┌ Info: Found initial step size
+└   ϵ = 0.003125
+┌ Info: Found initial step size
+└   ϵ = 0.003125
+Test Summary:                                                                       | Pass  Error  Total
+Turing                                                                              | 2193     26   2219
+  core                                                                              |   15            15
+  inference: forwarddiff                                                            |  693      2    695
+    samplers                                                                        |  693      2    695
+      gibbs.jl                                                                      |   30            30
+      gibbs conditionals                                                            |   14            14
+      hmc.jl                                                                        |   28            28
+      is.jl                                                                         |  402           402
+      mh.jl                                                                         |   84            84
+      ESS                                                                           |   13            13
+      emcee.jl                                                                      |    3             3
+      SMC                                                                           |   25            25
+      PG                                                                            |   35            35
+      io.jl                                                                         |   41            41
+      dynamichmc.jl                                                                 |           2      2
+      sghmc.jl                                                                      |    8             8
+      sgld.jl                                                                       |   10            10
+  variational algorithms : forwarddiff                                              |    6             6
+  modes                                                                             |           5      5
+    ModeEstimation.jl                                                               |           5      5
+      MLE                                                                           |           1      1
+      MAP                                                                           |           1      1
+      StatsBase integration                                                         |           1      1
+      Linear regression test                                                        |           1      1
+      Dot tilde test                                                                |           1      1
+  inference: tracker                                                                |  693      2    695
+    samplers                                                                        |  693      2    695
+      gibbs.jl                                                                      |   30            30
+      gibbs conditionals                                                            |   14            14
+      hmc.jl                                                                        |   28            28
+      is.jl                                                                         |  402           402
+      mh.jl                                                                         |   84            84
+      ESS                                                                           |   13            13
+      emcee.jl                                                                      |    3             3
+      SMC                                                                           |   25            25
+      PG                                                                            |   35            35
+      io.jl                                                                         |   41            41
+      dynamichmc.jl                                                                 |           2      2
+      sghmc.jl                                                                      |    8             8
+      sgld.jl                                                                       |   10            10
+  variational algorithms : tracker                                                  |    6             6
+  modes                                                                             |           5      5
+    ModeEstimation.jl                                                               |           5      5
+      MLE                                                                           |           1      1
+      MAP                                                                           |           1      1
+      StatsBase integration                                                         |           1      1
+      Linear regression test                                                        |           1      1
+      Dot tilde test                                                                |           1      1
+  inference: reversediff                                                            |  692      3    695
+    samplers                                                                        |  692      3    695
+      gibbs.jl                                                                      |   30            30
+      gibbs conditionals                                                            |   14            14
+      hmc.jl                                                                        |   27      1     28
+        constrained bounded                                                         |    1             1
+        contrained simplex                                                          |    2             2
+        hmc reverse diff                                                            |    2             2
+        matrix support                                                              |           1      1
+        multivariate support                                                        |              No tests
+        hmcda inference                                                             |    4             4
+        hmcda constructor                                                           |    5             5
+        nuts inference                                                              |    2             2
+        nuts constructor                                                            |    3             3
+        check discard                                                               |    2             2
+        AHMC resize                                                                 |    3             3
+        Regression tests                                                            |    3             3
+      is.jl                                                                         |  402           402
+      mh.jl                                                                         |   84            84
+      ESS                                                                           |   13            13
+      emcee.jl                                                                      |    3             3
+      SMC                                                                           |   25            25
+      PG                                                                            |   35            35
+      io.jl                                                                         |   41            41
+      dynamichmc.jl                                                                 |           2      2
+      sghmc.jl                                                                      |    8             8
+      sgld.jl                                                                       |   10            10
+  variational algorithms : reversediff                                              |           4      4
+    advi.jl                                                                         |           4      4
+      advi constructor                                                              |           1      1
+      advi inference                                                                |           2      2
+        opt = TruncatedADAGrad(0.1, 1.0, 100, IdDict{Any,Any}(), IdDict{Any,Any}()) |           1      1
+        opt = DecayedADAGrad(0.1, 1.0, 0.9, IdDict{Any,Any}())                      |           1      1
+      advi different interfaces                                                     |           1      1
+  modes                                                                             |           5      5
+    ModeEstimation.jl                                                               |           5      5
+      MLE                                                                           |           1      1
+      MAP                                                                           |           1      1
+      StatsBase integration                                                         |           1      1
+      Linear regression test                                                        |           1      1
+      Dot tilde test                                                                |           1      1
+  variational optimisers                                                            |    8             8
+  stdlib                                                                            |   72            72
+  utilities                                                                         |    8             8
+ERROR: LoadError: Some tests did not pass: 2193 passed, 0 failed, 26 errored, 0 broken.
+in expression starting at /home/user/.julia/packages/Turing/O1Pn0/test/runtests.jl:14
+
+PkgEval failed: Package Turing errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:10:45.415
+CPU usage: 1606.04s (1573.36s user, 34.71s kernel)
+
+Network usage:
+- eth0: 35.589 MiB received, 700.031 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":19,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":19,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":122880,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":65536,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":122880,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":122880,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":65536,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":122880,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":495820800,"max_usage":3471273984,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":279359488,"inactive_file":135168,"inactive_anon":158416896,"total_pgfault":14312100,"total_cache":180060160,"total_rss_huge":0,"total_active_anon":301154304,"total_pgmajfault":0,"pgpgin":9663027,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":9550836,"hierarchical_memsw_limit":0,"cache":180060160,"active_file":135168,"pgfault":14312100,"total_mapped_file":0,"total_pgpgout":9550836,"total_writeback":0,"rss":279359488,"unevictable":0,"total_inactive_anon":158416896,"total_pgpgin":9663027,"active_anon":301154304,"total_active_file":135168},"limit":540965302272},"name":"/Turing-ArCapmvt","networks":{"eth0":{"rx_bytes":37317777,"rx_packets":6430,"tx_packets":6210,"tx_bytes":716832,"tx_dropped":0,"rx_dropped":54,"tx_errors":0,"rx_errors":0}},"id":"b0aaaf94b6010cd973d1582ea96945a4af15c98fd711475876b59d5251d7488c","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3981599014522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":1573360000000,"usage_in_kernelmode":34710000000,"total_usage":1606044738859,"percpu_usage":[209640,1606038981296,0,1819701,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3685722,3670,38830,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:10:45.417682765Z"}

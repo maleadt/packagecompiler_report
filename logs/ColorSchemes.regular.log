@@ -1,0 +1,105 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T15:26:49.183
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:26:50.97
+#
+
+ Installing known registries into `~/.julia`
+############################################                              61.1%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed FixedPointNumbers ─ v0.8.4
+  Installed Reexport ────────── v1.0.0
+  Installed StaticArrays ────── v1.0.1
+  Installed ColorTypes ──────── v0.10.9
+  Installed Colors ──────────── v0.12.6
+  Installed ColorSchemes ────── v3.10.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [35d6a980] + ColorSchemes v3.10.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [35d6a980] + ColorSchemes v3.10.2
+  [3da002f7] + ColorTypes v0.10.9
+  [5ae59095] + Colors v0.12.6
+  [53c48c17] + FixedPointNumbers v0.8.4
+  [189a3867] + Reexport v1.0.0
+  [90137ffa] + StaticArrays v1.0.1
+  [2a0f44e3] + Base64
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [d6f4376e] + Markdown
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [2f01184e] + SparseArrays
+  [10745b16] + Statistics
+
+
+################################################################################
+# Testing: 2021-01-11T15:26:58.165
+#
+
+    Testing ColorSchemes
+Status `/tmp/jl_mBofoR/Project.toml`
+  [35d6a980] ColorSchemes v3.10.2
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.6
+  [53c48c17] FixedPointNumbers v0.8.4
+  [90137ffa] StaticArrays v1.0.1
+  [9a3f8284] Random
+  [8dfed614] Test
+Status `/tmp/jl_mBofoR/Manifest.toml`
+  [35d6a980] ColorSchemes v3.10.2
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.6
+  [53c48c17] FixedPointNumbers v0.8.4
+  [189a3867] Reexport v1.0.0
+  [90137ffa] StaticArrays v1.0.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Test Summary: | Pass  Total
+basic tests   |    4      4
+Test Summary:    | Pass  Total
+conversion tests |   19     19
+Test Summary: | Pass  Total
+misc tests    |    5      5
+    Testing ColorSchemes tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:27:35.133
+CPU usage: 46.01s (42.21s user, 3.90s kernel)
+
+Network usage:
+- eth0: 11.902 MiB received, 86.881 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":62,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":81,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":86,"op":"Total","minor":0},{"major":253,"value":62,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":81,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":86,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":253952,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":360448,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":380928,"op":"Total","minor":0},{"major":253,"value":253952,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":360448,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":380928,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":362123264,"max_usage":957366272,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":206888960,"inactive_file":135168,"inactive_anon":98131968,"total_pgfault":1082532,"total_cache":124235776,"total_rss_huge":0,"total_active_anon":220053504,"total_pgmajfault":0,"pgpgin":625878,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":3379200,"total_unevictable":0,"total_dirty":3379200,"writeback":135168,"pgpgout":545044,"hierarchical_memsw_limit":0,"cache":124235776,"active_file":13111296,"pgfault":1082532,"total_mapped_file":0,"total_pgpgout":545044,"total_writeback":135168,"rss":206888960,"unevictable":0,"total_inactive_anon":98131968,"total_pgpgin":625878,"active_anon":220053504,"total_active_file":13111296},"limit":540965302272},"name":"/ColorSchemes-Di8HLpUa","networks":{"eth0":{"rx_bytes":12480584,"rx_packets":1077,"tx_packets":1021,"tx_bytes":88966,"tx_dropped":0,"rx_dropped":2,"tx_errors":0,"rx_errors":0}},"id":"09cf1eb269721c3e5fd184b9138c5cf5d208b757e93f129dbb5f62db9d465b27","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3190388244522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":42210000000,"usage_in_kernelmode":3900000000,"total_usage":46009720178,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,763750,2794061,46006162367,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:27:35.136443582Z"}

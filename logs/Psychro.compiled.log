@@ -1,0 +1,154 @@
+################################################################################
+# PackageCompiler set-up: 2021-01-11T15:13:36.148
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+
+
+################################################################################
+# Installation: 2021-01-11T15:13:37.627
+#
+
+ Installing known registries into `~/.julia`
+#=#=#                                                                         ######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ConstructionBase ─ v1.0.0
+  Installed PackageCompiler ── v1.2.5
+  Installed Unitful ────────── v1.5.0
+  Installed Psychro ────────── v0.3.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9b87118b] + PackageCompiler v1.2.5
+  [9516f557] + Psychro v0.3.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [187b0558] + ConstructionBase v1.0.0
+  [9b87118b] + PackageCompiler v1.2.5
+  [9516f557] + Psychro v0.3.0
+  [1986cc42] + Unitful v1.5.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Compiling: 2021-01-11T15:14:00.988
+#
+
+[ Info: PackageCompiler: creating system image object file, this might take a while...
+Generated system image is 158.856 MiB, compilation took 190 seconds
+
+
+################################################################################
+# PkgEval set-up: 2021-01-11T15:17:18.393
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKGEVAL = true
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+
+Base.julia_cmd() = `/usr/local/julia/bin/julia -Cnative -J/cache/Psychro-RUGm5ctK.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T15:17:20.23
+#
+
+ Installing known registries into `~/.julia`
+###                                                                        5.0%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Unitful ────────── v1.5.0
+  Installed Psychro ────────── v0.3.0
+  Installed ConstructionBase ─ v1.0.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [9516f557] + Psychro v0.3.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [187b0558] + ConstructionBase v1.0.0
+  [9516f557] + Psychro v0.3.0
+  [1986cc42] + Unitful v1.5.0
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+
+
+################################################################################
+# Testing: 2021-01-11T15:17:24.592
+#
+
+    Testing Psychro
+Status `/tmp/jl_YWou79/Project.toml`
+  [9516f557] Psychro v0.3.0
+  [1986cc42] Unitful v1.5.0
+  [8dfed614] Test
+Status `/tmp/jl_YWou79/Manifest.toml`
+  [187b0558] ConstructionBase v1.0.0
+  [9516f557] Psychro v0.3.0
+  [1986cc42] Unitful v1.5.0
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+Test Summary:        | Pass  Total
+utilities - polyeval |    5      5
+Test Summary: | Pass  Total
+Hyland83a     |  147    147
+Test Summary: | Pass  Total
+Hyland83      |   82     82
+Test Summary:               | Pass  Total
+higher level interface test | 2184   2184
+Test Summary: | Pass  Total
+Units         |   86     86
+    Testing Psychro tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T15:17:39.218
+CPU usage: 20.91s (18.30s user, 2.67s kernel)
+
+Network usage:
+- eth0: 2.653 MiB received, 38.372 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":19,"op":"Write","minor":0},{"major":259,"value":14,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":19,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":19,"op":"Write","minor":2},{"major":253,"value":14,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":19,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":77824,"op":"Write","minor":0},{"major":259,"value":57344,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":77824,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":77824,"op":"Write","minor":2},{"major":253,"value":57344,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":77824,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":297725952,"max_usage":519168000,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":188743680,"inactive_file":135168,"inactive_anon":79208448,"total_pgfault":332013,"total_cache":79794176,"total_rss_huge":0,"total_active_anon":189370368,"total_pgmajfault":0,"pgpgin":183117,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":117561,"hierarchical_memsw_limit":0,"cache":79794176,"active_file":135168,"pgfault":332013,"total_mapped_file":0,"total_pgpgout":117561,"total_writeback":0,"rss":188743680,"unevictable":0,"total_inactive_anon":79208448,"total_pgpgin":183117,"active_anon":189370368,"total_active_file":135168},"limit":540965302272},"name":"/Psychro-40Jjihq3","networks":{"eth0":{"rx_bytes":2782059,"rx_packets":387,"tx_packets":380,"tx_bytes":39293,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"e02a4dd9ca5ab6a955bcb5338c25b9f02849a1e2c0b17cb05fce7d3dc06e45fd","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":44},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":3114364974522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":18300000000,"usage_in_kernelmode":2670000000,"total_usage":20912547939,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20912225479,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5630,0,0,316830,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T15:17:39.894458837Z"}

@@ -1,0 +1,137 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T23:09:19.289
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T23:09:21.071
+#
+
+ Installing known registries into `~/.julia`
+#################################################                         68.6%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed ForceImport ────── v0.0.3
+  Installed ReplMaker ──────── v0.2.4
+  Installed SyntaxTree ─────── v1.0.1
+  Installed AbstractLattices ─ v0.2.1
+  Installed AbstractTensors ── v0.6.5
+  Installed Reduce ─────────── v1.2.10
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [93e0c654] + Reduce v1.2.10
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [398f06c4] + AbstractLattices v0.2.1
+  [a8e43f4a] + AbstractTensors v0.6.5
+  [9dda63f9] + ForceImport v0.0.3
+  [93e0c654] + Reduce v1.2.10
+  [b873ce64] + ReplMaker v0.2.4
+  [a4af3ec5] + SyntaxTree v1.0.1
+  [2a0f44e3] + Base64
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [8f399da3] + Libdl
+  [37e2e46d] + LinearAlgebra
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [4ec0a83e] + Unicode
+   Building Reduce → `~/.julia/packages/Reduce/VT7mw/deps/build.log`
+
+
+################################################################################
+# Testing: 2021-01-11T23:09:29.234
+#
+
+    Testing Reduce
+Status `/tmp/jl_39kQ8S/Project.toml`
+  [a8e43f4a] AbstractTensors v0.6.5
+  [9dda63f9] ForceImport v0.0.3
+  [93e0c654] Reduce v1.2.10
+  [b873ce64] ReplMaker v0.2.4
+  [a4af3ec5] SyntaxTree v1.0.1
+  [37e2e46d] LinearAlgebra
+  [3fa0cd96] REPL
+  [8dfed614] Test
+Status `/tmp/jl_39kQ8S/Manifest.toml`
+  [398f06c4] AbstractLattices v0.2.1
+  [a8e43f4a] AbstractTensors v0.6.5
+  [9dda63f9] ForceImport v0.0.3
+  [93e0c654] Reduce v1.2.10
+  [b873ce64] ReplMaker v0.2.4
+  [a4af3ec5] SyntaxTree v1.0.1
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+/home/pkgeval/.julia/packages/Reduce/VT7mw/deps/usr/lib/reduce/cslbuild/csl/reduce: error while loading shared libraries: libXrandr.so.2: cannot open shared object file: No such file or directory
+ERROR: LoadError: InitError: BoundsError: attempt to access 1-element Array{SubString{String},1} at index [-2]
+Stacktrace:
+ [1] getindex(::Array{SubString{String},1}, ::Int64) at ./array.jl:809
+ [2] Load() at /home/pkgeval/.julia/packages/Reduce/VT7mw/src/Reduce.jl:345
+ [3] __init__() at /home/pkgeval/.julia/packages/Reduce/VT7mw/src/Reduce.jl:325
+ [4] _include_from_serialized(::String, ::Array{Any,1}) at ./loading.jl:697
+ [5] _require_from_serialized(::String) at ./loading.jl:749
+ [6] _require(::Base.PkgId) at ./loading.jl:1040
+ [7] require(::Base.PkgId) at ./loading.jl:928
+ [8] require(::Module, ::Symbol) at ./loading.jl:923
+ [9] include(::String) at ./client.jl:457
+ [10] top-level scope at none:6
+during initialization of module Reduce
+in expression starting at /home/pkgeval/.julia/packages/Reduce/VT7mw/test/runtests.jl:1
+
+PkgEval failed: Package Reduce errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T23:09:48.638
+CPU usage: 28.29s (24.85s user, 3.49s kernel)
+
+Network usage:
+- eth0: 19.680 MiB received, 123.088 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":28,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":9,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":28,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":28,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":9,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":28,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":143360,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":36864,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":143360,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":143360,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":36864,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":143360,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":343150592,"max_usage":884113408,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":202919936,"inactive_file":135168,"inactive_anon":96780288,"total_pgfault":752994,"total_cache":110329856,"total_rss_huge":0,"total_active_anon":216133632,"total_pgmajfault":0,"pgpgin":460845,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":384343,"hierarchical_memsw_limit":0,"cache":110329856,"active_file":405504,"pgfault":752994,"total_mapped_file":0,"total_pgpgout":384343,"total_writeback":0,"rss":202919936,"unevictable":0,"total_inactive_anon":96780288,"total_pgpgin":460845,"active_anon":216133632,"total_active_file":405504},"limit":540965302272},"name":"/Reduce-R7Ic3164","networks":{"eth0":{"rx_bytes":20636106,"rx_packets":1564,"tx_packets":1492,"tx_bytes":126042,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"47d30c4a5747dc0c41516b5ff1354ddcdca4a110ee28e3c08ffc3a1516455576","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":6734385614522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":24850000000,"usage_in_kernelmode":3490000000,"total_usage":28289832486,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28288409996,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1422490,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T23:09:48.640825484Z"}

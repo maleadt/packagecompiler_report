@@ -1,0 +1,84 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:23:24.868
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:23:26.707
+#
+
+ Installing known registries into `~/.julia`
+#########################                                                 35.9%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed EmojiSymbols ─ v0.1.5
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [c599478c] + EmojiSymbols v0.1.5
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [c599478c] + EmojiSymbols v0.1.5
+
+
+################################################################################
+# Testing: 2021-01-11T20:23:31.214
+#
+
+    Testing EmojiSymbols
+Status `/tmp/jl_LknOKQ/Project.toml`
+  [c599478c] EmojiSymbols v0.1.5
+  [ba5e3d4b] Jive v0.2.13
+  [3fa0cd96] REPL
+  [8dfed614] Test
+Status `/tmp/jl_LknOKQ/Manifest.toml`
+  [c599478c] EmojiSymbols v0.1.5
+  [ba5e3d4b] Jive v0.2.13
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [7b1f6079] FileWatching
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+[4m1/2[24m emojisymbols/emoji.jl
+    [32m[1mPass [22m[39m[32m8[39m  (1.59 seconds)
+[4m2/2[24m emojisymbols/latex.jl
+    [32m[1mPass [22m[39m[32m6[39m  (0.02 seconds)
+[32m✅  [39mAll [32m14[39m tests have been completed.  (1.61 seconds)
+    Testing EmojiSymbols tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:23:37.614
+CPU usage: 12.47s (9.29s user, 3.24s kernel)
+
+Network usage:
+- eth0: 2.633 MiB received, 34.013 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":292171776,"max_usage":625213440,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":179662848,"inactive_file":135168,"inactive_anon":79208448,"total_pgfault":313302,"total_cache":82890752,"total_rss_huge":0,"total_active_anon":180989952,"total_pgmajfault":0,"pgpgin":237336,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":0,"pgpgout":173219,"hierarchical_memsw_limit":0,"cache":82890752,"active_file":2703360,"pgfault":313302,"total_mapped_file":0,"total_pgpgout":173219,"total_writeback":0,"rss":179662848,"unevictable":0,"total_inactive_anon":79208448,"total_pgpgin":237336,"active_anon":180989952,"total_active_file":2703360},"limit":540965302272},"name":"/EmojiSymbols-bO2NJq6Z","networks":{"eth0":{"rx_bytes":2760788,"rx_packets":351,"tx_packets":349,"tx_bytes":34829,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"e8db6eb5c030f07e8138b991954bc9e73b32547930bbe2bb1a8f77d26e241c35","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5460455024522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":9290000000,"usage_in_kernelmode":3240000000,"total_usage":12470115201,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12470115201,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:23:37.617003605Z"}

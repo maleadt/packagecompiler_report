@@ -1,0 +1,206 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T20:43:07.44
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T20:43:09.239
+#
+
+ Installing known registries into `~/.julia`
+######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed OptimizingIR ─ v0.2.2
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [cc8fcbce] + OptimizingIR v0.2.2
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [cc8fcbce] + OptimizingIR v0.2.2
+
+
+################################################################################
+# Testing: 2021-01-11T20:43:12.59
+#
+
+    Testing OptimizingIR
+Status `/tmp/jl_MyY7sS/Project.toml`
+  [cc8fcbce] OptimizingIR v0.2.2
+  [8dfed614] Test
+Status `/tmp/jl_MyY7sS/Manifest.toml`
+  [cc8fcbce] OptimizingIR v0.2.2
+  [2a0f44e3] Base64
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+DirectedGraph{VX}
+Vertices
+[1] VX(1)
+[2] VX(2)
+Edges
+Bool[0 1; 0 1]
+
+Test Summary: | Pass  Total
+Graph         |   52     52
+Test Summary: | Pass  Total
+LookupTable   |   25     25
+Test Summary:    | Pass  Total
+OptimizationRule |   11     11
+Test Summary: | Pass  Total
+AbstractValue |   11     11
+BasicBlock
+---------------
+
+Instructions
+---------------
+1 |  Pure  | call(foreign_fun, (x, 10.0::Float64, 2.0::Float64))
+2 |  Pure  | call(+, %1, %1)
+3 | Impure | output = %2
+---------------
+
+Inputs
+---------------
+1 | x
+---------------
+
+Variables - Local Mutables
+---------------
+---------------
+
+Variables - Local Immutables
+---------------
+output | %2
+---------------
+
+Outputs
+---------------
+1 | output
+---------------
+
+Test Summary: | Pass  Total
+call          |    4      4
+Test Summary: | Pass  Total
+OP_GETINDEX   |    3      3
+BasicBlock
+---------------
+
+Instructions
+---------------
+ 1 | Impure | call(zeros, Float64::DataType, x)
+ 2 | Impure | vec = %1
+ 3 | Impure | call(getindex, vec, 1::Int64)
+ 4 | Impure | inspect1 = %3
+ 5 | Impure | call(setindex!, (vec, 10::Int64, 1::Int64))
+ 6 | Impure | call(getindex, vec, 1::Int64)
+ 7 | Impure | inspect2 = %6
+ 8 |  Pure  | call(*, 2.0::Float64, %6)
+ 9 | Impure | inspect3 = %8
+10 | Impure | inspect4 = %8
+---------------
+
+Inputs
+---------------
+1 | x
+---------------
+
+Variables - Local Mutables
+---------------
+vec
+---------------
+
+Variables - Local Immutables
+---------------
+inspect3 | %8
+inspect4 | %8
+inspect2 | %6
+inspect1 | %3
+---------------
+
+Outputs
+---------------
+1 | vec
+2 | inspect1
+3 | inspect2
+4 | inspect3
+5 | inspect4
+---------------
+
+Test Summary: | Pass  Total
+OP_SETINDEX   |   13     13
+Test Summary: | Pass  Total
+Basic Block   |    9      9
+Test Summary: | Pass  Total
+Inputs        |    9      9
+Test Summary: | Pass  Total
+Passes        |    3      3
+Test Summary: | Pass  Total
+Variables     |    7      7
+Test Summary: | Pass  Total
+has_symbol    |   10     10
+Test Summary: | Pass  Total
+gensym        |    1      1
+Test Summary: | Pass  Total
+Native        |    2      2
+Test Summary:     | Pass  Total
+World Age Problem |    1      1
+Test Summary:      | Pass  Total
+can't mutate input |    2      2
+
+[ Info: Benchmarks
+Compile Native:
+  0.001154 seconds (334 allocations: 22.766 KiB)
+Compile BasicBlockInterpreter
+  0.000008 seconds (7 allocations: 928 bytes)
+Compilation Overhead: Native / BasicBlockInterpreter: 159.5x
+F Call Native 1st
+  0.039634 seconds (46.65 k allocations: 2.530 MiB)
+F Call Native 2nd
+  0.000007 seconds (4 allocations: 176 bytes)
+F Call Interpreter 1st
+  0.064324 seconds (70.21 k allocations: 3.859 MiB)
+F Call Interpreter 2nd
+  0.000079 seconds (37 allocations: 976 bytes)
+F Call Julia 1st
+  0.013924 seconds (17.11 k allocations: 895.847 KiB)
+F Call Julia 2nd
+  0.000006 seconds (4 allocations: 176 bytes)
+F Call Overhead: BasicBlockInterpreter / julia = 11.3x
+F Call Overhead: Native / julia = 0.9x
+[ Info: Compilation + F Call
+BasicBlockInterpreter: 78.3µs
+Native: 1075.8µs
+Native / BasicBlockInterpreter = 13.7x
+
+Test Summary: | Pass  Total
+Benchmarks    |    2      2
+    Testing OptimizingIR tests passed 
+
+PkgEval succeeded
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T20:43:26.784
+CPU usage: 19.42s (17.10s user, 2.39s kernel)
+
+Network usage:
+- eth0: 2.553 MiB received, 31.132 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":322539520,"max_usage":578027520,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":213188608,"inactive_file":135168,"inactive_anon":78802944,"total_pgfault":353166,"total_cache":80187392,"total_rss_huge":0,"total_active_anon":214106112,"total_pgmajfault":0,"pgpgin":206679,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":135168,"total_unevictable":0,"total_dirty":135168,"writeback":0,"pgpgout":135074,"hierarchical_memsw_limit":0,"cache":80187392,"active_file":675840,"pgfault":353166,"total_mapped_file":0,"total_pgpgout":135074,"total_writeback":0,"rss":213188608,"unevictable":0,"total_inactive_anon":78802944,"total_pgpgin":206679,"active_anon":214106112,"total_active_file":675840},"limit":540965302272},"name":"/OptimizingIR-qDF90zea","networks":{"eth0":{"rx_bytes":2677511,"rx_packets":341,"tx_packets":341,"tx_bytes":31879,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"d9e35a2b4cb37d9921a0f201123f4dd8c81c73068e9beac5d378c6b75b2fd891","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":5612388814522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":17100000000,"usage_in_kernelmode":2390000000,"total_usage":19418868733,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19418868733,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T20:43:26.786916343Z"}

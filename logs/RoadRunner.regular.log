@@ -1,0 +1,169 @@
+################################################################################
+# PkgEval set-up: 2021-01-11T17:42:49.015
+#
+
+Julia Version 1.5.3
+Commit 599f52c4c6 (2020-12-18 13:33 UTC)
+Platform Info:
+  OS: Linux (x86_64-linux-gnu)
+  CPU: AMD EPYC 7502 32-Core Processor
+  WORD_SIZE: 64
+  LIBM: libopenlibm
+  LLVM: libLLVM-9.0.1 (ORCJIT, znver2)
+Environment:
+  JULIA_PKG_PRECOMPILE_AUTO = 0
+  JULIA_PKGEVAL = true
+
+Base.julia_cmd() = `/opt/julia/bin/julia -Cnative -J/opt/julia/lib/julia/sys.so -g1`
+
+
+################################################################################
+# Installation: 2021-01-11T17:42:50.836
+#
+
+ Installing known registries into `~/.julia`
+############################################                              61.7%######################################################################## 100.0%
+      Added registry `General` to `~/.julia/registries/General`
+  Resolving package versions...
+  Installed Parsers ───────────── v1.0.15
+  Installed JSON ──────────────── v0.21.1
+  Installed DocStringExtensions ─ v0.8.3
+  Installed IOCapture ─────────── v0.1.1
+  Installed Documenter ────────── v0.25.5
+  Installed RoadRunner ────────── v0.1.0
+Updating `~/.julia/environments/v1.5/Project.toml`
+  [e916ade1] + RoadRunner v0.1.0
+Updating `~/.julia/environments/v1.5/Manifest.toml`
+  [ffbed154] + DocStringExtensions v0.8.3
+  [e30172f5] + Documenter v0.25.5
+  [b5f81e59] + IOCapture v0.1.1
+  [682c06a0] + JSON v0.21.1
+  [69de0a69] + Parsers v1.0.15
+  [e916ade1] + RoadRunner v0.1.0
+  [2a0f44e3] + Base64
+  [ade2ca70] + Dates
+  [8ba89e20] + Distributed
+  [b77e0a4c] + InteractiveUtils
+  [76f85450] + LibGit2
+  [8f399da3] + Libdl
+  [56ddb016] + Logging
+  [d6f4376e] + Markdown
+  [a63ad114] + Mmap
+  [44cfe95a] + Pkg
+  [de0858da] + Printf
+  [3fa0cd96] + REPL
+  [9a3f8284] + Random
+  [ea8e919c] + SHA
+  [9e88b42a] + Serialization
+  [6462fe0b] + Sockets
+  [8dfed614] + Test
+  [cf7118a7] + UUIDs
+  [4ec0a83e] + Unicode
+
+
+################################################################################
+# Testing: 2021-01-11T17:42:55.903
+#
+
+    Testing RoadRunner
+Status `/tmp/jl_RFlWuR/Project.toml`
+  [e30172f5] Documenter v0.25.5
+  [e916ade1] RoadRunner v0.1.0
+  [1bc83da4] SafeTestsets v0.0.1
+  [8f399da3] Libdl
+  [8dfed614] Test
+Status `/tmp/jl_RFlWuR/Manifest.toml`
+  [ffbed154] DocStringExtensions v0.8.3
+  [e30172f5] Documenter v0.25.5
+  [b5f81e59] IOCapture v0.1.1
+  [682c06a0] JSON v0.21.1
+  [69de0a69] Parsers v1.0.15
+  [e916ade1] RoadRunner v0.1.0
+  [1bc83da4] SafeTestsets v0.0.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+┌ Warning: Replacing docs for `RoadRunner.checkModule :: Tuple{String}` in module `RoadRunner`
+└ @ Base.Docs docs/Docs.jl:227
+┌ Warning: Replacing docs for `RoadRunner.getLastError :: Tuple{}` in module `RoadRunner`
+└ @ Base.Docs docs/Docs.jl:227
+┌ Warning: Replacing docs for `RoadRunner.getCurrentSteadyStateSolverNthParameterType :: Tuple{Ptr{Nothing},Int64}` in module `RoadRunner`
+└ @ Base.Docs docs/Docs.jl:227
+┌ Warning: Replacing docs for `RoadRunner.isModelLoaded :: Tuple{Ptr{Nothing}}` in module `RoadRunner`
+└ @ Base.Docs docs/Docs.jl:227
+┌ Warning: The current version of RoadRunner.jl only supports the platform of Windows x64.
+└ @ RoadRunner ~/.julia/packages/RoadRunner/26HKU/src/RoadRunner.jl:25
+antimony test 0: Error During Test at /home/pkgeval/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:25
+  Got exception outside of a @test
+  LoadError: MethodError: no method matching dlsym(::Type{Ptr{Nothing}}, ::Symbol)
+  Closest candidates are:
+    dlsym(!Matched::Ptr, ::Union{AbstractString, Symbol}; throw_error) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Libdl/src/Libdl.jl:53
+  Stacktrace:
+   [1] createRRInstance() at /home/pkgeval/.julia/packages/RoadRunner/26HKU/src/RoadRunner.jl:57
+   [2] loada(::String) at /home/pkgeval/.julia/packages/RoadRunner/26HKU/src/RoadRunner.jl:35
+   [3] top-level scope at /home/pkgeval/.julia/packages/RoadRunner/26HKU/test/antimony_test_0.jl:17
+   [4] include(::Function, ::Module, ::String) at ./Base.jl:380
+   [5] include at ./Base.jl:368 [inlined]
+   [6] include(::String) at /home/pkgeval/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
+   [7] top-level scope at /home/pkgeval/.julia/packages/RoadRunner/26HKU/test/runtests.jl:3
+   [8] top-level scope at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [9] top-level scope at /home/pkgeval/.julia/packages/RoadRunner/26HKU/test/runtests.jl:3
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] top-level scope at /home/pkgeval/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
+   [12] include(::String) at ./client.jl:457
+   [13] top-level scope at none:6
+   [14] eval(::Module, ::Any) at ./boot.jl:331
+   [15] exec_options(::Base.JLOptions) at ./client.jl:272
+   [16] _start() at ./client.jl:506
+  in expression starting at /home/pkgeval/.julia/packages/RoadRunner/26HKU/test/antimony_test_0.jl:17
+  
+Test Summary:   | Error  Total
+antimony test 0 |     1      1
+ERROR: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/pkgeval/.julia/packages/RoadRunner/26HKU/test/runtests.jl:3
+
+PkgEval failed: Package RoadRunner errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1578
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:327
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:314
+ [5] #test#61 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test(::String) at /workspace/srcdir/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [11] top-level scope at none:22
+ [12] eval at ./boot.jl:331 [inlined]
+ [13] eval(::Expr) at ./client.jl:467
+ [14] top-level scope at none:1
+ [15] eval(::Module, ::Any) at ./boot.jl:331
+ [16] exec_options(::Base.JLOptions) at ./client.jl:272
+ [17] _start() at ./client.jl:506
+
+
+################################################################################
+# PkgEval teardown: 2021-01-11T17:43:03.692
+CPU usage: 14.68s (11.94s user, 2.77s kernel)
+
+Network usage:
+- eth0: 14.294 MiB received, 85.831 KiB sent
+
+Raw statistics: {"blkio_stats":{"io_queue_recursive":[],"io_serviced_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":24,"op":"Write","minor":0},{"major":259,"value":19,"op":"Sync","minor":0},{"major":259,"value":5,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":24,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":24,"op":"Write","minor":2},{"major":253,"value":19,"op":"Sync","minor":2},{"major":253,"value":5,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":24,"op":"Total","minor":2}],"io_time_recursive":[],"sectors_recursive":[],"io_service_bytes_recursive":[{"major":259,"value":0,"op":"Read","minor":0},{"major":259,"value":126976,"op":"Write","minor":0},{"major":259,"value":106496,"op":"Sync","minor":0},{"major":259,"value":20480,"op":"Async","minor":0},{"major":259,"value":0,"op":"Discard","minor":0},{"major":259,"value":126976,"op":"Total","minor":0},{"major":253,"value":0,"op":"Read","minor":2},{"major":253,"value":126976,"op":"Write","minor":2},{"major":253,"value":106496,"op":"Sync","minor":2},{"major":253,"value":20480,"op":"Async","minor":2},{"major":253,"value":0,"op":"Discard","minor":2},{"major":253,"value":126976,"op":"Total","minor":2}],"io_wait_time_recursive":[],"io_merged_recursive":[],"io_service_time_recursive":[]},"memory_stats":{"usage":352833536,"max_usage":614744064,"stats":{"hierarchical_memory_limit":9223372036854771712,"pgmajfault":0,"total_rss":203292672,"inactive_file":135168,"inactive_anon":113405952,"total_pgfault":382305,"total_cache":118697984,"total_rss_huge":0,"total_active_anon":203968512,"total_pgmajfault":0,"pgpgin":252681,"rss_huge":0,"mapped_file":0,"total_inactive_file":135168,"dirty":270336,"total_unevictable":0,"total_dirty":270336,"writeback":135168,"pgpgout":174098,"hierarchical_memsw_limit":0,"cache":118697984,"active_file":4460544,"pgfault":382305,"total_mapped_file":0,"total_pgpgout":174098,"total_writeback":135168,"rss":203292672,"unevictable":0,"total_inactive_anon":113405952,"total_pgpgin":252681,"active_anon":203968512,"total_active_file":4460544},"limit":540965302272},"name":"/RoadRunner-JOKpr2xE","networks":{"eth0":{"rx_bytes":14988376,"rx_packets":1100,"tx_packets":965,"tx_bytes":87891,"tx_dropped":0,"rx_dropped":1,"tx_errors":0,"rx_errors":0}},"id":"677a5fabad3d25515a30073403cd8ae29e79414c09a29abdab71c65c14ac0cfd","preread":"0001-01-01T00:00:00Z","storage_stats":{},"precpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"cpu_usage":{"usage_in_usermode":0,"usage_in_kernelmode":0,"total_usage":0}},"pids_stats":{"current":40},"num_procs":0,"cpu_stats":{"throttling_data":{"throttled_periods":0,"throttled_time":0,"periods":0},"system_cpu_usage":4229136444522419,"online_cpus":128,"cpu_usage":{"usage_in_usermode":11940000000,"usage_in_kernelmode":2770000000,"total_usage":14679593271,"percpu_usage":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,344911,0,14677367578,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3140,0,0,1877642,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}},"read":"2021-01-11T17:43:03.694696004Z"}
