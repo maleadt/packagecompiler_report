@@ -13,6 +13,9 @@ function main()
         df = deserialize("df.jls")
         julia_version = only(unique(map(config->config.julia, df.config)))
         packages = unique(df.name)
+        filter!(packages) do package
+            !endswith(package, "_jll")
+        end
 
         # write logs and classify
         println("Writing logs")
