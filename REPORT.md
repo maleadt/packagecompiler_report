@@ -2,9 +2,14 @@
 
 Evaluated 4857 packages using Julia 1.5.3-599f52c4c6.
 
+## Package could not be compiled
+
+0 packages fall in this category.
+
+
 ## Issues when compiled
 
-600 packages fall in this category:
+600 packages fall in this category.
 
 - MatrixNetworks: [regular](logs/MatrixNetworks.regular.log), [compiled](logs/MatrixNetworks.compiled.log) (package has test failures)
 - KelvinletsImage: [regular](logs/KelvinletsImage.regular.log), [compiled](logs/KelvinletsImage.compiled.log) (compilation of the package failed)
@@ -609,7 +614,7 @@ Evaluated 4857 packages using Julia 1.5.3-599f52c4c6.
 
 ## Issues in regular mode
 
-1701 packages fall in this category:
+1701 packages fall in this category.
 
 - Gnome_themes_extra_jll: [regular](logs/Gnome_themes_extra_jll.regular.log) (package is a untestable wrapper package), [compiled](logs/Gnome_themes_extra_jll.compiled.log) (package is a untestable wrapper package)
 - HarfBuzz_jll: [regular](logs/HarfBuzz_jll.regular.log) (package is a untestable wrapper package), [compiled](logs/HarfBuzz_jll.compiled.log) (package is a untestable wrapper package)
@@ -2315,7 +2320,7 @@ Evaluated 4857 packages using Julia 1.5.3-599f52c4c6.
 
 ## No issues
 
-2556 packages fall in this category:
+2556 packages fall in this category.
 
 - LIBLINEAR: [regular](logs/LIBLINEAR.regular.log), [compiled](logs/LIBLINEAR.compiled.log)
 - LinkedLists: [regular](logs/LinkedLists.regular.log), [compiled](logs/LinkedLists.compiled.log)

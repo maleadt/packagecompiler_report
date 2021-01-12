@@ -20,6 +20,7 @@ function main()
         ok = []
         failed_regular = []
         failed_compiled = []
+        uncompilable = []
         for package in packages
             results = df[df.name .== package, :]
 
@@ -32,10 +33,13 @@ function main()
             regular.log !== missing && write("logs/$(package).regular.log", regular.log)
             compiled.log !== missing && write("logs/$(package).compiled.log", compiled.log)
 
-            if regular.status != :ok
+            if compiled.status !== :ok && compiled.reason === uncompilable
+                @error "$package could not be compiled"
+                push!(uncompilable, package)
+            elseif regular.status !== :ok
                 @warn "$package failed regular tests: $(regular.reason)"
                 push!(failed_regular, package)
-            elseif regular.status == :ok && compiled.status == :ok
+            elseif regular.status === :ok && compiled.status === :ok
                 @info "$package passed tests in both cases"
                 push!(ok, package)
             else
@@ -51,11 +55,12 @@ function main()
 
             println(io, "Evaluated $(length(packages)) packages using Julia $julia_version.\n")
 
-            for (title, list) in (("Issues when compiled", failed_compiled),
+            for (title, list) in (("Package could not be compiled", uncompilable),
+                                  ("Issues when compiled", failed_compiled),
                                   ("Issues in regular mode", failed_regular),
                                   ("No issues", ok))
                 println(io, "## $(title)\n")
-                println(io, "$(length(list)) packages fall in this category:\n")
+                println(io, "$(length(list)) packages fall in this category.\n")
                 for package in list
                     results = df[df.name .== package, :]
 
