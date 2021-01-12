@@ -5,12 +5,17 @@ function main()
         isdir("logs") && rm("logs"; recursive=true)
         isfile("REPORT.md") && rm("REPORT.md")
 
+        if !isfile("df.jls") && isfile("df.jls.xz")
+            run(`xz --keep --decompress df.jls.xz`)
+        end
+
         @assert isfile("df.jls")
         df = deserialize("df.jls")
         julia_version = only(unique(map(config->config.julia, df.config)))
         packages = unique(df.name)
 
         # write logs and classify
+        println("Writing logs")
         mkdir("logs")
         ok = []
         failed_regular = []
@@ -24,8 +29,8 @@ function main()
             regular = regular[1, :]
             compiled = compiled[1, :]
 
-            write("logs/$(package).regular.log", regular.log)
-            write("logs/$(package).compiled.log", compiled.log)
+            regular.log !== missing && write("logs/$(package).regular.log", regular.log)
+            compiled.log !== missing && write("logs/$(package).compiled.log", compiled.log)
 
             if regular.status != :ok
                 @warn "$package failed regular tests: $(regular.reason)"
@@ -40,6 +45,7 @@ function main()
         end
 
         # generate report
+        println("Generating report")
         open("REPORT.md", "w") do io
             println(io, "# Package evaluation with PackageCompiler\n")
 
@@ -58,11 +64,11 @@ function main()
                     compiled = compiled[1, :]
 
                     print(io, "- $(package): [regular](logs/$(package).regular.log)")
-                    if regular.status !== :ok
+                    if regular.status !== :ok && regular.reason !== missing
                         print(io, " ($(PkgEval.reasons[regular.reason]))")
                     end
                     print(io, ", [compiled](logs/$(package).compiled.log)")
-                    if compiled.status !== :ok
+                    if compiled.status !== :ok && compiled.reason !== missing
                         print(io, " ($(PkgEval.reasons[compiled.reason]))")
                     end
                     println(io)
