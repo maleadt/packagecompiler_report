@@ -36,7 +36,7 @@ function main()
             regular.log !== missing && write("logs/$(package).regular.log", regular.log)
             compiled.log !== missing && write("logs/$(package).compiled.log", compiled.log)
 
-            if compiled.status !== :ok && compiled.reason === uncompilable
+            if compiled.status !== :ok && compiled.reason === :uncompilable
                 @error "$package could not be compiled"
                 push!(uncompilable, package)
             elseif regular.status !== :ok
@@ -56,14 +56,19 @@ function main()
         open("REPORT.md", "w") do io
             println(io, "# Package evaluation with PackageCompiler\n")
 
-            println(io, "Evaluated $(length(packages)) packages using Julia $julia_version.\n")
+            print(io, "Evaluated $(length(packages)) packages using Julia $julia_version:")
+            print(io, " $(trunc(Int, 100*length(ok)/length(packages)))% are fully compatible with compilation,")
+            print(io, " $(trunc(Int, 100*length(failed_regular)/length(packages)))% might be but fail some of their tests either way,")
+            print(io, " $(trunc(Int, 100*length(uncompilable)/length(packages)))% could not be compiled and")
+            println(io, " $(trunc(Int, 100*length(failed_compiled)/length(packages)))% actually fail their tests when compiled.\n")
 
-            for (title, list) in (("Package could not be compiled", uncompilable),
-                                  ("Issues when compiled", failed_compiled),
-                                  ("Issues in regular mode", failed_regular),
-                                  ("No issues", ok))
+            for (title, list, description) in (
+                ("Package could not be compiled", uncompilable, raw"fail to compile with PackageCompiler.jl. Often, this is due to an incompatibility (e.g. `__precompile__(false)`, accessing run-time libraries like X11 during compilation, etc). In rare cases it might be caused by a bug in PackageCompiler.jl or Julia itself. Inspect the `compiled` log for more details."),
+                ("Issues when compiled", failed_compiled, "do not pass their tests only when compiled. This is indicative of behavior incompatible with compilation, e.g., embedding paths to the compile-time environment, or depending on libraries outside of Julia's artifact system. Inspect the `compiled` log for more details."),
+                ("Issues in regular mode", failed_regular, "do not pass their tests even when the package was not compiled. Due to this, it is difficult to know whether compilation introduces additional failures or not. Inspect the `regular` log for more details."),
+                ("No issues", ok, "always pass their tests."))
                 println(io, "## $(title)\n")
-                println(io, "$(length(list)) packages fall in this category.\n")
+                println(io, "The following $(length(list)) packages $description\n")
                 for package in list
                     results = df[df.name .== package, :]
 
